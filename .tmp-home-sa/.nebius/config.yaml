@@ -1,0 +1,13 @@
+
+profiles:
+  prod:
+    endpoint: my-endpoint.net
+    parent-id: project-e00some-id
+    auth-type: service account
+    service-account-id: sa-123
+    public-key-id: kid-456
+    private-key: |
+      -----BEGIN PRIVATE KEY-----
+      MIIEv...
+      -----END PRIVATE KEY-----
+default: prod
