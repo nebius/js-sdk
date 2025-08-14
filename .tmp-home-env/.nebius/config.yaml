@@ -1,6 +1,0 @@
-
-profiles:
-  default:
-    endpoint: my-endpoint.net
-    parent-id: project-e00some-id
-default: default

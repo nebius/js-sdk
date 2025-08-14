@@ -1,4 +1,4 @@
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
 import { join } from 'path';
 import { Config } from '../runtime/cli_config';
 import { ServiceAccountBearer } from '../runtime/token/service_account';
@@ -30,9 +30,14 @@ profiles:
       -----END PRIVATE KEY-----
 default: prod
 `);
-      const cfg = new Config('client-123');
+      const cfg = new Config({ clientId: 'client-123' });
       const cred = cfg.getCredentials();
       expect(cred).toBeInstanceOf(ServiceAccountBearer);
     });
+  });
+
+  afterAll(() => {
+    const tmpDir = join(process.cwd(), '.tmp-home-sa');
+    if (existsSync(tmpDir)) rmSync(tmpDir, { recursive: true, force: true });
   });
 });

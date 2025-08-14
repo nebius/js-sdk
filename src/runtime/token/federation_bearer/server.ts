@@ -42,7 +42,7 @@ export class CallbackHandler {
     });
     await new Promise<void>((resolve) => this._server!.listen(0, '127.0.0.1', () => resolve()));
     const addr = this._server.address() as AddressInfo;
-    this._addr = `http://127.0.0.1:${addr.port}/`;
+    this._addr = `http://127.0.0.1:${addr.port}`;
   }
 
   private _setCode(code: string | null, state: string | null) {

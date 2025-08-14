@@ -36,19 +36,22 @@ async function openBrowser(url: string): Promise<void> {
   }
 }
 
-function doHttpRequest(urlStr: string, method: string, headers: Record<string, string>, body?: string): Promise<{ status: number; data: any }>
+function doHttpRequest(urlStr: string, method: string, headers: Record<string, string>, body?: string, tls?: { ca?: Buffer | string | string[] }): Promise<{ status: number; data: any }>
 {
   return new Promise((resolve, reject) => {
     const u = new URL(urlStr);
     const isHttps = u.protocol === 'https:';
-    const req = (isHttps ? httpsRequest : httpRequest)({
+    const opts: any = {
       protocol: u.protocol,
       hostname: u.hostname,
       port: u.port || (isHttps ? 443 : 80),
       path: u.pathname + (u.search || ''),
       method,
       headers,
-    }, (res: IncomingMessage) => {
+      // Pass CA bundle when using https
+      ...(isHttps && tls?.ca ? { ca: tls.ca } : {}),
+    };
+    const req = (isHttps ? httpsRequest : httpRequest)(opts, (res: IncomingMessage) => {
       const chunks: Buffer[] = [];
       res.on('data', (c: Buffer) => chunks.push(c));
       res.on('end', () => {
@@ -73,13 +76,15 @@ export async function getCode(params: {
   writer?: (s: string) => void;
   noBrowserOpen?: boolean;
   timeoutMs?: number;
-}): Promise<{ code: string; state: string; redirectUri: string }>
+}): Promise<{ code: string; state: string; redirectUri: string; verifier: string }>
 {
   const { clientId, authEndpoint, federationId, writer, noBrowserOpen, timeoutMs } = params;
   const pkce = new PKCE();
   const cb = new CallbackHandler();
   await cb.listenAndServe();
-  const redirectUri = cb.addr; // e.g. http://127.0.0.1:port/
+  const redirectUri = cb.addr; // e.g. http://127.0.0.1:port
+
+  console.debug(`Callback handler listening at ${redirectUri}`);
 
   const base = new URL(AUTH_ENDPOINT, httpsUrl(authEndpoint));
   base.searchParams.set('response_type', 'code');
@@ -91,13 +96,14 @@ export async function getCode(params: {
   base.searchParams.set('state', cb.state);
 
   const url = base.toString();
-  writer?.(`Open this URL to continue authentication: ${url}\n`);
+  const write = writer ?? ((s: string) => console.log(s));
+  write(`Open this URL to continue authentication: ${url}\n`);
   if (!noBrowserOpen) await openBrowser(url);
 
   const code = await cb.waitForCode(timeoutMs);
   await cb.shutdown();
   if (!code) throw new Error('Timeout waiting for authorization code');
-  return { code, state: cb.state, redirectUri };
+  return { code, state: cb.state, redirectUri, verifier: pkce.verifier };
 }
 
 export async function getToken(params: {
@@ -106,9 +112,10 @@ export async function getToken(params: {
   code: string;
   redirectUri: string;
   verifier: string;
+  ca?: Buffer | string | string[];
 }): Promise<GetTokenResult>
 {
-  const { clientId, tokenEndpoint, code, redirectUri, verifier } = params;
+  const { clientId, tokenEndpoint, code, redirectUri, verifier, ca } = params;
   const url = new URL(TOKEN_ENDPOINT, httpsUrl(tokenEndpoint)).toString();
   const body = new URLSearchParams({
     grant_type: 'authorization_code',
@@ -120,7 +127,7 @@ export async function getToken(params: {
   const res = await doHttpRequest(url, 'POST', {
     'content-type': 'application/x-www-form-urlencoded',
     'accept': 'application/json',
-  }, body);
+  }, body, { ca });
   if (res.status < 200 || res.status >= 300) {
     throw new Error(`token endpoint error: status=${res.status}, body=${typeof res.data === 'string' ? res.data : JSON.stringify(res.data)}`);
   }
@@ -134,15 +141,11 @@ export async function authorize(params: {
   writer?: (s: string) => void;
   noBrowserOpen?: boolean;
   timeoutMs?: number;
+  ca?: Buffer | string | string[];
 }): Promise<GetTokenResult>
 {
-  const { clientId, federationEndpoint, federationId, writer, noBrowserOpen, timeoutMs } = params;
-  const { code, redirectUri } = await getCode({ clientId, authEndpoint: federationEndpoint, federationId, writer, noBrowserOpen, timeoutMs });
-  // We generated PKCE in getCode; but we also need the verifier. For simplicity, regenerate here consistently is not possible.
-  // Better approach: change getCode to return PKCE instance or verifier. For parity with Python, we keep verifier with CallbackHandler state.
-  // Here we re-create PKCE to get verifier only for formality; in practice, verifier must match initial challenge.
-  // To ensure correctness, update getCode to return PKCE verifier.
-  const pkce = new PKCE();
-  const res = await getToken({ clientId, tokenEndpoint: federationEndpoint, code, redirectUri, verifier: pkce.verifier });
+  const { clientId, federationEndpoint, federationId, writer, noBrowserOpen, timeoutMs, ca } = params;
+  const { code, redirectUri, verifier } = await getCode({ clientId, authEndpoint: federationEndpoint, federationId, writer, noBrowserOpen, timeoutMs });
+  const res = await getToken({ clientId, tokenEndpoint: federationEndpoint, code, redirectUri, verifier, ca });
   return res;
 }

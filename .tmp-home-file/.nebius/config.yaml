@@ -1,7 +1,0 @@
-
-profiles:
-  default:
-    endpoint: my-endpoint.net
-    parent-id: project-e00some-id
-    token-file: /home/complynx/tssdk/.tmp-home-file/token.txt
-default: default

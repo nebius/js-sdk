@@ -34,8 +34,19 @@ export interface GetCredentialsOptions {
   sdk?: SDKInterface | Promise<SDKInterface> | null;
 }
 
+export interface ConfigOptions {
+  clientId?: string;
+  configFile?: string;
+  profile?: string | null;
+  profileEnv?: string;
+  tokenEnv?: string;
+  noEnv?: boolean;
+  noParentId?: boolean;
+  maxRetries?: number;
+}
+
 export class Config implements ConfigReaderLike {
-  private readonly _clientId: string;
+  private readonly _clientId: string | undefined;
   private _priorityBearer: EnvBearer | null = null;
   private _profileName: string | null;
   private readonly _noParentId: boolean;
@@ -44,16 +55,18 @@ export class Config implements ConfigReaderLike {
   private readonly _maxRetries: number;
   private _profile!: Record<string, any>;
 
-  constructor(
-    clientId: string,
-    configFile: string = `${defaultConfigDir}/${defaultConfigFile}`,
-    profile?: string | null,
-    profileEnv: string = PROFILE_ENV,
-    tokenEnv: string = TOKEN_ENV,
-    noEnv: boolean = false,
-    noParentId: boolean = false,
-    maxRetries: number = 2,
-  ) {
+  constructor(options: ConfigOptions = {}) {
+    const {
+      clientId,
+      configFile = `${defaultConfigDir}/${defaultConfigFile}`,
+      profile = null,
+      profileEnv = PROFILE_ENV,
+      tokenEnv = TOKEN_ENV,
+      noEnv = false,
+      noParentId = false,
+      maxRetries = 2,
+    } = options;
+
     this._clientId = clientId;
     this._profileName = profile ?? null;
 
@@ -133,16 +146,27 @@ export class Config implements ConfigReaderLike {
       const profileName = this._profileName ?? 'default';
       const { writer, noBrowserOpen, timeoutMs } = opts;
 
+      // Optionally supply TLS roots from SDK (so HTTP federation uses same trust as gRPC)
+      let ca: Buffer | string | string[] | undefined;
+      const sdkMaybe = opts.sdk as any;
+      if (sdkMaybe && typeof sdkMaybe === 'object' && typeof sdkMaybe.getTlsRootCAs === 'function') {
+        ca = sdkMaybe.getTlsRootCAs();
+      }
+
       // eslint-disable-next-line no-console
       console.debug(
         `Creating FederationAccountBearer with profile ${profileName}, client_id ${this._clientId}, federation_url ${endpoint}, federation_id ${fedId}, writer ${!!writer}, no_browser_open ${!!noBrowserOpen}.`,
       );
+      if (!this._clientId) {
+        throw new ConfigError('Client ID is required for FederationAccountBearer.');
+      }
 
       return new FederationAccountBearer(profileName, this._clientId, endpoint, fedId, {
         writer,
         noBrowserOpen: !!noBrowserOpen,
         timeoutMs,
         maxRetries: this._maxRetries,
+        ca,
       });
     }
 

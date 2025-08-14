@@ -1,4 +1,4 @@
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
 import { join } from 'path';
 import { Config } from '../runtime/cli_config';
 import { FederationAccountBearer } from '../runtime/token/federation_account';
@@ -26,9 +26,14 @@ profiles:
     federation-id: my-fed
 default: prod
 `);
-      const cfg = new Config('client-123');
+      const cfg = new Config({ clientId: 'client-123' });
       const cred = cfg.getCredentials({ writer: () => {}, noBrowserOpen: true, timeoutMs: 1000 });
       expect(cred).toBeInstanceOf(FederationAccountBearer);
     });
+  });
+
+  afterAll(() => {
+    const tmpDir = join(process.cwd(), '.tmp-home-fed');
+    if (existsSync(tmpDir)) rmSync(tmpDir, { recursive: true, force: true });
   });
 });

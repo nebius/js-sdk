@@ -99,7 +99,7 @@ export class SDK implements SDKInterface {
   private _clientOptions?: Partial<ClientOptions>;
   private _extraInterceptors: Interceptor[] = [];
   private _perService: Map<string, { credentials?: ChannelCredentials; insecure?: boolean; clientOptions?: Partial<ClientOptions>; interceptors?: Interceptor[] } > = new Map();
-  private _systemOrCustomRoots?: Buffer;
+  private _systemOrCustomRoots?: Buffer | string | string[];
 
   constructor(options?: SDKOptions) {
     // Resolve domain
@@ -222,7 +222,7 @@ export class SDK implements SDKInterface {
           f.clientId,
           f.federationEndpoint,
           f.federationId,
-          { writer: f.writer, noBrowserOpen: !!f.noBrowserOpen, timeoutMs: f.timeoutMs },
+          { writer: f.writer, noBrowserOpen: !!f.noBrowserOpen, timeoutMs: f.timeoutMs, ca: this._systemOrCustomRoots },
         ),
       );
     }
@@ -284,11 +284,16 @@ export class SDK implements SDKInterface {
     return this._resolver.resolve(serviceName, apiServiceName);
   }
 
+  // Expose TLS roots for non-gRPC HTTP calls (e.g., federation flows)
+  getTlsRootCAs(): Buffer | string | string[] | undefined {
+    return this._systemOrCustomRoots;
+  }
+
   getCredentials(serviceName: string): ChannelCredentials {
     const svc = this._perService.get(serviceName);
     if (svc?.credentials) return svc.credentials;
-    if (svc?.insecure != null) return svc.insecure ? credentials.createInsecure() : (this._systemOrCustomRoots ? credentials.createSsl(this._systemOrCustomRoots) : credentials.createSsl());
-    return this._creds;
+    if (svc?.insecure != null) return svc.insecure ? credentials.createInsecure() : (Array.isArray(this._systemOrCustomRoots) || typeof this._systemOrCustomRoots === 'string' ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots) as Buffer) : (this._systemOrCustomRoots ? credentials.createSsl(this._systemOrCustomRoots) : credentials.createSsl()));
+    return Array.isArray(this._systemOrCustomRoots) || typeof this._systemOrCustomRoots === 'string' ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots) as Buffer) : (this._systemOrCustomRoots ? credentials.createSsl(this._systemOrCustomRoots) : credentials.createSsl());
   }
 
   getOptions(serviceName: string): Partial<ClientOptions> | undefined {

@@ -1,9 +1,0 @@
-
-profiles:
-  prod:
-    endpoint: my-endpoint.net
-    parent-id: project-e00some-id
-    auth-type: federation
-    federation-endpoint: https://example.com/fed
-    federation-id: my-fed
-default: prod

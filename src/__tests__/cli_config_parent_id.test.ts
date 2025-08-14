@@ -1,4 +1,4 @@
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
 import { join } from 'path';
 import { Config, NoParentIdError } from '../runtime/cli_config';
 
@@ -21,7 +21,7 @@ profiles:
     parent-id: project-e00some-id
 default: prod
 `);
-      const cfg = new Config('foo');
+      const cfg = new Config({ clientId: 'foo' });
       expect(cfg.parentId()).toBe('project-e00some-id');
     });
   });
@@ -37,8 +37,15 @@ profiles:
     endpoint: my-endpoint.net
 default: prod
 `);
-      const cfg = new Config('foo');
+      const cfg = new Config({ clientId: 'foo' });
       expect(() => cfg.parentId()).toThrow(NoParentIdError);
     });
+  });
+
+  afterAll(() => {
+    for (const name of ['.tmp-home-parent', '.tmp-home-no-parent']) {
+      const tmpDir = join(process.cwd(), name);
+      if (existsSync(tmpDir)) rmSync(tmpDir, { recursive: true, force: true });
+    }
   });
 });

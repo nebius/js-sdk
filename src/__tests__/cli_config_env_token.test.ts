@@ -1,4 +1,4 @@
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
 import { join } from 'path';
 import { Config } from '../runtime/cli_config';
 import { EnvBearer } from '../runtime/token/static';
@@ -25,7 +25,7 @@ profiles:
 default: default
 `);
 
-      const cfg = new Config('foo');
+      const cfg = new Config({ clientId: 'foo' });
       const cred = cfg.getCredentials();
       expect(cred).toBeInstanceOf(EnvBearer);
       // fetch token
@@ -33,5 +33,10 @@ default: default
       const tok = await receiver.fetch();
       expect(tok.token).toBe('my-token');
     });
+  });
+
+  afterAll(() => {
+    const tmpDir = join(process.cwd(), '.tmp-home-env');
+    if (existsSync(tmpDir)) rmSync(tmpDir, { recursive: true, force: true });
   });
 });

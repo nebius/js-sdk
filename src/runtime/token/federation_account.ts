@@ -23,6 +23,7 @@ export class FederationAccountBearer extends Bearer {
       retryTimeoutExponent?: number; // default 1.5
       fileCacheThrottleMs?: number; // default 5m
       cacheFilePath?: string; // custom credentials file path
+      ca?: Buffer | string | string[]; // optional extra CA bundle
     },
   ) {
     super();
@@ -34,6 +35,7 @@ export class FederationAccountBearer extends Bearer {
       federationId,
       opts?.writer,
       opts?.noBrowserOpen ?? false,
+      (opts?.ca as any) as Buffer | undefined,
     );
 
     const renewable = new AsyncRenewableBearer(auth, {

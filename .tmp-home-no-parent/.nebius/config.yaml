@@ -1,5 +1,0 @@
-
-profiles:
-  prod:
-    endpoint: my-endpoint.net
-default: prod

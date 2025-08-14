@@ -1,4 +1,5 @@
 import { join } from 'path';
+import { rmSync, existsSync } from 'fs';
 import { Config } from '../runtime/cli_config';
 
 function withTempHome(tmp: string, fn: () => void) {
@@ -12,7 +13,7 @@ describe('Config missing file', () => {
     const tmpDir = join(process.cwd(), '.tmp-home-missing');
     withTempHome(tmpDir, () => {
       try {
-        new Config('foo');
+        new Config({ clientId: 'foo' });
         fail('Expected to throw');
       } catch (e: any) {
         const msg = String(e?.message || e);
@@ -20,5 +21,10 @@ describe('Config missing file', () => {
         expect(msg.endsWith('/.nebius/config.yaml not found.')).toBe(true);
       }
     });
+  });
+
+  afterAll(() => {
+    const tmpDir = join(process.cwd(), '.tmp-home-missing');
+    if (existsSync(tmpDir)) rmSync(tmpDir, { recursive: true, force: true });
   });
 });

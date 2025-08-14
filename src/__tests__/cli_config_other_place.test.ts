@@ -1,4 +1,4 @@
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
 import { join } from 'path';
 import { Config } from '../runtime/cli_config';
 
@@ -23,8 +23,13 @@ profiles:
     parent-id: project-e00some-id
 default: prod
 `);
-      const cfg = new Config('foo', cfgPath);
+      const cfg = new Config({ clientId: 'foo', configFile: cfgPath });
       expect(cfg.parentId()).toBe('project-e00some-id');
     });
+  });
+
+  afterAll(() => {
+    const tmpDir = join(process.cwd(), '.tmp-home-custom');
+    if (existsSync(tmpDir)) rmSync(tmpDir, { recursive: true, force: true });
   });
 });
