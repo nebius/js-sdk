@@ -25,7 +25,7 @@ export class TokenCache {
   // Acquire a POSIX flock on a file descriptor
   private async flock(fd: number, flag: number): Promise<void> {
     await new Promise<void>((resolve, reject) => {
-      fsExt.flock(fd, flag, (err: any) => (err ? reject(err) : resolve()));
+      fsExt.flock(fd, flag, (err: NodeJS.ErrnoException | null) => (err ? reject(err) : resolve()));
     });
   }
 
