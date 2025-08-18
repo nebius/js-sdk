@@ -1,9 +1,11 @@
 import { mkdir, open, FileHandle } from 'fs/promises';
 import { dirname, resolve } from 'path';
-import * as YAML from 'yaml';
-import { Token } from '../../token';
-import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
+
 import * as fsExt from 'fs-ext';
+import * as YAML from 'yaml';
+
+import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
+import { Token } from '../../token';
 
 export interface TokenCacheOptions {
   cacheFile?: string;
@@ -34,7 +36,7 @@ export class TokenCache {
     if (typeof tokensObj !== 'object' || tokensObj === null) throw new Error('Invalid YAML tokens: expected object');
     const out: Record<string, Token> = {};
     for (const [k, v] of Object.entries(tokensObj)) {
-      out[k] = Token.fromJSON(v);
+      out[k] = Token.fromJSON(v as { token?: string; expires_at?: number | null });
     }
     return out;
   }

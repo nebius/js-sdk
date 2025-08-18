@@ -155,7 +155,7 @@ export function parseMask(source: string): Mask {
   }
   const mask = new Mask();
   for (const p of paths) {
-    mask.addPath(p as any);
+    mask.addPath(p);
   }
   return mask;
 }

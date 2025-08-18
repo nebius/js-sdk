@@ -26,8 +26,8 @@
     "indexgen": "node -r ts-node/register scripts/gen-indexes.ts",
     "test": "jest --maxWorkers=8",
     "test:watch": "jest --watch",
-    "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint src/**/*.ts --fix",
+    "lint": "eslint src/**/*.ts --no-warn-ignored",
+    "lint:fix": "eslint src/**/*.ts --fix --no-warn-ignored",
     "clean": "rimraf dist src/generated",
     "prepublishOnly": "npm run build"
   },

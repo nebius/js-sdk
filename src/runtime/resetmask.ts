@@ -8,6 +8,7 @@ const RECURSION_TOO_DEEP = 1000;
 // grpc-js requires lowercase header keys
 export const RESET_MASK_HEADER = 'x-resetmask';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function ensureResetMaskInMetadata(msg: any, metadata?: Metadata): Metadata {
   const md = metadata ?? new Metadata();
   const existing = md.get(RESET_MASK_HEADER);
@@ -18,6 +19,7 @@ export function ensureResetMaskInMetadata(msg: any, metadata?: Metadata): Metada
   return md;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function isDefaultScalar(v: any): boolean {
   if (v === null || v === undefined) return true;
   switch (typeof v) {
@@ -33,16 +35,19 @@ function isDefaultScalar(v: any): boolean {
       break;
   }
   if (v instanceof Uint8Array) return v.length === 0;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   if (typeof Buffer !== 'undefined' && typeof (Buffer as any).isBuffer === 'function' && (Buffer as any).isBuffer(v)) {
     return (v as Buffer).length === 0;
   }
   return false;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function isPlainObject(o: any): o is Record<string, any> {
   return Object.prototype.toString.call(o) === '[object Object]';
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number): void {
   if (recursion >= RECURSION_TOO_DEEP) throw ErrRecursionTooDeep;
   recursion++;
@@ -88,6 +93,7 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
       // - if all values are plain objects => treat as map-of-messages using Any
       // - otherwise => nested message
       if (isPlainObject(value)) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const entries = Object.entries(value as Record<string, any>);
         if (entries.length === 0) {
           resetMask.fieldParts.set(key, fieldMask);
@@ -122,10 +128,10 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function resetMaskFromMessage(update: any): Mask | null {
   if (update == null) return null;
-  const updObj = update as any;
   const ret = new Mask();
-  rmFromObjectRecursive(ret, updObj, 0);
+  rmFromObjectRecursive(ret, update, 0);
   return ret;
 }

@@ -57,7 +57,10 @@ export class Token {
     };
   }
 
-  static fromJSON(data: any): Token {
+  static fromJSON(data: {
+    token?: string;
+    expires_at?: number | null;
+  }): Token {
     const tok = typeof data?.token === 'string' ? data.token : '';
     const expSec = data?.expires_at;
     const exp = typeof expSec === 'number' && expSec > 0 ? new Date(expSec * 1000) : undefined;
@@ -110,9 +113,8 @@ export abstract class Bearer {
   }
 
   async close(_graceMs?: number): Promise<void> {
-    const w = this.wrapped as any;
-    if (w && typeof w.close === 'function') {
-      await w.close(_graceMs);
+    if (this.wrapped && typeof this.wrapped.close === 'function') {
+      await this.wrapped.close(_graceMs);
     }
   }
 }
