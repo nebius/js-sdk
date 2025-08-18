@@ -1,14 +1,14 @@
 // ESLint flat config for TypeScript project
-import tsParser from '@typescript-eslint/parser';
-import tsPlugin from '@typescript-eslint/eslint-plugin';
-import { node, es2021, jest as _jest } from 'globals';
+const tsParser = require('@typescript-eslint/parser');
+const tsPlugin = require('@typescript-eslint/eslint-plugin');
+const globals = require('globals');
 // Additional plugins
-import importPlugin from 'eslint-plugin-import';
-import promisePlugin from 'eslint-plugin-promise';
-import nPlugin from 'eslint-plugin-n';
-import jestPlugin from 'eslint-plugin-jest';
+const importPlugin = require('eslint-plugin-import');
+const promisePlugin = require('eslint-plugin-promise');
+const nPlugin = require('eslint-plugin-n');
+const jestPlugin = require('eslint-plugin-jest');
 
-export default [
+module.exports = [
   // Ignore build artifacts and generated code
   { ignores: ['dist/**', 'src/generated/**', 'node_modules/**'] },
 
@@ -22,9 +22,9 @@ export default [
         sourceType: 'module',
       },
       globals: {
-        ...node,
-        ...es2021,
-        ..._jest,
+        ...globals.node,
+        ...globals.es2021,
+        ...globals.jest,
       },
     },
     // Settings for plugins
