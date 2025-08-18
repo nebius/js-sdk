@@ -1,5 +1,6 @@
 import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
 import { join } from 'path';
+
 import { Config } from '../runtime/cli_config';
 import { FederationAccountBearer } from '../runtime/token/federation_account';
 

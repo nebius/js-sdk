@@ -1,17 +1,18 @@
 import { Server, ServerCredentials, Metadata, status } from '@grpc/grpc-js';
-import { DiskServiceService, type DiskServiceServer } from '../generated/nebius/compute/v1/disk_service';
-import { InstanceServiceService, type InstanceServiceServer } from '../generated/nebius/compute/v1/instance_service';
-import type { UpdateDiskRequest } from '../generated/nebius/compute/v1/disk_service';
-import type { UpdateInstanceRequest } from '../generated/nebius/compute/v1/instance_service';
-import { Operation } from '../generated/nebius/common/v1/operation';
-import { SDK } from '../sdk';
-import { Basic } from '../runtime/resolver';
-import { DiskService as DiskServiceClient } from '../generated/nebius/compute/v1/disk_service.sdk';
-import { InstanceService as InstanceServiceClient } from '../generated/nebius/compute/v1/instance_service.sdk';
 import Long from 'long';
-import { parseFieldMask } from '../runtime/fieldmask';
 
-function startServerWithPort(addImpl: (server: Server) => void): Promise<{ server: Server; address: string; port: number }>{
+import { Operation } from '../generated/nebius/common/v1/operation';
+import { DiskServiceService, type DiskServiceServer , UpdateDiskRequest } from '../generated/nebius/compute/v1/disk_service';
+import { DiskService as DiskServiceClient } from '../generated/nebius/compute/v1/disk_service.sdk';
+import { InstanceServiceService, type InstanceServiceServer , UpdateInstanceRequest } from '../generated/nebius/compute/v1/instance_service';
+import { InstanceService as InstanceServiceClient } from '../generated/nebius/compute/v1/instance_service.sdk';
+import { parseFieldMask } from '../runtime/fieldmask';
+import { Basic } from '../runtime/resolver';
+import { SDK } from '../sdk';
+
+function startServerWithPort(
+  addImpl: (server: Server) => void
+): Promise<{ server: Server; address: string; port: number }> {
   return new Promise((resolve, reject) => {
     const server = new Server();
     addImpl(server);

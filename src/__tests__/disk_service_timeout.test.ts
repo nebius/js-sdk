@@ -1,6 +1,6 @@
 import { Server, ServerCredentials, credentials, status, Metadata } from '@grpc/grpc-js';
-import { DiskServiceService, DiskServiceClient, DiskServiceServer } from '../generated/nebius/compute/v1/disk_service';
-import { GetDiskRequest } from '../generated/nebius/compute/v1/disk_service';
+
+import { DiskServiceService, DiskServiceClient, DiskServiceServer , GetDiskRequest } from '../generated/nebius/compute/v1/disk_service';
 
 function startServerWithPort(addImpl: (server: Server) => void): Promise<{ server: Server; address: string }>{
   return new Promise((resolve, reject) => {

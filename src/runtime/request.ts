@@ -4,17 +4,16 @@ import type {
   CallOptions,
 } from '@grpc/grpc-js';
 import { Metadata } from '@grpc/grpc-js';
+
+import { Code as StatusCode } from '../generated/google/rpc/code';
 import { Status as GrpcStatus } from '../generated/google/rpc/status';
-import { Any } from '../generated/google/protobuf/any';
 import {
   ServiceError as NebiusServiceError,
   ServiceError_RetryType,
-  BadRequest,
-  BadRequest_Violation,
 } from '../generated/nebius/common/v1/error';
-import { Code as StatusCode } from '../generated/google/rpc/code';
+
 // Ensure global error interceptor is installed
-import './error';
+import { NebiusGrpcError } from './error';
 import { resetMaskFromMessage } from './resetmask';
 
 export interface RetryOptions {
@@ -49,13 +48,13 @@ function shouldUseIdempotencyKey(methodName?: string): boolean {
 function generateIdempotencyKey(): string {
   try {
     // Prefer crypto.randomUUID if available (RFC 4122 v4)
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
+     
     const crypto = require('crypto') as typeof import('crypto');
-    if (typeof (crypto as any).randomUUID === 'function') {
-      return (crypto as any).randomUUID();
+    if (typeof crypto.randomUUID === 'function') {
+      return crypto.randomUUID();
     }
     // Fallback to randomBytes and format as UUID v4
-    const bytes: Buffer = (crypto as any).randomBytes(16);
+    const bytes: Buffer = crypto.randomBytes(16);
     // Set version (4) and variant (10xx)
     bytes[6] = (bytes[6] & 0x0f) | 0x40;
     bytes[8] = (bytes[8] & 0x3f) | 0x80;
@@ -120,9 +119,8 @@ export class Request<TReq, TRes, TOut = TRes> {
         }
 
         // Possibly inject parentId into request
-        const reqToSend: any = request as any;
         try {
-          injectParentIdIfNeeded(methodName, profileParentId, reqToSend);
+          injectParentIdIfNeeded(methodName, profileParentId, request);
         } catch { /* ignore injection failures */ }
 
         // Ensure reset mask header for update methods if absent
@@ -133,7 +131,7 @@ export class Request<TReq, TRes, TOut = TRes> {
           const existing = md.get(RESET_MASK_HEADER);
           if (!existing || existing.length === 0) {
             try {
-              const rm = resetMaskFromMessage(reqToSend);
+              const rm = resetMaskFromMessage(request);
               if (rm) md.set(RESET_MASK_HEADER, rm.marshal());
             } catch { /* ignore */ }
           }
@@ -148,12 +146,12 @@ export class Request<TReq, TRes, TOut = TRes> {
           }
         }
 
-        const call = createCall(reqToSend, md ?? metadata, deadlineOpt, (err, resp) => {
+        const call = createCall(request, md ?? metadata, deadlineOpt, (err, resp) => {
           if (err) {
-            const wrapped = err as any;
+            const wrapped = err as NebiusGrpcError;
             // Metadata-derived requestId/traceId if any
-            if ((wrapped as any)?.metadata) {
-              const md = (wrapped as any).metadata as Metadata;
+            if (wrapped?.metadata) {
+              const md = wrapped.metadata as Metadata;
               this._safeResolveIdsFromMd(md);
             }
             // Determine retriable
@@ -163,13 +161,17 @@ export class Request<TReq, TRes, TOut = TRes> {
               return;
             }
             // Resolve status even on error
-            const st = decodeStatusFromError(err) ?? { code: (err as any).code ?? StatusCode.UNKNOWN, message: (err as any).message ?? String(err), details: [] };
+            const st = decodeStatusFromError(err) ?? {
+              code: err.code ?? StatusCode.UNKNOWN,
+              message: err.message ?? String(err),
+              details: [],
+            };
             this._resolveStatus(st);
             reject(wrapped);
             return;
           }
           try {
-            const out = (transformResponse ? transformResponse(resp) : (resp as any)) as TOut;
+            const out = (transformResponse ? transformResponse(resp) : resp) as TOut;
             resolve(out);
           } catch (e) {
             reject(e);
@@ -181,7 +183,7 @@ export class Request<TReq, TRes, TOut = TRes> {
           this._resolveInitialMd(md2);
           this._safeResolveIdsFromMd(md2);
         });
-        call.on('status', (s: any) => {
+        call.on('status', (s) => {
           const st = decodeStatusFromStatusEvent(s);
           this._resolveStatus(st);
           const md: Metadata | undefined = s?.metadata;
@@ -201,9 +203,9 @@ export class Request<TReq, TRes, TOut = TRes> {
     if (traceId) this._resolveTraceId(traceId);
   }
 
-  private _isRetriableError(err: any): boolean {
+  private _isRetriableError(err: NebiusGrpcError): boolean {
     // Network/system-level errors
-    const sysCode = (err && (err.code as any)) as string | number | undefined;
+    const sysCode = (err && err.code) as string | number | undefined;
     if (typeof sysCode === 'string') {
       const transientErrnos = new Set([
         'ECONNRESET',
@@ -233,7 +235,7 @@ export class Request<TReq, TRes, TOut = TRes> {
 }
 
 // Backward-friendly alias used by generators
-export type UnaryCall<TResponse = unknown> = Request<any, TResponse>;
+export type UnaryCall<TResponse = unknown> = Request<unknown, TResponse>;
 
 export function wrapUnaryCall<TReq, TRes, TOut = TRes>(args: {
   request: TReq;
@@ -272,7 +274,11 @@ function decodeStatusFromError(err: GrpcServiceError): GrpcStatus | undefined {
   }
 }
 
-function decodeStatusFromStatusEvent(s: { code?: number; details?: string; metadata?: Metadata } | undefined): GrpcStatus {
+function decodeStatusFromStatusEvent(s: {
+  code?: number;
+  details?: string;
+  metadata?: Metadata
+} | undefined): GrpcStatus {
   if (!s) return { code: StatusCode.UNKNOWN, message: '', details: [] };
   try {
     const bin = s.metadata?.get('grpc-status-details-bin');
@@ -286,6 +292,8 @@ function decodeStatusFromStatusEvent(s: { code?: number; details?: string; metad
 }
 
 // Inject parentId based on method name and sdk-provided profileParentId
+// any is necessary because here we patch all requests duck-style
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function injectParentIdIfNeeded(methodName: string | undefined, profileParentId: string | undefined, req: any) {
   if (!profileParentId || !req || typeof req !== 'object') return;
   const m = (methodName || '').toLowerCase();

@@ -1,16 +1,18 @@
 import { existsSync, readFileSync } from 'fs';
 import { resolve } from 'path';
+
 import { parse as parseYAML } from 'yaml';
 
-import { defaultConfigDir, defaultConfigFile, profileEnv as PROFILE_ENV, tokenEnv as TOKEN_ENV } from './constants';
 import type { SDKInterface, ConfigReaderLike } from '../sdk';
+
 import type { Provider as AuthorizationProvider } from './authorization/provider';
-import { Bearer, Token } from './token';
-import { EnvBearer, NoTokenInEnvError } from './token/static';
-import { FileBearer } from './token/file';
-import { FederationAccountBearer } from './token/federation_account';
+import { defaultConfigDir, defaultConfigFile, profileEnv as PROFILE_ENV, tokenEnv as TOKEN_ENV } from './constants';
 import type { Reader as TokenRequestReader } from './service_account/service_account';
+import { Bearer, Token } from './token';
+import { FederationAccountBearer } from './token/federation_account';
+import { FileBearer } from './token/file';
 import { ServiceAccountBearer } from './token/service_account';
+import { EnvBearer, NoTokenInEnvError } from './token/static';
 
 export type Credentials = AuthorizationProvider | Bearer | TokenRequestReader | Token | string;
 
@@ -153,7 +155,7 @@ export class Config implements ConfigReaderLike {
         ca = sdkMaybe.getTlsRootCAs();
       }
 
-      // eslint-disable-next-line no-console
+       
       console.debug(
         `Creating FederationAccountBearer with profile ${profileName}, client_id ${this._clientId}, federation_url ${endpoint}, federation_id ${fedId}, writer ${!!writer}, no_browser_open ${!!noBrowserOpen}.`,
       );

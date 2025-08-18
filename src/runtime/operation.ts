@@ -1,10 +1,8 @@
-import type { SDKInterface } from '../sdk';
-import type { Operation as OpV1 } from '../generated/nebius/common/v1/operation';
-import type { Operation as OpVAlpha } from '../generated/nebius/common/v1alpha1/operation';
-import { Status } from "../generated/google/rpc/status";
-import { Timestamp } from '../generated/google/protobuf/timestamp';
 import { Any } from '../generated/google/protobuf/any';
+import { Timestamp } from '../generated/google/protobuf/timestamp';
 import { Code as StatusCode } from '../generated/google/rpc/code';
+import { Status } from "../generated/google/rpc/status";
+import type { SDKInterface } from '../sdk';
 
 interface Operation_requestHeader {
   values: string[];
@@ -47,7 +45,7 @@ export class Operation {
   }
 
   id(): string {
-    return (this._op as any)?.id ?? '';
+    return this._op.id ?? '';
   }
 
   description(): string {
@@ -59,7 +57,7 @@ export class Operation {
   }
 
   createdBy(): string {
-    return this._op.createdBy;
+    return this._op.createdBy ?? '';
   }
 
   finishedAt(): Timestamp | undefined {

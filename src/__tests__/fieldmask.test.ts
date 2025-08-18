@@ -38,6 +38,7 @@ describe('FieldPath basics', () => {
     ];
     for (const c of cases) {
       const p = c.A.parent();
+      // eslint-disable-next-line jest/no-conditional-expect
       if (!c.R) expect(p).toBeNull(); else expect(p).toEqual(c.R);
     }
   });

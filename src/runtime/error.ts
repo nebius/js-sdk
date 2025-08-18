@@ -1,9 +1,10 @@
 import type { ServiceError as GrpcServiceError, Metadata } from '@grpc/grpc-js';
 import { Client } from '@grpc/grpc-js';
-import { Status as GrpcStatus } from '../generated/google/rpc/status';
+
 import { Any } from '../generated/google/protobuf/any';
-import { ServiceError as NebiusServiceError } from '../generated/nebius/common/v1/error';
 import { Code as StatusCode } from '../generated/google/rpc/code';
+import { Status as GrpcStatus } from '../generated/google/rpc/status';
+import { ServiceError as NebiusServiceError } from '../generated/nebius/common/v1/error';
 
 // Helper: get first string value from metadata by key
 function mdGetString(md: Metadata | undefined, key: string): string | undefined {
@@ -125,7 +126,13 @@ export class NebiusGrpcError extends Error implements GrpcServiceError {
   serviceErrors: NebiusServiceError[];
   status?: GrpcStatus;
 
-  constructor(base: GrpcServiceError, status?: GrpcStatus, serviceErrors: NebiusServiceError[] = [], requestId?: string, traceId?: string) {
+  constructor(
+    base: GrpcServiceError,
+    status?: GrpcStatus,
+    serviceErrors: NebiusServiceError[] = [],
+    requestId?: string,
+    traceId?: string
+  ) {
     const msg = NebiusGrpcError.buildMessage(base, status, serviceErrors, requestId, traceId);
     super(msg);
     this.name = 'NebiusGrpcError';
@@ -138,7 +145,13 @@ export class NebiusGrpcError extends Error implements GrpcServiceError {
     this.status = status;
   }
 
-  static buildMessage(base: GrpcServiceError, status?: GrpcStatus, serviceErrors: NebiusServiceError[] = [], requestId?: string, traceId?: string): string {
+  static buildMessage(
+    base: GrpcServiceError,
+    status?: GrpcStatus,
+    serviceErrors: NebiusServiceError[] = [],
+    requestId?: string,
+    traceId?: string
+  ): string {
     const parts: string[] = [];
     parts.push(codeName(base.code as number));
     const msg = (status?.message || (base as any).details || base.message || '').trim();

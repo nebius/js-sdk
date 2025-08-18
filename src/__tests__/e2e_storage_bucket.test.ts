@@ -9,23 +9,24 @@
 import { writeFileSync, unlinkSync, existsSync, mkdtempSync } from 'fs';
 import { tmpdir } from 'os';
 import { join } from 'path';
+
 import Long from 'long';
 import { parse as parseYAML } from 'yaml';
 
-import { SDK } from '../sdk';
-import { Config } from '../runtime/cli_config';
 import { ResourceMetadata } from '../generated/nebius/common/v1/metadata';
-import { BucketSpec } from '../generated/nebius/storage/v1/bucket';
 import { VersioningPolicy } from '../generated/nebius/storage/v1/base';
-import {
-  BucketService as BucketServiceClient,
-} from '../generated/nebius/storage/v1/bucket_service.sdk';
+import { BucketSpec } from '../generated/nebius/storage/v1/bucket';
 import {
   CreateBucketRequest,
   DeleteBucketRequest,
   GetBucketRequest,
   ListBucketsRequest,
 } from '../generated/nebius/storage/v1/bucket_service';
+import {
+  BucketService as BucketServiceClient,
+} from '../generated/nebius/storage/v1/bucket_service.sdk';
+import { Config } from '../runtime/cli_config';
+import { SDK } from '../sdk';
 
 jest.setTimeout(120_000);
 
@@ -129,7 +130,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
         const delOp = await bucketService.Delete(delReq).result;
         await delOp.wait();
       } catch (cleanupErr) {
-        // eslint-disable-next-line no-console
+         
         console.warn(`Warning: cleanup failed for bucket ${bucketId}:`, cleanupErr);
       }
     }

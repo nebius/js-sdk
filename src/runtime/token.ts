@@ -1,6 +1,7 @@
-import { TokenSanitizer } from './token_sanitizer';
-import type { AuthorizationOptions } from './authorization/provider';
 import util from 'node:util';
+
+import type { AuthorizationOptions } from './authorization/provider';
+import { TokenSanitizer } from './token_sanitizer';
  
 // A bearer token with optional expiration time
 export class Token {

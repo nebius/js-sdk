@@ -26,7 +26,7 @@ export class FieldKey {
         const v = JSON.parse(marshaled);
         if (typeof v !== 'string') throw new MarshalError('malformed FieldKey string');
         return new FieldKey(v);
-      } catch (e) {
+      } catch {
         throw new MarshalError('malformed FieldKey string');
       }
     }
@@ -48,7 +48,7 @@ export class FieldPath {
   constructor(base?: Iterable<FieldKey | string> | null) {
     this.parts = [];
     if (base != null) {
-      for (const v0 of base as Iterable<any>) {
+      for (const v0 of base) {
         const v = v0 instanceof FieldKey ? v0 : new FieldKey(String(v0));
         this.parts.push(v);
       }
@@ -136,7 +136,7 @@ export class Mask {
     for (const [k, v] of this.fieldParts) m.fieldParts.set(k, v.copy());
     return m;
   }
-  equals(other: any): boolean {
+  equals(other: Mask): boolean {
     if (!(other instanceof Mask)) return false;
     if ((this.any === null) !== (other.any === null)) return false;
     if (this.any && other.any && !this.any.equals(other.any)) return false;
@@ -164,10 +164,10 @@ export class Mask {
     }
     return new FieldPath(parts.map((s) => new FieldKey(s)));
   }
-   isFieldPath(): boolean {
-     return this.toFieldPath() !== null;
-   }
-   // Returns merged branch for a direct key combined with wildcard Any
+  isFieldPath(): boolean {
+    return this.toFieldPath() !== null;
+  }
+  // Returns merged branch for a direct key combined with wildcard Any
   getSubMask(key: FieldKey | string): Mask | null {
     const k = key instanceof FieldKey ? key.value : String(key);
     const named = this.fieldParts.get(k) || null;
@@ -257,11 +257,13 @@ export class Mask {
   marshal(): string {
     return this.marshalRec(0).text;
   }
-   toString(): string {
-     try { return `Mask<${this.marshal()}>`; } catch (e: any) { return `Mask<not-marshalable ${e?.message || e}>`; }
-   }
-   // Intersection and subtraction APIs to match Go implementation
-   private intersectRMRecursive(other: Mask | null, recursion: number): Mask | null {
+  toString(): string {
+    try { return `Mask<${this.marshal()}>`; } catch (e) {
+       return `Mask<not-marshalable ${/**/ (e && (e as { message: string }).message) || e}>`;
+    }
+  }
+  // Intersection and subtraction APIs to match Go implementation
+  private intersectRMRecursive(other: Mask | null, recursion: number): Mask | null {
     if (recursion >= RECURSION_TOO_DEEP) throw new Error('recursion too deep');
     recursion++;
     if (!this || !other) return null;
@@ -374,16 +376,16 @@ export class Mask {
   }
 
   // JSON helpers: build a mask from a JS object/JSON and serialize mask to object/JSON
-  static fromObject(obj: any): Mask {
+  static fromObject(obj: unknown): Mask {
     const root = new Mask();
-    const visit = (cur: Mask, val: any, path: (string|'*')[]) => {
+    const visit = (cur: Mask, val: unknown, path: (string|'*')[]) => {
       if (val === null || typeof val !== 'object') {
-        if (path.length > 0) cur.addPath(path as any);
+        if (path.length > 0) cur.addPath(path);
         return;
       }
       if (Array.isArray(val)) {
         if (val.length === 0) {
-          if (path.length > 0) cur.addPath(path as any);
+          if (path.length > 0) cur.addPath(path);
           return;
         }
         for (const el of val) {
@@ -393,26 +395,26 @@ export class Mask {
       }
       const keys = Object.keys(val);
       if (keys.length === 0) {
-        if (path.length > 0) cur.addPath(path as any);
+        if (path.length > 0) cur.addPath(path);
         return;
       }
       for (const k of keys) {
-        visit(cur, (val as any)[k], path.concat(k));
+        visit(cur, (val as Record<string, unknown>)[k], path.concat(k));
       }
     };
     visit(root, obj, []);
     return root;
   }
 
-  static parseJSON(source: string | any): Mask {
+  static parseJSON(source: string | unknown): Mask {
     const obj = typeof source === 'string' ? JSON.parse(source) : source;
     return Mask.fromObject(obj);
   }
 
-  toObject(): any {
-    const rec = (node: Mask): any => {
+  toObject(): unknown {
+    const rec = (node: Mask): unknown => {
       if (!node.any && node.fieldParts.size === 0) return true;
-      const out: any = {};
+      const out: Record<string, unknown> = {};
       if (node.any) out['*'] = rec(node.any);
       for (const [k, v] of node.fieldParts) out[new FieldKey(k).marshal()] = rec(v);
       return out;
@@ -420,7 +422,7 @@ export class Mask {
     return rec(this);
   }
 
-  toJSON(): any {
+  toJSON(): unknown {
     return this.toObject();
   }
 }

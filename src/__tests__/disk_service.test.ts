@@ -1,7 +1,8 @@
 import { Server, ServerCredentials, credentials } from '@grpc/grpc-js';
-import { DiskServiceService, DiskServiceClient, ListDisksRequest, ListDisksResponse, DiskServiceServer } from '../generated/nebius/compute/v1/disk_service';
-import { Disk } from '../generated/nebius/compute/v1/disk';
 import Long from 'long';
+
+import { Disk } from '../generated/nebius/compute/v1/disk';
+import { DiskServiceService, DiskServiceClient, ListDisksRequest, ListDisksResponse, DiskServiceServer } from '../generated/nebius/compute/v1/disk_service';
 
 // Start a gRPC server on an ephemeral port and return its address
 function startServerWithPort(addImpl: (server: Server) => void): Promise<{ server: Server; address: string }>{

@@ -38,6 +38,7 @@ describe('Go FieldPath compatibility', () => {
       const rebuilt = new FieldPath(a.parts.map((p) => new FieldKey(p.value)));
       expect(rebuilt.equals(a)).toBe(true);
       if (a.length > 0) {
+        // eslint-disable-next-line jest/no-conditional-expect
         expect(a.at(0)?.value).toBe(a.parts[0]!.value);
       }
     }
