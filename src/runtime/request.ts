@@ -35,6 +35,41 @@ export type CallCreator<TReq, TRes> = (
 ) => ClientUnaryCall;
 
 const RESET_MASK_HEADER = 'x-resetmask';
+const IDEMPOTENCY_HEADER = 'x-idempotency-key';
+
+function shouldUseIdempotencyKey(methodName?: string): boolean {
+  if (!methodName) return false;
+  const m = methodName.toLowerCase();
+  // Non-mutating methods that should NOT add idempotency keys
+  if (m === 'get' || m === 'getbyname' || m === 'list' || m === 'listoperationsbyparent') return false;
+  // For all other unary methods, add it (Create/Update/Delete/Start/Stop/etc.)
+  return true;
+}
+
+function generateIdempotencyKey(): string {
+  try {
+    // Prefer crypto.randomUUID if available (RFC 4122 v4)
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const crypto = require('crypto') as typeof import('crypto');
+    if (typeof (crypto as any).randomUUID === 'function') {
+      return (crypto as any).randomUUID();
+    }
+    // Fallback to randomBytes and format as UUID v4
+    const bytes: Buffer = (crypto as any).randomBytes(16);
+    // Set version (4) and variant (10xx)
+    bytes[6] = (bytes[6] & 0x0f) | 0x40;
+    bytes[8] = (bytes[8] & 0x3f) | 0x80;
+    const hex = bytes.toString('hex');
+    return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+  } catch {
+    // Last-resort non-crypto fallback with correct UUIDv4 shape
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+      const r = (Math.random() * 16) | 0;
+      const v = c === 'x' ? r : (r & 0x3) | 0x8;
+      return v.toString(16);
+    });
+  }
+}
 
 export class Request<TReq, TRes, TOut = TRes> {
   // Promises
@@ -72,6 +107,10 @@ export class Request<TReq, TRes, TOut = TRes> {
     const maxRetries = Math.max(0, options?.RetryCount ?? 0);
     const perRetry = options?.PerRetryTimeout;
 
+    // Generate idempotency key once per logical request and reuse across retries
+    const useIdemp = shouldUseIdempotencyKey(methodName);
+    const idempotencyKey = useIdemp ? generateIdempotencyKey() : undefined;
+
     // Start the request flow with retry
     this.result = new Promise<TOut>((resolve, reject) => {
       const runAttempt = (attempt: number) => {
@@ -97,6 +136,15 @@ export class Request<TReq, TRes, TOut = TRes> {
               const rm = resetMaskFromMessage(reqToSend);
               if (rm) md.set(RESET_MASK_HEADER, rm.marshal());
             } catch { /* ignore */ }
+          }
+        }
+
+        // Ensure idempotency key header (same across retries)
+        if (useIdemp && idempotencyKey) {
+          if (!md) md = new Metadata();
+          const existing = md.get(IDEMPOTENCY_HEADER);
+          if (!existing || existing.length === 0) {
+            md.set(IDEMPOTENCY_HEADER, idempotencyKey);
           }
         }
 

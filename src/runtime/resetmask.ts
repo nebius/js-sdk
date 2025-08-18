@@ -61,16 +61,20 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
       if (value.length === 0) {
         resetMask.fieldParts.set(key, fieldMask);
       } else {
-        // If elements are messages, use Any branch and recurse into inner mask
-        const innerMask = fieldMask.any || new Mask();
-        fieldMask.any = innerMask;
-        resetMask.fieldParts.set(key, fieldMask);
-        for (let i = 0; i < value.length; i++) {
-          const el = value[i];
-          if (el && typeof el === 'object') {
-            rmFromObjectRecursive(innerMask, el, recursion);
+        // Add wildcard only if elements look like messages (objects)
+        const hasObjectElement = value.some((el) => el && typeof el === 'object' && !Array.isArray(el));
+        if (hasObjectElement) {
+          const innerMask = fieldMask.any || new Mask();
+          fieldMask.any = innerMask;
+          resetMask.fieldParts.set(key, fieldMask);
+          for (let i = 0; i < value.length; i++) {
+            const el = value[i];
+            if (el && typeof el === 'object' && !Array.isArray(el)) {
+              rmFromObjectRecursive(innerMask, el, recursion);
+            }
           }
         }
+        // If it's a list of scalars, do not mark
       }
       continue;
     }
@@ -94,11 +98,15 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
             rmFromObjectRecursive(innerMask, v, recursion);
           }
         } else {
+          // Not a map-of-messages; treat as nested message if plain-object, otherwise scalar-like
           rmFromObjectRecursive(fieldMask, value, recursion);
-          resetMask.fieldParts.set(key, fieldMask);
+          // Only set if something was added under fieldMask
+          if (!fieldMask.isEmpty()) {
+            resetMask.fieldParts.set(key, fieldMask);
+          }
         }
       } else {
-        // Non-plain objects: treat as non-default only if default scalar check matches
+        // Non-plain objects: if default-like, mark; else leave unmarked
         if (isDefaultScalar(value)) {
           resetMask.fieldParts.set(key, fieldMask);
         }

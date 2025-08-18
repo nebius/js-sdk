@@ -8,7 +8,6 @@ import type { Provider as AuthorizationProvider } from './runtime/authorization/
 import type { RetryOptions, UnaryCall } from './runtime/request';
 import { ProfileService as ProfileServiceClient } from './generated/nebius/iam/v1/profile_service.sdk';
 import { GetProfileRequest, type GetProfileResponse } from './generated/nebius/iam/v1/profile_service';
-// New imports for credential normalization
 import type { Bearer as TokenBearer, Token as AccessToken } from './runtime/token';
 import { StaticBearer } from './runtime/token/static';
 import { FileBearer } from './runtime/token/file';
@@ -16,6 +15,7 @@ import { ServiceAccount as SA, type Reader as SAReader } from './runtime/service
 import { ServiceAccountBearer } from './runtime/token/service_account';
 import { FederationAccountBearer } from './runtime/token/federation_account';
 import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token';
+import { VERSION } from './generated/version';
 
 export interface SDKInterface {
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string;
@@ -82,8 +82,16 @@ export interface SDKOptions {
   federationInvitationWriter?: (s: string) => void;
   federationInvitationNoBrowserOpen?: boolean;
   federationInvitationTimeoutMs?: number;
+  userAgentPrefix?: string; // Optional user agent prefix for requests
   // Per-service overrides (by gRPC service name)
   perService?: Record<string, {
+    credentials?: ChannelCredentials;
+    insecure?: boolean;
+    clientOptions?: Partial<ClientOptions>;
+    interceptors?: Interceptor[];
+  }>;
+  // New: Per-address overrides (by fully resolved address like "compute.localhost:1234")
+  perAddress?: Record<string, {
     credentials?: ChannelCredentials;
     insecure?: boolean;
     clientOptions?: Partial<ClientOptions>;
@@ -99,7 +107,10 @@ export class SDK implements SDKInterface {
   private _clientOptions?: Partial<ClientOptions>;
   private _extraInterceptors: Interceptor[] = [];
   private _perService: Map<string, { credentials?: ChannelCredentials; insecure?: boolean; clientOptions?: Partial<ClientOptions>; interceptors?: Interceptor[] } > = new Map();
+  private _perAddress: Map<string, { credentials?: ChannelCredentials; insecure?: boolean; clientOptions?: Partial<ClientOptions>; interceptors?: Interceptor[] } > = new Map();
+  private _serviceLastAddress: Map<string, string> = new Map();
   private _systemOrCustomRoots?: Buffer | string | string[];
+  private _userAgent: string;
 
   constructor(options?: SDKOptions) {
     // Resolve domain
@@ -150,6 +161,16 @@ export class SDK implements SDKInterface {
     if (options?.perService) {
       for (const [svc, cfg] of Object.entries(options.perService)) this._perService.set(svc, { ...cfg });
     }
+    // Per-address overrides
+    if (options?.perAddress) {
+      for (const [addr, cfg] of Object.entries(options.perAddress)) this._perAddress.set(addr, { ...cfg });
+    }
+
+    let userAgent = 'nebius-nodejs-sdk/' + VERSION;
+    if (options?.userAgentPrefix) {
+      userAgent = `${options.userAgentPrefix} ${userAgent}`;
+    }
+    this._userAgent = userAgent;
 
     // Initialize authorization provider based on provided credentials or config
     this._initAuthorization(options);
@@ -281,7 +302,9 @@ export class SDK implements SDKInterface {
   }
 
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string {
-    return this._resolver.resolve(serviceName, apiServiceName);
+    const addr = this._resolver.resolve(serviceName, apiServiceName);
+    this._serviceLastAddress.set(serviceName, addr);
+    return addr;
   }
 
   // Expose TLS roots for non-gRPC HTTP calls (e.g., federation flows)
@@ -289,15 +312,28 @@ export class SDK implements SDKInterface {
     return this._systemOrCustomRoots;
   }
 
+  private _getAddressConfig(serviceName: string): { credentials?: ChannelCredentials; insecure?: boolean; clientOptions?: Partial<ClientOptions>; interceptors?: Interceptor[] } | undefined {
+    const addr = this._serviceLastAddress.get(serviceName);
+    if (!addr) return undefined;
+    return this._perAddress.get(addr);
+  }
+
   getCredentials(serviceName: string): ChannelCredentials {
+    const addrCfg = this._getAddressConfig(serviceName);
+    if (addrCfg?.credentials) return addrCfg.credentials;
+    if (addrCfg?.insecure != null) return addrCfg.insecure ? credentials.createInsecure() : (this._systemOrCustomRoots ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots) as any) : credentials.createSsl());
+
     const svc = this._perService.get(serviceName);
     if (svc?.credentials) return svc.credentials;
-    if (svc?.insecure != null) return svc.insecure ? credentials.createInsecure() : (Array.isArray(this._systemOrCustomRoots) || typeof this._systemOrCustomRoots === 'string' ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots) as Buffer) : (this._systemOrCustomRoots ? credentials.createSsl(this._systemOrCustomRoots) : credentials.createSsl()));
-    return Array.isArray(this._systemOrCustomRoots) || typeof this._systemOrCustomRoots === 'string' ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots) as Buffer) : (this._systemOrCustomRoots ? credentials.createSsl(this._systemOrCustomRoots) : credentials.createSsl());
+    if (svc?.insecure != null) return svc.insecure ? credentials.createInsecure() : (this._systemOrCustomRoots ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots) as any) : credentials.createSsl());
+
+    // Default to the credentials constructed at SDK initialization (respects global insecure flag)
+    return this._creds;
   }
 
   getOptions(serviceName: string): Partial<ClientOptions> | undefined {
     const svc = this._perService.get(serviceName);
+    const addrCfg = this._getAddressConfig(serviceName);
 
     const authInt = this._authorizationProvider
       ? createAuthorizationInterceptor(this._authorizationProvider)
@@ -306,15 +342,37 @@ export class SDK implements SDKInterface {
     const combinedInts = [
       ...(this._extraInterceptors || []),
       ...((svc?.interceptors ?? []) as Interceptor[]),
+      ...((addrCfg?.interceptors ?? []) as Interceptor[]),
       ...(authInt ? [authInt] : []),
     ];
     const hasInts = combinedInts.length > 0;
 
-    return {
+    // Compose user-agent strings similar to Python test expectations
+    const primaryParts: string[] = [];
+    const secondaryParts: string[] = [];
+    const collect = (opts?: Partial<ClientOptions>) => {
+      const anyOpts = opts as any;
+      const p = anyOpts?.['grpc.primary_user_agent'];
+      const s = anyOpts?.['grpc.secondary_user_agent'];
+      if (typeof p === 'string' && p.trim() !== '') primaryParts.push(p.trim());
+      if (typeof s === 'string' && s.trim() !== '') secondaryParts.push(s.trim());
+    };
+    collect(this._clientOptions);
+    collect(svc?.clientOptions);
+    collect(addrCfg?.clientOptions);
+
+    const primaryUA = (primaryParts.length > 0 ? primaryParts.join(' ') + ' ' : '') + this._userAgent;
+    const ret: any = {
       ...(this._clientOptions || {}),
       ...(svc?.clientOptions || {}),
+      ...(addrCfg?.clientOptions || {}),
       ...(hasInts ? { interceptors: combinedInts } : {}),
-    } as Partial<ClientOptions>;
+      'grpc.primary_user_agent': primaryUA,
+    };
+    if (secondaryParts.length > 0) {
+      ret['grpc.secondary_user_agent'] = secondaryParts.join(' ');
+    }
+    return ret as Partial<ClientOptions>;
   }
 
   parentId(): string | undefined {

@@ -1,12 +1,12 @@
 {
-  "name": "@nebius/tssdk",
+  "name": "@nebius/nodejs-sdk",
   "version": "0.1.0",
-  "description": "Nebius AI SDK for TypeScript",
+  "description": "Nebius AI SDK for NodeJS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nebius/tssdk.git"
+    "url": "https://github.com/nebius/nodejs-sdk.git"
   },
   "keywords": [
     "nebius",
@@ -21,7 +21,8 @@
   "scripts": {
     "build:scripts": "tsc -p tsconfig.scripts.json && chmod +x dist-scripts/protoc-gen-nebius-ts-sdk.js",
     "build": "npm run generate && tsc",
-    "generate": "rimraf src/generated && npm run build:scripts && buf generate nebius-api",
+    "generate": "rimraf src/generated && npm run build:scripts && buf generate nebius-api && npm run generate:version",
+    "generate:version": "node dist-scripts/version-gen.js",
     "indexgen": "node -r ts-node/register scripts/gen-indexes.ts",
     "test": "jest --maxWorkers=8",
     "test:watch": "jest --watch",

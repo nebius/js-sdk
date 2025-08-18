@@ -89,7 +89,7 @@ describe('Mask marshal/parse', () => {
     const m = new Mask();
     m.addPath(['a','b']).addPath(['c']).addPath(['weird.key','*' as any]);
     const s = m.marshal();
-    // Order is stable and segments marshaled properly
-    expect(s).toBe('a.b,c,"weird.key".*');
+    // Order is locale-independent sorted; go-compatible output with parentheses when needed
+    expect(s).toBe('"weird.key".*,a.b,c');
   });
 });
