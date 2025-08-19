@@ -6,8 +6,10 @@ plugins:
   - esModuleInterop=true
   - forceLong=long
   - useOptionals=messages
-  - useDate=false
+  - useDate=true
   - oneof=unions
+  - outputTypeAnnotations=true
+  - outputTypeRegistry=true
   - exportCommonSymbols=false
   - outputServices=grpc-js
   - outputClientImpl=grpc-web

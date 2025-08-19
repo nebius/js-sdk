@@ -1,6 +1,7 @@
 import { Server, ServerCredentials, credentials } from '@grpc/grpc-js';
 import Long from 'long';
 
+import { ResourceMetadata } from '../generated/nebius/common/v1/metadata';
 import { Disk } from '../generated/nebius/compute/v1/disk';
 import { DiskServiceService, DiskServiceClient, ListDisksRequest, ListDisksResponse, DiskServiceServer } from '../generated/nebius/compute/v1/disk_service';
 
@@ -24,18 +25,30 @@ describe('DiskService gRPC mock', () => {
         list: (call, callback) => {
           const req: ListDisksRequest = call.request;
           const items: Disk[] = [
-            {
-              metadata: { id: 'disk-1', parentId: req.parentId, name: 'disk-one', resourceVersion: Long.ZERO, labels: {} },
+            Disk.create({
+              metadata: ResourceMetadata.create({
+                id: 'disk-1',
+                parentId: req.parentId,
+                name: 'disk-one',
+                resourceVersion: Long.ZERO,
+                labels: {}
+              }),
               spec: undefined,
               status: undefined,
-            },
-            {
-              metadata: { id: 'disk-2', parentId: req.parentId, name: 'disk-two', resourceVersion: Long.ZERO, labels: {} },
+            }),
+            Disk.create({
+              metadata: ResourceMetadata.create({
+                id: 'disk-2',
+                parentId: req.parentId,
+                name: 'disk-two',
+                resourceVersion: Long.ZERO,
+                labels: {}
+              }),
               spec: undefined,
               status: undefined,
-            },
+            }),
           ];
-          const res: ListDisksResponse = { items, nextPageToken: '' };
+          const res = ListDisksResponse.create({ items, nextPageToken: '' });
           callback(null, res);
         },
         // Stub other methods (not used in this test)
@@ -53,7 +66,12 @@ describe('DiskService gRPC mock', () => {
     const client = new DiskServiceClient(address, credentials.createInsecure());
 
     const response = await new Promise<ListDisksResponse>((resolve, reject) => {
-      client.list({ parentId: 'folders/123', pageSize: Long.fromInt(10), pageToken: '', filter: '' }, (err, res) => {
+      client.list(ListDisksRequest.create({
+        parentId: 'folders/123',
+        pageSize: Long.fromInt(10),
+        pageToken: '',
+        filter: ''
+      }), (err, res) => {
         if (err) return reject(err);
         resolve(res);
       });

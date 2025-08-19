@@ -161,11 +161,11 @@ export class Request<TReq, TRes, TOut = TRes> {
               return;
             }
             // Resolve status even on error
-            const st = decodeStatusFromError(err) ?? {
+            const st = decodeStatusFromError(err) ?? GrpcStatus.create({
               code: err.code ?? StatusCode.UNKNOWN,
               message: err.message ?? String(err),
               details: [],
-            };
+            });
             this._resolveStatus(st);
             reject(wrapped);
             return;
@@ -279,7 +279,7 @@ function decodeStatusFromStatusEvent(s: {
   details?: string;
   metadata?: Metadata
 } | undefined): GrpcStatus {
-  if (!s) return { code: StatusCode.UNKNOWN, message: '', details: [] };
+  if (!s) return GrpcStatus.create({ code: StatusCode.UNKNOWN, message: '', details: [] });
   try {
     const bin = s.metadata?.get('grpc-status-details-bin');
     if (bin && bin.length > 0) {
@@ -288,7 +288,7 @@ function decodeStatusFromStatusEvent(s: {
       if (bytes) return GrpcStatus.decode(bytes);
     }
   } catch { /* ignore */ }
-  return { code: (s.code ?? StatusCode.UNKNOWN) as number, message: s.details ?? '', details: [] };
+  return GrpcStatus.create({ code: (s.code ?? StatusCode.UNKNOWN) as number, message: s.details ?? '', details: [] });
 }
 
 // Inject parentId based on method name and sdk-provided profileParentId

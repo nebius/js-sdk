@@ -98,7 +98,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
     expect(bucketId).toBeTruthy();
 
     // Get bucket by ID
-    const getReq: GetBucketRequest = { id: bucketId! };
+    const getReq = GetBucketRequest.create({ id: bucketId! });
     const bucket = await bucketService.Get(getReq).result;
     expect(bucket.metadata?.id).toBe(bucketId);
     expect(bucket.metadata?.name).toBe(bucketName);
@@ -106,19 +106,19 @@ maybe('storage bucket lifecycle (e2e)', async () => {
     expect(bucket.spec?.maxSizeBytes?.toString()).toBe('4096');
 
     // List buckets and find our bucket
-    const listReq: ListBucketsRequest = {
+    const listReq = ListBucketsRequest.create({
       parentId: parentId!,
       pageSize: Long.fromInt(100),
       pageToken: '',
       filter: '',
-    };
+    });
     const listRes = await bucketService.List(listReq).result;
     const found = (listRes.items || []).find((b) => b.metadata?.id === bucketId);
     expect(found).toBeTruthy();
     expect(found!.metadata?.name).toBe(bucketName);
 
     // Delete bucket
-    const delReq: DeleteBucketRequest = { id: bucketId! };
+    const delReq = DeleteBucketRequest.create({ id: bucketId! });
     const delOp = await bucketService.Delete(delReq).result;
     await delOp.wait();
     bucketId = null;
@@ -126,7 +126,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
     // Try cleanup on failure
     if (bucketId) {
       try {
-        const delReq: DeleteBucketRequest = { id: bucketId };
+        const delReq = DeleteBucketRequest.create({ id: bucketId });
         const delOp = await bucketService.Delete(delReq).result;
         await delOp.wait();
       } catch (cleanupErr) {

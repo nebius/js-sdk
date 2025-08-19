@@ -9,6 +9,7 @@ import { InstanceService as InstanceServiceClient } from '../generated/nebius/co
 import { parseFieldMask } from '../runtime/fieldmask';
 import { Basic } from '../runtime/resolver';
 import { SDK } from '../sdk';
+import { ResourceMetadata } from '../generated/nebius/common/v1/metadata';
 
 function startServerWithPort(
   addImpl: (server: Server) => void
@@ -109,9 +110,15 @@ describe('updates and masks — DiskService.Update', () => {
     });
 
     const client = new DiskServiceClient(sdk);
-    const upd: UpdateDiskRequest = {
-      metadata: { id: 'foo-bar', parentId: '', name: '', resourceVersion: Long.ZERO, labels: {} },
-    };
+    const upd: UpdateDiskRequest = UpdateDiskRequest.create({
+      metadata: ResourceMetadata.create({
+        id: 'foo-bar',
+        parentId: '',
+        name: '',
+        resourceVersion: Long.ZERO,
+        labels: {},
+      }),
+    });
     const req = client.Update(upd);
     const ret = await req.result;
     // Returns Operation wrapper

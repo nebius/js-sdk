@@ -1,6 +1,6 @@
 import { Server, ServerCredentials, credentials, status, ServiceError, Metadata } from '@grpc/grpc-js';
 
-import { DiskServiceService, DiskServiceClient, DiskServiceServer } from '../generated/nebius/compute/v1/disk_service';
+import { DiskServiceService, DiskServiceClient, DiskServiceServer, GetDiskRequest } from '../generated/nebius/compute/v1/disk_service';
 
 function startServerWithPort(addImpl: (server: Server) => void): Promise<{ server: Server; address: string }>{
   return new Promise((resolve, reject) => {
@@ -39,10 +39,15 @@ describe('DiskService error propagation', () => {
 
     await expect(
       new Promise((resolve, reject) => {
-        client.get({ id: 'bad' }, new Metadata(), {}, (err, _res) => {
-          if (err) return reject(err);
-          resolve(_res);
-        });
+        client.get(
+          GetDiskRequest.create({ id: 'bad' }),
+          new Metadata(),
+          {},
+          (err, _res) => {
+            if (err) return reject(err);
+            resolve(_res);
+          },
+        );
       })
     ).rejects.toMatchObject({ code: status.INVALID_ARGUMENT });
 
