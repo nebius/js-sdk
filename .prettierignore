@@ -4,5 +4,6 @@ src/generated/
 src/generated_test/
 scripts/generator/protos/
 scripts/generator/nebius/
+scripts/generator/extensions/
 nebius-api/
 *.yaml

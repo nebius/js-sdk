@@ -17,6 +17,7 @@ module.exports = [
       'node_modules/**',
       'scripts/generator/protos/**',
       'scripts/generator/nebius/**',
+      'scripts/generator/extensions/**',
       'nebius-api/**',
     ],
   },
