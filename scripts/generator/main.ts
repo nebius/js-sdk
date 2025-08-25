@@ -6,7 +6,8 @@ import { Field, File, FileSet } from './descriptors';
 import { createResponse, generateIndexContent, pushFile, toIndexFilePath } from './emit';
 // Import Nebius option extensions so Service/Method/etc options are properly augmented when decoding.
 import { decodeRequest, encodeResponse, readAllStdin } from './io';
-import './nebius/index';
+// Import Nebius option extensions (moved original index to extensions during bootstrap prior to regeneration)
+import './extensions/index';
 import {
   CodeGeneratorResponse,
   CodeGeneratorResponse_Feature,
