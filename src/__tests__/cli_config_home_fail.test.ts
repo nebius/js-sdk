@@ -6,7 +6,11 @@ import { Config } from '../runtime/cli_config';
 function withTempHome(tmp: string, fn: () => void) {
   const oldHome = process.env.HOME;
   process.env.HOME = tmp;
-  try { fn(); } finally { process.env.HOME = oldHome; }
+  try {
+    fn();
+  } finally {
+    process.env.HOME = oldHome;
+  }
 }
 
 describe('Config missing file', () => {

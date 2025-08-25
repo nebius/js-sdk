@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
+
 import type { Reader } from './service_account';
 import { ServiceAccount } from './service_account';
 
@@ -23,7 +24,9 @@ function expandHome(p: string): string {
 function validateSubjectCredentials(sc: SubjectCredentials) {
   const type = sc.type ?? '';
   if (type !== '' && type !== 'JWT') {
-    throw new Error(`Invalid service account credentials type: '${type}', only 'JWT' is supported.`);
+    throw new Error(
+      `Invalid service account credentials type: '${type}', only 'JWT' is supported.`,
+    );
   }
   if (sc.alg !== 'RS256') {
     throw new Error(`Invalid service account algorithm: '${sc.alg}', only 'RS256' is supported.`);
@@ -45,7 +48,7 @@ export class CredentialsFileReader implements Reader {
     if (!sc) throw new Error('Missing subject-credentials section');
     validateSubjectCredentials(sc);
     this.sc = sc;
-    this.pem = sc["private-key"];
+    this.pem = sc['private-key'];
   }
 
   read(): ServiceAccount {

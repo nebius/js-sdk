@@ -1,18 +1,23 @@
 import { Server, ServerCredentials, Metadata, status } from '@grpc/grpc-js';
 import Long from 'long';
 
-import { Operation } from '../generated/nebius/common/v1/operation';
-import { DiskServiceService, type DiskServiceServer , UpdateDiskRequest } from '../generated/nebius/compute/v1/disk_service';
-import { DiskService as DiskServiceClient } from '../generated/nebius/compute/v1/disk_service.sdk';
-import { InstanceServiceService, type InstanceServiceServer , UpdateInstanceRequest } from '../generated/nebius/compute/v1/instance_service';
-import { InstanceService as InstanceServiceClient } from '../generated/nebius/compute/v1/instance_service.sdk';
+import { Operation, ResourceMetadata } from '../generated/nebius/common/v1/index';
+import {
+  DiskServiceServiceDescription as DiskServiceService,
+  type DiskServiceServer,
+  UpdateDiskRequest,
+  DiskService as DiskServiceClient,
+  InstanceServiceServiceDescription as InstanceServiceService,
+  type InstanceServiceServer,
+  UpdateInstanceRequest,
+  InstanceService as InstanceServiceClient,
+} from '../generated/nebius/compute/v1/index';
 import { parseFieldMask } from '../runtime/fieldmask';
 import { Basic } from '../runtime/resolver';
 import { SDK } from '../sdk';
-import { ResourceMetadata } from '../generated/nebius/common/v1/metadata';
 
 function startServerWithPort(
-  addImpl: (server: Server) => void
+  addImpl: (server: Server) => void,
 ): Promise<{ server: Server; address: string; port: number }> {
   return new Promise((resolve, reject) => {
     const server = new Server();
@@ -119,7 +124,7 @@ describe('updates and masks — DiskService.Update', () => {
         labels: {},
       }),
     });
-    const req = client.Update(upd);
+    const req = client.update(upd);
     const ret = await req.result;
     // Returns Operation wrapper
     expect(String(ret)).toContain('Operation(');
@@ -194,7 +199,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
       } as any,
     } as any;
 
-    const req = client.Update(upd);
+    const req = client.update(upd);
     const ret = await req.result;
     expect(String(ret)).toContain('Operation(');
 

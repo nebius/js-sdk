@@ -12,9 +12,17 @@ export class PKCE extends String {
 
   get challenge(): string {
     const hash = createHash('sha256').update(this.toString(), 'utf8').digest();
-    return Buffer.from(hash).toString('base64').replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
+    return Buffer.from(hash)
+      .toString('base64')
+      .replace(/=/g, '')
+      .replace(/\+/g, '-')
+      .replace(/\//g, '_');
   }
 
-  get method(): string { return 'S256'; }
-  get verifier(): string { return this.toString(); }
+  get method(): string {
+    return 'S256';
+  }
+  get verifier(): string {
+    return this.toString();
+  }
 }

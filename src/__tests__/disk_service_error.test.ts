@@ -1,8 +1,22 @@
-import { Server, ServerCredentials, credentials, status, ServiceError, Metadata } from '@grpc/grpc-js';
+import {
+  Server,
+  ServerCredentials,
+  credentials,
+  status,
+  ServiceError,
+  Metadata,
+} from '@grpc/grpc-js';
 
-import { DiskServiceService, DiskServiceClient, DiskServiceServer, GetDiskRequest } from '../generated/nebius/compute/v1/disk_service';
+import {
+  DiskServiceServiceDescription as DiskServiceService,
+  DiskServiceBaseClient as DiskServiceClient,
+  DiskServiceServer,
+  GetDiskRequest,
+} from '../generated/nebius/compute/v1/index';
 
-function startServerWithPort(addImpl: (server: Server) => void): Promise<{ server: Server; address: string }>{
+function startServerWithPort(
+  addImpl: (server: Server) => void,
+): Promise<{ server: Server; address: string }> {
   return new Promise((resolve, reject) => {
     const server = new Server();
     addImpl(server);
@@ -30,7 +44,8 @@ describe('DiskService error propagation', () => {
         create: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
         update: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
         delete: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
+        listOperationsByParent: (_call, cb) =>
+          cb(new Error('unimplemented') as any, undefined as any),
       };
       server.addService(DiskServiceService, impl);
     });
@@ -39,16 +54,11 @@ describe('DiskService error propagation', () => {
 
     await expect(
       new Promise((resolve, reject) => {
-        client.get(
-          GetDiskRequest.create({ id: 'bad' }),
-          new Metadata(),
-          {},
-          (err, _res) => {
-            if (err) return reject(err);
-            resolve(_res);
-          },
-        );
-      })
+        client.get(GetDiskRequest.create({ id: 'bad' }), new Metadata(), {}, (err, _res) => {
+          if (err) return reject(err);
+          resolve(_res);
+        });
+      }),
     ).rejects.toMatchObject({ code: status.INVALID_ARGUMENT });
 
     await new Promise<void>((resolve) => server.tryShutdown(() => resolve()));

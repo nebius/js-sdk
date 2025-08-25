@@ -1,6 +1,7 @@
 import { createServer, Server } from 'http';
-import { URL } from 'url';
 import { AddressInfo } from 'net';
+import { URL } from 'url';
+
 import { PKCE } from './pkce';
 
 export class CallbackHandler {
@@ -9,9 +10,16 @@ export class CallbackHandler {
   private _server: Server | null = null;
   private _addr: string | null = null;
 
-  get state(): string { return this._state; }
-  get code(): string | null { return this._code; }
-  get addr(): string { if (!this._addr) throw new Error('not started'); return this._addr; }
+  get state(): string {
+    return this._state;
+  }
+  get code(): string | null {
+    return this._code;
+  }
+  get addr(): string {
+    if (!this._addr) throw new Error('not started');
+    return this._addr;
+  }
 
   async listenAndServe(): Promise<void> {
     if (this._server) return;

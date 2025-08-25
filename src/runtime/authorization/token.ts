@@ -1,5 +1,7 @@
 import type { Metadata } from '@grpc/grpc-js';
+
 import { Bearer, Receiver, Token } from '../token';
+
 import type { Authenticator, Provider, AuthorizationOptions } from './provider';
 
 const HEADER = 'authorization';

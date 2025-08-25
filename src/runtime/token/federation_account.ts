@@ -1,6 +1,7 @@
-import { Bearer, NamedBearer, Receiver } from '../token';
+import { Bearer, Receiver } from '../token';
+
+import { FederationBearer as FederationAuthBearer } from './federation_bearer/index';
 import { AsyncRenewableBearer } from './file_cache/async_renewable_bearer';
-import { FederationBearer as FederationAuthBearer } from './federation_bearer';
 
 export class FederationAccountBearer extends Bearer {
   private _source: AsyncRenewableBearer;
@@ -35,7 +36,7 @@ export class FederationAccountBearer extends Bearer {
       federationId,
       opts?.writer,
       opts?.noBrowserOpen ?? false,
-      (opts?.ca as any) as Buffer | undefined,
+      opts?.ca instanceof Buffer ? opts.ca : undefined,
     );
 
     const renewable = new AsyncRenewableBearer(auth, {

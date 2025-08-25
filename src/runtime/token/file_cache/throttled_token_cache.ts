@@ -1,6 +1,7 @@
-import { Token } from '../../token';
-import { TokenCache } from './token_cache';
 import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
+import { Token } from '../../token';
+
+import { TokenCache } from './token_cache';
 
 export class ThrottledTokenCache {
   private readonly name: string;

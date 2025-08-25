@@ -1,9 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: [
-    'eslint:recommended',
-    '@typescript-eslint/recommended',
-  ],
+  extends: ['eslint:recommended', '@typescript-eslint/recommended'],
   plugins: ['@typescript-eslint'],
   env: {
     node: true,
@@ -18,5 +15,12 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
   },
-  ignorePatterns: ['dist/', 'src/generated/', 'node_modules/'],
+  ignorePatterns: [
+    'dist/',
+    'src/generated/',
+    'node_modules/',
+    'scripts/generator/protos/',
+    'scripts/generator/nebius/',
+    'nebius-api/',
+  ],
 };

@@ -1,11 +1,13 @@
-import { Bearer, Receiver, Token } from '../../token';
-import { ThrottledTokenCache } from './throttled_token_cache';
-import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
 import type { AuthorizationOptions } from '../../authorization/provider';
+import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
+import { Bearer, Receiver, Token } from '../../token';
 import { RenewalError } from '../renewable';
 
+import { ThrottledTokenCache } from './throttled_token_cache';
+
 // Debug helper (toggle or pipe to your logger)
-const dbg = (...args: any[]) => {};
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const dbg = (..._args: any[]) => {};
 
 // A lightweight async renewable bearer using setTimeout for background scheduling
 
@@ -13,9 +15,17 @@ type Waiter = { resolve: (t: Token) => void; reject: (e: unknown) => void };
 
 class AsyncRenewableReceiver extends Receiver {
   private trial = 0;
-  constructor(private readonly parent: AsyncRenewableBearer, private readonly defaultMaxRetries: number = 2) { super(); }
+  constructor(
+    private readonly parent: AsyncRenewableBearer,
+    private readonly defaultMaxRetries: number = 2,
+  ) {
+    super();
+  }
 
-  protected async _fetch(timeoutMs?: number, options?: AuthorizationOptions | undefined): Promise<Token> {
+  protected async _fetch(
+    timeoutMs?: number,
+    options?: AuthorizationOptions | undefined,
+  ): Promise<Token> {
     this.trial += 1;
     dbg('Receiver._fetch', { trial: this.trial, timeoutMs, options });
     return this.parent.fetch(timeoutMs, options);
@@ -25,7 +35,10 @@ class AsyncRenewableReceiver extends Receiver {
     const maxRetries = options?.maxRetries ?? this.defaultMaxRetries;
     const synchronous = Boolean(options?.renewSynchronous);
 
-    if (this.trial >= maxRetries) { dbg('Receiver.canRetry -> false (max retries reached)', { trial: this.trial, maxRetries }); return false; }
+    if (this.trial >= maxRetries) {
+      dbg('Receiver.canRetry -> false (max retries reached)', { trial: this.trial, maxRetries });
+      return false;
+    }
     if (!synchronous) this.parent.requestRenewal();
     dbg('Receiver.canRetry -> true', { trial: this.trial, maxRetries, synchronous });
     return true;
@@ -46,7 +59,10 @@ export class AsyncRenewableBearer extends Bearer {
   private renewAttempt = 0;
 
   // "sync" override for next renewal only
-  private nextSyncOptions: { timeoutMs: number | null; options: AuthorizationOptions | null } | null = null;
+  private nextSyncOptions: {
+    timeoutMs: number | null;
+    options: AuthorizationOptions | null;
+  } | null = null;
 
   // tuning
   private readonly lifetimeSafeFraction: number;
@@ -95,34 +111,52 @@ export class AsyncRenewableBearer extends Bearer {
     this.jitterFraction = Math.min(Math.max(opts?.jitterFraction ?? 0.2, 0), 1);
   }
 
-  get wrapped(): Bearer | undefined { return this.source; }
+  get wrapped(): Bearer | undefined {
+    return this.source;
+  }
 
-  receiver(): Receiver { return new AsyncRenewableReceiver(this, this.maxRetries); }
+  receiver(): Receiver {
+    return new AsyncRenewableReceiver(this, this.maxRetries);
+  }
 
   /** Schedules next background renewal. Always de-dupes existing timer. */
   private scheduleNext(ms: number) {
-    if (this.stopped) { dbg('scheduleNext skipped (stopped)'); return; }
+    if (this.stopped) {
+      dbg('scheduleNext skipped (stopped)');
+      return;
+    }
     if (this.refreshTimer) clearTimeout(this.refreshTimer);
 
     const delay = Math.max(0, ms);
     dbg('scheduleNext', { delayMs: delay });
     this.refreshTimer = setTimeout(() => void this.run(), delay);
     // Don't keep Node process alive because of this timer
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (this.refreshTimer as any)?.unref?.();
   }
 
   /** Compute when to renew next, based on token expiration. */
   private computeNextTimeoutMs(tok: Token | null | undefined): number {
-    if (!tok) { dbg('computeNextTimeoutMs: no token -> 0'); return 0; }
+    if (!tok) {
+      dbg('computeNextTimeoutMs: no token -> 0');
+      return 0;
+    }
     const exp = tok.expiration?.getTime();
-    if (!exp) { const v = 10 * 24 * 60 * 60 * 1000; dbg('computeNextTimeoutMs: no expiration ->', v); return v; }
+    if (!exp) {
+      const v = 10 * 24 * 60 * 60 * 1000;
+      dbg('computeNextTimeoutMs: no expiration ->', v);
+      return v;
+    }
     const now = Date.now();
     const remaining = exp - now;
-    if (remaining <= 0) { dbg('computeNextTimeoutMs: already expired -> 0'); return 0; }
+    if (remaining <= 0) {
+      dbg('computeNextTimeoutMs: already expired -> 0');
+      return 0;
+    }
 
     const targetFromNow = Math.max(
       Math.floor(remaining * this.lifetimeSafeFraction),
-      this.safetyMinRemainingMs
+      this.safetyMinRemainingMs,
     );
 
     const result = Math.max(0, remaining - targetFromNow);
@@ -138,13 +172,13 @@ export class AsyncRenewableBearer extends Bearer {
   private drainWaitersWithToken(tok: Token) {
     const ws = this.waiters.splice(0, this.waiters.length);
     dbg('drainWaitersWithToken', { count: ws.length, token: tok });
-    ws.forEach(w => w.resolve(tok));
+    ws.forEach((w) => w.resolve(tok));
   }
 
   private drainWaitersWithError(err: unknown) {
     const ws = this.waiters.splice(0, this.waiters.length);
     dbg('drainWaitersWithError', { count: ws.length, err });
-    ws.forEach(w => w.reject(err));
+    ws.forEach((w) => w.reject(err));
   }
 
   private withJitter(ms: number): number {
@@ -156,18 +190,35 @@ export class AsyncRenewableBearer extends Bearer {
 
   private needRenew(now = Date.now()): boolean {
     const tok = this.cacheToken ?? this.fileCache.getCached();
-    if (!tok) { dbg('needRenew -> true (no token)'); return true; }
-    if (this.renewalRequested) { dbg('needRenew -> true (requested)'); return true; }
+    if (!tok) {
+      dbg('needRenew -> true (no token)');
+      return true;
+    }
+    if (this.renewalRequested) {
+      dbg('needRenew -> true (requested)');
+      return true;
+    }
     const exp = tok.expiration?.getTime();
-    if (!exp) { dbg('needRenew -> false (no expiration)'); return false; }
+    if (!exp) {
+      dbg('needRenew -> false (no expiration)');
+      return false;
+    }
     const remaining = exp - now;
     const res = remaining <= this.safetyMinRemainingMs || tok.isExpired();
-    dbg('needRenew', { remaining, safetyMinRemainingMs: this.safetyMinRemainingMs, isExpired: tok.isExpired(), result: res });
+    dbg('needRenew', {
+      remaining,
+      safetyMinRemainingMs: this.safetyMinRemainingMs,
+      isExpired: tok.isExpired(),
+      result: res,
+    });
     return res;
   }
 
   private async startRenewal(): Promise<Token> {
-    if (this.inFlightRenewal) { dbg('startRenewal: reuse inFlight promise'); return this.inFlightRenewal; }
+    if (this.inFlightRenewal) {
+      dbg('startRenewal: reuse inFlight promise');
+      return this.inFlightRenewal;
+    }
 
     const useSyncOpts = this.nextSyncOptions;
     this.nextSyncOptions = null;
@@ -189,15 +240,17 @@ export class AsyncRenewableBearer extends Bearer {
       return tok;
     };
 
-    const p = doRenew().catch((e) => {
-      this.fresh = false;
-      dbg('startRenewal: error', { error: e });
-      this.drainWaitersWithError(e);
-      throw e;
-    }).finally(() => {
-      this.inFlightRenewal = null;
-      dbg('startRenewal: finished');
-    });
+    const p = doRenew()
+      .catch((e) => {
+        this.fresh = false;
+        dbg('startRenewal: error', { error: e });
+        this.drainWaitersWithError(e);
+        throw e;
+      })
+      .finally(() => {
+        this.inFlightRenewal = null;
+        dbg('startRenewal: finished');
+      });
 
     this.inFlightRenewal = p;
     return p;
@@ -208,7 +261,15 @@ export class AsyncRenewableBearer extends Bearer {
     const renewSynchronous = Boolean(options?.renewSynchronous);
     const reportError = Boolean(options?.reportError);
 
-    dbg('fetch: enter', { timeoutMs, options, renewRequired, renewSynchronous, reportError, fresh: this.fresh, hasToken: Boolean(this.cacheToken) });
+    dbg('fetch: enter', {
+      timeoutMs,
+      options,
+      renewRequired,
+      renewSynchronous,
+      reportError,
+      fresh: this.fresh,
+      hasToken: Boolean(this.cacheToken),
+    });
 
     // Try to use cached token (memory first, then throttled file cache)
     let tok = this.cacheToken ?? this.fileCache.getCached() ?? null;
@@ -239,7 +300,10 @@ export class AsyncRenewableBearer extends Bearer {
     if (mustRenew) {
       if (renewSynchronous) {
         this.nextSyncOptions = {
-          timeoutMs: typeof options?.renewRequestTimeoutMs === 'number' ? options.renewRequestTimeoutMs! : null,
+          timeoutMs:
+            typeof options?.renewRequestTimeoutMs === 'number'
+              ? options.renewRequestTimeoutMs!
+              : null,
           options: options ?? null,
         };
         dbg('fetch: mustRenew (sync)', { nextSyncOptions: this.nextSyncOptions });
@@ -252,10 +316,14 @@ export class AsyncRenewableBearer extends Bearer {
 
       // Synchronous callers or error-reporting callers await the result (with optional timeout)
       if (renewSynchronous || reportError) {
-        const resultP = !timeoutMs ? renewalP : Promise.race<Token>([
-          renewalP,
-          new Promise<Token>((_, reject) => setTimeout(() => reject(new RenewalError('Renewal timeout')), timeoutMs)),
-        ]);
+        const resultP = !timeoutMs
+          ? renewalP
+          : Promise.race<Token>([
+              renewalP,
+              new Promise<Token>((_, reject) =>
+                setTimeout(() => reject(new RenewalError('Renewal timeout')), timeoutMs),
+              ),
+            ]);
         const newTok = await resultP;
         // After a direct synchronous renewal we must schedule the next proactive renewal ourselves
         this.scheduleNext(this.computeNextTimeoutMs(newTok));
@@ -267,15 +335,23 @@ export class AsyncRenewableBearer extends Bearer {
       if (timeoutMs) {
         dbg('fetch: async path waiting for freshness', { timeoutMs });
         await new Promise<void>((resolve, reject) => {
-          const onResolve = (_: Token) => { dbg('fetch: async freshness satisfied'); resolve(); };
-          const onReject = (e: unknown) => { dbg('fetch: async freshness error', { error: e }); reject(e); };
+          const onResolve = (_: Token) => {
+            dbg('fetch: async freshness satisfied');
+            resolve();
+          };
+          const onReject = (e: unknown) => {
+            dbg('fetch: async freshness error', { error: e });
+            reject(e);
+          };
           this.addWaiter(onResolve, onReject);
 
           setTimeout(() => {
             if (this.fresh) {
               resolve();
             } else {
-              const idx = this.waiters.findIndex(w => w.resolve === onResolve && w.reject === onReject);
+              const idx = this.waiters.findIndex(
+                (w) => w.resolve === onResolve && w.reject === onReject,
+              );
               if (idx >= 0) this.waiters.splice(idx, 1);
               dbg('fetch: async freshness timeout');
               reject(new RenewalError('Timeout waiting fresh token'));
@@ -298,10 +374,17 @@ export class AsyncRenewableBearer extends Bearer {
     return current;
   }
 
-  isRenewalRequired(): boolean { const v = this.needRenew(); dbg('isRenewalRequired', { result: v }); return v; }
+  isRenewalRequired(): boolean {
+    const v = this.needRenew();
+    dbg('isRenewalRequired', { result: v });
+    return v;
+  }
 
   requestRenewal(): void {
-    if (this.stopped) { dbg('requestRenewal ignored (stopped)'); return; }
+    if (this.stopped) {
+      dbg('requestRenewal ignored (stopped)');
+      return;
+    }
     this.fresh = false;
     this.renewalRequested = true;
     dbg('requestRenewal -> scheduled');
@@ -310,7 +393,10 @@ export class AsyncRenewableBearer extends Bearer {
 
   /** Background runner: serialize renewals, backoff with jitter, reschedule next. */
   private async run(): Promise<void> {
-    if (this.stopped) { dbg('run: stopped'); return; }
+    if (this.stopped) {
+      dbg('run: stopped');
+      return;
+    }
 
     // If no renewal is required, just reschedule based on current token
     const current = this.cacheToken ?? this.fileCache.getCached() ?? null;
@@ -350,7 +436,10 @@ export class AsyncRenewableBearer extends Bearer {
 
   async close(graceMs?: number | undefined): Promise<void> {
     this.stopped = true;
-    if (this.refreshTimer) { clearTimeout(this.refreshTimer); this.refreshTimer = null; }
+    if (this.refreshTimer) {
+      clearTimeout(this.refreshTimer);
+      this.refreshTimer = null;
+    }
     this.drainWaitersWithError(new RenewalError('Bearer closed'));
     dbg('close', { graceMs });
     await this.source.close(graceMs);

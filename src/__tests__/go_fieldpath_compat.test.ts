@@ -6,8 +6,16 @@ describe('Go FieldPath compatibility', () => {
       { a: new FieldPath(), b: new FieldPath(), r: new FieldPath() },
       { a: FieldPath.from('foo'), b: new FieldPath(), r: FieldPath.from('foo') },
       { a: FieldPath.from('foo', 'bar'), b: new FieldPath(), r: FieldPath.from('foo', 'bar') },
-      { a: FieldPath.from('foo', 'bar'), b: FieldPath.from('baz'), r: FieldPath.from('foo', 'bar', 'baz') },
-      { a: FieldPath.from('foo'), b: FieldPath.from('bar', 'baz'), r: FieldPath.from('foo', 'bar', 'baz') },
+      {
+        a: FieldPath.from('foo', 'bar'),
+        b: FieldPath.from('baz'),
+        r: FieldPath.from('foo', 'bar', 'baz'),
+      },
+      {
+        a: FieldPath.from('foo'),
+        b: FieldPath.from('bar', 'baz'),
+        r: FieldPath.from('foo', 'bar', 'baz'),
+      },
       { a: new FieldPath(), b: FieldPath.from('bar', 'baz'), r: FieldPath.from('bar', 'baz') },
     ];
     for (const c of cases) {
@@ -65,7 +73,8 @@ describe('Go FieldPath compatibility', () => {
     for (const A of paths) {
       for (const B of paths) {
         expect(A.equals(B)).toBe(
-          A.parts.length === B.parts.length && A.parts.every((p, i) => p.value === B.parts[i]!.value)
+          A.parts.length === B.parts.length &&
+            A.parts.every((p, i) => p.value === B.parts[i]!.value),
         );
       }
     }
@@ -89,10 +98,26 @@ describe('Go FieldPath compatibility', () => {
       { a: FieldPath.from('foo'), b: new FieldPath(), res: false },
       { a: FieldPath.from('foo'), b: FieldPath.from('bar'), res: false },
       { a: FieldPath.from('foo', 'baz'), b: FieldPath.from('foo', 'bar'), res: false },
-      { a: FieldPath.from('foo', 'baz', 'abc'), b: FieldPath.from('foo', 'bar', 'abc', 'def'), res: false },
-      { a: FieldPath.from('baz', 'foo'), b: FieldPath.from('bar', 'foo', 'abc', 'def'), res: false },
-      { a: FieldPath.from('baz', 'foo', 'abc'), b: FieldPath.from('bar', 'foo', 'abc', 'def'), res: false },
-      { a: FieldPath.from('bar', 'foo', ''), b: FieldPath.from('bar', 'foo', 'abc', 'def'), res: false },
+      {
+        a: FieldPath.from('foo', 'baz', 'abc'),
+        b: FieldPath.from('foo', 'bar', 'abc', 'def'),
+        res: false,
+      },
+      {
+        a: FieldPath.from('baz', 'foo'),
+        b: FieldPath.from('bar', 'foo', 'abc', 'def'),
+        res: false,
+      },
+      {
+        a: FieldPath.from('baz', 'foo', 'abc'),
+        b: FieldPath.from('bar', 'foo', 'abc', 'def'),
+        res: false,
+      },
+      {
+        a: FieldPath.from('bar', 'foo', ''),
+        b: FieldPath.from('bar', 'foo', 'abc', 'def'),
+        res: false,
+      },
       { a: new FieldPath(), b: FieldPath.from('foo'), res: true },
       { a: FieldPath.from('bar'), b: FieldPath.from('bar', 'foo'), res: true },
       { a: FieldPath.from('bar', 'baz'), b: FieldPath.from('bar', 'baz', 'foo'), res: true },

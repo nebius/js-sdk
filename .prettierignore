@@ -1,0 +1,8 @@
+dist/
+node_modules/
+src/generated/
+src/generated_test/
+scripts/generator/protos/
+scripts/generator/nebius/
+nebius-api/
+*.yaml

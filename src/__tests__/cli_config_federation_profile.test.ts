@@ -7,7 +7,11 @@ import { FederationAccountBearer } from '../runtime/token/federation_account';
 function withTempHome(tmp: string, fn: () => void) {
   const oldHome = process.env.HOME;
   process.env.HOME = tmp;
-  try { fn(); } finally { process.env.HOME = oldHome; }
+  try {
+    fn();
+  } finally {
+    process.env.HOME = oldHome;
+  }
 }
 
 describe('Config federation profile', () => {
@@ -17,7 +21,9 @@ describe('Config federation profile', () => {
 
     withTempHome(tmpDir, () => {
       delete process.env.NEBIUS_IAM_TOKEN;
-      writeFileSync(join(tmpDir, '.nebius', 'config.yaml'), `
+      writeFileSync(
+        join(tmpDir, '.nebius', 'config.yaml'),
+        `
 profiles:
   prod:
     endpoint: my-endpoint.net
@@ -26,7 +32,8 @@ profiles:
     federation-endpoint: https://example.com/fed
     federation-id: my-fed
 default: prod
-`);
+`,
+      );
       const cfg = new Config({ clientId: 'client-123' });
       const cred = cfg.getCredentials({ writer: () => {}, noBrowserOpen: true, timeoutMs: 1000 });
       expect(cred).toBeInstanceOf(FederationAccountBearer);

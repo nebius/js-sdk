@@ -8,7 +8,11 @@ import { EnvBearer } from '../runtime/token/static';
 function withTempHome(tmp: string, fn: () => Promise<void> | void) {
   const oldHome = process.env.HOME;
   process.env.HOME = tmp;
-  try { return fn() as any; } finally { process.env.HOME = oldHome; }
+  try {
+    return fn() as any;
+  } finally {
+    process.env.HOME = oldHome;
+  }
 }
 
 describe('Config env token', () => {
@@ -18,13 +22,16 @@ describe('Config env token', () => {
 
     await withTempHome(tmpDir, async () => {
       process.env.NEBIUS_IAM_TOKEN = 'my-token';
-      writeFileSync(join(tmpDir, '.nebius', 'config.yaml'), `
+      writeFileSync(
+        join(tmpDir, '.nebius', 'config.yaml'),
+        `
 profiles:
   default:
     endpoint: my-endpoint.net
     parent-id: project-e00some-id
 default: default
-`);
+`,
+      );
 
       const cfg = new Config({ clientId: 'foo' });
       const cred = cfg.getCredentials();

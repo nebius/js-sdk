@@ -1,6 +1,8 @@
 import { resetMaskFromMessage } from '../runtime/resetmask';
 
-function msg(v: any) { return v; }
+function msg(v: any) {
+  return v;
+}
 
 describe('resetMaskFromMessage', () => {
   test('null message', () => {

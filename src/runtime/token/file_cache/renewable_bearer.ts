@@ -1,20 +1,27 @@
-import { Bearer, Receiver, Token } from '../../token';
-import { ThrottledTokenCache } from './throttled_token_cache';
-import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
 import type { AuthorizationOptions } from '../../authorization/provider';
+import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
+import { Bearer, Receiver, Token } from '../../token';
 
-// RenewableFileCacheBearer: fetches from cache first; if stale or near expiry, pulls from wrapped bearer and stores back.
+import { ThrottledTokenCache } from './throttled_token_cache';
 
+// RenewableFileCacheBearer: fetches from cache first; if stale or near expiry, pulls from wrapped bearer
+// and stores back.
 class RenewableFileCacheReceiver extends Receiver {
   private receiver?: Receiver;
   private lastSaved?: Token;
   private fromCache = true;
 
-  constructor(private readonly bearer: RenewableFileCacheBearer, private readonly cache: ThrottledTokenCache) {
+  constructor(
+    private readonly bearer: RenewableFileCacheBearer,
+    private readonly cache: ThrottledTokenCache,
+  ) {
     super();
   }
 
-  protected async _fetch(timeoutMs?: number, _options?: AuthorizationOptions | undefined): Promise<Token> {
+  protected async _fetch(
+    timeoutMs?: number,
+    _options?: AuthorizationOptions | undefined,
+  ): Promise<Token> {
     let token: Token | undefined;
     if (this.fromCache) {
       token = await this.cache.get();
@@ -27,11 +34,7 @@ class RenewableFileCacheReceiver extends Receiver {
 
     if (token && !token.isExpired()) {
       const margin = this.bearer.safetyMargin;
-      if (
-        margin == null ||
-        !token.expiration ||
-        token.expiration.getTime() - margin > Date.now()
-      ) {
+      if (margin == null || !token.expiration || token.expiration.getTime() - margin > Date.now()) {
         this.fromCache = true;
         this.lastSaved = token;
         return token;
@@ -79,7 +82,9 @@ export class RenewableFileCacheBearer extends Bearer {
     this._cache = new ThrottledTokenCache(name, cacheFile, throttleMs);
   }
 
-  get wrapped(): Bearer | undefined { return this._wrapped; }
+  get wrapped(): Bearer | undefined {
+    return this._wrapped;
+  }
 
   receiver(): Receiver {
     return new RenewableFileCacheReceiver(this, this._cache);

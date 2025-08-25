@@ -1,16 +1,11 @@
-import type {
-  ClientUnaryCall,
-  ServiceError as GrpcServiceError,
-  CallOptions,
-} from '@grpc/grpc-js';
+import type { ClientUnaryCall, ServiceError as GrpcServiceError, CallOptions } from '@grpc/grpc-js';
 import { Metadata } from '@grpc/grpc-js';
 
-import { Code as StatusCode } from '../generated/google/rpc/code';
-import { Status as GrpcStatus } from '../generated/google/rpc/status';
+import { Code as StatusCode, Status as GrpcStatus } from '../generated/google/rpc/index';
 import {
   ServiceError as NebiusServiceError,
   ServiceError_RetryType,
-} from '../generated/nebius/common/v1/error';
+} from '../generated/nebius/common/v1/index';
 
 // Ensure global error interceptor is installed
 import { NebiusGrpcError } from './error';
@@ -21,7 +16,7 @@ export interface RetryOptions {
   RetryCount?: number;
 }
 
-export const DefaultRetriableCodes: number[] = [
+export const DefaultRetriableCodes: StatusCode[] = [
   StatusCode.RESOURCE_EXHAUSTED,
   StatusCode.UNAVAILABLE,
 ];
@@ -40,7 +35,9 @@ function shouldUseIdempotencyKey(methodName?: string): boolean {
   if (!methodName) return false;
   const m = methodName.toLowerCase();
   // Non-mutating methods that should NOT add idempotency keys
-  if (m === 'get' || m === 'getbyname' || m === 'list' || m === 'listoperationsbyparent') return false;
+  if (m === 'get' || m === 'getbyname' || m === 'list' || m === 'listoperationsbyparent') {
+    return false;
+  }
   // For all other unary methods, add it (Create/Update/Delete/Start/Stop/etc.)
   return true;
 }
@@ -48,7 +45,7 @@ function shouldUseIdempotencyKey(methodName?: string): boolean {
 function generateIdempotencyKey(): string {
   try {
     // Prefer crypto.randomUUID if available (RFC 4122 v4)
-     
+
     const crypto = require('crypto') as typeof import('crypto');
     if (typeof crypto.randomUUID === 'function') {
       return crypto.randomUUID();
@@ -95,7 +92,15 @@ export class Request<TReq, TRes, TOut = TRes> {
     methodName?: string;
     profileParentId?: string;
   }) {
-    const { request, createCall, metadata, options, transformResponse, methodName, profileParentId } = args;
+    const {
+      request,
+      createCall,
+      metadata,
+      options,
+      transformResponse,
+      methodName,
+      profileParentId,
+    } = args;
 
     this.initialMetadata = new Promise<Metadata>((res) => (this._resolveInitialMd = res));
     this.trailingMetadata = new Promise<Metadata>((res) => (this._resolveTrailingMd = res));
@@ -115,13 +120,18 @@ export class Request<TReq, TRes, TOut = TRes> {
       const runAttempt = (attempt: number) => {
         let deadlineOpt: Partial<CallOptions> | undefined = options;
         if (perRetry && perRetry > 0) {
-          deadlineOpt = { ...(options ?? {}), deadline: new Date(Date.now() + perRetry) } as Partial<CallOptions>;
+          deadlineOpt = {
+            ...(options ?? {}),
+            deadline: new Date(Date.now() + perRetry),
+          } as Partial<CallOptions>;
         }
 
         // Possibly inject parentId into request
         try {
           injectParentIdIfNeeded(methodName, profileParentId, request);
-        } catch { /* ignore injection failures */ }
+        } catch {
+          /* ignore injection failures */
+        }
 
         // Ensure reset mask header for update methods if absent
         let md: Metadata | undefined = metadata;
@@ -133,7 +143,9 @@ export class Request<TReq, TRes, TOut = TRes> {
             try {
               const rm = resetMaskFromMessage(request);
               if (rm) md.set(RESET_MASK_HEADER, rm.marshal());
-            } catch { /* ignore */ }
+            } catch {
+              /* ignore */
+            }
           }
         }
 
@@ -161,11 +173,13 @@ export class Request<TReq, TRes, TOut = TRes> {
               return;
             }
             // Resolve status even on error
-            const st = decodeStatusFromError(err) ?? GrpcStatus.create({
-              code: err.code ?? StatusCode.UNKNOWN,
-              message: err.message ?? String(err),
-              details: [],
-            });
+            const st =
+              decodeStatusFromError(err) ??
+              GrpcStatus.create({
+                code: err.code ?? StatusCode.UNKNOWN,
+                message: err.message ?? String(err),
+                details: [],
+              });
             this._resolveStatus(st);
             reject(wrapped);
             return;
@@ -220,11 +234,15 @@ export class Request<TReq, TRes, TOut = TRes> {
     }
 
     // gRPC codes
-    const grpcCode: number | undefined = typeof sysCode === 'number' ? (sysCode as number) : (err?.code as number | undefined);
-    if (grpcCode !== undefined && DefaultRetriableCodes.includes(grpcCode)) return true;
+    const grpcCode: number | undefined =
+      typeof sysCode === 'number' ? (sysCode as number) : (err?.code as number | undefined);
+    if (grpcCode !== undefined && DefaultRetriableCodes.includes(StatusCode.fromNumber(grpcCode))) {
+      return true;
+    }
 
     // Our wrapped NebiusGrpcError may carry serviceErrors with retryType
-    const seList: NebiusServiceError[] | undefined = (err?.serviceErrors as NebiusServiceError[]) || undefined;
+    const seList: NebiusServiceError[] | undefined =
+      (err?.serviceErrors as NebiusServiceError[]) || undefined;
     if (Array.isArray(seList)) {
       for (const se of seList) {
         if (se.retryType === ServiceError_RetryType.CALL) return true;
@@ -266,7 +284,12 @@ function decodeStatusFromError(err: GrpcServiceError): GrpcStatus | undefined {
     const bin = err.metadata?.get('grpc-status-details-bin');
     if (!bin || bin.length === 0) return undefined;
     const first = bin[0];
-    const bytes = first instanceof Buffer ? new Uint8Array(first) : typeof first === 'string' ? Buffer.from(first, 'base64') : undefined;
+    const bytes =
+      first instanceof Buffer
+        ? new Uint8Array(first)
+        : typeof first === 'string'
+          ? Buffer.from(first, 'base64')
+          : undefined;
     if (!bytes) return undefined;
     return GrpcStatus.decode(bytes);
   } catch {
@@ -274,27 +297,46 @@ function decodeStatusFromError(err: GrpcServiceError): GrpcStatus | undefined {
   }
 }
 
-function decodeStatusFromStatusEvent(s: {
-  code?: number;
-  details?: string;
-  metadata?: Metadata
-} | undefined): GrpcStatus {
-  if (!s) return GrpcStatus.create({ code: StatusCode.UNKNOWN, message: '', details: [] });
+function decodeStatusFromStatusEvent(
+  s:
+    | {
+        code?: number;
+        details?: string;
+        metadata?: Metadata;
+      }
+    | undefined,
+): GrpcStatus {
+  if (!s) return GrpcStatus.create({ code: StatusCode.UNKNOWN.code, message: '', details: [] });
   try {
     const bin = s.metadata?.get('grpc-status-details-bin');
     if (bin && bin.length > 0) {
       const first = bin[0];
-      const bytes = first instanceof Buffer ? new Uint8Array(first) : typeof first === 'string' ? Buffer.from(first, 'base64') : undefined;
+      const bytes =
+        first instanceof Buffer
+          ? new Uint8Array(first)
+          : typeof first === 'string'
+            ? Buffer.from(first, 'base64')
+            : undefined;
       if (bytes) return GrpcStatus.decode(bytes);
     }
-  } catch { /* ignore */ }
-  return GrpcStatus.create({ code: (s.code ?? StatusCode.UNKNOWN) as number, message: s.details ?? '', details: [] });
+  } catch {
+    /* ignore */
+  }
+  return GrpcStatus.create({
+    code: (s.code ?? StatusCode.UNKNOWN.code) as number,
+    message: s.details ?? '',
+    details: [],
+  });
 }
 
 // Inject parentId based on method name and sdk-provided profileParentId
 // any is necessary because here we patch all requests duck-style
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function injectParentIdIfNeeded(methodName: string | undefined, profileParentId: string | undefined, req: any) {
+function injectParentIdIfNeeded(
+  methodName: string | undefined,
+  profileParentId: string | undefined,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  req: any,
+) {
   if (!profileParentId || !req || typeof req !== 'object') return;
   const m = (methodName || '').toLowerCase();
   if (m === 'list' || m === 'getbyname') {

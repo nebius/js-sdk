@@ -28,10 +28,13 @@ function parseQuoted(input: string, start: number): { value: string; next: numbe
   while (j < input.length) {
     const ch = input[j]!;
     if (!escaped && ch === '"') break;
-    if (!escaped && ch === '\\') escaped = true; else escaped = false;
+    if (!escaped && ch === '\\') escaped = true;
+    else escaped = false;
     j++;
   }
-  if (j >= input.length || input[j] !== '"') throw new ParseError(`Unterminated string at ${start}`);
+  if (j >= input.length || input[j] !== '"') {
+    throw new ParseError(`Unterminated string at ${start}`);
+  }
   const raw = input.slice(start, j + 1);
   try {
     const v = JSON.parse(raw);
@@ -85,26 +88,28 @@ function parseFactor(s: string, idxRef: { i: number }): Path[] {
     // handle empty group
     if (innerRef.i < s.length && s[innerRef.i] === ')') {
       idxRef.i = innerRef.i + 1;
-      return [ [] ];
+      return [[]];
     }
     const { paths, next } = parseUnion(s, innerRef);
     i = skipWs(s, next);
-    if (i >= s.length || s[i] !== ')') throw new ParseError(`Unclosed left brace at position ${idxRef.i}`);
+    if (i >= s.length || s[i] !== ')') {
+      throw new ParseError(`Unclosed left brace at position ${idxRef.i}`);
+    }
     idxRef.i = i + 1;
-    return paths.length === 0 ? [ [] ] : paths;
+    return paths.length === 0 ? [[]] : paths;
   }
   if (ch === '*') {
     idxRef.i = i + 1;
-    return [ ['*'] ];
+    return [['*']];
   }
   if (ch === '"') {
     const { value, next } = parseQuoted(s, i);
     idxRef.i = next;
-    return [ [ new FieldKey(value).value ] ];
+    return [[new FieldKey(value).value]];
   }
   const { key, next } = parsePlainKey(s, i);
   idxRef.i = next;
-  return [ [ new FieldKey(key).value ] ];
+  return [[new FieldKey(key).value]];
 }
 
 function parsePath(s: string, idxRef: { i: number }): Path[] {
@@ -113,7 +118,7 @@ function parsePath(s: string, idxRef: { i: number }): Path[] {
     let i = skipWs(s, idxRef.i);
     if (i >= s.length || s[i] !== '.') break;
     i = skipWs(s, i + 1);
-    if (i >= s.length || s[i] === ')' || s[i] === ',' ) {
+    if (i >= s.length || s[i] === ')' || s[i] === ',') {
       throw new ParseError(`Unexpected end of path at position ${i}`);
     }
     idxRef.i = i;

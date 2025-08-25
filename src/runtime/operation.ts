@@ -1,34 +1,22 @@
-import { Any } from '../generated/google/protobuf/any';
-import { Timestamp } from '../generated/google/protobuf/timestamp';
-import { Code as StatusCode } from '../generated/google/rpc/code';
-import { Status } from "../generated/google/rpc/status";
+import { Dayjs } from 'dayjs';
+
+import { Code as StatusCode, Status } from '../generated/google/rpc/index';
 import type { SDKInterface } from '../sdk';
 
-interface Operation_requestHeader {
+interface Operation_RequestHeader {
   values: string[];
 }
 
-interface GenericOperation{
+interface GenericOperation {
   id: string;
   description: string;
-  createdAt?:
-    | Timestamp
-    | undefined;
+  createdAt?: Dayjs | undefined;
   createdBy: string;
-  finishedAt?:
-    | Timestamp
-    | undefined;
-  request?:
-    | Any
-    | undefined;
-  requestHeaders: { [key: string]: Operation_requestHeader };
+  finishedAt?: Dayjs | undefined;
+  request?: { typeUrl: string; value: Uint8Array } | undefined;
+  requestHeaders: { [key: string]: Operation_RequestHeader };
   resourceId: string;
-  resource?:
-    | Any
-    | undefined;
-  progressData?:
-    | Any
-    | undefined;
+  progressData?: { typeUrl: string; value: Uint8Array } | undefined;
   status?: Status | undefined;
 }
 
@@ -52,7 +40,7 @@ export class Operation {
     return this._op.description ?? '';
   }
 
-  createdAt(): Timestamp | undefined {
+  createdAt(): Dayjs | undefined {
     return this._op.createdAt;
   }
 
@@ -60,12 +48,12 @@ export class Operation {
     return this._op.createdBy ?? '';
   }
 
-  finishedAt(): Timestamp | undefined {
+  finishedAt(): Dayjs | undefined {
     return this._op.finishedAt;
   }
 
   successful(): boolean {
-    return this._op.status?.code === StatusCode.OK;
+    return this._op.status?.code === StatusCode.OK.code;
   }
 
   raw(): GenericOperation {

@@ -1,7 +1,6 @@
 import { createSign } from 'crypto';
 
-import { ExchangeTokenRequest } from '../../generated/nebius/iam/v1/token_service';
-
+import { ExchangeTokenRequest } from '../../generated/nebius/iam/v1/index';
 
 export interface TokenRequester {
   getExchangeTokenRequest(): ExchangeTokenRequest;

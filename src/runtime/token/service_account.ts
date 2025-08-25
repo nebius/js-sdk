@@ -1,9 +1,10 @@
 import type { SDKInterface } from '../../sdk';
-import { Bearer, NamedBearer, Receiver } from '../token';
-import { RenewableBearer } from './renewable';
-import { ExchangeableBearer } from './exchangeable';
 import type { Reader as ServiceAccountReader } from '../service_account/service_account';
 import { ServiceAccount } from '../service_account/service_account';
+import { Bearer, NamedBearer, Receiver } from '../token';
+
+import { ExchangeableBearer } from './exchangeable';
+import { RenewableBearer } from './renewable';
 
 export class ServiceAccountBearer extends Bearer {
   private _exchangeable: ExchangeableBearer;
@@ -41,17 +42,24 @@ export class ServiceAccountBearer extends Bearer {
       serviceAccount = new ServiceAccount(opts.privateKeyPem, opts.publicKeyId, serviceAccount);
     } else {
       if (opts?.privateKeyPem !== undefined || opts?.publicKeyId !== undefined) {
-        throw new TypeError('privateKeyPem and publicKeyId must not be provided when serviceAccount is ServiceAccount or ServiceAccountReader');
+        throw new TypeError(
+          'privateKeyPem and publicKeyId must not be provided when serviceAccount is ServiceAccount or ServiceAccountReader',
+        );
       }
     }
 
     if (!(serviceAccount instanceof ServiceAccount)) {
-      throw new TypeError(`serviceAccount must be ServiceAccountReader, ServiceAccount or string, got ${typeof serviceAccount}`);
+      throw new TypeError(
+        `serviceAccount must be ServiceAccountReader, ServiceAccount or string, got ${typeof serviceAccount}`,
+      );
     }
 
     if (!reader) {
       // Inline simple reader wrapper
-      reader = { read: () => serviceAccount, getExchangeTokenRequest: () => serviceAccount.getExchangeTokenRequest() } as ServiceAccountReader;
+      reader = {
+        read: () => serviceAccount,
+        getExchangeTokenRequest: () => serviceAccount.getExchangeTokenRequest(),
+      } as ServiceAccountReader;
     }
 
     const saId = serviceAccount.serviceAccountId;
@@ -86,6 +94,12 @@ export class ServiceAccountBearer extends Bearer {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function isServiceAccountReader(x: any): x is ServiceAccountReader {
-  return x && typeof x === 'object' && typeof x.read === 'function' && typeof x.getExchangeTokenRequest === 'function';
+  return (
+    x &&
+    typeof x === 'object' &&
+    typeof x.read === 'function' &&
+    typeof x.getExchangeTokenRequest === 'function'
+  );
 }

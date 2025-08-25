@@ -190,7 +190,7 @@ export class Mask {
   addPath(path: (FieldKey | string | '*')[]): this {
     let cur: Mask = this;
     for (const seg0 of path) {
-      const seg = seg0 === '*' ? '*' : (seg0 instanceof FieldKey ? seg0.value : String(seg0));
+      const seg = seg0 === '*' ? '*' : seg0 instanceof FieldKey ? seg0.value : String(seg0);
       if (seg === '*') {
         if (!cur.any) cur.any = new Mask();
         cur = cur.any;
@@ -223,7 +223,9 @@ export class Mask {
   static parse(source: string): Mask {
     return parseMask(source);
   }
-  static Parse(source: string): Mask { return Mask.parse(source); }
+  static Parse(source: string): Mask {
+    return Mask.parse(source);
+  }
   private marshalRec(recursion: number): { count: number; text: string } {
     if (recursion >= RECURSION_TOO_DEEP) {
       throw new Error('recursion too deep');
@@ -258,8 +260,10 @@ export class Mask {
     return this.marshalRec(0).text;
   }
   toString(): string {
-    try { return `Mask<${this.marshal()}>`; } catch (e) {
-       return `Mask<not-marshalable ${/**/ (e && (e as { message: string }).message) || e}>`;
+    try {
+      return `Mask<${this.marshal()}>`;
+    } catch (e) {
+      return `Mask<not-marshalable ${/**/ (e && (e as { message: string }).message) || e}>`;
     }
   }
   // Intersection and subtraction APIs to match Go implementation
@@ -378,7 +382,7 @@ export class Mask {
   // JSON helpers: build a mask from a JS object/JSON and serialize mask to object/JSON
   static fromObject(obj: unknown): Mask {
     const root = new Mask();
-    const visit = (cur: Mask, val: unknown, path: (string|'*')[]) => {
+    const visit = (cur: Mask, val: unknown, path: (string | '*')[]) => {
       if (val === null || typeof val !== 'object') {
         if (path.length > 0) cur.addPath(path);
         return;

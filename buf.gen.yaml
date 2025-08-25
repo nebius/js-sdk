@@ -1,21 +1,8 @@
 version: v2
 plugins:
-- remote: buf.build/community/stephenh-ts-proto
-  out: src/generated
-  opt:
-  - esModuleInterop=true
-  - forceLong=long
-  - useOptionals=messages
-  - useDate=true
-  - oneof=unions
-  - outputTypeAnnotations=true
-  - outputTypeRegistry=true
-  - exportCommonSymbols=false
-  - outputServices=grpc-js
-  - outputClientImpl=grpc-web
-  - addGrpcMetadata=true
-  - addNestjsRestParameter=false
-  - returnObservable=false
-  - snakeToCamel=true
-- local: ./dist-scripts/protoc-gen-nebius-ts-sdk.js
-  out: src/generated
+  - local: ./dist-scripts/scripts/protoc-gen-nebius-ts.js
+    out: src/generated
+    opt:
+      - outFromSrc=generated
+    strategy: all
+    include_imports: true

@@ -92,7 +92,9 @@ describe('Go Mask compatibility', () => {
     r.fieldParts.set('u', u);
     r.fieldParts.set('v', new Mask());
     m.fieldParts.set('r', r);
-    expect(m.marshal()).toBe('*.*.(a,b,c.*,d.(e,f),g.(*.(h,i),j,k)),l,m,n.*,o.(p,q),r.(*.(s,t),u.*,v)');
+    expect(m.marshal()).toBe(
+      '*.*.(a,b,c.*,d.(e,f),g.(*.(h,i),j,k)),l,m,n.*,o.(p,q),r.(*.(s,t),u.*,v)',
+    );
   });
 
   test('equals and copy', () => {

@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 function main() {
-  const root = path.resolve(__dirname, '..');
+  const root = path.resolve(__dirname, '../..');
   const pkgPath = path.join(root, 'package.json');
   const outDir = path.join(root, 'src', 'generated');
   const outFile = path.join(outDir, 'version.ts');
@@ -17,7 +17,6 @@ function main() {
     `export const VERSION = '${version}';\n`;
 
   fs.writeFileSync(outFile, content);
-  // eslint-disable-next-line no-console
   console.log(`Wrote ${path.relative(root, outFile)} with VERSION=${version}`);
 }
 

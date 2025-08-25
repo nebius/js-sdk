@@ -35,8 +35,13 @@ function isDefaultScalar(v: any): boolean {
       break;
   }
   if (v instanceof Uint8Array) return v.length === 0;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  if (typeof Buffer !== 'undefined' && typeof (Buffer as any).isBuffer === 'function' && (Buffer as any).isBuffer(v)) {
+  if (
+    typeof Buffer !== 'undefined' &&
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    typeof (Buffer as any).isBuffer === 'function' &&
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (Buffer as any).isBuffer(v)
+  ) {
     return (v as Buffer).length === 0;
   }
   return false;
@@ -54,7 +59,7 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
   if (!updObj || typeof updObj !== 'object') return;
 
   for (const [key, value] of Object.entries(updObj)) {
-    let fieldMask = resetMask.fieldParts.get(key) || new Mask();
+    const fieldMask = resetMask.fieldParts.get(key) || new Mask();
 
     // If field is undefined/null => considered reset
     if (value === undefined || value === null) {
@@ -68,7 +73,9 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
         resetMask.fieldParts.set(key, fieldMask);
       } else {
         // Add wildcard only if elements look like messages (objects)
-        const hasObjectElement = value.some((el) => el && typeof el === 'object' && !Array.isArray(el));
+        const hasObjectElement = value.some(
+          (el) => el && typeof el === 'object' && !Array.isArray(el),
+        );
         if (hasObjectElement) {
           const innerMask = fieldMask.any || new Mask();
           fieldMask.any = innerMask;
@@ -97,7 +104,11 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
         const entries = Object.entries(value as Record<string, any>);
         if (entries.length === 0) {
           resetMask.fieldParts.set(key, fieldMask);
-        } else if (entries.every(([, v]) => v && typeof v === 'object' && !Array.isArray(v) && isPlainObject(v))) {
+        } else if (
+          entries.every(
+            ([, v]) => v && typeof v === 'object' && !Array.isArray(v) && isPlainObject(v),
+          )
+        ) {
           const innerMask = fieldMask.any || new Mask();
           fieldMask.any = innerMask;
           resetMask.fieldParts.set(key, fieldMask);

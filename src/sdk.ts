@@ -1,27 +1,39 @@
-import type { ChannelCredentials, ClientOptions, Metadata, CallOptions, Interceptor } from '@grpc/grpc-js';
-import { credentials } from '@grpc/grpc-js';
-import { getSystemRootCAs, normalizeRootCAs } from './runtime/tls/system_certs';
-import { type Resolver, Conventional, Chain, TemplateExpander } from './runtime/resolver';
-import { domain as DEFAULT_DOMAIN } from './runtime/constants';
+import {
+  CallOptions,
+  ChannelCredentials,
+  ClientOptions,
+  Interceptor,
+  Metadata,
+  credentials,
+} from '@grpc/grpc-js';
+
+import {
+  GetProfileRequest,
+  type GetProfileResponse,
+  ProfileService as ProfileServiceClient,
+} from './generated/nebius/iam/v1/index';
+import { VERSION } from './generated/version';
 import { createAuthorizationInterceptor } from './runtime/authorization/interceptor';
 import type { Provider as AuthorizationProvider } from './runtime/authorization/provider';
-import type { RetryOptions, UnaryCall } from './runtime/request';
-import { ProfileService as ProfileServiceClient } from './generated/nebius/iam/v1/profile_service.sdk';
-import { GetProfileRequest, type GetProfileResponse } from './generated/nebius/iam/v1/profile_service';
-import type { Bearer as TokenBearer, Token as AccessToken } from './runtime/token';
-import { StaticBearer } from './runtime/token/static';
-import { FileBearer } from './runtime/token/file';
-import { ServiceAccount as SA, type Reader as SAReader } from './runtime/service_account/service_account';
-import { ServiceAccountBearer } from './runtime/token/service_account';
-import { FederationAccountBearer } from './runtime/token/federation_account';
 import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token';
-import { VERSION } from './generated/version';
+import { domain as DEFAULT_DOMAIN } from './runtime/constants';
+import type { RetryOptions, UnaryCall } from './runtime/request';
+import { Chain, Conventional, type Resolver, TemplateExpander } from './runtime/resolver';
+import {
+  ServiceAccount as SA,
+  type Reader as SAReader,
+} from './runtime/service_account/service_account';
+import { getSystemRootCAs, normalizeRootCAs } from './runtime/tls/system_certs';
+import type { Token as AccessToken, Bearer as TokenBearer } from './runtime/token';
+import { FederationAccountBearer } from './runtime/token/federation_account';
+import { FileBearer } from './runtime/token/file';
+import { ServiceAccountBearer } from './runtime/token/service_account';
+import { StaticBearer } from './runtime/token/static';
 
 export interface SDKInterface {
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string;
   getCredentials(serviceName: string): ChannelCredentials;
   getOptions(serviceName: string): Partial<ClientOptions> | undefined;
-  // New: optional parent id to inject into requests
   parentId(): string | undefined;
 }
 
@@ -30,7 +42,6 @@ export interface ConfigReaderLike {
   endpoint(): string | undefined;
   parentId(): string | undefined;
   // If present, use it to auto-construct credentials similar to Python
-  // eslint-disable-next-line @typescript-eslint/ban-types
   getCredentials?: Function;
 }
 
@@ -84,19 +95,25 @@ export interface SDKOptions {
   federationInvitationTimeoutMs?: number;
   userAgentPrefix?: string; // Optional user agent prefix for requests
   // Per-service overrides (by gRPC service name)
-  perService?: Record<string, {
-    credentials?: ChannelCredentials;
-    insecure?: boolean;
-    clientOptions?: Partial<ClientOptions>;
-    interceptors?: Interceptor[];
-  }>;
+  perService?: Record<
+    string,
+    {
+      credentials?: ChannelCredentials;
+      insecure?: boolean;
+      clientOptions?: Partial<ClientOptions>;
+      interceptors?: Interceptor[];
+    }
+  >;
   // New: Per-address overrides (by fully resolved address like "compute.localhost:1234")
-  perAddress?: Record<string, {
-    credentials?: ChannelCredentials;
-    insecure?: boolean;
-    clientOptions?: Partial<ClientOptions>;
-    interceptors?: Interceptor[];
-  }>;
+  perAddress?: Record<
+    string,
+    {
+      credentials?: ChannelCredentials;
+      insecure?: boolean;
+      clientOptions?: Partial<ClientOptions>;
+      interceptors?: Interceptor[];
+    }
+  >;
 }
 
 export class SDK implements SDKInterface {
@@ -106,8 +123,24 @@ export class SDK implements SDKInterface {
   private _creds: ChannelCredentials;
   private _clientOptions?: Partial<ClientOptions>;
   private _extraInterceptors: Interceptor[] = [];
-  private _perService: Map<string, { credentials?: ChannelCredentials; insecure?: boolean; clientOptions?: Partial<ClientOptions>; interceptors?: Interceptor[] } > = new Map();
-  private _perAddress: Map<string, { credentials?: ChannelCredentials; insecure?: boolean; clientOptions?: Partial<ClientOptions>; interceptors?: Interceptor[] } > = new Map();
+  private _perService: Map<
+    string,
+    {
+      credentials?: ChannelCredentials;
+      insecure?: boolean;
+      clientOptions?: Partial<ClientOptions>;
+      interceptors?: Interceptor[];
+    }
+  > = new Map();
+  private _perAddress: Map<
+    string,
+    {
+      credentials?: ChannelCredentials;
+      insecure?: boolean;
+      clientOptions?: Partial<ClientOptions>;
+      interceptors?: Interceptor[];
+    }
+  > = new Map();
   private _serviceLastAddress: Map<string, string> = new Map();
   private _systemOrCustomRoots?: Buffer | string | string[];
   private _userAgent: string;
@@ -140,7 +173,12 @@ export class SDK implements SDKInterface {
     // Resolve parentId: prefer explicit option, else from configReader; empty strings are treated as undefined
     const fromOpt = options?.parentId?.trim();
     const fromConfig = options?.configReader?.parentId()?.trim();
-    const pid = fromOpt && fromOpt !== '' ? fromOpt : fromConfig && fromConfig !== '' ? fromConfig : undefined;
+    const pid =
+      fromOpt && fromOpt !== ''
+        ? fromOpt
+        : fromConfig && fromConfig !== ''
+          ? fromConfig
+          : undefined;
     this._parentId = pid;
 
     // Transport security (default: secure with system roots). If tlsRootCAs is provided, use that instead.
@@ -159,11 +197,15 @@ export class SDK implements SDKInterface {
 
     // Per-service overrides
     if (options?.perService) {
-      for (const [svc, cfg] of Object.entries(options.perService)) this._perService.set(svc, { ...cfg });
+      for (const [svc, cfg] of Object.entries(options.perService)) {
+        this._perService.set(svc, { ...cfg });
+      }
     }
     // Per-address overrides
     if (options?.perAddress) {
-      for (const [addr, cfg] of Object.entries(options.perAddress)) this._perAddress.set(addr, { ...cfg });
+      for (const [addr, cfg] of Object.entries(options.perAddress)) {
+        this._perAddress.set(addr, { ...cfg });
+      }
     }
 
     let userAgent = 'nebius-nodejs-sdk/' + VERSION;
@@ -185,8 +227,9 @@ export class SDK implements SDKInterface {
       if (prov) this._authorizationProvider = prov;
       // If both provided, ignore explicit provider (closer to Python priority) and optionally warn
       if (options.authorizationProvider) {
-        // eslint-disable-next-line no-console
-        console.warn('[SDK] Both credentials and authorizationProvider provided; ignoring authorizationProvider in favor of credentials.');
+        console.warn(
+          '[SDK] Both credentials and authorizationProvider provided; ignoring authorizationProvider in favor of credentials.',
+        );
       }
       return;
     }
@@ -198,9 +241,8 @@ export class SDK implements SDKInterface {
     }
 
     // Finally: pull from configReader if available
-    const cr: any = options.configReader as any;
-    const hasGet = cr && typeof cr.getCredentials === 'function';
-    if (hasGet) {
+    const cr = options.configReader;
+    if (cr && typeof cr.getCredentials === 'function') {
       try {
         const cred = cr.getCredentials({
           writer: options.federationInvitationWriter,
@@ -226,13 +268,15 @@ export class SDK implements SDKInterface {
     if (this._isBearer(init)) return new TokenAuthProvider(init as TokenBearer);
 
     // Token
-    if (this._isAccessToken(init)) return new TokenAuthProvider(new StaticBearer((init as AccessToken).token));
+    if (this._isAccessToken(init)) {
+      return new TokenAuthProvider(new StaticBearer((init as AccessToken).token));
+    }
 
     // token string
     if (typeof init === 'string') return new TokenAuthProvider(new StaticBearer(init));
 
     // token file
-    if (this._isTokenFile(init)) return new TokenAuthProvider(new FileBearer((init as any).tokenFile));
+    if (this._isTokenFile(init)) return new TokenAuthProvider(new FileBearer(init.tokenFile));
 
     // Federation direct config
     if (this._isFederationInit(init)) {
@@ -243,24 +287,38 @@ export class SDK implements SDKInterface {
           f.clientId,
           f.federationEndpoint,
           f.federationId,
-          { writer: f.writer, noBrowserOpen: !!f.noBrowserOpen, timeoutMs: f.timeoutMs, ca: this._systemOrCustomRoots },
+          {
+            writer: f.writer,
+            noBrowserOpen: !!f.noBrowserOpen,
+            timeoutMs: f.timeoutMs,
+            ca: this._systemOrCustomRoots,
+          },
         ),
       );
     }
 
     // Service account (reader or concrete or raw params)
     if (this._isSAReader(init) || this._isSA(init) || this._isSAParams(init)) {
-      const bearer = this._mkSABearer(init as any);
+      const bearer = this._mkSABearer(init);
       return bearer ? new TokenAuthProvider(bearer) : undefined;
     }
 
     return undefined;
   }
 
-  private _mkSABearer(sa: SA | SAReader | { serviceAccountId: string; publicKeyId: string; privateKeyPem: string }): ServiceAccountBearer | undefined {
+  private _mkSABearer(
+    sa:
+      | SA
+      | SAReader
+      | {
+          serviceAccountId: string;
+          publicKeyId: string;
+          privateKeyPem: string;
+        },
+  ): ServiceAccountBearer | undefined {
     try {
       if (this._isSAReader(sa) || this._isSA(sa)) {
-        return new ServiceAccountBearer(sa as any, { sdk: this });
+        return new ServiceAccountBearer(sa, { sdk: this });
       }
       if (this._isSAParams(sa)) {
         const p = sa as { serviceAccountId: string; publicKeyId: string; privateKeyPem: string };
@@ -276,29 +334,60 @@ export class SDK implements SDKInterface {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private _isAuthProvider(x: any): x is AuthorizationProvider {
     return x && typeof x === 'object' && typeof x.authenticator === 'function';
   }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private _isBearer(x: any): x is TokenBearer {
     return x && typeof x === 'object' && typeof x.receiver === 'function';
   }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private _isAccessToken(x: any): x is AccessToken {
-    return x && typeof x === 'object' && typeof x.token === 'string' && typeof x.toString === 'function';
+    return (
+      x && typeof x === 'object' && typeof x.token === 'string' && typeof x.toString === 'function'
+    );
   }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private _isTokenFile(x: any): x is { tokenFile: string } {
     return x && typeof x === 'object' && typeof x.tokenFile === 'string';
   }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private _isFederationInit(x: any): x is FederationCredentialsOptions {
-    return x && typeof x === 'object' && x.type === 'federation' && typeof x.clientId === 'string' && typeof x.federationEndpoint === 'string' && typeof x.federationId === 'string';
+    return (
+      x &&
+      typeof x === 'object' &&
+      x.type === 'federation' &&
+      typeof x.clientId === 'string' &&
+      typeof x.federationEndpoint === 'string' &&
+      typeof x.federationId === 'string'
+    );
   }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private _isSAReader(x: any): x is SAReader {
-    return x && typeof x === 'object' && typeof x.read === 'function' && typeof x.getExchangeTokenRequest === 'function';
+    return (
+      x &&
+      typeof x === 'object' &&
+      typeof x.read === 'function' &&
+      typeof x.getExchangeTokenRequest === 'function'
+    );
   }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private _isSA(x: any): x is SA {
     return x instanceof SA;
   }
-  private _isSAParams(x: any): x is { serviceAccountId: string; publicKeyId: string; privateKeyPem: string } {
-    return x && typeof x === 'object' && typeof x.serviceAccountId === 'string' && typeof x.publicKeyId === 'string' && typeof x.privateKeyPem === 'string';
+
+  private _isSAParams(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    x: any,
+  ): x is { serviceAccountId: string; publicKeyId: string; privateKeyPem: string } {
+    return (
+      x &&
+      typeof x === 'object' &&
+      typeof x.serviceAccountId === 'string' &&
+      typeof x.publicKeyId === 'string' &&
+      typeof x.privateKeyPem === 'string'
+    );
   }
 
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string {
@@ -312,7 +401,14 @@ export class SDK implements SDKInterface {
     return this._systemOrCustomRoots;
   }
 
-  private _getAddressConfig(serviceName: string): { credentials?: ChannelCredentials; insecure?: boolean; clientOptions?: Partial<ClientOptions>; interceptors?: Interceptor[] } | undefined {
+  private _getAddressConfig(serviceName: string):
+    | {
+        credentials?: ChannelCredentials;
+        insecure?: boolean;
+        clientOptions?: Partial<ClientOptions>;
+        interceptors?: Interceptor[];
+      }
+    | undefined {
     const addr = this._serviceLastAddress.get(serviceName);
     if (!addr) return undefined;
     return this._perAddress.get(addr);
@@ -321,11 +417,23 @@ export class SDK implements SDKInterface {
   getCredentials(serviceName: string): ChannelCredentials {
     const addrCfg = this._getAddressConfig(serviceName);
     if (addrCfg?.credentials) return addrCfg.credentials;
-    if (addrCfg?.insecure != null) return addrCfg.insecure ? credentials.createInsecure() : (this._systemOrCustomRoots ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots) as any) : credentials.createSsl());
+    if (addrCfg?.insecure != null) {
+      return addrCfg.insecure
+        ? credentials.createInsecure()
+        : this._systemOrCustomRoots
+          ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots))
+          : credentials.createSsl();
+    }
 
     const svc = this._perService.get(serviceName);
     if (svc?.credentials) return svc.credentials;
-    if (svc?.insecure != null) return svc.insecure ? credentials.createInsecure() : (this._systemOrCustomRoots ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots) as any) : credentials.createSsl());
+    if (svc?.insecure != null) {
+      return svc.insecure
+        ? credentials.createInsecure()
+        : this._systemOrCustomRoots
+          ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots))
+          : credentials.createSsl();
+    }
 
     // Default to the credentials constructed at SDK initialization (respects global insecure flag)
     return this._creds;
@@ -351,9 +459,8 @@ export class SDK implements SDKInterface {
     const primaryParts: string[] = [];
     const secondaryParts: string[] = [];
     const collect = (opts?: Partial<ClientOptions>) => {
-      const anyOpts = opts as any;
-      const p = anyOpts?.['grpc.primary_user_agent'];
-      const s = anyOpts?.['grpc.secondary_user_agent'];
+      const p = opts?.['grpc.primary_user_agent'];
+      const s = opts?.['grpc.secondary_user_agent'];
       if (typeof p === 'string' && p.trim() !== '') primaryParts.push(p.trim());
       if (typeof s === 'string' && s.trim() !== '') secondaryParts.push(s.trim());
     };
@@ -361,8 +468,9 @@ export class SDK implements SDKInterface {
     collect(svc?.clientOptions);
     collect(addrCfg?.clientOptions);
 
-    const primaryUA = (primaryParts.length > 0 ? primaryParts.join(' ') + ' ' : '') + this._userAgent;
-    const ret: any = {
+    const primaryUA =
+      (primaryParts.length > 0 ? primaryParts.join(' ') + ' ' : '') + this._userAgent;
+    const ret = {
       ...(this._clientOptions || {}),
       ...(svc?.clientOptions || {}),
       ...(addrCfg?.clientOptions || {}),
@@ -399,13 +507,16 @@ export class SDK implements SDKInterface {
   }
 
   // Convenience method similar to Python SDK.whoami()
-  whoami(metadata?: Metadata, options?: Partial<CallOptions> & RetryOptions): UnaryCall<GetProfileResponse> {
+  whoami(
+    metadata?: Metadata,
+    options?: Partial<CallOptions> & RetryOptions,
+  ): UnaryCall<GetProfileResponse> {
     const client = new ProfileServiceClient(this);
-    const req = (GetProfileRequest as any).create ? (GetProfileRequest as any).create({}) : ({} as any);
+    const req = GetProfileRequest.create({});
+    if (!metadata) metadata = new Metadata();
+    if (!options) options = {};
     // Overloads in generated client handle metadata/options combinations
-    if (metadata && options) return client.Get(req, metadata, options);
-    if (metadata && !options) return client.Get(req, metadata);
-    return client.Get(req);
+    return client.get(req, metadata, options);
   }
 
   // Gracefully close any attached authorization providers

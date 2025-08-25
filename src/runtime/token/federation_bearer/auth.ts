@@ -1,11 +1,12 @@
-import { URL } from 'url';
 import { spawn } from 'child_process';
+import type { IncomingMessage } from 'http';
+import { request as httpRequest } from 'http';
+import { request as httpsRequest } from 'https';
+import { URL } from 'url';
+
+import { AUTH_ENDPOINT, TOKEN_ENDPOINT } from './constants';
 import { isWsl } from './is_wsl';
 import { PKCE } from './pkce';
-import { AUTH_ENDPOINT, TOKEN_ENDPOINT } from './constants';
-import type { IncomingMessage } from 'http';
-import { request as httpsRequest } from 'https';
-import { request as httpRequest } from 'http';
 import { CallbackHandler } from './server';
 
 export interface GetTokenResult {
@@ -24,7 +25,10 @@ function httpsUrl(raw: string): string {
 async function openBrowser(url: string): Promise<void> {
   const platform = process.platform;
   if (platform === 'linux' && isWsl()) {
-    spawn('powershell.exe', ['-NoProfile', '-NonInteractive', 'Start', url], { detached: true, stdio: 'ignore' }).unref();
+    spawn('powershell.exe', ['-NoProfile', '-NonInteractive', 'Start', url], {
+      detached: true,
+      stdio: 'ignore',
+    }).unref();
     return;
   }
   if (platform === 'darwin') {
@@ -36,12 +40,18 @@ async function openBrowser(url: string): Promise<void> {
   }
 }
 
-function doHttpRequest(urlStr: string, method: string, headers: Record<string, string>, body?: string, tls?: { ca?: Buffer | string | string[] }): Promise<{ status: number; data: any }>
-{
+function doHttpRequest(
+  urlStr: string,
+  method: string,
+  headers: Record<string, string>,
+  body?: string,
+  tls?: { ca?: Buffer | string | string[] },
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+): Promise<{ status: number; data: any }> {
   return new Promise((resolve, reject) => {
     const u = new URL(urlStr);
     const isHttps = u.protocol === 'https:';
-    const opts: any = {
+    const opts = {
       protocol: u.protocol,
       hostname: u.hostname,
       port: u.port || (isHttps ? 443 : 80),
@@ -56,11 +66,13 @@ function doHttpRequest(urlStr: string, method: string, headers: Record<string, s
       res.on('data', (c: Buffer) => chunks.push(c));
       res.on('end', () => {
         const text = Buffer.concat(chunks).toString('utf8');
+        let data;
         try {
-          resolve({ status: res.statusCode || 0, data: JSON.parse(text) });
+          data = JSON.parse(text);
         } catch {
-          resolve({ status: res.statusCode || 0, data: text });
+          data = text;
         }
+        resolve({ status: res.statusCode || 0, data });
       });
     });
     req.on('error', reject);
@@ -76,8 +88,7 @@ export async function getCode(params: {
   writer?: (s: string) => void;
   noBrowserOpen?: boolean;
   timeoutMs?: number;
-}): Promise<{ code: string; state: string; redirectUri: string; verifier: string }>
-{
+}): Promise<{ code: string; state: string; redirectUri: string; verifier: string }> {
   const { clientId, authEndpoint, federationId, writer, noBrowserOpen, timeoutMs } = params;
   const pkce = new PKCE();
   const cb = new CallbackHandler();
@@ -89,11 +100,14 @@ export async function getCode(params: {
   const base = new URL(AUTH_ENDPOINT, httpsUrl(authEndpoint));
   base.searchParams.set('response_type', 'code');
   base.searchParams.set('client_id', clientId);
+  base.searchParams.set('scope', 'openid');
   base.searchParams.set('redirect_uri', redirectUri);
-  base.searchParams.set('federation_id', federationId);
   base.searchParams.set('code_challenge', pkce.challenge);
   base.searchParams.set('code_challenge_method', pkce.method);
   base.searchParams.set('state', cb.state);
+  if (federationId && federationId.length > 0) {
+    base.searchParams.set('federation-id', federationId);
+  }
 
   const url = base.toString();
   const write = writer ?? ((s: string) => console.log(s));
@@ -113,8 +127,7 @@ export async function getToken(params: {
   redirectUri: string;
   verifier: string;
   ca?: Buffer | string | string[];
-}): Promise<GetTokenResult>
-{
+}): Promise<GetTokenResult> {
   const { clientId, tokenEndpoint, code, redirectUri, verifier, ca } = params;
   const url = new URL(TOKEN_ENDPOINT, httpsUrl(tokenEndpoint)).toString();
   const body = new URLSearchParams({
@@ -124,12 +137,20 @@ export async function getToken(params: {
     redirect_uri: String(redirectUri),
     code_verifier: String(verifier),
   }).toString();
-  const res = await doHttpRequest(url, 'POST', {
-    'content-type': 'application/x-www-form-urlencoded',
-    'accept': 'application/json',
-  }, body, { ca });
+  const res = await doHttpRequest(
+    url,
+    'POST',
+    {
+      'content-type': 'application/x-www-form-urlencoded',
+      accept: 'application/json',
+    },
+    body,
+    { ca },
+  );
   if (res.status < 200 || res.status >= 300) {
-    throw new Error(`token endpoint error: status=${res.status}, body=${typeof res.data === 'string' ? res.data : JSON.stringify(res.data)}`);
+    throw new Error(
+      `token endpoint error: status=${res.status}, body=${typeof res.data === 'string' ? res.data : JSON.stringify(res.data)}`,
+    );
   }
   return res.data as GetTokenResult;
 }
@@ -142,10 +163,24 @@ export async function authorize(params: {
   noBrowserOpen?: boolean;
   timeoutMs?: number;
   ca?: Buffer | string | string[];
-}): Promise<GetTokenResult>
-{
-  const { clientId, federationEndpoint, federationId, writer, noBrowserOpen, timeoutMs, ca } = params;
-  const { code, redirectUri, verifier } = await getCode({ clientId, authEndpoint: federationEndpoint, federationId, writer, noBrowserOpen, timeoutMs });
-  const res = await getToken({ clientId, tokenEndpoint: federationEndpoint, code, redirectUri, verifier, ca });
+}): Promise<GetTokenResult> {
+  const { clientId, federationEndpoint, federationId, writer, noBrowserOpen, timeoutMs, ca } =
+    params;
+  const { code, redirectUri, verifier } = await getCode({
+    clientId,
+    authEndpoint: federationEndpoint,
+    federationId,
+    writer,
+    noBrowserOpen,
+    timeoutMs,
+  });
+  const res = await getToken({
+    clientId,
+    tokenEndpoint: federationEndpoint,
+    code,
+    redirectUri,
+    verifier,
+    ca,
+  });
   return res;
 }

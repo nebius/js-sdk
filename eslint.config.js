@@ -10,7 +10,16 @@ const jestPlugin = require('eslint-plugin-jest');
 
 module.exports = [
   // Ignore build artifacts and generated code
-  { ignores: ['dist/**', 'src/generated/**', 'node_modules/**'] },
+  {
+    ignores: [
+      'dist/**',
+      'src/generated/**',
+      'node_modules/**',
+      'scripts/generator/protos/**',
+      'scripts/generator/nebius/**',
+      'nebius-api/**',
+    ],
+  },
 
   // TypeScript files
   {
@@ -32,7 +41,7 @@ module.exports = [
       // Let eslint-plugin-import resolve TS paths via tsconfig
       'import/resolver': {
         typescript: {
-          project: ['./tsconfig.json'],
+          project: ['./tsconfig.json', './tsconfig.scripts.json'],
         },
       },
       // Extensions to consider for Node resolution (used by eslint-plugin-n)
@@ -46,16 +55,23 @@ module.exports = [
       promise: promisePlugin,
       n: nPlugin,
       jest: jestPlugin,
+      // prettier formatting handled by Prettier directly; eslint-plugin-prettier removed to avoid conflicts
     },
     rules: {
       // Ignore unused caught error variables in try/catch, allow underscore-args
-      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', caughtErrors: 'none' }],
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        { argsIgnorePattern: '^_', caughtErrors: 'none' },
+      ],
       '@typescript-eslint/explicit-function-return-type': 'off',
       // Keep as a warning by default; will be disabled in specific folders below
       '@typescript-eslint/no-explicit-any': 'warn',
 
       // Approximate "lll" (long line linter)
-      'max-len': ['warn', { code: 120, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
+      'max-len': [
+        'warn',
+        { code: 120, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true },
+      ],
 
       // import hygiene
       'import/no-unresolved': 'error',
@@ -85,6 +101,17 @@ module.exports = [
       'jest/no-disabled-tests': 'warn',
       'jest/no-focused-tests': 'error',
       'jest/no-identical-title': 'error',
+
+      // stylistic / consistency
+      'prefer-const': 'warn',
+      'no-var': 'error',
+      'object-shorthand': 'warn',
+      'arrow-body-style': ['warn', 'as-needed'],
+      'prefer-arrow-callback': 'warn',
+      'spaced-comment': ['warn', 'always', { markers: ['/'], exceptions: ['-'] }],
+      curly: ['warn', 'multi-line'],
+
+      // Prettier runs separately; keep ESLint focused on semantic/style rules only
     },
   },
 

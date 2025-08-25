@@ -3,20 +3,25 @@
  * Buf/protoc plugin that emits TypeScript SDK wrappers (.sdk.ts) for ts-proto grpc-js clients.
  * It reads CodeGeneratorRequest from stdin and writes CodeGeneratorResponse to stdout.
  */
-import * as path from 'path';
 import * as fs from 'fs';
+import * as path from 'path';
+
+import Long from 'long';
+
 import {
   CodeGeneratorRequest,
   CodeGeneratorResponse,
   CodeGeneratorResponse_Feature,
   CodeGeneratorResponse_File,
-  FileDescriptorProto,
+} from './generator/protos/protobuf/compiler/index';
+import {
   DescriptorProto,
-  ServiceDescriptorProto,
-  MethodDescriptorProto,
-  UninterpretedOption,
+  FileDescriptorProto,
   GeneratedCodeInfo,
-} from 'ts-proto-descriptors';
+  MethodDescriptorProto,
+  ServiceDescriptorProto,
+  UninterpretedOption,
+} from './generator/protos/protobuf/index';
 
 function readAllStdin(): Promise<Uint8Array> {
   return new Promise((resolve) => {
@@ -27,7 +32,10 @@ function readAllStdin(): Promise<Uint8Array> {
 }
 
 // Maps of fully qualified type name -> defining file and TS type name
-interface TypeInfo { fileName: string; tsName: string }
+interface TypeInfo {
+  fileName: string;
+  tsName: string;
+}
 
 function buildTypeIndex(files: readonly FileDescriptorProto[]): Map<string, TypeInfo> {
   const index = new Map<string, TypeInfo>();
@@ -52,7 +60,7 @@ function relImportPath(fromFileName: string, toModuleBase: string): string {
   // fromFileName and to path are both under 'src/generated/...'
   const fromDir = path.posix.dirname(fromFileName);
   // Ensure paths are posix
-  let rel = path.posix.relative(fromDir, path.posix.join('src/generated', toModuleBase));
+  let rel = path.posix.relative(fromDir, path.posix.join('src/generated_test/1', toModuleBase));
   if (!rel.startsWith('.')) rel = './' + rel;
   return rel;
 }
@@ -67,15 +75,21 @@ function apiServiceNameFromUninterpreted(opts?: UninterpretedOption[]): string |
   for (const o of opts) {
     const name = o.name ?? [];
     // Find any extension name part that looks like api_service_name, with or without package prefix
-    const ext = name.find((p) => p.isExtension && (p.namePart === 'api_service_name' || p.namePart.includes('api_service_name')));
+    const ext = name.find(
+      (p) =>
+        p.isExtension === true &&
+        (p.namePart === 'api_service_name' || (p.namePart ?? '').includes('api_service_name')),
+    );
     if (!ext) continue;
     // Prefer stringValue (for string-typed options). Fall back to identifierValue if present.
-    const sv = (o as any).stringValue as Uint8Array | string | undefined;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const sv = (o as unknown as any).stringValue as Uint8Array | string | undefined;
     if (sv !== undefined) {
       if (typeof sv === 'string') return sv;
       if (sv && sv.length > 0) return Buffer.from(sv).toString('utf8');
     }
-    const idv = (o as any).identifierValue as string | undefined;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const idv = (o as unknown as any).identifierValue as string | undefined;
     if (idv && idv.length > 0) return idv;
   }
   return undefined;
@@ -129,7 +143,7 @@ function buildWrapperContent(
   typeIndex: Map<string, TypeInfo>,
   outFileName: string,
 ): string {
-  const pkg = fd.package || '';
+  // const pkg = fd.package || '';
   const serviceBaseName = sd.name!;
   const clientName = `${serviceBaseName}Client`;
   const moduleBase = toModuleBase(fd.name!); // nebius/.../<file base>
@@ -182,7 +196,9 @@ function buildWrapperContent(
   imports.push(`import type { SDKInterface } from '${sdkRel}';`);
   imports.push(`import { wrapUnaryCall, type UnaryCall, type RetryOptions } from '${reqRel}';`);
   imports.push(`import { Metadata, type CallOptions } from '@grpc/grpc-js';`);
-  if (needsOperationWrapper) imports.push(`import { Operation as OperationWrapper } from '${opRel}';`);
+  if (needsOperationWrapper) {
+    imports.push(`import { Operation as OperationWrapper } from '${opRel}';`);
+  }
   imports.push(...foreignImports);
   imports.push(`import type * as M from '${localMsgModuleImport}';`);
   imports.push(`import { ${clientName} as GeneratedClient } from '${serviceModuleImport}';`);
@@ -192,8 +208,18 @@ function buildWrapperContent(
   let iface = `export interface ${serviceBaseName} {\n`;
   for (const m of methods) {
     const wrapOp = !!isOperationFullName(m.outFull);
-    const Req = (m.inInfo && m.inInfo.fileName === localProto) ? `M.${m.inInfo.tsName}` : (m.inInfo ? m.inInfo.tsName : 'any');
-    const ResBase = (m.outInfo && m.outInfo.fileName === localProto) ? `M.${m.outInfo.tsName}` : (m.outInfo ? m.outInfo.tsName : 'any');
+    const Req =
+      m.inInfo && m.inInfo.fileName === localProto
+        ? `M.${m.inInfo.tsName}`
+        : m.inInfo
+          ? m.inInfo.tsName
+          : 'any';
+    const ResBase =
+      m.outInfo && m.outInfo.fileName === localProto
+        ? `M.${m.outInfo.tsName}`
+        : m.outInfo
+          ? m.outInfo.tsName
+          : 'any';
     const Res = wrapOp ? 'OperationWrapper' : ResBase;
     iface += `  ${m.name}(request: ${Req}): UnaryCall<${Res}>;\n`;
     iface += `  ${m.name}(request: ${Req}, metadata: Metadata): UnaryCall<${Res}>;\n`;
@@ -202,7 +228,9 @@ function buildWrapperContent(
   iface += `}\n\n`;
 
   // Class
-  const apiName = apiServiceNameFromUninterpreted(sd.options?.uninterpretedOption) ?? apiServiceNameFromSource(fd.name!, sd.name!);
+  const apiName =
+    apiServiceNameFromUninterpreted(sd.options?.uninterpretedOption) ??
+    apiServiceNameFromSource(fd.name!, sd.name!);
   let cls = `export class ${serviceBaseName} implements ${serviceBaseName} {\n`;
   cls += `  private inner: any;\n`;
   cls += `  private addr: string;\n`;
@@ -217,8 +245,18 @@ function buildWrapperContent(
 
   for (const m of methods) {
     const wrapOp = !!isOperationFullName(m.outFull);
-    const Req = (m.inInfo && m.inInfo.fileName === localProto) ? `M.${m.inInfo.tsName}` : (m.inInfo ? m.inInfo.tsName : 'any');
-    const ResBase = (m.outInfo && m.outInfo.fileName === localProto) ? `M.${m.outInfo.tsName}` : (m.outInfo ? m.outInfo.tsName : 'any');
+    const Req =
+      m.inInfo && m.inInfo.fileName === localProto
+        ? `M.${m.inInfo.tsName}`
+        : m.inInfo
+          ? m.inInfo.tsName
+          : 'any';
+    const ResBase =
+      m.outInfo && m.outInfo.fileName === localProto
+        ? `M.${m.outInfo.tsName}`
+        : m.outInfo
+          ? m.outInfo.tsName
+          : 'any';
     const retT = wrapOp ? 'UnaryCall<OperationWrapper>' : `UnaryCall<${ResBase}>`;
     const lower = m.name.charAt(0).toLowerCase() + m.name.slice(1);
     // overloads
@@ -269,20 +307,28 @@ function buildWrapperContent(
 }
 
 function makeResponse(): CodeGeneratorResponse {
-  return {
+  return CodeGeneratorResponse.fromPartial({
+    $type: 'google.protobuf.compiler.CodeGeneratorResponse',
     error: '',
     file: [],
-    supportedFeatures: CodeGeneratorResponse_Feature.FEATURE_PROTO3_OPTIONAL,
-  };
+    supportedFeatures: Long.fromValue(
+      CodeGeneratorResponse_Feature.FEATURE_PROTO3_OPTIONAL.toNumber(),
+    ),
+    minimumEdition: 0,
+    maximumEdition: 0,
+  });
 }
 
 function makeFile(name: string, content: string): CodeGeneratorResponse_File {
-  return {
+  return CodeGeneratorResponse_File.fromPartial({
+    $type: 'google.protobuf.compiler.CodeGeneratorResponse.File',
     name,
     insertionPoint: '',
     content,
-    generatedCodeInfo: GeneratedCodeInfo.fromPartial({ annotation: [] }),
-  };
+    generatedCodeInfo: GeneratedCodeInfo.fromPartial({
+      annotation: [],
+    }),
+  });
 }
 
 async function main(): Promise<void> {
@@ -300,9 +346,11 @@ async function main(): Promise<void> {
     if (!filesToGen.has(fd.name!)) continue;
     for (const sd of fd.service ?? []) {
       const moduleBase = toModuleBase(fd.name!); // nebius/.../<file base>
-      const serviceModuleBase = moduleBase.endsWith('_service') ? moduleBase : `${moduleBase}_service`;
+      const serviceModuleBase = moduleBase.endsWith('_service')
+        ? moduleBase
+        : `${moduleBase}_service`;
       // Use full path for computing imports
-      const outFullPath = path.posix.join('src/generated', `${serviceModuleBase}.sdk.ts`);
+      const outFullPath = path.posix.join('src/generated_test/1', `${serviceModuleBase}.sdk.ts`);
       const content = buildWrapperContent(fd, sd, typeIndex, outFullPath);
       // But return file name relative to plugin out dir
       const outName = `${serviceModuleBase}.sdk.ts`;
@@ -315,7 +363,6 @@ async function main(): Promise<void> {
 }
 
 main().catch((e) => {
-  // eslint-disable-next-line no-console
   console.error(e?.stack || String(e));
-  process.exit(1);
+  process.exitCode = 1;
 });

@@ -1,10 +1,12 @@
 import type { ServiceError as GrpcServiceError, Metadata } from '@grpc/grpc-js';
 import { Client } from '@grpc/grpc-js';
 
-import { Any } from '../generated/google/protobuf/any';
-import { Code as StatusCode } from '../generated/google/rpc/code';
-import { Status as GrpcStatus } from '../generated/google/rpc/status';
-import { ServiceError as NebiusServiceError } from '../generated/nebius/common/v1/error';
+import { Code as StatusCode, Status as GrpcStatus } from '../generated/google/rpc/index';
+import {
+  InternalError,
+  ServiceError as NebiusServiceError,
+} from '../generated/nebius/common/v1/index';
+import type { AnyShape } from '../runtime/protos/any';
 
 // Helper: get first string value from metadata by key
 function mdGetString(md: Metadata | undefined, key: string): string | undefined {
@@ -23,7 +25,12 @@ function decodeStatusFromError(err: GrpcServiceError): GrpcStatus | undefined {
     const bin = err.metadata?.get('grpc-status-details-bin');
     if (!bin || bin.length === 0) return undefined;
     const first = bin[0];
-    const bytes = first instanceof Buffer ? new Uint8Array(first) : typeof first === 'string' ? Buffer.from(first, 'base64') : undefined;
+    const bytes =
+      first instanceof Buffer
+        ? new Uint8Array(first)
+        : typeof first === 'string'
+          ? Buffer.from(first, 'base64')
+          : undefined;
     if (!bytes) return undefined;
     return GrpcStatus.decode(bytes);
   } catch {
@@ -36,10 +43,17 @@ function extractNebiusServiceErrors(status: GrpcStatus | undefined): NebiusServi
   if (!status?.details?.length) return [];
   const out: NebiusServiceError[] = [];
   for (const d of status.details) {
-    const typeUrl = (d as Any).typeUrl || '';
-    if (typeUrl.endsWith('/nebius.common.v1.ServiceError') || typeUrl === 'nebius.common.v1.ServiceError' || typeUrl.includes('nebius.common.v1.ServiceError')) {
+    const anyMsg = d as unknown as AnyShape;
+    const typeUrl = anyMsg?.typeUrl || '';
+    if (
+      typeUrl.endsWith('/nebius.common.v1.ServiceError') ||
+      typeUrl === 'nebius.common.v1.ServiceError' ||
+      typeUrl.includes('nebius.common.v1.ServiceError') ||
+      typeUrl.endsWith('/nebius.common.error.v1alpha1.ServiceError') ||
+      typeUrl.includes('nebius.common.error.v1alpha1.ServiceError')
+    ) {
       try {
-        out.push(NebiusServiceError.decode((d as Any).value));
+        out.push(NebiusServiceError.decode(anyMsg.value));
       } catch {
         // ignore decode failures
       }
@@ -50,24 +64,33 @@ function extractNebiusServiceErrors(status: GrpcStatus | undefined): NebiusServi
 
 function codeName(code: number | undefined): string {
   if (code === undefined || code === null) return 'UNKNOWN';
-  const name = (StatusCode as any)[code];
-  return typeof name === 'string' ? name : String(code);
+  try {
+    const inst = StatusCode.fromNumber(code);
+    if (inst && typeof inst.name === 'string') return inst.name;
+  } catch {
+    // fallthrough
+  }
+  return String(code);
 }
 
 function toStrServiceError(err: NebiusServiceError): string {
   const parts: string[] = [];
   parts.push('Error ' + (err.code || ''));
   parts.push(' in service ' + (err.service || ''));
-  const d = err.details as any;
+  const d = err.details;
   if (d && d.$case) {
     switch (d.$case) {
       case 'badRequest': {
-        const items = (d.badRequest?.violations || []).map((v: any) => `${v.field} - ${v.message};`).join(' ');
+        const items = (d.badRequest?.violations || [])
+          .map((v) => `${v.field} - ${v.message};`)
+          .join(' ');
         parts.push(` bad request, violations: ${items}`);
         break;
       }
       case 'badResourceState': {
-        parts.push(` bad resource ${d.badResourceState?.resourceId} state: ${d.badResourceState?.message}`);
+        parts.push(
+          ` bad resource ${d.badResourceState?.resourceId} state: ${d.badResourceState?.message}`,
+        );
         break;
       }
       case 'resourceNotFound': {
@@ -87,11 +110,15 @@ function toStrServiceError(err: NebiusServiceError): string {
         break;
       }
       case 'resourceConflict': {
-        parts.push(` resource conflict for ${d.resourceConflict?.resourceId}: ${d.resourceConflict?.message}`);
+        parts.push(
+          ` resource conflict for ${d.resourceConflict?.resourceId}: ${d.resourceConflict?.message}`,
+        );
         break;
       }
       case 'operationAborted': {
-        parts.push(` operation ${d.operationAborted?.operationId} over resource ${d.operationAborted?.resourceId} aborted by newer operation ${d.operationAborted?.abortedByOperationId}`);
+        parts.push(
+          ` operation ${d.operationAborted?.operationId} over resource ${d.operationAborted?.resourceId} aborted by newer operation ${d.operationAborted?.abortedByOperationId}`,
+        );
         break;
       }
       case 'tooManyRequests': {
@@ -99,17 +126,23 @@ function toStrServiceError(err: NebiusServiceError): string {
         break;
       }
       case 'quotaFailure': {
-        const items = (d.quotaFailure?.violations || []).map((q: any) => `${q.quota} ${q.requested} of ${q.limit}: ${q.message};`).join(' ');
+        const items = (d.quotaFailure?.violations || [])
+          .map((q) => `${q.quota} ${q.requested} of ${q.limit}: ${q.message};`)
+          .join(' ');
         parts.push(` quota failure, violations: ${items}`);
         break;
       }
       case 'notEnoughResources': {
-        const items = (d.notEnoughResources?.violations || []).map((r: any) => `${r.resourceType} requested ${r.requested}: ${r.message};`).join(' ');
+        const items = (d.notEnoughResources?.violations || [])
+          .map((r) => `${r.resourceType} requested ${r.requested}: ${r.message};`)
+          .join(' ');
         parts.push(` not enough resources: ${items}`);
         break;
       }
       case 'internalError': {
-        parts.push(` internal service error: request ID: ${d.internalError?.requestId} trace ID: ${d.internalError?.traceId}`);
+        parts.push(
+          ` internal service error: request ID: ${d.internalError?.requestId} trace ID: ${d.internalError?.traceId}`,
+        );
         break;
       }
     }
@@ -131,13 +164,13 @@ export class NebiusGrpcError extends Error implements GrpcServiceError {
     status?: GrpcStatus,
     serviceErrors: NebiusServiceError[] = [],
     requestId?: string,
-    traceId?: string
+    traceId?: string,
   ) {
     const msg = NebiusGrpcError.buildMessage(base, status, serviceErrors, requestId, traceId);
     super(msg);
     this.name = 'NebiusGrpcError';
     this.code = base.code as number;
-    this.details = (base as any).details ?? status?.message ?? base.message ?? '';
+    this.details = base.details ?? status?.message ?? base.message ?? '';
     this.metadata = base.metadata;
     this.requestId = requestId || '';
     this.traceId = traceId || '';
@@ -150,11 +183,11 @@ export class NebiusGrpcError extends Error implements GrpcServiceError {
     status?: GrpcStatus,
     serviceErrors: NebiusServiceError[] = [],
     requestId?: string,
-    traceId?: string
+    traceId?: string,
   ): string {
     const parts: string[] = [];
     parts.push(codeName(base.code as number));
-    const msg = (status?.message || (base as any).details || base.message || '').trim();
+    const msg = (status?.message || base.details || base.message || '').trim();
     if (msg) {
       parts.push(': ' + msg);
     }
@@ -187,30 +220,47 @@ export class NebiusGrpcError extends Error implements GrpcServiceError {
 
 // Install global unary interceptor once
 (function installUnaryInterceptor() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const proto: any = (Client as any).prototype;
   if (proto.__nebiusUnaryPatched) return;
   const original = proto.makeUnaryRequest;
   if (typeof original !== 'function') return;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   proto.makeUnaryRequest = function patchedMakeUnaryRequest(this: any, ...args: any[]) {
     // Find the callback (last arg)
     const cbIndex = args.length - 1;
     const cb = args[cbIndex];
     if (typeof cb === 'function') {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       args[cbIndex] = (err: GrpcServiceError | null, response: any, ...rest: any[]) => {
         if (err) {
           try {
             const status = decodeStatusFromError(err);
             const serviceErrors = extractNebiusServiceErrors(status);
-            const md = (err as any).metadata as Metadata | undefined;
-            const reqId = mdGetString(md, 'x-request-id') || (serviceErrors.find(se => (se.details as any)?.$case === 'internalError')?.details as any)?.internalError?.requestId || '';
-            const traceId = mdGetString(md, 'x-trace-id') || (serviceErrors.find(se => (se.details as any)?.$case === 'internalError')?.details as any)?.internalError?.traceId || '';
+            const md = err.metadata;
+            const reqId =
+              mdGetString(md, 'x-request-id') ||
+              (
+                serviceErrors.find((se) => se.details?.$case === 'internalError')?.details as {
+                  internalError: InternalError;
+                }
+              )?.internalError?.requestId ||
+              '';
+            const traceId =
+              mdGetString(md, 'x-trace-id') ||
+              (
+                serviceErrors.find((se) => se.details?.$case === 'internalError')?.details as {
+                  internalError: InternalError;
+                }
+              )?.internalError?.traceId ||
+              '';
             const wrapped = new NebiusGrpcError(err, status, serviceErrors, reqId, traceId);
-            return cb(wrapped as any, response, ...rest);
+            return cb(wrapped, response, ...rest);
           } catch {
             // fall through on failure to wrap
           }
         }
-        return cb(err as any, response, ...rest);
+        return cb(err, response, ...rest);
       };
     }
     return original.apply(this, args);
