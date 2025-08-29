@@ -247,11 +247,22 @@ export function printService(
       lines.push(
         `      const opClient = new OperationServiceBaseClient(this.addr, this.sdk.getCredentials(this.$type), this.sdk.getOptions(this.$type));`,
       );
-      lines.push(`      const getOpFn = (id: string) => new Promise<any>((resolve, reject) => {`);
       lines.push(
-        `        opClient.get({ id } as any, new Metadata(), {}, (e: any, r: any) => e ? reject(e) : resolve(r));`,
+        `      const getOpFn = (id: string, metadata?: Metadata | undefined, options?: (Partial<CallOptions> & RetryOptions) | undefined) => {`,
       );
-      lines.push(`      });`);
+      lines.push(`        const req = { id } as any;`);
+      lines.push(
+        `        const createCall = (r: any, md: Metadata | undefined, opt: Partial<CallOptions> | undefined, cb: any) => {`,
+      );
+      lines.push(`          const metadata = md ?? new Metadata();`);
+      lines.push(`          const options = opt ?? {};`);
+      lines.push(`          return opClient.get(r, metadata, options, cb);`);
+      lines.push(`        };`);
+      lines.push(
+        `        // Use wrapUnaryCall so Operation get requests benefit from retry/idempotency/profileParentId behavior
+        return wrapUnaryCall({ request: req, metadata: metadata, options: options, createCall, methodName: "Get" }).result as Promise<any>;`,
+      );
+      lines.push(`      };`);
       lines.push(
         `      return new OperationWrapper(this.sdk, ${JSON.stringify((pkg ? `${pkg}.` : '') + pbSvcName + '.' + m.pb_name)}, resp, getOpFn);`,
       );

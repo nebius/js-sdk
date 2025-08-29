@@ -288,8 +288,8 @@ function buildWrapperContent(
       cls += `      const opServiceName: string = (opCtor && opCtor.serviceName) || 'OperationService';\n`;
       cls += `      const opAddr = this.addr;\n`;
       cls += `      const opClient = new (OperationServiceClient as any)(opAddr, this.sdk.getCredentials(serviceName), this.sdk.getOptions(serviceName));\n`;
-      cls += `      const getOpFn = (id: string) => new Promise<any>((resolve, reject) => {\n`;
-      cls += `        opClient.get({ id } as any, (e: any, r: any) => e ? reject(e) : resolve(r));\n`;
+      cls += `      const getOpFn = (id: string, x: any, y: any) => new Promise<any>((resolve, reject) => {\n`;
+      cls += `        opClient.get({ id } as any, x, y, (e: any, r: any) => e ? reject(e) : resolve(r));\n`;
       cls += `      });\n`;
       cls += `      const sourceMethod = serviceName + '.' + ${JSON.stringify(m.name)};\n`;
       cls += `      const { Operation } = require('${path.posix.join(relToSrc(outFileName), 'runtime', 'operation')}');\n`;

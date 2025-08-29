@@ -1,7 +1,7 @@
-import type { ClientUnaryCall, ServiceError as GrpcServiceError, CallOptions } from '@grpc/grpc-js';
+import type { CallOptions, ClientUnaryCall, ServiceError as GrpcServiceError } from '@grpc/grpc-js';
 import { Metadata } from '@grpc/grpc-js';
 
-import { Code as StatusCode, Status as GrpcStatus } from '../generated/google/rpc/index';
+import { Status as GrpcStatus, Code as StatusCode } from '../generated/google/rpc/index';
 import {
   ServiceError as NebiusServiceError,
   ServiceError_RetryType,
@@ -102,14 +102,25 @@ export class Request<TReq, TRes, TOut = TRes> {
       profileParentId,
     } = args;
 
+    // Normalize numeric overall deadline (absolute ms since epoch) into a Date
+    // and work on a shallow copy so we don't mutate caller's object.
+    const baseOptions: (Partial<CallOptions> & RetryOptions) | undefined = options
+      ? { ...(options as Partial<CallOptions> & RetryOptions) }
+      : undefined;
+    if (baseOptions?.deadline !== undefined && typeof baseOptions.deadline === 'number') {
+      baseOptions.deadline = new Date(
+        baseOptions.deadline as number,
+      ) as unknown as CallOptions['deadline'];
+    }
+
     this.initialMetadata = new Promise<Metadata>((res) => (this._resolveInitialMd = res));
     this.trailingMetadata = new Promise<Metadata>((res) => (this._resolveTrailingMd = res));
     this.status = new Promise<GrpcStatus>((res) => (this._resolveStatus = res));
     this.requestId = new Promise<string>((res) => (this._resolveReqId = res));
     this.traceId = new Promise<string>((res) => (this._resolveTraceId = res));
 
-    const maxRetries = Math.max(0, options?.RetryCount ?? 0);
-    const perRetry = options?.PerRetryTimeout;
+    const maxRetries = Math.max(0, baseOptions?.RetryCount ?? 0);
+    const perRetry = baseOptions?.PerRetryTimeout;
 
     // Generate idempotency key once per logical request and reuse across retries
     const useIdemp = shouldUseIdempotencyKey(methodName);
@@ -118,11 +129,27 @@ export class Request<TReq, TRes, TOut = TRes> {
     // Start the request flow with retry
     this.result = new Promise<TOut>((resolve, reject) => {
       const runAttempt = (attempt: number) => {
-        let deadlineOpt: Partial<CallOptions> | undefined = options;
+        // Start with the (possibly normalized) base options
+        let deadlineOpt: Partial<CallOptions> | undefined = baseOptions;
         if (perRetry && perRetry > 0) {
+          // Compute a per-retry deadline relative to now, but clip it to the
+          // overall deadline if one was provided and is earlier.
+          let perDeadline = new Date(Date.now() + perRetry);
+          const overall = baseOptions?.deadline;
+          if (overall !== undefined) {
+            const overallMs =
+              overall instanceof Date
+                ? overall.getTime()
+                : typeof overall === 'number'
+                  ? overall
+                  : undefined;
+            if (overallMs !== undefined && perDeadline.getTime() > overallMs) {
+              perDeadline = new Date(overallMs);
+            }
+          }
           deadlineOpt = {
-            ...(options ?? {}),
-            deadline: new Date(Date.now() + perRetry),
+            ...(baseOptions ?? {}),
+            deadline: perDeadline,
           } as Partial<CallOptions>;
         }
 

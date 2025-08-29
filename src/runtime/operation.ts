@@ -1,7 +1,12 @@
+import util from 'node:util';
+
+import { Metadata, type CallOptions } from '@grpc/grpc-js';
 import { Dayjs } from 'dayjs';
 
-import { Code as StatusCode, Status } from '../generated/google/rpc/index';
+import { Status, Code as StatusCode } from '../generated/google/rpc/index';
 import type { SDKInterface } from '../sdk';
+
+import { RetryOptions } from './request';
 
 interface Operation_RequestHeader {
   values: string[];
@@ -25,11 +30,20 @@ export class Operation {
     private readonly sdk: SDKInterface,
     private readonly sourceMethodPath: string,
     private _op: GenericOperation,
-    private readonly getOpFn: (id: string) => Promise<GenericOperation>,
+    // getOpFn now may accept optional Metadata and CallOptions to propagate through
+    private readonly getOpFn: (
+      id: string,
+      metadata?: Metadata | undefined,
+      options?: (Partial<CallOptions> & RetryOptions) | undefined,
+    ) => Promise<GenericOperation>,
   ) {}
 
   toString() {
     return `Operation(${this.id()}, resourceId=${this.resourceId()}, status=${this.status()})`;
+  }
+
+  [util.inspect.custom]() {
+    return this.toString();
   }
 
   id(): string {
@@ -72,11 +86,15 @@ export class Operation {
     return this._op.resourceId;
   }
 
-  async wait(intervalSec: number = 1): Promise<void> {
+  async wait(
+    intervalSec: number = 1,
+    metadata?: Metadata | undefined,
+    options?: (Partial<CallOptions> & RetryOptions) | undefined,
+  ): Promise<void> {
     const id = this.id();
     if (!id) return;
     while (!this.done()) {
-      await this.update();
+      await this.update(metadata, options);
       if (!this.done()) {
         const ms = Math.max(0, intervalSec) * 1000;
         await new Promise<void>((resolve) => setTimeout(resolve, ms));
@@ -84,10 +102,13 @@ export class Operation {
     }
   }
 
-  async update(): Promise<void> {
+  async update(
+    metadata?: Metadata | undefined,
+    options?: (Partial<CallOptions> & RetryOptions) | undefined,
+  ): Promise<void> {
     const id = this.id();
     if (!id) return;
-    const next = await this.getOpFn(id);
+    const next = await this.getOpFn(id, metadata, options);
     this._op = next;
   }
 }
