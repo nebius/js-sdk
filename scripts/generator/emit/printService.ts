@@ -35,7 +35,19 @@ export function printService(
   const apiServiceName = (svc.descriptor as any)?.options?.apiServiceName as string | undefined;
 
   // Service description const and type alias
+  // Add @deprecated JSDoc to the ServiceDescription if the service is deprecated
+  const svcDep = deprecationLine(svc.descriptor);
+  if (svcDep) {
+    lines.push('/**');
+    lines.push(` * @deprecated ${svcDep}`);
+    lines.push(' */');
+  }
   lines.push(`export type ${svcName}ServiceDescription = typeof ${svcName}ServiceDescription;`);
+  if (svcDep) {
+    lines.push('/**');
+    lines.push(` * @deprecated ${svcDep}`);
+    lines.push(' */');
+  }
   lines.push(`export const ${svcName}ServiceDescription = {`);
   for (const m of svc.methods) {
     const methodName = m.tsName;
@@ -59,8 +71,14 @@ export function printService(
   }
   lines.push(`} as const;`);
   lines.push('');
+  // ServiceDescription was just emitted above; keep moving on.
 
   // Server interface
+  if (svcDep) {
+    lines.push('/**');
+    lines.push(` * @deprecated ${svcDep}`);
+    lines.push(' */');
+  }
   lines.push(`export interface ${svcName}Server extends UntypedServiceImplementation {`);
   for (const m of svc.methods) {
     const methodName = m.tsName;
@@ -74,6 +92,11 @@ export function printService(
   lines.push('');
 
   // Base client interface
+  if (svcDep) {
+    lines.push('/**');
+    lines.push(` * @deprecated ${svcDep}`);
+    lines.push(' */');
+  }
   lines.push(`export interface ${svcName}BaseClient extends Client {`);
   for (const m of svc.methods) {
     const methodName = m.tsName;
@@ -89,6 +112,11 @@ export function printService(
   lines.push('');
 
   // Base client constructor
+  if (svcDep) {
+    lines.push('/**');
+    lines.push(` * @deprecated ${svcDep}`);
+    lines.push(' */');
+  }
   lines.push(
     `export const ${svcName}BaseClient = makeGenericClientConstructor(${svcName}ServiceDescription, "${pkg ? `${pkg}.` : ''}${pbSvcName}") as unknown as {`,
   );
@@ -105,8 +133,7 @@ export function printService(
   const svcComment =
     svc.containingFile.getDocComment?.(svc.path) ||
     svc.containingFile.getLeadingComment?.(svc.path);
-  const svcDep = deprecationLine(svc.descriptor);
-  if (svcComment || svcDep) {
+  if (svcComment) {
     const safe = svcComment ? svcComment.replace(/\*\//g, '* /') : undefined;
     lines.push('/**');
     if (safe) for (const l of safe.split(/\r?\n/)) lines.push(` * ${l}`.replace(/\s+$/, ''));
@@ -145,6 +172,11 @@ export function printService(
   lines.push('');
 
   // SDK class (uses BaseClient)
+  if (svcDep) {
+    lines.push('/**');
+    lines.push(` * @deprecated ${svcDep}`);
+    lines.push(' */');
+  }
   lines.push(`export class ${svcName} implements ${svcName} {`);
   lines.push(`  $type: ${JSON.stringify(pbFullSvcName)} = ${JSON.stringify(pbFullSvcName)};`);
   lines.push(`  private inner: ${svcName}BaseClient;`);
@@ -157,6 +189,16 @@ export function printService(
   lines.push(
     `    this.inner = new ${svcName}BaseClient(addr, sdk.getCredentials(this.$type), sdk.getOptions(this.$type));`,
   );
+  // Emit runtime deprecation warning for using this service via the SDK (warn once)
+  if (svcDep) {
+    const fullSvc = pbFullSvcName;
+    lines.push(`    if (!__deprecatedWarned.has(${JSON.stringify(fullSvc)})) {`);
+    lines.push(`      __deprecatedWarned.add(${JSON.stringify(fullSvc)});`);
+    lines.push(
+      `      console.warn(${JSON.stringify('[deprecated] Service ' + fullSvc + ': ')} + ${JSON.stringify(svcDep)});`,
+    );
+    lines.push('    }');
+  }
   lines.push(`  }`);
   lines.push('');
 
@@ -189,6 +231,17 @@ export function printService(
     lines.push(`      const options = opt ?? {};`);
     lines.push(`      return this.inner.${lower}(req, metadata, options, cb);`);
     lines.push(`    };`);
+    // Method-level runtime deprecation warning (warn once)
+    const mDepRuntime = deprecationLine(m.descriptor);
+    if (mDepRuntime) {
+      const fullMethod = `${pbFullSvcName}.${m.pb_name}`;
+      lines.push(`    if (!__deprecatedWarned.has(${JSON.stringify(fullMethod)})) {`);
+      lines.push(`      __deprecatedWarned.add(${JSON.stringify(fullMethod)});`);
+      lines.push(
+        `      console.warn(${JSON.stringify('[deprecated] Method ' + fullMethod + ': ')} + ${JSON.stringify(mDepRuntime)});`,
+      );
+      lines.push('    }');
+    }
     if (wrapOp) {
       lines.push(`    const transformResponse = (resp: any) => {`);
       lines.push(

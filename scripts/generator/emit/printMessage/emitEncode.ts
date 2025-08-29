@@ -1,6 +1,7 @@
 import type { Message as TSDescriptorMessage } from '../../descriptors';
 import {
   defaultValueFor,
+  deprecationLine,
   is64Bit,
   isPackableScalar,
   tagFor,
@@ -15,6 +16,72 @@ export function emitEncode(m: TSDescriptorMessage): string[] {
   lines.push(
     `  encode(message: ${m.tsName}, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {`,
   );
+  // Message-level deprecation warning
+  const msgDep = m.descriptor.options && m.descriptor.options.deprecated ? true : false;
+  const msgDepLine = msgDep ? 'Deprecated message.' : undefined;
+  if (msgDepLine) {
+    const msgFull = m.fullQualifiedName().replace(/^\./, '');
+    lines.push(`    if (!__deprecatedWarned.has(${JSON.stringify(msgFull)})) {`);
+    lines.push(`      __deprecatedWarned.add(${JSON.stringify(msgFull)});`);
+    lines.push(
+      `      console.warn(${JSON.stringify('[deprecated] Message ' + msgFull + ': ')} + ${JSON.stringify(msgDepLine)});`,
+    );
+    lines.push('    }');
+  }
+  // Field-level deprecation checks: warn once per deprecated field when encoder runs and the
+  // field appears to be set (mirrors the checks used when writing the field).
+  for (const f of nonOneofFields) {
+    const fldDep = deprecationLine(f.descriptor);
+    if (!fldDep) continue;
+    const name = f.tsName;
+    const check = (() => {
+      if (f.isMap()) return `(Object.keys(message.${name} ?? {}).length !== 0)`;
+      if (f.isRepeated()) return `(message.${name}?.length ?? 0) !== 0`;
+      if (wktFqnOf(f) || f.isMessage()) return `message.${name} !== undefined`;
+      if (f.tracksPresence()) return `message.${name} !== undefined`;
+      if (f.isEnum()) {
+        return `((message.${name} ?? ${defaultValueFor(f)}) !== ${defaultValueFor(f)})`;
+      }
+      if (is64Bit(f)) return `(message.${name} !== undefined && !message.${name}.isZero?.())`;
+      if (f.typeCode() === 9) return `message.${name} !== ""`;
+      if (f.typeCode() === 12) return `(message.${name}?.length ?? 0) !== 0`;
+      if (f.typeCode() === 8) return `message.${name} === true`;
+      return `((message.${name} ?? 0) !== 0)`;
+    })();
+    const msgFull = m.fullQualifiedName().replace(/^\./, '');
+    const fieldProto = f.pb_name;
+    lines.push(`    if (${check}) {`);
+    lines.push(
+      `      if (!__deprecatedWarned.has(${JSON.stringify(msgFull + '.' + fieldProto)})) {`,
+    );
+    lines.push(`        __deprecatedWarned.add(${JSON.stringify(msgFull + '.' + fieldProto)});`);
+    lines.push(
+      `        console.warn(${JSON.stringify('[deprecated] Field ' + msgFull + '.' + fieldProto + ': ')} + ${JSON.stringify(fldDep)});`,
+    );
+    lines.push('      }');
+    lines.push('    }');
+  }
+  // Oneof fields deprecation checks
+  for (const o of m.oneofs) {
+    for (const f of o.fields) {
+      const fldDep = deprecationLine(f.descriptor);
+      if (!fldDep) continue;
+      const prop = o.tsName;
+      const caseName = f.tsName;
+      const msgFull = m.fullQualifiedName().replace(/^\./, '');
+      const fieldProto = f.pb_name;
+      lines.push(`    if (message.${prop}?.$case === ${JSON.stringify(caseName)}) {`);
+      lines.push(
+        `      if (!__deprecatedWarned.has(${JSON.stringify(msgFull + '.' + fieldProto)})) {`,
+      );
+      lines.push(`        __deprecatedWarned.add(${JSON.stringify(msgFull + '.' + fieldProto)});`);
+      lines.push(
+        `        console.warn(${JSON.stringify('[deprecated] Field ' + msgFull + '.' + fieldProto + ': ')} + ${JSON.stringify(fldDep)});`,
+      );
+      lines.push('      }');
+      lines.push('    }');
+    }
+  }
   for (const f of nonOneofFields) {
     const name = f.tsName;
     const tag = tagFor(f);

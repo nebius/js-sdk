@@ -16,13 +16,17 @@ export function printEnum(e: TSDescriptorEnum): string {
       const vDep = deprecationLine(v.descriptor);
       if (c) {
         const safe = c.replace(/\*\//g, '* /');
-        const linesJ: string[] = [];
+        const docLines: string[] = [];
+        docLines.push('  /**');
         for (const raw of safe.split(/\r?\n/)) {
-          linesJ.push(`  /** ${raw.replace(/\s+$/, '')} */`);
+          docLines.push(`   * ${raw.replace(/\s+$/, '')}`);
         }
-        if (vDep) linesJ.push(`  /** @deprecated ${vDep} */`);
-        const commentLines = linesJ;
-        return `${commentLines.join('\n')}\n  ${v.pb_name}: ${v.descriptor.number ?? 0},`;
+        if (vDep) docLines.push(`   * @deprecated ${vDep}`);
+        docLines.push('   */');
+        return `${docLines.join('\n')}\n  ${v.pb_name}: ${v.descriptor.number ?? 0},`;
+      }
+      if (vDep) {
+        return `  /** @deprecated ${vDep} */\n  ${v.pb_name}: ${v.descriptor.number ?? 0},`;
       }
       if (vDep) return `  /** @deprecated ${vDep} */\n  ${v.pb_name}: ${v.descriptor.number ?? 0},`;
       return `  ${v.pb_name}: ${v.descriptor.number ?? 0},`;

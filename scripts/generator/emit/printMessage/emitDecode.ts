@@ -18,6 +18,18 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
   lines.push('    const end = length === undefined ? reader.len : reader.pos + length;');
   lines.push(`    const message = createBase${m.tsName}();`);
   lines.push('    let writer: BinaryWriter | undefined = undefined;');
+  // Message-level deprecation warning (decoders warn for deprecated message types)
+  const msgDep = m.descriptor.options && m.descriptor.options.deprecated ? true : false;
+  const msgDepLine = msgDep ? 'Deprecated message.' : undefined;
+  if (msgDepLine) {
+    const msgFull = m.fullQualifiedName().replace(/^\./, '');
+    lines.push(`    if (!__deprecatedWarned.has(${JSON.stringify(msgFull)})) {`);
+    lines.push(`      __deprecatedWarned.add(${JSON.stringify(msgFull)});`);
+    lines.push(
+      `      console.warn(${JSON.stringify('[deprecated] Message ' + msgFull + ': ')} + ${JSON.stringify(msgDepLine)});`,
+    );
+    lines.push('    }');
+  }
   if (m.tsName.endsWith('Options') && m.containingFile.package === 'google.protobuf') {
     const fullType = m.fullQualifiedName().replace(/^\./, '');
     lines.push(`    const _exts = protoRegistry.listExtensions("${fullType}");`);

@@ -212,6 +212,10 @@ export function generateIndexContent(
   }
   // Track augmentation module targets to avoid duplicate empty imports
   const augmentationImported = new Set<string>();
+  // File-local set used by generated code to avoid spamming repeated warnings at runtime.
+  // This variable is emitted once per generated index file and shared by all types in that file.
+  lines.push('');
+  lines.push('const __deprecatedWarned = new Set<string>();');
   lines.push('');
 
   for (const { pbFile, pkg, enums, messages, services, extensions } of entries) {
