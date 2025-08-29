@@ -206,6 +206,7 @@ function buildWrapperContent(
 
   // Interface
   let iface = `export interface ${serviceBaseName} {\n`;
+  const isOperationService = serviceBaseName === 'OperationService';
   for (const m of methods) {
     const wrapOp = !!isOperationFullName(m.outFull);
     const Req =
@@ -220,12 +221,22 @@ function buildWrapperContent(
         : m.outInfo
           ? m.outInfo.tsName
           : 'any';
-    const Res = wrapOp ? 'OperationWrapper' : ResBase;
+    const isListOperationsResponse =
+      isOperationService && /\.ListOperationsResponse$/.test(m.outFull);
+    const Res = wrapOp
+      ? 'OperationWrapper'
+      : isListOperationsResponse
+        ? 'OperationServiceListResponse'
+        : ResBase;
     iface += `  ${m.name}(request: ${Req}): UnaryCall<${Res}>;\n`;
     iface += `  ${m.name}(request: ${Req}, metadata: Metadata): UnaryCall<${Res}>;\n`;
     iface += `  ${m.name}(request: ${Req}, metadata: Metadata, options: Partial<CallOptions> & RetryOptions): UnaryCall<${Res}>;\n`;
   }
   iface += `}\n\n`;
+
+  if (isOperationService) {
+    iface += `export interface OperationServiceListResponse { operations: OperationWrapper[]; nextPageToken: string; }\n\n`;
+  }
 
   // Class
   const apiName =
@@ -234,14 +245,24 @@ function buildWrapperContent(
   let cls = `export class ${serviceBaseName} implements ${serviceBaseName} {\n`;
   cls += `  private inner: any;\n`;
   cls += `  private addr: string;\n`;
-  cls += `  constructor(private sdk: SDKInterface) {\n`;
-  cls += `    const ctor: any = GeneratedClient as any;\n`;
-  cls += `    const serviceName: string = (ctor && ctor.serviceName) || '${serviceBaseName}';\n`;
-  cls += `    const apiServiceName: string | undefined = ${apiName ? JSON.stringify(apiName) : 'undefined'};\n`;
-  cls += `    const addr = sdk.getAddressFromServiceName(serviceName, apiServiceName);\n`;
-  cls += `    this.addr = addr;\n`;
-  cls += `    this.inner = new (GeneratedClient as any)(addr, sdk.getCredentials(serviceName), sdk.getOptions(serviceName));\n`;
-  cls += `  }\n\n`;
+  if (isOperationService) {
+    cls += `  constructor(private sdk: SDKInterface, private serviceType: string, private serviceApiName?: string) {\n`;
+    cls += `    const serviceName: string = this.serviceType;\n`;
+    cls += `    const apiServiceName: string | undefined = this.serviceApiName ?? ${apiName ? JSON.stringify(apiName) : 'undefined'};\n`;
+    cls += `    const addr = sdk.getAddressFromServiceName(serviceName, apiServiceName);\n`;
+    cls += `    this.addr = addr;\n`;
+    cls += `    this.inner = new (GeneratedClient as any)(addr, sdk.getCredentials(serviceName), sdk.getOptions(serviceName));\n`;
+    cls += `  }\n\n`;
+  } else {
+    cls += `  constructor(private sdk: SDKInterface) {\n`;
+    cls += `    const ctor: any = GeneratedClient as any;\n`;
+    cls += `    const serviceName: string = (ctor && ctor.serviceName) || '${serviceBaseName}';\n`;
+    cls += `    const apiServiceName: string | undefined = ${apiName ? JSON.stringify(apiName) : 'undefined'};\n`;
+    cls += `    const addr = sdk.getAddressFromServiceName(serviceName, apiServiceName);\n`;
+    cls += `    this.addr = addr;\n`;
+    cls += `    this.inner = new (GeneratedClient as any)(addr, sdk.getCredentials(serviceName), sdk.getOptions(serviceName));\n`;
+    cls += `  }\n\n`;
+  }
 
   for (const m of methods) {
     const wrapOp = !!isOperationFullName(m.outFull);
@@ -257,7 +278,13 @@ function buildWrapperContent(
         : m.outInfo
           ? m.outInfo.tsName
           : 'any';
-    const retT = wrapOp ? 'UnaryCall<OperationWrapper>' : `UnaryCall<${ResBase}>`;
+    const isListOperationsResponse =
+      isOperationService && /\.ListOperationsResponse$/.test(m.outFull);
+    const retT = wrapOp
+      ? 'UnaryCall<OperationWrapper>'
+      : isListOperationsResponse
+        ? 'UnaryCall<OperationServiceListResponse>'
+        : `UnaryCall<${ResBase}>`;
     const lower = m.name.charAt(0).toLowerCase() + m.name.slice(1);
     // overloads
     cls += `  ${m.name}(request: ${Req}): ${retT};\n`;
@@ -281,19 +308,39 @@ function buildWrapperContent(
       const op = isOperationFullName(m.outFull)!;
       const opSvcImport = relImportPath(outFileName, `${op.pkgDir}/operation_service`);
       cls += `    const transformResponse = (resp: any) => {\n`;
-      cls += `      const svcCtor: any = GeneratedClient as any;\n`;
-      cls += `      const serviceName: string = (svcCtor && svcCtor.serviceName) || '${serviceBaseName}';\n`;
-      cls += `      const { OperationServiceClient, GetOperationRequest } = require('${opSvcImport}');\n`;
-      cls += `      const opCtor: any = OperationServiceClient as any;\n`;
-      cls += `      const opServiceName: string = (opCtor && opCtor.serviceName) || 'OperationService';\n`;
-      cls += `      const opAddr = this.addr;\n`;
-      cls += `      const opClient = new (OperationServiceClient as any)(opAddr, this.sdk.getCredentials(serviceName), this.sdk.getOptions(serviceName));\n`;
-      cls += `      const getOpFn = (id: string, x: any, y: any) => new Promise<any>((resolve, reject) => {\n`;
-      cls += `        opClient.get({ id } as any, x, y, (e: any, r: any) => e ? reject(e) : resolve(r));\n`;
-      cls += `      });\n`;
-      cls += `      const sourceMethod = serviceName + '.' + ${JSON.stringify(m.name)};\n`;
+      if (isOperationService) {
+        cls += `      const serviceName = this.serviceType;\n`;
+        cls += `      const { OperationServiceClient } = require('${opSvcImport}');\n`;
+        cls += `      const opClient = this.inner;\n`;
+        cls += `      const getOpFn = (id: string, x: any, y: any) => new Promise<any>((resolve, reject) => {\n`;
+        cls += `        (opClient as any).get({ id } as any, x, y, (e: any, r: any) => e ? reject(e) : resolve(r));\n`;
+        cls += `      });\n`;
+        cls += `      const sourceMethod = serviceName + '.' + ${JSON.stringify(m.name)};\n`;
+      } else {
+        cls += `      const svcCtor: any = GeneratedClient as any;\n`;
+        cls += `      const serviceName: string = (svcCtor && svcCtor.serviceName) || '${serviceBaseName}';\n`;
+        cls += `      const { OperationServiceClient, GetOperationRequest } = require('${opSvcImport}');\n`;
+        cls += `      const opCtor: any = OperationServiceClient as any;\n`;
+        cls += `      const opServiceName: string = (opCtor && opCtor.serviceName) || 'OperationService';\n`;
+        cls += `      const opAddr = this.addr;\n`;
+        cls += `      const opClient = new (OperationServiceClient as any)(opAddr, this.sdk.getCredentials(serviceName), this.sdk.getOptions(serviceName));\n`;
+        cls += `      const getOpFn = (id: string, x: any, y: any) => new Promise<any>((resolve, reject) => {\n`;
+        cls += `        opClient.get({ id } as any, x, y, (e: any, r: any) => e ? reject(e) : resolve(r));\n`;
+        cls += `      });\n`;
+        cls += `      const sourceMethod = serviceName + '.' + ${JSON.stringify(m.name)};\n`;
+      }
       cls += `      const { Operation } = require('${path.posix.join(relToSrc(outFileName), 'runtime', 'operation')}');\n`;
       cls += `      return new Operation(this.sdk, sourceMethod, resp, getOpFn);\n`;
+      cls += `    };\n`;
+      cls += `    return wrapUnaryCall({ request, metadata, options, createCall, transformResponse, methodName: ${JSON.stringify(m.name)}, profileParentId: this.sdk.parentId?.() ?? this.sdk.parentId?.call(this.sdk) });\n`;
+    } else if (isOperationService && /\.ListOperationsResponse$/.test(m.outFull)) {
+      cls += `    const transformResponse = (resp: any) => {\n`;
+      cls += `      const serviceName = this.serviceType;\n`;
+      cls += `      const getOpFn = (id: string, x: any, y: any) => new Promise<any>((resolve, reject) => {\n`;
+      cls += `        (this.inner as any).get({ id } as any, x, y, (e: any, r: any) => e ? reject(e) : resolve(r));\n`;
+      cls += `      });\n`;
+      cls += `      const { Operation } = require('${path.posix.join(relToSrc(outFileName), 'runtime', 'operation')}');\n`;
+      cls += `      return { operations: (resp?.operations ?? []).map((o: any) => new Operation(this.sdk, serviceName + '.Get', o, getOpFn)), nextPageToken: resp?.nextPageToken || '' };\n`;
       cls += `    };\n`;
       cls += `    return wrapUnaryCall({ request, metadata, options, createCall, transformResponse, methodName: ${JSON.stringify(m.name)}, profileParentId: this.sdk.parentId?.() ?? this.sdk.parentId?.call(this.sdk) });\n`;
     } else {

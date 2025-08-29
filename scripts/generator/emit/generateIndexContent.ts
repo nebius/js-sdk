@@ -194,9 +194,11 @@ export function generateIndexContent(
   if (needsOpServiceV1) {
     // Import from nebius/common/v1 index
     addImport('nebius/common/v1', 'OperationServiceBaseClient');
+    addImport('nebius/common/v1', 'OperationService');
   }
   if (needsOpServiceV1A) {
     addImport('nebius/common/v1alpha1', 'OperationServiceBaseClient');
+    addImport('nebius/common/v1alpha1', 'OperationService');
   }
 
   // Emit imports (sorted) after runtime/grpc imports
