@@ -1,6 +1,6 @@
 import util from 'node:util';
 
-import { Metadata, type CallOptions } from '@grpc/grpc-js';
+import { Metadata, status, type CallOptions } from '@grpc/grpc-js';
 import { Dayjs } from 'dayjs';
 
 import { Status, Code as StatusCode } from '../generated/google/rpc/index';
@@ -94,7 +94,24 @@ export class Operation {
     const id = this.id();
     if (!id) return;
     while (!this.done()) {
-      await this.update(metadata, options);
+      try {
+        await this.update(metadata, options);
+      } catch (err: unknown) {
+        // If update failed because the client deadline was exceeded, ignore
+        // and continue waiting. This can happen when the server takes longer
+        // to respond than the per-request deadline; the operation may still
+        // be progressing and will be visible on subsequent polls.
+        if (err && typeof err === 'object' && 'code' in err) {
+          const e = err as { code?: number };
+          if (e.code === status.DEADLINE_EXCEEDED) {
+            // swallow and retry
+          } else {
+            throw err;
+          }
+        } else {
+          throw err;
+        }
+      }
       if (!this.done()) {
         const ms = Math.max(0, intervalSec) * 1000;
         await new Promise<void>((resolve) => setTimeout(resolve, ms));
