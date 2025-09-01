@@ -112,15 +112,14 @@ maybe('storage bucket lifecycle (e2e)', async () => {
     });
     const createReq = CreateBucketRequest.create({ metadata, spec });
 
-    const createOp = await bucketService.create(createReq, undefined as any, callOptions as any)
-      .result;
+    const createOp = await bucketService.create(createReq, undefined as any, callOptions).result;
     await withTimeout(createOp.wait(), 60_000, 'create bucket wait');
     bucketId = createOp.resourceId();
     expect(bucketId).toBeTruthy();
 
     // Get bucket by ID
     const getReq = GetBucketRequest.create({ id: bucketId! });
-    const bucket = await bucketService.get(getReq, undefined as any, callOptions as any).result;
+    const bucket = await bucketService.get(getReq, undefined as any, callOptions).result;
     expect(bucket.metadata?.id).toBe(bucketId);
     expect(bucket.metadata?.name).toBe(bucketName);
     expect(bucket.spec?.versioningPolicy).toBe(VersioningPolicy.DISABLED);

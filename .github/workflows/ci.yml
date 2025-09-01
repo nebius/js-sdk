@@ -40,6 +40,19 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Check HTTP connectivity to api.testing.nebius.cloud:443
+        run: |
+          status=$(curl --silent --show-error --head --write-out '%{http_code}' --output /dev/null --max-time 10 https://api.testing.nebius.cloud:443 || echo "000")
+          case "$status" in
+            2??|3??|403|404)
+              echo "Host reachable, status $status"
+              ;;
+            *)
+              echo "ERROR: Unexpected HTTP status $status" >&2
+              exit 1
+              ;;
+          esac
+
       - name: Run tests
         env:
           NEBIUS_E2E_CONFIG_B64: ${{ secrets.NEBIUS_E2E_CONFIG_B64 }}
