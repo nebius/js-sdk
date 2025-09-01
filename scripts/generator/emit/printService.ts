@@ -197,13 +197,17 @@ export function printService(
   const hasOpV1A = svc.methods.some(
     (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1A,
   );
-  const hasOp = hasOpV1 || hasOpV1A;
   const compiledApiName = apiServiceName ? JSON.stringify(apiServiceName) : 'undefined';
   lines.push(`export class ${svcName} implements ${svcName} {`);
   lines.push(`  $type: ${JSON.stringify(pbFullSvcName)} = ${JSON.stringify(pbFullSvcName)};`);
   lines.push(`  private inner: Client;`);
   lines.push(`  private addr: string;`);
   lines.push(`  private spec: typeof ${svcName}ServiceDescription;`);
+  if (svcDep) {
+    lines.push('  /**');
+    lines.push(`   * @deprecated ${svcDep}`);
+    lines.push('   */');
+  }
   if (pbSvcName === 'OperationService') {
     // For OperationService allow passing explicit service type and optional apiServiceName overriding $type usage
     lines.push(
