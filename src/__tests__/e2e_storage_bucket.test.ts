@@ -79,7 +79,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
 
   const bucketService = new BucketServiceClient(sdk);
   // Common call options: add a per-retry deadline to bound waits on network issues
-  const callOptions = { deadline: 3000, perRetry: 1000 } as const;
+  const callOptions = { deadline: 12000, perRetry: 4000 } as const;
   const withTimeout = async <T>(p: Promise<T>, ms: number, label: string): Promise<T> => {
     let to: NodeJS.Timeout | undefined;
     try {
