@@ -46,4 +46,6 @@ jobs:
       - name: Run E2E tests
         env:
           NEBIUS_E2E_CONFIG_B64: ${{ secrets.NEBIUS_E2E_CONFIG_B64 }}
+          GRPC_VERBOSITY: DEBUG
+          GRPC_TRACE: 'index,channel,connectivity_state,dns_resolver,pick_first,round_robin,subchannel,transport,keepalive'
         run: npm run test:e2e
