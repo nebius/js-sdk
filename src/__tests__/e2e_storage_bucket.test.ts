@@ -6,7 +6,7 @@
  - NEBIUS_E2E_CONFIG_B64: base64-encoded YAML config content
 */
 
-import { writeFileSync, unlinkSync, existsSync, mkdtempSync } from 'fs';
+import { existsSync, mkdtempSync, unlinkSync, writeFileSync } from 'fs';
 import { tmpdir } from 'os';
 import { join } from 'path';
 
@@ -15,13 +15,13 @@ import { parse as parseYAML } from 'yaml';
 
 import { ResourceMetadata } from '../generated/nebius/common/v1/index';
 import {
-  VersioningPolicy,
+  BucketService as BucketServiceClient,
   BucketSpec,
   CreateBucketRequest,
   DeleteBucketRequest,
   GetBucketRequest,
   ListBucketsRequest,
-  BucketService as BucketServiceClient,
+  VersioningPolicy,
 } from '../generated/nebius/storage/v1/index';
 import { Config } from '../runtime/cli_config';
 import { SDK } from '../sdk';
@@ -79,7 +79,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
 
   const bucketService = new BucketServiceClient(sdk);
   // Common call options: add a per-retry deadline to bound waits on network issues
-  const callOptions = { deadline: Date.now() + 30_000 } as const;
+  const callOptions = { deadline: 3000, perRetry: 1000 } as const;
   const withTimeout = async <T>(p: Promise<T>, ms: number, label: string): Promise<T> => {
     let to: NodeJS.Timeout | undefined;
     try {

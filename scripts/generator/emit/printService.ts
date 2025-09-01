@@ -190,33 +190,44 @@ export function printService(
     lines.push(` * @deprecated ${svcDep}`);
     lines.push(' */');
   }
+  // Static helper to obtain OperationService for services that return Operation(s)
+  const hasOpV1 = svc.methods.some(
+    (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1,
+  );
+  const hasOpV1A = svc.methods.some(
+    (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1A,
+  );
+  const hasOp = hasOpV1 || hasOpV1A;
+  const compiledApiName = apiServiceName ? JSON.stringify(apiServiceName) : 'undefined';
   lines.push(`export class ${svcName} implements ${svcName} {`);
   lines.push(`  $type: ${JSON.stringify(pbFullSvcName)} = ${JSON.stringify(pbFullSvcName)};`);
-  lines.push(`  private inner: ${svcName}BaseClient;`);
+  lines.push(`  private inner: Client;`);
   lines.push(`  private addr: string;`);
+  lines.push(`  private spec: typeof ${svcName}ServiceDescription;`);
   if (pbSvcName === 'OperationService') {
     // For OperationService allow passing explicit service type and optional apiServiceName overriding $type usage
     lines.push(
-      `  constructor(private sdk: SDKInterface, private serviceType: string, private serviceApiName?: string) {`,
+      `  constructor(private sdk: SDKInterface, private serviceType: string, private apiServiceName?: string) {`,
     );
-    const compiledApiName = apiServiceName ? JSON.stringify(apiServiceName) : 'undefined';
     lines.push(
-      `    const addr = sdk.getAddressFromServiceName(this.serviceType, this.serviceApiName ?? ${compiledApiName});`,
+      `    const addr = sdk.getAddressFromServiceName(this.serviceType, this.apiServiceName);`,
     );
     lines.push(`    this.addr = addr;`);
     lines.push(
-      `    this.inner = new ${svcName}BaseClient(addr, sdk.getCredentials(this.serviceType), sdk.getOptions(this.serviceType));`,
+      `    this.inner = new Client(addr, sdk.getCredentials(this.serviceType), sdk.getOptions(this.serviceType));`,
     );
   } else {
-    lines.push(`  constructor(private sdk: SDKInterface) {`);
     lines.push(
-      `    const addr = sdk.getAddressFromServiceName(this.$type, ${apiServiceName ? JSON.stringify(apiServiceName) : 'undefined'});`,
+      `  private apiServiceName: ${apiServiceName ? 'string' : 'undefined'} = ${compiledApiName};`,
     );
+    lines.push(`  constructor(private sdk: SDKInterface) {`);
+    lines.push(`    const addr = sdk.getAddressFromServiceName(this.$type, this.apiServiceName);`);
     lines.push(`    this.addr = addr;`);
     lines.push(
-      `    this.inner = new ${svcName}BaseClient(addr, sdk.getCredentials(this.$type), sdk.getOptions(this.$type));`,
+      `    this.inner = new Client(addr, sdk.getCredentials(this.$type), sdk.getOptions(this.$type));`,
     );
   }
+  lines.push(`    this.spec = ${svcName}ServiceDescription;`);
   // Emit runtime deprecation warning for using this service via the SDK (warn once)
   if (svcDep) {
     const fullSvc = pbFullSvcName;
@@ -228,21 +239,11 @@ export function printService(
     lines.push('    }');
   }
   lines.push(`  }`);
-  // Static helper to obtain OperationService for services that return Operation(s)
-  const hasOpV1 = svc.methods.some(
-    (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1,
-  );
-  const hasOpV1A = svc.methods.some(
-    (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1A,
-  );
   if (pbSvcName !== 'OperationService' && (hasOpV1 || hasOpV1A)) {
     lines.push('');
     // Embed original service's compile-time apiServiceName (same as used in its own constructor)
-    const originalSvcApiServiceName = apiServiceName ? JSON.stringify(apiServiceName) : 'undefined';
-    lines.push(`  static getOperationService(sdk: SDKInterface): OperationService {`);
-    lines.push(
-      `    return new OperationService(sdk, ${JSON.stringify(pbFullSvcName)}, ${originalSvcApiServiceName});`,
-    );
+    lines.push(`  getOperationService(): OperationService {`);
+    lines.push(`    return new OperationService(this.sdk, this.$type, this.apiServiceName);`);
     lines.push('  }');
   }
   lines.push('');
@@ -267,6 +268,7 @@ export function printService(
       `  ${lower}(request: ${Req}, metadata: Metadata, options: Partial<CallOptions> & RetryOptions): ${retT};`,
     );
     lines.push(`  ${lower}(...args: any[]): ${retT} {`);
+    lines.push(`    const spec = this.spec.${lower};`);
     lines.push(`    const request = args[0];`);
     lines.push(
       `    const metadata = (args.length > 1 ? args[1] : undefined) as Metadata | undefined;`,
@@ -279,7 +281,30 @@ export function printService(
     );
     lines.push(`      const metadata = md ?? new Metadata();`);
     lines.push(`      const options = opt ?? {};`);
-    lines.push(`      return this.inner.${lower}(req, metadata, options, cb);`);
+
+    if (wrapOp) {
+      lines.push(`      const deserialize = (value: Buffer) => {`);
+      lines.push(`        const resp = spec.responseDeserialize(value);`);
+      if (isOperationService) {
+        lines.push(`        return new OperationWrapper(resp, this);`);
+      } else {
+        lines.push(`        return new OperationWrapper(resp, this.getOperationService());`);
+      }
+      lines.push(`      };`);
+    } else if (listRespForOpSvc) {
+      // Special case: list method of OperationService should return operations wrapped in OperationWrapper
+      lines.push(`      const deserialize = (value: Buffer) => {`);
+      lines.push(`        const resp = spec.responseDeserialize(value);`);
+      lines.push(
+        `        return { operations: (resp?.operations ?? []).map((o: any) => new OperationWrapper(o, this)), nextPageToken: resp?.nextPageToken || "" };`,
+      );
+      lines.push(`      };`);
+    } else {
+      lines.push(`      const deserialize = spec.responseDeserialize;`);
+    }
+    lines.push(
+      `      return this.inner.makeUnaryRequest(spec.path, spec.requestSerialize, deserialize, req, metadata, options, cb);`,
+    );
     lines.push(`    };`);
     // Method-level runtime deprecation warning (warn once)
     const mDepRuntime = deprecationLine(m.descriptor);
@@ -292,71 +317,9 @@ export function printService(
       );
       lines.push('    }');
     }
-    const isListOperationsResponse =
-      isOperationService && /\.ListOperationsResponse$/.test(outFqn || '');
-    if (wrapOp) {
-      lines.push(`    const transformResponse = (resp: any) => {`);
-      if (pbSvcName === 'OperationService') {
-        // Reuse existing client instead of creating a new one
-        lines.push(`      const opClient = this.inner;`);
-      } else {
-        lines.push(
-          `      const opClient = new OperationServiceBaseClient(this.addr, this.sdk.getCredentials(this.$type), this.sdk.getOptions(this.$type));`,
-        );
-      }
-      lines.push(
-        `      const getOpFn = (id: string, metadata?: Metadata | undefined, options?: (Partial<CallOptions> & RetryOptions) | undefined) => {`,
-      );
-      lines.push(`        const req = { id } as any;`);
-      lines.push(
-        `        const createCall = (r: any, md: Metadata | undefined, opt: Partial<CallOptions> | undefined, cb: any) => {`,
-      );
-      lines.push(`          const metadata = md ?? new Metadata();`);
-      lines.push(`          const options = opt ?? {};`);
-      lines.push(`          return opClient.get(r, metadata, options, cb);`);
-      lines.push(`        };`);
-      lines.push(
-        `        // Use wrapUnaryCall so Operation get requests benefit from retry/idempotency/profileParentId behavior
-        return wrapUnaryCall({ request: req, metadata: metadata, options: options, createCall, methodName: "Get" }).result as Promise<any>;`,
-      );
-      lines.push(`      };`);
-      lines.push(
-        `      return new OperationWrapper(this.sdk, ${JSON.stringify((pkg ? `${pkg}.` : '') + pbSvcName + '.' + m.pb_name)}, resp, getOpFn);`,
-      );
-      lines.push(`    };`);
-      lines.push(
-        `    return wrapUnaryCall({ request, metadata, options, createCall, transformResponse, methodName: ${JSON.stringify(m.pb_name)}, profileParentId: this.sdk.parentId?.() ?? this.sdk.parentId?.call(this.sdk) });`,
-      );
-    } else if (isListOperationsResponse) {
-      // Special case: list method of OperationService should return operations wrapped in OperationWrapper
-      lines.push(`    const transformResponse = (resp: any) => {`);
-      lines.push(
-        `      const getOpFn = (id: string, metadata?: Metadata | undefined, options?: (Partial<CallOptions> & RetryOptions) | undefined) => {`,
-      );
-      lines.push(`        const req = { id } as any;`);
-      lines.push(
-        `        const createCall = (r: any, md: Metadata | undefined, opt: Partial<CallOptions> | undefined, cb: any) => {`,
-      );
-      lines.push(`          const metadata = md ?? new Metadata();`);
-      lines.push(`          const options = opt ?? {};`);
-      lines.push(`          return this.inner.get(r, metadata, options, cb);`);
-      lines.push(`        };`);
-      lines.push(
-        `        return wrapUnaryCall({ request: req, metadata: metadata, options: options, createCall, methodName: "Get" }).result as Promise<any>;`,
-      );
-      lines.push(`      };`);
-      lines.push(
-        `      return { operations: (resp?.operations ?? []).map((o: any) => new OperationWrapper(this.sdk, ${JSON.stringify((pkg ? `${pkg}.` : '') + pbSvcName + '.Get')}, o, getOpFn)), nextPageToken: resp?.nextPageToken || "" };`,
-      );
-      lines.push(`    };`);
-      lines.push(
-        `    return wrapUnaryCall({ request, metadata, options, createCall, transformResponse, methodName: ${JSON.stringify(m.pb_name)}, profileParentId: this.sdk.parentId?.() ?? this.sdk.parentId?.call(this.sdk) });`,
-      );
-    } else {
-      lines.push(
-        `    return wrapUnaryCall({ request, metadata, options, createCall, methodName: ${JSON.stringify(m.pb_name)}, profileParentId: this.sdk.parentId?.() ?? this.sdk.parentId?.call(this.sdk) });`,
-      );
-    }
+    lines.push(
+      `    return wrapUnaryCall({ request, metadata, options, createCall, methodName: ${JSON.stringify(m.pb_name)}, profileParentId: this.sdk.parentId?.() ?? this.sdk.parentId?.call(this.sdk) });`,
+    );
     lines.push(`  }`);
     lines.push('');
   }

@@ -67,9 +67,9 @@ function generateIdempotencyKey(): string {
   }
 }
 
-export class Request<TReq, TRes, TOut = TRes> {
+export class Request<TReq, TRes> {
   // Promises
-  readonly result: Promise<TOut>;
+  readonly result: Promise<TRes>;
   readonly initialMetadata: Promise<Metadata>;
   readonly trailingMetadata: Promise<Metadata>;
   readonly status: Promise<GrpcStatus>;
@@ -87,20 +87,11 @@ export class Request<TReq, TRes, TOut = TRes> {
     createCall: CallCreator<TReq, TRes>;
     metadata?: Metadata;
     options?: (Partial<CallOptions> & RetryOptions) | undefined;
-    transformResponse?: (resp: TRes) => TOut;
     // New: info for parentId injection
     methodName?: string;
     profileParentId?: string;
   }) {
-    const {
-      request,
-      createCall,
-      metadata,
-      options,
-      transformResponse,
-      methodName,
-      profileParentId,
-    } = args;
+    const { request, createCall, metadata, options, methodName, profileParentId } = args;
 
     // Normalize numeric overall deadline (absolute ms since epoch) into a Date
     // and work on a shallow copy so we don't mutate caller's object.
@@ -138,7 +129,7 @@ export class Request<TReq, TRes, TOut = TRes> {
     const overallDeadline = new Date(Date.now() + overallMs);
 
     // Start the request flow with retry
-    this.result = new Promise<TOut>((resolve, reject) => {
+    this.result = new Promise<TRes>((resolve, reject) => {
       const runAttempt = (attempt: number) => {
         // Compute a per-retry deadline relative to now, but clip it to the
         // overall deadline if one was provided and is earlier.
@@ -209,12 +200,7 @@ export class Request<TReq, TRes, TOut = TRes> {
             reject(wrapped);
             return;
           }
-          try {
-            const out = (transformResponse ? transformResponse(resp) : resp) as TOut;
-            resolve(out);
-          } catch (e) {
-            reject(e);
-          }
+          resolve(resp);
         });
 
         // Attach event listeners for metadata and status
@@ -280,16 +266,15 @@ export class Request<TReq, TRes, TOut = TRes> {
 // Backward-friendly alias used by generators
 export type UnaryCall<TResponse = unknown> = Request<unknown, TResponse>;
 
-export function wrapUnaryCall<TReq, TRes, TOut = TRes>(args: {
+export function wrapUnaryCall<TReq, TRes>(args: {
   request: TReq;
   createCall: CallCreator<TReq, TRes>;
   metadata?: Metadata;
   options?: (Partial<CallOptions> & RetryOptions) | undefined;
-  transformResponse?: (resp: TRes) => TOut;
   methodName?: string;
   profileParentId?: string;
-}): Request<TReq, TRes, TOut> {
-  return new Request<TReq, TRes, TOut>(args);
+}): Request<TReq, TRes> {
+  return new Request<TReq, TRes>(args);
 }
 
 // Helper: get first string value from metadata by key

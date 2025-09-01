@@ -4,9 +4,8 @@ import { Metadata, status, type CallOptions } from '@grpc/grpc-js';
 import { Dayjs } from 'dayjs';
 
 import { Status, Code as StatusCode } from '../generated/google/rpc/index';
-import type { SDKInterface } from '../sdk';
 
-import { RetryOptions } from './request';
+import { RetryOptions, UnaryCall } from './request';
 
 interface Operation_RequestHeader {
   values: string[];
@@ -25,17 +24,19 @@ interface GenericOperation {
   status?: Status | undefined;
 }
 
+interface OperationService {
+  get(
+    req: { id: string },
+    metadata?: Metadata | undefined,
+    options?: (Partial<CallOptions> & RetryOptions) | undefined,
+  ): UnaryCall<Operation>;
+}
+
 export class Operation {
   constructor(
-    private readonly sdk: SDKInterface,
-    private readonly sourceMethodPath: string,
     private _op: GenericOperation,
     // getOpFn now may accept optional Metadata and CallOptions to propagate through
-    private readonly getOpFn: (
-      id: string,
-      metadata?: Metadata | undefined,
-      options?: (Partial<CallOptions> & RetryOptions) | undefined,
-    ) => Promise<GenericOperation>,
+    private readonly service: OperationService,
   ) {}
 
   toString() {
@@ -125,7 +126,7 @@ export class Operation {
   ): Promise<void> {
     const id = this.id();
     if (!id) return;
-    const next = await this.getOpFn(id, metadata, options);
-    this._op = next;
+    const next = await this.service.get({ id }, metadata, options).result;
+    this._op = next._op;
   }
 }
