@@ -119,39 +119,37 @@ export class Request<TReq, TRes, TOut = TRes> {
     this.requestId = new Promise<string>((res) => (this._resolveReqId = res));
     this.traceId = new Promise<string>((res) => (this._resolveTraceId = res));
 
-    const maxRetries = Math.max(0, baseOptions?.RetryCount ?? 0);
-    const perRetry = baseOptions?.PerRetryTimeout;
+    const maxRetries = Math.max(0, baseOptions?.RetryCount ?? 3);
 
     // Generate idempotency key once per logical request and reuse across retries
     const useIdemp = shouldUseIdempotencyKey(methodName);
     const idempotencyKey = useIdemp ? generateIdempotencyKey() : undefined;
+    let overallMs = 60000; // Default to 60 seconds
+    if (baseOptions?.deadline !== undefined) {
+      overallMs =
+        typeof baseOptions.deadline === 'number'
+          ? baseOptions.deadline
+          : baseOptions.deadline.getTime();
+    }
+    let perRetry = overallMs / maxRetries;
+    if (baseOptions?.PerRetryTimeout !== undefined) {
+      perRetry = baseOptions.PerRetryTimeout;
+    }
+    const overallDeadline = new Date(Date.now() + overallMs);
 
     // Start the request flow with retry
     this.result = new Promise<TOut>((resolve, reject) => {
       const runAttempt = (attempt: number) => {
-        // Start with the (possibly normalized) base options
-        let deadlineOpt: Partial<CallOptions> | undefined = baseOptions;
-        if (perRetry && perRetry > 0) {
-          // Compute a per-retry deadline relative to now, but clip it to the
-          // overall deadline if one was provided and is earlier.
-          let perDeadline = new Date(Date.now() + perRetry);
-          const overall = baseOptions?.deadline;
-          if (overall !== undefined) {
-            const overallMs =
-              overall instanceof Date
-                ? overall.getTime()
-                : typeof overall === 'number'
-                  ? overall
-                  : undefined;
-            if (overallMs !== undefined && perDeadline.getTime() > overallMs) {
-              perDeadline = new Date(overallMs);
-            }
-          }
-          deadlineOpt = {
-            ...(baseOptions ?? {}),
-            deadline: perDeadline,
-          } as Partial<CallOptions>;
+        // Compute a per-retry deadline relative to now, but clip it to the
+        // overall deadline if one was provided and is earlier.
+        let perDeadline = new Date(Date.now() + perRetry);
+        if (perDeadline.getTime() > overallDeadline.getTime()) {
+          perDeadline = overallDeadline;
         }
+        const deadlineOpt = {
+          ...(baseOptions ?? {}),
+          deadline: perDeadline,
+        } as Partial<CallOptions>;
 
         // Possibly inject parentId into request
         try {
