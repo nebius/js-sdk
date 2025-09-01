@@ -26,6 +26,8 @@
     "generate:full": "npm run generate && npm run bootstrap:generator",
     "generate:version": "node dist-scripts/scripts/version-gen.js",
     "indexgen": "node -r ts-node/register scripts/gen-indexes.ts",
+    "test:noserver": "jest --maxWorkers=8 --testPathIgnorePatterns='e2e_storage_bucket.test.ts'",
+    "test:e2e": "jest --runInBand --testPathPatterns='e2e_storage_bucket.test.ts'",
     "test": "jest --maxWorkers=8",
     "test:watch": "jest --watch",
     "lint": "eslint src/**/*.ts --no-warn-ignored",
