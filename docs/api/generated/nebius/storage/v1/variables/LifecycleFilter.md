@@ -6,6 +6,6 @@
 
 # Variable: LifecycleFilter
 
-> **LifecycleFilter**: `MessageFns`\<[`LifecycleFilter`](../interfaces/LifecycleFilter.md), `"nebius.storage.v1.LifecycleFilter"`\>
+> **LifecycleFilter**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`LifecycleFilter`](../interfaces/LifecycleFilter.md), `"nebius.storage.v1.LifecycleFilter"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2852

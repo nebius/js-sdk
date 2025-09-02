@@ -8,4 +8,4 @@
 
 > **ProjectServiceServiceDescription** = *typeof* [`ProjectServiceServiceDescription`](../variables/ProjectServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15868
+Defined in: src/generated/nebius/iam/v1/index.ts:15865

@@ -6,6 +6,6 @@
 
 # Type Alias: AddressBlockState
 
-> **AddressBlockState** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"AVAILABLE"` \| `"DISABLED"`\>
+> **AddressBlockState** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"AVAILABLE"` \| `"DISABLED"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5266

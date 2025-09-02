@@ -6,6 +6,6 @@
 
 # Variable: TenantStatus
 
-> **TenantStatus**: `MessageFns`\<[`TenantStatus`](../interfaces/TenantStatus.md), `"nebius.iam.v2.TenantStatus"`\>
+> **TenantStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TenantStatus`](../interfaces/TenantStatus.md), `"nebius.iam.v2.TenantStatus"`\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:3136

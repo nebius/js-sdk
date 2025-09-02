@@ -6,6 +6,6 @@
 
 # Variable: GroupMemberKind
 
-> **GroupMemberKind**: `MessageFns`\<[`GroupMemberKind`](../interfaces/GroupMemberKind.md), `"nebius.iam.v1.GroupMemberKind"`\>
+> **GroupMemberKind**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GroupMemberKind`](../interfaces/GroupMemberKind.md), `"nebius.iam.v1.GroupMemberKind"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11369
+Defined in: src/generated/nebius/iam/v1/index.ts:11366

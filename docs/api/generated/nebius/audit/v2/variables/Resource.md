@@ -6,6 +6,6 @@
 
 # Variable: Resource
 
-> **Resource**: `MessageFns`\<[`Resource`](../interfaces/Resource.md), `"nebius.audit.v2.Resource"`\>
+> **Resource**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Resource`](../interfaces/Resource.md), `"nebius.audit.v2.Resource"`\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:1983

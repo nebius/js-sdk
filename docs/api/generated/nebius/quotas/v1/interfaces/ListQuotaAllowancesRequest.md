@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:15
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:27
 

@@ -6,6 +6,6 @@
 
 # Variable: PoolStatus\_State
 
-> **PoolStatus\_State**: `PoolStatus_StateClass`
+> **PoolStatus\_State**: [`PoolStatus_StateClass`](../type-aliases/PoolStatus_StateClass.md)
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5411

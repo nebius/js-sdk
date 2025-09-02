@@ -6,6 +6,6 @@
 
 # Variable: GroupMemberKind\_Kind
 
-> **GroupMemberKind\_Kind**: `GroupMemberKind_KindClass`
+> **GroupMemberKind\_Kind**: [`GroupMemberKind_KindClass`](../type-aliases/GroupMemberKind_KindClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10959
+Defined in: src/generated/nebius/iam/v1/index.ts:10956

@@ -6,6 +6,6 @@
 
 # Variable: NetworkSpec
 
-> **NetworkSpec**: `MessageFns`\<[`NetworkSpec`](../interfaces/NetworkSpec.md), `"nebius.vpc.v1alpha1.NetworkSpec"`\>
+> **NetworkSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkSpec`](../interfaces/NetworkSpec.md), `"nebius.vpc.v1alpha1.NetworkSpec"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3852

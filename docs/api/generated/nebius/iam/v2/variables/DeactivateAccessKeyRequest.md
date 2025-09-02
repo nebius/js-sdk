@@ -6,6 +6,6 @@
 
 # Variable: DeactivateAccessKeyRequest
 
-> **DeactivateAccessKeyRequest**: `MessageFns`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `"nebius.iam.v2.DeactivateAccessKeyRequest"`\>
+> **DeactivateAccessKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `"nebius.iam.v2.DeactivateAccessKeyRequest"`\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:817

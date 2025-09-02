@@ -4,13 +4,9 @@
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1alpha1](../README.md) / OperationService
 
-# ~~Class: OperationService~~
+# Class: OperationService
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:631
-
-## Deprecated
-
-Deprecated.
 
 ## Implements
 
@@ -22,7 +18,7 @@ Deprecated.
 
 > **new OperationService**(`sdk`, `serviceType`, `apiServiceName?`): `OperationService`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:661
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:658
 
 #### Parameters
 
@@ -48,7 +44,7 @@ Deprecated.
 
 ## Properties
 
-### ~~$type~~
+### $type
 
 > **$type**: `"nebius.common.v1alpha1.OperationService"`
 
@@ -56,11 +52,11 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:632
 
 ## Methods
 
-### ~~get()~~
+### get()
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:637
 
@@ -74,11 +70,11 @@ Returns the latest state of the specified operation.
 
 ##### Returns
 
-`Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:638
 
@@ -94,11 +90,11 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:638
 
 ##### Returns
 
-`Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:639
 
@@ -114,17 +110,17 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:639
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:671
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:668
 
 Returns the latest state of the specified operation.
 
@@ -136,13 +132,13 @@ Returns the latest state of the specified operation.
 
 ##### Returns
 
-`Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:672
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:669
 
 Returns the latest state of the specified operation.
 
@@ -158,13 +154,13 @@ Returns the latest state of the specified operation.
 
 ##### Returns
 
-`Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:673
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:670
 
 Returns the latest state of the specified operation.
 
@@ -180,19 +176,19 @@ Returns the latest state of the specified operation.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `Operation`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
 ***
 
-### ~~list()~~
+### list()
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:644
 
@@ -206,11 +202,11 @@ Lists operations for the specified resource.
 
 ##### Returns
 
-`Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:645
 
@@ -226,11 +222,11 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:645
 
 ##### Returns
 
-`Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:646
 
@@ -246,17 +242,17 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:646
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:686
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:683
 
 Lists operations for the specified resource.
 
@@ -268,13 +264,13 @@ Lists operations for the specified resource.
 
 ##### Returns
 
-`Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:687
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:684
 
 Lists operations for the specified resource.
 
@@ -290,13 +286,13 @@ Lists operations for the specified resource.
 
 ##### Returns
 
-`Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:688
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:685
 
 Lists operations for the specified resource.
 
@@ -312,8 +308,8 @@ Lists operations for the specified resource.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>

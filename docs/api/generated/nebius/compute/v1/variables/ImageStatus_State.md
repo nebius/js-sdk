@@ -6,6 +6,6 @@
 
 # Variable: ImageStatus\_State
 
-> **ImageStatus\_State**: `ImageStatus_StateClass`
+> **ImageStatus\_State**: [`ImageStatus_StateClass`](../type-aliases/ImageStatus_StateClass.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5660

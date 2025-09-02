@@ -44,6 +44,6 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1892
 
 ### expiresAt?
 
-> `optional` **expiresAt**: `Dayjs`
+> `optional` **expiresAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1891

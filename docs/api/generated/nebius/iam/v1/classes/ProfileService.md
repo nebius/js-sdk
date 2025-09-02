@@ -6,7 +6,7 @@
 
 # Class: ProfileService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15150
+Defined in: src/generated/nebius/iam/v1/index.ts:15147
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15150
 
 > **new ProfileService**(`sdk`): `ProfileService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15166
+Defined in: src/generated/nebius/iam/v1/index.ts:15163
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15166
 
 > **$type**: `"nebius.iam.v1.ProfileService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15151
+Defined in: src/generated/nebius/iam/v1/index.ts:15148
 
 ## Methods
 
@@ -44,9 +44,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15151
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15156
+Defined in: src/generated/nebius/iam/v1/index.ts:15153
 
 Returns the current user's profile.
 
@@ -58,13 +58,13 @@ Returns the current user's profile.
 
 ##### Returns
 
-`Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15157
+Defined in: src/generated/nebius/iam/v1/index.ts:15154
 
 ##### Parameters
 
@@ -78,79 +78,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15157
 
 ##### Returns
 
-`Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15158
-
-##### Parameters
-
-###### request
-
-[`GetProfileRequest`](../interfaces/GetProfileRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15172
-
-Returns the current user's profile.
-
-##### Parameters
-
-###### request
-
-[`GetProfileRequest`](../interfaces/GetProfileRequest.md)
-
-##### Returns
-
-`Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15173
-
-Returns the current user's profile.
-
-##### Parameters
-
-###### request
-
-[`GetProfileRequest`](../interfaces/GetProfileRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15174
-
-Returns the current user's profile.
+Defined in: src/generated/nebius/iam/v1/index.ts:15155
 
 ##### Parameters
 
@@ -164,8 +98,74 @@ Returns the current user's profile.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15169
+
+Returns the current user's profile.
+
+##### Parameters
+
+###### request
+
+[`GetProfileRequest`](../interfaces/GetProfileRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15170
+
+Returns the current user's profile.
+
+##### Parameters
+
+###### request
+
+[`GetProfileRequest`](../interfaces/GetProfileRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15171
+
+Returns the current user's profile.
+
+##### Parameters
+
+###### request
+
+[`GetProfileRequest`](../interfaces/GetProfileRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>

@@ -6,7 +6,7 @@
 
 # Interface: AccessPermitSpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3091
+Defined in: src/generated/nebius/iam/v1/index.ts:3088
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3091
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3093
+Defined in: src/generated/nebius/iam/v1/index.ts:3090
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3093
 
 > **$type**: `"nebius.iam.v1.AccessPermitSpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3092
+Defined in: src/generated/nebius/iam/v1/index.ts:3089
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3092
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3098
+Defined in: src/generated/nebius/iam/v1/index.ts:3095
 
 Resource for granting access permit.
 
@@ -40,6 +40,6 @@ Resource for granting access permit.
 
 > **role**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3103
+Defined in: src/generated/nebius/iam/v1/index.ts:3100
 
 Role for granting access permit.

@@ -6,6 +6,6 @@
 
 # Variable: MethodPySDKSettings
 
-> **MethodPySDKSettings**: `MessageFns`\<[`MethodPySDKSettings`](../interfaces/MethodPySDKSettings.md), `"nebius.MethodPySDKSettings"`\>
+> **MethodPySDKSettings**: [`MessageFns`](../../../runtime/protos/core/interfaces/MessageFns.md)\<[`MethodPySDKSettings`](../interfaces/MethodPySDKSettings.md), `"nebius.MethodPySDKSettings"`\>
 
 Defined in: src/generated/nebius/index.ts:285

@@ -6,6 +6,6 @@
 
 # Type Alias: Condition\_Status
 
-> **Condition\_Status** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNKNOWN"` \| `"TRUE"` \| `"FALSE"`\>
+> **Condition\_Status** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNKNOWN"` \| `"TRUE"` \| `"FALSE"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2212

@@ -6,6 +6,6 @@
 
 # Variable: PreemptibleSpec\_PreemptionPolicy
 
-> **PreemptibleSpec\_PreemptionPolicy**: `PreemptibleSpec_PreemptionPolicyClass`
+> **PreemptibleSpec\_PreemptionPolicy**: [`PreemptibleSpec_PreemptionPolicyClass`](../type-aliases/PreemptibleSpec_PreemptionPolicyClass.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:7258

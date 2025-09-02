@@ -6,6 +6,6 @@
 
 # Variable: ListAccessPermitRequest
 
-> **ListAccessPermitRequest**: `MessageFns`\<[`ListAccessPermitRequest`](../interfaces/ListAccessPermitRequest.md), `"nebius.iam.v1.ListAccessPermitRequest"`\>
+> **ListAccessPermitRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAccessPermitRequest`](../interfaces/ListAccessPermitRequest.md), `"nebius.iam.v1.ListAccessPermitRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2348
+Defined in: src/generated/nebius/iam/v1/index.ts:2345

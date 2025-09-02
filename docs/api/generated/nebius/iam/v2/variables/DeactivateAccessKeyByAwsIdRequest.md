@@ -6,6 +6,6 @@
 
 # Variable: DeactivateAccessKeyByAwsIdRequest
 
-> **DeactivateAccessKeyByAwsIdRequest**: `MessageFns`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `"nebius.iam.v2.DeactivateAccessKeyByAwsIdRequest"`\>
+> **DeactivateAccessKeyByAwsIdRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `"nebius.iam.v2.DeactivateAccessKeyByAwsIdRequest"`\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:987

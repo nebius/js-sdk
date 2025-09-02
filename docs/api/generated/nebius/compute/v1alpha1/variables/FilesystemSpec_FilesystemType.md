@@ -6,6 +6,6 @@
 
 # Variable: FilesystemSpec\_FilesystemType
 
-> **FilesystemSpec\_FilesystemType**: `FilesystemSpec_FilesystemTypeClass`
+> **FilesystemSpec\_FilesystemType**: [`FilesystemSpec_FilesystemTypeClass`](../type-aliases/FilesystemSpec_FilesystemTypeClass.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2531
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2525

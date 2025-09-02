@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4292
 
 ### size?
 
-> `optional` **size**: \{ `$case`: `"fixedNodeCount"`; `fixedNodeCount`: `Long`; \} \| \{ `$case`: `"autoscaling"`; `autoscaling`: [`NodeGroupAutoscalingSpec`](NodeGroupAutoscalingSpec.md); \}
+> `optional` **size**: \{ `$case`: `"fixedNodeCount"`; `fixedNodeCount`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"autoscaling"`; `autoscaling`: [`NodeGroupAutoscalingSpec`](NodeGroupAutoscalingSpec.md); \}
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4303
 

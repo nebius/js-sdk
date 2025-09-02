@@ -6,6 +6,6 @@
 
 # Variable: RegistryStatus
 
-> **RegistryStatus**: `MessageFns`\<[`RegistryStatus`](../interfaces/RegistryStatus.md), `"nebius.registry.v1.RegistryStatus"`\>
+> **RegistryStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`RegistryStatus`](../interfaces/RegistryStatus.md), `"nebius.registry.v1.RegistryStatus"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1932

@@ -6,7 +6,7 @@
 
 # Interface: Account\_UserAccount
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3449
+Defined in: src/generated/nebius/iam/v1/index.ts:3446
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3449
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3451
+Defined in: src/generated/nebius/iam/v1/index.ts:3448
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3451
 
 > **$type**: `"nebius.iam.v1.Account.UserAccount"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3450
+Defined in: src/generated/nebius/iam/v1/index.ts:3447
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3450
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3452
+Defined in: src/generated/nebius/iam/v1/index.ts:3449

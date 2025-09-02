@@ -6,6 +6,6 @@
 
 # Variable: TransferSpec\_BucketCredentials\_CredentialsAccessKey
 
-> **TransferSpec\_BucketCredentials\_CredentialsAccessKey**: `MessageFns`\<[`TransferSpec_BucketCredentials_CredentialsAccessKey`](../interfaces/TransferSpec_BucketCredentials_CredentialsAccessKey.md), `"nebius.storage.v1alpha1.TransferSpec.BucketCredentials.CredentialsAccessKey"`\>
+> **TransferSpec\_BucketCredentials\_CredentialsAccessKey**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TransferSpec_BucketCredentials_CredentialsAccessKey`](../interfaces/TransferSpec_BucketCredentials_CredentialsAccessKey.md), `"nebius.storage.v1alpha1.TransferSpec.BucketCredentials.CredentialsAccessKey"`\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2448

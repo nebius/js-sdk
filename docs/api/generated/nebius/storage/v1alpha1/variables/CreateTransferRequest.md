@@ -6,6 +6,6 @@
 
 # Variable: CreateTransferRequest
 
-> **CreateTransferRequest**: `MessageFns`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `"nebius.storage.v1alpha1.CreateTransferRequest"`\>
+> **CreateTransferRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `"nebius.storage.v1alpha1.CreateTransferRequest"`\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:347

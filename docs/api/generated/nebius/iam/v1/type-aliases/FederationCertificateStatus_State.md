@@ -6,6 +6,6 @@
 
 # Type Alias: FederationCertificateStatus\_State
 
-> **FederationCertificateStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"EXPIRED"`\>
+> **FederationCertificateStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"EXPIRED"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8032
+Defined in: src/generated/nebius/iam/v1/index.ts:8029

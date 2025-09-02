@@ -28,6 +28,6 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1040
 
 ### count
 
-> **count**: `Long`
+> **count**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1042

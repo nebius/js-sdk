@@ -6,6 +6,6 @@
 
 # Variable: AttachedDiskSpec\_AttachMode
 
-> **AttachedDiskSpec\_AttachMode**: `AttachedDiskSpec_AttachModeClass`
+> **AttachedDiskSpec\_AttachMode**: [`AttachedDiskSpec_AttachModeClass`](../type-aliases/AttachedDiskSpec_AttachModeClass.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6574
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6559

@@ -158,7 +158,7 @@ The async operation status
 
 ### time?
 
-> `optional` **time**: `Dayjs`
+> `optional` **time**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/audit/v2/index.ts:525
 

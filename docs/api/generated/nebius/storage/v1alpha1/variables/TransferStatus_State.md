@@ -6,6 +6,6 @@
 
 # Variable: TransferStatus\_State
 
-> **TransferStatus\_State**: `TransferStatus_StateClass`
+> **TransferStatus\_State**: [`TransferStatus_StateClass`](../type-aliases/TransferStatus_StateClass.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1461

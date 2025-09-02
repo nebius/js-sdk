@@ -6,6 +6,6 @@
 
 # Variable: Action
 
-> **Action**: `ActionClass`
+> **Action**: [`ActionClass`](../type-aliases/ActionClass.md)
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:108

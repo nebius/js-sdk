@@ -6,6 +6,6 @@
 
 # Variable: UserAccountStatus\_State
 
-> **UserAccountStatus\_State**: `UserAccountStatus_StateClass`
+> **UserAccountStatus\_State**: [`UserAccountStatus_StateClass`](../type-aliases/UserAccountStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22595
+Defined in: src/generated/nebius/iam/v1/index.ts:22592

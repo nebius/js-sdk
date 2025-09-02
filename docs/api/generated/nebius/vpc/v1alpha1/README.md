@@ -87,17 +87,25 @@
 
 - [AllocationServiceServiceDescription](type-aliases/AllocationServiceServiceDescription.md)
 - [AllocationStatus\_State](type-aliases/AllocationStatus_State.md)
+- [AllocationStatus\_StateClass](type-aliases/AllocationStatus_StateClass.md)
 - [IpVersion](type-aliases/IpVersion.md)
+- [IpVersionClass](type-aliases/IpVersionClass.md)
 - [NetworkServiceServiceDescription](type-aliases/NetworkServiceServiceDescription.md)
 - [NetworkStatus\_State](type-aliases/NetworkStatus_State.md)
+- [NetworkStatus\_StateClass](type-aliases/NetworkStatus_StateClass.md)
 - [PoolCidrState](type-aliases/PoolCidrState.md)
+- [PoolCidrStateClass](type-aliases/PoolCidrStateClass.md)
 - [PoolServiceServiceDescription](type-aliases/PoolServiceServiceDescription.md)
 - [PoolStatus\_State](type-aliases/PoolStatus_State.md)
+- [PoolStatus\_StateClass](type-aliases/PoolStatus_StateClass.md)
 - [ScopeServiceServiceDescription](type-aliases/ScopeServiceServiceDescription.md)
 - [ScopeSpec\_Type](type-aliases/ScopeSpec_Type.md)
+- [ScopeSpec\_TypeClass](type-aliases/ScopeSpec_TypeClass.md)
 - [ScopeStatus\_State](type-aliases/ScopeStatus_State.md)
+- [ScopeStatus\_StateClass](type-aliases/ScopeStatus_StateClass.md)
 - [SubnetServiceServiceDescription](type-aliases/SubnetServiceServiceDescription.md)
 - [SubnetStatus\_State](type-aliases/SubnetStatus_State.md)
+- [SubnetStatus\_StateClass](type-aliases/SubnetStatus_StateClass.md)
 
 ## Variables
 

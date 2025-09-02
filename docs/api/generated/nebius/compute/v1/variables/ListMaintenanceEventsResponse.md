@@ -6,6 +6,6 @@
 
 # Variable: ListMaintenanceEventsResponse
 
-> **ListMaintenanceEventsResponse**: `MessageFns`\<[`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md), `"nebius.compute.v1.ListMaintenanceEventsResponse"`\>
+> **ListMaintenanceEventsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md), `"nebius.compute.v1.ListMaintenanceEventsResponse"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9546

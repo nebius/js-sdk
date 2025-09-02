@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3361
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3371
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3371
 
 ##### Returns
 
-`Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3372
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3372
 
 ##### Returns
 
-`Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3373
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3373
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3436
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3436
 
 ##### Returns
 
-`Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3437
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3437
 
 ##### Returns
 
-`Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3438
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3438
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3438
 
 #### Call Signature
 
-> **createDefault**(`request`): `Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **createDefault**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3374
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3374
 
 ##### Returns
 
-`Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **createDefault**(`request`, `metadata`): `Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **createDefault**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3375
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3375
 
 ##### Returns
 
-`Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **createDefault**(`request`, `metadata`, `options`): `Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **createDefault**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3376
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3376
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **createDefault**(`request`): `Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **createDefault**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3451
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3451
 
 ##### Returns
 
-`Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **createDefault**(`request`, `metadata`): `Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **createDefault**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3452
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3452
 
 ##### Returns
 
-`Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **createDefault**(`request`, `metadata`, `options`): `Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **createDefault**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3453
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3453
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3453
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3380
 
@@ -304,11 +304,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3380
 
 ##### Returns
 
-`Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3381
 
@@ -324,11 +324,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3381
 
 ##### Returns
 
-`Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3382
 
@@ -344,15 +344,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3382
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3481
 
@@ -364,11 +364,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3481
 
 ##### Returns
 
-`Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3482
 
@@ -384,11 +384,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3482
 
 ##### Returns
 
-`Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3483
 
@@ -404,11 +404,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3483
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3483
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3362
 
@@ -428,11 +428,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3362
 
 ##### Returns
 
-`Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3363
 
@@ -448,11 +448,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3363
 
 ##### Returns
 
-`Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3364
 
@@ -468,15 +468,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3364
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3400
 
@@ -488,11 +488,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3400
 
 ##### Returns
 
-`Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3401
 
@@ -508,11 +508,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3401
 
 ##### Returns
 
-`Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3402
 
@@ -528,11 +528,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3402
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
 ***
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3402
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3365
 
@@ -552,11 +552,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3365
 
 ##### Returns
 
-`Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3366
 
@@ -572,11 +572,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3366
 
 ##### Returns
 
-`Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3367
 
@@ -592,15 +592,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3367
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3412
 
@@ -612,11 +612,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3412
 
 ##### Returns
 
-`Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3413
 
@@ -632,11 +632,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3413
 
 ##### Returns
 
-`Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3414
 
@@ -652,11 +652,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3414
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
 ***
 
@@ -676,7 +676,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3396
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3368
 
@@ -688,11 +688,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3368
 
 ##### Returns
 
-`Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3369
 
@@ -708,11 +708,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3369
 
 ##### Returns
 
-`Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3370
 
@@ -728,15 +728,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3370
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3424
 
@@ -748,11 +748,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3424
 
 ##### Returns
 
-`Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3425
 
@@ -768,11 +768,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3425
 
 ##### Returns
 
-`Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3426
 
@@ -788,11 +788,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3426
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
 ***
 
@@ -800,7 +800,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3426
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3377
 
@@ -812,11 +812,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3377
 
 ##### Returns
 
-`Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3378
 
@@ -832,11 +832,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3378
 
 ##### Returns
 
-`Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3379
 
@@ -852,15 +852,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3379
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3466
 
@@ -872,11 +872,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3466
 
 ##### Returns
 
-`Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3467
 
@@ -892,11 +892,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3467
 
 ##### Returns
 
-`Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3468
 
@@ -912,8 +912,8 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3468
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNetworkRequest`](../interfaces/UpdateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

@@ -26,6 +26,7 @@
 
 - [MaintenanceServiceServiceDescription](type-aliases/MaintenanceServiceServiceDescription.md)
 - [State](type-aliases/State.md)
+- [StateClass](type-aliases/StateClass.md)
 
 ## Variables
 

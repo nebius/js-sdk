@@ -6,7 +6,7 @@
 
 # Type Alias: ScopeSpec\_Type
 
-> **ScopeSpec\_Type** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"SCOPE_TYPE_UNSPECIFIED"` \| `"PUBLIC"` \| `"PRIVATE"`\>
+> **ScopeSpec\_Type** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"SCOPE_TYPE_UNSPECIFIED"` \| `"PUBLIC"` \| `"PRIVATE"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6003
 

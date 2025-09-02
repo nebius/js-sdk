@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3036
 
 ### averageThroughputBytes
 
-> **averageThroughputBytes**: `Long`
+> **averageThroughputBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3051
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3051
 
 ### endTime?
 
-> `optional` **endTime**: `Dayjs`
+> `optional` **endTime**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3046
 
@@ -54,7 +54,7 @@ Human-readable error description. Populated only if state is FAILED.
 
 ### objectsDiscoveredCount
 
-> **objectsDiscoveredCount**: `Long`
+> **objectsDiscoveredCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3047
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3047
 
 ### objectsMigratedCount
 
-> **objectsMigratedCount**: `Long`
+> **objectsMigratedCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3048
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3048
 
 ### objectsMigratedSize
 
-> **objectsMigratedSize**: `Long`
+> **objectsMigratedSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3050
 
@@ -78,7 +78,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3050
 
 ### objectsSkippedCount
 
-> **objectsSkippedCount**: `Long`
+> **objectsSkippedCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3049
 
@@ -86,7 +86,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3049
 
 ### sequenceNumber
 
-> **sequenceNumber**: `Long`
+> **sequenceNumber**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3038
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3038
 
 ### startTime?
 
-> `optional` **startTime**: `Dayjs`
+> `optional` **startTime**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3045
 

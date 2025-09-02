@@ -6,6 +6,6 @@
 
 # Variable: NetworkInterfaceAssignment
 
-> **NetworkInterfaceAssignment**: `MessageFns`\<[`NetworkInterfaceAssignment`](../interfaces/NetworkInterfaceAssignment.md), `"nebius.vpc.v1.NetworkInterfaceAssignment"`\>
+> **NetworkInterfaceAssignment**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkInterfaceAssignment`](../interfaces/NetworkInterfaceAssignment.md), `"nebius.vpc.v1.NetworkInterfaceAssignment"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:2250

@@ -6,6 +6,6 @@
 
 # Variable: GetClusterByNameRequest
 
-> **GetClusterByNameRequest**: `MessageFns`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), `"nebius.mk8s.v1alpha1.GetClusterByNameRequest"`\>
+> **GetClusterByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), `"nebius.mk8s.v1alpha1.GetClusterByNameRequest"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:232

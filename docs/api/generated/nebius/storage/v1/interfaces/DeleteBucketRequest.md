@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:947
 
 ### purge?
 
-> `optional` **purge**: \{ `$case`: `"purgeAt"`; `purgeAt`: `Dayjs`; \} \| \{ `$case`: `"ttl"`; `ttl`: `Duration`; \}
+> `optional` **purge**: \{ `$case`: `"purgeAt"`; `purgeAt`: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md); \} \| \{ `$case`: `"ttl"`; `ttl`: `Duration`; \}
 
 Defined in: src/generated/nebius/storage/v1/index.ts:953
 

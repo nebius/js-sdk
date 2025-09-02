@@ -6,6 +6,6 @@
 
 # Variable: ResourceMetadata
 
-> **ResourceMetadata**: `MessageFns`\<[`ResourceMetadata`](../interfaces/ResourceMetadata.md), `"nebius.audit.v2.ResourceMetadata"`\>
+> **ResourceMetadata**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceMetadata`](../interfaces/ResourceMetadata.md), `"nebius.audit.v2.ResourceMetadata"`\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:1726

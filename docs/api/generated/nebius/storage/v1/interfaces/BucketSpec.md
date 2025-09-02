@@ -47,7 +47,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2062
 
 ### maxSizeBytes
 
-> **maxSizeBytes**: `Long`
+> **maxSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2061
 

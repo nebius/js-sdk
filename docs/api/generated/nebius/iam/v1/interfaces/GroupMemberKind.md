@@ -6,7 +6,7 @@
 
 # Interface: GroupMemberKind
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11369
+Defined in: src/generated/nebius/iam/v1/index.ts:11366
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11369
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11371
+Defined in: src/generated/nebius/iam/v1/index.ts:11368
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11371
 
 > **$type**: `"nebius.iam.v1.GroupMemberKind"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11370
+Defined in: src/generated/nebius/iam/v1/index.ts:11367
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11370
 
 > **kind**: [`GroupMemberKind_Kind`](../type-aliases/GroupMemberKind_Kind.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11372
+Defined in: src/generated/nebius/iam/v1/index.ts:11369

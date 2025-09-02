@@ -6,7 +6,7 @@
 
 # Interface: ListGroupMembershipsResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10405
+Defined in: src/generated/nebius/iam/v1/index.ts:10402
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10405
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10407
+Defined in: src/generated/nebius/iam/v1/index.ts:10404
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10407
 
 > **$type**: `"nebius.iam.v1.ListGroupMembershipsResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10406
+Defined in: src/generated/nebius/iam/v1/index.ts:10403
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10406
 
 > **memberships**: [`GroupMembership`](GroupMembership.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10412
+Defined in: src/generated/nebius/iam/v1/index.ts:10409
 
 Members of the group. Can be tenant user account ids or service account ids.
 
@@ -40,4 +40,4 @@ Members of the group. Can be tenant user account ids or service account ids.
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10413
+Defined in: src/generated/nebius/iam/v1/index.ts:10410

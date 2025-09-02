@@ -8,7 +8,7 @@
 
 > **ProfileServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ProfileServiceBaseClient`](../interfaces/ProfileServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15140
+Defined in: src/generated/nebius/iam/v1/index.ts:15137
 
 ## Type Declaration
 

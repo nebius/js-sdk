@@ -6,6 +6,6 @@
 
 # Variable: GetClusterForBackupRequest
 
-> **GetClusterForBackupRequest**: `MessageFns`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), `"nebius.msp.postgresql.v1alpha1.GetClusterForBackupRequest"`\>
+> **GetClusterForBackupRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), `"nebius.msp.postgresql.v1alpha1.GetClusterForBackupRequest"`\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1124

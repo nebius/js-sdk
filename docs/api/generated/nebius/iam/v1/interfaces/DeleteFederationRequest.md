@@ -6,7 +6,7 @@
 
 # Interface: DeleteFederationRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9039
+Defined in: src/generated/nebius/iam/v1/index.ts:9036
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9039
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9041
+Defined in: src/generated/nebius/iam/v1/index.ts:9038
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9041
 
 > **$type**: `"nebius.iam.v1.DeleteFederationRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9040
+Defined in: src/generated/nebius/iam/v1/index.ts:9037
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9040
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9042
+Defined in: src/generated/nebius/iam/v1/index.ts:9039

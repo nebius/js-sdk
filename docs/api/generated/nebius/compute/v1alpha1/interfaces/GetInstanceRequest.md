@@ -6,7 +6,7 @@
 
 # Interface: GetInstanceRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5455
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5443
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5455
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5457
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5445
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5457
 
 > **$type**: `"nebius.compute.v1alpha1.GetInstanceRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5456
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5444
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5456
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5458
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5446

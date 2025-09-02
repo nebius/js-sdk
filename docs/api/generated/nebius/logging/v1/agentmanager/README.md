@@ -27,8 +27,11 @@
 ## Type Aliases
 
 - [Action](type-aliases/Action.md)
+- [ActionClass](type-aliases/ActionClass.md)
 - [AgentState](type-aliases/AgentState.md)
+- [AgentStateClass](type-aliases/AgentStateClass.md)
 - [AgentType](type-aliases/AgentType.md)
+- [AgentTypeClass](type-aliases/AgentTypeClass.md)
 - [VersionServiceServiceDescription](type-aliases/VersionServiceServiceDescription.md)
 
 ## Variables

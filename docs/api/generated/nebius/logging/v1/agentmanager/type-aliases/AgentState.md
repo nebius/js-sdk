@@ -6,7 +6,7 @@
 
 # Type Alias: AgentState
 
-> **AgentState** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNDEFINED"` \| `"STATE_HEALTHY"` \| `"STATE_ERROR"`\>
+> **AgentState** = [`EnumInstance`](../../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNDEFINED"` \| `"STATE_HEALTHY"` \| `"STATE_ERROR"`\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:57
 

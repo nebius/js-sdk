@@ -6,7 +6,7 @@
 
 # Interface: DeleteAuthPublicKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4488
+Defined in: src/generated/nebius/iam/v1/index.ts:4485
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4488
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4490
+Defined in: src/generated/nebius/iam/v1/index.ts:4487
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4490
 
 > **$type**: `"nebius.iam.v1.DeleteAuthPublicKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4489
+Defined in: src/generated/nebius/iam/v1/index.ts:4486
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4489
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4491
+Defined in: src/generated/nebius/iam/v1/index.ts:4488

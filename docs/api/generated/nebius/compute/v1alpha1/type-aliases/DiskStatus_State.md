@@ -6,6 +6,6 @@
 
 # Type Alias: DiskStatus\_State
 
-> **DiskStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"UPDATING"` \| `"DELETING"` \| `"ERROR"`\>
+> **DiskStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"UPDATING"` \| `"DELETING"` \| `"ERROR"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:952
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:949

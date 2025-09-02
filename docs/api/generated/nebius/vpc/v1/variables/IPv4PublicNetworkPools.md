@@ -6,6 +6,6 @@
 
 # Variable: IPv4PublicNetworkPools
 
-> **IPv4PublicNetworkPools**: `MessageFns`\<[`IPv4PublicNetworkPools`](../interfaces/IPv4PublicNetworkPools.md), `"nebius.vpc.v1.IPv4PublicNetworkPools"`\>
+> **IPv4PublicNetworkPools**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`IPv4PublicNetworkPools`](../interfaces/IPv4PublicNetworkPools.md), `"nebius.vpc.v1.IPv4PublicNetworkPools"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3923

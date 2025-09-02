@@ -6,6 +6,6 @@
 
 # Variable: GetIterationHistoryRequest
 
-> **GetIterationHistoryRequest**: `MessageFns`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), `"nebius.storage.v1alpha1.GetIterationHistoryRequest"`\>
+> **GetIterationHistoryRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), `"nebius.storage.v1alpha1.GetIterationHistoryRequest"`\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:845

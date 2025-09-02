@@ -6,6 +6,6 @@
 
 # Variable: ExchangeTokenRequest
 
-> **ExchangeTokenRequest**: `MessageFns`\<[`ExchangeTokenRequest`](../interfaces/ExchangeTokenRequest.md), `"nebius.iam.v1.ExchangeTokenRequest"`\>
+> **ExchangeTokenRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ExchangeTokenRequest`](../interfaces/ExchangeTokenRequest.md), `"nebius.iam.v1.ExchangeTokenRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22153
+Defined in: src/generated/nebius/iam/v1/index.ts:22150

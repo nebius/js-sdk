@@ -6,6 +6,6 @@
 
 # Variable: UpdateFederatedCredentialsRequest
 
-> **UpdateFederatedCredentialsRequest**: `MessageFns`\<[`UpdateFederatedCredentialsRequest`](../interfaces/UpdateFederatedCredentialsRequest.md), `"nebius.iam.v1.UpdateFederatedCredentialsRequest"`\>
+> **UpdateFederatedCredentialsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateFederatedCredentialsRequest`](../interfaces/UpdateFederatedCredentialsRequest.md), `"nebius.iam.v1.UpdateFederatedCredentialsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6052
+Defined in: src/generated/nebius/iam/v1/index.ts:6049

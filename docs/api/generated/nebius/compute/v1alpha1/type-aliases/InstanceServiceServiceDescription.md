@@ -8,7 +8,7 @@
 
 > **InstanceServiceServiceDescription** = *typeof* [`InstanceServiceServiceDescription`](../variables/InstanceServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6249
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6237
 
 ## Deprecated
 

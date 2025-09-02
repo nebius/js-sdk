@@ -8,7 +8,7 @@
 
 > **InstanceServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`InstanceServiceBaseClient`](../interfaces/InstanceServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6355
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6343
 
 ## Type Declaration
 

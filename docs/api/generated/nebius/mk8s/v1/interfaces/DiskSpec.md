@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2517
 
 ### blockSizeBytes
 
-> **blockSizeBytes**: `Long`
+> **blockSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2519
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2519
 
 ### size?
 
-> `optional` **size**: \{ `$case`: `"sizeBytes"`; `sizeBytes`: `Long`; \} \| \{ `$case`: `"sizeKibibytes"`; `sizeKibibytes`: `Long`; \} \| \{ `$case`: `"sizeMebibytes"`; `sizeMebibytes`: `Long`; \} \| \{ `$case`: `"sizeGibibytes"`; `sizeGibibytes`: `Long`; \}
+> `optional` **size**: \{ `$case`: `"sizeBytes"`; `sizeBytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeKibibytes"`; `sizeKibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeMebibytes"`; `sizeMebibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeGibibytes"`; `sizeGibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \}
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2521
 

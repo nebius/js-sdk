@@ -6,7 +6,7 @@
 
 # Interface: UpdateGroupRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12320
+Defined in: src/generated/nebius/iam/v1/index.ts:12317
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12320
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12322
+Defined in: src/generated/nebius/iam/v1/index.ts:12319
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12322
 
 > **$type**: `"nebius.iam.v1.UpdateGroupRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12321
+Defined in: src/generated/nebius/iam/v1/index.ts:12318
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12321
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12323
+Defined in: src/generated/nebius/iam/v1/index.ts:12320
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12323
 
 > `optional` **spec**: [`GroupSpec`](GroupSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12324
+Defined in: src/generated/nebius/iam/v1/index.ts:12321

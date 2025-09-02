@@ -6,6 +6,6 @@
 
 # Variable: Range
 
-> **Range**: `MessageFns`\<[`Range`](../interfaces/Range.md), `"nebius.msp.v1alpha1.resource.Range"`\>
+> **Range**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Range`](../interfaces/Range.md), `"nebius.msp.v1alpha1.resource.Range"`\>
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:592

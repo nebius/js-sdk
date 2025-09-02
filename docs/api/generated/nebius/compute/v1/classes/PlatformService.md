@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11433
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11438
 
@@ -58,11 +58,11 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11439
 
@@ -78,11 +78,11 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11439
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11440
 
@@ -98,15 +98,15 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11440
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11461
 
@@ -120,11 +120,11 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11462
 
@@ -142,11 +142,11 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11463
 
@@ -164,11 +164,11 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
 ***
 
@@ -176,7 +176,7 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11445
 
@@ -190,11 +190,11 @@ Lists all compute platforms within a specified parent.
 
 ##### Returns
 
-`Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11446
 
@@ -210,11 +210,11 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11446
 
 ##### Returns
 
-`Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11447
 
@@ -230,15 +230,15 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11447
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11473
 
@@ -252,11 +252,11 @@ Lists all compute platforms within a specified parent.
 
 ##### Returns
 
-`Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11474
 
@@ -274,11 +274,11 @@ Lists all compute platforms within a specified parent.
 
 ##### Returns
 
-`Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11475
 
@@ -296,8 +296,8 @@ Lists all compute platforms within a specified parent.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>

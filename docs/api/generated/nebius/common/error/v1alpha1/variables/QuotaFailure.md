@@ -6,6 +6,6 @@
 
 # Variable: QuotaFailure
 
-> **QuotaFailure**: `MessageFns`\<[`QuotaFailure`](../interfaces/QuotaFailure.md), `"nebius.common.error.v1alpha1.QuotaFailure"`\>
+> **QuotaFailure**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`QuotaFailure`](../interfaces/QuotaFailure.md), `"nebius.common.error.v1alpha1.QuotaFailure"`\>
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1194

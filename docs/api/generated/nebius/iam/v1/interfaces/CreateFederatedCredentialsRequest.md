@@ -6,7 +6,7 @@
 
 # Interface: CreateFederatedCredentialsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5940
+Defined in: src/generated/nebius/iam/v1/index.ts:5937
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5940
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5942
+Defined in: src/generated/nebius/iam/v1/index.ts:5939
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5942
 
 > **$type**: `"nebius.iam.v1.CreateFederatedCredentialsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5941
+Defined in: src/generated/nebius/iam/v1/index.ts:5938
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5941
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5943
+Defined in: src/generated/nebius/iam/v1/index.ts:5940
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5943
 
 > `optional` **spec**: [`FederatedCredentialsSpec`](FederatedCredentialsSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5944
+Defined in: src/generated/nebius/iam/v1/index.ts:5941

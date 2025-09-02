@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1550
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1557
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1557
 
 ##### Returns
 
-`Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1558
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1558
 
 ##### Returns
 
-`Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1559
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1559
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1607
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1607
 
 ##### Returns
 
-`Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1608
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1608
 
 ##### Returns
 
-`Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1609
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1609
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1609
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1563
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1563
 
 ##### Returns
 
-`Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1564
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1564
 
 ##### Returns
 
-`Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1565
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1565
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1637
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1637
 
 ##### Returns
 
-`Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1638
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1638
 
 ##### Returns
 
-`Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1639
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1639
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1639
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1551
 
@@ -304,11 +304,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1551
 
 ##### Returns
 
-`Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1552
 
@@ -324,11 +324,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1552
 
 ##### Returns
 
-`Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1553
 
@@ -344,15 +344,15 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1553
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1583
 
@@ -364,11 +364,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1583
 
 ##### Returns
 
-`Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1584
 
@@ -384,11 +384,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1584
 
 ##### Returns
 
-`Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1585
 
@@ -404,11 +404,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1585
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
 ***
 
@@ -428,7 +428,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1579
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1554
 
@@ -440,11 +440,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1554
 
 ##### Returns
 
-`Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1555
 
@@ -460,11 +460,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1555
 
 ##### Returns
 
-`Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1556
 
@@ -480,15 +480,15 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1556
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1595
 
@@ -500,11 +500,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1595
 
 ##### Returns
 
-`Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1596
 
@@ -520,11 +520,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1596
 
 ##### Returns
 
-`Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1597
 
@@ -540,11 +540,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1597
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
 ***
 
@@ -552,7 +552,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1597
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1560
 
@@ -564,11 +564,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1560
 
 ##### Returns
 
-`Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1561
 
@@ -584,11 +584,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1561
 
 ##### Returns
 
-`Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1562
 
@@ -604,15 +604,15 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1562
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1622
 
@@ -624,11 +624,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1622
 
 ##### Returns
 
-`Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1623
 
@@ -644,11 +644,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1623
 
 ##### Returns
 
-`Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1624
 
@@ -664,8 +664,8 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1624
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

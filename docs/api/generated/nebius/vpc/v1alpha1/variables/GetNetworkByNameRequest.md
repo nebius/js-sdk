@@ -6,6 +6,6 @@
 
 # Variable: GetNetworkByNameRequest
 
-> **GetNetworkByNameRequest**: `MessageFns`\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), `"nebius.vpc.v1alpha1.GetNetworkByNameRequest"`\>
+> **GetNetworkByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), `"nebius.vpc.v1alpha1.GetNetworkByNameRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3173

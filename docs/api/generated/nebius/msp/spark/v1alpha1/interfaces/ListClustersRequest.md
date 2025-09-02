@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:219
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:230
 

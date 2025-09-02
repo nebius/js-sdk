@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:325
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:331
 
@@ -59,11 +59,11 @@ Returns the specified maintenance operation.
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:332
 
@@ -79,11 +79,11 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:332
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:333
 
@@ -99,15 +99,15 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:333
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:355
 
@@ -122,11 +122,11 @@ Returns the specified maintenance operation.
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:356
 
@@ -145,11 +145,11 @@ Returns the specified maintenance operation.
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:357
 
@@ -168,11 +168,11 @@ Returns the specified maintenance operation.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
 ***
 
@@ -180,7 +180,7 @@ Returns the specified maintenance operation.
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:339
 
@@ -195,11 +195,11 @@ Retrieves the list of maintenance operations that belong
 
 ##### Returns
 
-`Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:340
 
@@ -215,11 +215,11 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:340
 
 ##### Returns
 
-`Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:341
 
@@ -235,15 +235,15 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:341
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:367
 
@@ -258,11 +258,11 @@ Retrieves the list of maintenance operations that belong
 
 ##### Returns
 
-`Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:368
 
@@ -281,11 +281,11 @@ Retrieves the list of maintenance operations that belong
 
 ##### Returns
 
-`Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:369
 
@@ -304,8 +304,8 @@ Retrieves the list of maintenance operations that belong
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>

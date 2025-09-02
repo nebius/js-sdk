@@ -6,7 +6,7 @@
 
 # Interface: GetFilesystemRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1629
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1626
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1629
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1631
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1628
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1631
 
 > **$type**: `"nebius.compute.v1alpha1.GetFilesystemRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1630
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1627
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1630
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1632
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1629

@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4593
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4619
 
@@ -58,11 +58,11 @@ Creates a session.
 
 ##### Returns
 
-`Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4620
 
@@ -78,11 +78,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4620
 
 ##### Returns
 
-`Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4621
 
@@ -98,15 +98,15 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4621
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4682
 
@@ -120,11 +120,11 @@ Creates a session.
 
 ##### Returns
 
-`Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4683
 
@@ -142,11 +142,11 @@ Creates a session.
 
 ##### Returns
 
-`Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4684
 
@@ -164,11 +164,11 @@ Creates a session.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -176,7 +176,7 @@ Creates a session.
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4626
 
@@ -190,11 +190,11 @@ Deletes a session.
 
 ##### Returns
 
-`Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4627
 
@@ -210,11 +210,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4627
 
 ##### Returns
 
-`Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4628
 
@@ -230,15 +230,15 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4628
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4697
 
@@ -252,11 +252,11 @@ Deletes a session.
 
 ##### Returns
 
-`Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4698
 
@@ -274,11 +274,11 @@ Deletes a session.
 
 ##### Returns
 
-`Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4699
 
@@ -296,11 +296,11 @@ Deletes a session.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -308,7 +308,7 @@ Deletes a session.
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4598
 
@@ -322,11 +322,11 @@ Returns the specified session.
 
 ##### Returns
 
-`Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4599
 
@@ -342,11 +342,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4599
 
 ##### Returns
 
-`Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4600
 
@@ -362,15 +362,15 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4600
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4646
 
@@ -384,11 +384,11 @@ Returns the specified session.
 
 ##### Returns
 
-`Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4647
 
@@ -406,11 +406,11 @@ Returns the specified session.
 
 ##### Returns
 
-`Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4648
 
@@ -428,11 +428,11 @@ Returns the specified session.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
 ***
 
@@ -440,7 +440,7 @@ Returns the specified session.
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+> **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4605
 
@@ -454,11 +454,11 @@ Returns the specified session by name.
 
 ##### Returns
 
-`Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4606
 
@@ -474,11 +474,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4606
 
 ##### Returns
 
-`Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4607
 
@@ -494,15 +494,15 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4607
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+> **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4658
 
@@ -516,11 +516,11 @@ Returns the specified session by name.
 
 ##### Returns
 
-`Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4659
 
@@ -538,11 +538,11 @@ Returns the specified session by name.
 
 ##### Returns
 
-`Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4660
 
@@ -560,11 +560,11 @@ Returns the specified session by name.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
 ***
 
@@ -584,7 +584,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4642
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4612
 
@@ -598,11 +598,11 @@ Retrieves a list of sessions.
 
 ##### Returns
 
-`Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4613
 
@@ -618,11 +618,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4613
 
 ##### Returns
 
-`Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4614
 
@@ -638,15 +638,15 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4614
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4670
 
@@ -660,11 +660,11 @@ Retrieves a list of sessions.
 
 ##### Returns
 
-`Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4671
 
@@ -682,11 +682,11 @@ Retrieves a list of sessions.
 
 ##### Returns
 
-`Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4672
 
@@ -704,8 +704,8 @@ Retrieves a list of sessions.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>

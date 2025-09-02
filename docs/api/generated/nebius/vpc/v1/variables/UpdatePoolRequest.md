@@ -6,6 +6,6 @@
 
 # Variable: UpdatePoolRequest
 
-> **UpdatePoolRequest**: `MessageFns`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `"nebius.vpc.v1.UpdatePoolRequest"`\>
+> **UpdatePoolRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `"nebius.vpc.v1.UpdatePoolRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:4839

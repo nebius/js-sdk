@@ -6,6 +6,6 @@
 
 # Variable: TemplateSpec
 
-> **TemplateSpec**: `MessageFns`\<[`TemplateSpec`](../interfaces/TemplateSpec.md), `"nebius.msp.postgresql.v1alpha1.TemplateSpec"`\>
+> **TemplateSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TemplateSpec`](../interfaces/TemplateSpec.md), `"nebius.msp.postgresql.v1alpha1.TemplateSpec"`\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3808

@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1213
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1223
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1223
 
 ##### Returns
 
-`Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1224
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1224
 
 ##### Returns
 
-`Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1225
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1225
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1309
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1309
 
 ##### Returns
 
-`Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1310
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1310
 
 ##### Returns
 
-`Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1311
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1311
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1311
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1250
 
@@ -182,11 +182,11 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 ##### Returns
 
-`Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1251
 
@@ -202,11 +202,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1251
 
 ##### Returns
 
-`Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1252
 
@@ -222,15 +222,15 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1252
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1369
 
@@ -244,11 +244,11 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 ##### Returns
 
-`Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1370
 
@@ -266,11 +266,11 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 ##### Returns
 
-`Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1371
 
@@ -288,11 +288,11 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -300,7 +300,7 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1214
 
@@ -312,11 +312,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1214
 
 ##### Returns
 
-`Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1215
 
@@ -332,11 +332,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1215
 
 ##### Returns
 
-`Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1216
 
@@ -352,15 +352,15 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1216
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1273
 
@@ -372,11 +372,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1273
 
 ##### Returns
 
-`Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1274
 
@@ -392,11 +392,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1274
 
 ##### Returns
 
-`Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1275
 
@@ -412,11 +412,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1275
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 ***
 
@@ -424,7 +424,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1275
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1217
 
@@ -436,11 +436,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1217
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1218
 
@@ -456,11 +456,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1218
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1219
 
@@ -476,15 +476,15 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1219
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1285
 
@@ -496,11 +496,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1285
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1286
 
@@ -516,11 +516,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1286
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1287
 
@@ -536,11 +536,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1287
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
 ***
 
@@ -548,7 +548,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1287
 
 #### Call Signature
 
-> **getIterationHistory**(`request`): `Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+> **getIterationHistory**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1253
 
@@ -560,11 +560,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1253
 
 ##### Returns
 
-`Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 #### Call Signature
 
-> **getIterationHistory**(`request`, `metadata`): `Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+> **getIterationHistory**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1254
 
@@ -580,11 +580,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1254
 
 ##### Returns
 
-`Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 #### Call Signature
 
-> **getIterationHistory**(`request`, `metadata`, `options`): `Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+> **getIterationHistory**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1255
 
@@ -600,15 +600,15 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1255
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 #### Call Signature
 
-> **getIterationHistory**(`request`): `Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+> **getIterationHistory**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1384
 
@@ -620,11 +620,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1384
 
 ##### Returns
 
-`Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 #### Call Signature
 
-> **getIterationHistory**(`request`, `metadata`): `Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+> **getIterationHistory**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1385
 
@@ -640,11 +640,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1385
 
 ##### Returns
 
-`Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 #### Call Signature
 
-> **getIterationHistory**(`request`, `metadata`, `options`): `Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+> **getIterationHistory**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1386
 
@@ -660,11 +660,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1386
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
 ***
 
@@ -684,7 +684,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1269
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1220
 
@@ -696,11 +696,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1220
 
 ##### Returns
 
-`Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1221
 
@@ -716,11 +716,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1221
 
 ##### Returns
 
-`Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1222
 
@@ -736,15 +736,15 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1222
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1297
 
@@ -756,11 +756,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1297
 
 ##### Returns
 
-`Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1298
 
@@ -776,11 +776,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1298
 
 ##### Returns
 
-`Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1299
 
@@ -796,11 +796,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1299
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
 ***
 
@@ -808,7 +808,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1299
 
 #### Call Signature
 
-> **resume**(`request`): `Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **resume**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1243
 
@@ -822,11 +822,11 @@ Resume stopped or failed transfer.
 
 ##### Returns
 
-`Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **resume**(`request`, `metadata`): `Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **resume**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1244
 
@@ -842,11 +842,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1244
 
 ##### Returns
 
-`Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **resume**(`request`, `metadata`, `options`): `Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **resume**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1245
 
@@ -862,15 +862,15 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1245
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **resume**(`request`): `Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **resume**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1354
 
@@ -884,11 +884,11 @@ Resume stopped or failed transfer.
 
 ##### Returns
 
-`Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **resume**(`request`, `metadata`): `Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **resume**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1355
 
@@ -906,11 +906,11 @@ Resume stopped or failed transfer.
 
 ##### Returns
 
-`Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **resume**(`request`, `metadata`, `options`): `Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **resume**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1356
 
@@ -928,11 +928,11 @@ Resume stopped or failed transfer.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -940,7 +940,7 @@ Resume stopped or failed transfer.
 
 #### Call Signature
 
-> **stop**(`request`): `Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1236
 
@@ -957,11 +957,11 @@ Stop active transfer. If the transfer is currently moving data,
 
 ##### Returns
 
-`Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`): `Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1237
 
@@ -977,11 +977,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1237
 
 ##### Returns
 
-`Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`, `options`): `Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1238
 
@@ -997,15 +997,15 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1238
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`): `Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1339
 
@@ -1022,11 +1022,11 @@ Stop active transfer. If the transfer is currently moving data,
 
 ##### Returns
 
-`Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`): `Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1340
 
@@ -1047,11 +1047,11 @@ Stop active transfer. If the transfer is currently moving data,
 
 ##### Returns
 
-`Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`, `options`): `Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1341
 
@@ -1072,11 +1072,11 @@ Stop active transfer. If the transfer is currently moving data,
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -1084,7 +1084,7 @@ Stop active transfer. If the transfer is currently moving data,
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1226
 
@@ -1096,11 +1096,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1226
 
 ##### Returns
 
-`Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1227
 
@@ -1116,11 +1116,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1227
 
 ##### Returns
 
-`Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1228
 
@@ -1136,15 +1136,15 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1228
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1324
 
@@ -1156,11 +1156,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1324
 
 ##### Returns
 
-`Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1325
 
@@ -1176,11 +1176,11 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1325
 
 ##### Returns
 
-`Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1326
 
@@ -1196,8 +1196,8 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1326
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

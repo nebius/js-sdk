@@ -6,7 +6,7 @@
 
 # Interface: ResendInvitationRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13659
+Defined in: src/generated/nebius/iam/v1/index.ts:13656
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13659
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13661
+Defined in: src/generated/nebius/iam/v1/index.ts:13658
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13661
 
 > **$type**: `"nebius.iam.v1.ResendInvitationRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13660
+Defined in: src/generated/nebius/iam/v1/index.ts:13657
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13660
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13662
+Defined in: src/generated/nebius/iam/v1/index.ts:13659

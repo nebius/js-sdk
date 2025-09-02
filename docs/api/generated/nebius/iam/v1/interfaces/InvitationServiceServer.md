@@ -6,7 +6,7 @@
 
 # Interface: InvitationServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13802
+Defined in: src/generated/nebius/iam/v1/index.ts:13799
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13802
 
 > **create**: `handleUnaryCall`\<[`CreateInvitationRequest`](CreateInvitationRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13803
+Defined in: src/generated/nebius/iam/v1/index.ts:13800
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13803
 
 > **delete**: `handleUnaryCall`\<[`DeleteInvitationRequest`](DeleteInvitationRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13806
+Defined in: src/generated/nebius/iam/v1/index.ts:13803
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13806
 
 > **get**: `handleUnaryCall`\<[`GetInvitationRequest`](GetInvitationRequest.md), [`Invitation`](Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13804
+Defined in: src/generated/nebius/iam/v1/index.ts:13801
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13804
 
 > **list**: `handleUnaryCall`\<[`ListInvitationsRequest`](ListInvitationsRequest.md), [`ListInvitationsResponse`](ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13805
+Defined in: src/generated/nebius/iam/v1/index.ts:13802
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13805
 
 > **resend**: `handleUnaryCall`\<[`ResendInvitationRequest`](ResendInvitationRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13808
+Defined in: src/generated/nebius/iam/v1/index.ts:13805
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13808
 
 > **update**: `handleUnaryCall`\<[`UpdateInvitationRequest`](UpdateInvitationRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13807
+Defined in: src/generated/nebius/iam/v1/index.ts:13804

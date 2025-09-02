@@ -6,6 +6,6 @@
 
 # Variable: GroupStatus\_State
 
-> **GroupStatus\_State**: `GroupStatus_StateClass`
+> **GroupStatus\_State**: [`GroupStatus_StateClass`](../type-aliases/GroupStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12636
+Defined in: src/generated/nebius/iam/v1/index.ts:12633

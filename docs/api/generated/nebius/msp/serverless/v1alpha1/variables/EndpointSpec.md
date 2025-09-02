@@ -6,6 +6,6 @@
 
 # Variable: EndpointSpec
 
-> **EndpointSpec**: `MessageFns`\<[`EndpointSpec`](../interfaces/EndpointSpec.md), `"nebius.msp.serverless.v1alpha1.EndpointSpec"`\>
+> **EndpointSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`EndpointSpec`](../interfaces/EndpointSpec.md), `"nebius.msp.serverless.v1alpha1.EndpointSpec"`\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:661

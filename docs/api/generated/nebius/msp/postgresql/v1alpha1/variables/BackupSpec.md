@@ -6,6 +6,6 @@
 
 # Variable: BackupSpec
 
-> **BackupSpec**: `MessageFns`\<[`BackupSpec`](../interfaces/BackupSpec.md), `"nebius.msp.postgresql.v1alpha1.BackupSpec"`\>
+> **BackupSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`BackupSpec`](../interfaces/BackupSpec.md), `"nebius.msp.postgresql.v1alpha1.BackupSpec"`\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3694

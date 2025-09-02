@@ -6,7 +6,7 @@
 
 # Interface: CreateInvitationRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12996
+Defined in: src/generated/nebius/iam/v1/index.ts:12993
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12996
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12998
+Defined in: src/generated/nebius/iam/v1/index.ts:12995
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12998
 
 > **$type**: `"nebius.iam.v1.CreateInvitationRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12997
+Defined in: src/generated/nebius/iam/v1/index.ts:12994
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12997
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12999
+Defined in: src/generated/nebius/iam/v1/index.ts:12996
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12999
 
 > **noSend**: `boolean`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13005
+Defined in: src/generated/nebius/iam/v1/index.ts:13002
 
 if set, no sending is attempted (it's supposed that later a Resend method is called)
 
@@ -48,4 +48,4 @@ if set, no sending is attempted (it's supposed that later a Resend method is cal
 
 > `optional` **spec**: [`InvitationSpec`](InvitationSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13000
+Defined in: src/generated/nebius/iam/v1/index.ts:12997

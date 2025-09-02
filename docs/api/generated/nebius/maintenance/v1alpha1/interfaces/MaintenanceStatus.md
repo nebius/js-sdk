@@ -38,7 +38,7 @@ List of resources that are affected by this maintenance operation.
 
 ### finishedAt?
 
-> `optional` **finishedAt**: `Dayjs`
+> `optional` **finishedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:718
 
@@ -48,7 +48,7 @@ Timestamp indicating when the maintenance operation finished.
 
 ### startedAt?
 
-> `optional` **startedAt**: `Dayjs`
+> `optional` **startedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:713
 

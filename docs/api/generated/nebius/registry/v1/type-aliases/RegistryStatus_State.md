@@ -6,6 +6,6 @@
 
 # Type Alias: RegistryStatus\_State
 
-> **RegistryStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"CREATING"` \| `"ACTIVE"` \| `"DELETING"` \| `"SUSPENDED"`\>
+> **RegistryStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"CREATING"` \| `"ACTIVE"` \| `"DELETING"` \| `"SUSPENDED"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1656

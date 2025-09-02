@@ -6,7 +6,7 @@
 
 # Interface: TokenExchangeServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22101
+Defined in: src/generated/nebius/iam/v1/index.ts:22098
 
 ## Extends
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22101
 
 > **exchange**: `handleUnaryCall`\<[`ExchangeTokenRequest`](ExchangeTokenRequest.md), [`CreateTokenResponse`](CreateTokenResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22102
+Defined in: src/generated/nebius/iam/v1/index.ts:22099

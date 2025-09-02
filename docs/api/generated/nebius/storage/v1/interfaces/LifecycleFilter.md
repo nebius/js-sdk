@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2853
 
 ### objectSizeGreaterThanBytes
 
-> **objectSizeGreaterThanBytes**: `Long`
+> **objectSizeGreaterThanBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2865
 
@@ -38,7 +38,7 @@ Minimum object size to which the rule applies.
 
 ### objectSizeLessThanBytes
 
-> **objectSizeLessThanBytes**: `Long`
+> **objectSizeLessThanBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2870
 

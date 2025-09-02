@@ -6,6 +6,6 @@
 
 # Variable: DeleteNetworkRequest
 
-> **DeleteNetworkRequest**: `MessageFns`\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `"nebius.vpc.v1.DeleteNetworkRequest"`\>
+> **DeleteNetworkRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), `"nebius.vpc.v1.DeleteNetworkRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3182

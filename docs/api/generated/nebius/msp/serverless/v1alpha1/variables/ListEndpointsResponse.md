@@ -6,6 +6,6 @@
 
 # Variable: ListEndpointsResponse
 
-> **ListEndpointsResponse**: `MessageFns`\<[`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md), `"nebius.msp.serverless.v1alpha1.ListEndpointsResponse"`\>
+> **ListEndpointsResponse**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md), `"nebius.msp.serverless.v1alpha1.ListEndpointsResponse"`\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:153

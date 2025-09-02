@@ -6,6 +6,6 @@
 
 # Variable: UpdateGpuClusterRequest
 
-> **UpdateGpuClusterRequest**: `MessageFns`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `"nebius.compute.v1.UpdateGpuClusterRequest"`\>
+> **UpdateGpuClusterRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `"nebius.compute.v1.UpdateGpuClusterRequest"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3885

@@ -6,6 +6,6 @@
 
 # Variable: CreateAuthPublicKeyRequest
 
-> **CreateAuthPublicKeyRequest**: `MessageFns`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `"nebius.iam.v1.CreateAuthPublicKeyRequest"`\>
+> **CreateAuthPublicKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `"nebius.iam.v1.CreateAuthPublicKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3687
+Defined in: src/generated/nebius/iam/v1/index.ts:3684

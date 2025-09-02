@@ -6,6 +6,6 @@
 
 # Variable: ListNodeGroupsRequest
 
-> **ListNodeGroupsRequest**: `MessageFns`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), `"nebius.mk8s.v1alpha1.ListNodeGroupsRequest"`\>
+> **ListNodeGroupsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), `"nebius.mk8s.v1alpha1.ListNodeGroupsRequest"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3292

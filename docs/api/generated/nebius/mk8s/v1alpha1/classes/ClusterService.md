@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:864
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:874
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:874
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:875
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:875
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:876
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:876
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:936
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:936
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:937
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:937
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:938
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:938
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:938
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:880
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:880
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:881
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:881
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:882
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:882
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:966
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:966
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:967
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:967
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:968
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:968
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:968
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:865
 
@@ -304,11 +304,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:865
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:866
 
@@ -324,11 +324,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:866
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:867
 
@@ -344,15 +344,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:867
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:900
 
@@ -364,11 +364,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:900
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:901
 
@@ -384,11 +384,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:901
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:902
 
@@ -404,11 +404,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:902
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 ***
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:902
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:868
 
@@ -428,11 +428,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:868
 
 ##### Returns
 
-`Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:869
 
@@ -448,11 +448,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:869
 
 ##### Returns
 
-`Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:870
 
@@ -468,15 +468,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:870
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:912
 
@@ -488,11 +488,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:912
 
 ##### Returns
 
-`Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:913
 
@@ -508,11 +508,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:913
 
 ##### Returns
 
-`Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:914
 
@@ -528,11 +528,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:914
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 ***
 
@@ -552,7 +552,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:896
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:871
 
@@ -564,11 +564,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:871
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:872
 
@@ -584,11 +584,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:872
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:873
 
@@ -604,15 +604,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:873
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:924
 
@@ -624,11 +624,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:924
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:925
 
@@ -644,11 +644,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:925
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:926
 
@@ -664,11 +664,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:926
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 ***
 
@@ -676,7 +676,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:926
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:877
 
@@ -688,11 +688,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:877
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:878
 
@@ -708,11 +708,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:878
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:879
 
@@ -728,15 +728,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:879
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:951
 
@@ -748,11 +748,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:951
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:952
 
@@ -768,11 +768,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:952
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:953
 
@@ -788,8 +788,8 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:953
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>

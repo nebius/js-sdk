@@ -6,7 +6,7 @@
 
 # Interface: GetAccessPermitRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2591
+Defined in: src/generated/nebius/iam/v1/index.ts:2588
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2591
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2593
+Defined in: src/generated/nebius/iam/v1/index.ts:2590
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2593
 
 > **$type**: `"nebius.iam.v1.GetAccessPermitRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2592
+Defined in: src/generated/nebius/iam/v1/index.ts:2589
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2592
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2594
+Defined in: src/generated/nebius/iam/v1/index.ts:2591

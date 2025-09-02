@@ -6,6 +6,6 @@
 
 # Variable: Condition\_Severity
 
-> **Condition\_Severity**: `Condition_SeverityClass`
+> **Condition\_Severity**: [`Condition_SeverityClass`](../type-aliases/Condition_SeverityClass.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2161

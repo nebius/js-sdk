@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:455
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:456
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/audit/v2/index.ts:456
 
 ##### Returns
 
-`Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:457
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/audit/v2/index.ts:457
 
 ##### Returns
 
-`Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:458
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/audit/v2/index.ts:458
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:472
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/audit/v2/index.ts:472
 
 ##### Returns
 
-`Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:473
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/audit/v2/index.ts:473
 
 ##### Returns
 
-`Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:474
 
@@ -156,8 +156,8 @@ Defined in: src/generated/nebius/audit/v2/index.ts:474
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>

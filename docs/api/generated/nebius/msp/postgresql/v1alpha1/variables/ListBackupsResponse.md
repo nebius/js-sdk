@@ -6,6 +6,6 @@
 
 # Variable: ListBackupsResponse
 
-> **ListBackupsResponse**: `MessageFns`\<[`ListBackupsResponse`](../interfaces/ListBackupsResponse.md), `"nebius.msp.postgresql.v1alpha1.ListBackupsResponse"`\>
+> **ListBackupsResponse**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListBackupsResponse`](../interfaces/ListBackupsResponse.md), `"nebius.msp.postgresql.v1alpha1.ListBackupsResponse"`\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:309

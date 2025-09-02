@@ -6,6 +6,6 @@
 
 # Variable: Target
 
-> **Target**: `MessageFns`\<[`Target`](../interfaces/Target.md), `"nebius.vpc.v1.Target"`\>
+> **Target**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Target`](../interfaces/Target.md), `"nebius.vpc.v1.Target"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8788

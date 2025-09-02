@@ -6,6 +6,6 @@
 
 # Variable: TransferSpec\_Limiters
 
-> **TransferSpec\_Limiters**: `MessageFns`\<[`TransferSpec_Limiters`](../interfaces/TransferSpec_Limiters.md), `"nebius.storage.v1alpha1.TransferSpec.Limiters"`\>
+> **TransferSpec\_Limiters**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TransferSpec_Limiters`](../interfaces/TransferSpec_Limiters.md), `"nebius.storage.v1alpha1.TransferSpec.Limiters"`\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2552

@@ -6,7 +6,7 @@
 
 # Interface: FederationCertificate
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8049
+Defined in: src/generated/nebius/iam/v1/index.ts:8046
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8049
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8051
+Defined in: src/generated/nebius/iam/v1/index.ts:8048
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8051
 
 > **$type**: `"nebius.iam.v1.FederationCertificate"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8050
+Defined in: src/generated/nebius/iam/v1/index.ts:8047
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8050
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8052
+Defined in: src/generated/nebius/iam/v1/index.ts:8049
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8052
 
 > `optional` **spec**: [`FederationCertificateSpec`](FederationCertificateSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8053
+Defined in: src/generated/nebius/iam/v1/index.ts:8050
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8053
 
 > `optional` **status**: [`FederationCertificateStatus`](FederationCertificateStatus.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8054
+Defined in: src/generated/nebius/iam/v1/index.ts:8051

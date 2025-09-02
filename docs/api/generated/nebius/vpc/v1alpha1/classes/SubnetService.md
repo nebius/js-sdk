@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7078
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7079
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7079
 
 ##### Returns
 
-`Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7080
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7080
 
 ##### Returns
 
-`Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7081
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7081
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7104
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7104
 
 ##### Returns
 
-`Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7105
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7105
 
 ##### Returns
 
-`Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7106
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7106
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7106
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7082
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7082
 
 ##### Returns
 
-`Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7083
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7083
 
 ##### Returns
 
-`Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7084
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7084
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7116
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7116
 
 ##### Returns
 
-`Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7117
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7117
 
 ##### Returns
 
-`Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7118
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7118
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7118
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7085
 
@@ -304,11 +304,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7085
 
 ##### Returns
 
-`Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7086
 
@@ -324,11 +324,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7086
 
 ##### Returns
 
-`Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7087
 
@@ -344,15 +344,15 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7087
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7128
 
@@ -364,11 +364,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7128
 
 ##### Returns
 
-`Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7129
 
@@ -384,11 +384,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7129
 
 ##### Returns
 
-`Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7130
 
@@ -404,11 +404,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7130
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 ***
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7130
 
 #### Call Signature
 
-> **listByNetwork**(`request`): `Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **listByNetwork**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7088
 
@@ -428,11 +428,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7088
 
 ##### Returns
 
-`Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **listByNetwork**(`request`, `metadata`): `Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **listByNetwork**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7089
 
@@ -448,11 +448,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7089
 
 ##### Returns
 
-`Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **listByNetwork**(`request`, `metadata`, `options`): `Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **listByNetwork**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7090
 
@@ -468,15 +468,15 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7090
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **listByNetwork**(`request`): `Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **listByNetwork**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7140
 
@@ -488,11 +488,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7140
 
 ##### Returns
 
-`Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **listByNetwork**(`request`, `metadata`): `Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **listByNetwork**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7141
 
@@ -508,11 +508,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7141
 
 ##### Returns
 
-`Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 #### Call Signature
 
-> **listByNetwork**(`request`, `metadata`, `options`): `Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+> **listByNetwork**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7142
 
@@ -528,8 +528,8 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7142
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>

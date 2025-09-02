@@ -20,7 +20,9 @@
 ## Type Aliases
 
 - [FieldBehavior](type-aliases/FieldBehavior.md)
+- [FieldBehaviorClass](type-aliases/FieldBehaviorClass.md)
 - [ResourceBehavior](type-aliases/ResourceBehavior.md)
+- [ResourceBehaviorClass](type-aliases/ResourceBehaviorClass.md)
 
 ## Variables
 

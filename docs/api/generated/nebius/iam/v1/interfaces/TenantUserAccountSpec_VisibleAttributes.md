@@ -6,7 +6,7 @@
 
 # Interface: TenantUserAccountSpec\_VisibleAttributes
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21848
+Defined in: src/generated/nebius/iam/v1/index.ts:21845
 
 when a global user account is projected to a specific tenant
  they can give consent for that tenant's owner to view specific personal data
@@ -19,7 +19,7 @@ when a global user account is projected to a specific tenant
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21850
+Defined in: src/generated/nebius/iam/v1/index.ts:21847
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21850
 
 > **$type**: `"nebius.iam.v1.TenantUserAccountSpec.VisibleAttributes"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21849
+Defined in: src/generated/nebius/iam/v1/index.ts:21846
 
 ***
 
@@ -35,4 +35,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21849
 
 > **attribute**: `string`[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21851
+Defined in: src/generated/nebius/iam/v1/index.ts:21848

@@ -6,6 +6,6 @@
 
 # Variable: SuspensionState
 
-> **SuspensionState**: `SuspensionStateClass`
+> **SuspensionState**: [`SuspensionStateClass`](../type-aliases/SuspensionStateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19431
+Defined in: src/generated/nebius/iam/v1/index.ts:19428

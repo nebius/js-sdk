@@ -6,7 +6,7 @@
 
 # Interface: GroupMembershipSpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11135
+Defined in: src/generated/nebius/iam/v1/index.ts:11132
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11135
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11137
+Defined in: src/generated/nebius/iam/v1/index.ts:11134
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11137
 
 > **$type**: `"nebius.iam.v1.GroupMembershipSpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11136
+Defined in: src/generated/nebius/iam/v1/index.ts:11133
 
 ***
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11136
 
 > **memberId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11142
+Defined in: src/generated/nebius/iam/v1/index.ts:11139
 
 Member of the group. Can be tenant user account id or service account id.

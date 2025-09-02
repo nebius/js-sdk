@@ -6,6 +6,6 @@
 
 # Variable: SourceImageFamily
 
-> **SourceImageFamily**: `MessageFns`\<[`SourceImageFamily`](../interfaces/SourceImageFamily.md), `"nebius.compute.v1.SourceImageFamily"`\>
+> **SourceImageFamily**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`SourceImageFamily`](../interfaces/SourceImageFamily.md), `"nebius.compute.v1.SourceImageFamily"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:1552

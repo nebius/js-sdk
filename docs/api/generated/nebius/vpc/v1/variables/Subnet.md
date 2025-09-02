@@ -6,6 +6,6 @@
 
 # Variable: Subnet
 
-> **Subnet**: `MessageFns`\<[`Subnet`](../interfaces/Subnet.md), `"nebius.vpc.v1.Subnet"`\>
+> **Subnet**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Subnet`](../interfaces/Subnet.md), `"nebius.vpc.v1.Subnet"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:7326

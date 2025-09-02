@@ -8,7 +8,7 @@
 
 ## Classes
 
-- [~~OperationService~~](classes/OperationService.md)
+- [OperationService](classes/OperationService.md)
 
 ## Interfaces
 

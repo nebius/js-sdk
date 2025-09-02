@@ -35,10 +35,13 @@
 ## Type Aliases
 
 - [Artifact\_Status](type-aliases/Artifact_Status.md)
+- [Artifact\_StatusClass](type-aliases/Artifact_StatusClass.md)
 - [Artifact\_Type](type-aliases/Artifact_Type.md)
+- [Artifact\_TypeClass](type-aliases/Artifact_TypeClass.md)
 - [ArtifactServiceServiceDescription](type-aliases/ArtifactServiceServiceDescription.md)
 - [RegistryServiceServiceDescription](type-aliases/RegistryServiceServiceDescription.md)
 - [RegistryStatus\_State](type-aliases/RegistryStatus_State.md)
+- [RegistryStatus\_StateClass](type-aliases/RegistryStatus_StateClass.md)
 
 ## Variables
 

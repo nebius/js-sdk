@@ -6,6 +6,6 @@
 
 # Variable: LifecycleNoncurrentVersionExpiration
 
-> **LifecycleNoncurrentVersionExpiration**: `MessageFns`\<[`LifecycleNoncurrentVersionExpiration`](../interfaces/LifecycleNoncurrentVersionExpiration.md), `"nebius.storage.v1.LifecycleNoncurrentVersionExpiration"`\>
+> **LifecycleNoncurrentVersionExpiration**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`LifecycleNoncurrentVersionExpiration`](../interfaces/LifecycleNoncurrentVersionExpiration.md), `"nebius.storage.v1.LifecycleNoncurrentVersionExpiration"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:3158

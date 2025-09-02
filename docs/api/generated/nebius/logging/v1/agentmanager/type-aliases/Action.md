@@ -6,7 +6,7 @@
 
 # Type Alias: Action
 
-> **Action** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"ACTION_UNDEFINED"` \| `"NOP"` \| `"UPDATE"` \| `"RESTART"`\>
+> **Action** = [`EnumInstance`](../../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"ACTION_UNDEFINED"` \| `"NOP"` \| `"UPDATE"` \| `"RESTART"`\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:108
 

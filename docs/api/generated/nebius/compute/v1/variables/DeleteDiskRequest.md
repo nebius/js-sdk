@@ -6,6 +6,6 @@
 
 # Variable: DeleteDiskRequest
 
-> **DeleteDiskRequest**: `MessageFns`\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), `"nebius.compute.v1.DeleteDiskRequest"`\>
+> **DeleteDiskRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), `"nebius.compute.v1.DeleteDiskRequest"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:473

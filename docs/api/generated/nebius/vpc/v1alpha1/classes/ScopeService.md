@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5936
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5937
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5937
 
 ##### Returns
 
-`Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5938
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5938
 
 ##### Returns
 
-`Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5939
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5939
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5959
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5959
 
 ##### Returns
 
-`Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5960
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5960
 
 ##### Returns
 
-`Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5961
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5961
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5961
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5940
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5940
 
 ##### Returns
 
-`Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5941
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5941
 
 ##### Returns
 
-`Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5942
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5942
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5971
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5971
 
 ##### Returns
 
-`Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5972
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5972
 
 ##### Returns
 
-`Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5973
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5973
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5973
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5943
 
@@ -304,11 +304,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5943
 
 ##### Returns
 
-`Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5944
 
@@ -324,11 +324,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5944
 
 ##### Returns
 
-`Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5945
 
@@ -344,15 +344,15 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5945
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5983
 
@@ -364,11 +364,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5983
 
 ##### Returns
 
-`Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5984
 
@@ -384,11 +384,11 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5984
 
 ##### Returns
 
-`Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5985
 
@@ -404,8 +404,8 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5985
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>

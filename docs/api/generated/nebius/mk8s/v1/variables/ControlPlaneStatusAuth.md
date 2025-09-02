@@ -6,6 +6,6 @@
 
 # Variable: ControlPlaneStatusAuth
 
-> **ControlPlaneStatusAuth**: `MessageFns`\<[`ControlPlaneStatusAuth`](../interfaces/ControlPlaneStatusAuth.md), `"nebius.mk8s.v1.ControlPlaneStatusAuth"`\>
+> **ControlPlaneStatusAuth**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ControlPlaneStatusAuth`](../interfaces/ControlPlaneStatusAuth.md), `"nebius.mk8s.v1.ControlPlaneStatusAuth"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1998

@@ -6,7 +6,7 @@
 
 # Interface: Account
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3271
+Defined in: src/generated/nebius/iam/v1/index.ts:3268
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3271
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3273
+Defined in: src/generated/nebius/iam/v1/index.ts:3270
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3273
 
 > **$type**: `"nebius.iam.v1.Account"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3272
+Defined in: src/generated/nebius/iam/v1/index.ts:3269
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3272
 
 > `optional` **type**: \{ `$case`: `"userAccount"`; `userAccount`: [`Account_UserAccount`](Account_UserAccount.md); \} \| \{ `$case`: `"serviceAccount"`; `serviceAccount`: [`Account_ServiceAccount`](Account_ServiceAccount.md); \} \| \{ `$case`: `"anonymousAccount"`; `anonymousAccount`: [`Account_AnonymousAccount`](Account_AnonymousAccount.md); \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3274
+Defined in: src/generated/nebius/iam/v1/index.ts:3271

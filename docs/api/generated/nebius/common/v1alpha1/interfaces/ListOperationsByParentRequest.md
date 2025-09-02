@@ -43,7 +43,7 @@ Filter expression for the listing results. Optional.
 
 ### ~~pageSize~~
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:423
 

@@ -6,6 +6,6 @@
 
 # Variable: UpdateAccessKeyRequest
 
-> **UpdateAccessKeyRequest**: `MessageFns`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `"nebius.iam.v1.UpdateAccessKeyRequest"`\>
+> **UpdateAccessKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `"nebius.iam.v1.UpdateAccessKeyRequest"`\>
 
 Defined in: src/generated/nebius/iam/v1/index.ts:845

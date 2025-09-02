@@ -6,6 +6,6 @@
 
 # Variable: GetStaticKeyByNameRequest
 
-> **GetStaticKeyByNameRequest**: `MessageFns`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), `"nebius.iam.v1.GetStaticKeyByNameRequest"`\>
+> **GetStaticKeyByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), `"nebius.iam.v1.GetStaticKeyByNameRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17864
+Defined in: src/generated/nebius/iam/v1/index.ts:17861

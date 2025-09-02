@@ -6,6 +6,6 @@
 
 # Type Alias: ImageSpec\_CPUArchitecture
 
-> **ImageSpec\_CPUArchitecture** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"AMD64"` \| `"ARM64"`\>
+> **ImageSpec\_CPUArchitecture** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"AMD64"` \| `"ARM64"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5643

@@ -6,6 +6,6 @@
 
 # Variable: GetProfileResponse
 
-> **GetProfileResponse**: `MessageFns`\<[`GetProfileResponse`](../interfaces/GetProfileResponse.md), `"nebius.iam.v1.GetProfileResponse"`\>
+> **GetProfileResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetProfileResponse`](../interfaces/GetProfileResponse.md), `"nebius.iam.v1.GetProfileResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14480
+Defined in: src/generated/nebius/iam/v1/index.ts:14477

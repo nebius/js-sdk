@@ -6,6 +6,6 @@
 
 # Variable: ListFederationsRequest
 
-> **ListFederationsRequest**: `MessageFns`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), `"nebius.iam.v1.ListFederationsRequest"`\>
+> **ListFederationsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), `"nebius.iam.v1.ListFederationsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8654
+Defined in: src/generated/nebius/iam/v1/index.ts:8651

@@ -6,6 +6,6 @@
 
 # Variable: MessagePySDKSettings
 
-> **MessagePySDKSettings**: `MessageFns`\<[`MessagePySDKSettings`](../interfaces/MessagePySDKSettings.md), `"nebius.MessagePySDKSettings"`\>
+> **MessagePySDKSettings**: [`MessageFns`](../../../runtime/protos/core/interfaces/MessageFns.md)\<[`MessagePySDKSettings`](../interfaces/MessagePySDKSettings.md), `"nebius.MessagePySDKSettings"`\>
 
 Defined in: src/generated/nebius/index.ts:455

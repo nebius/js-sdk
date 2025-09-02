@@ -6,6 +6,6 @@
 
 # Variable: FieldPySDKSettings
 
-> **FieldPySDKSettings**: `MessageFns`\<[`FieldPySDKSettings`](../interfaces/FieldPySDKSettings.md), `"nebius.FieldPySDKSettings"`\>
+> **FieldPySDKSettings**: [`MessageFns`](../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FieldPySDKSettings`](../interfaces/FieldPySDKSettings.md), `"nebius.FieldPySDKSettings"`\>
 
 Defined in: src/generated/nebius/index.ts:370

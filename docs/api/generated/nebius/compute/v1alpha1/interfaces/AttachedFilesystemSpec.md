@@ -6,7 +6,7 @@
 
 # Interface: AttachedFilesystemSpec
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7585
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7570
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7585
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7587
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7572
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7587
 
 > **$type**: `"nebius.compute.v1alpha1.AttachedFilesystemSpec"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7586
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7571
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7586
 
 > **attachMode**: [`AttachedFilesystemSpec_AttachMode`](../type-aliases/AttachedFilesystemSpec_AttachMode.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7588
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7573
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7588
 
 > **deviceName**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7593
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7578
 
 Specifies the user-defined identifier, allowing to use it as a device in mount command.
 
@@ -48,7 +48,7 @@ Specifies the user-defined identifier, allowing to use it as a device in mount c
 
 > `optional` **type**: `object`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7594
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7579
 
 #### $case
 

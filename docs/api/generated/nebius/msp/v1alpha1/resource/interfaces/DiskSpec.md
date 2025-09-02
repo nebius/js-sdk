@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:847
 
 ### sizeGibibytes
 
-> **sizeGibibytes**: `Long`
+> **sizeGibibytes**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:850
 

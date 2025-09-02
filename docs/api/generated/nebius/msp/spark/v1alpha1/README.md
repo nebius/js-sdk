@@ -60,6 +60,7 @@
 
 - [ClusterServiceServiceDescription](type-aliases/ClusterServiceServiceDescription.md)
 - [JobResultCode](type-aliases/JobResultCode.md)
+- [JobResultCodeClass](type-aliases/JobResultCodeClass.md)
 - [JobServiceServiceDescription](type-aliases/JobServiceServiceDescription.md)
 - [SessionServiceServiceDescription](type-aliases/SessionServiceServiceDescription.md)
 

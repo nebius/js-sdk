@@ -6,6 +6,6 @@
 
 # Variable: GpuSettings
 
-> **GpuSettings**: `MessageFns`\<[`GpuSettings`](../interfaces/GpuSettings.md), `"nebius.mk8s.v1alpha1.GpuSettings"`\>
+> **GpuSettings**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GpuSettings`](../interfaces/GpuSettings.md), `"nebius.mk8s.v1alpha1.GpuSettings"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4962

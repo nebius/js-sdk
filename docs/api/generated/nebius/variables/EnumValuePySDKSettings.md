@@ -6,6 +6,6 @@
 
 # Variable: EnumValuePySDKSettings
 
-> **EnumValuePySDKSettings**: `MessageFns`\<[`EnumValuePySDKSettings`](../interfaces/EnumValuePySDKSettings.md), `"nebius.EnumValuePySDKSettings"`\>
+> **EnumValuePySDKSettings**: [`MessageFns`](../../../runtime/protos/core/interfaces/MessageFns.md)\<[`EnumValuePySDKSettings`](../interfaces/EnumValuePySDKSettings.md), `"nebius.EnumValuePySDKSettings"`\>
 
 Defined in: src/generated/nebius/index.ts:710

@@ -6,6 +6,6 @@
 
 # Variable: Service
 
-> **Service**: `MessageFns`\<[`Service`](../interfaces/Service.md), `"nebius.audit.v2.Service"`\>
+> **Service**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Service`](../interfaces/Service.md), `"nebius.audit.v2.Service"`\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:2268

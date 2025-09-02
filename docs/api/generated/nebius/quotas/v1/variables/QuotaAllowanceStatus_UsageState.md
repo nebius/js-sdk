@@ -6,6 +6,6 @@
 
 # Variable: QuotaAllowanceStatus\_UsageState
 
-> **QuotaAllowanceStatus\_UsageState**: `QuotaAllowanceStatus_UsageStateClass`
+> **QuotaAllowanceStatus\_UsageState**: [`QuotaAllowanceStatus_UsageStateClass`](../type-aliases/QuotaAllowanceStatus_UsageStateClass.md)
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:662

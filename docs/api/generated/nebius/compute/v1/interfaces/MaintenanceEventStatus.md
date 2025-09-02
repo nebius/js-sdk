@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9151
 
 ### createdAt?
 
-> `optional` **createdAt**: `Dayjs`
+> `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9158
 
@@ -38,7 +38,7 @@ Time when the maintenance event is created
 
 ### finishedAt?
 
-> `optional` **finishedAt**: `Dayjs`
+> `optional` **finishedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9163
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9153
 
 ### slaDeadlineTs?
 
-> `optional` **slaDeadlineTs**: `Dayjs`
+> `optional` **slaDeadlineTs**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9168
 

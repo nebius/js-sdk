@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3089
 
 ### createdAt?
 
-> `optional` **createdAt**: `Dayjs`
+> `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/common/v1/index.ts:3105
 
@@ -58,7 +58,7 @@ Human-readable description of the operation. 0-256 characters long.
 
 ### finishedAt?
 
-> `optional` **finishedAt**: `Dayjs`
+> `optional` **finishedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/common/v1/index.ts:3115
 

@@ -6,6 +6,6 @@
 
 # Variable: ListQuotaAllowancesRequest
 
-> **ListQuotaAllowancesRequest**: `MessageFns`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), `"nebius.quotas.v1.ListQuotaAllowancesRequest"`\>
+> **ListQuotaAllowancesRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), `"nebius.quotas.v1.ListQuotaAllowancesRequest"`\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:14

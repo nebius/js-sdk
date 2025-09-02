@@ -40,7 +40,7 @@ Deprecated, will be removed on 2025-08-01: it is not implemented well, messages 
 
 ### nodeCount
 
-> **nodeCount**: `Long`
+> **nodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6189
 
@@ -51,7 +51,7 @@ Total number of nodes that are currently in the node group.
 
 ### outdatedNodeCount
 
-> **outdatedNodeCount**: `Long`
+> **outdatedNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6195
 
@@ -62,7 +62,7 @@ Total number of nodes that has outdated node configuration.
 
 ### readyNodeCount
 
-> **readyNodeCount**: `Long`
+> **readyNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6201
 
@@ -91,7 +91,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6172
 
 ### targetNodeCount
 
-> **targetNodeCount**: `Long`
+> **targetNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6183
 

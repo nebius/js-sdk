@@ -6,6 +6,6 @@
 
 # Variable: IPAddress
 
-> **IPAddress**: `MessageFns`\<[`IPAddress`](../interfaces/IPAddress.md), `"nebius.vpc.v1alpha1.IPAddress"`\>
+> **IPAddress**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`IPAddress`](../interfaces/IPAddress.md), `"nebius.vpc.v1alpha1.IPAddress"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2436

@@ -6,6 +6,6 @@
 
 # Variable: UpdateClusterRequest
 
-> **UpdateClusterRequest**: `MessageFns`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `"nebius.mk8s.v1.UpdateClusterRequest"`\>
+> **UpdateClusterRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `"nebius.mk8s.v1.UpdateClusterRequest"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:470

@@ -6,6 +6,6 @@
 
 # Variable: IssueStaticKeyResponse
 
-> **IssueStaticKeyResponse**: `MessageFns`\<[`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md), `"nebius.iam.v1.IssueStaticKeyResponse"`\>
+> **IssueStaticKeyResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md), `"nebius.iam.v1.IssueStaticKeyResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18448
+Defined in: src/generated/nebius/iam/v1/index.ts:18445

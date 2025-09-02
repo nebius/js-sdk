@@ -6,7 +6,7 @@
 
 # Type Alias: OfferType
 
-> **OfferType** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"OFFER_TYPE_UNSPECIFIED"` \| `"OFFER_TYPE_CONTRACT_PRICE"`\>
+> **OfferType** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"OFFER_TYPE_UNSPECIFIED"` \| `"OFFER_TYPE_CONTRACT_PRICE"`\>
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1324
 

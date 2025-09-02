@@ -6,6 +6,6 @@
 
 # Variable: CreateTokenResponse
 
-> **CreateTokenResponse**: `MessageFns`\<[`CreateTokenResponse`](../interfaces/CreateTokenResponse.md), `"nebius.iam.v1.CreateTokenResponse"`\>
+> **CreateTokenResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateTokenResponse`](../interfaces/CreateTokenResponse.md), `"nebius.iam.v1.CreateTokenResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22422
+Defined in: src/generated/nebius/iam/v1/index.ts:22419

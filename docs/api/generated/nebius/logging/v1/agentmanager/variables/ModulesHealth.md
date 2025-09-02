@@ -6,6 +6,6 @@
 
 # Variable: ModulesHealth
 
-> **ModulesHealth**: `MessageFns`\<[`ModulesHealth`](../interfaces/ModulesHealth.md), `"nebius.logging.agentmanager.v1.ModulesHealth"`\>
+> **ModulesHealth**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ModulesHealth`](../interfaces/ModulesHealth.md), `"nebius.logging.agentmanager.v1.ModulesHealth"`\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:715

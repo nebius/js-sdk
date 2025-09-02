@@ -6,6 +6,6 @@
 
 # Variable: UpdateFederationRequest
 
-> **UpdateFederationRequest**: `MessageFns`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `"nebius.iam.v1.UpdateFederationRequest"`\>
+> **UpdateFederationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `"nebius.iam.v1.UpdateFederationRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8904
+Defined in: src/generated/nebius/iam/v1/index.ts:8901

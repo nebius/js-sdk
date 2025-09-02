@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1210
 
 ### delaySeconds
 
-> **delaySeconds**: `Long`
+> **delaySeconds**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1221
 
@@ -38,7 +38,7 @@ Initial delay before starting probing in seconds
 
 ### failureThreshold
 
-> **failureThreshold**: `Long`
+> **failureThreshold**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1231
 
@@ -58,7 +58,7 @@ Probe path
 
 ### periodSeconds
 
-> **periodSeconds**: `Long`
+> **periodSeconds**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1226
 

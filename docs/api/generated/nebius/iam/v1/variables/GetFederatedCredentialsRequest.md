@@ -6,6 +6,6 @@
 
 # Variable: GetFederatedCredentialsRequest
 
-> **GetFederatedCredentialsRequest**: `MessageFns`\<[`GetFederatedCredentialsRequest`](../interfaces/GetFederatedCredentialsRequest.md), `"nebius.iam.v1.GetFederatedCredentialsRequest"`\>
+> **GetFederatedCredentialsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetFederatedCredentialsRequest`](../interfaces/GetFederatedCredentialsRequest.md), `"nebius.iam.v1.GetFederatedCredentialsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5743
+Defined in: src/generated/nebius/iam/v1/index.ts:5740

@@ -6,6 +6,6 @@
 
 # Type Alias: PoolCidrState
 
-> **PoolCidrState** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"AVAILABLE"` \| `"DISABLED"`\>
+> **PoolCidrState** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"AVAILABLE"` \| `"DISABLED"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4688

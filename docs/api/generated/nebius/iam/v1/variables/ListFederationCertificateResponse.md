@@ -6,6 +6,6 @@
 
 # Variable: ListFederationCertificateResponse
 
-> **ListFederationCertificateResponse**: `MessageFns`\<[`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md), `"nebius.iam.v1.ListFederationCertificateResponse"`\>
+> **ListFederationCertificateResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md), `"nebius.iam.v1.ListFederationCertificateResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7742
+Defined in: src/generated/nebius/iam/v1/index.ts:7739

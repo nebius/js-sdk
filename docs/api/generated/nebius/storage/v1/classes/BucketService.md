@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1660
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1670
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1670
 
 ##### Returns
 
-`Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1671
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1671
 
 ##### Returns
 
-`Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1672
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1672
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1748
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1748
 
 ##### Returns
 
-`Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1749
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1749
 
 ##### Returns
 
-`Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1750
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1750
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1750
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1676
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1676
 
 ##### Returns
 
-`Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1677
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1677
 
 ##### Returns
 
-`Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1678
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1678
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1778
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1778
 
 ##### Returns
 
-`Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1779
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1779
 
 ##### Returns
 
-`Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1780
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1780
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1780
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1661
 
@@ -304,11 +304,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1661
 
 ##### Returns
 
-`Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1662
 
@@ -324,11 +324,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1662
 
 ##### Returns
 
-`Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1663
 
@@ -344,15 +344,15 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1663
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1712
 
@@ -364,11 +364,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1712
 
 ##### Returns
 
-`Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1713
 
@@ -384,11 +384,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1713
 
 ##### Returns
 
-`Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1714
 
@@ -404,11 +404,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1714
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 ***
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1714
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1664
 
@@ -428,11 +428,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1664
 
 ##### Returns
 
-`Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1665
 
@@ -448,11 +448,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1665
 
 ##### Returns
 
-`Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1666
 
@@ -468,15 +468,15 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1666
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1724
 
@@ -488,11 +488,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1724
 
 ##### Returns
 
-`Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1725
 
@@ -508,11 +508,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1725
 
 ##### Returns
 
-`Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1726
 
@@ -528,11 +528,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1726
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
 ***
 
@@ -552,7 +552,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1708
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1667
 
@@ -564,11 +564,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1667
 
 ##### Returns
 
-`Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1668
 
@@ -584,11 +584,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1668
 
 ##### Returns
 
-`Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1669
 
@@ -604,15 +604,15 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1669
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1736
 
@@ -624,11 +624,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1736
 
 ##### Returns
 
-`Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1737
 
@@ -644,11 +644,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1737
 
 ##### Returns
 
-`Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1738
 
@@ -664,11 +664,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1738
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
 ***
 
@@ -676,7 +676,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1738
 
 #### Call Signature
 
-> **purge**(`request`): `Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **purge**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1685
 
@@ -692,11 +692,11 @@ Purge instantly deletes the bucket in ScheduledForDeletion state.
 
 ##### Returns
 
-`Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **purge**(`request`, `metadata`): `Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **purge**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1686
 
@@ -712,11 +712,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1686
 
 ##### Returns
 
-`Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **purge**(`request`, `metadata`, `options`): `Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **purge**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1687
 
@@ -732,15 +732,15 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1687
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **purge**(`request`): `Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **purge**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1793
 
@@ -756,11 +756,11 @@ Purge instantly deletes the bucket in ScheduledForDeletion state.
 
 ##### Returns
 
-`Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **purge**(`request`, `metadata`): `Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **purge**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1794
 
@@ -780,11 +780,11 @@ Purge instantly deletes the bucket in ScheduledForDeletion state.
 
 ##### Returns
 
-`Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **purge**(`request`, `metadata`, `options`): `Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **purge**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1795
 
@@ -804,11 +804,11 @@ Purge instantly deletes the bucket in ScheduledForDeletion state.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -816,7 +816,7 @@ Purge instantly deletes the bucket in ScheduledForDeletion state.
 
 #### Call Signature
 
-> **undelete**(`request`): `Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **undelete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1692
 
@@ -830,11 +830,11 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 ##### Returns
 
-`Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **undelete**(`request`, `metadata`): `Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **undelete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1693
 
@@ -850,11 +850,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1693
 
 ##### Returns
 
-`Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **undelete**(`request`, `metadata`, `options`): `Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **undelete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1694
 
@@ -870,15 +870,15 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1694
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **undelete**(`request`): `Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **undelete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1808
 
@@ -892,11 +892,11 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 ##### Returns
 
-`Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **undelete**(`request`, `metadata`): `Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **undelete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1809
 
@@ -914,11 +914,11 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 ##### Returns
 
-`Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **undelete**(`request`, `metadata`, `options`): `Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **undelete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1810
 
@@ -936,11 +936,11 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -948,7 +948,7 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1673
 
@@ -960,11 +960,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1673
 
 ##### Returns
 
-`Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1674
 
@@ -980,11 +980,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1674
 
 ##### Returns
 
-`Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1675
 
@@ -1000,15 +1000,15 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1675
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1763
 
@@ -1020,11 +1020,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1763
 
 ##### Returns
 
-`Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1764
 
@@ -1040,11 +1040,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1764
 
 ##### Returns
 
-`Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1765
 
@@ -1060,8 +1060,8 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1765
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

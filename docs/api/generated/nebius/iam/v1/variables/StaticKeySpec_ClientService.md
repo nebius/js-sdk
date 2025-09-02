@@ -6,6 +6,6 @@
 
 # Variable: StaticKeySpec\_ClientService
 
-> **StaticKeySpec\_ClientService**: `StaticKeySpec_ClientServiceClass`
+> **StaticKeySpec\_ClientService**: [`StaticKeySpec_ClientServiceClass`](../type-aliases/StaticKeySpec_ClientServiceClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19050
+Defined in: src/generated/nebius/iam/v1/index.ts:19047

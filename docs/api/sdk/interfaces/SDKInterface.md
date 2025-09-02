@@ -6,7 +6,7 @@
 
 # Interface: SDKInterface
 
-Defined in: [src/sdk.ts:35](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L35)
+Defined in: [src/sdk.ts:35](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L35)
 
 ## Methods
 
@@ -14,7 +14,7 @@ Defined in: [src/sdk.ts:35](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > **getAddressFromServiceName**(`serviceName`, `apiServiceName?`): `string`
 
-Defined in: [src/sdk.ts:37](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L37)
+Defined in: [src/sdk.ts:37](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L37)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [src/sdk.ts:37](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > **getClientByAddress**(`address`): `Client`
 
-Defined in: [src/sdk.ts:36](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L36)
+Defined in: [src/sdk.ts:36](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L36)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [src/sdk.ts:36](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > **parentId**(): `undefined` \| `string`
 
-Defined in: [src/sdk.ts:38](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L38)
+Defined in: [src/sdk.ts:38](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L38)
 
 #### Returns
 

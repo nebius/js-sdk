@@ -28,6 +28,6 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6029
 
 ### value?
 
-> `optional` **value**: \{ `$case`: `"percent"`; `percent`: `Long`; \} \| \{ `$case`: `"count"`; `count`: `Long`; \}
+> `optional` **value**: \{ `$case`: `"percent"`; `percent`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"count"`; `count`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \}
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6031

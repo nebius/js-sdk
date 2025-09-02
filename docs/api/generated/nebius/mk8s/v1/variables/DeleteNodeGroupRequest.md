@@ -6,6 +6,6 @@
 
 # Variable: DeleteNodeGroupRequest
 
-> **DeleteNodeGroupRequest**: `MessageFns`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `"nebius.mk8s.v1.DeleteNodeGroupRequest"`\>
+> **DeleteNodeGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `"nebius.mk8s.v1.DeleteNodeGroupRequest"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:3455

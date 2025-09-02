@@ -6,6 +6,6 @@
 
 # Variable: Artifact
 
-> **Artifact**: `MessageFns`\<[`Artifact`](../interfaces/Artifact.md), `"nebius.registry.v1.Artifact"`\>
+> **Artifact**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Artifact`](../interfaces/Artifact.md), `"nebius.registry.v1.Artifact"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:593

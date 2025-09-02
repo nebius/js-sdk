@@ -49,6 +49,7 @@
 - [BackupServiceServiceDescription](type-aliases/BackupServiceServiceDescription.md)
 - [ClusterServiceServiceDescription](type-aliases/ClusterServiceServiceDescription.md)
 - [ConnectionPoolerConfig\_PoolingMode](type-aliases/ConnectionPoolerConfig_PoolingMode.md)
+- [ConnectionPoolerConfig\_PoolingModeClass](type-aliases/ConnectionPoolerConfig_PoolingModeClass.md)
 
 ## Variables
 

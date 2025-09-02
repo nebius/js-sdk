@@ -6,6 +6,6 @@
 
 # Variable: UserAccountStatus
 
-> **UserAccountStatus**: `MessageFns`\<[`UserAccountStatus`](../interfaces/UserAccountStatus.md), `"nebius.iam.v1.UserAccountStatus"`\>
+> **UserAccountStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UserAccountStatus`](../interfaces/UserAccountStatus.md), `"nebius.iam.v1.UserAccountStatus"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22748
+Defined in: src/generated/nebius/iam/v1/index.ts:22745

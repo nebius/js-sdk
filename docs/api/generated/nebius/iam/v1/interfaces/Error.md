@@ -6,7 +6,7 @@
 
 # Interface: Error
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21667
+Defined in: src/generated/nebius/iam/v1/index.ts:21664
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21667
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21669
+Defined in: src/generated/nebius/iam/v1/index.ts:21666
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21669
 
 > **$type**: `"nebius.iam.v1.Error"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21668
+Defined in: src/generated/nebius/iam/v1/index.ts:21665
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21668
 
 > **message**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21670
+Defined in: src/generated/nebius/iam/v1/index.ts:21667

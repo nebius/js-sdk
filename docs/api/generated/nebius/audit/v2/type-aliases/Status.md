@@ -6,6 +6,6 @@
 
 # Type Alias: Status
 
-> **Status** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"RESPONSE_STATUS_UNSPECIFIED"` \| `"STARTED"` \| `"DONE"` \| `"ERROR"`\>
+> **Status** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"RESPONSE_STATUS_UNSPECIFIED"` \| `"STARTED"` \| `"DONE"` \| `"ERROR"`\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:2446

@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9689
 
 #### Call Signature
 
-> **getByInstance**(`request`): `Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+> **getByInstance**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9694
 
@@ -58,11 +58,11 @@ Returns only active maintenance event for the instance
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 #### Call Signature
 
-> **getByInstance**(`request`, `metadata`): `Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+> **getByInstance**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9695
 
@@ -78,11 +78,11 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9695
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 #### Call Signature
 
-> **getByInstance**(`request`, `metadata`, `options`): `Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+> **getByInstance**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9696
 
@@ -98,15 +98,15 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9696
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 #### Call Signature
 
-> **getByInstance**(`request`): `Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+> **getByInstance**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9717
 
@@ -120,11 +120,11 @@ Returns only active maintenance event for the instance
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 #### Call Signature
 
-> **getByInstance**(`request`, `metadata`): `Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+> **getByInstance**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9718
 
@@ -142,11 +142,11 @@ Returns only active maintenance event for the instance
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 #### Call Signature
 
-> **getByInstance**(`request`, `metadata`, `options`): `Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+> **getByInstance**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9719
 
@@ -164,11 +164,11 @@ Returns only active maintenance event for the instance
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
 ***
 
@@ -176,7 +176,7 @@ Returns only active maintenance event for the instance
 
 #### Call Signature
 
-> **listActive**(`request`): `Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+> **listActive**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9701
 
@@ -190,11 +190,11 @@ Returns all unfinished maintenance events for the parent
 
 ##### Returns
 
-`Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 #### Call Signature
 
-> **listActive**(`request`, `metadata`): `Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+> **listActive**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9702
 
@@ -210,11 +210,11 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9702
 
 ##### Returns
 
-`Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 #### Call Signature
 
-> **listActive**(`request`, `metadata`, `options`): `Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+> **listActive**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9703
 
@@ -230,15 +230,15 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9703
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 #### Call Signature
 
-> **listActive**(`request`): `Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+> **listActive**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9729
 
@@ -252,11 +252,11 @@ Returns all unfinished maintenance events for the parent
 
 ##### Returns
 
-`Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 #### Call Signature
 
-> **listActive**(`request`, `metadata`): `Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+> **listActive**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9730
 
@@ -274,11 +274,11 @@ Returns all unfinished maintenance events for the parent
 
 ##### Returns
 
-`Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 #### Call Signature
 
-> **listActive**(`request`, `metadata`, `options`): `Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+> **listActive**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9731
 
@@ -296,8 +296,8 @@ Returns all unfinished maintenance events for the parent
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>

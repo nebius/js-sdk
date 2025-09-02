@@ -6,7 +6,7 @@
 
 # Interface: ListMemberOfRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10255
+Defined in: src/generated/nebius/iam/v1/index.ts:10252
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10255
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10257
+Defined in: src/generated/nebius/iam/v1/index.ts:10254
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10257
 
 > **$type**: `"nebius.iam.v1.ListMemberOfRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10256
+Defined in: src/generated/nebius/iam/v1/index.ts:10253
 
 ***
 
@@ -30,15 +30,15 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10256
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10269
+Defined in: src/generated/nebius/iam/v1/index.ts:10266
 
 ***
 
 ### pageSize?
 
-> `optional` **pageSize**: `Long`
+> `optional` **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10267
+Defined in: src/generated/nebius/iam/v1/index.ts:10264
 
 Default value: 10
 
@@ -48,7 +48,7 @@ Default value: 10
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10268
+Defined in: src/generated/nebius/iam/v1/index.ts:10265
 
 ***
 
@@ -56,6 +56,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10268
 
 > **subjectId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10262
+Defined in: src/generated/nebius/iam/v1/index.ts:10259
 
 Requested subject id. Can be tenant user account id or service account id.

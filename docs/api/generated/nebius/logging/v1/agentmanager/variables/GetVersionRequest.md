@@ -6,6 +6,6 @@
 
 # Variable: GetVersionRequest
 
-> **GetVersionRequest**: `MessageFns`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), `"nebius.logging.agentmanager.v1.GetVersionRequest"`\>
+> **GetVersionRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), `"nebius.logging.agentmanager.v1.GetVersionRequest"`\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:170

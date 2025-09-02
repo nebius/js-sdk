@@ -6,6 +6,6 @@
 
 # Variable: AttachedFilesystemSpec\_AttachMode
 
-> **AttachedFilesystemSpec\_AttachMode**: `AttachedFilesystemSpec_AttachModeClass`
+> **AttachedFilesystemSpec\_AttachMode**: [`AttachedFilesystemSpec_AttachModeClass`](../type-aliases/AttachedFilesystemSpec_AttachModeClass.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4093

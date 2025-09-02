@@ -6,6 +6,6 @@
 
 # Variable: ListDisksRequest
 
-> **ListDisksRequest**: `MessageFns`\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), `"nebius.compute.v1.ListDisksRequest"`\>
+> **ListDisksRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), `"nebius.compute.v1.ListDisksRequest"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:100

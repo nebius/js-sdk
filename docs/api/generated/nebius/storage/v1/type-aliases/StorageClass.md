@@ -6,6 +6,6 @@
 
 # Type Alias: StorageClass
 
-> **StorageClass** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STORAGE_CLASS_UNSPECIFIED"` \| `"STANDARD"` \| `"ENHANCED_THROUGHPUT"`\>
+> **StorageClass** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STORAGE_CLASS_UNSPECIFIED"` \| `"STANDARD"` \| `"ENHANCED_THROUGHPUT"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:15

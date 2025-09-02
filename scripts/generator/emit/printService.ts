@@ -185,11 +185,11 @@ export function printService(
   }
 
   // SDK class (uses BaseClient)
-  if (svcDep) {
-    lines.push('/**');
-    lines.push(` * @deprecated ${svcDep}`);
-    lines.push(' */');
-  }
+  // if (svcDep) {
+  //   lines.push('/**');
+  //   lines.push(` * @deprecated ${svcDep}`);
+  //   lines.push(' */');
+  // }
   // Static helper to obtain OperationService for services that return Operation(s)
   const hasOpV1 = svc.methods.some(
     (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1,

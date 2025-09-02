@@ -6,6 +6,6 @@
 
 # Variable: FederationCertificateStatus\_State
 
-> **FederationCertificateStatus\_State**: `FederationCertificateStatus_StateClass`
+> **FederationCertificateStatus\_State**: [`FederationCertificateStatus_StateClass`](../type-aliases/FederationCertificateStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8032
+Defined in: src/generated/nebius/iam/v1/index.ts:8029

@@ -6,6 +6,6 @@
 
 # Variable: ClusterSpec
 
-> **ClusterSpec**: `MessageFns`\<[`ClusterSpec`](../interfaces/ClusterSpec.md), `"nebius.msp.mlflow.v1alpha1.ClusterSpec"`\>
+> **ClusterSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ClusterSpec`](../interfaces/ClusterSpec.md), `"nebius.msp.mlflow.v1alpha1.ClusterSpec"`\>
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1008

@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:593
 
 ### max
 
-> **max**: `Long`
+> **max**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:596
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:596
 
 ### min
 
-> **min**: `Long`
+> **min**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:595
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:595
 
 ### step
 
-> **step**: `Long`
+> **step**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:601
 
@@ -54,6 +54,6 @@ step 0 is no step validation
 
 ### value
 
-> **value**: `Long`
+> **value**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:602

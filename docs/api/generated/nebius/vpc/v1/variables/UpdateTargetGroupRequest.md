@@ -6,6 +6,6 @@
 
 # Variable: UpdateTargetGroupRequest
 
-> **UpdateTargetGroupRequest**: `MessageFns`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `"nebius.vpc.v1.UpdateTargetGroupRequest"`\>
+> **UpdateTargetGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `"nebius.vpc.v1.UpdateTargetGroupRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8288

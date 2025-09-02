@@ -6,7 +6,7 @@
 
 # Interface: ContainerStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5618
+Defined in: src/generated/nebius/iam/v1/index.ts:5615
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5618
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5620
+Defined in: src/generated/nebius/iam/v1/index.ts:5617
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5620
 
 > **$type**: `"nebius.iam.v1.ContainerStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5619
+Defined in: src/generated/nebius/iam/v1/index.ts:5616
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5619
 
 > **containerState**: [`State`](../type-aliases/State.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5622
+Defined in: src/generated/nebius/iam/v1/index.ts:5619
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5622
 
 > **region**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5623
+Defined in: src/generated/nebius/iam/v1/index.ts:5620
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5623
 
 > **suspensionState**: [`SuspensionState`](../type-aliases/SuspensionState.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5621
+Defined in: src/generated/nebius/iam/v1/index.ts:5618

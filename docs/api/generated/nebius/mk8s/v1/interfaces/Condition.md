@@ -38,7 +38,7 @@ A human readable description message of this detail.
 
 ### lastTransitionAt?
 
-> `optional` **lastTransitionAt**: `Dayjs`
+> `optional` **lastTransitionAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2174
 

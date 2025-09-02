@@ -6,6 +6,6 @@
 
 # Variable: GetInstanceRequest
 
-> **GetInstanceRequest**: `MessageFns`\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), `"nebius.compute.v1.GetInstanceRequest"`\>
+> **GetInstanceRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), `"nebius.compute.v1.GetInstanceRequest"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:6127

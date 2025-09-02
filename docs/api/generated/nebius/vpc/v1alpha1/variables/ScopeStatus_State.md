@@ -6,6 +6,6 @@
 
 # Variable: ScopeStatus\_State
 
-> **ScopeStatus\_State**: `ScopeStatus_StateClass`
+> **ScopeStatus\_State**: [`ScopeStatus_StateClass`](../type-aliases/ScopeStatus_StateClass.md)
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6054

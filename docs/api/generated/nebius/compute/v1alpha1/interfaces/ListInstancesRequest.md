@@ -6,7 +6,7 @@
 
 # Interface: ListInstancesRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5540
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5528
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5540
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5542
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5530
 
 ***
 
@@ -22,15 +22,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5542
 
 > **$type**: `"nebius.compute.v1alpha1.ListInstancesRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5541
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5529
 
 ***
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5544
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5532
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5544
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5545
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5533
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5545
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5543
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5531

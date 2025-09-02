@@ -6,7 +6,7 @@
 
 # Interface: SamlSettings
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9613
+Defined in: src/generated/nebius/iam/v1/index.ts:9610
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9613
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9615
+Defined in: src/generated/nebius/iam/v1/index.ts:9612
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9615
 
 > **$type**: `"nebius.iam.v1.SamlSettings"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9614
+Defined in: src/generated/nebius/iam/v1/index.ts:9611
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9614
 
 > **forceAuthn**: `boolean`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9622
+Defined in: src/generated/nebius/iam/v1/index.ts:9619
 
 if "true", the identity provider MUST authenticate the presenter directly rather than rely on a previous security context.
 
@@ -40,7 +40,7 @@ if "true", the identity provider MUST authenticate the presenter directly rather
 
 > **idpIssuer**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9616
+Defined in: src/generated/nebius/iam/v1/index.ts:9613
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9616
 
 > **ssoUrl**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9617
+Defined in: src/generated/nebius/iam/v1/index.ts:9614

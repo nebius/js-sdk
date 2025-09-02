@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10985
 
 #### Call Signature
 
-> **setUnhealthy**(`request`): `Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+> **setUnhealthy**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:10998
 
@@ -66,11 +66,11 @@ SetUnhealthy marks the node underlying the Compute VM as unhealthy, which has th
 
 ##### Returns
 
-`Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 #### Call Signature
 
-> **setUnhealthy**(`request`, `metadata`): `Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+> **setUnhealthy**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:10999
 
@@ -86,11 +86,11 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10999
 
 ##### Returns
 
-`Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 #### Call Signature
 
-> **setUnhealthy**(`request`, `metadata`, `options`): `Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+> **setUnhealthy**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11000
 
@@ -106,15 +106,15 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11000
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 #### Call Signature
 
-> **setUnhealthy**(`request`): `Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+> **setUnhealthy**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11014
 
@@ -136,11 +136,11 @@ SetUnhealthy marks the node underlying the Compute VM as unhealthy, which has th
 
 ##### Returns
 
-`Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 #### Call Signature
 
-> **setUnhealthy**(`request`, `metadata`): `Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+> **setUnhealthy**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11015
 
@@ -166,11 +166,11 @@ SetUnhealthy marks the node underlying the Compute VM as unhealthy, which has th
 
 ##### Returns
 
-`Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 #### Call Signature
 
-> **setUnhealthy**(`request`, `metadata`, `options`): `Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+> **setUnhealthy**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11016
 
@@ -196,8 +196,8 @@ SetUnhealthy marks the node underlying the Compute VM as unhealthy, which has th
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>

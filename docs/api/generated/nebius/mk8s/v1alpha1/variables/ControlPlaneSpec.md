@@ -6,6 +6,6 @@
 
 # Variable: ControlPlaneSpec
 
-> **ControlPlaneSpec**: `MessageFns`\<[`ControlPlaneSpec`](../interfaces/ControlPlaneSpec.md), `"nebius.mk8s.v1alpha1.ControlPlaneSpec"`\>
+> **ControlPlaneSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ControlPlaneSpec`](../interfaces/ControlPlaneSpec.md), `"nebius.mk8s.v1alpha1.ControlPlaneSpec"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1255

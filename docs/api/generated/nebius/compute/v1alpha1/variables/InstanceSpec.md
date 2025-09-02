@@ -6,6 +6,6 @@
 
 # Variable: InstanceSpec
 
-> **InstanceSpec**: `MessageFns`\<[`InstanceSpec`](../interfaces/InstanceSpec.md), `"nebius.compute.v1alpha1.InstanceSpec"`\>
+> **InstanceSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`InstanceSpec`](../interfaces/InstanceSpec.md), `"nebius.compute.v1alpha1.InstanceSpec"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6772
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6757

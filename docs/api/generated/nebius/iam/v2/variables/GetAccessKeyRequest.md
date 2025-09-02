@@ -6,6 +6,6 @@
 
 # Variable: GetAccessKeyRequest
 
-> **GetAccessKeyRequest**: `MessageFns`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), `"nebius.iam.v2.GetAccessKeyRequest"`\>
+> **GetAccessKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), `"nebius.iam.v2.GetAccessKeyRequest"`\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:128

@@ -8,7 +8,7 @@
 
 > **AuthPublicKeyServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`AuthPublicKeyServiceBaseClient`](../interfaces/AuthPublicKeyServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4772
+Defined in: src/generated/nebius/iam/v1/index.ts:4769
 
 ## Type Declaration
 

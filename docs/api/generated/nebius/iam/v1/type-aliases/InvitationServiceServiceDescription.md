@@ -8,4 +8,4 @@
 
 > **InvitationServiceServiceDescription** = *typeof* [`InvitationServiceServiceDescription`](../variables/InvitationServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13744
+Defined in: src/generated/nebius/iam/v1/index.ts:13741

@@ -6,7 +6,7 @@
 
 # Interface: IssueStaticKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18336
+Defined in: src/generated/nebius/iam/v1/index.ts:18333
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18336
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18338
+Defined in: src/generated/nebius/iam/v1/index.ts:18335
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18338
 
 > **$type**: `"nebius.iam.v1.IssueStaticKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18337
+Defined in: src/generated/nebius/iam/v1/index.ts:18334
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18337
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18339
+Defined in: src/generated/nebius/iam/v1/index.ts:18336
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18339
 
 > `optional` **spec**: [`StaticKeySpec`](StaticKeySpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18340
+Defined in: src/generated/nebius/iam/v1/index.ts:18337

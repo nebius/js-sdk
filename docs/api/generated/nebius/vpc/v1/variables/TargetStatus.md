@@ -6,6 +6,6 @@
 
 # Variable: TargetStatus
 
-> **TargetStatus**: `MessageFns`\<[`TargetStatus`](../interfaces/TargetStatus.md), `"nebius.vpc.v1.TargetStatus"`\>
+> **TargetStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TargetStatus`](../interfaces/TargetStatus.md), `"nebius.vpc.v1.TargetStatus"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:9126

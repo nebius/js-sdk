@@ -6,6 +6,6 @@
 
 # Variable: OutOfRange
 
-> **OutOfRange**: `MessageFns`\<[`OutOfRange`](../interfaces/OutOfRange.md), `"nebius.common.v1.OutOfRange"`\>
+> **OutOfRange**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`OutOfRange`](../interfaces/OutOfRange.md), `"nebius.common.v1.OutOfRange"`\>
 
 Defined in: src/generated/nebius/common/v1/index.ts:1380

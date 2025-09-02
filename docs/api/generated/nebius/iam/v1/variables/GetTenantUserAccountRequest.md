@@ -6,6 +6,6 @@
 
 # Variable: GetTenantUserAccountRequest
 
-> **GetTenantUserAccountRequest**: `MessageFns`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), `"nebius.iam.v1.GetTenantUserAccountRequest"`\>
+> **GetTenantUserAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), `"nebius.iam.v1.GetTenantUserAccountRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19870
+Defined in: src/generated/nebius/iam/v1/index.ts:19867

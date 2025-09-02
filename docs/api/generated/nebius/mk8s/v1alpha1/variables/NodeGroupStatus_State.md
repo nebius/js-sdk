@@ -6,6 +6,6 @@
 
 # Variable: NodeGroupStatus\_State
 
-> **NodeGroupStatus\_State**: `NodeGroupStatus_StateClass`
+> **NodeGroupStatus\_State**: [`NodeGroupStatus_StateClass`](../type-aliases/NodeGroupStatus_StateClass.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4129

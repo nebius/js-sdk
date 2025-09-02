@@ -6,6 +6,6 @@
 
 # Variable: RevokeSessionResponse
 
-> **RevokeSessionResponse**: `MessageFns`\<[`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md), `"nebius.iam.v1.RevokeSessionResponse"`\>
+> **RevokeSessionResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md), `"nebius.iam.v1.RevokeSessionResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17603
+Defined in: src/generated/nebius/iam/v1/index.ts:17600

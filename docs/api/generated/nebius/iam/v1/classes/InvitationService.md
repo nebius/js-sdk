@@ -6,7 +6,7 @@
 
 # Class: InvitationService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13826
+Defined in: src/generated/nebius/iam/v1/index.ts:13823
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13826
 
 > **new InvitationService**(`sdk`): `InvitationService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13853
+Defined in: src/generated/nebius/iam/v1/index.ts:13850
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13853
 
 > **$type**: `"nebius.iam.v1.InvitationService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13827
+Defined in: src/generated/nebius/iam/v1/index.ts:13824
 
 ## Methods
 
@@ -44,69 +44,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13827
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13828
-
-##### Parameters
-
-###### request
-
-[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md)
-
-##### Returns
-
-`Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`): `Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13829
-
-##### Parameters
-
-###### request
-
-[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13830
-
-##### Parameters
-
-###### request
-
-[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`): `Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13863
+Defined in: src/generated/nebius/iam/v1/index.ts:13825
 
 ##### Parameters
 
@@ -116,13 +56,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13863
 
 ##### Returns
 
-`Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13864
+Defined in: src/generated/nebius/iam/v1/index.ts:13826
 
 ##### Parameters
 
@@ -136,13 +76,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13864
 
 ##### Returns
 
-`Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13865
+Defined in: src/generated/nebius/iam/v1/index.ts:13827
 
 ##### Parameters
 
@@ -156,11 +96,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13865
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13860
+
+##### Parameters
+
+###### request
+
+[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13861
+
+##### Parameters
+
+###### request
+
+[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13862
+
+##### Parameters
+
+###### request
+
+[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,69 +168,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13865
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13837
-
-##### Parameters
-
-###### request
-
-[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13838
-
-##### Parameters
-
-###### request
-
-[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13839
-
-##### Parameters
-
-###### request
-
-[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`): `Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13902
+Defined in: src/generated/nebius/iam/v1/index.ts:13834
 
 ##### Parameters
 
@@ -240,13 +180,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13902
 
 ##### Returns
 
-`Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13903
+Defined in: src/generated/nebius/iam/v1/index.ts:13835
 
 ##### Parameters
 
@@ -260,13 +200,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13903
 
 ##### Returns
 
-`Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13904
+Defined in: src/generated/nebius/iam/v1/index.ts:13836
 
 ##### Parameters
 
@@ -280,11 +220,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13904
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13899
+
+##### Parameters
+
+###### request
+
+[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13900
+
+##### Parameters
+
+###### request
+
+[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13901
+
+##### Parameters
+
+###### request
+
+[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,69 +292,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13904
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13831
-
-##### Parameters
-
-###### request
-
-[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md)
-
-##### Returns
-
-`Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13832
-
-##### Parameters
-
-###### request
-
-[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13833
-
-##### Parameters
-
-###### request
-
-[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13878
+Defined in: src/generated/nebius/iam/v1/index.ts:13828
 
 ##### Parameters
 
@@ -364,13 +304,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13878
 
 ##### Returns
 
-`Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13879
+Defined in: src/generated/nebius/iam/v1/index.ts:13829
 
 ##### Parameters
 
@@ -384,13 +324,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13879
 
 ##### Returns
 
-`Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13880
+Defined in: src/generated/nebius/iam/v1/index.ts:13830
 
 ##### Parameters
 
@@ -404,11 +344,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13880
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13875
+
+##### Parameters
+
+###### request
+
+[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13876
+
+##### Parameters
+
+###### request
+
+[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13877
+
+##### Parameters
+
+###### request
+
+[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
 ***
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13880
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13859
+Defined in: src/generated/nebius/iam/v1/index.ts:13856
 
 #### Returns
 
@@ -428,69 +428,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13859
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13834
-
-##### Parameters
-
-###### request
-
-[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md)
-
-##### Returns
-
-`Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`): `Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13835
-
-##### Parameters
-
-###### request
-
-[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13836
-
-##### Parameters
-
-###### request
-
-[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`): `Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13890
+Defined in: src/generated/nebius/iam/v1/index.ts:13831
 
 ##### Parameters
 
@@ -500,13 +440,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13890
 
 ##### Returns
 
-`Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13891
+Defined in: src/generated/nebius/iam/v1/index.ts:13832
 
 ##### Parameters
 
@@ -520,13 +460,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13891
 
 ##### Returns
 
-`Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13892
+Defined in: src/generated/nebius/iam/v1/index.ts:13833
 
 ##### Parameters
 
@@ -540,11 +480,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13892
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13887
+
+##### Parameters
+
+###### request
+
+[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13888
+
+##### Parameters
+
+###### request
+
+[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13889
+
+##### Parameters
+
+###### request
+
+[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
 ***
 
@@ -552,131 +552,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13892
 
 #### Call Signature
 
-> **resend**(`request`): `Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13843
-
-##### Parameters
-
-###### request
-
-[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
-
-##### Returns
-
-`Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **resend**(`request`, `metadata`): `Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13844
-
-##### Parameters
-
-###### request
-
-[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **resend**(`request`, `metadata`, `options`): `Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13845
-
-##### Parameters
-
-###### request
-
-[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **resend**(`request`): `Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13932
-
-##### Parameters
-
-###### request
-
-[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
-
-##### Returns
-
-`Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **resend**(`request`, `metadata`): `Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13933
-
-##### Parameters
-
-###### request
-
-[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **resend**(`request`, `metadata`, `options`): `Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:13934
-
-##### Parameters
-
-###### request
-
-[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-***
-
-### update()
-
-#### Call Signature
-
-> **update**(`request`): `Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **resend**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13840
 
@@ -684,15 +560,15 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13840
 
 ###### request
 
-[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md)
+[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
 
 ##### Returns
 
-`Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **resend**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13841
 
@@ -700,7 +576,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13841
 
 ###### request
 
-[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md)
+[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
 
 ###### metadata
 
@@ -708,11 +584,11 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13841
 
 ##### Returns
 
-`Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **resend**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13842
 
@@ -720,6 +596,130 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13842
 
 ###### request
 
+[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **resend**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13929
+
+##### Parameters
+
+###### request
+
+[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **resend**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13930
+
+##### Parameters
+
+###### request
+
+[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **resend**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13931
+
+##### Parameters
+
+###### request
+
+[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+***
+
+### update()
+
+#### Call Signature
+
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13837
+
+##### Parameters
+
+###### request
+
+[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13838
+
+##### Parameters
+
+###### request
+
+[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:13839
+
+##### Parameters
+
+###### request
+
 [`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md)
 
 ###### metadata
@@ -728,17 +728,17 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13842
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13917
+Defined in: src/generated/nebius/iam/v1/index.ts:13914
 
 ##### Parameters
 
@@ -748,13 +748,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13917
 
 ##### Returns
 
-`Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13918
+Defined in: src/generated/nebius/iam/v1/index.ts:13915
 
 ##### Parameters
 
@@ -768,13 +768,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13918
 
 ##### Returns
 
-`Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13919
+Defined in: src/generated/nebius/iam/v1/index.ts:13916
 
 ##### Parameters
 
@@ -788,8 +788,8 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13919
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

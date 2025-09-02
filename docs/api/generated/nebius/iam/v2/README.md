@@ -46,8 +46,10 @@
 
 - [AccessKeyServiceServiceDescription](type-aliases/AccessKeyServiceServiceDescription.md)
 - [AccessKeyStatus\_State](type-aliases/AccessKeyStatus_State.md)
+- [AccessKeyStatus\_StateClass](type-aliases/AccessKeyStatus_StateClass.md)
 - [TenantServiceServiceDescription](type-aliases/TenantServiceServiceDescription.md)
 - [TenantStatus\_TenantState](type-aliases/TenantStatus_TenantState.md)
+- [TenantStatus\_TenantStateClass](type-aliases/TenantStatus_TenantStateClass.md)
 
 ## Variables
 

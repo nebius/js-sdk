@@ -6,7 +6,7 @@
 
 # Interface: DeleteFederatedCredentialsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6434
+Defined in: src/generated/nebius/iam/v1/index.ts:6431
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6434
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6436
+Defined in: src/generated/nebius/iam/v1/index.ts:6433
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6436
 
 > **$type**: `"nebius.iam.v1.DeleteFederatedCredentialsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6435
+Defined in: src/generated/nebius/iam/v1/index.ts:6432
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6435
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6437
+Defined in: src/generated/nebius/iam/v1/index.ts:6434

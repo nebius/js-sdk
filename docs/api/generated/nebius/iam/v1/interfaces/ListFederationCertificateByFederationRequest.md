@@ -6,7 +6,7 @@
 
 # Interface: ListFederationCertificateByFederationRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7409
+Defined in: src/generated/nebius/iam/v1/index.ts:7406
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7409
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7411
+Defined in: src/generated/nebius/iam/v1/index.ts:7408
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7411
 
 > **$type**: `"nebius.iam.v1.ListFederationCertificateByFederationRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7410
+Defined in: src/generated/nebius/iam/v1/index.ts:7407
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7410
 
 > **federationId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7416
+Defined in: src/generated/nebius/iam/v1/index.ts:7413
 
 Represents the parent federation ID. Corresponds to the parent_id value.
 
@@ -38,9 +38,9 @@ Represents the parent federation ID. Corresponds to the parent_id value.
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7422
+Defined in: src/generated/nebius/iam/v1/index.ts:7419
 
 Specifies the maximum number of items to return in the response.
  Default value: 10
@@ -51,6 +51,6 @@ Specifies the maximum number of items to return in the response.
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7427
+Defined in: src/generated/nebius/iam/v1/index.ts:7424
 
 Token for pagination, allowing the retrieval of the next set of results.

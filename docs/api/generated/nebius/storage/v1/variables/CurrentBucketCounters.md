@@ -6,6 +6,6 @@
 
 # Variable: CurrentBucketCounters
 
-> **CurrentBucketCounters**: `MessageFns`\<[`CurrentBucketCounters`](../interfaces/CurrentBucketCounters.md), `"nebius.storage.v1.CurrentBucketCounters"`\>
+> **CurrentBucketCounters**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CurrentBucketCounters`](../interfaces/CurrentBucketCounters.md), `"nebius.storage.v1.CurrentBucketCounters"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:53

@@ -8,7 +8,7 @@
 
 > **AccessPermitServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2788
+Defined in: src/generated/nebius/iam/v1/index.ts:2785
 
 ## Type Declaration
 

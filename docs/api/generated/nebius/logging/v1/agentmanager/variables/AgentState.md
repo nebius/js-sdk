@@ -6,6 +6,6 @@
 
 # Variable: AgentState
 
-> **AgentState**: `AgentStateClass`
+> **AgentState**: [`AgentStateClass`](../type-aliases/AgentStateClass.md)
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:57

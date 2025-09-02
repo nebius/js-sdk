@@ -6,7 +6,7 @@
 
 # Interface: ListGroupMembershipsWithAttributesResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10513
+Defined in: src/generated/nebius/iam/v1/index.ts:10510
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10513
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10515
+Defined in: src/generated/nebius/iam/v1/index.ts:10512
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10515
 
 > **$type**: `"nebius.iam.v1.ListGroupMembershipsWithAttributesResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10514
+Defined in: src/generated/nebius/iam/v1/index.ts:10511
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10514
 
 > **memberships**: [`GroupMembershipWithAttributes`](GroupMembershipWithAttributes.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10523
+Defined in: src/generated/nebius/iam/v1/index.ts:10520
 
 Members of the group with their attributes if supported by member type.
  Can be tenant user accounts (regular or provisional/invited) or service accounts.
@@ -43,4 +43,4 @@ Members of the group with their attributes if supported by member type.
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10524
+Defined in: src/generated/nebius/iam/v1/index.ts:10521

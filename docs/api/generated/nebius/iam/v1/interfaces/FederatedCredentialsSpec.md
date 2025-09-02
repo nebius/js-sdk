@@ -6,7 +6,7 @@
 
 # Interface: FederatedCredentialsSpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6858
+Defined in: src/generated/nebius/iam/v1/index.ts:6855
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6858
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6860
+Defined in: src/generated/nebius/iam/v1/index.ts:6857
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6860
 
 > **$type**: `"nebius.iam.v1.FederatedCredentialsSpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6859
+Defined in: src/generated/nebius/iam/v1/index.ts:6856
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6859
 
 > `optional` **credentialsProvider**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6875
+Defined in: src/generated/nebius/iam/v1/index.ts:6872
 
 provider of federated credentials used for federated subject authentication
 
@@ -48,7 +48,7 @@ provider of federated credentials used for federated subject authentication
 
 > **federatedSubjectId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6865
+Defined in: src/generated/nebius/iam/v1/index.ts:6862
 
 Federated subject ID.For oidc_provider subject will be calculated based on the “sub” claim of the JWT federation token.
 
@@ -58,6 +58,6 @@ Federated subject ID.For oidc_provider subject will be calculated based on the �
 
 > **subjectId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6870
+Defined in: src/generated/nebius/iam/v1/index.ts:6867
 
 IAM subject, in which federated subject will be impersonated to. E.g. for workload identities it will be IAM service account.

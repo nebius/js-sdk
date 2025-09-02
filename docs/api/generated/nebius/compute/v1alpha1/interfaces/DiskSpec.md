@@ -6,7 +6,7 @@
 
 # Interface: DiskSpec
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1110
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1107
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1110
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1112
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1109
 
 ***
 
@@ -22,23 +22,23 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1112
 
 > **$type**: `"nebius.compute.v1alpha1.DiskSpec"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1111
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1108
 
 ***
 
 ### blockSizeBytes
 
-> **blockSizeBytes**: `Long`
+> **blockSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1113
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1110
 
 ***
 
 ### size?
 
-> `optional` **size**: \{ `$case`: `"sizeBytes"`; `sizeBytes`: `Long`; \} \| \{ `$case`: `"sizeKibibytes"`; `sizeKibibytes`: `Long`; \} \| \{ `$case`: `"sizeMebibytes"`; `sizeMebibytes`: `Long`; \} \| \{ `$case`: `"sizeGibibytes"`; `sizeGibibytes`: `Long`; \}
+> `optional` **size**: \{ `$case`: `"sizeBytes"`; `sizeBytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeKibibytes"`; `sizeKibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeMebibytes"`; `sizeMebibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeGibibytes"`; `sizeGibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \}
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1115
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1112
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1115
 
 > `optional` **source**: \{ `$case`: `"sourceImageId"`; `sourceImageId`: `string`; \} \| \{ `$case`: `"sourceImageFamily"`; `sourceImageFamily`: `string`; \}
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1121
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1118
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1121
 
 > **type**: [`DiskSpec_DiskType`](../type-aliases/DiskSpec_DiskType.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1114
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1111

@@ -6,6 +6,6 @@
 
 # Variable: Artifact\_Type
 
-> **Artifact\_Type**: `Artifact_TypeClass`
+> **Artifact\_Type**: [`Artifact_TypeClass`](../type-aliases/Artifact_TypeClass.md)
 
 Defined in: src/generated/nebius/registry/v1/index.ts:568

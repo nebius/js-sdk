@@ -6,6 +6,6 @@
 
 # Variable: TargetGroupStatus
 
-> **TargetGroupStatus**: `MessageFns`\<[`TargetGroupStatus`](../interfaces/TargetGroupStatus.md), `"nebius.vpc.v1.TargetGroupStatus"`\>
+> **TargetGroupStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TargetGroupStatus`](../interfaces/TargetGroupStatus.md), `"nebius.vpc.v1.TargetGroupStatus"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:9016

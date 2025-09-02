@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2553
 
 ### bandwidthBytesPerSecond
 
-> **bandwidthBytesPerSecond**: `Long`
+> **bandwidthBytesPerSecond**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2559
 
@@ -38,7 +38,7 @@ Maximum bandwidth in bytes per second. If set to zero, default limit will be app
 
 ### requestsPerSecond
 
-> **requestsPerSecond**: `Long`
+> **requestsPerSecond**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2564
 

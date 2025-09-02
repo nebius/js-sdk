@@ -6,6 +6,6 @@
 
 # Variable: ListRegistriesResponse
 
-> **ListRegistriesResponse**: `MessageFns`\<[`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md), `"nebius.registry.v1.ListRegistriesResponse"`\>
+> **ListRegistriesResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md), `"nebius.registry.v1.ListRegistriesResponse"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1065

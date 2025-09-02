@@ -44,6 +44,6 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:474
 
 ### memoryGibibytes
 
-> **memoryGibibytes**: `Long`
+> **memoryGibibytes**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:473

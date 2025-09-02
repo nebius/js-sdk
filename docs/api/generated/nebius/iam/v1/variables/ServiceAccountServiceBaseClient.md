@@ -8,7 +8,7 @@
 
 > **ServiceAccountServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ServiceAccountServiceBaseClient`](../interfaces/ServiceAccountServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16879
+Defined in: src/generated/nebius/iam/v1/index.ts:16876
 
 ## Type Declaration
 

@@ -6,6 +6,6 @@
 
 # Variable: TenantUserAccountStatus\_State
 
-> **TenantUserAccountStatus\_State**: `TenantUserAccountStatus_StateClass`
+> **TenantUserAccountStatus\_State**: [`TenantUserAccountStatus_StateClass`](../type-aliases/TenantUserAccountStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20988
+Defined in: src/generated/nebius/iam/v1/index.ts:20985

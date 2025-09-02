@@ -6,7 +6,7 @@
 
 # Interface: DeleteGpuClusterRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3599
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3593
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3599
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3601
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3595
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3601
 
 > **$type**: `"nebius.compute.v1alpha1.DeleteGpuClusterRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3600
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3594
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3600
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3602
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3596

@@ -6,6 +6,6 @@
 
 # Variable: MaintenanceSpec
 
-> **MaintenanceSpec**: `MessageFns`\<[`MaintenanceSpec`](../interfaces/MaintenanceSpec.md), `"nebius.maintenance.v1alpha1.MaintenanceSpec"`\>
+> **MaintenanceSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`MaintenanceSpec`](../interfaces/MaintenanceSpec.md), `"nebius.maintenance.v1alpha1.MaintenanceSpec"`\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:609

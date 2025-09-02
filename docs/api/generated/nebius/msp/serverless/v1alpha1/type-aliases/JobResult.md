@@ -6,6 +6,6 @@
 
 # Type Alias: JobResult
 
-> **JobResult** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"JOB_RESULT_UNSPECIFIED"` \| `"JOB_RESULT_SUCCESS"` \| `"JOB_RESULT_FAILURE"` \| `"JOB_RESULT_CANCELLED"`\>
+> **JobResult** = [`EnumInstance`](../../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"JOB_RESULT_UNSPECIFIED"` \| `"JOB_RESULT_SUCCESS"` \| `"JOB_RESULT_FAILURE"` \| `"JOB_RESULT_CANCELLED"`\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2128

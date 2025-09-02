@@ -6,6 +6,6 @@
 
 # Type Alias: TransferStatus\_SuspensionState
 
-> **TransferStatus\_SuspensionState** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"SUSPENSION_STATE_UNSPECIFIED"` \| `"NOT_SUSPENDED"` \| `"SUSPENDED"`\>
+> **TransferStatus\_SuspensionState** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"SUSPENSION_STATE_UNSPECIFIED"` \| `"NOT_SUSPENDED"` \| `"SUSPENDED"`\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1484

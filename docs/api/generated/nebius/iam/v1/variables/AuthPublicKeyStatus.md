@@ -6,6 +6,6 @@
 
 # Variable: AuthPublicKeyStatus
 
-> **AuthPublicKeyStatus**: `MessageFns`\<[`AuthPublicKeyStatus`](../interfaces/AuthPublicKeyStatus.md), `"nebius.iam.v1.AuthPublicKeyStatus"`\>
+> **AuthPublicKeyStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AuthPublicKeyStatus`](../interfaces/AuthPublicKeyStatus.md), `"nebius.iam.v1.AuthPublicKeyStatus"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5254
+Defined in: src/generated/nebius/iam/v1/index.ts:5251

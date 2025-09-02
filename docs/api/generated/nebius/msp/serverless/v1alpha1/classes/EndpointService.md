@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:359
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:385
 
@@ -58,11 +58,11 @@ Creates an endpoint.
 
 ##### Returns
 
-`Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:386
 
@@ -78,11 +78,11 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:386
 
 ##### Returns
 
-`Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:387
 
@@ -98,15 +98,15 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:387
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:462
 
@@ -120,11 +120,11 @@ Creates an endpoint.
 
 ##### Returns
 
-`Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:463
 
@@ -142,11 +142,11 @@ Creates an endpoint.
 
 ##### Returns
 
-`Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:464
 
@@ -164,11 +164,11 @@ Creates an endpoint.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -176,7 +176,7 @@ Creates an endpoint.
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:392
 
@@ -190,11 +190,11 @@ Delete an endpoint.
 
 ##### Returns
 
-`Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:393
 
@@ -210,11 +210,11 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:393
 
 ##### Returns
 
-`Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:394
 
@@ -230,15 +230,15 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:394
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:477
 
@@ -252,11 +252,11 @@ Delete an endpoint.
 
 ##### Returns
 
-`Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:478
 
@@ -274,11 +274,11 @@ Delete an endpoint.
 
 ##### Returns
 
-`Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:479
 
@@ -296,11 +296,11 @@ Delete an endpoint.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -308,7 +308,7 @@ Delete an endpoint.
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:364
 
@@ -322,11 +322,11 @@ Returns the specified endpoint.
 
 ##### Returns
 
-`Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:365
 
@@ -342,11 +342,11 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:365
 
 ##### Returns
 
-`Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:366
 
@@ -362,15 +362,15 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:366
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:426
 
@@ -384,11 +384,11 @@ Returns the specified endpoint.
 
 ##### Returns
 
-`Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:427
 
@@ -406,11 +406,11 @@ Returns the specified endpoint.
 
 ##### Returns
 
-`Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:428
 
@@ -428,11 +428,11 @@ Returns the specified endpoint.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 ***
 
@@ -440,7 +440,7 @@ Returns the specified endpoint.
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:371
 
@@ -454,11 +454,11 @@ Returns the specified endpoint by name.
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:372
 
@@ -474,11 +474,11 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:372
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:373
 
@@ -494,15 +494,15 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:373
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:438
 
@@ -516,11 +516,11 @@ Returns the specified endpoint by name.
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:439
 
@@ -538,11 +538,11 @@ Returns the specified endpoint by name.
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:440
 
@@ -560,11 +560,11 @@ Returns the specified endpoint by name.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
 ***
 
@@ -584,7 +584,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:422
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:378
 
@@ -598,11 +598,11 @@ Retrieves a list of Endpoints.
 
 ##### Returns
 
-`Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:379
 
@@ -618,11 +618,11 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:379
 
 ##### Returns
 
-`Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:380
 
@@ -638,15 +638,15 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:380
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:450
 
@@ -660,11 +660,11 @@ Retrieves a list of Endpoints.
 
 ##### Returns
 
-`Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:451
 
@@ -682,11 +682,11 @@ Retrieves a list of Endpoints.
 
 ##### Returns
 
-`Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:452
 
@@ -704,11 +704,11 @@ Retrieves a list of Endpoints.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
 ***
 
@@ -716,7 +716,7 @@ Retrieves a list of Endpoints.
 
 #### Call Signature
 
-> **start**(`request`): `Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:399
 
@@ -730,11 +730,11 @@ Start an endpoint.
 
 ##### Returns
 
-`Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`, `metadata`): `Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:400
 
@@ -750,11 +750,11 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:400
 
 ##### Returns
 
-`Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`, `metadata`, `options`): `Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:401
 
@@ -770,15 +770,15 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:401
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`): `Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:492
 
@@ -792,11 +792,11 @@ Start an endpoint.
 
 ##### Returns
 
-`Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`, `metadata`): `Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:493
 
@@ -814,11 +814,11 @@ Start an endpoint.
 
 ##### Returns
 
-`Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`, `metadata`, `options`): `Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:494
 
@@ -836,11 +836,11 @@ Start an endpoint.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -848,7 +848,7 @@ Start an endpoint.
 
 #### Call Signature
 
-> **stop**(`request`): `Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:406
 
@@ -862,11 +862,11 @@ Stop an endpoint.
 
 ##### Returns
 
-`Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`): `Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:407
 
@@ -882,11 +882,11 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:407
 
 ##### Returns
 
-`Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`, `options`): `Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:408
 
@@ -902,15 +902,15 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:408
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`): `Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:507
 
@@ -924,11 +924,11 @@ Stop an endpoint.
 
 ##### Returns
 
-`Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`): `Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:508
 
@@ -946,11 +946,11 @@ Stop an endpoint.
 
 ##### Returns
 
-`Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`, `options`): `Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:509
 
@@ -968,8 +968,8 @@ Stop an endpoint.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>

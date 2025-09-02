@@ -38,6 +38,7 @@
 
 - [EndpointServiceServiceDescription](type-aliases/EndpointServiceServiceDescription.md)
 - [JobResult](type-aliases/JobResult.md)
+- [JobResultClass](type-aliases/JobResultClass.md)
 - [JobServiceServiceDescription](type-aliases/JobServiceServiceDescription.md)
 
 ## Variables

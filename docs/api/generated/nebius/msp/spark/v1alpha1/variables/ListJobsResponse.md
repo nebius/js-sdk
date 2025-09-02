@@ -6,6 +6,6 @@
 
 # Variable: ListJobsResponse
 
-> **ListJobsResponse**: `MessageFns`\<[`ListJobsResponse`](../interfaces/ListJobsResponse.md), `"nebius.msp.spark.v1alpha1.ListJobsResponse"`\>
+> **ListJobsResponse**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListJobsResponse`](../interfaces/ListJobsResponse.md), `"nebius.msp.spark.v1alpha1.ListJobsResponse"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2096

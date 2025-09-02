@@ -48,7 +48,7 @@ Human-readable description of the error for further investigation
 
 ### observedAt?
 
-> `optional` **observedAt**: `Dayjs`
+> `optional` **observedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:10760
 

@@ -6,6 +6,6 @@
 
 # Variable: ControlPlaneStatusEndpoints
 
-> **ControlPlaneStatusEndpoints**: `MessageFns`\<[`ControlPlaneStatusEndpoints`](../interfaces/ControlPlaneStatusEndpoints.md), `"nebius.mk8s.v1alpha1.ControlPlaneStatusEndpoints"`\>
+> **ControlPlaneStatusEndpoints**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ControlPlaneStatusEndpoints`](../interfaces/ControlPlaneStatusEndpoints.md), `"nebius.mk8s.v1alpha1.ControlPlaneStatusEndpoints"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1962

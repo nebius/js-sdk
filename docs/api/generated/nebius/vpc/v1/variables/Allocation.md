@@ -6,6 +6,6 @@
 
 # Variable: Allocation
 
-> **Allocation**: `MessageFns`\<[`Allocation`](../interfaces/Allocation.md), `"nebius.vpc.v1.Allocation"`\>
+> **Allocation**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Allocation`](../interfaces/Allocation.md), `"nebius.vpc.v1.Allocation"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:1166

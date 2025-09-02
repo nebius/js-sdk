@@ -6,7 +6,7 @@
 
 # Interface: ListGpuClustersRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3226
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3220
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3226
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3228
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3222
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3228
 
 > **$type**: `"nebius.compute.v1alpha1.ListGpuClustersRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3227
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3221
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3227
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3233
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3227
 
 #### Deprecated
 
@@ -40,9 +40,9 @@ Deprecated, will be removed on 2025-06-16: it is not implemented, filtering coul
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3230
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3224
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3230
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3231
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3225
 
 ***
 
@@ -58,4 +58,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3231
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3229
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3223

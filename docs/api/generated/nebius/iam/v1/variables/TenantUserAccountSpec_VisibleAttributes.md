@@ -6,6 +6,6 @@
 
 # Variable: TenantUserAccountSpec\_VisibleAttributes
 
-> **TenantUserAccountSpec\_VisibleAttributes**: `MessageFns`\<[`TenantUserAccountSpec_VisibleAttributes`](../interfaces/TenantUserAccountSpec_VisibleAttributes.md), `"nebius.iam.v1.TenantUserAccountSpec.VisibleAttributes"`\>
+> **TenantUserAccountSpec\_VisibleAttributes**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TenantUserAccountSpec_VisibleAttributes`](../interfaces/TenantUserAccountSpec_VisibleAttributes.md), `"nebius.iam.v1.TenantUserAccountSpec.VisibleAttributes"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21848
+Defined in: src/generated/nebius/iam/v1/index.ts:21845

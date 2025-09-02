@@ -6,6 +6,6 @@
 
 # Variable: NetworkInterfaceTemplate
 
-> **NetworkInterfaceTemplate**: `MessageFns`\<[`NetworkInterfaceTemplate`](../interfaces/NetworkInterfaceTemplate.md), `"nebius.mk8s.v1.NetworkInterfaceTemplate"`\>
+> **NetworkInterfaceTemplate**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkInterfaceTemplate`](../interfaces/NetworkInterfaceTemplate.md), `"nebius.mk8s.v1.NetworkInterfaceTemplate"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4991

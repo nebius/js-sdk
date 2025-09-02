@@ -6,6 +6,6 @@
 
 # Variable: GetNetworkRequest
 
-> **GetNetworkRequest**: `MessageFns`\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), `"nebius.vpc.v1.GetNetworkRequest"`\>
+> **GetNetworkRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), `"nebius.vpc.v1.GetNetworkRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:2453

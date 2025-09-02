@@ -6,6 +6,6 @@
 
 # Variable: PreemptibleSpec
 
-> **PreemptibleSpec**: `MessageFns`\<[`PreemptibleSpec`](../interfaces/PreemptibleSpec.md), `"nebius.compute.v1.PreemptibleSpec"`\>
+> **PreemptibleSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PreemptibleSpec`](../interfaces/PreemptibleSpec.md), `"nebius.compute.v1.PreemptibleSpec"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:7840

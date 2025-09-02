@@ -72,7 +72,7 @@ Image name
 
 ### maxRetries
 
-> **maxRetries**: `Long`
+> **maxRetries**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2507
 
@@ -82,7 +82,7 @@ Max retries (0 - no retries)
 
 ### replicaCount
 
-> **replicaCount**: `Long`
+> **replicaCount**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2472
 
@@ -116,7 +116,7 @@ Container resource template
 
 ### timeoutSeconds
 
-> **timeoutSeconds**: `Long`
+> **timeoutSeconds**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2502
 

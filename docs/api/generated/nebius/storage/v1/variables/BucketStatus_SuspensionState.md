@@ -6,6 +6,6 @@
 
 # Variable: BucketStatus\_SuspensionState
 
-> **BucketStatus\_SuspensionState**: `BucketStatus_SuspensionStateClass`
+> **BucketStatus\_SuspensionState**: [`BucketStatus_SuspensionStateClass`](../type-aliases/BucketStatus_SuspensionStateClass.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1891

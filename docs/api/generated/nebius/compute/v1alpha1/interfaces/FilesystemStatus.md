@@ -6,7 +6,7 @@
 
 # Interface: FilesystemStatus
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2959
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2953
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2959
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2961
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2955
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2961
 
 > **$type**: `"nebius.compute.v1alpha1.FilesystemStatus"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2960
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2954
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2960
 
 > **readOnlyAttachments**: `string`[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2965
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2959
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2965
 
 > **readWriteAttachments**: `string`[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2964
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2958
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2964
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2971
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2965
 
 Indicates whether there is an ongoing operation
 
@@ -54,9 +54,9 @@ Indicates whether there is an ongoing operation
 
 ### sizeBytes
 
-> **sizeBytes**: `Long`
+> **sizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2966
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2960
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2966
 
 > **state**: [`FilesystemStatus_State`](../type-aliases/FilesystemStatus_State.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2962
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2956
 
 ***
 
@@ -72,4 +72,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2962
 
 > **stateDescription**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2963
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2957

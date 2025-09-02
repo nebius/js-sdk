@@ -26,6 +26,7 @@
 ## Type Aliases
 
 - [ServiceError\_RetryType](type-aliases/ServiceError_RetryType.md)
+- [ServiceError\_RetryTypeClass](type-aliases/ServiceError_RetryTypeClass.md)
 
 ## Variables
 

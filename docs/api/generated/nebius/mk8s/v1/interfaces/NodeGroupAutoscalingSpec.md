@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5420
 
 ### maxNodeCount
 
-> **maxNodeCount**: `Long`
+> **maxNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5423
 
@@ -36,6 +36,6 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5423
 
 ### minNodeCount
 
-> **minNodeCount**: `Long`
+> **minNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5422

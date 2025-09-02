@@ -6,6 +6,6 @@
 
 # Variable: DeleteStaticKeyRequest
 
-> **DeleteStaticKeyRequest**: `MessageFns`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `"nebius.iam.v1.DeleteStaticKeyRequest"`\>
+> **DeleteStaticKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `"nebius.iam.v1.DeleteStaticKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17976
+Defined in: src/generated/nebius/iam/v1/index.ts:17973

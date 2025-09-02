@@ -6,6 +6,6 @@
 
 # Type Alias: QuotaAllowanceStatus\_State
 
-> **QuotaAllowanceStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"STATE_PROVISIONING"` \| `"STATE_ACTIVE"` \| `"STATE_DELETED"`\>
+> **QuotaAllowanceStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"STATE_PROVISIONING"` \| `"STATE_ACTIVE"` \| `"STATE_DELETED"`\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:613

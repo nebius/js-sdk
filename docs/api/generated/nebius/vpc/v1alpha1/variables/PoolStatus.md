@@ -6,6 +6,6 @@
 
 # Variable: PoolStatus
 
-> **PoolStatus**: `MessageFns`\<[`PoolStatus`](../interfaces/PoolStatus.md), `"nebius.vpc.v1alpha1.PoolStatus"`\>
+> **PoolStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PoolStatus`](../interfaces/PoolStatus.md), `"nebius.vpc.v1alpha1.PoolStatus"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5316

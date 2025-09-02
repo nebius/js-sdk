@@ -6,7 +6,7 @@
 
 # Interface: ListStaticKeysResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18224
+Defined in: src/generated/nebius/iam/v1/index.ts:18221
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18224
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18226
+Defined in: src/generated/nebius/iam/v1/index.ts:18223
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18226
 
 > **$type**: `"nebius.iam.v1.ListStaticKeysResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18225
+Defined in: src/generated/nebius/iam/v1/index.ts:18222
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18225
 
 > **items**: [`StaticKey`](StaticKey.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18231
+Defined in: src/generated/nebius/iam/v1/index.ts:18228
 
 List of static keys returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of static keys returned in the response. The field should be named as `item
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18236
+Defined in: src/generated/nebius/iam/v1/index.ts:18233
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

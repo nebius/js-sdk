@@ -6,6 +6,6 @@
 
 # Variable: BucketStatus
 
-> **BucketStatus**: `MessageFns`\<[`BucketStatus`](../interfaces/BucketStatus.md), `"nebius.storage.v1.BucketStatus"`\>
+> **BucketStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`BucketStatus`](../interfaces/BucketStatus.md), `"nebius.storage.v1.BucketStatus"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2233

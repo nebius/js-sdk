@@ -6,6 +6,6 @@
 
 # Variable: GetAllocationByNameRequest
 
-> **GetAllocationByNameRequest**: `MessageFns`\<[`GetAllocationByNameRequest`](../interfaces/GetAllocationByNameRequest.md), `"nebius.vpc.v1alpha1.GetAllocationByNameRequest"`\>
+> **GetAllocationByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetAllocationByNameRequest`](../interfaces/GetAllocationByNameRequest.md), `"nebius.vpc.v1alpha1.GetAllocationByNameRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:101

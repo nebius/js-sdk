@@ -6,6 +6,6 @@
 
 # Variable: PostgresqlConfig16
 
-> **PostgresqlConfig16**: `MessageFns`\<[`PostgresqlConfig16`](../interfaces/PostgresqlConfig16.md), `"nebius.msp.postgresql.v1alpha1.config.PostgresqlConfig16"`\>
+> **PostgresqlConfig16**: [`MessageFns`](../../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PostgresqlConfig16`](../interfaces/PostgresqlConfig16.md), `"nebius.msp.postgresql.v1alpha1.config.PostgresqlConfig16"`\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:10

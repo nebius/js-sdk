@@ -6,6 +6,6 @@
 
 # Variable: GetJobRequest
 
-> **GetJobRequest**: `MessageFns`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), `"nebius.msp.spark.v1alpha1.GetJobRequest"`\>
+> **GetJobRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), `"nebius.msp.spark.v1alpha1.GetJobRequest"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1872

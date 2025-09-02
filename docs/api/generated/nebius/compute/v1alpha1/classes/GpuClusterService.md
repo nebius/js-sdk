@@ -4,13 +4,9 @@
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / GpuClusterService
 
-# ~~Class: GpuClusterService~~
+# Class: GpuClusterService
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3896
-
-## Deprecated
-
-Deprecated.
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3890
 
 ## Implements
 
@@ -22,7 +18,7 @@ Deprecated.
 
 > **new GpuClusterService**(`sdk`): `GpuClusterService`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3932
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3923
 
 #### Parameters
 
@@ -36,391 +32,19 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3932
 
 ## Properties
 
-### ~~$type~~
+### $type
 
 > **$type**: `"nebius.compute.v1alpha1.GpuClusterService"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3897
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3891
 
 ## Methods
 
-### ~~create()~~
+### create()
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3907
-
-##### Parameters
-
-###### request
-
-[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
-
-##### Returns
-
-`Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`): `Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3908
-
-##### Parameters
-
-###### request
-
-[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3909
-
-##### Parameters
-
-###### request
-
-[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`): `Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3982
-
-##### Parameters
-
-###### request
-
-[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
-
-##### Returns
-
-`Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`): `Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3983
-
-##### Parameters
-
-###### request
-
-[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3984
-
-##### Parameters
-
-###### request
-
-[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-***
-
-### ~~delete()~~
-
-#### Call Signature
-
-> **delete**(`request`): `Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3913
-
-##### Parameters
-
-###### request
-
-[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3914
-
-##### Parameters
-
-###### request
-
-[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3915
-
-##### Parameters
-
-###### request
-
-[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`): `Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4012
-
-##### Parameters
-
-###### request
-
-[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4013
-
-##### Parameters
-
-###### request
-
-[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4014
-
-##### Parameters
-
-###### request
-
-[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-***
-
-### ~~get()~~
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3898
-
-##### Parameters
-
-###### request
-
-[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
-
-##### Returns
-
-`Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3899
-
-##### Parameters
-
-###### request
-
-[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3900
-
-##### Parameters
-
-###### request
-
-[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3946
-
-##### Parameters
-
-###### request
-
-[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
-
-##### Returns
-
-`Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3947
-
-##### Parameters
-
-###### request
-
-[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3948
-
-##### Parameters
-
-###### request
-
-[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
-
-***
-
-### ~~getByName()~~
-
-#### Call Signature
-
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3901
 
@@ -428,15 +52,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3901
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3902
 
@@ -444,7 +68,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3902
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
 
 ###### metadata
 
@@ -452,11 +76,11 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3902
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3903
 
@@ -464,7 +88,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3903
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
 
 ###### metadata
 
@@ -472,39 +96,39 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3903
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3958
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3973
 
 ##### Parameters
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3959
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3974
 
 ##### Parameters
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
 
 ###### metadata
 
@@ -512,19 +136,19 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3959
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3960
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3975
 
 ##### Parameters
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md)
 
 ###### metadata
 
@@ -532,19 +156,391 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3960
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
-### ~~getOperationService()~~
+### delete()
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3907
+
+##### Parameters
+
+###### request
+
+[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3908
+
+##### Parameters
+
+###### request
+
+[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3909
+
+##### Parameters
+
+###### request
+
+[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4003
+
+##### Parameters
+
+###### request
+
+[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4004
+
+##### Parameters
+
+###### request
+
+[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4005
+
+##### Parameters
+
+###### request
+
+[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+***
+
+### get()
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3892
+
+##### Parameters
+
+###### request
+
+[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3893
+
+##### Parameters
+
+###### request
+
+[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3894
+
+##### Parameters
+
+###### request
+
+[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3937
+
+##### Parameters
+
+###### request
+
+[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3938
+
+##### Parameters
+
+###### request
+
+[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3939
+
+##### Parameters
+
+###### request
+
+[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+***
+
+### getByName()
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3895
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3896
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3897
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3949
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3950
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3951
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
+
+***
+
+### getOperationService()
 
 > **getOperationService**(): [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3942
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3933
 
 #### Returns
 
@@ -552,13 +548,13 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3942
 
 ***
 
-### ~~list()~~
+### list()
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3904
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3898
 
 ##### Parameters
 
@@ -568,73 +564,13 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3904
 
 ##### Returns
 
-`Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3905
-
-##### Parameters
-
-###### request
-
-[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3906
-
-##### Parameters
-
-###### request
-
-[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`): `Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3970
-
-##### Parameters
-
-###### request
-
-[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md)
-
-##### Returns
-
-`Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`): `Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3971
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3899
 
 ##### Parameters
 
@@ -648,13 +584,13 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3971
 
 ##### Returns
 
-`Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3972
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3900
 
 ##### Parameters
 
@@ -668,143 +604,79 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3972
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3961
+
+##### Parameters
+
+###### request
+
+[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3962
+
+##### Parameters
+
+###### request
+
+[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3963
+
+##### Parameters
+
+###### request
+
+[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
 ***
 
-### ~~listOperationsByParent()~~
+### listOperationsByParent()
 
 #### Call Signature
 
-> **listOperationsByParent**(`request`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3916
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3917
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`, `options`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3918
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4027
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4028
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`, `options`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4029
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-***
-
-### ~~update()~~
-
-#### Call Signature
-
-> **update**(`request`): `Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3910
 
@@ -812,15 +684,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3910
 
 ###### request
 
-[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md)
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
 
 ##### Returns
 
-`Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3911
 
@@ -828,7 +700,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3911
 
 ###### request
 
-[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md)
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
 
 ###### metadata
 
@@ -836,11 +708,11 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3911
 
 ##### Returns
 
-`Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3912
 
@@ -848,6 +720,130 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3912
 
 ###### request
 
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4018
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4019
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4020
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+***
+
+### update()
+
+#### Call Signature
+
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3904
+
+##### Parameters
+
+###### request
+
+[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3905
+
+##### Parameters
+
+###### request
+
+[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3906
+
+##### Parameters
+
+###### request
+
 [`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md)
 
 ###### metadata
@@ -856,17 +852,17 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3912
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3997
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3988
 
 ##### Parameters
 
@@ -876,13 +872,13 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3997
 
 ##### Returns
 
-`Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3998
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3989
 
 ##### Parameters
 
@@ -896,13 +892,13 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3998
 
 ##### Returns
 
-`Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3999
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3990
 
 ##### Parameters
 
@@ -916,8 +912,8 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3999
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>

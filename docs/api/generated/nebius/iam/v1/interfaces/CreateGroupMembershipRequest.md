@@ -6,7 +6,7 @@
 
 # Interface: CreateGroupMembershipRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9808
+Defined in: src/generated/nebius/iam/v1/index.ts:9805
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9808
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9810
+Defined in: src/generated/nebius/iam/v1/index.ts:9807
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9810
 
 > **$type**: `"nebius.iam.v1.CreateGroupMembershipRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9809
+Defined in: src/generated/nebius/iam/v1/index.ts:9806
 
 ***
 
@@ -30,15 +30,15 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9809
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9811
+Defined in: src/generated/nebius/iam/v1/index.ts:9808
 
 ***
 
 ### revokeAfterHours
 
-> **revokeAfterHours**: `Long`
+> **revokeAfterHours**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9813
+Defined in: src/generated/nebius/iam/v1/index.ts:9810
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9813
 
 > `optional` **spec**: [`GroupMembershipSpec`](GroupMembershipSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9812
+Defined in: src/generated/nebius/iam/v1/index.ts:9809

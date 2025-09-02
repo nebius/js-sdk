@@ -6,7 +6,7 @@
 
 # Interface: AuthPublicKeyStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5254
+Defined in: src/generated/nebius/iam/v1/index.ts:5251
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5254
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5256
+Defined in: src/generated/nebius/iam/v1/index.ts:5253
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5256
 
 > **$type**: `"nebius.iam.v1.AuthPublicKeyStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5255
+Defined in: src/generated/nebius/iam/v1/index.ts:5252
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5255
 
 > **algorithm**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5259
+Defined in: src/generated/nebius/iam/v1/index.ts:5256
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5259
 
 > **fingerprint**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5258
+Defined in: src/generated/nebius/iam/v1/index.ts:5255
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5258
 
 > **keySize**: `number`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5260
+Defined in: src/generated/nebius/iam/v1/index.ts:5257
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5260
 
 > **state**: [`AuthPublicKeyStatus_State`](../type-aliases/AuthPublicKeyStatus_State.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5257
+Defined in: src/generated/nebius/iam/v1/index.ts:5254

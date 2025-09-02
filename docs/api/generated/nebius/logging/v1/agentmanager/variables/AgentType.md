@@ -6,6 +6,6 @@
 
 # Variable: AgentType
 
-> **AgentType**: `AgentTypeClass`
+> **AgentType**: [`AgentTypeClass`](../type-aliases/AgentTypeClass.md)
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:17

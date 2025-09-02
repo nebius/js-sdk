@@ -6,6 +6,6 @@
 
 # Variable: AccessKeySpec
 
-> **AccessKeySpec**: `MessageFns`\<[`AccessKeySpec`](../interfaces/AccessKeySpec.md), `"nebius.iam.v2.AccessKeySpec"`\>
+> **AccessKeySpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AccessKeySpec`](../interfaces/AccessKeySpec.md), `"nebius.iam.v2.AccessKeySpec"`\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1887

@@ -6,6 +6,6 @@
 
 # Variable: Condition
 
-> **Condition**: `MessageFns`\<[`Condition`](../interfaces/Condition.md), `"nebius.mk8s.v1alpha1.Condition"`\>
+> **Condition**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Condition`](../interfaces/Condition.md), `"nebius.mk8s.v1alpha1.Condition"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2229

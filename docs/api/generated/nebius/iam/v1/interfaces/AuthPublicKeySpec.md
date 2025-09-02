@@ -6,7 +6,7 @@
 
 # Interface: AuthPublicKeySpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5105
+Defined in: src/generated/nebius/iam/v1/index.ts:5102
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5105
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5107
+Defined in: src/generated/nebius/iam/v1/index.ts:5104
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5107
 
 > **$type**: `"nebius.iam.v1.AuthPublicKeySpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5106
+Defined in: src/generated/nebius/iam/v1/index.ts:5103
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5106
 
 > `optional` **account**: [`Account`](Account.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5108
+Defined in: src/generated/nebius/iam/v1/index.ts:5105
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5108
 
 > **data**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5111
+Defined in: src/generated/nebius/iam/v1/index.ts:5108
 
 ***
 
@@ -46,12 +46,12 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5111
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5110
+Defined in: src/generated/nebius/iam/v1/index.ts:5107
 
 ***
 
 ### expiresAt?
 
-> `optional` **expiresAt**: `Dayjs`
+> `optional` **expiresAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5109
+Defined in: src/generated/nebius/iam/v1/index.ts:5106

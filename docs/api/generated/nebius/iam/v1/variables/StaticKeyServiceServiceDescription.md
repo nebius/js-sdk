@@ -8,7 +8,7 @@
 
 > **StaticKeyServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18823
+Defined in: src/generated/nebius/iam/v1/index.ts:18820
 
 ## Type Declaration
 

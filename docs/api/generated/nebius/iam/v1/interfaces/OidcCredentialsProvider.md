@@ -6,7 +6,7 @@
 
 # Interface: OidcCredentialsProvider
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7020
+Defined in: src/generated/nebius/iam/v1/index.ts:7017
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7020
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7022
+Defined in: src/generated/nebius/iam/v1/index.ts:7019
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7022
 
 > **$type**: `"nebius.iam.v1.OidcCredentialsProvider"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7021
+Defined in: src/generated/nebius/iam/v1/index.ts:7018
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7021
 
 > **issuerUrl**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7036
+Defined in: src/generated/nebius/iam/v1/index.ts:7033
 
 *
  It's not required provider OIDC issuer should be real OIDC provider, but should expose OIDC configuration
@@ -49,7 +49,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7036
 
 > **jwkSetJson**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7044
+Defined in: src/generated/nebius/iam/v1/index.ts:7041
 
 *
  Literally json, which represents JWKS with public keys for JWT verification.

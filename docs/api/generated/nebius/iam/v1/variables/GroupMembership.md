@@ -6,6 +6,6 @@
 
 # Variable: GroupMembership
 
-> **GroupMembership**: `MessageFns`\<[`GroupMembership`](../interfaces/GroupMembership.md), `"nebius.iam.v1.GroupMembership"`\>
+> **GroupMembership**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GroupMembership`](../interfaces/GroupMembership.md), `"nebius.iam.v1.GroupMembership"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10978
+Defined in: src/generated/nebius/iam/v1/index.ts:10975

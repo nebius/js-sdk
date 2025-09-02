@@ -6,6 +6,6 @@
 
 # Variable: OfferType
 
-> **OfferType**: `OfferTypeClass`
+> **OfferType**: [`OfferTypeClass`](../type-aliases/OfferTypeClass.md)
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1324

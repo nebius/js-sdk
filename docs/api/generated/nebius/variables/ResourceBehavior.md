@@ -6,6 +6,6 @@
 
 # Variable: ResourceBehavior
 
-> **ResourceBehavior**: `ResourceBehaviorClass`
+> **ResourceBehavior**: [`ResourceBehaviorClass`](../type-aliases/ResourceBehaviorClass.md)
 
 Defined in: src/generated/nebius/index.ts:10

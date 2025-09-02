@@ -6,7 +6,7 @@
 
 # Interface: ListTenantUserAccountsResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20114
+Defined in: src/generated/nebius/iam/v1/index.ts:20111
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20114
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20116
+Defined in: src/generated/nebius/iam/v1/index.ts:20113
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20116
 
 > **$type**: `"nebius.iam.v1.ListTenantUserAccountsResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20115
+Defined in: src/generated/nebius/iam/v1/index.ts:20112
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20115
 
 > **items**: [`TenantUserAccount`](TenantUserAccount.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20121
+Defined in: src/generated/nebius/iam/v1/index.ts:20118
 
 List of service accounts returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of service accounts returned in the response. The field should be named as 
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20126
+Defined in: src/generated/nebius/iam/v1/index.ts:20123
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

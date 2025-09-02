@@ -6,6 +6,6 @@
 
 # Variable: NetworkStatus\_State
 
-> **NetworkStatus\_State**: `NetworkStatus_StateClass`
+> **NetworkStatus\_State**: [`NetworkStatus_StateClass`](../type-aliases/NetworkStatus_StateClass.md)
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3504

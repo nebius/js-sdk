@@ -6,6 +6,6 @@
 
 # Variable: State
 
-> **State**: `StateClass`
+> **State**: [`StateClass`](../type-aliases/StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17730
+Defined in: src/generated/nebius/iam/v1/index.ts:17727

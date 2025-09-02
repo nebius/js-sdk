@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2236
 
 ### deletedAt?
 
-> `optional` **deletedAt**: `Dayjs`
+> `optional` **deletedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2244
 
@@ -58,7 +58,7 @@ The domain of the endpoint where the bucket can be accessed. It omits the scheme
 
 ### purgeAt?
 
-> `optional` **purgeAt**: `Dayjs`
+> `optional` **purgeAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2249
 

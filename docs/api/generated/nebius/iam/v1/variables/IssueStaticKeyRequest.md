@@ -6,6 +6,6 @@
 
 # Variable: IssueStaticKeyRequest
 
-> **IssueStaticKeyRequest**: `MessageFns`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), `"nebius.iam.v1.IssueStaticKeyRequest"`\>
+> **IssueStaticKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), `"nebius.iam.v1.IssueStaticKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18336
+Defined in: src/generated/nebius/iam/v1/index.ts:18333

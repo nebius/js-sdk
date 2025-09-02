@@ -6,6 +6,6 @@
 
 # Variable: GetGroupMembershipRequest
 
-> **GetGroupMembershipRequest**: `MessageFns`\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), `"nebius.iam.v1.GetGroupMembershipRequest"`\>
+> **GetGroupMembershipRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), `"nebius.iam.v1.GetGroupMembershipRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10024
+Defined in: src/generated/nebius/iam/v1/index.ts:10021

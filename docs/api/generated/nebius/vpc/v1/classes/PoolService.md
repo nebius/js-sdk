@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5130
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5143
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5143
 
 ##### Returns
 
-`Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5144
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5144
 
 ##### Returns
 
-`Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5145
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5145
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5217
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5217
 
 ##### Returns
 
-`Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5218
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5218
 
 ##### Returns
 
-`Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5219
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5219
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5219
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5149
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5149
 
 ##### Returns
 
-`Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5150
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5150
 
 ##### Returns
 
-`Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5151
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5151
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5247
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5247
 
 ##### Returns
 
-`Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5248
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5248
 
 ##### Returns
 
-`Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5249
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5249
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5249
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5131
 
@@ -304,11 +304,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5131
 
 ##### Returns
 
-`Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5132
 
@@ -324,11 +324,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5132
 
 ##### Returns
 
-`Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5133
 
@@ -344,15 +344,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5133
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5169
 
@@ -364,11 +364,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5169
 
 ##### Returns
 
-`Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5170
 
@@ -384,11 +384,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5170
 
 ##### Returns
 
-`Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5171
 
@@ -404,11 +404,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5171
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 ***
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5171
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5134
 
@@ -428,11 +428,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5134
 
 ##### Returns
 
-`Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5135
 
@@ -448,11 +448,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5135
 
 ##### Returns
 
-`Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5136
 
@@ -468,15 +468,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5136
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5181
 
@@ -488,11 +488,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5181
 
 ##### Returns
 
-`Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5182
 
@@ -508,11 +508,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5182
 
 ##### Returns
 
-`Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5183
 
@@ -528,11 +528,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5183
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
 ***
 
@@ -552,7 +552,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5165
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5137
 
@@ -564,11 +564,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5137
 
 ##### Returns
 
-`Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5138
 
@@ -584,11 +584,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5138
 
 ##### Returns
 
-`Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5139
 
@@ -604,15 +604,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5139
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5193
 
@@ -624,11 +624,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5193
 
 ##### Returns
 
-`Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5194
 
@@ -644,11 +644,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5194
 
 ##### Returns
 
-`Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5195
 
@@ -664,11 +664,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5195
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 ***
 
@@ -676,7 +676,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5195
 
 #### Call Signature
 
-> **listBySourcePool**(`request`): `Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **listBySourcePool**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5140
 
@@ -688,11 +688,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5140
 
 ##### Returns
 
-`Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **listBySourcePool**(`request`, `metadata`): `Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **listBySourcePool**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5141
 
@@ -708,11 +708,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5141
 
 ##### Returns
 
-`Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **listBySourcePool**(`request`, `metadata`, `options`): `Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **listBySourcePool**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5142
 
@@ -728,15 +728,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5142
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **listBySourcePool**(`request`): `Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **listBySourcePool**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5205
 
@@ -748,11 +748,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5205
 
 ##### Returns
 
-`Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **listBySourcePool**(`request`, `metadata`): `Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **listBySourcePool**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5206
 
@@ -768,11 +768,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5206
 
 ##### Returns
 
-`Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 #### Call Signature
 
-> **listBySourcePool**(`request`, `metadata`, `options`): `Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+> **listBySourcePool**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5207
 
@@ -788,11 +788,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5207
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
 ***
 
@@ -800,7 +800,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5207
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5146
 
@@ -812,11 +812,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5146
 
 ##### Returns
 
-`Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5147
 
@@ -832,11 +832,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5147
 
 ##### Returns
 
-`Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5148
 
@@ -852,15 +852,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5148
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5232
 
@@ -872,11 +872,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5232
 
 ##### Returns
 
-`Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5233
 
@@ -892,11 +892,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5233
 
 ##### Returns
 
-`Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5234
 
@@ -912,8 +912,8 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5234
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

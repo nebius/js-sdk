@@ -6,7 +6,7 @@
 
 # Interface: ListFederationsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8654
+Defined in: src/generated/nebius/iam/v1/index.ts:8651
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8654
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8656
+Defined in: src/generated/nebius/iam/v1/index.ts:8653
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8656
 
 > **$type**: `"nebius.iam.v1.ListFederationsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8655
+Defined in: src/generated/nebius/iam/v1/index.ts:8652
 
 ***
 
@@ -30,15 +30,15 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8655
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8664
+Defined in: src/generated/nebius/iam/v1/index.ts:8661
 
 ***
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8662
+Defined in: src/generated/nebius/iam/v1/index.ts:8659
 
 Default value: 10
 
@@ -48,7 +48,7 @@ Default value: 10
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8663
+Defined in: src/generated/nebius/iam/v1/index.ts:8660
 
 ***
 
@@ -56,4 +56,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8663
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8657
+Defined in: src/generated/nebius/iam/v1/index.ts:8654

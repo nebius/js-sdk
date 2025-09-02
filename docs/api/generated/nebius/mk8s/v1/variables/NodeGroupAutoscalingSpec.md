@@ -6,6 +6,6 @@
 
 # Variable: NodeGroupAutoscalingSpec
 
-> **NodeGroupAutoscalingSpec**: `MessageFns`\<[`NodeGroupAutoscalingSpec`](../interfaces/NodeGroupAutoscalingSpec.md), `"nebius.mk8s.v1.NodeGroupAutoscalingSpec"`\>
+> **NodeGroupAutoscalingSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeGroupAutoscalingSpec`](../interfaces/NodeGroupAutoscalingSpec.md), `"nebius.mk8s.v1.NodeGroupAutoscalingSpec"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5419

@@ -6,7 +6,7 @@
 
 # Interface: ConfigReaderLike
 
-Defined in: [src/sdk.ts:42](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L42)
+Defined in: [src/sdk.ts:42](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L42)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/sdk.ts:42](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **getCredentials**: `Function`
 
-Defined in: [src/sdk.ts:46](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L46)
+Defined in: [src/sdk.ts:46](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L46)
 
 ## Methods
 
@@ -22,7 +22,7 @@ Defined in: [src/sdk.ts:46](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > **endpoint**(): `undefined` \| `string`
 
-Defined in: [src/sdk.ts:43](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L43)
+Defined in: [src/sdk.ts:43](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L43)
 
 #### Returns
 
@@ -34,7 +34,7 @@ Defined in: [src/sdk.ts:43](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > **parentId**(): `undefined` \| `string`
 
-Defined in: [src/sdk.ts:44](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L44)
+Defined in: [src/sdk.ts:44](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L44)
 
 #### Returns
 

@@ -8,4 +8,4 @@
 
 > **TokenExchangeServiceServiceDescription** = *typeof* [`TokenExchangeServiceServiceDescription`](../variables/TokenExchangeServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22088
+Defined in: src/generated/nebius/iam/v1/index.ts:22085

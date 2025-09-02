@@ -6,6 +6,6 @@
 
 # Type Alias: TenantUserAccountStatus\_State
 
-> **TenantUserAccountStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"BLOCKED"`\>
+> **TenantUserAccountStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"BLOCKED"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20988
+Defined in: src/generated/nebius/iam/v1/index.ts:20985

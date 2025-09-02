@@ -6,7 +6,7 @@
 
 # Interface: FederationCertificateServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7903
+Defined in: src/generated/nebius/iam/v1/index.ts:7900
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7903
 
 > **create**: `handleUnaryCall`\<[`CreateFederationCertificateRequest`](CreateFederationCertificateRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7904
+Defined in: src/generated/nebius/iam/v1/index.ts:7901
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7904
 
 > **delete**: `handleUnaryCall`\<[`DeleteFederationCertificateRequest`](DeleteFederationCertificateRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7908
+Defined in: src/generated/nebius/iam/v1/index.ts:7905
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7908
 
 > **get**: `handleUnaryCall`\<[`GetFederationCertificateRequest`](GetFederationCertificateRequest.md), [`FederationCertificate`](FederationCertificate.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7905
+Defined in: src/generated/nebius/iam/v1/index.ts:7902
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7905
 
 > **listByFederation**: `handleUnaryCall`\<[`ListFederationCertificateByFederationRequest`](ListFederationCertificateByFederationRequest.md), [`ListFederationCertificateResponse`](ListFederationCertificateResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7906
+Defined in: src/generated/nebius/iam/v1/index.ts:7903
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7906
 
 > **update**: `handleUnaryCall`\<[`UpdateFederationCertificateRequest`](UpdateFederationCertificateRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7907
+Defined in: src/generated/nebius/iam/v1/index.ts:7904

@@ -6,7 +6,7 @@
 
 # Interface: StaticKeySpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19202
+Defined in: src/generated/nebius/iam/v1/index.ts:19199
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19202
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19204
+Defined in: src/generated/nebius/iam/v1/index.ts:19201
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19204
 
 > **$type**: `"nebius.iam.v1.StaticKeySpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19203
+Defined in: src/generated/nebius/iam/v1/index.ts:19200
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19203
 
 > `optional` **account**: [`Account`](Account.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19209
+Defined in: src/generated/nebius/iam/v1/index.ts:19206
 
 account of the static key. only service accounts are supported for now
 
@@ -38,9 +38,9 @@ account of the static key. only service accounts are supported for now
 
 ### expiresAt?
 
-> `optional` **expiresAt**: `Dayjs`
+> `optional` **expiresAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19219
+Defined in: src/generated/nebius/iam/v1/index.ts:19216
 
 when will the static key expire
 
@@ -50,6 +50,6 @@ when will the static key expire
 
 > **service**: [`StaticKeySpec_ClientService`](../type-aliases/StaticKeySpec_ClientService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19214
+Defined in: src/generated/nebius/iam/v1/index.ts:19211
 
 service static key is to be used for

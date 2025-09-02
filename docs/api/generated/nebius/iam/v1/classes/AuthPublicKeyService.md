@@ -6,7 +6,7 @@
 
 # Class: AuthPublicKeyService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4789
+Defined in: src/generated/nebius/iam/v1/index.ts:4786
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4789
 
 > **new AuthPublicKeyService**(`sdk`): `AuthPublicKeyService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4822
+Defined in: src/generated/nebius/iam/v1/index.ts:4819
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4822
 
 > **$type**: `"nebius.iam.v1.AuthPublicKeyService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4790
+Defined in: src/generated/nebius/iam/v1/index.ts:4787
 
 ## Methods
 
@@ -44,69 +44,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4790
 
 #### Call Signature
 
-> **activate**(`request`): `Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4806
-
-##### Parameters
-
-###### request
-
-[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **activate**(`request`, `metadata`): `Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4807
-
-##### Parameters
-
-###### request
-
-[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **activate**(`request`, `metadata`, `options`): `Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4808
-
-##### Parameters
-
-###### request
-
-[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **activate**(`request`): `Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4898
+Defined in: src/generated/nebius/iam/v1/index.ts:4803
 
 ##### Parameters
 
@@ -116,13 +56,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4898
 
 ##### Returns
 
-`Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activate**(`request`, `metadata`): `Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4899
+Defined in: src/generated/nebius/iam/v1/index.ts:4804
 
 ##### Parameters
 
@@ -136,13 +76,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4899
 
 ##### Returns
 
-`Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activate**(`request`, `metadata`, `options`): `Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4900
+Defined in: src/generated/nebius/iam/v1/index.ts:4805
 
 ##### Parameters
 
@@ -156,11 +96,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4900
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **activate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4895
+
+##### Parameters
+
+###### request
+
+[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **activate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4896
+
+##### Parameters
+
+###### request
+
+[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **activate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4897
+
+##### Parameters
+
+###### request
+
+[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,69 +168,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4900
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4791
-
-##### Parameters
-
-###### request
-
-[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`): `Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4792
-
-##### Parameters
-
-###### request
-
-[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4793
-
-##### Parameters
-
-###### request
-
-[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`): `Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4832
+Defined in: src/generated/nebius/iam/v1/index.ts:4788
 
 ##### Parameters
 
@@ -240,13 +180,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4832
 
 ##### Returns
 
-`Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4833
+Defined in: src/generated/nebius/iam/v1/index.ts:4789
 
 ##### Parameters
 
@@ -260,13 +200,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4833
 
 ##### Returns
 
-`Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4834
+Defined in: src/generated/nebius/iam/v1/index.ts:4790
 
 ##### Parameters
 
@@ -280,11 +220,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4834
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4829
+
+##### Parameters
+
+###### request
+
+[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4830
+
+##### Parameters
+
+###### request
+
+[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4831
+
+##### Parameters
+
+###### request
+
+[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,69 +292,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4834
 
 #### Call Signature
 
-> **deactivate**(`request`): `Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4809
-
-##### Parameters
-
-###### request
-
-[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **deactivate**(`request`, `metadata`): `Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4810
-
-##### Parameters
-
-###### request
-
-[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **deactivate**(`request`, `metadata`, `options`): `Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4811
-
-##### Parameters
-
-###### request
-
-[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **deactivate**(`request`): `Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4913
+Defined in: src/generated/nebius/iam/v1/index.ts:4806
 
 ##### Parameters
 
@@ -364,13 +304,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4913
 
 ##### Returns
 
-`Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivate**(`request`, `metadata`): `Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4914
+Defined in: src/generated/nebius/iam/v1/index.ts:4807
 
 ##### Parameters
 
@@ -384,13 +324,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4914
 
 ##### Returns
 
-`Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivate**(`request`, `metadata`, `options`): `Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4915
+Defined in: src/generated/nebius/iam/v1/index.ts:4808
 
 ##### Parameters
 
@@ -404,11 +344,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4915
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **deactivate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4910
+
+##### Parameters
+
+###### request
+
+[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **deactivate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4911
+
+##### Parameters
+
+###### request
+
+[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **deactivate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4912
+
+##### Parameters
+
+###### request
+
+[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -416,69 +416,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4915
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4812
-
-##### Parameters
-
-###### request
-
-[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4813
-
-##### Parameters
-
-###### request
-
-[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4814
-
-##### Parameters
-
-###### request
-
-[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`): `Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4928
+Defined in: src/generated/nebius/iam/v1/index.ts:4809
 
 ##### Parameters
 
@@ -488,13 +428,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4928
 
 ##### Returns
 
-`Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4929
+Defined in: src/generated/nebius/iam/v1/index.ts:4810
 
 ##### Parameters
 
@@ -508,13 +448,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4929
 
 ##### Returns
 
-`Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4930
+Defined in: src/generated/nebius/iam/v1/index.ts:4811
 
 ##### Parameters
 
@@ -528,11 +468,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4930
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4925
+
+##### Parameters
+
+###### request
+
+[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4926
+
+##### Parameters
+
+###### request
+
+[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4927
+
+##### Parameters
+
+###### request
+
+[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -540,69 +540,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4930
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4794
-
-##### Parameters
-
-###### request
-
-[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4795
-
-##### Parameters
-
-###### request
-
-[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4796
-
-##### Parameters
-
-###### request
-
-[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4847
+Defined in: src/generated/nebius/iam/v1/index.ts:4791
 
 ##### Parameters
 
@@ -612,13 +552,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4847
 
 ##### Returns
 
-`Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4848
+Defined in: src/generated/nebius/iam/v1/index.ts:4792
 
 ##### Parameters
 
@@ -632,13 +572,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4848
 
 ##### Returns
 
-`Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4849
+Defined in: src/generated/nebius/iam/v1/index.ts:4793
 
 ##### Parameters
 
@@ -652,11 +592,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4849
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4844
+
+##### Parameters
+
+###### request
+
+[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4845
+
+##### Parameters
+
+###### request
+
+[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4846
+
+##### Parameters
+
+###### request
+
+[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
 ***
 
@@ -664,7 +664,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4849
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4828
+Defined in: src/generated/nebius/iam/v1/index.ts:4825
 
 #### Returns
 
@@ -676,69 +676,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4828
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4797
-
-##### Parameters
-
-###### request
-
-[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`): `Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4798
-
-##### Parameters
-
-###### request
-
-[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4799
-
-##### Parameters
-
-###### request
-
-[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`): `Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4859
+Defined in: src/generated/nebius/iam/v1/index.ts:4794
 
 ##### Parameters
 
@@ -748,13 +688,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4859
 
 ##### Returns
 
-`Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4860
+Defined in: src/generated/nebius/iam/v1/index.ts:4795
 
 ##### Parameters
 
@@ -768,13 +708,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4860
 
 ##### Returns
 
-`Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4861
+Defined in: src/generated/nebius/iam/v1/index.ts:4796
 
 ##### Parameters
 
@@ -788,11 +728,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4861
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4856
+
+##### Parameters
+
+###### request
+
+[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4857
+
+##### Parameters
+
+###### request
+
+[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4858
+
+##### Parameters
+
+###### request
+
+[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
 ***
 
@@ -800,69 +800,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4861
 
 #### Call Signature
 
-> **listByAccount**(`request`): `Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+> **listByAccount**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4800
-
-##### Parameters
-
-###### request
-
-[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md)
-
-##### Returns
-
-`Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-#### Call Signature
-
-> **listByAccount**(`request`, `metadata`): `Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4801
-
-##### Parameters
-
-###### request
-
-[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-#### Call Signature
-
-> **listByAccount**(`request`, `metadata`, `options`): `Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4802
-
-##### Parameters
-
-###### request
-
-[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-#### Call Signature
-
-> **listByAccount**(`request`): `Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4871
+Defined in: src/generated/nebius/iam/v1/index.ts:4797
 
 ##### Parameters
 
@@ -872,13 +812,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4871
 
 ##### Returns
 
-`Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
 #### Call Signature
 
-> **listByAccount**(`request`, `metadata`): `Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+> **listByAccount**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4872
+Defined in: src/generated/nebius/iam/v1/index.ts:4798
 
 ##### Parameters
 
@@ -892,13 +832,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4872
 
 ##### Returns
 
-`Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
 #### Call Signature
 
-> **listByAccount**(`request`, `metadata`, `options`): `Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+> **listByAccount**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4873
+Defined in: src/generated/nebius/iam/v1/index.ts:4799
 
 ##### Parameters
 
@@ -912,11 +852,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4873
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+#### Call Signature
+
+> **listByAccount**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4868
+
+##### Parameters
+
+###### request
+
+[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+#### Call Signature
+
+> **listByAccount**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4869
+
+##### Parameters
+
+###### request
+
+[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+#### Call Signature
+
+> **listByAccount**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4870
+
+##### Parameters
+
+###### request
+
+[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
 ***
 
@@ -924,69 +924,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4873
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4803
-
-##### Parameters
-
-###### request
-
-[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`, `metadata`): `Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4804
-
-##### Parameters
-
-###### request
-
-[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4805
-
-##### Parameters
-
-###### request
-
-[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`): `Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:4883
+Defined in: src/generated/nebius/iam/v1/index.ts:4800
 
 ##### Parameters
 
@@ -996,13 +936,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4883
 
 ##### Returns
 
-`Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4884
+Defined in: src/generated/nebius/iam/v1/index.ts:4801
 
 ##### Parameters
 
@@ -1016,13 +956,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4884
 
 ##### Returns
 
-`Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4885
+Defined in: src/generated/nebius/iam/v1/index.ts:4802
 
 ##### Parameters
 
@@ -1036,8 +976,68 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4885
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4880
+
+##### Parameters
+
+###### request
+
+[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4881
+
+##### Parameters
+
+###### request
+
+[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:4882
+
+##### Parameters
+
+###### request
+
+[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

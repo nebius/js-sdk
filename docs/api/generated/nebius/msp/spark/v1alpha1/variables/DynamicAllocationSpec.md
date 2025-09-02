@@ -6,6 +6,6 @@
 
 # Variable: DynamicAllocationSpec
 
-> **DynamicAllocationSpec**: `MessageFns`\<[`DynamicAllocationSpec`](../interfaces/DynamicAllocationSpec.md), `"nebius.msp.spark.v1alpha1.DynamicAllocationSpec"`\>
+> **DynamicAllocationSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DynamicAllocationSpec`](../interfaces/DynamicAllocationSpec.md), `"nebius.msp.spark.v1alpha1.DynamicAllocationSpec"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3567

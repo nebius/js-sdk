@@ -6,6 +6,6 @@
 
 # Variable: NodeTaint
 
-> **NodeTaint**: `MessageFns`\<[`NodeTaint`](../interfaces/NodeTaint.md), `"nebius.mk8s.v1.NodeTaint"`\>
+> **NodeTaint**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeTaint`](../interfaces/NodeTaint.md), `"nebius.mk8s.v1.NodeTaint"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5527

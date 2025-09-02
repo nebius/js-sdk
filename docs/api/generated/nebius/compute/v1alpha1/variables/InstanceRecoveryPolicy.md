@@ -6,6 +6,6 @@
 
 # Variable: InstanceRecoveryPolicy
 
-> **InstanceRecoveryPolicy**: `InstanceRecoveryPolicyClass`
+> **InstanceRecoveryPolicy**: [`InstanceRecoveryPolicyClass`](../type-aliases/InstanceRecoveryPolicyClass.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6559
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6544

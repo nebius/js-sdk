@@ -48,7 +48,7 @@ Metadata associated with the new cluster.
 
 ### recoveryTime?
 
-> `optional` **recoveryTime**: `Dayjs`
+> `optional` **recoveryTime**: [`Dayjs`](../../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1633
 

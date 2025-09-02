@@ -6,6 +6,6 @@
 
 # Variable: ListServiceAccountRequest
 
-> **ListServiceAccountRequest**: `MessageFns`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), `"nebius.iam.v1.ListServiceAccountRequest"`\>
+> **ListServiceAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), `"nebius.iam.v1.ListServiceAccountRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16344
+Defined in: src/generated/nebius/iam/v1/index.ts:16341

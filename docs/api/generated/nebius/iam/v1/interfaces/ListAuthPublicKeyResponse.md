@@ -6,7 +6,7 @@
 
 # Interface: ListAuthPublicKeyResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4573
+Defined in: src/generated/nebius/iam/v1/index.ts:4570
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4573
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4575
+Defined in: src/generated/nebius/iam/v1/index.ts:4572
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4575
 
 > **$type**: `"nebius.iam.v1.ListAuthPublicKeyResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4574
+Defined in: src/generated/nebius/iam/v1/index.ts:4571
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4574
 
 > **items**: [`AuthPublicKey`](AuthPublicKey.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4580
+Defined in: src/generated/nebius/iam/v1/index.ts:4577
 
 List of auth public keys returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of auth public keys returned in the response. The field should be named as 
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4585
+Defined in: src/generated/nebius/iam/v1/index.ts:4582
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2726
 
 ### maxPoolSize?
 
-> `optional` **maxPoolSize**: `Long`
+> `optional` **maxPoolSize**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2737
 

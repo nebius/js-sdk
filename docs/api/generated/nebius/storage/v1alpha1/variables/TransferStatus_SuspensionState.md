@@ -6,6 +6,6 @@
 
 # Variable: TransferStatus\_SuspensionState
 
-> **TransferStatus\_SuspensionState**: `TransferStatus_SuspensionStateClass`
+> **TransferStatus\_SuspensionState**: [`TransferStatus_SuspensionStateClass`](../type-aliases/TransferStatus_SuspensionStateClass.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1484

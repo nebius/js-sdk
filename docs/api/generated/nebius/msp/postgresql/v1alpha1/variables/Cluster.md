@@ -6,6 +6,6 @@
 
 # Variable: Cluster
 
-> **Cluster**: `MessageFns`\<[`Cluster`](../interfaces/Cluster.md), `"nebius.msp.postgresql.v1alpha1.Cluster"`\>
+> **Cluster**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Cluster`](../interfaces/Cluster.md), `"nebius.msp.postgresql.v1alpha1.Cluster"`\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2590

@@ -6,6 +6,6 @@
 
 # Type Alias: Artifact\_Status
 
-> **Artifact\_Status** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATUS_UNSPECIFIED"` \| `"ACTIVE"` \| `"DELETING"`\>
+> **Artifact\_Status** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATUS_UNSPECIFIED"` \| `"ACTIVE"` \| `"DELETING"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:551

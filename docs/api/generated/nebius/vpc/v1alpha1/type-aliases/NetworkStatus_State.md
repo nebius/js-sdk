@@ -6,7 +6,7 @@
 
 # Type Alias: NetworkStatus\_State
 
-> **NetworkStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"DELETING"`\>
+> **NetworkStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"DELETING"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3640
 

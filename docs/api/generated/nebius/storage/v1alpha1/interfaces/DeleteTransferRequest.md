@@ -36,6 +36,6 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:744
 
 ### resourceVersion
 
-> **resourceVersion**: `Long`
+> **resourceVersion**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:745

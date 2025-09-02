@@ -38,6 +38,6 @@ Target storage class to transit to.
 
 ### transitedWith?
 
-> `optional` **transitedWith**: \{ `$case`: `"date"`; `date`: `Dayjs`; \} \| \{ `$case`: `"days"`; `days`: `number`; \}
+> `optional` **transitedWith**: \{ `$case`: `"date"`; `date`: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md); \} \| \{ `$case`: `"days"`; `days`: `number`; \}
 
 Defined in: src/generated/nebius/storage/v1/index.ts:3368

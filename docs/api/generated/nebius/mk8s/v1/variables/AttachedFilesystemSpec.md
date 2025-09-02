@@ -6,6 +6,6 @@
 
 # Variable: AttachedFilesystemSpec
 
-> **AttachedFilesystemSpec**: `MessageFns`\<[`AttachedFilesystemSpec`](../interfaces/AttachedFilesystemSpec.md), `"nebius.mk8s.v1.AttachedFilesystemSpec"`\>
+> **AttachedFilesystemSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AttachedFilesystemSpec`](../interfaces/AttachedFilesystemSpec.md), `"nebius.mk8s.v1.AttachedFilesystemSpec"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5180

@@ -8,7 +8,7 @@
 
 > **ProjectServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15868
+Defined in: src/generated/nebius/iam/v1/index.ts:15865
 
 ## Type Declaration
 

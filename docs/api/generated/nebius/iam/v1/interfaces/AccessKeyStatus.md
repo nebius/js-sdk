@@ -6,7 +6,7 @@
 
 # Interface: AccessKeyStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2054
+Defined in: src/generated/nebius/iam/v1/index.ts:2051
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2054
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2056
+Defined in: src/generated/nebius/iam/v1/index.ts:2053
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2056
 
 > **$type**: `"nebius.iam.v1.AccessKeyStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2055
+Defined in: src/generated/nebius/iam/v1/index.ts:2052
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2055
 
 > **algorithm**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2059
+Defined in: src/generated/nebius/iam/v1/index.ts:2056
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2059
 
 > **awsAccessKeyId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2061
+Defined in: src/generated/nebius/iam/v1/index.ts:2058
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2061
 
 > **fingerprint**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2058
+Defined in: src/generated/nebius/iam/v1/index.ts:2055
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2058
 
 > **keySize**: `number`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2060
+Defined in: src/generated/nebius/iam/v1/index.ts:2057
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2060
 
 > **secret**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2062
+Defined in: src/generated/nebius/iam/v1/index.ts:2059
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2062
 
 > **state**: [`AccessKeyStatus_State`](../type-aliases/AccessKeyStatus_State.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2057
+Defined in: src/generated/nebius/iam/v1/index.ts:2054

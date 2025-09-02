@@ -6,6 +6,6 @@
 
 # Variable: SubnetStatus\_State
 
-> **SubnetStatus\_State**: `SubnetStatus_StateClass`
+> **SubnetStatus\_State**: [`SubnetStatus_StateClass`](../type-aliases/SubnetStatus_StateClass.md)
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:7263

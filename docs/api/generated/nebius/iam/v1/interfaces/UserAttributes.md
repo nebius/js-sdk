@@ -6,7 +6,7 @@
 
 # Interface: UserAttributes
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21352
+Defined in: src/generated/nebius/iam/v1/index.ts:21349
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21352
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21354
+Defined in: src/generated/nebius/iam/v1/index.ts:21351
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21354
 
 > **$type**: `"nebius.iam.v1.UserAttributes"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21353
+Defined in: src/generated/nebius/iam/v1/index.ts:21350
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21353
 
 > `optional` **email**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21361
+Defined in: src/generated/nebius/iam/v1/index.ts:21358
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21361
 
 > `optional` **emailVerified**: `boolean`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21363
+Defined in: src/generated/nebius/iam/v1/index.ts:21360
 
 #### Deprecated
 
@@ -50,7 +50,7 @@ Deprecated.
 
 > `optional` **familyName**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21358
+Defined in: src/generated/nebius/iam/v1/index.ts:21355
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21358
 
 > `optional` **givenName**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21357
+Defined in: src/generated/nebius/iam/v1/index.ts:21354
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21357
 
 > `optional` **locale**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21366
+Defined in: src/generated/nebius/iam/v1/index.ts:21363
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21366
 
 > `optional` **name**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21356
+Defined in: src/generated/nebius/iam/v1/index.ts:21353
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21356
 
 > `optional` **phoneNumber**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21367
+Defined in: src/generated/nebius/iam/v1/index.ts:21364
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21367
 
 > `optional` **phoneNumberVerified**: `boolean`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21369
+Defined in: src/generated/nebius/iam/v1/index.ts:21366
 
 #### Deprecated
 
@@ -102,7 +102,7 @@ Deprecated.
 
 > `optional` **picture**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21360
+Defined in: src/generated/nebius/iam/v1/index.ts:21357
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21360
 
 > `optional` **preferredUsername**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21359
+Defined in: src/generated/nebius/iam/v1/index.ts:21356
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21359
 
 > `optional` **sub**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21355
+Defined in: src/generated/nebius/iam/v1/index.ts:21352
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21355
 
 > `optional` **zoneinfo**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21365
+Defined in: src/generated/nebius/iam/v1/index.ts:21362
 
 #### Deprecated
 

@@ -6,6 +6,6 @@
 
 # Variable: UpdateActionParams
 
-> **UpdateActionParams**: `MessageFns`\<[`UpdateActionParams`](../interfaces/UpdateActionParams.md), `"nebius.logging.agentmanager.v1.UpdateActionParams"`\>
+> **UpdateActionParams**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateActionParams`](../interfaces/UpdateActionParams.md), `"nebius.logging.agentmanager.v1.UpdateActionParams"`\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1566

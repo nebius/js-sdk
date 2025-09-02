@@ -6,6 +6,6 @@
 
 # Variable: ListRequest
 
-> **ListRequest**: `MessageFns`\<[`ListRequest`](../interfaces/ListRequest.md), `"nebius.msp.v1alpha1.ListRequest"`\>
+> **ListRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListRequest`](../interfaces/ListRequest.md), `"nebius.msp.v1alpha1.ListRequest"`\>
 
 Defined in: src/generated/nebius/msp/v1alpha1/index.ts:665

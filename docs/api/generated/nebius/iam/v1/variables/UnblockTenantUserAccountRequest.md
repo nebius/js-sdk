@@ -6,6 +6,6 @@
 
 # Variable: UnblockTenantUserAccountRequest
 
-> **UnblockTenantUserAccountRequest**: `MessageFns`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `"nebius.iam.v1.UnblockTenantUserAccountRequest"`\>
+> **UnblockTenantUserAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `"nebius.iam.v1.UnblockTenantUserAccountRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20311
+Defined in: src/generated/nebius/iam/v1/index.ts:20308

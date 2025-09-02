@@ -8,4 +8,4 @@
 
 > **StaticKeyServiceServiceDescription** = *typeof* [`StaticKeyServiceServiceDescription`](../variables/StaticKeyServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18823
+Defined in: src/generated/nebius/iam/v1/index.ts:18820

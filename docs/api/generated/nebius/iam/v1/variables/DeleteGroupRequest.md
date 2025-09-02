@@ -6,6 +6,6 @@
 
 # Variable: DeleteGroupRequest
 
-> **DeleteGroupRequest**: `MessageFns`\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), `"nebius.iam.v1.DeleteGroupRequest"`\>
+> **DeleteGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), `"nebius.iam.v1.DeleteGroupRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12235
+Defined in: src/generated/nebius/iam/v1/index.ts:12232

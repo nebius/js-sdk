@@ -6,7 +6,7 @@
 
 # Interface: DeleteFilesystemRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2087
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2084
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2087
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2089
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2086
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2089
 
 > **$type**: `"nebius.compute.v1alpha1.DeleteFilesystemRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2088
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2085
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2088
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2090
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2087

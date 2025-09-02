@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:714
 
 ### limit?
 
-> `optional` **limit**: `Long`
+> `optional` **limit**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:720
 

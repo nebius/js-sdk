@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:337
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:348
 

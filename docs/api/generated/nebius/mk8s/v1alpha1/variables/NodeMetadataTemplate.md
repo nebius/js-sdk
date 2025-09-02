@@ -6,6 +6,6 @@
 
 # Variable: NodeMetadataTemplate
 
-> **NodeMetadataTemplate**: `MessageFns`\<[`NodeMetadataTemplate`](../interfaces/NodeMetadataTemplate.md), `"nebius.mk8s.v1alpha1.NodeMetadataTemplate"`\>
+> **NodeMetadataTemplate**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeMetadataTemplate`](../interfaces/NodeMetadataTemplate.md), `"nebius.mk8s.v1alpha1.NodeMetadataTemplate"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4825

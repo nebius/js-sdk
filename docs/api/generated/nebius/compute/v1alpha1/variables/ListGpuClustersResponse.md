@@ -6,6 +6,6 @@
 
 # Variable: ListGpuClustersResponse
 
-> **ListGpuClustersResponse**: `MessageFns`\<[`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md), `"nebius.compute.v1alpha1.ListGpuClustersResponse"`\>
+> **ListGpuClustersResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md), `"nebius.compute.v1alpha1.ListGpuClustersResponse"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3684
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3678

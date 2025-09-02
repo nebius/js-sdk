@@ -6,6 +6,6 @@
 
 # Variable: IPAddressStatus
 
-> **IPAddressStatus**: `MessageFns`\<[`IPAddressStatus`](../interfaces/IPAddressStatus.md), `"nebius.vpc.v1alpha1.IPAddressStatus"`\>
+> **IPAddressStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`IPAddressStatus`](../interfaces/IPAddressStatus.md), `"nebius.vpc.v1alpha1.IPAddressStatus"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2862

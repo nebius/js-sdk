@@ -6,6 +6,6 @@
 
 # Type Alias: UserAccountStatus\_State
 
-> **UserAccountStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"DELETING"`\>
+> **UserAccountStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"DELETING"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22595
+Defined in: src/generated/nebius/iam/v1/index.ts:22592

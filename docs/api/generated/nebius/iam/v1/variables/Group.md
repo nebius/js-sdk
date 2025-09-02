@@ -6,6 +6,6 @@
 
 # Variable: Group
 
-> **Group**: `MessageFns`\<[`Group`](../interfaces/Group.md), `"nebius.iam.v1.Group"`\>
+> **Group**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Group`](../interfaces/Group.md), `"nebius.iam.v1.Group"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12651
+Defined in: src/generated/nebius/iam/v1/index.ts:12648

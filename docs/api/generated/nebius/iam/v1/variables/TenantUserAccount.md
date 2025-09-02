@@ -6,6 +6,6 @@
 
 # Variable: TenantUserAccount
 
-> **TenantUserAccount**: `MessageFns`\<[`TenantUserAccount`](../interfaces/TenantUserAccount.md), `"nebius.iam.v1.TenantUserAccount"`\>
+> **TenantUserAccount**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TenantUserAccount`](../interfaces/TenantUserAccount.md), `"nebius.iam.v1.TenantUserAccount"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21049
+Defined in: src/generated/nebius/iam/v1/index.ts:21046

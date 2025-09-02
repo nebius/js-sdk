@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1237
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1248
 

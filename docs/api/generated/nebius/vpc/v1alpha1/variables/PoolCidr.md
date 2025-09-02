@@ -6,6 +6,6 @@
 
 # Variable: PoolCidr
 
-> **PoolCidr**: `MessageFns`\<[`PoolCidr`](../interfaces/PoolCidr.md), `"nebius.vpc.v1alpha1.PoolCidr"`\>
+> **PoolCidr**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PoolCidr`](../interfaces/PoolCidr.md), `"nebius.vpc.v1alpha1.PoolCidr"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5179

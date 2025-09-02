@@ -6,6 +6,6 @@
 
 # Variable: TransferSpec\_BucketCredentials\_CredentialsAnonymous
 
-> **TransferSpec\_BucketCredentials\_CredentialsAnonymous**: `MessageFns`\<[`TransferSpec_BucketCredentials_CredentialsAnonymous`](../interfaces/TransferSpec_BucketCredentials_CredentialsAnonymous.md), `"nebius.storage.v1alpha1.TransferSpec.BucketCredentials.CredentialsAnonymous"`\>
+> **TransferSpec\_BucketCredentials\_CredentialsAnonymous**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TransferSpec_BucketCredentials_CredentialsAnonymous`](../interfaces/TransferSpec_BucketCredentials_CredentialsAnonymous.md), `"nebius.storage.v1alpha1.TransferSpec.BucketCredentials.CredentialsAnonymous"`\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2382

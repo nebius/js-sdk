@@ -6,7 +6,7 @@
 
 # Interface: ListTenantsResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19675
+Defined in: src/generated/nebius/iam/v1/index.ts:19672
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19675
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19677
+Defined in: src/generated/nebius/iam/v1/index.ts:19674
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19677
 
 > **$type**: `"nebius.iam.v1.ListTenantsResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19676
+Defined in: src/generated/nebius/iam/v1/index.ts:19673
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19676
 
 > **items**: [`Container`](Container.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19678
+Defined in: src/generated/nebius/iam/v1/index.ts:19675
 
 ***
 
@@ -38,6 +38,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19678
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19683
+Defined in: src/generated/nebius/iam/v1/index.ts:19680
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

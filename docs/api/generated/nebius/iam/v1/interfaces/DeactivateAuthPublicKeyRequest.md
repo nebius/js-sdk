@@ -6,7 +6,7 @@
 
 # Interface: DeactivateAuthPublicKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4403
+Defined in: src/generated/nebius/iam/v1/index.ts:4400
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4403
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4405
+Defined in: src/generated/nebius/iam/v1/index.ts:4402
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4405
 
 > **$type**: `"nebius.iam.v1.DeactivateAuthPublicKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4404
+Defined in: src/generated/nebius/iam/v1/index.ts:4401
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4404
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4406
+Defined in: src/generated/nebius/iam/v1/index.ts:4403

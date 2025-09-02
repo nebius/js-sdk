@@ -6,6 +6,6 @@
 
 # Type Alias: DiskSpec\_DiskType
 
-> **DiskSpec\_DiskType** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"NETWORK_SSD"` \| `"NETWORK_HDD"` \| `"NETWORK_SSD_NON_REPLICATED"` \| `"NETWORK_SSD_IO_M3"`\>
+> **DiskSpec\_DiskType** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"NETWORK_SSD"` \| `"NETWORK_HDD"` \| `"NETWORK_SSD_NON_REPLICATED"` \| `"NETWORK_SSD_IO_M3"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:919
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:916

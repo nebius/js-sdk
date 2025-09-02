@@ -6,7 +6,7 @@
 
 # Interface: ListProjectsResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15760
+Defined in: src/generated/nebius/iam/v1/index.ts:15757
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15760
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15762
+Defined in: src/generated/nebius/iam/v1/index.ts:15759
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15762
 
 > **$type**: `"nebius.iam.v1.ListProjectsResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15761
+Defined in: src/generated/nebius/iam/v1/index.ts:15758
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15761
 
 > **items**: [`Container`](Container.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15763
+Defined in: src/generated/nebius/iam/v1/index.ts:15760
 
 ***
 
@@ -38,6 +38,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15763
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15768
+Defined in: src/generated/nebius/iam/v1/index.ts:15765
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

@@ -6,6 +6,6 @@
 
 # Variable: Artifact\_Status
 
-> **Artifact\_Status**: `Artifact_StatusClass`
+> **Artifact\_Status**: [`Artifact_StatusClass`](../type-aliases/Artifact_StatusClass.md)
 
 Defined in: src/generated/nebius/registry/v1/index.ts:551

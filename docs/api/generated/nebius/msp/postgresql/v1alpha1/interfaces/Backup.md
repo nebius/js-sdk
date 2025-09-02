@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:800
 
 ### creationFinish?
 
-> `optional` **creationFinish**: `Dayjs`
+> `optional` **creationFinish**: [`Dayjs`](../../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:821
 
@@ -38,7 +38,7 @@ Creation finish timestamp.
 
 ### creationStart?
 
-> `optional` **creationStart**: `Dayjs`
+> `optional` **creationStart**: [`Dayjs`](../../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:816
 

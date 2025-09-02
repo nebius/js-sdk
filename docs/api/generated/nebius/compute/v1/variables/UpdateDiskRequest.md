@@ -6,6 +6,6 @@
 
 # Variable: UpdateDiskRequest
 
-> **UpdateDiskRequest**: `MessageFns`\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), `"nebius.compute.v1.UpdateDiskRequest"`\>
+> **UpdateDiskRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), `"nebius.compute.v1.UpdateDiskRequest"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:361

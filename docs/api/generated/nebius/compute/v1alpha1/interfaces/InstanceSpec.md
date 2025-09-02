@@ -6,7 +6,7 @@
 
 # Interface: InstanceSpec
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6772
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6757
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6772
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6774
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6759
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6774
 
 > **$type**: `"nebius.compute.v1alpha1.InstanceSpec"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6773
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6758
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6773
 
 > `optional` **bootDisk**: [`AttachedDiskSpec`](AttachedDiskSpec.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6779
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6764
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6779
 
 > **cloudInitUserData**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6782
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6767
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6782
 
 > **filesystems**: [`AttachedFilesystemSpec`](AttachedFilesystemSpec.md)[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6781
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6766
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6781
 
 > `optional` **gpuCluster**: [`InstanceGpuClusterSpec`](InstanceGpuClusterSpec.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6777
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6762
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6777
 
 > **networkInterfaces**: [`NetworkInterfaceSpec`](../../../vpc/v1alpha1/interfaces/NetworkInterfaceSpec.md)[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6778
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6763
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6778
 
 > **recoveryPolicy**: [`InstanceRecoveryPolicy`](../type-aliases/InstanceRecoveryPolicy.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6791
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6776
 
 Recovery policy defines how the instance will be treated in case of a failure. Common source of failure is a host failure, but it can be any other failure.
  Instance undergoing a guest shutdown (poweroff, etc.) will be subject to recovery policy, meaning that it could be restarted and billed accordingly. Stop instance via API or UI to stop it to avoid recovering.
@@ -83,7 +83,7 @@ Recovery policy defines how the instance will be treated in case of a failure. C
 
 > `optional` **resources**: [`ResourcesSpec`](ResourcesSpec.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6776
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6761
 
 ***
 
@@ -91,7 +91,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6776
 
 > **secondaryDisks**: [`AttachedDiskSpec`](AttachedDiskSpec.md)[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6780
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6765
 
 ***
 
@@ -99,7 +99,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6780
 
 > **serviceAccountId**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6775
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6760
 
 ***
 
@@ -107,4 +107,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6775
 
 > **stopped**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6783
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6768

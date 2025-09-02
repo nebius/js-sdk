@@ -6,6 +6,6 @@
 
 # Variable: Host
 
-> **Host**: `MessageFns`\<[`Host`](../interfaces/Host.md), `"nebius.msp.v1alpha1.resource.Host"`\>
+> **Host**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Host`](../interfaces/Host.md), `"nebius.msp.v1alpha1.resource.Host"`\>
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:950

@@ -6,6 +6,6 @@
 
 # Variable: AllocationStatus\_State
 
-> **AllocationStatus\_State**: `AllocationStatus_StateClass`
+> **AllocationStatus\_State**: [`AllocationStatus_StateClass`](../type-aliases/AllocationStatus_StateClass.md)
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:968

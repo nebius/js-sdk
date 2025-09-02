@@ -6,6 +6,6 @@
 
 # Variable: GetOperationRequest
 
-> **GetOperationRequest**: `MessageFns`\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `"nebius.common.v1.GetOperationRequest"`\>
+> **GetOperationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `"nebius.common.v1.GetOperationRequest"`\>
 
 Defined in: src/generated/nebius/common/v1/index.ts:2670

@@ -6,6 +6,6 @@
 
 # Variable: IpVisibility
 
-> **IpVisibility**: `IpVisibilityClass`
+> **IpVisibility**: [`IpVisibilityClass`](../type-aliases/IpVisibilityClass.md)
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5360

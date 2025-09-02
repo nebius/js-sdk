@@ -8,7 +8,7 @@
 
 > **SessionManagementServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`SessionManagementServiceBaseClient`](../interfaces/SessionManagementServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17686
+Defined in: src/generated/nebius/iam/v1/index.ts:17683
 
 ## Type Declaration
 

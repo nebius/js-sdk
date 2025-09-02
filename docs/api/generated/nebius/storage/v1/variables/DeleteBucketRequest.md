@@ -6,6 +6,6 @@
 
 # Variable: DeleteBucketRequest
 
-> **DeleteBucketRequest**: `MessageFns`\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `"nebius.storage.v1.DeleteBucketRequest"`\>
+> **DeleteBucketRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), `"nebius.storage.v1.DeleteBucketRequest"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:944

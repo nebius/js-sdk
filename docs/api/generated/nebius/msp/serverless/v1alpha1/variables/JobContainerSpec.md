@@ -6,6 +6,6 @@
 
 # Variable: JobContainerSpec
 
-> **JobContainerSpec**: `MessageFns`\<[`JobContainerSpec`](../interfaces/JobContainerSpec.md), `"nebius.msp.serverless.v1alpha1.JobContainerSpec"`\>
+> **JobContainerSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`JobContainerSpec`](../interfaces/JobContainerSpec.md), `"nebius.msp.serverless.v1alpha1.JobContainerSpec"`\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2460

@@ -6,7 +6,7 @@
 
 # Interface: ServiceAccountServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16870
+Defined in: src/generated/nebius/iam/v1/index.ts:16867
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16870
 
 > **create**: `handleUnaryCall`\<[`CreateServiceAccountRequest`](CreateServiceAccountRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16871
+Defined in: src/generated/nebius/iam/v1/index.ts:16868
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16871
 
 > **delete**: `handleUnaryCall`\<[`DeleteServiceAccountRequest`](DeleteServiceAccountRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16876
+Defined in: src/generated/nebius/iam/v1/index.ts:16873
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16876
 
 > **get**: `handleUnaryCall`\<[`GetServiceAccountRequest`](GetServiceAccountRequest.md), [`ServiceAccount`](ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16872
+Defined in: src/generated/nebius/iam/v1/index.ts:16869
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16872
 
 > **getByName**: `handleUnaryCall`\<[`GetServiceAccountByNameRequest`](GetServiceAccountByNameRequest.md), [`ServiceAccount`](ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16873
+Defined in: src/generated/nebius/iam/v1/index.ts:16870
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16873
 
 > **list**: `handleUnaryCall`\<[`ListServiceAccountRequest`](ListServiceAccountRequest.md), [`ListServiceAccountResponse`](ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16874
+Defined in: src/generated/nebius/iam/v1/index.ts:16871
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16874
 
 > **update**: `handleUnaryCall`\<[`UpdateServiceAccountRequest`](UpdateServiceAccountRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16875
+Defined in: src/generated/nebius/iam/v1/index.ts:16872

@@ -6,6 +6,6 @@
 
 # Variable: CreateAllocationRequest
 
-> **CreateAllocationRequest**: `MessageFns`\<[`CreateAllocationRequest`](../interfaces/CreateAllocationRequest.md), `"nebius.vpc.v1.CreateAllocationRequest"`\>
+> **CreateAllocationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateAllocationRequest`](../interfaces/CreateAllocationRequest.md), `"nebius.vpc.v1.CreateAllocationRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:554

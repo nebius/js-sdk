@@ -6,6 +6,6 @@
 
 # Variable: JobStatus
 
-> **JobStatus**: `MessageFns`\<[`JobStatus`](../interfaces/JobStatus.md), `"nebius.msp.serverless.v1alpha1.JobStatus"`\>
+> **JobStatus**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`JobStatus`](../interfaces/JobStatus.md), `"nebius.msp.serverless.v1alpha1.JobStatus"`\>
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2908

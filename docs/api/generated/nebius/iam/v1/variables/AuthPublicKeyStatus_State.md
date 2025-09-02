@@ -6,6 +6,6 @@
 
 # Variable: AuthPublicKeyStatus\_State
 
-> **AuthPublicKeyStatus\_State**: `AuthPublicKeyStatus_StateClass`
+> **AuthPublicKeyStatus\_State**: [`AuthPublicKeyStatus_StateClass`](../type-aliases/AuthPublicKeyStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4947
+Defined in: src/generated/nebius/iam/v1/index.ts:4944

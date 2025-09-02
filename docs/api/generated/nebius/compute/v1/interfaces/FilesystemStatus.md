@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3339
 
 ### blockSizeBytes
 
-> **blockSizeBytes**: `Long`
+> **blockSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3351
 
@@ -62,7 +62,7 @@ Indicates whether there is an ongoing operation
 
 ### sizeBytes
 
-> **sizeBytes**: `Long`
+> **sizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3345
 

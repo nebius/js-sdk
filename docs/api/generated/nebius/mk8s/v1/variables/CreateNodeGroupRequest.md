@@ -6,6 +6,6 @@
 
 # Variable: CreateNodeGroupRequest
 
-> **CreateNodeGroupRequest**: `MessageFns`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `"nebius.mk8s.v1.CreateNodeGroupRequest"`\>
+> **CreateNodeGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `"nebius.mk8s.v1.CreateNodeGroupRequest"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2888

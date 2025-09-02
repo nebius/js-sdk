@@ -6,7 +6,7 @@
 
 # Interface: FederationCertificateStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8288
+Defined in: src/generated/nebius/iam/v1/index.ts:8285
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8288
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8290
+Defined in: src/generated/nebius/iam/v1/index.ts:8287
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8290
 
 > **$type**: `"nebius.iam.v1.FederationCertificateStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8289
+Defined in: src/generated/nebius/iam/v1/index.ts:8286
 
 ***
 
@@ -30,31 +30,31 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8289
 
 > **algorithm**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8292
+Defined in: src/generated/nebius/iam/v1/index.ts:8289
 
 ***
 
 ### keySize
 
-> **keySize**: `Long`
+> **keySize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8293
+Defined in: src/generated/nebius/iam/v1/index.ts:8290
 
 ***
 
 ### notAfter?
 
-> `optional` **notAfter**: `Dayjs`
+> `optional` **notAfter**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8295
+Defined in: src/generated/nebius/iam/v1/index.ts:8292
 
 ***
 
 ### notBefore?
 
-> `optional` **notBefore**: `Dayjs`
+> `optional` **notBefore**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8294
+Defined in: src/generated/nebius/iam/v1/index.ts:8291
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8294
 
 > **state**: [`FederationCertificateStatus_State`](../type-aliases/FederationCertificateStatus_State.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8291
+Defined in: src/generated/nebius/iam/v1/index.ts:8288

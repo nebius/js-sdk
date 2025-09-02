@@ -6,6 +6,6 @@
 
 # Type Alias: JobResultCode
 
-> **JobResultCode** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"JOB_RESULT_CODE_UNSPECIFIED"` \| `"SUCCEEDED"` \| `"ERROR"`\>
+> **JobResultCode** = [`EnumInstance`](../../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"JOB_RESULT_CODE_UNSPECIFIED"` \| `"SUCCEEDED"` \| `"ERROR"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2582

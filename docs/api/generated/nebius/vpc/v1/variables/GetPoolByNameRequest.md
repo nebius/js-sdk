@@ -6,6 +6,6 @@
 
 # Variable: GetPoolByNameRequest
 
-> **GetPoolByNameRequest**: `MessageFns`\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), `"nebius.vpc.v1.GetPoolByNameRequest"`\>
+> **GetPoolByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), `"nebius.vpc.v1.GetPoolByNameRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:4273

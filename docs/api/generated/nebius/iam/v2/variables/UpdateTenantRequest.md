@@ -6,6 +6,6 @@
 
 # Variable: UpdateTenantRequest
 
-> **UpdateTenantRequest**: `MessageFns`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `"nebius.iam.v2.UpdateTenantRequest"`\>
+> **UpdateTenantRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `"nebius.iam.v2.UpdateTenantRequest"`\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:2393

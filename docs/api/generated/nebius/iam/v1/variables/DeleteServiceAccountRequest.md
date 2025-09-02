@@ -6,6 +6,6 @@
 
 # Variable: DeleteServiceAccountRequest
 
-> **DeleteServiceAccountRequest**: `MessageFns`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `"nebius.iam.v1.DeleteServiceAccountRequest"`\>
+> **DeleteServiceAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `"nebius.iam.v1.DeleteServiceAccountRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16615
+Defined in: src/generated/nebius/iam/v1/index.ts:16612

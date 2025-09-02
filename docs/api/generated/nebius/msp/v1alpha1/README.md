@@ -19,7 +19,9 @@
 ## Type Aliases
 
 - [ClusterStatus\_Phase](type-aliases/ClusterStatus_Phase.md)
+- [ClusterStatus\_PhaseClass](type-aliases/ClusterStatus_PhaseClass.md)
 - [ClusterStatus\_State](type-aliases/ClusterStatus_State.md)
+- [ClusterStatus\_StateClass](type-aliases/ClusterStatus_StateClass.md)
 
 ## Variables
 

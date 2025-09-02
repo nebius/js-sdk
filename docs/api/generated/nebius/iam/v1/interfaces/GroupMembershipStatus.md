@@ -6,7 +6,7 @@
 
 # Interface: GroupMembershipStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11224
+Defined in: src/generated/nebius/iam/v1/index.ts:11221
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11224
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11226
+Defined in: src/generated/nebius/iam/v1/index.ts:11223
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11226
 
 > **$type**: `"nebius.iam.v1.GroupMembershipStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11225
+Defined in: src/generated/nebius/iam/v1/index.ts:11222
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11225
 
 > `optional` **groupMemberStatus**: \{ `$case`: `"tenantUserAccountStatus"`; `tenantUserAccountStatus`: [`TenantUserAccountStatus`](TenantUserAccountStatus.md); \} \| \{ `$case`: `"serviceAccountStatus"`; `serviceAccountStatus`: [`ServiceAccountStatus`](ServiceAccountStatus.md); \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11227
+Defined in: src/generated/nebius/iam/v1/index.ts:11224

@@ -6,7 +6,7 @@
 
 # Interface: TenantUserAccountStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21931
+Defined in: src/generated/nebius/iam/v1/index.ts:21928
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21931
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21933
+Defined in: src/generated/nebius/iam/v1/index.ts:21930
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21933
 
 > **$type**: `"nebius.iam.v1.TenantUserAccountStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21932
+Defined in: src/generated/nebius/iam/v1/index.ts:21929
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21932
 
 > **federationId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21945
+Defined in: src/generated/nebius/iam/v1/index.ts:21942
 
 currently can only accept the values: custom, unknown, google, github.
 
@@ -40,7 +40,7 @@ currently can only accept the values: custom, unknown, google, github.
 
 > **invitationId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21940
+Defined in: src/generated/nebius/iam/v1/index.ts:21937
 
 if a tenant user account is created during invitation it gets a reference to the invitation resource
  once invitation is accepted it looses this reference (and internally gets a reference to their global federated user account)
@@ -51,7 +51,7 @@ if a tenant user account is created during invitation it gets a reference to the
 
 > **state**: [`TenantUserAccountStatus_State`](../type-aliases/TenantUserAccountStatus_State.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21934
+Defined in: src/generated/nebius/iam/v1/index.ts:21931
 
 ***
 
@@ -59,6 +59,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21934
 
 > **userAccountState**: [`UserAccountStatus_State`](../type-aliases/UserAccountStatus_State.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21950
+Defined in: src/generated/nebius/iam/v1/index.ts:21947
 
 user account state can help distinguish case when account is blocked globally

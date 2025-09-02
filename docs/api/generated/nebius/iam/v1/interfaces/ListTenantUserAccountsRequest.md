@@ -6,7 +6,7 @@
 
 # Interface: ListTenantUserAccountsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19959
+Defined in: src/generated/nebius/iam/v1/index.ts:19956
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19959
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19961
+Defined in: src/generated/nebius/iam/v1/index.ts:19958
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19961
 
 > **$type**: `"nebius.iam.v1.ListTenantUserAccountsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19960
+Defined in: src/generated/nebius/iam/v1/index.ts:19957
 
 ***
 
@@ -30,15 +30,15 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19960
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19978
+Defined in: src/generated/nebius/iam/v1/index.ts:19975
 
 ***
 
 ### pageSize?
 
-> `optional` **pageSize**: `Long`
+> `optional` **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19972
+Defined in: src/generated/nebius/iam/v1/index.ts:19969
 
 Specifies the maximum number of items to return in the response.
  Default value: 10
@@ -49,7 +49,7 @@ Specifies the maximum number of items to return in the response.
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19977
+Defined in: src/generated/nebius/iam/v1/index.ts:19974
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -59,6 +59,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19966
+Defined in: src/generated/nebius/iam/v1/index.ts:19963
 
 Represents the tenant ID like 'tenant-someuniqueprefix'

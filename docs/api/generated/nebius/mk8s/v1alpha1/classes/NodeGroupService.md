@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3954
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3964
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3964
 
 ##### Returns
 
-`Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3965
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3965
 
 ##### Returns
 
-`Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3966
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3966
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4029
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4029
 
 ##### Returns
 
-`Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4030
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4030
 
 ##### Returns
 
-`Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4031
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4031
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4031
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3970
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3970
 
 ##### Returns
 
-`Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3971
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3971
 
 ##### Returns
 
-`Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3972
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3972
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4059
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4059
 
 ##### Returns
 
-`Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4060
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4060
 
 ##### Returns
 
-`Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4061
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4061
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4061
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3955
 
@@ -304,11 +304,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3955
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3956
 
@@ -324,11 +324,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3956
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3957
 
@@ -344,15 +344,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3957
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3993
 
@@ -364,11 +364,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3993
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3994
 
@@ -384,11 +384,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3994
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3995
 
@@ -404,11 +404,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3995
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 ***
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3995
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3958
 
@@ -428,11 +428,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3958
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3959
 
@@ -448,11 +448,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3959
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3960
 
@@ -468,15 +468,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3960
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4005
 
@@ -488,11 +488,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4005
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4006
 
@@ -508,11 +508,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4006
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4007
 
@@ -528,11 +528,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4007
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
 ***
 
@@ -552,7 +552,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3989
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3961
 
@@ -564,11 +564,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3961
 
 ##### Returns
 
-`Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3962
 
@@ -584,11 +584,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3962
 
 ##### Returns
 
-`Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3963
 
@@ -604,15 +604,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3963
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4017
 
@@ -624,11 +624,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4017
 
 ##### Returns
 
-`Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4018
 
@@ -644,11 +644,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4018
 
 ##### Returns
 
-`Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4019
 
@@ -664,11 +664,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4019
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
 ***
 
@@ -676,7 +676,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4019
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3967
 
@@ -688,11 +688,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3967
 
 ##### Returns
 
-`Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3968
 
@@ -708,11 +708,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3968
 
 ##### Returns
 
-`Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3969
 
@@ -728,15 +728,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3969
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4044
 
@@ -748,11 +748,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4044
 
 ##### Returns
 
-`Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4045
 
@@ -768,11 +768,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4045
 
 ##### Returns
 
-`Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4046
 
@@ -788,11 +788,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4046
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -800,7 +800,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4046
 
 #### Call Signature
 
-> **upgrade**(`request`): `Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **upgrade**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3973
 
@@ -812,11 +812,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3973
 
 ##### Returns
 
-`Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **upgrade**(`request`, `metadata`): `Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **upgrade**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3974
 
@@ -832,11 +832,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3974
 
 ##### Returns
 
-`Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **upgrade**(`request`, `metadata`, `options`): `Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **upgrade**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3975
 
@@ -852,15 +852,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3975
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **upgrade**(`request`): `Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **upgrade**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4074
 
@@ -872,11 +872,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4074
 
 ##### Returns
 
-`Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **upgrade**(`request`, `metadata`): `Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **upgrade**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4075
 
@@ -892,11 +892,11 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4075
 
 ##### Returns
 
-`Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **upgrade**(`request`, `metadata`, `options`): `Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **upgrade**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4076
 
@@ -912,8 +912,8 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4076
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>

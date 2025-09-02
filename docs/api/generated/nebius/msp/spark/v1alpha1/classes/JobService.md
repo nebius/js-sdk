@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2478
 
 #### Call Signature
 
-> **cancel**(`request`): `Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **cancel**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2504
 
@@ -58,11 +58,11 @@ Cancel the job.
 
 ##### Returns
 
-`Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **cancel**(`request`, `metadata`): `Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **cancel**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2505
 
@@ -78,11 +78,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2505
 
 ##### Returns
 
-`Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **cancel**(`request`, `metadata`, `options`): `Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **cancel**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2506
 
@@ -98,15 +98,15 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2506
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **cancel**(`request`): `Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **cancel**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2563
 
@@ -120,11 +120,11 @@ Cancel the job.
 
 ##### Returns
 
-`Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **cancel**(`request`, `metadata`): `Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **cancel**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2564
 
@@ -142,11 +142,11 @@ Cancel the job.
 
 ##### Returns
 
-`Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **cancel**(`request`, `metadata`, `options`): `Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **cancel**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2565
 
@@ -164,11 +164,11 @@ Cancel the job.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -176,7 +176,7 @@ Cancel the job.
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2497
 
@@ -190,11 +190,11 @@ Creates a job.
 
 ##### Returns
 
-`Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2498
 
@@ -210,11 +210,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2498
 
 ##### Returns
 
-`Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2499
 
@@ -230,15 +230,15 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2499
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2548
 
@@ -252,11 +252,11 @@ Creates a job.
 
 ##### Returns
 
-`Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2549
 
@@ -274,11 +274,11 @@ Creates a job.
 
 ##### Returns
 
-`Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2550
 
@@ -296,11 +296,11 @@ Creates a job.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -308,7 +308,7 @@ Creates a job.
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2483
 
@@ -322,11 +322,11 @@ Returns the specified job.
 
 ##### Returns
 
-`Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2484
 
@@ -342,11 +342,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2484
 
 ##### Returns
 
-`Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2485
 
@@ -362,15 +362,15 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2485
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2524
 
@@ -384,11 +384,11 @@ Returns the specified job.
 
 ##### Returns
 
-`Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2525
 
@@ -406,11 +406,11 @@ Returns the specified job.
 
 ##### Returns
 
-`Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2526
 
@@ -428,11 +428,11 @@ Returns the specified job.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
 ***
 
@@ -452,7 +452,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2520
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2490
 
@@ -466,11 +466,11 @@ Retrieves a list of jobs.
 
 ##### Returns
 
-`Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2491
 
@@ -486,11 +486,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2491
 
 ##### Returns
 
-`Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2492
 
@@ -506,15 +506,15 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2492
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2536
 
@@ -528,11 +528,11 @@ Retrieves a list of jobs.
 
 ##### Returns
 
-`Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2537
 
@@ -550,11 +550,11 @@ Retrieves a list of jobs.
 
 ##### Returns
 
-`Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2538
 
@@ -572,8 +572,8 @@ Retrieves a list of jobs.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>

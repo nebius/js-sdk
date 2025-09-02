@@ -6,6 +6,6 @@
 
 # Variable: AccessToken
 
-> **AccessToken**: `MessageFns`\<[`AccessToken`](../interfaces/AccessToken.md), `"nebius.audit.v2.AccessToken"`\>
+> **AccessToken**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AccessToken`](../interfaces/AccessToken.md), `"nebius.audit.v2.AccessToken"`\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:14

@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:675
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:702
 
@@ -58,11 +58,11 @@ Creates a new on-demand backup.
 
 ##### Returns
 
-`Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:703
 
@@ -78,11 +78,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:703
 
 ##### Returns
 
-`Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:704
 
@@ -98,15 +98,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:704
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:765
 
@@ -120,11 +120,11 @@ Creates a new on-demand backup.
 
 ##### Returns
 
-`Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:766
 
@@ -142,11 +142,11 @@ Creates a new on-demand backup.
 
 ##### Returns
 
-`Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:767
 
@@ -164,11 +164,11 @@ Creates a new on-demand backup.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -176,7 +176,7 @@ Creates a new on-demand backup.
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:709
 
@@ -190,11 +190,11 @@ Deletes an on-demand backup.
 
 ##### Returns
 
-`Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:710
 
@@ -210,11 +210,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:710
 
 ##### Returns
 
-`Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:711
 
@@ -230,15 +230,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:711
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:780
 
@@ -252,11 +252,11 @@ Deletes an on-demand backup.
 
 ##### Returns
 
-`Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:781
 
@@ -274,11 +274,11 @@ Deletes an on-demand backup.
 
 ##### Returns
 
-`Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:782
 
@@ -296,11 +296,11 @@ Deletes an on-demand backup.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -308,7 +308,7 @@ Deletes an on-demand backup.
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:681
 
@@ -323,11 +323,11 @@ Returns the specified PostgreSQL Cluster backup.
 
 ##### Returns
 
-`Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:682
 
@@ -343,11 +343,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:682
 
 ##### Returns
 
-`Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:683
 
@@ -363,15 +363,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:683
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:729
 
@@ -386,11 +386,11 @@ Returns the specified PostgreSQL Cluster backup.
 
 ##### Returns
 
-`Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:730
 
@@ -409,11 +409,11 @@ Returns the specified PostgreSQL Cluster backup.
 
 ##### Returns
 
-`Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:731
 
@@ -432,11 +432,11 @@ Returns the specified PostgreSQL Cluster backup.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
 ***
 
@@ -456,7 +456,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:725
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:688
 
@@ -470,11 +470,11 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 ##### Returns
 
-`Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:689
 
@@ -490,11 +490,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:689
 
 ##### Returns
 
-`Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:690
 
@@ -510,15 +510,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:690
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:741
 
@@ -532,11 +532,11 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 ##### Returns
 
-`Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:742
 
@@ -554,11 +554,11 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 ##### Returns
 
-`Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:743
 
@@ -576,11 +576,11 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 ***
 
@@ -588,7 +588,7 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 #### Call Signature
 
-> **listByCluster**(`request`): `Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **listByCluster**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:695
 
@@ -602,11 +602,11 @@ Retrieves the list of PostgreSQL Cluster backups by cluster.
 
 ##### Returns
 
-`Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **listByCluster**(`request`, `metadata`): `Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **listByCluster**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:696
 
@@ -622,11 +622,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:696
 
 ##### Returns
 
-`Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **listByCluster**(`request`, `metadata`, `options`): `Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **listByCluster**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:697
 
@@ -642,15 +642,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:697
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **listByCluster**(`request`): `Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **listByCluster**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:753
 
@@ -664,11 +664,11 @@ Retrieves the list of PostgreSQL Cluster backups by cluster.
 
 ##### Returns
 
-`Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **listByCluster**(`request`, `metadata`): `Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **listByCluster**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:754
 
@@ -686,11 +686,11 @@ Retrieves the list of PostgreSQL Cluster backups by cluster.
 
 ##### Returns
 
-`Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 #### Call Signature
 
-> **listByCluster**(`request`, `metadata`, `options`): `Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+> **listByCluster**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:755
 
@@ -708,8 +708,8 @@ Retrieves the list of PostgreSQL Cluster backups by cluster.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>

@@ -6,6 +6,6 @@
 
 # Variable: ResourceConflict
 
-> **ResourceConflict**: `MessageFns`\<[`ResourceConflict`](../interfaces/ResourceConflict.md), `"nebius.common.v1.ResourceConflict"`\>
+> **ResourceConflict**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceConflict`](../interfaces/ResourceConflict.md), `"nebius.common.v1.ResourceConflict"`\>
 
 Defined in: src/generated/nebius/common/v1/index.ts:1125

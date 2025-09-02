@@ -6,7 +6,7 @@
 
 # Interface: FilesystemSpec
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2718
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2712
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2718
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2720
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2714
 
 ***
 
@@ -22,23 +22,23 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2720
 
 > **$type**: `"nebius.compute.v1alpha1.FilesystemSpec"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2719
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2713
 
 ***
 
 ### blockSizeBytes
 
-> **blockSizeBytes**: `Long`
+> **blockSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2721
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2715
 
 ***
 
 ### size?
 
-> `optional` **size**: \{ `$case`: `"sizeBytes"`; `sizeBytes`: `Long`; \} \| \{ `$case`: `"sizeKibibytes"`; `sizeKibibytes`: `Long`; \} \| \{ `$case`: `"sizeMebibytes"`; `sizeMebibytes`: `Long`; \} \| \{ `$case`: `"sizeGibibytes"`; `sizeGibibytes`: `Long`; \}
+> `optional` **size**: \{ `$case`: `"sizeBytes"`; `sizeBytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeKibibytes"`; `sizeKibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeMebibytes"`; `sizeMebibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeGibibytes"`; `sizeGibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \}
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2723
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2717
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2723
 
 > **type**: [`FilesystemSpec_FilesystemType`](../type-aliases/FilesystemSpec_FilesystemType.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2722
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2716

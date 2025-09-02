@@ -82,7 +82,7 @@ Liveness probe spec
 
 ### replicaCount
 
-> **replicaCount**: `Long`
+> **replicaCount**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:881
 

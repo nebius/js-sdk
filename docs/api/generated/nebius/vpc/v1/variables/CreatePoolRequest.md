@@ -6,6 +6,6 @@
 
 # Variable: CreatePoolRequest
 
-> **CreatePoolRequest**: `MessageFns`\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `"nebius.vpc.v1.CreatePoolRequest"`\>
+> **CreatePoolRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), `"nebius.vpc.v1.CreatePoolRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:4727

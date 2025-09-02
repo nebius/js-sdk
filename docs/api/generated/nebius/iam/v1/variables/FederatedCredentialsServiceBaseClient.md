@@ -8,7 +8,7 @@
 
 > **FederatedCredentialsServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`FederatedCredentialsServiceBaseClient`](../interfaces/FederatedCredentialsServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6586
+Defined in: src/generated/nebius/iam/v1/index.ts:6583
 
 ## Type Declaration
 

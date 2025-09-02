@@ -8,4 +8,4 @@
 
 > **FederatedCredentialsServiceServiceDescription** = *typeof* [`FederatedCredentialsServiceServiceDescription`](../variables/FederatedCredentialsServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6519
+Defined in: src/generated/nebius/iam/v1/index.ts:6516

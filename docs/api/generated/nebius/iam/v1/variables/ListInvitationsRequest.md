@@ -6,6 +6,6 @@
 
 # Variable: ListInvitationsRequest
 
-> **ListInvitationsRequest**: `MessageFns`\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), `"nebius.iam.v1.ListInvitationsRequest"`\>
+> **ListInvitationsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), `"nebius.iam.v1.ListInvitationsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13216
+Defined in: src/generated/nebius/iam/v1/index.ts:13213

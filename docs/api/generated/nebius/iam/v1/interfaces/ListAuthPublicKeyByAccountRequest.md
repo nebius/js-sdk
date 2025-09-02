@@ -6,7 +6,7 @@
 
 # Interface: ListAuthPublicKeyByAccountRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4043
+Defined in: src/generated/nebius/iam/v1/index.ts:4040
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4043
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4045
+Defined in: src/generated/nebius/iam/v1/index.ts:4042
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4045
 
 > **$type**: `"nebius.iam.v1.ListAuthPublicKeyByAccountRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4044
+Defined in: src/generated/nebius/iam/v1/index.ts:4041
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4044
 
 > `optional` **account**: [`Account`](Account.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4050
+Defined in: src/generated/nebius/iam/v1/index.ts:4047
 
 Represents the parent account ID.
 
@@ -40,7 +40,7 @@ Represents the parent account ID.
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4066
+Defined in: src/generated/nebius/iam/v1/index.ts:4063
 
 A filter to narrow down the results based on specific criteria.
 
@@ -48,9 +48,9 @@ A filter to narrow down the results based on specific criteria.
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4056
+Defined in: src/generated/nebius/iam/v1/index.ts:4053
 
 Specifies the maximum number of items to return in the response.
  Default value: 10
@@ -61,6 +61,6 @@ Specifies the maximum number of items to return in the response.
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4061
+Defined in: src/generated/nebius/iam/v1/index.ts:4058
 
 Token for pagination, allowing the retrieval of the next set of results.

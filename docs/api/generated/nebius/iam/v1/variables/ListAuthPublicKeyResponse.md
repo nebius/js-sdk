@@ -6,6 +6,6 @@
 
 # Variable: ListAuthPublicKeyResponse
 
-> **ListAuthPublicKeyResponse**: `MessageFns`\<[`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md), `"nebius.iam.v1.ListAuthPublicKeyResponse"`\>
+> **ListAuthPublicKeyResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md), `"nebius.iam.v1.ListAuthPublicKeyResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4573
+Defined in: src/generated/nebius/iam/v1/index.ts:4570

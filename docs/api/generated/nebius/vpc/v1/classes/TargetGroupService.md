@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8439
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8440
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8440
 
 ##### Returns
 
-`Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8441
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8441
 
 ##### Returns
 
-`Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8442
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8442
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8463
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8463
 
 ##### Returns
 
-`Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8464
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8464
 
 ##### Returns
 
-`Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8465
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8465
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
 ***
 
@@ -180,7 +180,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8459
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8443
 
@@ -192,11 +192,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8443
 
 ##### Returns
 
-`Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8444
 
@@ -212,11 +212,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8444
 
 ##### Returns
 
-`Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8445
 
@@ -232,15 +232,15 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8445
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8475
 
@@ -252,11 +252,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8475
 
 ##### Returns
 
-`Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8476
 
@@ -272,11 +272,11 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8476
 
 ##### Returns
 
-`Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8477
 
@@ -292,8 +292,8 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8477
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

@@ -6,7 +6,7 @@
 
 # ~~Interface: GpuClusterServiceServer~~
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3864
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3858
 
 ## Deprecated
 
@@ -26,7 +26,7 @@ Deprecated.
 
 > **create**: `handleUnaryCall`\<[`CreateGpuClusterRequest`](CreateGpuClusterRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3868
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3862
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3868
 
 > **delete**: `handleUnaryCall`\<[`DeleteGpuClusterRequest`](DeleteGpuClusterRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3870
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3864
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3870
 
 > **get**: `handleUnaryCall`\<[`GetGpuClusterRequest`](GetGpuClusterRequest.md), [`GpuCluster`](GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3865
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3859
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3865
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3866
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3860
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3866
 
 > **list**: `handleUnaryCall`\<[`ListGpuClustersRequest`](ListGpuClustersRequest.md), [`ListGpuClustersResponse`](ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3867
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3861
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3867
 
 > **listOperationsByParent**: `handleUnaryCall`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3871
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3865
 
 ***
 
@@ -74,4 +74,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3871
 
 > **update**: `handleUnaryCall`\<[`UpdateGpuClusterRequest`](UpdateGpuClusterRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3869
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3863

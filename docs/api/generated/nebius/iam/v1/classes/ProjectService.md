@@ -6,7 +6,7 @@
 
 # Class: ProjectService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15939
+Defined in: src/generated/nebius/iam/v1/index.ts:15936
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15939
 
 > **new ProjectService**(`sdk`): `ProjectService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15963
+Defined in: src/generated/nebius/iam/v1/index.ts:15960
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15963
 
 > **$type**: `"nebius.iam.v1.ProjectService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15940
+Defined in: src/generated/nebius/iam/v1/index.ts:15937
 
 ## Methods
 
@@ -44,69 +44,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15940
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15941
-
-##### Parameters
-
-###### request
-
-[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md)
-
-##### Returns
-
-`Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`): `Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15942
-
-##### Parameters
-
-###### request
-
-[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15943
-
-##### Parameters
-
-###### request
-
-[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`): `Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15973
+Defined in: src/generated/nebius/iam/v1/index.ts:15938
 
 ##### Parameters
 
@@ -116,13 +56,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15973
 
 ##### Returns
 
-`Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15974
+Defined in: src/generated/nebius/iam/v1/index.ts:15939
 
 ##### Parameters
 
@@ -136,13 +76,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15974
 
 ##### Returns
 
-`Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15975
+Defined in: src/generated/nebius/iam/v1/index.ts:15940
 
 ##### Parameters
 
@@ -156,11 +96,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15975
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15970
+
+##### Parameters
+
+###### request
+
+[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15971
+
+##### Parameters
+
+###### request
+
+[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15972
+
+##### Parameters
+
+###### request
+
+[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,69 +168,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15975
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15944
-
-##### Parameters
-
-###### request
-
-[`GetProjectRequest`](../interfaces/GetProjectRequest.md)
-
-##### Returns
-
-`Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15945
-
-##### Parameters
-
-###### request
-
-[`GetProjectRequest`](../interfaces/GetProjectRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15946
-
-##### Parameters
-
-###### request
-
-[`GetProjectRequest`](../interfaces/GetProjectRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15988
+Defined in: src/generated/nebius/iam/v1/index.ts:15941
 
 ##### Parameters
 
@@ -240,13 +180,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15988
 
 ##### Returns
 
-`Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15989
+Defined in: src/generated/nebius/iam/v1/index.ts:15942
 
 ##### Parameters
 
@@ -260,13 +200,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15989
 
 ##### Returns
 
-`Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15990
+Defined in: src/generated/nebius/iam/v1/index.ts:15943
 
 ##### Parameters
 
@@ -280,11 +220,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15990
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15985
+
+##### Parameters
+
+###### request
+
+[`GetProjectRequest`](../interfaces/GetProjectRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15986
+
+##### Parameters
+
+###### request
+
+[`GetProjectRequest`](../interfaces/GetProjectRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15987
+
+##### Parameters
+
+###### request
+
+[`GetProjectRequest`](../interfaces/GetProjectRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
 ***
 
@@ -292,69 +292,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15990
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15947
-
-##### Parameters
-
-###### request
-
-[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md)
-
-##### Returns
-
-`Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`): `Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15948
-
-##### Parameters
-
-###### request
-
-[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15949
-
-##### Parameters
-
-###### request
-
-[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`): `Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16000
+Defined in: src/generated/nebius/iam/v1/index.ts:15944
 
 ##### Parameters
 
@@ -364,13 +304,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16000
 
 ##### Returns
 
-`Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16001
+Defined in: src/generated/nebius/iam/v1/index.ts:15945
 
 ##### Parameters
 
@@ -384,13 +324,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16001
 
 ##### Returns
 
-`Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16002
+Defined in: src/generated/nebius/iam/v1/index.ts:15946
 
 ##### Parameters
 
@@ -404,11 +344,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16002
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15997
+
+##### Parameters
+
+###### request
+
+[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15998
+
+##### Parameters
+
+###### request
+
+[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:15999
+
+##### Parameters
+
+###### request
+
+[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
 ***
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16002
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15969
+Defined in: src/generated/nebius/iam/v1/index.ts:15966
 
 #### Returns
 
@@ -428,69 +428,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15969
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15950
-
-##### Parameters
-
-###### request
-
-[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md)
-
-##### Returns
-
-`Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`): `Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15951
-
-##### Parameters
-
-###### request
-
-[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15952
-
-##### Parameters
-
-###### request
-
-[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`): `Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16012
+Defined in: src/generated/nebius/iam/v1/index.ts:15947
 
 ##### Parameters
 
@@ -500,13 +440,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16012
 
 ##### Returns
 
-`Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16013
+Defined in: src/generated/nebius/iam/v1/index.ts:15948
 
 ##### Parameters
 
@@ -520,13 +460,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16013
 
 ##### Returns
 
-`Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16014
+Defined in: src/generated/nebius/iam/v1/index.ts:15949
 
 ##### Parameters
 
@@ -540,11 +480,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16014
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16009
+
+##### Parameters
+
+###### request
+
+[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16010
+
+##### Parameters
+
+###### request
+
+[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16011
+
+##### Parameters
+
+###### request
+
+[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
 ***
 
@@ -552,69 +552,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16014
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15953
-
-##### Parameters
-
-###### request
-
-[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md)
-
-##### Returns
-
-`Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`, `metadata`): `Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15954
-
-##### Parameters
-
-###### request
-
-[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:15955
-
-##### Parameters
-
-###### request
-
-[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`): `Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16024
+Defined in: src/generated/nebius/iam/v1/index.ts:15950
 
 ##### Parameters
 
@@ -624,13 +564,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16024
 
 ##### Returns
 
-`Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16025
+Defined in: src/generated/nebius/iam/v1/index.ts:15951
 
 ##### Parameters
 
@@ -644,13 +584,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16025
 
 ##### Returns
 
-`Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16026
+Defined in: src/generated/nebius/iam/v1/index.ts:15952
 
 ##### Parameters
 
@@ -664,8 +604,68 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16026
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16021
+
+##### Parameters
+
+###### request
+
+[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16022
+
+##### Parameters
+
+###### request
+
+[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16023
+
+##### Parameters
+
+###### request
+
+[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

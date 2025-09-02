@@ -40,7 +40,7 @@ CIDR block.
 
 ### maxMaskLength
 
-> **maxMaskLength**: `Long`
+> **maxMaskLength**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5793
 

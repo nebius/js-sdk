@@ -6,6 +6,6 @@
 
 # Variable: TransferIteration\_State
 
-> **TransferIteration\_State**: `TransferIteration_StateClass`
+> **TransferIteration\_State**: [`TransferIteration_StateClass`](../type-aliases/TransferIteration_StateClass.md)
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1501

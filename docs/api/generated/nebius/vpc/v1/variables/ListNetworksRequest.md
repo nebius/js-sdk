@@ -6,6 +6,6 @@
 
 # Variable: ListNetworksRequest
 
-> **ListNetworksRequest**: `MessageFns`\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), `"nebius.vpc.v1.ListNetworksRequest"`\>
+> **ListNetworksRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), `"nebius.vpc.v1.ListNetworksRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:2642

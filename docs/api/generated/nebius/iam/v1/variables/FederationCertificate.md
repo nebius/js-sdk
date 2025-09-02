@@ -6,6 +6,6 @@
 
 # Variable: FederationCertificate
 
-> **FederationCertificate**: `MessageFns`\<[`FederationCertificate`](../interfaces/FederationCertificate.md), `"nebius.iam.v1.FederationCertificate"`\>
+> **FederationCertificate**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FederationCertificate`](../interfaces/FederationCertificate.md), `"nebius.iam.v1.FederationCertificate"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8049
+Defined in: src/generated/nebius/iam/v1/index.ts:8046

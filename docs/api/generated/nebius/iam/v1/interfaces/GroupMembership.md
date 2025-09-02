@@ -6,7 +6,7 @@
 
 # Interface: GroupMembership
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10978
+Defined in: src/generated/nebius/iam/v1/index.ts:10975
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10978
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10980
+Defined in: src/generated/nebius/iam/v1/index.ts:10977
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10980
 
 > **$type**: `"nebius.iam.v1.GroupMembership"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10979
+Defined in: src/generated/nebius/iam/v1/index.ts:10976
 
 ***
 
@@ -30,15 +30,15 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10979
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10981
+Defined in: src/generated/nebius/iam/v1/index.ts:10978
 
 ***
 
 ### revokeAt?
 
-> `optional` **revokeAt**: `Dayjs`
+> `optional` **revokeAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10984
+Defined in: src/generated/nebius/iam/v1/index.ts:10981
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10984
 
 > `optional` **spec**: [`GroupMembershipSpec`](GroupMembershipSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10982
+Defined in: src/generated/nebius/iam/v1/index.ts:10979
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10982
 
 > `optional` **status**: [`GroupMembershipStatus`](GroupMembershipStatus.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10983
+Defined in: src/generated/nebius/iam/v1/index.ts:10980

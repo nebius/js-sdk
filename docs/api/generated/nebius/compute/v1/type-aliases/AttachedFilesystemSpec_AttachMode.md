@@ -6,6 +6,6 @@
 
 # Type Alias: AttachedFilesystemSpec\_AttachMode
 
-> **AttachedFilesystemSpec\_AttachMode** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"READ_ONLY"` \| `"READ_WRITE"`\>
+> **AttachedFilesystemSpec\_AttachMode** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"READ_ONLY"` \| `"READ_WRITE"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:7290

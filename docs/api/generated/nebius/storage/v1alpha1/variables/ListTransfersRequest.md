@@ -6,6 +6,6 @@
 
 # Variable: ListTransfersRequest
 
-> **ListTransfersRequest**: `MessageFns`\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), `"nebius.storage.v1alpha1.ListTransfersRequest"`\>
+> **ListTransfersRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), `"nebius.storage.v1alpha1.ListTransfersRequest"`\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:100

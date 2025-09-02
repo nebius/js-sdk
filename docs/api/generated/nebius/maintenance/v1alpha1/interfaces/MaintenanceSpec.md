@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:610
 
 ### scheduledAt?
 
-> `optional` **scheduledAt**: `Dayjs`
+> `optional` **scheduledAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:616
 

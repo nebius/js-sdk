@@ -6,7 +6,7 @@
 
 # Class: FederationService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9206
+Defined in: src/generated/nebius/iam/v1/index.ts:9203
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9206
 
 > **new FederationService**(`sdk`): `FederationService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9233
+Defined in: src/generated/nebius/iam/v1/index.ts:9230
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9233
 
 > **$type**: `"nebius.iam.v1.FederationService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9207
+Defined in: src/generated/nebius/iam/v1/index.ts:9204
 
 ## Methods
 
@@ -44,69 +44,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9207
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9208
-
-##### Parameters
-
-###### request
-
-[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md)
-
-##### Returns
-
-`Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`): `Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9209
-
-##### Parameters
-
-###### request
-
-[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9210
-
-##### Parameters
-
-###### request
-
-[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`): `Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9243
+Defined in: src/generated/nebius/iam/v1/index.ts:9205
 
 ##### Parameters
 
@@ -116,13 +56,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9243
 
 ##### Returns
 
-`Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9244
+Defined in: src/generated/nebius/iam/v1/index.ts:9206
 
 ##### Parameters
 
@@ -136,13 +76,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9244
 
 ##### Returns
 
-`Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9245
+Defined in: src/generated/nebius/iam/v1/index.ts:9207
 
 ##### Parameters
 
@@ -156,11 +96,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9245
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9240
+
+##### Parameters
+
+###### request
+
+[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9241
+
+##### Parameters
+
+###### request
+
+[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9242
+
+##### Parameters
+
+###### request
+
+[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,69 +168,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9245
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9223
-
-##### Parameters
-
-###### request
-
-[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9224
-
-##### Parameters
-
-###### request
-
-[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9225
-
-##### Parameters
-
-###### request
-
-[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`): `Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9309
+Defined in: src/generated/nebius/iam/v1/index.ts:9220
 
 ##### Parameters
 
@@ -240,13 +180,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9309
 
 ##### Returns
 
-`Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9310
+Defined in: src/generated/nebius/iam/v1/index.ts:9221
 
 ##### Parameters
 
@@ -260,13 +200,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9310
 
 ##### Returns
 
-`Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9311
+Defined in: src/generated/nebius/iam/v1/index.ts:9222
 
 ##### Parameters
 
@@ -280,11 +220,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9311
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9306
+
+##### Parameters
+
+###### request
+
+[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9307
+
+##### Parameters
+
+###### request
+
+[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9308
+
+##### Parameters
+
+###### request
+
+[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,69 +292,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9311
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9211
-
-##### Parameters
-
-###### request
-
-[`GetFederationRequest`](../interfaces/GetFederationRequest.md)
-
-##### Returns
-
-`Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9212
-
-##### Parameters
-
-###### request
-
-[`GetFederationRequest`](../interfaces/GetFederationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9213
-
-##### Parameters
-
-###### request
-
-[`GetFederationRequest`](../interfaces/GetFederationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9258
+Defined in: src/generated/nebius/iam/v1/index.ts:9208
 
 ##### Parameters
 
@@ -364,13 +304,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9258
 
 ##### Returns
 
-`Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9259
+Defined in: src/generated/nebius/iam/v1/index.ts:9209
 
 ##### Parameters
 
@@ -384,13 +324,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9259
 
 ##### Returns
 
-`Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9260
+Defined in: src/generated/nebius/iam/v1/index.ts:9210
 
 ##### Parameters
 
@@ -404,11 +344,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9260
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9255
+
+##### Parameters
+
+###### request
+
+[`GetFederationRequest`](../interfaces/GetFederationRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9256
+
+##### Parameters
+
+###### request
+
+[`GetFederationRequest`](../interfaces/GetFederationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9257
+
+##### Parameters
+
+###### request
+
+[`GetFederationRequest`](../interfaces/GetFederationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
 ***
 
@@ -416,69 +416,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9260
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9214
-
-##### Parameters
-
-###### request
-
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
-
-##### Returns
-
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9215
-
-##### Parameters
-
-###### request
-
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9216
-
-##### Parameters
-
-###### request
-
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9270
+Defined in: src/generated/nebius/iam/v1/index.ts:9211
 
 ##### Parameters
 
@@ -488,13 +428,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9270
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9271
+Defined in: src/generated/nebius/iam/v1/index.ts:9212
 
 ##### Parameters
 
@@ -508,13 +448,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9271
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9272
+Defined in: src/generated/nebius/iam/v1/index.ts:9213
 
 ##### Parameters
 
@@ -528,11 +468,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9272
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9267
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9268
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9269
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
 ***
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9272
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9239
+Defined in: src/generated/nebius/iam/v1/index.ts:9236
 
 #### Returns
 
@@ -552,69 +552,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9239
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9217
-
-##### Parameters
-
-###### request
-
-[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md)
-
-##### Returns
-
-`Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`): `Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9218
-
-##### Parameters
-
-###### request
-
-[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9219
-
-##### Parameters
-
-###### request
-
-[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`): `Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9282
+Defined in: src/generated/nebius/iam/v1/index.ts:9214
 
 ##### Parameters
 
@@ -624,13 +564,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9282
 
 ##### Returns
 
-`Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9283
+Defined in: src/generated/nebius/iam/v1/index.ts:9215
 
 ##### Parameters
 
@@ -644,13 +584,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9283
 
 ##### Returns
 
-`Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9284
+Defined in: src/generated/nebius/iam/v1/index.ts:9216
 
 ##### Parameters
 
@@ -664,11 +604,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9284
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9279
+
+##### Parameters
+
+###### request
+
+[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9280
+
+##### Parameters
+
+###### request
+
+[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9281
+
+##### Parameters
+
+###### request
+
+[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
 
 ***
 
@@ -676,69 +676,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9284
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9220
-
-##### Parameters
-
-###### request
-
-[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md)
-
-##### Returns
-
-`Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`, `metadata`): `Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9221
-
-##### Parameters
-
-###### request
-
-[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9222
-
-##### Parameters
-
-###### request
-
-[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`): `Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:9294
+Defined in: src/generated/nebius/iam/v1/index.ts:9217
 
 ##### Parameters
 
@@ -748,13 +688,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9294
 
 ##### Returns
 
-`Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9295
+Defined in: src/generated/nebius/iam/v1/index.ts:9218
 
 ##### Parameters
 
@@ -768,13 +708,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9295
 
 ##### Returns
 
-`Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9296
+Defined in: src/generated/nebius/iam/v1/index.ts:9219
 
 ##### Parameters
 
@@ -788,8 +728,68 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9296
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9291
+
+##### Parameters
+
+###### request
+
+[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9292
+
+##### Parameters
+
+###### request
+
+[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:9293
+
+##### Parameters
+
+###### request
+
+[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationRequest`](../interfaces/UpdateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

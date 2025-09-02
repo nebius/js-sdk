@@ -6,6 +6,6 @@
 
 # Variable: ListClustersRequest
 
-> **ListClustersRequest**: `MessageFns`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), `"nebius.msp.spark.v1alpha1.ListClustersRequest"`\>
+> **ListClustersRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), `"nebius.msp.spark.v1alpha1.ListClustersRequest"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:218

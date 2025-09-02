@@ -6,6 +6,6 @@
 
 # Variable: K8sReleaseSpec
 
-> **K8sReleaseSpec**: `MessageFns`\<[`K8sReleaseSpec`](../interfaces/K8sReleaseSpec.md), `"nebius.applications.v1alpha1.K8sReleaseSpec"`\>
+> **K8sReleaseSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`K8sReleaseSpec`](../interfaces/K8sReleaseSpec.md), `"nebius.applications.v1alpha1.K8sReleaseSpec"`\>
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1010

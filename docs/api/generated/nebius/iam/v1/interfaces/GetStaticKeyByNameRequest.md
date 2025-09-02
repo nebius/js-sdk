@@ -6,7 +6,7 @@
 
 # Interface: GetStaticKeyByNameRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17864
+Defined in: src/generated/nebius/iam/v1/index.ts:17861
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17864
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17866
+Defined in: src/generated/nebius/iam/v1/index.ts:17863
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17866
 
 > **$type**: `"nebius.iam.v1.GetStaticKeyByNameRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17865
+Defined in: src/generated/nebius/iam/v1/index.ts:17862
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17865
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17876
+Defined in: src/generated/nebius/iam/v1/index.ts:17873
 
 name of the static key
 
@@ -40,6 +40,6 @@ name of the static key
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17871
+Defined in: src/generated/nebius/iam/v1/index.ts:17868
 
 id of the parent container (service account)

@@ -41,6 +41,6 @@ Indicates whether the system will remove a "delete marker" with no noncurrent ve
 
 ### expiredWith?
 
-> `optional` **expiredWith**: \{ `$case`: `"date"`; `date`: `Dayjs`; \} \| \{ `$case`: `"days"`; `days`: `number`; \}
+> `optional` **expiredWith**: \{ `$case`: `"date"`; `date`: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md); \} \| \{ `$case`: `"days"`; `days`: `number`; \}
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2999

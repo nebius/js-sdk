@@ -82,7 +82,7 @@ Quota unit.
 
 ### usage
 
-> **usage**: `Long`
+> **usage**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:838
 

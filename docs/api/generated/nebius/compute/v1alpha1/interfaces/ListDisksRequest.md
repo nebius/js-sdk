@@ -40,7 +40,7 @@ Deprecated, will be removed on 2025-06-16: it is not implemented, filtering coul
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:106
 

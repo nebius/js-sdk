@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:40
 
 ### autovacuumNaptime?
 
-> `optional` **autovacuumNaptime**: `Long`
+> `optional` **autovacuumNaptime**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:38
 
@@ -46,7 +46,7 @@ in seconds.
 
 ### autovacuumVacuumCostDelay?
 
-> `optional` **autovacuumVacuumCostDelay**: `Long`
+> `optional` **autovacuumVacuumCostDelay**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:32
 
@@ -56,7 +56,7 @@ in milliseconds.
 
 ### autovacuumVacuumCostLimit?
 
-> `optional` **autovacuumVacuumCostLimit**: `Long`
+> `optional` **autovacuumVacuumCostLimit**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:33
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:39
 
 ### autovacuumWorkMem?
 
-> `optional` **autovacuumWorkMem**: `Long`
+> `optional` **autovacuumWorkMem**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:17
 
@@ -90,7 +90,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:41
 
 ### idleInTransactionSessionTimeout?
 
-> `optional` **idleInTransactionSessionTimeout**: `Long`
+> `optional` **idleInTransactionSessionTimeout**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:27
 
@@ -100,7 +100,7 @@ in milliseconds.
 
 ### maxConnections?
 
-> `optional` **maxConnections**: `Long`
+> `optional` **maxConnections**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:43
 
@@ -116,7 +116,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:42
 
 ### sharedBuffers?
 
-> `optional` **sharedBuffers**: `Long`
+> `optional` **sharedBuffers**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:48
 
@@ -126,7 +126,7 @@ in kilobytes.
 
 ### statementTimeout?
 
-> `optional` **statementTimeout**: `Long`
+> `optional` **statementTimeout**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:22
 

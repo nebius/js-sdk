@@ -6,6 +6,6 @@
 
 # Variable: ListFederatedCredentialsResponse
 
-> **ListFederatedCredentialsResponse**: `MessageFns`\<[`ListFederatedCredentialsResponse`](../interfaces/ListFederatedCredentialsResponse.md), `"nebius.iam.v1.ListFederatedCredentialsResponse"`\>
+> **ListFederatedCredentialsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListFederatedCredentialsResponse`](../interfaces/ListFederatedCredentialsResponse.md), `"nebius.iam.v1.ListFederatedCredentialsResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6322
+Defined in: src/generated/nebius/iam/v1/index.ts:6319

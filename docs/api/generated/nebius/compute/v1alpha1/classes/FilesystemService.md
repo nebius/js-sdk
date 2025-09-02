@@ -4,13 +4,9 @@
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / FilesystemService
 
-# ~~Class: FilesystemService~~
+# Class: FilesystemService
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2384
-
-## Deprecated
-
-Deprecated.
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2381
 
 ## Implements
 
@@ -22,7 +18,7 @@ Deprecated.
 
 > **new FilesystemService**(`sdk`): `FilesystemService`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2420
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2414
 
 #### Parameters
 
@@ -36,527 +32,19 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2420
 
 ## Properties
 
-### ~~$type~~
+### $type
 
 > **$type**: `"nebius.compute.v1alpha1.FilesystemService"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2385
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2382
 
 ## Methods
 
-### ~~create()~~
+### create()
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2395
-
-##### Parameters
-
-###### request
-
-[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
-
-##### Returns
-
-`Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`): `Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2396
-
-##### Parameters
-
-###### request
-
-[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2397
-
-##### Parameters
-
-###### request
-
-[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`): `Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2470
-
-##### Parameters
-
-###### request
-
-[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
-
-##### Returns
-
-`Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`): `Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2471
-
-##### Parameters
-
-###### request
-
-[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2472
-
-##### Parameters
-
-###### request
-
-[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-***
-
-### ~~delete()~~
-
-#### Call Signature
-
-> **delete**(`request`): `Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2401
-
-##### Parameters
-
-###### request
-
-[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2402
-
-##### Parameters
-
-###### request
-
-[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2403
-
-##### Parameters
-
-###### request
-
-[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`): `Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2500
-
-##### Parameters
-
-###### request
-
-[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2501
-
-##### Parameters
-
-###### request
-
-[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2502
-
-##### Parameters
-
-###### request
-
-[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
-
-***
-
-### ~~get()~~
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2386
-
-##### Parameters
-
-###### request
-
-[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
-
-##### Returns
-
-`Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2387
-
-##### Parameters
-
-###### request
-
-[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2388
-
-##### Parameters
-
-###### request
-
-[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2434
-
-##### Parameters
-
-###### request
-
-[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
-
-##### Returns
-
-`Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2435
-
-##### Parameters
-
-###### request
-
-[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2436
-
-##### Parameters
-
-###### request
-
-[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-***
-
-### ~~getByName()~~
-
-#### Call Signature
-
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2389
-
-##### Parameters
-
-###### request
-
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
-
-##### Returns
-
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2390
-
-##### Parameters
-
-###### request
-
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2391
-
-##### Parameters
-
-###### request
-
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2446
-
-##### Parameters
-
-###### request
-
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
-
-##### Returns
-
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2447
-
-##### Parameters
-
-###### request
-
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2448
-
-##### Parameters
-
-###### request
-
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
-
-***
-
-### ~~getOperationService()~~
-
-> **getOperationService**(): [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2430
-
-#### Returns
-
-[`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
-
-***
-
-### ~~list()~~
-
-#### Call Signature
-
-> **list**(`request`): `Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2392
 
@@ -564,15 +52,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2392
 
 ###### request
 
-[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
 
 ##### Returns
 
-`Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2393
 
@@ -580,7 +68,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2393
 
 ###### request
 
-[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
 
 ###### metadata
 
@@ -588,11 +76,11 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2393
 
 ##### Returns
 
-`Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2394
 
@@ -600,7 +88,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2394
 
 ###### request
 
-[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
 
 ###### metadata
 
@@ -608,39 +96,39 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2394
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2458
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2464
 
 ##### Parameters
 
 ###### request
 
-[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
 
 ##### Returns
 
-`Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2459
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2465
 
 ##### Parameters
 
 ###### request
 
-[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
 
 ###### metadata
 
@@ -648,19 +136,19 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2459
 
 ##### Returns
 
-`Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2460
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2466
 
 ##### Parameters
 
 ###### request
 
-[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md)
 
 ###### metadata
 
@@ -668,143 +156,19 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2460
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
-### ~~listOperationsByParent()~~
+### delete()
 
 #### Call Signature
 
-> **listOperationsByParent**(`request`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2404
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2405
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`, `options`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2406
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2515
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2516
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`, `options`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2517
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-***
-
-### ~~update()~~
-
-#### Call Signature
-
-> **update**(`request`): `Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2398
 
@@ -812,15 +176,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2398
 
 ###### request
 
-[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md)
+[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
 
 ##### Returns
 
-`Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2399
 
@@ -828,7 +192,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2399
 
 ###### request
 
-[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md)
+[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
 
 ###### metadata
 
@@ -836,11 +200,11 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2399
 
 ##### Returns
 
-`Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2400
 
@@ -848,6 +212,638 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2400
 
 ###### request
 
+[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2494
+
+##### Parameters
+
+###### request
+
+[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2495
+
+##### Parameters
+
+###### request
+
+[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2496
+
+##### Parameters
+
+###### request
+
+[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+***
+
+### get()
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2383
+
+##### Parameters
+
+###### request
+
+[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2384
+
+##### Parameters
+
+###### request
+
+[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2385
+
+##### Parameters
+
+###### request
+
+[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2428
+
+##### Parameters
+
+###### request
+
+[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2429
+
+##### Parameters
+
+###### request
+
+[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2430
+
+##### Parameters
+
+###### request
+
+[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+***
+
+### getByName()
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2386
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2387
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2388
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2440
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2441
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2442
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
+
+***
+
+### getOperationService()
+
+> **getOperationService**(): [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2424
+
+#### Returns
+
+[`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
+
+***
+
+### list()
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2389
+
+##### Parameters
+
+###### request
+
+[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2390
+
+##### Parameters
+
+###### request
+
+[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2391
+
+##### Parameters
+
+###### request
+
+[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2452
+
+##### Parameters
+
+###### request
+
+[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2453
+
+##### Parameters
+
+###### request
+
+[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2454
+
+##### Parameters
+
+###### request
+
+[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
+
+***
+
+### listOperationsByParent()
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2401
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2402
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2403
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2509
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2510
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2511
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+
+***
+
+### update()
+
+#### Call Signature
+
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2395
+
+##### Parameters
+
+###### request
+
+[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2396
+
+##### Parameters
+
+###### request
+
+[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2397
+
+##### Parameters
+
+###### request
+
 [`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md)
 
 ###### metadata
@@ -856,17 +852,17 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2400
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2485
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2479
 
 ##### Parameters
 
@@ -876,13 +872,13 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2485
 
 ##### Returns
 
-`Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2486
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2480
 
 ##### Parameters
 
@@ -896,13 +892,13 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2486
 
 ##### Returns
 
-`Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2487
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2481
 
 ##### Parameters
 
@@ -916,8 +912,8 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2487
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>

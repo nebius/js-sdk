@@ -6,6 +6,6 @@
 
 # Variable: FilesystemStatus\_State
 
-> **FilesystemStatus\_State**: `FilesystemStatus_StateClass`
+> **FilesystemStatus\_State**: [`FilesystemStatus_StateClass`](../type-aliases/FilesystemStatus_StateClass.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:2922

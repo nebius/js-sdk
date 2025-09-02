@@ -6,6 +6,6 @@
 
 # Type Alias: InstanceRecoveryPolicy
 
-> **InstanceRecoveryPolicy** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"RECOVER"` \| `"FAIL"`\>
+> **InstanceRecoveryPolicy** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"RECOVER"` \| `"FAIL"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:7243

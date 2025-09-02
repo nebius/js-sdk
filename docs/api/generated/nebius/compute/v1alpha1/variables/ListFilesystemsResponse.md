@@ -6,6 +6,6 @@
 
 # Variable: ListFilesystemsResponse
 
-> **ListFilesystemsResponse**: `MessageFns`\<[`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md), `"nebius.compute.v1alpha1.ListFilesystemsResponse"`\>
+> **ListFilesystemsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md), `"nebius.compute.v1alpha1.ListFilesystemsResponse"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2172
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2169

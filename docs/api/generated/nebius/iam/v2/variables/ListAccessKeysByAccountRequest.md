@@ -6,6 +6,6 @@
 
 # Variable: ListAccessKeysByAccountRequest
 
-> **ListAccessKeysByAccountRequest**: `MessageFns`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), `"nebius.iam.v2.ListAccessKeysByAccountRequest"`\>
+> **ListAccessKeysByAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), `"nebius.iam.v2.ListAccessKeysByAccountRequest"`\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:457

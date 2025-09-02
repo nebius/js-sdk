@@ -66,14 +66,21 @@
 ## Type Aliases
 
 - [AttachedFilesystemSpec\_AttachMode](type-aliases/AttachedFilesystemSpec_AttachMode.md)
+- [AttachedFilesystemSpec\_AttachModeClass](type-aliases/AttachedFilesystemSpec_AttachModeClass.md)
 - [ClusterServiceServiceDescription](type-aliases/ClusterServiceServiceDescription.md)
 - [ClusterStatus\_State](type-aliases/ClusterStatus_State.md)
+- [ClusterStatus\_StateClass](type-aliases/ClusterStatus_StateClass.md)
 - [Condition\_Severity](type-aliases/Condition_Severity.md)
+- [Condition\_SeverityClass](type-aliases/Condition_SeverityClass.md)
 - [Condition\_Status](type-aliases/Condition_Status.md)
+- [Condition\_StatusClass](type-aliases/Condition_StatusClass.md)
 - [DiskSpec\_DiskType](type-aliases/DiskSpec_DiskType.md)
+- [DiskSpec\_DiskTypeClass](type-aliases/DiskSpec_DiskTypeClass.md)
 - [NodeGroupServiceServiceDescription](type-aliases/NodeGroupServiceServiceDescription.md)
 - [NodeGroupStatus\_State](type-aliases/NodeGroupStatus_State.md)
+- [NodeGroupStatus\_StateClass](type-aliases/NodeGroupStatus_StateClass.md)
 - [NodeTaint\_Effect](type-aliases/NodeTaint_Effect.md)
+- [NodeTaint\_EffectClass](type-aliases/NodeTaint_EffectClass.md)
 
 ## Variables
 

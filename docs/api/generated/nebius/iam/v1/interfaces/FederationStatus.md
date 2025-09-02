@@ -6,7 +6,7 @@
 
 # Interface: FederationStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9740
+Defined in: src/generated/nebius/iam/v1/index.ts:9737
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9740
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9742
+Defined in: src/generated/nebius/iam/v1/index.ts:9739
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9742
 
 > **$type**: `"nebius.iam.v1.FederationStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9741
+Defined in: src/generated/nebius/iam/v1/index.ts:9738

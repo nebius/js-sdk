@@ -6,7 +6,7 @@
 
 # Interface: AnonymousAccount
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15057
+Defined in: src/generated/nebius/iam/v1/index.ts:15054
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15057
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15059
+Defined in: src/generated/nebius/iam/v1/index.ts:15056
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15059
 
 > **$type**: `"nebius.iam.v1.AnonymousAccount"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15058
+Defined in: src/generated/nebius/iam/v1/index.ts:15055

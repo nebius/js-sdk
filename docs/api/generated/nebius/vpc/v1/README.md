@@ -97,18 +97,26 @@
 ## Type Aliases
 
 - [AddressBlockState](type-aliases/AddressBlockState.md)
+- [AddressBlockStateClass](type-aliases/AddressBlockStateClass.md)
 - [AllocationServiceServiceDescription](type-aliases/AllocationServiceServiceDescription.md)
 - [AllocationStatus\_State](type-aliases/AllocationStatus_State.md)
+- [AllocationStatus\_StateClass](type-aliases/AllocationStatus_StateClass.md)
 - [IpVersion](type-aliases/IpVersion.md)
+- [IpVersionClass](type-aliases/IpVersionClass.md)
 - [IpVisibility](type-aliases/IpVisibility.md)
+- [IpVisibilityClass](type-aliases/IpVisibilityClass.md)
 - [NetworkServiceServiceDescription](type-aliases/NetworkServiceServiceDescription.md)
 - [NetworkStatus\_State](type-aliases/NetworkStatus_State.md)
+- [NetworkStatus\_StateClass](type-aliases/NetworkStatus_StateClass.md)
 - [PoolServiceServiceDescription](type-aliases/PoolServiceServiceDescription.md)
 - [PoolStatus\_State](type-aliases/PoolStatus_State.md)
+- [PoolStatus\_StateClass](type-aliases/PoolStatus_StateClass.md)
 - [SubnetServiceServiceDescription](type-aliases/SubnetServiceServiceDescription.md)
 - [SubnetStatus\_State](type-aliases/SubnetStatus_State.md)
+- [SubnetStatus\_StateClass](type-aliases/SubnetStatus_StateClass.md)
 - [TargetGroupServiceServiceDescription](type-aliases/TargetGroupServiceServiceDescription.md)
 - [TargetStatus\_TargetState](type-aliases/TargetStatus_TargetState.md)
+- [TargetStatus\_TargetStateClass](type-aliases/TargetStatus_TargetStateClass.md)
 
 ## Variables
 

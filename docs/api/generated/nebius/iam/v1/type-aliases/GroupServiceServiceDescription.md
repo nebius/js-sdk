@@ -8,4 +8,4 @@
 
 > **GroupServiceServiceDescription** = *typeof* [`GroupServiceServiceDescription`](../variables/GroupServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12432
+Defined in: src/generated/nebius/iam/v1/index.ts:12429

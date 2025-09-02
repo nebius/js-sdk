@@ -6,6 +6,6 @@
 
 # Variable: InstanceStatus\_InstanceState
 
-> **InstanceStatus\_InstanceState**: `InstanceStatus_InstanceStateClass`
+> **InstanceStatus\_InstanceState**: [`InstanceStatus_InstanceStateClass`](../type-aliases/InstanceStatus_InstanceStateClass.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:7307

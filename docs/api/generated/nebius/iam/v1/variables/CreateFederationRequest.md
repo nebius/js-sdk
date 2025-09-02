@@ -6,6 +6,6 @@
 
 # Variable: CreateFederationRequest
 
-> **CreateFederationRequest**: `MessageFns`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `"nebius.iam.v1.CreateFederationRequest"`\>
+> **CreateFederationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `"nebius.iam.v1.CreateFederationRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8457
+Defined in: src/generated/nebius/iam/v1/index.ts:8454

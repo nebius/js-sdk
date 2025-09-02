@@ -6,6 +6,6 @@
 
 # Variable: DriverTemplateSpec
 
-> **DriverTemplateSpec**: `MessageFns`\<[`DriverTemplateSpec`](../interfaces/DriverTemplateSpec.md), `"nebius.msp.spark.v1alpha1.DriverTemplateSpec"`\>
+> **DriverTemplateSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DriverTemplateSpec`](../interfaces/DriverTemplateSpec.md), `"nebius.msp.spark.v1alpha1.DriverTemplateSpec"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3455

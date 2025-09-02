@@ -72,7 +72,9 @@ export function printEnum(e: TSDescriptorEnum): string {
   }
   memberInterfaceLines.push('}');
   lines.push(memberInterfaceLines.join('\n'));
-  lines.push(`type ${e.tsName}Class = EnumClass<${typeNameUnion}> & ${e.tsName}ValueMembers;`);
+  lines.push(
+    `export type ${e.tsName}Class = EnumClass<${typeNameUnion}> & ${e.tsName}ValueMembers;`,
+  );
   lines.push('');
 
   // Create the enum class via runtime factory

@@ -6,6 +6,6 @@
 
 # Type Alias: FilesystemSpec\_FilesystemType
 
-> **FilesystemSpec\_FilesystemType** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"NETWORK_SSD"` \| `"NETWORK_HDD"` \| `"WEKA"` \| `"VAST"`\>
+> **FilesystemSpec\_FilesystemType** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"NETWORK_SSD"` \| `"NETWORK_HDD"` \| `"WEKA"` \| `"VAST"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:2889

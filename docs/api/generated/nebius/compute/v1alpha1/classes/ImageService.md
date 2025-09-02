@@ -4,13 +4,9 @@
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / ImageService
 
-# ~~Class: ImageService~~
+# Class: ImageService
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4903
-
-## Deprecated
-
-Deprecated.
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4894
 
 ## Implements
 
@@ -22,7 +18,7 @@ Deprecated.
 
 > **new ImageService**(`sdk`): `ImageService`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4933
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4921
 
 #### Parameters
 
@@ -36,21 +32,21 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4933
 
 ## Properties
 
-### ~~$type~~
+### $type
 
 > **$type**: `"nebius.compute.v1alpha1.ImageService"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4904
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4895
 
 ## Methods
 
-### ~~get()~~
+### get()
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4905
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4896
 
 ##### Parameters
 
@@ -60,13 +56,13 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4905
 
 ##### Returns
 
-`Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4906
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4897
 
 ##### Parameters
 
@@ -80,13 +76,13 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4906
 
 ##### Returns
 
-`Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4907
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4898
 
 ##### Parameters
 
@@ -100,15 +96,139 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4907
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4931
+
+##### Parameters
+
+###### request
+
+[`GetImageRequest`](../interfaces/GetImageRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4932
+
+##### Parameters
+
+###### request
+
+[`GetImageRequest`](../interfaces/GetImageRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4933
+
+##### Parameters
+
+###### request
+
+[`GetImageRequest`](../interfaces/GetImageRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+
+***
+
+### getByName()
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4899
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4900
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4901
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4943
 
@@ -116,15 +236,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4943
 
 ###### request
 
-[`GetImageRequest`](../interfaces/GetImageRequest.md)
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
 
 ##### Returns
 
-`Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4944
 
@@ -132,7 +252,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4944
 
 ###### request
 
-[`GetImageRequest`](../interfaces/GetImageRequest.md)
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
 
 ###### metadata
 
@@ -140,11 +260,11 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4944
 
 ##### Returns
 
-`Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4945
 
@@ -152,7 +272,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4945
 
 ###### request
 
-[`GetImageRequest`](../interfaces/GetImageRequest.md)
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
 
 ###### metadata
 
@@ -160,43 +280,43 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4945
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
 ***
 
-### ~~getByName()~~
+### getLatestByFamily()
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+> **getLatestByFamily**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4908
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4902
 
 ##### Parameters
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+> **getLatestByFamily**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4909
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4903
 
 ##### Parameters
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
 
 ###### metadata
 
@@ -204,19 +324,19 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4909
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+> **getLatestByFamily**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4910
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4904
 
 ##### Parameters
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
 
 ###### metadata
 
@@ -224,15 +344,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4910
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+> **getLatestByFamily**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4955
 
@@ -240,15 +360,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4955
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+> **getLatestByFamily**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4956
 
@@ -256,7 +376,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4956
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
 
 ###### metadata
 
@@ -264,11 +384,11 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4956
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+> **getLatestByFamily**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4957
 
@@ -276,7 +396,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4957
 
 ###### request
 
-[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
 
 ###### metadata
 
@@ -284,43 +404,43 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4957
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
 ***
 
-### ~~getLatestByFamily()~~
+### list()
 
 #### Call Signature
 
-> **getLatestByFamily**(`request`): `Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4911
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4905
 
 ##### Parameters
 
 ###### request
 
-[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
+[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
 
 ##### Returns
 
-`Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
 #### Call Signature
 
-> **getLatestByFamily**(`request`, `metadata`): `Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4912
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4906
 
 ##### Parameters
 
 ###### request
 
-[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
+[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
 
 ###### metadata
 
@@ -328,19 +448,19 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4912
 
 ##### Returns
 
-`Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
 #### Call Signature
 
-> **getLatestByFamily**(`request`, `metadata`, `options`): `Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4913
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4907
 
 ##### Parameters
 
 ###### request
 
-[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
+[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
 
 ###### metadata
 
@@ -348,15 +468,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4913
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
 #### Call Signature
 
-> **getLatestByFamily**(`request`): `Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4967
 
@@ -364,15 +484,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4967
 
 ###### request
 
-[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
+[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
 
 ##### Returns
 
-`Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
 #### Call Signature
 
-> **getLatestByFamily**(`request`, `metadata`): `Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4968
 
@@ -380,7 +500,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4968
 
 ###### request
 
-[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
+[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
 
 ###### metadata
 
@@ -388,11 +508,11 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4968
 
 ##### Returns
 
-`Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
 #### Call Signature
 
-> **getLatestByFamily**(`request`, `metadata`, `options`): `Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4969
 
@@ -400,7 +520,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4969
 
 ###### request
 
-[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md)
+[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
 
 ###### metadata
 
@@ -408,43 +528,43 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4969
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
 ***
 
-### ~~list()~~
+### listOperationsByParent()
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+> **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4914
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4908
 
 ##### Parameters
 
 ###### request
 
-[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
 
 ##### Returns
 
-`Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+> **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4915
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4909
 
 ##### Parameters
 
 ###### request
 
-[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
 
 ###### metadata
 
@@ -452,19 +572,19 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4915
 
 ##### Returns
 
-`Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+> **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4916
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4910
 
 ##### Parameters
 
 ###### request
 
-[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
 
 ###### metadata
 
@@ -472,15 +592,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4916
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+> **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4979
 
@@ -488,15 +608,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4979
 
 ###### request
 
-[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
 
 ##### Returns
 
-`Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+> **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4980
 
@@ -504,7 +624,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4980
 
 ###### request
 
-[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
+[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
 
 ###### metadata
 
@@ -512,11 +632,11 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4980
 
 ##### Returns
 
-`Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
+> **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4981
 
@@ -524,70 +644,6 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4981
 
 ###### request
 
-[`ListImagesRequest`](../interfaces/ListImagesRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
-
-***
-
-### ~~listOperationsByParent()~~
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4917
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4918
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`, `options`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4919
-
-##### Parameters
-
-###### request
-
 [`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
 
 ###### metadata
@@ -596,68 +652,8 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4919
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4991
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4992
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-#### Call Signature
-
-> **listOperationsByParent**(`request`, `metadata`, `options`): `Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
-
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4993
-
-##### Parameters
-
-###### request
-
-[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>

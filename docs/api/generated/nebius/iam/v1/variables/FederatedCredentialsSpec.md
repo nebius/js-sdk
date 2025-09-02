@@ -6,6 +6,6 @@
 
 # Variable: FederatedCredentialsSpec
 
-> **FederatedCredentialsSpec**: `MessageFns`\<[`FederatedCredentialsSpec`](../interfaces/FederatedCredentialsSpec.md), `"nebius.iam.v1.FederatedCredentialsSpec"`\>
+> **FederatedCredentialsSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FederatedCredentialsSpec`](../interfaces/FederatedCredentialsSpec.md), `"nebius.iam.v1.FederatedCredentialsSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6858
+Defined in: src/generated/nebius/iam/v1/index.ts:6855

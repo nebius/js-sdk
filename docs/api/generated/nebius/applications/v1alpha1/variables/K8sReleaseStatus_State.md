@@ -6,6 +6,6 @@
 
 # Variable: K8sReleaseStatus\_State
 
-> **K8sReleaseStatus\_State**: `K8sReleaseStatus_StateClass`
+> **K8sReleaseStatus\_State**: [`K8sReleaseStatus_StateClass`](../type-aliases/K8sReleaseStatus_StateClass.md)
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:852

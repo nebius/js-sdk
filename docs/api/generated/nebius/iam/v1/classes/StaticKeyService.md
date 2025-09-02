@@ -6,7 +6,7 @@
 
 # Class: StaticKeyService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18916
+Defined in: src/generated/nebius/iam/v1/index.ts:18913
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18916
 
 > **new StaticKeyService**(`sdk`): `StaticKeyService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18946
+Defined in: src/generated/nebius/iam/v1/index.ts:18943
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18946
 
 > **$type**: `"nebius.iam.v1.StaticKeyService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18917
+Defined in: src/generated/nebius/iam/v1/index.ts:18914
 
 ## Methods
 
@@ -44,379 +44,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18917
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18930
-
-##### Parameters
-
-###### request
-
-[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18931
-
-##### Parameters
-
-###### request
-
-[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18932
-
-##### Parameters
-
-###### request
-
-[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`): `Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:19004
-
-##### Parameters
-
-###### request
-
-[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:19005
-
-##### Parameters
-
-###### request
-
-[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:19006
-
-##### Parameters
-
-###### request
-
-[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-***
-
-### find()
-
-#### Call Signature
-
-> **find**(`request`): `Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18933
-
-##### Parameters
-
-###### request
-
-[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-#### Call Signature
-
-> **find**(`request`, `metadata`): `Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18934
-
-##### Parameters
-
-###### request
-
-[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-#### Call Signature
-
-> **find**(`request`, `metadata`, `options`): `Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18935
-
-##### Parameters
-
-###### request
-
-[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-#### Call Signature
-
-> **find**(`request`): `Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:19019
-
-##### Parameters
-
-###### request
-
-[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-#### Call Signature
-
-> **find**(`request`, `metadata`): `Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:19020
-
-##### Parameters
-
-###### request
-
-[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-#### Call Signature
-
-> **find**(`request`, `metadata`, `options`): `Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:19021
-
-##### Parameters
-
-###### request
-
-[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
-
-***
-
-### get()
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18924
-
-##### Parameters
-
-###### request
-
-[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18925
-
-##### Parameters
-
-###### request
-
-[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18926
-
-##### Parameters
-
-###### request
-
-[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18980
-
-##### Parameters
-
-###### request
-
-[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18981
-
-##### Parameters
-
-###### request
-
-[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18982
-
-##### Parameters
-
-###### request
-
-[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
-
-***
-
-### getByName()
-
-#### Call Signature
-
-> **getByName**(`request`): `Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v1/index.ts:18927
 
@@ -424,15 +52,15 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18927
 
 ###### request
 
-[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md)
+[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
 
 ##### Returns
 
-`Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v1/index.ts:18928
 
@@ -440,7 +68,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18928
 
 ###### request
 
-[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md)
+[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
 
 ###### metadata
 
@@ -448,11 +76,11 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18928
 
 ##### Returns
 
-`Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v1/index.ts:18929
 
@@ -460,6 +88,378 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18929
 
 ###### request
 
+[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:19001
+
+##### Parameters
+
+###### request
+
+[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:19002
+
+##### Parameters
+
+###### request
+
+[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:19003
+
+##### Parameters
+
+###### request
+
+[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+***
+
+### find()
+
+#### Call Signature
+
+> **find**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18930
+
+##### Parameters
+
+###### request
+
+[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+#### Call Signature
+
+> **find**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18931
+
+##### Parameters
+
+###### request
+
+[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+#### Call Signature
+
+> **find**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18932
+
+##### Parameters
+
+###### request
+
+[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+#### Call Signature
+
+> **find**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:19016
+
+##### Parameters
+
+###### request
+
+[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+#### Call Signature
+
+> **find**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:19017
+
+##### Parameters
+
+###### request
+
+[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+#### Call Signature
+
+> **find**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:19018
+
+##### Parameters
+
+###### request
+
+[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
+
+***
+
+### get()
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18921
+
+##### Parameters
+
+###### request
+
+[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18922
+
+##### Parameters
+
+###### request
+
+[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18923
+
+##### Parameters
+
+###### request
+
+[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18977
+
+##### Parameters
+
+###### request
+
+[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18978
+
+##### Parameters
+
+###### request
+
+[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18979
+
+##### Parameters
+
+###### request
+
+[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+***
+
+### getByName()
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18924
+
+##### Parameters
+
+###### request
+
+[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18925
+
+##### Parameters
+
+###### request
+
+[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18926
+
+##### Parameters
+
+###### request
+
 [`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md)
 
 ###### metadata
@@ -468,17 +468,17 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18929
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18992
+Defined in: src/generated/nebius/iam/v1/index.ts:18989
 
 ##### Parameters
 
@@ -488,13 +488,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18992
 
 ##### Returns
 
-`Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18993
+Defined in: src/generated/nebius/iam/v1/index.ts:18990
 
 ##### Parameters
 
@@ -508,13 +508,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18993
 
 ##### Returns
 
-`Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18994
+Defined in: src/generated/nebius/iam/v1/index.ts:18991
 
 ##### Parameters
 
@@ -528,11 +528,11 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18994
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
 ***
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18994
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18952
+Defined in: src/generated/nebius/iam/v1/index.ts:18949
 
 #### Returns
 
@@ -552,69 +552,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18952
 
 #### Call Signature
 
-> **issue**(`request`): `Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+> **issue**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18918
-
-##### Parameters
-
-###### request
-
-[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
-
-#### Call Signature
-
-> **issue**(`request`, `metadata`): `Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18919
-
-##### Parameters
-
-###### request
-
-[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
-
-#### Call Signature
-
-> **issue**(`request`, `metadata`, `options`): `Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18920
-
-##### Parameters
-
-###### request
-
-[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
-
-#### Call Signature
-
-> **issue**(`request`): `Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18956
+Defined in: src/generated/nebius/iam/v1/index.ts:18915
 
 ##### Parameters
 
@@ -624,13 +564,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18956
 
 ##### Returns
 
-`Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
 #### Call Signature
 
-> **issue**(`request`, `metadata`): `Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+> **issue**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18957
+Defined in: src/generated/nebius/iam/v1/index.ts:18916
 
 ##### Parameters
 
@@ -644,13 +584,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18957
 
 ##### Returns
 
-`Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
 #### Call Signature
 
-> **issue**(`request`, `metadata`, `options`): `Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+> **issue**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18958
+Defined in: src/generated/nebius/iam/v1/index.ts:18917
 
 ##### Parameters
 
@@ -664,11 +604,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18958
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+
+#### Call Signature
+
+> **issue**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18953
+
+##### Parameters
+
+###### request
+
+[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+
+#### Call Signature
+
+> **issue**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18954
+
+##### Parameters
+
+###### request
+
+[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+
+#### Call Signature
+
+> **issue**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18955
+
+##### Parameters
+
+###### request
+
+[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
 ***
 
@@ -676,69 +676,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18958
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18921
-
-##### Parameters
-
-###### request
-
-[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md)
-
-##### Returns
-
-`Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`): `Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18922
-
-##### Parameters
-
-###### request
-
-[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18923
-
-##### Parameters
-
-###### request
-
-[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`): `Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18968
+Defined in: src/generated/nebius/iam/v1/index.ts:18918
 
 ##### Parameters
 
@@ -748,13 +688,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18968
 
 ##### Returns
 
-`Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18969
+Defined in: src/generated/nebius/iam/v1/index.ts:18919
 
 ##### Parameters
 
@@ -768,13 +708,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18969
 
 ##### Returns
 
-`Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18970
+Defined in: src/generated/nebius/iam/v1/index.ts:18920
 
 ##### Parameters
 
@@ -788,11 +728,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18970
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18965
+
+##### Parameters
+
+###### request
+
+[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18966
+
+##### Parameters
+
+###### request
+
+[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:18967
+
+##### Parameters
+
+###### request
+
+[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
 ***
 
@@ -800,69 +800,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18970
 
 #### Call Signature
 
-> **revoke**(`request`): `Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **revoke**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18936
-
-##### Parameters
-
-###### request
-
-[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md)
-
-##### Returns
-
-`Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **revoke**(`request`, `metadata`): `Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18937
-
-##### Parameters
-
-###### request
-
-[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **revoke**(`request`, `metadata`, `options`): `Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:18938
-
-##### Parameters
-
-###### request
-
-[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **revoke**(`request`): `Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:19031
+Defined in: src/generated/nebius/iam/v1/index.ts:18933
 
 ##### Parameters
 
@@ -872,13 +812,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19031
 
 ##### Returns
 
-`Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **revoke**(`request`, `metadata`): `Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **revoke**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19032
+Defined in: src/generated/nebius/iam/v1/index.ts:18934
 
 ##### Parameters
 
@@ -892,13 +832,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19032
 
 ##### Returns
 
-`Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **revoke**(`request`, `metadata`, `options`): `Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **revoke**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19033
+Defined in: src/generated/nebius/iam/v1/index.ts:18935
 
 ##### Parameters
 
@@ -912,8 +852,68 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19033
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **revoke**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:19028
+
+##### Parameters
+
+###### request
+
+[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **revoke**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:19029
+
+##### Parameters
+
+###### request
+
+[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **revoke**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:19030
+
+##### Parameters
+
+###### request
+
+[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

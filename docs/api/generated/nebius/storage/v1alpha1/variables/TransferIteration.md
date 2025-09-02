@@ -6,6 +6,6 @@
 
 # Variable: TransferIteration
 
-> **TransferIteration**: `MessageFns`\<[`TransferIteration`](../interfaces/TransferIteration.md), `"nebius.storage.v1alpha1.TransferIteration"`\>
+> **TransferIteration**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TransferIteration`](../interfaces/TransferIteration.md), `"nebius.storage.v1alpha1.TransferIteration"`\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3035

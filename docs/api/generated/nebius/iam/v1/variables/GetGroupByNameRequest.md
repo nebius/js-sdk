@@ -6,6 +6,6 @@
 
 # Variable: GetGroupByNameRequest
 
-> **GetGroupByNameRequest**: `MessageFns`\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), `"nebius.iam.v1.GetGroupByNameRequest"`\>
+> **GetGroupByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), `"nebius.iam.v1.GetGroupByNameRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11881
+Defined in: src/generated/nebius/iam/v1/index.ts:11878

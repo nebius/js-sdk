@@ -6,6 +6,6 @@
 
 # Variable: IpVersion
 
-> **IpVersion**: `IpVersionClass`
+> **IpVersion**: [`IpVersionClass`](../type-aliases/IpVersionClass.md)
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4735

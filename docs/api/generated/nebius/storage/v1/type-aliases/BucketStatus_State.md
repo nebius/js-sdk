@@ -6,6 +6,6 @@
 
 # Type Alias: BucketStatus\_State
 
-> **BucketStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"ACTIVE"` \| `"UPDATING"` \| `"SCHEDULED_FOR_DELETION"`\>
+> **BucketStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"ACTIVE"` \| `"UPDATING"` \| `"SCHEDULED_FOR_DELETION"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1827

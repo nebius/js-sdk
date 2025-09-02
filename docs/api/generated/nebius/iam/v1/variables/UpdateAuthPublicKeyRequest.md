@@ -6,6 +6,6 @@
 
 # Variable: UpdateAuthPublicKeyRequest
 
-> **UpdateAuthPublicKeyRequest**: `MessageFns`\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `"nebius.iam.v1.UpdateAuthPublicKeyRequest"`\>
+> **UpdateAuthPublicKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), `"nebius.iam.v1.UpdateAuthPublicKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4206
+Defined in: src/generated/nebius/iam/v1/index.ts:4203

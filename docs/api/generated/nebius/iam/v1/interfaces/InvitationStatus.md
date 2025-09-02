@@ -6,7 +6,7 @@
 
 # Interface: InvitationStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14286
+Defined in: src/generated/nebius/iam/v1/index.ts:14283
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14286
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14288
+Defined in: src/generated/nebius/iam/v1/index.ts:14285
 
 ***
 
@@ -22,15 +22,15 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14288
 
 > **$type**: `"nebius.iam.v1.InvitationStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14287
+Defined in: src/generated/nebius/iam/v1/index.ts:14284
 
 ***
 
 ### expiresAt?
 
-> `optional` **expiresAt**: `Dayjs`
+> `optional` **expiresAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14290
+Defined in: src/generated/nebius/iam/v1/index.ts:14287
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14290
 
 > **state**: [`InvitationStatus_State`](../type-aliases/InvitationStatus_State.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14291
+Defined in: src/generated/nebius/iam/v1/index.ts:14288
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14291
 
 > **tenantUserAccountId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14289
+Defined in: src/generated/nebius/iam/v1/index.ts:14286

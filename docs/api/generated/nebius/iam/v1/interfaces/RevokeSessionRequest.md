@@ -6,7 +6,7 @@
 
 # Interface: RevokeSessionRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17431
+Defined in: src/generated/nebius/iam/v1/index.ts:17428
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17431
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17433
+Defined in: src/generated/nebius/iam/v1/index.ts:17430
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17433
 
 > **$type**: `"nebius.iam.v1.RevokeSessionRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17432
+Defined in: src/generated/nebius/iam/v1/index.ts:17429
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17432
 
 > `optional` **revoke**: \{ `$case`: `"serviceAccountId"`; `serviceAccountId`: `string`; \} \| \{ `$case`: `"allMyActive"`; `allMyActive`: `boolean`; \} \| \{ `$case`: `"tenantUserAccountId"`; `tenantUserAccountId`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17434
+Defined in: src/generated/nebius/iam/v1/index.ts:17431

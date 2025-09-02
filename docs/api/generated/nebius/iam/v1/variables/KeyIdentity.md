@@ -6,6 +6,6 @@
 
 # Variable: KeyIdentity
 
-> **KeyIdentity**: `MessageFns`\<[`KeyIdentity`](../interfaces/KeyIdentity.md), `"nebius.iam.v1.KeyIdentity"`\>
+> **KeyIdentity**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`KeyIdentity`](../interfaces/KeyIdentity.md), `"nebius.iam.v1.KeyIdentity"`\>
 
 Defined in: src/generated/nebius/iam/v1/index.ts:127

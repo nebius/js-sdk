@@ -6,6 +6,6 @@
 
 # Variable: GetByNameRequest
 
-> **GetByNameRequest**: `MessageFns`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), `"nebius.common.v1.GetByNameRequest"`\>
+> **GetByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), `"nebius.common.v1.GetByNameRequest"`\>
 
 Defined in: src/generated/nebius/common/v1/index.ts:2564

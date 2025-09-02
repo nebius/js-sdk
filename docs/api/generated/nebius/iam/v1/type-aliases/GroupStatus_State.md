@@ -6,6 +6,6 @@
 
 # Type Alias: GroupStatus\_State
 
-> **GroupStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"ACTIVE"`\>
+> **GroupStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"ACTIVE"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12636
+Defined in: src/generated/nebius/iam/v1/index.ts:12633

@@ -6,6 +6,6 @@
 
 # Variable: GetAccessPermitRequest
 
-> **GetAccessPermitRequest**: `MessageFns`\<[`GetAccessPermitRequest`](../interfaces/GetAccessPermitRequest.md), `"nebius.iam.v1.GetAccessPermitRequest"`\>
+> **GetAccessPermitRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetAccessPermitRequest`](../interfaces/GetAccessPermitRequest.md), `"nebius.iam.v1.GetAccessPermitRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2591
+Defined in: src/generated/nebius/iam/v1/index.ts:2588

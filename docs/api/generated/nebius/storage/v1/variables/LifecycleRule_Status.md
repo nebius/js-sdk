@@ -6,6 +6,6 @@
 
 # Variable: LifecycleRule\_Status
 
-> **LifecycleRule\_Status**: `LifecycleRule_StatusClass`
+> **LifecycleRule\_Status**: [`LifecycleRule_StatusClass`](../type-aliases/LifecycleRule_StatusClass.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2458

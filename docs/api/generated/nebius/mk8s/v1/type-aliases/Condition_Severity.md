@@ -6,6 +6,6 @@
 
 # Type Alias: Condition\_Severity
 
-> **Condition\_Severity** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"NONE"` \| `"INFO"` \| `"ERROR"`\>
+> **Condition\_Severity** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"NONE"` \| `"INFO"` \| `"ERROR"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2089

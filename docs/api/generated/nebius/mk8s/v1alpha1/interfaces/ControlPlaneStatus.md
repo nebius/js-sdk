@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1808
 
 ### etcdClusterSize
 
-> **etcdClusterSize**: `Long`
+> **etcdClusterSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1813
 

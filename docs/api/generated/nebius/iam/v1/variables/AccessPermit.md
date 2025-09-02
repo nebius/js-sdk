@@ -6,6 +6,6 @@
 
 # Variable: AccessPermit
 
-> **AccessPermit**: `MessageFns`\<[`AccessPermit`](../interfaces/AccessPermit.md), `"nebius.iam.v1.AccessPermit"`\>
+> **AccessPermit**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AccessPermit`](../interfaces/AccessPermit.md), `"nebius.iam.v1.AccessPermit"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2956
+Defined in: src/generated/nebius/iam/v1/index.ts:2953

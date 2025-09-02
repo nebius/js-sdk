@@ -6,6 +6,6 @@
 
 # Variable: LifecycleRule
 
-> **LifecycleRule**: `MessageFns`\<[`LifecycleRule`](../interfaces/LifecycleRule.md), `"nebius.storage.v1.LifecycleRule"`\>
+> **LifecycleRule**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`LifecycleRule`](../interfaces/LifecycleRule.md), `"nebius.storage.v1.LifecycleRule"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2574

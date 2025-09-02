@@ -6,6 +6,6 @@
 
 # Variable: Instance
 
-> **Instance**: `MessageFns`\<[`Instance`](../interfaces/Instance.md), `"nebius.compute.v1.Instance"`\>
+> **Instance**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Instance`](../interfaces/Instance.md), `"nebius.compute.v1.Instance"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:7336

@@ -6,6 +6,6 @@
 
 # Variable: ListInstancesRequest
 
-> **ListInstancesRequest**: `MessageFns`\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), `"nebius.compute.v1alpha1.ListInstancesRequest"`\>
+> **ListInstancesRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), `"nebius.compute.v1alpha1.ListInstancesRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5540
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5528

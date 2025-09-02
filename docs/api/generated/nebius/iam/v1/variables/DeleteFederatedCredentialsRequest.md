@@ -6,6 +6,6 @@
 
 # Variable: DeleteFederatedCredentialsRequest
 
-> **DeleteFederatedCredentialsRequest**: `MessageFns`\<[`DeleteFederatedCredentialsRequest`](../interfaces/DeleteFederatedCredentialsRequest.md), `"nebius.iam.v1.DeleteFederatedCredentialsRequest"`\>
+> **DeleteFederatedCredentialsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteFederatedCredentialsRequest`](../interfaces/DeleteFederatedCredentialsRequest.md), `"nebius.iam.v1.DeleteFederatedCredentialsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6434
+Defined in: src/generated/nebius/iam/v1/index.ts:6431

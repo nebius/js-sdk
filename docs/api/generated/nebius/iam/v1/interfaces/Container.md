@@ -6,7 +6,7 @@
 
 # Interface: Container
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5398
+Defined in: src/generated/nebius/iam/v1/index.ts:5395
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5398
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5400
+Defined in: src/generated/nebius/iam/v1/index.ts:5397
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5400
 
 > **$type**: `"nebius.iam.v1.Container"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5399
+Defined in: src/generated/nebius/iam/v1/index.ts:5396
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5399
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5401
+Defined in: src/generated/nebius/iam/v1/index.ts:5398
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5401
 
 > `optional` **spec**: [`ContainerSpec`](ContainerSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5402
+Defined in: src/generated/nebius/iam/v1/index.ts:5399
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5402
 
 > `optional` **status**: [`ContainerStatus`](ContainerStatus.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5403
+Defined in: src/generated/nebius/iam/v1/index.ts:5400

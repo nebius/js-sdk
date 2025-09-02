@@ -6,7 +6,7 @@
 
 # Interface: AccessKeySpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1924
+Defined in: src/generated/nebius/iam/v1/index.ts:1921
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1924
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1926
+Defined in: src/generated/nebius/iam/v1/index.ts:1923
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1926
 
 > **$type**: `"nebius.iam.v1.AccessKeySpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1925
+Defined in: src/generated/nebius/iam/v1/index.ts:1922
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1925
 
 > `optional` **account**: [`Account`](Account.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1927
+Defined in: src/generated/nebius/iam/v1/index.ts:1924
 
 ***
 
@@ -38,12 +38,12 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1927
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1929
+Defined in: src/generated/nebius/iam/v1/index.ts:1926
 
 ***
 
 ### expiresAt?
 
-> `optional` **expiresAt**: `Dayjs`
+> `optional` **expiresAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1928
+Defined in: src/generated/nebius/iam/v1/index.ts:1925

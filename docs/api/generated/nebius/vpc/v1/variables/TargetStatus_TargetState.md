@@ -6,6 +6,6 @@
 
 # Variable: TargetStatus\_TargetState
 
-> **TargetStatus\_TargetState**: `TargetStatus_TargetStateClass`
+> **TargetStatus\_TargetState**: [`TargetStatus_TargetStateClass`](../type-aliases/TargetStatus_TargetStateClass.md)
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8494

@@ -6,7 +6,7 @@
 
 # Interface: GetProfileRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14414
+Defined in: src/generated/nebius/iam/v1/index.ts:14411
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14414
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14416
+Defined in: src/generated/nebius/iam/v1/index.ts:14413
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14416
 
 > **$type**: `"nebius.iam.v1.GetProfileRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14415
+Defined in: src/generated/nebius/iam/v1/index.ts:14412

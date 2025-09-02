@@ -6,6 +6,6 @@
 
 # Variable: Scope
 
-> **Scope**: `MessageFns`\<[`Scope`](../interfaces/Scope.md), `"nebius.vpc.v1alpha1.Scope"`\>
+> **Scope**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Scope`](../interfaces/Scope.md), `"nebius.vpc.v1alpha1.Scope"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6112

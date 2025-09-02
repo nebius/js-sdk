@@ -6,6 +6,6 @@
 
 # Variable: DeleteFederationCertificateRequest
 
-> **DeleteFederationCertificateRequest**: `MessageFns`\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), `"nebius.iam.v1.DeleteFederationCertificateRequest"`\>
+> **DeleteFederationCertificateRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), `"nebius.iam.v1.DeleteFederationCertificateRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7657
+Defined in: src/generated/nebius/iam/v1/index.ts:7654

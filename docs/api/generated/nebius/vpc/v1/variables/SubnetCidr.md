@@ -6,6 +6,6 @@
 
 # Variable: SubnetCidr
 
-> **SubnetCidr**: `MessageFns`\<[`SubnetCidr`](../interfaces/SubnetCidr.md), `"nebius.vpc.v1.SubnetCidr"`\>
+> **SubnetCidr**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`SubnetCidr`](../interfaces/SubnetCidr.md), `"nebius.vpc.v1.SubnetCidr"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:7932

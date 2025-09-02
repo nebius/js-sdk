@@ -41,10 +41,14 @@
 ## Type Aliases
 
 - [TransferIteration\_State](type-aliases/TransferIteration_State.md)
+- [TransferIteration\_StateClass](type-aliases/TransferIteration_StateClass.md)
 - [TransferServiceServiceDescription](type-aliases/TransferServiceServiceDescription.md)
 - [TransferSpec\_OverwriteStrategy](type-aliases/TransferSpec_OverwriteStrategy.md)
+- [TransferSpec\_OverwriteStrategyClass](type-aliases/TransferSpec_OverwriteStrategyClass.md)
 - [TransferStatus\_State](type-aliases/TransferStatus_State.md)
+- [TransferStatus\_StateClass](type-aliases/TransferStatus_StateClass.md)
 - [TransferStatus\_SuspensionState](type-aliases/TransferStatus_SuspensionState.md)
+- [TransferStatus\_SuspensionStateClass](type-aliases/TransferStatus_SuspensionStateClass.md)
 
 ## Variables
 

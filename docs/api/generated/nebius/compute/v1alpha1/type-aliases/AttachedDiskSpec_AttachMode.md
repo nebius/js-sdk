@@ -6,6 +6,6 @@
 
 # Type Alias: AttachedDiskSpec\_AttachMode
 
-> **AttachedDiskSpec\_AttachMode** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"READ_ONLY"` \| `"READ_WRITE"`\>
+> **AttachedDiskSpec\_AttachMode** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"READ_ONLY"` \| `"READ_WRITE"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6574
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6559

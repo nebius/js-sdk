@@ -6,6 +6,6 @@
 
 # Variable: SessionStatus
 
-> **SessionStatus**: `MessageFns`\<[`SessionStatus`](../interfaces/SessionStatus.md), `"nebius.msp.spark.v1alpha1.SessionStatus"`\>
+> **SessionStatus**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`SessionStatus`](../interfaces/SessionStatus.md), `"nebius.msp.spark.v1alpha1.SessionStatus"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5164

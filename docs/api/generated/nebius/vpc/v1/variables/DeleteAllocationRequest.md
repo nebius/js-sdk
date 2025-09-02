@@ -6,6 +6,6 @@
 
 # Variable: DeleteAllocationRequest
 
-> **DeleteAllocationRequest**: `MessageFns`\<[`DeleteAllocationRequest`](../interfaces/DeleteAllocationRequest.md), `"nebius.vpc.v1.DeleteAllocationRequest"`\>
+> **DeleteAllocationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteAllocationRequest`](../interfaces/DeleteAllocationRequest.md), `"nebius.vpc.v1.DeleteAllocationRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:778

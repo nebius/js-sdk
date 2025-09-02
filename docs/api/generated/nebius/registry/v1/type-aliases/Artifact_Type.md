@@ -6,6 +6,6 @@
 
 # Type Alias: Artifact\_Type
 
-> **Artifact\_Type** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"BLOB"` \| `"MANIFEST"` \| `"DEB_PACKAGE"` \| `"MANIFEST_LIST"` \| `"RELEASE_INDEX"` \| `"PACKAGE_INDEX"` \| `"GZIPPED_PACKAGE_INDEX"`\>
+> **Artifact\_Type** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"BLOB"` \| `"MANIFEST"` \| `"DEB_PACKAGE"` \| `"MANIFEST_LIST"` \| `"RELEASE_INDEX"` \| `"PACKAGE_INDEX"` \| `"GZIPPED_PACKAGE_INDEX"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:568

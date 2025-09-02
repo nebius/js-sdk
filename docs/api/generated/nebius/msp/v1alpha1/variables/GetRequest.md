@@ -6,6 +6,6 @@
 
 # Variable: GetRequest
 
-> **GetRequest**: `MessageFns`\<[`GetRequest`](../interfaces/GetRequest.md), `"nebius.msp.v1alpha1.GetRequest"`\>
+> **GetRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetRequest`](../interfaces/GetRequest.md), `"nebius.msp.v1alpha1.GetRequest"`\>
 
 Defined in: src/generated/nebius/msp/v1alpha1/index.ts:197

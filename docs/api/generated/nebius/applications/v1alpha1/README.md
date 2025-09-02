@@ -28,6 +28,7 @@
 
 - [K8sReleaseServiceServiceDescription](type-aliases/K8sReleaseServiceServiceDescription.md)
 - [K8sReleaseStatus\_State](type-aliases/K8sReleaseStatus_State.md)
+- [K8sReleaseStatus\_StateClass](type-aliases/K8sReleaseStatus_StateClass.md)
 
 ## Variables
 

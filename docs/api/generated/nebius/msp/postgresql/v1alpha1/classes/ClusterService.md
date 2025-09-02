@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2319
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2355
 
@@ -58,11 +58,11 @@ Creates a PostgreSQL cluster in the specified folder.
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2356
 
@@ -78,11 +78,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2356
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2357
 
@@ -98,15 +98,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2357
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2458
 
@@ -120,11 +120,11 @@ Creates a PostgreSQL cluster in the specified folder.
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2459
 
@@ -142,11 +142,11 @@ Creates a PostgreSQL cluster in the specified folder.
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2460
 
@@ -164,11 +164,11 @@ Creates a PostgreSQL cluster in the specified folder.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -176,7 +176,7 @@ Creates a PostgreSQL cluster in the specified folder.
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2362
 
@@ -190,11 +190,11 @@ Deletes the specified PostgreSQL cluster.
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2363
 
@@ -210,11 +210,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2363
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2364
 
@@ -230,15 +230,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2364
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2473
 
@@ -252,11 +252,11 @@ Deletes the specified PostgreSQL cluster.
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2474
 
@@ -274,11 +274,11 @@ Deletes the specified PostgreSQL cluster.
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2475
 
@@ -296,11 +296,11 @@ Deletes the specified PostgreSQL cluster.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -308,7 +308,7 @@ Deletes the specified PostgreSQL cluster.
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2325
 
@@ -323,11 +323,11 @@ Returns the specified PostgreSQL Cluster resource.
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2326
 
@@ -343,11 +343,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2326
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2327
 
@@ -363,15 +363,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2327
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2410
 
@@ -386,11 +386,11 @@ Returns the specified PostgreSQL Cluster resource.
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2411
 
@@ -409,11 +409,11 @@ Returns the specified PostgreSQL Cluster resource.
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2412
 
@@ -432,11 +432,11 @@ Returns the specified PostgreSQL Cluster resource.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 ***
 
@@ -444,7 +444,7 @@ Returns the specified PostgreSQL Cluster resource.
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2332
 
@@ -458,11 +458,11 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2333
 
@@ -478,11 +478,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2333
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2334
 
@@ -498,15 +498,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2334
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2422
 
@@ -520,11 +520,11 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2423
 
@@ -542,11 +542,11 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2424
 
@@ -564,11 +564,11 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 ***
 
@@ -576,7 +576,7 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 #### Call Signature
 
-> **getForBackup**(`request`): `Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getForBackup**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2340
 
@@ -591,11 +591,11 @@ Returns the specified PostgreSQL Cluster resource for backup.
 
 ##### Returns
 
-`Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getForBackup**(`request`, `metadata`): `Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getForBackup**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2341
 
@@ -611,11 +611,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2341
 
 ##### Returns
 
-`Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getForBackup**(`request`, `metadata`, `options`): `Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getForBackup**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2342
 
@@ -631,15 +631,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2342
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getForBackup**(`request`): `Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getForBackup**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2434
 
@@ -654,11 +654,11 @@ Returns the specified PostgreSQL Cluster resource for backup.
 
 ##### Returns
 
-`Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getForBackup**(`request`, `metadata`): `Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getForBackup**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2435
 
@@ -677,11 +677,11 @@ Returns the specified PostgreSQL Cluster resource for backup.
 
 ##### Returns
 
-`Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 #### Call Signature
 
-> **getForBackup**(`request`, `metadata`, `options`): `Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+> **getForBackup**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2436
 
@@ -700,11 +700,11 @@ Returns the specified PostgreSQL Cluster resource for backup.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
 ***
 
@@ -724,7 +724,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2406
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2348
 
@@ -739,11 +739,11 @@ Retrieves the list of PostgreSQL Cluster resources that belong
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2349
 
@@ -759,11 +759,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2349
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2350
 
@@ -779,15 +779,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2350
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2446
 
@@ -802,11 +802,11 @@ Retrieves the list of PostgreSQL Cluster resources that belong
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2447
 
@@ -825,11 +825,11 @@ Retrieves the list of PostgreSQL Cluster resources that belong
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2448
 
@@ -848,11 +848,11 @@ Retrieves the list of PostgreSQL Cluster resources that belong
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
 ***
 
@@ -860,7 +860,7 @@ Retrieves the list of PostgreSQL Cluster resources that belong
 
 #### Call Signature
 
-> **restore**(`request`): `Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **restore**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2376
 
@@ -874,11 +874,11 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 ##### Returns
 
-`Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **restore**(`request`, `metadata`): `Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **restore**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2377
 
@@ -894,11 +894,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2377
 
 ##### Returns
 
-`Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **restore**(`request`, `metadata`, `options`): `Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **restore**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2378
 
@@ -914,15 +914,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2378
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **restore**(`request`): `Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **restore**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2503
 
@@ -936,11 +936,11 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 ##### Returns
 
-`Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **restore**(`request`, `metadata`): `Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **restore**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2504
 
@@ -958,11 +958,11 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 ##### Returns
 
-`Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **restore**(`request`, `metadata`, `options`): `Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **restore**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2505
 
@@ -980,11 +980,11 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -992,7 +992,7 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 #### Call Signature
 
-> **start**(`request`): `Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2390
 
@@ -1006,11 +1006,11 @@ Wakes up suspended PostgreSQL cluster.
 
 ##### Returns
 
-`Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`, `metadata`): `Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2391
 
@@ -1026,11 +1026,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2391
 
 ##### Returns
 
-`Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`, `metadata`, `options`): `Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2392
 
@@ -1046,15 +1046,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2392
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`): `Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2533
 
@@ -1068,11 +1068,11 @@ Wakes up suspended PostgreSQL cluster.
 
 ##### Returns
 
-`Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`, `metadata`): `Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2534
 
@@ -1090,11 +1090,11 @@ Wakes up suspended PostgreSQL cluster.
 
 ##### Returns
 
-`Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **start**(`request`, `metadata`, `options`): `Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **start**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2535
 
@@ -1112,11 +1112,11 @@ Wakes up suspended PostgreSQL cluster.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -1124,7 +1124,7 @@ Wakes up suspended PostgreSQL cluster.
 
 #### Call Signature
 
-> **stop**(`request`): `Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2383
 
@@ -1138,11 +1138,11 @@ Suspends the PostgreSQL cluster to save resources.
 
 ##### Returns
 
-`Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`): `Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2384
 
@@ -1158,11 +1158,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2384
 
 ##### Returns
 
-`Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`, `options`): `Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2385
 
@@ -1178,15 +1178,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2385
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`): `Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2518
 
@@ -1200,11 +1200,11 @@ Suspends the PostgreSQL cluster to save resources.
 
 ##### Returns
 
-`Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`): `Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2519
 
@@ -1222,11 +1222,11 @@ Suspends the PostgreSQL cluster to save resources.
 
 ##### Returns
 
-`Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **stop**(`request`, `metadata`, `options`): `Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2520
 
@@ -1244,11 +1244,11 @@ Suspends the PostgreSQL cluster to save resources.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -1256,7 +1256,7 @@ Suspends the PostgreSQL cluster to save resources.
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2369
 
@@ -1270,11 +1270,11 @@ Updates the PostgreSQL cluster.
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2370
 
@@ -1290,11 +1290,11 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2370
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2371
 
@@ -1310,15 +1310,15 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2371
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2488
 
@@ -1332,11 +1332,11 @@ Updates the PostgreSQL cluster.
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2489
 
@@ -1354,11 +1354,11 @@ Updates the PostgreSQL cluster.
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2490
 
@@ -1376,8 +1376,8 @@ Updates the PostgreSQL cluster.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `Operation`\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>

@@ -6,6 +6,6 @@
 
 # Variable: ListGroupMembershipsResponse
 
-> **ListGroupMembershipsResponse**: `MessageFns`\<[`ListGroupMembershipsResponse`](../interfaces/ListGroupMembershipsResponse.md), `"nebius.iam.v1.ListGroupMembershipsResponse"`\>
+> **ListGroupMembershipsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListGroupMembershipsResponse`](../interfaces/ListGroupMembershipsResponse.md), `"nebius.iam.v1.ListGroupMembershipsResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10405
+Defined in: src/generated/nebius/iam/v1/index.ts:10402

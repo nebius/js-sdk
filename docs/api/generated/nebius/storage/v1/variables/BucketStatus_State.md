@@ -6,6 +6,6 @@
 
 # Variable: BucketStatus\_State
 
-> **BucketStatus\_State**: `BucketStatus_StateClass`
+> **BucketStatus\_State**: [`BucketStatus_StateClass`](../type-aliases/BucketStatus_StateClass.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1827

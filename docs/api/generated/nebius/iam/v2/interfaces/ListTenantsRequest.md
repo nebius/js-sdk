@@ -38,7 +38,7 @@ A filter to narrow down the results based on specific criteria.
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/iam/v2/index.ts:2536
 

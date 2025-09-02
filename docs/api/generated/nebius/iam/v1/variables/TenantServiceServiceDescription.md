@@ -8,7 +8,7 @@
 
 > **TenantServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19783
+Defined in: src/generated/nebius/iam/v1/index.ts:19780
 
 ## Type Declaration
 

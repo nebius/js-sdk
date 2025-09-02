@@ -6,6 +6,6 @@
 
 # Variable: JavaConfig
 
-> **JavaConfig**: `MessageFns`\<[`JavaConfig`](../interfaces/JavaConfig.md), `"nebius.msp.spark.v1alpha1.JavaConfig"`\>
+> **JavaConfig**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`JavaConfig`](../interfaces/JavaConfig.md), `"nebius.msp.spark.v1alpha1.JavaConfig"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1781

@@ -6,6 +6,6 @@
 
 # Variable: ResourceAlreadyExists
 
-> **ResourceAlreadyExists**: `MessageFns`\<[`ResourceAlreadyExists`](../interfaces/ResourceAlreadyExists.md), `"nebius.common.v1.ResourceAlreadyExists"`\>
+> **ResourceAlreadyExists**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceAlreadyExists`](../interfaces/ResourceAlreadyExists.md), `"nebius.common.v1.ResourceAlreadyExists"`\>
 
 Defined in: src/generated/nebius/common/v1/index.ts:1032

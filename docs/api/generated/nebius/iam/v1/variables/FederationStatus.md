@@ -6,6 +6,6 @@
 
 # Variable: FederationStatus
 
-> **FederationStatus**: `MessageFns`\<[`FederationStatus`](../interfaces/FederationStatus.md), `"nebius.iam.v1.FederationStatus"`\>
+> **FederationStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FederationStatus`](../interfaces/FederationStatus.md), `"nebius.iam.v1.FederationStatus"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9740
+Defined in: src/generated/nebius/iam/v1/index.ts:9737

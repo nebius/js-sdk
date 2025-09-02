@@ -6,6 +6,6 @@
 
 # Variable: GetAccessKeySecretOnceResponse
 
-> **GetAccessKeySecretOnceResponse**: `MessageFns`\<[`GetAccessKeySecretOnceResponse`](../interfaces/GetAccessKeySecretOnceResponse.md), `"nebius.iam.v1.GetAccessKeySecretOnceResponse"`\>
+> **GetAccessKeySecretOnceResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetAccessKeySecretOnceResponse`](../interfaces/GetAccessKeySecretOnceResponse.md), `"nebius.iam.v1.GetAccessKeySecretOnceResponse"`\>
 
 Defined in: src/generated/nebius/iam/v1/index.ts:1224

@@ -6,6 +6,6 @@
 
 # Variable: GetArtifactRequest
 
-> **GetArtifactRequest**: `MessageFns`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), `"nebius.registry.v1.GetArtifactRequest"`\>
+> **GetArtifactRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), `"nebius.registry.v1.GetArtifactRequest"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:15

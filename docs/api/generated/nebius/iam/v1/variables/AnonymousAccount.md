@@ -6,6 +6,6 @@
 
 # Variable: AnonymousAccount
 
-> **AnonymousAccount**: `MessageFns`\<[`AnonymousAccount`](../interfaces/AnonymousAccount.md), `"nebius.iam.v1.AnonymousAccount"`\>
+> **AnonymousAccount**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AnonymousAccount`](../interfaces/AnonymousAccount.md), `"nebius.iam.v1.AnonymousAccount"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15057
+Defined in: src/generated/nebius/iam/v1/index.ts:15054

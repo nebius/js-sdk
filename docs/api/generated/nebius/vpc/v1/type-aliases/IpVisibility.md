@@ -6,6 +6,6 @@
 
 # Type Alias: IpVisibility
 
-> **IpVisibility** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"IP_VISIBILITY_UNSPECIFIED"` \| `"PRIVATE"` \| `"PUBLIC"`\>
+> **IpVisibility** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"IP_VISIBILITY_UNSPECIFIED"` \| `"PRIVATE"` \| `"PUBLIC"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5360

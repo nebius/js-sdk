@@ -6,6 +6,6 @@
 
 # Variable: UpdateClusterRequest
 
-> **UpdateClusterRequest**: `MessageFns`\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `"nebius.msp.spark.v1alpha1.UpdateClusterRequest"`\>
+> **UpdateClusterRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), `"nebius.msp.spark.v1alpha1.UpdateClusterRequest"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:585

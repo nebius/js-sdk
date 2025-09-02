@@ -6,6 +6,6 @@
 
 # Variable: GroupSpec
 
-> **GroupSpec**: `MessageFns`\<[`GroupSpec`](../interfaces/GroupSpec.md), `"nebius.iam.v1.GroupSpec"`\>
+> **GroupSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GroupSpec`](../interfaces/GroupSpec.md), `"nebius.iam.v1.GroupSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12786
+Defined in: src/generated/nebius/iam/v1/index.ts:12783

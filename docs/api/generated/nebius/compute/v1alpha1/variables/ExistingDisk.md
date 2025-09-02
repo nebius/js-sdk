@@ -6,6 +6,6 @@
 
 # Variable: ExistingDisk
 
-> **ExistingDisk**: `MessageFns`\<[`ExistingDisk`](../interfaces/ExistingDisk.md), `"nebius.compute.v1alpha1.ExistingDisk"`\>
+> **ExistingDisk**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ExistingDisk`](../interfaces/ExistingDisk.md), `"nebius.compute.v1alpha1.ExistingDisk"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7415
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7400

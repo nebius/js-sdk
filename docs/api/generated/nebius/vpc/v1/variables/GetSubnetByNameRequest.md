@@ -6,6 +6,6 @@
 
 # Variable: GetSubnetByNameRequest
 
-> **GetSubnetByNameRequest**: `MessageFns`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), `"nebius.vpc.v1.GetSubnetByNameRequest"`\>
+> **GetSubnetByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), `"nebius.vpc.v1.GetSubnetByNameRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:6266

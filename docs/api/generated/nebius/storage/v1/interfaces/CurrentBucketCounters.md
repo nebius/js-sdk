@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:54
 
 ### inflightPartsQuantity
 
-> **inflightPartsQuantity**: `Long`
+> **inflightPartsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:61
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:61
 
 ### inflightPartsSize
 
-> **inflightPartsSize**: `Long`
+> **inflightPartsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:62
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:62
 
 ### multipartObjectsQuantity
 
-> **multipartObjectsQuantity**: `Long`
+> **multipartObjectsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:58
 
@@ -52,7 +52,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:58
 
 ### multipartObjectsSize
 
-> **multipartObjectsSize**: `Long`
+> **multipartObjectsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:59
 
@@ -60,7 +60,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:59
 
 ### multipartUploadsQuantity
 
-> **multipartUploadsQuantity**: `Long`
+> **multipartUploadsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:60
 
@@ -68,7 +68,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:60
 
 ### simpleObjectsQuantity
 
-> **simpleObjectsQuantity**: `Long`
+> **simpleObjectsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:56
 
@@ -76,6 +76,6 @@ Defined in: src/generated/nebius/storage/v1/index.ts:56
 
 ### simpleObjectsSize
 
-> **simpleObjectsSize**: `Long`
+> **simpleObjectsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:57

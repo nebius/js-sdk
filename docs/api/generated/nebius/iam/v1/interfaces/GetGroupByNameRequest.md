@@ -6,7 +6,7 @@
 
 # Interface: GetGroupByNameRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11881
+Defined in: src/generated/nebius/iam/v1/index.ts:11878
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11881
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11883
+Defined in: src/generated/nebius/iam/v1/index.ts:11880
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11883
 
 > **$type**: `"nebius.iam.v1.GetGroupByNameRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11882
+Defined in: src/generated/nebius/iam/v1/index.ts:11879
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11882
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11885
+Defined in: src/generated/nebius/iam/v1/index.ts:11882
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11885
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11884
+Defined in: src/generated/nebius/iam/v1/index.ts:11881

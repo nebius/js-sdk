@@ -6,7 +6,7 @@
 
 # Interface: TenantUserAccount
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21049
+Defined in: src/generated/nebius/iam/v1/index.ts:21046
 
 this proto describes projections of global user accounts to specific tenants
  every global user account gets a specific id like 'tenantuseraccount-someuniquesuffix'
@@ -20,7 +20,7 @@ this proto describes projections of global user accounts to specific tenants
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21051
+Defined in: src/generated/nebius/iam/v1/index.ts:21048
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21051
 
 > **$type**: `"nebius.iam.v1.TenantUserAccount"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21050
+Defined in: src/generated/nebius/iam/v1/index.ts:21047
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21050
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21052
+Defined in: src/generated/nebius/iam/v1/index.ts:21049
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21052
 
 > `optional` **spec**: [`TenantUserAccountSpec`](TenantUserAccountSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21053
+Defined in: src/generated/nebius/iam/v1/index.ts:21050
 
 ***
 
@@ -52,4 +52,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21053
 
 > `optional` **status**: [`TenantUserAccountStatus`](TenantUserAccountStatus.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21054
+Defined in: src/generated/nebius/iam/v1/index.ts:21051

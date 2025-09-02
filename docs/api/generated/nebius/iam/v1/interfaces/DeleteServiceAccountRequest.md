@@ -6,7 +6,7 @@
 
 # Interface: DeleteServiceAccountRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16615
+Defined in: src/generated/nebius/iam/v1/index.ts:16612
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16615
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16617
+Defined in: src/generated/nebius/iam/v1/index.ts:16614
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16617
 
 > **$type**: `"nebius.iam.v1.DeleteServiceAccountRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16616
+Defined in: src/generated/nebius/iam/v1/index.ts:16613
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16616
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16618
+Defined in: src/generated/nebius/iam/v1/index.ts:16615

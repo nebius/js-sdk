@@ -26,7 +26,9 @@
 
 - [QuotaAllowanceServiceServiceDescription](type-aliases/QuotaAllowanceServiceServiceDescription.md)
 - [QuotaAllowanceStatus\_State](type-aliases/QuotaAllowanceStatus_State.md)
+- [QuotaAllowanceStatus\_StateClass](type-aliases/QuotaAllowanceStatus_StateClass.md)
 - [QuotaAllowanceStatus\_UsageState](type-aliases/QuotaAllowanceStatus_UsageState.md)
+- [QuotaAllowanceStatus\_UsageStateClass](type-aliases/QuotaAllowanceStatus_UsageStateClass.md)
 
 ## Variables
 

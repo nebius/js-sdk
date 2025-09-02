@@ -6,6 +6,6 @@
 
 # Type Alias: VersioningPolicy
 
-> **VersioningPolicy** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"VERSIONING_POLICY_UNSPECIFIED"` \| `"DISABLED"` \| `"ENABLED"` \| `"SUSPENDED"`\>
+> **VersioningPolicy** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"VERSIONING_POLICY_UNSPECIFIED"` \| `"DISABLED"` \| `"ENABLED"` \| `"SUSPENDED"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:32

@@ -8,7 +8,7 @@
 
 > **FederationCertificateServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`FederationCertificateServiceBaseClient`](../interfaces/FederationCertificateServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7911
+Defined in: src/generated/nebius/iam/v1/index.ts:7908
 
 ## Type Declaration
 

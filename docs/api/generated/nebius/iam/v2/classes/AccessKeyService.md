@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1503
 
 #### Call Signature
 
-> **activate**(`request`): `Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1519
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1519
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activate**(`request`, `metadata`): `Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1520
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1520
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activate**(`request`, `metadata`, `options`): `Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1521
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1521
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activate**(`request`): `Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1626
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1626
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activate**(`request`, `metadata`): `Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1627
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1627
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activate**(`request`, `metadata`, `options`): `Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1628
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1628
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1628
 
 #### Call Signature
 
-> **activateByAwsId**(`request`): `Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activateByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1534
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1534
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activateByAwsId**(`request`, `metadata`): `Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activateByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1535
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1535
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activateByAwsId**(`request`, `metadata`, `options`): `Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activateByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1536
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1536
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activateByAwsId**(`request`): `Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activateByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1695
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1695
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activateByAwsId**(`request`, `metadata`): `Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activateByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1696
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1696
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **activateByAwsId**(`request`, `metadata`, `options`): `Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **activateByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1697
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1697
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1697
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1504
 
@@ -304,11 +304,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1504
 
 ##### Returns
 
-`Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1505
 
@@ -324,11 +324,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1505
 
 ##### Returns
 
-`Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1506
 
@@ -344,15 +344,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1506
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1557
 
@@ -364,11 +364,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1557
 
 ##### Returns
 
-`Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1558
 
@@ -384,11 +384,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1558
 
 ##### Returns
 
-`Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1559
 
@@ -404,11 +404,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1559
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1559
 
 #### Call Signature
 
-> **deactivate**(`request`): `Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1522
 
@@ -428,11 +428,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1522
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivate**(`request`, `metadata`): `Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1523
 
@@ -448,11 +448,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1523
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivate**(`request`, `metadata`, `options`): `Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1524
 
@@ -468,15 +468,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1524
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivate**(`request`): `Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1641
 
@@ -488,11 +488,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1641
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivate**(`request`, `metadata`): `Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1642
 
@@ -508,11 +508,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1642
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivate**(`request`, `metadata`, `options`): `Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1643
 
@@ -528,11 +528,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1643
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1643
 
 #### Call Signature
 
-> **deactivateByAwsId**(`request`): `Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivateByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1537
 
@@ -552,11 +552,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1537
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivateByAwsId**(`request`, `metadata`): `Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivateByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1538
 
@@ -572,11 +572,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1538
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivateByAwsId**(`request`, `metadata`, `options`): `Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivateByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1539
 
@@ -592,15 +592,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1539
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivateByAwsId**(`request`): `Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivateByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1710
 
@@ -612,11 +612,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1710
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivateByAwsId**(`request`, `metadata`): `Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivateByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1711
 
@@ -632,11 +632,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1711
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deactivateByAwsId**(`request`, `metadata`, `options`): `Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deactivateByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1712
 
@@ -652,11 +652,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1712
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -664,7 +664,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1712
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1516
 
@@ -676,11 +676,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1516
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1517
 
@@ -696,11 +696,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1517
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1518
 
@@ -716,15 +716,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1518
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1611
 
@@ -736,11 +736,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1611
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1612
 
@@ -756,11 +756,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1612
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1613
 
@@ -776,11 +776,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1613
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -788,7 +788,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1613
 
 #### Call Signature
 
-> **deleteByAwsId**(`request`): `Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deleteByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1531
 
@@ -800,11 +800,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1531
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deleteByAwsId**(`request`, `metadata`): `Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deleteByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1532
 
@@ -820,11 +820,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1532
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deleteByAwsId**(`request`, `metadata`, `options`): `Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deleteByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1533
 
@@ -840,15 +840,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1533
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deleteByAwsId**(`request`): `Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deleteByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1680
 
@@ -860,11 +860,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1680
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deleteByAwsId**(`request`, `metadata`): `Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deleteByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1681
 
@@ -880,11 +880,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1681
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **deleteByAwsId**(`request`, `metadata`, `options`): `Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **deleteByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1682
 
@@ -900,11 +900,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1682
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -912,7 +912,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1682
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1507
 
@@ -924,11 +924,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1507
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1508
 
@@ -944,11 +944,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1508
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1509
 
@@ -964,15 +964,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1509
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1572
 
@@ -984,11 +984,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1572
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1573
 
@@ -1004,11 +1004,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1573
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1574
 
@@ -1024,11 +1024,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1574
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 ***
 
@@ -1036,7 +1036,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1574
 
 #### Call Signature
 
-> **getByAwsId**(`request`): `Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **getByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1528
 
@@ -1048,11 +1048,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1528
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **getByAwsId**(`request`, `metadata`): `Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **getByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1529
 
@@ -1068,11 +1068,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1529
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **getByAwsId**(`request`, `metadata`, `options`): `Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **getByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1530
 
@@ -1088,15 +1088,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1530
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **getByAwsId**(`request`): `Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **getByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1668
 
@@ -1108,11 +1108,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1668
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **getByAwsId**(`request`, `metadata`): `Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **getByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1669
 
@@ -1128,11 +1128,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1669
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 #### Call Signature
 
-> **getByAwsId**(`request`, `metadata`, `options`): `Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+> **getByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1670
 
@@ -1148,11 +1148,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1670
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
 ***
 
@@ -1172,7 +1172,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1553
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1510
 
@@ -1184,11 +1184,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1510
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1511
 
@@ -1204,11 +1204,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1511
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1512
 
@@ -1224,15 +1224,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1512
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1584
 
@@ -1244,11 +1244,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1584
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1585
 
@@ -1264,11 +1264,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1585
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1586
 
@@ -1284,11 +1284,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1586
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 ***
 
@@ -1296,7 +1296,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1586
 
 #### Call Signature
 
-> **listByAccount**(`request`): `Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **listByAccount**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1525
 
@@ -1308,11 +1308,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1525
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **listByAccount**(`request`, `metadata`): `Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **listByAccount**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1526
 
@@ -1328,11 +1328,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1526
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **listByAccount**(`request`, `metadata`, `options`): `Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **listByAccount**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1527
 
@@ -1348,15 +1348,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1527
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **listByAccount**(`request`): `Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **listByAccount**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1656
 
@@ -1368,11 +1368,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1656
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **listByAccount**(`request`, `metadata`): `Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **listByAccount**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1657
 
@@ -1388,11 +1388,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1657
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 #### Call Signature
 
-> **listByAccount**(`request`, `metadata`, `options`): `Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+> **listByAccount**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1658
 
@@ -1408,11 +1408,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1658
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
 ***
 
@@ -1420,7 +1420,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1658
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1513
 
@@ -1432,11 +1432,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1513
 
 ##### Returns
 
-`Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1514
 
@@ -1452,11 +1452,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1514
 
 ##### Returns
 
-`Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1515
 
@@ -1472,15 +1472,15 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1515
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1596
 
@@ -1492,11 +1492,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1596
 
 ##### Returns
 
-`Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1597
 
@@ -1512,11 +1512,11 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1597
 
 ##### Returns
 
-`Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1598
 
@@ -1532,8 +1532,8 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1598
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

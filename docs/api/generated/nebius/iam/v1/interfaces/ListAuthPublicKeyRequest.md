@@ -6,7 +6,7 @@
 
 # Interface: ListAuthPublicKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3884
+Defined in: src/generated/nebius/iam/v1/index.ts:3881
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3884
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3886
+Defined in: src/generated/nebius/iam/v1/index.ts:3883
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3886
 
 > **$type**: `"nebius.iam.v1.ListAuthPublicKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3885
+Defined in: src/generated/nebius/iam/v1/index.ts:3882
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3885
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3907
+Defined in: src/generated/nebius/iam/v1/index.ts:3904
 
 A filter to narrow down the results based on specific criteria.
 
@@ -38,9 +38,9 @@ A filter to narrow down the results based on specific criteria.
 
 ### pageSize?
 
-> `optional` **pageSize**: `Long`
+> `optional` **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3897
+Defined in: src/generated/nebius/iam/v1/index.ts:3894
 
 Specifies the maximum number of items to return in the response.
  Default value: 10
@@ -51,7 +51,7 @@ Specifies the maximum number of items to return in the response.
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3902
+Defined in: src/generated/nebius/iam/v1/index.ts:3899
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -61,6 +61,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3891
+Defined in: src/generated/nebius/iam/v1/index.ts:3888
 
 Represents the container ID.

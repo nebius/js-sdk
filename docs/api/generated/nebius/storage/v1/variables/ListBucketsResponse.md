@@ -6,6 +6,6 @@
 
 # Variable: ListBucketsResponse
 
-> **ListBucketsResponse**: `MessageFns`\<[`ListBucketsResponse`](../interfaces/ListBucketsResponse.md), `"nebius.storage.v1.ListBucketsResponse"`\>
+> **ListBucketsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListBucketsResponse`](../interfaces/ListBucketsResponse.md), `"nebius.storage.v1.ListBucketsResponse"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1443

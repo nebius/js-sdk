@@ -6,6 +6,6 @@
 
 # Type Alias: StaticKeySpec\_ClientService
 
-> **StaticKeySpec\_ClientService** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"CLIENT_SERVICE_UNSPECIFIED"` \| `"OBSERVABILITY"` \| `"CONTAINER_REGISTRY"`\>
+> **StaticKeySpec\_ClientService** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"CLIENT_SERVICE_UNSPECIFIED"` \| `"OBSERVABILITY"` \| `"CONTAINER_REGISTRY"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19050
+Defined in: src/generated/nebius/iam/v1/index.ts:19047

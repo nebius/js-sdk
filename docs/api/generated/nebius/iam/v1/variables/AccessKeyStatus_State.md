@@ -6,6 +6,6 @@
 
 # Variable: AccessKeyStatus\_State
 
-> **AccessKeyStatus\_State**: `AccessKeyStatus_StateClass`
+> **AccessKeyStatus\_State**: [`AccessKeyStatus_StateClass`](../type-aliases/AccessKeyStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1766
+Defined in: src/generated/nebius/iam/v1/index.ts:1763

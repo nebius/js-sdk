@@ -6,7 +6,7 @@
 
 # Class: TenantUserAccountService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20456
+Defined in: src/generated/nebius/iam/v1/index.ts:20453
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20456
 
 > **new TenantUserAccountService**(`sdk`): `TenantUserAccountService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20477
+Defined in: src/generated/nebius/iam/v1/index.ts:20474
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20477
 
 > **$type**: `"nebius.iam.v1.TenantUserAccountService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20457
+Defined in: src/generated/nebius/iam/v1/index.ts:20454
 
 ## Methods
 
@@ -44,69 +44,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20457
 
 #### Call Signature
 
-> **block**(`request`): `Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **block**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20464
-
-##### Parameters
-
-###### request
-
-[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md)
-
-##### Returns
-
-`Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **block**(`request`, `metadata`): `Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20465
-
-##### Parameters
-
-###### request
-
-[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **block**(`request`, `metadata`, `options`): `Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20466
-
-##### Parameters
-
-###### request
-
-[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **block**(`request`): `Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20511
+Defined in: src/generated/nebius/iam/v1/index.ts:20461
 
 ##### Parameters
 
@@ -116,13 +56,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20511
 
 ##### Returns
 
-`Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **block**(`request`, `metadata`): `Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **block**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20512
+Defined in: src/generated/nebius/iam/v1/index.ts:20462
 
 ##### Parameters
 
@@ -136,13 +76,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20512
 
 ##### Returns
 
-`Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **block**(`request`, `metadata`, `options`): `Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **block**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20513
+Defined in: src/generated/nebius/iam/v1/index.ts:20463
 
 ##### Parameters
 
@@ -156,11 +96,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20513
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **block**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20508
+
+##### Parameters
+
+###### request
+
+[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **block**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20509
+
+##### Parameters
+
+###### request
+
+[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **block**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20510
+
+##### Parameters
+
+###### request
+
+[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,69 +168,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20513
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20458
-
-##### Parameters
-
-###### request
-
-[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md)
-
-##### Returns
-
-`Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20459
-
-##### Parameters
-
-###### request
-
-[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20460
-
-##### Parameters
-
-###### request
-
-[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20487
+Defined in: src/generated/nebius/iam/v1/index.ts:20455
 
 ##### Parameters
 
@@ -240,13 +180,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20487
 
 ##### Returns
 
-`Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20488
+Defined in: src/generated/nebius/iam/v1/index.ts:20456
 
 ##### Parameters
 
@@ -260,13 +200,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20488
 
 ##### Returns
 
-`Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20489
+Defined in: src/generated/nebius/iam/v1/index.ts:20457
 
 ##### Parameters
 
@@ -280,11 +220,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20489
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20484
+
+##### Parameters
+
+###### request
+
+[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20485
+
+##### Parameters
+
+###### request
+
+[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20486
+
+##### Parameters
+
+###### request
+
+[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), [`TenantUserAccount`](../interfaces/TenantUserAccount.md)\>
 
 ***
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20489
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20483
+Defined in: src/generated/nebius/iam/v1/index.ts:20480
 
 #### Returns
 
@@ -304,69 +304,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20483
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20461
-
-##### Parameters
-
-###### request
-
-[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md)
-
-##### Returns
-
-`Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`): `Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20462
-
-##### Parameters
-
-###### request
-
-[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20463
-
-##### Parameters
-
-###### request
-
-[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`): `Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20499
+Defined in: src/generated/nebius/iam/v1/index.ts:20458
 
 ##### Parameters
 
@@ -376,13 +316,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20499
 
 ##### Returns
 
-`Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20500
+Defined in: src/generated/nebius/iam/v1/index.ts:20459
 
 ##### Parameters
 
@@ -396,13 +336,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20500
 
 ##### Returns
 
-`Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20501
+Defined in: src/generated/nebius/iam/v1/index.ts:20460
 
 ##### Parameters
 
@@ -416,11 +356,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20501
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20496
+
+##### Parameters
+
+###### request
+
+[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20497
+
+##### Parameters
+
+###### request
+
+[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20498
+
+##### Parameters
+
+###### request
+
+[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantUserAccountsRequest`](../interfaces/ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](../interfaces/ListTenantUserAccountsResponse.md)\>
 
 ***
 
@@ -428,69 +428,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20501
 
 #### Call Signature
 
-> **unblock**(`request`): `Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **unblock**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20467
-
-##### Parameters
-
-###### request
-
-[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md)
-
-##### Returns
-
-`Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **unblock**(`request`, `metadata`): `Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20468
-
-##### Parameters
-
-###### request
-
-[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **unblock**(`request`, `metadata`, `options`): `Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20469
-
-##### Parameters
-
-###### request
-
-[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **unblock**(`request`): `Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:20526
+Defined in: src/generated/nebius/iam/v1/index.ts:20464
 
 ##### Parameters
 
@@ -500,13 +440,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20526
 
 ##### Returns
 
-`Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **unblock**(`request`, `metadata`): `Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **unblock**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20527
+Defined in: src/generated/nebius/iam/v1/index.ts:20465
 
 ##### Parameters
 
@@ -520,13 +460,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20527
 
 ##### Returns
 
-`Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **unblock**(`request`, `metadata`, `options`): `Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **unblock**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20528
+Defined in: src/generated/nebius/iam/v1/index.ts:20466
 
 ##### Parameters
 
@@ -540,8 +480,68 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20528
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **unblock**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20523
+
+##### Parameters
+
+###### request
+
+[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **unblock**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20524
+
+##### Parameters
+
+###### request
+
+[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **unblock**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:20525
+
+##### Parameters
+
+###### request
+
+[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UnblockTenantUserAccountRequest`](../interfaces/UnblockTenantUserAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

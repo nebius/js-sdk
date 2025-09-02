@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:594
 
 ### createdAt?
 
-> `optional` **createdAt**: `Dayjs`
+> `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/registry/v1/index.ts:603
 
@@ -68,7 +68,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:597
 
 ### size
 
-> **size**: `Long`
+> **size**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/registry/v1/index.ts:600
 
@@ -92,6 +92,6 @@ Defined in: src/generated/nebius/registry/v1/index.ts:602
 
 ### updatedAt?
 
-> `optional` **updatedAt**: `Dayjs`
+> `optional` **updatedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/registry/v1/index.ts:604

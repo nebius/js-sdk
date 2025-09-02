@@ -6,6 +6,6 @@
 
 # Variable: DiskSpec\_DiskType
 
-> **DiskSpec\_DiskType**: `DiskSpec_DiskTypeClass`
+> **DiskSpec\_DiskType**: [`DiskSpec_DiskTypeClass`](../type-aliases/DiskSpec_DiskTypeClass.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:926

@@ -6,6 +6,6 @@
 
 # Variable: PublicIPAddress
 
-> **PublicIPAddress**: `MessageFns`\<[`PublicIPAddress`](../interfaces/PublicIPAddress.md), `"nebius.mk8s.v1.PublicIPAddress"`\>
+> **PublicIPAddress**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PublicIPAddress`](../interfaces/PublicIPAddress.md), `"nebius.mk8s.v1.PublicIPAddress"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5114

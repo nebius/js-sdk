@@ -6,6 +6,6 @@
 
 # Variable: FilesystemStatus
 
-> **FilesystemStatus**: `MessageFns`\<[`FilesystemStatus`](../interfaces/FilesystemStatus.md), `"nebius.compute.v1alpha1.FilesystemStatus"`\>
+> **FilesystemStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FilesystemStatus`](../interfaces/FilesystemStatus.md), `"nebius.compute.v1alpha1.FilesystemStatus"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2959
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2953

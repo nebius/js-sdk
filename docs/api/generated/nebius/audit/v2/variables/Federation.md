@@ -6,6 +6,6 @@
 
 # Variable: Federation
 
-> **Federation**: `MessageFns`\<[`Federation`](../interfaces/Federation.md), `"nebius.audit.v2.Federation"`\>
+> **Federation**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Federation`](../interfaces/Federation.md), `"nebius.audit.v2.Federation"`\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:1289

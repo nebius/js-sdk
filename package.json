@@ -30,6 +30,7 @@
     "test:e2e": "jest --runInBand --testPathPatterns='e2e_storage_bucket.test.ts'",
     "test": "jest --maxWorkers=8",
     "test:watch": "jest --watch",
+    "docs": "typedoc",
     "lint": "eslint src/**/*.ts --no-warn-ignored",
     "lint:fix": "eslint src/**/*.ts --fix --no-warn-ignored && npm run format",
     "format": "prettier --write .",

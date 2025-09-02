@@ -6,6 +6,6 @@
 
 # Variable: DeleteRequest
 
-> **DeleteRequest**: `MessageFns`\<[`DeleteRequest`](../interfaces/DeleteRequest.md), `"nebius.msp.v1alpha1.DeleteRequest"`\>
+> **DeleteRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteRequest`](../interfaces/DeleteRequest.md), `"nebius.msp.v1alpha1.DeleteRequest"`\>
 
 Defined in: src/generated/nebius/msp/v1alpha1/index.ts:398

@@ -6,7 +6,7 @@
 
 # Class: SessionManagementService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17696
+Defined in: src/generated/nebius/iam/v1/index.ts:17693
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17696
 
 > **new SessionManagementService**(`sdk`): `SessionManagementService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17708
+Defined in: src/generated/nebius/iam/v1/index.ts:17705
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17708
 
 > **$type**: `"nebius.iam.v1.SessionManagementService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17697
+Defined in: src/generated/nebius/iam/v1/index.ts:17694
 
 ## Methods
 
@@ -44,69 +44,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17697
 
 #### Call Signature
 
-> **revoke**(`request`): `Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+> **revoke**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17698
-
-##### Parameters
-
-###### request
-
-[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md)
-
-##### Returns
-
-`Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
-
-#### Call Signature
-
-> **revoke**(`request`, `metadata`): `Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:17699
-
-##### Parameters
-
-###### request
-
-[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
-
-#### Call Signature
-
-> **revoke**(`request`, `metadata`, `options`): `Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:17700
-
-##### Parameters
-
-###### request
-
-[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
-
-#### Call Signature
-
-> **revoke**(`request`): `Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:17714
+Defined in: src/generated/nebius/iam/v1/index.ts:17695
 
 ##### Parameters
 
@@ -116,13 +56,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17714
 
 ##### Returns
 
-`Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
 #### Call Signature
 
-> **revoke**(`request`, `metadata`): `Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+> **revoke**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17715
+Defined in: src/generated/nebius/iam/v1/index.ts:17696
 
 ##### Parameters
 
@@ -136,13 +76,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17715
 
 ##### Returns
 
-`Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
 #### Call Signature
 
-> **revoke**(`request`, `metadata`, `options`): `Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+> **revoke**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17716
+Defined in: src/generated/nebius/iam/v1/index.ts:17697
 
 ##### Parameters
 
@@ -156,8 +96,68 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17716
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+
+#### Call Signature
+
+> **revoke**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:17711
+
+##### Parameters
+
+###### request
+
+[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+
+#### Call Signature
+
+> **revoke**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:17712
+
+##### Parameters
+
+###### request
+
+[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+
+#### Call Signature
+
+> **revoke**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:17713
+
+##### Parameters
+
+###### request
+
+[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>

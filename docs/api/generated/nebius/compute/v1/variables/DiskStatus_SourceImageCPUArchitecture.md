@@ -6,6 +6,6 @@
 
 # Variable: DiskStatus\_SourceImageCPUArchitecture
 
-> **DiskStatus\_SourceImageCPUArchitecture**: `DiskStatus_SourceImageCPUArchitectureClass`
+> **DiskStatus\_SourceImageCPUArchitecture**: [`DiskStatus_SourceImageCPUArchitectureClass`](../type-aliases/DiskStatus_SourceImageCPUArchitectureClass.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:993

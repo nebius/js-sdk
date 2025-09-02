@@ -6,7 +6,7 @@
 
 # ~~Interface: InstanceServiceServer~~
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6340
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6328
 
 ## Deprecated
 
@@ -26,7 +26,7 @@ Deprecated.
 
 > **create**: `handleUnaryCall`\<[`CreateInstanceRequest`](CreateInstanceRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6344
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6332
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6344
 
 > **delete**: `handleUnaryCall`\<[`DeleteInstanceRequest`](DeleteInstanceRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6346
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6334
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6346
 
 > **get**: `handleUnaryCall`\<[`GetInstanceRequest`](GetInstanceRequest.md), [`Instance`](Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6341
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6329
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6341
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6342
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6330
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6342
 
 > **list**: `handleUnaryCall`\<[`ListInstancesRequest`](ListInstancesRequest.md), [`ListInstancesResponse`](ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6343
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6331
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6343
 
 > **listOperationsByParent**: `handleUnaryCall`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6349
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6337
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6349
 
 > **start**: `handleUnaryCall`\<[`StartInstanceRequest`](StartInstanceRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6347
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6335
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6347
 
 > **stop**: `handleUnaryCall`\<[`StopInstanceRequest`](StopInstanceRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6348
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6336
 
 ***
 
@@ -90,4 +90,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6348
 
 > **update**: `handleUnaryCall`\<[`UpdateInstanceRequest`](UpdateInstanceRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6345
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6333

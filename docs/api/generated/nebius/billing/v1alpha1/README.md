@@ -28,6 +28,7 @@
 
 - [CalculatorServiceServiceDescription](type-aliases/CalculatorServiceServiceDescription.md)
 - [OfferType](type-aliases/OfferType.md)
+- [OfferTypeClass](type-aliases/OfferTypeClass.md)
 
 ## Variables
 

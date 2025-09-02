@@ -6,7 +6,7 @@
 
 # Interface: GetServiceAccountByNameRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16240
+Defined in: src/generated/nebius/iam/v1/index.ts:16237
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16240
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16242
+Defined in: src/generated/nebius/iam/v1/index.ts:16239
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16242
 
 > **$type**: `"nebius.iam.v1.GetServiceAccountByNameRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16241
+Defined in: src/generated/nebius/iam/v1/index.ts:16238
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16241
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16244
+Defined in: src/generated/nebius/iam/v1/index.ts:16241
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16244
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16243
+Defined in: src/generated/nebius/iam/v1/index.ts:16240

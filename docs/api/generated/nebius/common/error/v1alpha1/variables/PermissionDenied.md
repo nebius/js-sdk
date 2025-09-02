@@ -6,6 +6,6 @@
 
 # Variable: PermissionDenied
 
-> **PermissionDenied**: `MessageFns`\<[`PermissionDenied`](../interfaces/PermissionDenied.md), `"nebius.common.error.v1alpha1.PermissionDenied"`\>
+> **PermissionDenied**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PermissionDenied`](../interfaces/PermissionDenied.md), `"nebius.common.error.v1alpha1.PermissionDenied"`\>
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:892

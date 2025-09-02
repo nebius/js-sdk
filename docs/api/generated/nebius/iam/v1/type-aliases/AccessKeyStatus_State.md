@@ -6,6 +6,6 @@
 
 # Type Alias: AccessKeyStatus\_State
 
-> **AccessKeyStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"EXPIRED"` \| `"DELETING"` \| `"DELETED"`\>
+> **AccessKeyStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"EXPIRED"` \| `"DELETING"` \| `"DELETED"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1766
+Defined in: src/generated/nebius/iam/v1/index.ts:1763

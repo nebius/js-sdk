@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3568
 
 ### max
 
-> **max**: `Long`
+> **max**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3571
 
@@ -36,6 +36,6 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3571
 
 ### min
 
-> **min**: `Long`
+> **min**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3570

@@ -6,6 +6,6 @@
 
 # Variable: ListTenantsRequest
 
-> **ListTenantsRequest**: `MessageFns`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), `"nebius.iam.v1.ListTenantsRequest"`\>
+> **ListTenantsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), `"nebius.iam.v1.ListTenantsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19539
+Defined in: src/generated/nebius/iam/v1/index.ts:19536

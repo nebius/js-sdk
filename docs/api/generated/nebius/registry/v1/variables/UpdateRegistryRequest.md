@@ -6,6 +6,6 @@
 
 # Variable: UpdateRegistryRequest
 
-> **UpdateRegistryRequest**: `MessageFns`\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `"nebius.registry.v1.UpdateRegistryRequest"`\>
+> **UpdateRegistryRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `"nebius.registry.v1.UpdateRegistryRequest"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1281

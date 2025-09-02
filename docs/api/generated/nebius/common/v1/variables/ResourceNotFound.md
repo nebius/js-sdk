@@ -6,6 +6,6 @@
 
 # Variable: ResourceNotFound
 
-> **ResourceNotFound**: `MessageFns`\<[`ResourceNotFound`](../interfaces/ResourceNotFound.md), `"nebius.common.v1.ResourceNotFound"`\>
+> **ResourceNotFound**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceNotFound`](../interfaces/ResourceNotFound.md), `"nebius.common.v1.ResourceNotFound"`\>
 
 Defined in: src/generated/nebius/common/v1/index.ts:939

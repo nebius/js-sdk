@@ -6,6 +6,6 @@
 
 # Type Alias: K8sReleaseStatus\_State
 
-> **K8sReleaseStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CREATED"` \| `"RUNNING"` \| `"DEPLOYED"` \| `"FAILED"` \| `"INSTALLING"`\>
+> **K8sReleaseStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CREATED"` \| `"RUNNING"` \| `"DEPLOYED"` \| `"FAILED"` \| `"INSTALLING"`\>
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:852

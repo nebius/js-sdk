@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:257
 
 ### multipartObjectsQuantity
 
-> **multipartObjectsQuantity**: `Long`
+> **multipartObjectsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:261
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:261
 
 ### multipartObjectsSize
 
-> **multipartObjectsSize**: `Long`
+> **multipartObjectsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:262
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:262
 
 ### simpleObjectsQuantity
 
-> **simpleObjectsQuantity**: `Long`
+> **simpleObjectsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:259
 
@@ -54,6 +54,6 @@ Defined in: src/generated/nebius/storage/v1/index.ts:259
 
 ### simpleObjectsSize
 
-> **simpleObjectsSize**: `Long`
+> **simpleObjectsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/storage/v1/index.ts:260

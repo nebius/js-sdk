@@ -6,6 +6,6 @@
 
 # Variable: ListProjectsRequest
 
-> **ListProjectsRequest**: `MessageFns`\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), `"nebius.iam.v1.ListProjectsRequest"`\>
+> **ListProjectsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), `"nebius.iam.v1.ListProjectsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15489
+Defined in: src/generated/nebius/iam/v1/index.ts:15486

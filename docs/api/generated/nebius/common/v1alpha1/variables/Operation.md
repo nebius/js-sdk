@@ -6,6 +6,6 @@
 
 # Variable: Operation
 
-> **Operation**: `MessageFns`\<[`Operation`](../interfaces/Operation.md), `"nebius.common.v1alpha1.Operation"`\>
+> **Operation**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Operation`](../interfaces/Operation.md), `"nebius.common.v1alpha1.Operation"`\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:708
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:705

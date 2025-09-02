@@ -6,6 +6,6 @@
 
 # Variable: ListMaintenancesResponse
 
-> **ListMaintenancesResponse**: `MessageFns`\<[`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md), `"nebius.maintenance.v1alpha1.ListMaintenancesResponse"`\>
+> **ListMaintenancesResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md), `"nebius.maintenance.v1alpha1.ListMaintenancesResponse"`\>
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:103

@@ -6,6 +6,6 @@
 
 # Variable: EstimateResponse
 
-> **EstimateResponse**: `MessageFns`\<[`EstimateResponse`](../interfaces/EstimateResponse.md), `"nebius.billing.v1alpha1.EstimateResponse"`\>
+> **EstimateResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`EstimateResponse`](../interfaces/EstimateResponse.md), `"nebius.billing.v1alpha1.EstimateResponse"`\>
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:140

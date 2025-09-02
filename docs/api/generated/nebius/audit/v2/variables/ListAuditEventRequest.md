@@ -6,6 +6,6 @@
 
 # Variable: ListAuditEventRequest
 
-> **ListAuditEventRequest**: `MessageFns`\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), `"nebius.audit.v2.ListAuditEventRequest"`\>
+> **ListAuditEventRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), `"nebius.audit.v2.ListAuditEventRequest"`\>
 
 Defined in: src/generated/nebius/audit/v2/index.ts:105

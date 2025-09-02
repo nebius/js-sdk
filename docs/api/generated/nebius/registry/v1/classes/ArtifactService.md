@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:481
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:488
 
@@ -56,11 +56,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:488
 
 ##### Returns
 
-`Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:489
 
@@ -76,11 +76,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:489
 
 ##### Returns
 
-`Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:490
 
@@ -96,15 +96,15 @@ Defined in: src/generated/nebius/registry/v1/index.ts:490
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:532
 
@@ -116,11 +116,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:532
 
 ##### Returns
 
-`Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:533
 
@@ -136,11 +136,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:533
 
 ##### Returns
 
-`Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:534
 
@@ -156,11 +156,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:534
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:534
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:482
 
@@ -180,11 +180,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:482
 
 ##### Returns
 
-`Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:483
 
@@ -200,11 +200,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:483
 
 ##### Returns
 
-`Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:484
 
@@ -220,15 +220,15 @@ Defined in: src/generated/nebius/registry/v1/index.ts:484
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:508
 
@@ -240,11 +240,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:508
 
 ##### Returns
 
-`Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:509
 
@@ -260,11 +260,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:509
 
 ##### Returns
 
-`Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:510
 
@@ -280,11 +280,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:510
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
 ***
 
@@ -304,7 +304,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:504
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:485
 
@@ -316,11 +316,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:485
 
 ##### Returns
 
-`Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:486
 
@@ -336,11 +336,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:486
 
 ##### Returns
 
-`Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:487
 
@@ -356,15 +356,15 @@ Defined in: src/generated/nebius/registry/v1/index.ts:487
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:520
 
@@ -376,11 +376,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:520
 
 ##### Returns
 
-`Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:521
 
@@ -396,11 +396,11 @@ Defined in: src/generated/nebius/registry/v1/index.ts:521
 
 ##### Returns
 
-`Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:522
 
@@ -416,8 +416,8 @@ Defined in: src/generated/nebius/registry/v1/index.ts:522
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>

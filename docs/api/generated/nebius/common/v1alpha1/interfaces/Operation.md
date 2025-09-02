@@ -6,7 +6,7 @@
 
 # ~~Interface: Operation~~
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:708
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:705
 
 ## Deprecated
 
@@ -18,7 +18,7 @@ Deprecated.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:710
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:707
 
 ***
 
@@ -26,15 +26,15 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:710
 
 > **$type**: `"nebius.common.v1alpha1.Operation"`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:709
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:706
 
 ***
 
 ### ~~createdAt?~~
 
-> `optional` **createdAt**: `Dayjs`
+> `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:725
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:722
 
 Creation timestamp.
 
@@ -44,7 +44,7 @@ Creation timestamp.
 
 > **createdBy**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:730
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:727
 
 ID of the user or service account who initiated the operation.
 
@@ -54,7 +54,7 @@ ID of the user or service account who initiated the operation.
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:720
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:717
 
 Human readable description of the operation. 0-256 characters long.
 
@@ -62,9 +62,9 @@ Human readable description of the operation. 0-256 characters long.
 
 ### ~~finishedAt?~~
 
-> `optional` **finishedAt**: `Dayjs`
+> `optional` **finishedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:735
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:732
 
 The time when the operation finished.
 
@@ -74,7 +74,7 @@ The time when the operation finished.
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:715
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:712
 
 ID of the operation.
 
@@ -84,7 +84,7 @@ ID of the operation.
 
 > `optional` **progressData**: `object`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:785
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:782
 
 Additional information about the progress of an operation, e.g., a progress percentage.
  MAY be absent while the operation is running, MUST be absent after the operation has completed.
@@ -106,7 +106,7 @@ Additional information about the progress of an operation, e.g., a progress perc
 
 > `optional` **request**: `object`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:740
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:737
 
 The request that generated this operation.
 
@@ -124,7 +124,7 @@ The request that generated this operation.
 
 > **requestHeaders**: `object`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:750
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:747
 
 The request headers that are essential for the request that generated the operation.
  For instance, `x-resetmask`. Without these headers the request might have been processed
@@ -143,7 +143,7 @@ The request headers that are essential for the request that generated the operat
 
 > `optional` **resource**: `object`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:776
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:773
 
 Snapshot of the resource at the moment this operation started.
  - [resource.spec] and [resource.metadata] reflect the desired resource state at the moment
@@ -174,7 +174,7 @@ Snapshot of the resource at the moment this operation started.
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:758
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:755
 
 ID of the resource that this operation creates, updates, deletes or otherwise changes.
 
@@ -187,7 +187,7 @@ ID of the resource that this operation creates, updates, deletes or otherwise ch
 
 > `optional` **status**: `Status`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:800
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:797
 
 The status of this operation. Set when this operation is completed.
  See https://github.com/grpc/grpc/blob/master/src/proto/grpc/status/status.proto.

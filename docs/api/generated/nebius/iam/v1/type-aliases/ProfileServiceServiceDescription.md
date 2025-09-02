@@ -8,4 +8,4 @@
 
 > **ProfileServiceServiceDescription** = *typeof* [`ProfileServiceServiceDescription`](../variables/ProfileServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15123
+Defined in: src/generated/nebius/iam/v1/index.ts:15120

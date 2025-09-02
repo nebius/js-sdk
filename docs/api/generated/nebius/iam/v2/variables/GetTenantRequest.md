@@ -6,6 +6,6 @@
 
 # Variable: GetTenantRequest
 
-> **GetTenantRequest**: `MessageFns`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), `"nebius.iam.v2.GetTenantRequest"`\>
+> **GetTenantRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), `"nebius.iam.v2.GetTenantRequest"`\>
 
 Defined in: src/generated/nebius/iam/v2/index.ts:2199

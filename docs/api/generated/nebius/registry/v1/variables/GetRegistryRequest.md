@@ -6,6 +6,6 @@
 
 # Variable: GetRegistryRequest
 
-> **GetRegistryRequest**: `MessageFns`\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), `"nebius.registry.v1.GetRegistryRequest"`\>
+> **GetRegistryRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), `"nebius.registry.v1.GetRegistryRequest"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:838

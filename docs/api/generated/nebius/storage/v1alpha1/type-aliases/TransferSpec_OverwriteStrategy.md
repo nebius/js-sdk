@@ -6,6 +6,6 @@
 
 # Type Alias: TransferSpec\_OverwriteStrategy
 
-> **TransferSpec\_OverwriteStrategy** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"OVERWRITE_STRATEGY_UNSPECIFIED"` \| `"NEVER"` \| `"IF_NEWER"` \| `"ALWAYS"`\>
+> **TransferSpec\_OverwriteStrategy** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"OVERWRITE_STRATEGY_UNSPECIFIED"` \| `"NEVER"` \| `"IF_NEWER"` \| `"ALWAYS"`\>
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1400

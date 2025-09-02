@@ -6,6 +6,6 @@
 
 # Variable: AuthPublicKeySpec
 
-> **AuthPublicKeySpec**: `MessageFns`\<[`AuthPublicKeySpec`](../interfaces/AuthPublicKeySpec.md), `"nebius.iam.v1.AuthPublicKeySpec"`\>
+> **AuthPublicKeySpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AuthPublicKeySpec`](../interfaces/AuthPublicKeySpec.md), `"nebius.iam.v1.AuthPublicKeySpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5105
+Defined in: src/generated/nebius/iam/v1/index.ts:5102

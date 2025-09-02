@@ -6,6 +6,6 @@
 
 # Variable: NetworkStatus
 
-> **NetworkStatus**: `MessageFns`\<[`NetworkStatus`](../interfaces/NetworkStatus.md), `"nebius.vpc.v1.NetworkStatus"`\>
+> **NetworkStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkStatus`](../interfaces/NetworkStatus.md), `"nebius.vpc.v1.NetworkStatus"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:4097

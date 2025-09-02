@@ -6,6 +6,6 @@
 
 # Variable: BadRequest
 
-> **BadRequest**: `MessageFns`\<[`BadRequest`](../interfaces/BadRequest.md), `"nebius.common.v1.BadRequest"`\>
+> **BadRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`BadRequest`](../interfaces/BadRequest.md), `"nebius.common.v1.BadRequest"`\>
 
 Defined in: src/generated/nebius/common/v1/index.ts:618

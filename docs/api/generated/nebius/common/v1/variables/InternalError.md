@@ -6,6 +6,6 @@
 
 # Variable: InternalError
 
-> **InternalError**: `MessageFns`\<[`InternalError`](../interfaces/InternalError.md), `"nebius.common.v1.InternalError"`\>
+> **InternalError**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`InternalError`](../interfaces/InternalError.md), `"nebius.common.v1.InternalError"`\>
 
 Defined in: src/generated/nebius/common/v1/index.ts:1589

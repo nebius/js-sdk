@@ -6,6 +6,6 @@
 
 # Variable: Problem
 
-> **Problem**: `MessageFns`\<[`Problem`](../interfaces/Problem.md), `"nebius.mk8s.v1.Problem"`\>
+> **Problem**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Problem`](../interfaces/Problem.md), `"nebius.mk8s.v1.Problem"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:6371

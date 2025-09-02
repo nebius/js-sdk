@@ -6,6 +6,6 @@
 
 # Variable: AuthenticationType
 
-> **AuthenticationType**: `AuthenticationTypeClass`
+> **AuthenticationType**: [`AuthenticationTypeClass`](../type-aliases/AuthenticationTypeClass.md)
 
 Defined in: src/generated/nebius/audit/v2/index.ts:932

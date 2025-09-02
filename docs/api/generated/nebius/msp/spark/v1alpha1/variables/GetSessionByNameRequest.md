@@ -6,6 +6,6 @@
 
 # Variable: GetSessionByNameRequest
 
-> **GetSessionByNameRequest**: `MessageFns`\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), `"nebius.msp.spark.v1alpha1.GetSessionByNameRequest"`\>
+> **GetSessionByNameRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), `"nebius.msp.spark.v1alpha1.GetSessionByNameRequest"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3953

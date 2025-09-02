@@ -6,6 +6,6 @@
 
 # Type Alias: ImageStatus\_State
 
-> **ImageStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"UPDATING"` \| `"DELETING"` \| `"ERROR"`\>
+> **ImageStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"UPDATING"` \| `"DELETING"` \| `"ERROR"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5660

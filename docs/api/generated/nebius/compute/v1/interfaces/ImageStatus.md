@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5961
 
 ### minDiskSizeBytes
 
-> **minDiskSizeBytes**: `Long`
+> **minDiskSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5966
 
@@ -62,6 +62,6 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5964
 
 ### storageSizeBytes
 
-> **storageSizeBytes**: `Long`
+> **storageSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5965

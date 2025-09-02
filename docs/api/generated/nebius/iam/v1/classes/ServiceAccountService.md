@@ -6,7 +6,7 @@
 
 # Class: ServiceAccountService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16894
+Defined in: src/generated/nebius/iam/v1/index.ts:16891
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16894
 
 > **new ServiceAccountService**(`sdk`): `ServiceAccountService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16921
+Defined in: src/generated/nebius/iam/v1/index.ts:16918
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16921
 
 > **$type**: `"nebius.iam.v1.ServiceAccountService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16895
+Defined in: src/generated/nebius/iam/v1/index.ts:16892
 
 ## Methods
 
@@ -44,69 +44,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16895
 
 #### Call Signature
 
-> **create**(`request`): `Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16896
-
-##### Parameters
-
-###### request
-
-[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md)
-
-##### Returns
-
-`Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`): `Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16897
-
-##### Parameters
-
-###### request
-
-[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16898
-
-##### Parameters
-
-###### request
-
-[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **create**(`request`): `Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16931
+Defined in: src/generated/nebius/iam/v1/index.ts:16893
 
 ##### Parameters
 
@@ -116,13 +56,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16931
 
 ##### Returns
 
-`Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`): `Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16932
+Defined in: src/generated/nebius/iam/v1/index.ts:16894
 
 ##### Parameters
 
@@ -136,13 +76,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16932
 
 ##### Returns
 
-`Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **create**(`request`, `metadata`, `options`): `Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16933
+Defined in: src/generated/nebius/iam/v1/index.ts:16895
 
 ##### Parameters
 
@@ -156,11 +96,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16933
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16928
+
+##### Parameters
+
+###### request
+
+[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16929
+
+##### Parameters
+
+###### request
+
+[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16930
+
+##### Parameters
+
+###### request
+
+[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -168,69 +168,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16933
 
 #### Call Signature
 
-> **delete**(`request`): `Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16911
-
-##### Parameters
-
-###### request
-
-[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md)
-
-##### Returns
-
-`Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16912
-
-##### Parameters
-
-###### request
-
-[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16913
-
-##### Parameters
-
-###### request
-
-[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **delete**(`request`): `Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16997
+Defined in: src/generated/nebius/iam/v1/index.ts:16908
 
 ##### Parameters
 
@@ -240,13 +180,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16997
 
 ##### Returns
 
-`Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`): `Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16998
+Defined in: src/generated/nebius/iam/v1/index.ts:16909
 
 ##### Parameters
 
@@ -260,13 +200,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16998
 
 ##### Returns
 
-`Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **delete**(`request`, `metadata`, `options`): `Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16999
+Defined in: src/generated/nebius/iam/v1/index.ts:16910
 
 ##### Parameters
 
@@ -280,11 +220,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16999
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16994
+
+##### Parameters
+
+###### request
+
+[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16995
+
+##### Parameters
+
+###### request
+
+[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16996
+
+##### Parameters
+
+###### request
+
+[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 ***
 
@@ -292,69 +292,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16999
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16899
-
-##### Parameters
-
-###### request
-
-[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md)
-
-##### Returns
-
-`Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`): `Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16900
-
-##### Parameters
-
-###### request
-
-[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-#### Call Signature
-
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16901
-
-##### Parameters
-
-###### request
-
-[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-#### Call Signature
-
-> **get**(`request`): `Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16946
+Defined in: src/generated/nebius/iam/v1/index.ts:16896
 
 ##### Parameters
 
@@ -364,13 +304,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16946
 
 ##### Returns
 
-`Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16947
+Defined in: src/generated/nebius/iam/v1/index.ts:16897
 
 ##### Parameters
 
@@ -384,13 +324,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16947
 
 ##### Returns
 
-`Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16948
+Defined in: src/generated/nebius/iam/v1/index.ts:16898
 
 ##### Parameters
 
@@ -404,11 +344,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16948
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16943
+
+##### Parameters
+
+###### request
+
+[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16944
+
+##### Parameters
+
+###### request
+
+[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16945
+
+##### Parameters
+
+###### request
+
+[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
 ***
 
@@ -416,69 +416,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16948
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16902
-
-##### Parameters
-
-###### request
-
-[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md)
-
-##### Returns
-
-`Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`): `Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16903
-
-##### Parameters
-
-###### request
-
-[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16904
-
-##### Parameters
-
-###### request
-
-[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-#### Call Signature
-
-> **getByName**(`request`): `Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16958
+Defined in: src/generated/nebius/iam/v1/index.ts:16899
 
 ##### Parameters
 
@@ -488,13 +428,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16958
 
 ##### Returns
 
-`Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16959
+Defined in: src/generated/nebius/iam/v1/index.ts:16900
 
 ##### Parameters
 
@@ -508,13 +448,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16959
 
 ##### Returns
 
-`Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16960
+Defined in: src/generated/nebius/iam/v1/index.ts:16901
 
 ##### Parameters
 
@@ -528,11 +468,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16960
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16955
+
+##### Parameters
+
+###### request
+
+[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16956
+
+##### Parameters
+
+###### request
+
+[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16957
+
+##### Parameters
+
+###### request
+
+[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
 ***
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16960
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16927
+Defined in: src/generated/nebius/iam/v1/index.ts:16924
 
 #### Returns
 
@@ -552,69 +552,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16927
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16905
-
-##### Parameters
-
-###### request
-
-[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md)
-
-##### Returns
-
-`Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`): `Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16906
-
-##### Parameters
-
-###### request
-
-[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16907
-
-##### Parameters
-
-###### request
-
-[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
-
-#### Call Signature
-
-> **list**(`request`): `Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16970
+Defined in: src/generated/nebius/iam/v1/index.ts:16902
 
 ##### Parameters
 
@@ -624,13 +564,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16970
 
 ##### Returns
 
-`Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16971
+Defined in: src/generated/nebius/iam/v1/index.ts:16903
 
 ##### Parameters
 
@@ -644,13 +584,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16971
 
 ##### Returns
 
-`Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16972
+Defined in: src/generated/nebius/iam/v1/index.ts:16904
 
 ##### Parameters
 
@@ -664,11 +604,71 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16972
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16967
+
+##### Parameters
+
+###### request
+
+[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16968
+
+##### Parameters
+
+###### request
+
+[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16969
+
+##### Parameters
+
+###### request
+
+[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
 ***
 
@@ -676,69 +676,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16972
 
 #### Call Signature
 
-> **update**(`request`): `Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16908
-
-##### Parameters
-
-###### request
-
-[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md)
-
-##### Returns
-
-`Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`, `metadata`): `Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16909
-
-##### Parameters
-
-###### request
-
-[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-##### Returns
-
-`Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16910
-
-##### Parameters
-
-###### request
-
-[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md)
-
-###### metadata
-
-`Metadata`
-
-###### options
-
-`Partial`\<`CallOptions`\> & `RetryOptions`
-
-##### Returns
-
-`Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-#### Call Signature
-
-> **update**(`request`): `Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
-
-Defined in: src/generated/nebius/iam/v1/index.ts:16982
+Defined in: src/generated/nebius/iam/v1/index.ts:16905
 
 ##### Parameters
 
@@ -748,13 +688,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16982
 
 ##### Returns
 
-`Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`): `Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16983
+Defined in: src/generated/nebius/iam/v1/index.ts:16906
 
 ##### Parameters
 
@@ -768,13 +708,13 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16983
 
 ##### Returns
 
-`Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
 #### Call Signature
 
-> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16984
+Defined in: src/generated/nebius/iam/v1/index.ts:16907
 
 ##### Parameters
 
@@ -788,8 +728,68 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16984
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16979
+
+##### Parameters
+
+###### request
+
+[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16980
+
+##### Parameters
+
+###### request
+
+[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:16981
+
+##### Parameters
+
+###### request
+
+[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

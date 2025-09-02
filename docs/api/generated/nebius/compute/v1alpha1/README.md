@@ -8,11 +8,11 @@
 
 ## Classes
 
-- [~~DiskService~~](classes/DiskService.md)
-- [~~FilesystemService~~](classes/FilesystemService.md)
-- [~~GpuClusterService~~](classes/GpuClusterService.md)
-- [~~ImageService~~](classes/ImageService.md)
-- [~~InstanceService~~](classes/InstanceService.md)
+- [DiskService](classes/DiskService.md)
+- [FilesystemService](classes/FilesystemService.md)
+- [GpuClusterService](classes/GpuClusterService.md)
+- [ImageService](classes/ImageService.md)
+- [InstanceService](classes/InstanceService.md)
 
 ## Interfaces
 
@@ -81,19 +81,28 @@
 ## Type Aliases
 
 - [AttachedDiskSpec\_AttachMode](type-aliases/AttachedDiskSpec_AttachMode.md)
+- [AttachedDiskSpec\_AttachModeClass](type-aliases/AttachedDiskSpec_AttachModeClass.md)
 - [AttachedFilesystemSpec\_AttachMode](type-aliases/AttachedFilesystemSpec_AttachMode.md)
+- [AttachedFilesystemSpec\_AttachModeClass](type-aliases/AttachedFilesystemSpec_AttachModeClass.md)
 - [~~DiskServiceServiceDescription~~](type-aliases/DiskServiceServiceDescription.md)
 - [DiskSpec\_DiskType](type-aliases/DiskSpec_DiskType.md)
+- [DiskSpec\_DiskTypeClass](type-aliases/DiskSpec_DiskTypeClass.md)
 - [DiskStatus\_State](type-aliases/DiskStatus_State.md)
+- [DiskStatus\_StateClass](type-aliases/DiskStatus_StateClass.md)
 - [~~FilesystemServiceServiceDescription~~](type-aliases/FilesystemServiceServiceDescription.md)
 - [FilesystemSpec\_FilesystemType](type-aliases/FilesystemSpec_FilesystemType.md)
+- [FilesystemSpec\_FilesystemTypeClass](type-aliases/FilesystemSpec_FilesystemTypeClass.md)
 - [FilesystemStatus\_State](type-aliases/FilesystemStatus_State.md)
+- [FilesystemStatus\_StateClass](type-aliases/FilesystemStatus_StateClass.md)
 - [~~GpuClusterServiceServiceDescription~~](type-aliases/GpuClusterServiceServiceDescription.md)
 - [~~ImageServiceServiceDescription~~](type-aliases/ImageServiceServiceDescription.md)
 - [ImageStatus\_State](type-aliases/ImageStatus_State.md)
+- [ImageStatus\_StateClass](type-aliases/ImageStatus_StateClass.md)
 - [InstanceRecoveryPolicy](type-aliases/InstanceRecoveryPolicy.md)
+- [InstanceRecoveryPolicyClass](type-aliases/InstanceRecoveryPolicyClass.md)
 - [~~InstanceServiceServiceDescription~~](type-aliases/InstanceServiceServiceDescription.md)
 - [InstanceStatus\_InstanceState](type-aliases/InstanceStatus_InstanceState.md)
+- [InstanceStatus\_InstanceStateClass](type-aliases/InstanceStatus_InstanceStateClass.md)
 
 ## Variables
 

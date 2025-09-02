@@ -6,6 +6,6 @@
 
 # Variable: ListFederationsResponse
 
-> **ListFederationsResponse**: `MessageFns`\<[`ListFederationsResponse`](../interfaces/ListFederationsResponse.md), `"nebius.iam.v1.ListFederationsResponse"`\>
+> **ListFederationsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListFederationsResponse`](../interfaces/ListFederationsResponse.md), `"nebius.iam.v1.ListFederationsResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8800
+Defined in: src/generated/nebius/iam/v1/index.ts:8797

@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6496
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:6497
 

@@ -6,6 +6,6 @@
 
 # Variable: NodeGroupStatus
 
-> **NodeGroupStatus**: `MessageFns`\<[`NodeGroupStatus`](../interfaces/NodeGroupStatus.md), `"nebius.mk8s.v1alpha1.NodeGroupStatus"`\>
+> **NodeGroupStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeGroupStatus`](../interfaces/NodeGroupStatus.md), `"nebius.mk8s.v1alpha1.NodeGroupStatus"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6169

@@ -6,6 +6,6 @@
 
 # Variable: FederationCertificateSpec
 
-> **FederationCertificateSpec**: `MessageFns`\<[`FederationCertificateSpec`](../interfaces/FederationCertificateSpec.md), `"nebius.iam.v1.FederationCertificateSpec"`\>
+> **FederationCertificateSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FederationCertificateSpec`](../interfaces/FederationCertificateSpec.md), `"nebius.iam.v1.FederationCertificateSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8184
+Defined in: src/generated/nebius/iam/v1/index.ts:8181

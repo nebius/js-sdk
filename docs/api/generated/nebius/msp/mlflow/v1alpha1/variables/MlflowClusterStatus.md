@@ -6,6 +6,6 @@
 
 # Variable: MlflowClusterStatus
 
-> **MlflowClusterStatus**: `MessageFns`\<[`MlflowClusterStatus`](../interfaces/MlflowClusterStatus.md), `"nebius.msp.mlflow.v1alpha1.MlflowClusterStatus"`\>
+> **MlflowClusterStatus**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`MlflowClusterStatus`](../interfaces/MlflowClusterStatus.md), `"nebius.msp.mlflow.v1alpha1.MlflowClusterStatus"`\>
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1259

@@ -8,7 +8,7 @@
 
 > **FederationServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9124
+Defined in: src/generated/nebius/iam/v1/index.ts:9121
 
 ## Type Declaration
 

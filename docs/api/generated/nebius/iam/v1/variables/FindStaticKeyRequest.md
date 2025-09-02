@@ -6,6 +6,6 @@
 
 # Variable: FindStaticKeyRequest
 
-> **FindStaticKeyRequest**: `MessageFns`\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), `"nebius.iam.v1.FindStaticKeyRequest"`\>
+> **FindStaticKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), `"nebius.iam.v1.FindStaticKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18556
+Defined in: src/generated/nebius/iam/v1/index.ts:18553

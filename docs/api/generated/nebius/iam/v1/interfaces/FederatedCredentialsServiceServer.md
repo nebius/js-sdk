@@ -6,7 +6,7 @@
 
 # Interface: FederatedCredentialsServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6577
+Defined in: src/generated/nebius/iam/v1/index.ts:6574
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6577
 
 > **create**: `handleUnaryCall`\<[`CreateFederatedCredentialsRequest`](CreateFederatedCredentialsRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6581
+Defined in: src/generated/nebius/iam/v1/index.ts:6578
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6581
 
 > **delete**: `handleUnaryCall`\<[`DeleteFederatedCredentialsRequest`](DeleteFederatedCredentialsRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6583
+Defined in: src/generated/nebius/iam/v1/index.ts:6580
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6583
 
 > **get**: `handleUnaryCall`\<[`GetFederatedCredentialsRequest`](GetFederatedCredentialsRequest.md), [`FederatedCredentials`](FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6578
+Defined in: src/generated/nebius/iam/v1/index.ts:6575
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6578
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameFederatedCredentialsRequest`](GetByNameFederatedCredentialsRequest.md), [`FederatedCredentials`](FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6579
+Defined in: src/generated/nebius/iam/v1/index.ts:6576
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6579
 
 > **list**: `handleUnaryCall`\<[`ListFederatedCredentialsRequest`](ListFederatedCredentialsRequest.md), [`ListFederatedCredentialsResponse`](ListFederatedCredentialsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6580
+Defined in: src/generated/nebius/iam/v1/index.ts:6577
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6580
 
 > **update**: `handleUnaryCall`\<[`UpdateFederatedCredentialsRequest`](UpdateFederatedCredentialsRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6582
+Defined in: src/generated/nebius/iam/v1/index.ts:6579

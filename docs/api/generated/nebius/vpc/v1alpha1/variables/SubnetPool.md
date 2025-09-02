@@ -6,6 +6,6 @@
 
 # Variable: SubnetPool
 
-> **SubnetPool**: `MessageFns`\<[`SubnetPool`](../interfaces/SubnetPool.md), `"nebius.vpc.v1alpha1.SubnetPool"`\>
+> **SubnetPool**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`SubnetPool`](../interfaces/SubnetPool.md), `"nebius.vpc.v1alpha1.SubnetPool"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7506

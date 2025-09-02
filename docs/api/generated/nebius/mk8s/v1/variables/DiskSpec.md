@@ -6,6 +6,6 @@
 
 # Variable: DiskSpec
 
-> **DiskSpec**: `MessageFns`\<[`DiskSpec`](../interfaces/DiskSpec.md), `"nebius.mk8s.v1.DiskSpec"`\>
+> **DiskSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DiskSpec`](../interfaces/DiskSpec.md), `"nebius.mk8s.v1.DiskSpec"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2516

@@ -6,6 +6,6 @@
 
 # Variable: LifecycleAbortIncompleteMultipartUpload
 
-> **LifecycleAbortIncompleteMultipartUpload**: `MessageFns`\<[`LifecycleAbortIncompleteMultipartUpload`](../interfaces/LifecycleAbortIncompleteMultipartUpload.md), `"nebius.storage.v1.LifecycleAbortIncompleteMultipartUpload"`\>
+> **LifecycleAbortIncompleteMultipartUpload**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`LifecycleAbortIncompleteMultipartUpload`](../interfaces/LifecycleAbortIncompleteMultipartUpload.md), `"nebius.storage.v1.LifecycleAbortIncompleteMultipartUpload"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:3270

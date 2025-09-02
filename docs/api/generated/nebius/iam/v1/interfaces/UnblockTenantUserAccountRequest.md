@@ -6,7 +6,7 @@
 
 # Interface: UnblockTenantUserAccountRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20311
+Defined in: src/generated/nebius/iam/v1/index.ts:20308
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20311
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20313
+Defined in: src/generated/nebius/iam/v1/index.ts:20310
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20313
 
 > **$type**: `"nebius.iam.v1.UnblockTenantUserAccountRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20312
+Defined in: src/generated/nebius/iam/v1/index.ts:20309
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20312
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20314
+Defined in: src/generated/nebius/iam/v1/index.ts:20311

@@ -6,7 +6,7 @@
 
 # Interface: ExchangeTokenRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22153
+Defined in: src/generated/nebius/iam/v1/index.ts:22150
 
 https://www.rfc-editor.org/rfc/rfc8693.html
 
@@ -16,7 +16,7 @@ https://www.rfc-editor.org/rfc/rfc8693.html
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22155
+Defined in: src/generated/nebius/iam/v1/index.ts:22152
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22155
 
 > **$type**: `"nebius.iam.v1.ExchangeTokenRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22154
+Defined in: src/generated/nebius/iam/v1/index.ts:22151
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22154
 
 > **actorToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22190
+Defined in: src/generated/nebius/iam/v1/index.ts:22187
 
 optional, subject token for impersonation/delegation (who want to impersonate/delegate) in subject_token.
 
@@ -42,7 +42,7 @@ optional, subject token for impersonation/delegation (who want to impersonate/de
 
 > **actorTokenType**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22195
+Defined in: src/generated/nebius/iam/v1/index.ts:22192
 
 optional, token type for the impersonation/delegation (who want to impersonate/delegate). Usually it's urn:ietf:params:oauth:token-type:access_token
 
@@ -52,7 +52,7 @@ optional, token type for the impersonation/delegation (who want to impersonate/d
 
 > **audience**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22185
+Defined in: src/generated/nebius/iam/v1/index.ts:22182
 
 optional, name of the oauth client id on which this token will be used
 
@@ -62,7 +62,7 @@ optional, name of the oauth client id on which this token will be used
 
 > **grantType**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22160
+Defined in: src/generated/nebius/iam/v1/index.ts:22157
 
 required - urn:ietf:params:oauth:grant-type:token-exchange
 
@@ -72,7 +72,7 @@ required - urn:ietf:params:oauth:grant-type:token-exchange
 
 > **requestedTokenType**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22165
+Defined in: src/generated/nebius/iam/v1/index.ts:22162
 
 optional type of requested token, default is urn:ietf:params:oauth:token-type:access_token
 
@@ -82,7 +82,7 @@ optional type of requested token, default is urn:ietf:params:oauth:token-type:ac
 
 > **resource**: `string`[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22200
+Defined in: src/generated/nebius/iam/v1/index.ts:22197
 
 optional, list of resources approved to use by token, if applicable
 
@@ -92,7 +92,7 @@ optional, list of resources approved to use by token, if applicable
 
 > **scopes**: `string`[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22180
+Defined in: src/generated/nebius/iam/v1/index.ts:22177
 
 optional (scopes of the token)
 
@@ -102,7 +102,7 @@ optional (scopes of the token)
 
 > **subjectToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22170
+Defined in: src/generated/nebius/iam/v1/index.ts:22167
 
 required - could be self signed JWT token
 
@@ -112,6 +112,6 @@ required - could be self signed JWT token
 
 > **subjectTokenType**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22175
+Defined in: src/generated/nebius/iam/v1/index.ts:22172
 
 required, in case of jwt - urn:ietf:params:oauth:token-type:jwt

@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:106
 
 ### end?
 
-> `optional` **end**: `Dayjs`
+> `optional` **end**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/audit/v2/index.ts:115
 
@@ -70,7 +70,7 @@ Example:
 
 ### pageSize
 
-> **pageSize**: `Long`
+> **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/audit/v2/index.ts:113
 
@@ -96,6 +96,6 @@ A tenant id must be provided
 
 ### start?
 
-> `optional` **start**: `Dayjs`
+> `optional` **start**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/audit/v2/index.ts:114

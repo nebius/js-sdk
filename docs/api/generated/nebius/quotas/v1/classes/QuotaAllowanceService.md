@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:538
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:550
 
@@ -58,11 +58,11 @@ Gets a quota by its ID.
 
 ##### Returns
 
-`Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:551
 
@@ -78,11 +78,11 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:551
 
 ##### Returns
 
-`Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:552
 
@@ -98,15 +98,15 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:552
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **get**(`request`): `Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:585
 
@@ -120,11 +120,11 @@ Gets a quota by its ID.
 
 ##### Returns
 
-`Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`): `Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:586
 
@@ -142,11 +142,11 @@ Gets a quota by its ID.
 
 ##### Returns
 
-`Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **get**(`request`, `metadata`, `options`): `Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:587
 
@@ -164,11 +164,11 @@ Gets a quota by its ID.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 ***
 
@@ -176,7 +176,7 @@ Gets a quota by its ID.
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:557
 
@@ -190,11 +190,11 @@ Gets a quota by an ID of a Tenant or a Project, its region, and name.
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:558
 
@@ -210,11 +210,11 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:558
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:559
 
@@ -230,15 +230,15 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:559
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`): `Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:597
 
@@ -252,11 +252,11 @@ Gets a quota by an ID of a Tenant or a Project, its region, and name.
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`): `Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:598
 
@@ -274,11 +274,11 @@ Gets a quota by an ID of a Tenant or a Project, its region, and name.
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 #### Call Signature
 
-> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:599
 
@@ -296,11 +296,11 @@ Gets a quota by an ID of a Tenant or a Project, its region, and name.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
 ***
 
@@ -308,7 +308,7 @@ Gets a quota by an ID of a Tenant or a Project, its region, and name.
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:543
 
@@ -322,11 +322,11 @@ Lists quotas by an ID of a Tenant or a Project.
 
 ##### Returns
 
-`Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:544
 
@@ -342,11 +342,11 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:544
 
 ##### Returns
 
-`Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:545
 
@@ -362,15 +362,15 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:545
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`): `Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:573
 
@@ -384,11 +384,11 @@ Lists quotas by an ID of a Tenant or a Project.
 
 ##### Returns
 
-`Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`): `Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:574
 
@@ -406,11 +406,11 @@ Lists quotas by an ID of a Tenant or a Project.
 
 ##### Returns
 
-`Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 #### Call Signature
 
-> **list**(`request`, `metadata`, `options`): `Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:575
 
@@ -428,8 +428,8 @@ Lists quotas by an ID of a Tenant or a Project.
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](../interfaces/ListQuotaAllowancesResponse.md)\>

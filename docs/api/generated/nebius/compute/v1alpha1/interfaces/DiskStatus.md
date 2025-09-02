@@ -6,7 +6,7 @@
 
 # Interface: DiskStatus
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1426
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1423
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1426
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1428
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1425
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1428
 
 > **$type**: `"nebius.compute.v1alpha1.DiskStatus"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1427
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1424
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1427
 
 > **readOnlyAttachments**: `string`[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1432
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1429
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1432
 
 > **readWriteAttachment**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1431
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1428
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1431
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1439
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1436
 
 Indicates whether there is an ongoing operation
 
@@ -54,9 +54,9 @@ Indicates whether there is an ongoing operation
 
 ### sizeBytes
 
-> **sizeBytes**: `Long`
+> **sizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1434
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1431
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1434
 
 > **sourceImageId**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1433
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1430
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1433
 
 > **state**: [`DiskStatus_State`](../type-aliases/DiskStatus_State.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1429
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1426
 
 ***
 
@@ -80,4 +80,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1429
 
 > **stateDescription**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1430
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1427

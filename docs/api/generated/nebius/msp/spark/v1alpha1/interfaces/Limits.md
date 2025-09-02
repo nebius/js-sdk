@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1483
 
 ### cpu
 
-> **cpu**: `Long`
+> **cpu**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1485
 
@@ -36,6 +36,6 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1485
 
 ### memoryGibibytes
 
-> **memoryGibibytes**: `Long`
+> **memoryGibibytes**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1486

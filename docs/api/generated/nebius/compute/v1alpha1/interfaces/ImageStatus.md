@@ -6,7 +6,7 @@
 
 # Interface: ImageStatus
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5288
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5276
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5288
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5290
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5278
 
 ***
 
@@ -22,15 +22,15 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5290
 
 > **$type**: `"nebius.compute.v1alpha1.ImageStatus"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5289
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5277
 
 ***
 
 ### minDiskSizeBytes
 
-> **minDiskSizeBytes**: `Long`
+> **minDiskSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5294
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5282
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5294
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5299
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5287
 
 Indicates whether there is an ongoing operation
 
@@ -48,7 +48,7 @@ Indicates whether there is an ongoing operation
 
 > **state**: [`ImageStatus_State`](../type-aliases/ImageStatus_State.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5291
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5279
 
 ***
 
@@ -56,12 +56,12 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5291
 
 > **stateDescription**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5292
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5280
 
 ***
 
 ### storageSizeBytes
 
-> **storageSizeBytes**: `Long`
+> **storageSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5293
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5281

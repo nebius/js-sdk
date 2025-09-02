@@ -6,6 +6,6 @@
 
 # Variable: UserAttributes
 
-> **UserAttributes**: `MessageFns`\<[`UserAttributes`](../interfaces/UserAttributes.md), `"nebius.iam.v1.UserAttributes"`\>
+> **UserAttributes**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UserAttributes`](../interfaces/UserAttributes.md), `"nebius.iam.v1.UserAttributes"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21352
+Defined in: src/generated/nebius/iam/v1/index.ts:21349

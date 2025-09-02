@@ -6,6 +6,6 @@
 
 # Variable: ListScopesRequest
 
-> **ListScopesRequest**: `MessageFns`\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), `"nebius.vpc.v1alpha1.ListScopesRequest"`\>
+> **ListScopesRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), `"nebius.vpc.v1alpha1.ListScopesRequest"`\>
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5640

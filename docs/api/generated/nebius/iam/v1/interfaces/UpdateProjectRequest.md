@@ -6,7 +6,7 @@
 
 # Interface: UpdateProjectRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15648
+Defined in: src/generated/nebius/iam/v1/index.ts:15645
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15648
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15650
+Defined in: src/generated/nebius/iam/v1/index.ts:15647
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15650
 
 > **$type**: `"nebius.iam.v1.UpdateProjectRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15649
+Defined in: src/generated/nebius/iam/v1/index.ts:15646
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15649
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15651
+Defined in: src/generated/nebius/iam/v1/index.ts:15648
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15651
 
 > `optional` **spec**: [`ContainerSpec`](ContainerSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15652
+Defined in: src/generated/nebius/iam/v1/index.ts:15649

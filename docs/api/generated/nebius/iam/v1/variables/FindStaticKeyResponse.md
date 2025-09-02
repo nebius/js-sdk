@@ -6,6 +6,6 @@
 
 # Variable: FindStaticKeyResponse
 
-> **FindStaticKeyResponse**: `MessageFns`\<[`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md), `"nebius.iam.v1.FindStaticKeyResponse"`\>
+> **FindStaticKeyResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md), `"nebius.iam.v1.FindStaticKeyResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18645
+Defined in: src/generated/nebius/iam/v1/index.ts:18642

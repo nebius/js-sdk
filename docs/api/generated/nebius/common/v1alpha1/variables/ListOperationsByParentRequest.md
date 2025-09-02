@@ -6,6 +6,6 @@
 
 # Variable: ListOperationsByParentRequest
 
-> **ListOperationsByParentRequest**: `MessageFns`\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), `"nebius.common.v1alpha1.ListOperationsByParentRequest"`\>
+> **ListOperationsByParentRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), `"nebius.common.v1alpha1.ListOperationsByParentRequest"`\>
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:411

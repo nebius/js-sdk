@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7754
 
 ### allowedMask
 
-> **allowedMask**: `Long`
+> **allowedMask**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7771
 

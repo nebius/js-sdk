@@ -42,10 +42,15 @@
 
 - [BucketServiceServiceDescription](type-aliases/BucketServiceServiceDescription.md)
 - [BucketStatus\_State](type-aliases/BucketStatus_State.md)
+- [BucketStatus\_StateClass](type-aliases/BucketStatus_StateClass.md)
 - [BucketStatus\_SuspensionState](type-aliases/BucketStatus_SuspensionState.md)
+- [BucketStatus\_SuspensionStateClass](type-aliases/BucketStatus_SuspensionStateClass.md)
 - [LifecycleRule\_Status](type-aliases/LifecycleRule_Status.md)
+- [LifecycleRule\_StatusClass](type-aliases/LifecycleRule_StatusClass.md)
 - [StorageClass](type-aliases/StorageClass.md)
+- [StorageClassClass](type-aliases/StorageClassClass.md)
 - [VersioningPolicy](type-aliases/VersioningPolicy.md)
+- [VersioningPolicyClass](type-aliases/VersioningPolicyClass.md)
 
 ## Variables
 

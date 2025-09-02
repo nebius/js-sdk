@@ -6,6 +6,6 @@
 
 # Variable: ListTenantUserAccountsWithAttributesRequest
 
-> **ListTenantUserAccountsWithAttributesRequest**: `MessageFns`\<[`ListTenantUserAccountsWithAttributesRequest`](../interfaces/ListTenantUserAccountsWithAttributesRequest.md), `"nebius.iam.v1.ListTenantUserAccountsWithAttributesRequest"`\>
+> **ListTenantUserAccountsWithAttributesRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListTenantUserAccountsWithAttributesRequest`](../interfaces/ListTenantUserAccountsWithAttributesRequest.md), `"nebius.iam.v1.ListTenantUserAccountsWithAttributesRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20634
+Defined in: src/generated/nebius/iam/v1/index.ts:20631

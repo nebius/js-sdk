@@ -6,6 +6,6 @@
 
 # Variable: BucketSpec
 
-> **BucketSpec**: `MessageFns`\<[`BucketSpec`](../interfaces/BucketSpec.md), `"nebius.storage.v1.BucketSpec"`\>
+> **BucketSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`BucketSpec`](../interfaces/BucketSpec.md), `"nebius.storage.v1.BucketSpec"`\>
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2043

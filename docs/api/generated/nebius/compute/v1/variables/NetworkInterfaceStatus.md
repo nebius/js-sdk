@@ -6,6 +6,6 @@
 
 # Variable: NetworkInterfaceStatus
 
-> **NetworkInterfaceStatus**: `MessageFns`\<[`NetworkInterfaceStatus`](../interfaces/NetworkInterfaceStatus.md), `"nebius.compute.v1.NetworkInterfaceStatus"`\>
+> **NetworkInterfaceStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkInterfaceStatus`](../interfaces/NetworkInterfaceStatus.md), `"nebius.compute.v1.NetworkInterfaceStatus"`\>
 
 Defined in: src/generated/nebius/compute/v1/index.ts:10157

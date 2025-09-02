@@ -6,7 +6,7 @@
 
 # Interface: InvitationSpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14157
+Defined in: src/generated/nebius/iam/v1/index.ts:14154
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14157
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14159
+Defined in: src/generated/nebius/iam/v1/index.ts:14156
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14159
 
 > **$type**: `"nebius.iam.v1.InvitationSpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14158
+Defined in: src/generated/nebius/iam/v1/index.ts:14155
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14158
 
 > `optional` **contact**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14161
+Defined in: src/generated/nebius/iam/v1/index.ts:14158
 
 #### $case
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14161
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14160
+Defined in: src/generated/nebius/iam/v1/index.ts:14157

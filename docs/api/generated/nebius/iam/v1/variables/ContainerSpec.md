@@ -6,6 +6,6 @@
 
 # Variable: ContainerSpec
 
-> **ContainerSpec**: `MessageFns`\<[`ContainerSpec`](../interfaces/ContainerSpec.md), `"nebius.iam.v1.ContainerSpec"`\>
+> **ContainerSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ContainerSpec`](../interfaces/ContainerSpec.md), `"nebius.iam.v1.ContainerSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5533
+Defined in: src/generated/nebius/iam/v1/index.ts:5530

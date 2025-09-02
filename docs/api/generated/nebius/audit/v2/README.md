@@ -35,7 +35,9 @@
 
 - [AuditEventServiceServiceDescription](type-aliases/AuditEventServiceServiceDescription.md)
 - [AuthenticationType](type-aliases/AuthenticationType.md)
+- [AuthenticationTypeClass](type-aliases/AuthenticationTypeClass.md)
 - [Status](type-aliases/Status.md)
+- [StatusClass](type-aliases/StatusClass.md)
 
 ## Variables
 

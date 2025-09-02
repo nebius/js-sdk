@@ -6,6 +6,6 @@
 
 # Variable: DiskEncryption\_DiskEncryptionType
 
-> **DiskEncryption\_DiskEncryptionType**: `DiskEncryption_DiskEncryptionTypeClass`
+> **DiskEncryption\_DiskEncryptionType**: [`DiskEncryption_DiskEncryptionTypeClass`](../type-aliases/DiskEncryption_DiskEncryptionTypeClass.md)
 
 Defined in: src/generated/nebius/compute/v1/index.ts:1010

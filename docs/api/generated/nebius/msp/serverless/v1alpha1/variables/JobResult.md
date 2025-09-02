@@ -6,6 +6,6 @@
 
 # Variable: JobResult
 
-> **JobResult**: `JobResultClass`
+> **JobResult**: [`JobResultClass`](../type-aliases/JobResultClass.md)
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2128

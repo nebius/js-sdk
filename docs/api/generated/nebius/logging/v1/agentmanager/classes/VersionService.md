@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1781
 
 #### Call Signature
 
-> **getVersion**(`request`): `Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+> **getVersion**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1787
 
@@ -59,11 +59,11 @@ GetVersion retrieves version information and receives instructions for agent upd
 
 ##### Returns
 
-`Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 #### Call Signature
 
-> **getVersion**(`request`, `metadata`): `Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+> **getVersion**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1788
 
@@ -79,11 +79,11 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1788
 
 ##### Returns
 
-`Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 #### Call Signature
 
-> **getVersion**(`request`, `metadata`, `options`): `Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+> **getVersion**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1789
 
@@ -99,15 +99,15 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1789
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 #### Call Signature
 
-> **getVersion**(`request`): `Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+> **getVersion**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1803
 
@@ -122,11 +122,11 @@ GetVersion retrieves version information and receives instructions for agent upd
 
 ##### Returns
 
-`Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 #### Call Signature
 
-> **getVersion**(`request`, `metadata`): `Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+> **getVersion**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1804
 
@@ -145,11 +145,11 @@ GetVersion retrieves version information and receives instructions for agent upd
 
 ##### Returns
 
-`Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 #### Call Signature
 
-> **getVersion**(`request`, `metadata`, `options`): `Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+> **getVersion**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1805
 
@@ -168,8 +168,8 @@ GetVersion retrieves version information and receives instructions for agent upd
 
 ###### options
 
-`Partial`\<`CallOptions`\> & `RetryOptions`
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../../runtime/request/interfaces/RetryOptions.md)
 
 ##### Returns
 
-`Request`\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
+[`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>

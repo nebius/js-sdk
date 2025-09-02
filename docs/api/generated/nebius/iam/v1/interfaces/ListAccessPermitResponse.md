@@ -6,7 +6,7 @@
 
 # Interface: ListAccessPermitResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2676
+Defined in: src/generated/nebius/iam/v1/index.ts:2673
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2676
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2678
+Defined in: src/generated/nebius/iam/v1/index.ts:2675
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2678
 
 > **$type**: `"nebius.iam.v1.ListAccessPermitResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2677
+Defined in: src/generated/nebius/iam/v1/index.ts:2674
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2677
 
 > **items**: [`AccessPermit`](AccessPermit.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2683
+Defined in: src/generated/nebius/iam/v1/index.ts:2680
 
 List of access bindings returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of access bindings returned in the response. The field should be named as `
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2688
+Defined in: src/generated/nebius/iam/v1/index.ts:2685
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

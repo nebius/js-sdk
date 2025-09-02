@@ -6,7 +6,7 @@
 
 # Interface: ImageSpec
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5165
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5153
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5165
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5167
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5155
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5167
 
 > **$type**: `"nebius.compute.v1alpha1.ImageSpec"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5166
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5154
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5166
 
 > `optional` **description**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5168
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5156
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5168
 
 > **imageFamily**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5169
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5157
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5169
 
 > **version**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5170
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5158

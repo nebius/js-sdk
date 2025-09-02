@@ -6,6 +6,6 @@
 
 # Variable: ServiceAccountSpec
 
-> **ServiceAccountSpec**: `MessageFns`\<[`ServiceAccountSpec`](../interfaces/ServiceAccountSpec.md), `"nebius.iam.v1.ServiceAccountSpec"`\>
+> **ServiceAccountSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ServiceAccountSpec`](../interfaces/ServiceAccountSpec.md), `"nebius.iam.v1.ServiceAccountSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17151
+Defined in: src/generated/nebius/iam/v1/index.ts:17148

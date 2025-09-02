@@ -6,6 +6,6 @@
 
 # Variable: NodeTaint\_Effect
 
-> **NodeTaint\_Effect**: `NodeTaint_EffectClass`
+> **NodeTaint\_Effect**: [`NodeTaint_EffectClass`](../type-aliases/NodeTaint_EffectClass.md)
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4110

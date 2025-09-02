@@ -6,7 +6,7 @@
 
 # Interface: UserProfile
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14658
+Defined in: src/generated/nebius/iam/v1/index.ts:14655
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14658
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14660
+Defined in: src/generated/nebius/iam/v1/index.ts:14657
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14660
 
 > **$type**: `"nebius.iam.v1.UserProfile"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14659
+Defined in: src/generated/nebius/iam/v1/index.ts:14656
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14659
 
 > `optional` **attributesOptional**: \{ `$case`: `"attributes"`; `attributes`: [`UserAttributes`](UserAttributes.md); \} \| \{ `$case`: `"retrievingError"`; `retrievingError`: [`Error`](Error.md); \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14664
+Defined in: src/generated/nebius/iam/v1/index.ts:14661
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14664
 
 > `optional` **federationInfo**: [`UserAccountExternalId`](UserAccountExternalId.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14662
+Defined in: src/generated/nebius/iam/v1/index.ts:14659
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14662
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14661
+Defined in: src/generated/nebius/iam/v1/index.ts:14658
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14661
 
 > **tenants**: [`UserTenantInfo`](UserTenantInfo.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14663
+Defined in: src/generated/nebius/iam/v1/index.ts:14660

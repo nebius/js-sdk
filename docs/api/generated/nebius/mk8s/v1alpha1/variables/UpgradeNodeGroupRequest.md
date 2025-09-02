@@ -6,6 +6,6 @@
 
 # Variable: UpgradeNodeGroupRequest
 
-> **UpgradeNodeGroupRequest**: `MessageFns`\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `"nebius.mk8s.v1alpha1.UpgradeNodeGroupRequest"`\>
+> **UpgradeNodeGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `"nebius.mk8s.v1alpha1.UpgradeNodeGroupRequest"`\>
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3728

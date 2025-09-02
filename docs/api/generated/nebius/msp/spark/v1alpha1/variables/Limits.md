@@ -6,6 +6,6 @@
 
 # Variable: Limits
 
-> **Limits**: `MessageFns`\<[`Limits`](../interfaces/Limits.md), `"nebius.msp.spark.v1alpha1.Limits"`\>
+> **Limits**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Limits`](../interfaces/Limits.md), `"nebius.msp.spark.v1alpha1.Limits"`\>
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1482

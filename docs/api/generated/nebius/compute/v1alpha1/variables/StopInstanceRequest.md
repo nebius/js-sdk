@@ -6,6 +6,6 @@
 
 # Variable: StopInstanceRequest
 
-> **StopInstanceRequest**: `MessageFns`\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), `"nebius.compute.v1alpha1.StopInstanceRequest"`\>
+> **StopInstanceRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), `"nebius.compute.v1alpha1.StopInstanceRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6161
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6149

@@ -6,6 +6,6 @@
 
 # Variable: DeleteClusterRequest
 
-> **DeleteClusterRequest**: `MessageFns`\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `"nebius.msp.postgresql.v1alpha1.DeleteClusterRequest"`\>
+> **DeleteClusterRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `"nebius.msp.postgresql.v1alpha1.DeleteClusterRequest"`\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1798

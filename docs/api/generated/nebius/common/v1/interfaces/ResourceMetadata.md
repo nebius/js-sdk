@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2282
 
 ### createdAt?
 
-> `optional` **createdAt**: `Dayjs`
+> `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/common/v1/index.ts:2311
 
@@ -84,7 +84,7 @@ Identifier of the parent resource to which the resource belongs.
 
 ### resourceVersion
 
-> **resourceVersion**: `Long`
+> **resourceVersion**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
 Defined in: src/generated/nebius/common/v1/index.ts:2306
 
@@ -97,7 +97,7 @@ Version of the resource for safe concurrent modifications and consistent reads.
 
 ### updatedAt?
 
-> `optional` **updatedAt**: `Dayjs`
+> `optional` **updatedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
 Defined in: src/generated/nebius/common/v1/index.ts:2316
 

@@ -6,7 +6,7 @@
 
 # Interface: RevokeStaticKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18734
+Defined in: src/generated/nebius/iam/v1/index.ts:18731
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18734
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18736
+Defined in: src/generated/nebius/iam/v1/index.ts:18733
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18736
 
 > **$type**: `"nebius.iam.v1.RevokeStaticKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18735
+Defined in: src/generated/nebius/iam/v1/index.ts:18732
 
 ***
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18735
 
 > **token**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18741
+Defined in: src/generated/nebius/iam/v1/index.ts:18738
 
 the method accepts a static key token with and without signature as an input

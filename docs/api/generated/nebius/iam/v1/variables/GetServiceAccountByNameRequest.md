@@ -6,6 +6,6 @@
 
 # Variable: GetServiceAccountByNameRequest
 
-> **GetServiceAccountByNameRequest**: `MessageFns`\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), `"nebius.iam.v1.GetServiceAccountByNameRequest"`\>
+> **GetServiceAccountByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), `"nebius.iam.v1.GetServiceAccountByNameRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16240
+Defined in: src/generated/nebius/iam/v1/index.ts:16237

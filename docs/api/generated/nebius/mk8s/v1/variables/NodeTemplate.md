@@ -6,6 +6,6 @@
 
 # Variable: NodeTemplate
 
-> **NodeTemplate**: `MessageFns`\<[`NodeTemplate`](../interfaces/NodeTemplate.md), `"nebius.mk8s.v1.NodeTemplate"`\>
+> **NodeTemplate**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeTemplate`](../interfaces/NodeTemplate.md), `"nebius.mk8s.v1.NodeTemplate"`\>
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4329

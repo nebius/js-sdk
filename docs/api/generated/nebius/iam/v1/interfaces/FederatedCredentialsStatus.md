@@ -6,7 +6,7 @@
 
 # Interface: FederatedCredentialsStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7144
+Defined in: src/generated/nebius/iam/v1/index.ts:7141
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7144
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7146
+Defined in: src/generated/nebius/iam/v1/index.ts:7143
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7146
 
 > **$type**: `"nebius.iam.v1.FederatedCredentialsStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7145
+Defined in: src/generated/nebius/iam/v1/index.ts:7142

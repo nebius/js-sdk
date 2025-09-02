@@ -6,7 +6,7 @@
 
 # Interface: Disk
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:975
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:972
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:975
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:977
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:974
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:977
 
 > **$type**: `"nebius.compute.v1alpha1.Disk"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:976
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:973
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:976
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:978
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:975
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:978
 
 > `optional` **spec**: [`DiskSpec`](DiskSpec.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:979
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:976
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:979
 
 > `optional` **status**: [`DiskStatus`](DiskStatus.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:980
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:977

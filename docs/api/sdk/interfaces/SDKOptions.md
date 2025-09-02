@@ -6,15 +6,15 @@
 
 # Interface: SDKOptions
 
-Defined in: [src/sdk.ts:79](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L79)
+Defined in: [src/sdk.ts:79](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L79)
 
 ## Properties
 
 ### authorizationProvider?
 
-> `optional` **authorizationProvider**: `Provider`
+> `optional` **authorizationProvider**: [`Provider`](../../runtime/authorization/provider/interfaces/Provider.md)
 
-Defined in: [src/sdk.ts:85](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L85)
+Defined in: [src/sdk.ts:85](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L85)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/sdk.ts:85](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **clientOptions**: `Partial`\<`ClientOptions`\>
 
-Defined in: [src/sdk.ts:87](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L87)
+Defined in: [src/sdk.ts:87](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L87)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/sdk.ts:87](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **configReader**: [`ConfigReaderLike`](ConfigReaderLike.md)
 
-Defined in: [src/sdk.ts:83](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L83)
+Defined in: [src/sdk.ts:83](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L83)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/sdk.ts:83](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **credentials**: [`CredentialsInit`](../type-aliases/CredentialsInit.md)
 
-Defined in: [src/sdk.ts:90](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L90)
+Defined in: [src/sdk.ts:90](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L90)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/sdk.ts:90](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **domain**: `string`
 
-Defined in: [src/sdk.ts:82](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L82)
+Defined in: [src/sdk.ts:82](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L82)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [src/sdk.ts:82](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **federationInvitationNoBrowserOpen**: `boolean`
 
-Defined in: [src/sdk.ts:95](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L95)
+Defined in: [src/sdk.ts:95](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L95)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [src/sdk.ts:95](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **federationInvitationTimeoutMs**: `number`
 
-Defined in: [src/sdk.ts:96](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L96)
+Defined in: [src/sdk.ts:96](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L96)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [src/sdk.ts:96](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **federationInvitationWriter**: (`s`) => `void`
 
-Defined in: [src/sdk.ts:94](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L94)
+Defined in: [src/sdk.ts:94](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L94)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [src/sdk.ts:94](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **insecure**: `boolean`
 
-Defined in: [src/sdk.ts:86](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L86)
+Defined in: [src/sdk.ts:86](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L86)
 
 ***
 
@@ -96,7 +96,7 @@ Defined in: [src/sdk.ts:86](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **interceptors**: `Interceptor`[]
 
-Defined in: [src/sdk.ts:88](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L88)
+Defined in: [src/sdk.ts:88](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L88)
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: [src/sdk.ts:88](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **parentId**: `string`
 
-Defined in: [src/sdk.ts:84](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L84)
+Defined in: [src/sdk.ts:84](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L84)
 
 ***
 
@@ -112,15 +112,15 @@ Defined in: [src/sdk.ts:84](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **perAddress**: `Record`\<`string`, \{ `clientOptions?`: `Partial`\<`ClientOptions`\>; `credentials?`: `ChannelCredentials`; `insecure?`: `boolean`; `interceptors?`: `Interceptor`[]; \}\>
 
-Defined in: [src/sdk.ts:99](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L99)
+Defined in: [src/sdk.ts:99](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L99)
 
 ***
 
 ### resolver?
 
-> `optional` **resolver**: `Resolver`
+> `optional` **resolver**: [`Resolver`](../../runtime/resolver/interfaces/Resolver.md)
 
-Defined in: [src/sdk.ts:80](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L80)
+Defined in: [src/sdk.ts:80](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L80)
 
 ***
 
@@ -128,7 +128,7 @@ Defined in: [src/sdk.ts:80](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **substitutions**: `Record`\<`string`, `string`\>
 
-Defined in: [src/sdk.ts:81](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L81)
+Defined in: [src/sdk.ts:81](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L81)
 
 ***
 
@@ -136,7 +136,7 @@ Defined in: [src/sdk.ts:81](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **tlsRootCAs**: `string` \| `string`[] \| `Buffer`\<`ArrayBufferLike`\>
 
-Defined in: [src/sdk.ts:92](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L92)
+Defined in: [src/sdk.ts:92](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L92)
 
 ***
 
@@ -144,4 +144,4 @@ Defined in: [src/sdk.ts:92](https://github.com/nebius/nodejs-sdk/blob/07f69309bf
 
 > `optional` **userAgentPrefix**: `string`
 
-Defined in: [src/sdk.ts:97](https://github.com/nebius/nodejs-sdk/blob/07f69309bf910f649af60b6731eb42b3f51309c8/src/sdk.ts#L97)
+Defined in: [src/sdk.ts:97](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L97)

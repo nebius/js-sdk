@@ -6,6 +6,6 @@
 
 # Variable: RegistrySpec
 
-> **RegistrySpec**: `MessageFns`\<[`RegistrySpec`](../interfaces/RegistrySpec.md), `"nebius.registry.v1.RegistrySpec"`\>
+> **RegistrySpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`RegistrySpec`](../interfaces/RegistrySpec.md), `"nebius.registry.v1.RegistrySpec"`\>
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1824

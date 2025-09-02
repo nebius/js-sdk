@@ -6,6 +6,6 @@
 
 # Variable: FieldBehavior
 
-> **FieldBehavior**: `FieldBehaviorClass`
+> **FieldBehavior**: [`FieldBehaviorClass`](../type-aliases/FieldBehaviorClass.md)
 
 Defined in: src/generated/nebius/index.ts:80

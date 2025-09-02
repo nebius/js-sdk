@@ -6,6 +6,6 @@
 
 # Variable: GetBackupRequest
 
-> **GetBackupRequest**: `MessageFns`\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), `"nebius.msp.postgresql.v1alpha1.GetBackupRequest"`\>
+> **GetBackupRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), `"nebius.msp.postgresql.v1alpha1.GetBackupRequest"`\>
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:19

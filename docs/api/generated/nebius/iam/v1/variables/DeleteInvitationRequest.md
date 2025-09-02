@@ -6,6 +6,6 @@
 
 # Variable: DeleteInvitationRequest
 
-> **DeleteInvitationRequest**: `MessageFns`\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `"nebius.iam.v1.DeleteInvitationRequest"`\>
+> **DeleteInvitationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `"nebius.iam.v1.DeleteInvitationRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13462
+Defined in: src/generated/nebius/iam/v1/index.ts:13459
