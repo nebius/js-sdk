@@ -183,7 +183,7 @@ export function generateIndexContent(
     // Imports for SDK wrapper
     lines.push(`import type { SDKInterface } from "${up}/sdk";`);
     lines.push(
-      `import { wrapUnaryCall, type UnaryCall, type RetryOptions } from "${up}/runtime/request";`,
+      `import { Request as SDKRequestClass, type RetryOptions } from "${up}/runtime/request";`,
     );
     if (needsOperationWrapper) {
       lines.push(`import { Operation as OperationWrapper } from "${up}/runtime/operation";`);
@@ -195,10 +195,12 @@ export function generateIndexContent(
     // Import from nebius/common/v1 index
     addImport('nebius/common/v1', 'OperationServiceServiceDescription');
     addImport('nebius/common/v1', 'OperationService');
+    addImport('nebius/common/v1', 'GetOperationRequest');
   }
   if (needsOpServiceV1A) {
     addImport('nebius/common/v1alpha1', 'OperationServiceServiceDescription');
     addImport('nebius/common/v1alpha1', 'OperationService');
+    addImport('nebius/common/v1alpha1', 'GetOperationRequest');
   }
 
   // Emit imports (sorted) after runtime/grpc imports

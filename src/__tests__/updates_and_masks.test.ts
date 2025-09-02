@@ -95,14 +95,6 @@ describe('updates and masks — DiskService.Update', () => {
         'grpc.primary_user_agent': 'a',
         'grpc.secondary_user_agent': 'x',
       },
-      perService: {
-        'nebius.compute.v1.DiskService': {
-          clientOptions: {
-            'grpc.primary_user_agent': 'b',
-            'grpc.secondary_user_agent': 'y',
-          },
-        },
-      },
       perAddress: {
         [address]: {
           clientOptions: {

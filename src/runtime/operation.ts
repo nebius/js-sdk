@@ -5,7 +5,7 @@ import { Dayjs } from 'dayjs';
 
 import { Status, Code as StatusCode } from '../generated/google/rpc/index';
 
-import { RetryOptions, UnaryCall } from './request';
+import { Request, RetryOptions } from './request';
 
 interface Operation_RequestHeader {
   values: string[];
@@ -24,19 +24,19 @@ interface GenericOperation {
   status?: Status | undefined;
 }
 
-interface OperationService {
+interface OperationService<TReq> {
   get(
     req: { id: string },
     metadata?: Metadata | undefined,
     options?: (Partial<CallOptions> & RetryOptions) | undefined,
-  ): UnaryCall<Operation>;
+  ): Request<TReq, Operation<TReq>>;
 }
 
-export class Operation {
+export class Operation<TReq> {
   constructor(
     private _op: GenericOperation,
     // getOpFn now may accept optional Metadata and CallOptions to propagate through
-    private readonly service: OperationService,
+    private readonly service: OperationService<TReq>,
   ) {}
 
   toString() {

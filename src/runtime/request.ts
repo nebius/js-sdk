@@ -6,8 +6,8 @@ import {
   ServiceError as NebiusServiceError,
   ServiceError_RetryType,
 } from '../generated/nebius/common/v1/index';
+import { SDKInterface } from '../sdk';
 
-// Ensure global error interceptor is installed
 import { NebiusGrpcError } from './error';
 import { resetMaskFromMessage } from './resetmask';
 
@@ -82,21 +82,25 @@ export class Request<TReq, TRes> {
   private _resolveReqId!: (id: string) => void;
   private _resolveTraceId!: (id: string) => void;
 
-  constructor(args: {
-    request: TReq;
-    createCall: CallCreator<TReq, TRes>;
-    metadata?: Metadata;
-    options?: (Partial<CallOptions> & RetryOptions) | undefined;
-    // New: info for parentId injection
-    methodName?: string;
-    profileParentId?: string;
-  }) {
-    const { request, createCall, metadata, options, methodName, profileParentId } = args;
+  constructor(
+    private sdk: SDKInterface,
+    private serviceName: string,
+    private methodName: string,
+    private addr: string,
+    private serializer: (value: TReq) => Buffer,
+    private deserializer: (value: Buffer) => TRes,
+    private request: TReq,
+    private requestMetadata: Metadata | undefined,
+    private requestOptions?: (Partial<CallOptions> & RetryOptions) | undefined,
+  ) {
+    const path = `/${this.serviceName}/${this.methodName}`;
+    const client = this.sdk.getClientByAddress(this.addr);
+    const metadata = this.requestMetadata ?? new Metadata();
 
     // Normalize numeric overall deadline (absolute ms since epoch) into a Date
     // and work on a shallow copy so we don't mutate caller's object.
-    const baseOptions: (Partial<CallOptions> & RetryOptions) | undefined = options
-      ? { ...(options as Partial<CallOptions> & RetryOptions) }
+    const baseOptions: (Partial<CallOptions> & RetryOptions) | undefined = this.requestOptions
+      ? { ...(this.requestOptions as Partial<CallOptions> & RetryOptions) }
       : undefined;
     if (baseOptions?.deadline !== undefined && typeof baseOptions.deadline === 'number') {
       baseOptions.deadline = new Date(
@@ -128,6 +132,35 @@ export class Request<TReq, TRes> {
     }
     const overallDeadline = new Date(Date.now() + overallMs);
 
+    // Possibly inject parentId into request
+    try {
+      injectParentIdIfNeeded(methodName, sdk?.parentId(), this.request);
+    } catch {
+      /* ignore injection failures */
+    }
+
+    // Ensure reset mask header for update methods if absent
+    const isUpdate = (methodName || '').toLowerCase() === 'update';
+    if (isUpdate) {
+      const existing = metadata.get(RESET_MASK_HEADER);
+      if (!existing || existing.length === 0) {
+        try {
+          const rm = resetMaskFromMessage(this.request);
+          if (rm) metadata.set(RESET_MASK_HEADER, rm.marshal());
+        } catch {
+          /* ignore */
+        }
+      }
+    }
+
+    // Ensure idempotency key header (same across retries)
+    if (useIdemp && idempotencyKey) {
+      const existing = metadata.get(IDEMPOTENCY_HEADER);
+      if (!existing || existing.length === 0) {
+        metadata.set(IDEMPOTENCY_HEADER, idempotencyKey);
+      }
+    }
+
     // Start the request flow with retry
     this.result = new Promise<TRes>((resolve, reject) => {
       const runAttempt = (attempt: number) => {
@@ -142,66 +175,52 @@ export class Request<TReq, TRes> {
           deadline: perDeadline,
         } as Partial<CallOptions>;
 
-        // Possibly inject parentId into request
-        try {
-          injectParentIdIfNeeded(methodName, profileParentId, request);
-        } catch {
-          /* ignore injection failures */
-        }
-
-        // Ensure reset mask header for update methods if absent
-        let md: Metadata | undefined = metadata;
-        const isUpdate = (methodName || '').toLowerCase() === 'update';
-        if (isUpdate) {
-          if (!md) md = new Metadata();
-          const existing = md.get(RESET_MASK_HEADER);
-          if (!existing || existing.length === 0) {
-            try {
-              const rm = resetMaskFromMessage(request);
-              if (rm) md.set(RESET_MASK_HEADER, rm.marshal());
-            } catch {
-              /* ignore */
-            }
-          }
-        }
-
-        // Ensure idempotency key header (same across retries)
-        if (useIdemp && idempotencyKey) {
-          if (!md) md = new Metadata();
-          const existing = md.get(IDEMPOTENCY_HEADER);
-          if (!existing || existing.length === 0) {
-            md.set(IDEMPOTENCY_HEADER, idempotencyKey);
-          }
-        }
-
-        const call = createCall(request, md ?? metadata, deadlineOpt, (err, resp) => {
-          if (err) {
-            const wrapped = err as NebiusGrpcError;
-            // Metadata-derived requestId/traceId if any
-            if (wrapped?.metadata) {
-              const md = wrapped.metadata as Metadata;
-              this._safeResolveIdsFromMd(md);
-            }
-            // Determine retriable
-            const retriable = this._isRetriableError(wrapped);
-            if (retriable && attempt < maxRetries) {
-              runAttempt(attempt + 1);
+        const call = client.makeUnaryRequest(
+          path,
+          this.serializer,
+          this.deserializer,
+          this.request,
+          metadata,
+          deadlineOpt,
+          (err, resp) => {
+            if (err) {
+              const wrapped = err as NebiusGrpcError;
+              // Metadata-derived requestId/traceId if any
+              if (wrapped?.metadata) {
+                const md = wrapped.metadata as Metadata;
+                this._safeResolveIdsFromMd(md);
+              }
+              // Determine retriable
+              const retriable = this._isRetriableError(wrapped);
+              if (retriable && attempt < maxRetries) {
+                runAttempt(attempt + 1);
+                return;
+              }
+              // Resolve status even on error
+              const st =
+                decodeStatusFromError(err) ??
+                GrpcStatus.create({
+                  code: err.code,
+                  message: err.message,
+                  details: [],
+                });
+              this._resolveStatus(st);
+              reject(wrapped);
               return;
-            }
-            // Resolve status even on error
-            const st =
-              decodeStatusFromError(err) ??
-              GrpcStatus.create({
-                code: err.code ?? StatusCode.UNKNOWN,
-                message: err.message ?? String(err),
+            } else if (!resp) {
+              // Handle missing response
+              const st = GrpcStatus.create({
+                code: StatusCode.UNKNOWN.code,
+                message: 'Neither response, nor error received from server',
                 details: [],
               });
-            this._resolveStatus(st);
-            reject(wrapped);
-            return;
-          }
-          resolve(resp);
-        });
+              this._resolveStatus(st);
+              reject(Error('Neither response, nor error received from server'));
+              return;
+            }
+            resolve(resp);
+          },
+        );
 
         // Attach event listeners for metadata and status
         call.on('metadata', (md2: Metadata) => {
@@ -261,20 +280,6 @@ export class Request<TReq, TRes> {
     }
     return false;
   }
-}
-
-// Backward-friendly alias used by generators
-export type UnaryCall<TResponse = unknown> = Request<unknown, TResponse>;
-
-export function wrapUnaryCall<TReq, TRes>(args: {
-  request: TReq;
-  createCall: CallCreator<TReq, TRes>;
-  metadata?: Metadata;
-  options?: (Partial<CallOptions> & RetryOptions) | undefined;
-  methodName?: string;
-  profileParentId?: string;
-}): Request<TReq, TRes> {
-  return new Request<TReq, TRes>(args);
 }
 
 // Helper: get first string value from metadata by key

@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-echo "Running lint-staged (ESLint + Prettier)"
-npx lint-staged || exit 1
-
-# Optional: run tests on changed code (uncomment to enable)
-# npm test --silent

@@ -153,7 +153,7 @@ export function printService(
     const listRespForOpSvc = isOperationService && /\.ListOperationsResponse$/.test(outFqn);
     const ResBase = outInfo?.tsName || 'any';
     const Res = wrapOp
-      ? 'OperationWrapper'
+      ? 'OperationWrapper<GetOperationRequest>'
       : listRespForOpSvc
         ? 'OperationServiceListResponse'
         : ResBase;
@@ -168,10 +168,10 @@ export function printService(
       if (mDep) lines.push(`   * @deprecated ${mDep}`);
       lines.push('   */');
     }
-    lines.push(`  ${lower}(request: ${Req}): UnaryCall<${Res}>;`);
-    lines.push(`  ${lower}(request: ${Req}, metadata: Metadata): UnaryCall<${Res}>;`);
+    lines.push(`  ${lower}(request: ${Req}): SDKRequestClass<${Req}, ${Res}>;`);
+    lines.push(`  ${lower}(request: ${Req}, metadata: Metadata): SDKRequestClass<${Req}, ${Res}>;`);
     lines.push(
-      `  ${lower}(request: ${Req}, metadata: Metadata, options: Partial<CallOptions> & RetryOptions): UnaryCall<${Res}>;`,
+      `  ${lower}(request: ${Req}, metadata: Metadata, options: Partial<CallOptions> & RetryOptions): SDKRequestClass<${Req}, ${Res}>;`,
     );
   }
   lines.push(`}`); // close service interface
@@ -179,7 +179,7 @@ export function printService(
   // Extra interface for wrapped list response in OperationService (after closing service interface)
   if (isOperationService) {
     lines.push(
-      `export interface OperationServiceListResponse { operations: OperationWrapper[]; nextPageToken: string; }`,
+      `export interface OperationServiceListResponse { operations: OperationWrapper<GetOperationRequest>[]; nextPageToken: string; }`,
     );
     lines.push('');
   }
@@ -200,7 +200,6 @@ export function printService(
   const compiledApiName = apiServiceName ? JSON.stringify(apiServiceName) : 'undefined';
   lines.push(`export class ${svcName} implements ${svcName} {`);
   lines.push(`  $type: ${JSON.stringify(pbFullSvcName)} = ${JSON.stringify(pbFullSvcName)};`);
-  lines.push(`  private inner: Client;`);
   lines.push(`  private addr: string;`);
   lines.push(`  private spec: typeof ${svcName}ServiceDescription;`);
   if (svcDep) {
@@ -217,9 +216,6 @@ export function printService(
       `    const addr = sdk.getAddressFromServiceName(this.serviceType, this.apiServiceName);`,
     );
     lines.push(`    this.addr = addr;`);
-    lines.push(
-      `    this.inner = new Client(addr, sdk.getCredentials(this.serviceType), sdk.getOptions(this.serviceType));`,
-    );
   } else {
     lines.push(
       `  private apiServiceName: ${apiServiceName ? 'string' : 'undefined'} = ${compiledApiName};`,
@@ -227,9 +223,6 @@ export function printService(
     lines.push(`  constructor(private sdk: SDKInterface) {`);
     lines.push(`    const addr = sdk.getAddressFromServiceName(this.$type, this.apiServiceName);`);
     lines.push(`    this.addr = addr;`);
-    lines.push(
-      `    this.inner = new Client(addr, sdk.getCredentials(this.$type), sdk.getOptions(this.$type));`,
-    );
   }
   lines.push(`    this.spec = ${svcName}ServiceDescription;`);
   // Emit runtime deprecation warning for using this service via the SDK (warn once)
@@ -262,10 +255,10 @@ export function printService(
     const listRespForOpSvc = isOperationService && /\.ListOperationsResponse$/.test(outFqn);
     const ResBase = outInfo?.tsName || 'any';
     const retT = wrapOp
-      ? 'UnaryCall<OperationWrapper>'
+      ? `SDKRequestClass<${Req}, OperationWrapper<GetOperationRequest>>`
       : listRespForOpSvc
-        ? 'UnaryCall<OperationServiceListResponse>'
-        : `UnaryCall<${ResBase}>`;
+        ? `SDKRequestClass<${Req}, OperationServiceListResponse>`
+        : `SDKRequestClass<${Req}, ${ResBase}>`;
     lines.push(`  ${lower}(request: ${Req}): ${retT};`);
     lines.push(`  ${lower}(request: ${Req}, metadata: Metadata): ${retT};`);
     lines.push(
@@ -280,36 +273,26 @@ export function printService(
     lines.push(
       `    const options = (args.length > 2 ? args[2] : undefined) as (Partial<CallOptions> & RetryOptions) | undefined;`,
     );
-    lines.push(
-      `    const createCall = (req: ${Req}, md: Metadata | undefined, opt: Partial<CallOptions> | undefined, cb: any) => {`,
-    );
-    lines.push(`      const metadata = md ?? new Metadata();`);
-    lines.push(`      const options = opt ?? {};`);
-
     if (wrapOp) {
-      lines.push(`      const deserialize = (value: Buffer) => {`);
-      lines.push(`        const resp = spec.responseDeserialize(value);`);
+      lines.push(`    const deserialize = (value: Buffer) => {`);
+      lines.push(`      const resp = spec.responseDeserialize(value);`);
       if (isOperationService) {
-        lines.push(`        return new OperationWrapper(resp, this);`);
+        lines.push(`      return new OperationWrapper(resp, this);`);
       } else {
-        lines.push(`        return new OperationWrapper(resp, this.getOperationService());`);
+        lines.push(`      return new OperationWrapper(resp, this.getOperationService());`);
       }
-      lines.push(`      };`);
+      lines.push(`    };`);
     } else if (listRespForOpSvc) {
       // Special case: list method of OperationService should return operations wrapped in OperationWrapper
-      lines.push(`      const deserialize = (value: Buffer) => {`);
-      lines.push(`        const resp = spec.responseDeserialize(value);`);
+      lines.push(`    const deserialize = (value: Buffer) => {`);
+      lines.push(`      const resp = spec.responseDeserialize(value);`);
       lines.push(
-        `        return { operations: (resp?.operations ?? []).map((o: any) => new OperationWrapper(o, this)), nextPageToken: resp?.nextPageToken || "" };`,
+        `      return { operations: (resp?.operations ?? []).map((o: any) => new OperationWrapper(o, this)), nextPageToken: resp?.nextPageToken || "" };`,
       );
-      lines.push(`      };`);
+      lines.push(`    };`);
     } else {
-      lines.push(`      const deserialize = spec.responseDeserialize;`);
+      lines.push(`    const deserialize = spec.responseDeserialize;`);
     }
-    lines.push(
-      `      return this.inner.makeUnaryRequest(spec.path, spec.requestSerialize, deserialize, req, metadata, options, cb);`,
-    );
-    lines.push(`    };`);
     // Method-level runtime deprecation warning (warn once)
     const mDepRuntime = deprecationLine(m.descriptor);
     if (mDepRuntime) {
@@ -322,7 +305,7 @@ export function printService(
       lines.push('    }');
     }
     lines.push(
-      `    return wrapUnaryCall({ request, metadata, options, createCall, methodName: ${JSON.stringify(m.pb_name)}, profileParentId: this.sdk.parentId?.() ?? this.sdk.parentId?.call(this.sdk) });`,
+      `    return new SDKRequestClass(this.sdk, this.$type, ${JSON.stringify(m.pb_name)}, this.addr, spec.requestSerialize, deserialize, request, metadata, options);`,
     );
     lines.push(`  }`);
     lines.push('');

@@ -1,9 +1,11 @@
 import {
   CallOptions,
   ChannelCredentials,
+  Client,
   ClientOptions,
   Interceptor,
   Metadata,
+  connectivityState,
   credentials,
 } from '@grpc/grpc-js';
 
@@ -17,7 +19,7 @@ import { createAuthorizationInterceptor } from './runtime/authorization/intercep
 import type { Provider as AuthorizationProvider } from './runtime/authorization/provider';
 import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token';
 import { domain as DEFAULT_DOMAIN } from './runtime/constants';
-import type { RetryOptions, UnaryCall } from './runtime/request';
+import type { Request, RetryOptions } from './runtime/request';
 import { Chain, Conventional, type Resolver, TemplateExpander } from './runtime/resolver';
 import {
   ServiceAccount as SA,
@@ -31,9 +33,8 @@ import { ServiceAccountBearer } from './runtime/token/service_account';
 import { StaticBearer } from './runtime/token/static';
 
 export interface SDKInterface {
+  getClientByAddress(address: string): Client;
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string;
-  getCredentials(serviceName: string): ChannelCredentials;
-  getOptions(serviceName: string): Partial<ClientOptions> | undefined;
   parentId(): string | undefined;
 }
 
@@ -94,17 +95,7 @@ export interface SDKOptions {
   federationInvitationNoBrowserOpen?: boolean;
   federationInvitationTimeoutMs?: number;
   userAgentPrefix?: string; // Optional user agent prefix for requests
-  // Per-service overrides (by gRPC service name)
-  perService?: Record<
-    string,
-    {
-      credentials?: ChannelCredentials;
-      insecure?: boolean;
-      clientOptions?: Partial<ClientOptions>;
-      interceptors?: Interceptor[];
-    }
-  >;
-  // New: Per-address overrides (by fully resolved address like "compute.localhost:1234")
+  // Per-address overrides (by fully resolved address like "compute.localhost:1234")
   perAddress?: Record<
     string,
     {
@@ -122,16 +113,8 @@ export class SDK implements SDKInterface {
   private _authorizationProvider?: AuthorizationProvider;
   private _creds: ChannelCredentials;
   private _clientOptions?: Partial<ClientOptions>;
+  private _clients: Map<string, Client> = new Map();
   private _extraInterceptors: Interceptor[] = [];
-  private _perService: Map<
-    string,
-    {
-      credentials?: ChannelCredentials;
-      insecure?: boolean;
-      clientOptions?: Partial<ClientOptions>;
-      interceptors?: Interceptor[];
-    }
-  > = new Map();
   private _perAddress: Map<
     string,
     {
@@ -195,12 +178,6 @@ export class SDK implements SDKInterface {
     this._clientOptions = options?.clientOptions;
     this._extraInterceptors = options?.interceptors ? [...options.interceptors] : [];
 
-    // Per-service overrides
-    if (options?.perService) {
-      for (const [svc, cfg] of Object.entries(options.perService)) {
-        this._perService.set(svc, { ...cfg });
-      }
-    }
     // Per-address overrides
     if (options?.perAddress) {
       for (const [addr, cfg] of Object.entries(options.perAddress)) {
@@ -390,6 +367,16 @@ export class SDK implements SDKInterface {
     );
   }
 
+  getClientByAddress(address: string): Client {
+    if (!this._clients.has(address)) {
+      this._clients.set(
+        address,
+        new Client(address, this.getAddressCredentials(address), this.getAddressOptions(address)),
+      );
+    }
+    return this._clients.get(address)!;
+  }
+
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string {
     const addr = this._resolver.resolve(serviceName, apiServiceName);
     this._serviceLastAddress.set(serviceName, addr);
@@ -401,21 +388,8 @@ export class SDK implements SDKInterface {
     return this._systemOrCustomRoots;
   }
 
-  private _getAddressConfig(serviceName: string):
-    | {
-        credentials?: ChannelCredentials;
-        insecure?: boolean;
-        clientOptions?: Partial<ClientOptions>;
-        interceptors?: Interceptor[];
-      }
-    | undefined {
-    const addr = this._serviceLastAddress.get(serviceName);
-    if (!addr) return undefined;
-    return this._perAddress.get(addr);
-  }
-
-  getCredentials(serviceName: string): ChannelCredentials {
-    const addrCfg = this._getAddressConfig(serviceName);
+  getAddressCredentials(address: string): ChannelCredentials {
+    const addrCfg = this._perAddress.get(address);
     if (addrCfg?.credentials) return addrCfg.credentials;
     if (addrCfg?.insecure != null) {
       return addrCfg.insecure
@@ -425,23 +399,11 @@ export class SDK implements SDKInterface {
           : credentials.createSsl();
     }
 
-    const svc = this._perService.get(serviceName);
-    if (svc?.credentials) return svc.credentials;
-    if (svc?.insecure != null) {
-      return svc.insecure
-        ? credentials.createInsecure()
-        : this._systemOrCustomRoots
-          ? credentials.createSsl(normalizeRootCAs(this._systemOrCustomRoots))
-          : credentials.createSsl();
-    }
-
-    // Default to the credentials constructed at SDK initialization (respects global insecure flag)
     return this._creds;
   }
 
-  getOptions(serviceName: string): Partial<ClientOptions> | undefined {
-    const svc = this._perService.get(serviceName);
-    const addrCfg = this._getAddressConfig(serviceName);
+  getAddressOptions(address: string): Partial<ClientOptions> {
+    const addrCfg = this._perAddress.get(address);
 
     const authInt = this._authorizationProvider
       ? createAuthorizationInterceptor(this._authorizationProvider)
@@ -449,7 +411,6 @@ export class SDK implements SDKInterface {
 
     const combinedInts = [
       ...(this._extraInterceptors || []),
-      ...((svc?.interceptors ?? []) as Interceptor[]),
       ...((addrCfg?.interceptors ?? []) as Interceptor[]),
       ...(authInt ? [authInt] : []),
     ];
@@ -465,14 +426,12 @@ export class SDK implements SDKInterface {
       if (typeof s === 'string' && s.trim() !== '') secondaryParts.push(s.trim());
     };
     collect(this._clientOptions);
-    collect(svc?.clientOptions);
     collect(addrCfg?.clientOptions);
 
     const primaryUA =
       (primaryParts.length > 0 ? primaryParts.join(' ') + ' ' : '') + this._userAgent;
     const ret = {
       ...(this._clientOptions || {}),
-      ...(svc?.clientOptions || {}),
       ...(addrCfg?.clientOptions || {}),
       ...(hasInts ? { interceptors: combinedInts } : {}),
       'grpc.primary_user_agent': primaryUA,
@@ -510,7 +469,7 @@ export class SDK implements SDKInterface {
   whoami(
     metadata?: Metadata,
     options?: Partial<CallOptions> & RetryOptions,
-  ): UnaryCall<GetProfileResponse> {
+  ): Request<GetProfileRequest, GetProfileResponse> {
     const client = new ProfileServiceClient(this);
     const req = GetProfileRequest.create({});
     if (!metadata) metadata = new Metadata();
@@ -519,8 +478,75 @@ export class SDK implements SDKInterface {
     return client.get(req, metadata, options);
   }
 
-  // Gracefully close any attached authorization providers
+  // Gracefully close any attached authorization providers and channels
   async close(graceMs?: number): Promise<void> {
-    await this._authorizationProvider?.close?.(graceMs);
+    const channelWatchers: Promise<void>[] = [];
+
+    for (const client of this._clients.values()) {
+      try {
+        // Try to obtain underlying channel if available
+        // Start close sequence on client
+        client.close();
+
+        const ch = client.getChannel();
+        // Create a watcher that polls the connectivity state until SHUTDOWN
+        const watcher = new Promise<void>((resolve, reject) => {
+          // Per-watcher timeout to ensure polling stops and the promise rejects
+          // if the channel doesn't shutdown within graceMs. This prevents the
+          // polling loop from leaking timers when a global timeout is used.
+          let timer: ReturnType<typeof setTimeout> | undefined;
+          let finished = false;
+
+          const stop = () => {
+            finished = true;
+            if (timer) clearTimeout(timer);
+          };
+
+          if (typeof graceMs === 'number' && graceMs >= 0) {
+            timer = setTimeout(() => {
+              if (finished) return;
+              stop();
+              reject(new Error('close: channel shutdown timed out'));
+            }, graceMs);
+          }
+
+          const poll = () => {
+            if (finished) return;
+            try {
+              const state = ch.getConnectivityState(false);
+              if (state === connectivityState.SHUTDOWN) {
+                stop();
+                return resolve();
+              }
+            } catch (e) {
+              stop();
+              return reject(e);
+            }
+            // schedule next probe
+            setTimeout(poll, 50);
+          };
+
+          poll();
+        });
+        channelWatchers.push(watcher);
+      } catch {
+        // ignore per-client errors
+      }
+    }
+
+    // Promise that resolves when all channels report shutdown
+    const allChannelsShutdown =
+      channelWatchers.length > 0 ? Promise.all(channelWatchers).then(() => {}) : Promise.resolve();
+
+    // If graceMs provided, wait for either all channels shutdown OR graceMs timeout
+    const waitForChannels =
+      typeof graceMs === 'number'
+        ? Promise.race([allChannelsShutdown, new Promise<void>((res) => setTimeout(res, graceMs))])
+        : allChannelsShutdown;
+
+    // Authorization provider close (may accept graceMs). Run in parallel with channel waits.
+    const authClose = this._authorizationProvider?.close?.(graceMs) ?? Promise.resolve();
+
+    await Promise.all([waitForChannels, authClose]);
   }
 }
