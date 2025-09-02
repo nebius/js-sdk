@@ -1,0 +1,41 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / ListClustersResponse
+
+# Interface: ListClustersResponse
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:366
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:368
+
+***
+
+### $type
+
+> **$type**: `"nebius.mk8s.v1.ListClustersResponse"`
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:367
+
+***
+
+### items
+
+> **items**: [`Cluster`](Cluster.md)[]
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:369
+
+***
+
+### nextPageToken
+
+> **nextPageToken**: `string`
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:370

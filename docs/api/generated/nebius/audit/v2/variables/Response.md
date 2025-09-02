@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/audit/v2](../README.md) / Response
+
+# Variable: Response
+
+> **Response**: `MessageFns`\<[`Response`](../interfaces/Response.md), `"nebius.audit.v2.Response"`\>
+
+Defined in: src/generated/nebius/audit/v2/index.ts:2128

@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / CreateFederationRequest
+
+# Variable: CreateFederationRequest
+
+> **CreateFederationRequest**: `MessageFns`\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), `"nebius.iam.v1.CreateFederationRequest"`\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:8457

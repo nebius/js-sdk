@@ -1,0 +1,59 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / AttachedFilesystemSpec
+
+# Interface: AttachedFilesystemSpec
+
+Defined in: src/generated/nebius/compute/v1/index.ts:8499
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:8501
+
+***
+
+### $type
+
+> **$type**: `"nebius.compute.v1.AttachedFilesystemSpec"`
+
+Defined in: src/generated/nebius/compute/v1/index.ts:8500
+
+***
+
+### attachMode
+
+> **attachMode**: [`AttachedFilesystemSpec_AttachMode`](../type-aliases/AttachedFilesystemSpec_AttachMode.md)
+
+Defined in: src/generated/nebius/compute/v1/index.ts:8502
+
+***
+
+### mountTag
+
+> **mountTag**: `string`
+
+Defined in: src/generated/nebius/compute/v1/index.ts:8507
+
+Specifies the user-defined identifier, allowing to use it as a device in mount command.
+
+***
+
+### type?
+
+> `optional` **type**: `object`
+
+Defined in: src/generated/nebius/compute/v1/index.ts:8508
+
+#### $case
+
+> **$case**: `"existingFilesystem"`
+
+#### existingFilesystem
+
+> **existingFilesystem**: [`ExistingFilesystem`](ExistingFilesystem.md)

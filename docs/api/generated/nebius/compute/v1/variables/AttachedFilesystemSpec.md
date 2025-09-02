@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / AttachedFilesystemSpec
+
+# Variable: AttachedFilesystemSpec
+
+> **AttachedFilesystemSpec**: `MessageFns`\<[`AttachedFilesystemSpec`](../interfaces/AttachedFilesystemSpec.md), `"nebius.compute.v1.AttachedFilesystemSpec"`\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:8499

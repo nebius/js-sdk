@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / GetSubnetByNameRequest
+
+# Variable: GetSubnetByNameRequest
+
+> **GetSubnetByNameRequest**: `MessageFns`\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), `"nebius.vpc.v1alpha1.GetSubnetByNameRequest"`\>
+
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6525

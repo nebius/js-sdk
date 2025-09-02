@@ -1,0 +1,547 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v2](../README.md) / TenantService
+
+# Class: TenantService
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2832
+
+## Implements
+
+- `TenantService`
+
+## Constructors
+
+### Constructor
+
+> **new TenantService**(`sdk`): `TenantService`
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2853
+
+#### Parameters
+
+##### sdk
+
+[`SDKInterface`](../../../../../sdk/interfaces/SDKInterface.md)
+
+#### Returns
+
+`TenantService`
+
+## Properties
+
+### $type
+
+> **$type**: `"nebius.iam.v2.TenantService"`
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2833
+
+## Methods
+
+### get()
+
+#### Call Signature
+
+> **get**(`request`): `Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2834
+
+##### Parameters
+
+###### request
+
+[`GetTenantRequest`](../interfaces/GetTenantRequest.md)
+
+##### Returns
+
+`Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): `Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2835
+
+##### Parameters
+
+###### request
+
+[`GetTenantRequest`](../interfaces/GetTenantRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+`Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): `Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2836
+
+##### Parameters
+
+###### request
+
+[`GetTenantRequest`](../interfaces/GetTenantRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & `RetryOptions`
+
+##### Returns
+
+`Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **get**(`request`): `Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2863
+
+##### Parameters
+
+###### request
+
+[`GetTenantRequest`](../interfaces/GetTenantRequest.md)
+
+##### Returns
+
+`Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): `Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2864
+
+##### Parameters
+
+###### request
+
+[`GetTenantRequest`](../interfaces/GetTenantRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+`Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): `Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2865
+
+##### Parameters
+
+###### request
+
+[`GetTenantRequest`](../interfaces/GetTenantRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & `RetryOptions`
+
+##### Returns
+
+`Request`\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+***
+
+### getByName()
+
+#### Call Signature
+
+> **getByName**(`request`): `Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2837
+
+##### Parameters
+
+###### request
+
+[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md)
+
+##### Returns
+
+`Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): `Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2838
+
+##### Parameters
+
+###### request
+
+[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+`Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2839
+
+##### Parameters
+
+###### request
+
+[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & `RetryOptions`
+
+##### Returns
+
+`Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`): `Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2875
+
+##### Parameters
+
+###### request
+
+[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md)
+
+##### Returns
+
+`Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): `Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2876
+
+##### Parameters
+
+###### request
+
+[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+`Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): `Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2877
+
+##### Parameters
+
+###### request
+
+[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & `RetryOptions`
+
+##### Returns
+
+`Request`\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
+
+***
+
+### getOperationService()
+
+> **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2859
+
+#### Returns
+
+[`OperationService`](../../../common/v1/classes/OperationService.md)
+
+***
+
+### list()
+
+#### Call Signature
+
+> **list**(`request`): `Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2840
+
+##### Parameters
+
+###### request
+
+[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md)
+
+##### Returns
+
+`Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): `Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2841
+
+##### Parameters
+
+###### request
+
+[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+`Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): `Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2842
+
+##### Parameters
+
+###### request
+
+[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & `RetryOptions`
+
+##### Returns
+
+`Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): `Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2887
+
+##### Parameters
+
+###### request
+
+[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md)
+
+##### Returns
+
+`Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): `Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2888
+
+##### Parameters
+
+###### request
+
+[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+`Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): `Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2889
+
+##### Parameters
+
+###### request
+
+[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & `RetryOptions`
+
+##### Returns
+
+`Request`\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
+
+***
+
+### update()
+
+#### Call Signature
+
+> **update**(`request`): `Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2843
+
+##### Parameters
+
+###### request
+
+[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md)
+
+##### Returns
+
+`Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): `Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2844
+
+##### Parameters
+
+###### request
+
+[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+`Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2845
+
+##### Parameters
+
+###### request
+
+[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & `RetryOptions`
+
+##### Returns
+
+`Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`): `Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2899
+
+##### Parameters
+
+###### request
+
+[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md)
+
+##### Returns
+
+`Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): `Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2900
+
+##### Parameters
+
+###### request
+
+[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+`Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): `Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/iam/v2/index.ts:2901
+
+##### Parameters
+
+###### request
+
+[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & `RetryOptions`
+
+##### Returns
+
+`Request`\<[`UpdateTenantRequest`](../interfaces/UpdateTenantRequest.md), `Operation`\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

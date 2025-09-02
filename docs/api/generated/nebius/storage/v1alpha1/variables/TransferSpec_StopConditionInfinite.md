@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferSpec\_StopConditionInfinite
+
+# Variable: TransferSpec\_StopConditionInfinite
+
+> **TransferSpec\_StopConditionInfinite**: `MessageFns`\<[`TransferSpec_StopConditionInfinite`](../interfaces/TransferSpec_StopConditionInfinite.md), `"nebius.storage.v1alpha1.TransferSpec.StopConditionInfinite"`\>
+
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2819

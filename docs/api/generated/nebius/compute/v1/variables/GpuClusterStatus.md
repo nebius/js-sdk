@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / GpuClusterStatus
+
+# Variable: GpuClusterStatus
+
+> **GpuClusterStatus**: `MessageFns`\<[`GpuClusterStatus`](../interfaces/GpuClusterStatus.md), `"nebius.compute.v1.GpuClusterStatus"`\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:4670

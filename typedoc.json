@@ -1,0 +1,14 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/sdk.ts", "src/generated/nebius/**/index.ts"],
+  "tsconfig": "tsconfig.json",
+  "out": "docs/api",
+  "plugin": ["typedoc-plugin-markdown"],
+  "readme": "none",
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeInternal": true,
+  "categorizeByGroup": true,
+  "hideGenerator": true
+}

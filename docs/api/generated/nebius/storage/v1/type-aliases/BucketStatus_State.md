@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / BucketStatus\_State
+
+# Type Alias: BucketStatus\_State
+
+> **BucketStatus\_State** = `EnumInstance`\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"ACTIVE"` \| `"UPDATING"` \| `"SCHEDULED_FOR_DELETION"`\>
+
+Defined in: src/generated/nebius/storage/v1/index.ts:1827

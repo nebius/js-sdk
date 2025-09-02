@@ -1,0 +1,25 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GetProfileRequest
+
+# Interface: GetProfileRequest
+
+Defined in: src/generated/nebius/iam/v1/index.ts:14414
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:14416
+
+***
+
+### $type
+
+> **$type**: `"nebius.iam.v1.GetProfileRequest"`
+
+Defined in: src/generated/nebius/iam/v1/index.ts:14415

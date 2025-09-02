@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/mlflow/v1alpha1](../README.md) / ListClustersResponse
+
+# Variable: ListClustersResponse
+
+> **ListClustersResponse**: `MessageFns`\<[`ListClustersResponse`](../interfaces/ListClustersResponse.md), `"nebius.msp.mlflow.v1alpha1.ListClustersResponse"`\>
+
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:353

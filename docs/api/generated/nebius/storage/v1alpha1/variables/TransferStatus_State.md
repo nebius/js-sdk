@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferStatus\_State
+
+# Variable: TransferStatus\_State
+
+> **TransferStatus\_State**: `TransferStatus_StateClass`
+
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1461
