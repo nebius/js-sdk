@@ -67,6 +67,10 @@ function generateIdempotencyKey(): string {
   }
 }
 
+const DEFAULT_TIMEOUT = 60000;
+const DEFAULT_RETRY_COUNT = 3;
+const DEFAULT_PER_RETRY_TIMEOUT = DEFAULT_TIMEOUT / DEFAULT_RETRY_COUNT;
+
 export class Request<TReq, TRes> {
   // Promises
   readonly result: Promise<TRes>;
@@ -114,19 +118,19 @@ export class Request<TReq, TRes> {
     this.requestId = new Promise<string>((res) => (this._resolveReqId = res));
     this.traceId = new Promise<string>((res) => (this._resolveTraceId = res));
 
-    const maxRetries = Math.max(0, baseOptions?.RetryCount ?? 3);
+    const maxRetries = Math.max(0, baseOptions?.RetryCount ?? DEFAULT_RETRY_COUNT);
 
     // Generate idempotency key once per logical request and reuse across retries
     const useIdemp = shouldUseIdempotencyKey(methodName);
     const idempotencyKey = useIdemp ? generateIdempotencyKey() : undefined;
-    let overallMs = 60000; // Default to 60 seconds
+    let overallMs = DEFAULT_TIMEOUT;
     if (baseOptions?.deadline !== undefined) {
       overallMs =
         typeof baseOptions.deadline === 'number'
           ? baseOptions.deadline
           : baseOptions.deadline.getTime();
     }
-    let perRetry = overallMs / maxRetries;
+    let perRetry = DEFAULT_PER_RETRY_TIMEOUT;
     if (baseOptions?.PerRetryTimeout !== undefined) {
       perRetry = baseOptions.PerRetryTimeout;
     }
