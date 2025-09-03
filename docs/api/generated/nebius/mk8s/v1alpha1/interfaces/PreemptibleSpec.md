@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / PreemptibleSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5664
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5666
 
-***
+---
 
 ### $type
 

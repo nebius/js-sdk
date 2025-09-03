@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListFederationsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8797
 
 Defined in: src/generated/nebius/iam/v1/index.ts:8799
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8799
 
 Defined in: src/generated/nebius/iam/v1/index.ts:8798
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8798
 
 Defined in: src/generated/nebius/iam/v1/index.ts:8800
 
-***
+---
 
 ### nextPageToken
 

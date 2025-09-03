@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/v1alpha1/resource](../README.md) / Range
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:592
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:594
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:594
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:593
 
-***
+---
 
 ### max
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:593
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:596
 
-***
+---
 
 ### min
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:596
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:595
 
-***
+---
 
 ### step
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:601
 
 step 0 is no step validation
 
-***
+---
 
 ### value
 

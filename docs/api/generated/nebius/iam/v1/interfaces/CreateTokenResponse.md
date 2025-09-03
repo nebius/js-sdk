@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / CreateTokenResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22419
 
 Defined in: src/generated/nebius/iam/v1/index.ts:22421
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22421
 
 Defined in: src/generated/nebius/iam/v1/index.ts:22420
 
-***
+---
 
 ### accessToken
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22426
 
 required
 
-***
+---
 
 ### expiresIn
 
@@ -42,7 +42,7 @@ required
 
 Defined in: src/generated/nebius/iam/v1/index.ts:22437
 
-***
+---
 
 ### issuedTokenType
 
@@ -52,7 +52,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22431
 
 required
 
-***
+---
 
 ### scopes
 
@@ -60,7 +60,7 @@ required
 
 Defined in: src/generated/nebius/iam/v1/index.ts:22438
 
-***
+---
 
 ### tokenType
 

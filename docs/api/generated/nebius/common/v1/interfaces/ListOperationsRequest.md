@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / ListOperationsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2755
 
 Defined in: src/generated/nebius/common/v1/index.ts:2757
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2757
 
 Defined in: src/generated/nebius/common/v1/index.ts:2756
 
-***
+---
 
 ### pageSize
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2767
 
 Page size. [1...1000]. Optional, if not specified, a reasonable default will be chosen by the service.
 
-***
+---
 
 ### pageToken
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2772
 
 Listing continuation token. Empty to start listing from the first page.
 
-***
+---
 
 ### resourceId
 

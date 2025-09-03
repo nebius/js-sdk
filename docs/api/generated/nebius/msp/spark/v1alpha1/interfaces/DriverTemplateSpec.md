@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / DriverTemplateSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3455
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3457
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3457
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3456
 
-***
+---
 
 ### disk?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3456
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3458
 
-***
+---
 
 ### resources?
 

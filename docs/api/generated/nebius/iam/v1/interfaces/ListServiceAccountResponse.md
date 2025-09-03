@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListServiceAccountResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16697
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16699
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16699
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16698
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16704
 
 List of service accounts returned in the response. The field should be named as `items` for consistency.
 
-***
+---
 
 ### nextPageToken
 

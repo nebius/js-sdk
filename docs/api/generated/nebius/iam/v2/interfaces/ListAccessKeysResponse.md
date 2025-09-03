@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v2](../README.md) / ListAccessKeysResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1242
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1244
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1244
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1243
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1249
 
 List of access keys returned in the response. The field should be named as `items` for consistency.
 
-***
+---
 
 ### nextPageToken
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / ServiceError
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:64
 
 Defined in: src/generated/nebius/common/v1/index.ts:66
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:66
 
 Defined in: src/generated/nebius/common/v1/index.ts:65
 
-***
+---
 
 ### code
 
@@ -33,10 +33,10 @@ Defined in: src/generated/nebius/common/v1/index.ts:65
 Defined in: src/generated/nebius/common/v1/index.ts:78
 
 Detailed error code, service-specific. E.g. "DnsZoneNotEmpty".
- Name of the exception, without Exception suffix if not set.
- Example: for PermissionDeniedException -> code == PermissionDenied.
+Name of the exception, without Exception suffix if not set.
+Example: for PermissionDeniedException -> code == PermissionDenied.
 
-***
+---
 
 ### details?
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:88
 
 Additional message describing the error, if any.
 
-***
+---
 
 ### retryType
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:83
 
 Retry type tells how to provide retry, e.g.: just a single call or the whole logic before it.
 
-***
+---
 
 ### service
 

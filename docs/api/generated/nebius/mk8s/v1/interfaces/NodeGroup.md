@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / NodeGroup
 
@@ -9,8 +9,8 @@
 Defined in: src/generated/nebius/mk8s/v1/index.ts:3966
 
 NodeGroup represents Kubernetes node pool - set of worker machines having the same configuration.
- A Node is a Nebius Compute Instance created in Cluster.metadata.parent_id container, running kubelet
- that registers in Kubernetes API and a Node object created.
+A Node is a Nebius Compute Instance created in Cluster.metadata.parent_id container, running kubelet
+that registers in Kubernetes API and a Node object created.
 
 ## Properties
 
@@ -20,7 +20,7 @@ NodeGroup represents Kubernetes node pool - set of worker machines having the sa
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:3968
 
-***
+---
 
 ### $type
 
@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3968
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:3967
 
-***
+---
 
 ### metadata?
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3973
 
 The parent_id is an ID of Cluster
 
-***
+---
 
 ### spec?
 
@@ -46,7 +46,7 @@ The parent_id is an ID of Cluster
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:3974
 
-***
+---
 
 ### status?
 

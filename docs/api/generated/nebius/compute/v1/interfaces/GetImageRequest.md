@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / GetImageRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5011
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5013
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5013
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5012
 
-***
+---
 
 ### id
 

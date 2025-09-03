@@ -69,7 +69,7 @@ export class FederationBearer extends Bearer {
   }
 
   get name(): string | undefined {
-    return `federation/${this.federationEndpoint}/` + `${this.federationId}/${this.profileName}`;
+    return `federation/${this.federationEndpoint}/${this.federationId}/${this.profileName}`;
   }
 
   receiver(): Receiver {

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/serverless/v1alpha1](../README.md) / EndpointTemplateSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1367
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1369
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1369
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1368
 
-***
+---
 
 ### resources?
 

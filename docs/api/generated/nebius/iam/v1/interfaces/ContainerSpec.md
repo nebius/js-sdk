@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ContainerSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5530
 
 Defined in: src/generated/nebius/iam/v1/index.ts:5532
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5532
 
 Defined in: src/generated/nebius/iam/v1/index.ts:5531
 
-***
+---
 
 ### region
 

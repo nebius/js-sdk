@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / AllocationDetails
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1965
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:1967
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1967
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:1966
 
-***
+---
 
 ### allocatedCidr
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1972
 
 The actual CIDR block that has been allocated.
 
-***
+---
 
 ### poolId
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1977
 
 ID of the pool from which this allocation was made.
 
-***
+---
 
 ### version
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / ClusterServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:852
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:856
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:856
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:858
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:858
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:853
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:853
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:854
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:854
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:855
 
-***
+---
 
 ### update
 

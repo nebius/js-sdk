@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/v1alpha1/resource](../README.md) / ResourcesSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:365
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:367
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:367
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:366
 
-***
+---
 
 ### platform
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:366
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:368
 
-***
+---
 
 ### preset
 

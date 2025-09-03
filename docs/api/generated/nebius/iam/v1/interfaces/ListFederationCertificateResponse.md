@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListFederationCertificateResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7739
 
 Defined in: src/generated/nebius/iam/v1/index.ts:7741
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7741
 
 Defined in: src/generated/nebius/iam/v1/index.ts:7740
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7746
 
 List of public keys returned in the response. The field should be named as `items` for consistency.
 
-***
+---
 
 ### nextPageToken
 

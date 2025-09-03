@@ -1,4 +1,4 @@
-import type { Service as TSService } from '../descriptors';
+import type { Method, Service as TSService } from '../descriptors';
 
 import { deprecationLine } from './helpers';
 
@@ -10,8 +10,22 @@ function normalizeFqn(name: string, pkg?: string): string {
   return n;
 }
 
+const OP_SVC_V1 = '.nebius.common.v1.OperationService';
+const OP_SVC_V1A = '.nebius.common.v1alpha1.OperationService';
 const OP_V1 = '.nebius.common.v1.Operation';
 const OP_V1A = '.nebius.common.v1alpha1.Operation';
+
+function isOperationService(service: TSService): boolean {
+  const fqn = service.fullQualifiedName();
+  return fqn === OP_SVC_V1 || fqn === OP_SVC_V1A;
+}
+
+function isListOperationsMethod(method: Method): boolean {
+  if (isOperationService(method.containingService)) {
+    return method.pb_name === 'List';
+  }
+  return false;
+}
 
 export interface TypeIndexEntry {
   fileName: string;
@@ -29,6 +43,7 @@ export function printService(
   const lines: string[] = [];
   const svcName = svc.tsName;
   const pbSvcName = svc.pb_name;
+  const isOpSvc = isOperationService(svc);
   const pbFullSvcName = pkg ? `${pkg}.${pbSvcName}` : pbSvcName;
   // api_service_name is now decoded directly onto ServiceOptions via extension augmentation (apiServiceName camelCase)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -142,7 +157,6 @@ export function printService(
   }
   lines.push(`export interface ${svcName} {`);
   lines.push(`  $type: ${JSON.stringify(pbFullSvcName)};`);
-  const isOperationService = pbSvcName === 'OperationService';
   for (const m of svc.methods) {
     const lower = m.tsName;
     const inInfo = typeIndex.get(normalizeFqn(m.descriptor.inputType || '', pkg));
@@ -150,11 +164,11 @@ export function printService(
     const Req = inInfo?.tsName || 'any';
     const outFqn = normalizeFqn(m.descriptor.outputType || '', pkg);
     const wrapOp = outFqn === OP_V1 || outFqn === OP_V1A;
-    const listRespForOpSvc = isOperationService && /\.ListOperationsResponse$/.test(outFqn);
+    const isOperationsList = isListOperationsMethod(m);
     const ResBase = outInfo?.tsName || 'any';
     const Res = wrapOp
       ? 'OperationWrapper<GetOperationRequest>'
-      : listRespForOpSvc
+      : isOperationsList
         ? 'OperationServiceListResponse'
         : ResBase;
     const mComment =
@@ -177,7 +191,7 @@ export function printService(
   lines.push(`}`); // close service interface
   lines.push('');
   // Extra interface for wrapped list response in OperationService (after closing service interface)
-  if (isOperationService) {
+  if (isOpSvc) {
     lines.push(
       `export interface OperationServiceListResponse { operations: OperationWrapper<GetOperationRequest>[]; nextPageToken: string; }`,
     );
@@ -200,22 +214,16 @@ export function printService(
   const compiledApiName = apiServiceName ? JSON.stringify(apiServiceName) : 'undefined';
   lines.push(`export class ${svcName} implements ${svcName} {`);
   lines.push(`  $type: ${JSON.stringify(pbFullSvcName)} = ${JSON.stringify(pbFullSvcName)};`);
-  lines.push(`  private addr: string;`);
+  if (!isOpSvc) lines.push(`  private addr: string;`);
   lines.push(`  private spec: typeof ${svcName}ServiceDescription;`);
   if (svcDep) {
     lines.push('  /**');
     lines.push(`   * @deprecated ${svcDep}`);
     lines.push('   */');
   }
-  if (pbSvcName === 'OperationService') {
+  if (isOpSvc) {
     // For OperationService allow passing explicit service type and optional apiServiceName overriding $type usage
-    lines.push(
-      `  constructor(private sdk: SDKInterface, private serviceType: string, private apiServiceName?: string) {`,
-    );
-    lines.push(
-      `    const addr = sdk.getAddressFromServiceName(this.serviceType, this.apiServiceName);`,
-    );
-    lines.push(`    this.addr = addr;`);
+    lines.push(`  constructor(private sdk: SDKInterface, private addr: string) {`);
   } else {
     lines.push(
       `  private apiServiceName: ${apiServiceName ? 'string' : 'undefined'} = ${compiledApiName};`,
@@ -236,11 +244,11 @@ export function printService(
     lines.push('    }');
   }
   lines.push(`  }`);
-  if (pbSvcName !== 'OperationService' && (hasOpV1 || hasOpV1A)) {
+  if (!isOpSvc && (hasOpV1 || hasOpV1A)) {
     lines.push('');
     // Embed original service's compile-time apiServiceName (same as used in its own constructor)
     lines.push(`  getOperationService(): OperationService {`);
-    lines.push(`    return new OperationService(this.sdk, this.$type, this.apiServiceName);`);
+    lines.push(`    return new OperationService(this.sdk, this.addr);`);
     lines.push('  }');
   }
   lines.push('');
@@ -252,11 +260,11 @@ export function printService(
     const Req = inInfo?.tsName || 'any';
     const outFqn = normalizeFqn(m.descriptor.outputType || '', pkg);
     const wrapOp = outFqn === OP_V1 || outFqn === OP_V1A;
-    const listRespForOpSvc = isOperationService && /\.ListOperationsResponse$/.test(outFqn);
+    const isOperationsList = isListOperationsMethod(m);
     const ResBase = outInfo?.tsName || 'any';
     const retT = wrapOp
       ? `SDKRequestClass<${Req}, OperationWrapper<GetOperationRequest>>`
-      : listRespForOpSvc
+      : isOperationsList
         ? `SDKRequestClass<${Req}, OperationServiceListResponse>`
         : `SDKRequestClass<${Req}, ${ResBase}>`;
     lines.push(`  ${lower}(request: ${Req}): ${retT};`);
@@ -276,13 +284,13 @@ export function printService(
     if (wrapOp) {
       lines.push(`    const deserialize = (value: Buffer) => {`);
       lines.push(`      const resp = spec.responseDeserialize(value);`);
-      if (isOperationService) {
+      if (isOpSvc) {
         lines.push(`      return new OperationWrapper(resp, this);`);
       } else {
         lines.push(`      return new OperationWrapper(resp, this.getOperationService());`);
       }
       lines.push(`    };`);
-    } else if (listRespForOpSvc) {
+    } else if (isOperationsList) {
       // Special case: list method of OperationService should return operations wrapped in OperationWrapper
       lines.push(`    const deserialize = (value: Buffer) => {`);
       lines.push(`      const resp = spec.responseDeserialize(value);`);

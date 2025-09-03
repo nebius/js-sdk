@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / StaticKeyStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19341
 
 Defined in: src/generated/nebius/iam/v1/index.ts:19343
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19343
 
 Defined in: src/generated/nebius/iam/v1/index.ts:19342
 
-***
+---
 
 ### active
 

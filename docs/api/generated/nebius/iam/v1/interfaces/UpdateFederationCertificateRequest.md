@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / UpdateFederationCertificateRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7542
 
 Defined in: src/generated/nebius/iam/v1/index.ts:7544
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7544
 
 Defined in: src/generated/nebius/iam/v1/index.ts:7543
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7543
 
 Defined in: src/generated/nebius/iam/v1/index.ts:7545
 
-***
+---
 
 ### spec?
 

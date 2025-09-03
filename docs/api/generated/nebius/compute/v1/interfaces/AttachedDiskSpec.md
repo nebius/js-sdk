@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / AttachedDiskSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8175
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8177
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8177
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8176
 
-***
+---
 
 ### attachMode
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8176
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8178
 
-***
+---
 
 ### deviceId
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8183
 
 Specifies the user-defined identifier, allowing to use '/dev/disk/by-id/virtio-{device_id}' as a device path in mount command.
 
-***
+---
 
 ### type?
 

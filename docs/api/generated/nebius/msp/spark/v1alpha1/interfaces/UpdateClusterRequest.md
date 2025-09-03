@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / UpdateClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:585
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:587
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:587
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:586
 
-***
+---
 
 ### metadata?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:592
 
 Metadata associated with the cluster. Must include id of the cluster we are going to update.
 
-***
+---
 
 ### spec?
 

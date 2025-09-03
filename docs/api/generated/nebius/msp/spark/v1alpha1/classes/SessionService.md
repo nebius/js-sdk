@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / SessionService
 
@@ -170,7 +170,7 @@ Creates a session.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -302,7 +302,7 @@ Deletes a session.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -434,7 +434,7 @@ Returns the specified session.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -566,7 +566,7 @@ Returns the specified session by name.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -578,7 +578,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4642
 
 [`OperationService`](../../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 

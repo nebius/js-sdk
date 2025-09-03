@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / MaintenanceEventSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9061
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9063
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9063
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9062
 
-***
+---
 
 ### isPlanned
 

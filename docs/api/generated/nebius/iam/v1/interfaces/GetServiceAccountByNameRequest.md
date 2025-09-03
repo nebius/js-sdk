@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GetServiceAccountByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16237
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16239
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16239
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16238
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16238
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16241
 
-***
+---
 
 ### parentId
 

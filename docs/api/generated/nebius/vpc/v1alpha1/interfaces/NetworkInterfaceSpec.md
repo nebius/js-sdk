@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / NetworkInterfaceSpec
 
@@ -18,7 +18,7 @@ Describes the specification of a network interface.
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2266
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2266
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2265
 
-***
+---
 
 ### ipAddress?
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2283
 
 Private IPv4 address associated with the interface.
 
-***
+---
 
 ### name
 
@@ -45,10 +45,10 @@ Private IPv4 address associated with the interface.
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2278
 
 Interface name
- Value of this field configures the name of the network interface inside VM's OS.
- Longer values will persist in the specification but will be truncated to 15 symbols before being passed to VM configuration.
+Value of this field configures the name of the network interface inside VM's OS.
+Longer values will persist in the specification but will be truncated to 15 symbols before being passed to VM configuration.
 
-***
+---
 
 ### publicIpAddress?
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2288
 
 Public IPv4 address associated with the interface.
 
-***
+---
 
 ### subnetId
 

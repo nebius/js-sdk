@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/serverless/v1alpha1](../README.md) / JobTemplateSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2819
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2821
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2821
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2820
 
-***
+---
 
 ### resources?
 

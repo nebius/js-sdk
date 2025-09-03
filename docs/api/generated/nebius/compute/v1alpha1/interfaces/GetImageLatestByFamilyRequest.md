@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / GetImageLatestByFamilyRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4447
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4449
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4449
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4448
 
-***
+---
 
 ### imageFamily
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4448
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4450
 
-***
+---
 
 ### parentId
 

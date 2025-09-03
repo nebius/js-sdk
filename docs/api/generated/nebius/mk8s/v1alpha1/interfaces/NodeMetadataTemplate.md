@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / NodeMetadataTemplate
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4825
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4827
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4827
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4826
 
-***
+---
 
 ### labels
 
@@ -33,8 +33,8 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4826
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4834
 
 Labels will be propagated into nodes metadata.
- System labels containing "kubernetes.io" and "k8s.io" will not be propagated.
- On update labels they will not be updated in nodes right away, only on node group update.
+System labels containing "kubernetes.io" and "k8s.io" will not be propagated.
+On update labels they will not be updated in nodes right away, only on node group update.
 
 #### Index Signature
 

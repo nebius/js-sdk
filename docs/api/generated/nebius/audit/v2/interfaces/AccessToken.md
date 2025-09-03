@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/audit/v2](../README.md) / AccessToken
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:14
 
 Defined in: src/generated/nebius/audit/v2/index.ts:16
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:16
 
 Defined in: src/generated/nebius/audit/v2/index.ts:15
 
-***
+---
 
 ### maskedToken
 

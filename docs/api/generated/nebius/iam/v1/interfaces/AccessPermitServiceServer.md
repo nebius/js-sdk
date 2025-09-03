@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / AccessPermitServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2825
 
 Defined in: src/generated/nebius/iam/v1/index.ts:2826
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2826
 
 Defined in: src/generated/nebius/iam/v1/index.ts:2828
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2828
 
 Defined in: src/generated/nebius/iam/v1/index.ts:2829
 
-***
+---
 
 ### list
 

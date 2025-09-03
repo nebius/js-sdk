@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / AttachedFilesystemSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5180
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5182
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5182
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5181
 
-***
+---
 
 ### attachMode
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5181
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5183
 
-***
+---
 
 ### mountTag
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5188
 
 Specifies the user-defined identifier, allowing to use it as a device in mount command.
 
-***
+---
 
 ### type?
 

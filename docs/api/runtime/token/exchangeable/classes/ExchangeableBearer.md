@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/exchangeable](../README.md) / ExchangeableBearer
 
@@ -60,7 +60,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`name`](../../classes/Bearer.md#name)
 
-***
+---
 
 ### wrapped
 
@@ -100,7 +100,7 @@ Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`close`](../../classes/Bearer.md#close)
 
-***
+---
 
 ### receiver()
 
@@ -116,7 +116,7 @@ Defined in: [src/runtime/token/exchangeable.ts:122](https://github.com/nebius/no
 
 [`Bearer`](../../classes/Bearer.md).[`receiver`](../../classes/Bearer.md#receiver)
 
-***
+---
 
 ### setSDK()
 

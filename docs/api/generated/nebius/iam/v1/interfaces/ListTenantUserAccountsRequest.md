@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListTenantUserAccountsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19956
 
 Defined in: src/generated/nebius/iam/v1/index.ts:19958
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19958
 
 Defined in: src/generated/nebius/iam/v1/index.ts:19957
 
-***
+---
 
 ### filter
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19957
 
 Defined in: src/generated/nebius/iam/v1/index.ts:19975
 
-***
+---
 
 ### pageSize?
 
@@ -41,9 +41,9 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19975
 Defined in: src/generated/nebius/iam/v1/index.ts:19969
 
 Specifies the maximum number of items to return in the response.
- Default value: 10
+Default value: 10
 
-***
+---
 
 ### pageToken
 
@@ -53,7 +53,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19974
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

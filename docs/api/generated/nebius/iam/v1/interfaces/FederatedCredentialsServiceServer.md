@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / FederatedCredentialsServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6574
 
 Defined in: src/generated/nebius/iam/v1/index.ts:6578
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6578
 
 Defined in: src/generated/nebius/iam/v1/index.ts:6580
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6580
 
 Defined in: src/generated/nebius/iam/v1/index.ts:6575
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6575
 
 Defined in: src/generated/nebius/iam/v1/index.ts:6576
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6576
 
 Defined in: src/generated/nebius/iam/v1/index.ts:6577
 
-***
+---
 
 ### update
 

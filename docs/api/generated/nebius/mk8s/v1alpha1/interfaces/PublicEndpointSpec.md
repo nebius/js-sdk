@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / PublicEndpointSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1510
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1512
 
-***
+---
 
 ### $type
 

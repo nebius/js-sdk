@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/audit/v2](../README.md) / StaticKey
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2355
 
 Defined in: src/generated/nebius/audit/v2/index.ts:2357
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2357
 
 Defined in: src/generated/nebius/audit/v2/index.ts:2356
 
-***
+---
 
 ### id
 

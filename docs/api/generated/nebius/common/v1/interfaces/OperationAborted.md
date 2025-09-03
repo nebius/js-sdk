@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / OperationAborted
 
@@ -18,7 +18,7 @@ Operation on the resource has been aborted by a subsequent operation.
 
 Defined in: src/generated/nebius/common/v1/index.ts:1243
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1243
 
 Defined in: src/generated/nebius/common/v1/index.ts:1242
 
-***
+---
 
 ### abortedByOperationId
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1253
 
 ID of the subsequent operation.
 
-***
+---
 
 ### operationId
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1248
 
 ID of the aborted operation.
 
-***
+---
 
 ### resourceId
 

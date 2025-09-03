@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/fieldmask](../README.md) / FieldKey
 
@@ -46,7 +46,7 @@ Defined in: [src/runtime/fieldmask.ts:38](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### toString()
 
@@ -58,7 +58,7 @@ Defined in: [src/runtime/fieldmask.ts:20](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### unmarshal()
 

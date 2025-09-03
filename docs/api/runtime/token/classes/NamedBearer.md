@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/token](../README.md) / NamedBearer
 
@@ -56,7 +56,7 @@ Defined in: [src/runtime/token.ts:129](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](Bearer.md).[`name`](Bearer.md#name)
 
-***
+---
 
 ### wrapped
 
@@ -96,7 +96,7 @@ Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](Bearer.md).[`close`](Bearer.md#close)
 
-***
+---
 
 ### receiver()
 

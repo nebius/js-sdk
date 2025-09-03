@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/maintenance/v1alpha1](../README.md) / MaintenanceSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:609
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:611
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:611
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:610
 
-***
+---
 
 ### scheduledAt?
 

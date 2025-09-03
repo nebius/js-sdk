@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / Disk
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:972
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:974
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:974
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:973
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:973
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:975
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:975
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:976
 
-***
+---
 
 ### status?
 

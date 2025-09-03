@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / Condition\_TransitionError
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / Condition_TransitionError
 
-# Interface: Condition\_TransitionError
+# Interface: Condition_TransitionError
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2389
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2389
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2391
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2391
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2390
 
-***
+---
 
 ### description
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2390
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2393
 
-***
+---
 
 ### reason
 

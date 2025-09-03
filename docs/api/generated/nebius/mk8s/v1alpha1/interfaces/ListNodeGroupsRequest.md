@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / ListNodeGroupsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3292
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3294
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3294
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3293
 
-***
+---
 
 ### pageSize
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3304
 
 Specifies the maximum number of items to return in the response.
 
-***
+---
 
 ### pageToken
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3309
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / TargetGroupService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8465
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -174,7 +174,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8459
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### update()
 

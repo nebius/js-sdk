@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/file\_cache/async\_renewable\_bearer
+[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/file_cache/async_renewable_bearer
 
-# runtime/token/file\_cache/async\_renewable\_bearer
+# runtime/token/file_cache/async_renewable_bearer
 
 ## Classes
 

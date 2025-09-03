@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/quotas/v1](../README.md) / GetQuotaAllowanceRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:150
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:152
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:152
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:151
 
-***
+---
 
 ### id
 

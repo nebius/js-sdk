@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / SubnetStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7889
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7891
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7891
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7890
 
-***
+---
 
 ### ipv4Cidrs
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7901
 
 CIDR blocks.
 
-***
+---
 
 ### state
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / UserAccountStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22745
 
 Defined in: src/generated/nebius/iam/v1/index.ts:22747
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22747
 
 Defined in: src/generated/nebius/iam/v1/index.ts:22746
 
-***
+---
 
 ### state
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / Session
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4716
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4718
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4718
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4717
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4717
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4719
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4719
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4720
 
-***
+---
 
 ### status?
 

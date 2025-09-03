@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / SubnetSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7474
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:7476
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7476
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:7475
 
-***
+---
 
 ### ipv4PrivatePools?
 
@@ -33,9 +33,9 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7475
 Defined in: src/generated/nebius/vpc/v1/index.ts:7487
 
 Pools for private ipv4 addresses.
- Default is 'use_network_pools = true'
+Default is 'use_network_pools = true'
 
-***
+---
 
 ### ipv4PublicPools?
 
@@ -44,9 +44,9 @@ Pools for private ipv4 addresses.
 Defined in: src/generated/nebius/vpc/v1/index.ts:7493
 
 Pools for public ipv4 addresses.
- Default is 'use_network_pools = true'
+Default is 'use_network_pools = true'
 
-***
+---
 
 ### networkId
 

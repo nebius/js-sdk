@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListMemberOfResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10621
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10623
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10623
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10622
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10628
 
 Groups that requested entity is a member of
 
-***
+---
 
 ### nextPageToken
 

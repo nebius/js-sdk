@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / BackupServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:648
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:652
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:652
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:653
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:653
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:649
 
-***
+---
 
 ### list
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:649
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:650
 
-***
+---
 
 ### listByCluster
 

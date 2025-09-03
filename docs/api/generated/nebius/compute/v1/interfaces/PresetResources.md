@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / PresetResources
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11893
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11895
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11895
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11894
 
-***
+---
 
 ### gpuCount
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11894
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11898
 
-***
+---
 
 ### memoryGibibytes
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11898
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11897
 
-***
+---
 
 ### vcpuCount
 

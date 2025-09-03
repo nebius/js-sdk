@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GetGroupMembershipRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10021
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10023
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10023
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10022
 
-***
+---
 
 ### id
 

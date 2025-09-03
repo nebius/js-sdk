@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/v1alpha1/resource](../README.md) / TemplateSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:211
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:213
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:213
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:212
 
-***
+---
 
 ### disk?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:212
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:216
 
-***
+---
 
 ### hosts?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:216
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:215
 
-***
+---
 
 ### resources?
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:215
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:214
 
-***
+---
 
 ### role
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / ListTransfersResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:235
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:237
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:237
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:236
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:242
 
 List of transfers returned in the response.
 
-***
+---
 
 ### nextPageToken
 

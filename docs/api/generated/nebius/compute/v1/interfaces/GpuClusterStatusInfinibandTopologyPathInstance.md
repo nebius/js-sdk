@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / GpuClusterStatusInfinibandTopologyPathInstance
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4907
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4909
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4909
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4908
 
-***
+---
 
 ### instanceId
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4908
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4910
 
-***
+---
 
 ### path
 

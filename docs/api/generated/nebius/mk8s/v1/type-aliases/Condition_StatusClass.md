@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / Condition\_StatusClass
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / Condition_StatusClass
 
-# Type Alias: Condition\_StatusClass
+# Type Alias: Condition_StatusClass
 
-> **Condition\_StatusClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNKNOWN"` \| `"TRUE"` \| `"FALSE"`\> & `Condition_StatusValueMembers`
+> **Condition_StatusClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNKNOWN"` \| `"TRUE"` \| `"FALSE"`\> & `Condition_StatusValueMembers`
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2147

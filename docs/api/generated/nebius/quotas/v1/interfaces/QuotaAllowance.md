@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/quotas/v1](../README.md) / QuotaAllowance
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:1083
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:1085
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:1085
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:1084
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:1084
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:1086
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:1086
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:1087
 
-***
+---
 
 ### status?
 

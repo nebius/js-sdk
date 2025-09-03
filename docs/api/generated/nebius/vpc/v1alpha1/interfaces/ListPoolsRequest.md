@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / ListPoolsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4329
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4331
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4331
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4330
 
-***
+---
 
 ### filter
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4330
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4335
 
-***
+---
 
 ### pageSize
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4335
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4333
 
-***
+---
 
 ### pageToken
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4333
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4334
 
-***
+---
 
 ### parentId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / generated/nebius/quotas/v1
 
@@ -25,10 +25,10 @@
 ## Type Aliases
 
 - [QuotaAllowanceServiceServiceDescription](type-aliases/QuotaAllowanceServiceServiceDescription.md)
-- [QuotaAllowanceStatus\_State](type-aliases/QuotaAllowanceStatus_State.md)
-- [QuotaAllowanceStatus\_StateClass](type-aliases/QuotaAllowanceStatus_StateClass.md)
-- [QuotaAllowanceStatus\_UsageState](type-aliases/QuotaAllowanceStatus_UsageState.md)
-- [QuotaAllowanceStatus\_UsageStateClass](type-aliases/QuotaAllowanceStatus_UsageStateClass.md)
+- [QuotaAllowanceStatus_State](type-aliases/QuotaAllowanceStatus_State.md)
+- [QuotaAllowanceStatus_StateClass](type-aliases/QuotaAllowanceStatus_StateClass.md)
+- [QuotaAllowanceStatus_UsageState](type-aliases/QuotaAllowanceStatus_UsageState.md)
+- [QuotaAllowanceStatus_UsageStateClass](type-aliases/QuotaAllowanceStatus_UsageStateClass.md)
 
 ## Variables
 
@@ -41,5 +41,5 @@
 - [QuotaAllowanceServiceServiceDescription](variables/QuotaAllowanceServiceServiceDescription.md)
 - [QuotaAllowanceSpec](variables/QuotaAllowanceSpec.md)
 - [QuotaAllowanceStatus](variables/QuotaAllowanceStatus.md)
-- [QuotaAllowanceStatus\_State](variables/QuotaAllowanceStatus_State.md)
-- [QuotaAllowanceStatus\_UsageState](variables/QuotaAllowanceStatus_UsageState.md)
+- [QuotaAllowanceStatus_State](variables/QuotaAllowanceStatus_State.md)
+- [QuotaAllowanceStatus_UsageState](variables/QuotaAllowanceStatus_UsageState.md)

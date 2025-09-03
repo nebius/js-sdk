@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/v1alpha1/resource](../README.md) / Template
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:10
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:12
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:12
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:11
 
-***
+---
 
 ### spec?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:11
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:14
 
-***
+---
 
 ### status?
 

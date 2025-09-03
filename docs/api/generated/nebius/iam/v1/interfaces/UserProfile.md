@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / UserProfile
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14655
 
 Defined in: src/generated/nebius/iam/v1/index.ts:14657
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14657
 
 Defined in: src/generated/nebius/iam/v1/index.ts:14656
 
-***
+---
 
 ### attributesOptional?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14656
 
 Defined in: src/generated/nebius/iam/v1/index.ts:14661
 
-***
+---
 
 ### federationInfo?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14661
 
 Defined in: src/generated/nebius/iam/v1/index.ts:14659
 
-***
+---
 
 ### id
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14659
 
 Defined in: src/generated/nebius/iam/v1/index.ts:14658
 
-***
+---
 
 ### tenants
 

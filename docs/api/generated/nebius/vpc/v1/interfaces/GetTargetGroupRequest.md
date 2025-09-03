@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / GetTargetGroupRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8203
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8205
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8205
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8204
 
-***
+---
 
 ### id
 

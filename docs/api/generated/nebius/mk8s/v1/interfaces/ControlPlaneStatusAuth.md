@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / ControlPlaneStatusAuth
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1998
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2000
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2000
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1999
 
-***
+---
 
 ### clusterCaCertificate
 

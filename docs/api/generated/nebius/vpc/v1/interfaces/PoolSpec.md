@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / PoolSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5617
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5619
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5619
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5618
 
-***
+---
 
 ### cidrs
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5636
 
 CIDR blocks.
 
-***
+---
 
 ### sourcePoolId
 
@@ -43,9 +43,9 @@ CIDR blocks.
 Defined in: src/generated/nebius/vpc/v1/index.ts:5625
 
 ID of source pool. Current pool will be created with the same scope.
- Pool is a root-pool if this field is empty
+Pool is a root-pool if this field is empty
 
-***
+---
 
 ### version
 
@@ -55,7 +55,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5630
 
 IP version for the Pool.
 
-***
+---
 
 ### visibility
 

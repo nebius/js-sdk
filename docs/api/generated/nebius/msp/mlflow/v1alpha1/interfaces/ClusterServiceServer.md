@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/mlflow/v1alpha1](../README.md) / ClusterServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:723
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:727
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:727
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:728
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:728
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:724
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:724
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:725
 
-***
+---
 
 ### list
 

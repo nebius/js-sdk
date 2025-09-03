@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / TargetGroupStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9016
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:9018
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9018
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:9017
 
-***
+---
 
 ### loadBalancerIds
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9023
 
 LoadBalancer ids target group is attached to
 
-***
+---
 
 ### targetStatuses
 

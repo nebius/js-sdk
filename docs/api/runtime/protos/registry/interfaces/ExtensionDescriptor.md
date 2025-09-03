@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/registry](../README.md) / ExtensionDescriptor
 
@@ -38,7 +38,7 @@ return true if it consumed the field, false otherwise.
 
 `boolean`
 
-***
+---
 
 ### encode()?
 
@@ -63,7 +63,7 @@ checking field presence on the provided message and writing the field if set.
 
 `void`
 
-***
+---
 
 ### enumType?
 
@@ -71,7 +71,7 @@ checking field presence on the provided message and writing the field if set.
 
 Defined in: [src/runtime/protos/registry.ts:109](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L109)
 
-***
+---
 
 ### extendee
 
@@ -79,7 +79,7 @@ Defined in: [src/runtime/protos/registry.ts:109](https://github.com/nebius/nodej
 
 Defined in: [src/runtime/protos/registry.ts:98](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L98)
 
-***
+---
 
 ### fieldNo
 
@@ -87,7 +87,7 @@ Defined in: [src/runtime/protos/registry.ts:98](https://github.com/nebius/nodejs
 
 Defined in: [src/runtime/protos/registry.ts:102](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L102)
 
-***
+---
 
 ### fromJSON()?
 
@@ -95,7 +95,7 @@ Defined in: [src/runtime/protos/registry.ts:102](https://github.com/nebius/nodej
 
 Defined in: [src/runtime/protos/registry.ts:136](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L136)
 
-JSON deserializer hook for this extension. Invoked by generated *Options.fromJSON
+JSON deserializer hook for this extension. Invoked by generated \*Options.fromJSON
 implementations after the core fields are populated, allowing the extension
 value (if present) to be assigned onto the target message instance.
 Implementations MUST NOT throw – they should simply no-op if the JSON value
@@ -115,7 +115,7 @@ is absent or invalid.
 
 `void`
 
-***
+---
 
 ### fullName
 
@@ -123,7 +123,7 @@ is absent or invalid.
 
 Defined in: [src/runtime/protos/registry.ts:100](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L100)
 
-***
+---
 
 ### kind
 
@@ -131,7 +131,7 @@ Defined in: [src/runtime/protos/registry.ts:100](https://github.com/nebius/nodej
 
 Defined in: [src/runtime/protos/registry.ts:106](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L106)
 
-***
+---
 
 ### messageType?
 
@@ -139,7 +139,7 @@ Defined in: [src/runtime/protos/registry.ts:106](https://github.com/nebius/nodej
 
 Defined in: [src/runtime/protos/registry.ts:110](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L110)
 
-***
+---
 
 ### name
 
@@ -147,7 +147,7 @@ Defined in: [src/runtime/protos/registry.ts:110](https://github.com/nebius/nodej
 
 Defined in: [src/runtime/protos/registry.ts:104](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L104)
 
-***
+---
 
 ### scalarType?
 
@@ -155,7 +155,7 @@ Defined in: [src/runtime/protos/registry.ts:104](https://github.com/nebius/nodej
 
 Defined in: [src/runtime/protos/registry.ts:108](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L108)
 
-***
+---
 
 ### toJSON()?
 
@@ -163,7 +163,7 @@ Defined in: [src/runtime/protos/registry.ts:108](https://github.com/nebius/nodej
 
 Defined in: [src/runtime/protos/registry.ts:143](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L143)
 
-JSON serializer hook for this extension. Invoked by generated *Options.toJSON
+JSON serializer hook for this extension. Invoked by generated \*Options.toJSON
 implementations after core fields are emitted. Responsible for adding the
 JSON representation (if present) onto the provided output object.
 

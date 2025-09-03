@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/request](../README.md) / Request
 
@@ -76,7 +76,7 @@ Defined in: [src/runtime/request.ts:89](https://github.com/nebius/nodejs-sdk/blo
 
 Defined in: [src/runtime/request.ts:77](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L77)
 
-***
+---
 
 ### requestId
 
@@ -84,7 +84,7 @@ Defined in: [src/runtime/request.ts:77](https://github.com/nebius/nodejs-sdk/blo
 
 Defined in: [src/runtime/request.ts:80](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L80)
 
-***
+---
 
 ### result
 
@@ -92,7 +92,7 @@ Defined in: [src/runtime/request.ts:80](https://github.com/nebius/nodejs-sdk/blo
 
 Defined in: [src/runtime/request.ts:76](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L76)
 
-***
+---
 
 ### status
 
@@ -100,7 +100,7 @@ Defined in: [src/runtime/request.ts:76](https://github.com/nebius/nodejs-sdk/blo
 
 Defined in: [src/runtime/request.ts:79](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L79)
 
-***
+---
 
 ### traceId
 
@@ -108,7 +108,7 @@ Defined in: [src/runtime/request.ts:79](https://github.com/nebius/nodejs-sdk/blo
 
 Defined in: [src/runtime/request.ts:81](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L81)
 
-***
+---
 
 ### trailingMetadata
 

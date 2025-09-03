@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / Allocation
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1166
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:1168
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1168
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:1167
 
-***
+---
 
 ### metadata?
 
@@ -33,9 +33,9 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1167
 Defined in: src/generated/nebius/vpc/v1/index.ts:1174
 
 Metadata for the Allocation.
- `metadata.parent_id` represents IAM Container.
+`metadata.parent_id` represents IAM Container.
 
-***
+---
 
 ### spec?
 
@@ -45,7 +45,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1179
 
 Specifications for the allocation, detailing its name and IP configuration.
 
-***
+---
 
 ### status?
 

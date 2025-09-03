@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / UpdateTransferRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:459
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:461
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:461
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:460
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:460
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:462
 
-***
+---
 
 ### spec?
 

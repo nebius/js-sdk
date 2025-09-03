@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/serverless/v1alpha1](../README.md) / EndpointSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:661
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:663
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:663
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:662
 
-***
+---
 
 ### container?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:693
 
 Container spec
 
-***
+---
 
 ### description
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:668
 
 Description of the endpoint.
 
-***
+---
 
 ### networkId
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:673
 
 Network ID to run the endpoint in
 
-***
+---
 
 ### password
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:683
 
 Password for accessing the container endpoint.
 
-***
+---
 
 ### port
 
@@ -74,7 +74,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:688
 
 Container port to be exposed.
 
-***
+---
 
 ### username
 

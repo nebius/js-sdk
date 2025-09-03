@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListFederatedCredentialsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6161
 
 Defined in: src/generated/nebius/iam/v1/index.ts:6163
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6163
 
 Defined in: src/generated/nebius/iam/v1/index.ts:6162
 
-***
+---
 
 ### filter
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6183
 
 A filter to narrow down the results based on specific criteria.
 
-***
+---
 
 ### pageSize
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6173
 
 Specifies the maximum number of items to return in the response. Default is 10
 
-***
+---
 
 ### pageToken
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6178
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

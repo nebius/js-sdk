@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / LifecycleFilter
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2852
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2854
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2854
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2853
 
-***
+---
 
 ### objectSizeGreaterThanBytes
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2865
 
 Minimum object size to which the rule applies.
 
-***
+---
 
 ### objectSizeLessThanBytes
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2870
 
 Maximum object size to which the rule applies.
 
-***
+---
 
 ### prefix
 
@@ -53,4 +53,4 @@ Maximum object size to which the rule applies.
 Defined in: src/generated/nebius/storage/v1/index.ts:2860
 
 Prefix identifying one or more objects to which the rule applies.
- If prefix is empty, the rule applies to all objects in the bucket.
+If prefix is empty, the rule applies to all objects in the bucket.

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / NodeTaint
 
@@ -18,7 +18,7 @@ See https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5736
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5736
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5735
 
-***
+---
 
 ### effect
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5735
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5739
 
-***
+---
 
 ### key
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5739
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5737
 
-***
+---
 
 ### value
 

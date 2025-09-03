@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / DeleteFilesystemRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2084
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2086
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2086
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2085
 
-***
+---
 
 ### id
 

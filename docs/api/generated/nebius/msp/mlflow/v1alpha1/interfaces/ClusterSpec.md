@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/mlflow/v1alpha1](../README.md) / ClusterSpec
 
@@ -18,7 +18,7 @@ Cluster specification
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1010
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1010
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1009
 
-***
+---
 
 ### adminPassword
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1030
 
 MLflow admin password.
 
-***
+---
 
 ### adminUsername
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1025
 
 MLflow admin username.
 
-***
+---
 
 ### description
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1015
 
 Description of the cluster.
 
-***
+---
 
 ### networkId
 
@@ -66,7 +66,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1045
 
 ID of the vpc network.
 
-***
+---
 
 ### publicAccess
 
@@ -76,7 +76,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1020
 
 Either make cluster public accessible or accessible only via private VPC.
 
-***
+---
 
 ### serviceAccountId
 
@@ -86,7 +86,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1035
 
 Id of the service account that will be used to access S3 bucket (and create one if not provided).
 
-***
+---
 
 ### size
 
@@ -95,9 +95,9 @@ Id of the service account that will be used to access S3 bucket (and create one 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1051
 
 Size defines how much resources will be allocated to mlflow
- See supported sizes in the documentation. Default size is the smallest available in the region.
+See supported sizes in the documentation. Default size is the smallest available in the region.
 
-***
+---
 
 ### storageBucketName
 

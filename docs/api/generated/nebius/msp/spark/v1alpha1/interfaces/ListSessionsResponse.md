@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / ListSessionsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4200
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4202
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4202
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4201
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4207
 
 List of sessions.
 
-***
+---
 
 ### nextPageToken?
 

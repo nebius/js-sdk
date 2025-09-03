@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v2](../README.md) / GetTenantByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2284
 
 Defined in: src/generated/nebius/iam/v2/index.ts:2286
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2286
 
 Defined in: src/generated/nebius/iam/v2/index.ts:2285
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2285
 
 Defined in: src/generated/nebius/iam/v2/index.ts:2293
 
-***
+---
 
 ### parentId
 
@@ -41,4 +41,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2293
 Defined in: src/generated/nebius/iam/v2/index.ts:2292
 
 Only empty value is allowed. Field is needed for compatibility.
- parent_id parameter for tenants doesn't make real sense, because tenants are top-level objects.
+parent_id parameter for tenants doesn't make real sense, because tenants are top-level objects.

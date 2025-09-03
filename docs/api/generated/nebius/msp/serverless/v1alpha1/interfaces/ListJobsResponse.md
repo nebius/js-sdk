@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/serverless/v1alpha1](../README.md) / ListJobsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1818
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1820
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1820
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1819
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1825
 
 List of jobs.
 
-***
+---
 
 ### nextPageToken
 

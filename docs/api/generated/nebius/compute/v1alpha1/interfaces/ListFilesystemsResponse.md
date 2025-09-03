@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / ListFilesystemsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2169
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2171
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2171
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2170
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2170
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2172
 
-***
+---
 
 ### nextPageToken
 

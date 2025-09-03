@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../README.md) / [sdk](../README.md) / SDK
 
@@ -48,7 +48,7 @@ Defined in: [src/sdk.ts:459](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 `void`
 
-***
+---
 
 ### close()
 
@@ -66,7 +66,7 @@ Defined in: [src/sdk.ts:482](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 `Promise`\<`void`\>
 
-***
+---
 
 ### getAddressCredentials()
 
@@ -84,7 +84,7 @@ Defined in: [src/sdk.ts:391](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 `ChannelCredentials`
 
-***
+---
 
 ### getAddressFromServiceName()
 
@@ -110,7 +110,7 @@ Defined in: [src/sdk.ts:380](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 [`SDKInterface`](../interfaces/SDKInterface.md).[`getAddressFromServiceName`](../interfaces/SDKInterface.md#getaddressfromservicename)
 
-***
+---
 
 ### getAddressOptions()
 
@@ -128,7 +128,7 @@ Defined in: [src/sdk.ts:405](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 `Partial`\<`ClientOptions`\>
 
-***
+---
 
 ### getClientByAddress()
 
@@ -150,7 +150,7 @@ Defined in: [src/sdk.ts:370](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 [`SDKInterface`](../interfaces/SDKInterface.md).[`getClientByAddress`](../interfaces/SDKInterface.md#getclientbyaddress)
 
-***
+---
 
 ### getTlsRootCAs()
 
@@ -162,7 +162,7 @@ Defined in: [src/sdk.ts:387](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 `undefined` \| `string` \| `string`[] \| `Buffer`\<`ArrayBufferLike`\>
 
-***
+---
 
 ### parentId()
 
@@ -178,7 +178,7 @@ Defined in: [src/sdk.ts:445](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 [`SDKInterface`](../interfaces/SDKInterface.md).[`parentId`](../interfaces/SDKInterface.md#parentid)
 
-***
+---
 
 ### setAuthorizationProvider()
 
@@ -196,7 +196,7 @@ Defined in: [src/sdk.ts:450](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 `void`
 
-***
+---
 
 ### setClientOptions()
 
@@ -214,7 +214,7 @@ Defined in: [src/sdk.ts:464](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 `void`
 
-***
+---
 
 ### setTokenBearerAsAuthorization()
 
@@ -232,7 +232,7 @@ Defined in: [src/sdk.ts:454](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 `void`
 
-***
+---
 
 ### whoami()
 

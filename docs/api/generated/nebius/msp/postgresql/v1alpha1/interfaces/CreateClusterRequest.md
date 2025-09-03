@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / CreateClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1486
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1488
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1488
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1487
 
-***
+---
 
 ### metadata?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1493
 
 Metadata associated with the new cluster.
 
-***
+---
 
 ### spec?
 

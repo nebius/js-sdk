@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/audit/v2](../README.md) / Resource
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1983
 
 Defined in: src/generated/nebius/audit/v2/index.ts:1985
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1985
 
 Defined in: src/generated/nebius/audit/v2/index.ts:1984
 
-***
+---
 
 ### hierarchy
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2000
 
 Top-down resources hierarchy from tenant to resource.
 
-***
+---
 
 ### metadata?
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1990
 
 Provides basic information about the resource.
 
-***
+---
 
 ### state?
 

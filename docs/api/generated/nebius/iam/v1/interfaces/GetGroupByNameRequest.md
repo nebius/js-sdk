@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GetGroupByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11878
 
 Defined in: src/generated/nebius/iam/v1/index.ts:11880
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11880
 
 Defined in: src/generated/nebius/iam/v1/index.ts:11879
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11879
 
 Defined in: src/generated/nebius/iam/v1/index.ts:11882
 
-***
+---
 
 ### parentId
 

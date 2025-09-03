@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GroupService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12550
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupRequest`](../interfaces/CreateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12601
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12565
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupRequest`](../interfaces/GetGroupRequest.md), [`Group`](../interfaces/Group.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12577
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), [`Group`](../interfaces/Group.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12544
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12589
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupsRequest`](../interfaces/ListGroupsRequest.md), [`ListGroupsResponse`](../interfaces/ListGroupsResponse.md)\>
 
-***
+---
 
 ### update()
 

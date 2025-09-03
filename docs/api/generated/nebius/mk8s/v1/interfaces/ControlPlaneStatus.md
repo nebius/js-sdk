@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / ControlPlaneStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1721
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1723
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1723
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1722
 
-***
+---
 
 ### auth?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1722
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1738
 
-***
+---
 
 ### endpoints?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1738
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1732
 
-***
+---
 
 ### etcdClusterSize
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1737
 
 Number of instances in etcd cluster.
 
-***
+---
 
 ### version
 
@@ -59,6 +59,6 @@ Number of instances in etcd cluster.
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1731
 
 Actual Kubernetes and configuration version.
- Version have format `<major>.<minor>.<patch>-nebius-cp.<infra_version>` like "1.30.0-nebius-cp.3".
- Where <major>.<minor>.<patch> is Kubernetes version and <infra_version> is version of control plane infrastructure and configuration,
- which update may include bug fixes, security updates and new features of components running on control plane, like CCM or Cluster Autoscaler.
+Version have format `<major>.<minor>.<patch>-nebius-cp.<infra_version>` like "1.30.0-nebius-cp.3".
+Where <major>.<minor>.<patch> is Kubernetes version and <infra_version> is version of control plane infrastructure and configuration,
+which update may include bug fixes, security updates and new features of components running on control plane, like CCM or Cluster Autoscaler.

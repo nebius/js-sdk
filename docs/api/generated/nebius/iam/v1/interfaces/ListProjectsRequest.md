@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListProjectsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15486
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15488
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15488
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15487
 
-***
+---
 
 ### filter
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15509
 
 A filter to narrow down the results based on specific criteria.
 
-***
+---
 
 ### pageSize?
 
@@ -43,9 +43,9 @@ A filter to narrow down the results based on specific criteria.
 Defined in: src/generated/nebius/iam/v1/index.ts:15499
 
 Specifies the maximum number of items to return in the response.
- Default value: 10
+Default value: 10
 
-***
+---
 
 ### pageToken
 
@@ -55,7 +55,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15504
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

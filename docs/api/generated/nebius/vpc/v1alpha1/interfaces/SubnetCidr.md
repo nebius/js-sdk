@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / SubnetCidr
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7753
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7755
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7755
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7754
 
-***
+---
 
 ### allowedMask
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7771
 
 Maximum mask length for allocation from this cidr
 
-***
+---
 
 ### cidr
 
@@ -43,9 +43,9 @@ Maximum mask length for allocation from this cidr
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7761
 
 CIDR block.
- May be a prefix length (such as /24) or a CIDR-formatted string (such as 10.1.2.0/24).
+May be a prefix length (such as /24) or a CIDR-formatted string (such as 10.1.2.0/24).
 
-***
+---
 
 ### state
 

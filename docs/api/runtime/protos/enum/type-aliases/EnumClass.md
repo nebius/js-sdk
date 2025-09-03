@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/enum](../README.md) / EnumClass
 
@@ -100,4 +100,4 @@ Defined in: [src/runtime/protos/enum.ts:23](https://github.com/nebius/nodejs-sdk
 
 ### TNames
 
-`TNames` *extends* `string` = `string`
+`TNames` _extends_ `string` = `string`

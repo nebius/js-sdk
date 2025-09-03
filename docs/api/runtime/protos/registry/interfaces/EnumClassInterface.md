@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/registry](../README.md) / EnumClassInterface
 
@@ -16,7 +16,7 @@ Defined in: [src/runtime/protos/registry.ts:29](https://github.com/nebius/nodejs
 
 Defined in: [src/runtime/protos/registry.ts:33](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L33)
 
-***
+---
 
 ### \_byName
 
@@ -24,7 +24,7 @@ Defined in: [src/runtime/protos/registry.ts:33](https://github.com/nebius/nodejs
 
 Defined in: [src/runtime/protos/registry.ts:34](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L34)
 
-***
+---
 
 ### $type
 
@@ -32,7 +32,7 @@ Defined in: [src/runtime/protos/registry.ts:34](https://github.com/nebius/nodejs
 
 Defined in: [src/runtime/protos/registry.ts:30](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L30)
 
-***
+---
 
 ### UNRECOGNIZED
 
@@ -40,7 +40,7 @@ Defined in: [src/runtime/protos/registry.ts:30](https://github.com/nebius/nodejs
 
 Defined in: [src/runtime/protos/registry.ts:31](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L31)
 
-***
+---
 
 ### values
 
@@ -74,7 +74,7 @@ Defined in: [src/runtime/protos/registry.ts:39](https://github.com/nebius/nodejs
 
 `void`
 
-***
+---
 
 ### fromJSON()
 
@@ -92,7 +92,7 @@ Defined in: [src/runtime/protos/registry.ts:37](https://github.com/nebius/nodejs
 
 [`EnumInstanceInterface`](EnumInstanceInterface.md)
 
-***
+---
 
 ### fromNumber()
 
@@ -110,7 +110,7 @@ Defined in: [src/runtime/protos/registry.ts:35](https://github.com/nebius/nodejs
 
 [`EnumInstanceInterface`](EnumInstanceInterface.md)
 
-***
+---
 
 ### toJSON()
 

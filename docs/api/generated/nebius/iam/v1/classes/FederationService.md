@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / FederationService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9242
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationRequest`](../interfaces/CreateFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9308
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9257
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9269
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](../interfaces/Federation.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9236
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9281
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationsRequest`](../interfaces/ListFederationsRequest.md), [`ListFederationsResponse`](../interfaces/ListFederationsResponse.md)\>
 
-***
+---
 
 ### update()
 

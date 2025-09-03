@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / Cluster
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2590
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2592
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2592
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2591
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2591
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2593
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2593
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2594
 
-***
+---
 
 ### status?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/applications/v1alpha1](../README.md) / K8sRelease
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:875
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:877
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:877
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:876
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:876
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:878
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:878
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:879
 
-***
+---
 
 ### status?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / ClusterStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3018
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3020
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3020
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3019
 
-***
+---
 
 ### connectionEndpoints?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3040
 
 Connection endpoints of the PostgreSQL cluster.
 
-***
+---
 
 ### phase
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3025
 
 Current phase of the cluster.
 
-***
+---
 
 ### presetDetails?
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3035
 
 Cluster resource preset details
 
-***
+---
 
 ### state
 

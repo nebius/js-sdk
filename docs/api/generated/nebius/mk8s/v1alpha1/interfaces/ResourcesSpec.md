@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / ResourcesSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2841
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2843
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2843
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2842
 
-***
+---
 
 ### platform
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2842
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2844
 
-***
+---
 
 ### size?
 

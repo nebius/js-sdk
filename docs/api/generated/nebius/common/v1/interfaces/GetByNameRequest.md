@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / GetByNameRequest
 
@@ -9,7 +9,7 @@
 Defined in: src/generated/nebius/common/v1/index.ts:2564
 
 if service supports uniqueness of ResourceMetadata.name within tuple (scope) <resource_type, parent_id>
- it also must have grpc method GetByName
+it also must have grpc method GetByName
 
 ## Properties
 
@@ -19,7 +19,7 @@ if service supports uniqueness of ResourceMetadata.name within tuple (scope) <re
 
 Defined in: src/generated/nebius/common/v1/index.ts:2566
 
-***
+---
 
 ### $type
 
@@ -27,7 +27,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2566
 
 Defined in: src/generated/nebius/common/v1/index.ts:2565
 
-***
+---
 
 ### name
 
@@ -35,7 +35,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2565
 
 Defined in: src/generated/nebius/common/v1/index.ts:2568
 
-***
+---
 
 ### parentId
 

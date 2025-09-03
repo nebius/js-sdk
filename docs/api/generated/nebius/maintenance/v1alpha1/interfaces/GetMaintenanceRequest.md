@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/maintenance/v1alpha1](../README.md) / GetMaintenanceRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:192
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:194
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:194
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:193
 
-***
+---
 
 ### id
 
@@ -33,4 +33,4 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:193
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:200
 
 ID of the maintenance operation to return.
- To get the maintenance ID use a [MaintenanceService.List] request.
+To get the maintenance ID use a [MaintenanceService.List] request.

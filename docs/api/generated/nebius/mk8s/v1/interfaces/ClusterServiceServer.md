@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / ClusterServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:734
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:738
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:738
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:740
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:740
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:735
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:735
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:736
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:736
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:737
 
-***
+---
 
 ### update
 

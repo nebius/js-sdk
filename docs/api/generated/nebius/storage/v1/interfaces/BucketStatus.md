@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / BucketStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2233
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2235
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2235
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2234
 
-***
+---
 
 ### counters
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2234
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2236
 
-***
+---
 
 ### deletedAt?
 
@@ -41,9 +41,9 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2236
 Defined in: src/generated/nebius/storage/v1/index.ts:2244
 
 The time when the bucket was deleted (or scheduled for deletion).
- It resets to null if the bucket is undeleted.
+It resets to null if the bucket is undeleted.
 
-***
+---
 
 ### domainName
 
@@ -52,9 +52,9 @@ The time when the bucket was deleted (or scheduled for deletion).
 Defined in: src/generated/nebius/storage/v1/index.ts:2255
 
 The domain of the endpoint where the bucket can be accessed. It omits the scheme (HTTPS) and the port (443)
- and contains only the FQDN address.
+and contains only the FQDN address.
 
-***
+---
 
 ### purgeAt?
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2249
 
 The time when the bucket will be automatically purged in case it was soft-deleted.
 
-***
+---
 
 ### region
 
@@ -74,7 +74,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2260
 
 The name of the region where the bucket is located for use with S3 clients, i.e. "eu-west1".
 
-***
+---
 
 ### state
 
@@ -82,7 +82,7 @@ The name of the region where the bucket is located for use with S3 clients, i.e.
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2237
 
-***
+---
 
 ### suspensionState
 

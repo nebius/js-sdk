@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / PublicIPAddress
 
@@ -18,7 +18,7 @@ Describes a public IP address.
 
 Defined in: src/generated/nebius/compute/v1/index.ts:10016
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10016
 
 Defined in: src/generated/nebius/compute/v1/index.ts:10015
 
-***
+---
 
 ### allocation?
 
@@ -44,7 +44,7 @@ Describes different methods of public IP address allocation.
 
 > **allocationId**: `string`
 
-***
+---
 
 ### static
 
@@ -53,5 +53,5 @@ Describes different methods of public IP address allocation.
 Defined in: src/generated/nebius/compute/v1/index.ts:10023
 
 If false - Allocation will be created/deleted during NetworkInterface.Allocate/NetworkInterface.Deallocate
- If true  - Allocation will be created/deleted during NetworkInterface.Create/NetworkInterface.Delete
- False by default
+If true - Allocation will be created/deleted during NetworkInterface.Create/NetworkInterface.Delete
+False by default

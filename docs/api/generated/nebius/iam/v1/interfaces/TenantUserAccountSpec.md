@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / TenantUserAccountSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21749
 
 Defined in: src/generated/nebius/iam/v1/index.ts:21751
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21751
 
 Defined in: src/generated/nebius/iam/v1/index.ts:21750
 
-***
+---
 
 ### visibleAttributes?
 

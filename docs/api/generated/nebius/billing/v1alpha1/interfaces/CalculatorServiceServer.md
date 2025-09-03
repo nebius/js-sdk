@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/billing/v1alpha1](../README.md) / CalculatorServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:526
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:527
 
-***
+---
 
 ### estimateBatch
 

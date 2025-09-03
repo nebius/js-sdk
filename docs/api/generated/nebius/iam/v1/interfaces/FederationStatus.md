@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / FederationStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9737
 
 Defined in: src/generated/nebius/iam/v1/index.ts:9739
 
-***
+---
 
 ### $type
 

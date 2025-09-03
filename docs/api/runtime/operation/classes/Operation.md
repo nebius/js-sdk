@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/operation](../README.md) / Operation
 
@@ -48,7 +48,7 @@ Defined in: [src/runtime/operation.ts:46](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### createdAt()
 
@@ -60,7 +60,7 @@ Defined in: [src/runtime/operation.ts:58](https://github.com/nebius/nodejs-sdk/b
 
 `undefined` \| [`Dayjs`](../../protos/core/dayjs/classes/Dayjs.md)
 
-***
+---
 
 ### createdBy()
 
@@ -72,7 +72,7 @@ Defined in: [src/runtime/operation.ts:62](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### description()
 
@@ -84,7 +84,7 @@ Defined in: [src/runtime/operation.ts:54](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### done()
 
@@ -96,7 +96,7 @@ Defined in: [src/runtime/operation.ts:82](https://github.com/nebius/nodejs-sdk/b
 
 `boolean`
 
-***
+---
 
 ### finishedAt()
 
@@ -108,7 +108,7 @@ Defined in: [src/runtime/operation.ts:66](https://github.com/nebius/nodejs-sdk/b
 
 `undefined` \| [`Dayjs`](../../protos/core/dayjs/classes/Dayjs.md)
 
-***
+---
 
 ### id()
 
@@ -120,7 +120,7 @@ Defined in: [src/runtime/operation.ts:50](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### raw()
 
@@ -132,7 +132,7 @@ Defined in: [src/runtime/operation.ts:74](https://github.com/nebius/nodejs-sdk/b
 
 `GenericOperation`
 
-***
+---
 
 ### resourceId()
 
@@ -144,7 +144,7 @@ Defined in: [src/runtime/operation.ts:86](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### status()
 
@@ -156,7 +156,7 @@ Defined in: [src/runtime/operation.ts:78](https://github.com/nebius/nodejs-sdk/b
 
 `undefined` \| `Status`
 
-***
+---
 
 ### successful()
 
@@ -168,7 +168,7 @@ Defined in: [src/runtime/operation.ts:70](https://github.com/nebius/nodejs-sdk/b
 
 `boolean`
 
-***
+---
 
 ### toString()
 
@@ -180,7 +180,7 @@ Defined in: [src/runtime/operation.ts:42](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### update()
 
@@ -202,7 +202,7 @@ Defined in: [src/runtime/operation.ts:123](https://github.com/nebius/nodejs-sdk/
 
 `Promise`\<`void`\>
 
-***
+---
 
 ### wait()
 

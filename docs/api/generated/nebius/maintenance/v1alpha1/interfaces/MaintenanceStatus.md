@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/maintenance/v1alpha1](../README.md) / MaintenanceStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:701
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:703
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:703
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:702
 
-***
+---
 
 ### affectedResources
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:708
 
 List of resources that are affected by this maintenance operation.
 
-***
+---
 
 ### finishedAt?
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:718
 
 Timestamp indicating when the maintenance operation finished.
 
-***
+---
 
 ### startedAt?
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:713
 
 Timestamp indicating when the maintenance operation started.
 
-***
+---
 
 ### state
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / PoolStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5911
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5913
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5913
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:5912
 
-***
+---
 
 ### assignment?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5933
 
 Assignment details for this Pool
 
-***
+---
 
 ### cidrs
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5923
 
 CIDR blocks.
 
-***
+---
 
 ### scopeId
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5928
 
 Scope is the unique identifier for single pool tree.
 
-***
+---
 
 ### state
 

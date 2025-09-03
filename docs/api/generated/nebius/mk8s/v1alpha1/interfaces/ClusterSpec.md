@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / ClusterSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1139
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1141
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1141
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1140
 
-***
+---
 
 ### controlPlane?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1140
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1142
 
-***
+---
 
 ### kubeNetwork?
 

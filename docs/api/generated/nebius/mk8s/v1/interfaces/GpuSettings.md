@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / GpuSettings
 
@@ -18,7 +18,7 @@ GPU-related settings.
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4818
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4818
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4817
 
-***
+---
 
 ### driversPreset
 
@@ -35,4 +35,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4817
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4824
 
 Identifier of the predefined set of drivers included in the ComputeImage deployed on ComputeInstances that are part of the NodeGroup.
- Supported presets: cuda12
+Supported presets: cuda12

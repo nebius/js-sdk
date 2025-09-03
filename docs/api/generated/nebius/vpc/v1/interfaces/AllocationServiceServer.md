@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / AllocationServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:930
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:935
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:935
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:937
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:937
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:931
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:931
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:932
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:932
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:933
 
-***
+---
 
 ### listByPool
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:933
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:934
 
-***
+---
 
 ### update
 

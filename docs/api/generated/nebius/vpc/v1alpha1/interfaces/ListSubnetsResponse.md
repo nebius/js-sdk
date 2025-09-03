@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / ListSubnetsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6913
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6915
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6915
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6914
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6914
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6916
 
-***
+---
 
 ### nextPageToken
 

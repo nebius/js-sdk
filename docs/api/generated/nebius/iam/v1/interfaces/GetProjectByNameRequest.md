@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GetProjectByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15382
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15384
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15384
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15383
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15383
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15386
 
-***
+---
 
 ### parentId
 

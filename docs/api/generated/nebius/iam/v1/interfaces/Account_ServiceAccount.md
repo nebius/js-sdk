@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / Account\_ServiceAccount
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / Account_ServiceAccount
 
-# Interface: Account\_ServiceAccount
+# Interface: Account_ServiceAccount
 
 Defined in: src/generated/nebius/iam/v1/index.ts:3531
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3531
 
 Defined in: src/generated/nebius/iam/v1/index.ts:3533
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3533
 
 Defined in: src/generated/nebius/iam/v1/index.ts:3532
 
-***
+---
 
 ### id
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/serverless/v1alpha1](../README.md) / EndpointService
 
@@ -170,7 +170,7 @@ Creates an endpoint.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -302,7 +302,7 @@ Delete an endpoint.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -434,7 +434,7 @@ Returns the specified endpoint.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -566,7 +566,7 @@ Returns the specified endpoint by name.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -578,7 +578,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:422
 
 [`OperationService`](../../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -710,7 +710,7 @@ Retrieves a list of Endpoints.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
-***
+---
 
 ### start()
 
@@ -842,7 +842,7 @@ Start an endpoint.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### stop()
 

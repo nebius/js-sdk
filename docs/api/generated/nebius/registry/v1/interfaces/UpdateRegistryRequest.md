@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/registry/v1](../README.md) / UpdateRegistryRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1281
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1283
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1283
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1282
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1282
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1284
 
-***
+---
 
 ### spec?
 

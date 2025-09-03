@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferSpec\_BucketCredentials\_CredentialsAccessKey
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferSpec_BucketCredentials_CredentialsAccessKey
 
-# Interface: TransferSpec\_BucketCredentials\_CredentialsAccessKey
+# Interface: TransferSpec_BucketCredentials_CredentialsAccessKey
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2448
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2448
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2450
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2450
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2449
 
-***
+---
 
 ### accessKeyId
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2449
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2451
 
-***
+---
 
 ### secretAccessKey
 

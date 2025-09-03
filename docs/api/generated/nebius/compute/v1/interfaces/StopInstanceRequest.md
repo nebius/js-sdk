@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / StopInstanceRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6833
 
 Defined in: src/generated/nebius/compute/v1/index.ts:6835
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6835
 
 Defined in: src/generated/nebius/compute/v1/index.ts:6834
 
-***
+---
 
 ### id
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / generated/nebius/iam/v2
 
@@ -45,11 +45,11 @@
 ## Type Aliases
 
 - [AccessKeyServiceServiceDescription](type-aliases/AccessKeyServiceServiceDescription.md)
-- [AccessKeyStatus\_State](type-aliases/AccessKeyStatus_State.md)
-- [AccessKeyStatus\_StateClass](type-aliases/AccessKeyStatus_StateClass.md)
+- [AccessKeyStatus_State](type-aliases/AccessKeyStatus_State.md)
+- [AccessKeyStatus_StateClass](type-aliases/AccessKeyStatus_StateClass.md)
 - [TenantServiceServiceDescription](type-aliases/TenantServiceServiceDescription.md)
-- [TenantStatus\_TenantState](type-aliases/TenantStatus_TenantState.md)
-- [TenantStatus\_TenantStateClass](type-aliases/TenantStatus_TenantStateClass.md)
+- [TenantStatus_TenantState](type-aliases/TenantStatus_TenantState.md)
+- [TenantStatus_TenantStateClass](type-aliases/TenantStatus_TenantStateClass.md)
 
 ## Variables
 
@@ -58,7 +58,7 @@
 - [AccessKeyServiceServiceDescription](variables/AccessKeyServiceServiceDescription.md)
 - [AccessKeySpec](variables/AccessKeySpec.md)
 - [AccessKeyStatus](variables/AccessKeyStatus.md)
-- [AccessKeyStatus\_State](variables/AccessKeyStatus_State.md)
+- [AccessKeyStatus_State](variables/AccessKeyStatus_State.md)
 - [ActivateAccessKeyByAwsIdRequest](variables/ActivateAccessKeyByAwsIdRequest.md)
 - [ActivateAccessKeyRequest](variables/ActivateAccessKeyRequest.md)
 - [CreateAccessKeyRequest](variables/CreateAccessKeyRequest.md)
@@ -80,6 +80,6 @@
 - [TenantServiceServiceDescription](variables/TenantServiceServiceDescription.md)
 - [TenantSpec](variables/TenantSpec.md)
 - [TenantStatus](variables/TenantStatus.md)
-- [TenantStatus\_TenantState](variables/TenantStatus_TenantState.md)
+- [TenantStatus_TenantState](variables/TenantStatus_TenantState.md)
 - [UpdateAccessKeyRequest](variables/UpdateAccessKeyRequest.md)
 - [UpdateTenantRequest](variables/UpdateTenantRequest.md)

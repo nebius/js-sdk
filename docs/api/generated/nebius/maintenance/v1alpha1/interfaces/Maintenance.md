@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/maintenance/v1alpha1](../README.md) / Maintenance
 
@@ -9,10 +9,10 @@
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:462
 
 Maintenance operations are initiated by Nebius Cloud infrastructure.
- They are used to perform scheduled or urgent operations on Nebius Cloud resources,
- such as Managed Services or Standalone Applications, that are necessary for
- maintaining the service in an operable state. These operations run automatically,
- without user intervention.
+They are used to perform scheduled or urgent operations on Nebius Cloud resources,
+such as Managed Services or Standalone Applications, that are necessary for
+maintaining the service in an operable state. These operations run automatically,
+without user intervention.
 
 ## Properties
 
@@ -22,7 +22,7 @@ Maintenance operations are initiated by Nebius Cloud infrastructure.
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:464
 
-***
+---
 
 ### $type
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:464
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:463
 
-***
+---
 
 ### metadata?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:469
 
 The metadata for the maintenance operation resource.
 
-***
+---
 
 ### spec?
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:474
 
 Specifications for the maintenance operation.
 
-***
+---
 
 ### status?
 

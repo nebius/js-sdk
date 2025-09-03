@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [runtime/protos/core](../../README.md) / [dayjs](../README.md) / UnitTypeLongPlural
 
@@ -8,4 +8,4 @@
 
 > **UnitTypeLongPlural** = `"milliseconds"` \| `"seconds"` \| `"minutes"` \| `"hours"` \| `"days"` \| `"months"` \| `"years"` \| `"dates"`
 
-Defined in: node\_modules/dayjs/index.d.ts:26
+Defined in: node_modules/dayjs/index.d.ts:26

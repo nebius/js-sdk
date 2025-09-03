@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/logging/v1/agentmanager](../README.md) / VersionService
 
@@ -49,7 +49,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1781
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1787
 
 GetVersion retrieves version information and receives instructions for agent updates
- or maintenance based on the current state and health of the agent.
+or maintenance based on the current state and health of the agent.
 
 ##### Parameters
 
@@ -112,7 +112,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1789
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1803
 
 GetVersion retrieves version information and receives instructions for agent updates
- or maintenance based on the current state and health of the agent.
+or maintenance based on the current state and health of the agent.
 
 ##### Parameters
 
@@ -131,7 +131,7 @@ GetVersion retrieves version information and receives instructions for agent upd
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1804
 
 GetVersion retrieves version information and receives instructions for agent updates
- or maintenance based on the current state and health of the agent.
+or maintenance based on the current state and health of the agent.
 
 ##### Parameters
 
@@ -154,7 +154,7 @@ GetVersion retrieves version information and receives instructions for agent upd
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1805
 
 GetVersion retrieves version information and receives instructions for agent updates
- or maintenance based on the current state and health of the agent.
+or maintenance based on the current state and health of the agent.
 
 ##### Parameters
 

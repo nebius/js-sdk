@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / ScopeServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5917
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5918
 
-***
+---
 
 ### getByName
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5918
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5919
 
-***
+---
 
 ### list
 

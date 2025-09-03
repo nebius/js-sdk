@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/billing/v1alpha1](../README.md) / EstimateResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:140
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:142
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:142
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:141
 
-***
+---
 
 ### hourlyCost?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:147
 
 Estimated hourly cost for the resource.
 
-***
+---
 
 ### monthlyCost?
 
@@ -43,4 +43,4 @@ Estimated hourly cost for the resource.
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:153
 
 Estimated monthly cost for the resource.
- Calculated as hourly_cost * 24 * 30 (720 hours) for resources running continuously.
+Calculated as hourly_cost _ 24 _ 30 (720 hours) for resources running continuously.

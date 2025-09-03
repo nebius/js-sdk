@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v2](../README.md) / TenantService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2865
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -286,7 +286,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2877
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantByNameRequest`](../interfaces/GetTenantByNameRequest.md), [`Tenant`](../interfaces/Tenant.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -298,7 +298,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2859
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -422,7 +422,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2889
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
 
-***
+---
 
 ### update()
 

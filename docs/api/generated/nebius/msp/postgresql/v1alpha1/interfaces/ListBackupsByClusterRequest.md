@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / ListBackupsByClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:220
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:222
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:222
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:221
 
-***
+---
 
 ### clusterId
 

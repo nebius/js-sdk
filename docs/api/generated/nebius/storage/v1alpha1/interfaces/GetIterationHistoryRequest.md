@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / GetIterationHistoryRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:845
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:847
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:847
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:846
 
-***
+---
 
 ### pageSize
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:853
 
 Specifies the maximum number of items to return in the response.
 
-***
+---
 
 ### pageToken
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:858
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### transferId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/audit/v2](../README.md) / Federation
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1289
 
 Defined in: src/generated/nebius/audit/v2/index.ts:1291
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1291
 
 Defined in: src/generated/nebius/audit/v2/index.ts:1290
 
-***
+---
 
 ### id
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1296
 
 Unique identifier of the federation.
 
-***
+---
 
 ### name
 

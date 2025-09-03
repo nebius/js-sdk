@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / BadResourceState
 
@@ -18,7 +18,7 @@ The resource we are trying to use, create, change or delete is in a bad state an
 
 Defined in: src/generated/nebius/common/v1/index.ts:825
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:825
 
 Defined in: src/generated/nebius/common/v1/index.ts:824
 
-***
+---
 
 ### message
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:835
 
 The reason why this state is bad and cannot be used.
 
-***
+---
 
 ### resourceId
 

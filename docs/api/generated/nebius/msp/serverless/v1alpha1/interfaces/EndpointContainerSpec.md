@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/serverless/v1alpha1](../README.md) / EndpointContainerSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:869
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:871
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:871
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:870
 
-***
+---
 
 ### args
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:896
 
 Command args
 
-***
+---
 
 ### command
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:891
 
 Endpoint command
 
-***
+---
 
 ### envs
 
@@ -58,7 +58,7 @@ Environment variables
 
 \[`key`: `string`\]: `string`
 
-***
+---
 
 ### image
 
@@ -68,7 +68,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:876
 
 Image name
 
-***
+---
 
 ### liveness?
 
@@ -78,7 +78,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:911
 
 Liveness probe spec
 
-***
+---
 
 ### replicaCount
 
@@ -88,7 +88,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:881
 
 Replica count
 
-***
+---
 
 ### sensitiveEnvs
 
@@ -102,7 +102,7 @@ Environment variables with sensitive data
 
 \[`key`: `string`\]: `string`
 
-***
+---
 
 ### template?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/billing/v1alpha1](../README.md) / CostBreakdown
 
@@ -18,7 +18,7 @@ Detailed cost breakdown showing individual SKU costs and totals.
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1205
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1205
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1204
 
-***
+---
 
 ### cost
 
@@ -35,10 +35,10 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1204
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1212
 
 Total cost as a decimal string.
- Represents the sum of all SKU costs with full precision.
- Example: "42.123456789" for precise billing calculations.
+Represents the sum of all SKU costs with full precision.
+Example: "42.123456789" for precise billing calculations.
 
-***
+---
 
 ### costRounded
 
@@ -47,4 +47,4 @@ Total cost as a decimal string.
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1218
 
 Total cost rounded up to 2 decimal places.
- Example: "42.13"
+Example: "42.13"

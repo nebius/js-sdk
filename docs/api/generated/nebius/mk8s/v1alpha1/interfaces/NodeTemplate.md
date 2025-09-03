@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / NodeTemplate
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4505
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4507
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4507
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4506
 
-***
+---
 
 ### bootDisk?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4506
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4511
 
-***
+---
 
 ### cloudInitUserData
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4524
 
 cloud-init user-data. Must contain at least one SSH key.
 
-***
+---
 
 ### filesystems
 
@@ -50,7 +50,7 @@ cloud-init user-data. Must contain at least one SSH key.
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4519
 
-***
+---
 
 ### gpuCluster?
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4519
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4517
 
-***
+---
 
 ### gpuSettings?
 
@@ -68,7 +68,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4516
 
 GPU-related settings.
 
-***
+---
 
 ### metadata?
 
@@ -76,7 +76,7 @@ GPU-related settings.
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4508
 
-***
+---
 
 ### networkInterfaces
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4508
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4518
 
-***
+---
 
 ### preemptible?
 
@@ -93,9 +93,9 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4518
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4539
 
 Configures whether the nodes in the group are preemptible.
- Set to empty value to enable preemptible nodes.
+Set to empty value to enable preemptible nodes.
 
-***
+---
 
 ### resources?
 
@@ -103,7 +103,7 @@ Configures whether the nodes in the group are preemptible.
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4510
 
-***
+---
 
 ### serviceAccountId
 
@@ -112,12 +112,12 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4510
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4533
 
 the Nebius service account whose credentials will be available on the nodes of the group.
- With these credentials, it is possible to make `nebius` CLI or public API requests from the nodes without the need for extra authentication.
- This service account is also used to make requests to container registry.
+With these credentials, it is possible to make `nebius` CLI or public API requests from the nodes without the need for extra authentication.
+This service account is also used to make requests to container registry.
 
- `resource.serviceaccount.issueAccessToken` permission is required to use this field.
+`resource.serviceaccount.issueAccessToken` permission is required to use this field.
 
-***
+---
 
 ### taints
 

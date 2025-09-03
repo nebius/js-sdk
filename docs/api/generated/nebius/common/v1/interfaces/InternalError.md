@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / InternalError
 
@@ -18,7 +18,7 @@ Generic internal error.
 
 Defined in: src/generated/nebius/common/v1/index.ts:1591
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1591
 
 Defined in: src/generated/nebius/common/v1/index.ts:1590
 
-***
+---
 
 ### requestId
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1596
 
 Error request ID.
 
-***
+---
 
 ### traceId
 

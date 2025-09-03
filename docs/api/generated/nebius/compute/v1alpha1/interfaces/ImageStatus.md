@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / ImageStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5276
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5278
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5278
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5277
 
-***
+---
 
 ### minDiskSizeBytes
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5277
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5282
 
-***
+---
 
 ### reconciling
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5287
 
 Indicates whether there is an ongoing operation
 
-***
+---
 
 ### state
 
@@ -50,7 +50,7 @@ Indicates whether there is an ongoing operation
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5279
 
-***
+---
 
 ### stateDescription
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5279
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5280
 
-***
+---
 
 ### storageSizeBytes
 

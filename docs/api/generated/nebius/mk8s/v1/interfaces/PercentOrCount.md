@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / PercentOrCount
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5817
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5819
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5819
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:5818
 
-***
+---
 
 ### value?
 

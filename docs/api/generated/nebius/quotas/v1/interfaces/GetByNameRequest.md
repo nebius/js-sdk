@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/quotas/v1](../README.md) / GetByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:351
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:353
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:353
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:352
 
-***
+---
 
 ### name
 
@@ -33,9 +33,9 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:352
 Defined in: src/generated/nebius/quotas/v1/index.ts:364
 
 Name of the quota.
- Example: "compute.disk.size.network-ssd".
+Example: "compute.disk.size.network-ssd".
 
-***
+---
 
 ### parentId
 
@@ -45,7 +45,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:358
 
 ID of the Tenant or Project to list quotas for.
 
-***
+---
 
 ### region
 
@@ -54,4 +54,4 @@ ID of the Tenant or Project to list quotas for.
 Defined in: src/generated/nebius/quotas/v1/index.ts:370
 
 Name of the region where the quota is allocated.
- Example: "eu-north1".
+Example: "eu-north1".

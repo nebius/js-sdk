@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../README.md) / [sdk](../README.md) / SDKInterface
 
@@ -30,7 +30,7 @@ Defined in: [src/sdk.ts:37](https://github.com/nebius/nodejs-sdk/blob/2ec552fb56
 
 `string`
 
-***
+---
 
 ### getClientByAddress()
 
@@ -48,7 +48,7 @@ Defined in: [src/sdk.ts:36](https://github.com/nebius/nodejs-sdk/blob/2ec552fb56
 
 `Client`
 
-***
+---
 
 ### parentId()
 

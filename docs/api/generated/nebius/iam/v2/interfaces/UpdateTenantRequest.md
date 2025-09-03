@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v2](../README.md) / UpdateTenantRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2393
 
 Defined in: src/generated/nebius/iam/v2/index.ts:2395
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2395
 
 Defined in: src/generated/nebius/iam/v2/index.ts:2394
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2394
 
 Defined in: src/generated/nebius/iam/v2/index.ts:2396
 
-***
+---
 
 ### namePrefix
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2402
 
 Tenant name prefix. A few random characters will be added to this prefix.
 
-***
+---
 
 ### spec?
 

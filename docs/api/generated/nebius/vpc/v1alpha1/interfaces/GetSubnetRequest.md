@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / GetSubnetRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6440
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6442
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6442
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6441
 
-***
+---
 
 ### id
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / SessionServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4570
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4574
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4574
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4575
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4575
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4571
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4571
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4572
 
-***
+---
 
 ### list
 

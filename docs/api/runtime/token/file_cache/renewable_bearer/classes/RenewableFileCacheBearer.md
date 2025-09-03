@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [runtime/token/file\_cache/renewable\_bearer](../README.md) / RenewableFileCacheBearer
+[@nebius/nodejs-sdk](../../../../../README.md) / [runtime/token/file_cache/renewable_bearer](../README.md) / RenewableFileCacheBearer
 
 # Class: RenewableFileCacheBearer
 
-Defined in: [src/runtime/token/file\_cache/renewable\_bearer.ts:68](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L68)
+Defined in: [src/runtime/token/file_cache/renewable_bearer.ts:68](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L68)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/runtime/token/file\_cache/renewable\_bearer.ts:68](https://gith
 
 > **new RenewableFileCacheBearer**(`_wrapped`, `safetyMarginMs`, `cacheFile`, `throttleMs`): `RenewableFileCacheBearer`
 
-Defined in: [src/runtime/token/file\_cache/renewable\_bearer.ts:72](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L72)
+Defined in: [src/runtime/token/file_cache/renewable_bearer.ts:72](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L72)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [src/runtime/token/file\_cache/renewable\_bearer.ts:72](https://gith
 
 > **safetyMargin**: `null` \| `number`
 
-Defined in: [src/runtime/token/file\_cache/renewable\_bearer.ts:70](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L70)
+Defined in: [src/runtime/token/file_cache/renewable_bearer.ts:70](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L70)
 
 ## Accessors
 
@@ -72,7 +72,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../../classes/Bearer.md).[`name`](../../../classes/Bearer.md#name)
 
-***
+---
 
 ### wrapped
 
@@ -80,7 +80,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../../classes/Bearer.md)
 
-Defined in: [src/runtime/token/file\_cache/renewable\_bearer.ts:85](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L85)
+Defined in: [src/runtime/token/file_cache/renewable_bearer.ts:85](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L85)
 
 ##### Returns
 
@@ -112,13 +112,13 @@ Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../../classes/Bearer.md).[`close`](../../../classes/Bearer.md#close)
 
-***
+---
 
 ### receiver()
 
 > **receiver**(): [`Receiver`](../../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/file\_cache/renewable\_bearer.ts:89](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L89)
+Defined in: [src/runtime/token/file_cache/renewable_bearer.ts:89](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/renewable_bearer.ts#L89)
 
 #### Returns
 

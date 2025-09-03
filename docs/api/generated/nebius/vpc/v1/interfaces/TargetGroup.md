@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / TargetGroup
 
@@ -18,7 +18,7 @@ Target group represents the set of resources that receive traffic from a load ba
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8549
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8549
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8548
 
-***
+---
 
 ### metadata?
 
@@ -35,9 +35,9 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8548
 Defined in: src/generated/nebius/vpc/v1/index.ts:8555
 
 Metadata for the TargetGroup resource.
- `metadata.parent_id` represents IAM container
+`metadata.parent_id` represents IAM container
 
-***
+---
 
 ### spec?
 
@@ -47,7 +47,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8560
 
 Specification of the TargetGroup.
 
-***
+---
 
 ### status?
 

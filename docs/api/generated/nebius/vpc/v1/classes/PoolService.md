@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / PoolService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5219
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreatePoolRequest`](../interfaces/CreatePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5249
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5171
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5183
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5165
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5195
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
-***
+---
 
 ### listBySourcePool()
 
@@ -794,7 +794,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5207
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsBySourcePoolRequest`](../interfaces/ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
-***
+---
 
 ### update()
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/registry/v1](../README.md) / Registry
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1675
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1677
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1677
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1676
 
-***
+---
 
 ### metadata?
 
@@ -33,9 +33,9 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1676
 Defined in: src/generated/nebius/registry/v1/index.ts:1683
 
 This is metadata about the resource, such as its id, name, labels, etc.
- This contains fields that may be updated both by the end user and the system.
+This contains fields that may be updated both by the end user and the system.
 
-***
+---
 
 ### spec?
 
@@ -44,9 +44,9 @@ This is metadata about the resource, such as its id, name, labels, etc.
 Defined in: src/generated/nebius/registry/v1/index.ts:1689
 
 This is defined by the user and describes the desired state of system.
- Fill this in when creating or updating an object.
+Fill this in when creating or updating an object.
 
-***
+---
 
 ### status?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / InstanceSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7471
 
 Defined in: src/generated/nebius/compute/v1/index.ts:7473
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7473
 
 Defined in: src/generated/nebius/compute/v1/index.ts:7472
 
-***
+---
 
 ### bootDisk?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7503
 
 Specified boot disk attached to the instance.
 
-***
+---
 
 ### cloudInitUserData
 
@@ -43,9 +43,9 @@ Specified boot disk attached to the instance.
 Defined in: src/generated/nebius/compute/v1/index.ts:7519
 
 Data in cloud-init format for customizing instance initialization.
- For details, see https://docs.nebius.com/compute/virtual-machines/manage#user-data
+For details, see https://docs.nebius.com/compute/virtual-machines/manage#user-data
 
-***
+---
 
 ### filesystems
 
@@ -55,7 +55,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7513
 
 List of Shared Filesystems attached to the instance.
 
-***
+---
 
 ### gpuCluster?
 
@@ -64,11 +64,11 @@ List of Shared Filesystems attached to the instance.
 Defined in: src/generated/nebius/compute/v1/index.ts:7493
 
 If you want to interconnect several instances in a GPU cluster via NVIDIA InfiniBand,
- set the ID of an existing GPU cluster.
- You can only add the VM to the cluster when creating the VM.
- For details, see https://docs.nebius.com/compute/clusters/gpu
+set the ID of an existing GPU cluster.
+You can only add the VM to the cluster when creating the VM.
+For details, see https://docs.nebius.com/compute/clusters/gpu
 
-***
+---
 
 ### hostname
 
@@ -77,9 +77,9 @@ If you want to interconnect several instances in a GPU cluster via NVIDIA Infini
 Defined in: src/generated/nebius/compute/v1/index.ts:7544
 
 Instance's hostname. Used to generate default DNS record in format `<hostname>.<network_id>.compute.internal.`
- or `<instance_id>.<network_id>.compute.internal.` if hostname is not specified.
+or `<instance_id>.<network_id>.compute.internal.` if hostname is not specified.
 
-***
+---
 
 ### networkInterfaces
 
@@ -89,7 +89,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7498
 
 List of network interfaces attached to the instance.
 
-***
+---
 
 ### preemptible?
 
@@ -98,9 +98,9 @@ List of network interfaces attached to the instance.
 Defined in: src/generated/nebius/compute/v1/index.ts:7538
 
 Include these parameters to create a Preemptible VM and omit them to create a Regular VM
- For details, see https://docs.nebius.com/compute/virtual-machines/preemptible
+For details, see https://docs.nebius.com/compute/virtual-machines/preemptible
 
-***
+---
 
 ### recoveryPolicy
 
@@ -109,11 +109,11 @@ Include these parameters to create a Preemptible VM and omit them to create a Re
 Defined in: src/generated/nebius/compute/v1/index.ts:7532
 
 Recovery policy defines how the instance will be treated in case of a failure. Common source of failure is a host failure, but it can be any other failure.
- Instance undergoing a guest shutdown (poweroff, etc.) will be subject to recovery policy, meaning that it could be restarted and billed accordingly. Stop instance via API or UI to stop it to avoid recovering.
- If set to RECOVER, instance will be restarted, if possible. It could be restarted on the same host or on another host.
- If set to FAIL, instance will be stopped and not restarted.
+Instance undergoing a guest shutdown (poweroff, etc.) will be subject to recovery policy, meaning that it could be restarted and billed accordingly. Stop instance via API or UI to stop it to avoid recovering.
+If set to RECOVER, instance will be restarted, if possible. It could be restarted on the same host or on another host.
+If set to FAIL, instance will be stopped and not restarted.
 
-***
+---
 
 ### resources?
 
@@ -122,9 +122,9 @@ Recovery policy defines how the instance will be treated in case of a failure. C
 Defined in: src/generated/nebius/compute/v1/index.ts:7485
 
 Specification of compute resources allocated to the instance.
- For details, see https://docs.nebius.com/compute/virtual-machines/types
+For details, see https://docs.nebius.com/compute/virtual-machines/types
 
-***
+---
 
 ### secondaryDisks
 
@@ -134,7 +134,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7508
 
 List of additional data disks attached to the instance beyond the boot disk.
 
-***
+---
 
 ### serviceAccountId
 
@@ -143,9 +143,9 @@ List of additional data disks attached to the instance beyond the boot disk.
 Defined in: src/generated/nebius/compute/v1/index.ts:7479
 
 Unique identifier of the service account associated with this instance.
- For details, see https://docs.nebius.dev/en/iam/about-iam/concepts/service-accounts
+For details, see https://docs.nebius.dev/en/iam/about-iam/concepts/service-accounts
 
-***
+---
 
 ### stopped
 

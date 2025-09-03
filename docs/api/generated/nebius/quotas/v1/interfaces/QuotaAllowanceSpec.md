@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/quotas/v1](../README.md) / QuotaAllowanceSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:713
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:715
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:715
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:714
 
-***
+---
 
 ### limit?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:720
 
 Total amount of resources allocated.
 
-***
+---
 
 ### region
 
@@ -43,4 +43,4 @@ Total amount of resources allocated.
 Defined in: src/generated/nebius/quotas/v1/index.ts:726
 
 Name of the region where the quota is allocated.
- Example: "eu-north1".
+Example: "eu-north1".

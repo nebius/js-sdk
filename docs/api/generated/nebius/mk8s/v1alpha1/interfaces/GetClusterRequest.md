@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / GetClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:128
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:130
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:130
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:129
 
-***
+---
 
 ### id
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:129
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:131
 
-***
+---
 
 ### resourceVersion
 

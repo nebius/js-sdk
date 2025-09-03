@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / ComputeInstance
 
@@ -18,7 +18,7 @@ Target representing compute instance
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8906
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8906
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8905
 
-***
+---
 
 ### id
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8911
 
 Compute instance id to send traffic to
 
-***
+---
 
 ### networkInterfaceName
 

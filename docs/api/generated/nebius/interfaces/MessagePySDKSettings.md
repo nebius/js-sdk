@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [generated/nebius](../README.md) / MessagePySDKSettings
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/index.ts:455
 
 Defined in: src/generated/nebius/index.ts:457
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/index.ts:457
 
 Defined in: src/generated/nebius/index.ts:456
 
-***
+---
 
 ### name
 

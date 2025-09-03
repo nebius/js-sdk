@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/billing/v1alpha1](../README.md) / EstimateRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:14
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:16
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:16
 
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:15
 
-***
+---
 
 ### offerTypes
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:27
 
 Type of offers to be applied to the cost estimate.
 
-***
+---
 
 ### resourceSpec?
 
@@ -43,4 +43,4 @@ Type of offers to be applied to the cost estimate.
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:22
 
 Resource specification for cost estimation.
- Must contain exactly one resource type.
+Must contain exactly one resource type.

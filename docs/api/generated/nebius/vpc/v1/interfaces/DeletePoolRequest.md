@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / DeletePoolRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4951
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:4953
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4953
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:4952
 
-***
+---
 
 ### id
 

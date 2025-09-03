@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / ImageServiceServer
 
@@ -28,7 +28,7 @@ Deprecated.
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4867
 
-***
+---
 
 ### ~~getByName~~
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4867
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4868
 
-***
+---
 
 ### ~~getLatestByFamily~~
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4868
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4869
 
-***
+---
 
 ### ~~list~~
 
@@ -52,7 +52,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4869
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4870
 
-***
+---
 
 ### ~~listOperationsByParent~~
 

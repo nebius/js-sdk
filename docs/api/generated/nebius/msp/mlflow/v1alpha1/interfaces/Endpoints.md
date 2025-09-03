@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/mlflow/v1alpha1](../README.md) / Endpoints
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1491
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1493
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1493
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1492
 
-***
+---
 
 ### private
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1498
 
 Private endpoint
 
-***
+---
 
 ### public
 

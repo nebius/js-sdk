@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / AccessPermitSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3088
 
 Defined in: src/generated/nebius/iam/v1/index.ts:3090
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3090
 
 Defined in: src/generated/nebius/iam/v1/index.ts:3089
 
-***
+---
 
 ### resourceId
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3095
 
 Resource for granting access permit.
 
-***
+---
 
 ### role
 

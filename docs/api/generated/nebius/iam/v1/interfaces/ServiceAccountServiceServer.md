@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ServiceAccountServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16867
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16868
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16868
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16873
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16873
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16869
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16869
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16870
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16870
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16871
 
-***
+---
 
 ### update
 

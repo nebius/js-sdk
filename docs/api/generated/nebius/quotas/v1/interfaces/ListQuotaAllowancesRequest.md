@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/quotas/v1](../README.md) / ListQuotaAllowancesRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:14
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:16
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:16
 
 Defined in: src/generated/nebius/quotas/v1/index.ts:15
 
-***
+---
 
 ### pageSize
 
@@ -33,9 +33,9 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:15
 Defined in: src/generated/nebius/quotas/v1/index.ts:27
 
 Page size. Must be between [1...1000].
- Optional; if not specified, a reasonable default will be chosen by the service.
+Optional; if not specified, a reasonable default will be chosen by the service.
 
-***
+---
 
 ### pageToken
 
@@ -45,7 +45,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:32
 
 Listing continuation token. Pass an empty string to start listing from the first page.
 
-***
+---
 
 ### parentId
 

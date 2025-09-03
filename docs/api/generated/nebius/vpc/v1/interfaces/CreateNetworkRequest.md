@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / CreateNetworkRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2869
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:2871
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2871
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:2870
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2870
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:2872
 
-***
+---
 
 ### spec?
 

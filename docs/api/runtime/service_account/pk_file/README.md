@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../README.md) / runtime/service\_account/pk\_file
+[@nebius/nodejs-sdk](../../../README.md) / runtime/service_account/pk_file
 
-# runtime/service\_account/pk\_file
+# runtime/service_account/pk_file
 
 ## Classes
 

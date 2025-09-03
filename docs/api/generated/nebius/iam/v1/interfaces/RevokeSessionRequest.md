@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / RevokeSessionRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17428
 
 Defined in: src/generated/nebius/iam/v1/index.ts:17430
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17430
 
 Defined in: src/generated/nebius/iam/v1/index.ts:17429
 
-***
+---
 
 ### revoke?
 

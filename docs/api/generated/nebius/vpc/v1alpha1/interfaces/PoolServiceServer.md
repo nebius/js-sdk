@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / PoolServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4606
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4607
 
-***
+---
 
 ### getByName
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4607
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4608
 
-***
+---
 
 ### list
 

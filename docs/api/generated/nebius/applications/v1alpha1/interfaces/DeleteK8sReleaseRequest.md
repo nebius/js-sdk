@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/applications/v1alpha1](../README.md) / DeleteK8sReleaseRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:485
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:487
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:487
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:486
 
-***
+---
 
 ### id
 

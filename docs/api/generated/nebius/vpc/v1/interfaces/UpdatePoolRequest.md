@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / UpdatePoolRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4839
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:4841
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4841
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:4840
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4840
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:4842
 
-***
+---
 
 ### spec?
 

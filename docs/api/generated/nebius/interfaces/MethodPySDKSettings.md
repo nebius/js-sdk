@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [generated/nebius](../README.md) / MethodPySDKSettings
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/index.ts:285
 
 Defined in: src/generated/nebius/index.ts:287
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/index.ts:287
 
 Defined in: src/generated/nebius/index.ts:286
 
-***
+---
 
 ### name
 

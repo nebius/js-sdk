@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / AllocationService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:917
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAllocationRequest`](../interfaces/CreateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:947
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAllocationRequest`](../interfaces/DeleteAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:881
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationRequest`](../interfaces/GetAllocationRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:893
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationByNameRequest`](../interfaces/GetAllocationByNameRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:875
 
 [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:905
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsRequest`](../interfaces/ListAllocationsRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-***
+---
 
 ### update()
 

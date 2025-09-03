@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ProjectServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15914
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15915
 
-***
+---
 
 ### get
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15915
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15916
 
-***
+---
 
 ### getByName
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15916
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15917
 
-***
+---
 
 ### list
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15917
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15918
 
-***
+---
 
 ### update
 

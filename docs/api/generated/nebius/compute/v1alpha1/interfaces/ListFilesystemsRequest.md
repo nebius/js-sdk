@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / ListFilesystemsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1711
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1713
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1713
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1712
 
-***
+---
 
 ### ~~filter~~
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1718
 
 Deprecated, will be removed on 2025-06-16: it is not implemented, filtering could be done on client side.
 
-***
+---
 
 ### pageSize
 
@@ -44,7 +44,7 @@ Deprecated, will be removed on 2025-06-16: it is not implemented, filtering coul
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1715
 
-***
+---
 
 ### pageToken
 
@@ -52,7 +52,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1715
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:1716
 
-***
+---
 
 ### parentId
 

@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / ServiceError\_RetryTypeClass
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / ServiceError_RetryTypeClass
 
-# Type Alias: ServiceError\_RetryTypeClass
+# Type Alias: ServiceError_RetryTypeClass
 
-> **ServiceError\_RetryTypeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CALL"` \| `"UNIT_OF_WORK"` \| `"NOTHING"`\> & `ServiceError_RetryTypeValueMembers`
+> **ServiceError_RetryTypeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CALL"` \| `"UNIT_OF_WORK"` \| `"NOTHING"`\> & `ServiceError_RetryTypeValueMembers`
 
 Defined in: src/generated/nebius/common/v1/index.ts:35

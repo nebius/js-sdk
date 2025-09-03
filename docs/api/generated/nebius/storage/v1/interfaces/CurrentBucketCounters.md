@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / CurrentBucketCounters
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:53
 
 Defined in: src/generated/nebius/storage/v1/index.ts:55
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:55
 
 Defined in: src/generated/nebius/storage/v1/index.ts:54
 
-***
+---
 
 ### inflightPartsQuantity
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:54
 
 Defined in: src/generated/nebius/storage/v1/index.ts:61
 
-***
+---
 
 ### inflightPartsSize
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:61
 
 Defined in: src/generated/nebius/storage/v1/index.ts:62
 
-***
+---
 
 ### multipartObjectsQuantity
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:62
 
 Defined in: src/generated/nebius/storage/v1/index.ts:58
 
-***
+---
 
 ### multipartObjectsSize
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:58
 
 Defined in: src/generated/nebius/storage/v1/index.ts:59
 
-***
+---
 
 ### multipartUploadsQuantity
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:59
 
 Defined in: src/generated/nebius/storage/v1/index.ts:60
 
-***
+---
 
 ### simpleObjectsQuantity
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:60
 
 Defined in: src/generated/nebius/storage/v1/index.ts:56
 
-***
+---
 
 ### simpleObjectsSize
 

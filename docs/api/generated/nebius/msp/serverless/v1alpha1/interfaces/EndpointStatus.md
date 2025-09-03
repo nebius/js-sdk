@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/serverless/v1alpha1](../README.md) / EndpointStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1456
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1458
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1458
 
 Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1457
 
-***
+---
 
 ### phase
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1463
 
 Current phase (or stage) of the workload.
 
-***
+---
 
 ### publicEndpoint
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1473
 
 Public endpoint for accessing the workload.
 
-***
+---
 
 ### state
 

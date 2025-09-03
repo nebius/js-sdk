@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / generated/nebius/applications/v1alpha1
 
@@ -27,8 +27,8 @@
 ## Type Aliases
 
 - [K8sReleaseServiceServiceDescription](type-aliases/K8sReleaseServiceServiceDescription.md)
-- [K8sReleaseStatus\_State](type-aliases/K8sReleaseStatus_State.md)
-- [K8sReleaseStatus\_StateClass](type-aliases/K8sReleaseStatus_StateClass.md)
+- [K8sReleaseStatus_State](type-aliases/K8sReleaseStatus_State.md)
+- [K8sReleaseStatus_StateClass](type-aliases/K8sReleaseStatus_StateClass.md)
 
 ## Variables
 
@@ -40,7 +40,7 @@
 - [K8sReleaseServiceServiceDescription](variables/K8sReleaseServiceServiceDescription.md)
 - [K8sReleaseSpec](variables/K8sReleaseSpec.md)
 - [K8sReleaseStatus](variables/K8sReleaseStatus.md)
-- [K8sReleaseStatus\_State](variables/K8sReleaseStatus_State.md)
+- [K8sReleaseStatus_State](variables/K8sReleaseStatus_State.md)
 - [ListK8sReleasesRequest](variables/ListK8sReleasesRequest.md)
 - [ListK8sReleasesResponse](variables/ListK8sReleasesResponse.md)
 - [UpdateK8sReleaseRequest](variables/UpdateK8sReleaseRequest.md)

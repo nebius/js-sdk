@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / FilesystemSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3080
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3082
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3082
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3081
 
-***
+---
 
 ### blockSizeBytes
 
@@ -33,10 +33,10 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3081
 Defined in: src/generated/nebius/compute/v1/index.ts:3089
 
 Block size in bytes.
- The block size must be a power of two between 4096 bytes (4 KiB) and 131072 bytes (128 KiB).
- The default value is 4096 bytes (4 KiB).
+The block size must be a power of two between 4096 bytes (4 KiB) and 131072 bytes (128 KiB).
+The default value is 4096 bytes (4 KiB).
 
-***
+---
 
 ### size?
 
@@ -45,10 +45,10 @@ Block size in bytes.
 Defined in: src/generated/nebius/compute/v1/index.ts:3102
 
 Size of the disk. Only one size unit can be specified.
- The size must be within the limits for the selected disk type.
- For current limits, see https://docs.nebius.com/compute/storage/types#disks-types-comparison
+The size must be within the limits for the selected disk type.
+For current limits, see https://docs.nebius.com/compute/storage/types#disks-types-comparison
 
-***
+---
 
 ### type
 
@@ -57,4 +57,4 @@ Size of the disk. Only one size unit can be specified.
 Defined in: src/generated/nebius/compute/v1/index.ts:3095
 
 The Shared Filesystem type determines its limits and performance characteristics.
- For details, see https://docs.nebius.com/compute/storage/types#filesystems-types
+For details, see https://docs.nebius.com/compute/storage/types#filesystems-types

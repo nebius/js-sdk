@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / ListGpuClustersRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3624
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3626
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3626
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3625
 
-***
+---
 
 ### ~~filter~~
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3631
 
 Deprecated, will be removed on 2025-06-16: it is not implemented, filtering could be done on client side.
 
-***
+---
 
 ### pageSize
 
@@ -44,7 +44,7 @@ Deprecated, will be removed on 2025-06-16: it is not implemented, filtering coul
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3628
 
-***
+---
 
 ### pageToken
 
@@ -52,7 +52,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3628
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3629
 
-***
+---
 
 ### parentId
 

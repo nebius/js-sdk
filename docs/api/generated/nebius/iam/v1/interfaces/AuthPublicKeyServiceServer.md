@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / AuthPublicKeyServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4758
 
 Defined in: src/generated/nebius/iam/v1/index.ts:4764
 
-***
+---
 
 ### create
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4764
 
 Defined in: src/generated/nebius/iam/v1/index.ts:4759
 
-***
+---
 
 ### deactivate
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4759
 
 Defined in: src/generated/nebius/iam/v1/index.ts:4765
 
-***
+---
 
 ### delete
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4765
 
 Defined in: src/generated/nebius/iam/v1/index.ts:4766
 
-***
+---
 
 ### get
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4766
 
 Defined in: src/generated/nebius/iam/v1/index.ts:4760
 
-***
+---
 
 ### list
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4760
 
 Defined in: src/generated/nebius/iam/v1/index.ts:4761
 
-***
+---
 
 ### listByAccount
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4761
 
 Defined in: src/generated/nebius/iam/v1/index.ts:4762
 
-***
+---
 
 ### update
 

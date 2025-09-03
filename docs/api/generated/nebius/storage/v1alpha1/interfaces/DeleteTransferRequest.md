@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / DeleteTransferRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:741
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:743
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:743
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:742
 
-***
+---
 
 ### id
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:742
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:744
 
-***
+---
 
 ### resourceVersion
 

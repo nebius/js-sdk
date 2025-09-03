@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / MaintenanceEvent
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8930
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8932
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8932
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8931
 
-***
+---
 
 ### id
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8931
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8933
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8933
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8934
 
-***
+---
 
 ### status?
 

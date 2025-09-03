@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / ProgressData
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6424
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6426
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6426
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6425
 
-***
+---
 
 ### problems
 

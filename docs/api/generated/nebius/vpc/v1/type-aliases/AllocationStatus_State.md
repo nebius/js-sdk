@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / AllocationStatus\_State
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / AllocationStatus_State
 
-# Type Alias: AllocationStatus\_State
+# Type Alias: AllocationStatus_State
 
-> **AllocationStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"ALLOCATED"` \| `"ASSIGNED"` \| `"DELETING"`\>
+> **AllocationStatus_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"ALLOCATED"` \| `"ASSIGNED"` \| `"DELETING"`\>
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:1097
 

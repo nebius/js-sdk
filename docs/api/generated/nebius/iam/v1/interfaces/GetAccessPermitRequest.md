@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GetAccessPermitRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2588
 
 Defined in: src/generated/nebius/iam/v1/index.ts:2590
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2590
 
 Defined in: src/generated/nebius/iam/v1/index.ts:2589
 
-***
+---
 
 ### id
 

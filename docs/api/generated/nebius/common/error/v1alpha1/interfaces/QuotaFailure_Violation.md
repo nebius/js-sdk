@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/common/error/v1alpha1](../README.md) / QuotaFailure\_Violation
+[@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/common/error/v1alpha1](../README.md) / QuotaFailure_Violation
 
-# Interface: QuotaFailure\_Violation
+# Interface: QuotaFailure_Violation
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1283
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1283
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1285
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1285
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1284
 
-***
+---
 
 ### limit
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1300
 
 Maximum permissible value.
 
-***
+---
 
 ### message
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1295
 
 A description of how the quota check failed.
 
-***
+---
 
 ### quota
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1290
 
 Which quota check failed.
 
-***
+---
 
 ### requested
 

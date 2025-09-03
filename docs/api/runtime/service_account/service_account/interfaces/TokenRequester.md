@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service\_account/service\_account](../README.md) / TokenRequester
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service_account/service_account](../README.md) / TokenRequester
 
 # Interface: TokenRequester
 
-Defined in: [src/runtime/service\_account/service\_account.ts:5](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L5)
+Defined in: [src/runtime/service_account/service_account.ts:5](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L5)
 
 ## Extended by
 
@@ -19,7 +19,7 @@ Defined in: [src/runtime/service\_account/service\_account.ts:5](https://github.
 
 > **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
-Defined in: [src/runtime/service\_account/service\_account.ts:6](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L6)
+Defined in: [src/runtime/service_account/service_account.ts:6](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L6)
 
 #### Returns
 

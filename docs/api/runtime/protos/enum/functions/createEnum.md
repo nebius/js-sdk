@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/enum](../README.md) / createEnum
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/protos/enum.ts:39](https://github.com/nebius/nodejs-sdk
 
 ### TDef
 
-`TDef` *extends* `Record`\<`string`, `number`\>
+`TDef` _extends_ `Record`\<`string`, `number`\>
 
 ## Parameters
 

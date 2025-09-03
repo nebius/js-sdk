@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / Account\_AnonymousAccount
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / Account_AnonymousAccount
 
-# Interface: Account\_AnonymousAccount
+# Interface: Account_AnonymousAccount
 
 Defined in: src/generated/nebius/iam/v1/index.ts:3616
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3616
 
 Defined in: src/generated/nebius/iam/v1/index.ts:3618
 
-***
+---
 
 ### $type
 

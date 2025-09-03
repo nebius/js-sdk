@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [generated/nebius](../README.md) / ServicePySDKSettings
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/index.ts:200
 
 Defined in: src/generated/nebius/index.ts:202
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/index.ts:202
 
 Defined in: src/generated/nebius/index.ts:201
 
-***
+---
 
 ### name
 

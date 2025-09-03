@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1alpha1](../README.md) / GetOperationRequest
 
@@ -20,7 +20,7 @@ Deprecated.
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:20
 
-***
+---
 
 ### ~~$type~~
 
@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:20
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:19
 
-***
+---
 
 ### ~~id~~
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / GpuClusterStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4670
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4672
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4672
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4671
 
-***
+---
 
 ### instances
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4671
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4673
 
-***
+---
 
 ### reconciling
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4678
 
 Indicates whether there is an ongoing operation
 
-***
+---
 
 ### topology?
 

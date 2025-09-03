@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/file\_cache/file\_bearer
+[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/file_cache/file_bearer
 
-# runtime/token/file\_cache/file\_bearer
+# runtime/token/file_cache/file_bearer
 
 ## Classes
 
@@ -16,7 +16,7 @@
 
 Renames and re-exports [AsyncRenewableBearer](../async_renewable_bearer/classes/AsyncRenewableBearer.md)
 
-***
+---
 
 ### RenewableFileCacheBearer
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / JobServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2457
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2461
 
-***
+---
 
 ### create
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2461
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2460
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2460
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2458
 
-***
+---
 
 ### list
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/v1alpha1/resource](../README.md) / PresetDetails
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:469
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:471
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:471
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:470
 
-***
+---
 
 ### cpuCount
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:470
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:472
 
-***
+---
 
 ### gpuCount
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:472
 
 Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:474
 
-***
+---
 
 ### memoryGibibytes
 

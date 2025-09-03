@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / CreateProjectRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15185
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15187
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15187
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15186
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15186
 
 Defined in: src/generated/nebius/iam/v1/index.ts:15188
 
-***
+---
 
 ### spec?
 

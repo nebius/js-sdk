@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / InvitationServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13799
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13800
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13800
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13803
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13803
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13801
 
-***
+---
 
 ### list
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13801
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13802
 
-***
+---
 
 ### resend
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13802
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13805
 
-***
+---
 
 ### update
 

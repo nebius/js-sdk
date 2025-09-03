@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / CreateInvitationRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12993
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12995
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12995
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12994
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12994
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12996
 
-***
+---
 
 ### noSend
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13002
 
 if set, no sending is attempted (it's supposed that later a Resend method is called)
 
-***
+---
 
 ### spec?
 

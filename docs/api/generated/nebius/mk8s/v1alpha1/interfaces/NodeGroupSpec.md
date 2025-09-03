@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / NodeGroupSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4291
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4293
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4293
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4292
 
-***
+---
 
 ### size?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4292
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4303
 
-***
+---
 
 ### strategy?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4303
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4302
 
-***
+---
 
 ### template?
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4302
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4301
 
-***
+---
 
 ### version
 
@@ -57,5 +57,5 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4301
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4300
 
 Version is desired Kubernetes version of the cluster. For now only acceptable format is
- `MAJOR.MINOR` like "1.31". Option for patch version update will be added later.
- By default the cluster control plane MAJOR.MINOR version will be used.
+`MAJOR.MINOR` like "1.31". Option for patch version update will be added later.
+By default the cluster control plane MAJOR.MINOR version will be used.

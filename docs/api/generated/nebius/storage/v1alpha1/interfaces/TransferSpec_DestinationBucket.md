@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferSpec\_DestinationBucket
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferSpec_DestinationBucket
 
-# Interface: TransferSpec\_DestinationBucket
+# Interface: TransferSpec_DestinationBucket
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2124
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2124
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2126
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2126
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2125
 
-***
+---
 
 ### bucketName
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2125
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2127
 
-***
+---
 
 ### credentials?
 
@@ -41,4 +41,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2127
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2133
 
 Credentials for accessing the destination bucket. These credentials must have head and write permissions.
- This parameter must be specified only during create operations.
+This parameter must be specified only during create operations.

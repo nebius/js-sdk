@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / TenantUserAccount
 
@@ -9,10 +9,10 @@
 Defined in: src/generated/nebius/iam/v1/index.ts:21046
 
 this proto describes projections of global user accounts to specific tenants
- every global user account gets a specific id like 'tenantuseraccount-someuniquesuffix'
- inside those tenants where access to their resources is granted to them
+every global user account gets a specific id like 'tenantuseraccount-someuniquesuffix'
+inside those tenants where access to their resources is granted to them
 
- global user accounts are described separately in user_account*.proto
+global user accounts are described separately in user_account\*.proto
 
 ## Properties
 
@@ -22,7 +22,7 @@ this proto describes projections of global user accounts to specific tenants
 
 Defined in: src/generated/nebius/iam/v1/index.ts:21048
 
-***
+---
 
 ### $type
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21048
 
 Defined in: src/generated/nebius/iam/v1/index.ts:21047
 
-***
+---
 
 ### metadata?
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21047
 
 Defined in: src/generated/nebius/iam/v1/index.ts:21049
 
-***
+---
 
 ### spec?
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21049
 
 Defined in: src/generated/nebius/iam/v1/index.ts:21050
 
-***
+---
 
 ### status?
 

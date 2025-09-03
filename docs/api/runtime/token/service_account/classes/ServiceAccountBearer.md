@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/service\_account](../README.md) / ServiceAccountBearer
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/service_account](../README.md) / ServiceAccountBearer
 
 # Class: ServiceAccountBearer
 
-Defined in: [src/runtime/token/service\_account.ts:9](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L9)
+Defined in: [src/runtime/token/service_account.ts:9](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L9)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/runtime/token/service\_account.ts:9](https://github.com/nebius/
 
 > **new ServiceAccountBearer**(`serviceAccount`, `opts?`): `ServiceAccountBearer`
 
-Defined in: [src/runtime/token/service\_account.ts:13](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L13)
+Defined in: [src/runtime/token/service_account.ts:13](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L13)
 
 #### Parameters
 
@@ -90,7 +90,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`name`](../../classes/Bearer.md#name)
 
-***
+---
 
 ### wrapped
 
@@ -98,7 +98,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../classes/Bearer.md)
 
-Defined in: [src/runtime/token/service\_account.ts:88](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L88)
+Defined in: [src/runtime/token/service_account.ts:88](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L88)
 
 ##### Returns
 
@@ -130,13 +130,13 @@ Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`close`](../../classes/Bearer.md#close)
 
-***
+---
 
 ### receiver()
 
 > **receiver**(): [`Receiver`](../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/service\_account.ts:92](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L92)
+Defined in: [src/runtime/token/service_account.ts:92](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L92)
 
 #### Returns
 
@@ -146,13 +146,13 @@ Defined in: [src/runtime/token/service\_account.ts:92](https://github.com/nebius
 
 [`Bearer`](../../classes/Bearer.md).[`receiver`](../../classes/Bearer.md#receiver)
 
-***
+---
 
 ### setSDK()
 
 > **setSDK**(`sdk`): `void`
 
-Defined in: [src/runtime/token/service\_account.ts:84](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L84)
+Defined in: [src/runtime/token/service_account.ts:84](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/service_account.ts#L84)
 
 #### Parameters
 

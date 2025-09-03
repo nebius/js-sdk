@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ProjectService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15972
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -286,7 +286,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15987
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -410,7 +410,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15999
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -422,7 +422,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15966
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -546,7 +546,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16011
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-***
+---
 
 ### update()
 

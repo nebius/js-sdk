@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / UpdateServiceAccountRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16500
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16502
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16502
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16501
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16501
 
 Defined in: src/generated/nebius/iam/v1/index.ts:16503
 
-***
+---
 
 ### spec?
 

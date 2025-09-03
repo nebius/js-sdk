@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/registry/v1](../README.md) / ArtifactService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:534
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -286,7 +286,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:510
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -298,7 +298,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:504
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 

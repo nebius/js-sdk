@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / GpuClusterServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4253
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4257
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4257
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4259
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4259
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4254
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4254
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4255
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4255
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4256
 
-***
+---
 
 ### listOperationsByParent
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4256
 
 Defined in: src/generated/nebius/compute/v1/index.ts:4260
 
-***
+---
 
 ### update
 

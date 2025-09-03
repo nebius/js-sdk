@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [generated/nebius](../README.md) / FieldPySDKSettings
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/index.ts:370
 
 Defined in: src/generated/nebius/index.ts:372
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/index.ts:372
 
 Defined in: src/generated/nebius/index.ts:371
 
-***
+---
 
 ### name
 

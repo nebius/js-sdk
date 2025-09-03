@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v2](../README.md) / ActivateAccessKeyByAwsIdRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:902
 
 Defined in: src/generated/nebius/iam/v2/index.ts:904
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:904
 
 Defined in: src/generated/nebius/iam/v2/index.ts:903
 
-***
+---
 
 ### awsAccessKeyId
 

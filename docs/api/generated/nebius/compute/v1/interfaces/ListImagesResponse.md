@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / ListImagesResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5353
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5355
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5355
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5354
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5354
 
 Defined in: src/generated/nebius/compute/v1/index.ts:5356
 
-***
+---
 
 ### nextPageToken
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / ListSubnetsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6370
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:6372
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6372
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:6371
 
-***
+---
 
 ### pageSize
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6371
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:6374
 
-***
+---
 
 ### pageToken
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6374
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:6375
 
-***
+---
 
 ### parentId
 

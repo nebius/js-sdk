@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v2](../README.md) / AccessKeyServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1466
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1472
 
-***
+---
 
 ### activateByAwsId
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1472
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1477
 
-***
+---
 
 ### create
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1477
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1467
 
-***
+---
 
 ### deactivate
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1467
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1473
 
-***
+---
 
 ### deactivateByAwsId
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1473
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1478
 
-***
+---
 
 ### delete
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1478
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1471
 
-***
+---
 
 ### deleteByAwsId
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1471
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1476
 
-***
+---
 
 ### get
 
@@ -80,7 +80,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1476
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1468
 
-***
+---
 
 ### getByAwsId
 
@@ -88,7 +88,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1468
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1475
 
-***
+---
 
 ### list
 
@@ -96,7 +96,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1475
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1469
 
-***
+---
 
 ### listByAccount
 
@@ -104,7 +104,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1469
 
 Defined in: src/generated/nebius/iam/v2/index.ts:1474
 
-***
+---
 
 ### update
 

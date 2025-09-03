@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/registry/v1](../README.md) / ListRegistriesResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1065
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1067
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1067
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1066
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1066
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1068
 
-***
+---
 
 ### nextPageToken
 

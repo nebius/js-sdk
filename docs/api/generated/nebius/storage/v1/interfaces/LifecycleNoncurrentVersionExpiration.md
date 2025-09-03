@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / LifecycleNoncurrentVersionExpiration
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3158
 
 Defined in: src/generated/nebius/storage/v1/index.ts:3160
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3160
 
 Defined in: src/generated/nebius/storage/v1/index.ts:3159
 
-***
+---
 
 ### newerNoncurrentVersions?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3165
 
 Specifies how many noncurrent versions the system will retain.
 
-***
+---
 
 ### noncurrentDays
 

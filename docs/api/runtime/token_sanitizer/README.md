@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../README.md) / runtime/token\_sanitizer
+[@nebius/nodejs-sdk](../../README.md) / runtime/token_sanitizer
 
-# runtime/token\_sanitizer
+# runtime/token_sanitizer
 
 ## Classes
 
@@ -18,11 +18,11 @@
 
 ## Variables
 
-- [ACCESS\_TOKEN\_VERSIONS](variables/ACCESS_TOKEN_VERSIONS.md)
-- [CREDENTIALS\_VERSIONS](variables/CREDENTIALS_VERSIONS.md)
-- [MASK\_STRING](variables/MASK_STRING.md)
-- [MAX\_VISIBLE\_PAYLOAD\_LENGTH](variables/MAX_VISIBLE_PAYLOAD_LENGTH.md)
-- [NO\_SIGNATURE](variables/NO_SIGNATURE.md)
+- [ACCESS_TOKEN_VERSIONS](variables/ACCESS_TOKEN_VERSIONS.md)
+- [CREDENTIALS_VERSIONS](variables/CREDENTIALS_VERSIONS.md)
+- [MASK_STRING](variables/MASK_STRING.md)
+- [MAX_VISIBLE_PAYLOAD_LENGTH](variables/MAX_VISIBLE_PAYLOAD_LENGTH.md)
+- [NO_SIGNATURE](variables/NO_SIGNATURE.md)
 
 ## Functions
 

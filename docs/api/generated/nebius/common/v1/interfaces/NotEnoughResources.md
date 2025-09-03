@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / NotEnoughResources
 
@@ -18,7 +18,7 @@ Indicates that there are not enough resources available to perform the requested
 
 Defined in: src/generated/nebius/common/v1/index.ts:2051
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2051
 
 Defined in: src/generated/nebius/common/v1/index.ts:2050
 
-***
+---
 
 ### violations
 

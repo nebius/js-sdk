@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferIteration
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3035
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3037
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3037
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3036
 
-***
+---
 
 ### averageThroughputBytes
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3036
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3051
 
-***
+---
 
 ### endTime?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3051
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3046
 
-***
+---
 
 ### error
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3044
 
 Human-readable error description. Populated only if state is FAILED.
 
-***
+---
 
 ### objectsDiscoveredCount
 
@@ -58,7 +58,7 @@ Human-readable error description. Populated only if state is FAILED.
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3047
 
-***
+---
 
 ### objectsMigratedCount
 
@@ -66,7 +66,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3047
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3048
 
-***
+---
 
 ### objectsMigratedSize
 
@@ -74,7 +74,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3048
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3050
 
-***
+---
 
 ### objectsSkippedCount
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3050
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3049
 
-***
+---
 
 ### sequenceNumber
 
@@ -90,7 +90,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3049
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3038
 
-***
+---
 
 ### startTime?
 
@@ -98,7 +98,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3038
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3045
 
-***
+---
 
 ### state
 

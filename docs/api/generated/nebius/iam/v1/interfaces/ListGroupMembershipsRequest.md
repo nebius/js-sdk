@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListGroupMembershipsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10106
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10108
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10108
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10107
 
-***
+---
 
 ### filter
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10107
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10116
 
-***
+---
 
 ### pageSize?
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10114
 
 Default value: 10
 
-***
+---
 
 ### pageToken
 
@@ -50,7 +50,7 @@ Default value: 10
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10115
 
-***
+---
 
 ### parentId
 

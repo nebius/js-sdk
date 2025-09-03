@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GroupMembership
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10975
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10977
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10977
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10976
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10976
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10978
 
-***
+---
 
 ### revokeAt?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10978
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10981
 
-***
+---
 
 ### spec?
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10981
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10979
 
-***
+---
 
 ### status?
 

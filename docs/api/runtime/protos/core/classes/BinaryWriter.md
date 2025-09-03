@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/core](../README.md) / BinaryWriter
 
 # Class: BinaryWriter
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:62
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:62
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:
 
 > **new BinaryWriter**(`encodeUtf8?`): `BinaryWriter`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:85
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:85
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:
 
 > **bool**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:125
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:125
 
 Write a `bool` value, a variant.
 
@@ -46,13 +46,13 @@ Write a `bool` value, a variant.
 
 `this`
 
-***
+---
 
 ### bytes()
 
 > **bytes**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:129
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:129
 
 Write a `bytes` value, length-delimited arbitrary data.
 
@@ -66,13 +66,13 @@ Write a `bytes` value, length-delimited arbitrary data.
 
 `this`
 
-***
+---
 
 ### double()
 
 > **double**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:141
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:141
 
 Write a `double` value, a 64-bit floating point number.
 
@@ -86,13 +86,13 @@ Write a `double` value, a 64-bit floating point number.
 
 `this`
 
-***
+---
 
 ### finish()
 
 > **finish**(): `Uint8Array`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:89
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:89
 
 Return all bytes written and reset this writer.
 
@@ -100,13 +100,13 @@ Return all bytes written and reset this writer.
 
 `Uint8Array`
 
-***
+---
 
 ### fixed32()
 
 > **fixed32**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:145
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:145
 
 Write a `fixed32` value, an unsigned, fixed-length 32-bit integer.
 
@@ -120,13 +120,13 @@ Write a `fixed32` value, an unsigned, fixed-length 32-bit integer.
 
 `this`
 
-***
+---
 
 ### fixed64()
 
 > **fixed64**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:161
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:161
 
 Write a `fixed64` value, an unsigned, fixed-length 64 bit integer.
 
@@ -140,13 +140,13 @@ Write a `fixed64` value, an unsigned, fixed-length 64 bit integer.
 
 `this`
 
-***
+---
 
 ### float()
 
 > **float**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:137
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:137
 
 Write a `float` value, 32-bit floating point number.
 
@@ -160,13 +160,13 @@ Write a `float` value, 32-bit floating point number.
 
 `this`
 
-***
+---
 
 ### fork()
 
 > **fork**(): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:96
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:96
 
 Start a new fork for length-delimited data like a message
 or a packed repeated field.
@@ -177,13 +177,13 @@ Must be joined later with `join()`.
 
 `this`
 
-***
+---
 
 ### int32()
 
 > **int32**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:121
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:121
 
 Write a `int32` value, a signed 32 bit varint.
 
@@ -197,13 +197,13 @@ Write a `int32` value, a signed 32 bit varint.
 
 `this`
 
-***
+---
 
 ### int64()
 
 > **int64**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:165
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:165
 
 Write a `int64` value, a signed 64-bit varint.
 
@@ -217,13 +217,13 @@ Write a `int64` value, a signed 64-bit varint.
 
 `this`
 
-***
+---
 
 ### join()
 
 > **join**(): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:101
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:101
 
 Join the last fork. Write its length and bytes, then
 return to the previous state.
@@ -232,13 +232,13 @@ return to the previous state.
 
 `this`
 
-***
+---
 
 ### raw()
 
 > **raw**(`chunk`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:113
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:113
 
 Write a chunk of raw bytes.
 
@@ -252,13 +252,13 @@ Write a chunk of raw bytes.
 
 `this`
 
-***
+---
 
 ### sfixed32()
 
 > **sfixed32**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:149
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:149
 
 Write a `sfixed32` value, a signed, fixed-length 32-bit integer.
 
@@ -272,13 +272,13 @@ Write a `sfixed32` value, a signed, fixed-length 32-bit integer.
 
 `this`
 
-***
+---
 
 ### sfixed64()
 
 > **sfixed64**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:157
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:157
 
 Write a `fixed64` value, a signed, fixed-length 64-bit integer.
 
@@ -292,13 +292,13 @@ Write a `fixed64` value, a signed, fixed-length 64-bit integer.
 
 `this`
 
-***
+---
 
 ### sint32()
 
 > **sint32**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:153
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:153
 
 Write a `sint32` value, a signed, zigzag-encoded 32-bit varint.
 
@@ -312,13 +312,13 @@ Write a `sint32` value, a signed, zigzag-encoded 32-bit varint.
 
 `this`
 
-***
+---
 
 ### sint64()
 
 > **sint64**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:169
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:169
 
 Write a `sint64` value, a signed, zig-zag-encoded 64-bit varint.
 
@@ -332,13 +332,13 @@ Write a `sint64` value, a signed, zig-zag-encoded 64-bit varint.
 
 `this`
 
-***
+---
 
 ### string()
 
 > **string**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:133
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:133
 
 Write a `string` value, length-delimited data converted to UTF-8 text.
 
@@ -352,13 +352,13 @@ Write a `string` value, length-delimited data converted to UTF-8 text.
 
 `this`
 
-***
+---
 
 ### tag()
 
 > **tag**(`fieldNo`, `type`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:109
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:109
 
 Writes a tag (field number and wire type).
 
@@ -380,13 +380,13 @@ Generated code should compute the tag ahead of time and call `uint32()`.
 
 `this`
 
-***
+---
 
 ### uint32()
 
 > **uint32**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:117
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:117
 
 Write a `uint32` value, an unsigned 32 bit varint.
 
@@ -400,13 +400,13 @@ Write a `uint32` value, an unsigned 32 bit varint.
 
 `this`
 
-***
+---
 
 ### uint64()
 
 > **uint64**(`value`): `this`
 
-Defined in: node\_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:173
+Defined in: node_modules/@bufbuild/protobuf/dist/cjs/wire/binary-encoding.d.ts:173
 
 Write a `uint64` value, an unsigned 64-bit varint.
 

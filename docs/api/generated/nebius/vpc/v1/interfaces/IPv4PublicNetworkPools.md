@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / IPv4PublicNetworkPools
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3923
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3925
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3925
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3924
 
-***
+---
 
 ### pools
 

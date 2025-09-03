@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GroupMemberKind
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11366
 
 Defined in: src/generated/nebius/iam/v1/index.ts:11368
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11368
 
 Defined in: src/generated/nebius/iam/v1/index.ts:11367
 
-***
+---
 
 ### kind
 

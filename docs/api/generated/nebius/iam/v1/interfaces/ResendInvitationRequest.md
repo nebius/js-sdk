@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ResendInvitationRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13656
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13658
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13658
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13657
 
-***
+---
 
 ### id
 

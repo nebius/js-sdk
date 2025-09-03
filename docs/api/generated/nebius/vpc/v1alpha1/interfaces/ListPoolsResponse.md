@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / ListPoolsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4471
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4473
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4473
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4472
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4472
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4474
 
-***
+---
 
 ### nextPageToken
 

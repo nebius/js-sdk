@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [runtime/token/file\_cache/async\_renewable\_bearer](../README.md) / AsyncRenewableBearer
+[@nebius/nodejs-sdk](../../../../../README.md) / [runtime/token/file_cache/async_renewable_bearer](../README.md) / AsyncRenewableBearer
 
 # Class: AsyncRenewableBearer
 
-Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:48](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L48)
+Defined in: [src/runtime/token/file_cache/async_renewable_bearer.ts:48](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L48)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:48](https
 
 > **new AsyncRenewableBearer**(`source`, `opts?`): `AsyncRenewableBearer`
 
-Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:79](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L79)
+Defined in: [src/runtime/token/file_cache/async_renewable_bearer.ts:79](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L79)
 
 #### Parameters
 
@@ -90,7 +90,7 @@ Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:79](https
 
 > **safetyMargin**: `null` \| `number`
 
-Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:77](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L77)
+Defined in: [src/runtime/token/file_cache/async_renewable_bearer.ts:77](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L77)
 
 ## Accessors
 
@@ -110,7 +110,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../../classes/Bearer.md).[`name`](../../../classes/Bearer.md#name)
 
-***
+---
 
 ### wrapped
 
@@ -118,7 +118,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../../classes/Bearer.md)
 
-Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:114](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L114)
+Defined in: [src/runtime/token/file_cache/async_renewable_bearer.ts:114](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L114)
 
 ##### Returns
 
@@ -134,7 +134,7 @@ Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:114](http
 
 > **close**(`graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:437](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L437)
+Defined in: [src/runtime/token/file_cache/async_renewable_bearer.ts:437](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L437)
 
 #### Parameters
 
@@ -150,13 +150,13 @@ Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:437](http
 
 [`Bearer`](../../../classes/Bearer.md).[`close`](../../../classes/Bearer.md#close)
 
-***
+---
 
 ### fetch()
 
 > **fetch**(`timeoutMs?`, `options?`): `Promise`\<[`Token`](../../../classes/Token.md)\>
 
-Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:259](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L259)
+Defined in: [src/runtime/token/file_cache/async_renewable_bearer.ts:259](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L259)
 
 #### Parameters
 
@@ -172,25 +172,25 @@ Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:259](http
 
 `Promise`\<[`Token`](../../../classes/Token.md)\>
 
-***
+---
 
 ### isRenewalRequired()
 
 > **isRenewalRequired**(): `boolean`
 
-Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:377](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L377)
+Defined in: [src/runtime/token/file_cache/async_renewable_bearer.ts:377](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L377)
 
 #### Returns
 
 `boolean`
 
-***
+---
 
 ### receiver()
 
 > **receiver**(): [`Receiver`](../../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:118](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L118)
+Defined in: [src/runtime/token/file_cache/async_renewable_bearer.ts:118](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L118)
 
 #### Returns
 
@@ -200,13 +200,13 @@ Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:118](http
 
 [`Bearer`](../../../classes/Bearer.md).[`receiver`](../../../classes/Bearer.md#receiver)
 
-***
+---
 
 ### requestRenewal()
 
 > **requestRenewal**(): `void`
 
-Defined in: [src/runtime/token/file\_cache/async\_renewable\_bearer.ts:383](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L383)
+Defined in: [src/runtime/token/file_cache/async_renewable_bearer.ts:383](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/async_renewable_bearer.ts#L383)
 
 #### Returns
 

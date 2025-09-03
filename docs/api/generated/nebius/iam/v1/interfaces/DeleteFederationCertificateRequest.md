@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / DeleteFederationCertificateRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7654
 
 Defined in: src/generated/nebius/iam/v1/index.ts:7656
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7656
 
 Defined in: src/generated/nebius/iam/v1/index.ts:7655
 
-***
+---
 
 ### id
 

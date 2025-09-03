@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / DeleteGroupRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12232
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12234
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12234
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12233
 
-***
+---
 
 ### id
 

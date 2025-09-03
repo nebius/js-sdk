@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/quotas/v1](../README.md) / QuotaAllowanceService
 
@@ -170,7 +170,7 @@ Gets a quota by its ID.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetQuotaAllowanceRequest`](../interfaces/GetQuotaAllowanceRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -302,7 +302,7 @@ Gets a quota by an ID of a Tenant or a Project, its region, and name.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), [`QuotaAllowance`](../interfaces/QuotaAllowance.md)\>
 
-***
+---
 
 ### list()
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GroupMembershipService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10864
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupMembershipRequest`](../interfaces/CreateGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10903
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupMembershipRequest`](../interfaces/DeleteGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10879
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembership`](../interfaces/GroupMembership.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -422,7 +422,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10858
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### getWithAttributes()
 
@@ -546,7 +546,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10891
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembershipWithAttributes`](../interfaces/GroupMembershipWithAttributes.md)\>
 
-***
+---
 
 ### listMemberOf()
 
@@ -670,7 +670,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10942
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMemberOfRequest`](../interfaces/ListMemberOfRequest.md), [`ListMemberOfResponse`](../interfaces/ListMemberOfResponse.md)\>
 
-***
+---
 
 ### listMembers()
 
@@ -794,7 +794,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10918
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsResponse`](../interfaces/ListGroupMembershipsResponse.md)\>
 
-***
+---
 
 ### listMembersWithAttributes()
 

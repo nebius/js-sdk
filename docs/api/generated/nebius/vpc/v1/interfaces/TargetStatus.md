@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / TargetStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9126
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:9128
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9128
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:9127
 
-***
+---
 
 ### computeInstanceId
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9127
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:9129
 
-***
+---
 
 ### targetState
 

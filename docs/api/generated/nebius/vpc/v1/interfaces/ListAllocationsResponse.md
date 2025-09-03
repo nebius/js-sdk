@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / ListAllocationsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:450
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:452
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:452
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:451
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:451
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:453
 
-***
+---
 
 ### nextPageToken
 

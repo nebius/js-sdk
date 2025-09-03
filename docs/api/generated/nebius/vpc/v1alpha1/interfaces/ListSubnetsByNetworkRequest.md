@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / ListSubnetsByNetworkRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6771
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6773
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6773
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6772
 
-***
+---
 
 ### filter
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6772
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6777
 
-***
+---
 
 ### networkId
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6777
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6774
 
-***
+---
 
 ### pageSize
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6774
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6775
 
-***
+---
 
 ### pageToken
 

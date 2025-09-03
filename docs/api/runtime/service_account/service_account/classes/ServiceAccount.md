@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service\_account/service\_account](../README.md) / ServiceAccount
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service_account/service_account](../README.md) / ServiceAccount
 
 # Class: ServiceAccount
 
-Defined in: [src/runtime/service\_account/service\_account.ts:20](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L20)
+Defined in: [src/runtime/service_account/service_account.ts:20](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L20)
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: [src/runtime/service\_account/service\_account.ts:20](https://github
 
 > **new ServiceAccount**(`privateKeyPem`, `publicKeyId`, `serviceAccountId`): `ServiceAccount`
 
-Defined in: [src/runtime/service\_account/service\_account.ts:21](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L21)
+Defined in: [src/runtime/service_account/service_account.ts:21](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L21)
 
 #### Parameters
 
@@ -44,31 +44,31 @@ Defined in: [src/runtime/service\_account/service\_account.ts:21](https://github
 
 > `readonly` **privateKeyPem**: `string`
 
-Defined in: [src/runtime/service\_account/service\_account.ts:22](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L22)
+Defined in: [src/runtime/service_account/service_account.ts:22](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L22)
 
 #### Implementation of
 
 [`ServiceAccountLike`](../interfaces/ServiceAccountLike.md).[`privateKeyPem`](../interfaces/ServiceAccountLike.md#privatekeypem)
 
-***
+---
 
 ### publicKeyId
 
 > `readonly` **publicKeyId**: `string`
 
-Defined in: [src/runtime/service\_account/service\_account.ts:23](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L23)
+Defined in: [src/runtime/service_account/service_account.ts:23](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L23)
 
 #### Implementation of
 
 [`ServiceAccountLike`](../interfaces/ServiceAccountLike.md).[`publicKeyId`](../interfaces/ServiceAccountLike.md#publickeyid)
 
-***
+---
 
 ### serviceAccountId
 
 > `readonly` **serviceAccountId**: `string`
 
-Defined in: [src/runtime/service\_account/service\_account.ts:24](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L24)
+Defined in: [src/runtime/service_account/service_account.ts:24](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L24)
 
 #### Implementation of
 
@@ -80,7 +80,7 @@ Defined in: [src/runtime/service\_account/service\_account.ts:24](https://github
 
 > **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
-Defined in: [src/runtime/service\_account/service\_account.ts:27](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L27)
+Defined in: [src/runtime/service_account/service_account.ts:27](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L27)
 
 #### Returns
 

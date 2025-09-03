@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / generated/nebius/storage/v1
 
@@ -41,12 +41,12 @@
 ## Type Aliases
 
 - [BucketServiceServiceDescription](type-aliases/BucketServiceServiceDescription.md)
-- [BucketStatus\_State](type-aliases/BucketStatus_State.md)
-- [BucketStatus\_StateClass](type-aliases/BucketStatus_StateClass.md)
-- [BucketStatus\_SuspensionState](type-aliases/BucketStatus_SuspensionState.md)
-- [BucketStatus\_SuspensionStateClass](type-aliases/BucketStatus_SuspensionStateClass.md)
-- [LifecycleRule\_Status](type-aliases/LifecycleRule_Status.md)
-- [LifecycleRule\_StatusClass](type-aliases/LifecycleRule_StatusClass.md)
+- [BucketStatus_State](type-aliases/BucketStatus_State.md)
+- [BucketStatus_StateClass](type-aliases/BucketStatus_StateClass.md)
+- [BucketStatus_SuspensionState](type-aliases/BucketStatus_SuspensionState.md)
+- [BucketStatus_SuspensionStateClass](type-aliases/BucketStatus_SuspensionStateClass.md)
+- [LifecycleRule_Status](type-aliases/LifecycleRule_Status.md)
+- [LifecycleRule_StatusClass](type-aliases/LifecycleRule_StatusClass.md)
 - [StorageClass](type-aliases/StorageClass.md)
 - [StorageClassClass](type-aliases/StorageClassClass.md)
 - [VersioningPolicy](type-aliases/VersioningPolicy.md)
@@ -60,8 +60,8 @@
 - [BucketServiceServiceDescription](variables/BucketServiceServiceDescription.md)
 - [BucketSpec](variables/BucketSpec.md)
 - [BucketStatus](variables/BucketStatus.md)
-- [BucketStatus\_State](variables/BucketStatus_State.md)
-- [BucketStatus\_SuspensionState](variables/BucketStatus_SuspensionState.md)
+- [BucketStatus_State](variables/BucketStatus_State.md)
+- [BucketStatus_SuspensionState](variables/BucketStatus_SuspensionState.md)
 - [CreateBucketRequest](variables/CreateBucketRequest.md)
 - [CurrentBucketCounters](variables/CurrentBucketCounters.md)
 - [DeleteBucketRequest](variables/DeleteBucketRequest.md)
@@ -74,7 +74,7 @@
 - [LifecycleNoncurrentVersionExpiration](variables/LifecycleNoncurrentVersionExpiration.md)
 - [LifecycleNoncurrentVersionTransition](variables/LifecycleNoncurrentVersionTransition.md)
 - [LifecycleRule](variables/LifecycleRule.md)
-- [LifecycleRule\_Status](variables/LifecycleRule_Status.md)
+- [LifecycleRule_Status](variables/LifecycleRule_Status.md)
 - [LifecycleTransition](variables/LifecycleTransition.md)
 - [ListBucketsRequest](variables/ListBucketsRequest.md)
 - [ListBucketsResponse](variables/ListBucketsResponse.md)

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/msp/v1alpha1](../README.md) / ClusterStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:64
 
 Defined in: src/generated/nebius/msp/v1alpha1/index.ts:66
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:66
 
 Defined in: src/generated/nebius/msp/v1alpha1/index.ts:65
 
-***
+---
 
 ### phase
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:71
 
 Current phase of the cluster.
 
-***
+---
 
 ### reconciling
 
@@ -42,7 +42,7 @@ Current phase of the cluster.
 
 Defined in: src/generated/nebius/msp/v1alpha1/index.ts:77
 
-***
+---
 
 ### state
 

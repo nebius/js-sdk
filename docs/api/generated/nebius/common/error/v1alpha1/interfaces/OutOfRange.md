@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/common/error/v1alpha1](../README.md) / OutOfRange
 
@@ -18,7 +18,7 @@ Indicates that element with requested parameters is exceeding the particular ran
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:778
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:778
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:777
 
-***
+---
 
 ### limit
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:788
 
 Available limit.
 
-***
+---
 
 ### requested
 

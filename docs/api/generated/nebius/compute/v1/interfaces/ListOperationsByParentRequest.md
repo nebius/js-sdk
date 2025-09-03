@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / ListOperationsByParentRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11030
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11032
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11032
 
 Defined in: src/generated/nebius/compute/v1/index.ts:11031
 
-***
+---
 
 ### pageSize
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11042
 
 Page size. [1...1000]. Optional, if not specified, a reasonable default will be chosen by the service.
 
-***
+---
 
 ### pageToken
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11047
 
 Listing continuation token. Empty to start listing from the first page.
 
-***
+---
 
 ### parentId
 

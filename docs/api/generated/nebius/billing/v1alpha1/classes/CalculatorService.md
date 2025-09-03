@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/billing/v1alpha1](../README.md) / CalculatorService
 
@@ -49,7 +49,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:547
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:553
 
 Estimates prices for a single resource.
- Returns both hourly and monthly cost estimates for the specified resource configuration.
+Returns both hourly and monthly cost estimates for the specified resource configuration.
 
 ##### Parameters
 
@@ -112,7 +112,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:555
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:577
 
 Estimates prices for a single resource.
- Returns both hourly and monthly cost estimates for the specified resource configuration.
+Returns both hourly and monthly cost estimates for the specified resource configuration.
 
 ##### Parameters
 
@@ -131,7 +131,7 @@ Estimates prices for a single resource.
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:578
 
 Estimates prices for a single resource.
- Returns both hourly and monthly cost estimates for the specified resource configuration.
+Returns both hourly and monthly cost estimates for the specified resource configuration.
 
 ##### Parameters
 
@@ -154,7 +154,7 @@ Estimates prices for a single resource.
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:579
 
 Estimates prices for a single resource.
- Returns both hourly and monthly cost estimates for the specified resource configuration.
+Returns both hourly and monthly cost estimates for the specified resource configuration.
 
 ##### Parameters
 
@@ -174,7 +174,7 @@ Estimates prices for a single resource.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
 
-***
+---
 
 ### estimateBatch()
 
@@ -185,7 +185,7 @@ Estimates prices for a single resource.
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:561
 
 Estimates prices for multiple resources.
- Returns aggregated hourly and monthly cost estimates for all specified resources.
+Returns aggregated hourly and monthly cost estimates for all specified resources.
 
 ##### Parameters
 
@@ -248,7 +248,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:563
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:589
 
 Estimates prices for multiple resources.
- Returns aggregated hourly and monthly cost estimates for all specified resources.
+Returns aggregated hourly and monthly cost estimates for all specified resources.
 
 ##### Parameters
 
@@ -267,7 +267,7 @@ Estimates prices for multiple resources.
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:590
 
 Estimates prices for multiple resources.
- Returns aggregated hourly and monthly cost estimates for all specified resources.
+Returns aggregated hourly and monthly cost estimates for all specified resources.
 
 ##### Parameters
 
@@ -290,7 +290,7 @@ Estimates prices for multiple resources.
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:591
 
 Estimates prices for multiple resources.
- Returns aggregated hourly and monthly cost estimates for all specified resources.
+Returns aggregated hourly and monthly cost estimates for all specified resources.
 
 ##### Parameters
 

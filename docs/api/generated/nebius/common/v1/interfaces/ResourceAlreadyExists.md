@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / ResourceAlreadyExists
 
@@ -18,7 +18,7 @@ Resource we are trying to create already exists.
 
 Defined in: src/generated/nebius/common/v1/index.ts:1034
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1034
 
 Defined in: src/generated/nebius/common/v1/index.ts:1033
 
-***
+---
 
 ### resourceId
 

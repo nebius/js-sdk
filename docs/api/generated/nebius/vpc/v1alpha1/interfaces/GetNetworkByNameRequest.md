@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / GetNetworkByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3173
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3175
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3175
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3174
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3174
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3177
 
-***
+---
 
 ### parentId
 

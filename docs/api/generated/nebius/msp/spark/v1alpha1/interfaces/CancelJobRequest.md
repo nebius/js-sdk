@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / CancelJobRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2328
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2330
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2330
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2329
 
-***
+---
 
 ### id
 

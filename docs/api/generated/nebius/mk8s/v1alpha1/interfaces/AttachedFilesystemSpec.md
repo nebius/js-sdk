@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / AttachedFilesystemSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5325
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5327
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5327
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5326
 
-***
+---
 
 ### attachMode
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5326
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5328
 
-***
+---
 
 ### deviceName
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5328
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5329
 
-***
+---
 
 ### type?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / SessionStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5164
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5166
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5166
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5165
 
-***
+---
 
 ### driverPresetDetails?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5186
 
 Session driver resource preset details
 
-***
+---
 
 ### executorPresetDetails?
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5191
 
 Session executor resource preset details
 
-***
+---
 
 ### phase
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5171
 
 Current phase (or stage) of the cluster.
 
-***
+---
 
 ### sparkConnectEndpoint?
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5181
 
 Spark Connect endpoint
 
-***
+---
 
 ### state
 

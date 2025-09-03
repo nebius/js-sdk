@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GroupStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12849
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12851
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12851
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12850
 
-***
+---
 
 ### membersCount
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12850
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12853
 
-***
+---
 
 ### serviceAccountsCount
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12853
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12854
 
-***
+---
 
 ### state
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12854
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12852
 
-***
+---
 
 ### tenantUserAccountsCount
 

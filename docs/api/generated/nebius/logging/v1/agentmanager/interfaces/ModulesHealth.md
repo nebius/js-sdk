@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/logging/v1/agentmanager](../README.md) / ModulesHealth
 
@@ -18,7 +18,7 @@ Health status information for all agent modules.
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:717
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:717
 
 Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:716
 
-***
+---
 
 ### ciliumPipeline?
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:737
 
 Health status of the Cilium pipeline module.
 
-***
+---
 
 ### cpuPipeline?
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:732
 
 Health status of the CPU pipeline module.
 
-***
+---
 
 ### gpuPipeline?
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:727
 
 Health status of the GPU pipeline module.
 
-***
+---
 
 ### process?
 

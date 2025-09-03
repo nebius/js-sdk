@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/audit/v2](../README.md) / Subject
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2497
 
 Defined in: src/generated/nebius/audit/v2/index.ts:2499
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2499
 
 Defined in: src/generated/nebius/audit/v2/index.ts:2498
 
-***
+---
 
 ### id?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2498
 
 Defined in: src/generated/nebius/audit/v2/index.ts:2505
 
-***
+---
 
 ### name
 

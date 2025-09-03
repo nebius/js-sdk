@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / BucketService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1750
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1780
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1714
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1726
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1708
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1738
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
-***
+---
 
 ### purge()
 
@@ -681,8 +681,8 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1738
 Defined in: src/generated/nebius/storage/v1/index.ts:1685
 
 Purge instantly deletes the bucket in ScheduledForDeletion state.
- It can be used only for buckets in ScheduledForDeletion state.
- If you want to delete Active bucket instantly, use Delete with zero ttl.
+It can be used only for buckets in ScheduledForDeletion state.
+If you want to delete Active bucket instantly, use Delete with zero ttl.
 
 ##### Parameters
 
@@ -745,8 +745,8 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1687
 Defined in: src/generated/nebius/storage/v1/index.ts:1793
 
 Purge instantly deletes the bucket in ScheduledForDeletion state.
- It can be used only for buckets in ScheduledForDeletion state.
- If you want to delete Active bucket instantly, use Delete with zero ttl.
+It can be used only for buckets in ScheduledForDeletion state.
+If you want to delete Active bucket instantly, use Delete with zero ttl.
 
 ##### Parameters
 
@@ -765,8 +765,8 @@ Purge instantly deletes the bucket in ScheduledForDeletion state.
 Defined in: src/generated/nebius/storage/v1/index.ts:1794
 
 Purge instantly deletes the bucket in ScheduledForDeletion state.
- It can be used only for buckets in ScheduledForDeletion state.
- If you want to delete Active bucket instantly, use Delete with zero ttl.
+It can be used only for buckets in ScheduledForDeletion state.
+If you want to delete Active bucket instantly, use Delete with zero ttl.
 
 ##### Parameters
 
@@ -789,8 +789,8 @@ Purge instantly deletes the bucket in ScheduledForDeletion state.
 Defined in: src/generated/nebius/storage/v1/index.ts:1795
 
 Purge instantly deletes the bucket in ScheduledForDeletion state.
- It can be used only for buckets in ScheduledForDeletion state.
- If you want to delete Active bucket instantly, use Delete with zero ttl.
+It can be used only for buckets in ScheduledForDeletion state.
+If you want to delete Active bucket instantly, use Delete with zero ttl.
 
 ##### Parameters
 
@@ -810,7 +810,7 @@ Purge instantly deletes the bucket in ScheduledForDeletion state.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### undelete()
 
@@ -942,7 +942,7 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### update()
 

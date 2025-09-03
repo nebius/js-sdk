@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / FilesystemServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2696
 
 Defined in: src/generated/nebius/compute/v1/index.ts:2700
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2700
 
 Defined in: src/generated/nebius/compute/v1/index.ts:2702
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2702
 
 Defined in: src/generated/nebius/compute/v1/index.ts:2697
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2697
 
 Defined in: src/generated/nebius/compute/v1/index.ts:2698
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2698
 
 Defined in: src/generated/nebius/compute/v1/index.ts:2699
 
-***
+---
 
 ### listOperationsByParent
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2699
 
 Defined in: src/generated/nebius/compute/v1/index.ts:2703
 
-***
+---
 
 ### update
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListAuthPublicKeyRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3881
 
 Defined in: src/generated/nebius/iam/v1/index.ts:3883
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3883
 
 Defined in: src/generated/nebius/iam/v1/index.ts:3882
 
-***
+---
 
 ### filter
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3904
 
 A filter to narrow down the results based on specific criteria.
 
-***
+---
 
 ### pageSize?
 
@@ -43,9 +43,9 @@ A filter to narrow down the results based on specific criteria.
 Defined in: src/generated/nebius/iam/v1/index.ts:3894
 
 Specifies the maximum number of items to return in the response.
- Default value: 10
+Default value: 10
 
-***
+---
 
 ### pageToken
 
@@ -55,7 +55,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3899
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

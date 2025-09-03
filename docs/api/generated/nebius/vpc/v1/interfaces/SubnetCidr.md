@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / SubnetCidr
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7932
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:7934
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7934
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:7933
 
-***
+---
 
 ### cidr
 
@@ -33,9 +33,9 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7933
 Defined in: src/generated/nebius/vpc/v1/index.ts:7940
 
 CIDR block.
- May be a prefix length (such as /24) or a CIDR-formatted string (such as 10.1.2.0/24).
+May be a prefix length (such as /24) or a CIDR-formatted string (such as 10.1.2.0/24).
 
-***
+---
 
 ### maxMaskLength
 
@@ -44,9 +44,9 @@ CIDR block.
 Defined in: src/generated/nebius/vpc/v1/index.ts:7952
 
 Maximum mask length for allocation from this cidr
- Default max_mask_length is 32 for IPv4 and 128 for IPv6
+Default max_mask_length is 32 for IPv4 and 128 for IPv6
 
-***
+---
 
 ### state
 
@@ -55,4 +55,4 @@ Maximum mask length for allocation from this cidr
 Defined in: src/generated/nebius/vpc/v1/index.ts:7946
 
 State of the Cidr.
- Default state is AVAILABLE
+Default state is AVAILABLE

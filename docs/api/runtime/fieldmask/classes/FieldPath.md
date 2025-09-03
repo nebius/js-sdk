@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/fieldmask](../README.md) / FieldPath
 
@@ -60,7 +60,7 @@ Defined in: [src/runtime/fieldmask.ts:60](https://github.com/nebius/nodejs-sdk/b
 
 `Iterator`\<[`FieldKey`](FieldKey.md)\>
 
-***
+---
 
 ### append()
 
@@ -78,7 +78,7 @@ Defined in: [src/runtime/fieldmask.ts:69](https://github.com/nebius/nodejs-sdk/b
 
 `this`
 
-***
+---
 
 ### appendMany()
 
@@ -96,7 +96,7 @@ Defined in: [src/runtime/fieldmask.ts:73](https://github.com/nebius/nodejs-sdk/b
 
 `this`
 
-***
+---
 
 ### at()
 
@@ -114,7 +114,7 @@ Defined in: [src/runtime/fieldmask.ts:66](https://github.com/nebius/nodejs-sdk/b
 
 `undefined` \| [`FieldKey`](FieldKey.md)
 
-***
+---
 
 ### concat()
 
@@ -132,7 +132,7 @@ Defined in: [src/runtime/fieldmask.ts:77](https://github.com/nebius/nodejs-sdk/b
 
 `FieldPath`
 
-***
+---
 
 ### copy()
 
@@ -144,7 +144,7 @@ Defined in: [src/runtime/fieldmask.ts:86](https://github.com/nebius/nodejs-sdk/b
 
 `FieldPath`
 
-***
+---
 
 ### equals()
 
@@ -162,7 +162,7 @@ Defined in: [src/runtime/fieldmask.ts:89](https://github.com/nebius/nodejs-sdk/b
 
 `boolean`
 
-***
+---
 
 ### isPrefixOf()
 
@@ -180,7 +180,7 @@ Defined in: [src/runtime/fieldmask.ts:97](https://github.com/nebius/nodejs-sdk/b
 
 `boolean`
 
-***
+---
 
 ### marshal()
 
@@ -192,7 +192,7 @@ Defined in: [src/runtime/fieldmask.ts:115](https://github.com/nebius/nodejs-sdk/
 
 `string`
 
-***
+---
 
 ### parent()
 
@@ -204,7 +204,7 @@ Defined in: [src/runtime/fieldmask.ts:82](https://github.com/nebius/nodejs-sdk/b
 
 `null` \| `FieldPath`
 
-***
+---
 
 ### toMask()
 
@@ -216,7 +216,7 @@ Defined in: [src/runtime/fieldmask.ts:105](https://github.com/nebius/nodejs-sdk/
 
 [`Mask`](Mask.md)
 
-***
+---
 
 ### toString()
 
@@ -228,7 +228,7 @@ Defined in: [src/runtime/fieldmask.ts:118](https://github.com/nebius/nodejs-sdk/
 
 `string`
 
-***
+---
 
 ### from()
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / UpdateGroupRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12317
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12319
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12319
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12318
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12318
 
 Defined in: src/generated/nebius/iam/v1/index.ts:12320
 
-***
+---
 
 ### spec?
 

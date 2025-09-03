@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / MaintenanceEventStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9150
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9152
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9152
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9151
 
-***
+---
 
 ### createdAt?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9158
 
 Time when the maintenance event is created
 
-***
+---
 
 ### finishedAt?
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9163
 
 Time when the maintenance event is finished
 
-***
+---
 
 ### maintenanceId
 
@@ -52,7 +52,7 @@ Time when the maintenance event is finished
 
 Defined in: src/generated/nebius/compute/v1/index.ts:9153
 
-***
+---
 
 ### slaDeadlineTs?
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9168
 
 Time when the instance will be force stopped
 
-***
+---
 
 ### supportCenterTicketId
 

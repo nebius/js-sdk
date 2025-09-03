@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / GetTenantUserAccountRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19867
 
 Defined in: src/generated/nebius/iam/v1/index.ts:19869
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19869
 
 Defined in: src/generated/nebius/iam/v1/index.ts:19868
 
-***
+---
 
 ### id
 

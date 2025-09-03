@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferSpec\_Limiters
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferSpec_Limiters
 
-# Interface: TransferSpec\_Limiters
+# Interface: TransferSpec_Limiters
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2552
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2552
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2554
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2554
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2553
 
-***
+---
 
 ### bandwidthBytesPerSecond
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2559
 
 Maximum bandwidth in bytes per second. If set to zero, default limit will be applied.
 
-***
+---
 
 ### requestsPerSecond
 

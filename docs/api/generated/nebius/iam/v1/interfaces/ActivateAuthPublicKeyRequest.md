@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ActivateAuthPublicKeyRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4315
 
 Defined in: src/generated/nebius/iam/v1/index.ts:4317
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4317
 
 Defined in: src/generated/nebius/iam/v1/index.ts:4316
 
-***
+---
 
 ### id
 

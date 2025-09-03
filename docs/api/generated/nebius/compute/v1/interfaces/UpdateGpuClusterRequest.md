@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / UpdateGpuClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3885
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3887
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3887
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3886
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3886
 
 Defined in: src/generated/nebius/compute/v1/index.ts:3888
 
-***
+---
 
 ### spec?
 

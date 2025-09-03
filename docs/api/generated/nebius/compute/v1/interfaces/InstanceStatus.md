@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / InstanceStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8653
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8655
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8655
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8654
 
-***
+---
 
 ### gpuClusterTopology?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8664
 
 > **infinibandTopologyPath**: [`InstanceStatusInfinibandTopologyPath`](InstanceStatusInfinibandTopologyPath.md)
 
-***
+---
 
 ### maintenanceEventId
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8664
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8663
 
-***
+---
 
 ### networkInterfaces
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8663
 
 Defined in: src/generated/nebius/compute/v1/index.ts:8657
 
-***
+---
 
 ### reconciling
 
@@ -66,7 +66,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8662
 
 Indicates whether there is an ongoing operation
 
-***
+---
 
 ### state
 

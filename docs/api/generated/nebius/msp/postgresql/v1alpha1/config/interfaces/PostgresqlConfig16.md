@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1/config](../README.md) / PostgresqlConfig16
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:10
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:12
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:12
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:11
 
-***
+---
 
 ### autovacuumAnalyzeScaleFactor?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:11
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:40
 
-***
+---
 
 ### autovacuumNaptime?
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:38
 
 in seconds.
 
-***
+---
 
 ### autovacuumVacuumCostDelay?
 
@@ -52,7 +52,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:32
 
 in milliseconds.
 
-***
+---
 
 ### autovacuumVacuumCostLimit?
 
@@ -60,7 +60,7 @@ in milliseconds.
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:33
 
-***
+---
 
 ### autovacuumVacuumScaleFactor?
 
@@ -68,7 +68,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:33
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:39
 
-***
+---
 
 ### autovacuumWorkMem?
 
@@ -78,7 +78,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:17
 
 in kilobytes.
 
-***
+---
 
 ### defaultTransactionReadOnly?
 
@@ -86,7 +86,7 @@ in kilobytes.
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:41
 
-***
+---
 
 ### idleInTransactionSessionTimeout?
 
@@ -96,7 +96,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:27
 
 in milliseconds.
 
-***
+---
 
 ### maxConnections?
 
@@ -104,7 +104,7 @@ in milliseconds.
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:43
 
-***
+---
 
 ### searchPath?
 
@@ -112,7 +112,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:43
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:42
 
-***
+---
 
 ### sharedBuffers?
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:48
 
 in kilobytes.
 
-***
+---
 
 ### statementTimeout?
 

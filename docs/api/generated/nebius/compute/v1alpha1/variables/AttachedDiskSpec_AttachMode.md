@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / AttachedDiskSpec\_AttachMode
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / AttachedDiskSpec_AttachMode
 
-# Variable: AttachedDiskSpec\_AttachMode
+# Variable: AttachedDiskSpec_AttachMode
 
-> **AttachedDiskSpec\_AttachMode**: [`AttachedDiskSpec_AttachModeClass`](../type-aliases/AttachedDiskSpec_AttachModeClass.md)
+> **AttachedDiskSpec_AttachMode**: [`AttachedDiskSpec_AttachModeClass`](../type-aliases/AttachedDiskSpec_AttachModeClass.md)
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6559

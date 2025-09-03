@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / LifecycleExpiration
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2988
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2990
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2990
 
 Defined in: src/generated/nebius/storage/v1/index.ts:2989
 
-***
+---
 
 ### expiredObjectDeleteMarker
 
@@ -33,11 +33,11 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2989
 Defined in: src/generated/nebius/storage/v1/index.ts:2998
 
 Indicates whether the system will remove a "delete marker" with no noncurrent versions.
- If set to true, the "delete marker" will be permanently removed.
- If set to false the policy takes no action.
- This cannot be specified with Days or Date in a LifecycleExpiration Policy.
+If set to true, the "delete marker" will be permanently removed.
+If set to false the policy takes no action.
+This cannot be specified with Days or Date in a LifecycleExpiration Policy.
 
-***
+---
 
 ### expiredWith?
 

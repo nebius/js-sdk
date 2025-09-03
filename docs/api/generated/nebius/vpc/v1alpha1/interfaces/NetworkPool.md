@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / NetworkPool
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3941
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3943
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3943
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3942
 
-***
+---
 
 ### poolId
 

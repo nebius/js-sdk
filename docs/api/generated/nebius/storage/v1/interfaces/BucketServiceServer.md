@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / BucketServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1631
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1635
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1635
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1637
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1637
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1632
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1632
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1633
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1633
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1634
 
-***
+---
 
 ### purge
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1634
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1638
 
-***
+---
 
 ### undelete
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1638
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1639
 
-***
+---
 
 ### update
 

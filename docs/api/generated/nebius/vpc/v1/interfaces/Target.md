@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / Target
 
@@ -18,7 +18,7 @@ Represents the target which can receive traffic from a load balancer listener
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8790
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8790
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:8789
 
-***
+---
 
 ### target?
 

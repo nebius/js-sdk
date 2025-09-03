@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / GetSubnetByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6266
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:6268
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6268
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:6267
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6267
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:6270
 
-***
+---
 
 ### parentId
 

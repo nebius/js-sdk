@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / TenantUserAccountWithAttributesService
 
@@ -162,7 +162,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20959
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantUserAccountWithAttributesRequest`](../interfaces/GetTenantUserAccountWithAttributesRequest.md), [`TenantUserAccountWithAttributes`](../interfaces/TenantUserAccountWithAttributes.md)\>
 
-***
+---
 
 ### list()
 

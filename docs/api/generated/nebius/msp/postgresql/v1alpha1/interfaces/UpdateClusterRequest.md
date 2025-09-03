@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / UpdateClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1888
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1890
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1890
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1889
 
-***
+---
 
 ### metadata?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1895
 
 Metadata associated with the cluster. Must include id of the cluster we are going to update.
 
-***
+---
 
 ### spec?
 

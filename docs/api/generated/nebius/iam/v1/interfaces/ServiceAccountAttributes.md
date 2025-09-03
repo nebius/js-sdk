@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ServiceAccountAttributes
 
@@ -18,7 +18,7 @@ see also nebius/iam/v1/tenant_user_account.proto/UserAttributes
 
 Defined in: src/generated/nebius/iam/v1/index.ts:17324
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17324
 
 Defined in: src/generated/nebius/iam/v1/index.ts:17323
 
-***
+---
 
 ### description
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17323
 
 Defined in: src/generated/nebius/iam/v1/index.ts:17326
 
-***
+---
 
 ### name
 

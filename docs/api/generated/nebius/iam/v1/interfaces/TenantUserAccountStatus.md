@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / TenantUserAccountStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21928
 
 Defined in: src/generated/nebius/iam/v1/index.ts:21930
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21930
 
 Defined in: src/generated/nebius/iam/v1/index.ts:21929
 
-***
+---
 
 ### federationId
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21942
 
 currently can only accept the values: custom, unknown, google, github.
 
-***
+---
 
 ### invitationId
 
@@ -43,9 +43,9 @@ currently can only accept the values: custom, unknown, google, github.
 Defined in: src/generated/nebius/iam/v1/index.ts:21937
 
 if a tenant user account is created during invitation it gets a reference to the invitation resource
- once invitation is accepted it looses this reference (and internally gets a reference to their global federated user account)
+once invitation is accepted it looses this reference (and internally gets a reference to their global federated user account)
 
-***
+---
 
 ### state
 
@@ -53,7 +53,7 @@ if a tenant user account is created during invitation it gets a reference to the
 
 Defined in: src/generated/nebius/iam/v1/index.ts:21931
 
-***
+---
 
 ### userAccountState
 

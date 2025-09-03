@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1alpha1](../README.md) / Problem
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6513
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6515
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6515
 
 Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6514
 
-***
+---
 
 ### message
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6525
 
 Message describing the problem.
 
-***
+---
 
 ### stage
 

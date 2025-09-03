@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / FilesystemServiceServer
 
@@ -28,7 +28,7 @@ Deprecated.
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2353
 
-***
+---
 
 ### ~~delete~~
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2353
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2355
 
-***
+---
 
 ### ~~get~~
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2355
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2350
 
-***
+---
 
 ### ~~getByName~~
 
@@ -52,7 +52,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2350
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2351
 
-***
+---
 
 ### ~~list~~
 
@@ -60,7 +60,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2351
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2352
 
-***
+---
 
 ### ~~listOperationsByParent~~
 
@@ -68,7 +68,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2352
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2356
 
-***
+---
 
 ### ~~update~~
 

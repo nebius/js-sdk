@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListFederationCertificateByFederationRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7406
 
 Defined in: src/generated/nebius/iam/v1/index.ts:7408
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7408
 
 Defined in: src/generated/nebius/iam/v1/index.ts:7407
 
-***
+---
 
 ### federationId
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7413
 
 Represents the parent federation ID. Corresponds to the parent_id value.
 
-***
+---
 
 ### pageSize
 
@@ -43,9 +43,9 @@ Represents the parent federation ID. Corresponds to the parent_id value.
 Defined in: src/generated/nebius/iam/v1/index.ts:7419
 
 Specifies the maximum number of items to return in the response.
- Default value: 10
+Default value: 10
 
-***
+---
 
 ### pageToken
 

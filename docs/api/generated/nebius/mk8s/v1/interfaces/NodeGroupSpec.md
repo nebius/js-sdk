@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / NodeGroupSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4105
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4107
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4107
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4106
 
-***
+---
 
 ### size?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4106
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4127
 
-***
+---
 
 ### strategy?
 
@@ -41,9 +41,9 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4127
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4126
 
 Defines deployment - roll-out, or nodes re-creation during configuration change.
- Allows to setup compromise in roll-out speed, extra resources consumption and workloads disruption.
+Allows to setup compromise in roll-out speed, extra resources consumption and workloads disruption.
 
-***
+---
 
 ### template?
 
@@ -52,9 +52,9 @@ Defines deployment - roll-out, or nodes re-creation during configuration change.
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4120
 
 Parameters for Kubernetes Node object and Nebius Compute Instance
- If not written opposite a NodeTemplate field update will cause NodeGroup roll-out according NodeGroupDeploymentStrategy.
+If not written opposite a NodeTemplate field update will cause NodeGroup roll-out according NodeGroupDeploymentStrategy.
 
-***
+---
 
 ### version
 
@@ -63,5 +63,5 @@ Parameters for Kubernetes Node object and Nebius Compute Instance
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4114
 
 Version is desired Kubernetes version of the cluster. For now only acceptable format is
- `<major>.<minor>` like "1.31". Option for patch version update will be added later.
- By default the cluster control plane <major>.<minor> version will be used.
+`<major>.<minor>` like "1.31". Option for patch version update will be added later.
+By default the cluster control plane <major>.<minor> version will be used.

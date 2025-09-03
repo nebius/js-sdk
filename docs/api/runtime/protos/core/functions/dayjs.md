@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/core](../README.md) / dayjs
 
@@ -10,7 +10,7 @@
 
 > **dayjs**(`date?`): [`Dayjs`](../dayjs/classes/Dayjs.md)
 
-Defined in: node\_modules/dayjs/index.d.ts:5
+Defined in: node_modules/dayjs/index.d.ts:5
 
 ### Parameters
 
@@ -26,7 +26,7 @@ Defined in: node\_modules/dayjs/index.d.ts:5
 
 > **dayjs**(`date?`, `format?`, `strict?`): [`Dayjs`](../dayjs/classes/Dayjs.md)
 
-Defined in: node\_modules/dayjs/index.d.ts:7
+Defined in: node_modules/dayjs/index.d.ts:7
 
 ### Parameters
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/dayjs/index.d.ts:7
 
 > **dayjs**(`date?`, `format?`, `locale?`, `strict?`): [`Dayjs`](../dayjs/classes/Dayjs.md)
 
-Defined in: node\_modules/dayjs/index.d.ts:9
+Defined in: node_modules/dayjs/index.d.ts:9
 
 ### Parameters
 

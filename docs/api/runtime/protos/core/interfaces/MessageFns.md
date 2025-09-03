@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/core](../README.md) / MessageFns
 
@@ -16,7 +16,7 @@ Defined in: [src/runtime/protos/core.ts:19](https://github.com/nebius/nodejs-sdk
 
 ### TType
 
-`TType` *extends* `string`
+`TType` _extends_ `string`
 
 ## Properties
 
@@ -38,7 +38,7 @@ Defined in: [src/runtime/protos/core.ts:28](https://github.com/nebius/nodejs-sdk
 
 ##### I
 
-`I` *extends* `undefined` \| `string` \| `number` \| `boolean` \| `Function` \| [`Long`](../classes/Long.md) \| `Date` \| `Uint8Array`\<`ArrayBufferLike`\> \| `Partial`\<`unknown`\>[] \| readonly `Partial`\<`unknown`\>[] \| \{ \[K in string \| number \| symbol\]?: DeepPartial\<T\<T\>\[K\]\> \} \| `Partial`\<`T`\>
+`I` _extends_ `undefined` \| `string` \| `number` \| `boolean` \| `Function` \| [`Long`](../classes/Long.md) \| `Date` \| `Uint8Array`\<`ArrayBufferLike`\> \| `Partial`\<`unknown`\>[] \| readonly `Partial`\<`unknown`\>[] \| \{ \[K in string \| number \| symbol\]?: DeepPartial\<T\<T\>\[K\]\> \} \| `Partial`\<`T`\>
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [src/runtime/protos/core.ts:28](https://github.com/nebius/nodejs-sdk
 
 `T`
 
-***
+---
 
 ### decode()
 
@@ -72,7 +72,7 @@ Defined in: [src/runtime/protos/core.ts:25](https://github.com/nebius/nodejs-sdk
 
 `T`
 
-***
+---
 
 ### encode()
 
@@ -94,7 +94,7 @@ Defined in: [src/runtime/protos/core.ts:21](https://github.com/nebius/nodejs-sdk
 
 [`BinaryWriter`](../classes/BinaryWriter.md)
 
-***
+---
 
 ### fromJSON()
 
@@ -112,7 +112,7 @@ Defined in: [src/runtime/protos/core.ts:26](https://github.com/nebius/nodejs-sdk
 
 `T`
 
-***
+---
 
 ### fromPartial()
 
@@ -124,7 +124,7 @@ Defined in: [src/runtime/protos/core.ts:29](https://github.com/nebius/nodejs-sdk
 
 ##### I
 
-`I` *extends* `undefined` \| `string` \| `number` \| `boolean` \| `Function` \| [`Long`](../classes/Long.md) \| `Date` \| `Uint8Array`\<`ArrayBufferLike`\> \| `Partial`\<`unknown`\>[] \| readonly `Partial`\<`unknown`\>[] \| \{ \[K in string \| number \| symbol\]?: DeepPartial\<T\<T\>\[K\]\> \} \| `Partial`\<`T`\>
+`I` _extends_ `undefined` \| `string` \| `number` \| `boolean` \| `Function` \| [`Long`](../classes/Long.md) \| `Date` \| `Uint8Array`\<`ArrayBufferLike`\> \| `Partial`\<`unknown`\>[] \| readonly `Partial`\<`unknown`\>[] \| \{ \[K in string \| number \| symbol\]?: DeepPartial\<T\<T\>\[K\]\> \} \| `Partial`\<`T`\>
 
 #### Parameters
 
@@ -136,7 +136,7 @@ Defined in: [src/runtime/protos/core.ts:29](https://github.com/nebius/nodejs-sdk
 
 `T`
 
-***
+---
 
 ### toJSON()
 

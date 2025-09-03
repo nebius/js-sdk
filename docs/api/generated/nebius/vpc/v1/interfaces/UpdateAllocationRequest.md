@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / UpdateAllocationRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:666
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:668
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:668
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:667
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:667
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:669
 
-***
+---
 
 ### spec?
 

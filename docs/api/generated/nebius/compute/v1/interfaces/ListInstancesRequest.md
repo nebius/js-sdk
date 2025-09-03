@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / ListInstancesRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6212
 
 Defined in: src/generated/nebius/compute/v1/index.ts:6214
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6214
 
 Defined in: src/generated/nebius/compute/v1/index.ts:6213
 
-***
+---
 
 ### pageSize
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6213
 
 Defined in: src/generated/nebius/compute/v1/index.ts:6216
 
-***
+---
 
 ### pageToken
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6216
 
 Defined in: src/generated/nebius/compute/v1/index.ts:6217
 
-***
+---
 
 ### parentId
 

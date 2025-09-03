@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/mlflow/v1alpha1](../README.md) / MlflowClusterStatus
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1259
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1261
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1261
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1260
 
-***
+---
 
 ### effectiveStorageBucketName
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1282
 
 Name of the Nebius S3 bucket for MLflow artifacts.
 
-***
+---
 
 ### experimentsCount
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1287
 
 Count of experiments in the MLflow cluster
 
-***
+---
 
 ### mlflowVersion
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1292
 
 MLflow version
 
-***
+---
 
 ### phase
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1266
 
 Current phase of the cluster.
 
-***
+---
 
 ### state
 
@@ -74,7 +74,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1271
 
 State reflects substatus of the phase to define whether it's healthy or not.
 
-***
+---
 
 ### trackingEndpoint
 
@@ -83,9 +83,9 @@ State reflects substatus of the phase to define whether it's healthy or not.
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1277
 
 Tracking endpoint url.
- Will be removed soon in favor of private_tracking_endpoint and public_tracking_endpoint.
+Will be removed soon in favor of private_tracking_endpoint and public_tracking_endpoint.
 
-***
+---
 
 ### trackingEndpoints?
 

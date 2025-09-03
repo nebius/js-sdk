@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/common/error/v1alpha1](../README.md) / BadRequest
 
@@ -18,7 +18,7 @@ The request is invalid.
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:16
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:16
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:15
 
-***
+---
 
 ### violations
 

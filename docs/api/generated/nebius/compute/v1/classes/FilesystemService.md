@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / FilesystemService
 
@@ -49,7 +49,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2723
 Defined in: src/generated/nebius/compute/v1/index.ts:2750
 
 Creates a new filesystem with the specified configuration.
- For details, see https://docs.nebius.com/compute/storage/manage
+For details, see https://docs.nebius.com/compute/storage/manage
 
 ##### Parameters
 
@@ -112,7 +112,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2752
 Defined in: src/generated/nebius/compute/v1/index.ts:2828
 
 Creates a new filesystem with the specified configuration.
- For details, see https://docs.nebius.com/compute/storage/manage
+For details, see https://docs.nebius.com/compute/storage/manage
 
 ##### Parameters
 
@@ -131,7 +131,7 @@ Creates a new filesystem with the specified configuration.
 Defined in: src/generated/nebius/compute/v1/index.ts:2829
 
 Creates a new filesystem with the specified configuration.
- For details, see https://docs.nebius.com/compute/storage/manage
+For details, see https://docs.nebius.com/compute/storage/manage
 
 ##### Parameters
 
@@ -154,7 +154,7 @@ Creates a new filesystem with the specified configuration.
 Defined in: src/generated/nebius/compute/v1/index.ts:2830
 
 Creates a new filesystem with the specified configuration.
- For details, see https://docs.nebius.com/compute/storage/manage
+For details, see https://docs.nebius.com/compute/storage/manage
 
 ##### Parameters
 
@@ -174,7 +174,7 @@ Creates a new filesystem with the specified configuration.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -306,7 +306,7 @@ Deletes a disk by its ID.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -438,7 +438,7 @@ Retrieves information about a filesystem by its ID.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -570,7 +570,7 @@ Retrieves information about a filesystem by its parent and name.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -582,7 +582,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2788
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -714,7 +714,7 @@ Lists all filesystems within a specified parent.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-***
+---
 
 ### listOperationsByParent()
 
@@ -846,7 +846,7 @@ Lists all operations that were performed within a specific parent resource.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-***
+---
 
 ### update()
 
@@ -857,7 +857,7 @@ Lists all operations that were performed within a specific parent resource.
 Defined in: src/generated/nebius/compute/v1/index.ts:2758
 
 Updates an existing filesystem with new configuration parameters.
- For details, see https://docs.nebius.com/compute/storage/manage#parameters
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 ##### Parameters
 
@@ -920,7 +920,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2760
 Defined in: src/generated/nebius/compute/v1/index.ts:2843
 
 Updates an existing filesystem with new configuration parameters.
- For details, see https://docs.nebius.com/compute/storage/manage#parameters
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 ##### Parameters
 
@@ -939,7 +939,7 @@ Updates an existing filesystem with new configuration parameters.
 Defined in: src/generated/nebius/compute/v1/index.ts:2844
 
 Updates an existing filesystem with new configuration parameters.
- For details, see https://docs.nebius.com/compute/storage/manage#parameters
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 ##### Parameters
 
@@ -962,7 +962,7 @@ Updates an existing filesystem with new configuration parameters.
 Defined in: src/generated/nebius/compute/v1/index.ts:2845
 
 Updates an existing filesystem with new configuration parameters.
- For details, see https://docs.nebius.com/compute/storage/manage#parameters
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 ##### Parameters
 

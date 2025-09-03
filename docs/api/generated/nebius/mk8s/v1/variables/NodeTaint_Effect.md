@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / NodeTaint\_Effect
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / NodeTaint_Effect
 
-# Variable: NodeTaint\_Effect
+# Variable: NodeTaint_Effect
 
-> **NodeTaint\_Effect**: [`NodeTaint_EffectClass`](../type-aliases/NodeTaint_EffectClass.md)
+> **NodeTaint_Effect**: [`NodeTaint_EffectClass`](../type-aliases/NodeTaint_EffectClass.md)
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:3922

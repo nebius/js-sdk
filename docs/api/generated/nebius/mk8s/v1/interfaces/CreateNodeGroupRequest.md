@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / CreateNodeGroupRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2888
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2890
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2890
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2889
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2889
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:2891
 
-***
+---
 
 ### spec?
 

@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / NodeSetUnhealthyRequest\_HealthCheckInfo
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / NodeSetUnhealthyRequest_HealthCheckInfo
 
-# Interface: NodeSetUnhealthyRequest\_HealthCheckInfo
+# Interface: NodeSetUnhealthyRequest_HealthCheckInfo
 
 Defined in: src/generated/nebius/compute/v1/index.ts:10753
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10753
 
 Defined in: src/generated/nebius/compute/v1/index.ts:10755
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10755
 
 Defined in: src/generated/nebius/compute/v1/index.ts:10754
 
-***
+---
 
 ### checkId
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10765
 
 Identifies specific GPU check that failed in soperator (key for observability)
 
-***
+---
 
 ### description
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10770
 
 Human-readable description of the error for further investigation
 
-***
+---
 
 ### observedAt?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / GetClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1034
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1036
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1036
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1035
 
-***
+---
 
 ### id
 
@@ -33,4 +33,4 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1035
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1042
 
 ID of the PostgreSQL Cluster resource to return.
- To get the cluster ID use a [ClusterService.List] request.
+To get the cluster ID use a [ClusterService.List] request.

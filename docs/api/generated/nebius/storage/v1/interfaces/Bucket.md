@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / Bucket
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1908
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1910
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1910
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1909
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1909
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1911
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1911
 
 Defined in: src/generated/nebius/storage/v1/index.ts:1912
 
-***
+---
 
 ### status?
 

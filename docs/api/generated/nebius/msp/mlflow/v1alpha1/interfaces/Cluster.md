@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/mlflow/v1alpha1](../README.md) / Cluster
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:869
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:871
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:871
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:870
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:870
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:872
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:872
 
 Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:873
 
-***
+---
 
 ### status?
 

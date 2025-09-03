@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / Password
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1586
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1588
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1588
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1587
 
-***
+---
 
 ### password
 

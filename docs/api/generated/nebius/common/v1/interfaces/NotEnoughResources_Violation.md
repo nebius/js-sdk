@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / NotEnoughResources\_Violation
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/common/v1](../README.md) / NotEnoughResources_Violation
 
-# Interface: NotEnoughResources\_Violation
+# Interface: NotEnoughResources_Violation
 
 Defined in: src/generated/nebius/common/v1/index.ts:2138
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2138
 
 Defined in: src/generated/nebius/common/v1/index.ts:2140
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2140
 
 Defined in: src/generated/nebius/common/v1/index.ts:2139
 
-***
+---
 
 ### message
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2152
 
 A description of how the resource is insufficient.
 
-***
+---
 
 ### requested
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2157
 
 Requested value.
 
-***
+---
 
 ### resourceType
 
@@ -53,5 +53,5 @@ Requested value.
 Defined in: src/generated/nebius/common/v1/index.ts:2147
 
 The type of resource that is insufficient.
- This field is populated when it is possible to determine the lacking resource type.
- **Not for programmatic use.**
+This field is populated when it is possible to determine the lacking resource type.
+**Not for programmatic use.**

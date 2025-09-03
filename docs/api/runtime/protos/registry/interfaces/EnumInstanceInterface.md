@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/registry](../README.md) / EnumInstanceInterface
 
@@ -10,13 +10,13 @@ Defined in: [src/runtime/protos/registry.ts:21](https://github.com/nebius/nodejs
 
 ## Properties
 
-### \[ENUM\_VALUE\_META\]?
+### \[ENUM_VALUE_META\]?
 
-> `readonly` `optional` **\[ENUM\_VALUE\_META\]**: [`EnumValueMeta`](../../enum/interfaces/EnumValueMeta.md)
+> `readonly` `optional` **\[ENUM_VALUE_META\]**: [`EnumValueMeta`](../../enum/interfaces/EnumValueMeta.md)
 
 Defined in: [src/runtime/protos/registry.ts:26](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L26)
 
-***
+---
 
 ### code
 
@@ -24,7 +24,7 @@ Defined in: [src/runtime/protos/registry.ts:26](https://github.com/nebius/nodejs
 
 Defined in: [src/runtime/protos/registry.ts:22](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L22)
 
-***
+---
 
 ### name
 
@@ -44,7 +44,7 @@ Defined in: [src/runtime/protos/registry.ts:24](https://github.com/nebius/nodejs
 
 `number`
 
-***
+---
 
 ### toString()
 

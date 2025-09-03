@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / AllocationDetails
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1784
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1786
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1786
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1785
 
-***
+---
 
 ### allocatedCidr
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1785
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1787
 
-***
+---
 
 ### poolId
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1787
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1788
 
-***
+---
 
 ### version
 

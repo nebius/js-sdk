@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/registry/v1](../README.md) / Artifact
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:593
 
 Defined in: src/generated/nebius/registry/v1/index.ts:595
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:595
 
 Defined in: src/generated/nebius/registry/v1/index.ts:594
 
-***
+---
 
 ### createdAt?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:594
 
 Defined in: src/generated/nebius/registry/v1/index.ts:603
 
-***
+---
 
 ### digest
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:603
 
 Defined in: src/generated/nebius/registry/v1/index.ts:599
 
-***
+---
 
 ### id
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:599
 
 Defined in: src/generated/nebius/registry/v1/index.ts:596
 
-***
+---
 
 ### mediaType
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:596
 
 Defined in: src/generated/nebius/registry/v1/index.ts:598
 
-***
+---
 
 ### name
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:598
 
 Defined in: src/generated/nebius/registry/v1/index.ts:597
 
-***
+---
 
 ### size
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:597
 
 Defined in: src/generated/nebius/registry/v1/index.ts:600
 
-***
+---
 
 ### status
 
@@ -80,7 +80,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:600
 
 Defined in: src/generated/nebius/registry/v1/index.ts:601
 
-***
+---
 
 ### type
 
@@ -88,7 +88,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:601
 
 Defined in: src/generated/nebius/registry/v1/index.ts:602
 
-***
+---
 
 ### updatedAt?
 

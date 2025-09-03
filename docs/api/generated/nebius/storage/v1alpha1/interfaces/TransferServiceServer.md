@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1alpha1](../README.md) / TransferServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1173
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1177
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1177
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1181
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1181
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1174
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1174
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1175
 
-***
+---
 
 ### getIterationHistory
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1175
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1182
 
-***
+---
 
 ### list
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1182
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1176
 
-***
+---
 
 ### resume
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1176
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1180
 
-***
+---
 
 ### stop
 
@@ -80,7 +80,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1180
 
 Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1179
 
-***
+---
 
 ### update
 

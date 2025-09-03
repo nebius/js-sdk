@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / PoolStatus\_State
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / PoolStatus_State
 
-# Variable: PoolStatus\_State
+# Variable: PoolStatus_State
 
-> **PoolStatus\_State**: [`PoolStatus_StateClass`](../type-aliases/PoolStatus_StateClass.md)
+> **PoolStatus_State**: [`PoolStatus_StateClass`](../type-aliases/PoolStatus_StateClass.md)
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4786

@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / ClusterServiceServiceDescription
 
 # Type Alias: ClusterServiceServiceDescription
 
-> **ClusterServiceServiceDescription** = *typeof* [`ClusterServiceServiceDescription`](../variables/ClusterServiceServiceDescription.md)
+> **ClusterServiceServiceDescription** = _typeof_ [`ClusterServiceServiceDescription`](../variables/ClusterServiceServiceDescription.md)
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:676

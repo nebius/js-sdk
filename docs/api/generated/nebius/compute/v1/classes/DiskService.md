@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / DiskService
 
@@ -49,7 +49,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:756
 Defined in: src/generated/nebius/compute/v1/index.ts:783
 
 Creates a new disk with the specified configuration.
- For details, see https://docs.nebius.com/compute/storage/manage
+For details, see https://docs.nebius.com/compute/storage/manage
 
 ##### Parameters
 
@@ -112,7 +112,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:785
 Defined in: src/generated/nebius/compute/v1/index.ts:861
 
 Creates a new disk with the specified configuration.
- For details, see https://docs.nebius.com/compute/storage/manage
+For details, see https://docs.nebius.com/compute/storage/manage
 
 ##### Parameters
 
@@ -131,7 +131,7 @@ Creates a new disk with the specified configuration.
 Defined in: src/generated/nebius/compute/v1/index.ts:862
 
 Creates a new disk with the specified configuration.
- For details, see https://docs.nebius.com/compute/storage/manage
+For details, see https://docs.nebius.com/compute/storage/manage
 
 ##### Parameters
 
@@ -154,7 +154,7 @@ Creates a new disk with the specified configuration.
 Defined in: src/generated/nebius/compute/v1/index.ts:863
 
 Creates a new disk with the specified configuration.
- For details, see https://docs.nebius.com/compute/storage/manage
+For details, see https://docs.nebius.com/compute/storage/manage
 
 ##### Parameters
 
@@ -174,7 +174,7 @@ Creates a new disk with the specified configuration.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -306,7 +306,7 @@ Deletes a disk by its ID.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -438,7 +438,7 @@ Retrieves information about a disk by its ID.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -570,7 +570,7 @@ Retrieves information about a disk by its parent and name.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -582,7 +582,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:821
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -714,7 +714,7 @@ Lists all disks within a specified parent.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
 
-***
+---
 
 ### listOperationsByParent()
 
@@ -846,7 +846,7 @@ Lists all operations that were performed within a specific parent resource.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-***
+---
 
 ### update()
 
@@ -857,7 +857,7 @@ Lists all operations that were performed within a specific parent resource.
 Defined in: src/generated/nebius/compute/v1/index.ts:791
 
 Updates an existing disk with new configuration parameters.
- For details, see https://docs.nebius.com/compute/storage/manage#parameters
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 ##### Parameters
 
@@ -920,7 +920,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:793
 Defined in: src/generated/nebius/compute/v1/index.ts:876
 
 Updates an existing disk with new configuration parameters.
- For details, see https://docs.nebius.com/compute/storage/manage#parameters
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 ##### Parameters
 
@@ -939,7 +939,7 @@ Updates an existing disk with new configuration parameters.
 Defined in: src/generated/nebius/compute/v1/index.ts:877
 
 Updates an existing disk with new configuration parameters.
- For details, see https://docs.nebius.com/compute/storage/manage#parameters
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 ##### Parameters
 
@@ -962,7 +962,7 @@ Updates an existing disk with new configuration parameters.
 Defined in: src/generated/nebius/compute/v1/index.ts:878
 
 Updates an existing disk with new configuration parameters.
- For details, see https://docs.nebius.com/compute/storage/manage#parameters
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 ##### Parameters
 

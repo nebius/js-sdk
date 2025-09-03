@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / ImageSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5153
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5155
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5155
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5154
 
-***
+---
 
 ### description?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5154
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5156
 
-***
+---
 
 ### imageFamily
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5156
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5157
 
-***
+---
 
 ### version
 

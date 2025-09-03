@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / NetworkInterfaceAssignment
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2250
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:2252
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2252
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:2251
 
-***
+---
 
 ### instanceId
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2257
 
 ID of the Compute instance network interface belongs to.
 
-***
+---
 
 ### name
 

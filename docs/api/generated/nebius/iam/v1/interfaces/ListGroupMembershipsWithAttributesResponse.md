@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListGroupMembershipsWithAttributesResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10510
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10512
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10512
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10511
 
-***
+---
 
 ### memberships
 
@@ -33,11 +33,11 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10511
 Defined in: src/generated/nebius/iam/v1/index.ts:10520
 
 Members of the group with their attributes if supported by member type.
- Can be tenant user accounts (regular or provisional/invited) or service accounts.
- Regular tenant user accounts may have a full set of attributes, provisional may have contacts only,
- service accounts
+Can be tenant user accounts (regular or provisional/invited) or service accounts.
+Regular tenant user accounts may have a full set of attributes, provisional may have contacts only,
+service accounts
 
-***
+---
 
 ### nextPageToken
 

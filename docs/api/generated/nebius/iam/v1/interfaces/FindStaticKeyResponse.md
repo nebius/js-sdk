@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / FindStaticKeyResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18642
 
 Defined in: src/generated/nebius/iam/v1/index.ts:18644
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18644
 
 Defined in: src/generated/nebius/iam/v1/index.ts:18643
 
-***
+---
 
 ### staticKey?
 

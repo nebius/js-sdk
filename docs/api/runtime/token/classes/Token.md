@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/token](../README.md) / Token
 
@@ -44,7 +44,7 @@ Defined in: [src/runtime/token.ts:40](https://github.com/nebius/nodejs-sdk/blob/
 
 `undefined` \| `Date`
 
-***
+---
 
 ### token
 
@@ -70,7 +70,7 @@ Defined in: [src/runtime/token.ts:16](https://github.com/nebius/nodejs-sdk/blob/
 
 `string`
 
-***
+---
 
 ### equals()
 
@@ -88,7 +88,7 @@ Defined in: [src/runtime/token.ts:67](https://github.com/nebius/nodejs-sdk/blob/
 
 `boolean`
 
-***
+---
 
 ### isEmpty()
 
@@ -100,7 +100,7 @@ Defined in: [src/runtime/token.ts:44](https://github.com/nebius/nodejs-sdk/blob/
 
 `boolean`
 
-***
+---
 
 ### isExpired()
 
@@ -112,7 +112,7 @@ Defined in: [src/runtime/token.ts:48](https://github.com/nebius/nodejs-sdk/blob/
 
 `boolean`
 
-***
+---
 
 ### toJSON()
 
@@ -124,15 +124,15 @@ Defined in: [src/runtime/token.ts:53](https://github.com/nebius/nodejs-sdk/blob/
 
 `object`
 
-##### expires\_at
+##### expires_at
 
-> **expires\_at**: `null` \| `number`
+> **expires_at**: `null` \| `number`
 
 ##### token
 
 > **token**: `string`
 
-***
+---
 
 ### toString()
 
@@ -144,7 +144,7 @@ Defined in: [src/runtime/token.ts:20](https://github.com/nebius/nodejs-sdk/blob/
 
 `string`
 
-***
+---
 
 ### empty()
 
@@ -156,7 +156,7 @@ Defined in: [src/runtime/token.ts:32](https://github.com/nebius/nodejs-sdk/blob/
 
 `Token`
 
-***
+---
 
 ### fromJSON()
 

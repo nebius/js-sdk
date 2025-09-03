@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / GetPoolByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4225
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4227
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4227
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4226
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4226
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4229
 
-***
+---
 
 ### parentId
 

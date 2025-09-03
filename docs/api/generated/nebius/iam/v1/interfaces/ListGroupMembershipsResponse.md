@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListGroupMembershipsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10402
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10404
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10404
 
 Defined in: src/generated/nebius/iam/v1/index.ts:10403
 
-***
+---
 
 ### memberships
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10409
 
 Members of the group. Can be tenant user account ids or service account ids.
 
-***
+---
 
 ### nextPageToken
 

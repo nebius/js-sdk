@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / Limits
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1482
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1484
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1484
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1483
 
-***
+---
 
 ### cpu
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1483
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1485
 
-***
+---
 
 ### memoryGibibytes
 

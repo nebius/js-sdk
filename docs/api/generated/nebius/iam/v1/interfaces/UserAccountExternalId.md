@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / UserAccountExternalId
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22641
 
 Defined in: src/generated/nebius/iam/v1/index.ts:22643
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22643
 
 Defined in: src/generated/nebius/iam/v1/index.ts:22642
 
-***
+---
 
 ### federationId
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22642
 
 Defined in: src/generated/nebius/iam/v1/index.ts:22645
 
-***
+---
 
 ### federationUserAccountId
 

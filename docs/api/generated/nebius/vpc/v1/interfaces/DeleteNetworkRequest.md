@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1](../README.md) / DeleteNetworkRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3182
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3184
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3184
 
 Defined in: src/generated/nebius/vpc/v1/index.ts:3183
 
-***
+---
 
 ### id
 

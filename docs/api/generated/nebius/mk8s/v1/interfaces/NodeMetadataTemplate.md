@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / NodeMetadataTemplate
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4675
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4677
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4677
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4676
 
-***
+---
 
 ### labels
 
@@ -33,12 +33,12 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4676
 Defined in: src/generated/nebius/mk8s/v1/index.ts:4688
 
 Kubernetes Node labels.
- For now change will not be propagated to existing nodes, so will be applied only to Kubernetes Nodes created after the field change.
- That behaviour may change later.
- So, for now you will need to manually set them to existing nodes, if that is needed.
+For now change will not be propagated to existing nodes, so will be applied only to Kubernetes Nodes created after the field change.
+That behaviour may change later.
+So, for now you will need to manually set them to existing nodes, if that is needed.
 
- System labels containing "kubernetes.io" and "k8s.io" will be ignored.
- Field change will NOT trigger NodeGroup roll out.
+System labels containing "kubernetes.io" and "k8s.io" will be ignored.
+Field change will NOT trigger NodeGroup roll out.
 
 #### Index Signature
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / PoolCidr
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5179
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5181
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5181
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5180
 
-***
+---
 
 ### allowedMask
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5198
 
 Maximum mask length for allocation from this IP pool including creation of sub-pools
 
-***
+---
 
 ### cidr
 
@@ -43,10 +43,10 @@ Maximum mask length for allocation from this IP pool including creation of sub-p
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5188
 
 CIDR block.
- May be a prefix length (such as /24) for non-top-level pools
- or a CIDR-formatted string (such as 10.1.2.0/24).
+May be a prefix length (such as /24) for non-top-level pools
+or a CIDR-formatted string (such as 10.1.2.0/24).
 
-***
+---
 
 ### state
 

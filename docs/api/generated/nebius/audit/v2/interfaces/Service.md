@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/audit/v2](../README.md) / Service
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2268
 
 Defined in: src/generated/nebius/audit/v2/index.ts:2270
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2270
 
 Defined in: src/generated/nebius/audit/v2/index.ts:2269
 
-***
+---
 
 ### name
 

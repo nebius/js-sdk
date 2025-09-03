@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/applications/v1alpha1](../README.md) / ListK8sReleasesRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:100
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:102
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:102
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:101
 
-***
+---
 
 ### clusterId
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:101
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:107
 
-***
+---
 
 ### filter
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:107
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:106
 
-***
+---
 
 ### pageSize
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:106
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:104
 
-***
+---
 
 ### pageToken
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:104
 
 Defined in: src/generated/nebius/applications/v1alpha1/index.ts:105
 
-***
+---
 
 ### parentId
 

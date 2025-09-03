@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/common/error/v1alpha1](../README.md) / PermissionDenied
 
@@ -18,7 +18,7 @@ Indicates that the action cannot be performed because there are insufficient acc
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:894
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:894
 
 Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:893
 
-***
+---
 
 ### resourceId
 

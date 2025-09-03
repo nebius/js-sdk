@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/mk8s/v1](../README.md) / ControlPlaneEndpointsSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1337
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1339
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1339
 
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1338
 
-***
+---
 
 ### publicEndpoint?
 
@@ -33,4 +33,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1338
 Defined in: src/generated/nebius/mk8s/v1/index.ts:1345
 
 Specification of public endpoint for control plane.
- Set value to empty, to enable it.
+Set value to empty, to enable it.

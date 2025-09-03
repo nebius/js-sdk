@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / TemplateSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3808
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3810
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3810
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3809
 
-***
+---
 
 ### disk?
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3809
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3817
 
-***
+---
 
 ### hosts?
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3817
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3816
 
-***
+---
 
 ### resources?
 

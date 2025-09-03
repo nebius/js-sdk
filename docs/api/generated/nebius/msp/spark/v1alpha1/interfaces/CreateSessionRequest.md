@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / CreateSessionRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4312
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4314
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4314
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4313
 
-***
+---
 
 ### metadata?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4319
 
 Metadata associated with the new session. Must include parent_id - ID of the cluster to create session in.
 
-***
+---
 
 ### spec?
 

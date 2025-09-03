@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / SamlSettings
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9610
 
 Defined in: src/generated/nebius/iam/v1/index.ts:9612
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9612
 
 Defined in: src/generated/nebius/iam/v1/index.ts:9611
 
-***
+---
 
 ### forceAuthn
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9619
 
 if "true", the identity provider MUST authenticate the presenter directly rather than rely on a previous security context.
 
-***
+---
 
 ### idpIssuer
 
@@ -42,7 +42,7 @@ if "true", the identity provider MUST authenticate the presenter directly rather
 
 Defined in: src/generated/nebius/iam/v1/index.ts:9613
 
-***
+---
 
 ### ssoUrl
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/registry/v1](../README.md) / DeleteRegistryRequest
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1393
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1395
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1395
 
 Defined in: src/generated/nebius/registry/v1/index.ts:1394
 
-***
+---
 
 ### id
 

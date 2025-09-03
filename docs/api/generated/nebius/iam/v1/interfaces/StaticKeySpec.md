@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / StaticKeySpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19199
 
 Defined in: src/generated/nebius/iam/v1/index.ts:19201
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19201
 
 Defined in: src/generated/nebius/iam/v1/index.ts:19200
 
-***
+---
 
 ### account?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19206
 
 account of the static key. only service accounts are supported for now
 
-***
+---
 
 ### expiresAt?
 
@@ -44,7 +44,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19216
 
 when will the static key expire
 
-***
+---
 
 ### service
 

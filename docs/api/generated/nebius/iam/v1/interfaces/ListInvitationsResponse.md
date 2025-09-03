@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / ListInvitationsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13355
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13357
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13357
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13356
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13356
 
 Defined in: src/generated/nebius/iam/v1/index.ts:13358
 
-***
+---
 
 ### nextPageToken
 

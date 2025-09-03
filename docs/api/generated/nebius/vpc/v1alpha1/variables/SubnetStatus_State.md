@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / SubnetStatus\_State
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/vpc/v1alpha1](../README.md) / SubnetStatus_State
 
-# Variable: SubnetStatus\_State
+# Variable: SubnetStatus_State
 
-> **SubnetStatus\_State**: [`SubnetStatus_StateClass`](../type-aliases/SubnetStatus_StateClass.md)
+> **SubnetStatus_State**: [`SubnetStatus_StateClass`](../type-aliases/SubnetStatus_StateClass.md)
 
 Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7160

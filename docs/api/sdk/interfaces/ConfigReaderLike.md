@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../README.md) / [sdk](../README.md) / ConfigReaderLike
 
@@ -28,7 +28,7 @@ Defined in: [src/sdk.ts:43](https://github.com/nebius/nodejs-sdk/blob/2ec552fb56
 
 `undefined` \| `string`
 
-***
+---
 
 ### parentId()
 

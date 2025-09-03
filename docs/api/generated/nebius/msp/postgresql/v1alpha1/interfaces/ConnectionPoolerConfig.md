@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / ConnectionPoolerConfig
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2725
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2727
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2727
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2726
 
-***
+---
 
 ### maxPoolSize?
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2737
 
 Maximum number of connections in the pool for a single database.
 
-***
+---
 
 ### poolingMode
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/maintenance/v1alpha1](../README.md) / Resource
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:865
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:867
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:867
 
 Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:866
 
-***
+---
 
 ### id
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:872
 
 Unique identifier for the resource.
 
-***
+---
 
 ### parentId
 

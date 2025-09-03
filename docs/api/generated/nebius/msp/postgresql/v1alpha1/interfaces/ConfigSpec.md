@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / ConfigSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3342
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3344
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3344
 
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3343
 
-***
+---
 
 ### config?
 
@@ -38,11 +38,11 @@ Config of the PostgreSQL cluster.
 
 > **$case**: `"postgresqlConfig_16"`
 
-#### postgresqlConfig\_16
+#### postgresqlConfig_16
 
-> **postgresqlConfig\_16**: [`PostgresqlConfig16`](../config/interfaces/PostgresqlConfig16.md)
+> **postgresqlConfig_16**: [`PostgresqlConfig16`](../config/interfaces/PostgresqlConfig16.md)
 
-***
+---
 
 ### poolerConfig?
 
@@ -52,7 +52,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3355
 
 Configuration of the connection pooler.
 
-***
+---
 
 ### publicAccess
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3360
 
 Either make cluster public accessible or accessible only via private VPC.
 
-***
+---
 
 ### template?
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3365
 
 Resources allocated to PostgreSQL hosts.
 
-***
+---
 
 ### version
 
@@ -81,4 +81,4 @@ Resources allocated to PostgreSQL hosts.
 Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3350
 
 Version of PostgreSQL used in the cluster.
- Possible values: `16`
+Possible values: `16`

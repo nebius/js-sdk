@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v2](../README.md) / TenantSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:3070
 
 Defined in: src/generated/nebius/iam/v2/index.ts:3072
 
-***
+---
 
 ### $type
 

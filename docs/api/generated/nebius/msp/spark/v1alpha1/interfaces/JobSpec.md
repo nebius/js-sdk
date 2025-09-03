@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / JobSpec
 
@@ -18,7 +18,7 @@ Spark Job specification
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2740
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2740
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2739
 
-***
+---
 
 ### applicationArgs
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2759
 
 Application args
 
-***
+---
 
 ### applicationFileUri
 
@@ -45,9 +45,9 @@ Application args
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2751
 
 S3 URI of main application file
- Example: s3a://mybucket/myapp.py
+Example: s3a://mybucket/myapp.py
 
-***
+---
 
 ### description?
 
@@ -57,7 +57,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2745
 
 Description of the job.
 
-***
+---
 
 ### driver?
 
@@ -65,7 +65,7 @@ Description of the job.
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2752
 
-***
+---
 
 ### executor?
 
@@ -73,7 +73,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2752
 
 Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2753
 
-***
+---
 
 ### fileUris
 
@@ -83,7 +83,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2764
 
 S3 URIs of files to be placed in executor working directory
 
-***
+---
 
 ### jarUris
 
@@ -93,7 +93,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2769
 
 S3 URIs of Jars to be placed in classpaths of driver and executors for java applications
 
-***
+---
 
 ### packages
 
@@ -103,7 +103,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2774
 
 List of maven coordinates of jars to include on the driver and executor classpaths
 
-***
+---
 
 ### runtimeConfig?
 
@@ -113,7 +113,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2784
 
 Runtime-specific job config
 
-***
+---
 
 ### sparkConf
 
@@ -127,7 +127,7 @@ Map of spark configuration parameters
 
 \[`key`: `string`\]: `string`
 
-***
+---
 
 ### sparkVersion
 

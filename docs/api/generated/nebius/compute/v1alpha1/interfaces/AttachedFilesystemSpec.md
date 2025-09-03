@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1alpha1](../README.md) / AttachedFilesystemSpec
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7570
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7572
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7572
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7571
 
-***
+---
 
 ### attachMode
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7571
 
 Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7573
 
-***
+---
 
 ### deviceName
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7578
 
 Specifies the user-defined identifier, allowing to use it as a device in mount command.
 
-***
+---
 
 ### type?
 
