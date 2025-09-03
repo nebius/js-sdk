@@ -107,6 +107,8 @@ export interface SDKOptions {
   >;
 }
 
+const DEFAULT_CLOSE_TIMEOUT = 20000;
+
 export class SDK implements SDKInterface {
   private _resolver: Resolver;
   private _parentId: string | undefined;
@@ -481,6 +483,8 @@ export class SDK implements SDKInterface {
   // Gracefully close any attached authorization providers and channels
   async close(graceMs?: number): Promise<void> {
     const channelWatchers: Promise<void>[] = [];
+    const timeout = typeof graceMs === 'number' ? graceMs : DEFAULT_CLOSE_TIMEOUT;
+    const deadline = Date.now() + timeout;
 
     for (const client of this._clients.values()) {
       try {
@@ -491,35 +495,16 @@ export class SDK implements SDKInterface {
         const ch = client.getChannel();
         // Create a watcher that polls the connectivity state until SHUTDOWN
         const watcher = new Promise<void>((resolve, reject) => {
-          // Per-watcher timeout to ensure polling stops and the promise rejects
-          // if the channel doesn't shutdown within graceMs. This prevents the
-          // polling loop from leaking timers when a global timeout is used.
-          let timer: ReturnType<typeof setTimeout> | undefined;
-          let finished = false;
-
-          const stop = () => {
-            finished = true;
-            if (timer) clearTimeout(timer);
-          };
-
-          if (typeof graceMs === 'number' && graceMs >= 0) {
-            timer = setTimeout(() => {
-              if (finished) return;
-              stop();
-              reject(new Error('close: channel shutdown timed out'));
-            }, graceMs);
-          }
-
           const poll = () => {
-            if (finished) return;
             try {
               const state = ch.getConnectivityState(false);
               if (state === connectivityState.SHUTDOWN) {
-                stop();
                 return resolve();
               }
+              if (Date.now() >= deadline) {
+                return reject(new Error('close: channel shutdown timed out'));
+              }
             } catch (e) {
-              stop();
               return reject(e);
             }
             // schedule next probe
@@ -534,19 +519,14 @@ export class SDK implements SDKInterface {
       }
     }
 
-    // Promise that resolves when all channels report shutdown
-    const allChannelsShutdown =
-      channelWatchers.length > 0 ? Promise.all(channelWatchers).then(() => {}) : Promise.resolve();
-
-    // If graceMs provided, wait for either all channels shutdown OR graceMs timeout
-    const waitForChannels =
-      typeof graceMs === 'number'
-        ? Promise.race([allChannelsShutdown, new Promise<void>((res) => setTimeout(res, graceMs))])
-        : allChannelsShutdown;
-
     // Authorization provider close (may accept graceMs). Run in parallel with channel waits.
     const authClose = this._authorizationProvider?.close?.(graceMs) ?? Promise.resolve();
 
-    await Promise.all([waitForChannels, authClose]);
+    await Promise.all(
+      channelWatchers.concat(
+        authClose,
+        new Promise((res) => setTimeout(res, timeout)), // give channels time to close
+      ),
+    );
   }
 }
