@@ -71,11 +71,11 @@ export class ServiceAccountBearer extends Bearer {
 
     const renewable = new RenewableBearer(this._exchangeable, {
       maxRetries,
-      lifetimeSafeFraction: opts?.lifetimeSafeFraction ?? 0.9,
-      initialRetryTimeoutMs: opts?.initialRetryTimeoutMs ?? 1_000,
-      maxRetryTimeoutMs: opts?.maxRetryTimeoutMs ?? 60_000,
-      retryTimeoutExponent: opts?.retryTimeoutExponent ?? 1.5,
-      refreshRequestTimeoutMs: opts?.refreshRequestTimeoutMs ?? 5_000,
+      lifetimeSafeFraction: opts?.lifetimeSafeFraction,
+      initialRetryTimeoutMs: opts?.initialRetryTimeoutMs,
+      maxRetryTimeoutMs: opts?.maxRetryTimeoutMs,
+      retryTimeoutExponent: opts?.retryTimeoutExponent,
+      refreshRequestTimeoutMs: opts?.refreshRequestTimeoutMs,
     });
 
     this._source = new NamedBearer(renewable, `service-account/${saId}/${publicKeyId}`);

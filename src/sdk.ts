@@ -18,6 +18,7 @@ import { VERSION } from './generated/version';
 import { createAuthorizationInterceptor } from './runtime/authorization/interceptor';
 import type { Provider as AuthorizationProvider } from './runtime/authorization/provider';
 import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token';
+import type { ConfigReaderLike } from './runtime/cli_config_interfaces';
 import { domain as DEFAULT_DOMAIN } from './runtime/constants';
 import type { Request, RetryOptions } from './runtime/request';
 import { Chain, Conventional, type Resolver, TemplateExpander } from './runtime/resolver';
@@ -36,14 +37,6 @@ export interface SDKInterface {
   getClientByAddress(address: string): Client;
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string;
   parentId(): string | undefined;
-}
-
-// Optional config reader interface (if provided, can supply endpoint)
-export interface ConfigReaderLike {
-  endpoint(): string | undefined;
-  parentId(): string | undefined;
-  // If present, use it to auto-construct credentials similar to Python
-  getCredentials?: Function;
 }
 
 // Rich credentials union similar to Python Channel
@@ -221,7 +214,7 @@ export class SDK implements SDKInterface {
 
     // Finally: pull from configReader if available
     const cr = options.configReader;
-    if (cr && typeof cr.getCredentials === 'function') {
+    if (cr) {
       try {
         const cred = cr.getCredentials({
           writer: options.federationInvitationWriter,
