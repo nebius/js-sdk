@@ -1,9 +1,11 @@
-import { mkdir, open, FileHandle } from 'fs/promises';
+import { FileHandle, mkdir, open } from 'fs/promises';
 import { dirname, resolve } from 'path';
-import * as YAML from 'yaml';
-import { Token } from '../../token';
-import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
+
 import * as fsExt from 'fs-ext';
+import * as YAML from 'yaml';
+
+import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
+import { Token } from '../../token';
 
 export interface TokenCacheOptions {
   cacheFile?: string;
@@ -23,23 +25,28 @@ export class TokenCache {
   // Acquire a POSIX flock on a file descriptor
   private async flock(fd: number, flag: number): Promise<void> {
     await new Promise<void>((resolve, reject) => {
-      fsExt.flock(fd, flag, (err: any) => (err ? reject(err) : resolve()));
+      fsExt.flock(fd, flag, (err: NodeJS.ErrnoException | null) => (err ? reject(err) : resolve()));
     });
   }
 
   private parseYaml(data: string): Record<string, Token> {
-    const doc = YAML.parse(data) || {} as any;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const doc = YAML.parse(data) || ({} as any);
     if (typeof doc !== 'object' || doc === null) throw new Error('Invalid YAML: expected object');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const tokensObj = (doc as any).tokens || {};
-    if (typeof tokensObj !== 'object' || tokensObj === null) throw new Error('Invalid YAML tokens: expected object');
+    if (typeof tokensObj !== 'object' || tokensObj === null) {
+      throw new Error('Invalid YAML tokens: expected object');
+    }
     const out: Record<string, Token> = {};
     for (const [k, v] of Object.entries(tokensObj)) {
-      out[k] = Token.fromJSON(v);
+      out[k] = Token.fromJSON(v as { token?: string; expires_at?: number | null });
     }
     return out;
   }
 
   private dumpYaml(tokens: Record<string, Token>): string {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const toks: Record<string, any> = {};
     for (const [k, t] of Object.entries(tokens)) {
       if (!t.isExpired()) toks[k] = t.toJSON();
@@ -52,6 +59,7 @@ export class TokenCache {
     let fh: FileHandle | undefined;
     try {
       fh = await open(this.cacheFile, 'r');
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
       if (e && (e.code === 'ENOENT' || e.code === 'ENOTDIR')) return undefined;
       throw e;
@@ -65,7 +73,11 @@ export class TokenCache {
       if (!tok) return undefined;
       return tok.isExpired() ? undefined : tok;
     } finally {
-      try { await this.flock(fh.fd, fsExt.constants.LOCK_UN); } catch { /* ignore */ }
+      try {
+        await this.flock(fh.fd, fsExt.constants.LOCK_UN);
+      } catch {
+        /* ignore */
+      }
       await fh.close().catch(() => undefined);
     }
   }
@@ -82,6 +94,7 @@ export class TokenCache {
       try {
         const content = await fh.readFile('utf8');
         map = content ? this.parseYaml(content) : {};
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (e: any) {
         if (!(e && (e.code === 'ENOENT' || e.code === 'ENOTDIR'))) throw e;
       }
@@ -92,7 +105,11 @@ export class TokenCache {
       await fh.truncate(0);
       await fh.writeFile(yaml, 'utf8');
     } finally {
-      try { await this.flock(fh.fd, fsExt.constants.LOCK_UN); } catch { /* ignore */ }
+      try {
+        await this.flock(fh.fd, fsExt.constants.LOCK_UN);
+      } catch {
+        /* ignore */
+      }
       await fh.close().catch(() => undefined);
     }
   }
@@ -101,6 +118,7 @@ export class TokenCache {
     let fh: FileHandle;
     try {
       fh = await open(this.cacheFile, 'r+');
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
       if (e && (e.code === 'ENOENT' || e.code === 'ENOTDIR')) return;
       throw e;
@@ -113,6 +131,7 @@ export class TokenCache {
       try {
         const content = await fh.readFile('utf8');
         map = content ? this.parseYaml(content) : {};
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (e: any) {
         if (!(e && (e.code === 'ENOENT' || e.code === 'ENOTDIR'))) throw e;
       }
@@ -122,7 +141,11 @@ export class TokenCache {
       await fh.truncate(0);
       await fh.writeFile(yaml, 'utf8');
     } finally {
-      try { await this.flock(fh.fd, fsExt.constants.LOCK_UN); } catch { /* ignore */ }
+      try {
+        await this.flock(fh.fd, fsExt.constants.LOCK_UN);
+      } catch {
+        /* ignore */
+      }
       await (fh as FileHandle).close().catch(() => undefined);
     }
   }
@@ -131,6 +154,7 @@ export class TokenCache {
     let fh: FileHandle;
     try {
       fh = await open(this.cacheFile, 'r+');
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
       if (e && (e.code === 'ENOENT' || e.code === 'ENOTDIR')) return;
       throw e;
@@ -143,6 +167,7 @@ export class TokenCache {
       try {
         const content = await fh.readFile('utf8');
         map = content ? this.parseYaml(content) : {};
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (e: any) {
         if (!(e && (e.code === 'ENOENT' || e.code === 'ENOTDIR'))) throw e;
       }
@@ -155,13 +180,17 @@ export class TokenCache {
         await fh.writeFile(yaml, 'utf8');
       }
     } finally {
-      try { await this.flock(fh.fd, fsExt.constants.LOCK_UN); } catch { /* ignore */ }
+      try {
+        await this.flock(fh.fd, fsExt.constants.LOCK_UN);
+      } catch {
+        /* ignore */
+      }
       await (fh as FileHandle).close().catch(() => undefined);
     }
   }
 }
 
 function expandHome(p: string): string {
-  if (p.startsWith('~/')) return resolve((process.env.HOME || ''), p.slice(2));
+  if (p.startsWith('~/')) return resolve(process.env.HOME || '', p.slice(2));
   return resolve(p);
 }

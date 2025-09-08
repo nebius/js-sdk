@@ -1,12 +1,12 @@
 {
-  "name": "@nebius/tssdk",
+  "name": "@nebius/nodejs-sdk",
   "version": "0.1.0",
-  "description": "Nebius AI SDK for TypeScript",
+  "description": "Nebius AI SDK for NodeJS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nebius/tssdk.git"
+    "url": "https://github.com/nebius/nodejs-sdk.git"
   },
   "keywords": [
     "nebius",
@@ -19,16 +19,25 @@
   "author": "Nebius",
   "license": "Apache-2.0",
   "scripts": {
-    "build:scripts": "tsc -p tsconfig.scripts.json && chmod +x dist-scripts/protoc-gen-nebius-ts-sdk.js",
+    "build:scripts": "tsc -p tsconfig.scripts.json && chmod +x dist-scripts/scripts/protoc-gen-nebius-ts-sdk.js dist-scripts/scripts/protoc-gen-nebius-ts.js",
+    "bootstrap:generator": "node scripts/bootstrap-generator.js",
     "build": "npm run generate && tsc",
-    "generate": "rimraf src/generated && npm run build:scripts && buf generate nebius-api",
+    "generate": "npm run build:scripts && rimraf src/generated && buf generate nebius-api && npm run generate:version",
+    "generate:full": "npm run generate && npm run bootstrap:generator",
+    "generate:version": "node dist-scripts/scripts/version-gen.js",
     "indexgen": "node -r ts-node/register scripts/gen-indexes.ts",
+    "test:noserver": "jest --maxWorkers=8 --testPathIgnorePatterns='e2e_storage_bucket.test.ts'",
+    "test:e2e": "jest --runInBand --testPathPatterns='e2e_storage_bucket.test.ts'",
     "test": "jest --maxWorkers=8",
     "test:watch": "jest --watch",
-    "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint src/**/*.ts --fix",
-    "clean": "rimraf dist src/generated",
-    "prepublishOnly": "npm run build"
+    "docs": "typedoc",
+    "lint": "eslint src/**/*.ts --no-warn-ignored",
+    "lint:fix": "eslint src/**/*.ts --fix --no-warn-ignored && npm run format",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "rimraf dist dist-scripts src/generated src/generated_test",
+    "prepublishOnly": "npm run build",
+    "prepare": "husky"
   },
   "files": [
     "dist/**/*"
@@ -36,27 +45,52 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.13.4",
     "@grpc/proto-loader": "^0.8.0",
+    "dayjs": "^1.11.13",
+    "fs-ext": "^2.1.1",
     "google-protobuf": "^3.21.4",
     "long": "^5.3.2",
-    "yaml": "^2.8.1",
-    "fs-ext": "^2.1.1"
+    "yaml": "^2.8.1"
   },
   "devDependencies": {
     "@bufbuild/buf": "^1.56.0",
+    "@types/fs-ext": "^2.0.0",
     "@types/google-protobuf": "^3.15.12",
     "@types/jest": "^30.0.0",
-    "@types/fs-ext": "^2.0.0",
     "@types/node": "^24.2.1",
     "@typescript-eslint/eslint-plugin": "^8.39.0",
     "@typescript-eslint/parser": "^8.39.0",
     "eslint": "^9.33.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jest": "^29.0.1",
+    "eslint-plugin-n": "^17.21.3",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
     "jest": "^30.0.5",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.3.3",
     "protoc-gen-ts": "^0.8.7",
     "rimraf": "^6.0.1",
     "ts-jest": "^29.1.1",
-    "ts-proto": "^2.7.7",
-    "typescript": "^5.9.2",
     "ts-node": "^10.9.2",
-    "ts-proto-descriptors": "^2.0.0"
+    "ts-proto": "^2.7.7",
+    "typedoc": "^0.28.12",
+    "typedoc-plugin-markdown": "^4.8.1",
+    "typescript": "^5.9.2"
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix --no-warn-ignored",
+      "prettier --write"
+    ],
+    "*.{json,md,yaml,yml}": [
+      "prettier --write"
+    ]
+  },
+  "overrides": {
+    "test-exclude": "^7.0.1"
   }
 }

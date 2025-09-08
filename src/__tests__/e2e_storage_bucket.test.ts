@@ -6,26 +6,25 @@
  - NEBIUS_E2E_CONFIG_B64: base64-encoded YAML config content
 */
 
-import { writeFileSync, unlinkSync, existsSync, mkdtempSync } from 'fs';
+import { existsSync, mkdtempSync, unlinkSync, writeFileSync } from 'fs';
 import { tmpdir } from 'os';
 import { join } from 'path';
+
 import Long from 'long';
 import { parse as parseYAML } from 'yaml';
 
-import { SDK } from '../sdk';
-import { Config } from '../runtime/cli_config';
-import { ResourceMetadata } from '../generated/nebius/common/v1/metadata';
-import { BucketSpec } from '../generated/nebius/storage/v1/bucket';
-import { VersioningPolicy } from '../generated/nebius/storage/v1/base';
+import { ResourceMetadata } from '../generated/nebius/common/v1/index';
 import {
   BucketService as BucketServiceClient,
-} from '../generated/nebius/storage/v1/bucket_service.sdk';
-import {
+  BucketSpec,
   CreateBucketRequest,
   DeleteBucketRequest,
   GetBucketRequest,
   ListBucketsRequest,
-} from '../generated/nebius/storage/v1/bucket_service';
+  VersioningPolicy,
+} from '../generated/nebius/storage/v1/index';
+import { Config } from '../runtime/cli_config';
+import { SDK } from '../sdk';
 
 jest.setTimeout(120_000);
 
@@ -67,7 +66,10 @@ maybe('storage bucket lifecycle (e2e)', async () => {
   }
 
   // Build SDK from config
-  const config = new Config({ configFile: cfgPath, clientId: process.env.NEBIUS_E2E_CLIENT_ID || 'ts-e2e' });
+  const config = new Config({
+    configFile: cfgPath,
+    clientId: process.env.NEBIUS_E2E_CLIENT_ID || 'ts-e2e',
+  });
   const sdk = new SDK({ configReader: config });
 
   // Ensure parentId is available and matches SDK
@@ -76,7 +78,27 @@ maybe('storage bucket lifecycle (e2e)', async () => {
   expect(parentId).toBe(sdk.parentId());
 
   const bucketService = new BucketServiceClient(sdk);
-  const bucketName = `ts-e2e-${randomString()}`;
+  // Common call options: add a per-retry deadline to bound waits on network issues
+  // 4 seconds for each request, so cold-start can get through dns
+  const callOptions = { deadline: 12000, perRetry: 4000 } as const;
+  const withTimeout = async <T>(p: Promise<T>, ms: number, label: string): Promise<T> => {
+    let to: NodeJS.Timeout | undefined;
+    try {
+      return await Promise.race<T>([
+        p,
+        new Promise<T>((_, rej) => {
+          to = setTimeout(
+            () => rej(new Error('' + `Timeout: ${label} after ${ms}ms`)),
+            ms,
+          ).unref?.();
+        }),
+      ]);
+    } finally {
+      if (to) clearTimeout(to);
+    }
+  };
+
+  const bucketName = 'ts-e2e-' + randomString();
   let bucketId: string | null = null;
 
   try {
@@ -91,53 +113,57 @@ maybe('storage bucket lifecycle (e2e)', async () => {
     });
     const createReq = CreateBucketRequest.create({ metadata, spec });
 
-    const createOp = await bucketService.Create(createReq).result;
-    await createOp.wait();
+    const createOp = await bucketService.create(createReq, undefined as any, callOptions).result;
+    await withTimeout(createOp.wait(), 60_000, 'create bucket wait');
     bucketId = createOp.resourceId();
     expect(bucketId).toBeTruthy();
 
     // Get bucket by ID
-    const getReq: GetBucketRequest = { id: bucketId! };
-    const bucket = await bucketService.Get(getReq).result;
+    const getReq = GetBucketRequest.create({ id: bucketId! });
+    const bucket = await bucketService.get(getReq, undefined as any, callOptions).result;
     expect(bucket.metadata?.id).toBe(bucketId);
     expect(bucket.metadata?.name).toBe(bucketName);
     expect(bucket.spec?.versioningPolicy).toBe(VersioningPolicy.DISABLED);
     expect(bucket.spec?.maxSizeBytes?.toString()).toBe('4096');
 
     // List buckets and find our bucket
-    const listReq: ListBucketsRequest = {
+    const listReq = ListBucketsRequest.create({
       parentId: parentId!,
       pageSize: Long.fromInt(100),
       pageToken: '',
       filter: '',
-    };
-    const listRes = await bucketService.List(listReq).result;
+    });
+    const listRes = await bucketService.list(listReq, undefined as any, callOptions as any).result;
     const found = (listRes.items || []).find((b) => b.metadata?.id === bucketId);
     expect(found).toBeTruthy();
     expect(found!.metadata?.name).toBe(bucketName);
 
     // Delete bucket
-    const delReq: DeleteBucketRequest = { id: bucketId! };
-    const delOp = await bucketService.Delete(delReq).result;
-    await delOp.wait();
+    const delReq = DeleteBucketRequest.create({ id: bucketId! });
+    const delOp = await bucketService.delete(delReq, undefined as any, callOptions as any).result;
+    await withTimeout(delOp.wait(), 60_000, 'delete bucket wait');
     bucketId = null;
   } catch (e) {
     // Try cleanup on failure
     if (bucketId) {
       try {
-        const delReq: DeleteBucketRequest = { id: bucketId };
-        const delOp = await bucketService.Delete(delReq).result;
-        await delOp.wait();
+        const delReq = DeleteBucketRequest.create({ id: bucketId });
+        const delOp = await bucketService.delete(delReq, undefined as any, callOptions as any)
+          .result;
+        await withTimeout(delOp.wait(), 60_000, 'cleanup delete bucket wait');
       } catch (cleanupErr) {
-        // eslint-disable-next-line no-console
-        console.warn(`Warning: cleanup failed for bucket ${bucketId}:`, cleanupErr);
+        console.warn('Warning: cleanup failed for bucket', bucketId, cleanupErr);
       }
     }
     throw e;
   } finally {
     await sdk.close();
     if (isTemp && cfgPath && existsSync(cfgPath)) {
-      try { unlinkSync(cfgPath); } catch { /* ignore */ }
+      try {
+        unlinkSync(cfgPath);
+      } catch {
+        /* ignore */
+      }
     }
   }
 });

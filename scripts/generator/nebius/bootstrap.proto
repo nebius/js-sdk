@@ -1,0 +1,13 @@
+syntax = "proto3";
+package nebius;
+
+// This file exists only to force buf to include Google well-known types and the
+// compiler plugin protos so that our TypeScript generator can be bootstrapped
+// without depending on a previously generated copy under src/.
+//
+// We import descriptor.proto (brings in all WKTs via include_imports) and
+// plugin.proto for google/protobuf/compiler.
+import "google/protobuf/descriptor.proto";
+import "google/protobuf/compiler/plugin.proto";
+
+// No messages/services needed.

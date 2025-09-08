@@ -1,5 +1,6 @@
-import type { ExchangeTokenRequest } from '../../generated/nebius/iam/v1/token_service';
 import { createSign } from 'crypto';
+
+import { ExchangeTokenRequest } from '../../generated/nebius/iam/v1/index';
 
 export interface TokenRequester {
   getExchangeTokenRequest(): ExchangeTokenRequest;
@@ -48,7 +49,7 @@ export class ServiceAccount implements ServiceAccountLike {
 
     const subjectToken = `${signingInput}.${encodedSignature}`;
 
-    return {
+    return ExchangeTokenRequest.create({
       grantType: 'urn:ietf:params:oauth:grant-type:token-exchange',
       requestedTokenType: 'urn:ietf:params:oauth:token-type:access_token',
       subjectToken,
@@ -58,7 +59,7 @@ export class ServiceAccount implements ServiceAccountLike {
       actorToken: '',
       actorTokenType: '',
       resource: [],
-    };
+    });
   }
 }
 

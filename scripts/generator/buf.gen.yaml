@@ -1,0 +1,11 @@
+version: v2
+plugins:
+- local: ../../dist-scripts/scripts/protoc-gen-nebius-ts.js
+  out: .
+  opt:
+  - outBase=scripts/generator
+  - registryFile=google/registry.ts
+  strategy: all
+  include_imports: true
+
+

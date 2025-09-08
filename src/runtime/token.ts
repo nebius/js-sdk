@@ -1,7 +1,8 @@
-import { TokenSanitizer } from './token_sanitizer';
-import type { AuthorizationOptions } from './authorization/provider';
 import util from 'node:util';
- 
+
+import type { AuthorizationOptions } from './authorization/provider';
+import { TokenSanitizer } from './token_sanitizer';
+
 // A bearer token with optional expiration time
 export class Token {
   private readonly _tok: string;
@@ -56,7 +57,7 @@ export class Token {
     };
   }
 
-  static fromJSON(data: any): Token {
+  static fromJSON(data: { token?: string; expires_at?: number | null }): Token {
     const tok = typeof data?.token === 'string' ? data.token : '';
     const expSec = data?.expires_at;
     const exp = typeof expSec === 'number' && expSec > 0 ? new Date(expSec * 1000) : undefined;
@@ -84,10 +85,7 @@ export abstract class Receiver {
     return this._latest;
   }
 
-  async fetch(
-    timeoutMs?: number,
-    options?: AuthorizationOptions | undefined,
-  ): Promise<Token> {
+  async fetch(timeoutMs?: number, options?: AuthorizationOptions | undefined): Promise<Token> {
     const tok = await this._fetch(timeoutMs, options);
     this._latest = tok;
     return tok;
@@ -109,16 +107,18 @@ export abstract class Bearer {
   }
 
   async close(_graceMs?: number): Promise<void> {
-    const w = this.wrapped as any;
-    if (w && typeof w.close === 'function') {
-      await w.close(_graceMs);
+    if (this.wrapped && typeof this.wrapped.close === 'function') {
+      await this.wrapped.close(_graceMs);
     }
   }
 }
 
 // Helper to label a bearer without changing behavior
 export class NamedBearer extends Bearer {
-  constructor(private readonly _wrapped: Bearer, private readonly _name: string) {
+  constructor(
+    private readonly _wrapped: Bearer,
+    private readonly _name: string,
+  ) {
     super();
   }
 

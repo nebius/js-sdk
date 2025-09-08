@@ -1,6 +1,6 @@
 version: v2
 deps:
-- buf.build/bufbuild/protovalidate
-- buf.build/googleapis/googleapis
+  - buf.build/bufbuild/protovalidate
+  - buf.build/googleapis/googleapis
 modules:
-- path: nebius-api
+  - path: nebius-api

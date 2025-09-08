@@ -8,6 +8,9 @@ src/generated/
 .env.production
 .DS_Store
 coverage/
+src/generated_test/
+.vscode/
 
 # Local examples/tests not checked in
 local/
+nebius-api/nebius/example

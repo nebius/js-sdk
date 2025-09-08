@@ -1,0 +1,95 @@
+[**@nebius/nodejs-sdk**](../../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/postgresql/v1alpha1](../README.md) / Backup
+
+# Interface: Backup
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:799
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:801
+
+---
+
+### $type
+
+> **$type**: `"nebius.msp.postgresql.v1alpha1.Backup"`
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:800
+
+---
+
+### creationFinish?
+
+> `optional` **creationFinish**: [`Dayjs`](../../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:821
+
+Creation finish timestamp.
+
+---
+
+### creationStart?
+
+> `optional` **creationStart**: [`Dayjs`](../../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:816
+
+Creation start timestamp.
+
+---
+
+### id
+
+> **id**: `string`
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:806
+
+Required. ID of the backup.
+
+---
+
+### onDemand
+
+> **onDemand**: `boolean`
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:836
+
+Is the backup an on-demand manual backup.
+
+---
+
+### sourceClusterId
+
+> **sourceClusterId**: `string`
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:811
+
+ID of the PostgreSQL cluster that the backup was created for.
+
+---
+
+### sourceClusterName
+
+> **sourceClusterName**: `string`
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:826
+
+Name of the PostgreSQL cluster that the backup was created for.
+
+---
+
+### sourceClusterVisible
+
+> **sourceClusterVisible**: `boolean`
+
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:831
+
+Is PostgreSQL cluster that the backup was created for visible.

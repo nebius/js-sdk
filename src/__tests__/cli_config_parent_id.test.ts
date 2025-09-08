@@ -1,11 +1,16 @@
 import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
 import { join } from 'path';
+
 import { Config, NoParentIdError } from '../runtime/cli_config';
 
 function withTempHome(tmp: string, fn: () => void) {
   const oldHome = process.env.HOME;
   process.env.HOME = tmp;
-  try { fn(); } finally { process.env.HOME = oldHome; }
+  try {
+    fn();
+  } finally {
+    process.env.HOME = oldHome;
+  }
 }
 
 describe('Config parent id', () => {
@@ -14,13 +19,16 @@ describe('Config parent id', () => {
     mkdirSync(join(tmpDir, '.nebius'), { recursive: true });
 
     withTempHome(tmpDir, () => {
-      writeFileSync(join(tmpDir, '.nebius', 'config.yaml'), `
+      writeFileSync(
+        join(tmpDir, '.nebius', 'config.yaml'),
+        `
 profiles:
   prod:
     endpoint: my-endpoint.net
     parent-id: project-e00some-id
 default: prod
-`);
+`,
+      );
       const cfg = new Config({ clientId: 'foo' });
       expect(cfg.parentId()).toBe('project-e00some-id');
     });
@@ -31,12 +39,15 @@ default: prod
     mkdirSync(join(tmpDir, '.nebius'), { recursive: true });
 
     withTempHome(tmpDir, () => {
-      writeFileSync(join(tmpDir, '.nebius', 'config.yaml'), `
+      writeFileSync(
+        join(tmpDir, '.nebius', 'config.yaml'),
+        `
 profiles:
   prod:
     endpoint: my-endpoint.net
 default: prod
-`);
+`,
+      );
       const cfg = new Config({ clientId: 'foo' });
       expect(() => cfg.parentId()).toThrow(NoParentIdError);
     });

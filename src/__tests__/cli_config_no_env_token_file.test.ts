@@ -1,12 +1,18 @@
 import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
 import { join } from 'path';
+
 import { Config } from '../runtime/cli_config';
 import { FileBearer } from '../runtime/token/file';
 
 function withTempHome(tmp: string, fn: () => Promise<void> | void) {
   const oldHome = process.env.HOME;
   process.env.HOME = tmp;
-  try { const r = fn(); return r; } finally { process.env.HOME = oldHome; }
+  try {
+    const r = fn();
+    return r;
+  } finally {
+    process.env.HOME = oldHome;
+  }
 }
 
 describe('Config no_env flag', () => {
@@ -17,14 +23,17 @@ describe('Config no_env flag', () => {
     await withTempHome(tmpDir, async () => {
       process.env.NEBIUS_IAM_TOKEN = 'wrong-token';
       writeFileSync(join(tmpDir, 'token.txt'), 'my-token\n');
-      writeFileSync(join(tmpDir, '.nebius', 'config.yaml'), `
+      writeFileSync(
+        join(tmpDir, '.nebius', 'config.yaml'),
+        `
 profiles:
   default:
     endpoint: my-endpoint.net
     parent-id: project-e00some-id
     token-file: ${join(tmpDir, 'token.txt')}
 default: default
-`);
+`,
+      );
 
       const cfg = new Config({ clientId: 'foo', noEnv: true });
       const cred = cfg.getCredentials();

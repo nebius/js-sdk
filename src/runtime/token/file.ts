@@ -1,7 +1,8 @@
-import { Bearer, Receiver, Token } from '../token';
-import type { AuthorizationOptions } from '../authorization/provider';
 import { readFile } from 'fs/promises';
 import { resolve } from 'path';
+
+import type { AuthorizationOptions } from '../authorization/provider';
+import { Bearer, Receiver, Token } from '../token';
 
 class FileReceiver extends Receiver {
   constructor(private readonly filePath: string) {

@@ -1,10 +1,20 @@
-import { Server, ServerCredentials, credentials } from '@grpc/grpc-js';
-import { DiskServiceService, DiskServiceClient, ListDisksRequest, ListDisksResponse, DiskServiceServer } from '../generated/nebius/compute/v1/disk_service';
-import { Disk } from '../generated/nebius/compute/v1/disk';
+import { Metadata, Server, ServerCredentials, credentials } from '@grpc/grpc-js';
 import Long from 'long';
 
+import { ResourceMetadata } from '../generated/nebius/common/v1/index';
+import {
+  Disk,
+  DiskServiceServiceDescription as DiskServiceService,
+  DiskServiceBaseClient as DiskServiceClient,
+  ListDisksRequest,
+  ListDisksResponse,
+  DiskServiceServer,
+} from '../generated/nebius/compute/v1/index';
+
 // Start a gRPC server on an ephemeral port and return its address
-function startServerWithPort(addImpl: (server: Server) => void): Promise<{ server: Server; address: string }>{
+function startServerWithPort(
+  addImpl: (server: Server) => void,
+): Promise<{ server: Server; address: string }> {
   return new Promise((resolve, reject) => {
     const server = new Server();
     addImpl(server);
@@ -23,18 +33,30 @@ describe('DiskService gRPC mock', () => {
         list: (call, callback) => {
           const req: ListDisksRequest = call.request;
           const items: Disk[] = [
-            {
-              metadata: { id: 'disk-1', parentId: req.parentId, name: 'disk-one', resourceVersion: Long.ZERO, labels: {} },
+            Disk.create({
+              metadata: ResourceMetadata.create({
+                id: 'disk-1',
+                parentId: req.parentId,
+                name: 'disk-one',
+                resourceVersion: Long.ZERO,
+                labels: {},
+              }),
               spec: undefined,
               status: undefined,
-            },
-            {
-              metadata: { id: 'disk-2', parentId: req.parentId, name: 'disk-two', resourceVersion: Long.ZERO, labels: {} },
+            }),
+            Disk.create({
+              metadata: ResourceMetadata.create({
+                id: 'disk-2',
+                parentId: req.parentId,
+                name: 'disk-two',
+                resourceVersion: Long.ZERO,
+                labels: {},
+              }),
               spec: undefined,
               status: undefined,
-            },
+            }),
           ];
-          const res: ListDisksResponse = { items, nextPageToken: '' };
+          const res = ListDisksResponse.create({ items, nextPageToken: '' });
           callback(null, res);
         },
         // Stub other methods (not used in this test)
@@ -43,7 +65,8 @@ describe('DiskService gRPC mock', () => {
         create: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
         update: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
         delete: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
+        listOperationsByParent: (_call, cb) =>
+          cb(new Error('unimplemented') as any, undefined as any),
       };
 
       server.addService(DiskServiceService, impl);
@@ -52,10 +75,20 @@ describe('DiskService gRPC mock', () => {
     const client = new DiskServiceClient(address, credentials.createInsecure());
 
     const response = await new Promise<ListDisksResponse>((resolve, reject) => {
-      client.list({ parentId: 'folders/123', pageSize: Long.fromInt(10), pageToken: '', filter: '' }, (err, res) => {
-        if (err) return reject(err);
-        resolve(res);
-      });
+      client.list(
+        ListDisksRequest.create({
+          parentId: 'folders/123',
+          pageSize: Long.fromInt(10),
+          pageToken: '',
+          filter: '',
+        }),
+        new Metadata(),
+        {},
+        (err, res) => {
+          if (err) return reject(err);
+          resolve(res);
+        },
+      );
     });
 
     expect(response.items).toHaveLength(2);

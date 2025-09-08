@@ -1,0 +1,33 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/billing/v1alpha1](../README.md) / CalculatorServiceServer
+
+# Interface: CalculatorServiceServer
+
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:526
+
+## Extends
+
+- `UntypedServiceImplementation`
+
+## Indexable
+
+\[`name`: `string`\]: `UntypedHandleCall`
+
+## Properties
+
+### estimate
+
+> **estimate**: `handleUnaryCall`\<[`EstimateRequest`](EstimateRequest.md), [`EstimateResponse`](EstimateResponse.md)\>
+
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:527
+
+---
+
+### estimateBatch
+
+> **estimateBatch**: `handleUnaryCall`\<[`EstimateBatchRequest`](EstimateBatchRequest.md), [`EstimateBatchResponse`](EstimateBatchResponse.md)\>
+
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:528

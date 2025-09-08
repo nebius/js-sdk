@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
+
 import type { Reader } from './service_account';
 import { ServiceAccount } from './service_account';
 

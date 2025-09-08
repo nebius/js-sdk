@@ -1,73 +1,74 @@
-import type { SDKInterface } from '../sdk';
-import type { Operation as OpV1 } from '../generated/nebius/common/v1/operation';
-import type { Operation as OpVAlpha } from '../generated/nebius/common/v1alpha1/operation';
-import { Status } from "../generated/google/rpc/status";
-import { Timestamp } from '../generated/google/protobuf/timestamp';
-import { Any } from '../generated/google/protobuf/any';
-import { Code as StatusCode } from '../generated/google/rpc/code';
+import util from 'node:util';
 
-interface Operation_requestHeader {
+import { Metadata, status, type CallOptions } from '@grpc/grpc-js';
+import { Dayjs } from 'dayjs';
+
+import { Status, Code as StatusCode } from '../generated/google/rpc/index';
+
+import { Request, RetryOptions } from './request';
+
+interface Operation_RequestHeader {
   values: string[];
 }
 
-interface GenericOperation{
+interface GenericOperation {
   id: string;
   description: string;
-  createdAt?:
-    | Timestamp
-    | undefined;
+  createdAt?: Dayjs | undefined;
   createdBy: string;
-  finishedAt?:
-    | Timestamp
-    | undefined;
-  request?:
-    | Any
-    | undefined;
-  requestHeaders: { [key: string]: Operation_requestHeader };
+  finishedAt?: Dayjs | undefined;
+  request?: { typeUrl: string; value: Uint8Array } | undefined;
+  requestHeaders: { [key: string]: Operation_RequestHeader };
   resourceId: string;
-  resource?:
-    | Any
-    | undefined;
-  progressData?:
-    | Any
-    | undefined;
+  progressData?: { typeUrl: string; value: Uint8Array } | undefined;
   status?: Status | undefined;
 }
 
-export class Operation {
+interface OperationService<TReq> {
+  get(
+    req: { id: string },
+    metadata?: Metadata | undefined,
+    options?: (Partial<CallOptions> & RetryOptions) | undefined,
+  ): Request<TReq, Operation<TReq>>;
+}
+
+export class Operation<TReq> {
   constructor(
-    private readonly sdk: SDKInterface,
-    private readonly sourceMethodPath: string,
     private _op: GenericOperation,
-    private readonly getOpFn: (id: string) => Promise<GenericOperation>,
+    // getOpFn now may accept optional Metadata and CallOptions to propagate through
+    private readonly service: OperationService<TReq>,
   ) {}
 
   toString() {
     return `Operation(${this.id()}, resourceId=${this.resourceId()}, status=${this.status()})`;
   }
 
+  [util.inspect.custom]() {
+    return this.toString();
+  }
+
   id(): string {
-    return (this._op as any)?.id ?? '';
+    return this._op.id ?? '';
   }
 
   description(): string {
     return this._op.description ?? '';
   }
 
-  createdAt(): Timestamp | undefined {
+  createdAt(): Dayjs | undefined {
     return this._op.createdAt;
   }
 
   createdBy(): string {
-    return this._op.createdBy;
+    return this._op.createdBy ?? '';
   }
 
-  finishedAt(): Timestamp | undefined {
+  finishedAt(): Dayjs | undefined {
     return this._op.finishedAt;
   }
 
   successful(): boolean {
-    return this._op.status?.code === StatusCode.OK;
+    return this._op.status?.code === StatusCode.OK.code;
   }
 
   raw(): GenericOperation {
@@ -86,11 +87,32 @@ export class Operation {
     return this._op.resourceId;
   }
 
-  async wait(intervalSec: number = 1): Promise<void> {
+  async wait(
+    intervalSec: number = 1,
+    metadata?: Metadata | undefined,
+    options?: (Partial<CallOptions> & RetryOptions) | undefined,
+  ): Promise<void> {
     const id = this.id();
     if (!id) return;
     while (!this.done()) {
-      await this.update();
+      try {
+        await this.update(metadata, options);
+      } catch (err: unknown) {
+        // If update failed because the client deadline was exceeded, ignore
+        // and continue waiting. This can happen when the server takes longer
+        // to respond than the per-request deadline; the operation may still
+        // be progressing and will be visible on subsequent polls.
+        if (err && typeof err === 'object' && 'code' in err) {
+          const e = err as { code?: number };
+          if (e.code === status.DEADLINE_EXCEEDED) {
+            // swallow and retry
+          } else {
+            throw err;
+          }
+        } else {
+          throw err;
+        }
+      }
       if (!this.done()) {
         const ms = Math.max(0, intervalSec) * 1000;
         await new Promise<void>((resolve) => setTimeout(resolve, ms));
@@ -98,10 +120,13 @@ export class Operation {
     }
   }
 
-  async update(): Promise<void> {
+  async update(
+    metadata?: Metadata | undefined,
+    options?: (Partial<CallOptions> & RetryOptions) | undefined,
+  ): Promise<void> {
     const id = this.id();
     if (!id) return;
-    const next = await this.getOpFn(id);
-    this._op = next;
+    const next = await this.service.get({ id }, metadata, options).result;
+    this._op = next._op;
   }
 }

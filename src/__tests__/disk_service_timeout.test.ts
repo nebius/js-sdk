@@ -1,8 +1,15 @@
 import { Server, ServerCredentials, credentials, status, Metadata } from '@grpc/grpc-js';
-import { DiskServiceService, DiskServiceClient, DiskServiceServer } from '../generated/nebius/compute/v1/disk_service';
-import { GetDiskRequest } from '../generated/nebius/compute/v1/disk_service';
 
-function startServerWithPort(addImpl: (server: Server) => void): Promise<{ server: Server; address: string }>{
+import {
+  DiskServiceServiceDescription as DiskServiceService,
+  DiskServiceBaseClient as DiskServiceClient,
+  DiskServiceServer,
+  GetDiskRequest,
+} from '../generated/nebius/compute/v1/index';
+
+function startServerWithPort(
+  addImpl: (server: Server) => void,
+): Promise<{ server: Server; address: string }> {
   return new Promise((resolve, reject) => {
     const server = new Server();
     addImpl(server);
@@ -28,7 +35,8 @@ describe('DiskService timeout', () => {
         create: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
         update: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
         delete: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
+        listOperationsByParent: (_call, cb) =>
+          cb(new Error('unimplemented') as any, undefined as any),
       };
       server.addService(DiskServiceService, impl);
     });
@@ -46,7 +54,7 @@ describe('DiskService timeout', () => {
             resolve(_res);
           },
         );
-      })
+      }),
     ).rejects.toMatchObject({ code: status.DEADLINE_EXCEEDED });
 
     await new Promise<void>((resolve) => server.tryShutdown(() => resolve()));

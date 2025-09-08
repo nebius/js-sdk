@@ -1,0 +1,983 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/compute/v1](../README.md) / DiskService
+
+# Class: DiskService
+
+Defined in: src/generated/nebius/compute/v1/index.ts:755
+
+## Implements
+
+- `DiskService`
+
+## Constructors
+
+### Constructor
+
+> **new DiskService**(`sdk`): `DiskService`
+
+Defined in: src/generated/nebius/compute/v1/index.ts:815
+
+#### Parameters
+
+##### sdk
+
+[`SDKInterface`](../../../../../sdk/interfaces/SDKInterface.md)
+
+#### Returns
+
+`DiskService`
+
+## Properties
+
+### $type
+
+> **$type**: `"nebius.compute.v1.DiskService"`
+
+Defined in: src/generated/nebius/compute/v1/index.ts:756
+
+## Methods
+
+### create()
+
+#### Call Signature
+
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:783
+
+Creates a new disk with the specified configuration.
+For details, see https://docs.nebius.com/compute/storage/manage
+
+##### Parameters
+
+###### request
+
+[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:784
+
+##### Parameters
+
+###### request
+
+[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:785
+
+##### Parameters
+
+###### request
+
+[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:861
+
+Creates a new disk with the specified configuration.
+For details, see https://docs.nebius.com/compute/storage/manage
+
+##### Parameters
+
+###### request
+
+[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:862
+
+Creates a new disk with the specified configuration.
+For details, see https://docs.nebius.com/compute/storage/manage
+
+##### Parameters
+
+###### request
+
+[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:863
+
+Creates a new disk with the specified configuration.
+For details, see https://docs.nebius.com/compute/storage/manage
+
+##### Parameters
+
+###### request
+
+[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+---
+
+### delete()
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:798
+
+Deletes a disk by its ID.
+
+##### Parameters
+
+###### request
+
+[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:799
+
+##### Parameters
+
+###### request
+
+[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:800
+
+##### Parameters
+
+###### request
+
+[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:891
+
+Deletes a disk by its ID.
+
+##### Parameters
+
+###### request
+
+[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:892
+
+Deletes a disk by its ID.
+
+##### Parameters
+
+###### request
+
+[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:893
+
+Deletes a disk by its ID.
+
+##### Parameters
+
+###### request
+
+[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+---
+
+### get()
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:761
+
+Retrieves information about a disk by its ID.
+
+##### Parameters
+
+###### request
+
+[`GetDiskRequest`](../interfaces/GetDiskRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:762
+
+##### Parameters
+
+###### request
+
+[`GetDiskRequest`](../interfaces/GetDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:763
+
+##### Parameters
+
+###### request
+
+[`GetDiskRequest`](../interfaces/GetDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:825
+
+Retrieves information about a disk by its ID.
+
+##### Parameters
+
+###### request
+
+[`GetDiskRequest`](../interfaces/GetDiskRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:826
+
+Retrieves information about a disk by its ID.
+
+##### Parameters
+
+###### request
+
+[`GetDiskRequest`](../interfaces/GetDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:827
+
+Retrieves information about a disk by its ID.
+
+##### Parameters
+
+###### request
+
+[`GetDiskRequest`](../interfaces/GetDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+---
+
+### getByName()
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:768
+
+Retrieves information about a disk by its parent and name.
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:769
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:770
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:837
+
+Retrieves information about a disk by its parent and name.
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:838
+
+Retrieves information about a disk by its parent and name.
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+#### Call Signature
+
+> **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:839
+
+Retrieves information about a disk by its parent and name.
+
+##### Parameters
+
+###### request
+
+[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
+
+---
+
+### getOperationService()
+
+> **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
+
+Defined in: src/generated/nebius/compute/v1/index.ts:821
+
+#### Returns
+
+[`OperationService`](../../../common/v1/classes/OperationService.md)
+
+---
+
+### list()
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:775
+
+Lists all disks within a specified parent.
+
+##### Parameters
+
+###### request
+
+[`ListDisksRequest`](../interfaces/ListDisksRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:776
+
+##### Parameters
+
+###### request
+
+[`ListDisksRequest`](../interfaces/ListDisksRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:777
+
+##### Parameters
+
+###### request
+
+[`ListDisksRequest`](../interfaces/ListDisksRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:849
+
+Lists all disks within a specified parent.
+
+##### Parameters
+
+###### request
+
+[`ListDisksRequest`](../interfaces/ListDisksRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:850
+
+Lists all disks within a specified parent.
+
+##### Parameters
+
+###### request
+
+[`ListDisksRequest`](../interfaces/ListDisksRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+#### Call Signature
+
+> **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:851
+
+Lists all disks within a specified parent.
+
+##### Parameters
+
+###### request
+
+[`ListDisksRequest`](../interfaces/ListDisksRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
+
+---
+
+### listOperationsByParent()
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:805
+
+Lists all operations that were performed within a specific parent resource.
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:806
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:807
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:906
+
+Lists all operations that were performed within a specific parent resource.
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:907
+
+Lists all operations that were performed within a specific parent resource.
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+#### Call Signature
+
+> **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:908
+
+Lists all operations that were performed within a specific parent resource.
+
+##### Parameters
+
+###### request
+
+[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
+
+---
+
+### update()
+
+#### Call Signature
+
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:791
+
+Updates an existing disk with new configuration parameters.
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
+
+##### Parameters
+
+###### request
+
+[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:792
+
+##### Parameters
+
+###### request
+
+[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:793
+
+##### Parameters
+
+###### request
+
+[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:876
+
+Updates an existing disk with new configuration parameters.
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
+
+##### Parameters
+
+###### request
+
+[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:877
+
+Updates an existing disk with new configuration parameters.
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
+
+##### Parameters
+
+###### request
+
+[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+#### Call Signature
+
+> **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
+
+Defined in: src/generated/nebius/compute/v1/index.ts:878
+
+Updates an existing disk with new configuration parameters.
+For details, see https://docs.nebius.com/compute/storage/manage#parameters
+
+##### Parameters
+
+###### request
+
+[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>

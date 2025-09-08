@@ -1,7 +1,9 @@
 import type { Interceptor, InterceptingCall, Listener, Metadata, CallOptions } from '@grpc/grpc-js';
 import { Metadata as GrpcMetadata } from '@grpc/grpc-js';
+
+import { Code } from '../../generated/google/rpc/index';
+
 import type { Provider } from './provider';
-import { Code } from '../../generated/google/rpc/code';
 
 function timeLeftMs(deadline: CallOptions['deadline']): number | undefined {
   if (!deadline) return undefined;
@@ -17,7 +19,11 @@ export function createAuthorizationInterceptor(provider: Provider): Interceptor 
     const auth = provider.authenticator();
 
     const requester = {
-      start(metadata: Metadata, listener: Listener, next: (metadata: Metadata, listener: Listener) => void) {
+      start(
+        metadata: Metadata,
+        listener: Listener,
+        next: (metadata: Metadata, listener: Listener) => void,
+      ) {
         const disable = !!options?.authorizationDisable;
         const authOptions = options?.authorizationOptions;
 
@@ -31,9 +37,9 @@ export function createAuthorizationInterceptor(provider: Provider): Interceptor 
           onReceiveStatus: (status, nextStatus) => nextStatus(status),
         };
 
-        const startTs = Date.now();
+        // const startTs = Date.now();
+        // let attempt = 0;
         const deadline = options?.deadline;
-        let attempt = 0;
         let patchedMd: Metadata | undefined;
 
         const doAuthLoop = async (): Promise<boolean> => {
@@ -41,7 +47,7 @@ export function createAuthorizationInterceptor(provider: Provider): Interceptor 
           // If canRetry is not provided, single attempt
           // Always start from the original metadata to avoid duplicating headers between attempts
           while (true) {
-            attempt += 1;
+            // attempt += 1;
             const left = timeLeftMs(deadline);
             const timeoutMs = left === undefined ? undefined : Math.max(0, left);
             // Clone original metadata so we don't mutate it and to prevent header duplication on retries
@@ -51,12 +57,14 @@ export function createAuthorizationInterceptor(provider: Provider): Interceptor 
               patchedMd = mdAttempt;
               return true; // success
             } catch (e) {
-              const canRetry = typeof (auth as any).canRetry === 'function' ? (auth as any).canRetry(e, authOptions) : false;
+              const canRetry =
+                typeof auth.canRetry === 'function' ? auth.canRetry(e, authOptions) : false;
               const stillLeft = timeLeftMs(deadline);
               if (!canRetry || (stillLeft !== undefined && stillLeft <= 0)) {
                 // Fail early with UNAUTHENTICATED-like status
-                const st: any = {
-                  code: Code.UNAUTHENTICATED,
+                const st = {
+                  code: Code.UNAUTHENTICATED.code,
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   details: (e && (e as any).message) || 'authentication failed',
                   metadata: new GrpcMetadata(),
                 };
@@ -78,10 +86,11 @@ export function createAuthorizationInterceptor(provider: Provider): Interceptor 
             }
           })
           .catch((e) => {
-            const st: any = {
-                code: Code.UNAUTHENTICATED,
-                details: (e && (e as any).message) || 'authentication failed',
-                metadata: new GrpcMetadata()
+            const st = {
+              code: Code.UNAUTHENTICATED.code,
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              details: (e && (e as any).message) || 'authentication failed',
+              metadata: new GrpcMetadata(),
             };
             wrapped.onReceiveStatus && wrapped.onReceiveStatus(st, () => undefined);
           });
@@ -99,7 +108,7 @@ export function createAuthorizationInterceptor(provider: Provider): Interceptor 
 
     return new (require('@grpc/grpc-js').InterceptingCall as typeof InterceptingCall)(
       nextCall(options),
-      requester as any,
+      requester,
     );
   };
 }

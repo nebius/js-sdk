@@ -1,0 +1,41 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/iam/v1](../README.md) / UpdateFederationCertificateRequest
+
+# Interface: UpdateFederationCertificateRequest
+
+Defined in: src/generated/nebius/iam/v1/index.ts:7542
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/generated/nebius/iam/v1/index.ts:7544
+
+---
+
+### $type
+
+> **$type**: `"nebius.iam.v1.UpdateFederationCertificateRequest"`
+
+Defined in: src/generated/nebius/iam/v1/index.ts:7543
+
+---
+
+### metadata?
+
+> `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
+
+Defined in: src/generated/nebius/iam/v1/index.ts:7545
+
+---
+
+### spec?
+
+> `optional` **spec**: [`FederationCertificateSpec`](FederationCertificateSpec.md)
+
+Defined in: src/generated/nebius/iam/v1/index.ts:7546

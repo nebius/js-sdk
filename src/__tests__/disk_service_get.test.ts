@@ -1,10 +1,19 @@
-import { Server, ServerCredentials, credentials } from '@grpc/grpc-js';
-import { DiskServiceService, DiskServiceClient, GetDiskRequest, DiskServiceServer } from '../generated/nebius/compute/v1/disk_service';
-import { Disk } from '../generated/nebius/compute/v1/disk';
+import { Metadata, Server, ServerCredentials, credentials } from '@grpc/grpc-js';
 import Long from 'long';
 
+import { ResourceMetadata } from '../generated/nebius/common/v1/index';
+import {
+  Disk,
+  DiskServiceServiceDescription as DiskServiceService,
+  DiskServiceBaseClient as DiskServiceClient,
+  GetDiskRequest,
+  DiskServiceServer,
+} from '../generated/nebius/compute/v1/index';
+
 // Start a gRPC server on an ephemeral port and return its address
-function startServerWithPort(addImpl: (server: Server) => void): Promise<{ server: Server; address: string }>{
+function startServerWithPort(
+  addImpl: (server: Server) => void,
+): Promise<{ server: Server; address: string }> {
   return new Promise((resolve, reject) => {
     const server = new Server();
     addImpl(server);
@@ -22,17 +31,17 @@ describe('DiskService gRPC mock - get', () => {
       const impl: DiskServiceServer = {
         get: (call, callback) => {
           const req: GetDiskRequest = call.request;
-          const disk: Disk = {
-            metadata: {
+          const disk: Disk = Disk.create({
+            metadata: ResourceMetadata.create({
               id: req.id,
               name: 'MockDisk',
               parentId: '',
               resourceVersion: Long.ZERO,
               labels: {},
-            },
+            }),
             spec: undefined,
             status: undefined,
-          };
+          });
           callback(null, disk);
         },
         // Stub other methods (not used in this test)
@@ -41,7 +50,8 @@ describe('DiskService gRPC mock - get', () => {
         create: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
         update: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
         delete: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
+        listOperationsByParent: (_call, cb) =>
+          cb(new Error('unimplemented') as any, undefined as any),
       };
 
       server.addService(DiskServiceService, impl);
@@ -50,7 +60,7 @@ describe('DiskService gRPC mock - get', () => {
     const client = new DiskServiceClient(address, credentials.createInsecure());
 
     const response = await new Promise<Disk>((resolve, reject) => {
-      client.get({ id: 'foo-bar' }, (err, res) => {
+      client.get(GetDiskRequest.create({ id: 'foo-bar' }), new Metadata(), {}, (err, res) => {
         if (err) return reject(err);
         resolve(res);
       });

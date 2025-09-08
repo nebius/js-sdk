@@ -1,5 +1,5 @@
-import { Bearer, Receiver, Token } from '../token';
 import type { AuthorizationOptions } from '../authorization/provider';
+import { Bearer, Receiver, Token } from '../token';
 
 export class NoTokenInEnvError extends Error {}
 

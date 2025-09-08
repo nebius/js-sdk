@@ -1,6 +1,7 @@
-import { Bearer, Receiver, Token } from '../../token';
-import { ThrottledTokenCache } from './throttled_token_cache';
 import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
+import { Bearer, Receiver, Token } from '../../token';
+
+import { ThrottledTokenCache } from './throttled_token_cache';
 
 class PureFileCacheReceiver extends Receiver {
   constructor(private readonly cache: ThrottledTokenCache) {

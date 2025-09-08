@@ -1,6 +1,8 @@
 import { resetMaskFromMessage } from '../runtime/resetmask';
 
-function msg(v: any) { return v; }
+function msg(v: any) {
+  return v;
+}
 
 describe('resetMaskFromMessage', () => {
   test('null message', () => {
@@ -23,7 +25,7 @@ describe('resetMaskFromMessage', () => {
   test('nested object default fields included', () => {
     const m = msg({ user: { name: '', age: 0 } });
     const mask = resetMaskFromMessage(m)!;
-    expect(mask.marshal()).toBe('user.age,user.name');
+    expect(mask.marshal()).toBe('user.(age,name)');
   });
 
   test('list empty marks field; list of messages recurses into Any', () => {
@@ -33,7 +35,7 @@ describe('resetMaskFromMessage', () => {
 
     const m2 = msg({ items: [{ x: 0 }, { y: '' }] });
     const mask2 = resetMaskFromMessage(m2)!;
-    expect(mask2.marshal()).toBe('items.*.x,items.*.y');
+    expect(mask2.marshal()).toBe('items.*.(x,y)');
   });
 
   test('map empty marks field; map of messages recurses into Any', () => {
@@ -43,6 +45,27 @@ describe('resetMaskFromMessage', () => {
 
     const m2 = msg({ dict: { a: { x: 0 }, b: { y: '' } } });
     const mask2 = resetMaskFromMessage(m2)!;
-    expect(mask2.marshal()).toBe('dict.*.x,dict.*.y');
+    expect(mask2.marshal()).toBe('dict.*.(x,y)');
+  });
+
+  test('non-empty list of messages with no default inner fields still yields wildcard', () => {
+    const m = msg({ items: [{ x: 1 }, { x: 2 }] });
+    const mask = resetMaskFromMessage(m)!;
+    expect(mask.marshal()).toBe('items.*');
+  });
+
+  test('non-empty map of messages with no default inner fields still yields wildcard', () => {
+    const m = msg({ dict: { a: { x: 1 }, b: { x: 2 } } });
+    const mask = resetMaskFromMessage(m)!;
+    expect(mask.marshal()).toBe('dict.*');
+  });
+
+  test('non-empty list/map of scalars not marked', () => {
+    const m1 = msg({ nums: [0, 1] });
+    const m2 = msg({ labels: { a: 'x' } });
+    const rm1 = resetMaskFromMessage(m1)!;
+    const rm2 = resetMaskFromMessage(m2)!;
+    expect(rm1.marshal()).toBe('');
+    expect(rm2.marshal()).toBe('');
   });
 });

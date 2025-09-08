@@ -8,6 +8,7 @@
 import { parseMask } from './fieldmask_parser';
 
 const SIMPLE_STRING_RE = /^[a-zA-Z0-9_]+$/;
+const RECURSION_TOO_DEEP = 1000;
 
 export class MarshalError extends Error {}
 
@@ -25,7 +26,7 @@ export class FieldKey {
         const v = JSON.parse(marshaled);
         if (typeof v !== 'string') throw new MarshalError('malformed FieldKey string');
         return new FieldKey(v);
-      } catch (e) {
+      } catch {
         throw new MarshalError('malformed FieldKey string');
       }
     }
@@ -47,7 +48,7 @@ export class FieldPath {
   constructor(base?: Iterable<FieldKey | string> | null) {
     this.parts = [];
     if (base != null) {
-      for (const v0 of base as Iterable<any>) {
+      for (const v0 of base) {
         const v = v0 instanceof FieldKey ? v0 : new FieldKey(String(v0));
         this.parts.push(v);
       }
@@ -135,7 +136,7 @@ export class Mask {
     for (const [k, v] of this.fieldParts) m.fieldParts.set(k, v.copy());
     return m;
   }
-  equals(other: any): boolean {
+  equals(other: Mask): boolean {
     if (!(other instanceof Mask)) return false;
     if ((this.any === null) !== (other.any === null)) return false;
     if (this.any && other.any && !this.any.equals(other.any)) return false;
@@ -170,14 +171,8 @@ export class Mask {
   getSubMask(key: FieldKey | string): Mask | null {
     const k = key instanceof FieldKey ? key.value : String(key);
     const named = this.fieldParts.get(k) || null;
-    const any = this.any;
-    if (named && any) {
-      // merge Any into a copy of named
-      const cp = named.copy();
-      cp.merge(any);
-      return cp;
-    }
-    return named ?? any ?? null;
+    if (named) return named;
+    return this.any ?? null;
   }
   // Traverses by path combining wildcards at each level
   getSubMaskByPath(path: FieldPath): Mask | null {
@@ -195,7 +190,7 @@ export class Mask {
   addPath(path: (FieldKey | string | '*')[]): this {
     let cur: Mask = this;
     for (const seg0 of path) {
-      const seg = seg0 === '*' ? '*' : (seg0 instanceof FieldKey ? seg0.value : String(seg0));
+      const seg = seg0 === '*' ? '*' : seg0 instanceof FieldKey ? seg0.value : String(seg0);
       if (seg === '*') {
         if (!cur.any) cur.any = new Mask();
         cur = cur.any;
@@ -228,26 +223,211 @@ export class Mask {
   static parse(source: string): Mask {
     return parseMask(source);
   }
-  marshal(): string {
-    // Flatten to comma-separated list of full paths (no parentheses). Stable order based on per-level key sort.
-    const paths: (string | '*')[][] = [];
-    const dfs = (prefix: (string | '*')[], node: Mask) => {
-      // wildcard branch
-      if (node.any) {
-        dfs([...prefix, '*'], node.any);
-      }
-      if (node.fieldParts.size === 0 && !node.any) {
-        // Leaf marks a complete path. But avoid adding empty root.
-        if (prefix.length > 0) paths.push(prefix);
-      }
-      for (const k of Array.from(node.fieldParts.keys()).sort()) {
-        const child = node.fieldParts.get(k)!;
-        dfs([...prefix, k], child);
+  static Parse(source: string): Mask {
+    return Mask.parse(source);
+  }
+  private marshalRec(recursion: number): { count: number; text: string } {
+    if (recursion >= RECURSION_TOO_DEEP) {
+      throw new Error('recursion too deep');
+    }
+    if (!this.any && this.fieldParts.size === 0) {
+      return { count: 0, text: '' };
+    }
+    const parts: string[] = [];
+    const appendMarshaler = (kMask: string, mask: Mask) => {
+      const { count, text } = mask.marshalRec(recursion + 1);
+      if (text === '') {
+        parts.push(kMask);
+      } else if (count === 1) {
+        parts.push(`${kMask}.${text}`);
+      } else {
+        parts.push(`${kMask}.(${text})`);
       }
     };
-    dfs([], this);
-    const strPaths = paths.map((p) => p.map((seg) => (seg === '*' ? '*' : new FieldKey(seg).marshal())).join('.'));
-    return strPaths.join(',');
+    if (this.any) {
+      appendMarshaler('*', this.any);
+    }
+    for (const k of Array.from(this.fieldParts.keys())) {
+      const v = this.fieldParts.get(k)!;
+      if (!v) continue;
+      const kMask = new FieldKey(k).marshal();
+      appendMarshaler(kMask, v);
+    }
+    parts.sort();
+    return { count: parts.length, text: parts.join(',') };
+  }
+  marshal(): string {
+    return this.marshalRec(0).text;
+  }
+  toString(): string {
+    try {
+      return `Mask<${this.marshal()}>`;
+    } catch (e) {
+      return `Mask<not-marshalable ${/**/ (e && (e as { message: string }).message) || e}>`;
+    }
+  }
+  // Intersection and subtraction APIs to match Go implementation
+  private intersectRMRecursive(other: Mask | null, recursion: number): Mask | null {
+    if (recursion >= RECURSION_TOO_DEEP) throw new Error('recursion too deep');
+    recursion++;
+    if (!this || !other) return null;
+    const ret = new Mask();
+    // any × any
+    if (this.any && other.any) {
+      ret.any = this.any.intersectRMRecursive(other.any, recursion);
+    }
+    // this.field × other.any
+    if (other.any) {
+      for (const [k, v] of this.fieldParts) {
+        const inner = v.intersectRMRecursive(other.any, recursion);
+        if (inner) ret.fieldParts.set(k, inner);
+      }
+    }
+    // this.any × other.field
+    if (this.any) {
+      for (const [k, v] of other.fieldParts) {
+        const inner = this.any.intersectRMRecursive(v, recursion);
+        if (inner) {
+          const prev = ret.fieldParts.get(k);
+          if (prev) inner.merge(prev);
+          ret.fieldParts.set(k, inner);
+        }
+      }
+    }
+    // this.field × other.field (same keys)
+    for (const [k, v] of this.fieldParts) {
+      const o = other.fieldParts.get(k) || null;
+      if (!o) continue;
+      const inner = v.intersectRMRecursive(o, recursion);
+      if (inner) {
+        const prev = ret.fieldParts.get(k);
+        if (prev) inner.merge(prev);
+        ret.fieldParts.set(k, inner);
+      }
+    }
+    return ret;
+  }
+
+  intersectResetMask(other: Mask | null | undefined): Mask | null {
+    if (!other) return new Mask();
+    return this.intersectRMRecursive(other, 0);
+  }
+
+  private intersectDumbRecursive(other: Mask | null, recursion: number): Mask | null {
+    if (recursion >= RECURSION_TOO_DEEP) throw new Error('recursion too deep');
+    recursion++;
+    if (!this || !other) return null;
+    const ret = new Mask();
+    if (this.any && other.any) ret.any = this.any.intersectDumbRecursive(other.any, recursion);
+    for (const [k, v] of this.fieldParts) {
+      const o = other.fieldParts.get(k) || null;
+      const inner = o ? v.intersectDumbRecursive(o, recursion) : null;
+      if (inner) ret.fieldParts.set(k, inner);
+    }
+    return ret;
+  }
+
+  intersectDumb(other: Mask | null | undefined): Mask | null {
+    if (!other) return new Mask();
+    return this.intersectDumbRecursive(other, 0);
+  }
+
+  private subtractDumbRecursive(other: Mask | null, recursion: number): void {
+    if (recursion >= RECURSION_TOO_DEEP) throw new Error('recursion too deep');
+    recursion++;
+    if (!other) return;
+    if (this.any && other.any) {
+      this.any.subtractDumbRecursive(other.any, recursion);
+      if (this.any.isEmpty()) this.any = null;
+    }
+    for (const [k, v] of Array.from(this.fieldParts.entries())) {
+      const o = other.fieldParts.get(k) || null;
+      if (o) {
+        v.subtractDumbRecursive(o, recursion);
+        if (v.isEmpty()) this.fieldParts.delete(k);
+      }
+    }
+  }
+
+  subtractDumb(other: Mask | null | undefined): this {
+    if (other) this.subtractDumbRecursive(other, 0);
+    return this;
+  }
+
+  private subtractResetRecursive(other: Mask | null, recursion: number): void {
+    if (recursion >= RECURSION_TOO_DEEP) throw new Error('recursion too deep');
+    recursion++;
+    if (!other) return;
+    if (this.any && other.any) {
+      this.any.subtractResetRecursive(other.any, recursion);
+      if (this.any.isEmpty()) this.any = null;
+    }
+    for (const [k, v] of Array.from(this.fieldParts.entries())) {
+      if (other.any) {
+        v.subtractResetRecursive(other.any, recursion);
+      }
+      const o = other.fieldParts.get(k) || null;
+      if (o) {
+        v.subtractResetRecursive(o, recursion);
+      }
+      if (v.isEmpty()) this.fieldParts.delete(k);
+    }
+  }
+
+  subtractResetMask(other: Mask | null | undefined): this {
+    if (other) this.subtractResetRecursive(other, 0);
+    return this;
+  }
+
+  // JSON helpers: build a mask from a JS object/JSON and serialize mask to object/JSON
+  static fromObject(obj: unknown): Mask {
+    const root = new Mask();
+    const visit = (cur: Mask, val: unknown, path: (string | '*')[]) => {
+      if (val === null || typeof val !== 'object') {
+        if (path.length > 0) cur.addPath(path);
+        return;
+      }
+      if (Array.isArray(val)) {
+        if (val.length === 0) {
+          if (path.length > 0) cur.addPath(path);
+          return;
+        }
+        for (const el of val) {
+          visit(cur, el, path.concat('*'));
+        }
+        return;
+      }
+      const keys = Object.keys(val);
+      if (keys.length === 0) {
+        if (path.length > 0) cur.addPath(path);
+        return;
+      }
+      for (const k of keys) {
+        visit(cur, (val as Record<string, unknown>)[k], path.concat(k));
+      }
+    };
+    visit(root, obj, []);
+    return root;
+  }
+
+  static parseJSON(source: string | unknown): Mask {
+    const obj = typeof source === 'string' ? JSON.parse(source) : source;
+    return Mask.fromObject(obj);
+  }
+
+  toObject(): unknown {
+    const rec = (node: Mask): unknown => {
+      if (!node.any && node.fieldParts.size === 0) return true;
+      const out: Record<string, unknown> = {};
+      if (node.any) out['*'] = rec(node.any);
+      for (const [k, v] of node.fieldParts) out[new FieldKey(k).marshal()] = rec(v);
+      return out;
+    };
+    return rec(this);
+  }
+
+  toJSON(): unknown {
+    return this.toObject();
   }
 }
 

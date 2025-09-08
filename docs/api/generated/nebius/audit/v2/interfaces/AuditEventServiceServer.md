@@ -1,0 +1,25 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/audit/v2](../README.md) / AuditEventServiceServer
+
+# Interface: AuditEventServiceServer
+
+Defined in: src/generated/nebius/audit/v2/index.ts:440
+
+## Extends
+
+- `UntypedServiceImplementation`
+
+## Indexable
+
+\[`name`: `string`\]: `UntypedHandleCall`
+
+## Properties
+
+### list
+
+> **list**: `handleUnaryCall`\<[`ListAuditEventRequest`](ListAuditEventRequest.md), [`ListAuditEventResponse`](ListAuditEventResponse.md)\>
+
+Defined in: src/generated/nebius/audit/v2/index.ts:441

@@ -1,18 +1,19 @@
 import { existsSync, readFileSync } from 'fs';
 import { resolve } from 'path';
+
 import { parse as parseYAML } from 'yaml';
 
-import { defaultConfigDir, defaultConfigFile, profileEnv as PROFILE_ENV, tokenEnv as TOKEN_ENV } from './constants';
-import type { SDKInterface, ConfigReaderLike } from '../sdk';
-import type { Provider as AuthorizationProvider } from './authorization/provider';
-import { Bearer, Token } from './token';
-import { EnvBearer, NoTokenInEnvError } from './token/static';
-import { FileBearer } from './token/file';
+import type { ConfigReaderLike, Credentials, GetCredentialsOptions } from './cli_config_interfaces';
+import {
+  defaultConfigDir,
+  defaultConfigFile,
+  profileEnv as PROFILE_ENV,
+  tokenEnv as TOKEN_ENV,
+} from './constants';
 import { FederationAccountBearer } from './token/federation_account';
-import type { Reader as TokenRequestReader } from './service_account/service_account';
+import { FileBearer } from './token/file';
 import { ServiceAccountBearer } from './token/service_account';
-
-export type Credentials = AuthorizationProvider | Bearer | TokenRequestReader | Token | string;
+import { EnvBearer, NoTokenInEnvError } from './token/static';
 
 export class ConfigError extends Error {}
 export class NoParentIdError extends ConfigError {}
@@ -24,14 +25,6 @@ function expandHome(p: string): string {
 interface ProfilesFileShape {
   default?: string | null;
   profiles?: Record<string, any>;
-}
-
-export interface GetCredentialsOptions {
-  writer?: (s: string) => void;
-  noBrowserOpen?: boolean;
-  timeoutMs?: number;
-  sslCtxUnused?: unknown; // placeholder to mirror Python signature
-  sdk?: SDKInterface | Promise<SDKInterface> | null;
 }
 
 export interface ConfigOptions {
@@ -78,7 +71,7 @@ export class Config implements ConfigReaderLike {
       }
       if (this._profileName == null) {
         const fromEnv = process.env[profileEnv];
-        this._profileName = (fromEnv && fromEnv.trim() !== '') ? fromEnv : null;
+        this._profileName = fromEnv && fromEnv.trim() !== '' ? fromEnv : null;
       }
     }
 
@@ -149,14 +142,19 @@ export class Config implements ConfigReaderLike {
       // Optionally supply TLS roots from SDK (so HTTP federation uses same trust as gRPC)
       let ca: Buffer | string | string[] | undefined;
       const sdkMaybe = opts.sdk as any;
-      if (sdkMaybe && typeof sdkMaybe === 'object' && typeof sdkMaybe.getTlsRootCAs === 'function') {
+      if (
+        sdkMaybe &&
+        typeof sdkMaybe === 'object' &&
+        typeof sdkMaybe.getTlsRootCAs === 'function'
+      ) {
         ca = sdkMaybe.getTlsRootCAs();
       }
 
-      // eslint-disable-next-line no-console
-      console.debug(
-        `Creating FederationAccountBearer with profile ${profileName}, client_id ${this._clientId}, federation_url ${endpoint}, federation_id ${fedId}, writer ${!!writer}, no_browser_open ${!!noBrowserOpen}.`,
-      );
+      // console.debug(
+      //   `Creating FederationAccountBearer with profile ${profileName}, client_id`+
+      //   ` ${this._clientId}, federation_url ${endpoint}, federation_id ${fedId},`+
+      //   ` writer ${!!writer}, no_browser_open ${!!noBrowserOpen}.`,
+      // );
       if (!this._clientId) {
         throw new ConfigError('Client ID is required for FederationAccountBearer.');
       }
@@ -224,7 +222,9 @@ export class Config implements ConfigReaderLike {
       throw new ConfigError(`Profiles should be a dictionary, got ${typeof profiles}.`);
     }
     if (Object.keys(profiles).length === 0) {
-      throw new ConfigError('No profiles found in the config file, setup the nebius CLI profile first.');
+      throw new ConfigError(
+        'No profiles found in the config file, setup the nebius CLI profile first.',
+      );
     }
 
     if (this._profileName == null) {
@@ -241,7 +241,9 @@ export class Config implements ConfigReaderLike {
       }
 
       if (this._profileName == null) {
-        throw new ConfigError('No profile selected. Either set the profile in the config setup, set the env var NEBIUS_PROFILE or execute `nebius profile activate`.');
+        throw new ConfigError(
+          'No profile selected. Either set the profile in the config setup, set the env var NEBIUS_PROFILE or execute `nebius profile activate`.',
+        );
       }
     }
 
@@ -252,8 +254,14 @@ export class Config implements ConfigReaderLike {
     if (!(profile in profiles)) {
       throw new ConfigError(`Profile ${profile} not found in the config file.`);
     }
-    if (typeof profiles[profile] !== 'object' || profiles[profile] === null || Array.isArray(profiles[profile])) {
-      throw new ConfigError(`Profile ${profile} should be a dictionary, got ${typeof profiles[profile]}.`);
+    if (
+      typeof profiles[profile] !== 'object' ||
+      profiles[profile] === null ||
+      Array.isArray(profiles[profile])
+    ) {
+      throw new ConfigError(
+        `Profile ${profile} should be a dictionary, got ${typeof profiles[profile]}.`,
+      );
     }
     this._profile = profiles[profile] as Record<string, any>;
 
