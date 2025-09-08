@@ -1,4 +1,4 @@
-import type { Interceptor, InterceptingCall, Listener, Metadata, CallOptions } from '@grpc/grpc-js';
+import type { CallOptions, InterceptingCall, Interceptor, Listener, Metadata } from '@grpc/grpc-js';
 import { Metadata as GrpcMetadata } from '@grpc/grpc-js';
 
 import { Code } from '../../generated/google/rpc/index';
@@ -77,8 +77,7 @@ export function createAuthorizationInterceptor(provider: Provider): Interceptor 
           }
         };
 
-        Promise.resolve()
-          .then(doAuthLoop)
+        doAuthLoop()
           .then((ok) => {
             // If doAuthLoop finished successfully, start the call with patched metadata
             if (ok) {
