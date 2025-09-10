@@ -148,16 +148,21 @@ export class SDK implements SDKInterface {
     // Always apply substitutions
     this._resolver = new TemplateExpander(substitutionsFull, r);
 
-    // Resolve parentId: prefer explicit option, else from configReader; empty strings are treated as undefined
-    const fromOpt = options?.parentId?.trim();
-    const fromConfig = options?.configReader?.parentId()?.trim();
-    const pid =
-      fromOpt && fromOpt !== ''
-        ? fromOpt
-        : fromConfig && fromConfig !== ''
-          ? fromConfig
-          : undefined;
-    this._parentId = pid;
+    // Resolve parentId lazily: prefer explicit option, else from configReader; empty strings are treated as undefined
+    let resolvedParentId: string | undefined;
+    const fromOptRaw = options?.parentId;
+    if (fromOptRaw && fromOptRaw.trim() !== '') {
+      resolvedParentId = fromOptRaw.trim();
+    } else if (options?.configReader) {
+      try {
+        const p = options.configReader.parentId();
+        if (p && p.trim() !== '') resolvedParentId = p.trim();
+      } catch {
+        // Ignore parent id errors from config; the SDK can operate without parent id
+        resolvedParentId = undefined;
+      }
+    }
+    this._parentId = resolvedParentId;
 
     // Transport security (default: secure with system roots). If tlsRootCAs is provided, use that instead.
     const custom = normalizeRootCAs(options?.tlsRootCAs);
@@ -478,6 +483,7 @@ export class SDK implements SDKInterface {
     const channelWatchers: Promise<void>[] = [];
     const timeout = typeof graceMs === 'number' ? graceMs : DEFAULT_CLOSE_TIMEOUT;
     const deadline = Date.now() + timeout;
+    let stopWatchers = false;
 
     for (const client of this._clients.values()) {
       try {
@@ -489,6 +495,7 @@ export class SDK implements SDKInterface {
         // Create a watcher that polls the connectivity state until SHUTDOWN
         const watcher = new Promise<void>((resolve, reject) => {
           const poll = () => {
+            if (stopWatchers) return resolve();
             try {
               const state = ch.getConnectivityState(false);
               if (state === connectivityState.SHUTDOWN) {
@@ -500,8 +507,9 @@ export class SDK implements SDKInterface {
             } catch (e) {
               return reject(e);
             }
-            // schedule next probe
-            setTimeout(poll, 50);
+            // schedule next probe without keeping the event loop alive
+            const h: NodeJS.Timeout = setTimeout(poll, 50);
+            if (typeof (h as NodeJS.Timeout).unref === 'function') (h as NodeJS.Timeout).unref();
           };
 
           poll();
@@ -515,11 +523,14 @@ export class SDK implements SDKInterface {
     // Authorization provider close (may accept graceMs). Run in parallel with channel waits.
     const authClose = this._authorizationProvider?.close?.(graceMs) ?? Promise.resolve();
 
-    await Promise.all(
-      channelWatchers.concat(
-        authClose,
-        new Promise((res) => setTimeout(res, timeout)), // give channels time to close
-      ),
-    );
+    // Wait until all watchers and authClose settle or until timeout, whichever comes first.
+    const allWork = Promise.allSettled(channelWatchers.concat(authClose));
+    const timeoutP = new Promise<void>((res) => {
+      const h: NodeJS.Timeout = setTimeout(() => res(), timeout);
+      if (typeof (h as NodeJS.Timeout).unref === 'function') (h as NodeJS.Timeout).unref();
+    });
+    await Promise.race([allWork, timeoutP]);
+    // Stop any remaining watcher loops
+    stopWatchers = true;
   }
 }

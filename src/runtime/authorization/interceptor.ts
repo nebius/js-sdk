@@ -68,8 +68,8 @@ export function createAuthorizationInterceptor(provider: Provider): Interceptor 
                   details: (e && (e as any).message) || 'authentication failed',
                   metadata: new GrpcMetadata(),
                 };
-                // Send status to listener and do not start the call
-                if (wrapped.onReceiveStatus) wrapped.onReceiveStatus(st, () => undefined);
+                // Send status to the provided listener and do not start the call
+                if (listener.onReceiveStatus) listener.onReceiveStatus(st, () => undefined);
                 return false;
               }
               // retry, continue loop
@@ -91,7 +91,7 @@ export function createAuthorizationInterceptor(provider: Provider): Interceptor 
               details: (e && (e as any).message) || 'authentication failed',
               metadata: new GrpcMetadata(),
             };
-            wrapped.onReceiveStatus && wrapped.onReceiveStatus(st, () => undefined);
+            listener.onReceiveStatus && listener.onReceiveStatus(st, () => undefined);
           });
       },
       sendMessage(message: unknown, next: (message: unknown) => void) {

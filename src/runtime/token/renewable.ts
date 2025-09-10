@@ -143,13 +143,9 @@ export class RenewableBearer extends Bearer {
       return 0;
     }
 
-    // Renew at: max(remaining * (1 - (1 - lifetimeSafeFraction)), safetyMinRemainingMs)
-    // i.e. remaining * lifetimeSafeFraction but also leave at least safetyMinRemainingMs.
-    const targetFromNow = Math.max(
-      Math.floor(remaining * this.lifetimeSafeFraction),
-      this.safetyMinRemainingMs,
-    );
-
+    // Renew at: remaining * (1 - (1 - lifetimeSafeFraction))
+    // i.e. remaining * lifetimeSafeFraction.
+    const targetFromNow = Math.floor(remaining * this.lifetimeSafeFraction);
     const result = Math.max(0, remaining - targetFromNow);
     dbg('computeNextTimeoutMs', { remaining, targetFromNow, result });
     return result;
