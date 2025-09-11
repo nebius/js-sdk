@@ -51,6 +51,91 @@ function getTrace(skip: number = 2): string {
   return cleanTrace(err.stack, skip);
 }
 
+// Exported helper to produce a JSON-safe representation of a value. This
+// mirrors the logic previously embedded inside JsonHandler.serializeValue so
+// callers (for example implementations of [customJson]) can call it
+// recursively.
+export function inspectJson(val: unknown): unknown {
+  // Primitives pass-through
+  if (val === null) return null;
+  const t = typeof val;
+  if (t === 'string' || t === 'number' || t === 'boolean') return val;
+  if (t === 'undefined') return undefined;
+
+  // If object has customJson or util.inspect.custom, prefer customJson then
+  // fallback to inspect.custom
+  try {
+    const anyVal = val as Record<PropertyKey, unknown> | undefined;
+    const customFn = anyVal?.[customJson] ?? anyVal?.[custom];
+    if (customFn !== undefined) {
+      if (typeof customFn === 'function') {
+        // allow custom serializer to return anything JSON-serializable
+        return customFn.call(anyVal);
+      }
+      return customFn;
+    }
+  } catch (e) {
+    dbg('inspectJson: custom serializer threw error', e);
+  }
+
+  // Safe JSON serialization with circular refs handled
+  try {
+    const seen = new WeakSet<object>();
+    const cloned = (function clone(v: unknown): unknown {
+      if (v === null) return null;
+      const vt = typeof v;
+      // Allow nested values to provide custom JSON representation via
+      // customJson or util.inspect.custom
+      try {
+        const maybeAny = v as Record<PropertyKey, unknown> | undefined;
+        const nestedCustom = maybeAny?.[customJson] ?? maybeAny?.[custom];
+        if (nestedCustom !== undefined) {
+          if (typeof nestedCustom === 'function') return nestedCustom.call(maybeAny);
+          return nestedCustom;
+        }
+      } catch (e) {
+        dbg('inspectJson: nested custom serializer threw error', e);
+      }
+
+      if (vt === 'string' || vt === 'number' || vt === 'boolean' || vt === 'undefined') return v;
+      if (vt === 'function') return `[Function:${(v as Function).name || 'anonymous'}]`;
+      if (vt === 'symbol') return String(v);
+
+      if (Array.isArray(v)) {
+        const arr = v as unknown[];
+        if (seen.has(arr as object)) return '[Circular]';
+        seen.add(arr as object);
+        return arr.map(clone);
+      }
+      if (v instanceof Date) return v.toISOString();
+      if (v instanceof Error) return { name: v.name, message: v.message, stack: v.stack };
+      if (vt === 'object') {
+        const obj = v as Record<string, unknown>;
+        if (seen.has(obj as object)) return '[Circular]';
+        seen.add(obj as object);
+        const o: Record<string, unknown> = {};
+        for (const k of Object.keys(obj)) {
+          try {
+            o[k] = clone(obj[k]);
+          } catch {
+            o[k] = '[Unserializable]';
+          }
+        }
+        return o;
+      }
+      return String(v);
+    })(val);
+    return cloned;
+  } catch (e) {
+    // As a last resort use inspect output
+    try {
+      return inspect(val, { depth: 2 });
+    } catch {
+      return String(val);
+    }
+  }
+}
+
 export interface Handler {
   log(level: Level, message: string, args: Argument, name: string, traceLevel: number): void;
 }
@@ -427,82 +512,7 @@ export class JsonHandler implements Handler {
   }
 
   private serializeValue(val: unknown): unknown {
-    // Primitives pass-through
-    if (val === null) return null;
-    const t = typeof val;
-    if (t === 'string' || t === 'number' || t === 'boolean') return val;
-    if (t === 'undefined') return undefined;
-
-    // If object has argJson or util.inspect.custom, prefer argJson then fallback to inspect.custom
-    try {
-      const anyVal = val as Record<PropertyKey, unknown> | undefined;
-      const customFn = anyVal?.[customJson] ?? anyVal?.[custom];
-      if (customFn !== undefined) {
-        if (typeof customFn === 'function') {
-          // allow custom serializer to return anything JSON-serializable
-          return customFn.call(anyVal);
-        }
-        return customFn;
-      }
-    } catch (e) {
-      dbg('JsonHandler.serializeValue: custom serializer threw error', e);
-    }
-
-    // Safe JSON serialization with circular refs handled
-    try {
-      const seen = new WeakSet<object>();
-      const cloned = (function clone(v: unknown): unknown {
-        if (v === null) return null;
-        const vt = typeof v;
-        // Allow nested values to provide custom JSON representation via argJson or util.inspect.custom
-        try {
-          const maybeAny = v as Record<PropertyKey, unknown> | undefined;
-          const nestedCustom = maybeAny?.[customJson] ?? maybeAny?.[custom];
-          if (nestedCustom !== undefined) {
-            if (typeof nestedCustom === 'function') return nestedCustom.call(maybeAny);
-            return nestedCustom;
-          }
-        } catch (e) {
-          dbg('JsonHandler.serializeValue: nested custom serializer threw error', e);
-        }
-
-        if (vt === 'string' || vt === 'number' || vt === 'boolean' || vt === 'undefined') return v;
-        if (vt === 'function') return `[Function:${(v as Function).name || 'anonymous'}]`;
-        if (vt === 'symbol') return String(v);
-
-        if (Array.isArray(v)) {
-          const arr = v as unknown[];
-          if (seen.has(arr as object)) return '[Circular]';
-          seen.add(arr as object);
-          return arr.map(clone);
-        }
-        if (v instanceof Date) return v.toISOString();
-        if (v instanceof Error) return { name: v.name, message: v.message, stack: v.stack };
-        if (vt === 'object') {
-          const obj = v as Record<string, unknown>;
-          if (seen.has(obj as object)) return '[Circular]';
-          seen.add(obj as object);
-          const o: Record<string, unknown> = {};
-          for (const k of Object.keys(obj)) {
-            try {
-              o[k] = clone(obj[k]);
-            } catch {
-              o[k] = '[Unserializable]';
-            }
-          }
-          return o;
-        }
-        return String(v);
-      })(val);
-      return cloned;
-    } catch (e) {
-      // As a last resort use inspect output
-      try {
-        return inspect(val, { depth: 2 });
-      } catch {
-        return String(val);
-      }
-    }
+    return inspectJson(val);
   }
 
   log(level: Level, message: string, args: Argument, name: string, traceLevel: number): void {
@@ -769,12 +779,13 @@ export class Logger {
   ) {}
 
   [custom](): string {
-    return `Logger(name=${this.name})`;
+    return `Logger(name=${this.name}, handler=${inspect(this.handler)})`;
   }
   [customJson](): object {
     return {
       $type: 'Logger',
       name: this.name,
+      handler: inspectJson(this.handler),
     };
   }
 
