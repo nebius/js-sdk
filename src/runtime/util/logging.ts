@@ -150,6 +150,16 @@ export class ConsoleHandler implements Handler {
     }
   }
 
+  [custom](): string {
+    return `ConsoleHandler(level=${Level[this.level]})`;
+  }
+  [customJson](): object {
+    return {
+      $type: 'ConsoleHandler',
+      level: Level[this.level],
+    };
+  }
+
   private matchFilters(name: string, level: Level): boolean {
     const fs: Filter[] = Array.isArray(this.filters) ? this.filters : [this.filters];
     for (const f of fs) {
@@ -238,6 +248,15 @@ export class PrettyHandler implements Handler {
     this.argFormat = opts?.argFormat ?? ((key, value) => `${key}=${value}`);
     this.argDelimiter = opts?.argDelimiter ?? ', ';
     this.useColors = opts?.colors ?? true;
+  }
+  [custom](): string {
+    return `PrettyHandler(level=${Level[this.level]})`;
+  }
+  [customJson](): object {
+    return {
+      $type: 'PrettyHandler',
+      level: Level[this.level],
+    };
   }
 
   private matchFilters(name: string, level: Level): boolean {
@@ -378,6 +397,15 @@ export class JsonHandler implements Handler {
     }
     this.level = opts?.level ?? Level.INFO;
     this.filters = opts?.filters ?? /.*/;
+  }
+  [custom](): string {
+    return `JsonHandler(level=${Level[this.level]})`;
+  }
+  [customJson](): object {
+    return {
+      $type: 'JsonHandler',
+      level: Level[this.level],
+    };
   }
 
   private matchFilters(name: string, level: Level): boolean {
@@ -739,6 +767,16 @@ export class Logger {
     private withFieldsArg: Argument = {},
     private parent?: Logger,
   ) {}
+
+  [custom](): string {
+    return `Logger(name=${this.name})`;
+  }
+  [customJson](): object {
+    return {
+      $type: 'Logger',
+      name: this.name,
+    };
+  }
 
   get getName(): string {
     return this.name;
