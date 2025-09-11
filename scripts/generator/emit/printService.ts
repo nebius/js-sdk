@@ -1,6 +1,6 @@
 import type { Method, Service as TSService } from '../descriptors';
 
-import { deprecationLine } from './helpers';
+import { deprecationLine, deprecationOptions } from './helpers';
 
 function normalizeFqn(name: string, pkg?: string): string {
   let n = name || '';
@@ -52,6 +52,7 @@ export function printService(
   // Service description const and type alias
   // Add @deprecated JSDoc to the ServiceDescription if the service is deprecated
   const svcDep = deprecationLine(svc.descriptor);
+  const svcDepOpts = deprecationOptions(svc.descriptor);
   if (svcDep) {
     lines.push('/**');
     lines.push(` * @deprecated ${svcDep}`);
@@ -239,7 +240,7 @@ export function printService(
     lines.push(`    if (!__deprecatedWarned.has(${JSON.stringify(fullSvc)})) {`);
     lines.push(`      __deprecatedWarned.add(${JSON.stringify(fullSvc)});`);
     lines.push(
-      `      console.warn(${JSON.stringify('[deprecated] Service ' + fullSvc + ': ')} + ${JSON.stringify(svcDep)});`,
+      `      deprecatedWarn(${JSON.stringify(svcDepOpts?.description || '')}, "service", ${JSON.stringify(fullSvc)}, ${JSON.stringify(svcDepOpts?.effectiveAt || undefined)});`,
     );
     lines.push('    }');
   }
@@ -303,12 +304,13 @@ export function printService(
     }
     // Method-level runtime deprecation warning (warn once)
     const mDepRuntime = deprecationLine(m.descriptor);
+    const mDepOpts = deprecationOptions(m.descriptor);
     if (mDepRuntime) {
       const fullMethod = `${pbFullSvcName}.${m.pb_name}`;
       lines.push(`    if (!__deprecatedWarned.has(${JSON.stringify(fullMethod)})) {`);
       lines.push(`      __deprecatedWarned.add(${JSON.stringify(fullMethod)});`);
       lines.push(
-        `      console.warn(${JSON.stringify('[deprecated] Method ' + fullMethod + ': ')} + ${JSON.stringify(mDepRuntime)});`,
+        `      deprecatedWarn(${JSON.stringify(mDepOpts?.description || '')}, "method", ${JSON.stringify(fullMethod)}, ${JSON.stringify(mDepOpts?.effectiveAt || undefined)});`,
       );
       lines.push('    }');
     }

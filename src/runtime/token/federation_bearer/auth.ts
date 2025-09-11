@@ -1,8 +1,10 @@
-import { spawn } from 'child_process';
+import { spawn, spawnSync } from 'child_process';
 import type { IncomingMessage } from 'http';
 import { request as httpRequest } from 'http';
 import { request as httpsRequest } from 'https';
 import { URL } from 'url';
+
+import { Logger } from '../../util/logging';
 
 import { AUTH_ENDPOINT, TOKEN_ENDPOINT } from './constants';
 import { isWsl } from './is_wsl';
@@ -22,15 +24,37 @@ function httpsUrl(raw: string): string {
   return `https://${raw.replace(/^\/+/, '')}`;
 }
 
-async function openBrowser(url: string): Promise<void> {
+async function openBrowser(url: string, logger?: Logger): Promise<void> {
   const platform = process.platform;
-  if (platform === 'linux' && isWsl()) {
-    spawn('powershell.exe', ['-NoProfile', '-NonInteractive', 'Start', url], {
-      detached: true,
-      stdio: 'ignore',
-    }).unref();
+  if (platform === 'linux') {
+    if (isWsl()) {
+      spawn('powershell.exe', ['-NoProfile', '-NonInteractive', 'Start', url], {
+        detached: true,
+        stdio: 'ignore',
+      }).unref();
+      return;
+    }
+
+    // Probe common browser open providers and pick the first available one.
+    const providers = ['xdg-open', 'x-www-browser', 'www-browser'];
+    for (const provider of providers) {
+      try {
+        const res = spawnSync('which', [provider], { stdio: 'ignore' });
+        if (res.status === 0) {
+          spawn(provider, [url], { detached: true, stdio: 'ignore' }).unref();
+          return;
+        }
+      } catch {
+        // ignore and continue
+      }
+    }
+
+    // If none found, log and try xdg-open to produce a predictable failure mode.
+    logger?.debug('browser provider not found, choosing xdg-open to fail');
+    spawn('xdg-open', [url], { detached: true, stdio: 'ignore' }).unref();
     return;
   }
+
   if (platform === 'darwin') {
     spawn('open', [url], { detached: true, stdio: 'ignore' }).unref();
   } else if (platform === 'win32') {
@@ -88,14 +112,17 @@ export async function getCode(params: {
   writer?: (s: string) => void;
   noBrowserOpen?: boolean;
   timeoutMs?: number;
+  logger?: Logger;
 }): Promise<{ code: string; state: string; redirectUri: string; verifier: string }> {
-  const { clientId, authEndpoint, federationId, writer, noBrowserOpen, timeoutMs } = params;
+  const { clientId, authEndpoint, federationId, writer, noBrowserOpen, timeoutMs, logger } = params;
   const pkce = new PKCE();
   const cb = new CallbackHandler();
   await cb.listenAndServe();
   const redirectUri = cb.addr; // e.g. http://127.0.0.1:port
 
-  console.debug(`Callback handler listening at ${redirectUri}`);
+  logger?.debug(`Callback handler listening`, {
+    redirectUri,
+  });
 
   const base = new URL(AUTH_ENDPOINT, httpsUrl(authEndpoint));
   base.searchParams.set('response_type', 'code');
@@ -112,7 +139,8 @@ export async function getCode(params: {
   const url = base.toString();
   const write = writer ?? ((s: string) => console.log(s));
   write(`Open this URL to continue authentication: ${url}\n`);
-  if (!noBrowserOpen) await openBrowser(url);
+  logger?.info('open browser', { url, noBrowserOpen });
+  if (!noBrowserOpen) await openBrowser(url, logger);
 
   const code = await cb.waitForCode(timeoutMs);
   await cb.shutdown();
@@ -163,9 +191,18 @@ export async function authorize(params: {
   noBrowserOpen?: boolean;
   timeoutMs?: number;
   ca?: Buffer | string | string[];
+  logger?: Logger;
 }): Promise<GetTokenResult> {
-  const { clientId, federationEndpoint, federationId, writer, noBrowserOpen, timeoutMs, ca } =
-    params;
+  const {
+    clientId,
+    federationEndpoint,
+    federationId,
+    writer,
+    noBrowserOpen,
+    timeoutMs,
+    ca,
+    logger,
+  } = params;
   const { code, redirectUri, verifier } = await getCode({
     clientId,
     authEndpoint: federationEndpoint,
@@ -173,6 +210,12 @@ export async function authorize(params: {
     writer,
     noBrowserOpen,
     timeoutMs,
+    logger,
+  });
+  logger?.debug('auth code received', {
+    code: code.slice(0, 3) + '...',
+    redirectUri,
+    verifier: verifier.slice(0, 3) + '...',
   });
   const res = await getToken({
     clientId,

@@ -1,11 +1,12 @@
 import { FileHandle, mkdir, open } from 'fs/promises';
-import { dirname, resolve } from 'path';
+import { dirname } from 'path';
 
 import * as fsExt from 'fs-ext';
 import * as YAML from 'yaml';
 
 import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
 import { Token } from '../../token';
+import { resolveHomeDir } from '../../util/path';
 
 export interface TokenCacheOptions {
   cacheFile?: string;
@@ -18,7 +19,7 @@ export class TokenCache {
 
   constructor(options?: TokenCacheOptions) {
     const cachePath = options?.cacheFile ?? `${defaultConfigDir}/${defaultCredentialsFile}`;
-    this.cacheFile = expandHome(cachePath);
+    this.cacheFile = resolveHomeDir(cachePath);
     this.fileCreateMode = options?.fileCreateMode ?? 0o600;
   }
 
@@ -188,9 +189,4 @@ export class TokenCache {
       await (fh as FileHandle).close().catch(() => undefined);
     }
   }
-}
-
-function expandHome(p: string): string {
-  if (p.startsWith('~/')) return resolve(process.env.HOME || '', p.slice(2));
-  return resolve(p);
 }

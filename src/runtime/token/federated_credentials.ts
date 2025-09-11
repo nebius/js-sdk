@@ -5,6 +5,7 @@ import {
   FileFederatedCredentials,
 } from '../service_account/federated_credentials';
 import { Bearer, NamedBearer, Receiver } from '../token';
+import { Logger } from '../util/logging';
 
 import { ExchangeableBearer } from './exchangeable';
 import { RenewableBearer } from './renewable';
@@ -24,6 +25,7 @@ export class FederatedCredentialsBearer extends Bearer {
       retryTimeoutExponent?: number;
       refreshRequestTimeoutMs?: number;
       serviceAccountId?: string | null; // required when passing reader
+      logger?: Logger;
     },
   ) {
     super();
@@ -58,7 +60,12 @@ export class FederatedCredentialsBearer extends Bearer {
 
     const maxRetries = opts?.maxRetries ?? 2;
 
-    this._exchangeable = new ExchangeableBearer(fc, opts?.sdk ?? null, maxRetries);
+    this._exchangeable = new ExchangeableBearer(
+      fc,
+      opts?.sdk ?? null,
+      maxRetries,
+      opts?.logger?.child('exchangeable'),
+    );
 
     const renewable = new RenewableBearer(this._exchangeable, {
       maxRetries,
@@ -67,6 +74,7 @@ export class FederatedCredentialsBearer extends Bearer {
       maxRetryTimeoutMs: opts?.maxRetryTimeoutMs,
       retryTimeoutExponent: opts?.retryTimeoutExponent,
       refreshRequestTimeoutMs: opts?.refreshRequestTimeoutMs,
+      logger: opts?.logger?.child('renewable'),
     });
 
     this._source = renewable;

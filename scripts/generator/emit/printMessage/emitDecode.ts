@@ -1,5 +1,6 @@
 import type { Message as TSDescriptorMessage } from '../../descriptors';
 import {
+  deprecationOptions,
   is64Bit,
   isPackableScalar,
   readerMethodFor,
@@ -19,14 +20,13 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
   lines.push(`    const message = createBase${m.tsName}();`);
   lines.push('    let writer: BinaryWriter | undefined = undefined;');
   // Message-level deprecation warning (decoders warn for deprecated message types)
-  const msgDep = m.descriptor.options && m.descriptor.options.deprecated ? true : false;
-  const msgDepLine = msgDep ? 'Deprecated message.' : undefined;
-  if (msgDepLine) {
+  const msgDepOpts = deprecationOptions(m.descriptor);
+  if (msgDepOpts) {
     const msgFull = m.fullQualifiedName().replace(/^\./, '');
     lines.push(`    if (!__deprecatedWarned.has(${JSON.stringify(msgFull)})) {`);
     lines.push(`      __deprecatedWarned.add(${JSON.stringify(msgFull)});`);
     lines.push(
-      `      console.warn(${JSON.stringify('[deprecated] Message ' + msgFull + ': ')} + ${JSON.stringify(msgDepLine)});`,
+      `      deprecatedWarn(${JSON.stringify(msgDepOpts?.description || '')}, "message", ${JSON.stringify(msgFull)}, ${JSON.stringify(msgDepOpts?.effectiveAt || undefined)});`,
     );
     lines.push('    }');
   }

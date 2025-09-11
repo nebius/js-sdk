@@ -1,8 +1,8 @@
 import { readFile } from 'fs/promises';
-import { resolve } from 'path';
 
 import type { AuthorizationOptions } from '../authorization/provider';
 import { Bearer, Receiver, Token } from '../token';
+import { resolveHomeDir } from '../util/path';
 
 class FileReceiver extends Receiver {
   constructor(private readonly filePath: string) {
@@ -13,8 +13,7 @@ class FileReceiver extends Receiver {
     _timeoutMs?: number,
     _options?: AuthorizationOptions | undefined,
   ): Promise<Token> {
-    const p = resolve(this.filePath.replace(/^~\//, `${process.env.HOME || ''}/`));
-    const content = (await readFile(p, 'utf8')).trim();
+    const content = (await readFile(this.filePath, 'utf8')).trim();
     if (content === '') throw new Error('empty token file provided');
     return new Token(content);
   }
@@ -28,7 +27,7 @@ export class FileBearer extends Bearer {
   private readonly filePath: string;
   constructor(filePath: string) {
     super();
-    this.filePath = filePath;
+    this.filePath = resolveHomeDir(filePath);
   }
 
   receiver(): Receiver {

@@ -1,7 +1,6 @@
-import util from 'node:util';
-
 import type { AuthorizationOptions } from './authorization/provider';
 import { TokenSanitizer } from './token_sanitizer';
+import { custom, customJson } from './util/logging';
 
 // A bearer token with optional expiration time
 export class Token {
@@ -13,8 +12,16 @@ export class Token {
     this._exp = expiration;
   }
 
-  [util.inspect.custom](): string {
+  [custom](): string {
     return this.toString();
+  }
+
+  [customJson](): object {
+    const sanitizer = TokenSanitizer.accessTokenSanitizer();
+    return {
+      token: sanitizer.sanitize(this._tok),
+      expires_at: this._exp?.toISOString() ?? null,
+    };
   }
 
   toString(): string {

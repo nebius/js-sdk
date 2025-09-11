@@ -2,6 +2,7 @@ import type { SDKInterface } from '../../sdk';
 import type { Reader as ServiceAccountReader } from '../service_account/service_account';
 import { ServiceAccount } from '../service_account/service_account';
 import { Bearer, NamedBearer, Receiver } from '../token';
+import { Logger } from '../util/logging';
 
 import { ExchangeableBearer } from './exchangeable';
 import { RenewableBearer } from './renewable';
@@ -22,6 +23,7 @@ export class ServiceAccountBearer extends Bearer {
       maxRetryTimeoutMs?: number;
       retryTimeoutExponent?: number;
       refreshRequestTimeoutMs?: number;
+      logger?: Logger;
     },
   ) {
     super();
@@ -67,7 +69,12 @@ export class ServiceAccountBearer extends Bearer {
 
     const maxRetries = opts?.maxRetries ?? 2;
 
-    this._exchangeable = new ExchangeableBearer(reader, opts?.sdk ?? null, maxRetries);
+    this._exchangeable = new ExchangeableBearer(
+      reader,
+      opts?.sdk ?? null,
+      maxRetries,
+      opts?.logger?.child('exchangeable'),
+    );
 
     const renewable = new RenewableBearer(this._exchangeable, {
       maxRetries,
@@ -76,6 +83,7 @@ export class ServiceAccountBearer extends Bearer {
       maxRetryTimeoutMs: opts?.maxRetryTimeoutMs,
       retryTimeoutExponent: opts?.retryTimeoutExponent,
       refreshRequestTimeoutMs: opts?.refreshRequestTimeoutMs,
+      logger: opts?.logger?.child('renewable'),
     });
 
     this._source = new NamedBearer(renewable, `service-account/${saId}/${publicKeyId}`);

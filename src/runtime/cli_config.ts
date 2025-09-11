@@ -1,5 +1,4 @@
 import { existsSync, readFileSync } from 'fs';
-import { resolve } from 'path';
 
 import { parse as parseYAML } from 'yaml';
 
@@ -17,13 +16,11 @@ import { FederationAccountBearer } from './token/federation_account';
 import { FileBearer } from './token/file';
 import { ServiceAccountBearer } from './token/service_account';
 import { EnvBearer, NoTokenInEnvError } from './token/static';
+import { resolveLogger, Handler as SDKHandler, Logger as SDKLogger } from './util/logging';
+import { resolveHomeDir } from './util/path';
 
 export class ConfigError extends Error {}
 export class NoParentIdError extends ConfigError {}
-
-function expandHome(p: string): string {
-  return resolve(p.replace(/^~\//, `${process.env.HOME || ''}/`));
-}
 
 // (no-op) helper types removed
 
@@ -36,6 +33,8 @@ export interface ConfigOptions {
   noEnv?: boolean;
   noParentId?: boolean;
   maxRetries?: number;
+  // optional logger configuration for config reader
+  logger?: SDKLogger | SDKHandler | string | number;
 }
 
 export class Config implements ConfigReaderLike {
@@ -46,6 +45,7 @@ export class Config implements ConfigReaderLike {
   private readonly _configFile: string;
   private _endpoint: string | undefined;
   private readonly _maxRetries: number;
+  private _logger: SDKLogger;
   private _profile!: Record<string, unknown>;
 
   constructor(options: ConfigOptions = {}) {
@@ -60,27 +60,38 @@ export class Config implements ConfigReaderLike {
       maxRetries = 2,
     } = options;
 
+    // resolve logger if provided
+    this._logger = resolveLogger(options.logger, 'nebius.config');
+
     this._clientId = clientId;
     this._profileName = profile ?? null;
 
     if (!noEnv) {
       try {
         this._priorityBearer = new EnvBearer(tokenEnv);
+        this._logger.debug(`Using token from env`, { tokenEnv });
       } catch (e) {
         if (!(e instanceof NoTokenInEnvError)) throw e;
       }
       if (this._profileName == null) {
         const fromEnv = process.env[profileEnv];
+        if (fromEnv !== undefined) {
+          this._logger.debug(`Using profile from env`, { profileEnv, profile: fromEnv });
+        }
         this._profileName = fromEnv && fromEnv.trim() !== '' ? fromEnv : null;
       }
     }
 
     this._noParentId = noParentId;
-    this._configFile = expandHome(configFile);
+    this._configFile = resolveHomeDir(configFile);
     this._endpoint = undefined;
     this._maxRetries = maxRetries;
 
     this._getProfile();
+  }
+
+  logger(): SDKLogger | undefined {
+    return this._logger;
   }
 
   parentId(): string | undefined {
@@ -100,14 +111,22 @@ export class Config implements ConfigReaderLike {
     return pid;
   }
 
+  profileName(): string | undefined {
+    return this._profileName ?? undefined;
+  }
+
   endpoint(): string | undefined {
     return this._endpoint;
   }
 
   getCredentials(opts: GetCredentialsOptions = {}): Credentials {
+    const logger = opts.logger ?? this._logger;
     if (this._priorityBearer) return this._priorityBearer;
 
     if ('token-file' in this._profile) {
+      logger.debug('Using token-file auth from the profile.', {
+        tokenFile: this._profile['token-file'],
+      });
       const tf = this._profile['token-file'];
       if (typeof tf !== 'string') {
         throw new ConfigError(`Token file should be a string, got ${typeof tf}.`);
@@ -149,14 +168,15 @@ export class Config implements ConfigReaderLike {
         ca = sdkMaybe.getTlsRootCAs();
       }
 
-      // console.debug(
-      //   `Creating FederationAccountBearer with profile ${profileName}, client_id`+
-      //   ` ${this._clientId}, federation_url ${endpoint}, federation_id ${fedId},`+
-      //   ` writer ${!!writer}, no_browser_open ${!!noBrowserOpen}.`,
-      // );
       if (!this._clientId) {
         throw new ConfigError('Client ID is required for FederationAccountBearer.');
       }
+      logger.debug('Using federation auth from the profile.', {
+        federationEndpoint: endpoint,
+        federationId: fedId,
+        profile: profileName,
+        noBrowserOpen: !!noBrowserOpen,
+      });
 
       return new FederationAccountBearer(profileName, this._clientId, endpoint, fedId, {
         writer,
@@ -164,6 +184,7 @@ export class Config implements ConfigReaderLike {
         timeoutMs,
         maxRetries: this._maxRetries,
         ca,
+        logger: logger?.sibling('federation_account'),
       });
     }
 
@@ -190,10 +211,15 @@ export class Config implements ConfigReaderLike {
         if (typeof fpath !== 'string') {
           throw new ConfigError('federated-subject-credentials-file-path should be a string');
         }
+        logger.debug('Using federated-subject-credentials-file-path auth from the profile.', {
+          federatedSubjectCredentialsFilePath: fpath,
+          serviceAccountId: saId,
+        });
         return new FederatedCredentialsBearer(fpath, {
           serviceAccountId: saId,
           sdk: opts.sdk ?? null,
           maxRetries: this._maxRetries,
+          logger: logger?.sibling('federated_credentials'),
         });
       }
 
@@ -203,9 +229,13 @@ export class Config implements ConfigReaderLike {
         if (typeof cpath !== 'string') {
           throw new ConfigError('service-account-credentials-file-path should be a string');
         }
+        logger.debug('Using service-account-credentials-file-path auth from the profile.', {
+          serviceAccountCredentialsFilePath: cpath,
+        });
         return new ServiceAccountBearer(new CredentialsFileReader(cpath), {
           sdk: opts.sdk ?? null,
           maxRetries: this._maxRetries,
+          logger: logger?.sibling('service_account'),
         });
       }
 
@@ -227,11 +257,16 @@ export class Config implements ConfigReaderLike {
         if (typeof privateKeyPem !== 'string') {
           throw new ConfigError(`Private key should be a string, got ${typeof privateKeyPem}.`);
         }
+        logger.debug('Using inline private-key auth from the profile.', {
+          serviceAccountId: saId,
+          publicKeyId: pkId,
+        });
         return new ServiceAccountBearer(saId, {
           publicKeyId: pkId,
           privateKeyPem,
           sdk: opts.sdk ?? null,
           maxRetries: this._maxRetries,
+          logger: logger?.sibling('service_account'),
         });
       }
 
@@ -241,9 +276,15 @@ export class Config implements ConfigReaderLike {
         if (typeof ppath !== 'string') {
           throw new ConfigError('private-key-file-path should be a string');
         }
+        logger.debug('Using private-key-file-path auth from the profile.', {
+          privateKeyFilePath: ppath,
+          serviceAccountId: saId,
+          publicKeyId: pkId,
+        });
         return new ServiceAccountBearer(new PkFileReader(ppath, pkId, saId), {
           sdk: opts.sdk ?? null,
           maxRetries: this._maxRetries,
+          logger: logger?.sibling('service_account'),
         });
       }
 
@@ -297,6 +338,9 @@ export class Config implements ConfigReaderLike {
         }
       } else {
         this._profileName = String(def as string);
+        this._logger.debug('Using default profile from config file.', {
+          profile: this._profileName,
+        });
       }
 
       if (this._profileName == null) {
@@ -304,6 +348,8 @@ export class Config implements ConfigReaderLike {
           'No profile selected. Either set the profile in the config setup, set the env var NEBIUS_PROFILE or execute `nebius profile activate`.',
         );
       }
+    } else {
+      this._logger.debug('Using selected profile.', { profile: this._profileName });
     }
 
     const profile = this._profileName;

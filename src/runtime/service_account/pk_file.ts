@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs';
-import { resolve } from 'path';
+
+import { resolveHomeDir } from '../util/path';
 
 import type { Reader } from './service_account';
 import { ServiceAccount } from './service_account';
@@ -12,7 +13,7 @@ export class PkFileReader implements Reader {
   private readonly said: string;
 
   constructor(filename: string, publicKeyId: string, serviceAccountId: string) {
-    const path = resolve(filename.replace(/^~\//, `${process.env.HOME || ''}/`));
+    const path = resolveHomeDir(filename);
     this.pem = readFileSync(path, 'utf8');
     this.kid = publicKeyId;
     this.said = serviceAccountId;

@@ -749,9 +749,9 @@ default: p1
   }, 10000);
 
   test('env token flow -> Authorization on compute call (no IAM)', async () => {
-  const envToken = 'env-abc-123';
-  const oldEnv = process.env.NEBIUS_IAM_TOKEN;
-  process.env.NEBIUS_IAM_TOKEN = envToken;
+    const envToken = 'env-abc-123';
+    const oldEnv = process.env.NEBIUS_IAM_TOKEN;
+    process.env.NEBIUS_IAM_TOKEN = envToken;
     try {
       const cfgPath = join(tmpDir, 'config-env.yaml');
       const configYAML = `
@@ -790,8 +790,8 @@ default: p1
         },
       );
     } finally {
-  if (oldEnv === undefined) delete (process.env as any).NEBIUS_IAM_TOKEN;
-  else process.env.NEBIUS_IAM_TOKEN = oldEnv;
+      if (oldEnv === undefined) delete (process.env as any).NEBIUS_IAM_TOKEN;
+      else process.env.NEBIUS_IAM_TOKEN = oldEnv;
     }
   }, 8000);
 
@@ -995,7 +995,6 @@ default: p1
     );
   }, 15000);
 
-  
   test('federation HTTP token endpoint error (unit-level) -> clear error', async () => {
     // Minimal unit-like check: directly call getToken against a local server returning 500
     const httpServer = http.createServer((req, res) => {

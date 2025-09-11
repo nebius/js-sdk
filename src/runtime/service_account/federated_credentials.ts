@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 
 import { ExchangeTokenRequest } from '../../generated/nebius/iam/v1/index';
+import { resolveHomeDir } from '../util/path';
 
 import type { TokenRequester } from './service_account';
 
@@ -41,6 +42,7 @@ export class FileFederatedCredentials implements FederatedCredentialsReader {
   constructor(public readonly filePath: string) {}
 
   credentials(): string {
-    return fs.readFileSync(this.filePath, { encoding: 'utf8' }).trim();
+    const resolvedPath = resolveHomeDir(this.filePath);
+    return fs.readFileSync(resolvedPath, { encoding: 'utf8' }).trim();
   }
 }

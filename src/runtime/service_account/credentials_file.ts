@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs';
-import { resolve } from 'path';
+
+import { resolveHomeDir } from '../util/path';
 
 import type { Reader } from './service_account';
 import { ServiceAccount } from './service_account';
@@ -15,10 +16,6 @@ interface SubjectCredentials {
 
 interface ServiceAccountCredentialsFile {
   'subject-credentials': SubjectCredentials;
-}
-
-function expandHome(p: string): string {
-  return resolve(p.replace(/^~\//, `${process.env.HOME || ''}/`));
 }
 
 function validateSubjectCredentials(sc: SubjectCredentials) {
@@ -41,7 +38,7 @@ export class CredentialsFileReader implements Reader {
   private readonly pem: string;
 
   constructor(filename: string) {
-    const path = expandHome(filename);
+    const path = resolveHomeDir(filename);
     const raw = readFileSync(path, 'utf8');
     const parsed = JSON.parse(raw) as ServiceAccountCredentialsFile;
     const sc = parsed['subject-credentials'];

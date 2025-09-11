@@ -1,4 +1,5 @@
 import { Bearer, Receiver } from '../token';
+import { Logger } from '../util/logging';
 
 import { FederationBearer as FederationAuthBearer } from './federation_bearer/index';
 import { AsyncRenewableBearer } from './file_cache/async_renewable_bearer';
@@ -13,6 +14,7 @@ export class FederationAccountBearer extends Bearer {
     federationId: string,
     opts?: {
       writer?: (s: string) => void;
+      logger?: Logger;
       noBrowserOpen?: boolean;
       timeoutMs?: number; // refresh request timeout
       maxRetries?: number;
@@ -37,6 +39,7 @@ export class FederationAccountBearer extends Bearer {
       opts?.writer,
       opts?.noBrowserOpen ?? false,
       opts?.ca instanceof Buffer ? opts.ca : undefined,
+      opts?.logger?.child('federation_auth'),
     );
 
     const renewable = new AsyncRenewableBearer(auth, {
@@ -50,6 +53,7 @@ export class FederationAccountBearer extends Bearer {
       refreshRequestTimeoutMs: opts?.timeoutMs ?? 5 * 60 * 1000,
       fileCacheThrottleMs: opts?.fileCacheThrottleMs ?? 5 * 60 * 1000,
       cacheFilePath: opts?.cacheFilePath,
+      logger: opts?.logger?.child('renewable'),
     });
 
     this._source = renewable;

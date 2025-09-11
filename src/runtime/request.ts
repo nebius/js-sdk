@@ -10,6 +10,7 @@ import { SDKInterface } from '../sdk';
 
 import { NebiusGrpcError } from './error';
 import { resetMaskFromMessage } from './resetmask';
+import { Logger } from './util/logging';
 
 export interface RetryOptions {
   PerRetryTimeout?: number; // ms
@@ -85,6 +86,7 @@ export class Request<TReq, TRes> {
   private _resolveStatus!: (st: GrpcStatus) => void;
   private _resolveReqId!: (id: string) => void;
   private _resolveTraceId!: (id: string) => void;
+  private logger: Logger;
 
   constructor(
     private sdk: SDKInterface,
@@ -100,6 +102,7 @@ export class Request<TReq, TRes> {
     const path = `/${this.serviceName}/${this.methodName}`;
     const client = this.sdk.getClientByAddress(this.addr);
     const metadata = this.requestMetadata ?? new Metadata();
+    this.logger = this.sdk.logger.child('request').child(this.serviceName).child(this.methodName);
 
     // Normalize numeric overall deadline (absolute ms since epoch) into a Date
     // and work on a shallow copy so we don't mutate caller's object.
@@ -179,6 +182,13 @@ export class Request<TReq, TRes> {
           deadline: perDeadline,
         } as Partial<CallOptions>;
 
+        this.logger.debug('Request attempt starting', {
+          attempt,
+          maxRetries,
+          perRetryMs: perRetry,
+          perDeadline,
+        });
+
         const call = client.makeUnaryRequest(
           path,
           this.serializer,
@@ -196,9 +206,31 @@ export class Request<TReq, TRes> {
               }
               // Determine retriable
               const retriable = this._isRetriableError(wrapped);
+              this.logger.error('Request attempt failed', {
+                attempt,
+                maxRetries,
+                err: wrapped,
+                isRetriable: retriable,
+              });
+
               if (retriable && attempt < maxRetries) {
+                // debug log already emitted, perform retry
                 runAttempt(attempt + 1);
                 return;
+              }
+
+              if (retriable) {
+                this.logger.error('Request retries exhausted, final failure', {
+                  attempt,
+                  maxRetries,
+                  err: wrapped,
+                });
+              } else {
+                this.logger.error('Request failed (non-retriable)', {
+                  attempt,
+                  maxRetries,
+                  err: wrapped,
+                });
               }
               // Resolve status even on error
               const st =

@@ -1,14 +1,16 @@
-import type { Metadata, CallOptions } from '@grpc/grpc-js';
+import type { CallOptions, Metadata } from '@grpc/grpc-js';
 import { Metadata as GrpcMetadata } from '@grpc/grpc-js';
 
 import {
-  TokenExchangeService as ExchangeSvc,
   CreateTokenResponse,
+  TokenExchangeService as ExchangeSvc,
 } from '../../generated/nebius/iam/v1/index';
 import type { SDKInterface } from '../../sdk';
 import type { AuthorizationOptions } from '../authorization/provider';
 import type { TokenRequester } from '../service_account/service_account';
 import { Bearer, Receiver, Token } from '../token';
+import { TokenSanitizer } from '../token_sanitizer';
+import { Logger } from '../util/logging';
 
 export class UnsupportedResponseError extends Error {
   constructor(expected: string, got: unknown) {
@@ -30,6 +32,7 @@ class ExchangeableReceiver extends Receiver {
     private requester: TokenRequester,
     private svcOrPromise: ExchangeSvc | Promise<ExchangeSvc>,
     private defaultMaxRetries: number = 2,
+    private readonly logger?: Logger,
   ) {
     super();
   }
@@ -75,9 +78,10 @@ class ExchangeableReceiver extends Receiver {
         ? Number(res.expiresIn.toString())
         : Number(res.expiresIn ?? 0);
 
-    // Optional debug: sanitized token
-
-    // console.debug(`token fetched: ${sanitizer.sanitize(res.accessToken)}, expires in: ${expSec} seconds.`);
+    this.logger?.debug('token fetched', {
+      expires_in: expSec,
+      access_token: TokenSanitizer.accessTokenSanitizer().sanitize(res.accessToken),
+    });
 
     const expiration = isFinite(expSec) && expSec > 0 ? new Date(now + expSec * 1000) : undefined;
     return new Token(res.accessToken, expiration);
@@ -97,6 +101,7 @@ export class ExchangeableBearer extends Bearer {
     private readonly requester: TokenRequester,
     sdk: SDKInterface | Promise<SDKInterface> | null,
     private readonly maxRetries: number = 2,
+    private readonly logger?: Logger,
   ) {
     super();
     this.setSDK(sdk);
@@ -121,6 +126,6 @@ export class ExchangeableBearer extends Bearer {
 
   receiver(): Receiver {
     if (!this.svc) throw new Error('SDK is not set for the bearer.');
-    return new ExchangeableReceiver(this.requester, this.svc, this.maxRetries);
+    return new ExchangeableReceiver(this.requester, this.svc, this.maxRetries, this.logger);
   }
 }

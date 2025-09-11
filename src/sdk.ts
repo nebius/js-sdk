@@ -32,11 +32,13 @@ import { FederationAccountBearer } from './runtime/token/federation_account';
 import { FileBearer } from './runtime/token/file';
 import { ServiceAccountBearer } from './runtime/token/service_account';
 import { StaticBearer } from './runtime/token/static';
+import { Handler as SDKHandler, Logger as SDKLogger, resolveLogger } from './runtime/util/logging';
 
 export interface SDKInterface {
   getClientByAddress(address: string): Client;
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string;
   parentId(): string | undefined;
+  logger: SDKLogger;
 }
 
 // Rich credentials union similar to Python Channel
@@ -88,6 +90,8 @@ export interface SDKOptions {
   federationInvitationNoBrowserOpen?: boolean;
   federationInvitationTimeoutMs?: number;
   userAgentPrefix?: string; // Optional user agent prefix for requests
+  // Logger options: can be a Logger instance, a Handler, or a level (string/number)
+  logger?: SDKLogger | SDKHandler | string | number;
   // Per-address overrides (by fully resolved address like "compute.localhost:1234")
   perAddress?: Record<
     string,
@@ -107,6 +111,7 @@ export class SDK implements SDKInterface {
   private _parentId: string | undefined;
   private _authorizationProvider?: AuthorizationProvider;
   private _creds: ChannelCredentials;
+  private _logger: SDKLogger;
   private _clientOptions?: Partial<ClientOptions>;
   private _clients: Map<string, Client> = new Map();
   private _extraInterceptors: Interceptor[] = [];
@@ -124,10 +129,24 @@ export class SDK implements SDKInterface {
   private _userAgent: string;
 
   constructor(options?: SDKOptions) {
+    this._logger = resolveLogger(options?.logger, 'nebius.sdk');
+    this._logger.debug('Initializing Nebius SDK');
     // Resolve domain
     let domain = options?.domain;
     if (!domain) {
       const fromCfg = options?.configReader?.endpoint();
+      if (options?.configReader && !fromCfg) {
+        this._logger.warn('Missing profile endpoint, using default', {
+          endpoint: DEFAULT_DOMAIN,
+          profile: options.configReader.profileName(),
+        });
+      }
+      if (fromCfg) {
+        this._logger.debug('Using profile endpoint from config', {
+          endpoint: fromCfg,
+          profile: options?.configReader?.profileName(),
+        });
+      }
       domain = fromCfg && fromCfg.trim() !== '' ? fromCfg : undefined;
     }
     if (!domain || domain.trim() === '') {
@@ -195,6 +214,10 @@ export class SDK implements SDKInterface {
     this._initAuthorization(options);
   }
 
+  get logger(): SDKLogger {
+    return this._logger;
+  }
+
   private _initAuthorization(options?: SDKOptions) {
     if (!options) return;
 
@@ -204,7 +227,7 @@ export class SDK implements SDKInterface {
       if (prov) this._authorizationProvider = prov;
       // If both provided, ignore explicit provider (closer to Python priority) and optionally warn
       if (options.authorizationProvider) {
-        console.warn(
+        this._logger.warn(
           '[SDK] Both credentials and authorizationProvider provided; ignoring authorizationProvider in favor of credentials.',
         );
       }
@@ -226,6 +249,7 @@ export class SDK implements SDKInterface {
           noBrowserOpen: !!options.federationInvitationNoBrowserOpen,
           timeoutMs: options.federationInvitationTimeoutMs,
           sdk: this,
+          logger: this._logger.child('config_reader'),
         });
         const prov2 = this._normalizeCredentials(cred);
         if (prov2) this._authorizationProvider = prov2;
@@ -269,6 +293,7 @@ export class SDK implements SDKInterface {
             noBrowserOpen: !!f.noBrowserOpen,
             timeoutMs: f.timeoutMs,
             ca: this._systemOrCustomRoots,
+            logger: this._logger.child('federation_account'),
           },
         ),
       );
@@ -295,7 +320,10 @@ export class SDK implements SDKInterface {
   ): ServiceAccountBearer | undefined {
     try {
       if (this._isSAReader(sa) || this._isSA(sa)) {
-        return new ServiceAccountBearer(sa, { sdk: this });
+        return new ServiceAccountBearer(sa, {
+          sdk: this,
+          logger: this._logger.child('service_account'),
+        });
       }
       if (this._isSAParams(sa)) {
         const p = sa as { serviceAccountId: string; publicKeyId: string; privateKeyPem: string };
@@ -303,6 +331,7 @@ export class SDK implements SDKInterface {
           publicKeyId: p.publicKeyId,
           privateKeyPem: p.privateKeyPem,
           sdk: this,
+          logger: this._logger.child('service_account'),
         });
       }
       return undefined;
