@@ -1,10 +1,13 @@
+import { inspect } from 'util';
+
 import { Bearer, Receiver } from '../token';
-import { Logger } from '../util/logging';
+import { custom, customJson, inspectJson, Logger } from '../util/logging';
 
 import { FederationBearer as FederationAuthBearer } from './federation_bearer/index';
 import { AsyncRenewableBearer } from './file_cache/async_renewable_bearer';
 
 export class FederationAccountBearer extends Bearer {
+  public readonly $type = 'nebius.sdk.FederationAccountBearer';
   private _source: AsyncRenewableBearer;
 
   constructor(
@@ -57,6 +60,15 @@ export class FederationAccountBearer extends Bearer {
     });
 
     this._source = renewable;
+  }
+  [custom](): string {
+    return `FederationAccountBearer(source=${inspect(this._source)})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: 'FederationAccountBearer',
+      source: inspectJson(this._source),
+    };
   }
 
   get wrapped(): Bearer | undefined {

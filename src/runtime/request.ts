@@ -10,7 +10,7 @@ import { SDKInterface } from '../sdk';
 
 import { NebiusGrpcError } from './error';
 import { resetMaskFromMessage } from './resetmask';
-import { Logger } from './util/logging';
+import { custom, customJson, inspectJson, Logger } from './util/logging';
 
 export interface RetryOptions {
   PerRetryTimeout?: number; // ms
@@ -73,6 +73,7 @@ const DEFAULT_RETRY_COUNT = 3;
 const DEFAULT_PER_RETRY_TIMEOUT = DEFAULT_TIMEOUT / DEFAULT_RETRY_COUNT;
 
 export class Request<TReq, TRes> {
+  public readonly $type: 'nebius.sdk.Request' = 'nebius.sdk.Request';
   // Promises
   readonly result: Promise<TRes>;
   readonly initialMetadata: Promise<Metadata>;
@@ -88,6 +89,10 @@ export class Request<TReq, TRes> {
   private _resolveTraceId!: (id: string) => void;
   private logger: Logger;
 
+  private _maybeReqId: string | undefined;
+  private _maybeTraceId: string | undefined;
+  private _maybeStatus: GrpcStatus | undefined;
+
   constructor(
     private sdk: SDKInterface,
     private serviceName: string,
@@ -102,7 +107,13 @@ export class Request<TReq, TRes> {
     const path = `/${this.serviceName}/${this.methodName}`;
     const client = this.sdk.getClientByAddress(this.addr);
     const metadata = this.requestMetadata ?? new Metadata();
-    this.logger = this.sdk.logger.child('request').child(this.serviceName).child(this.methodName);
+    this.logger = this.sdk.logger.child('request', {
+      service: this.serviceName,
+      method: this.methodName,
+      address: this.addr,
+      started_at: new Date().toISOString(),
+    });
+    this.logger.trace('Request initialized');
 
     // Normalize numeric overall deadline (absolute ms since epoch) into a Date
     // and work on a shallow copy so we don't mutate caller's object.
@@ -120,42 +131,65 @@ export class Request<TReq, TRes> {
     this.status = new Promise<GrpcStatus>((res) => (this._resolveStatus = res));
     this.requestId = new Promise<string>((res) => (this._resolveReqId = res));
     this.traceId = new Promise<string>((res) => (this._resolveTraceId = res));
+    this.status = this.status.then((st) => {
+      this._maybeStatus = st || this._maybeStatus;
+      if (st) {
+        this.logger = this.logger.withFields({
+          status: this._maybeStatus,
+        });
+        this.logger.debug('Request status resolved');
+      }
+      return st;
+    });
 
     const maxRetries = Math.max(0, baseOptions?.RetryCount ?? DEFAULT_RETRY_COUNT);
+    this.logger = this.logger.withFields({ max_retries: maxRetries });
 
     // Generate idempotency key once per logical request and reuse across retries
     const useIdemp = shouldUseIdempotencyKey(methodName);
     const idempotencyKey = useIdemp ? generateIdempotencyKey() : undefined;
+    if (useIdemp) {
+      this.logger = this.logger.withFields({ idempotency_key: idempotencyKey });
+      this.logger.trace('Using idempotency key for this request');
+    }
+
     let overallMs = DEFAULT_TIMEOUT;
     if (baseOptions?.deadline !== undefined) {
       overallMs =
         typeof baseOptions.deadline === 'number'
           ? baseOptions.deadline
           : baseOptions.deadline.getTime();
+      this.logger.trace('Using caller-provided overall deadline', { overall_ms: overallMs });
+    } else {
+      this.logger.trace('Using default overall deadline', { overall_ms: overallMs });
     }
     let perRetry = DEFAULT_PER_RETRY_TIMEOUT;
     if (baseOptions?.PerRetryTimeout !== undefined) {
       perRetry = baseOptions.PerRetryTimeout;
+      this.logger.trace('Using caller-provided per-retry timeout', { per_retry_ms: perRetry });
+    } else {
+      this.logger.trace('Using default per-retry timeout', { per_retry_ms: perRetry });
     }
     const overallDeadline = new Date(Date.now() + overallMs);
+    this.logger = this.logger.withFields({
+      overall_timeout_ms: overallMs,
+      per_retry_timeout_ms: perRetry,
+      overall_deadline: overallDeadline,
+    });
 
     // Possibly inject parentId into request
-    try {
-      injectParentIdIfNeeded(methodName, sdk?.parentId(), this.request);
-    } catch {
-      /* ignore injection failures */
-    }
+    injectParentIdIfNeeded(methodName, sdk?.parentId(), this.request, this.logger);
 
     // Ensure reset mask header for update methods if absent
     const isUpdate = (methodName || '').toLowerCase() === 'update';
     if (isUpdate) {
+      this.logger.trace('Detected update method, inserting reset mask if needed');
       const existing = metadata.get(RESET_MASK_HEADER);
       if (!existing || existing.length === 0) {
-        try {
-          const rm = resetMaskFromMessage(this.request);
-          if (rm) metadata.set(RESET_MASK_HEADER, rm.marshal());
-        } catch {
-          /* ignore */
+        const rm = resetMaskFromMessage(this.request);
+        if (rm) {
+          metadata.set(RESET_MASK_HEADER, rm.marshal());
+          this.logger.trace('Inserted reset mask into metadata', { reset_mask: rm });
         }
       }
     }
@@ -165,12 +199,18 @@ export class Request<TReq, TRes> {
       const existing = metadata.get(IDEMPOTENCY_HEADER);
       if (!existing || existing.length === 0) {
         metadata.set(IDEMPOTENCY_HEADER, idempotencyKey);
+        this.logger.trace('Inserted idempotency key into metadata');
+      } else {
+        this.logger = this.logger.withFields({ idempotency_key: existing });
+        this.logger.trace('Idempotency key already set in metadata');
       }
     }
 
     // Start the request flow with retry
     this.result = new Promise<TRes>((resolve, reject) => {
       const runAttempt = (attempt: number) => {
+        let logger = this.logger.withFields({ attempt });
+        logger.trace('Starting request attempt');
         // Compute a per-retry deadline relative to now, but clip it to the
         // overall deadline if one was provided and is earlier.
         let perDeadline = new Date(Date.now() + perRetry);
@@ -181,13 +221,13 @@ export class Request<TReq, TRes> {
           ...(baseOptions ?? {}),
           deadline: perDeadline,
         } as Partial<CallOptions>;
-
-        this.logger.debug('Request attempt starting', {
-          attempt,
+        logger = logger.withFields({
+          per_retry_deadline: perDeadline,
           maxRetries,
           perRetryMs: perRetry,
-          perDeadline,
         });
+
+        logger.debug('Request attempt starting');
 
         const call = client.makeUnaryRequest(
           path,
@@ -198,6 +238,7 @@ export class Request<TReq, TRes> {
           deadlineOpt,
           (err, resp) => {
             if (err) {
+              logger.trace('Request attempt returned error', { err });
               const wrapped = err as NebiusGrpcError;
               // Metadata-derived requestId/traceId if any
               if (wrapped?.metadata) {
@@ -206,32 +247,22 @@ export class Request<TReq, TRes> {
               }
               // Determine retriable
               const retriable = this._isRetriableError(wrapped);
-              this.logger.error('Request attempt failed', {
-                attempt,
-                maxRetries,
-                err: wrapped,
-                isRetriable: retriable,
-              });
+
+              const errLogger = logger.withFields({ err: wrapped, is_retriable: retriable });
+              errLogger.error('Request attempt failed');
 
               if (retriable && attempt < maxRetries) {
-                // debug log already emitted, perform retry
+                errLogger.trace('Retrying request attempt after retriable error');
                 runAttempt(attempt + 1);
                 return;
               }
 
               if (retriable) {
-                this.logger.error('Request retries exhausted, final failure', {
-                  attempt,
-                  maxRetries,
-                  err: wrapped,
-                });
+                errLogger.error('Request retries exhausted, final failure');
               } else {
-                this.logger.error('Request failed (non-retriable)', {
-                  attempt,
-                  maxRetries,
-                  err: wrapped,
-                });
+                errLogger.error('Request failed (non-retriable)');
               }
+              errLogger.trace('Final request error, rejecting');
               // Resolve status even on error
               const st =
                 decodeStatusFromError(err) ??
@@ -244,6 +275,7 @@ export class Request<TReq, TRes> {
               reject(wrapped);
               return;
             } else if (!resp) {
+              logger.trace('Request attempt returned neither error nor response, failing');
               // Handle missing response
               const st = GrpcStatus.create({
                 code: StatusCode.UNKNOWN.code,
@@ -254,16 +286,20 @@ export class Request<TReq, TRes> {
               reject(Error('Neither response, nor error received from server'));
               return;
             }
+            logger.debug('Request attempt succeeded');
             resolve(resp);
           },
         );
 
+        logger.trace('Request attempt sent, attaching listeners');
         // Attach event listeners for metadata and status
         call.on('metadata', (md2: Metadata) => {
+          logger.trace('Received initial metadata');
           this._resolveInitialMd(md2);
           this._safeResolveIdsFromMd(md2);
         });
         call.on('status', (s) => {
+          logger.trace('Received status event', { status: s });
           const st = decodeStatusFromStatusEvent(s);
           this._resolveStatus(st);
           const md: Metadata | undefined = s?.metadata;
@@ -276,11 +312,43 @@ export class Request<TReq, TRes> {
     });
   }
 
+  [custom](): string {
+    let ret = `Request(${this.serviceName}/${this.methodName}@${this.addr}`;
+    if (this._maybeReqId) ret += ` requestId=${this._maybeReqId}`;
+    if (this._maybeTraceId) ret += ` traceId=${this._maybeTraceId}`;
+    if (this._maybeStatus) ret += ` status=${this._maybeStatus.code}`;
+    return ret + ')';
+  }
+  [customJson](): Record<string, unknown> {
+    const base: Record<string, unknown> = {
+      service: this.serviceName,
+      method: this.methodName,
+      address: this.addr,
+    };
+    if (this._maybeReqId) base.requestId = this._maybeReqId;
+    if (this._maybeTraceId) base.traceId = this._maybeTraceId;
+    if (this._maybeStatus) base.status = inspectJson(this._maybeStatus);
+    return base;
+  }
+
   private _safeResolveIdsFromMd(md?: Metadata) {
     const reqId = mdGetString(md, 'x-request-id') || '';
     const traceId = mdGetString(md, 'x-trace-id') || '';
-    if (reqId) this._resolveReqId(reqId);
-    if (traceId) this._resolveTraceId(traceId);
+    if (reqId) {
+      this._maybeReqId = reqId;
+      this._resolveReqId(reqId);
+    }
+    if (traceId) {
+      this._maybeTraceId = traceId;
+      this._resolveTraceId(traceId);
+    }
+    if (reqId || traceId) {
+      this.logger = this.logger.withFields({
+        requestId: this._maybeReqId,
+        traceId: this._maybeTraceId,
+      });
+      this.logger.debug('Resolved request/trace IDs from metadata');
+    }
   }
 
   private _isRetriableError(err: NebiusGrpcError): boolean {
@@ -296,13 +364,17 @@ export class Request<TReq, TRes> {
         'EHOSTUNREACH',
         'EPIPE',
       ]);
-      if (transientErrnos.has(sysCode)) return true;
+      if (transientErrnos.has(sysCode)) {
+        this.logger.trace('Error is a transient system error', { sys_code: sysCode });
+        return true;
+      }
     }
 
     // gRPC codes
     const grpcCode: number | undefined =
       typeof sysCode === 'number' ? (sysCode as number) : (err?.code as number | undefined);
     if (grpcCode !== undefined && DefaultRetriableCodes.includes(StatusCode.fromNumber(grpcCode))) {
+      this.logger.trace('Error has retriable gRPC status code', { grpc_code: grpcCode });
       return true;
     }
 
@@ -311,7 +383,10 @@ export class Request<TReq, TRes> {
       (err?.serviceErrors as NebiusServiceError[]) || undefined;
     if (Array.isArray(seList)) {
       for (const se of seList) {
-        if (se.retryType === ServiceError_RetryType.CALL) return true;
+        if (se.retryType === ServiceError_RetryType.CALL) {
+          this.logger.trace('Error has retriable service error', { service_error: se });
+          return true;
+        }
       }
     }
     return false;
@@ -387,12 +462,21 @@ function injectParentIdIfNeeded(
   profileParentId: string | undefined,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   req: any,
+  logger: Logger,
 ) {
-  if (!profileParentId || !req || typeof req !== 'object') return;
+  if (!profileParentId) {
+    logger.trace('No profile parentId available, skipping injection');
+    return;
+  }
+  if (!req || typeof req !== 'object') {
+    logger.trace('Request is not an object, skipping parentId injection');
+    return;
+  }
   const m = (methodName || '').toLowerCase();
   if (m === 'list' || m === 'getbyname') {
     if (Object.prototype.hasOwnProperty.call(req, 'parentId')) {
       if (req.parentId === '' || req.parentId === undefined || req.parentId === null) {
+        logger.trace('List/GetByName request missing parentId, injecting from profile');
         req.parentId = profileParentId;
       }
     }
@@ -402,8 +486,11 @@ function injectParentIdIfNeeded(
     const md = req.metadata;
     if (md && typeof md === 'object' && Object.prototype.hasOwnProperty.call(md, 'parentId')) {
       if (md.parentId === '' || md.parentId === undefined || md.parentId === null) {
+        logger.trace('Request with metadata missing parentId, injecting from profile');
         md.parentId = profileParentId;
       }
     }
+  } else {
+    logger.trace('Update method, skipping parentId injection');
   }
 }

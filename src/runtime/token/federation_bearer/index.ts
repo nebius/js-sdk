@@ -6,6 +6,7 @@ import { Logger } from '../../util/logging';
 import { authorize } from './auth';
 
 class FederationReceiver extends Receiver {
+  public readonly $type = 'nebius.sdk.FederationReceiver';
   constructor(
     private readonly clientId: string,
     private readonly federationEndpoint: string,
@@ -56,6 +57,7 @@ class FederationReceiver extends Receiver {
 }
 
 export class FederationBearer extends Bearer {
+  public readonly $type = 'nebius.sdk.FederationBearer';
   constructor(
     private readonly profileName: string,
     private readonly clientId: string,

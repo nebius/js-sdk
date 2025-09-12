@@ -1,7 +1,9 @@
+import { inspect } from 'util';
+
 import type { AuthorizationOptions } from '../../authorization/provider';
 import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
 import { Bearer, Receiver, Token } from '../../token';
-import { Logger } from '../../util/logging';
+import { custom, customJson, inspectJson, Logger } from '../../util/logging';
 import { RenewalError } from '../renewable';
 
 import { ThrottledTokenCache } from './throttled_token_cache';
@@ -11,6 +13,7 @@ import { ThrottledTokenCache } from './throttled_token_cache';
 type Waiter = { resolve: (t: Token) => void; reject: (e: unknown) => void };
 
 class AsyncRenewableReceiver extends Receiver {
+  public readonly $type = 'nebius.sdk.AsyncRenewableReceiver';
   private trial = 0;
   constructor(
     private readonly parent: AsyncRenewableBearer,
@@ -18,6 +21,17 @@ class AsyncRenewableReceiver extends Receiver {
     private readonly logger?: Logger,
   ) {
     super();
+  }
+  [custom](): string {
+    return `${this.$type}(parent=${inspect(this.parent)}, trial=${this.trial})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: this.$type,
+      trial: this.trial,
+      parent: inspectJson(this.parent),
+      defaultMaxRetries: this.defaultMaxRetries,
+    };
   }
 
   protected async _fetch(
@@ -47,6 +61,7 @@ class AsyncRenewableReceiver extends Receiver {
 }
 
 export class AsyncRenewableBearer extends Bearer {
+  public readonly $type = 'nebius.sdk.AsyncRenewableBearer';
   private readonly fileCache: ThrottledTokenCache;
   private refreshTimer: ReturnType<typeof setTimeout> | null = null;
   private stopped = false;
@@ -103,7 +118,12 @@ export class AsyncRenewableBearer extends Bearer {
     if (!name) throw new Error('Source bearer must have a name for the cache.');
     const cacheFile = opts?.cacheFilePath ?? `${defaultConfigDir}/${defaultCredentialsFile}`;
     const throttleMs = opts?.fileCacheThrottleMs ?? 5 * 60_000;
-    this.fileCache = new ThrottledTokenCache(name, cacheFile, throttleMs);
+    this.fileCache = new ThrottledTokenCache(
+      name,
+      cacheFile,
+      throttleMs,
+      this.logger?.child('token_cache'),
+    );
 
     this.lifetimeSafeFraction = opts?.lifetimeSafeFraction ?? 0.9;
     this.safetyMinRemainingMs = opts?.safetyMinRemainingMs ?? 15_000;
@@ -114,6 +134,16 @@ export class AsyncRenewableBearer extends Bearer {
     this.refreshRequestTimeoutMs = opts?.refreshRequestTimeoutMs ?? 5_000;
     this.maxRetries = opts?.maxRetries ?? 2;
     this.jitterFraction = Math.min(Math.max(opts?.jitterFraction ?? 0.2, 0), 1);
+  }
+  [custom](): string {
+    return `${this.$type}(source=${inspect(this.source)}, fileCache=${inspect(this.fileCache)})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: this.$type,
+      source: inspectJson(this.source),
+      fileCache: inspectJson(this.fileCache),
+    };
   }
 
   get wrapped(): Bearer | undefined {

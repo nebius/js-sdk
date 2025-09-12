@@ -1,10 +1,8 @@
 import { createSign } from 'crypto';
 
 import { ExchangeTokenRequest } from '../../generated/nebius/iam/v1/index';
-
-export interface TokenRequester {
-  getExchangeTokenRequest(): ExchangeTokenRequest;
-}
+import { TokenRequester } from '../token/exchangeable';
+import { custom, customJson } from '../util/logging';
 
 export interface ServiceAccountLike extends TokenRequester {
   readonly privateKeyPem: string; // PEM-encoded private key (PKCS#8 or PKCS#1)
@@ -23,6 +21,16 @@ export class ServiceAccount implements ServiceAccountLike {
     public readonly publicKeyId: string,
     public readonly serviceAccountId: string,
   ) {}
+
+  [custom](): string {
+    return `ServiceAccount(id=${this.serviceAccountId}, kid=${this.publicKeyId})`;
+  }
+  [customJson](): object {
+    return {
+      service_account_id: this.serviceAccountId,
+      public_key_id: this.publicKeyId,
+    };
+  }
 
   getExchangeTokenRequest(): ExchangeTokenRequest {
     const nowSec = Math.floor(Date.now() / 1000);

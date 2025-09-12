@@ -174,6 +174,7 @@ export class ConsoleHandler implements Handler {
   private format: FormatFunction;
   private argFormat: ArgFormatFunction = (key, value) => `${key}=${value}`;
   private argDelimiter: string = ', ';
+  private alwaysAddTrace: boolean = false;
 
   constructor(opts?: {
     output?: Output;
@@ -182,7 +183,9 @@ export class ConsoleHandler implements Handler {
     argFormat?: ArgFormatFunction;
     argDelimiter?: string;
     filters?: Filters;
+    alwaysAddTrace?: boolean;
   }) {
+    this.alwaysAddTrace = !!opts?.alwaysAddTrace;
     if (opts?.output) {
       if (typeof opts.output === 'function') {
         this.consoleLike = new ConsoleLikeWrapper(opts.output);
@@ -278,6 +281,9 @@ export class ConsoleHandler implements Handler {
   log(level: Level, message: string, args: Argument, name: string, traceLevel: number = 3): void {
     if (level < this.level) return;
     if (!this.matchFilters(name, level)) return;
+    if (this.alwaysAddTrace && traceLevel < 0) {
+      traceLevel = 3;
+    }
 
     const trace = traceLevel >= 0 ? getTrace(traceLevel) : undefined;
     const out = this.format({
@@ -310,6 +316,7 @@ export class PrettyHandler implements Handler {
   private argFormat: ArgFormatFunction = (key, value) => `${key}=${value}`;
   private argDelimiter: string = ', ';
   private useColors: boolean;
+  private alwaysAddTrace: boolean = false;
 
   constructor(opts?: {
     output?: Output;
@@ -318,7 +325,9 @@ export class PrettyHandler implements Handler {
     argDelimiter?: string;
     filters?: Filters;
     colors?: boolean;
+    alwaysAddTrace?: boolean;
   }) {
+    this.alwaysAddTrace = !!opts?.alwaysAddTrace;
     if (opts?.output) {
       if (typeof opts.output === 'function') {
         this.consoleLike = new ConsoleLikeWrapper(opts.output);
@@ -431,6 +440,9 @@ export class PrettyHandler implements Handler {
   log(level: Level, message: string, args: Argument, name: string, traceLevel: number): void {
     if (level < this.level) return;
     if (!this.matchFilters(name, level)) return;
+    if (this.alwaysAddTrace && traceLevel < 0) {
+      traceLevel = 3;
+    }
 
     const timeStr = new Date().toISOString();
     const levelStr = Level[level] ?? String(level);
@@ -469,8 +481,15 @@ export class JsonHandler implements Handler {
   private consoleLike: ConsoleLike;
   private level: Level;
   private filters: Filters;
+  private alwaysAddTrace: boolean = false;
 
-  constructor(opts?: { output?: Output; level?: Level; filters?: Filters }) {
+  constructor(opts?: {
+    output?: Output;
+    level?: Level;
+    filters?: Filters;
+    alwaysAddTrace?: boolean;
+  }) {
+    this.alwaysAddTrace = !!opts?.alwaysAddTrace;
     if (opts?.output) {
       if (typeof opts.output === 'function') {
         this.consoleLike = new ConsoleLikeWrapper(opts.output);
@@ -515,9 +534,12 @@ export class JsonHandler implements Handler {
     return inspectJson(val);
   }
 
-  log(level: Level, message: string, args: Argument, name: string, traceLevel: number): void {
+  log(level: Level, message: string, args: Argument, name: string, traceLevel: number = 3): void {
     if (level < this.level) return;
     if (!this.matchFilters(name, level)) return;
+    if (this.alwaysAddTrace && traceLevel < 0) {
+      traceLevel = 3;
+    }
 
     const time = new Date();
     const trace = traceLevel >= 0 ? getTrace(traceLevel) : undefined;
@@ -636,6 +658,7 @@ export function defaultHandler(opts?: {
   level?: Level;
   filters?: Filters;
   colored?: boolean;
+  alwaysAddTrace?: boolean;
 }) {
   dbg('defaultHandler: called', { opts });
   // Detect if stderr is a TTY and supports colors. Respect NO_COLOR and FORCE_COLOR env vars.
@@ -655,6 +678,11 @@ export function defaultHandler(opts?: {
   const globalFromEnv = parseLevel(env.NEBIUS_LOG);
   const baseLevel = opts?.level ?? globalFromEnv ?? Level.INFO;
   dbg('defaultHandler: base level resolved', { baseLevel, globalFromEnv, optsLevel: opts?.level });
+
+  const envAlwaysAddTrace = env.NEBIUS_LOG_ALWAYS_ADD_TRACE === 'true';
+  const alwaysAddTrace =
+    opts?.alwaysAddTrace !== undefined ? opts.alwaysAddTrace : envAlwaysAddTrace;
+  dbg('defaultHandler: alwaysAddTrace resolved', { alwaysAddTrace, envAlwaysAddTrace, opts });
 
   const envFilters: Filter[] = [];
   const envFiltersMap = new Map<string, Level>();
@@ -695,12 +723,14 @@ export function defaultHandler(opts?: {
       level: baseLevel,
       filters: combinedFilters,
       colors: true,
+      alwaysAddTrace,
     });
   } else {
     ret = new ConsoleHandler({
       output: opts?.output,
       level: baseLevel,
       filters: combinedFilters,
+      alwaysAddTrace,
     });
   }
 
@@ -721,7 +751,13 @@ function loggerChain(handler: Handler, names: string[]): Logger {
 export function resolveLogger(
   spec?: Logger | Handler | string | number,
   defaultName: string[] | string = ['nebius.default'],
-  opts?: { output?: Output; colored?: boolean; filters?: Filters; level?: Level },
+  opts?: {
+    output?: Output;
+    colored?: boolean;
+    filters?: Filters;
+    level?: Level;
+    alwaysAddTrace?: boolean;
+  },
 ): Logger {
   dbg('resolveLogger: called', { spec, defaultName, opts });
   if (typeof defaultName === 'string') {
@@ -748,6 +784,7 @@ export function resolveLogger(
       level: lvl ?? opts?.level,
       filters: opts?.filters,
       colored: opts?.colored,
+      alwaysAddTrace: opts?.alwaysAddTrace,
     });
     return loggerChain(handler, defaultName);
   }
@@ -759,6 +796,7 @@ export function resolveLogger(
     level: opts?.level,
     filters: opts?.filters,
     colored: opts?.colored,
+    alwaysAddTrace: opts?.alwaysAddTrace,
   });
   return loggerChain(handler, defaultName);
 }
@@ -776,6 +814,7 @@ export class Logger {
     private name: string = 'default',
     private withFieldsArg: Argument = {},
     private parent?: Logger,
+    public traceByDefault: boolean = false, // not propagated to children
   ) {}
 
   [custom](): string {
@@ -794,26 +833,29 @@ export class Logger {
   }
 
   info(message: string, args?: Argument, withTrace?: boolean) {
-    this._log(Level.INFO, message, args ?? {}, !!withTrace);
+    this._log(Level.INFO, message, args ?? {}, withTrace);
   }
 
   warn(message: string, args?: Argument, withTrace?: boolean) {
-    this._log(Level.WARN, message, args ?? {}, !!withTrace);
+    this._log(Level.WARN, message, args ?? {}, withTrace);
   }
 
   error(message: string, args?: Argument, withTrace?: boolean) {
-    this._log(Level.ERROR, message, args ?? {}, !!withTrace);
+    this._log(Level.ERROR, message, args ?? {}, withTrace);
   }
 
   debug(message: string, args?: Argument, withTrace?: boolean) {
-    this._log(Level.DEBUG, message, args ?? {}, !!withTrace);
+    this._log(Level.DEBUG, message, args ?? {}, withTrace);
   }
 
   trace(message: string, args?: Argument, withTrace?: boolean) {
-    this._log(Level.TRACE, message, args ?? {}, !!withTrace);
+    this._log(Level.TRACE, message, args ?? {}, withTrace);
   }
-  private _log(level: Level, message: string, args: Argument, withTrace: boolean) {
+  private _log(level: Level, message: string, args: Argument, withTrace?: boolean) {
     try {
+      if (withTrace === undefined) {
+        withTrace = this.traceByDefault;
+      }
       this.handler.log(
         level,
         message,
@@ -830,24 +872,67 @@ export class Logger {
     this._log(level, message, args ?? {}, !!withTrace);
   }
 
-  withFields(fields: Argument): Logger {
-    return new Logger(this.handler, this.name, { ...this.withFieldsArg, ...fields });
+  withFields(fields: Argument, traceByDefault?: boolean): Logger {
+    // withFields is sort of the same logger, so keep the same traceByDefault
+    return new Logger(
+      this.handler,
+      this.name,
+      { ...this.withFieldsArg, ...fields },
+      this.parent,
+      traceByDefault !== undefined ? traceByDefault : this.traceByDefault,
+    );
   }
 
-  detached(name: string): Logger {
-    return new Logger(this.handler, name, this.withFieldsArg);
+  detached(
+    name: string,
+    additionalArguments: Argument = {},
+    traceByDefault: boolean = false,
+  ): Logger {
+    return new Logger(this.handler, name, additionalArguments, this, traceByDefault);
   }
 
-  child(suffix: string): Logger {
-    return new Logger(this.handler, `${this.name}.${suffix}`, this.withFieldsArg, this);
+  child(
+    suffix: string,
+    additionalArguments: Argument = {},
+    traceByDefault: boolean = false,
+  ): Logger {
+    return new Logger(
+      this.handler,
+      `${this.name}.${suffix}`,
+      { ...this.withFieldsArg, ...additionalArguments },
+      this,
+      traceByDefault,
+    );
   }
 
-  sibling(siblingName: string): Logger {
+  sibling(
+    siblingName: string,
+    additionalArguments: Argument = {},
+    traceByDefault: boolean = false,
+  ): Logger {
     if (!this.parent) {
-      return new Logger(this.handler, siblingName, this.withFieldsArg);
+      return new Logger(
+        this.handler,
+        siblingName,
+        {
+          ...this.withFieldsArg,
+          ...additionalArguments,
+        },
+        undefined,
+        traceByDefault,
+      );
     }
     const baseName = this.parent.name;
-    return new Logger(this.handler, `${baseName}.${siblingName}`, this.withFieldsArg, this.parent);
+    return new Logger(
+      this.handler,
+      `${baseName}.${siblingName}`,
+      {
+        ...this.withFieldsArg,
+        ...additionalArguments,
+      },
+      this.parent,
+      traceByDefault,
+    );
   }
 
   get getHandler(): Handler {

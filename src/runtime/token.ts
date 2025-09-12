@@ -1,9 +1,12 @@
+import { inspect } from 'util';
+
 import type { AuthorizationOptions } from './authorization/provider';
 import { TokenSanitizer } from './token_sanitizer';
-import { custom, customJson } from './util/logging';
+import { custom, customJson, inspectJson } from './util/logging';
 
 // A bearer token with optional expiration time
 export class Token {
+  public readonly $type: 'nebius.iam.AccessToken' = 'nebius.iam.AccessToken';
   private readonly _tok: string;
   private readonly _exp?: Date;
 
@@ -81,6 +84,7 @@ export class Token {
 
 // A receiver fetches tokens (and may cache the latest)
 export abstract class Receiver {
+  public abstract readonly $type: string;
   protected _latest: Token | undefined;
 
   protected abstract _fetch(
@@ -103,6 +107,7 @@ export abstract class Receiver {
 
 // Bearer is a factory for Receivers (e.g., static, file-based, service account, etc.)
 export abstract class Bearer {
+  public abstract readonly $type: string;
   abstract receiver(): Receiver;
 
   get name(): string | undefined {
@@ -122,11 +127,22 @@ export abstract class Bearer {
 
 // Helper to label a bearer without changing behavior
 export class NamedBearer extends Bearer {
+  public readonly $type = 'nebius.sdk.NamedBearer';
   constructor(
     private readonly _wrapped: Bearer,
     private readonly _name: string,
   ) {
     super();
+  }
+  [custom](): string {
+    return `${this.$type}(name=${this._name}, wrapped=${inspect(this._wrapped)})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: this.$type,
+      name: this._name,
+      wrapped: inspectJson(this._wrapped),
+    };
   }
 
   get wrapped(): Bearer | undefined {

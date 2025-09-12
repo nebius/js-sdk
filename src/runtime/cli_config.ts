@@ -16,7 +16,13 @@ import { FederationAccountBearer } from './token/federation_account';
 import { FileBearer } from './token/file';
 import { ServiceAccountBearer } from './token/service_account';
 import { EnvBearer, NoTokenInEnvError } from './token/static';
-import { resolveLogger, Handler as SDKHandler, Logger as SDKLogger } from './util/logging';
+import {
+  custom,
+  customJson,
+  resolveLogger,
+  Handler as SDKHandler,
+  Logger as SDKLogger,
+} from './util/logging';
 import { resolveHomeDir } from './util/path';
 
 export class ConfigError extends Error {}
@@ -38,6 +44,7 @@ export interface ConfigOptions {
 }
 
 export class Config implements ConfigReaderLike {
+  public readonly $type = 'nebius.sdk.Config';
   private readonly _clientId: string | undefined;
   private _priorityBearer: EnvBearer | null = null;
   private _profileName: string | null;
@@ -88,6 +95,17 @@ export class Config implements ConfigReaderLike {
     this._maxRetries = maxRetries;
 
     this._getProfile();
+  }
+
+  [custom](): string {
+    return `Config(profile=${this._profileName}, file=${this._configFile})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: this.$type,
+      profile: this._profileName,
+      configFile: this._configFile,
+    };
   }
 
   logger(): SDKLogger | undefined {

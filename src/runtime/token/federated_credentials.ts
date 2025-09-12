@@ -1,3 +1,5 @@
+import { inspect } from 'util';
+
 import type { SDKInterface } from '../../sdk';
 import type { FederatedCredentialsReader } from '../service_account/federated_credentials';
 import {
@@ -5,12 +7,13 @@ import {
   FileFederatedCredentials,
 } from '../service_account/federated_credentials';
 import { Bearer, NamedBearer, Receiver } from '../token';
-import { Logger } from '../util/logging';
+import { custom, customJson, inspectJson, Logger } from '../util/logging';
 
 import { ExchangeableBearer } from './exchangeable';
 import { RenewableBearer } from './renewable';
 
 export class FederatedCredentialsBearer extends Bearer {
+  public readonly $type = 'nebius.sdk.FederatedCredentialsBearer';
   private _exchangeable: ExchangeableBearer;
   private _source: Bearer;
 
@@ -33,6 +36,7 @@ export class FederatedCredentialsBearer extends Bearer {
     let fc: FederatedCredentialsTokenRequester | null = null;
 
     if (typeof federatedCredentials === 'string') {
+      opts?.logger?.debug('creating FileFederatedCredentials from string');
       federatedCredentials = new FileFederatedCredentials(federatedCredentials);
     }
 
@@ -42,13 +46,16 @@ export class FederatedCredentialsBearer extends Bearer {
           'Service account ID must be provided as a string when federatedCredentials is a reader',
         );
       }
+      opts?.logger?.debug('creating FederatedCredentialsTokenRequester from reader');
       fc = new FederatedCredentialsTokenRequester(
         opts.serviceAccountId,
         federatedCredentials as FederatedCredentialsReader,
+        opts?.logger?.child('federated_credentials_requester'),
       );
     }
 
     if (!fc && federatedCredentials instanceof FederatedCredentialsTokenRequester) {
+      opts?.logger?.debug('using passed FederatedCredentialsTokenRequester');
       fc = federatedCredentials as FederatedCredentialsTokenRequester;
     }
 
@@ -83,11 +90,24 @@ export class FederatedCredentialsBearer extends Bearer {
       fc instanceof FederatedCredentialsTokenRequester &&
       fc.credentials instanceof FileFederatedCredentials
     ) {
+      opts?.logger?.debug('wrapping with NamedBearer as the credentials are file-based', {
+        filePath: fc.credentials.filePath,
+        serviceAccountId: fc.serviceAccountId,
+      });
       this._source = new NamedBearer(
         this._source,
         `federated-credentials/${fc.serviceAccountId}/${fc.credentials.filePath}`,
       );
     }
+  }
+  [custom](): string {
+    return `FederatedCredentialsBearer(source=${inspect(this._source)})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: 'FederatedCredentialsBearer',
+      source: inspectJson(this._source),
+    };
   }
 
   setSDK(sdk: SDKInterface | Promise<SDKInterface> | null): void {

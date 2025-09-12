@@ -286,9 +286,13 @@ export function printService(
       lines.push(`    const deserialize = (value: Buffer) => {`);
       lines.push(`      const resp = spec.responseDeserialize(value);`);
       if (isOpSvc) {
-        lines.push(`      return new OperationWrapper(resp, this);`);
+        lines.push(
+          `      return new OperationWrapper(resp, this, this.sdk.logger.child("operation"));`,
+        );
       } else {
-        lines.push(`      return new OperationWrapper(resp, this.getOperationService());`);
+        lines.push(
+          `      return new OperationWrapper(resp, this.getOperationService(), this.sdk.logger.child("operation"));`,
+        );
       }
       lines.push(`    };`);
     } else if (isOperationsList) {
@@ -296,7 +300,7 @@ export function printService(
       lines.push(`    const deserialize = (value: Buffer) => {`);
       lines.push(`      const resp = spec.responseDeserialize(value);`);
       lines.push(
-        `      return { operations: (resp?.operations ?? []).map((o: any) => new OperationWrapper(o, this)), nextPageToken: resp?.nextPageToken || "" };`,
+        `      return { operations: (resp?.operations ?? []).map((o: any) => new OperationWrapper(o, this, this.sdk.logger.child("operation"))), nextPageToken: resp?.nextPageToken || "" };`,
       );
       lines.push(`    };`);
     } else {

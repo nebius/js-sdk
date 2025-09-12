@@ -1,5 +1,7 @@
-import { readFileSync, existsSync, statSync } from 'fs';
+import { existsSync, readFileSync, statSync } from 'fs';
 import { resolve } from 'path';
+
+import { Logger } from '../util/logging';
 
 function readIfExists(filePath: string): Buffer | undefined {
   try {
@@ -18,18 +20,27 @@ function readIfExists(filePath: string): Buffer | undefined {
  * Also respects NODE_EXTRA_CA_CERTS and SSL_CERT_FILE if set.
  * Returns a PEM bundle Buffer or undefined if none found.
  */
-export function getSystemRootCAs(): Buffer | undefined {
+export function getSystemRootCAs(logger: Logger): Buffer | undefined {
   const chunks: Buffer[] = [];
 
   // Environment-provided CA bundle path
-  const envFiles: (string | undefined)[] = [
-    process.env.NODE_EXTRA_CA_CERTS,
-    process.env.SSL_CERT_FILE,
-  ];
-  for (const f of envFiles) {
+  const envVars: string[] = ['NODE_EXTRA_CA_CERTS', 'SSL_CERT_FILE'];
+  for (const varName of envVars) {
+    const f = process.env[varName];
     if (!f) continue;
+    logger.trace('Checking environment-provided CA bundle', {
+      file: f,
+      env: varName,
+    });
     const buf = readIfExists(f);
-    if (buf && buf.length > 0) chunks.push(buf);
+    if (buf && buf.length > 0) {
+      chunks.push(buf);
+      logger.debug('Loaded environment-provided CA bundle', {
+        file: f,
+        env: varName,
+        size: buf.length,
+      });
+    }
   }
 
   // Common distro paths
@@ -46,14 +57,19 @@ export function getSystemRootCAs(): Buffer | undefined {
     '/etc/ssl/cert.pem',
   ];
   for (const p of candidates) {
+    logger.trace('Checking common CA bundle path', { file: p });
     const buf = readIfExists(p);
     if (buf && buf.length > 0) {
       chunks.push(buf);
+      logger.debug('Loaded system CA bundle', { file: p, size: buf.length });
       break; // first hit is enough (bundles already aggregate)
     }
   }
 
-  if (chunks.length === 0) return undefined;
+  if (chunks.length === 0) {
+    logger.debug('No system root CA bundles found');
+    return undefined;
+  }
   return Buffer.concat(chunks);
 }
 

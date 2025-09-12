@@ -1,7 +1,7 @@
 import type { ServiceError as GrpcServiceError, Metadata } from '@grpc/grpc-js';
 import { Client } from '@grpc/grpc-js';
 
-import { Code as StatusCode, Status as GrpcStatus } from '../generated/google/rpc/index';
+import { Status as GrpcStatus, Code as StatusCode } from '../generated/google/rpc/index';
 import {
   InternalError,
   ServiceError as NebiusServiceError,
@@ -218,6 +218,7 @@ export class NebiusGrpcError extends Error implements GrpcServiceError {
   }
 }
 
+// TODO: change the interceptor to a proper one, set by sdk/request
 // Install global unary interceptor once
 (function installUnaryInterceptor() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
