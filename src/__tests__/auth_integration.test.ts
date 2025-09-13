@@ -52,42 +52,46 @@ describe('authorization integration (mock gRPC)', () => {
   beforeEach(() => {
     tmpDir = mkdtempSync(join(os.tmpdir(), 'tssdk-auth-int-'));
     process.env.HOME = tmpDir;
-    const oldSetTimeout = global.setTimeout;
-    const oldClearTimeout = global.clearTimeout;
-    const customSetTimeout = (cb: any, ms: any, ...targs: any[]) => {
-      const stack = new Error().stack?.split('\n').slice(2).join('\n');
-      let timerStruct: { timer: WeakRef<NodeJS.Timeout>; stack: string | undefined } | null = null;
-      const timer = oldSetTimeout(
-        (...args: any[]) => {
+    if (!(global.setTimeout as any)?._was_set) {
+      const oldSetTimeout = global.setTimeout;
+      const oldClearTimeout = global.clearTimeout;
+      const customSetTimeout = (cb: any, ms: any, ...targs: any[]) => {
+        const stack = new Error().stack?.split('\n').slice(2).join('\n');
+        let timerStruct: { timer: WeakRef<NodeJS.Timeout>; stack: string | undefined } | null =
+          null;
+        const timer = oldSetTimeout(
+          (...args: any[]) => {
+            if (timerStruct) {
+              timers.delete(timerStruct);
+            }
+            return cb(...args);
+          },
+          ms,
+          ...targs,
+        );
+        timerStruct = { timer: new WeakRef(timer), stack };
+        timers.add(timerStruct);
+        const oldUnref = timer.unref.bind(timer);
+
+        timer.unref = () => {
           if (timerStruct) {
             timers.delete(timerStruct);
           }
-          return cb(...args);
-        },
-        ms,
-        ...targs,
-      );
-      timerStruct = { timer: new WeakRef(timer), stack };
-      timers.add(timerStruct);
-      const oldUnref = timer.unref.bind(timer);
+          return oldUnref();
+        };
 
-      timer.unref = () => {
-        if (timerStruct) {
-          timers.delete(timerStruct);
-        }
-        return oldUnref();
+        return timer;
+      };
+      customSetTimeout._was_set = true;
+      customSetTimeout.__promisify__ = (ms: number, value: any, opts: any) =>
+        oldSetTimeout.__promisify__(ms, value, opts);
+      global.clearTimeout = (timer: any) => {
+        timer.unref();
+        return oldClearTimeout(timer);
       };
 
-      return timer;
-    };
-    customSetTimeout.__promisify__ = (ms: number, value: any, opts: any) =>
-      oldSetTimeout.__promisify__(ms, value, opts);
-    global.clearTimeout = (timer: any) => {
-      timer.unref();
-      return oldClearTimeout(timer);
-    };
-
-    global.setTimeout = customSetTimeout as typeof setTimeout;
+      global.setTimeout = customSetTimeout as typeof setTimeout;
+    }
   });
 
   afterEach(() => {
