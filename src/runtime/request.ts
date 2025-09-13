@@ -72,6 +72,25 @@ const DEFAULT_TIMEOUT = 60000;
 const DEFAULT_RETRY_COUNT = 3;
 const DEFAULT_PER_RETRY_TIMEOUT = DEFAULT_TIMEOUT / DEFAULT_RETRY_COUNT;
 
+class CancelledError extends NebiusGrpcError {
+  constructor(reason?: string) {
+    const message = reason
+      ? `Request cancelled on client: ${reason}`
+      : 'Request cancelled on client';
+    const st = GrpcStatus.create({
+      code: StatusCode.CANCELLED.code,
+      message,
+      details: [],
+    });
+    const err = Object.assign(new Error(message), {
+      code: StatusCode.CANCELLED.code,
+      details: message,
+      metadata: new Metadata(),
+    });
+    super(err, st);
+  }
+}
+
 export class Request<TReq, TRes> {
   public readonly $type: 'nebius.sdk.Request' = 'nebius.sdk.Request';
   // Promises
@@ -92,6 +111,9 @@ export class Request<TReq, TRes> {
   private _maybeReqId: string | undefined;
   private _maybeTraceId: string | undefined;
   private _maybeStatus: GrpcStatus | undefined;
+  // Cancellation and cleanup helpers
+  private _canceled = false;
+  private _calls = new Set<ClientUnaryCall>();
 
   constructor(
     private sdk: SDKInterface,
@@ -209,8 +231,17 @@ export class Request<TReq, TRes> {
     // Start the request flow with retry
     this.result = new Promise<TRes>((resolve, reject) => {
       const runAttempt = (attempt: number) => {
+        if (this._canceled) {
+          this.logger.debug('Request canceled by client before attempt start', { attempt });
+          const err = new CancelledError();
+          this._resolveStatus(err.status!);
+          reject(err);
+          return;
+        }
+
         let logger = this.logger.withFields({ attempt });
         logger.trace('Starting request attempt');
+
         // Compute a per-retry deadline relative to now, but clip it to the
         // overall deadline if one was provided and is earlier.
         let perDeadline = new Date(Date.now() + perRetry);
@@ -221,6 +252,7 @@ export class Request<TReq, TRes> {
           ...(baseOptions ?? {}),
           deadline: perDeadline,
         } as Partial<CallOptions>;
+
         logger = logger.withFields({
           per_retry_deadline: perDeadline,
           maxRetries,
@@ -237,8 +269,19 @@ export class Request<TReq, TRes> {
           metadata,
           deadlineOpt,
           (err, resp) => {
+            try {
+              this._calls.delete(call);
+              call.removeAllListeners();
+            } catch (err) {
+              logger.warn('Error during call cleanup', { err });
+            }
+            logger.trace('Request attempt removed from active set', {
+              active_calls: this._calls.size,
+            });
             if (err) {
               logger.trace('Request attempt returned error', { err });
+              call.cancel(); // ensure call is fully closed
+
               const wrapped = err as NebiusGrpcError;
               // Metadata-derived requestId/traceId if any
               if (wrapped?.metadata) {
@@ -251,7 +294,7 @@ export class Request<TReq, TRes> {
               const errLogger = logger.withFields({ err: wrapped, is_retriable: retriable });
               errLogger.error('Request attempt failed');
 
-              if (retriable && attempt < maxRetries) {
+              if (retriable && attempt < maxRetries && !this._canceled) {
                 errLogger.trace('Retrying request attempt after retriable error');
                 runAttempt(attempt + 1);
                 return;
@@ -259,6 +302,8 @@ export class Request<TReq, TRes> {
 
               if (retriable) {
                 errLogger.error('Request retries exhausted, final failure');
+              } else if (this._canceled) {
+                errLogger.warn('Request was canceled, rejecting');
               } else {
                 errLogger.error('Request failed (non-retriable)');
               }
@@ -306,6 +351,10 @@ export class Request<TReq, TRes> {
           if (md) this._safeResolveIdsFromMd(md);
           if (s?.metadata) this._resolveTrailingMd(s.metadata);
         });
+
+        // track active call for possible cancellation/cleanup
+        this._calls.add(call);
+        this.logger.trace('Tracking call for potential cancellation', { calls: this._calls.size });
       };
 
       runAttempt(0);
@@ -390,6 +439,27 @@ export class Request<TReq, TRes> {
       }
     }
     return false;
+  }
+  // Allow callers to cancel the in-flight request and prevent further retries
+  public cancel(reason?: string): void {
+    if (this._canceled) {
+      this.logger.trace('Request already canceled', { reason });
+      return;
+    }
+    this._canceled = true;
+    this.logger.debug('Cancelling request', { reason });
+    // Cancel any tracked calls and detach listeners to help GC
+    for (const c of this._calls) {
+      try {
+        this.logger.trace('Cancelling call', { call: c });
+        c.cancel();
+        c.removeAllListeners();
+      } catch (err) {
+        this.logger.warn('Error cancelling call', { err });
+      }
+    }
+    this.logger.trace('All calls cancelled, clearing tracked calls');
+    this._calls.clear();
   }
 }
 

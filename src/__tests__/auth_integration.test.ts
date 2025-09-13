@@ -46,6 +46,9 @@ describe('authorization integration (mock gRPC)', () => {
   const timers = new Set<{
     timer: WeakRef<NodeJS.Timeout>;
     stack: string | undefined;
+    timeStart: Date;
+    timeEnd: Date;
+    timeMs: number;
   }>();
   const servers = new Set<{ server: Server; stack: string | undefined }>();
 
@@ -57,26 +60,39 @@ describe('authorization integration (mock gRPC)', () => {
       const oldClearTimeout = global.clearTimeout;
       const customSetTimeout = (cb: any, ms: any, ...targs: any[]) => {
         const stack = new Error().stack?.split('\n').slice(2).join('\n');
-        let timerStruct: { timer: WeakRef<NodeJS.Timeout>; stack: string | undefined } | null =
-          null;
+        let timerStruct: {
+          timer: WeakRef<NodeJS.Timeout>;
+          stack: string | undefined;
+          timeStart: Date;
+          timeEnd: Date;
+          timeMs: number;
+        } | null = null;
         const timer = oldSetTimeout(
           (...args: any[]) => {
-            if (timerStruct) {
-              timers.delete(timerStruct);
-            }
+            (timer as any)?.remove();
             return cb(...args);
           },
           ms,
           ...targs,
         );
-        timerStruct = { timer: new WeakRef(timer), stack };
+        timerStruct = {
+          timer: new WeakRef(timer),
+          stack,
+          timeStart: new Date(),
+          timeEnd: new Date(Date.now() + ms),
+          timeMs: ms,
+        };
         timers.add(timerStruct);
         const oldUnref = timer.unref.bind(timer);
-
-        timer.unref = () => {
+        (timer as any).remove = () => {
           if (timerStruct) {
             timers.delete(timerStruct);
+            timerStruct = null;
           }
+        };
+
+        timer.unref = () => {
+          (timer as any)?.remove();
           return oldUnref();
         };
 
@@ -86,7 +102,7 @@ describe('authorization integration (mock gRPC)', () => {
       customSetTimeout.__promisify__ = (ms: number, value: any, opts: any) =>
         oldSetTimeout.__promisify__(ms, value, opts);
       global.clearTimeout = (timer: any) => {
-        timer.unref();
+        (timer as any)?.remove();
         return oldClearTimeout(timer);
       };
 
@@ -101,13 +117,15 @@ describe('authorization integration (mock gRPC)', () => {
     } catch {
       /* ignore */
     }
+    const now = Date.now();
     for (const t of timers) {
       const timer = t.timer.deref();
       if (!timer) {
         timers.delete(t);
         continue;
       }
-      console.error('\nTimer still active:', t.stack);
+      const until = t.timeEnd.getTime() - now;
+      console.error('\nTimer still active until:', until, 'ms', t.stack);
     }
     for (const handle of (process as any)?._getActiveHandles() || []) {
       if (handle === process.stdout || handle === process.stderr) continue;
