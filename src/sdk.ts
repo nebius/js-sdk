@@ -174,6 +174,7 @@ export class SDK implements SDKInterface {
     }
     // Always apply substitutions
     this._resolver = new TemplateExpander(substitutionsFull, r);
+    this._logger.trace('Using resolver chain', { resolver: this._resolver });
 
     // Resolve parentId lazily: prefer explicit option, else from configReader; empty strings are treated as undefined
     let resolvedParentId: string | undefined;
@@ -696,7 +697,7 @@ export class SDK implements SDKInterface {
     const allWork = Promise.allSettled(channelWatchers.concat(authClose));
     const timeoutP = new Promise<void>((res) => {
       const h: NodeJS.Timeout = setTimeout(() => res(), timeout);
-      if (typeof (h as NodeJS.Timeout).unref === 'function') (h as NodeJS.Timeout).unref();
+      h.unref();
     });
     await Promise.race([allWork, timeoutP]);
     // Stop any remaining watcher loops

@@ -2,6 +2,7 @@ import { inspect } from 'util';
 
 import type { AuthorizationOptions } from '../authorization/provider';
 import { Bearer, Receiver, Token } from '../token';
+import { withTimeout } from '../util/cancelable';
 import { custom, customJson, inspectJson, Logger } from '../util/logging';
 
 export class RenewalError extends Error {
@@ -321,29 +322,34 @@ export class RenewableBearer extends Bearer {
         if (!timeoutMs) return renewalPromise;
 
         this.logger?.trace('fetch: awaiting renewal with timeout', { timeoutMs });
-        return await Promise.race<Token>([
-          renewalPromise,
-          new Promise<Token>((_, reject) =>
-            setTimeout(() => reject(new RenewalError('Renewal timeout')), timeoutMs),
-          ),
-        ]);
+        return await withTimeout(renewalPromise, timeoutMs);
       }
 
       // Asynchronous callers: optionally wait up to timeout for freshness
       if (timeoutMs) {
         this.logger?.trace('fetch: async path waiting for freshness', { timeoutMs });
         await new Promise<void>((resolve, reject) => {
+          let handle: NodeJS.Timeout | undefined;
           const onResolve = (token: Token) => {
+            if (handle) {
+              clearTimeout(handle);
+              handle = undefined;
+            }
             this.logger?.debug('fetch: async freshness satisfied', { token });
             resolve();
           };
           const onReject = (err: unknown) => {
+            if (handle) {
+              clearTimeout(handle);
+              handle = undefined;
+            }
             this.logger?.debug('fetch: async freshness error', { err });
             reject(err);
           };
           this.addWaiter(onResolve, onReject);
 
-          setTimeout(() => {
+          handle = setTimeout(() => {
+            handle = undefined;
             // If already fresh, resolve; otherwise remove our waiter and timeout
             if (this.fresh) resolve();
             else {
@@ -356,6 +362,7 @@ export class RenewableBearer extends Bearer {
               reject(new RenewalError('Timeout waiting fresh token'));
             }
           }, timeoutMs);
+          handle.unref();
         });
       } else if (!this.cacheToken) {
         // No token available yet: wait for current renewal to finish even in async mode

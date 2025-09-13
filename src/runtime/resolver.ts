@@ -2,6 +2,10 @@
  * Ported from Python resolvers to TypeScript
  */
 
+import { inspect } from 'util';
+
+import { custom, customJson, inspectJson } from './util/logging';
+
 export class UnknownServiceError extends Error {
   constructor(id: string) {
     super(`Unknown service: ${id}`);
@@ -33,6 +37,16 @@ export class Basic implements Resolver {
     }
   }
 
+  [custom](): string {
+    return `Basic(${inspect(this.parent)})`;
+  }
+  [customJson](): object {
+    return {
+      type: 'nebius.sdk.BasicResolver',
+      parent: inspectJson(this.parent),
+    };
+  }
+
   resolve(serviceId: string, apiServiceName?: string): string {
     const ret = this.parent.resolve(serviceId, apiServiceName);
     // console.debug(`[basic] ${serviceId} -> ${ret}`);
@@ -44,6 +58,15 @@ export class Constant implements Resolver {
   private address: string;
   constructor(address: string) {
     this.address = address;
+  }
+  [custom](): string {
+    return `Constant(address=${this.address})`;
+  }
+  [customJson](): object {
+    return {
+      type: 'nebius.sdk.ConstantResolver',
+      address: this.address,
+    };
   }
   resolve(_serviceId: string, _apiServiceName?: string): string {
     // console.debug(`[constant] ${serviceId} -> ${this.address}`);
@@ -57,6 +80,16 @@ export class Single implements Resolver {
   constructor(id: string, address: string) {
     this.id = id;
     this.address = address;
+  }
+  [custom](): string {
+    return `Single(id=${this.id}, address=${this.address})`;
+  }
+  [customJson](): object {
+    return {
+      type: 'nebius.sdk.SingleResolver',
+      id: this.id,
+      address: this.address,
+    };
   }
   resolve(serviceId: string, _apiServiceName?: string): string {
     if (serviceId === this.id) {
@@ -74,6 +107,16 @@ export class Prefix implements Resolver {
   constructor(prefix: string, address: string) {
     this.prefix = prefix;
     this.address = address;
+  }
+  [custom](): string {
+    return `Prefix(prefix=${this.prefix}, address=${this.address})`;
+  }
+  [customJson](): object {
+    return {
+      type: 'nebius.sdk.PrefixResolver',
+      prefix: this.prefix,
+      address: this.address,
+    };
   }
   resolve(serviceId: string, _apiServiceName?: string): string {
     if (serviceId.startsWith(this.prefix)) {
@@ -103,12 +146,29 @@ export class Conventional implements Resolver {
     // console.debug(`[conventional] ${serviceId} -> ${ret}`);
     return ret;
   }
+  [custom](): string {
+    return `Conventional()`;
+  }
+  [customJson](): object {
+    return {
+      type: 'nebius.sdk.ConventionalResolver',
+    };
+  }
 }
 
 export class Chain implements Resolver {
   private resolvers: Resolver[];
   constructor(...resolvers: Resolver[]) {
     this.resolvers = resolvers;
+  }
+  [custom](): string {
+    return `Chain(resolvers=[${this.resolvers.map((r) => inspect(r)).join(', ')}])`;
+  }
+  [customJson](): object {
+    return {
+      type: 'nebius.sdk.ChainResolver',
+      resolvers: this.resolvers.map((r) => inspectJson(r)),
+    };
   }
   resolve(serviceId: string, apiServiceName?: string): string {
     for (const r of this.resolvers) {
@@ -134,6 +194,15 @@ export class Cached implements Resolver {
   constructor(next: Resolver) {
     this.next = next;
   }
+  [custom](): string {
+    return `Cached(${inspect(this.next)})`;
+  }
+  [customJson](): object {
+    return {
+      type: 'nebius.sdk.CachedResolver',
+      next: inspectJson(this.next),
+    };
+  }
   resolve(serviceId: string, apiServiceName?: string): string {
     const key = `${serviceId}|${apiServiceName ?? ''}`;
     const cached = this.cache[key];
@@ -154,6 +223,16 @@ export class TemplateExpander implements Resolver {
   constructor(substitutions: Record<string, string>, next: Resolver) {
     this.substitutions = substitutions;
     this.next = next;
+  }
+  [custom](): string {
+    return `TemplateExpander(substitutions=${inspect(this.substitutions)}, next=${inspect(this.next)})`;
+  }
+  [customJson](): object {
+    return {
+      type: 'nebius.sdk.TemplateExpander',
+      substitutions: this.substitutions,
+      next: inspectJson(this.next),
+    };
   }
   resolve(serviceId: string, apiServiceName?: string): string {
     let addr = this.next.resolve(serviceId, apiServiceName);

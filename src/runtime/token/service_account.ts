@@ -3,6 +3,7 @@ import { inspect } from 'util';
 import type { SDKInterface } from '../../sdk';
 import type { Reader as ServiceAccountReader } from '../service_account/service_account';
 import { ServiceAccount } from '../service_account/service_account';
+import { StaticReader } from '../service_account/static';
 import { Bearer, NamedBearer, Receiver } from '../token';
 import { custom, customJson, inspectJson, Logger } from '../util/logging';
 
@@ -71,11 +72,7 @@ export class ServiceAccountBearer extends Bearer {
 
     if (!reader) {
       opts?.logger?.trace('using ServiceAccount directly');
-      // Inline simple reader wrapper
-      reader = {
-        read: () => serviceAccount,
-        getExchangeTokenRequest: () => serviceAccount.getExchangeTokenRequest(),
-      } as ServiceAccountReader;
+      reader = new StaticReader(serviceAccount);
     }
 
     const saId = serviceAccount.serviceAccountId;

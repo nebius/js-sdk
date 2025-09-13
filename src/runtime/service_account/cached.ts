@@ -16,7 +16,7 @@ export class CachedReader implements Reader {
   }
 
   [custom](): string {
-    return `${this.$type}(next=${inspect(this.next)})`;
+    return `Cached(${inspect(this.next)})`;
   }
   [customJson](): unknown {
     return {

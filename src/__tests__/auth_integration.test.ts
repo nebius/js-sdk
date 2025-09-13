@@ -35,22 +35,81 @@ function startServer(
       if (err) return reject(err);
       resolve({ server, address: `127.0.0.1:${port}` });
     });
+    (server as any).http2Servers.forEach((s: http.Server) => {
+      s.unref();
+    });
   });
 }
 
 describe('authorization integration (mock gRPC)', () => {
   let tmpDir: string;
+  const timers = new Set<{
+    timer: WeakRef<NodeJS.Timeout>;
+    stack: string | undefined;
+  }>();
+  const servers = new Set<{ server: Server; stack: string | undefined }>();
 
-  beforeAll(() => {
+  beforeEach(() => {
     tmpDir = mkdtempSync(join(os.tmpdir(), 'tssdk-auth-int-'));
+    process.env.HOME = tmpDir;
+    const oldSetTimeout = global.setTimeout;
+    const oldClearTimeout = global.clearTimeout;
+    const customSetTimeout = (cb: any, ms: any, ...targs: any[]) => {
+      const stack = new Error().stack?.split('\n').slice(2).join('\n');
+      let timerStruct: { timer: WeakRef<NodeJS.Timeout>; stack: string | undefined } | null = null;
+      const timer = oldSetTimeout(
+        (...args: any[]) => {
+          if (timerStruct) {
+            timers.delete(timerStruct);
+          }
+          return cb(...args);
+        },
+        ms,
+        ...targs,
+      );
+      timerStruct = { timer: new WeakRef(timer), stack };
+      timers.add(timerStruct);
+      const oldUnref = timer.unref.bind(timer);
+
+      timer.unref = () => {
+        if (timerStruct) {
+          timers.delete(timerStruct);
+        }
+        return oldUnref();
+      };
+
+      return timer;
+    };
+    customSetTimeout.__promisify__ = (ms: number, value: any, opts: any) =>
+      oldSetTimeout.__promisify__(ms, value, opts);
+    global.clearTimeout = (timer: any) => {
+      timer.unref();
+      return oldClearTimeout(timer);
+    };
+
+    global.setTimeout = customSetTimeout as typeof setTimeout;
   });
 
-  afterAll(() => {
+  afterEach(() => {
+    delete process.env.HOME;
     try {
       rmSync(tmpDir, { recursive: true, force: true });
     } catch {
       /* ignore */
     }
+    for (const t of timers) {
+      const timer = t.timer.deref();
+      if (!timer) {
+        timers.delete(t);
+        continue;
+      }
+      console.error('\nTimer still active:', t.stack);
+    }
+    for (const handle of (process as any)?._getActiveHandles() || []) {
+      if (handle === process.stdout || handle === process.stderr) continue;
+      // console.error('Active handle:', inspect(handle));
+    }
+    // console.error((process as any)?._getActiveRequests());
   });
 
   async function withMockEnv<T>(
@@ -82,34 +141,37 @@ describe('authorization integration (mock gRPC)', () => {
       Number.isFinite(opts.expiresInSec as any) && (opts.expiresInSec as any)! > 0
         ? Number(opts.expiresInSec)
         : 3600;
-    const iam = opts.iamDown
-      ? null
-      : await startServer((server) => {
-          const impl: TokenExchangeServiceServer = {
-            exchange: (call, callback) => {
-              const _req: ExchangeTokenRequest = call.request;
-              if (iamFailureBudget > 0) {
-                iamFailureBudget -= 1;
-                // Return an UNAVAILABLE-like error
-                const err: any = new Error('temporary IAM failure');
-                err.code = 14; // grpc UNAVAILABLE
-                callback(err);
-                return;
-              }
-              const curr = seq[Math.min(tokenIdx, seq.length - 1)];
-              tokenIdx += 1;
-              const res = CreateTokenResponse.create({
-                accessToken: curr,
-                issuedTokenType: 'urn:ietf:params:oauth:token-type:access_token',
-                tokenType: opts.tokenType ?? 'Bearer',
-                expiresIn: Long.fromInt(expSec),
-                scopes: [],
-              });
-              callback(null, res);
-            },
-          };
-          server.addService(TokenExchangeService, impl);
-        });
+    let iam: { server: Server; address: string } | null;
+    if (opts.iamDown) {
+      iam = null;
+    } else {
+      iam = await startServer((server) => {
+        const impl: TokenExchangeServiceServer = {
+          exchange: (call, callback) => {
+            const _req: ExchangeTokenRequest = call.request;
+            if (iamFailureBudget > 0) {
+              iamFailureBudget -= 1;
+              // Return an UNAVAILABLE-like error
+              const err: any = new Error('temporary IAM failure');
+              err.code = 14; // grpc UNAVAILABLE
+              callback(err);
+              return;
+            }
+            const curr = seq[Math.min(tokenIdx, seq.length - 1)];
+            tokenIdx += 1;
+            const res = CreateTokenResponse.create({
+              accessToken: curr,
+              issuedTokenType: 'urn:ietf:params:oauth:token-type:access_token',
+              tokenType: opts.tokenType ?? 'Bearer',
+              expiresIn: Long.fromInt(expSec),
+              scopes: [],
+            });
+            callback(null, res);
+          },
+        };
+        server.addService(TokenExchangeService, impl);
+      });
+    }
 
     const capture: { lastAuth?: string; auths: string[] } = { lastAuth: undefined, auths: [] };
 
@@ -151,8 +213,16 @@ describe('authorization integration (mock gRPC)', () => {
       );
       return ret;
     } finally {
-      await new Promise<void>((resolve) => compute.server.tryShutdown(() => resolve()));
-      if (iam) await new Promise<void>((resolve) => iam.server.tryShutdown(() => resolve()));
+      compute.server.unbind(compute.address);
+      compute.server.forceShutdown();
+      const promises: Promise<void>[] = [];
+      promises.push(new Promise<void>((resolve) => compute.server.tryShutdown(() => resolve())));
+      if (iam) {
+        iam.server.unbind(iam.address);
+        iam.server.forceShutdown();
+        promises.push(new Promise<void>((resolve) => iam.server.tryShutdown(() => resolve())));
+      }
+      await Promise.all(promises);
     }
   }
 
@@ -602,7 +672,7 @@ default: p1
 
       await new Promise<void>((resolve, reject) => {
         const u = new URL(redirect);
-        const req2 = (http as any).request(
+        const req2 = http.request(
           {
             hostname: u.hostname,
             port: u.port,
@@ -610,6 +680,10 @@ default: p1
             method: 'GET',
           },
           (res: any) => {
+            if (res.statusCode !== 200) {
+              reject(new Error(`Failed to exchange code: ${res.statusCode}`));
+              return;
+            }
             res.on('data', () => {});
             res.on('end', () => resolve());
           },

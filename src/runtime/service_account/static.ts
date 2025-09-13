@@ -9,7 +9,7 @@ export class StaticReader implements Reader {
   public readonly $type = 'nebius.sdk.StaticReader';
   constructor(private readonly sa: ServiceAccount) {}
   [custom](): string {
-    return `${this.$type}(${inspect(this.sa)})`;
+    return `Static(${inspect(this.sa)})`;
   }
   [customJson](): unknown {
     return {
