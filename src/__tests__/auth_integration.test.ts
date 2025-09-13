@@ -90,7 +90,7 @@ describe('authorization integration (mock gRPC)', () => {
         return oldClearTimeout(timer);
       };
 
-      global.setTimeout = customSetTimeout as typeof setTimeout;
+      global.setTimeout = customSetTimeout as unknown as typeof setTimeout;
     }
   });
 
