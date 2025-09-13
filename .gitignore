@@ -10,6 +10,7 @@ src/generated/
 coverage/
 src/generated_test/
 .vscode/
+*generated_test.lock*
 
 # Local examples/tests not checked in
 local/

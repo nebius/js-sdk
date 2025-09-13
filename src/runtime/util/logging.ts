@@ -1,5 +1,7 @@
 import { inspect } from 'util';
 
+import { resolveHomeDir } from './path';
+
 // Symbol used to allow objects to provide a JSON-safe representation for
 // logging. Works similar to util.inspect.custom but is used for JSON
 // serialization of log argument values. If `argJson` is absent but
@@ -160,12 +162,41 @@ class ConsoleLikeWrapper implements ConsoleLike {
   error(message?: unknown, ...optionalParams: unknown[]): void {
     this.output(`${message}`);
     for (const p of optionalParams) {
-      this.output(` ${p}`);
+      this.output(` ${inspect(p)}`);
     }
     this.output('\n');
   }
 }
-type Output = ConsoleLike | Writer;
+
+export class FileWrapper implements ConsoleLike {
+  private fs: typeof import('fs');
+  private stream: import('stream').Writable;
+  constructor(filePath: string) {
+    const resolved = resolveHomeDir(filePath);
+    this.fs = require('fs');
+    this.stream = this.fs.createWriteStream(resolved, { flags: 'a' });
+  }
+  error(message?: unknown, ...optionalParams: unknown[]): void {
+    this.stream.write(`${message}`);
+    for (const p of optionalParams) {
+      this.stream.write(` ${inspect(p)}`);
+    }
+    this.stream.write('\n');
+  }
+}
+
+type Output = ConsoleLike | Writer | string;
+
+function outputToConsoleLike(output: Output | undefined): ConsoleLike {
+  if (typeof output === 'function') {
+    return new ConsoleLikeWrapper(output);
+  } else if (typeof output === 'string') {
+    return new FileWrapper(output);
+  } else if (output === undefined) {
+    return console as ConsoleLike;
+  }
+  return output;
+}
 
 export class ConsoleHandler implements Handler {
   private consoleLike: ConsoleLike;
@@ -186,15 +217,7 @@ export class ConsoleHandler implements Handler {
     alwaysAddTrace?: boolean;
   }) {
     this.alwaysAddTrace = !!opts?.alwaysAddTrace;
-    if (opts?.output) {
-      if (typeof opts.output === 'function') {
-        this.consoleLike = new ConsoleLikeWrapper(opts.output);
-      } else {
-        this.consoleLike = opts.output;
-      }
-    } else {
-      this.consoleLike = console as ConsoleLike;
-    }
+    this.consoleLike = outputToConsoleLike(opts?.output);
     this.level = opts?.level ?? Level.INFO;
     this.filters = opts?.filters ?? /.*/;
     this.argFormat = opts?.argFormat ?? ((key, value) => `${key}=${value}`);
@@ -328,15 +351,8 @@ export class PrettyHandler implements Handler {
     alwaysAddTrace?: boolean;
   }) {
     this.alwaysAddTrace = !!opts?.alwaysAddTrace;
-    if (opts?.output) {
-      if (typeof opts.output === 'function') {
-        this.consoleLike = new ConsoleLikeWrapper(opts.output);
-      } else {
-        this.consoleLike = opts.output;
-      }
-    } else {
-      this.consoleLike = console as ConsoleLike;
-    }
+    this.consoleLike = outputToConsoleLike(opts?.output);
+
     this.level = opts?.level ?? Level.INFO;
     this.filters = opts?.filters ?? /.*/;
     this.argFormat = opts?.argFormat ?? ((key, value) => `${key}=${value}`);
@@ -490,15 +506,7 @@ export class JsonHandler implements Handler {
     alwaysAddTrace?: boolean;
   }) {
     this.alwaysAddTrace = !!opts?.alwaysAddTrace;
-    if (opts?.output) {
-      if (typeof opts.output === 'function') {
-        this.consoleLike = new ConsoleLikeWrapper(opts.output);
-      } else {
-        this.consoleLike = opts.output;
-      }
-    } else {
-      this.consoleLike = console as ConsoleLike;
-    }
+    this.consoleLike = outputToConsoleLike(opts?.output);
     this.level = opts?.level ?? Level.INFO;
     this.filters = opts?.filters ?? /.*/;
   }
@@ -653,13 +661,16 @@ export function setDeprecatedWarningLogger(logger: Logger): void {
   deprecatedWarningLogger = logger.detached('nebius.deprecated');
 }
 
-export function defaultHandler(opts?: {
+type HandlerOpts = {
   output?: Output;
   level?: Level;
   filters?: Filters;
   colored?: boolean;
   alwaysAddTrace?: boolean;
-}) {
+  useJson?: boolean;
+};
+
+export function defaultHandler(opts?: HandlerOpts): Handler {
   dbg('defaultHandler: called', { opts });
   // Detect if stderr is a TTY and supports colors. Respect NO_COLOR and FORCE_COLOR env vars.
   const env = typeof process !== 'undefined' && process.env ? process.env : {};
@@ -669,6 +680,34 @@ export function defaultHandler(opts?: {
     typeof process !== 'undefined' &&
     process.stderr &&
     (process.stderr as unknown as { isTTY?: boolean }).isTTY;
+
+  const useJson =
+    typeof opts?.useJson === 'boolean' ? opts.useJson : process?.env?.NEBIUS_LOG_JSON === 'true';
+  dbg('defaultHandler: useJson resolved', { useJson, optsUseJson: opts?.useJson });
+
+  let output = opts?.output;
+  if (output === undefined) {
+    if (process?.env?.NEBIUS_LOG_OUTPUT === 'stderr') {
+      output = (x: string) => process.stderr.write(x);
+      dbg('defaultHandler: output set to stderr due to NEBIUS_LOG_OUTPUT=stderr');
+    } else if (process?.env?.NEBIUS_LOG_OUTPUT === 'stdout') {
+      output = (x: string) => process.stdout.write(x);
+      dbg('defaultHandler: output set to stdout due to NEBIUS_LOG_OUTPUT=stdout');
+    } else if (process?.env?.NEBIUS_LOG_OUTPUT === 'console') {
+      output = console as ConsoleLike;
+      dbg('defaultHandler: output set to console due to NEBIUS_LOG_OUTPUT=console');
+    } else if (process?.env?.NEBIUS_LOG_OUTPUT === 'none') {
+      output = () => {};
+      dbg('defaultHandler: output set to no-op due to NEBIUS_LOG_OUTPUT=none');
+    } else if (process?.env?.NEBIUS_LOG_OUTPUT) {
+      output = process.env.NEBIUS_LOG_OUTPUT;
+      dbg('defaultHandler: output set to file due to NEBIUS_LOG_OUTPUT=<file_path>', {
+        output,
+      });
+    }
+  } else {
+    dbg('defaultHandler: output provided in options', { output });
+  }
 
   const detectedColored = !!forceColor ? forceColor !== '0' : !noColor && !!isTTY;
   const colored = opts?.colored !== undefined ? opts.colored : detectedColored;
@@ -717,9 +756,16 @@ export function defaultHandler(opts?: {
   }
 
   let ret: Handler;
-  if (colored) {
+  if (useJson) {
+    ret = new JsonHandler({
+      output,
+      level: baseLevel,
+      filters: combinedFilters,
+      alwaysAddTrace,
+    });
+  } else if (colored) {
     ret = new PrettyHandler({
-      output: opts?.output,
+      output,
       level: baseLevel,
       filters: combinedFilters,
       colors: true,
@@ -727,7 +773,7 @@ export function defaultHandler(opts?: {
     });
   } else {
     ret = new ConsoleHandler({
-      output: opts?.output,
+      output,
       level: baseLevel,
       filters: combinedFilters,
       alwaysAddTrace,
@@ -751,13 +797,7 @@ function loggerChain(handler: Handler, names: string[]): Logger {
 export function resolveLogger(
   spec?: Logger | Handler | string | number,
   defaultName: string[] | string = ['nebius.default'],
-  opts?: {
-    output?: Output;
-    colored?: boolean;
-    filters?: Filters;
-    level?: Level;
-    alwaysAddTrace?: boolean;
-  },
+  opts?: HandlerOpts,
 ): Logger {
   dbg('resolveLogger: called', { spec, defaultName, opts });
   if (typeof defaultName === 'string') {
@@ -785,6 +825,7 @@ export function resolveLogger(
       filters: opts?.filters,
       colored: opts?.colored,
       alwaysAddTrace: opts?.alwaysAddTrace,
+      useJson: opts?.useJson,
     });
     return loggerChain(handler, defaultName);
   }
@@ -797,6 +838,7 @@ export function resolveLogger(
     filters: opts?.filters,
     colored: opts?.colored,
     alwaysAddTrace: opts?.alwaysAddTrace,
+    useJson: opts?.useJson,
   });
   return loggerChain(handler, defaultName);
 }

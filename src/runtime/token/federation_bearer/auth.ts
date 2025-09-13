@@ -28,6 +28,7 @@ async function openBrowser(url: string, logger?: Logger): Promise<void> {
   const platform = process.platform;
   if (platform === 'linux') {
     if (isWsl()) {
+      logger?.trace('detected WSL, using powershell.exe to open browser');
       spawn('powershell.exe', ['-NoProfile', '-NonInteractive', 'Start', url], {
         detached: true,
         stdio: 'ignore',
@@ -38,14 +39,17 @@ async function openBrowser(url: string, logger?: Logger): Promise<void> {
     // Probe common browser open providers and pick the first available one.
     const providers = ['xdg-open', 'x-www-browser', 'www-browser'];
     for (const provider of providers) {
+      logger?.trace('probing linux browser provider', { provider });
       try {
         const res = spawnSync('which', [provider], { stdio: 'ignore' });
+        logger?.trace('which returned', { provider, status: res.status });
         if (res.status === 0) {
+          logger?.trace('using linux browser provider', { provider });
           spawn(provider, [url], { detached: true, stdio: 'ignore' }).unref();
           return;
         }
-      } catch {
-        // ignore and continue
+      } catch (err) {
+        logger?.debug('failed to probe linux browser provider, will try next', { err, provider });
       }
     }
 
@@ -56,10 +60,13 @@ async function openBrowser(url: string, logger?: Logger): Promise<void> {
   }
 
   if (platform === 'darwin') {
+    logger?.trace('detected darwin, using open to open browser');
     spawn('open', [url], { detached: true, stdio: 'ignore' }).unref();
   } else if (platform === 'win32') {
+    logger?.trace('detected win32, using start to open browser');
     spawn('cmd', ['/c', 'start', '', url], { detached: true, stdio: 'ignore' }).unref();
   } else {
+    logger?.trace('unknown platform, using xdg-open to open browser', { platform });
     spawn('xdg-open', [url], { detached: true, stdio: 'ignore' }).unref();
   }
 }
@@ -116,7 +123,7 @@ export async function getCode(params: {
 }): Promise<{ code: string; state: string; redirectUri: string; verifier: string }> {
   const { clientId, authEndpoint, federationId, writer, noBrowserOpen, timeoutMs, logger } = params;
   const pkce = new PKCE();
-  const cb = new CallbackHandler();
+  const cb = new CallbackHandler(logger?.child('callback'));
   await cb.listenAndServe();
   const redirectUri = cb.addr; // e.g. http://127.0.0.1:port
 
@@ -142,7 +149,11 @@ export async function getCode(params: {
   logger?.info('open browser', { url, noBrowserOpen });
   if (!noBrowserOpen) await openBrowser(url, logger);
 
+  logger?.trace('waiting for authorization code');
   const code = await cb.waitForCode(timeoutMs);
+  logger?.trace('authorization code received, shutting down callback server', {
+    code: code ? code.slice(0, 3) + '...' : null,
+  });
   await cb.shutdown();
   if (!code) throw new Error('Timeout waiting for authorization code');
   return { code, state: cb.state, redirectUri, verifier: pkce.verifier };
@@ -155,9 +166,16 @@ export async function getToken(params: {
   redirectUri: string;
   verifier: string;
   ca?: Buffer | string | string[];
+  logger?: Logger;
 }): Promise<GetTokenResult> {
-  const { clientId, tokenEndpoint, code, redirectUri, verifier, ca } = params;
+  const { clientId, tokenEndpoint, code, redirectUri, verifier, ca, logger } = params;
   const url = new URL(TOKEN_ENDPOINT, httpsUrl(tokenEndpoint)).toString();
+  logger?.trace('exchanging code for token', {
+    url,
+    redirectUri,
+    verifier: verifier.slice(0, 3) + '...',
+    code: code.slice(0, 3) + '...',
+  });
   const body = new URLSearchParams({
     grant_type: 'authorization_code',
     client_id: String(clientId),
@@ -180,7 +198,15 @@ export async function getToken(params: {
       `token endpoint error: status=${res.status}, body=${typeof res.data === 'string' ? res.data : JSON.stringify(res.data)}`,
     );
   }
-  return res.data as GetTokenResult;
+  const data = res.data as GetTokenResult;
+  logger?.trace('token endpoint response', {
+    access_token: data.access_token.slice(0, 3) + '...',
+    token_type: data.token_type,
+    scope: data.scope,
+    refresh_token: data.refresh_token ? data.refresh_token.slice(0, 3) + '...' : undefined,
+    expires_in: data.expires_in,
+  });
+  return data;
 }
 
 export async function authorize(params: {
@@ -203,6 +229,7 @@ export async function authorize(params: {
     ca,
     logger,
   } = params;
+  logger?.trace('authorize: start');
   const { code, redirectUri, verifier } = await getCode({
     clientId,
     authEndpoint: federationEndpoint,
@@ -224,6 +251,7 @@ export async function authorize(params: {
     redirectUri,
     verifier,
     ca,
+    logger,
   });
   return res;
 }

@@ -1,7 +1,7 @@
 import type { AuthorizationOptions } from '../../authorization/provider';
 import { Bearer, Receiver, Token } from '../../token';
 import { TokenSanitizer } from '../../token_sanitizer';
-import { Logger } from '../../util/logging';
+import { custom, customJson, Logger } from '../../util/logging';
 
 import { authorize } from './auth';
 
@@ -18,13 +18,27 @@ class FederationReceiver extends Receiver {
   ) {
     super();
   }
+  [custom](): string {
+    return `${this.$type}(clientId=${this.clientId}, federationEndpoint=${this.federationEndpoint}, federationId=${this.federationId}, noBrowserOpen=${this.noBrowserOpen})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: this.$type,
+      clientId: this.clientId,
+      federationEndpoint: this.federationEndpoint,
+      federationId: this.federationId,
+      noBrowserOpen: this.noBrowserOpen,
+      writer: this.writer ? 'provided' : 'none',
+      ca: this.ca ? 'provided' : 'none',
+    };
+  }
 
   protected async _fetch(
     timeoutMs?: number,
     _options?: AuthorizationOptions | undefined,
   ): Promise<Token> {
     const start = Date.now();
-    this.logger?.debug('receiver._fetch: start', { timeoutMs, noBrowserOpen: this.noBrowserOpen });
+    this.logger?.debug('receiver._fetch: start', { timeoutMs, start });
     const res = await authorize({
       clientId: this.clientId,
       federationEndpoint: this.federationEndpoint,
@@ -36,7 +50,7 @@ class FederationReceiver extends Receiver {
       ca: this.ca,
       logger: this.logger?.child('auth'),
     });
-    this.logger?.debug('receiver._fetch: authorize result', {
+    this.logger?.trace('receiver._fetch: authorize result', {
       expires_in: res?.expires_in,
       access_token: TokenSanitizer.accessTokenSanitizer().sanitize(res?.access_token),
     });
@@ -46,7 +60,7 @@ class FederationReceiver extends Receiver {
     const expiration =
       res.expires_in > 0 ? new Date(Date.now() + res.expires_in * 1000) : undefined;
     const tok = new Token(res.access_token, expiration);
-    this.logger?.debug('receiver._fetch: built token', { token: tok });
+    this.logger?.debug('receiver._fetch: received token', { token: tok });
     return tok;
   }
 
@@ -58,6 +72,7 @@ class FederationReceiver extends Receiver {
 
 export class FederationBearer extends Bearer {
   public readonly $type = 'nebius.sdk.FederationBearer';
+  private readonly logger?: Logger;
   constructor(
     private readonly profileName: string,
     private readonly clientId: string,
@@ -66,9 +81,29 @@ export class FederationBearer extends Bearer {
     private readonly writer?: (s: string) => void,
     private readonly noBrowserOpen: boolean = false,
     private readonly ca?: Buffer,
-    private readonly logger?: Logger,
+    logger?: Logger,
   ) {
     super();
+    this.logger = logger?.withFields({
+      profile: profileName,
+      federationEndpoint,
+      federationId,
+      clientId,
+    });
+    this.logger?.trace('bearer: created');
+  }
+  [custom](): string {
+    return `${this.$type}(profileName=${this.profileName}, clientId=${this.clientId}, federationEndpoint=${this.federationEndpoint}, federationId=${this.federationId}, noBrowserOpen=${this.noBrowserOpen})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: this.$type,
+      profileName: this.profileName,
+      clientId: this.clientId,
+      federationEndpoint: this.federationEndpoint,
+      federationId: this.federationId,
+      noBrowserOpen: this.noBrowserOpen,
+    };
   }
 
   get name(): string | undefined {
@@ -76,7 +111,7 @@ export class FederationBearer extends Bearer {
   }
 
   receiver(): Receiver {
-    this.logger?.debug('bearer.receiver');
+    this.logger?.trace('bearer.receiver');
     return new FederationReceiver(
       this.clientId,
       this.federationEndpoint,

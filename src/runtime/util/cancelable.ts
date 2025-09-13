@@ -15,14 +15,14 @@ export class TimeoutError extends Error {
 export class Cancelable {
   private _isCanceled = false;
   private timers = new Set<NodeJS.Timeout>();
-  private timerPromiseRejectors = new Set<(reason?: CancelError) => void>();
+  private cancelWaiters = new Set<(reason?: CancelError) => void>();
 
   cancel() {
     this._isCanceled = true;
     this.timers.forEach(clearTimeout);
     this.timers.clear();
-    this.timerPromiseRejectors.forEach((rej) => rej(new CancelError()));
-    this.timerPromiseRejectors.clear();
+    this.cancelWaiters.forEach((rej) => rej(new CancelError()));
+    this.cancelWaiters.clear();
   }
 
   get isCanceled() {
@@ -36,12 +36,13 @@ export class Cancelable {
           reject(new CancelError());
         } else {
           this.timers.delete(handle);
-          this.timerPromiseRejectors.delete(reject);
+          this.cancelWaiters.delete(reject);
           resolve();
         }
       }, ms);
+      handle.unref?.();
       this.timers.add(handle);
-      this.timerPromiseRejectors.add(reject);
+      this.cancelWaiters.add(reject);
     });
   }
 
@@ -52,11 +53,11 @@ export class Cancelable {
       resolver = resolve;
       rejector = reject;
     });
-    this.timerPromiseRejectors.add(rejector!);
+    this.cancelWaiters.add(rejector!);
     return new Promise<T>((resolveMain, rejectMain) =>
       Promise.race([promise, guarder]).then(
         (v) => {
-          this.timerPromiseRejectors.delete(rejector!);
+          this.cancelWaiters.delete(rejector!);
           if (this._isCanceled) {
             rejectMain(new CancelError());
           } else {
@@ -67,7 +68,7 @@ export class Cancelable {
           }
         },
         (reason) => {
-          this.timerPromiseRejectors.delete(rejector!);
+          this.cancelWaiters.delete(rejector!);
           rejectMain(reason);
           try {
             rejector!(reason);
@@ -88,10 +89,11 @@ export function withTimeout<T>(promise: PromiseLike<T>, ms: number): Promise<T> 
     handle = setTimeout(() => {
       reject(new TimeoutError());
     }, ms);
+    handle.unref?.();
     return Promise.resolve(promise).then(
-      (v) => {
+      (result) => {
         clearTimeout(handle);
-        resolve(v);
+        resolve(result);
       },
       (err) => {
         clearTimeout(handle);
@@ -99,4 +101,34 @@ export function withTimeout<T>(promise: PromiseLike<T>, ms: number): Promise<T> 
       },
     );
   });
+}
+
+export class CancelableSleep extends Promise<void> {
+  private handle: NodeJS.Timeout | null = null;
+  private rejector: (reason?: CancelError) => void = () => {};
+  constructor(ms: number) {
+    let resolver: (value: void | PromiseLike<void>) => void;
+    super((resolve, reject) => {
+      resolver = resolve;
+      this.rejector = reject;
+    });
+    this.handle = setTimeout(() => {
+      this.handle = null;
+      resolver();
+    }, ms);
+    this.handle.unref?.();
+  }
+  cancel() {
+    if (this.handle) {
+      clearTimeout(this.handle);
+      this.handle = null;
+      this.rejector(new CancelError());
+    }
+  }
+}
+
+export function sleep(ms: number, setCancel?: (cancel: () => void) => void): CancelableSleep {
+  const sleeper = new CancelableSleep(ms);
+  setCancel?.(() => sleeper.cancel());
+  return sleeper;
 }

@@ -43,12 +43,16 @@ jobs:
       - name: Run basic tests
         env:
           NEBIUS_LOG: DEBUG
+          NEBIUS_LOG_OUTPUT: stderr
+          FORCE_COLOR: 1
         run: npm run test:noserver
 
       - name: Run E2E tests
         env:
           NEBIUS_E2E_CONFIG_B64: ${{ secrets.NEBIUS_E2E_CONFIG_B64 }}
           NEBIUS_LOG: DEBUG
+          NEBIUS_LOG_OUTPUT: stderr
+          FORCE_COLOR: 1
           GRPC_VERBOSITY: DEBUG
           GRPC_TRACE: 'index,channel,connectivity_state,dns_resolver,pick_first,round_robin,subchannel,transport,keepalive'
         run: npm run test:e2e

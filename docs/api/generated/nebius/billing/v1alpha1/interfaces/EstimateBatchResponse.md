@@ -43,4 +43,4 @@ Estimated hourly cost for all resources in the batch.
 Defined in: src/generated/nebius/billing/v1alpha1/index.ts:396
 
 Estimated monthly cost for all resources in the batch.
-Calculated as hourly_cost _ 24 _ 30 (720 hours) for resources running continuously.
+Calculated as hourly*cost * 24 \_ 30 (720 hours) for resources running continuously.

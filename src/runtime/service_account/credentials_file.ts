@@ -1,5 +1,7 @@
 import { readFileSync } from 'fs';
+import { inspect } from 'util';
 
+import { custom, customJson, inspectJson, Logger } from '../util/logging';
 import { resolveHomeDir } from '../util/path';
 
 import type { Reader } from './service_account';
@@ -34,12 +36,17 @@ function validateSubjectCredentials(sc: SubjectCredentials) {
 }
 
 export class CredentialsFileReader implements Reader {
+  public readonly $type = 'nebius.sdk.CredentialsFileReader';
   private readonly sc: SubjectCredentials;
   private readonly pem: string;
+  private readonly path: string;
 
-  constructor(filename: string) {
-    const path = resolveHomeDir(filename);
-    const raw = readFileSync(path, 'utf8');
+  constructor(
+    filename: string,
+    private logger?: Logger,
+  ) {
+    this.path = resolveHomeDir(filename);
+    const raw = readFileSync(this.path, 'utf8');
     const parsed = JSON.parse(raw) as ServiceAccountCredentialsFile;
     const sc = parsed['subject-credentials'];
     if (!sc) throw new Error('Missing subject-credentials section');
@@ -47,9 +54,19 @@ export class CredentialsFileReader implements Reader {
     this.sc = sc;
     this.pem = sc['private-key'];
   }
+  [custom](): string {
+    return `${this.$type}(path=${this.path}, sa=${inspect(this.read())})`;
+  }
+  [customJson](): object {
+    return {
+      type: this.$type,
+      path: this.path,
+      serviceAccount: inspectJson(this.read()),
+    };
+  }
 
   read(): ServiceAccount {
-    return new ServiceAccount(this.pem, this.sc.kid, this.sc.sub);
+    return new ServiceAccount(this.pem, this.sc.kid, this.sc.sub, this.logger);
   }
 
   getExchangeTokenRequest() {

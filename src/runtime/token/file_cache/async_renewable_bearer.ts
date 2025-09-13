@@ -157,29 +157,28 @@ export class AsyncRenewableBearer extends Bearer {
   /** Schedules next background renewal. Always de-dupes existing timer. */
   private scheduleNext(ms: number) {
     if (this.stopped) {
-      this.logger?.debug('scheduleNext skipped (stopped)');
+      this.logger?.trace('scheduleNext skipped (stopped)');
       return;
     }
     if (this.refreshTimer) clearTimeout(this.refreshTimer);
 
     const delay = Math.max(0, ms);
-    this.logger?.debug('scheduleNext', { delayMs: delay });
+    this.logger?.trace('scheduleNext', { delayMs: delay });
     this.refreshTimer = setTimeout(() => void this.run(), delay);
     // Don't keep Node process alive because of this timer
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (this.refreshTimer as any)?.unref?.();
+    this.refreshTimer.unref?.();
   }
 
   /** Compute when to renew next, based on token expiration. */
   private computeNextTimeoutMs(tok: Token | null | undefined): number {
     if (!tok) {
-      this.logger?.debug('computeNextTimeoutMs: no token -> 0');
+      this.logger?.trace('computeNextTimeoutMs: no token -> 0');
       return 0;
     }
     const exp = tok.expiration?.getTime();
     if (!exp) {
       const v = 10 * 24 * 60 * 60 * 1000;
-      this.logger?.debug('computeNextTimeoutMs: no expiration ->', {
+      this.logger?.trace('computeNextTimeoutMs: no expiration, refresh every 10 days ->', {
         result: v,
         token: tok,
       });
@@ -188,34 +187,35 @@ export class AsyncRenewableBearer extends Bearer {
     const now = Date.now();
     const remaining = exp - now;
     if (remaining <= 0) {
-      this.logger?.debug('computeNextTimeoutMs: already expired -> 0');
+      this.logger?.trace('computeNextTimeoutMs: already expired -> 0');
       return 0;
     }
 
-    const targetFromNow = Math.max(
-      Math.floor(remaining * this.lifetimeSafeFraction),
-      this.safetyMinRemainingMs,
+    const result = Math.max(
+      Math.min(
+        Math.floor(remaining * this.lifetimeSafeFraction),
+        remaining - this.safetyMinRemainingMs,
+      ),
+      0,
     );
-
-    const result = Math.max(0, remaining - targetFromNow);
-    this.logger?.debug('computeNextTimeoutMs', { remaining, targetFromNow, result });
+    this.logger?.trace('computeNextTimeoutMs', { remaining, result });
     return result;
   }
 
   private addWaiter(resolve: (t: Token) => void, reject: (e: unknown) => void) {
     this.waiters.push({ resolve, reject });
-    this.logger?.debug('addWaiter', { waiters: this.waiters.length });
+    this.logger?.trace('addWaiter', { waiters: this.waiters.length });
   }
 
   private drainWaitersWithToken(tok: Token) {
     const ws = this.waiters.splice(0, this.waiters.length);
-    this.logger?.debug('drainWaitersWithToken', { count: ws.length, token: tok });
+    this.logger?.trace('drainWaitersWithToken', { count: ws.length, token: tok });
     ws.forEach((w) => w.resolve(tok));
   }
 
   private drainWaitersWithError(err: unknown) {
     const ws = this.waiters.splice(0, this.waiters.length);
-    this.logger?.debug('drainWaitersWithError', { count: ws.length, err });
+    this.logger?.trace('drainWaitersWithError', { count: ws.length, err });
     ws.forEach((w) => w.reject(err));
   }
 
@@ -257,6 +257,7 @@ export class AsyncRenewableBearer extends Bearer {
       this.logger?.debug('startRenewal: reuse inFlight promise');
       return this.inFlightRenewal;
     }
+    this.logger?.trace('startRenewal: begin new renewal');
 
     const useSyncOpts = this.nextSyncOptions;
     this.nextSyncOptions = null;
@@ -272,7 +273,9 @@ export class AsyncRenewableBearer extends Bearer {
 
     const doRenew = async (): Promise<Token> => {
       const recv = this.source.receiver();
+      this.logger?.trace('startRenewal: fetching from source receiver', { recv });
       const tok = await recv.fetch(timeoutMs, options);
+      this.logger?.trace('startRenewal: fetched token', { token: tok });
       this.cacheToken = tok;
       await this.fileCache.set(tok);
       this.fresh = true;
@@ -283,11 +286,11 @@ export class AsyncRenewableBearer extends Bearer {
     };
 
     const p = doRenew()
-      .catch((e) => {
+      .catch((err) => {
         this.fresh = false;
-        this.logger?.debug('startRenewal: error', { error: e });
-        this.drainWaitersWithError(e);
-        throw e;
+        this.logger?.debug('startRenewal: error', { err });
+        this.drainWaitersWithError(err);
+        throw err;
       })
       .finally(() => {
         this.inFlightRenewal = null;
@@ -303,7 +306,7 @@ export class AsyncRenewableBearer extends Bearer {
     const renewSynchronous = Boolean(options?.renewSynchronous);
     const reportError = Boolean(options?.reportError);
 
-    this.logger?.debug('fetch: enter', {
+    this.logger?.trace('fetch: enter', {
       timeoutMs,
       options,
       renewRequired,
@@ -316,8 +319,10 @@ export class AsyncRenewableBearer extends Bearer {
     // Try to use cached token (memory first, then throttled file cache)
     let tok = this.cacheToken ?? this.fileCache.getCached() ?? null;
     if (!tok) {
+      this.logger?.trace('fetch: no cached token, trying file cache');
       const fromDisk = await this.fileCache.get();
       if (fromDisk) {
+        this.logger?.trace('fetch: got token from file cache', { token: fromDisk });
         this.cacheToken = fromDisk;
         tok = fromDisk;
       }
@@ -331,7 +336,18 @@ export class AsyncRenewableBearer extends Bearer {
         if (!this.refreshTimer) this.scheduleNext(this.computeNextTimeoutMs(tok));
         this.logger?.debug('fetch: return cached token (within safety margin)', { token: tok });
         return tok;
+      } else {
+        this.logger?.trace('fetch: cached token outside safety margin, needs renewal', {
+          token: tok,
+          margin,
+        });
       }
+    } else if (renewRequired) {
+      this.logger?.trace('fetch: renewRequired set, skipping cached token');
+    } else if (tok && tok.isExpired()) {
+      this.logger?.trace('fetch: cached token is expired, needs renewal', { token: tok });
+    } else {
+      this.logger?.trace('fetch: no cached token, needs renewal');
     }
 
     // After first fetch, drop extra safety margin behavior
@@ -340,6 +356,7 @@ export class AsyncRenewableBearer extends Bearer {
     const mustRenew = renewRequired || this.needRenew(now);
 
     if (mustRenew) {
+      this.logger?.trace('fetch: mustRenew');
       if (renewSynchronous) {
         this.nextSyncOptions = {
           timeoutMs:
@@ -348,16 +365,20 @@ export class AsyncRenewableBearer extends Bearer {
               : null,
           options: options ?? null,
         };
-        this.logger?.debug('fetch: mustRenew (sync)', { nextSyncOptions: this.nextSyncOptions });
+        this.logger?.trace('fetch: mustRenew (sync)', { nextSyncOptions: this.nextSyncOptions });
       } else {
         this.requestRenewal();
-        this.logger?.debug('fetch: mustRenew (async) -> requested');
+        this.logger?.trace('fetch: mustRenew (async) -> requested');
       }
 
       const renewalP = this.startRenewal();
 
       // Synchronous callers or error-reporting callers await the result (with optional timeout)
       if (renewSynchronous || reportError) {
+        this.logger?.trace('fetch: mustRenew (sync)', {
+          nextSyncOptions: this.nextSyncOptions,
+          timeoutMs,
+        });
         const resultP = !timeoutMs
           ? renewalP
           : Promise.race<Token>([
@@ -367,6 +388,7 @@ export class AsyncRenewableBearer extends Bearer {
               ),
             ]);
         const newTok = await resultP;
+        this.logger?.trace('fetch: sync path -> renewed, scheduling next', { token: newTok });
         // After a direct synchronous renewal we must schedule the next proactive renewal ourselves
         this.scheduleNext(this.computeNextTimeoutMs(newTok));
         this.logger?.debug('fetch: sync path -> renewed', { token: newTok });
@@ -375,34 +397,47 @@ export class AsyncRenewableBearer extends Bearer {
 
       // Asynchronous callers: optionally wait up to timeout for freshness
       if (timeoutMs) {
-        this.logger?.debug('fetch: async path waiting for freshness', { timeoutMs });
+        this.logger?.trace('fetch: async path waiting for freshness', { timeoutMs });
         await new Promise<void>((resolve, reject) => {
-          const onResolve = (_: Token) => {
-            this.logger?.debug('fetch: async freshness satisfied');
+          let handler: NodeJS.Timeout | undefined = undefined;
+          const onResolve = (token: Token) => {
+            this.logger?.trace('fetch: async freshness satisfied', { token });
             resolve();
+            if (handler) {
+              clearTimeout(handler);
+              handler = undefined;
+            }
           };
-          const onReject = (e: unknown) => {
-            this.logger?.debug('fetch: async freshness error', { error: e });
-            reject(e);
+          const onReject = (err: unknown) => {
+            this.logger?.trace('fetch: async freshness error', { err });
+            if (handler) {
+              clearTimeout(handler);
+              handler = undefined;
+            }
+            reject(err);
           };
           this.addWaiter(onResolve, onReject);
 
-          setTimeout(() => {
+          handler = setTimeout(() => {
             if (this.fresh) {
+              this.logger?.trace('fetch: async freshness already satisfied', {
+                token: this.cacheToken,
+              });
               resolve();
             } else {
               const idx = this.waiters.findIndex(
                 (w) => w.resolve === onResolve && w.reject === onReject,
               );
               if (idx >= 0) this.waiters.splice(idx, 1);
-              this.logger?.debug('fetch: async freshness timeout');
+              this.logger?.trace('fetch: async freshness timeout');
               reject(new RenewalError('Timeout waiting fresh token'));
             }
           }, timeoutMs);
+          handler.unref?.();
         });
       } else if (!tok) {
         // No token available yet: wait for current renewal to finish even in async mode
-        this.logger?.debug('fetch: async path, no token, awaiting renewal');
+        this.logger?.debug('fetch: async path without token, forcefully awaiting renewal');
         await renewalP;
       }
     }
@@ -418,18 +453,18 @@ export class AsyncRenewableBearer extends Bearer {
 
   isRenewalRequired(): boolean {
     const v = this.needRenew();
-    this.logger?.debug('isRenewalRequired', { result: v });
+    this.logger?.trace('isRenewalRequired', { result: v });
     return v;
   }
 
   requestRenewal(): void {
     if (this.stopped) {
-      this.logger?.debug('requestRenewal ignored (stopped)');
+      this.logger?.trace('requestRenewal ignored (stopped)');
       return;
     }
     this.fresh = false;
     this.renewalRequested = true;
-    this.logger?.debug('requestRenewal -> scheduled');
+    this.logger?.trace('requestRenewal -> scheduled');
     this.scheduleNext(0);
   }
 
@@ -448,6 +483,7 @@ export class AsyncRenewableBearer extends Bearer {
       this.scheduleNext(delay);
       return;
     }
+    this.logger?.trace('run: starting renewal', { renewalRequested: this.renewalRequested });
 
     let nextDelayMs = 0;
 
@@ -456,8 +492,8 @@ export class AsyncRenewableBearer extends Bearer {
       // Schedule next proactive renewal
       nextDelayMs = this.computeNextTimeoutMs(tok);
       this.renewAttempt = 0;
-      this.logger?.debug('run: renewed ok, nextDelayMs', { nextDelayMs, token: tok });
-    } catch (_e) {
+      this.logger?.debug('run: renewed', { nextDelayMs, token: tok });
+    } catch (err) {
       // Backoff on failure
       this.renewAttempt += 1;
       const attempt = this.renewAttempt;
@@ -470,10 +506,11 @@ export class AsyncRenewableBearer extends Bearer {
       }
       nextDelayMs = Math.max(nextDelayMs, this.initialRetryTimeoutMs);
       nextDelayMs = this.withJitter(nextDelayMs);
-      this.logger?.debug('run: renewal failed, backoff', { attempt, nextDelayMs });
+      this.logger?.debug('run: renewal failed, backoff', { attempt, nextDelayMs, err });
     }
 
     this.scheduleNext(nextDelayMs);
+    this.logger?.trace('run: done');
   }
 
   async close(graceMs?: number | undefined): Promise<void> {

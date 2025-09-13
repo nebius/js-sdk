@@ -2,7 +2,7 @@ import { createSign } from 'crypto';
 
 import { ExchangeTokenRequest } from '../../generated/nebius/iam/v1/index';
 import { TokenRequester } from '../token/exchangeable';
-import { custom, customJson } from '../util/logging';
+import { custom, customJson, Logger } from '../util/logging';
 
 export interface ServiceAccountLike extends TokenRequester {
   readonly privateKeyPem: string; // PEM-encoded private key (PKCS#8 or PKCS#1)
@@ -20,6 +20,7 @@ export class ServiceAccount implements ServiceAccountLike {
     public readonly privateKeyPem: string,
     public readonly publicKeyId: string,
     public readonly serviceAccountId: string,
+    readonly logger?: Logger,
   ) {}
 
   [custom](): string {
@@ -34,7 +35,12 @@ export class ServiceAccount implements ServiceAccountLike {
 
   getExchangeTokenRequest(): ExchangeTokenRequest {
     const nowSec = Math.floor(Date.now() / 1000);
-    const expSec = nowSec + 60; // 1 minute TTL as in Python
+    const expSec = nowSec + 60; // 1 minute TTL
+    const logger = this.logger?.withFields({
+      serviceAccountId: this.serviceAccountId,
+      publicKeyId: this.publicKeyId,
+    });
+    logger?.trace('creating JWT for ExchangeTokenRequest', { iat: nowSec, exp: expSec });
 
     const header = { alg: 'RS256', kid: this.publicKeyId, typ: 'JWT' } as const;
     const payload = {
