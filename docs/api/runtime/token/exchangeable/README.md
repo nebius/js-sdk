@@ -11,3 +11,7 @@
 - [ExchangeableBearer](classes/ExchangeableBearer.md)
 - [UnsupportedResponseError](classes/UnsupportedResponseError.md)
 - [UnsupportedTokenTypeError](classes/UnsupportedTokenTypeError.md)
+
+## Interfaces
+
+- [TokenRequester](interfaces/TokenRequester.md)

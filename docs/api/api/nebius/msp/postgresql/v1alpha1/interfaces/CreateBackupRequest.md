@@ -1,0 +1,35 @@
+[**@nebius/nodejs-sdk**](../../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / CreateBackupRequest
+
+# Interface: CreateBackupRequest
+
+Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:399
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:401
+
+---
+
+### $type
+
+> **$type**: `"nebius.msp.postgresql.v1alpha1.CreateBackupRequest"`
+
+Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:400
+
+---
+
+### clusterId
+
+> **clusterId**: `string`
+
+Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:406
+
+ID of the PostgreSQL cluster that holds backup.

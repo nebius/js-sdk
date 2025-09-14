@@ -6,15 +6,19 @@
 
 # Class: ThrottledTokenCache
 
-Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:6](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/throttled_token_cache.ts#L6)
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:9](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L9)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
 
 ## Constructors
 
 ### Constructor
 
-> **new ThrottledTokenCache**(`name`, `cacheFile`, `throttle`): `ThrottledTokenCache`
+> **new ThrottledTokenCache**(`name`, `cacheFile`, `throttle`, `logger?`): `ThrottledTokenCache`
 
-Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:13](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/throttled_token_cache.ts#L13)
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:17](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L17)
 
 #### Parameters
 
@@ -30,17 +34,41 @@ Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:13](https://g
 
 `number` = `...`
 
+##### logger?
+
+[`Logger`](../../../../util/logging/classes/Logger.md)
+
 #### Returns
 
 `ThrottledTokenCache`
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.ThrottledTokenCache"` = `'nebius.sdk.ThrottledTokenCache'`
+
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:10](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L10)
+
 ## Methods
+
+### \[customJson\]()
+
+> **\[customJson\]**(): `unknown`
+
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:31](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L31)
+
+#### Returns
+
+`unknown`
+
+---
 
 ### get()
 
 > **get**(): `Promise`\<`undefined` \| [`Token`](../../../classes/Token.md)\>
 
-Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:27](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/throttled_token_cache.ts#L27)
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:44](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L44)
 
 #### Returns
 
@@ -52,7 +80,7 @@ Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:27](https://g
 
 > **getCached**(): `undefined` \| [`Token`](../../../classes/Token.md)
 
-Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:23](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/throttled_token_cache.ts#L23)
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:40](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L40)
 
 #### Returns
 
@@ -64,7 +92,7 @@ Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:23](https://g
 
 > **refresh**(): `Promise`\<`undefined` \| [`Token`](../../../classes/Token.md)\>
 
-Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:56](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/throttled_token_cache.ts#L56)
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:86](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L86)
 
 #### Returns
 
@@ -76,7 +104,7 @@ Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:56](https://g
 
 > **remove**(): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:42](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/throttled_token_cache.ts#L42)
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:69](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L69)
 
 #### Returns
 
@@ -86,9 +114,9 @@ Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:42](https://g
 
 ### removeIfEqual()
 
-> **removeIfEqual**(`token`): `Promise`\<`void`\>
+> **removeIfEqual**(`token`): `Promise`\<`boolean`\>
 
-Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:48](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/throttled_token_cache.ts#L48)
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:76](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L76)
 
 #### Parameters
 
@@ -98,7 +126,7 @@ Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:48](https://g
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ---
 
@@ -106,7 +134,7 @@ Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:48](https://g
 
 > **set**(`token`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:35](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/throttled_token_cache.ts#L35)
+Defined in: [src/runtime/token/file_cache/throttled_token_cache.ts:58](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/throttled_token_cache.ts#L58)
 
 #### Parameters
 

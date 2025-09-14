@@ -1,6 +1,6 @@
 # Contribution Guide
 
-We appreciate your interest in contributing to the Nebius TypeScript SDK. This guide explains the preferred workflow and common developer commands for working on this repository.
+We appreciate your interest in contributing to the Nebius Node-JS SDK. This guide explains the preferred workflow and common developer commands for working on this repository.
 
 ## 🐞 Reporting Issues
 
@@ -98,7 +98,7 @@ Run the same linting/format/test commands locally that CI runs. This reduces PR 
 
 ## Troubleshooting & notes
 
-- Generated code in `src/generated/` is authored by generator scripts. Avoid editing generated files by hand.
+- Generated code in `src/api/` is authored by generator scripts. Avoid editing generated files by hand.
 - If types or generated clients are missing, run the generator scripts described under `scripts/`.
 - For API docs, run `npm run docs` and open `docs/api/index.html`.
 

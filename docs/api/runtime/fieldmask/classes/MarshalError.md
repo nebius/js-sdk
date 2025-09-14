@@ -6,7 +6,7 @@
 
 # Class: MarshalError
 
-Defined in: [src/runtime/fieldmask.ts:13](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/fieldmask.ts#L13)
+Defined in: [src/runtime/fieldmask.ts:14](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/fieldmask.ts#L14)
 
 ## Extends
 
@@ -34,7 +34,43 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:1082
 
 `Error.constructor`
 
+### Constructor
+
+> **new MarshalError**(`message?`, `options?`): `MarshalError`
+
+Defined in: node_modules/typescript/lib/lib.es5.d.ts:1082
+
+#### Parameters
+
+##### message?
+
+`string`
+
+##### options?
+
+`ErrorOptions`
+
+#### Returns
+
+`MarshalError`
+
+#### Inherited from
+
+`Error.constructor`
+
 ## Properties
+
+### cause?
+
+> `optional` **cause**: `unknown`
+
+Defined in: node_modules/typescript/lib/lib.es2022.error.d.ts:26
+
+#### Inherited from
+
+`Error.cause`
+
+---
 
 ### message
 

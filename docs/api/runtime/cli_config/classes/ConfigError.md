@@ -6,7 +6,7 @@
 
 # Class: ConfigError
 
-Defined in: [src/runtime/cli_config.ts:24](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L24)
+Defined in: [src/runtime/cli_config.ts:28](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L28)
 
 ## Extends
 
@@ -38,7 +38,43 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:1082
 
 `Error.constructor`
 
+### Constructor
+
+> **new ConfigError**(`message?`, `options?`): `ConfigError`
+
+Defined in: node_modules/typescript/lib/lib.es5.d.ts:1082
+
+#### Parameters
+
+##### message?
+
+`string`
+
+##### options?
+
+`ErrorOptions`
+
+#### Returns
+
+`ConfigError`
+
+#### Inherited from
+
+`Error.constructor`
+
 ## Properties
+
+### cause?
+
+> `optional` **cause**: `unknown`
+
+Defined in: node_modules/typescript/lib/lib.es2022.error.d.ts:26
+
+#### Inherited from
+
+`Error.cause`
+
+---
 
 ### message
 

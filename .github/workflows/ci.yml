@@ -34,18 +34,41 @@ jobs:
           # Ensure devDependencies are installed for codegen, lint and tests
           NPM_CONFIG_PRODUCTION: false
 
-      - name: Generate sources
-        run: npm run generate
+      - name: Build
+        run: npm run build
 
       - name: Lint
         run: npm run lint
 
+      - name: Run auth test
+        env:
+          NEBIUS_LOG: TRACE
+          NEBIUS_LOG_OUTPUT: stderr
+          FORCE_COLOR: 1
+          GRPC_VERBOSITY: DEBUG
+          GRPC_TRACE: 'index,channel,connectivity_state,dns_resolver,pick_first,round_robin,subchannel,transport,keepalive'
+        run: npm run test:noserver -- --runInBand --testPathPatterns='auth_integration.test.ts' -t "federation flow"
+
       - name: Run basic tests
-        run: npm run test:noserver
+        env:
+          NEBIUS_LOG: DEBUG
+          NEBIUS_LOG_OUTPUT: stderr
+          FORCE_COLOR: 1
+        run: npm run test:noserver -- --runInBand
+
+      - name: Run build tests
+        env:
+          NEBIUS_LOG: DEBUG
+          NEBIUS_LOG_OUTPUT: stderr
+          FORCE_COLOR: 1
+        run: npm run test:builds -- --runInBand
 
       - name: Run E2E tests
         env:
           NEBIUS_E2E_CONFIG_B64: ${{ secrets.NEBIUS_E2E_CONFIG_B64 }}
+          NEBIUS_LOG: DEBUG
+          NEBIUS_LOG_OUTPUT: stderr
+          FORCE_COLOR: 1
           GRPC_VERBOSITY: DEBUG
           GRPC_TRACE: 'index,channel,connectivity_state,dns_resolver,pick_first,round_robin,subchannel,transport,keepalive'
         run: npm run test:e2e

@@ -79,6 +79,7 @@ export function generateIndexContent(
   lines.push(
     `import type { Dayjs, Duration, MessageFns, EnumInstance, EnumClass } from "${runtimeImport}";`,
   );
+  lines.push(`import { deprecatedWarn } from "${up}/runtime/util/logging";`);
 
   // If there are any services in this directory, import grpc-js types used by printed services
   const hasServices = entries.some((e) => (e.services?.length ?? 0) > 0);

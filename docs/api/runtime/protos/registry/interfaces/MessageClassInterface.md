@@ -6,7 +6,7 @@
 
 # Interface: MessageClassInterface
 
-Defined in: [src/runtime/protos/registry.ts:8](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L8)
+Defined in: [src/runtime/protos/registry.ts:8](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/registry.ts#L8)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/protos/registry.ts:8](https://github.com/nebius/nodejs-
 
 > **$type**: `string`
 
-Defined in: [src/runtime/protos/registry.ts:9](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L9)
+Defined in: [src/runtime/protos/registry.ts:9](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/registry.ts#L9)
 
 ## Methods
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/protos/registry.ts:9](https://github.com/nebius/nodejs-
 
 > **create**(`base?`): [`MessageInstanceInterface`](MessageInstanceInterface.md)
 
-Defined in: [src/runtime/protos/registry.ts:16](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L16)
+Defined in: [src/runtime/protos/registry.ts:16](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/registry.ts#L16)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [src/runtime/protos/registry.ts:16](https://github.com/nebius/nodejs
 
 > **decode**(`input`, `length?`): [`MessageInstanceInterface`](MessageInstanceInterface.md)
 
-Defined in: [src/runtime/protos/registry.ts:11](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L11)
+Defined in: [src/runtime/protos/registry.ts:11](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/registry.ts#L11)
 
 #### Parameters
 
@@ -62,7 +62,7 @@ Defined in: [src/runtime/protos/registry.ts:11](https://github.com/nebius/nodejs
 
 > **encode**(`message`, `writer?`): [`BinaryWriter`](../../core/classes/BinaryWriter.md)
 
-Defined in: [src/runtime/protos/registry.ts:10](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L10)
+Defined in: [src/runtime/protos/registry.ts:10](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/registry.ts#L10)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: [src/runtime/protos/registry.ts:10](https://github.com/nebius/nodejs
 
 > **fromJSON**(`object`): [`MessageInstanceInterface`](MessageInstanceInterface.md)
 
-Defined in: [src/runtime/protos/registry.ts:13](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L13)
+Defined in: [src/runtime/protos/registry.ts:13](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/registry.ts#L13)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: [src/runtime/protos/registry.ts:13](https://github.com/nebius/nodejs
 
 > **fromPartial**(`object`): [`MessageInstanceInterface`](MessageInstanceInterface.md)
 
-Defined in: [src/runtime/protos/registry.ts:18](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L18)
+Defined in: [src/runtime/protos/registry.ts:18](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/registry.ts#L18)
 
 #### Parameters
 
@@ -120,7 +120,7 @@ Defined in: [src/runtime/protos/registry.ts:18](https://github.com/nebius/nodejs
 
 > **toJSON**(`message`, `use?`): `unknown`
 
-Defined in: [src/runtime/protos/registry.ts:14](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L14)
+Defined in: [src/runtime/protos/registry.ts:14](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/registry.ts#L14)
 
 #### Parameters
 

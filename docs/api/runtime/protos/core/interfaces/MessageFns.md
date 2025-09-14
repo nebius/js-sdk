@@ -6,7 +6,7 @@
 
 # Interface: MessageFns\<T, TType\>
 
-Defined in: [src/runtime/protos/core.ts:19](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/core.ts#L19)
+Defined in: [src/runtime/protos/core.ts:19](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L19)
 
 ## Type Parameters
 
@@ -24,7 +24,7 @@ Defined in: [src/runtime/protos/core.ts:19](https://github.com/nebius/nodejs-sdk
 
 > **$type**: `TType`
 
-Defined in: [src/runtime/protos/core.ts:20](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/core.ts#L20)
+Defined in: [src/runtime/protos/core.ts:20](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L20)
 
 ## Methods
 
@@ -32,7 +32,7 @@ Defined in: [src/runtime/protos/core.ts:20](https://github.com/nebius/nodejs-sdk
 
 > **create**\<`I`\>(`base?`): `T`
 
-Defined in: [src/runtime/protos/core.ts:28](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/core.ts#L28)
+Defined in: [src/runtime/protos/core.ts:28](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L28)
 
 #### Type Parameters
 
@@ -56,7 +56,7 @@ Defined in: [src/runtime/protos/core.ts:28](https://github.com/nebius/nodejs-sdk
 
 > **decode**(`input`, `length?`): `T`
 
-Defined in: [src/runtime/protos/core.ts:25](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/core.ts#L25)
+Defined in: [src/runtime/protos/core.ts:25](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L25)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [src/runtime/protos/core.ts:25](https://github.com/nebius/nodejs-sdk
 
 > **encode**(`message`, `writer?`): [`BinaryWriter`](../classes/BinaryWriter.md)
 
-Defined in: [src/runtime/protos/core.ts:21](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/core.ts#L21)
+Defined in: [src/runtime/protos/core.ts:21](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L21)
 
 #### Parameters
 
@@ -100,7 +100,7 @@ Defined in: [src/runtime/protos/core.ts:21](https://github.com/nebius/nodejs-sdk
 
 > **fromJSON**(`object`): `T`
 
-Defined in: [src/runtime/protos/core.ts:26](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/core.ts#L26)
+Defined in: [src/runtime/protos/core.ts:26](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L26)
 
 #### Parameters
 
@@ -118,7 +118,7 @@ Defined in: [src/runtime/protos/core.ts:26](https://github.com/nebius/nodejs-sdk
 
 > **fromPartial**\<`I`\>(`object`): `T`
 
-Defined in: [src/runtime/protos/core.ts:29](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/core.ts#L29)
+Defined in: [src/runtime/protos/core.ts:29](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L29)
 
 #### Type Parameters
 
@@ -142,7 +142,7 @@ Defined in: [src/runtime/protos/core.ts:29](https://github.com/nebius/nodejs-sdk
 
 > **toJSON**(`message`, `use?`): `unknown`
 
-Defined in: [src/runtime/protos/core.ts:27](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/core.ts#L27)
+Defined in: [src/runtime/protos/core.ts:27](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L27)
 
 #### Parameters
 

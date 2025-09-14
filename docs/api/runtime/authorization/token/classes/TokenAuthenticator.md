@@ -6,11 +6,15 @@
 
 # Class: TokenAuthenticator
 
-Defined in: [src/runtime/authorization/token.ts:9](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/token.ts#L9)
+Defined in: [src/runtime/authorization/token.ts:12](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L12)
 
 ## Implements
 
 - [`Authenticator`](../../provider/interfaces/Authenticator.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/authorization/token.ts:9](https://github.com/nebius/nod
 
 > **new TokenAuthenticator**(`receiver`): `TokenAuthenticator`
 
-Defined in: [src/runtime/authorization/token.ts:10](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/token.ts#L10)
+Defined in: [src/runtime/authorization/token.ts:23](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L23)
 
 #### Parameters
 
@@ -30,13 +34,33 @@ Defined in: [src/runtime/authorization/token.ts:10](https://github.com/nebius/no
 
 `TokenAuthenticator`
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.TokenAuthenticator"` = `'nebius.sdk.TokenAuthenticator'`
+
+Defined in: [src/runtime/authorization/token.ts:13](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L13)
+
 ## Methods
+
+### \[customJson\]()
+
+> **\[customJson\]**(): `unknown`
+
+Defined in: [src/runtime/authorization/token.ts:17](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L17)
+
+#### Returns
+
+`unknown`
+
+---
 
 ### authenticate()
 
 > **authenticate**(`metadata`, `timeoutMs?`, `options?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/authorization/token.ts:12](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/token.ts#L12)
+Defined in: [src/runtime/authorization/token.ts:25](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L25)
 
 #### Parameters
 
@@ -66,7 +90,7 @@ Defined in: [src/runtime/authorization/token.ts:12](https://github.com/nebius/no
 
 > **canRetry**(`err`, `options?`): `boolean`
 
-Defined in: [src/runtime/authorization/token.ts:21](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/token.ts#L21)
+Defined in: [src/runtime/authorization/token.ts:34](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L34)
 
 #### Parameters
 

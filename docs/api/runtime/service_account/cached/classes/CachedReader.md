@@ -6,11 +6,15 @@
 
 # Class: CachedReader
 
-Defined in: [src/runtime/service_account/cached.ts:3](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/cached.ts#L3)
+Defined in: [src/runtime/service_account/cached.ts:7](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/cached.ts#L7)
 
 ## Implements
 
 - [`Reader`](../../service_account/interfaces/Reader.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/service_account/cached.ts:3](https://github.com/nebius/
 
 > **new CachedReader**(`next`): `CachedReader`
 
-Defined in: [src/runtime/service_account/cached.ts:5](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/cached.ts#L5)
+Defined in: [src/runtime/service_account/cached.ts:10](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/cached.ts#L10)
 
 #### Parameters
 
@@ -30,17 +34,37 @@ Defined in: [src/runtime/service_account/cached.ts:5](https://github.com/nebius/
 
 `CachedReader`
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.CachedReader"` = `'nebius.sdk.CachedReader'`
+
+Defined in: [src/runtime/service_account/cached.ts:8](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/cached.ts#L8)
+
 ## Methods
 
-### getExchangeTokenRequest()
+### \[customJson\]()
 
-> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+> **\[customJson\]**(): `unknown`
 
-Defined in: [src/runtime/service_account/cached.ts:12](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/cached.ts#L12)
+Defined in: [src/runtime/service_account/cached.ts:21](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/cached.ts#L21)
 
 #### Returns
 
-[`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+`unknown`
+
+---
+
+### getExchangeTokenRequest()
+
+> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+
+Defined in: [src/runtime/service_account/cached.ts:27](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/cached.ts#L27)
+
+#### Returns
+
+[`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
 #### Implementation of
 
@@ -52,7 +76,7 @@ Defined in: [src/runtime/service_account/cached.ts:12](https://github.com/nebius
 
 > **read**(): [`ServiceAccount`](../../service_account/classes/ServiceAccount.md)
 
-Defined in: [src/runtime/service_account/cached.ts:6](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/cached.ts#L6)
+Defined in: [src/runtime/service_account/cached.ts:11](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/cached.ts#L11)
 
 #### Returns
 

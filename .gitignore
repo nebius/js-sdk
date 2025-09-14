@@ -1,7 +1,7 @@
 node_modules/
 dist/
 dist-scripts/
-src/generated/
+src/api/
 *.log
 .env
 .env.local
@@ -10,6 +10,7 @@ src/generated/
 coverage/
 src/generated_test/
 .vscode/
+*generated_test.lock*
 
 # Local examples/tests not checked in
 local/

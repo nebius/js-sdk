@@ -6,6 +6,7 @@
 */
 
 import { parseMask } from './fieldmask_parser';
+import { custom, customJson } from './util/logging';
 
 const SIMPLE_STRING_RE = /^[a-zA-Z0-9_]+$/;
 const RECURSION_TOO_DEEP = 1000;
@@ -40,6 +41,12 @@ export class FieldKey {
       return this.value;
     }
     return JSON.stringify(this.value);
+  }
+  [custom](): string {
+    return this.toString();
+  }
+  [customJson](): string {
+    return this.marshal();
   }
 }
 
@@ -117,6 +124,12 @@ export class FieldPath {
   }
   toString(): string {
     return `FieldPath(${this.parts.map((p) => p.value).join('.')})`;
+  }
+  [custom](): string {
+    return this.toString();
+  }
+  [customJson](): string {
+    return this.marshal();
   }
 }
 
@@ -258,6 +271,16 @@ export class Mask {
   }
   marshal(): string {
     return this.marshalRec(0).text;
+  }
+  [custom](): string {
+    return this.toString();
+  }
+  [customJson](): string {
+    try {
+      return this.marshal();
+    } catch (e) {
+      return `not-marshalable ${/**/ (e && (e as { message: string }).message) || e}`;
+    }
   }
   toString(): string {
     try {

@@ -1,13 +1,12 @@
 import type { AuthorizationOptions } from '../../authorization/provider';
 import { Bearer, Receiver, Token } from '../../token';
+import { TokenSanitizer } from '../../token_sanitizer';
+import { custom, customJson, Logger } from '../../util/logging';
 
 import { authorize } from './auth';
 
-// Debug helper (toggle or pipe to your logger)
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const dbg = (..._args: any[]) => {};
-
 class FederationReceiver extends Receiver {
+  public readonly $type = 'nebius.sdk.FederationReceiver';
   constructor(
     private readonly clientId: string,
     private readonly federationEndpoint: string,
@@ -15,8 +14,23 @@ class FederationReceiver extends Receiver {
     private readonly writer?: (s: string) => void,
     private readonly noBrowserOpen: boolean = false,
     private readonly ca?: Buffer,
+    private readonly logger?: Logger,
   ) {
     super();
+  }
+  [custom](): string {
+    return `${this.$type}(clientId=${this.clientId}, federationEndpoint=${this.federationEndpoint}, federationId=${this.federationId}, noBrowserOpen=${this.noBrowserOpen})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: this.$type,
+      clientId: this.clientId,
+      federationEndpoint: this.federationEndpoint,
+      federationId: this.federationId,
+      noBrowserOpen: this.noBrowserOpen,
+      writer: this.writer ? 'provided' : 'none',
+      ca: this.ca ? 'provided' : 'none',
+    };
   }
 
   protected async _fetch(
@@ -24,7 +38,7 @@ class FederationReceiver extends Receiver {
     _options?: AuthorizationOptions | undefined,
   ): Promise<Token> {
     const start = Date.now();
-    dbg('receiver._fetch: start', { timeoutMs, noBrowserOpen: this.noBrowserOpen });
+    this.logger?.debug('receiver._fetch: start', { timeoutMs, start });
     const res = await authorize({
       clientId: this.clientId,
       federationEndpoint: this.federationEndpoint,
@@ -34,10 +48,11 @@ class FederationReceiver extends Receiver {
       timeoutMs:
         timeoutMs === undefined ? undefined : Math.max(0, timeoutMs - (Date.now() - start)),
       ca: this.ca,
+      logger: this.logger?.child('auth'),
     });
-    dbg('receiver._fetch: authorize result', {
+    this.logger?.trace('receiver._fetch: authorize result', {
       expires_in: res?.expires_in,
-      has_access_token: !!res?.access_token,
+      access_token: TokenSanitizer.accessTokenSanitizer().sanitize(res?.access_token),
     });
     if (!res || typeof res.access_token !== 'string' || typeof res.expires_in !== 'number') {
       throw new Error('invalid token response');
@@ -45,17 +60,19 @@ class FederationReceiver extends Receiver {
     const expiration =
       res.expires_in > 0 ? new Date(Date.now() + res.expires_in * 1000) : undefined;
     const tok = new Token(res.access_token, expiration);
-    dbg('receiver._fetch: built token', tok);
+    this.logger?.debug('receiver._fetch: received token', { token: tok });
     return tok;
   }
 
   canRetry(_err: unknown, _options?: AuthorizationOptions | undefined): boolean {
-    dbg('receiver.canRetry -> false');
+    this.logger?.debug('receiver.canRetry -> false');
     return false;
   }
 }
 
 export class FederationBearer extends Bearer {
+  public readonly $type = 'nebius.sdk.FederationBearer';
+  private readonly logger?: Logger;
   constructor(
     private readonly profileName: string,
     private readonly clientId: string,
@@ -64,8 +81,29 @@ export class FederationBearer extends Bearer {
     private readonly writer?: (s: string) => void,
     private readonly noBrowserOpen: boolean = false,
     private readonly ca?: Buffer,
+    logger?: Logger,
   ) {
     super();
+    this.logger = logger?.withFields({
+      profile: profileName,
+      federationEndpoint,
+      federationId,
+      clientId,
+    });
+    this.logger?.trace('bearer: created');
+  }
+  [custom](): string {
+    return `${this.$type}(profileName=${this.profileName}, clientId=${this.clientId}, federationEndpoint=${this.federationEndpoint}, federationId=${this.federationId}, noBrowserOpen=${this.noBrowserOpen})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: this.$type,
+      profileName: this.profileName,
+      clientId: this.clientId,
+      federationEndpoint: this.federationEndpoint,
+      federationId: this.federationId,
+      noBrowserOpen: this.noBrowserOpen,
+    };
   }
 
   get name(): string | undefined {
@@ -73,7 +111,7 @@ export class FederationBearer extends Bearer {
   }
 
   receiver(): Receiver {
-    dbg('bearer.receiver');
+    this.logger?.trace('bearer.receiver');
     return new FederationReceiver(
       this.clientId,
       this.federationEndpoint,
@@ -81,6 +119,7 @@ export class FederationBearer extends Bearer {
       this.writer,
       this.noBrowserOpen,
       this.ca,
+      this.logger,
     );
   }
 }

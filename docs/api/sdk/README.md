@@ -12,7 +12,6 @@
 
 ## Interfaces
 
-- [ConfigReaderLike](interfaces/ConfigReaderLike.md)
 - [SDKInterface](interfaces/SDKInterface.md)
 - [SDKOptions](interfaces/SDKOptions.md)
 

@@ -1,0 +1,33 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / ResumeTransferRequest
+
+# Interface: ResumeTransferRequest
+
+Defined in: src/api/nebius/storage/v1alpha1/index.ts:657
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/api/nebius/storage/v1alpha1/index.ts:659
+
+---
+
+### $type
+
+> **$type**: `"nebius.storage.v1alpha1.ResumeTransferRequest"`
+
+Defined in: src/api/nebius/storage/v1alpha1/index.ts:658
+
+---
+
+### id
+
+> **id**: `string`
+
+Defined in: src/api/nebius/storage/v1alpha1/index.ts:660

@@ -6,19 +6,23 @@
 
 # Class: CredentialsFileReader
 
-Defined in: [src/runtime/service_account/credentials_file.ts:39](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/credentials_file.ts#L39)
+Defined in: [src/runtime/service_account/credentials_file.ts:38](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/credentials_file.ts#L38)
 
 ## Implements
 
 - [`Reader`](../../service_account/interfaces/Reader.md)
 
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
+
 ## Constructors
 
 ### Constructor
 
-> **new CredentialsFileReader**(`filename`): `CredentialsFileReader`
+> **new CredentialsFileReader**(`filename`, `logger?`): `CredentialsFileReader`
 
-Defined in: [src/runtime/service_account/credentials_file.ts:43](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/credentials_file.ts#L43)
+Defined in: [src/runtime/service_account/credentials_file.ts:44](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/credentials_file.ts#L44)
 
 #### Parameters
 
@@ -26,21 +30,45 @@ Defined in: [src/runtime/service_account/credentials_file.ts:43](https://github.
 
 `string`
 
+##### logger?
+
+[`Logger`](../../../util/logging/classes/Logger.md)
+
 #### Returns
 
 `CredentialsFileReader`
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.CredentialsFileReader"` = `'nebius.sdk.CredentialsFileReader'`
+
+Defined in: [src/runtime/service_account/credentials_file.ts:39](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/credentials_file.ts#L39)
+
 ## Methods
 
-### getExchangeTokenRequest()
+### \[customJson\]()
 
-> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+> **\[customJson\]**(): `object`
 
-Defined in: [src/runtime/service_account/credentials_file.ts:58](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/credentials_file.ts#L58)
+Defined in: [src/runtime/service_account/credentials_file.ts:60](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/credentials_file.ts#L60)
 
 #### Returns
 
-[`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+`object`
+
+---
+
+### getExchangeTokenRequest()
+
+> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+
+Defined in: [src/runtime/service_account/credentials_file.ts:72](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/credentials_file.ts#L72)
+
+#### Returns
+
+[`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
 #### Implementation of
 
@@ -52,7 +80,7 @@ Defined in: [src/runtime/service_account/credentials_file.ts:58](https://github.
 
 > **read**(): [`ServiceAccount`](../../service_account/classes/ServiceAccount.md)
 
-Defined in: [src/runtime/service_account/credentials_file.ts:54](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/credentials_file.ts#L54)
+Defined in: [src/runtime/service_account/credentials_file.ts:68](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/credentials_file.ts#L68)
 
 #### Returns
 

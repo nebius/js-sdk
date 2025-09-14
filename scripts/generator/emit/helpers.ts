@@ -176,6 +176,15 @@ interface deprecatedDescriptor {
 }
 
 export function deprecationLine(descriptor: deprecatedDescriptor): string | undefined {
+  const opts = deprecationOptions(descriptor);
+  if (opts === undefined) return undefined;
+  const effectiveAt = opts.effectiveAt;
+  const description: string | undefined = opts.description;
+  return `Deprecated${effectiveAt ? `, will be removed on ${effectiveAt}` : ''}${description ? `: ${description}` : ''}.`;
+}
+export function deprecationOptions(
+  descriptor: deprecatedDescriptor,
+): deprecationOptions | undefined {
   const { options } = descriptor || {};
   if (!options?.deprecated) return undefined;
   let details: deprecationOptions = {};
@@ -190,9 +199,7 @@ export function deprecationLine(descriptor: deprecatedDescriptor): string | unde
   } else if ('serviceDeprecationDetails' in options && options.serviceDeprecationDetails) {
     details = options.serviceDeprecationDetails;
   }
-  const effectiveAt = details.effectiveAt;
-  const description: string | undefined = details.description;
-  return `Deprecated${effectiveAt ? `, will be removed on ${effectiveAt}` : ''}${description ? `: ${description}` : ''}.`;
+  return details;
 }
 
 // WKT support

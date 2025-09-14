@@ -18,4 +18,4 @@
 
 ### NebiusServiceError
 
-Renames and re-exports [ServiceError](../../generated/nebius/common/v1/variables/ServiceError.md)
+Renames and re-exports [ServiceError](../../api/nebius/common/v1/variables/ServiceError.md)

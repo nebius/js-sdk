@@ -8,7 +8,7 @@
 
 > **parseFieldMask**(`source`): [`Mask`](../classes/Mask.md)
 
-Defined in: [src/runtime/fieldmask.ts:435](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/fieldmask.ts#L435)
+Defined in: [src/runtime/fieldmask.ts:458](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/fieldmask.ts#L458)
 
 ## Parameters
 

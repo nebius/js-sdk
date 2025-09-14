@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/registry/v1](../README.md) / RegistryStatus
+
+# Variable: RegistryStatus
+
+> **RegistryStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`RegistryStatus`](../interfaces/RegistryStatus.md), `"nebius.registry.v1.RegistryStatus"`\>
+
+Defined in: src/api/nebius/registry/v1/index.ts:1933

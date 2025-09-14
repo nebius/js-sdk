@@ -3,7 +3,10 @@
 import { BinaryReader, BinaryWriter, DeepPartial, isSet, Long, bytesFromBase64, base64FromBytes, wkt, createEnum, unknownFieldsSymbol } from "../../../../../src/runtime/protos/index"
 import { protoRegistry } from "../../registry";
 import type { Dayjs, Duration, MessageFns, EnumInstance, EnumClass } from "../../../../../src/runtime/protos/index";
+import { deprecatedWarn } from "../../../../../src/runtime/util/logging";
 import { FileDescriptorProto, GeneratedCodeInfo } from "..";
+
+const __deprecatedWarned = new Set<string>();
 
 // file: plugin.proto
 /**
@@ -17,7 +20,7 @@ interface CodeGeneratorResponse_FeatureValueMembers {
   readonly FEATURE_PROTO3_OPTIONAL: EnumInstance<"UNRECOGNIZED" | "FEATURE_NONE" | "FEATURE_PROTO3_OPTIONAL" | "FEATURE_SUPPORTS_EDITIONS">;
   readonly FEATURE_SUPPORTS_EDITIONS: EnumInstance<"UNRECOGNIZED" | "FEATURE_NONE" | "FEATURE_PROTO3_OPTIONAL" | "FEATURE_SUPPORTS_EDITIONS">;
 }
-type CodeGeneratorResponse_FeatureClass = EnumClass<"UNRECOGNIZED" | "FEATURE_NONE" | "FEATURE_PROTO3_OPTIONAL" | "FEATURE_SUPPORTS_EDITIONS"> & CodeGeneratorResponse_FeatureValueMembers;
+export type CodeGeneratorResponse_FeatureClass = EnumClass<"UNRECOGNIZED" | "FEATURE_NONE" | "FEATURE_PROTO3_OPTIONAL" | "FEATURE_SUPPORTS_EDITIONS"> & CodeGeneratorResponse_FeatureValueMembers;
 
 export const CodeGeneratorResponse_Feature = createEnum("google.protobuf.compiler.CodeGeneratorResponse.Feature", {
   FEATURE_NONE: 0,

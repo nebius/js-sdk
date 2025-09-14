@@ -6,7 +6,11 @@
 
 # Class: TokenCache
 
-Defined in: [src/runtime/token/file_cache/token_cache.ts:15](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/token_cache.ts#L15)
+Defined in: [src/runtime/token/file_cache/token_cache.ts:18](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L18)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
 
 ## Constructors
 
@@ -14,7 +18,7 @@ Defined in: [src/runtime/token/file_cache/token_cache.ts:15](https://github.com/
 
 > **new TokenCache**(`options?`): `TokenCache`
 
-Defined in: [src/runtime/token/file_cache/token_cache.ts:19](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/token_cache.ts#L19)
+Defined in: [src/runtime/token/file_cache/token_cache.ts:24](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L24)
 
 #### Parameters
 
@@ -26,13 +30,33 @@ Defined in: [src/runtime/token/file_cache/token_cache.ts:19](https://github.com/
 
 `TokenCache`
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.TokenCache"` = `'nebius.sdk.TokenCache'`
+
+Defined in: [src/runtime/token/file_cache/token_cache.ts:19](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L19)
+
 ## Methods
+
+### \[customJson\]()
+
+> **\[customJson\]**(): `unknown`
+
+Defined in: [src/runtime/token/file_cache/token_cache.ts:33](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L33)
+
+#### Returns
+
+`unknown`
+
+---
 
 ### get()
 
 > **get**(`name`): `Promise`\<`undefined` \| [`Token`](../../../classes/Token.md)\>
 
-Defined in: [src/runtime/token/file_cache/token_cache.ts:58](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/token_cache.ts#L58)
+Defined in: [src/runtime/token/file_cache/token_cache.ts:90](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L90)
 
 #### Parameters
 
@@ -50,7 +74,7 @@ Defined in: [src/runtime/token/file_cache/token_cache.ts:58](https://github.com/
 
 > **remove**(`name`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token/file_cache/token_cache.ts:117](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/token_cache.ts#L117)
+Defined in: [src/runtime/token/file_cache/token_cache.ts:177](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L177)
 
 #### Parameters
 
@@ -66,9 +90,9 @@ Defined in: [src/runtime/token/file_cache/token_cache.ts:117](https://github.com
 
 ### removeIfEqual()
 
-> **removeIfEqual**(`name`, `token`): `Promise`\<`void`\>
+> **removeIfEqual**(`name`, `token`): `Promise`\<`boolean`\>
 
-Defined in: [src/runtime/token/file_cache/token_cache.ts:153](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/token_cache.ts#L153)
+Defined in: [src/runtime/token/file_cache/token_cache.ts:229](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L229)
 
 #### Parameters
 
@@ -82,7 +106,7 @@ Defined in: [src/runtime/token/file_cache/token_cache.ts:153](https://github.com
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ---
 
@@ -90,7 +114,7 @@ Defined in: [src/runtime/token/file_cache/token_cache.ts:153](https://github.com
 
 > **set**(`name`, `token`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token/file_cache/token_cache.ts:85](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/token_cache.ts#L85)
+Defined in: [src/runtime/token/file_cache/token_cache.ts:134](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L134)
 
 #### Parameters
 

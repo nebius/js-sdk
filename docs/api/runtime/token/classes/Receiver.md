@@ -6,7 +6,7 @@
 
 # Abstract Class: Receiver
 
-Defined in: [src/runtime/token.ts:76](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L76)
+Defined in: [src/runtime/token.ts:86](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L86)
 
 ## Constructors
 
@@ -18,6 +18,14 @@ Defined in: [src/runtime/token.ts:76](https://github.com/nebius/nodejs-sdk/blob/
 
 `Receiver`
 
+## Properties
+
+### $type
+
+> `abstract` `readonly` **$type**: `string`
+
+Defined in: [src/runtime/token.ts:87](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L87)
+
 ## Accessors
 
 ### latest
@@ -26,7 +34,7 @@ Defined in: [src/runtime/token.ts:76](https://github.com/nebius/nodejs-sdk/blob/
 
 > **get** **latest**(): `undefined` \| [`Token`](Token.md)
 
-Defined in: [src/runtime/token.ts:84](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L84)
+Defined in: [src/runtime/token.ts:95](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L95)
 
 ##### Returns
 
@@ -38,7 +46,7 @@ Defined in: [src/runtime/token.ts:84](https://github.com/nebius/nodejs-sdk/blob/
 
 > `abstract` **canRetry**(`err`, `options?`): `boolean`
 
-Defined in: [src/runtime/token.ts:94](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L94)
+Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L105)
 
 #### Parameters
 
@@ -60,7 +68,7 @@ Defined in: [src/runtime/token.ts:94](https://github.com/nebius/nodejs-sdk/blob/
 
 > **fetch**(`timeoutMs?`, `options?`): `Promise`\<[`Token`](Token.md)\>
 
-Defined in: [src/runtime/token.ts:88](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L88)
+Defined in: [src/runtime/token.ts:99](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L99)
 
 #### Parameters
 

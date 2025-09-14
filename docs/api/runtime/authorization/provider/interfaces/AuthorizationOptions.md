@@ -6,7 +6,7 @@
 
 # Interface: AuthorizationOptions
 
-Defined in: [src/runtime/authorization/provider.ts:1](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/provider.ts#L1)
+Defined in: [src/runtime/authorization/provider.ts:1](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L1)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/authorization/provider.ts:1](https://github.com/nebius/
 
 > `optional` **maxRetries**: `number`
 
-Defined in: [src/runtime/authorization/provider.ts:7](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/provider.ts#L7)
+Defined in: [src/runtime/authorization/provider.ts:7](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L7)
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/authorization/provider.ts:7](https://github.com/nebius/
 
 > `optional` **renewRequestTimeoutMs**: `number`
 
-Defined in: [src/runtime/authorization/provider.ts:6](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/provider.ts#L6)
+Defined in: [src/runtime/authorization/provider.ts:6](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L6)
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: [src/runtime/authorization/provider.ts:6](https://github.com/nebius/
 
 > `optional` **renewRequired**: `boolean`
 
-Defined in: [src/runtime/authorization/provider.ts:3](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/provider.ts#L3)
+Defined in: [src/runtime/authorization/provider.ts:3](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L3)
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: [src/runtime/authorization/provider.ts:3](https://github.com/nebius/
 
 > `optional` **renewSynchronous**: `boolean`
 
-Defined in: [src/runtime/authorization/provider.ts:4](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/provider.ts#L4)
+Defined in: [src/runtime/authorization/provider.ts:4](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L4)
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: [src/runtime/authorization/provider.ts:4](https://github.com/nebius/
 
 > `optional` **reportError**: `boolean`
 
-Defined in: [src/runtime/authorization/provider.ts:5](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/provider.ts#L5)
+Defined in: [src/runtime/authorization/provider.ts:5](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L5)

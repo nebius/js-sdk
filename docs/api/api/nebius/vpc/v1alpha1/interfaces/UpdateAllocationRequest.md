@@ -1,0 +1,41 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / UpdateAllocationRequest
+
+# Interface: UpdateAllocationRequest
+
+Defined in: src/api/nebius/vpc/v1alpha1/index.ts:564
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/api/nebius/vpc/v1alpha1/index.ts:566
+
+---
+
+### $type
+
+> **$type**: `"nebius.vpc.v1alpha1.UpdateAllocationRequest"`
+
+Defined in: src/api/nebius/vpc/v1alpha1/index.ts:565
+
+---
+
+### metadata?
+
+> `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
+
+Defined in: src/api/nebius/vpc/v1alpha1/index.ts:567
+
+---
+
+### spec?
+
+> `optional` **spec**: [`AllocationSpec`](AllocationSpec.md)
+
+Defined in: src/api/nebius/vpc/v1alpha1/index.ts:568

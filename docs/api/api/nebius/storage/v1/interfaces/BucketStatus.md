@@ -1,0 +1,91 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / BucketStatus
+
+# Interface: BucketStatus
+
+Defined in: src/api/nebius/storage/v1/index.ts:2234
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/api/nebius/storage/v1/index.ts:2236
+
+---
+
+### $type
+
+> **$type**: `"nebius.storage.v1.BucketStatus"`
+
+Defined in: src/api/nebius/storage/v1/index.ts:2235
+
+---
+
+### counters
+
+> **counters**: [`BucketCounters`](BucketCounters.md)[]
+
+Defined in: src/api/nebius/storage/v1/index.ts:2237
+
+---
+
+### deletedAt?
+
+> `optional` **deletedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2245
+
+The time when the bucket was deleted (or scheduled for deletion).
+It resets to null if the bucket is undeleted.
+
+---
+
+### domainName
+
+> **domainName**: `string`
+
+Defined in: src/api/nebius/storage/v1/index.ts:2256
+
+The domain of the endpoint where the bucket can be accessed. It omits the scheme (HTTPS) and the port (443)
+and contains only the FQDN address.
+
+---
+
+### purgeAt?
+
+> `optional` **purgeAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2250
+
+The time when the bucket will be automatically purged in case it was soft-deleted.
+
+---
+
+### region
+
+> **region**: `string`
+
+Defined in: src/api/nebius/storage/v1/index.ts:2261
+
+The name of the region where the bucket is located for use with S3 clients, i.e. "eu-west1".
+
+---
+
+### state
+
+> **state**: [`BucketStatus_State`](../type-aliases/BucketStatus_State.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2238
+
+---
+
+### suspensionState
+
+> **suspensionState**: [`BucketStatus_SuspensionState`](../type-aliases/BucketStatus_SuspensionState.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2239

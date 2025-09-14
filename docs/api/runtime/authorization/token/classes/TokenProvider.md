@@ -6,11 +6,15 @@
 
 # Class: TokenProvider
 
-Defined in: [src/runtime/authorization/token.ts:26](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/token.ts#L26)
+Defined in: [src/runtime/authorization/token.ts:39](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L39)
 
 ## Implements
 
 - [`Provider`](../../provider/interfaces/Provider.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/authorization/token.ts:26](https://github.com/nebius/no
 
 > **new TokenProvider**(`tokenProvider`): `TokenProvider`
 
-Defined in: [src/runtime/authorization/token.ts:27](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/token.ts#L27)
+Defined in: [src/runtime/authorization/token.ts:50](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L50)
 
 #### Parameters
 
@@ -30,13 +34,33 @@ Defined in: [src/runtime/authorization/token.ts:27](https://github.com/nebius/no
 
 `TokenProvider`
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.TokenProvider"` = `'nebius.sdk.TokenProvider'`
+
+Defined in: [src/runtime/authorization/token.ts:40](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L40)
+
 ## Methods
+
+### \[customJson\]()
+
+> **\[customJson\]**(): `unknown`
+
+Defined in: [src/runtime/authorization/token.ts:44](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L44)
+
+#### Returns
+
+`unknown`
+
+---
 
 ### authenticator()
 
 > **authenticator**(): [`Authenticator`](../../provider/interfaces/Authenticator.md)
 
-Defined in: [src/runtime/authorization/token.ts:28](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/token.ts#L28)
+Defined in: [src/runtime/authorization/token.ts:51](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L51)
 
 #### Returns
 
@@ -52,7 +76,7 @@ Defined in: [src/runtime/authorization/token.ts:28](https://github.com/nebius/no
 
 > **close**(`graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/authorization/token.ts:31](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/token.ts#L31)
+Defined in: [src/runtime/authorization/token.ts:54](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/token.ts#L54)
 
 #### Parameters
 

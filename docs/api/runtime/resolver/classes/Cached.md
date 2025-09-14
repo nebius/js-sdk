@@ -6,11 +6,15 @@
 
 # Class: Cached
 
-Defined in: [src/runtime/resolver.ts:131](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L131)
+Defined in: [src/runtime/resolver.ts:191](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/resolver.ts#L191)
 
 ## Implements
 
 - [`Resolver`](../interfaces/Resolver.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/resolver.ts:131](https://github.com/nebius/nodejs-sdk/b
 
 > **new Cached**(`next`): `Cached`
 
-Defined in: [src/runtime/resolver.ts:134](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L134)
+Defined in: [src/runtime/resolver.ts:194](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/resolver.ts#L194)
 
 #### Parameters
 
@@ -32,11 +36,23 @@ Defined in: [src/runtime/resolver.ts:134](https://github.com/nebius/nodejs-sdk/b
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `object`
+
+Defined in: [src/runtime/resolver.ts:200](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/resolver.ts#L200)
+
+#### Returns
+
+`object`
+
+---
+
 ### resolve()
 
 > **resolve**(`serviceId`, `apiServiceName?`): `string`
 
-Defined in: [src/runtime/resolver.ts:137](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L137)
+Defined in: [src/runtime/resolver.ts:206](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/resolver.ts#L206)
 
 Receive address of the service by its ID
 

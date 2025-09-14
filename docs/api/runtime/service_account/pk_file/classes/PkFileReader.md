@@ -6,19 +6,23 @@
 
 # Class: PkFileReader
 
-Defined in: [src/runtime/service_account/pk_file.ts:9](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/pk_file.ts#L9)
+Defined in: [src/runtime/service_account/pk_file.ts:11](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/pk_file.ts#L11)
 
 ## Implements
 
 - [`Reader`](../../service_account/interfaces/Reader.md)
 
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
+
 ## Constructors
 
 ### Constructor
 
-> **new PkFileReader**(`filename`, `publicKeyId`, `serviceAccountId`): `PkFileReader`
+> **new PkFileReader**(`filename`, `publicKeyId`, `serviceAccountId`, `logger?`): `PkFileReader`
 
-Defined in: [src/runtime/service_account/pk_file.ts:14](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/pk_file.ts#L14)
+Defined in: [src/runtime/service_account/pk_file.ts:17](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/pk_file.ts#L17)
 
 #### Parameters
 
@@ -34,21 +38,45 @@ Defined in: [src/runtime/service_account/pk_file.ts:14](https://github.com/nebiu
 
 `string`
 
+##### logger?
+
+[`Logger`](../../../util/logging/classes/Logger.md)
+
 #### Returns
 
 `PkFileReader`
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.PkFileReader"` = `'nebius.sdk.PkFileReader'`
+
+Defined in: [src/runtime/service_account/pk_file.ts:12](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/pk_file.ts#L12)
+
 ## Methods
 
-### getExchangeTokenRequest()
+### \[customJson\]()
 
-> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+> **\[customJson\]**(): `object`
 
-Defined in: [src/runtime/service_account/pk_file.ts:25](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/pk_file.ts#L25)
+Defined in: [src/runtime/service_account/pk_file.ts:30](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/pk_file.ts#L30)
 
 #### Returns
 
-[`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+`object`
+
+---
+
+### getExchangeTokenRequest()
+
+> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+
+Defined in: [src/runtime/service_account/pk_file.ts:44](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/pk_file.ts#L44)
+
+#### Returns
+
+[`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
 #### Implementation of
 
@@ -60,7 +88,7 @@ Defined in: [src/runtime/service_account/pk_file.ts:25](https://github.com/nebiu
 
 > **read**(): [`ServiceAccount`](../../service_account/classes/ServiceAccount.md)
 
-Defined in: [src/runtime/service_account/pk_file.ts:21](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/pk_file.ts#L21)
+Defined in: [src/runtime/service_account/pk_file.ts:39](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/pk_file.ts#L39)
 
 #### Returns
 

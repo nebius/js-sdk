@@ -6,7 +6,7 @@
 
 # Interface: Authenticator
 
-Defined in: [src/runtime/authorization/provider.ts:10](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/provider.ts#L10)
+Defined in: [src/runtime/authorization/provider.ts:10](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L10)
 
 ## Methods
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/authorization/provider.ts:10](https://github.com/nebius
 
 > **authenticate**(`metadata`, `timeoutMs?`, `options?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/authorization/provider.ts:11](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/provider.ts#L11)
+Defined in: [src/runtime/authorization/provider.ts:11](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L11)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [src/runtime/authorization/provider.ts:11](https://github.com/nebius
 
 > `optional` **canRetry**(`err`, `options?`): `boolean`
 
-Defined in: [src/runtime/authorization/provider.ts:16](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/authorization/provider.ts#L16)
+Defined in: [src/runtime/authorization/provider.ts:16](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L16)
 
 #### Parameters
 

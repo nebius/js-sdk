@@ -1,0 +1,311 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/billing/v1alpha1](../README.md) / CalculatorService
+
+# Class: CalculatorService
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:547
+
+## Implements
+
+- `CalculatorService`
+
+## Constructors
+
+### Constructor
+
+> **new CalculatorService**(`sdk`): `CalculatorService`
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:572
+
+#### Parameters
+
+##### sdk
+
+[`SDKInterface`](../../../../../sdk/interfaces/SDKInterface.md)
+
+#### Returns
+
+`CalculatorService`
+
+## Properties
+
+### $type
+
+> **$type**: `"nebius.billing.v1alpha1.CalculatorService"`
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:548
+
+## Methods
+
+### estimate()
+
+#### Call Signature
+
+> **estimate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:554
+
+Estimates prices for a single resource.
+Returns both hourly and monthly cost estimates for the specified resource configuration.
+
+##### Parameters
+
+###### request
+
+[`EstimateRequest`](../interfaces/EstimateRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+#### Call Signature
+
+> **estimate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:555
+
+##### Parameters
+
+###### request
+
+[`EstimateRequest`](../interfaces/EstimateRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+#### Call Signature
+
+> **estimate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:556
+
+##### Parameters
+
+###### request
+
+[`EstimateRequest`](../interfaces/EstimateRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+#### Call Signature
+
+> **estimate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:578
+
+Estimates prices for a single resource.
+Returns both hourly and monthly cost estimates for the specified resource configuration.
+
+##### Parameters
+
+###### request
+
+[`EstimateRequest`](../interfaces/EstimateRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+#### Call Signature
+
+> **estimate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:579
+
+Estimates prices for a single resource.
+Returns both hourly and monthly cost estimates for the specified resource configuration.
+
+##### Parameters
+
+###### request
+
+[`EstimateRequest`](../interfaces/EstimateRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+#### Call Signature
+
+> **estimate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:580
+
+Estimates prices for a single resource.
+Returns both hourly and monthly cost estimates for the specified resource configuration.
+
+##### Parameters
+
+###### request
+
+[`EstimateRequest`](../interfaces/EstimateRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
+
+---
+
+### estimateBatch()
+
+#### Call Signature
+
+> **estimateBatch**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:562
+
+Estimates prices for multiple resources.
+Returns aggregated hourly and monthly cost estimates for all specified resources.
+
+##### Parameters
+
+###### request
+
+[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+#### Call Signature
+
+> **estimateBatch**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:563
+
+##### Parameters
+
+###### request
+
+[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+#### Call Signature
+
+> **estimateBatch**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:564
+
+##### Parameters
+
+###### request
+
+[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+#### Call Signature
+
+> **estimateBatch**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:590
+
+Estimates prices for multiple resources.
+Returns aggregated hourly and monthly cost estimates for all specified resources.
+
+##### Parameters
+
+###### request
+
+[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+#### Call Signature
+
+> **estimateBatch**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:591
+
+Estimates prices for multiple resources.
+Returns aggregated hourly and monthly cost estimates for all specified resources.
+
+##### Parameters
+
+###### request
+
+[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+#### Call Signature
+
+> **estimateBatch**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
+
+Defined in: src/api/nebius/billing/v1alpha1/index.ts:592
+
+Estimates prices for multiple resources.
+Returns aggregated hourly and monthly cost estimates for all specified resources.
+
+##### Parameters
+
+###### request
+
+[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>

@@ -1,12 +1,17 @@
+import { inspect } from 'util';
+
 import type { SDKInterface } from '../../sdk';
 import type { Reader as ServiceAccountReader } from '../service_account/service_account';
 import { ServiceAccount } from '../service_account/service_account';
+import { StaticReader } from '../service_account/static';
 import { Bearer, NamedBearer, Receiver } from '../token';
+import { custom, customJson, inspectJson, Logger } from '../util/logging';
 
 import { ExchangeableBearer } from './exchangeable';
 import { RenewableBearer } from './renewable';
 
 export class ServiceAccountBearer extends Bearer {
+  public readonly $type = 'nebius.sdk.ServiceAccountBearer';
   private _exchangeable: ExchangeableBearer;
   private _source: NamedBearer;
 
@@ -22,17 +27,24 @@ export class ServiceAccountBearer extends Bearer {
       maxRetryTimeoutMs?: number;
       retryTimeoutExponent?: number;
       refreshRequestTimeoutMs?: number;
+      logger?: Logger;
     },
   ) {
     super();
 
     let reader: ServiceAccountReader | null = null;
     if (isServiceAccountReader(serviceAccount)) {
+      opts?.logger?.trace('using provided ServiceAccountReader, will name after first read');
       reader = serviceAccount;
       serviceAccount = serviceAccount.read();
+      opts?.logger?.trace('read ServiceAccount from ServiceAccountReader', {
+        serviceAccountId: serviceAccount.serviceAccountId,
+        publicKeyId: serviceAccount.publicKeyId,
+      });
     }
 
     if (typeof serviceAccount === 'string') {
+      opts?.logger?.trace('creating ServiceAccount from string');
       if (typeof opts?.privateKeyPem !== 'string' || opts.privateKeyPem.trim() === '') {
         throw new TypeError('Private key (PEM) must be provided when serviceAccount is a string');
       }
@@ -40,6 +52,10 @@ export class ServiceAccountBearer extends Bearer {
         throw new TypeError('Public key ID must be provided when serviceAccount is a string');
       }
       serviceAccount = new ServiceAccount(opts.privateKeyPem, opts.publicKeyId, serviceAccount);
+      opts?.logger?.trace('created ServiceAccount from string', {
+        serviceAccountId: serviceAccount.serviceAccountId,
+        publicKeyId: serviceAccount.publicKeyId,
+      });
     } else {
       if (opts?.privateKeyPem !== undefined || opts?.publicKeyId !== undefined) {
         throw new TypeError(
@@ -55,11 +71,8 @@ export class ServiceAccountBearer extends Bearer {
     }
 
     if (!reader) {
-      // Inline simple reader wrapper
-      reader = {
-        read: () => serviceAccount,
-        getExchangeTokenRequest: () => serviceAccount.getExchangeTokenRequest(),
-      } as ServiceAccountReader;
+      opts?.logger?.trace('using ServiceAccount directly');
+      reader = new StaticReader(serviceAccount);
     }
 
     const saId = serviceAccount.serviceAccountId;
@@ -67,7 +80,12 @@ export class ServiceAccountBearer extends Bearer {
 
     const maxRetries = opts?.maxRetries ?? 2;
 
-    this._exchangeable = new ExchangeableBearer(reader, opts?.sdk ?? null, maxRetries);
+    this._exchangeable = new ExchangeableBearer(
+      reader,
+      opts?.sdk ?? null,
+      maxRetries,
+      opts?.logger?.child('exchangeable'),
+    );
 
     const renewable = new RenewableBearer(this._exchangeable, {
       maxRetries,
@@ -76,9 +94,19 @@ export class ServiceAccountBearer extends Bearer {
       maxRetryTimeoutMs: opts?.maxRetryTimeoutMs,
       retryTimeoutExponent: opts?.retryTimeoutExponent,
       refreshRequestTimeoutMs: opts?.refreshRequestTimeoutMs,
+      logger: opts?.logger?.child('renewable'),
     });
 
     this._source = new NamedBearer(renewable, `service-account/${saId}/${publicKeyId}`);
+  }
+  [custom](): string {
+    return `${this.$type}(${inspect(this._source)})`;
+  }
+  [customJson](): unknown {
+    return {
+      type: this.$type,
+      source: inspectJson(this._source),
+    };
   }
 
   setSDK(sdk: SDKInterface | Promise<SDKInterface> | null): void {

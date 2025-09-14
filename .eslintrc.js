@@ -17,7 +17,7 @@ module.exports = {
   },
   ignorePatterns: [
     'dist/',
-    'src/generated/',
+    'src/api/',
     'node_modules/',
     'scripts/generator/protos/',
     'scripts/generator/nebius/',

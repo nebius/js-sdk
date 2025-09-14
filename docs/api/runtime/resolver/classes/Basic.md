@@ -6,11 +6,15 @@
 
 # Class: Basic
 
-Defined in: [src/runtime/resolver.ts:23](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L23)
+Defined in: [src/runtime/resolver.ts:27](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/resolver.ts#L27)
 
 ## Implements
 
 - [`Resolver`](../interfaces/Resolver.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/resolver.ts:23](https://github.com/nebius/nodejs-sdk/bl
 
 > **new Basic**(`id`, `address`): `Basic`
 
-Defined in: [src/runtime/resolver.ts:26](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L26)
+Defined in: [src/runtime/resolver.ts:30](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/resolver.ts#L30)
 
 #### Parameters
 
@@ -36,11 +40,23 @@ Defined in: [src/runtime/resolver.ts:26](https://github.com/nebius/nodejs-sdk/bl
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `object`
+
+Defined in: [src/runtime/resolver.ts:43](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/resolver.ts#L43)
+
+#### Returns
+
+`object`
+
+---
+
 ### resolve()
 
 > **resolve**(`serviceId`, `apiServiceName?`): `string`
 
-Defined in: [src/runtime/resolver.ts:36](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L36)
+Defined in: [src/runtime/resolver.ts:50](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/resolver.ts#L50)
 
 Receive address of the service by its ID
 

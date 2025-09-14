@@ -1,6 +1,6 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "entryPoints": ["src/sdk.ts", "src/generated/nebius/**/*.ts", "src/runtime/**/*.ts"],
+  "entryPoints": ["src/sdk.ts", "src/api/nebius/**/*.ts", "src/runtime/**/*.ts"],
   "exclude": ["src/runtime/test/**", "src/generated_test/**"],
   "tsconfig": "tsconfig.json",
   "out": "docs/api",

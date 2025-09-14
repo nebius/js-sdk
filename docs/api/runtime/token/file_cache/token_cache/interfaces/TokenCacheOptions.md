@@ -6,7 +6,7 @@
 
 # Interface: TokenCacheOptions
 
-Defined in: [src/runtime/token/file_cache/token_cache.ts:10](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/token_cache.ts#L10)
+Defined in: [src/runtime/token/file_cache/token_cache.ts:12](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L12)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/token/file_cache/token_cache.ts:10](https://github.com/
 
 > `optional` **cacheFile**: `string`
 
-Defined in: [src/runtime/token/file_cache/token_cache.ts:11](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/token_cache.ts#L11)
+Defined in: [src/runtime/token/file_cache/token_cache.ts:13](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L13)
 
 ---
 
@@ -22,4 +22,12 @@ Defined in: [src/runtime/token/file_cache/token_cache.ts:11](https://github.com/
 
 > `optional` **fileCreateMode**: `number`
 
-Defined in: [src/runtime/token/file_cache/token_cache.ts:12](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/token_cache.ts#L12)
+Defined in: [src/runtime/token/file_cache/token_cache.ts:14](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L14)
+
+---
+
+### logger?
+
+> `optional` **logger**: [`Logger`](../../../../util/logging/classes/Logger.md)
+
+Defined in: [src/runtime/token/file_cache/token_cache.ts:15](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/token_cache.ts#L15)

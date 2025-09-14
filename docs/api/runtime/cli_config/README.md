@@ -15,8 +15,3 @@
 ## Interfaces
 
 - [ConfigOptions](interfaces/ConfigOptions.md)
-- [GetCredentialsOptions](interfaces/GetCredentialsOptions.md)
-
-## Type Aliases
-
-- [Credentials](type-aliases/Credentials.md)

@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / DeleteGroupRequest
+
+# Variable: DeleteGroupRequest
+
+> **DeleteGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), `"nebius.iam.v1.DeleteGroupRequest"`\>
+
+Defined in: src/api/nebius/iam/v1/index.ts:12233

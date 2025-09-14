@@ -6,7 +6,7 @@
 
 # Class: SDK
 
-Defined in: [src/sdk.ts:110](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L110)
+Defined in: [src/sdk.ts:109](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L109)
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: [src/sdk.ts:110](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **new SDK**(`options?`): `SDK`
 
-Defined in: [src/sdk.ts:131](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L131)
+Defined in: [src/sdk.ts:130](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L130)
 
 #### Parameters
 
@@ -30,13 +30,31 @@ Defined in: [src/sdk.ts:131](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 `SDK`
 
+## Accessors
+
+### logger
+
+#### Get Signature
+
+> **get** **logger**(): [`Logger`](../../runtime/util/logging/classes/Logger.md)
+
+Defined in: [src/sdk.ts:253](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L253)
+
+##### Returns
+
+[`Logger`](../../runtime/util/logging/classes/Logger.md)
+
+#### Implementation of
+
+[`SDKInterface`](../interfaces/SDKInterface.md).[`logger`](../interfaces/SDKInterface.md#logger)
+
 ## Methods
 
 ### addInterceptors()
 
 > **addInterceptors**(...`ints`): `void`
 
-Defined in: [src/sdk.ts:459](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L459)
+Defined in: [src/sdk.ts:612](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L612)
 
 #### Parameters
 
@@ -54,7 +72,7 @@ Defined in: [src/sdk.ts:459](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **close**(`graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/sdk.ts:482](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L482)
+Defined in: [src/sdk.ts:638](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L638)
 
 #### Parameters
 
@@ -72,7 +90,7 @@ Defined in: [src/sdk.ts:482](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **getAddressCredentials**(`address`): `ChannelCredentials`
 
-Defined in: [src/sdk.ts:391](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L391)
+Defined in: [src/sdk.ts:522](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L522)
 
 #### Parameters
 
@@ -90,7 +108,7 @@ Defined in: [src/sdk.ts:391](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **getAddressFromServiceName**(`serviceName`, `apiServiceName?`): `string`
 
-Defined in: [src/sdk.ts:380](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L380)
+Defined in: [src/sdk.ts:506](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L506)
 
 #### Parameters
 
@@ -116,7 +134,7 @@ Defined in: [src/sdk.ts:380](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **getAddressOptions**(`address`): `Partial`\<`ClientOptions`\>
 
-Defined in: [src/sdk.ts:405](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L405)
+Defined in: [src/sdk.ts:545](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L545)
 
 #### Parameters
 
@@ -134,7 +152,7 @@ Defined in: [src/sdk.ts:405](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **getClientByAddress**(`address`): `Client`
 
-Defined in: [src/sdk.ts:370](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L370)
+Defined in: [src/sdk.ts:494](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L494)
 
 #### Parameters
 
@@ -156,7 +174,7 @@ Defined in: [src/sdk.ts:370](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **getTlsRootCAs**(): `undefined` \| `string` \| `string`[] \| `Buffer`\<`ArrayBufferLike`\>
 
-Defined in: [src/sdk.ts:387](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L387)
+Defined in: [src/sdk.ts:517](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L517)
 
 #### Returns
 
@@ -168,7 +186,7 @@ Defined in: [src/sdk.ts:387](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **parentId**(): `undefined` \| `string`
 
-Defined in: [src/sdk.ts:445](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L445)
+Defined in: [src/sdk.ts:596](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L596)
 
 #### Returns
 
@@ -184,7 +202,7 @@ Defined in: [src/sdk.ts:445](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **setAuthorizationProvider**(`provider`): `void`
 
-Defined in: [src/sdk.ts:450](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L450)
+Defined in: [src/sdk.ts:601](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L601)
 
 #### Parameters
 
@@ -202,7 +220,7 @@ Defined in: [src/sdk.ts:450](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **setClientOptions**(`opts`): `void`
 
-Defined in: [src/sdk.ts:464](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L464)
+Defined in: [src/sdk.ts:618](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L618)
 
 #### Parameters
 
@@ -220,7 +238,7 @@ Defined in: [src/sdk.ts:464](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 > **setTokenBearerAsAuthorization**(`bearer`): `void`
 
-Defined in: [src/sdk.ts:454](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L454)
+Defined in: [src/sdk.ts:606](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L606)
 
 #### Parameters
 
@@ -236,9 +254,9 @@ Defined in: [src/sdk.ts:454](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 ### whoami()
 
-> **whoami**(`metadata?`, `options?`): [`Request`](../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../../generated/nebius/iam/v1/interfaces/GetProfileRequest.md), [`GetProfileResponse`](../../generated/nebius/iam/v1/interfaces/GetProfileResponse.md)\>
+> **whoami**(`metadata?`, `options?`): [`Request`](../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../../api/nebius/iam/v1/interfaces/GetProfileRequest.md), [`GetProfileResponse`](../../api/nebius/iam/v1/interfaces/GetProfileResponse.md)\>
 
-Defined in: [src/sdk.ts:469](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/sdk.ts#L469)
+Defined in: [src/sdk.ts:624](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L624)
 
 #### Parameters
 
@@ -252,4 +270,4 @@ Defined in: [src/sdk.ts:469](https://github.com/nebius/nodejs-sdk/blob/2ec552fb5
 
 #### Returns
 
-[`Request`](../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../../generated/nebius/iam/v1/interfaces/GetProfileRequest.md), [`GetProfileResponse`](../../generated/nebius/iam/v1/interfaces/GetProfileResponse.md)\>
+[`Request`](../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../../api/nebius/iam/v1/interfaces/GetProfileRequest.md), [`GetProfileResponse`](../../api/nebius/iam/v1/interfaces/GetProfileResponse.md)\>

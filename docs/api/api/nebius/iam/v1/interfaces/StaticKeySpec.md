@@ -1,0 +1,55 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / StaticKeySpec
+
+# Interface: StaticKeySpec
+
+Defined in: src/api/nebius/iam/v1/index.ts:19200
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/api/nebius/iam/v1/index.ts:19202
+
+---
+
+### $type
+
+> **$type**: `"nebius.iam.v1.StaticKeySpec"`
+
+Defined in: src/api/nebius/iam/v1/index.ts:19201
+
+---
+
+### account?
+
+> `optional` **account**: [`Account`](Account.md)
+
+Defined in: src/api/nebius/iam/v1/index.ts:19207
+
+account of the static key. only service accounts are supported for now
+
+---
+
+### expiresAt?
+
+> `optional` **expiresAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
+
+Defined in: src/api/nebius/iam/v1/index.ts:19217
+
+when will the static key expire
+
+---
+
+### service
+
+> **service**: [`StaticKeySpec_ClientService`](../type-aliases/StaticKeySpec_ClientService.md)
+
+Defined in: src/api/nebius/iam/v1/index.ts:19212
+
+service static key is to be used for

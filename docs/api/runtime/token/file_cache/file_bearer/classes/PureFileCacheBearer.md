@@ -6,19 +6,23 @@
 
 # Class: PureFileCacheBearer
 
-Defined in: [src/runtime/token/file_cache/file_bearer.ts:20](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/file_bearer.ts#L20)
+Defined in: [src/runtime/token/file_cache/file_bearer.ts:33](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/file_bearer.ts#L33)
 
 ## Extends
 
 - [`Bearer`](../../../classes/Bearer.md)
 
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
+
 ## Constructors
 
 ### Constructor
 
-> **new PureFileCacheBearer**(`name`, `cacheFile`, `throttleMs`): `PureFileCacheBearer`
+> **new PureFileCacheBearer**(`name`, `cacheFile`, `throttleMs`, `logger?`): `PureFileCacheBearer`
 
-Defined in: [src/runtime/token/file_cache/file_bearer.ts:24](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/file_bearer.ts#L24)
+Defined in: [src/runtime/token/file_cache/file_bearer.ts:38](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/file_bearer.ts#L38)
 
 #### Parameters
 
@@ -34,6 +38,10 @@ Defined in: [src/runtime/token/file_cache/file_bearer.ts:24](https://github.com/
 
 `number` = `...`
 
+##### logger?
+
+[`Logger`](../../../../util/logging/classes/Logger.md)
+
 #### Returns
 
 `PureFileCacheBearer`
@@ -41,6 +49,18 @@ Defined in: [src/runtime/token/file_cache/file_bearer.ts:24](https://github.com/
 #### Overrides
 
 [`Bearer`](../../../classes/Bearer.md).[`constructor`](../../../classes/Bearer.md#constructor)
+
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.PureFileCacheBearer"` = `'nebius.sdk.PureFileCacheBearer'`
+
+Defined in: [src/runtime/token/file_cache/file_bearer.ts:34](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/file_bearer.ts#L34)
+
+#### Overrides
+
+[`Bearer`](../../../classes/Bearer.md).[`$type`](../../../classes/Bearer.md#type)
 
 ## Accessors
 
@@ -50,7 +70,7 @@ Defined in: [src/runtime/token/file_cache/file_bearer.ts:24](https://github.com/
 
 > **get** **name**(): `undefined` \| `string`
 
-Defined in: [src/runtime/token/file_cache/file_bearer.ts:34](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/file_bearer.ts#L34)
+Defined in: [src/runtime/token/file_cache/file_bearer.ts:64](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/file_bearer.ts#L64)
 
 ##### Returns
 
@@ -68,7 +88,7 @@ Defined in: [src/runtime/token/file_cache/file_bearer.ts:34](https://github.com/
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../../classes/Bearer.md)
 
-Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L105)
+Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L117)
 
 ##### Returns
 
@@ -80,11 +100,23 @@ Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `unknown`
+
+Defined in: [src/runtime/token/file_cache/file_bearer.ts:56](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/file_bearer.ts#L56)
+
+#### Returns
+
+`unknown`
+
+---
+
 ### close()
 
 > **close**(`_graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L109)
+Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L121)
 
 #### Parameters
 
@@ -106,7 +138,7 @@ Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob
 
 > **receiver**(): [`Receiver`](../../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/file_cache/file_bearer.ts:38](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file_cache/file_bearer.ts#L38)
+Defined in: [src/runtime/token/file_cache/file_bearer.ts:68](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/file_cache/file_bearer.ts#L68)
 
 #### Returns
 

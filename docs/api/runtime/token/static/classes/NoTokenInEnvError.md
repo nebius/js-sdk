@@ -6,7 +6,7 @@
 
 # Class: NoTokenInEnvError
 
-Defined in: [src/runtime/token/static.ts:4](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/static.ts#L4)
+Defined in: [src/runtime/token/static.ts:7](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/static.ts#L7)
 
 ## Extends
 
@@ -34,7 +34,43 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:1082
 
 `Error.constructor`
 
+### Constructor
+
+> **new NoTokenInEnvError**(`message?`, `options?`): `NoTokenInEnvError`
+
+Defined in: node_modules/typescript/lib/lib.es5.d.ts:1082
+
+#### Parameters
+
+##### message?
+
+`string`
+
+##### options?
+
+`ErrorOptions`
+
+#### Returns
+
+`NoTokenInEnvError`
+
+#### Inherited from
+
+`Error.constructor`
+
 ## Properties
+
+### cause?
+
+> `optional` **cause**: `unknown`
+
+Defined in: node_modules/typescript/lib/lib.es2022.error.d.ts:26
+
+#### Inherited from
+
+`Error.cause`
+
+---
 
 ### message
 

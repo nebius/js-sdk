@@ -13,7 +13,7 @@ import { join } from 'path';
 import Long from 'long';
 import { parse as parseYAML } from 'yaml';
 
-import { ResourceMetadata } from '../generated/nebius/common/v1/index';
+import { ResourceMetadata } from '../api/nebius/common/v1/index';
 import {
   BucketService as BucketServiceClient,
   BucketSpec,
@@ -22,7 +22,7 @@ import {
   GetBucketRequest,
   ListBucketsRequest,
   VersioningPolicy,
-} from '../generated/nebius/storage/v1/index';
+} from '../api/nebius/storage/v1/index';
 import { Config } from '../runtime/cli_config';
 import { SDK } from '../sdk';
 

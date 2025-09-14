@@ -3,9 +3,9 @@ import path from 'path';
 
 /*
  * Copies the generated google.protobuf descriptor types into the generator folder so that
- * the generator can bootstrap from a cold start (before src/generated is produced).
+ * the generator can bootstrap from a cold start (before src/api is produced).
  *
- * Source: src/generated/google/protobuf/index.ts
+ * Source: src/api/google/protobuf/index.ts
  * Dest:   scripts/generator/google/protobuf/index.ts
  *
  * We also rewrite any relative imports inside the copied file that point to the runtime layer
@@ -15,14 +15,14 @@ import path from 'path';
 const projectRoot = path.resolve(__dirname, '..'); // scripts/
 // projectRoot points to <repo>/scripts, we want <repo>/src/... so go one level up only once.
 const repoRoot = path.resolve(projectRoot, '.'); // scripts -> scripts (placeholder)
-const SRC_FILE = path.join(repoRoot, 'src', 'generated', 'google', 'protobuf', 'index.ts');
+const SRC_FILE = path.join(repoRoot, 'src', 'api', 'google', 'protobuf', 'index.ts');
 const DEST_FILE = path.join(projectRoot, 'scripts', 'generator', 'google', 'protobuf', 'index.ts');
 
 function rewriteImports(code: string): string {
-  // The generated file imports from ../../../runtime/protos relative to src/generated/google/protobuf
+  // The generated file imports from ../../../runtime/protos relative to src/api/google/protobuf
   // After copying into scripts/generator/google/protobuf we need a path from there to src/runtime/protos.
   // Location math:
-  //   original file location: src/generated/google/protobuf/index.ts
+  //   original file location: src/api/google/protobuf/index.ts
   //   new file location:      scripts/generator/google/protobuf/index.ts
   // We want to keep runtime imports pointing at the runtime sources under src/runtime.
   // From new location to src/runtime/protos: ../../../../src/runtime/protos

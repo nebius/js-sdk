@@ -6,25 +6,29 @@
 
 # Class: ExchangeableBearer
 
-Defined in: [src/runtime/token/exchangeable.ts:93](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/exchangeable.ts#L93)
+Defined in: [src/runtime/token/exchangeable.ts:125](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/exchangeable.ts#L125)
 
 ## Extends
 
 - [`Bearer`](../../classes/Bearer.md)
 
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
+
 ## Constructors
 
 ### Constructor
 
-> **new ExchangeableBearer**(`requester`, `sdk`, `maxRetries`): `ExchangeableBearer`
+> **new ExchangeableBearer**(`requester`, `sdk`, `maxRetries`, `logger?`): `ExchangeableBearer`
 
-Defined in: [src/runtime/token/exchangeable.ts:96](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/exchangeable.ts#L96)
+Defined in: [src/runtime/token/exchangeable.ts:129](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/exchangeable.ts#L129)
 
 #### Parameters
 
 ##### requester
 
-[`TokenRequester`](../../../service_account/service_account/interfaces/TokenRequester.md)
+[`TokenRequester`](../interfaces/TokenRequester.md)
 
 ##### sdk
 
@@ -34,6 +38,10 @@ Defined in: [src/runtime/token/exchangeable.ts:96](https://github.com/nebius/nod
 
 `number` = `2`
 
+##### logger?
+
+[`Logger`](../../../util/logging/classes/Logger.md)
+
 #### Returns
 
 `ExchangeableBearer`
@@ -41,6 +49,18 @@ Defined in: [src/runtime/token/exchangeable.ts:96](https://github.com/nebius/nod
 #### Overrides
 
 [`Bearer`](../../classes/Bearer.md).[`constructor`](../../classes/Bearer.md#constructor)
+
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.ExchangeableBearer"` = `'nebius.sdk.ExchangeableBearer'`
+
+Defined in: [src/runtime/token/exchangeable.ts:126](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/exchangeable.ts#L126)
+
+#### Overrides
+
+[`Bearer`](../../classes/Bearer.md).[`$type`](../../classes/Bearer.md#type)
 
 ## Accessors
 
@@ -50,7 +70,7 @@ Defined in: [src/runtime/token/exchangeable.ts:96](https://github.com/nebius/nod
 
 > **get** **name**(): `undefined` \| `string`
 
-Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L101)
+Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L113)
 
 ##### Returns
 
@@ -68,7 +88,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../classes/Bearer.md)
 
-Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L105)
+Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L117)
 
 ##### Returns
 
@@ -80,11 +100,23 @@ Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `unknown`
+
+Defined in: [src/runtime/token/exchangeable.ts:142](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/exchangeable.ts#L142)
+
+#### Returns
+
+`unknown`
+
+---
+
 ### close()
 
 > **close**(`_graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L109)
+Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L121)
 
 #### Parameters
 
@@ -106,7 +138,7 @@ Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob
 
 > **receiver**(): [`Receiver`](../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/exchangeable.ts:122](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/exchangeable.ts#L122)
+Defined in: [src/runtime/token/exchangeable.ts:169](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/exchangeable.ts#L169)
 
 #### Returns
 
@@ -122,7 +154,7 @@ Defined in: [src/runtime/token/exchangeable.ts:122](https://github.com/nebius/no
 
 > **setSDK**(`sdk`): `void`
 
-Defined in: [src/runtime/token/exchangeable.ts:105](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/exchangeable.ts#L105)
+Defined in: [src/runtime/token/exchangeable.ts:150](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/exchangeable.ts#L150)
 
 #### Parameters
 
