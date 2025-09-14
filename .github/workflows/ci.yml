@@ -34,8 +34,8 @@ jobs:
           # Ensure devDependencies are installed for codegen, lint and tests
           NPM_CONFIG_PRODUCTION: false
 
-      - name: Generate sources
-        run: npm run generate
+      - name: Build
+        run: npm run build
 
       - name: Lint
         run: npm run lint
@@ -55,6 +55,13 @@ jobs:
           NEBIUS_LOG_OUTPUT: stderr
           FORCE_COLOR: 1
         run: npm run test:noserver -- --runInBand
+
+      - name: Run build tests
+        env:
+          NEBIUS_LOG: DEBUG
+          NEBIUS_LOG_OUTPUT: stderr
+          FORCE_COLOR: 1
+        run: npm run test:builds -- --runInBand
 
       - name: Run E2E tests
         env:

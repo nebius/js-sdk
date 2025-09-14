@@ -57,7 +57,7 @@
     "prepublishOnly": "npm run build",
     "test:builds": "jest --testPathPatterns='build_*.test.ts'",
     "test:e2e": "jest --testPathPatterns='e2e_storage_bucket.test.ts'",
-    "test:noserver": "jest --testPathIgnorePatterns='e2e_storage_bucket.test.ts'",
+    "test:noserver": "jest --testPathIgnorePatterns='e2e_storage_bucket.test.ts' --testPathIgnorePatterns='build_*.test.ts'",
     "test:watch": "jest --watch",
     "test": "jest"
   },
