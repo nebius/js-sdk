@@ -55,9 +55,9 @@
     "lint": "eslint src/**/*.ts --no-warn-ignored",
     "prepare": "husky",
     "prepublishOnly": "npm run build",
-    "test:builds": "jest --testPathPatterns='build_*.test.ts'",
-    "test:e2e": "jest --testPathPatterns='e2e_storage_bucket.test.ts'",
-    "test:noserver": "jest --testPathIgnorePatterns='e2e_storage_bucket.test.ts' --testPathIgnorePatterns='build_*.test.ts'",
+    "test:builds": "jest --testPathPatterns='build_'",
+    "test:e2e": "jest --testPathPatterns='e2e_'",
+    "test:noserver": "jest --testPathIgnorePatterns='e2e_|build_'",
     "test:watch": "jest --watch",
     "test": "jest"
   },
