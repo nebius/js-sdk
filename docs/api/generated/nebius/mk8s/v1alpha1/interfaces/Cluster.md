@@ -6,7 +6,7 @@
 
 # Interface: Cluster
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1004
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1275
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1004
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1006
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1277
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1006
 
 > **$type**: `"nebius.mk8s.v1alpha1.Cluster"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1005
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1276
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1005
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1007
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1278
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1007
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1008
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1279
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1008
 
 > `optional` **status**: [`ClusterStatus`](ClusterStatus.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1009
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1280

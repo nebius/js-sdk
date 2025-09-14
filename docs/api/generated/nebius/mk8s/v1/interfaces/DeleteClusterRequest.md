@@ -6,7 +6,7 @@
 
 # Interface: DeleteClusterRequest
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:591
+Defined in: src/generated/nebius/mk8s/v1/index.ts:592
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:591
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:593
+Defined in: src/generated/nebius/mk8s/v1/index.ts:594
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:593
 
 > **$type**: `"nebius.mk8s.v1.DeleteClusterRequest"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:592
+Defined in: src/generated/nebius/mk8s/v1/index.ts:593
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:592
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:594
+Defined in: src/generated/nebius/mk8s/v1/index.ts:595

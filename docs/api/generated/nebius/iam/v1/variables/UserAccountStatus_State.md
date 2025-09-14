@@ -8,4 +8,4 @@
 
 > **UserAccountStatus_State**: [`UserAccountStatus_StateClass`](../type-aliases/UserAccountStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22592
+Defined in: src/generated/nebius/iam/v1/index.ts:22593

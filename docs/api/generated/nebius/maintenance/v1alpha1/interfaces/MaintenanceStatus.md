@@ -6,7 +6,7 @@
 
 # Interface: MaintenanceStatus
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:701
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:702
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:701
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:703
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:704
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:703
 
 > **$type**: `"nebius.maintenance.v1alpha1.MaintenanceStatus"`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:702
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:703
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:702
 
 > **affectedResources**: [`Resource`](Resource.md)[]
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:708
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:709
 
 List of resources that are affected by this maintenance operation.
 
@@ -40,7 +40,7 @@ List of resources that are affected by this maintenance operation.
 
 > `optional` **finishedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:718
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:719
 
 Timestamp indicating when the maintenance operation finished.
 
@@ -50,7 +50,7 @@ Timestamp indicating when the maintenance operation finished.
 
 > `optional` **startedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:713
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:714
 
 Timestamp indicating when the maintenance operation started.
 
@@ -60,6 +60,6 @@ Timestamp indicating when the maintenance operation started.
 
 > **state**: [`State`](../type-aliases/State.md)
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:723
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:724
 
 Current state of the maintenance operation.

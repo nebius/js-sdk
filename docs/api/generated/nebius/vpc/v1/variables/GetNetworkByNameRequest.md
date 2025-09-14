@@ -8,4 +8,4 @@
 
 > **GetNetworkByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), `"nebius.vpc.v1.GetNetworkByNameRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2538
+Defined in: src/generated/nebius/vpc/v1/index.ts:2539

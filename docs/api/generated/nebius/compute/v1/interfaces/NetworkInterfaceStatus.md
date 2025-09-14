@@ -6,7 +6,7 @@
 
 # Interface: NetworkInterfaceStatus
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10157
+Defined in: src/generated/nebius/compute/v1/index.ts:10158
 
 Describes the status of a network interface.
 
@@ -16,7 +16,7 @@ Describes the status of a network interface.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10159
+Defined in: src/generated/nebius/compute/v1/index.ts:10160
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10159
 
 > **$type**: `"nebius.compute.v1.NetworkInterfaceStatus"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10158
+Defined in: src/generated/nebius/compute/v1/index.ts:10159
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10158
 
 > **fqdn**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10190
+Defined in: src/generated/nebius/compute/v1/index.ts:10191
 
 FQDN of the interface
 
@@ -42,7 +42,7 @@ FQDN of the interface
 
 > **index**: `number`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10164
+Defined in: src/generated/nebius/compute/v1/index.ts:10165
 
 The index of the network interface
 
@@ -52,7 +52,7 @@ The index of the network interface
 
 > `optional` **ipAddress**: [`IPAddressStatus`](IPAddressStatus.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10175
+Defined in: src/generated/nebius/compute/v1/index.ts:10176
 
 Effective Private IPv4 address
 
@@ -62,7 +62,7 @@ Effective Private IPv4 address
 
 > **macAddress**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10185
+Defined in: src/generated/nebius/compute/v1/index.ts:10186
 
 MAC address
 
@@ -72,7 +72,7 @@ MAC address
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10170
+Defined in: src/generated/nebius/compute/v1/index.ts:10171
 
 Name for interface.
 Unique within instance's network interfaces
@@ -83,6 +83,6 @@ Unique within instance's network interfaces
 
 > `optional` **publicIpAddress**: [`PublicIPAddressStatus`](PublicIPAddressStatus.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10180
+Defined in: src/generated/nebius/compute/v1/index.ts:10181
 
 Effective Public IPv4 address

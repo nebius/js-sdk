@@ -8,4 +8,4 @@
 
 > **GetGroupByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), `"nebius.iam.v1.GetGroupByNameRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11878
+Defined in: src/generated/nebius/iam/v1/index.ts:11879

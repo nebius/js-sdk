@@ -6,7 +6,7 @@
 
 # Interface: TenantUserAccountSpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21749
+Defined in: src/generated/nebius/iam/v1/index.ts:21750
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21749
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21751
+Defined in: src/generated/nebius/iam/v1/index.ts:21752
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21751
 
 > **$type**: `"nebius.iam.v1.TenantUserAccountSpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21750
+Defined in: src/generated/nebius/iam/v1/index.ts:21751
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21750
 
 > `optional` **visibleAttributes**: [`TenantUserAccountSpec_VisibleAttributes`](TenantUserAccountSpec_VisibleAttributes.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21752
+Defined in: src/generated/nebius/iam/v1/index.ts:21753

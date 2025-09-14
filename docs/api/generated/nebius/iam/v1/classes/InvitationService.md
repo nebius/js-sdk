@@ -6,7 +6,7 @@
 
 # Class: InvitationService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13823
+Defined in: src/generated/nebius/iam/v1/index.ts:13824
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13823
 
 > **new InvitationService**(`sdk`): `InvitationService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13850
+Defined in: src/generated/nebius/iam/v1/index.ts:13851
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13850
 
 > **$type**: `"nebius.iam.v1.InvitationService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13824
+Defined in: src/generated/nebius/iam/v1/index.ts:13825
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13824
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13825
+Defined in: src/generated/nebius/iam/v1/index.ts:13826
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13825
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13826
+Defined in: src/generated/nebius/iam/v1/index.ts:13827
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13826
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13827
+Defined in: src/generated/nebius/iam/v1/index.ts:13828
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13827
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13860
+Defined in: src/generated/nebius/iam/v1/index.ts:13861
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13860
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13861
+Defined in: src/generated/nebius/iam/v1/index.ts:13862
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13861
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13862
+Defined in: src/generated/nebius/iam/v1/index.ts:13863
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13862
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13834
+Defined in: src/generated/nebius/iam/v1/index.ts:13835
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13834
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13835
+Defined in: src/generated/nebius/iam/v1/index.ts:13836
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13835
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13836
+Defined in: src/generated/nebius/iam/v1/index.ts:13837
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13836
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13899
+Defined in: src/generated/nebius/iam/v1/index.ts:13900
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13899
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13900
+Defined in: src/generated/nebius/iam/v1/index.ts:13901
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13900
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13901
+Defined in: src/generated/nebius/iam/v1/index.ts:13902
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13901
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13828
+Defined in: src/generated/nebius/iam/v1/index.ts:13829
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13828
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13829
+Defined in: src/generated/nebius/iam/v1/index.ts:13830
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13829
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13830
+Defined in: src/generated/nebius/iam/v1/index.ts:13831
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13830
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13875
+Defined in: src/generated/nebius/iam/v1/index.ts:13876
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13875
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13876
+Defined in: src/generated/nebius/iam/v1/index.ts:13877
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13876
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13877
+Defined in: src/generated/nebius/iam/v1/index.ts:13878
 
 ##### Parameters
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13877
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13856
+Defined in: src/generated/nebius/iam/v1/index.ts:13857
 
 #### Returns
 
@@ -430,7 +430,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13856
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13831
+Defined in: src/generated/nebius/iam/v1/index.ts:13832
 
 ##### Parameters
 
@@ -446,7 +446,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13831
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13832
+Defined in: src/generated/nebius/iam/v1/index.ts:13833
 
 ##### Parameters
 
@@ -466,7 +466,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13832
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13833
+Defined in: src/generated/nebius/iam/v1/index.ts:13834
 
 ##### Parameters
 
@@ -490,7 +490,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13833
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13887
+Defined in: src/generated/nebius/iam/v1/index.ts:13888
 
 ##### Parameters
 
@@ -506,7 +506,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13887
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13888
+Defined in: src/generated/nebius/iam/v1/index.ts:13889
 
 ##### Parameters
 
@@ -526,7 +526,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13888
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13889
+Defined in: src/generated/nebius/iam/v1/index.ts:13890
 
 ##### Parameters
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13889
 
 > **resend**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13840
+Defined in: src/generated/nebius/iam/v1/index.ts:13841
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13840
 
 > **resend**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13841
+Defined in: src/generated/nebius/iam/v1/index.ts:13842
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13841
 
 > **resend**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13842
+Defined in: src/generated/nebius/iam/v1/index.ts:13843
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13842
 
 > **resend**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13929
+Defined in: src/generated/nebius/iam/v1/index.ts:13930
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13929
 
 > **resend**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13930
+Defined in: src/generated/nebius/iam/v1/index.ts:13931
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13930
 
 > **resend**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13931
+Defined in: src/generated/nebius/iam/v1/index.ts:13932
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13931
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13837
+Defined in: src/generated/nebius/iam/v1/index.ts:13838
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13837
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13838
+Defined in: src/generated/nebius/iam/v1/index.ts:13839
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13838
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13839
+Defined in: src/generated/nebius/iam/v1/index.ts:13840
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13839
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13914
+Defined in: src/generated/nebius/iam/v1/index.ts:13915
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13914
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13915
+Defined in: src/generated/nebius/iam/v1/index.ts:13916
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13915
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13916
+Defined in: src/generated/nebius/iam/v1/index.ts:13917
 
 ##### Parameters
 

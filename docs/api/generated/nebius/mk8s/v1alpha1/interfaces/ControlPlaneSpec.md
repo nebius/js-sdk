@@ -6,7 +6,7 @@
 
 # Interface: ControlPlaneSpec
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1255
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1526
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1255
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1257
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1528
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1257
 
 > **$type**: `"nebius.mk8s.v1alpha1.ControlPlaneSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1256
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1527
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1256
 
 > `optional` **endpoints**: [`ControlPlaneEndpointsSpec`](ControlPlaneEndpointsSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1269
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1540
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1269
 
 > **etcdClusterSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1277
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1548
 
 Number of instances in etcd cluster.
 3 by default.
@@ -51,7 +51,7 @@ will be available despite a failure of one control plane instance.
 
 > **subnetId**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1268
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1539
 
 Subnet ID where control plane instances will be located.
 
@@ -61,7 +61,7 @@ Subnet ID where control plane instances will be located.
 
 > **version**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1263
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1534
 
 Version is desired Kubernetes version of the cluster. For now only acceptable format is
 `MAJOR.MINOR` like "1.31". Option for patch version update will be added later.

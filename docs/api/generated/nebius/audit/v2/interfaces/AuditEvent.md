@@ -6,7 +6,7 @@
 
 # Interface: AuditEvent
 
-Defined in: src/generated/nebius/audit/v2/index.ts:488
+Defined in: src/generated/nebius/audit/v2/index.ts:489
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:488
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:490
+Defined in: src/generated/nebius/audit/v2/index.ts:491
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:490
 
 > **$type**: `"nebius.audit.v2.AuditEvent"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:489
+Defined in: src/generated/nebius/audit/v2/index.ts:490
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:489
 
 > **action**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:520
+Defined in: src/generated/nebius/audit/v2/index.ts:521
 
 Indicates an action taken on the resource.
 
@@ -40,7 +40,7 @@ Indicates an action taken on the resource.
 
 > `optional` **authentication**: [`Authentication`](Authentication.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:535
+Defined in: src/generated/nebius/audit/v2/index.ts:536
 
 Represents the subject of an API call.
 
@@ -50,7 +50,7 @@ Represents the subject of an API call.
 
 > `optional` **authorization**: [`Authorization`](Authorization.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:540
+Defined in: src/generated/nebius/audit/v2/index.ts:541
 
 Represents permissions that have been verified for the subject as part of the API call.
 
@@ -60,7 +60,7 @@ Represents permissions that have been verified for the subject as part of the AP
 
 > **eventVersion**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:530
+Defined in: src/generated/nebius/audit/v2/index.ts:531
 
 Audit event version, in "X.Y" format, events within different Y's are backwards compatible, events with different X's are not.
 
@@ -70,7 +70,7 @@ Audit event version, in "X.Y" format, events within different Y's are backwards 
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:495
+Defined in: src/generated/nebius/audit/v2/index.ts:496
 
 Unique event id.
 
@@ -80,7 +80,7 @@ Unique event id.
 
 > `optional` **projectRegion**: [`Region`](Region.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:565
+Defined in: src/generated/nebius/audit/v2/index.ts:566
 
 Region of an application
 
@@ -90,7 +90,7 @@ Region of an application
 
 > `optional` **request**: [`Request`](Request.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:550
+Defined in: src/generated/nebius/audit/v2/index.ts:551
 
 Contains information about the request from the customer.
 
@@ -100,7 +100,7 @@ Contains information about the request from the customer.
 
 > `optional` **resource**: [`Resource`](Resource.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:545
+Defined in: src/generated/nebius/audit/v2/index.ts:546
 
 A resource that was read or modified as part of the operation. Can be empty if no resource accessed or changed.
 
@@ -110,7 +110,7 @@ A resource that was read or modified as part of the operation. Can be empty if n
 
 > `optional` **response**: [`Response`](Response.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:555
+Defined in: src/generated/nebius/audit/v2/index.ts:556
 
 Contains information about the response from the server.
 
@@ -120,7 +120,7 @@ Contains information about the response from the server.
 
 > `optional` **service**: [`Service`](Service.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:515
+Defined in: src/generated/nebius/audit/v2/index.ts:516
 
 Indicates the service that generated the event.
 
@@ -130,7 +130,7 @@ Indicates the service that generated the event.
 
 > **source**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:500
+Defined in: src/generated/nebius/audit/v2/index.ts:501
 
 Identifies the context in which an event happened. Presented in the form of URI.
 
@@ -140,7 +140,7 @@ Identifies the context in which an event happened. Presented in the form of URI.
 
 > **specVersion**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:505
+Defined in: src/generated/nebius/audit/v2/index.ts:506
 
 Version of CloudEvents spec. See https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#specversion
 
@@ -150,7 +150,7 @@ Version of CloudEvents spec. See https://github.com/cloudevents/spec/blob/main/c
 
 > **status**: [`Status`](../type-aliases/Status.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:560
+Defined in: src/generated/nebius/audit/v2/index.ts:561
 
 The async operation status
 
@@ -160,7 +160,7 @@ The async operation status
 
 > `optional` **time**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:525
+Defined in: src/generated/nebius/audit/v2/index.ts:526
 
 Timestamp of when the occurrence happened.
 
@@ -170,6 +170,6 @@ Timestamp of when the occurrence happened.
 
 > **type**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:510
+Defined in: src/generated/nebius/audit/v2/index.ts:511
 
 The type of event related to the originating occurrence. Formed according to template: "ai.nebius.<serviceName>.<resourceType>.<action>"

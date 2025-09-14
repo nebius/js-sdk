@@ -8,4 +8,4 @@
 
 > **CreateClusterRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), `"nebius.msp.spark.v1alpha1.CreateClusterRequest"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:465
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:466

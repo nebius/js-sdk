@@ -6,7 +6,7 @@
 
 # Interface: ScopeServiceBaseClient
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5923
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5924
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5924
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5925
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5924
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5925
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5926
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5926
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5927
 
 #### Parameters
 

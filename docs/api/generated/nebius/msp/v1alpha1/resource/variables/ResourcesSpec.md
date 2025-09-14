@@ -8,4 +8,4 @@
 
 > **ResourcesSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourcesSpec`](../interfaces/ResourcesSpec.md), `"nebius.msp.v1alpha1.resource.ResourcesSpec"`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:365
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:366

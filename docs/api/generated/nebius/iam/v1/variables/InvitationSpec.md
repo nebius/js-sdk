@@ -8,4 +8,4 @@
 
 > **InvitationSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`InvitationSpec`](../interfaces/InvitationSpec.md), `"nebius.iam.v1.InvitationSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14154
+Defined in: src/generated/nebius/iam/v1/index.ts:14155

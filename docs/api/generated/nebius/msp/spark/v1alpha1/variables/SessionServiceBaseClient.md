@@ -4,11 +4,11 @@
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / SessionServiceBaseClient
 
-# Variable: SessionServiceBaseClient
+# ~~Variable: SessionServiceBaseClient~~
 
 > **SessionServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`SessionServiceBaseClient`](../interfaces/SessionServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4578
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4635
 
 ## Type Declaration
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4578
 
 [`SessionServiceBaseClient`](../interfaces/SessionServiceBaseClient.md)
 
-### service
+### ~~service~~
 
 > **service**: `object`
 
@@ -394,6 +394,10 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4578
 
 > `readonly` **responseStream**: `false` = `false`
 
-### serviceName
+### ~~serviceName~~
 
 > **serviceName**: `string`
+
+## Deprecated
+
+Deprecated, will be removed on 2025-08-12: Nebius AI Cloud no longer supports the service. Instead, use Application for Apache Spark™ Connect in Standalone Applications..

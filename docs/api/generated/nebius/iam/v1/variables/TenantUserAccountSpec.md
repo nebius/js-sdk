@@ -8,4 +8,4 @@
 
 > **TenantUserAccountSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TenantUserAccountSpec`](../interfaces/TenantUserAccountSpec.md), `"nebius.iam.v1.TenantUserAccountSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21749
+Defined in: src/generated/nebius/iam/v1/index.ts:21750

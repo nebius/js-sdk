@@ -6,7 +6,7 @@
 
 # Interface: KubeNetworkSpec
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1497
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1768
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1497
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1499
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1770
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1499
 
 > **$type**: `"nebius.mk8s.v1.KubeNetworkSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1498
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1769
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1498
 
 > **serviceCidrs**: `string`[]
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1510
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1781
 
 CIDR blocks for Service ClusterIP allocation.
 For now, only one value is supported.

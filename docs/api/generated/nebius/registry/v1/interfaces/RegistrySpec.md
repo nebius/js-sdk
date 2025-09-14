@@ -6,7 +6,7 @@
 
 # Interface: RegistrySpec
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1824
+Defined in: src/generated/nebius/registry/v1/index.ts:1825
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1824
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1826
+Defined in: src/generated/nebius/registry/v1/index.ts:1827
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1826
 
 > **$type**: `"nebius.registry.v1.RegistrySpec"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1825
+Defined in: src/generated/nebius/registry/v1/index.ts:1826
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1825
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1827
+Defined in: src/generated/nebius/registry/v1/index.ts:1828
 
 ---
 
@@ -38,6 +38,6 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1827
 
 > **imagesCount**: `number`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1832
+Defined in: src/generated/nebius/registry/v1/index.ts:1833
 
 Registry.Type type = 2;

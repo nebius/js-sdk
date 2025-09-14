@@ -6,7 +6,7 @@
 
 # Interface: NetworkInterfaceTemplate
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5137
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5455
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5137
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5139
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5457
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5139
 
 > **$type**: `"nebius.mk8s.v1alpha1.NetworkInterfaceTemplate"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5138
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5456
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5138
 
 > `optional` **publicIpAddress**: [`PublicIPAddress`](PublicIPAddress.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5144
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5462
 
 Public IPv4 address associated with the interface.
 
@@ -40,7 +40,7 @@ Public IPv4 address associated with the interface.
 
 > **subnetId**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5151
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5469
 
 Subnet ID that will be attached to a node cloud intstance network interface.
 By default control plane subnet_id used.

@@ -8,4 +8,4 @@
 
 > **ServiceError**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ServiceError`](../interfaces/ServiceError.md), `"nebius.common.error.v1alpha1.ServiceError"`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1495
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1496

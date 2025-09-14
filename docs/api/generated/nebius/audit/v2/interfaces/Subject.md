@@ -6,7 +6,7 @@
 
 # Interface: Subject
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2497
+Defined in: src/generated/nebius/audit/v2/index.ts:2498
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2497
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2499
+Defined in: src/generated/nebius/audit/v2/index.ts:2500
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2499
 
 > **$type**: `"nebius.audit.v2.Subject"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2498
+Defined in: src/generated/nebius/audit/v2/index.ts:2499
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2498
 
 > `optional` **id**: \{ `$case`: `"serviceAccountId"`; `serviceAccountId`: `string`; \} \| \{ `$case`: `"tenantUserId"`; `tenantUserId`: `string`; \}
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2505
+Defined in: src/generated/nebius/audit/v2/index.ts:2506
 
 ---
 
@@ -38,6 +38,6 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2505
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2504
+Defined in: src/generated/nebius/audit/v2/index.ts:2505
 
 Username of the subject.

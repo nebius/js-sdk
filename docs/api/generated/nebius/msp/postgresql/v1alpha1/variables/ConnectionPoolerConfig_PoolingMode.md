@@ -8,4 +8,4 @@
 
 > **ConnectionPoolerConfig_PoolingMode**: [`ConnectionPoolerConfig_PoolingModeClass`](../type-aliases/ConnectionPoolerConfig_PoolingModeClass.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2552
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2553

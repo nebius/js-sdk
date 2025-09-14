@@ -6,7 +6,7 @@
 
 # Interface: StaticKeyStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19341
+Defined in: src/generated/nebius/iam/v1/index.ts:19342
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19341
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19343
+Defined in: src/generated/nebius/iam/v1/index.ts:19344
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19343
 
 > **$type**: `"nebius.iam.v1.StaticKeyStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19342
+Defined in: src/generated/nebius/iam/v1/index.ts:19343
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19342
 
 > **active**: `boolean`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19344
+Defined in: src/generated/nebius/iam/v1/index.ts:19345

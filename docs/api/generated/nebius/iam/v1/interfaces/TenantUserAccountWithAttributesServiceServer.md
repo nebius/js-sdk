@@ -6,7 +6,7 @@
 
 # Interface: TenantUserAccountWithAttributesServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20920
+Defined in: src/generated/nebius/iam/v1/index.ts:20921
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20920
 
 > **get**: `handleUnaryCall`\<[`GetTenantUserAccountWithAttributesRequest`](GetTenantUserAccountWithAttributesRequest.md), [`TenantUserAccountWithAttributes`](TenantUserAccountWithAttributes.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20921
+Defined in: src/generated/nebius/iam/v1/index.ts:20922
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20921
 
 > **list**: `handleUnaryCall`\<[`ListTenantUserAccountsWithAttributesRequest`](ListTenantUserAccountsWithAttributesRequest.md), [`ListTenantUserAccountsWithAttributesResponse`](ListTenantUserAccountsWithAttributesResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20922
+Defined in: src/generated/nebius/iam/v1/index.ts:20923

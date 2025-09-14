@@ -8,4 +8,4 @@
 
 > **AddressBlockState**: [`AddressBlockStateClass`](../type-aliases/AddressBlockStateClass.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5266
+Defined in: src/generated/nebius/vpc/v1/index.ts:5267

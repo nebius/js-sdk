@@ -6,7 +6,7 @@
 
 # Interface: GetPoolByNameRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4273
+Defined in: src/generated/nebius/vpc/v1/index.ts:4274
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4273
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4275
+Defined in: src/generated/nebius/vpc/v1/index.ts:4276
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4275
 
 > **$type**: `"nebius.vpc.v1.GetPoolByNameRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4274
+Defined in: src/generated/nebius/vpc/v1/index.ts:4275
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4274
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4277
+Defined in: src/generated/nebius/vpc/v1/index.ts:4278
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4277
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4276
+Defined in: src/generated/nebius/vpc/v1/index.ts:4277

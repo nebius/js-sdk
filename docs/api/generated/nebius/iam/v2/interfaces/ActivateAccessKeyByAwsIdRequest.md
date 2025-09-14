@@ -6,7 +6,7 @@
 
 # Interface: ActivateAccessKeyByAwsIdRequest
 
-Defined in: src/generated/nebius/iam/v2/index.ts:902
+Defined in: src/generated/nebius/iam/v2/index.ts:903
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:902
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:904
+Defined in: src/generated/nebius/iam/v2/index.ts:905
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:904
 
 > **$type**: `"nebius.iam.v2.ActivateAccessKeyByAwsIdRequest"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:903
+Defined in: src/generated/nebius/iam/v2/index.ts:904
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:903
 
 > **awsAccessKeyId**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:905
+Defined in: src/generated/nebius/iam/v2/index.ts:906

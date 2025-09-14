@@ -6,7 +6,7 @@
 
 # Interface: DeleteAccessKeyRequest
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1072
+Defined in: src/generated/nebius/iam/v2/index.ts:1073
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1072
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1074
+Defined in: src/generated/nebius/iam/v2/index.ts:1075
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1074
 
 > **$type**: `"nebius.iam.v2.DeleteAccessKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1073
+Defined in: src/generated/nebius/iam/v2/index.ts:1074
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1073
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1075
+Defined in: src/generated/nebius/iam/v2/index.ts:1076

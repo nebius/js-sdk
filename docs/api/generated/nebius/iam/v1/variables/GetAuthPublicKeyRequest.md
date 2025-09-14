@@ -8,4 +8,4 @@
 
 > **GetAuthPublicKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), `"nebius.iam.v1.GetAuthPublicKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3796
+Defined in: src/generated/nebius/iam/v1/index.ts:3797

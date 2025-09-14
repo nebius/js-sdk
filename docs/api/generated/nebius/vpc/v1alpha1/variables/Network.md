@@ -8,4 +8,4 @@
 
 > **Network**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Network`](../interfaces/Network.md), `"nebius.vpc.v1alpha1.Network"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3704
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3705

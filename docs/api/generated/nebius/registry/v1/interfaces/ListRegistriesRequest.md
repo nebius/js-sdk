@@ -6,7 +6,7 @@
 
 # Interface: ListRegistriesRequest
 
-Defined in: src/generated/nebius/registry/v1/index.ts:923
+Defined in: src/generated/nebius/registry/v1/index.ts:924
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:923
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:925
+Defined in: src/generated/nebius/registry/v1/index.ts:926
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:925
 
 > **$type**: `"nebius.registry.v1.ListRegistriesRequest"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:924
+Defined in: src/generated/nebius/registry/v1/index.ts:925
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:924
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:929
+Defined in: src/generated/nebius/registry/v1/index.ts:930
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:929
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:927
+Defined in: src/generated/nebius/registry/v1/index.ts:928
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:927
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:928
+Defined in: src/generated/nebius/registry/v1/index.ts:929
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:928
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:926
+Defined in: src/generated/nebius/registry/v1/index.ts:927

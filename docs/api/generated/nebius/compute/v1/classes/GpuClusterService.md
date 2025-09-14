@@ -6,7 +6,7 @@
 
 # Class: GpuClusterService
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4279
+Defined in: src/generated/nebius/compute/v1/index.ts:4280
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4279
 
 > **new GpuClusterService**(`sdk`): `GpuClusterService`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4338
+Defined in: src/generated/nebius/compute/v1/index.ts:4339
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4338
 
 > **$type**: `"nebius.compute.v1.GpuClusterService"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4280
+Defined in: src/generated/nebius/compute/v1/index.ts:4281
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4280
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4307
+Defined in: src/generated/nebius/compute/v1/index.ts:4308
 
 Creates a new GPU Cluster.
 For details, see https://docs.nebius.com/compute/clusters/gpu#create-cluster
@@ -65,7 +65,7 @@ For details, see https://docs.nebius.com/compute/clusters/gpu#create-cluster
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4308
+Defined in: src/generated/nebius/compute/v1/index.ts:4309
 
 ##### Parameters
 
@@ -85,7 +85,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4308
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4309
+Defined in: src/generated/nebius/compute/v1/index.ts:4310
 
 ##### Parameters
 
@@ -109,7 +109,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4309
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4384
+Defined in: src/generated/nebius/compute/v1/index.ts:4385
 
 Creates a new GPU Cluster.
 For details, see https://docs.nebius.com/compute/clusters/gpu#create-cluster
@@ -128,7 +128,7 @@ For details, see https://docs.nebius.com/compute/clusters/gpu#create-cluster
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4385
+Defined in: src/generated/nebius/compute/v1/index.ts:4386
 
 Creates a new GPU Cluster.
 For details, see https://docs.nebius.com/compute/clusters/gpu#create-cluster
@@ -151,7 +151,7 @@ For details, see https://docs.nebius.com/compute/clusters/gpu#create-cluster
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4386
+Defined in: src/generated/nebius/compute/v1/index.ts:4387
 
 Creates a new GPU Cluster.
 For details, see https://docs.nebius.com/compute/clusters/gpu#create-cluster
@@ -182,7 +182,7 @@ For details, see https://docs.nebius.com/compute/clusters/gpu#create-cluster
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4321
+Defined in: src/generated/nebius/compute/v1/index.ts:4322
 
 Deletes a GPU Cluster by its ID.
 
@@ -200,7 +200,7 @@ Deletes a GPU Cluster by its ID.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4322
+Defined in: src/generated/nebius/compute/v1/index.ts:4323
 
 ##### Parameters
 
@@ -220,7 +220,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4322
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4323
+Defined in: src/generated/nebius/compute/v1/index.ts:4324
 
 ##### Parameters
 
@@ -244,7 +244,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4323
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4414
+Defined in: src/generated/nebius/compute/v1/index.ts:4415
 
 Deletes a GPU Cluster by its ID.
 
@@ -262,7 +262,7 @@ Deletes a GPU Cluster by its ID.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4415
+Defined in: src/generated/nebius/compute/v1/index.ts:4416
 
 Deletes a GPU Cluster by its ID.
 
@@ -284,7 +284,7 @@ Deletes a GPU Cluster by its ID.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4416
+Defined in: src/generated/nebius/compute/v1/index.ts:4417
 
 Deletes a GPU Cluster by its ID.
 
@@ -314,7 +314,7 @@ Deletes a GPU Cluster by its ID.
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4285
+Defined in: src/generated/nebius/compute/v1/index.ts:4286
 
 Retrieves the specified GPU Cluster by its ID.
 
@@ -332,7 +332,7 @@ Retrieves the specified GPU Cluster by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4286
+Defined in: src/generated/nebius/compute/v1/index.ts:4287
 
 ##### Parameters
 
@@ -352,7 +352,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4286
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4287
+Defined in: src/generated/nebius/compute/v1/index.ts:4288
 
 ##### Parameters
 
@@ -376,7 +376,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4287
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4348
+Defined in: src/generated/nebius/compute/v1/index.ts:4349
 
 Retrieves the specified GPU Cluster by its ID.
 
@@ -394,7 +394,7 @@ Retrieves the specified GPU Cluster by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4349
+Defined in: src/generated/nebius/compute/v1/index.ts:4350
 
 Retrieves the specified GPU Cluster by its ID.
 
@@ -416,7 +416,7 @@ Retrieves the specified GPU Cluster by its ID.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4350
+Defined in: src/generated/nebius/compute/v1/index.ts:4351
 
 Retrieves the specified GPU Cluster by its ID.
 
@@ -446,7 +446,7 @@ Retrieves the specified GPU Cluster by its ID.
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4292
+Defined in: src/generated/nebius/compute/v1/index.ts:4293
 
 Retrieves the specified GPU Cluster by its parent and name.
 
@@ -464,7 +464,7 @@ Retrieves the specified GPU Cluster by its parent and name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4293
+Defined in: src/generated/nebius/compute/v1/index.ts:4294
 
 ##### Parameters
 
@@ -484,7 +484,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4293
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4294
+Defined in: src/generated/nebius/compute/v1/index.ts:4295
 
 ##### Parameters
 
@@ -508,7 +508,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4294
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4360
+Defined in: src/generated/nebius/compute/v1/index.ts:4361
 
 Retrieves the specified GPU Cluster by its parent and name.
 
@@ -526,7 +526,7 @@ Retrieves the specified GPU Cluster by its parent and name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4361
+Defined in: src/generated/nebius/compute/v1/index.ts:4362
 
 Retrieves the specified GPU Cluster by its parent and name.
 
@@ -548,7 +548,7 @@ Retrieves the specified GPU Cluster by its parent and name.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4362
+Defined in: src/generated/nebius/compute/v1/index.ts:4363
 
 Retrieves the specified GPU Cluster by its parent and name.
 
@@ -576,7 +576,7 @@ Retrieves the specified GPU Cluster by its parent and name.
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4344
+Defined in: src/generated/nebius/compute/v1/index.ts:4345
 
 #### Returns
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4344
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4299
+Defined in: src/generated/nebius/compute/v1/index.ts:4300
 
 Lists GPU Clusters in the specified parent.
 
@@ -608,7 +608,7 @@ Lists GPU Clusters in the specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4300
+Defined in: src/generated/nebius/compute/v1/index.ts:4301
 
 ##### Parameters
 
@@ -628,7 +628,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4300
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4301
+Defined in: src/generated/nebius/compute/v1/index.ts:4302
 
 ##### Parameters
 
@@ -652,7 +652,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4301
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4372
+Defined in: src/generated/nebius/compute/v1/index.ts:4373
 
 Lists GPU Clusters in the specified parent.
 
@@ -670,7 +670,7 @@ Lists GPU Clusters in the specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4373
+Defined in: src/generated/nebius/compute/v1/index.ts:4374
 
 Lists GPU Clusters in the specified parent.
 
@@ -692,7 +692,7 @@ Lists GPU Clusters in the specified parent.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4374
+Defined in: src/generated/nebius/compute/v1/index.ts:4375
 
 Lists GPU Clusters in the specified parent.
 
@@ -722,7 +722,7 @@ Lists GPU Clusters in the specified parent.
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4328
+Defined in: src/generated/nebius/compute/v1/index.ts:4329
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -740,7 +740,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4329
+Defined in: src/generated/nebius/compute/v1/index.ts:4330
 
 ##### Parameters
 
@@ -760,7 +760,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4329
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4330
+Defined in: src/generated/nebius/compute/v1/index.ts:4331
 
 ##### Parameters
 
@@ -784,7 +784,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4330
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4429
+Defined in: src/generated/nebius/compute/v1/index.ts:4430
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -802,7 +802,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4430
+Defined in: src/generated/nebius/compute/v1/index.ts:4431
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -824,7 +824,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4431
+Defined in: src/generated/nebius/compute/v1/index.ts:4432
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -854,7 +854,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4314
+Defined in: src/generated/nebius/compute/v1/index.ts:4315
 
 Modifies the configuration of an existing GPU Cluster.
 
@@ -872,7 +872,7 @@ Modifies the configuration of an existing GPU Cluster.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4315
+Defined in: src/generated/nebius/compute/v1/index.ts:4316
 
 ##### Parameters
 
@@ -892,7 +892,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4315
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4316
+Defined in: src/generated/nebius/compute/v1/index.ts:4317
 
 ##### Parameters
 
@@ -916,7 +916,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4316
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4399
+Defined in: src/generated/nebius/compute/v1/index.ts:4400
 
 Modifies the configuration of an existing GPU Cluster.
 
@@ -934,7 +934,7 @@ Modifies the configuration of an existing GPU Cluster.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4400
+Defined in: src/generated/nebius/compute/v1/index.ts:4401
 
 Modifies the configuration of an existing GPU Cluster.
 
@@ -956,7 +956,7 @@ Modifies the configuration of an existing GPU Cluster.
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4401
+Defined in: src/generated/nebius/compute/v1/index.ts:4402
 
 Modifies the configuration of an existing GPU Cluster.
 

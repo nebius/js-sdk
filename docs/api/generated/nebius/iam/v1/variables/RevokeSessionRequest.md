@@ -8,4 +8,4 @@
 
 > **RevokeSessionRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), `"nebius.iam.v1.RevokeSessionRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17428
+Defined in: src/generated/nebius/iam/v1/index.ts:17429

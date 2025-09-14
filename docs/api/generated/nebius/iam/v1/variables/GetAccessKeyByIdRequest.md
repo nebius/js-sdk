@@ -8,4 +8,4 @@
 
 > **GetAccessKeyByIdRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetAccessKeyByIdRequest`](../interfaces/GetAccessKeyByIdRequest.md), `"nebius.iam.v1.GetAccessKeyByIdRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:353
+Defined in: src/generated/nebius/iam/v1/index.ts:354

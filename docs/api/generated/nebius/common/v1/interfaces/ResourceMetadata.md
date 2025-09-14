@@ -6,7 +6,7 @@
 
 # Interface: ResourceMetadata
 
-Defined in: src/generated/nebius/common/v1/index.ts:2281
+Defined in: src/generated/nebius/common/v1/index.ts:2282
 
 Common resource metadata.
 
@@ -16,7 +16,7 @@ Common resource metadata.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2283
+Defined in: src/generated/nebius/common/v1/index.ts:2284
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2283
 
 > **$type**: `"nebius.common.v1.ResourceMetadata"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2282
+Defined in: src/generated/nebius/common/v1/index.ts:2283
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2282
 
 > `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/common/v1/index.ts:2311
+Defined in: src/generated/nebius/common/v1/index.ts:2312
 
 Timestamp indicating when the resource was created.
 
@@ -42,7 +42,7 @@ Timestamp indicating when the resource was created.
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2288
+Defined in: src/generated/nebius/common/v1/index.ts:2289
 
 Identifier for the resource, unique for its resource type.
 
@@ -52,7 +52,7 @@ Identifier for the resource, unique for its resource type.
 
 > **labels**: `object`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2321
+Defined in: src/generated/nebius/common/v1/index.ts:2322
 
 Labels associated with the resource.
 
@@ -66,7 +66,7 @@ Labels associated with the resource.
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2298
+Defined in: src/generated/nebius/common/v1/index.ts:2299
 
 Human readable name for the resource.
 
@@ -76,7 +76,7 @@ Human readable name for the resource.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2293
+Defined in: src/generated/nebius/common/v1/index.ts:2294
 
 Identifier of the parent resource to which the resource belongs.
 
@@ -86,7 +86,7 @@ Identifier of the parent resource to which the resource belongs.
 
 > **resourceVersion**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/common/v1/index.ts:2306
+Defined in: src/generated/nebius/common/v1/index.ts:2307
 
 Version of the resource for safe concurrent modifications and consistent reads.
 Positive and monotonically increases on each resource spec change (but _not_ on each change of the
@@ -99,6 +99,6 @@ Service allows zero value or current.
 
 > `optional` **updatedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/common/v1/index.ts:2316
+Defined in: src/generated/nebius/common/v1/index.ts:2317
 
 Timestamp indicating when the resource was last updated.

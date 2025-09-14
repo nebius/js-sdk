@@ -6,7 +6,7 @@
 
 # Interface: DeleteGroupRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12232
+Defined in: src/generated/nebius/iam/v1/index.ts:12233
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12232
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12234
+Defined in: src/generated/nebius/iam/v1/index.ts:12235
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12234
 
 > **$type**: `"nebius.iam.v1.DeleteGroupRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12233
+Defined in: src/generated/nebius/iam/v1/index.ts:12234
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12233
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12235
+Defined in: src/generated/nebius/iam/v1/index.ts:12236

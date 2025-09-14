@@ -6,7 +6,7 @@
 
 # Interface: NodeGroupAutoscalingSpec
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5419
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5737
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5419
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5421
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5739
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5421
 
 > **$type**: `"nebius.mk8s.v1.NodeGroupAutoscalingSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5420
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5738
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5420
 
 > **maxNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5423
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5741
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5423
 
 > **minNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5422
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5740

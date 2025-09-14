@@ -8,4 +8,4 @@
 
 > **ClusterStatus_State**: [`ClusterStatus_StateClass`](../type-aliases/ClusterStatus_StateClass.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:41
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:42

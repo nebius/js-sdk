@@ -6,7 +6,7 @@
 
 # Interface: CreateNetworkRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2869
+Defined in: src/generated/nebius/vpc/v1/index.ts:2870
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2869
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2871
+Defined in: src/generated/nebius/vpc/v1/index.ts:2872
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2871
 
 > **$type**: `"nebius.vpc.v1.CreateNetworkRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2870
+Defined in: src/generated/nebius/vpc/v1/index.ts:2871
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2870
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2872
+Defined in: src/generated/nebius/vpc/v1/index.ts:2873
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2872
 
 > `optional` **spec**: [`NetworkSpec`](NetworkSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2873
+Defined in: src/generated/nebius/vpc/v1/index.ts:2874

@@ -6,7 +6,7 @@
 
 # ~~Interface: FilesystemServiceServer~~
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2349
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2350
 
 ## Deprecated
 
@@ -26,7 +26,7 @@ Deprecated.
 
 > **create**: `handleUnaryCall`\<[`CreateFilesystemRequest`](CreateFilesystemRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2353
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2354
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2353
 
 > **delete**: `handleUnaryCall`\<[`DeleteFilesystemRequest`](DeleteFilesystemRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2355
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2356
 
 ---
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2355
 
 > **get**: `handleUnaryCall`\<[`GetFilesystemRequest`](GetFilesystemRequest.md), [`Filesystem`](Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2350
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2351
 
 ---
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2350
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2351
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2352
 
 ---
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2351
 
 > **list**: `handleUnaryCall`\<[`ListFilesystemsRequest`](ListFilesystemsRequest.md), [`ListFilesystemsResponse`](ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2352
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2353
 
 ---
 
@@ -66,7 +66,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2352
 
 > **listOperationsByParent**: `handleUnaryCall`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2356
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2357
 
 ---
 
@@ -74,4 +74,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2356
 
 > **update**: `handleUnaryCall`\<[`UpdateFilesystemRequest`](UpdateFilesystemRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2354
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2355

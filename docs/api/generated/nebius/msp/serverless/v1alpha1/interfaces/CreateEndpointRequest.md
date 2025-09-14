@@ -6,7 +6,7 @@
 
 # Interface: CreateEndpointRequest
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:17
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:18
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:17
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:19
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:20
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:19
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.CreateEndpointRequest"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:18
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:19
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:18
 
 > **dryRun**: `boolean`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:27
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:28
 
 If set to true, only API validation will be performed, without creating the endpoint.
 Returned operation will be in "done" state. ID of resource will be empty.
@@ -41,7 +41,7 @@ Returned operation will be in "done" state. ID of resource will be empty.
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:20
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:21
 
 ---
 
@@ -49,4 +49,4 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:20
 
 > `optional` **spec**: [`EndpointSpec`](EndpointSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:21
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:22

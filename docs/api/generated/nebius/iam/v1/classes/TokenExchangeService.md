@@ -6,7 +6,7 @@
 
 # Class: TokenExchangeService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22112
+Defined in: src/generated/nebius/iam/v1/index.ts:22113
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22112
 
 > **new TokenExchangeService**(`sdk`): `TokenExchangeService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22124
+Defined in: src/generated/nebius/iam/v1/index.ts:22125
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22124
 
 > **$type**: `"nebius.iam.v1.TokenExchangeService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22113
+Defined in: src/generated/nebius/iam/v1/index.ts:22114
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22113
 
 > **exchange**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ExchangeTokenRequest`](../interfaces/ExchangeTokenRequest.md), [`CreateTokenResponse`](../interfaces/CreateTokenResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22114
+Defined in: src/generated/nebius/iam/v1/index.ts:22115
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22114
 
 > **exchange**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ExchangeTokenRequest`](../interfaces/ExchangeTokenRequest.md), [`CreateTokenResponse`](../interfaces/CreateTokenResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22115
+Defined in: src/generated/nebius/iam/v1/index.ts:22116
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22115
 
 > **exchange**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ExchangeTokenRequest`](../interfaces/ExchangeTokenRequest.md), [`CreateTokenResponse`](../interfaces/CreateTokenResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22116
+Defined in: src/generated/nebius/iam/v1/index.ts:22117
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22116
 
 > **exchange**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ExchangeTokenRequest`](../interfaces/ExchangeTokenRequest.md), [`CreateTokenResponse`](../interfaces/CreateTokenResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22130
+Defined in: src/generated/nebius/iam/v1/index.ts:22131
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22130
 
 > **exchange**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ExchangeTokenRequest`](../interfaces/ExchangeTokenRequest.md), [`CreateTokenResponse`](../interfaces/CreateTokenResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22131
+Defined in: src/generated/nebius/iam/v1/index.ts:22132
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22131
 
 > **exchange**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ExchangeTokenRequest`](../interfaces/ExchangeTokenRequest.md), [`CreateTokenResponse`](../interfaces/CreateTokenResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22132
+Defined in: src/generated/nebius/iam/v1/index.ts:22133
 
 ##### Parameters
 

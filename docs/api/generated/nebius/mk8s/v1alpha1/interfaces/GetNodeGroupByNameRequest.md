@@ -6,7 +6,7 @@
 
 # Interface: GetNodeGroupByNameRequest
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3188
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3459
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3188
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3190
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3461
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3190
 
 > **$type**: `"nebius.mk8s.v1alpha1.GetNodeGroupByNameRequest"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3189
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3460
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3189
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3192
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3463
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3192
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3191
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3462

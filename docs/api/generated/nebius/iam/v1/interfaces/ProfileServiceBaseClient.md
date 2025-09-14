@@ -6,7 +6,7 @@
 
 # Interface: ProfileServiceBaseClient
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15137
+Defined in: src/generated/nebius/iam/v1/index.ts:15138
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15138
+Defined in: src/generated/nebius/iam/v1/index.ts:15139
 
 #### Parameters
 

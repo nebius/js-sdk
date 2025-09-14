@@ -6,7 +6,7 @@
 
 # Interface: GroupSpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12783
+Defined in: src/generated/nebius/iam/v1/index.ts:12784
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12783
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12785
+Defined in: src/generated/nebius/iam/v1/index.ts:12786
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12785
 
 > **$type**: `"nebius.iam.v1.GroupSpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12784
+Defined in: src/generated/nebius/iam/v1/index.ts:12785

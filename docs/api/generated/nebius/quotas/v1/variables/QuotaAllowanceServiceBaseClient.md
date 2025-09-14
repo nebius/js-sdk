@@ -8,7 +8,7 @@
 
 > **QuotaAllowanceServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`QuotaAllowanceServiceBaseClient`](../interfaces/QuotaAllowanceServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:525
+Defined in: src/generated/nebius/quotas/v1/index.ts:526
 
 ## Type Declaration
 

@@ -6,7 +6,7 @@
 
 # Interface: Allocation
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1166
+Defined in: src/generated/nebius/vpc/v1/index.ts:1167
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1166
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1168
+Defined in: src/generated/nebius/vpc/v1/index.ts:1169
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1168
 
 > **$type**: `"nebius.vpc.v1.Allocation"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1167
+Defined in: src/generated/nebius/vpc/v1/index.ts:1168
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1167
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1174
+Defined in: src/generated/nebius/vpc/v1/index.ts:1175
 
 Metadata for the Allocation.
 `metadata.parent_id` represents IAM Container.
@@ -41,7 +41,7 @@ Metadata for the Allocation.
 
 > `optional` **spec**: [`AllocationSpec`](AllocationSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1179
+Defined in: src/generated/nebius/vpc/v1/index.ts:1180
 
 Specifications for the allocation, detailing its name and IP configuration.
 
@@ -51,6 +51,6 @@ Specifications for the allocation, detailing its name and IP configuration.
 
 > `optional` **status**: [`AllocationStatus`](AllocationStatus.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1184
+Defined in: src/generated/nebius/vpc/v1/index.ts:1185
 
 Contains the current status of the allocation, indicating its state and any additional details.

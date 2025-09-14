@@ -6,7 +6,7 @@
 
 # Interface: ListEndpointsResponse
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:153
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:154
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:153
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:155
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:156
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:155
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.ListEndpointsResponse"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:154
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:155
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:154
 
 > **items**: [`Endpoint`](Endpoint.md)[]
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:160
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:161
 
 List of Endpoints.
 
@@ -40,6 +40,6 @@ List of Endpoints.
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:165
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:166
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

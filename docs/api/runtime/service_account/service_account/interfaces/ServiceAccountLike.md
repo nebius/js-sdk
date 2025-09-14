@@ -6,11 +6,11 @@
 
 # Interface: ServiceAccountLike
 
-Defined in: [src/runtime/service_account/service_account.ts:9](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L9)
+Defined in: [src/runtime/service_account/service_account.ts:7](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L7)
 
 ## Extends
 
-- [`TokenRequester`](TokenRequester.md)
+- [`TokenRequester`](../../../token/exchangeable/interfaces/TokenRequester.md)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [src/runtime/service_account/service_account.ts:9](https://github.co
 
 > `readonly` **privateKeyPem**: `string`
 
-Defined in: [src/runtime/service_account/service_account.ts:10](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L10)
+Defined in: [src/runtime/service_account/service_account.ts:8](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L8)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [src/runtime/service_account/service_account.ts:10](https://github.c
 
 > `readonly` **publicKeyId**: `string`
 
-Defined in: [src/runtime/service_account/service_account.ts:11](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L11)
+Defined in: [src/runtime/service_account/service_account.ts:9](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L9)
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: [src/runtime/service_account/service_account.ts:11](https://github.c
 
 > `readonly` **serviceAccountId**: `string`
 
-Defined in: [src/runtime/service_account/service_account.ts:12](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L12)
+Defined in: [src/runtime/service_account/service_account.ts:10](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L10)
 
 ## Methods
 
@@ -42,7 +42,7 @@ Defined in: [src/runtime/service_account/service_account.ts:12](https://github.c
 
 > **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
-Defined in: [src/runtime/service_account/service_account.ts:6](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L6)
+Defined in: [src/runtime/token/exchangeable.ts:176](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/exchangeable.ts#L176)
 
 #### Returns
 
@@ -50,4 +50,4 @@ Defined in: [src/runtime/service_account/service_account.ts:6](https://github.co
 
 #### Inherited from
 
-[`TokenRequester`](TokenRequester.md).[`getExchangeTokenRequest`](TokenRequester.md#getexchangetokenrequest)
+[`TokenRequester`](../../../token/exchangeable/interfaces/TokenRequester.md).[`getExchangeTokenRequest`](../../../token/exchangeable/interfaces/TokenRequester.md#getexchangetokenrequest)

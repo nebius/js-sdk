@@ -8,4 +8,4 @@
 
 > **GpuSettings**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GpuSettings`](../interfaces/GpuSettings.md), `"nebius.mk8s.v1.GpuSettings"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4816
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5129

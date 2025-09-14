@@ -6,7 +6,7 @@
 
 # Interface: ConnectionPoolerConfig
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2725
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2726
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2725
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2727
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2728
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2727
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ConnectionPoolerConfig"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2726
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2727
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2726
 
 > `optional` **maxPoolSize**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2737
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2738
 
 Maximum number of connections in the pool for a single database.
 
@@ -40,6 +40,6 @@ Maximum number of connections in the pool for a single database.
 
 > **poolingMode**: [`ConnectionPoolerConfig_PoolingMode`](../type-aliases/ConnectionPoolerConfig_PoolingMode.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2732
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2733
 
 Mode that the connection pooler is working in.

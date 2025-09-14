@@ -8,4 +8,4 @@
 
 > **NodeMetadataTemplate**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeMetadataTemplate`](../interfaces/NodeMetadataTemplate.md), `"nebius.mk8s.v1.NodeMetadataTemplate"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4675
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4988

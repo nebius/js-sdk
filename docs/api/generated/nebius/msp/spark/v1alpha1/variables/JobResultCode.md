@@ -8,4 +8,4 @@
 
 > **JobResultCode**: [`JobResultCodeClass`](../type-aliases/JobResultCodeClass.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2582
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2627

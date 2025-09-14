@@ -6,7 +6,7 @@
 
 # Class: MaintenanceService
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9688
+Defined in: src/generated/nebius/compute/v1/index.ts:9689
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9688
 
 > **new MaintenanceService**(`sdk`): `MaintenanceService`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9711
+Defined in: src/generated/nebius/compute/v1/index.ts:9712
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9711
 
 > **$type**: `"nebius.compute.v1.MaintenanceService"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9689
+Defined in: src/generated/nebius/compute/v1/index.ts:9690
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9689
 
 > **getByInstance**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9694
+Defined in: src/generated/nebius/compute/v1/index.ts:9695
 
 Returns only active maintenance event for the instance
 
@@ -64,7 +64,7 @@ Returns only active maintenance event for the instance
 
 > **getByInstance**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9695
+Defined in: src/generated/nebius/compute/v1/index.ts:9696
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9695
 
 > **getByInstance**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9696
+Defined in: src/generated/nebius/compute/v1/index.ts:9697
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9696
 
 > **getByInstance**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9717
+Defined in: src/generated/nebius/compute/v1/index.ts:9718
 
 Returns only active maintenance event for the instance
 
@@ -126,7 +126,7 @@ Returns only active maintenance event for the instance
 
 > **getByInstance**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9718
+Defined in: src/generated/nebius/compute/v1/index.ts:9719
 
 Returns only active maintenance event for the instance
 
@@ -148,7 +148,7 @@ Returns only active maintenance event for the instance
 
 > **getByInstance**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9719
+Defined in: src/generated/nebius/compute/v1/index.ts:9720
 
 Returns only active maintenance event for the instance
 
@@ -178,7 +178,7 @@ Returns only active maintenance event for the instance
 
 > **listActive**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9701
+Defined in: src/generated/nebius/compute/v1/index.ts:9702
 
 Returns all unfinished maintenance events for the parent
 
@@ -196,7 +196,7 @@ Returns all unfinished maintenance events for the parent
 
 > **listActive**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9702
+Defined in: src/generated/nebius/compute/v1/index.ts:9703
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9702
 
 > **listActive**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9703
+Defined in: src/generated/nebius/compute/v1/index.ts:9704
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9703
 
 > **listActive**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9729
+Defined in: src/generated/nebius/compute/v1/index.ts:9730
 
 Returns all unfinished maintenance events for the parent
 
@@ -258,7 +258,7 @@ Returns all unfinished maintenance events for the parent
 
 > **listActive**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9730
+Defined in: src/generated/nebius/compute/v1/index.ts:9731
 
 Returns all unfinished maintenance events for the parent
 
@@ -280,7 +280,7 @@ Returns all unfinished maintenance events for the parent
 
 > **listActive**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenanceEventsRequest`](../interfaces/ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](../interfaces/ListMaintenanceEventsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9731
+Defined in: src/generated/nebius/compute/v1/index.ts:9732
 
 Returns all unfinished maintenance events for the parent
 

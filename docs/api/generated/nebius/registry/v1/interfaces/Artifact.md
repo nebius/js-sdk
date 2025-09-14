@@ -6,7 +6,7 @@
 
 # Interface: Artifact
 
-Defined in: src/generated/nebius/registry/v1/index.ts:593
+Defined in: src/generated/nebius/registry/v1/index.ts:594
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:593
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:595
+Defined in: src/generated/nebius/registry/v1/index.ts:596
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:595
 
 > **$type**: `"nebius.registry.v1.Artifact"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:594
+Defined in: src/generated/nebius/registry/v1/index.ts:595
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:594
 
 > `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:603
+Defined in: src/generated/nebius/registry/v1/index.ts:604
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:603
 
 > **digest**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:599
+Defined in: src/generated/nebius/registry/v1/index.ts:600
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:599
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:596
+Defined in: src/generated/nebius/registry/v1/index.ts:597
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:596
 
 > **mediaType**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:598
+Defined in: src/generated/nebius/registry/v1/index.ts:599
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:598
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:597
+Defined in: src/generated/nebius/registry/v1/index.ts:598
 
 ---
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:597
 
 > **size**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:600
+Defined in: src/generated/nebius/registry/v1/index.ts:601
 
 ---
 
@@ -78,7 +78,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:600
 
 > **status**: [`Artifact_Status`](../type-aliases/Artifact_Status.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:601
+Defined in: src/generated/nebius/registry/v1/index.ts:602
 
 ---
 
@@ -86,7 +86,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:601
 
 > **type**: [`Artifact_Type`](../type-aliases/Artifact_Type.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:602
+Defined in: src/generated/nebius/registry/v1/index.ts:603
 
 ---
 
@@ -94,4 +94,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:602
 
 > `optional` **updatedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:604
+Defined in: src/generated/nebius/registry/v1/index.ts:605

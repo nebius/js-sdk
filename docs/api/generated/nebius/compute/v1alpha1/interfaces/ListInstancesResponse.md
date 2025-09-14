@@ -6,7 +6,7 @@
 
 # Interface: ListInstancesResponse
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5960
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5961
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5960
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5962
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5963
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5962
 
 > **$type**: `"nebius.compute.v1alpha1.ListInstancesResponse"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5961
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5962
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5961
 
 > **items**: [`Instance`](Instance.md)[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5963
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5964
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5963
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5964
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5965

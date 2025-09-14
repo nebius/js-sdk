@@ -8,4 +8,4 @@
 
 > **EndpointServiceServiceDescription** = _typeof_ [`EndpointServiceServiceDescription`](../variables/EndpointServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:265
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:266

@@ -8,4 +8,4 @@
 
 > **Password**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Password`](../interfaces/Password.md), `"nebius.msp.spark.v1alpha1.Password"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1586
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1609

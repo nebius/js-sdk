@@ -6,7 +6,7 @@
 
 # Interface: PurgeBucketRequest
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1115
+Defined in: src/generated/nebius/storage/v1/index.ts:1116
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1115
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1117
+Defined in: src/generated/nebius/storage/v1/index.ts:1118
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1117
 
 > **$type**: `"nebius.storage.v1.PurgeBucketRequest"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1116
+Defined in: src/generated/nebius/storage/v1/index.ts:1117
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1116
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1118
+Defined in: src/generated/nebius/storage/v1/index.ts:1119

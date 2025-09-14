@@ -6,7 +6,7 @@
 
 # Interface: RestoreClusterRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1606
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1607
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1606
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1608
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1609
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1608
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.RestoreClusterRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1607
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1608
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1607
 
 > **backupId**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1623
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1624
 
 ID of the backup to restore from.
 
@@ -40,7 +40,7 @@ ID of the backup to restore from.
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1613
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1614
 
 Metadata associated with the new cluster.
 
@@ -50,7 +50,7 @@ Metadata associated with the new cluster.
 
 > `optional` **recoveryTime**: [`Dayjs`](../../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1633
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1634
 
 Timestamp for point in time recovery.
 
@@ -60,7 +60,7 @@ Timestamp for point in time recovery.
 
 > **sourceClusterId**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1628
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1629
 
 ID of the PostgreSQL cluster to restore from.
 
@@ -70,6 +70,6 @@ ID of the PostgreSQL cluster to restore from.
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1618
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1619
 
 Specification for the new cluster.

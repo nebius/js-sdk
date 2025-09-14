@@ -6,7 +6,7 @@
 
 # Interface: QuotaFailure_Violation
 
-Defined in: src/generated/nebius/common/v1/index.ts:1887
+Defined in: src/generated/nebius/common/v1/index.ts:1888
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1887
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:1889
+Defined in: src/generated/nebius/common/v1/index.ts:1890
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1889
 
 > **$type**: `"nebius.common.v1.QuotaFailure.Violation"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1888
+Defined in: src/generated/nebius/common/v1/index.ts:1889
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1888
 
 > **limit**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1904
+Defined in: src/generated/nebius/common/v1/index.ts:1905
 
 Maximum permissible value.
 
@@ -40,7 +40,7 @@ Maximum permissible value.
 
 > **message**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1899
+Defined in: src/generated/nebius/common/v1/index.ts:1900
 
 A description of how the quota check failed.
 
@@ -50,7 +50,7 @@ A description of how the quota check failed.
 
 > **quota**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1894
+Defined in: src/generated/nebius/common/v1/index.ts:1895
 
 Which quota check failed.
 
@@ -60,6 +60,6 @@ Which quota check failed.
 
 > **requested**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1909
+Defined in: src/generated/nebius/common/v1/index.ts:1910
 
 Requested value.

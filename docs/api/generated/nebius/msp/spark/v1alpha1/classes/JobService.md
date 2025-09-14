@@ -6,7 +6,7 @@
 
 # Class: JobService
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2477
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2515
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2477
 
 > **new JobService**(`sdk`): `JobService`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2514
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2555
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2514
 
 > **$type**: `"nebius.msp.spark.v1alpha1.JobService"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2478
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2516
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2478
 
 > **cancel**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2504
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2542
 
 Cancel the job.
 
@@ -64,7 +64,7 @@ Cancel the job.
 
 > **cancel**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2505
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2543
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2505
 
 > **cancel**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2506
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2544
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2506
 
 > **cancel**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2563
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2608
 
 Cancel the job.
 
@@ -126,7 +126,7 @@ Cancel the job.
 
 > **cancel**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2564
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2609
 
 Cancel the job.
 
@@ -148,7 +148,7 @@ Cancel the job.
 
 > **cancel**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2565
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2610
 
 Cancel the job.
 
@@ -178,7 +178,7 @@ Cancel the job.
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2497
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2535
 
 Creates a job.
 
@@ -196,7 +196,7 @@ Creates a job.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2498
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2536
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2498
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2499
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2537
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2499
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2548
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2593
 
 Creates a job.
 
@@ -258,7 +258,7 @@ Creates a job.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2549
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2594
 
 Creates a job.
 
@@ -280,7 +280,7 @@ Creates a job.
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2550
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2595
 
 Creates a job.
 
@@ -310,7 +310,7 @@ Creates a job.
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2483
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2521
 
 Returns the specified job.
 
@@ -328,7 +328,7 @@ Returns the specified job.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2484
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2522
 
 ##### Parameters
 
@@ -348,7 +348,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2484
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2485
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2523
 
 ##### Parameters
 
@@ -372,7 +372,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2485
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2524
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2569
 
 Returns the specified job.
 
@@ -390,7 +390,7 @@ Returns the specified job.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2525
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2570
 
 Returns the specified job.
 
@@ -412,7 +412,7 @@ Returns the specified job.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2526
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2571
 
 Returns the specified job.
 
@@ -440,7 +440,7 @@ Returns the specified job.
 
 > **getOperationService**(): [`OperationService`](../../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2520
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2565
 
 #### Returns
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2520
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2490
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2528
 
 Retrieves a list of jobs.
 
@@ -472,7 +472,7 @@ Retrieves a list of jobs.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2491
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2529
 
 ##### Parameters
 
@@ -492,7 +492,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2491
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2492
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2530
 
 ##### Parameters
 
@@ -516,7 +516,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2492
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2536
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2581
 
 Retrieves a list of jobs.
 
@@ -534,7 +534,7 @@ Retrieves a list of jobs.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2537
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2582
 
 Retrieves a list of jobs.
 
@@ -556,7 +556,7 @@ Retrieves a list of jobs.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListJobsRequest`](../interfaces/ListJobsRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2538
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2583
 
 Retrieves a list of jobs.
 

@@ -8,4 +8,4 @@
 
 > **AllocationStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"ALLOCATED"` \| `"ASSIGNED"` \| `"DELETING"`\> & `AllocationStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1126
+Defined in: src/generated/nebius/vpc/v1/index.ts:1127

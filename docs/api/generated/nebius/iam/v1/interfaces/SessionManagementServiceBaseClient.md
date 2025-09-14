@@ -6,7 +6,7 @@
 
 # Interface: SessionManagementServiceBaseClient
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17683
+Defined in: src/generated/nebius/iam/v1/index.ts:17684
 
 ## Extends
 
@@ -634,7 +634,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **revoke**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17684
+Defined in: src/generated/nebius/iam/v1/index.ts:17685
 
 #### Parameters
 

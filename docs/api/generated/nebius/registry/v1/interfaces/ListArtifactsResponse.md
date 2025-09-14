@@ -6,7 +6,7 @@
 
 # Interface: ListArtifactsResponse
 
-Defined in: src/generated/nebius/registry/v1/index.ts:242
+Defined in: src/generated/nebius/registry/v1/index.ts:243
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:242
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:244
+Defined in: src/generated/nebius/registry/v1/index.ts:245
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:244
 
 > **$type**: `"nebius.registry.v1.ListArtifactsResponse"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:243
+Defined in: src/generated/nebius/registry/v1/index.ts:244
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:243
 
 > **items**: [`Artifact`](Artifact.md)[]
 
-Defined in: src/generated/nebius/registry/v1/index.ts:245
+Defined in: src/generated/nebius/registry/v1/index.ts:246
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:245
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:246
+Defined in: src/generated/nebius/registry/v1/index.ts:247

@@ -8,4 +8,4 @@
 
 > **DeleteFederationCertificateRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), `"nebius.iam.v1.DeleteFederationCertificateRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7654
+Defined in: src/generated/nebius/iam/v1/index.ts:7655

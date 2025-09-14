@@ -6,7 +6,7 @@
 
 # Interface: NodeTaint
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5734
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6052
 
 See https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
 
@@ -16,7 +16,7 @@ See https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5736
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6054
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5736
 
 > **$type**: `"nebius.mk8s.v1alpha1.NodeTaint"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5735
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6053
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5735
 
 > **effect**: [`NodeTaint_Effect`](../type-aliases/NodeTaint_Effect.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5739
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6057
 
 ---
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5739
 
 > **key**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5737
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6055
 
 ---
 
@@ -48,4 +48,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5737
 
 > **value**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5738
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6056

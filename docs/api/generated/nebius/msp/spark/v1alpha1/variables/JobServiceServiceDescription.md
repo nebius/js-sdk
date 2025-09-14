@@ -4,15 +4,15 @@
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / JobServiceServiceDescription
 
-# Variable: JobServiceServiceDescription
+# ~~Variable: JobServiceServiceDescription~~
 
 > **JobServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2417
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2443
 
 ## Type Declaration
 
-### cancel
+### ~~cancel~~
 
 > `readonly` **cancel**: `object`
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2417
 
 > `readonly` **responseStream**: `false` = `false`
 
-### create
+### ~~create~~
 
 > `readonly` **create**: `object`
 
@@ -156,7 +156,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2417
 
 > `readonly` **responseStream**: `false` = `false`
 
-### get
+### ~~get~~
 
 > `readonly` **get**: `object`
 
@@ -228,7 +228,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2417
 
 > `readonly` **responseStream**: `false` = `false`
 
-### list
+### ~~list~~
 
 > `readonly` **list**: `object`
 
@@ -299,3 +299,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2417
 #### list.responseStream
 
 > `readonly` **responseStream**: `false` = `false`
+
+## Deprecated
+
+Deprecated, will be removed on 2025-08-12: Nebius AI Cloud no longer supports the service. Instead, use Application for Apache Spark™ Connect in Standalone Applications..

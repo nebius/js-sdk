@@ -6,7 +6,7 @@
 
 # Interface: ClusterStatus
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1347
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1370
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1347
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1349
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1372
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1349
 
 > **$type**: `"nebius.msp.spark.v1alpha1.ClusterStatus"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1348
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1371
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1348
 
 > `optional` **historyServerEndpoint**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1364
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1387
 
 History Server WebUI endpoint
 
@@ -40,7 +40,7 @@ History Server WebUI endpoint
 
 > **phase**: [`ClusterStatus_Phase`](../../../v1alpha1/type-aliases/ClusterStatus_Phase.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1354
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1377
 
 Current phase (or stage) of the cluster.
 
@@ -50,6 +50,6 @@ Current phase (or stage) of the cluster.
 
 > **state**: [`ClusterStatus_State`](../../../v1alpha1/type-aliases/ClusterStatus_State.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1359
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1382
 
 State reflects substatus of the stage to define whether it's healthy or not.

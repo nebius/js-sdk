@@ -8,4 +8,4 @@
 
 > **FederationCertificateSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FederationCertificateSpec`](../interfaces/FederationCertificateSpec.md), `"nebius.iam.v1.FederationCertificateSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8181
+Defined in: src/generated/nebius/iam/v1/index.ts:8182

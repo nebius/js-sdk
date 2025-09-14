@@ -6,7 +6,7 @@
 
 # Interface: DeleteBucketRequest
 
-Defined in: src/generated/nebius/storage/v1/index.ts:944
+Defined in: src/generated/nebius/storage/v1/index.ts:945
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:944
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:946
+Defined in: src/generated/nebius/storage/v1/index.ts:947
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:946
 
 > **$type**: `"nebius.storage.v1.DeleteBucketRequest"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:945
+Defined in: src/generated/nebius/storage/v1/index.ts:946
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:945
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:947
+Defined in: src/generated/nebius/storage/v1/index.ts:948
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:947
 
 > `optional` **purge**: \{ `$case`: `"purgeAt"`; `purgeAt`: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md); \} \| \{ `$case`: `"ttl"`; `ttl`: `Duration`; \}
 
-Defined in: src/generated/nebius/storage/v1/index.ts:953
+Defined in: src/generated/nebius/storage/v1/index.ts:954
 
 You can provide purge_at or ttl after which the bucket will be purged automatically.
 Otherwise, default ttl of 7 days will be applied.

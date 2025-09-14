@@ -8,4 +8,4 @@
 
 > **PublicIPAddressStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PublicIPAddressStatus`](../interfaces/PublicIPAddressStatus.md), `"nebius.vpc.v1alpha1.PublicIPAddressStatus"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2974
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2975

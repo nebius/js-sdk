@@ -6,7 +6,7 @@
 
 # Interface: Response
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2128
+Defined in: src/generated/nebius/audit/v2/index.ts:2129
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2128
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2130
+Defined in: src/generated/nebius/audit/v2/index.ts:2131
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2130
 
 > **$type**: `"nebius.audit.v2.Response"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2129
+Defined in: src/generated/nebius/audit/v2/index.ts:2130
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2129
 
 > **errorMessage**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2140
+Defined in: src/generated/nebius/audit/v2/index.ts:2141
 
 Error message if the call was not successful.
 
@@ -40,7 +40,7 @@ Error message if the call was not successful.
 
 > `optional` **payload**: `object`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2145
+Defined in: src/generated/nebius/audit/v2/index.ts:2146
 
 The payload of the response.
 
@@ -54,6 +54,6 @@ The payload of the response.
 
 > **statusCode**: `Code`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2135
+Defined in: src/generated/nebius/audit/v2/index.ts:2136
 
 The status that the server returned to the client.

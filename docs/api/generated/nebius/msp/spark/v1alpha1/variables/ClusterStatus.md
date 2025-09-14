@@ -8,4 +8,4 @@
 
 > **ClusterStatus**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ClusterStatus`](../interfaces/ClusterStatus.md), `"nebius.msp.spark.v1alpha1.ClusterStatus"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1347
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1370

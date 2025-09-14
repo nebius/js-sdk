@@ -6,7 +6,7 @@
 
 # Interface: SessionManagementServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17679
+Defined in: src/generated/nebius/iam/v1/index.ts:17680
 
 ## Extends
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17679
 
 > **revoke**: `handleUnaryCall`\<[`RevokeSessionRequest`](RevokeSessionRequest.md), [`RevokeSessionResponse`](RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17680
+Defined in: src/generated/nebius/iam/v1/index.ts:17681

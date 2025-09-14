@@ -6,7 +6,7 @@
 
 # Interface: GeneralTotalCost
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1008
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1009
 
 General total cost with a single fixed amount.
 Used for resources with predictable, non-variable pricing.
@@ -17,7 +17,7 @@ Used for resources with predictable, non-variable pricing.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1010
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1011
 
 ---
 
@@ -25,7 +25,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1010
 
 > **$type**: `"nebius.billing.v1alpha1.GeneralTotalCost"`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1009
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1010
 
 ---
 
@@ -33,6 +33,6 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1009
 
 > `optional` **total**: [`CostBreakdown`](CostBreakdown.md)
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1015
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1016
 
 Cost breakdown including all SKUs and their individual costs.

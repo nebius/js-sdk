@@ -8,4 +8,4 @@
 
 > **Maintenance**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Maintenance`](../interfaces/Maintenance.md), `"nebius.maintenance.v1alpha1.Maintenance"`\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:462
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:463

@@ -6,7 +6,7 @@
 
 # Interface: LoadBalancerAssignment
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2169
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2170
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2169
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2171
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2172
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2171
 
 > **$type**: `"nebius.vpc.v1alpha1.LoadBalancerAssignment"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2170
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2171
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2170
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2176
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2177
 
 ID of the Load Balancer.

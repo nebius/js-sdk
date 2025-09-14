@@ -8,4 +8,4 @@
 
 > **Account_AnonymousAccount**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Account_AnonymousAccount`](../interfaces/Account_AnonymousAccount.md), `"nebius.iam.v1.Account.AnonymousAccount"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3616
+Defined in: src/generated/nebius/iam/v1/index.ts:3617

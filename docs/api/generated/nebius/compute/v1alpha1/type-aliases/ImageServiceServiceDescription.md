@@ -8,7 +8,7 @@
 
 > **ImageServiceServiceDescription** = _typeof_ [`ImageServiceServiceDescription`](../variables/ImageServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4811
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4812
 
 ## Deprecated
 

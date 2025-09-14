@@ -6,7 +6,7 @@
 
 # Interface: PoolStatus
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5316
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5317
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5316
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5318
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5319
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5318
 
 > **$type**: `"nebius.vpc.v1alpha1.PoolStatus"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5317
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5318
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5317
 
 > **cidrs**: `string`[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5328
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5329
 
 CIDR blocks.
 
@@ -40,7 +40,7 @@ CIDR blocks.
 
 > **scopeId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5333
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5334
 
 ID of the scope
 
@@ -50,6 +50,6 @@ ID of the scope
 
 > **state**: [`PoolStatus_State`](../type-aliases/PoolStatus_State.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5323
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5324
 
 Current state of the Pool.

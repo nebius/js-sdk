@@ -8,4 +8,4 @@
 
 > **ClusterServiceServiceDescription** = _typeof_ [`ClusterServiceServiceDescription`](../variables/ClusterServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:781
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1022

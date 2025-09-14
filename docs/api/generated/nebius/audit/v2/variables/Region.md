@@ -8,4 +8,4 @@
 
 > **Region**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Region`](../interfaces/Region.md), `"nebius.audit.v2.Region"`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1403
+Defined in: src/generated/nebius/audit/v2/index.ts:1404

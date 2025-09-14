@@ -6,7 +6,7 @@
 
 # Interface: Group
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12648
+Defined in: src/generated/nebius/iam/v1/index.ts:12649
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12648
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12650
+Defined in: src/generated/nebius/iam/v1/index.ts:12651
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12650
 
 > **$type**: `"nebius.iam.v1.Group"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12649
+Defined in: src/generated/nebius/iam/v1/index.ts:12650
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12649
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12651
+Defined in: src/generated/nebius/iam/v1/index.ts:12652
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12651
 
 > `optional` **spec**: [`GroupSpec`](GroupSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12652
+Defined in: src/generated/nebius/iam/v1/index.ts:12653
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12652
 
 > `optional` **status**: [`GroupStatus`](GroupStatus.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12653
+Defined in: src/generated/nebius/iam/v1/index.ts:12654

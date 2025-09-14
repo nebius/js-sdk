@@ -6,7 +6,7 @@
 
 # Interface: NodeMetadataTemplate
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4675
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4988
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4675
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4677
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4990
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4677
 
 > **$type**: `"nebius.mk8s.v1.NodeMetadataTemplate"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4676
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4989
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4676
 
 > **labels**: `object`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4688
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5001
 
 Kubernetes Node labels.
 For now change will not be propagated to existing nodes, so will be applied only to Kubernetes Nodes created after the field change.

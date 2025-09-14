@@ -6,7 +6,7 @@
 
 # Interface: IPv4PrivateNetworkPools
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3838
+Defined in: src/generated/nebius/vpc/v1/index.ts:3839
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3838
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3840
+Defined in: src/generated/nebius/vpc/v1/index.ts:3841
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3840
 
 > **$type**: `"nebius.vpc.v1.IPv4PrivateNetworkPools"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3839
+Defined in: src/generated/nebius/vpc/v1/index.ts:3840
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3839
 
 > **pools**: [`NetworkPool`](NetworkPool.md)[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3841
+Defined in: src/generated/nebius/vpc/v1/index.ts:3842

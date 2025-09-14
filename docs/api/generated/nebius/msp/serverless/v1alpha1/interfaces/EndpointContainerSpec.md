@@ -6,7 +6,7 @@
 
 # Interface: EndpointContainerSpec
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:869
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:870
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:869
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:871
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:872
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:871
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.EndpointContainerSpec"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:870
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:871
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:870
 
 > **args**: `string`[]
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:896
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:897
 
 Command args
 
@@ -40,7 +40,7 @@ Command args
 
 > **command**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:891
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:892
 
 Endpoint command
 
@@ -50,7 +50,7 @@ Endpoint command
 
 > **envs**: `object`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:901
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:902
 
 Environment variables
 
@@ -64,7 +64,7 @@ Environment variables
 
 > **image**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:876
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:877
 
 Image name
 
@@ -74,7 +74,7 @@ Image name
 
 > `optional` **liveness**: [`ProbeSpec`](ProbeSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:911
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:912
 
 Liveness probe spec
 
@@ -84,7 +84,7 @@ Liveness probe spec
 
 > **replicaCount**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:881
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:882
 
 Replica count
 
@@ -94,7 +94,7 @@ Replica count
 
 > **sensitiveEnvs**: `object`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:906
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:907
 
 Environment variables with sensitive data
 
@@ -108,6 +108,6 @@ Environment variables with sensitive data
 
 > `optional` **template**: [`EndpointTemplateSpec`](EndpointTemplateSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:886
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:887
 
 Container resource template

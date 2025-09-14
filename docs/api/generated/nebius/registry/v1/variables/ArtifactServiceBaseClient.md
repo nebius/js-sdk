@@ -8,7 +8,7 @@
 
 > **ArtifactServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ArtifactServiceBaseClient`](../interfaces/ArtifactServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/registry/v1/index.ts:468
+Defined in: src/generated/nebius/registry/v1/index.ts:469
 
 ## Type Declaration
 

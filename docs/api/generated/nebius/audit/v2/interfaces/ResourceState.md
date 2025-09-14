@@ -6,7 +6,7 @@
 
 # Interface: ResourceState
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1863
+Defined in: src/generated/nebius/audit/v2/index.ts:1864
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1863
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1865
+Defined in: src/generated/nebius/audit/v2/index.ts:1866
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1865
 
 > **$type**: `"nebius.audit.v2.ResourceState"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1864
+Defined in: src/generated/nebius/audit/v2/index.ts:1865
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1864
 
 > `optional` **current**: `object`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1875
+Defined in: src/generated/nebius/audit/v2/index.ts:1876
 
 The state of the resource after the change in the call.
 
@@ -44,7 +44,7 @@ The state of the resource after the change in the call.
 
 > `optional` **previous**: `object`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1870
+Defined in: src/generated/nebius/audit/v2/index.ts:1871
 
 The state of the resource before the change in the call.
 

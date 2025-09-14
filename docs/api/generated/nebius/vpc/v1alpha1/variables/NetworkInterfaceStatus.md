@@ -8,4 +8,4 @@
 
 > **NetworkInterfaceStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkInterfaceStatus`](../interfaces/NetworkInterfaceStatus.md), `"nebius.vpc.v1alpha1.NetworkInterfaceStatus"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2672
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2673

@@ -8,4 +8,4 @@
 
 > **PreemptibleSpec_PreemptionPolicy**: [`PreemptibleSpec_PreemptionPolicyClass`](../type-aliases/PreemptibleSpec_PreemptionPolicyClass.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7258
+Defined in: src/generated/nebius/compute/v1/index.ts:7259

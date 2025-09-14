@@ -6,7 +6,7 @@
 
 # Interface: DiskSpec
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:846
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:847
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:846
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:848
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:849
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:848
 
 > **$type**: `"nebius.msp.v1alpha1.resource.DiskSpec"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:847
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:848
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:847
 
 > **sizeGibibytes**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:850
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:851
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:850
 
 > **type**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:849
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:850

@@ -8,4 +8,4 @@
 
 > **AllocationSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AllocationSpec`](../interfaces/AllocationSpec.md), `"nebius.vpc.v1.AllocationSpec"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1314
+Defined in: src/generated/nebius/vpc/v1/index.ts:1315

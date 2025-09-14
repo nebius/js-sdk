@@ -6,7 +6,7 @@
 
 # Class: ProfileService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15147
+Defined in: src/generated/nebius/iam/v1/index.ts:15148
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15147
 
 > **new ProfileService**(`sdk`): `ProfileService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15163
+Defined in: src/generated/nebius/iam/v1/index.ts:15164
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15163
 
 > **$type**: `"nebius.iam.v1.ProfileService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15148
+Defined in: src/generated/nebius/iam/v1/index.ts:15149
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15148
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15153
+Defined in: src/generated/nebius/iam/v1/index.ts:15154
 
 Returns the current user's profile.
 
@@ -64,7 +64,7 @@ Returns the current user's profile.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15154
+Defined in: src/generated/nebius/iam/v1/index.ts:15155
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15154
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15155
+Defined in: src/generated/nebius/iam/v1/index.ts:15156
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15155
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15169
+Defined in: src/generated/nebius/iam/v1/index.ts:15170
 
 Returns the current user's profile.
 
@@ -126,7 +126,7 @@ Returns the current user's profile.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15170
+Defined in: src/generated/nebius/iam/v1/index.ts:15171
 
 Returns the current user's profile.
 
@@ -148,7 +148,7 @@ Returns the current user's profile.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProfileRequest`](../interfaces/GetProfileRequest.md), [`GetProfileResponse`](../interfaces/GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15171
+Defined in: src/generated/nebius/iam/v1/index.ts:15172
 
 Returns the current user's profile.
 

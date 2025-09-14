@@ -6,7 +6,7 @@
 
 # Interface: NodeGroupSpec
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4291
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4562
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4291
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4293
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4564
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4293
 
 > **$type**: `"nebius.mk8s.v1alpha1.NodeGroupSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4292
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4563
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4292
 
 > `optional` **size**: \{ `$case`: `"fixedNodeCount"`; `fixedNodeCount`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"autoscaling"`; `autoscaling`: [`NodeGroupAutoscalingSpec`](NodeGroupAutoscalingSpec.md); \}
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4303
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4574
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4303
 
 > `optional` **strategy**: [`NodeGroupDeploymentStrategy`](NodeGroupDeploymentStrategy.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4302
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4573
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4302
 
 > `optional` **template**: [`NodeTemplate`](NodeTemplate.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4301
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4572
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4301
 
 > **version**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4300
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4571
 
 Version is desired Kubernetes version of the cluster. For now only acceptable format is
 `MAJOR.MINOR` like "1.31". Option for patch version update will be added later.

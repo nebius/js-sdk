@@ -6,7 +6,7 @@
 
 # Interface: ListAuditEventResponse
 
-Defined in: src/generated/nebius/audit/v2/index.ts:323
+Defined in: src/generated/nebius/audit/v2/index.ts:324
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:323
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:325
+Defined in: src/generated/nebius/audit/v2/index.ts:326
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:325
 
 > **$type**: `"nebius.audit.v2.ListAuditEventResponse"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:324
+Defined in: src/generated/nebius/audit/v2/index.ts:325
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:324
 
 > **items**: [`AuditEvent`](AuditEvent.md)[]
 
-Defined in: src/generated/nebius/audit/v2/index.ts:326
+Defined in: src/generated/nebius/audit/v2/index.ts:327
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/audit/v2/index.ts:326
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:327
+Defined in: src/generated/nebius/audit/v2/index.ts:328

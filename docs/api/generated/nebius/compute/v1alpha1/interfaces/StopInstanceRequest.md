@@ -6,7 +6,7 @@
 
 # Interface: StopInstanceRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6149
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6150
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6149
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6151
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6152
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6151
 
 > **$type**: `"nebius.compute.v1alpha1.StopInstanceRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6150
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6151
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6150
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6152
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6153

@@ -8,4 +8,4 @@
 
 > **KubeNetworkSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`KubeNetworkSpec`](../interfaces/KubeNetworkSpec.md), `"nebius.mk8s.v1alpha1.KubeNetworkSpec"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1576
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1847

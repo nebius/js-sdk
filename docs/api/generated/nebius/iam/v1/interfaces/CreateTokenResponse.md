@@ -6,7 +6,7 @@
 
 # Interface: CreateTokenResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22419
+Defined in: src/generated/nebius/iam/v1/index.ts:22420
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22419
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22421
+Defined in: src/generated/nebius/iam/v1/index.ts:22422
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22421
 
 > **$type**: `"nebius.iam.v1.CreateTokenResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22420
+Defined in: src/generated/nebius/iam/v1/index.ts:22421
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22420
 
 > **accessToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22426
+Defined in: src/generated/nebius/iam/v1/index.ts:22427
 
 required
 
@@ -40,7 +40,7 @@ required
 
 > **expiresIn**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22437
+Defined in: src/generated/nebius/iam/v1/index.ts:22438
 
 ---
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22437
 
 > **issuedTokenType**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22431
+Defined in: src/generated/nebius/iam/v1/index.ts:22432
 
 required
 
@@ -58,7 +58,7 @@ required
 
 > **scopes**: `string`[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22438
+Defined in: src/generated/nebius/iam/v1/index.ts:22439
 
 ---
 
@@ -66,6 +66,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22438
 
 > **tokenType**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22436
+Defined in: src/generated/nebius/iam/v1/index.ts:22437
 
 required - Bearer

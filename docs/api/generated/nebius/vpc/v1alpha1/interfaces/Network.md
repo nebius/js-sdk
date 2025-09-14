@@ -6,7 +6,7 @@
 
 # Interface: Network
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3704
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3705
 
 Defines a Network, which serves as a virtual representation of a traditional LAN
 within a cloud environment.
@@ -18,7 +18,7 @@ Networks facilitate communication between subnets.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3706
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3707
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3706
 
 > **$type**: `"nebius.vpc.v1alpha1.Network"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3705
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3706
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3705
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3712
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3713
 
 Metadata for the network resource.
 `metadata.parent_id` represents IAM container
@@ -45,7 +45,7 @@ Metadata for the network resource.
 
 > `optional` **spec**: [`NetworkSpec`](NetworkSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3717
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3718
 
 Specification of the network.
 
@@ -55,6 +55,6 @@ Specification of the network.
 
 > `optional` **status**: [`NetworkStatus`](NetworkStatus.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3722
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3723
 
 Status of the network.

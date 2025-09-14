@@ -6,7 +6,7 @@
 
 # Interface: GetByNameRequest
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:286
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:287
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:286
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:288
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:289
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:288
 
 > **$type**: `"nebius.msp.v1alpha1.GetByNameRequest"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:287
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:288
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:287
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:298
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:299
 
 Name of the entity to retrieve.
 
@@ -40,6 +40,6 @@ Name of the entity to retrieve.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:293
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:294
 
 Parent ID of entity to retrieve.

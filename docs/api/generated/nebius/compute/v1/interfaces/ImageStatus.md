@@ -6,7 +6,7 @@
 
 # Interface: ImageStatus
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5960
+Defined in: src/generated/nebius/compute/v1/index.ts:5961
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5960
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5962
+Defined in: src/generated/nebius/compute/v1/index.ts:5963
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5962
 
 > **$type**: `"nebius.compute.v1.ImageStatus"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5961
+Defined in: src/generated/nebius/compute/v1/index.ts:5962
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5961
 
 > **minDiskSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5966
+Defined in: src/generated/nebius/compute/v1/index.ts:5967
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5966
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5971
+Defined in: src/generated/nebius/compute/v1/index.ts:5972
 
 Indicates whether there is an ongoing operation
 
@@ -48,7 +48,7 @@ Indicates whether there is an ongoing operation
 
 > **state**: [`ImageStatus_State`](../type-aliases/ImageStatus_State.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5963
+Defined in: src/generated/nebius/compute/v1/index.ts:5964
 
 ---
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5963
 
 > **stateDescription**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5964
+Defined in: src/generated/nebius/compute/v1/index.ts:5965
 
 ---
 
@@ -64,4 +64,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5964
 
 > **storageSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5965
+Defined in: src/generated/nebius/compute/v1/index.ts:5966

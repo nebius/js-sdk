@@ -8,4 +8,4 @@
 
 > **QuotaAllowanceStatus_State**: [`QuotaAllowanceStatus_StateClass`](../type-aliases/QuotaAllowanceStatus_StateClass.md)
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:613
+Defined in: src/generated/nebius/quotas/v1/index.ts:614

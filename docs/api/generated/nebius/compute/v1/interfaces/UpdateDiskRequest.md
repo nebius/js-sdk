@@ -6,7 +6,7 @@
 
 # Interface: UpdateDiskRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:361
+Defined in: src/generated/nebius/compute/v1/index.ts:362
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:361
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:363
+Defined in: src/generated/nebius/compute/v1/index.ts:364
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:363
 
 > **$type**: `"nebius.compute.v1.UpdateDiskRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:362
+Defined in: src/generated/nebius/compute/v1/index.ts:363
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:362
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:364
+Defined in: src/generated/nebius/compute/v1/index.ts:365
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:364
 
 > `optional` **spec**: [`DiskSpec`](DiskSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:365
+Defined in: src/generated/nebius/compute/v1/index.ts:366

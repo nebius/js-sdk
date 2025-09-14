@@ -8,7 +8,7 @@
 
 > **TargetGroupServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8400
+Defined in: src/generated/nebius/vpc/v1/index.ts:8401
 
 ## Type Declaration
 

@@ -6,7 +6,7 @@
 
 # Interface: ResourcesSpec
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2841
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3112
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2841
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2843
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3114
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2843
 
 > **$type**: `"nebius.mk8s.v1alpha1.ResourcesSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2842
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3113
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2842
 
 > **platform**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2844
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3115
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2844
 
 > `optional` **size**: `object`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2845
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3116
 
 #### $case
 

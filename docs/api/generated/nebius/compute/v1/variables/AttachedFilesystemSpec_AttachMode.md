@@ -8,4 +8,4 @@
 
 > **AttachedFilesystemSpec_AttachMode**: [`AttachedFilesystemSpec_AttachModeClass`](../type-aliases/AttachedFilesystemSpec_AttachModeClass.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7290
+Defined in: src/generated/nebius/compute/v1/index.ts:7291

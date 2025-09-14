@@ -6,7 +6,7 @@
 
 # Interface: UpdateTransferRequest
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:459
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:460
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:459
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:461
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:462
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:461
 
 > **$type**: `"nebius.storage.v1alpha1.UpdateTransferRequest"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:460
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:461
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:460
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:462
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:463
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:462
 
 > `optional` **spec**: [`TransferSpec`](TransferSpec.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:463
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:464

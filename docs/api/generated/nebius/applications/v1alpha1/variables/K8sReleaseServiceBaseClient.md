@@ -8,7 +8,7 @@
 
 > **K8sReleaseServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`K8sReleaseServiceBaseClient`](../interfaces/K8sReleaseServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:731
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:732
 
 ## Type Declaration
 

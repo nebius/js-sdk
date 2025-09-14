@@ -8,4 +8,4 @@
 
 > **FieldPySDKSettings**: [`MessageFns`](../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FieldPySDKSettings`](../interfaces/FieldPySDKSettings.md), `"nebius.FieldPySDKSettings"`\>
 
-Defined in: src/generated/nebius/index.ts:370
+Defined in: src/generated/nebius/index.ts:371

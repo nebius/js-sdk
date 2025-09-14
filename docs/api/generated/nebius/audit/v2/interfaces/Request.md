@@ -6,7 +6,7 @@
 
 # Interface: Request
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1494
+Defined in: src/generated/nebius/audit/v2/index.ts:1495
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1494
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1496
+Defined in: src/generated/nebius/audit/v2/index.ts:1497
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1496
 
 > **$type**: `"nebius.audit.v2.Request"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1495
+Defined in: src/generated/nebius/audit/v2/index.ts:1496
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1495
 
 > **clientIp**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1501
+Defined in: src/generated/nebius/audit/v2/index.ts:1502
 
 Ip of the subject who initiated the RPC call.
 
@@ -40,7 +40,7 @@ Ip of the subject who initiated the RPC call.
 
 > **idempotencyId**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1521
+Defined in: src/generated/nebius/audit/v2/index.ts:1522
 
 Unique key that the server uses to recognize subsequent retries of the same request.
 
@@ -50,7 +50,7 @@ Unique key that the server uses to recognize subsequent retries of the same requ
 
 > **ja3Fingerprint**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1531
+Defined in: src/generated/nebius/audit/v2/index.ts:1532
 
 Client Ja3 fingerprint
 
@@ -60,7 +60,7 @@ Client Ja3 fingerprint
 
 > `optional` **parameters**: `object`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1516
+Defined in: src/generated/nebius/audit/v2/index.ts:1517
 
 Parameters of the request.
 
@@ -74,7 +74,7 @@ Parameters of the request.
 
 > **requestId**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1511
+Defined in: src/generated/nebius/audit/v2/index.ts:1512
 
 Unique identifier of the request.
 
@@ -84,7 +84,7 @@ Unique identifier of the request.
 
 > **traceId**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1526
+Defined in: src/generated/nebius/audit/v2/index.ts:1527
 
 A unique identifier that allows you to link calls to different services within an operation.
 
@@ -94,6 +94,6 @@ A unique identifier that allows you to link calls to different services within a
 
 > **userAgent**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1506
+Defined in: src/generated/nebius/audit/v2/index.ts:1507
 
 User agent of the subject who initiated operation.

@@ -6,7 +6,7 @@
 
 # Interface: UpdateTenantRequest
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2393
+Defined in: src/generated/nebius/iam/v2/index.ts:2394
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2393
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2395
+Defined in: src/generated/nebius/iam/v2/index.ts:2396
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2395
 
 > **$type**: `"nebius.iam.v2.UpdateTenantRequest"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2394
+Defined in: src/generated/nebius/iam/v2/index.ts:2395
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2394
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2396
+Defined in: src/generated/nebius/iam/v2/index.ts:2397
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2396
 
 > **namePrefix**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2402
+Defined in: src/generated/nebius/iam/v2/index.ts:2403
 
 Tenant name prefix. A few random characters will be added to this prefix.
 
@@ -48,4 +48,4 @@ Tenant name prefix. A few random characters will be added to this prefix.
 
 > `optional` **spec**: [`TenantSpec`](TenantSpec.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2397
+Defined in: src/generated/nebius/iam/v2/index.ts:2398

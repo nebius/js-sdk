@@ -6,7 +6,7 @@
 
 # Interface: NodeGroupServiceServer
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3927
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4198
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3927
 
 > **create**: `handleUnaryCall`\<[`CreateNodeGroupRequest`](CreateNodeGroupRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3931
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4202
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3931
 
 > **delete**: `handleUnaryCall`\<[`DeleteNodeGroupRequest`](DeleteNodeGroupRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3933
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4204
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3933
 
 > **get**: `handleUnaryCall`\<[`GetNodeGroupRequest`](GetNodeGroupRequest.md), [`NodeGroup`](NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3928
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4199
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3928
 
 > **getByName**: `handleUnaryCall`\<[`GetNodeGroupByNameRequest`](GetNodeGroupByNameRequest.md), [`NodeGroup`](NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3929
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4200
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3929
 
 > **list**: `handleUnaryCall`\<[`ListNodeGroupsRequest`](ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](ListNodeGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3930
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4201
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3930
 
 > **update**: `handleUnaryCall`\<[`UpdateNodeGroupRequest`](UpdateNodeGroupRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3932
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4203
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3932
 
 > **upgrade**: `handleUnaryCall`\<[`UpgradeNodeGroupRequest`](UpgradeNodeGroupRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3934
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4205

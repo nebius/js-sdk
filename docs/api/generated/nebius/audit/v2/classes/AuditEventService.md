@@ -6,7 +6,7 @@
 
 # Class: AuditEventService
 
-Defined in: src/generated/nebius/audit/v2/index.ts:454
+Defined in: src/generated/nebius/audit/v2/index.ts:455
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:454
 
 > **new AuditEventService**(`sdk`): `AuditEventService`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:466
+Defined in: src/generated/nebius/audit/v2/index.ts:467
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:466
 
 > **$type**: `"nebius.audit.v2.AuditEventService"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:455
+Defined in: src/generated/nebius/audit/v2/index.ts:456
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:455
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:456
+Defined in: src/generated/nebius/audit/v2/index.ts:457
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:456
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:457
+Defined in: src/generated/nebius/audit/v2/index.ts:458
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:457
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:458
+Defined in: src/generated/nebius/audit/v2/index.ts:459
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:458
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:472
+Defined in: src/generated/nebius/audit/v2/index.ts:473
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:472
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:473
+Defined in: src/generated/nebius/audit/v2/index.ts:474
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:473
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuditEventRequest`](../interfaces/ListAuditEventRequest.md), [`ListAuditEventResponse`](../interfaces/ListAuditEventResponse.md)\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:474
+Defined in: src/generated/nebius/audit/v2/index.ts:475
 
 ##### Parameters
 

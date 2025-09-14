@@ -8,4 +8,4 @@
 
 > **UpdateInvitationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateInvitationRequest`](../interfaces/UpdateInvitationRequest.md), `"nebius.iam.v1.UpdateInvitationRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13544
+Defined in: src/generated/nebius/iam/v1/index.ts:13545

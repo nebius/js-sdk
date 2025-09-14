@@ -8,4 +8,4 @@
 
 > **ListInstancesResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListInstancesResponse`](../interfaces/ListInstancesResponse.md), `"nebius.compute.v1alpha1.ListInstancesResponse"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5960
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5961

@@ -8,4 +8,4 @@
 
 > **ControlPlaneStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ControlPlaneStatus`](../interfaces/ControlPlaneStatus.md), `"nebius.mk8s.v1.ControlPlaneStatus"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1721
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1992

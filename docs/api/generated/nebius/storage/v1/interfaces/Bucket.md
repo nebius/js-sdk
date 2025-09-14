@@ -6,7 +6,7 @@
 
 # Interface: Bucket
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1908
+Defined in: src/generated/nebius/storage/v1/index.ts:1909
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1908
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1910
+Defined in: src/generated/nebius/storage/v1/index.ts:1911
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1910
 
 > **$type**: `"nebius.storage.v1.Bucket"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1909
+Defined in: src/generated/nebius/storage/v1/index.ts:1910
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1909
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1911
+Defined in: src/generated/nebius/storage/v1/index.ts:1912
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1911
 
 > `optional` **spec**: [`BucketSpec`](BucketSpec.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1912
+Defined in: src/generated/nebius/storage/v1/index.ts:1913
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1912
 
 > `optional` **status**: [`BucketStatus`](BucketStatus.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1913
+Defined in: src/generated/nebius/storage/v1/index.ts:1914

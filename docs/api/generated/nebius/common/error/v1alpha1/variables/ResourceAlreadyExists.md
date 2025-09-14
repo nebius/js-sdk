@@ -8,4 +8,4 @@
 
 > **ResourceAlreadyExists**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceAlreadyExists`](../interfaces/ResourceAlreadyExists.md), `"nebius.common.error.v1alpha1.ResourceAlreadyExists"`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:428
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:429

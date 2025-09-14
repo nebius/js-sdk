@@ -6,7 +6,7 @@
 
 # Interface: ListAuditEventRequest
 
-Defined in: src/generated/nebius/audit/v2/index.ts:105
+Defined in: src/generated/nebius/audit/v2/index.ts:106
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:105
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:107
+Defined in: src/generated/nebius/audit/v2/index.ts:108
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:107
 
 > **$type**: `"nebius.audit.v2.ListAuditEventRequest"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:106
+Defined in: src/generated/nebius/audit/v2/index.ts:107
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:106
 
 > `optional` **end**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:115
+Defined in: src/generated/nebius/audit/v2/index.ts:116
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:115
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:145
+Defined in: src/generated/nebius/audit/v2/index.ts:146
 
 Example:
 service.name = 'iam' AND resource.hierarchy.id:'container-e0t' AND regex(resource.metadata.name, '^._test._$')
@@ -72,7 +72,7 @@ status
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:113
+Defined in: src/generated/nebius/audit/v2/index.ts:114
 
 ---
 
@@ -80,7 +80,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:113
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:116
+Defined in: src/generated/nebius/audit/v2/index.ts:117
 
 ---
 
@@ -88,7 +88,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:116
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:112
+Defined in: src/generated/nebius/audit/v2/index.ts:113
 
 A tenant id must be provided
 
@@ -98,4 +98,4 @@ A tenant id must be provided
 
 > `optional` **start**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:114
+Defined in: src/generated/nebius/audit/v2/index.ts:115

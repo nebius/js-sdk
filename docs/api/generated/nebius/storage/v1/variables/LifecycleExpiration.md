@@ -8,4 +8,4 @@
 
 > **LifecycleExpiration**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`LifecycleExpiration`](../interfaces/LifecycleExpiration.md), `"nebius.storage.v1.LifecycleExpiration"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2988
+Defined in: src/generated/nebius/storage/v1/index.ts:2989

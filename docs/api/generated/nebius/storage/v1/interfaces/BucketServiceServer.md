@@ -6,7 +6,7 @@
 
 # Interface: BucketServiceServer
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1631
+Defined in: src/generated/nebius/storage/v1/index.ts:1632
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1631
 
 > **create**: `handleUnaryCall`\<[`CreateBucketRequest`](CreateBucketRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1635
+Defined in: src/generated/nebius/storage/v1/index.ts:1636
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1635
 
 > **delete**: `handleUnaryCall`\<[`DeleteBucketRequest`](DeleteBucketRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1637
+Defined in: src/generated/nebius/storage/v1/index.ts:1638
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1637
 
 > **get**: `handleUnaryCall`\<[`GetBucketRequest`](GetBucketRequest.md), [`Bucket`](Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1632
+Defined in: src/generated/nebius/storage/v1/index.ts:1633
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1632
 
 > **getByName**: `handleUnaryCall`\<[`GetBucketByNameRequest`](GetBucketByNameRequest.md), [`Bucket`](Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1633
+Defined in: src/generated/nebius/storage/v1/index.ts:1634
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1633
 
 > **list**: `handleUnaryCall`\<[`ListBucketsRequest`](ListBucketsRequest.md), [`ListBucketsResponse`](ListBucketsResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1634
+Defined in: src/generated/nebius/storage/v1/index.ts:1635
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1634
 
 > **purge**: `handleUnaryCall`\<[`PurgeBucketRequest`](PurgeBucketRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1638
+Defined in: src/generated/nebius/storage/v1/index.ts:1639
 
 ---
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1638
 
 > **undelete**: `handleUnaryCall`\<[`UndeleteBucketRequest`](UndeleteBucketRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1639
+Defined in: src/generated/nebius/storage/v1/index.ts:1640
 
 ---
 
@@ -78,4 +78,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1639
 
 > **update**: `handleUnaryCall`\<[`UpdateBucketRequest`](UpdateBucketRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1636
+Defined in: src/generated/nebius/storage/v1/index.ts:1637

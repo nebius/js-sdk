@@ -6,7 +6,7 @@
 
 # Interface: InstanceStatus
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8653
+Defined in: src/generated/nebius/compute/v1/index.ts:8654
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8653
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8655
+Defined in: src/generated/nebius/compute/v1/index.ts:8656
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8655
 
 > **$type**: `"nebius.compute.v1.InstanceStatus"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8654
+Defined in: src/generated/nebius/compute/v1/index.ts:8655
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8654
 
 > `optional` **gpuClusterTopology**: `object`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8664
+Defined in: src/generated/nebius/compute/v1/index.ts:8665
 
 #### $case
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8664
 
 > **maintenanceEventId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8663
+Defined in: src/generated/nebius/compute/v1/index.ts:8664
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8663
 
 > **networkInterfaces**: [`NetworkInterfaceStatus`](NetworkInterfaceStatus.md)[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8657
+Defined in: src/generated/nebius/compute/v1/index.ts:8658
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8657
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8662
+Defined in: src/generated/nebius/compute/v1/index.ts:8663
 
 Indicates whether there is an ongoing operation
 
@@ -72,4 +72,4 @@ Indicates whether there is an ongoing operation
 
 > **state**: [`InstanceStatus_InstanceState`](../type-aliases/InstanceStatus_InstanceState.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8656
+Defined in: src/generated/nebius/compute/v1/index.ts:8657

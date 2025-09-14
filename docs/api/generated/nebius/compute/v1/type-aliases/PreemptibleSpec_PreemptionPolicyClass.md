@@ -8,4 +8,4 @@
 
 > **PreemptibleSpec_PreemptionPolicyClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"STOP"`\> & `PreemptibleSpec_PreemptionPolicyValueMembers`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7264
+Defined in: src/generated/nebius/compute/v1/index.ts:7265

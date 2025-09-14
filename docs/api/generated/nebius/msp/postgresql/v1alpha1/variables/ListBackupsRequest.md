@@ -8,4 +8,4 @@
 
 > **ListBackupsRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), `"nebius.msp.postgresql.v1alpha1.ListBackupsRequest"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:131
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:132

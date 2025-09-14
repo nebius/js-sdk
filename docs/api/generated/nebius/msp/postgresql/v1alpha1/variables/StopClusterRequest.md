@@ -8,4 +8,4 @@
 
 > **StopClusterRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), `"nebius.msp.postgresql.v1alpha1.StopClusterRequest"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2008
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2009

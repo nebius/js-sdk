@@ -8,7 +8,7 @@
 
 > **TenantUserAccountWithAttributesServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20898
+Defined in: src/generated/nebius/iam/v1/index.ts:20899
 
 ## Type Declaration
 

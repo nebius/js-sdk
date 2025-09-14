@@ -8,4 +8,4 @@
 
 > **OperationAborted**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`OperationAborted`](../interfaces/OperationAborted.md), `"nebius.common.v1.OperationAborted"`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:1241
+Defined in: src/generated/nebius/common/v1/index.ts:1242

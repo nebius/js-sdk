@@ -8,4 +8,4 @@
 
 > **UserAccountStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"DELETING"`\> & `UserAccountStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22612
+Defined in: src/generated/nebius/iam/v1/index.ts:22613

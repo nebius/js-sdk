@@ -6,7 +6,7 @@
 
 # Interface: ListRequest
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:665
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:666
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:665
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:667
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:668
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:667
 
 > **$type**: `"nebius.msp.v1alpha1.ListRequest"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:666
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:667
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:666
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:677
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:678
 
 Specifies the maximum number of items to return in the response. Default value is 100.
 
@@ -40,7 +40,7 @@ Specifies the maximum number of items to return in the response. Default value i
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:682
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:683
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -50,6 +50,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:672
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:673
 
 Identifier of IAM container to list from.

@@ -8,4 +8,4 @@
 
 > **ListAccessPermitRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAccessPermitRequest`](../interfaces/ListAccessPermitRequest.md), `"nebius.iam.v1.ListAccessPermitRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2345
+Defined in: src/generated/nebius/iam/v1/index.ts:2346

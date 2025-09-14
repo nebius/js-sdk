@@ -6,7 +6,7 @@
 
 # Interface: TransferSpec_SourceBucket
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1934
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1935
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1934
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1936
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1937
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1936
 
 > **$type**: `"nebius.storage.v1alpha1.TransferSpec.SourceBucket"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1935
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1936
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1935
 
 > **bucketName**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1944
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1945
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1944
 
 > `optional` **credentials**: [`TransferSpec_BucketCredentials`](TransferSpec_BucketCredentials.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1951
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1952
 
 Credentials for accessing the source bucket. These credentials must have list and get permissions.
 This parameter must be specified only during create operations.
@@ -49,7 +49,7 @@ This parameter must be specified only during create operations.
 
 > **endpoint**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1943
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1944
 
 The endpoint must be in the form of a URL, starting with the protocol (https),
 followed by the endpoint address without a trailing slash.
@@ -61,7 +61,7 @@ Example: https://storage.us-central1.nebius.cloud
 
 > `optional` **limiters**: [`TransferSpec_Limiters`](TransferSpec_Limiters.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1962
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1963
 
 Limiters applied to source bucket operations. These limits include all operations
 required for transfer (HeadObject, GetObject, ListObjects). For details about
@@ -77,4 +77,4 @@ destination operations as well.
 
 > **region**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1945
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1946

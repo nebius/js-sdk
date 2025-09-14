@@ -6,7 +6,7 @@
 
 # Interface: StaticKeyServiceBaseClient
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18897
+Defined in: src/generated/nebius/iam/v1/index.ts:18898
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18902
+Defined in: src/generated/nebius/iam/v1/index.ts:18903
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18902
 
 > **find**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18903
+Defined in: src/generated/nebius/iam/v1/index.ts:18904
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18903
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18900
+Defined in: src/generated/nebius/iam/v1/index.ts:18901
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18900
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18901
+Defined in: src/generated/nebius/iam/v1/index.ts:18902
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **issue**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18898
+Defined in: src/generated/nebius/iam/v1/index.ts:18899
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18898
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18899
+Defined in: src/generated/nebius/iam/v1/index.ts:18900
 
 #### Parameters
 
@@ -814,7 +814,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **revoke**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18904
+Defined in: src/generated/nebius/iam/v1/index.ts:18905
 
 #### Parameters
 

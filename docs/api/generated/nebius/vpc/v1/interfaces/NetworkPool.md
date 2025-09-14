@@ -6,7 +6,7 @@
 
 # Interface: NetworkPool
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4008
+Defined in: src/generated/nebius/vpc/v1/index.ts:4009
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4008
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4010
+Defined in: src/generated/nebius/vpc/v1/index.ts:4011
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4010
 
 > **$type**: `"nebius.vpc.v1.NetworkPool"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4009
+Defined in: src/generated/nebius/vpc/v1/index.ts:4010
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4009
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4015
+Defined in: src/generated/nebius/vpc/v1/index.ts:4016
 
 ID of the IP address pool.

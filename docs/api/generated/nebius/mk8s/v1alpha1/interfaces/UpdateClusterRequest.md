@@ -6,7 +6,7 @@
 
 # Interface: UpdateClusterRequest
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:575
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:576
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:575
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:577
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:578
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:577
 
 > **$type**: `"nebius.mk8s.v1alpha1.UpdateClusterRequest"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:576
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:577
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:576
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:583
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:584
 
 Metadata associated with the instance.
 Includes ID of the instance to update.
@@ -41,6 +41,6 @@ Includes ID of the instance to update.
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:588
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:589
 
 Updated specifications for the instance.

@@ -6,7 +6,7 @@
 
 # Interface: Invitation
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14019
+Defined in: src/generated/nebius/iam/v1/index.ts:14020
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14019
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14021
+Defined in: src/generated/nebius/iam/v1/index.ts:14022
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14021
 
 > **$type**: `"nebius.iam.v1.Invitation"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14020
+Defined in: src/generated/nebius/iam/v1/index.ts:14021
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14020
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14022
+Defined in: src/generated/nebius/iam/v1/index.ts:14023
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14022
 
 > `optional` **spec**: [`InvitationSpec`](InvitationSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14023
+Defined in: src/generated/nebius/iam/v1/index.ts:14024
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14023
 
 > `optional` **status**: [`InvitationStatus`](InvitationStatus.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14024
+Defined in: src/generated/nebius/iam/v1/index.ts:14025

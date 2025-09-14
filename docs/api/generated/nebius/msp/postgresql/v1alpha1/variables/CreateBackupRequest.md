@@ -8,4 +8,4 @@
 
 > **CreateBackupRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), `"nebius.msp.postgresql.v1alpha1.CreateBackupRequest"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:398
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:399

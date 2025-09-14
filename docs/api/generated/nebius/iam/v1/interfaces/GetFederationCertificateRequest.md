@@ -6,7 +6,7 @@
 
 # Interface: GetFederationCertificateRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7321
+Defined in: src/generated/nebius/iam/v1/index.ts:7322
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7321
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7323
+Defined in: src/generated/nebius/iam/v1/index.ts:7324
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7323
 
 > **$type**: `"nebius.iam.v1.GetFederationCertificateRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7322
+Defined in: src/generated/nebius/iam/v1/index.ts:7323
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7322
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7324
+Defined in: src/generated/nebius/iam/v1/index.ts:7325

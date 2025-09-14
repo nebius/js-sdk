@@ -8,4 +8,4 @@
 
 > **GetTenantUserAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetTenantUserAccountRequest`](../interfaces/GetTenantUserAccountRequest.md), `"nebius.iam.v1.GetTenantUserAccountRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19867
+Defined in: src/generated/nebius/iam/v1/index.ts:19868

@@ -8,4 +8,4 @@
 
 > **ServiceAccountAttributes**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ServiceAccountAttributes`](../interfaces/ServiceAccountAttributes.md), `"nebius.iam.v1.ServiceAccountAttributes"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17322
+Defined in: src/generated/nebius/iam/v1/index.ts:17323

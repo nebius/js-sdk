@@ -8,6 +8,6 @@
 
 > **SubnetStatus_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"DELETING"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7263
+Defined in: src/generated/nebius/vpc/v1/index.ts:7264
 
 Enumeration of possible states of the subnet.

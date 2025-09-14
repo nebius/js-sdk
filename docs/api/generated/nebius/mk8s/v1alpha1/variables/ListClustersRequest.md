@@ -8,4 +8,4 @@
 
 > **ListClustersRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), `"nebius.mk8s.v1alpha1.ListClustersRequest"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:336
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:337

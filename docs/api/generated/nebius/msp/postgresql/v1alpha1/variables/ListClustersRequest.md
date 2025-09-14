@@ -8,4 +8,4 @@
 
 > **ListClustersRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), `"nebius.msp.postgresql.v1alpha1.ListClustersRequest"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1236
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1237

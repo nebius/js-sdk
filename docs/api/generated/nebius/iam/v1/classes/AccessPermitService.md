@@ -6,7 +6,7 @@
 
 # Class: AccessPermitService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2845
+Defined in: src/generated/nebius/iam/v1/index.ts:2846
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2845
 
 > **new AccessPermitService**(`sdk`): `AccessPermitService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2885
+Defined in: src/generated/nebius/iam/v1/index.ts:2886
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2885
 
 > **$type**: `"nebius.iam.v1.AccessPermitService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2846
+Defined in: src/generated/nebius/iam/v1/index.ts:2847
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2846
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessPermitRequest`](../interfaces/CreateAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2854
+Defined in: src/generated/nebius/iam/v1/index.ts:2855
 
 Creates access permit for provided resource with provided role.
 Subject of access permit is also a parent of access permit.
@@ -67,7 +67,7 @@ If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessPermitRequest`](../interfaces/CreateAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2855
+Defined in: src/generated/nebius/iam/v1/index.ts:2856
 
 ##### Parameters
 
@@ -87,7 +87,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2855
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessPermitRequest`](../interfaces/CreateAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2856
+Defined in: src/generated/nebius/iam/v1/index.ts:2857
 
 ##### Parameters
 
@@ -111,7 +111,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2856
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessPermitRequest`](../interfaces/CreateAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2895
+Defined in: src/generated/nebius/iam/v1/index.ts:2896
 
 Creates access permit for provided resource with provided role.
 Subject of access permit is also a parent of access permit.
@@ -132,7 +132,7 @@ If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessPermitRequest`](../interfaces/CreateAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2896
+Defined in: src/generated/nebius/iam/v1/index.ts:2897
 
 Creates access permit for provided resource with provided role.
 Subject of access permit is also a parent of access permit.
@@ -157,7 +157,7 @@ If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessPermitRequest`](../interfaces/CreateAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2897
+Defined in: src/generated/nebius/iam/v1/index.ts:2898
 
 Creates access permit for provided resource with provided role.
 Subject of access permit is also a parent of access permit.
@@ -190,7 +190,7 @@ If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessPermitRequest`](../interfaces/DeleteAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2868
+Defined in: src/generated/nebius/iam/v1/index.ts:2869
 
 Delete access permit by id
 
@@ -208,7 +208,7 @@ Delete access permit by id
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessPermitRequest`](../interfaces/DeleteAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2869
+Defined in: src/generated/nebius/iam/v1/index.ts:2870
 
 ##### Parameters
 
@@ -228,7 +228,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2869
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessPermitRequest`](../interfaces/DeleteAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2870
+Defined in: src/generated/nebius/iam/v1/index.ts:2871
 
 ##### Parameters
 
@@ -252,7 +252,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2870
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessPermitRequest`](../interfaces/DeleteAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2922
+Defined in: src/generated/nebius/iam/v1/index.ts:2923
 
 Delete access permit by id
 
@@ -270,7 +270,7 @@ Delete access permit by id
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessPermitRequest`](../interfaces/DeleteAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2923
+Defined in: src/generated/nebius/iam/v1/index.ts:2924
 
 Delete access permit by id
 
@@ -292,7 +292,7 @@ Delete access permit by id
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessPermitRequest`](../interfaces/DeleteAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2924
+Defined in: src/generated/nebius/iam/v1/index.ts:2925
 
 Delete access permit by id
 
@@ -322,7 +322,7 @@ Delete access permit by id
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessPermitRequest`](../interfaces/GetAccessPermitRequest.md), [`AccessPermit`](../interfaces/AccessPermit.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2875
+Defined in: src/generated/nebius/iam/v1/index.ts:2876
 
 Gets access permit by id
 
@@ -340,7 +340,7 @@ Gets access permit by id
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessPermitRequest`](../interfaces/GetAccessPermitRequest.md), [`AccessPermit`](../interfaces/AccessPermit.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2876
+Defined in: src/generated/nebius/iam/v1/index.ts:2877
 
 ##### Parameters
 
@@ -360,7 +360,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2876
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessPermitRequest`](../interfaces/GetAccessPermitRequest.md), [`AccessPermit`](../interfaces/AccessPermit.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2877
+Defined in: src/generated/nebius/iam/v1/index.ts:2878
 
 ##### Parameters
 
@@ -384,7 +384,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2877
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessPermitRequest`](../interfaces/GetAccessPermitRequest.md), [`AccessPermit`](../interfaces/AccessPermit.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2937
+Defined in: src/generated/nebius/iam/v1/index.ts:2938
 
 Gets access permit by id
 
@@ -402,7 +402,7 @@ Gets access permit by id
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessPermitRequest`](../interfaces/GetAccessPermitRequest.md), [`AccessPermit`](../interfaces/AccessPermit.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2938
+Defined in: src/generated/nebius/iam/v1/index.ts:2939
 
 Gets access permit by id
 
@@ -424,7 +424,7 @@ Gets access permit by id
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessPermitRequest`](../interfaces/GetAccessPermitRequest.md), [`AccessPermit`](../interfaces/AccessPermit.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2939
+Defined in: src/generated/nebius/iam/v1/index.ts:2940
 
 Gets access permit by id
 
@@ -452,7 +452,7 @@ Gets access permit by id
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2891
+Defined in: src/generated/nebius/iam/v1/index.ts:2892
 
 #### Returns
 
@@ -466,7 +466,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2891
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessPermitRequest`](../interfaces/ListAccessPermitRequest.md), [`ListAccessPermitResponse`](../interfaces/ListAccessPermitResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2861
+Defined in: src/generated/nebius/iam/v1/index.ts:2862
 
 Lists access permits for provided parent
 
@@ -484,7 +484,7 @@ Lists access permits for provided parent
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessPermitRequest`](../interfaces/ListAccessPermitRequest.md), [`ListAccessPermitResponse`](../interfaces/ListAccessPermitResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2862
+Defined in: src/generated/nebius/iam/v1/index.ts:2863
 
 ##### Parameters
 
@@ -504,7 +504,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2862
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessPermitRequest`](../interfaces/ListAccessPermitRequest.md), [`ListAccessPermitResponse`](../interfaces/ListAccessPermitResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2863
+Defined in: src/generated/nebius/iam/v1/index.ts:2864
 
 ##### Parameters
 
@@ -528,7 +528,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2863
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessPermitRequest`](../interfaces/ListAccessPermitRequest.md), [`ListAccessPermitResponse`](../interfaces/ListAccessPermitResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2910
+Defined in: src/generated/nebius/iam/v1/index.ts:2911
 
 Lists access permits for provided parent
 
@@ -546,7 +546,7 @@ Lists access permits for provided parent
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessPermitRequest`](../interfaces/ListAccessPermitRequest.md), [`ListAccessPermitResponse`](../interfaces/ListAccessPermitResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2911
+Defined in: src/generated/nebius/iam/v1/index.ts:2912
 
 Lists access permits for provided parent
 
@@ -568,7 +568,7 @@ Lists access permits for provided parent
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessPermitRequest`](../interfaces/ListAccessPermitRequest.md), [`ListAccessPermitResponse`](../interfaces/ListAccessPermitResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2912
+Defined in: src/generated/nebius/iam/v1/index.ts:2913
 
 Lists access permits for provided parent
 

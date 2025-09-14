@@ -6,7 +6,7 @@
 
 # Interface: ListMaintenancesRequest
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:14
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:15
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:14
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:16
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:17
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:16
 
 > **$type**: `"nebius.maintenance.v1alpha1.ListMaintenancesRequest"`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:15
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:16
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:15
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:21
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:22
 
 Identifier of IAM container to list maintenance operations from.

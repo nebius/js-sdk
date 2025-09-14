@@ -8,4 +8,4 @@
 
 > **ServiceAccountServiceServiceDescription** = _typeof_ [`ServiceAccountServiceServiceDescription`](../variables/ServiceAccountServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16809
+Defined in: src/generated/nebius/iam/v1/index.ts:16810

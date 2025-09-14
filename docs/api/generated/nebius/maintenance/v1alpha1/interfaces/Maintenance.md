@@ -6,7 +6,7 @@
 
 # Interface: Maintenance
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:462
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:463
 
 Maintenance operations are initiated by Nebius Cloud infrastructure.
 They are used to perform scheduled or urgent operations on Nebius Cloud resources,
@@ -20,7 +20,7 @@ without user intervention.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:464
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:465
 
 ---
 
@@ -28,7 +28,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:464
 
 > **$type**: `"nebius.maintenance.v1alpha1.Maintenance"`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:463
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:464
 
 ---
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:463
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:469
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:470
 
 The metadata for the maintenance operation resource.
 
@@ -46,7 +46,7 @@ The metadata for the maintenance operation resource.
 
 > `optional` **spec**: [`MaintenanceSpec`](MaintenanceSpec.md)
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:474
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:475
 
 Specifications for the maintenance operation.
 
@@ -56,6 +56,6 @@ Specifications for the maintenance operation.
 
 > `optional` **status**: [`MaintenanceStatus`](MaintenanceStatus.md)
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:479
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:480
 
 Current status of the maintenance operation.

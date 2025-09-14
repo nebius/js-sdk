@@ -6,7 +6,7 @@
 
 # Interface: GetSubnetRequest
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6440
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6441
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6440
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6442
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6443
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6442
 
 > **$type**: `"nebius.vpc.v1alpha1.GetSubnetRequest"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6441
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6442
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6441
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6443
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6444

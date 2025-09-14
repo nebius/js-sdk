@@ -6,7 +6,7 @@
 
 # Interface: MaintenanceEvent
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8930
+Defined in: src/generated/nebius/compute/v1/index.ts:8931
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8930
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8932
+Defined in: src/generated/nebius/compute/v1/index.ts:8933
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8932
 
 > **$type**: `"nebius.compute.v1.MaintenanceEvent"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8931
+Defined in: src/generated/nebius/compute/v1/index.ts:8932
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8931
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8933
+Defined in: src/generated/nebius/compute/v1/index.ts:8934
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8933
 
 > `optional` **spec**: [`MaintenanceEventSpec`](MaintenanceEventSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8934
+Defined in: src/generated/nebius/compute/v1/index.ts:8935
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8934
 
 > `optional` **status**: [`MaintenanceEventStatus`](MaintenanceEventStatus.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8935
+Defined in: src/generated/nebius/compute/v1/index.ts:8936

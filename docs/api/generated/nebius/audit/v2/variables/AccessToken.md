@@ -8,4 +8,4 @@
 
 > **AccessToken**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AccessToken`](../interfaces/AccessToken.md), `"nebius.audit.v2.AccessToken"`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:14
+Defined in: src/generated/nebius/audit/v2/index.ts:15

@@ -8,4 +8,4 @@
 
 > **GeneralResourceCost**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GeneralResourceCost`](../interfaces/GeneralResourceCost.md), `"nebius.billing.v1alpha1.GeneralResourceCost"`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1106
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1107

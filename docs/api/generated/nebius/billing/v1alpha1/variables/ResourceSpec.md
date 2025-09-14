@@ -8,4 +8,4 @@
 
 > **ResourceSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceSpec`](../interfaces/ResourceSpec.md), `"nebius.billing.v1alpha1.ResourceSpec"`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:610
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:611

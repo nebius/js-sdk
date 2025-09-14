@@ -8,4 +8,4 @@
 
 > **UpgradeNodeGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), `"nebius.mk8s.v1alpha1.UpgradeNodeGroupRequest"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3728
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3999

@@ -6,7 +6,7 @@
 
 # Interface: PermissionDenied
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:892
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:893
 
 Indicates that the action cannot be performed because there are insufficient access rights to a resource.
 
@@ -16,7 +16,7 @@ Indicates that the action cannot be performed because there are insufficient acc
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:894
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:895
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:894
 
 > **$type**: `"nebius.common.error.v1alpha1.PermissionDenied"`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:893
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:894
 
 ---
 
@@ -32,6 +32,6 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:893
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:899
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:900
 
 ID of the resource that cannot be accessed.

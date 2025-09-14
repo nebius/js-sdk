@@ -8,4 +8,4 @@
 
 > **UpdateRegistryRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), `"nebius.registry.v1.UpdateRegistryRequest"`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1281
+Defined in: src/generated/nebius/registry/v1/index.ts:1282

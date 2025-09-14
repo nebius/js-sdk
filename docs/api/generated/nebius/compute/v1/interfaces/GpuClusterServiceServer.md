@@ -6,7 +6,7 @@
 
 # Interface: GpuClusterServiceServer
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4253
+Defined in: src/generated/nebius/compute/v1/index.ts:4254
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4253
 
 > **create**: `handleUnaryCall`\<[`CreateGpuClusterRequest`](CreateGpuClusterRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4257
+Defined in: src/generated/nebius/compute/v1/index.ts:4258
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4257
 
 > **delete**: `handleUnaryCall`\<[`DeleteGpuClusterRequest`](DeleteGpuClusterRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4259
+Defined in: src/generated/nebius/compute/v1/index.ts:4260
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4259
 
 > **get**: `handleUnaryCall`\<[`GetGpuClusterRequest`](GetGpuClusterRequest.md), [`GpuCluster`](GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4254
+Defined in: src/generated/nebius/compute/v1/index.ts:4255
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4254
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4255
+Defined in: src/generated/nebius/compute/v1/index.ts:4256
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4255
 
 > **list**: `handleUnaryCall`\<[`ListGpuClustersRequest`](ListGpuClustersRequest.md), [`ListGpuClustersResponse`](ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4256
+Defined in: src/generated/nebius/compute/v1/index.ts:4257
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4256
 
 > **listOperationsByParent**: `handleUnaryCall`\<[`ListOperationsByParentRequest`](ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4260
+Defined in: src/generated/nebius/compute/v1/index.ts:4261
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4260
 
 > **update**: `handleUnaryCall`\<[`UpdateGpuClusterRequest`](UpdateGpuClusterRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4258
+Defined in: src/generated/nebius/compute/v1/index.ts:4259

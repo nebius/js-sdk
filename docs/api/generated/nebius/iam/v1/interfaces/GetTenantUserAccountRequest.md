@@ -6,7 +6,7 @@
 
 # Interface: GetTenantUserAccountRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19867
+Defined in: src/generated/nebius/iam/v1/index.ts:19868
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19867
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19869
+Defined in: src/generated/nebius/iam/v1/index.ts:19870
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19869
 
 > **$type**: `"nebius.iam.v1.GetTenantUserAccountRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19868
+Defined in: src/generated/nebius/iam/v1/index.ts:19869
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19868
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19874
+Defined in: src/generated/nebius/iam/v1/index.ts:19875
 
 tenant user account id like 'tenantuseraccount-{region}someuniquesuffix'

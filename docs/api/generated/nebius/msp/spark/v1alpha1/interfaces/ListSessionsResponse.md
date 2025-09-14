@@ -6,7 +6,7 @@
 
 # Interface: ListSessionsResponse
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4200
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4245
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4200
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4202
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4247
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4202
 
 > **$type**: `"nebius.msp.spark.v1alpha1.ListSessionsResponse"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4201
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4246
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4201
 
 > **items**: [`Session`](Session.md)[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4207
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4252
 
 List of sessions.
 
@@ -40,6 +40,6 @@ List of sessions.
 
 > `optional` **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4212
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4257
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

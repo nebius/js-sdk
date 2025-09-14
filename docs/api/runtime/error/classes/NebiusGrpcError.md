@@ -6,7 +6,7 @@
 
 # Class: NebiusGrpcError
 
-Defined in: [src/runtime/error.ts:153](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L153)
+Defined in: [src/runtime/error.ts:153](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L153)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/error.ts:153](https://github.com/nebius/nodejs-sdk/blob
 
 > **new NebiusGrpcError**(`base`, `status?`, `serviceErrors?`, `requestId?`, `traceId?`): `NebiusGrpcError`
 
-Defined in: [src/runtime/error.ts:162](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L162)
+Defined in: [src/runtime/error.ts:162](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L162)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [src/runtime/error.ts:162](https://github.com/nebius/nodejs-sdk/blob
 
 > **code**: `number`
 
-Defined in: [src/runtime/error.ts:154](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L154)
+Defined in: [src/runtime/error.ts:154](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L154)
 
 #### Implementation of
 
@@ -72,7 +72,7 @@ Defined in: [src/runtime/error.ts:154](https://github.com/nebius/nodejs-sdk/blob
 
 > **details**: `string`
 
-Defined in: [src/runtime/error.ts:155](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L155)
+Defined in: [src/runtime/error.ts:155](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L155)
 
 #### Implementation of
 
@@ -100,7 +100,7 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:1077
 
 > **metadata**: `Metadata`
 
-Defined in: [src/runtime/error.ts:156](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L156)
+Defined in: [src/runtime/error.ts:156](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L156)
 
 #### Implementation of
 
@@ -128,7 +128,7 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:1076
 
 > **requestId**: `string`
 
-Defined in: [src/runtime/error.ts:157](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L157)
+Defined in: [src/runtime/error.ts:157](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L157)
 
 ---
 
@@ -136,7 +136,7 @@ Defined in: [src/runtime/error.ts:157](https://github.com/nebius/nodejs-sdk/blob
 
 > **serviceErrors**: [`ServiceError`](../../../generated/nebius/common/v1/interfaces/ServiceError.md)[]
 
-Defined in: [src/runtime/error.ts:159](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L159)
+Defined in: [src/runtime/error.ts:159](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L159)
 
 ---
 
@@ -160,7 +160,7 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:1078
 
 > `optional` **status**: `Status`
 
-Defined in: [src/runtime/error.ts:160](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L160)
+Defined in: [src/runtime/error.ts:160](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L160)
 
 ---
 
@@ -168,7 +168,7 @@ Defined in: [src/runtime/error.ts:160](https://github.com/nebius/nodejs-sdk/blob
 
 > **traceId**: `string`
 
-Defined in: [src/runtime/error.ts:158](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L158)
+Defined in: [src/runtime/error.ts:158](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L158)
 
 ---
 
@@ -198,7 +198,7 @@ not capture any frames.
 
 > **toString**(): `string`
 
-Defined in: [src/runtime/error.ts:216](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L216)
+Defined in: [src/runtime/error.ts:216](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L216)
 
 Returns a string representation of an object.
 
@@ -212,7 +212,7 @@ Returns a string representation of an object.
 
 > `static` **buildMessage**(`base`, `status?`, `serviceErrors?`, `requestId?`, `traceId?`): `string`
 
-Defined in: [src/runtime/error.ts:181](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/error.ts#L181)
+Defined in: [src/runtime/error.ts:181](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L181)
 
 #### Parameters
 

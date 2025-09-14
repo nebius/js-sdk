@@ -6,7 +6,7 @@
 
 # Interface: ListSubnetsByNetworkRequest
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6771
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6772
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6771
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6773
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6774
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6773
 
 > **$type**: `"nebius.vpc.v1alpha1.ListSubnetsByNetworkRequest"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6772
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6773
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6772
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6777
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6778
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6777
 
 > **networkId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6774
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6775
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6774
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6775
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6776
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6775
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6776
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6777

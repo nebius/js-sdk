@@ -8,4 +8,4 @@
 
 > **NodeTaint_EffectClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"EFFECT_UNSPECIFIED"` \| `"NO_EXECUTE"` \| `"NO_SCHEDULE"` \| `"PREFER_NO_SCHEDULE"`\> & `NodeTaint_EffectValueMembers`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3930
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4201

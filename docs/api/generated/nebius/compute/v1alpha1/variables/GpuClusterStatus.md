@@ -8,4 +8,4 @@
 
 > **GpuClusterStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GpuClusterStatus`](../interfaces/GpuClusterStatus.md), `"nebius.compute.v1alpha1.GpuClusterStatus"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4254
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4255

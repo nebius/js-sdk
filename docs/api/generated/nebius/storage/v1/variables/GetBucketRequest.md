@@ -8,4 +8,4 @@
 
 > **GetBucketRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), `"nebius.storage.v1.GetBucketRequest"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:531
+Defined in: src/generated/nebius/storage/v1/index.ts:532

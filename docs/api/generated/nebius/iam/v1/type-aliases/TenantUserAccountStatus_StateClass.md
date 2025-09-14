@@ -8,4 +8,4 @@
 
 > **TenantUserAccountStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"BLOCKED"`\> & `TenantUserAccountStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21007
+Defined in: src/generated/nebius/iam/v1/index.ts:21008

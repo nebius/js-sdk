@@ -8,7 +8,7 @@
 
 > **BackupServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:599
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:600
 
 ## Type Declaration
 

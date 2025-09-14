@@ -6,7 +6,7 @@
 
 # Interface: ResourceAlreadyExists
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:428
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:429
 
 Resource we are trying to create already exists.
 
@@ -16,7 +16,7 @@ Resource we are trying to create already exists.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:430
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:431
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:430
 
 > **$type**: `"nebius.common.error.v1alpha1.ResourceAlreadyExists"`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:429
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:430
 
 ---
 
@@ -32,6 +32,6 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:429
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:435
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:436
 
 ID of the existing resource.

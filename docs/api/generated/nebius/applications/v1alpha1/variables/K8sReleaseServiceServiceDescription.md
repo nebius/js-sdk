@@ -8,7 +8,7 @@
 
 > **K8sReleaseServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:674
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:675
 
 ## Type Declaration
 

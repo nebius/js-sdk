@@ -8,7 +8,7 @@
 
 > **EndpointServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`EndpointServiceBaseClient`](../interfaces/EndpointServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:342
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:343
 
 ## Type Declaration
 

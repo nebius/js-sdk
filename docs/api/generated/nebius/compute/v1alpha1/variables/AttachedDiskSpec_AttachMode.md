@@ -8,4 +8,4 @@
 
 > **AttachedDiskSpec_AttachMode**: [`AttachedDiskSpec_AttachModeClass`](../type-aliases/AttachedDiskSpec_AttachModeClass.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6559
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6560

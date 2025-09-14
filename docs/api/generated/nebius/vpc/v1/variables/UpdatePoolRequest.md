@@ -8,4 +8,4 @@
 
 > **UpdatePoolRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdatePoolRequest`](../interfaces/UpdatePoolRequest.md), `"nebius.vpc.v1.UpdatePoolRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4839
+Defined in: src/generated/nebius/vpc/v1/index.ts:4840

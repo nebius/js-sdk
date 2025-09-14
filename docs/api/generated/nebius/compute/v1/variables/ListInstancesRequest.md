@@ -8,4 +8,4 @@
 
 > **ListInstancesRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), `"nebius.compute.v1.ListInstancesRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6212
+Defined in: src/generated/nebius/compute/v1/index.ts:6213

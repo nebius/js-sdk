@@ -8,4 +8,4 @@
 
 > **GetStaticKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), `"nebius.iam.v1.GetStaticKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17772
+Defined in: src/generated/nebius/iam/v1/index.ts:17773

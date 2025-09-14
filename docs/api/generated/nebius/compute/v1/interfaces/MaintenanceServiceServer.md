@@ -6,7 +6,7 @@
 
 # Interface: MaintenanceServiceServer
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9672
+Defined in: src/generated/nebius/compute/v1/index.ts:9673
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9672
 
 > **getByInstance**: `handleUnaryCall`\<[`GetMaintenanceEventByInstanceRequest`](GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](MaintenanceEvent.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9673
+Defined in: src/generated/nebius/compute/v1/index.ts:9674
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9673
 
 > **listActive**: `handleUnaryCall`\<[`ListMaintenanceEventsRequest`](ListMaintenanceEventsRequest.md), [`ListMaintenanceEventsResponse`](ListMaintenanceEventsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9674
+Defined in: src/generated/nebius/compute/v1/index.ts:9675

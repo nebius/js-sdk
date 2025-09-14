@@ -6,7 +6,7 @@
 
 # Interface: LifecycleExpiration
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2988
+Defined in: src/generated/nebius/storage/v1/index.ts:2989
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2988
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2990
+Defined in: src/generated/nebius/storage/v1/index.ts:2991
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2990
 
 > **$type**: `"nebius.storage.v1.LifecycleExpiration"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2989
+Defined in: src/generated/nebius/storage/v1/index.ts:2990
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2989
 
 > **expiredObjectDeleteMarker**: `boolean`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2998
+Defined in: src/generated/nebius/storage/v1/index.ts:2999
 
 Indicates whether the system will remove a "delete marker" with no noncurrent versions.
 If set to true, the "delete marker" will be permanently removed.
@@ -43,4 +43,4 @@ This cannot be specified with Days or Date in a LifecycleExpiration Policy.
 
 > `optional` **expiredWith**: \{ `$case`: `"date"`; `date`: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md); \} \| \{ `$case`: `"days"`; `days`: `number`; \}
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2999
+Defined in: src/generated/nebius/storage/v1/index.ts:3000

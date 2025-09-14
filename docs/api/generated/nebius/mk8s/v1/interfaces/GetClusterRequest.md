@@ -6,7 +6,7 @@
 
 # Interface: GetClusterRequest
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:127
+Defined in: src/generated/nebius/mk8s/v1/index.ts:128
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:127
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:129
+Defined in: src/generated/nebius/mk8s/v1/index.ts:130
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:129
 
 > **$type**: `"nebius.mk8s.v1.GetClusterRequest"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:128
+Defined in: src/generated/nebius/mk8s/v1/index.ts:129
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:128
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:130
+Defined in: src/generated/nebius/mk8s/v1/index.ts:131
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:130
 
 > **resourceVersion**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:131
+Defined in: src/generated/nebius/mk8s/v1/index.ts:132

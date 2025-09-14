@@ -6,7 +6,7 @@
 
 # Class: GroupService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12511
+Defined in: src/generated/nebius/iam/v1/index.ts:12512
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12511
 
 > **new GroupService**(`sdk`): `GroupService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12538
+Defined in: src/generated/nebius/iam/v1/index.ts:12539
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12538
 
 > **$type**: `"nebius.iam.v1.GroupService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12512
+Defined in: src/generated/nebius/iam/v1/index.ts:12513
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12512
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupRequest`](../interfaces/CreateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12513
+Defined in: src/generated/nebius/iam/v1/index.ts:12514
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12513
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupRequest`](../interfaces/CreateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12514
+Defined in: src/generated/nebius/iam/v1/index.ts:12515
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12514
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupRequest`](../interfaces/CreateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12515
+Defined in: src/generated/nebius/iam/v1/index.ts:12516
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12515
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupRequest`](../interfaces/CreateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12548
+Defined in: src/generated/nebius/iam/v1/index.ts:12549
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12548
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupRequest`](../interfaces/CreateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12549
+Defined in: src/generated/nebius/iam/v1/index.ts:12550
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12549
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupRequest`](../interfaces/CreateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12550
+Defined in: src/generated/nebius/iam/v1/index.ts:12551
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12550
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12525
+Defined in: src/generated/nebius/iam/v1/index.ts:12526
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12525
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12526
+Defined in: src/generated/nebius/iam/v1/index.ts:12527
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12526
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12527
+Defined in: src/generated/nebius/iam/v1/index.ts:12528
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12527
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12599
+Defined in: src/generated/nebius/iam/v1/index.ts:12600
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12599
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12600
+Defined in: src/generated/nebius/iam/v1/index.ts:12601
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12600
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupRequest`](../interfaces/DeleteGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12601
+Defined in: src/generated/nebius/iam/v1/index.ts:12602
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12601
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupRequest`](../interfaces/GetGroupRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12516
+Defined in: src/generated/nebius/iam/v1/index.ts:12517
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12516
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupRequest`](../interfaces/GetGroupRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12517
+Defined in: src/generated/nebius/iam/v1/index.ts:12518
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12517
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupRequest`](../interfaces/GetGroupRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12518
+Defined in: src/generated/nebius/iam/v1/index.ts:12519
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12518
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupRequest`](../interfaces/GetGroupRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12563
+Defined in: src/generated/nebius/iam/v1/index.ts:12564
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12563
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupRequest`](../interfaces/GetGroupRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12564
+Defined in: src/generated/nebius/iam/v1/index.ts:12565
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12564
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupRequest`](../interfaces/GetGroupRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12565
+Defined in: src/generated/nebius/iam/v1/index.ts:12566
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12565
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12519
+Defined in: src/generated/nebius/iam/v1/index.ts:12520
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12519
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12520
+Defined in: src/generated/nebius/iam/v1/index.ts:12521
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12520
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12521
+Defined in: src/generated/nebius/iam/v1/index.ts:12522
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12521
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12575
+Defined in: src/generated/nebius/iam/v1/index.ts:12576
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12575
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12576
+Defined in: src/generated/nebius/iam/v1/index.ts:12577
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12576
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupByNameRequest`](../interfaces/GetGroupByNameRequest.md), [`Group`](../interfaces/Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12577
+Defined in: src/generated/nebius/iam/v1/index.ts:12578
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12577
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12544
+Defined in: src/generated/nebius/iam/v1/index.ts:12545
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12544
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupsRequest`](../interfaces/ListGroupsRequest.md), [`ListGroupsResponse`](../interfaces/ListGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12522
+Defined in: src/generated/nebius/iam/v1/index.ts:12523
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12522
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupsRequest`](../interfaces/ListGroupsRequest.md), [`ListGroupsResponse`](../interfaces/ListGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12523
+Defined in: src/generated/nebius/iam/v1/index.ts:12524
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12523
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupsRequest`](../interfaces/ListGroupsRequest.md), [`ListGroupsResponse`](../interfaces/ListGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12524
+Defined in: src/generated/nebius/iam/v1/index.ts:12525
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12524
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupsRequest`](../interfaces/ListGroupsRequest.md), [`ListGroupsResponse`](../interfaces/ListGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12587
+Defined in: src/generated/nebius/iam/v1/index.ts:12588
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12587
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupsRequest`](../interfaces/ListGroupsRequest.md), [`ListGroupsResponse`](../interfaces/ListGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12588
+Defined in: src/generated/nebius/iam/v1/index.ts:12589
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12588
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupsRequest`](../interfaces/ListGroupsRequest.md), [`ListGroupsResponse`](../interfaces/ListGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12589
+Defined in: src/generated/nebius/iam/v1/index.ts:12590
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12589
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGroupRequest`](../interfaces/UpdateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12528
+Defined in: src/generated/nebius/iam/v1/index.ts:12529
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12528
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGroupRequest`](../interfaces/UpdateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12529
+Defined in: src/generated/nebius/iam/v1/index.ts:12530
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12529
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGroupRequest`](../interfaces/UpdateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12530
+Defined in: src/generated/nebius/iam/v1/index.ts:12531
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12530
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGroupRequest`](../interfaces/UpdateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12614
+Defined in: src/generated/nebius/iam/v1/index.ts:12615
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12614
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGroupRequest`](../interfaces/UpdateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12615
+Defined in: src/generated/nebius/iam/v1/index.ts:12616
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12615
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGroupRequest`](../interfaces/UpdateGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12616
+Defined in: src/generated/nebius/iam/v1/index.ts:12617
 
 ##### Parameters
 

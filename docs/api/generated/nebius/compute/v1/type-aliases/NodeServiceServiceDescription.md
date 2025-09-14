@@ -8,4 +8,4 @@
 
 > **NodeServiceServiceDescription** = _typeof_ [`NodeServiceServiceDescription`](../variables/NodeServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10957
+Defined in: src/generated/nebius/compute/v1/index.ts:10958

@@ -6,7 +6,7 @@
 
 # Interface: RegistryServiceBaseClient
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1535
+Defined in: src/generated/nebius/registry/v1/index.ts:1536
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1538
+Defined in: src/generated/nebius/registry/v1/index.ts:1539
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1538
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1540
+Defined in: src/generated/nebius/registry/v1/index.ts:1541
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1540
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1536
+Defined in: src/generated/nebius/registry/v1/index.ts:1537
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1537
+Defined in: src/generated/nebius/registry/v1/index.ts:1538
 
 #### Parameters
 
@@ -754,7 +754,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1539
+Defined in: src/generated/nebius/registry/v1/index.ts:1540
 
 #### Parameters
 

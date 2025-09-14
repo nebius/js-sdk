@@ -6,7 +6,7 @@
 
 # Class: OperationService
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:631
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:632
 
 ## Implements
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:631
 
 ### Constructor
 
-> **new OperationService**(`sdk`, `serviceType`, `apiServiceName?`): `OperationService`
+> **new OperationService**(`sdk`, `addr`): `OperationService`
 
 Defined in: src/generated/nebius/common/v1alpha1/index.ts:658
 
@@ -26,11 +26,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:658
 
 [`SDKInterface`](../../../../../sdk/interfaces/SDKInterface.md)
 
-##### serviceType
-
-`string`
-
-##### apiServiceName?
+##### addr
 
 `string`
 
@@ -48,7 +44,7 @@ Deprecated.
 
 > **$type**: `"nebius.common.v1alpha1.OperationService"`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:632
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:633
 
 ## Methods
 
@@ -58,7 +54,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:632
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:637
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:638
 
 Returns the latest state of the specified operation.
 
@@ -76,7 +72,7 @@ Returns the latest state of the specified operation.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:638
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:639
 
 ##### Parameters
 
@@ -96,7 +92,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:638
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:639
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:640
 
 ##### Parameters
 
@@ -120,7 +116,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:639
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:668
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:666
 
 Returns the latest state of the specified operation.
 
@@ -138,7 +134,7 @@ Returns the latest state of the specified operation.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:669
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:667
 
 Returns the latest state of the specified operation.
 
@@ -160,7 +156,7 @@ Returns the latest state of the specified operation.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:670
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:668
 
 Returns the latest state of the specified operation.
 
@@ -190,7 +186,7 @@ Returns the latest state of the specified operation.
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:644
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:645
 
 Lists operations for the specified resource.
 
@@ -208,7 +204,7 @@ Lists operations for the specified resource.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:645
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:646
 
 ##### Parameters
 
@@ -228,7 +224,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:645
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:646
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:647
 
 ##### Parameters
 
@@ -252,7 +248,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:646
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:683
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:681
 
 Lists operations for the specified resource.
 
@@ -270,7 +266,7 @@ Lists operations for the specified resource.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:684
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:682
 
 Lists operations for the specified resource.
 
@@ -292,7 +288,7 @@ Lists operations for the specified resource.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:685
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:683
 
 Lists operations for the specified resource.
 

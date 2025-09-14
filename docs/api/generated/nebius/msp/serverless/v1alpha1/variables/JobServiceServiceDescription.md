@@ -8,7 +8,7 @@
 
 > **JobServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1930
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1931
 
 ## Type Declaration
 

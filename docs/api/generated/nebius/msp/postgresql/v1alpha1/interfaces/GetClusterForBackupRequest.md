@@ -6,7 +6,7 @@
 
 # Interface: GetClusterForBackupRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1124
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1125
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1124
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1126
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1127
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1126
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.GetClusterForBackupRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1125
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1126
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1125
 
 > **backupId**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1136
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1137
 
 ID of the backup for which source cluster is requested.
 
@@ -40,6 +40,6 @@ ID of the backup for which source cluster is requested.
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1131
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1132
 
 ID of the PostgreSQL cluster that holds backup.

@@ -8,4 +8,4 @@
 
 > **StaticKey**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`StaticKey`](../interfaces/StaticKey.md), `"nebius.iam.v1.StaticKey"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19064
+Defined in: src/generated/nebius/iam/v1/index.ts:19065

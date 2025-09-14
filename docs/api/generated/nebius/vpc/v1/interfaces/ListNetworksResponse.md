@@ -6,7 +6,7 @@
 
 # Interface: ListNetworksResponse
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2765
+Defined in: src/generated/nebius/vpc/v1/index.ts:2766
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2765
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2767
+Defined in: src/generated/nebius/vpc/v1/index.ts:2768
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2767
 
 > **$type**: `"nebius.vpc.v1.ListNetworksResponse"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2766
+Defined in: src/generated/nebius/vpc/v1/index.ts:2767
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2766
 
 > **items**: [`Network`](Network.md)[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2768
+Defined in: src/generated/nebius/vpc/v1/index.ts:2769
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2768
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2769
+Defined in: src/generated/nebius/vpc/v1/index.ts:2770

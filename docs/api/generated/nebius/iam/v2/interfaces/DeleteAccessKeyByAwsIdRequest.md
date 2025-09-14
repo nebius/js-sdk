@@ -6,7 +6,7 @@
 
 # Interface: DeleteAccessKeyByAwsIdRequest
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1157
+Defined in: src/generated/nebius/iam/v2/index.ts:1158
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1157
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1159
+Defined in: src/generated/nebius/iam/v2/index.ts:1160
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1159
 
 > **$type**: `"nebius.iam.v2.DeleteAccessKeyByAwsIdRequest"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1158
+Defined in: src/generated/nebius/iam/v2/index.ts:1159
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1158
 
 > **awsAccessKeyId**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1160
+Defined in: src/generated/nebius/iam/v2/index.ts:1161

@@ -6,7 +6,7 @@
 
 # Interface: Service
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2268
+Defined in: src/generated/nebius/audit/v2/index.ts:2269
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2268
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2270
+Defined in: src/generated/nebius/audit/v2/index.ts:2271
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2270
 
 > **$type**: `"nebius.audit.v2.Service"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2269
+Defined in: src/generated/nebius/audit/v2/index.ts:2270
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2269
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2271
+Defined in: src/generated/nebius/audit/v2/index.ts:2272

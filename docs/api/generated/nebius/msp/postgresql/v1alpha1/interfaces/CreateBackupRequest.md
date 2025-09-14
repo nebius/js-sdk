@@ -6,7 +6,7 @@
 
 # Interface: CreateBackupRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:398
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:399
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:398
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:400
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:401
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:400
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.CreateBackupRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:399
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:400
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:399
 
 > **clusterId**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:405
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:406
 
 ID of the PostgreSQL cluster that holds backup.

@@ -6,7 +6,7 @@
 
 # Interface: Job
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2599
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2644
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2599
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2601
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2646
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2601
 
 > **$type**: `"nebius.msp.spark.v1alpha1.Job"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2600
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2645
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2600
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2602
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2647
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2602
 
 > `optional` **spec**: [`JobSpec`](JobSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2603
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2648
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2603
 
 > `optional` **status**: [`JobStatus`](JobStatus.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2604
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2649

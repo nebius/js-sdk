@@ -6,7 +6,7 @@
 
 # Class: ProjectService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15936
+Defined in: src/generated/nebius/iam/v1/index.ts:15937
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15936
 
 > **new ProjectService**(`sdk`): `ProjectService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15960
+Defined in: src/generated/nebius/iam/v1/index.ts:15961
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15960
 
 > **$type**: `"nebius.iam.v1.ProjectService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15937
+Defined in: src/generated/nebius/iam/v1/index.ts:15938
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15937
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15938
+Defined in: src/generated/nebius/iam/v1/index.ts:15939
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15938
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15939
+Defined in: src/generated/nebius/iam/v1/index.ts:15940
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15939
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15940
+Defined in: src/generated/nebius/iam/v1/index.ts:15941
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15940
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15970
+Defined in: src/generated/nebius/iam/v1/index.ts:15971
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15970
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15971
+Defined in: src/generated/nebius/iam/v1/index.ts:15972
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15971
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15972
+Defined in: src/generated/nebius/iam/v1/index.ts:15973
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15972
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15941
+Defined in: src/generated/nebius/iam/v1/index.ts:15942
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15941
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15942
+Defined in: src/generated/nebius/iam/v1/index.ts:15943
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15942
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15943
+Defined in: src/generated/nebius/iam/v1/index.ts:15944
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15943
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15985
+Defined in: src/generated/nebius/iam/v1/index.ts:15986
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15985
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15986
+Defined in: src/generated/nebius/iam/v1/index.ts:15987
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15986
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectRequest`](../interfaces/GetProjectRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15987
+Defined in: src/generated/nebius/iam/v1/index.ts:15988
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15987
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15944
+Defined in: src/generated/nebius/iam/v1/index.ts:15945
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15944
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15945
+Defined in: src/generated/nebius/iam/v1/index.ts:15946
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15945
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15946
+Defined in: src/generated/nebius/iam/v1/index.ts:15947
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15946
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15997
+Defined in: src/generated/nebius/iam/v1/index.ts:15998
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15997
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15998
+Defined in: src/generated/nebius/iam/v1/index.ts:15999
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15998
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15999
+Defined in: src/generated/nebius/iam/v1/index.ts:16000
 
 ##### Parameters
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15999
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15966
+Defined in: src/generated/nebius/iam/v1/index.ts:15967
 
 #### Returns
 
@@ -430,7 +430,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15966
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15947
+Defined in: src/generated/nebius/iam/v1/index.ts:15948
 
 ##### Parameters
 
@@ -446,7 +446,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15947
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15948
+Defined in: src/generated/nebius/iam/v1/index.ts:15949
 
 ##### Parameters
 
@@ -466,7 +466,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15948
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15949
+Defined in: src/generated/nebius/iam/v1/index.ts:15950
 
 ##### Parameters
 
@@ -490,7 +490,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15949
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16009
+Defined in: src/generated/nebius/iam/v1/index.ts:16010
 
 ##### Parameters
 
@@ -506,7 +506,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16009
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16010
+Defined in: src/generated/nebius/iam/v1/index.ts:16011
 
 ##### Parameters
 
@@ -526,7 +526,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16010
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListProjectsRequest`](../interfaces/ListProjectsRequest.md), [`ListProjectsResponse`](../interfaces/ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16011
+Defined in: src/generated/nebius/iam/v1/index.ts:16012
 
 ##### Parameters
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16011
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15950
+Defined in: src/generated/nebius/iam/v1/index.ts:15951
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15950
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15951
+Defined in: src/generated/nebius/iam/v1/index.ts:15952
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15951
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15952
+Defined in: src/generated/nebius/iam/v1/index.ts:15953
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15952
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16021
+Defined in: src/generated/nebius/iam/v1/index.ts:16022
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16021
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16022
+Defined in: src/generated/nebius/iam/v1/index.ts:16023
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16022
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateProjectRequest`](../interfaces/UpdateProjectRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16023
+Defined in: src/generated/nebius/iam/v1/index.ts:16024
 
 ##### Parameters
 

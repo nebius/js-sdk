@@ -6,7 +6,7 @@
 
 # Interface: ListQuotaAllowancesResponse
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:239
+Defined in: src/generated/nebius/quotas/v1/index.ts:240
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:239
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:241
+Defined in: src/generated/nebius/quotas/v1/index.ts:242
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:241
 
 > **$type**: `"nebius.quotas.v1.ListQuotaAllowancesResponse"`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:240
+Defined in: src/generated/nebius/quotas/v1/index.ts:241
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:240
 
 > **items**: [`QuotaAllowance`](QuotaAllowance.md)[]
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:246
+Defined in: src/generated/nebius/quotas/v1/index.ts:247
 
 List of quotas on this result page.
 
@@ -40,6 +40,6 @@ List of quotas on this result page.
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:251
+Defined in: src/generated/nebius/quotas/v1/index.ts:252
 
 Listing continuation token for the next page of results.

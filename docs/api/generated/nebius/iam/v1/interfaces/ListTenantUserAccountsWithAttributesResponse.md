@@ -6,7 +6,7 @@
 
 # Interface: ListTenantUserAccountsWithAttributesResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20786
+Defined in: src/generated/nebius/iam/v1/index.ts:20787
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20786
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20788
+Defined in: src/generated/nebius/iam/v1/index.ts:20789
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20788
 
 > **$type**: `"nebius.iam.v1.ListTenantUserAccountsWithAttributesResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20787
+Defined in: src/generated/nebius/iam/v1/index.ts:20788
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20787
 
 > **items**: [`TenantUserAccountWithAttributes`](TenantUserAccountWithAttributes.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20793
+Defined in: src/generated/nebius/iam/v1/index.ts:20794
 
 List of user accounts returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of user accounts returned in the response. The field should be named as `it
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20798
+Defined in: src/generated/nebius/iam/v1/index.ts:20799
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

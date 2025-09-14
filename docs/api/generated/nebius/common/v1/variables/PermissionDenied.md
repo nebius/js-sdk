@@ -8,4 +8,4 @@
 
 > **PermissionDenied**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PermissionDenied`](../interfaces/PermissionDenied.md), `"nebius.common.v1.PermissionDenied"`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:1496
+Defined in: src/generated/nebius/common/v1/index.ts:1497

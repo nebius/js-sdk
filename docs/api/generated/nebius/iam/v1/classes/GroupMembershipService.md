@@ -6,7 +6,7 @@
 
 # Class: GroupMembershipService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10822
+Defined in: src/generated/nebius/iam/v1/index.ts:10823
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10822
 
 > **new GroupMembershipService**(`sdk`): `GroupMembershipService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10852
+Defined in: src/generated/nebius/iam/v1/index.ts:10853
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10852
 
 > **$type**: `"nebius.iam.v1.GroupMembershipService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10823
+Defined in: src/generated/nebius/iam/v1/index.ts:10824
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10823
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupMembershipRequest`](../interfaces/CreateGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10824
+Defined in: src/generated/nebius/iam/v1/index.ts:10825
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10824
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupMembershipRequest`](../interfaces/CreateGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10825
+Defined in: src/generated/nebius/iam/v1/index.ts:10826
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10825
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupMembershipRequest`](../interfaces/CreateGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10826
+Defined in: src/generated/nebius/iam/v1/index.ts:10827
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10826
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupMembershipRequest`](../interfaces/CreateGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10862
+Defined in: src/generated/nebius/iam/v1/index.ts:10863
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10862
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupMembershipRequest`](../interfaces/CreateGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10863
+Defined in: src/generated/nebius/iam/v1/index.ts:10864
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10863
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGroupMembershipRequest`](../interfaces/CreateGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10864
+Defined in: src/generated/nebius/iam/v1/index.ts:10865
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10864
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupMembershipRequest`](../interfaces/DeleteGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10833
+Defined in: src/generated/nebius/iam/v1/index.ts:10834
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10833
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupMembershipRequest`](../interfaces/DeleteGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10834
+Defined in: src/generated/nebius/iam/v1/index.ts:10835
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10834
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupMembershipRequest`](../interfaces/DeleteGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10835
+Defined in: src/generated/nebius/iam/v1/index.ts:10836
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10835
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupMembershipRequest`](../interfaces/DeleteGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10901
+Defined in: src/generated/nebius/iam/v1/index.ts:10902
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10901
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupMembershipRequest`](../interfaces/DeleteGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10902
+Defined in: src/generated/nebius/iam/v1/index.ts:10903
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10902
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGroupMembershipRequest`](../interfaces/DeleteGroupMembershipRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10903
+Defined in: src/generated/nebius/iam/v1/index.ts:10904
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10903
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembership`](../interfaces/GroupMembership.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10827
+Defined in: src/generated/nebius/iam/v1/index.ts:10828
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10827
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembership`](../interfaces/GroupMembership.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10828
+Defined in: src/generated/nebius/iam/v1/index.ts:10829
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10828
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembership`](../interfaces/GroupMembership.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10829
+Defined in: src/generated/nebius/iam/v1/index.ts:10830
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10829
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembership`](../interfaces/GroupMembership.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10877
+Defined in: src/generated/nebius/iam/v1/index.ts:10878
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10877
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembership`](../interfaces/GroupMembership.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10878
+Defined in: src/generated/nebius/iam/v1/index.ts:10879
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10878
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembership`](../interfaces/GroupMembership.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10879
+Defined in: src/generated/nebius/iam/v1/index.ts:10880
 
 ##### Parameters
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10879
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10858
+Defined in: src/generated/nebius/iam/v1/index.ts:10859
 
 #### Returns
 
@@ -430,7 +430,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10858
 
 > **getWithAttributes**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembershipWithAttributes`](../interfaces/GroupMembershipWithAttributes.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10830
+Defined in: src/generated/nebius/iam/v1/index.ts:10831
 
 ##### Parameters
 
@@ -446,7 +446,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10830
 
 > **getWithAttributes**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembershipWithAttributes`](../interfaces/GroupMembershipWithAttributes.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10831
+Defined in: src/generated/nebius/iam/v1/index.ts:10832
 
 ##### Parameters
 
@@ -466,7 +466,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10831
 
 > **getWithAttributes**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembershipWithAttributes`](../interfaces/GroupMembershipWithAttributes.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10832
+Defined in: src/generated/nebius/iam/v1/index.ts:10833
 
 ##### Parameters
 
@@ -490,7 +490,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10832
 
 > **getWithAttributes**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembershipWithAttributes`](../interfaces/GroupMembershipWithAttributes.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10889
+Defined in: src/generated/nebius/iam/v1/index.ts:10890
 
 ##### Parameters
 
@@ -506,7 +506,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10889
 
 > **getWithAttributes**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembershipWithAttributes`](../interfaces/GroupMembershipWithAttributes.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10890
+Defined in: src/generated/nebius/iam/v1/index.ts:10891
 
 ##### Parameters
 
@@ -526,7 +526,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10890
 
 > **getWithAttributes**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), [`GroupMembershipWithAttributes`](../interfaces/GroupMembershipWithAttributes.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10891
+Defined in: src/generated/nebius/iam/v1/index.ts:10892
 
 ##### Parameters
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10891
 
 > **listMemberOf**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMemberOfRequest`](../interfaces/ListMemberOfRequest.md), [`ListMemberOfResponse`](../interfaces/ListMemberOfResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10842
+Defined in: src/generated/nebius/iam/v1/index.ts:10843
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10842
 
 > **listMemberOf**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMemberOfRequest`](../interfaces/ListMemberOfRequest.md), [`ListMemberOfResponse`](../interfaces/ListMemberOfResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10843
+Defined in: src/generated/nebius/iam/v1/index.ts:10844
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10843
 
 > **listMemberOf**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMemberOfRequest`](../interfaces/ListMemberOfRequest.md), [`ListMemberOfResponse`](../interfaces/ListMemberOfResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10844
+Defined in: src/generated/nebius/iam/v1/index.ts:10845
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10844
 
 > **listMemberOf**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMemberOfRequest`](../interfaces/ListMemberOfRequest.md), [`ListMemberOfResponse`](../interfaces/ListMemberOfResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10940
+Defined in: src/generated/nebius/iam/v1/index.ts:10941
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10940
 
 > **listMemberOf**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMemberOfRequest`](../interfaces/ListMemberOfRequest.md), [`ListMemberOfResponse`](../interfaces/ListMemberOfResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10941
+Defined in: src/generated/nebius/iam/v1/index.ts:10942
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10941
 
 > **listMemberOf**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMemberOfRequest`](../interfaces/ListMemberOfRequest.md), [`ListMemberOfResponse`](../interfaces/ListMemberOfResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10942
+Defined in: src/generated/nebius/iam/v1/index.ts:10943
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10942
 
 > **listMembers**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsResponse`](../interfaces/ListGroupMembershipsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10836
+Defined in: src/generated/nebius/iam/v1/index.ts:10837
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10836
 
 > **listMembers**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsResponse`](../interfaces/ListGroupMembershipsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10837
+Defined in: src/generated/nebius/iam/v1/index.ts:10838
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10837
 
 > **listMembers**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsResponse`](../interfaces/ListGroupMembershipsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10838
+Defined in: src/generated/nebius/iam/v1/index.ts:10839
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10838
 
 > **listMembers**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsResponse`](../interfaces/ListGroupMembershipsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10916
+Defined in: src/generated/nebius/iam/v1/index.ts:10917
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10916
 
 > **listMembers**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsResponse`](../interfaces/ListGroupMembershipsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10917
+Defined in: src/generated/nebius/iam/v1/index.ts:10918
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10917
 
 > **listMembers**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsResponse`](../interfaces/ListGroupMembershipsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10918
+Defined in: src/generated/nebius/iam/v1/index.ts:10919
 
 ##### Parameters
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10918
 
 > **listMembersWithAttributes**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsWithAttributesResponse`](../interfaces/ListGroupMembershipsWithAttributesResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10839
+Defined in: src/generated/nebius/iam/v1/index.ts:10840
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10839
 
 > **listMembersWithAttributes**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsWithAttributesResponse`](../interfaces/ListGroupMembershipsWithAttributesResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10840
+Defined in: src/generated/nebius/iam/v1/index.ts:10841
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10840
 
 > **listMembersWithAttributes**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsWithAttributesResponse`](../interfaces/ListGroupMembershipsWithAttributesResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10841
+Defined in: src/generated/nebius/iam/v1/index.ts:10842
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10841
 
 > **listMembersWithAttributes**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsWithAttributesResponse`](../interfaces/ListGroupMembershipsWithAttributesResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10928
+Defined in: src/generated/nebius/iam/v1/index.ts:10929
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10928
 
 > **listMembersWithAttributes**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsWithAttributesResponse`](../interfaces/ListGroupMembershipsWithAttributesResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10929
+Defined in: src/generated/nebius/iam/v1/index.ts:10930
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10929
 
 > **listMembersWithAttributes**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGroupMembershipsRequest`](../interfaces/ListGroupMembershipsRequest.md), [`ListGroupMembershipsWithAttributesResponse`](../interfaces/ListGroupMembershipsWithAttributesResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10930
+Defined in: src/generated/nebius/iam/v1/index.ts:10931
 
 ##### Parameters
 

@@ -8,4 +8,4 @@
 
 > **DiskServiceServiceDescription** = _typeof_ [`DiskServiceServiceDescription`](../variables/DiskServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:662
+Defined in: src/generated/nebius/compute/v1/index.ts:663

@@ -8,4 +8,4 @@
 
 > **AuthPublicKey**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AuthPublicKey`](../interfaces/AuthPublicKey.md), `"nebius.iam.v1.AuthPublicKey"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4967
+Defined in: src/generated/nebius/iam/v1/index.ts:4968

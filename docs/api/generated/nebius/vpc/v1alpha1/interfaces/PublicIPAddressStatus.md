@@ -6,7 +6,7 @@
 
 # Interface: PublicIPAddressStatus
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2974
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2975
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2974
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2976
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2977
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2976
 
 > **$type**: `"nebius.vpc.v1alpha1.PublicIPAddressStatus"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2975
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2976
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2975
 
 > **address**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2981
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2982
 
 Effective public IPv4 address assigned to the interface.
 
@@ -40,6 +40,6 @@ Effective public IPv4 address assigned to the interface.
 
 > **allocationId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2986
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2987
 
 Allocation identifier.

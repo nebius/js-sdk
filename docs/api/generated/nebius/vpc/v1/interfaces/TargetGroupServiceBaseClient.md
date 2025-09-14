@@ -6,7 +6,7 @@
 
 # Interface: TargetGroupServiceBaseClient
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8427
+Defined in: src/generated/nebius/vpc/v1/index.ts:8428
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8428
+Defined in: src/generated/nebius/vpc/v1/index.ts:8429
 
 #### Parameters
 
@@ -664,7 +664,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8429
+Defined in: src/generated/nebius/vpc/v1/index.ts:8430
 
 #### Parameters
 

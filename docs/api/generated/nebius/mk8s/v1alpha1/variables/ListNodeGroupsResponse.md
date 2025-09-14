@@ -8,4 +8,4 @@
 
 > **ListNodeGroupsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md), `"nebius.mk8s.v1alpha1.ListNodeGroupsResponse"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3427
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3698

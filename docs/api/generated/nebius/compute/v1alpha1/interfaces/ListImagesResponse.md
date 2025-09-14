@@ -6,7 +6,7 @@
 
 # Interface: ListImagesResponse
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4704
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4705
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4704
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4706
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4707
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4706
 
 > **$type**: `"nebius.compute.v1alpha1.ListImagesResponse"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4705
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4706
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4705
 
 > **items**: [`Image`](Image.md)[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4707
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4708
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4707
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4708
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4709

@@ -6,7 +6,7 @@
 
 # Class: RegistryService
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1549
+Defined in: src/generated/nebius/registry/v1/index.ts:1550
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1549
 
 > **new RegistryService**(`sdk`): `RegistryService`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1573
+Defined in: src/generated/nebius/registry/v1/index.ts:1574
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1573
 
 > **$type**: `"nebius.registry.v1.RegistryService"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1550
+Defined in: src/generated/nebius/registry/v1/index.ts:1551
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1550
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1557
+Defined in: src/generated/nebius/registry/v1/index.ts:1558
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1557
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1558
+Defined in: src/generated/nebius/registry/v1/index.ts:1559
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1558
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1559
+Defined in: src/generated/nebius/registry/v1/index.ts:1560
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1559
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1607
+Defined in: src/generated/nebius/registry/v1/index.ts:1608
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1607
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1608
+Defined in: src/generated/nebius/registry/v1/index.ts:1609
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1608
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1609
+Defined in: src/generated/nebius/registry/v1/index.ts:1610
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1609
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1563
+Defined in: src/generated/nebius/registry/v1/index.ts:1564
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1563
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1564
+Defined in: src/generated/nebius/registry/v1/index.ts:1565
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1564
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1565
+Defined in: src/generated/nebius/registry/v1/index.ts:1566
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1565
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1637
+Defined in: src/generated/nebius/registry/v1/index.ts:1638
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1637
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1638
+Defined in: src/generated/nebius/registry/v1/index.ts:1639
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1638
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1639
+Defined in: src/generated/nebius/registry/v1/index.ts:1640
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1639
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1551
+Defined in: src/generated/nebius/registry/v1/index.ts:1552
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1551
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1552
+Defined in: src/generated/nebius/registry/v1/index.ts:1553
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1552
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1553
+Defined in: src/generated/nebius/registry/v1/index.ts:1554
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1553
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1583
+Defined in: src/generated/nebius/registry/v1/index.ts:1584
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1583
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1584
+Defined in: src/generated/nebius/registry/v1/index.ts:1585
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1584
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1585
+Defined in: src/generated/nebius/registry/v1/index.ts:1586
 
 ##### Parameters
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1585
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1579
+Defined in: src/generated/nebius/registry/v1/index.ts:1580
 
 #### Returns
 
@@ -430,7 +430,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1579
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1554
+Defined in: src/generated/nebius/registry/v1/index.ts:1555
 
 ##### Parameters
 
@@ -446,7 +446,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1554
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1555
+Defined in: src/generated/nebius/registry/v1/index.ts:1556
 
 ##### Parameters
 
@@ -466,7 +466,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1555
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1556
+Defined in: src/generated/nebius/registry/v1/index.ts:1557
 
 ##### Parameters
 
@@ -490,7 +490,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1556
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1595
+Defined in: src/generated/nebius/registry/v1/index.ts:1596
 
 ##### Parameters
 
@@ -506,7 +506,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1595
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1596
+Defined in: src/generated/nebius/registry/v1/index.ts:1597
 
 ##### Parameters
 
@@ -526,7 +526,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1596
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1597
+Defined in: src/generated/nebius/registry/v1/index.ts:1598
 
 ##### Parameters
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1597
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1560
+Defined in: src/generated/nebius/registry/v1/index.ts:1561
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1560
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1561
+Defined in: src/generated/nebius/registry/v1/index.ts:1562
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1561
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1562
+Defined in: src/generated/nebius/registry/v1/index.ts:1563
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1562
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1622
+Defined in: src/generated/nebius/registry/v1/index.ts:1623
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1622
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1623
+Defined in: src/generated/nebius/registry/v1/index.ts:1624
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1623
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateRegistryRequest`](../interfaces/UpdateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1624
+Defined in: src/generated/nebius/registry/v1/index.ts:1625
 
 ##### Parameters
 

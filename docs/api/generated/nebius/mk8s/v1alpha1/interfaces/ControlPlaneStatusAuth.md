@@ -6,7 +6,7 @@
 
 # Interface: ControlPlaneStatusAuth
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2074
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2345
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2074
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2076
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2347
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2076
 
 > **$type**: `"nebius.mk8s.v1alpha1.ControlPlaneStatusAuth"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2075
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2346
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2075
 
 > **clusterCaCertificate**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2077
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2348

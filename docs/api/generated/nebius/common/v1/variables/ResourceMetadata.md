@@ -8,4 +8,4 @@
 
 > **ResourceMetadata**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceMetadata`](../interfaces/ResourceMetadata.md), `"nebius.common.v1.ResourceMetadata"`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2281
+Defined in: src/generated/nebius/common/v1/index.ts:2282

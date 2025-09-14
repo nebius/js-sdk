@@ -6,7 +6,7 @@
 
 # Interface: UpdateInstanceRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6447
+Defined in: src/generated/nebius/compute/v1/index.ts:6448
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6447
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6449
+Defined in: src/generated/nebius/compute/v1/index.ts:6450
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6449
 
 > **$type**: `"nebius.compute.v1.UpdateInstanceRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6448
+Defined in: src/generated/nebius/compute/v1/index.ts:6449
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6448
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6450
+Defined in: src/generated/nebius/compute/v1/index.ts:6451
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6450
 
 > `optional` **spec**: [`InstanceSpec`](InstanceSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6451
+Defined in: src/generated/nebius/compute/v1/index.ts:6452

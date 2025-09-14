@@ -8,7 +8,7 @@
 
 > **ProjectServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ProjectServiceBaseClient`](../interfaces/ProjectServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15922
+Defined in: src/generated/nebius/iam/v1/index.ts:15923
 
 ## Type Declaration
 

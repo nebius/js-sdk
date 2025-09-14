@@ -8,4 +8,4 @@
 
 > **QuotaAllowanceStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`QuotaAllowanceStatus`](../interfaces/QuotaAllowanceStatus.md), `"nebius.quotas.v1.QuotaAllowanceStatus"`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:826
+Defined in: src/generated/nebius/quotas/v1/index.ts:838

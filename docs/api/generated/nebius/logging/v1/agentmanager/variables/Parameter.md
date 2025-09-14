@@ -8,4 +8,4 @@
 
 > **Parameter**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Parameter`](../interfaces/Parameter.md), `"nebius.logging.agentmanager.v1.Parameter"`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1030
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1031

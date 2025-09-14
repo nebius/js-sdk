@@ -8,4 +8,4 @@
 
 > **TooManyRequests**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TooManyRequests`](../interfaces/TooManyRequests.md), `"nebius.common.error.v1alpha1.TooManyRequests"`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1101
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1102

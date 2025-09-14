@@ -8,4 +8,4 @@
 
 > **SubnetServiceServiceDescription** = _typeof_ [`SubnetServiceServiceDescription`](../variables/SubnetServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7029
+Defined in: src/generated/nebius/vpc/v1/index.ts:7030

@@ -8,4 +8,4 @@
 
 > **DeleteArtifactRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), `"nebius.registry.v1.DeleteArtifactRequest"`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:346
+Defined in: src/generated/nebius/registry/v1/index.ts:347

@@ -8,4 +8,4 @@
 
 > **NodeGroupServiceServiceDescription** = _typeof_ [`NodeGroupServiceServiceDescription`](../variables/NodeGroupServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3672
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3943

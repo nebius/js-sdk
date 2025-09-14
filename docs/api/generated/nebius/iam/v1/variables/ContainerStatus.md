@@ -8,4 +8,4 @@
 
 > **ContainerStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ContainerStatus`](../interfaces/ContainerStatus.md), `"nebius.iam.v1.ContainerStatus"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5615
+Defined in: src/generated/nebius/iam/v1/index.ts:5616

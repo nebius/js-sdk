@@ -6,7 +6,7 @@
 
 # Interface: GetByNameRequest
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:351
+Defined in: src/generated/nebius/quotas/v1/index.ts:352
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:351
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:353
+Defined in: src/generated/nebius/quotas/v1/index.ts:354
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:353
 
 > **$type**: `"nebius.quotas.v1.GetByNameRequest"`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:352
+Defined in: src/generated/nebius/quotas/v1/index.ts:353
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:352
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:364
+Defined in: src/generated/nebius/quotas/v1/index.ts:365
 
 Name of the quota.
 Example: "compute.disk.size.network-ssd".
@@ -41,7 +41,7 @@ Example: "compute.disk.size.network-ssd".
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:358
+Defined in: src/generated/nebius/quotas/v1/index.ts:359
 
 ID of the Tenant or Project to list quotas for.
 
@@ -51,7 +51,7 @@ ID of the Tenant or Project to list quotas for.
 
 > **region**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:370
+Defined in: src/generated/nebius/quotas/v1/index.ts:371
 
 Name of the region where the quota is allocated.
 Example: "eu-north1".

@@ -8,7 +8,7 @@
 
 > **StaticKeyServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`StaticKeyServiceBaseClient`](../interfaces/StaticKeyServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18897
+Defined in: src/generated/nebius/iam/v1/index.ts:18898
 
 ## Type Declaration
 

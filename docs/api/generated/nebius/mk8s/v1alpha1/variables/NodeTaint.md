@@ -8,4 +8,4 @@
 
 > **NodeTaint**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeTaint`](../interfaces/NodeTaint.md), `"nebius.mk8s.v1alpha1.NodeTaint"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5734
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6052

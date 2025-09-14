@@ -8,4 +8,4 @@
 
 > **GetClusterByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), `"nebius.mk8s.v1alpha1.GetClusterByNameRequest"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:232
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:233

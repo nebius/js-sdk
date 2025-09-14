@@ -8,4 +8,4 @@
 
 > **DiskEncryption_DiskEncryptionType**: [`DiskEncryption_DiskEncryptionTypeClass`](../type-aliases/DiskEncryption_DiskEncryptionTypeClass.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1010
+Defined in: src/generated/nebius/compute/v1/index.ts:1011

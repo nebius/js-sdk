@@ -6,7 +6,7 @@
 
 # Interface: FederationServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9179
+Defined in: src/generated/nebius/iam/v1/index.ts:9180
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9179
 
 > **create**: `handleUnaryCall`\<[`CreateFederationRequest`](CreateFederationRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9180
+Defined in: src/generated/nebius/iam/v1/index.ts:9181
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9180
 
 > **delete**: `handleUnaryCall`\<[`DeleteFederationRequest`](DeleteFederationRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9185
+Defined in: src/generated/nebius/iam/v1/index.ts:9186
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9185
 
 > **get**: `handleUnaryCall`\<[`GetFederationRequest`](GetFederationRequest.md), [`Federation`](Federation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9181
+Defined in: src/generated/nebius/iam/v1/index.ts:9182
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9181
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Federation`](Federation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9182
+Defined in: src/generated/nebius/iam/v1/index.ts:9183
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9182
 
 > **list**: `handleUnaryCall`\<[`ListFederationsRequest`](ListFederationsRequest.md), [`ListFederationsResponse`](ListFederationsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9183
+Defined in: src/generated/nebius/iam/v1/index.ts:9184
 
 ---
 
@@ -62,4 +62,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9183
 
 > **update**: `handleUnaryCall`\<[`UpdateFederationRequest`](UpdateFederationRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9184
+Defined in: src/generated/nebius/iam/v1/index.ts:9185

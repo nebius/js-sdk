@@ -8,4 +8,4 @@
 
 > **NetworkPool**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkPool`](../interfaces/NetworkPool.md), `"nebius.vpc.v1alpha1.NetworkPool"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3941
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3942

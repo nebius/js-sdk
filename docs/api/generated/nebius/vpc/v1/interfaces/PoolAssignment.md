@@ -6,7 +6,7 @@
 
 # Interface: PoolAssignment
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6071
+Defined in: src/generated/nebius/vpc/v1/index.ts:6072
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6071
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6073
+Defined in: src/generated/nebius/vpc/v1/index.ts:6074
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6073
 
 > **$type**: `"nebius.vpc.v1.PoolAssignment"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6072
+Defined in: src/generated/nebius/vpc/v1/index.ts:6073
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6072
 
 > **networks**: `string`[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6078
+Defined in: src/generated/nebius/vpc/v1/index.ts:6079
 
 IDs of Networks to which the Pool is assigned.
 
@@ -40,6 +40,6 @@ IDs of Networks to which the Pool is assigned.
 
 > **subnets**: `string`[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6083
+Defined in: src/generated/nebius/vpc/v1/index.ts:6084
 
 IDs of Subnets to which the Pool is assigned.

@@ -6,7 +6,7 @@
 
 # Interface: SubnetServiceServer
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7096
+Defined in: src/generated/nebius/vpc/v1/index.ts:7097
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7096
 
 > **create**: `handleUnaryCall`\<[`CreateSubnetRequest`](CreateSubnetRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7101
+Defined in: src/generated/nebius/vpc/v1/index.ts:7102
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7101
 
 > **delete**: `handleUnaryCall`\<[`DeleteSubnetRequest`](DeleteSubnetRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7103
+Defined in: src/generated/nebius/vpc/v1/index.ts:7104
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7103
 
 > **get**: `handleUnaryCall`\<[`GetSubnetRequest`](GetSubnetRequest.md), [`Subnet`](Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7097
+Defined in: src/generated/nebius/vpc/v1/index.ts:7098
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7097
 
 > **getByName**: `handleUnaryCall`\<[`GetSubnetByNameRequest`](GetSubnetByNameRequest.md), [`Subnet`](Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7098
+Defined in: src/generated/nebius/vpc/v1/index.ts:7099
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7098
 
 > **list**: `handleUnaryCall`\<[`ListSubnetsRequest`](ListSubnetsRequest.md), [`ListSubnetsResponse`](ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7099
+Defined in: src/generated/nebius/vpc/v1/index.ts:7100
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7099
 
 > **listByNetwork**: `handleUnaryCall`\<[`ListSubnetsByNetworkRequest`](ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7100
+Defined in: src/generated/nebius/vpc/v1/index.ts:7101
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7100
 
 > **update**: `handleUnaryCall`\<[`UpdateSubnetRequest`](UpdateSubnetRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7102
+Defined in: src/generated/nebius/vpc/v1/index.ts:7103

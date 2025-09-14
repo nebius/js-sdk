@@ -8,7 +8,7 @@
 
 > **NodeGroupServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3860
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4131
 
 ## Type Declaration
 

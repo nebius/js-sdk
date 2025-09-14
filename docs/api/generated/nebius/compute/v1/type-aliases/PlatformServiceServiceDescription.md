@@ -8,4 +8,4 @@
 
 > **PlatformServiceServiceDescription** = _typeof_ [`PlatformServiceServiceDescription`](../variables/PlatformServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11394
+Defined in: src/generated/nebius/compute/v1/index.ts:11395

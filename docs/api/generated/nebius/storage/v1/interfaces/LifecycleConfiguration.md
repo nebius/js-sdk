@@ -6,7 +6,7 @@
 
 # Interface: LifecycleConfiguration
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2489
+Defined in: src/generated/nebius/storage/v1/index.ts:2490
 
 The lifecycle configuration consists of one or more rules.
 An Lifecycle configuration can have up to 1,000 rules.
@@ -27,7 +27,7 @@ Each rule consists of the following:
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2491
+Defined in: src/generated/nebius/storage/v1/index.ts:2492
 
 ---
 
@@ -35,7 +35,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2491
 
 > **$type**: `"nebius.storage.v1.LifecycleConfiguration"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2490
+Defined in: src/generated/nebius/storage/v1/index.ts:2491
 
 ---
 
@@ -43,4 +43,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2490
 
 > **rules**: [`LifecycleRule`](LifecycleRule.md)[]
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2492
+Defined in: src/generated/nebius/storage/v1/index.ts:2493

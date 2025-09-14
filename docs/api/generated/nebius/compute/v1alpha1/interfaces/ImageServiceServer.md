@@ -6,7 +6,7 @@
 
 # ~~Interface: ImageServiceServer~~
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4866
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4867
 
 ## Deprecated
 
@@ -26,7 +26,7 @@ Deprecated.
 
 > **get**: `handleUnaryCall`\<[`GetImageRequest`](GetImageRequest.md), [`Image`](Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4867
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4868
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4867
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4868
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4869
 
 ---
 
@@ -42,7 +42,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4868
 
 > **getLatestByFamily**: `handleUnaryCall`\<[`GetImageLatestByFamilyRequest`](GetImageLatestByFamilyRequest.md), [`Image`](Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4869
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4870
 
 ---
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4869
 
 > **list**: `handleUnaryCall`\<[`ListImagesRequest`](ListImagesRequest.md), [`ListImagesResponse`](ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4870
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4871
 
 ---
 
@@ -58,4 +58,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4870
 
 > **listOperationsByParent**: `handleUnaryCall`\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4871
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4872

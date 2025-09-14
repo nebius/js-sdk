@@ -6,11 +6,11 @@
 
 # ~~Interface: AccessKeyServiceBaseClient~~
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1540
+Defined in: src/generated/nebius/iam/v1/index.ts:1541
 
 ## Deprecated
 
-Deprecated, will be removed on 2025-09-01: Access keys API v1 is deprecated, use the v2 version instead. Keys produced by API v1 are available using v2..
+Deprecated, will be removed on 2026-09-01: Access keys API v1 is deprecated, use the v2 version instead. Keys produced by API v1 are available using v2..
 
 ## Extends
 
@@ -22,7 +22,7 @@ Deprecated, will be removed on 2025-09-01: Access keys API v1 is deprecated, use
 
 > **activate**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1548
+Defined in: src/generated/nebius/iam/v1/index.ts:1549
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1541
+Defined in: src/generated/nebius/iam/v1/index.ts:1542
 
 #### Parameters
 
@@ -98,7 +98,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1541
 
 > **deactivate**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1549
+Defined in: src/generated/nebius/iam/v1/index.ts:1550
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1549
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1550
+Defined in: src/generated/nebius/iam/v1/index.ts:1551
 
 #### Parameters
 
@@ -158,7 +158,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1550
 
 > **getByAwsId**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1546
+Defined in: src/generated/nebius/iam/v1/index.ts:1547
 
 #### Parameters
 
@@ -188,7 +188,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1546
 
 > **getById**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1545
+Defined in: src/generated/nebius/iam/v1/index.ts:1546
 
 #### Parameters
 
@@ -234,7 +234,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **getSecretOnce**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1547
+Defined in: src/generated/nebius/iam/v1/index.ts:1548
 
 #### Parameters
 
@@ -264,7 +264,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1547
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1542
+Defined in: src/generated/nebius/iam/v1/index.ts:1543
 
 #### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1542
 
 > **listByAccount**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1543
+Defined in: src/generated/nebius/iam/v1/index.ts:1544
 
 #### Parameters
 
@@ -908,7 +908,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1544
+Defined in: src/generated/nebius/iam/v1/index.ts:1545
 
 #### Parameters
 

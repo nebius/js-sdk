@@ -8,4 +8,4 @@
 
 > **TenantUserAccountSpec_VisibleAttributes**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TenantUserAccountSpec_VisibleAttributes`](../interfaces/TenantUserAccountSpec_VisibleAttributes.md), `"nebius.iam.v1.TenantUserAccountSpec.VisibleAttributes"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21845
+Defined in: src/generated/nebius/iam/v1/index.ts:21846

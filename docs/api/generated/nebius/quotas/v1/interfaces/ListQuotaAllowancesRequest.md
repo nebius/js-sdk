@@ -6,7 +6,7 @@
 
 # Interface: ListQuotaAllowancesRequest
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:14
+Defined in: src/generated/nebius/quotas/v1/index.ts:15
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:14
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:16
+Defined in: src/generated/nebius/quotas/v1/index.ts:17
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:16
 
 > **$type**: `"nebius.quotas.v1.ListQuotaAllowancesRequest"`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:15
+Defined in: src/generated/nebius/quotas/v1/index.ts:16
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:15
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:27
+Defined in: src/generated/nebius/quotas/v1/index.ts:28
 
 Page size. Must be between [1...1000].
 Optional; if not specified, a reasonable default will be chosen by the service.
@@ -41,7 +41,7 @@ Optional; if not specified, a reasonable default will be chosen by the service.
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:32
+Defined in: src/generated/nebius/quotas/v1/index.ts:33
 
 Listing continuation token. Pass an empty string to start listing from the first page.
 
@@ -51,6 +51,6 @@ Listing continuation token. Pass an empty string to start listing from the first
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:21
+Defined in: src/generated/nebius/quotas/v1/index.ts:22
 
 ID of the Tenant or Project to list quotas for.

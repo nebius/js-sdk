@@ -6,7 +6,7 @@
 
 # Interface: DeleteClusterRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1798
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1799
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1798
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1800
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1801
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1800
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.DeleteClusterRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1799
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1800
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1799
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1806
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1807
 
 ID of the PostgreSQL cluster to delete.
 To get the PostgreSQL cluster ID, use a [ClusterService.List] request.

@@ -8,4 +8,4 @@
 
 > **GetOperationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), `"nebius.common.v1alpha1.GetOperationRequest"`\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:18
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:19

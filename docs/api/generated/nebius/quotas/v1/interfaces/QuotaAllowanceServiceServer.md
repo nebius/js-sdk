@@ -6,7 +6,7 @@
 
 # Interface: QuotaAllowanceServiceServer
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:519
+Defined in: src/generated/nebius/quotas/v1/index.ts:520
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:519
 
 > **get**: `handleUnaryCall`\<[`GetQuotaAllowanceRequest`](GetQuotaAllowanceRequest.md), [`QuotaAllowance`](QuotaAllowance.md)\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:521
+Defined in: src/generated/nebius/quotas/v1/index.ts:522
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:521
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](GetByNameRequest.md), [`QuotaAllowance`](QuotaAllowance.md)\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:522
+Defined in: src/generated/nebius/quotas/v1/index.ts:523
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:522
 
 > **list**: `handleUnaryCall`\<[`ListQuotaAllowancesRequest`](ListQuotaAllowancesRequest.md), [`ListQuotaAllowancesResponse`](ListQuotaAllowancesResponse.md)\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:520
+Defined in: src/generated/nebius/quotas/v1/index.ts:521

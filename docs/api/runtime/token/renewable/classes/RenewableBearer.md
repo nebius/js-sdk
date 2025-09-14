@@ -6,11 +6,15 @@
 
 # Class: RenewableBearer
 
-Defined in: [src/runtime/token/renewable.ts:47](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/renewable.ts#L47)
+Defined in: [src/runtime/token/renewable.ts:64](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L64)
 
 ## Extends
 
 - [`Bearer`](../../classes/Bearer.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/token/renewable.ts:47](https://github.com/nebius/nodejs
 
 > **new RenewableBearer**(`source`, `opts?`): `RenewableBearer`
 
-Defined in: [src/runtime/token/renewable.ts:76](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/renewable.ts#L76)
+Defined in: [src/runtime/token/renewable.ts:94](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L94)
 
 #### Parameters
 
@@ -39,6 +43,10 @@ Defined in: [src/runtime/token/renewable.ts:76](https://github.com/nebius/nodejs
 ###### lifetimeSafeFraction?
 
 `number`
+
+###### logger?
+
+[`Logger`](../../../util/logging/classes/Logger.md)
 
 ###### maxRetries?
 
@@ -68,6 +76,18 @@ Defined in: [src/runtime/token/renewable.ts:76](https://github.com/nebius/nodejs
 
 [`Bearer`](../../classes/Bearer.md).[`constructor`](../../classes/Bearer.md#constructor)
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.RenewableBearer"` = `'nebius.sdk.RenewableBearer'`
+
+Defined in: [src/runtime/token/renewable.ts:65](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L65)
+
+#### Overrides
+
+[`Bearer`](../../classes/Bearer.md).[`$type`](../../classes/Bearer.md#type)
+
 ## Accessors
 
 ### name
@@ -76,7 +96,7 @@ Defined in: [src/runtime/token/renewable.ts:76](https://github.com/nebius/nodejs
 
 > **get** **name**(): `undefined` \| `string`
 
-Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L101)
+Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L113)
 
 ##### Returns
 
@@ -94,7 +114,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../classes/Bearer.md)
 
-Defined in: [src/runtime/token/renewable.ts:101](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/renewable.ts#L101)
+Defined in: [src/runtime/token/renewable.ts:133](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L133)
 
 ##### Returns
 
@@ -106,11 +126,23 @@ Defined in: [src/runtime/token/renewable.ts:101](https://github.com/nebius/nodej
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `unknown`
+
+Defined in: [src/runtime/token/renewable.ts:122](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L122)
+
+#### Returns
+
+`unknown`
+
+---
+
 ### close()
 
 > **close**(`graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token/renewable.ts:396](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/renewable.ts#L396)
+Defined in: [src/runtime/token/renewable.ts:434](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L434)
 
 #### Parameters
 
@@ -132,7 +164,7 @@ Defined in: [src/runtime/token/renewable.ts:396](https://github.com/nebius/nodej
 
 > **fetch**(`timeoutMs?`, `options?`): `Promise`\<[`Token`](../../classes/Token.md)\>
 
-Defined in: [src/runtime/token/renewable.ts:249](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/renewable.ts#L249)
+Defined in: [src/runtime/token/renewable.ts:281](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L281)
 
 #### Parameters
 
@@ -154,7 +186,7 @@ Defined in: [src/runtime/token/renewable.ts:249](https://github.com/nebius/nodej
 
 > **isRenewalRequired**(): `boolean`
 
-Defined in: [src/runtime/token/renewable.ts:345](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/renewable.ts#L345)
+Defined in: [src/runtime/token/renewable.ts:382](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L382)
 
 #### Returns
 
@@ -166,7 +198,7 @@ Defined in: [src/runtime/token/renewable.ts:345](https://github.com/nebius/nodej
 
 > **receiver**(): [`Receiver`](../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/renewable.ts:105](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/renewable.ts#L105)
+Defined in: [src/runtime/token/renewable.ts:137](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L137)
 
 #### Returns
 
@@ -182,7 +214,7 @@ Defined in: [src/runtime/token/renewable.ts:105](https://github.com/nebius/nodej
 
 > **requestRenewal**(): `void`
 
-Defined in: [src/runtime/token/renewable.ts:351](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/renewable.ts#L351)
+Defined in: [src/runtime/token/renewable.ts:388](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/renewable.ts#L388)
 
 #### Returns
 

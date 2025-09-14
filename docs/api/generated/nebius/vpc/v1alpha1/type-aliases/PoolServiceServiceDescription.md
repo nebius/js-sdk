@@ -8,4 +8,4 @@
 
 > **PoolServiceServiceDescription** = _typeof_ [`PoolServiceServiceDescription`](../variables/PoolServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4575
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4576

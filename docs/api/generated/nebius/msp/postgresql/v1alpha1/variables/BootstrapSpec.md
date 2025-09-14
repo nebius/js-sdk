@@ -8,4 +8,4 @@
 
 > **BootstrapSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`BootstrapSpec`](../interfaces/BootstrapSpec.md), `"nebius.msp.postgresql.v1alpha1.BootstrapSpec"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3559
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3560

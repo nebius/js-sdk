@@ -8,4 +8,4 @@
 
 > **EndpointContainerSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`EndpointContainerSpec`](../interfaces/EndpointContainerSpec.md), `"nebius.msp.serverless.v1alpha1.EndpointContainerSpec"`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:869
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:870

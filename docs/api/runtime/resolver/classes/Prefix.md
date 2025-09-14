@@ -6,11 +6,15 @@
 
 # Class: Prefix
 
-Defined in: [src/runtime/resolver.ts:71](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L71)
+Defined in: [src/runtime/resolver.ts:104](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L104)
 
 ## Implements
 
 - [`Resolver`](../interfaces/Resolver.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/resolver.ts:71](https://github.com/nebius/nodejs-sdk/bl
 
 > **new Prefix**(`prefix`, `address`): `Prefix`
 
-Defined in: [src/runtime/resolver.ts:74](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L74)
+Defined in: [src/runtime/resolver.ts:107](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L107)
 
 #### Parameters
 
@@ -36,11 +40,23 @@ Defined in: [src/runtime/resolver.ts:74](https://github.com/nebius/nodejs-sdk/bl
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `object`
+
+Defined in: [src/runtime/resolver.ts:114](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L114)
+
+#### Returns
+
+`object`
+
+---
+
 ### resolve()
 
 > **resolve**(`serviceId`, `_apiServiceName?`): `string`
 
-Defined in: [src/runtime/resolver.ts:78](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L78)
+Defined in: [src/runtime/resolver.ts:121](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L121)
 
 Receive address of the service by its ID
 

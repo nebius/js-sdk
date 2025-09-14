@@ -8,4 +8,4 @@
 
 > **GroupStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"ACTIVE"`\> & `GroupStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12639
+Defined in: src/generated/nebius/iam/v1/index.ts:12640

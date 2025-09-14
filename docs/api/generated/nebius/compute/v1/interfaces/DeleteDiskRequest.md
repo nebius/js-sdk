@@ -6,7 +6,7 @@
 
 # Interface: DeleteDiskRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:473
+Defined in: src/generated/nebius/compute/v1/index.ts:474
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:473
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:475
+Defined in: src/generated/nebius/compute/v1/index.ts:476
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:475
 
 > **$type**: `"nebius.compute.v1.DeleteDiskRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:474
+Defined in: src/generated/nebius/compute/v1/index.ts:475
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:474
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:476
+Defined in: src/generated/nebius/compute/v1/index.ts:477

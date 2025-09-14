@@ -6,7 +6,7 @@
 
 # Interface: EndpointStatus
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1456
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1457
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1456
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1458
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1459
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1458
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.EndpointStatus"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1457
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1458
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1457
 
 > **phase**: [`ClusterStatus_Phase`](../../../v1alpha1/type-aliases/ClusterStatus_Phase.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1463
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1464
 
 Current phase (or stage) of the workload.
 
@@ -40,7 +40,7 @@ Current phase (or stage) of the workload.
 
 > **publicEndpoint**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1473
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1474
 
 Public endpoint for accessing the workload.
 
@@ -50,6 +50,6 @@ Public endpoint for accessing the workload.
 
 > **state**: [`ClusterStatus_State`](../../../v1alpha1/type-aliases/ClusterStatus_State.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1468
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1469
 
 State reflects substatus of the phase

@@ -8,4 +8,4 @@
 
 > **Artifact_TypeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"BLOB"` \| `"MANIFEST"` \| `"DEB_PACKAGE"` \| `"MANIFEST_LIST"` \| `"RELEASE_INDEX"` \| `"PACKAGE_INDEX"` \| `"GZIPPED_PACKAGE_INDEX"`\> & `Artifact_TypeValueMembers`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:579
+Defined in: src/generated/nebius/registry/v1/index.ts:580

@@ -8,4 +8,4 @@
 
 > **Artifact_StatusClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATUS_UNSPECIFIED"` \| `"ACTIVE"` \| `"DELETING"`\> & `Artifact_StatusValueMembers`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:558
+Defined in: src/generated/nebius/registry/v1/index.ts:559

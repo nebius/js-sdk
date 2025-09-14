@@ -6,7 +6,7 @@
 
 # Interface: FindStaticKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18553
+Defined in: src/generated/nebius/iam/v1/index.ts:18554
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18553
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18555
+Defined in: src/generated/nebius/iam/v1/index.ts:18556
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18555
 
 > **$type**: `"nebius.iam.v1.FindStaticKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18554
+Defined in: src/generated/nebius/iam/v1/index.ts:18555
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18554
 
 > **token**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18560
+Defined in: src/generated/nebius/iam/v1/index.ts:18561
 
 the method accepts a static key token with and without signature as an input

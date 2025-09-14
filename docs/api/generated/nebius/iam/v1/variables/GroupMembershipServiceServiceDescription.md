@@ -8,7 +8,7 @@
 
 > **GroupMembershipServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10729
+Defined in: src/generated/nebius/iam/v1/index.ts:10730
 
 ## Type Declaration
 

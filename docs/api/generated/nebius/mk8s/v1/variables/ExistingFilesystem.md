@@ -8,4 +8,4 @@
 
 > **ExistingFilesystem**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ExistingFilesystem`](../interfaces/ExistingFilesystem.md), `"nebius.mk8s.v1.ExistingFilesystem"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5334
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5652

@@ -6,7 +6,11 @@
 
 # Class: Token
 
-Defined in: [src/runtime/token.ts:7](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L7)
+Defined in: [src/runtime/token.ts:8](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L8)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
 
 ## Constructors
 
@@ -14,7 +18,7 @@ Defined in: [src/runtime/token.ts:7](https://github.com/nebius/nodejs-sdk/blob/2
 
 > **new Token**(`token`, `expiration?`): `Token`
 
-Defined in: [src/runtime/token.ts:11](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L11)
+Defined in: [src/runtime/token.ts:13](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L13)
 
 #### Parameters
 
@@ -30,6 +34,14 @@ Defined in: [src/runtime/token.ts:11](https://github.com/nebius/nodejs-sdk/blob/
 
 `Token`
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.iam.AccessToken"` = `'nebius.iam.AccessToken'`
+
+Defined in: [src/runtime/token.ts:9](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L9)
+
 ## Accessors
 
 ### expiration
@@ -38,7 +50,7 @@ Defined in: [src/runtime/token.ts:11](https://github.com/nebius/nodejs-sdk/blob/
 
 > **get** **expiration**(): `undefined` \| `Date`
 
-Defined in: [src/runtime/token.ts:40](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L40)
+Defined in: [src/runtime/token.ts:50](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L50)
 
 ##### Returns
 
@@ -52,7 +64,7 @@ Defined in: [src/runtime/token.ts:40](https://github.com/nebius/nodejs-sdk/blob/
 
 > **get** **token**(): `string`
 
-Defined in: [src/runtime/token.ts:36](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L36)
+Defined in: [src/runtime/token.ts:46](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L46)
 
 ##### Returns
 
@@ -60,15 +72,15 @@ Defined in: [src/runtime/token.ts:36](https://github.com/nebius/nodejs-sdk/blob/
 
 ## Methods
 
-### \[custom\]()
+### \[customJson\]()
 
-> **\[custom\]**(): `string`
+> **\[customJson\]**(): `object`
 
-Defined in: [src/runtime/token.ts:16](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L16)
+Defined in: [src/runtime/token.ts:22](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L22)
 
 #### Returns
 
-`string`
+`object`
 
 ---
 
@@ -76,7 +88,7 @@ Defined in: [src/runtime/token.ts:16](https://github.com/nebius/nodejs-sdk/blob/
 
 > **equals**(`other`): `boolean`
 
-Defined in: [src/runtime/token.ts:67](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L67)
+Defined in: [src/runtime/token.ts:77](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L77)
 
 #### Parameters
 
@@ -94,7 +106,7 @@ Defined in: [src/runtime/token.ts:67](https://github.com/nebius/nodejs-sdk/blob/
 
 > **isEmpty**(): `boolean`
 
-Defined in: [src/runtime/token.ts:44](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L44)
+Defined in: [src/runtime/token.ts:54](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L54)
 
 #### Returns
 
@@ -106,7 +118,7 @@ Defined in: [src/runtime/token.ts:44](https://github.com/nebius/nodejs-sdk/blob/
 
 > **isExpired**(): `boolean`
 
-Defined in: [src/runtime/token.ts:48](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L48)
+Defined in: [src/runtime/token.ts:58](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L58)
 
 #### Returns
 
@@ -118,7 +130,7 @@ Defined in: [src/runtime/token.ts:48](https://github.com/nebius/nodejs-sdk/blob/
 
 > **toJSON**(): `object`
 
-Defined in: [src/runtime/token.ts:53](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L53)
+Defined in: [src/runtime/token.ts:63](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L63)
 
 #### Returns
 
@@ -138,7 +150,7 @@ Defined in: [src/runtime/token.ts:53](https://github.com/nebius/nodejs-sdk/blob/
 
 > **toString**(): `string`
 
-Defined in: [src/runtime/token.ts:20](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L20)
+Defined in: [src/runtime/token.ts:30](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L30)
 
 #### Returns
 
@@ -150,7 +162,7 @@ Defined in: [src/runtime/token.ts:20](https://github.com/nebius/nodejs-sdk/blob/
 
 > `static` **empty**(): `Token`
 
-Defined in: [src/runtime/token.ts:32](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L32)
+Defined in: [src/runtime/token.ts:42](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L42)
 
 #### Returns
 
@@ -162,7 +174,7 @@ Defined in: [src/runtime/token.ts:32](https://github.com/nebius/nodejs-sdk/blob/
 
 > `static` **fromJSON**(`data`): `Token`
 
-Defined in: [src/runtime/token.ts:60](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L60)
+Defined in: [src/runtime/token.ts:70](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L70)
 
 #### Parameters
 

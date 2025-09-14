@@ -6,7 +6,7 @@
 
 # Interface: StopClusterRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2008
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2009
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2008
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2010
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2011
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2010
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.StopClusterRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2009
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2010
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2009
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2016
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2017
 
 ID of the PostgreSQL Cluster resource to pause.
 To get the cluster ID use a [ClusterService.List] request.

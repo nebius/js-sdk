@@ -6,7 +6,7 @@
 
 # Interface: ClusterStatus
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:64
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:65
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:64
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:66
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:67
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:66
 
 > **$type**: `"nebius.msp.v1alpha1.ClusterStatus"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:65
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:66
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:65
 
 > **phase**: [`ClusterStatus_Phase`](../type-aliases/ClusterStatus_Phase.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:71
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:72
 
 Current phase of the cluster.
 
@@ -40,7 +40,7 @@ Current phase of the cluster.
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:77
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:78
 
 ---
 
@@ -48,6 +48,6 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:77
 
 > **state**: [`ClusterStatus_State`](../type-aliases/ClusterStatus_State.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:76
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:77
 
 State reflects substatus of the phase to define whether it's healthy or not.

@@ -6,7 +6,7 @@
 
 # Interface: K8sReleaseSpec
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1010
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1011
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1010
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1012
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1013
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1012
 
 > **$type**: `"nebius.applications.v1alpha1.K8sReleaseSpec"`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1011
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1012
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1011
 
 > **applicationName**: `string`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1016
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1017
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1016
 
 > **clusterId**: `string`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1013
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1014
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1013
 
 > **namespace**: `string`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1015
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1016
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1015
 
 > **productSlug**: `string`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1014
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1015
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1014
 
 > **set**: `object`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1018
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1019
 
 #### Index Signature
 
@@ -74,4 +74,4 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1018
 
 > **values**: `string`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1017
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1018

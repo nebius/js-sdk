@@ -8,4 +8,4 @@
 
 > **UserAccountStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UserAccountStatus`](../interfaces/UserAccountStatus.md), `"nebius.iam.v1.UserAccountStatus"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22745
+Defined in: src/generated/nebius/iam/v1/index.ts:22746

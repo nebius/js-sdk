@@ -8,4 +8,4 @@
 
 > **InstanceRecoveryPolicy**: [`InstanceRecoveryPolicyClass`](../type-aliases/InstanceRecoveryPolicyClass.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7243
+Defined in: src/generated/nebius/compute/v1/index.ts:7244

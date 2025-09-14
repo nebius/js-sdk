@@ -8,4 +8,4 @@
 
 > **ListTenantsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListTenantsResponse`](../interfaces/ListTenantsResponse.md), `"nebius.iam.v1.ListTenantsResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19672
+Defined in: src/generated/nebius/iam/v1/index.ts:19673

@@ -6,7 +6,7 @@
 
 # Interface: ResourceMetadata
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1726
+Defined in: src/generated/nebius/audit/v2/index.ts:1727
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1726
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1728
+Defined in: src/generated/nebius/audit/v2/index.ts:1729
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1728
 
 > **$type**: `"nebius.audit.v2.ResourceMetadata"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1727
+Defined in: src/generated/nebius/audit/v2/index.ts:1728
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1727
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1733
+Defined in: src/generated/nebius/audit/v2/index.ts:1734
 
 Unique identifier of the resource.
 
@@ -40,7 +40,7 @@ Unique identifier of the resource.
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1738
+Defined in: src/generated/nebius/audit/v2/index.ts:1739
 
 Name of the resource.
 
@@ -50,6 +50,6 @@ Name of the resource.
 
 > **type**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1743
+Defined in: src/generated/nebius/audit/v2/index.ts:1744
 
 Type of the resource.

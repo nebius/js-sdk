@@ -6,7 +6,7 @@
 
 # Interface: ControlPlaneEndpointsSpec
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1337
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1608
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1337
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1339
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1610
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1339
 
 > **$type**: `"nebius.mk8s.v1.ControlPlaneEndpointsSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1338
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1609
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1338
 
 > `optional` **publicEndpoint**: [`PublicEndpointSpec`](PublicEndpointSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1345
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1616
 
 Specification of public endpoint for control plane.
 Set value to empty, to enable it.

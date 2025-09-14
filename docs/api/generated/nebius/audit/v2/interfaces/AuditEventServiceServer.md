@@ -6,7 +6,7 @@
 
 # Interface: AuditEventServiceServer
 
-Defined in: src/generated/nebius/audit/v2/index.ts:440
+Defined in: src/generated/nebius/audit/v2/index.ts:441
 
 ## Extends
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/audit/v2/index.ts:440
 
 > **list**: `handleUnaryCall`\<[`ListAuditEventRequest`](ListAuditEventRequest.md), [`ListAuditEventResponse`](ListAuditEventResponse.md)\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:441
+Defined in: src/generated/nebius/audit/v2/index.ts:442

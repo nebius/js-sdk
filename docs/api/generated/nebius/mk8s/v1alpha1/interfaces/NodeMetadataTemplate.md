@@ -6,7 +6,7 @@
 
 # Interface: NodeMetadataTemplate
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4825
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5138
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4825
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4827
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5140
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4827
 
 > **$type**: `"nebius.mk8s.v1alpha1.NodeMetadataTemplate"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4826
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5139
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4826
 
 > **labels**: `object`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4834
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5147
 
 Labels will be propagated into nodes metadata.
 System labels containing "kubernetes.io" and "k8s.io" will not be propagated.

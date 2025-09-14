@@ -8,7 +8,7 @@
 
 > **NetworkServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3267
+Defined in: src/generated/nebius/vpc/v1/index.ts:3268
 
 ## Type Declaration
 

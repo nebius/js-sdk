@@ -6,7 +6,7 @@
 
 # Class: ClusterService
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:876
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:892
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:876
 
 > **new ClusterService**(`sdk`): `ClusterService`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:927
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:946
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:927
 
 > **$type**: `"nebius.msp.spark.v1alpha1.ClusterService"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:877
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:893
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:877
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:903
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:919
 
 Creates a cluster.
 
@@ -64,7 +64,7 @@ Creates a cluster.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:904
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:920
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:904
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:905
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:921
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:905
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:973
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:996
 
 Creates a cluster.
 
@@ -126,7 +126,7 @@ Creates a cluster.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:974
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:997
 
 Creates a cluster.
 
@@ -148,7 +148,7 @@ Creates a cluster.
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:975
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:998
 
 Creates a cluster.
 
@@ -178,7 +178,7 @@ Creates a cluster.
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:917
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:933
 
 Delete a cluster.
 
@@ -196,7 +196,7 @@ Delete a cluster.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:918
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:934
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:918
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:919
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:935
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:919
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1003
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1026
 
 Delete a cluster.
 
@@ -258,7 +258,7 @@ Delete a cluster.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1004
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1027
 
 Delete a cluster.
 
@@ -280,7 +280,7 @@ Delete a cluster.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1005
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1028
 
 Delete a cluster.
 
@@ -310,7 +310,7 @@ Delete a cluster.
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:882
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:898
 
 Returns the specified cluster.
 
@@ -328,7 +328,7 @@ Returns the specified cluster.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:883
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:899
 
 ##### Parameters
 
@@ -348,7 +348,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:883
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:884
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:900
 
 ##### Parameters
 
@@ -372,7 +372,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:884
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:937
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:960
 
 Returns the specified cluster.
 
@@ -390,7 +390,7 @@ Returns the specified cluster.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:938
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:961
 
 Returns the specified cluster.
 
@@ -412,7 +412,7 @@ Returns the specified cluster.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:939
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:962
 
 Returns the specified cluster.
 
@@ -442,7 +442,7 @@ Returns the specified cluster.
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:889
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:905
 
 Returns the specified cluster by name.
 
@@ -460,7 +460,7 @@ Returns the specified cluster by name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:890
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:906
 
 ##### Parameters
 
@@ -480,7 +480,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:890
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:891
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:907
 
 ##### Parameters
 
@@ -504,7 +504,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:891
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:949
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:972
 
 Returns the specified cluster by name.
 
@@ -522,7 +522,7 @@ Returns the specified cluster by name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:950
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:973
 
 Returns the specified cluster by name.
 
@@ -544,7 +544,7 @@ Returns the specified cluster by name.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:951
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:974
 
 Returns the specified cluster by name.
 
@@ -572,7 +572,7 @@ Returns the specified cluster by name.
 
 > **getOperationService**(): [`OperationService`](../../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:933
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:956
 
 #### Returns
 
@@ -586,7 +586,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:933
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:896
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:912
 
 Retrieves a list of clusters.
 
@@ -604,7 +604,7 @@ Retrieves a list of clusters.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:897
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:913
 
 ##### Parameters
 
@@ -624,7 +624,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:897
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:898
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:914
 
 ##### Parameters
 
@@ -648,7 +648,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:898
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:961
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:984
 
 Retrieves a list of clusters.
 
@@ -666,7 +666,7 @@ Retrieves a list of clusters.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:962
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:985
 
 Retrieves a list of clusters.
 
@@ -688,7 +688,7 @@ Retrieves a list of clusters.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:963
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:986
 
 Retrieves a list of clusters.
 
@@ -718,7 +718,7 @@ Retrieves a list of clusters.
 
 > **update**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:910
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:926
 
 Updates a cluster.
 
@@ -736,7 +736,7 @@ Updates a cluster.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:911
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:927
 
 ##### Parameters
 
@@ -756,7 +756,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:911
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:912
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:928
 
 ##### Parameters
 
@@ -780,7 +780,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:912
 
 > **update**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:988
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1011
 
 Updates a cluster.
 
@@ -798,7 +798,7 @@ Updates a cluster.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:989
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1012
 
 Updates a cluster.
 
@@ -820,7 +820,7 @@ Updates a cluster.
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:990
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1013
 
 Updates a cluster.
 

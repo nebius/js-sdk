@@ -6,7 +6,7 @@
 
 # Interface: Registry
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1675
+Defined in: src/generated/nebius/registry/v1/index.ts:1676
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1675
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1677
+Defined in: src/generated/nebius/registry/v1/index.ts:1678
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1677
 
 > **$type**: `"nebius.registry.v1.Registry"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1676
+Defined in: src/generated/nebius/registry/v1/index.ts:1677
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1676
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1683
+Defined in: src/generated/nebius/registry/v1/index.ts:1684
 
 This is metadata about the resource, such as its id, name, labels, etc.
 This contains fields that may be updated both by the end user and the system.
@@ -41,7 +41,7 @@ This contains fields that may be updated both by the end user and the system.
 
 > `optional` **spec**: [`RegistrySpec`](RegistrySpec.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1689
+Defined in: src/generated/nebius/registry/v1/index.ts:1690
 
 This is defined by the user and describes the desired state of system.
 Fill this in when creating or updating an object.
@@ -52,6 +52,6 @@ Fill this in when creating or updating an object.
 
 > `optional` **status**: [`RegistryStatus`](RegistryStatus.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1694
+Defined in: src/generated/nebius/registry/v1/index.ts:1695
 
 This is filled in by the server and reports the current state of the system.

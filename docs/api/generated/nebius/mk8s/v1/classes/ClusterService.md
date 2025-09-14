@@ -6,7 +6,7 @@
 
 # Class: ClusterService
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:758
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1010
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:758
 
 > **new ClusterService**(`sdk`): `ClusterService`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:809
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1068
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:809
 
 > **$type**: `"nebius.mk8s.v1.ClusterService"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:759
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1011
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:759
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:785
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1037
 
 Creates a new mk8s cluster.
 
@@ -64,7 +64,7 @@ Creates a new mk8s cluster.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:786
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1038
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:786
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:787
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1039
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:787
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:855
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1114
 
 Creates a new mk8s cluster.
 
@@ -126,7 +126,7 @@ Creates a new mk8s cluster.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:856
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1115
 
 Creates a new mk8s cluster.
 
@@ -148,7 +148,7 @@ Creates a new mk8s cluster.
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:857
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1116
 
 Creates a new mk8s cluster.
 
@@ -178,7 +178,7 @@ Creates a new mk8s cluster.
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:799
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1051
 
 Deletes an mk8s cluster.
 
@@ -196,7 +196,7 @@ Deletes an mk8s cluster.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:800
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1052
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:800
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:801
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1053
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:801
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:885
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1144
 
 Deletes an mk8s cluster.
 
@@ -258,7 +258,7 @@ Deletes an mk8s cluster.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:886
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1145
 
 Deletes an mk8s cluster.
 
@@ -280,7 +280,7 @@ Deletes an mk8s cluster.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:887
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1146
 
 Deletes an mk8s cluster.
 
@@ -310,7 +310,7 @@ Deletes an mk8s cluster.
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:764
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1016
 
 Returns a specific mk8s cluster by its unique identifier.
 
@@ -328,7 +328,7 @@ Returns a specific mk8s cluster by its unique identifier.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:765
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1017
 
 ##### Parameters
 
@@ -348,7 +348,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:765
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:766
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1018
 
 ##### Parameters
 
@@ -372,7 +372,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:766
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:819
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1078
 
 Returns a specific mk8s cluster by its unique identifier.
 
@@ -390,7 +390,7 @@ Returns a specific mk8s cluster by its unique identifier.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:820
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1079
 
 Returns a specific mk8s cluster by its unique identifier.
 
@@ -412,7 +412,7 @@ Returns a specific mk8s cluster by its unique identifier.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:821
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1080
 
 Returns a specific mk8s cluster by its unique identifier.
 
@@ -442,7 +442,7 @@ Returns a specific mk8s cluster by its unique identifier.
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:771
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1023
 
 Returns a specific mk8s cluster by its unique name.
 
@@ -460,7 +460,7 @@ Returns a specific mk8s cluster by its unique name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:772
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1024
 
 ##### Parameters
 
@@ -480,7 +480,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:772
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:773
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1025
 
 ##### Parameters
 
@@ -504,7 +504,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:773
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:831
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1090
 
 Returns a specific mk8s cluster by its unique name.
 
@@ -522,7 +522,7 @@ Returns a specific mk8s cluster by its unique name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:832
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1091
 
 Returns a specific mk8s cluster by its unique name.
 
@@ -544,7 +544,7 @@ Returns a specific mk8s cluster by its unique name.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:833
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1092
 
 Returns a specific mk8s cluster by its unique name.
 
@@ -572,7 +572,7 @@ Returns a specific mk8s cluster by its unique name.
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:815
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1074
 
 #### Returns
 
@@ -586,7 +586,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:815
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:778
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1030
 
 Returns a list of all mk8s clusters in the specified project.
 
@@ -604,7 +604,7 @@ Returns a list of all mk8s clusters in the specified project.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:779
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1031
 
 ##### Parameters
 
@@ -624,7 +624,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:779
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:780
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1032
 
 ##### Parameters
 
@@ -648,7 +648,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:780
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:843
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1102
 
 Returns a list of all mk8s clusters in the specified project.
 
@@ -666,7 +666,7 @@ Returns a list of all mk8s clusters in the specified project.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:844
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1103
 
 Returns a list of all mk8s clusters in the specified project.
 
@@ -688,7 +688,7 @@ Returns a list of all mk8s clusters in the specified project.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:845
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1104
 
 Returns a list of all mk8s clusters in the specified project.
 
@@ -712,13 +712,145 @@ Returns a list of all mk8s clusters in the specified project.
 
 ---
 
+### listControlPlaneVersions()
+
+#### Call Signature
+
+> **listControlPlaneVersions**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1058
+
+ListControlPlaneVersions returns all k8s release versions available in Nebius API.
+
+##### Parameters
+
+###### request
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+#### Call Signature
+
+> **listControlPlaneVersions**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1059
+
+##### Parameters
+
+###### request
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+#### Call Signature
+
+> **listControlPlaneVersions**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1060
+
+##### Parameters
+
+###### request
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+#### Call Signature
+
+> **listControlPlaneVersions**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1159
+
+ListControlPlaneVersions returns all k8s release versions available in Nebius API.
+
+##### Parameters
+
+###### request
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+#### Call Signature
+
+> **listControlPlaneVersions**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1160
+
+ListControlPlaneVersions returns all k8s release versions available in Nebius API.
+
+##### Parameters
+
+###### request
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+#### Call Signature
+
+> **listControlPlaneVersions**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1161
+
+ListControlPlaneVersions returns all k8s release versions available in Nebius API.
+
+##### Parameters
+
+###### request
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+###### metadata
+
+`Metadata`
+
+###### options
+
+`Partial`\<`CallOptions`\> & [`RetryOptions`](../../../../../runtime/request/interfaces/RetryOptions.md)
+
+##### Returns
+
+[`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
+
+---
+
 ### update()
 
 #### Call Signature
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:792
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1044
 
 Modifies an existing mk8s cluster.
 
@@ -736,7 +868,7 @@ Modifies an existing mk8s cluster.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:793
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1045
 
 ##### Parameters
 
@@ -756,7 +888,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:793
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:794
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1046
 
 ##### Parameters
 
@@ -780,7 +912,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:794
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:870
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1129
 
 Modifies an existing mk8s cluster.
 
@@ -798,7 +930,7 @@ Modifies an existing mk8s cluster.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:871
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1130
 
 Modifies an existing mk8s cluster.
 
@@ -820,7 +952,7 @@ Modifies an existing mk8s cluster.
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:872
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1131
 
 Modifies an existing mk8s cluster.
 

@@ -6,7 +6,7 @@
 
 # Interface: OutOfRange
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:776
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:777
 
 Indicates that element with requested parameters is exceeding the particular range.
 
@@ -16,7 +16,7 @@ Indicates that element with requested parameters is exceeding the particular ran
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:778
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:779
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:778
 
 > **$type**: `"nebius.common.error.v1alpha1.OutOfRange"`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:777
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:778
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:777
 
 > **limit**: `string`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:788
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:789
 
 Available limit.
 
@@ -42,6 +42,6 @@ Available limit.
 
 > **requested**: `string`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:783
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:784
 
 Requested value.

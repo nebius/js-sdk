@@ -6,7 +6,7 @@
 
 # Interface: TransferServiceServer
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1173
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1174
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1173
 
 > **create**: `handleUnaryCall`\<[`CreateTransferRequest`](CreateTransferRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1177
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1178
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1177
 
 > **delete**: `handleUnaryCall`\<[`DeleteTransferRequest`](DeleteTransferRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1181
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1182
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1181
 
 > **get**: `handleUnaryCall`\<[`GetTransferRequest`](GetTransferRequest.md), [`Transfer`](Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1174
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1175
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1174
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1175
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1176
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1175
 
 > **getIterationHistory**: `handleUnaryCall`\<[`GetIterationHistoryRequest`](GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](GetIterationHistoryResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1182
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1183
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1182
 
 > **list**: `handleUnaryCall`\<[`ListTransfersRequest`](ListTransfersRequest.md), [`ListTransfersResponse`](ListTransfersResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1176
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1177
 
 ---
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1176
 
 > **resume**: `handleUnaryCall`\<[`ResumeTransferRequest`](ResumeTransferRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1180
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1181
 
 ---
 
@@ -78,7 +78,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1180
 
 > **stop**: `handleUnaryCall`\<[`StopTransferRequest`](StopTransferRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1179
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1180
 
 ---
 
@@ -86,4 +86,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1179
 
 > **update**: `handleUnaryCall`\<[`UpdateTransferRequest`](UpdateTransferRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1178
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1179

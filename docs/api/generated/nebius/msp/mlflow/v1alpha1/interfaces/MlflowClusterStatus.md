@@ -6,7 +6,7 @@
 
 # Interface: MlflowClusterStatus
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1259
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1260
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1259
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1261
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1262
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1261
 
 > **$type**: `"nebius.msp.mlflow.v1alpha1.MlflowClusterStatus"`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1260
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1261
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1260
 
 > **effectiveStorageBucketName**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1282
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1283
 
 Name of the Nebius S3 bucket for MLflow artifacts.
 
@@ -40,7 +40,7 @@ Name of the Nebius S3 bucket for MLflow artifacts.
 
 > **experimentsCount**: `number`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1287
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1288
 
 Count of experiments in the MLflow cluster
 
@@ -50,7 +50,7 @@ Count of experiments in the MLflow cluster
 
 > **mlflowVersion**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1292
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1293
 
 MLflow version
 
@@ -60,7 +60,7 @@ MLflow version
 
 > **phase**: [`ClusterStatus_Phase`](../../../v1alpha1/type-aliases/ClusterStatus_Phase.md)
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1266
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1267
 
 Current phase of the cluster.
 
@@ -70,7 +70,7 @@ Current phase of the cluster.
 
 > **state**: [`ClusterStatus_State`](../../../v1alpha1/type-aliases/ClusterStatus_State.md)
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1271
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1272
 
 State reflects substatus of the phase to define whether it's healthy or not.
 
@@ -80,7 +80,7 @@ State reflects substatus of the phase to define whether it's healthy or not.
 
 > **trackingEndpoint**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1277
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1278
 
 Tracking endpoint url.
 Will be removed soon in favor of private_tracking_endpoint and public_tracking_endpoint.
@@ -91,6 +91,6 @@ Will be removed soon in favor of private_tracking_endpoint and public_tracking_e
 
 > `optional` **trackingEndpoints**: [`Endpoints`](Endpoints.md)
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1297
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1298
 
 Public and private tracking endpoints

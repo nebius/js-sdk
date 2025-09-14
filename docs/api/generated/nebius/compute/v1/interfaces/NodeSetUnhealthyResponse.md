@@ -6,7 +6,7 @@
 
 # Interface: NodeSetUnhealthyResponse
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10891
+Defined in: src/generated/nebius/compute/v1/index.ts:10892
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10891
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10893
+Defined in: src/generated/nebius/compute/v1/index.ts:10894
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10893
 
 > **$type**: `"nebius.compute.v1.NodeSetUnhealthyResponse"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10892
+Defined in: src/generated/nebius/compute/v1/index.ts:10893

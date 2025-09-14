@@ -6,7 +6,7 @@
 
 # Interface: CalculatorServiceServer
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:526
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:527
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:526
 
 > **estimate**: `handleUnaryCall`\<[`EstimateRequest`](EstimateRequest.md), [`EstimateResponse`](EstimateResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:527
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:528
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:527
 
 > **estimateBatch**: `handleUnaryCall`\<[`EstimateBatchRequest`](EstimateBatchRequest.md), [`EstimateBatchResponse`](EstimateBatchResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:528
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:529

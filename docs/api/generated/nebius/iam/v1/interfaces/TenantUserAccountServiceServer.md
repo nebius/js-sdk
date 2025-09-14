@@ -6,7 +6,7 @@
 
 # Interface: TenantUserAccountServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20433
+Defined in: src/generated/nebius/iam/v1/index.ts:20434
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20433
 
 > **block**: `handleUnaryCall`\<[`BlockTenantUserAccountRequest`](BlockTenantUserAccountRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20436
+Defined in: src/generated/nebius/iam/v1/index.ts:20437
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20436
 
 > **get**: `handleUnaryCall`\<[`GetTenantUserAccountRequest`](GetTenantUserAccountRequest.md), [`TenantUserAccount`](TenantUserAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20434
+Defined in: src/generated/nebius/iam/v1/index.ts:20435
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20434
 
 > **list**: `handleUnaryCall`\<[`ListTenantUserAccountsRequest`](ListTenantUserAccountsRequest.md), [`ListTenantUserAccountsResponse`](ListTenantUserAccountsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20435
+Defined in: src/generated/nebius/iam/v1/index.ts:20436
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20435
 
 > **unblock**: `handleUnaryCall`\<[`UnblockTenantUserAccountRequest`](UnblockTenantUserAccountRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20437
+Defined in: src/generated/nebius/iam/v1/index.ts:20438

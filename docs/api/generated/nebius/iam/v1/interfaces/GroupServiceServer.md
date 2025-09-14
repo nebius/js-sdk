@@ -6,7 +6,7 @@
 
 # Interface: GroupServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12487
+Defined in: src/generated/nebius/iam/v1/index.ts:12488
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12487
 
 > **create**: `handleUnaryCall`\<[`CreateGroupRequest`](CreateGroupRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12488
+Defined in: src/generated/nebius/iam/v1/index.ts:12489
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12488
 
 > **delete**: `handleUnaryCall`\<[`DeleteGroupRequest`](DeleteGroupRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12492
+Defined in: src/generated/nebius/iam/v1/index.ts:12493
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12492
 
 > **get**: `handleUnaryCall`\<[`GetGroupRequest`](GetGroupRequest.md), [`Group`](Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12489
+Defined in: src/generated/nebius/iam/v1/index.ts:12490
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12489
 
 > **getByName**: `handleUnaryCall`\<[`GetGroupByNameRequest`](GetGroupByNameRequest.md), [`Group`](Group.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12490
+Defined in: src/generated/nebius/iam/v1/index.ts:12491
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12490
 
 > **list**: `handleUnaryCall`\<[`ListGroupsRequest`](ListGroupsRequest.md), [`ListGroupsResponse`](ListGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12491
+Defined in: src/generated/nebius/iam/v1/index.ts:12492
 
 ---
 
@@ -62,4 +62,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12491
 
 > **update**: `handleUnaryCall`\<[`UpdateGroupRequest`](UpdateGroupRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12493
+Defined in: src/generated/nebius/iam/v1/index.ts:12494

@@ -6,7 +6,7 @@
 
 # Interface: DeleteAccessPermitRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2503
+Defined in: src/generated/nebius/iam/v1/index.ts:2504
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2503
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2505
+Defined in: src/generated/nebius/iam/v1/index.ts:2506
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2505
 
 > **$type**: `"nebius.iam.v1.DeleteAccessPermitRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2504
+Defined in: src/generated/nebius/iam/v1/index.ts:2505
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2504
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2506
+Defined in: src/generated/nebius/iam/v1/index.ts:2507

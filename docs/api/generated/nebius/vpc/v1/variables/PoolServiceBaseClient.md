@@ -8,7 +8,7 @@
 
 > **PoolServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`PoolServiceBaseClient`](../interfaces/PoolServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5113
+Defined in: src/generated/nebius/vpc/v1/index.ts:5114
 
 ## Type Declaration
 

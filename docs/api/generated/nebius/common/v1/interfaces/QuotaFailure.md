@@ -6,7 +6,7 @@
 
 # Interface: QuotaFailure
 
-Defined in: src/generated/nebius/common/v1/index.ts:1798
+Defined in: src/generated/nebius/common/v1/index.ts:1799
 
 Indicates a failure due to exceeding specified limits or allocations in a system or service.
 
@@ -16,7 +16,7 @@ Indicates a failure due to exceeding specified limits or allocations in a system
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:1800
+Defined in: src/generated/nebius/common/v1/index.ts:1801
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1800
 
 > **$type**: `"nebius.common.v1.QuotaFailure"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1799
+Defined in: src/generated/nebius/common/v1/index.ts:1800
 
 ---
 
@@ -32,6 +32,6 @@ Defined in: src/generated/nebius/common/v1/index.ts:1799
 
 > **violations**: [`QuotaFailure_Violation`](QuotaFailure_Violation.md)[]
 
-Defined in: src/generated/nebius/common/v1/index.ts:1805
+Defined in: src/generated/nebius/common/v1/index.ts:1806
 
 Describes all quota violations.

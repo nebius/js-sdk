@@ -8,4 +8,4 @@
 
 > **PoolStatus_State**: [`PoolStatus_StateClass`](../type-aliases/PoolStatus_StateClass.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4786
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4787

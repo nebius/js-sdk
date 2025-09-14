@@ -6,7 +6,7 @@
 
 # Interface: TransferSpec_BucketCredentials
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2237
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2238
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2237
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2239
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2240
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2239
 
 > **$type**: `"nebius.storage.v1alpha1.TransferSpec.BucketCredentials"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2238
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2239
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2238
 
 > `optional` **credentials**: \{ `$case`: `"anonymous"`; `anonymous`: [`TransferSpec_BucketCredentials_CredentialsAnonymous`](TransferSpec_BucketCredentials_CredentialsAnonymous.md); \} \| \{ `$case`: `"accessKey"`; `accessKey`: [`TransferSpec_BucketCredentials_CredentialsAccessKey`](TransferSpec_BucketCredentials_CredentialsAccessKey.md); \}
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2240
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2241

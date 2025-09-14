@@ -8,4 +8,4 @@
 
 > **ClusterStatus**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ClusterStatus`](../interfaces/ClusterStatus.md), `"nebius.msp.postgresql.v1alpha1.ClusterStatus"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3018
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3019

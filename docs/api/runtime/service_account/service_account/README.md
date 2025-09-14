@@ -14,4 +14,3 @@
 
 - [Reader](interfaces/Reader.md)
 - [ServiceAccountLike](interfaces/ServiceAccountLike.md)
-- [TokenRequester](interfaces/TokenRequester.md)

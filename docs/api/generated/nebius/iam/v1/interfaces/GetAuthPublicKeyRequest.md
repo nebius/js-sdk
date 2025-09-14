@@ -6,7 +6,7 @@
 
 # Interface: GetAuthPublicKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3796
+Defined in: src/generated/nebius/iam/v1/index.ts:3797
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3796
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3798
+Defined in: src/generated/nebius/iam/v1/index.ts:3799
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3798
 
 > **$type**: `"nebius.iam.v1.GetAuthPublicKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3797
+Defined in: src/generated/nebius/iam/v1/index.ts:3798
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3797
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3799
+Defined in: src/generated/nebius/iam/v1/index.ts:3800

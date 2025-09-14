@@ -8,4 +8,4 @@
 
 > **BucketStatus_State**: [`BucketStatus_StateClass`](../type-aliases/BucketStatus_StateClass.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1827
+Defined in: src/generated/nebius/storage/v1/index.ts:1828

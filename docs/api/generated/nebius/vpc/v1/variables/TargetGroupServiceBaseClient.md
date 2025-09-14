@@ -8,7 +8,7 @@
 
 > **TargetGroupServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`TargetGroupServiceBaseClient`](../interfaces/TargetGroupServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8427
+Defined in: src/generated/nebius/vpc/v1/index.ts:8428
 
 ## Type Declaration
 

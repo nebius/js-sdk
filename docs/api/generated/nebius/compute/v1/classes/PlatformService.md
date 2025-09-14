@@ -6,7 +6,7 @@
 
 # Class: PlatformService
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11432
+Defined in: src/generated/nebius/compute/v1/index.ts:11433
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11432
 
 > **new PlatformService**(`sdk`): `PlatformService`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11455
+Defined in: src/generated/nebius/compute/v1/index.ts:11456
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11455
 
 > **$type**: `"nebius.compute.v1.PlatformService"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11433
+Defined in: src/generated/nebius/compute/v1/index.ts:11434
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11433
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11438
+Defined in: src/generated/nebius/compute/v1/index.ts:11439
 
 Retrieves detailed information about a specific compute platform by its parent and name.
 
@@ -64,7 +64,7 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11439
+Defined in: src/generated/nebius/compute/v1/index.ts:11440
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11439
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11440
+Defined in: src/generated/nebius/compute/v1/index.ts:11441
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11440
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11461
+Defined in: src/generated/nebius/compute/v1/index.ts:11462
 
 Retrieves detailed information about a specific compute platform by its parent and name.
 
@@ -126,7 +126,7 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11462
+Defined in: src/generated/nebius/compute/v1/index.ts:11463
 
 Retrieves detailed information about a specific compute platform by its parent and name.
 
@@ -148,7 +148,7 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11463
+Defined in: src/generated/nebius/compute/v1/index.ts:11464
 
 Retrieves detailed information about a specific compute platform by its parent and name.
 
@@ -178,7 +178,7 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11445
+Defined in: src/generated/nebius/compute/v1/index.ts:11446
 
 Lists all compute platforms within a specified parent.
 
@@ -196,7 +196,7 @@ Lists all compute platforms within a specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11446
+Defined in: src/generated/nebius/compute/v1/index.ts:11447
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11446
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11447
+Defined in: src/generated/nebius/compute/v1/index.ts:11448
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11447
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11473
+Defined in: src/generated/nebius/compute/v1/index.ts:11474
 
 Lists all compute platforms within a specified parent.
 
@@ -258,7 +258,7 @@ Lists all compute platforms within a specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11474
+Defined in: src/generated/nebius/compute/v1/index.ts:11475
 
 Lists all compute platforms within a specified parent.
 
@@ -280,7 +280,7 @@ Lists all compute platforms within a specified parent.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPlatformsRequest`](../interfaces/ListPlatformsRequest.md), [`ListPlatformsResponse`](../interfaces/ListPlatformsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11475
+Defined in: src/generated/nebius/compute/v1/index.ts:11476
 
 Lists all compute platforms within a specified parent.
 

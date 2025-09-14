@@ -6,7 +6,7 @@
 
 # Interface: ListClustersRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1236
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1237
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1236
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1238
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1239
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1238
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ListClustersRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1237
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1238
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1237
 
 > **pageSize**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1248
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1249
 
 Specifies the maximum number of items to return in the response.
 
@@ -40,7 +40,7 @@ Specifies the maximum number of items to return in the response.
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1253
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1254
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -50,6 +50,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1243
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1244
 
 Identifier of IAM container to list clusters from.

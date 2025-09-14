@@ -8,4 +8,4 @@
 
 > **ActionClass** = [`EnumClass`](../../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"ACTION_UNDEFINED"` \| `"NOP"` \| `"UPDATE"` \| `"RESTART"`\> & `ActionValueMembers`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:132
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:133

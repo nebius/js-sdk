@@ -6,7 +6,7 @@
 
 # Interface: BucketServiceBaseClient
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1642
+Defined in: src/generated/nebius/storage/v1/index.ts:1643
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1646
+Defined in: src/generated/nebius/storage/v1/index.ts:1647
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1646
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1648
+Defined in: src/generated/nebius/storage/v1/index.ts:1649
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1648
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1643
+Defined in: src/generated/nebius/storage/v1/index.ts:1644
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1643
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1644
+Defined in: src/generated/nebius/storage/v1/index.ts:1645
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1645
+Defined in: src/generated/nebius/storage/v1/index.ts:1646
 
 #### Parameters
 
@@ -784,7 +784,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **purge**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1649
+Defined in: src/generated/nebius/storage/v1/index.ts:1650
 
 #### Parameters
 
@@ -814,7 +814,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1649
 
 > **undelete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1650
+Defined in: src/generated/nebius/storage/v1/index.ts:1651
 
 #### Parameters
 
@@ -844,7 +844,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1650
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1647
+Defined in: src/generated/nebius/storage/v1/index.ts:1648
 
 #### Parameters
 

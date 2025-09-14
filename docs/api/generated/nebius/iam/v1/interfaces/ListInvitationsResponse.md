@@ -6,7 +6,7 @@
 
 # Interface: ListInvitationsResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13355
+Defined in: src/generated/nebius/iam/v1/index.ts:13356
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13355
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13357
+Defined in: src/generated/nebius/iam/v1/index.ts:13358
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13357
 
 > **$type**: `"nebius.iam.v1.ListInvitationsResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13356
+Defined in: src/generated/nebius/iam/v1/index.ts:13357
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13356
 
 > **items**: [`Invitation`](Invitation.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13358
+Defined in: src/generated/nebius/iam/v1/index.ts:13359
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13358
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13359
+Defined in: src/generated/nebius/iam/v1/index.ts:13360

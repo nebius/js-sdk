@@ -8,4 +8,4 @@
 
 > **PoolStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PoolStatus`](../interfaces/PoolStatus.md), `"nebius.vpc.v1alpha1.PoolStatus"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5316
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5317

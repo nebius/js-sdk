@@ -6,7 +6,7 @@
 
 # Interface: PoolStatus
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5911
+Defined in: src/generated/nebius/vpc/v1/index.ts:5912
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5911
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5913
+Defined in: src/generated/nebius/vpc/v1/index.ts:5914
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5913
 
 > **$type**: `"nebius.vpc.v1.PoolStatus"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5912
+Defined in: src/generated/nebius/vpc/v1/index.ts:5913
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5912
 
 > `optional` **assignment**: [`PoolAssignment`](PoolAssignment.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5933
+Defined in: src/generated/nebius/vpc/v1/index.ts:5934
 
 Assignment details for this Pool
 
@@ -40,7 +40,7 @@ Assignment details for this Pool
 
 > **cidrs**: `string`[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5923
+Defined in: src/generated/nebius/vpc/v1/index.ts:5924
 
 CIDR blocks.
 
@@ -50,7 +50,7 @@ CIDR blocks.
 
 > **scopeId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5928
+Defined in: src/generated/nebius/vpc/v1/index.ts:5929
 
 Scope is the unique identifier for single pool tree.
 
@@ -60,6 +60,6 @@ Scope is the unique identifier for single pool tree.
 
 > **state**: [`PoolStatus_State`](../type-aliases/PoolStatus_State.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5918
+Defined in: src/generated/nebius/vpc/v1/index.ts:5919
 
 Current state of the Pool.

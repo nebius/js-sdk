@@ -6,7 +6,7 @@
 
 # Interface: TenantServiceBaseClient
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19807
+Defined in: src/generated/nebius/iam/v1/index.ts:19808
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19808
+Defined in: src/generated/nebius/iam/v1/index.ts:19809
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19809
+Defined in: src/generated/nebius/iam/v1/index.ts:19810
 
 #### Parameters
 

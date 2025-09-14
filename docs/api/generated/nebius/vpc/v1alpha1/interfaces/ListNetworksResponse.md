@@ -6,7 +6,7 @@
 
 # Interface: ListNetworksResponse
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3419
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3420
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3419
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3421
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3422
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3421
 
 > **$type**: `"nebius.vpc.v1alpha1.ListNetworksResponse"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3420
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3421
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3420
 
 > **items**: [`Network`](Network.md)[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3422
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3423
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3422
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3423
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3424

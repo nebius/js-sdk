@@ -8,4 +8,4 @@
 
 > **UserProfile**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UserProfile`](../interfaces/UserProfile.md), `"nebius.iam.v1.UserProfile"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14655
+Defined in: src/generated/nebius/iam/v1/index.ts:14656

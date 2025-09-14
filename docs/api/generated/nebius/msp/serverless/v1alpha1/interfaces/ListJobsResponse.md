@@ -6,7 +6,7 @@
 
 # Interface: ListJobsResponse
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1818
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1819
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1818
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1820
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1821
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1820
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.ListJobsResponse"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1819
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1820
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1819
 
 > **items**: [`Job`](Job.md)[]
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1825
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1826
 
 List of jobs.
 
@@ -40,6 +40,6 @@ List of jobs.
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1830
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1831
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

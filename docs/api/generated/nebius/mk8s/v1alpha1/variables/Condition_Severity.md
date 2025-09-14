@@ -8,4 +8,4 @@
 
 > **Condition_Severity**: [`Condition_SeverityClass`](../type-aliases/Condition_SeverityClass.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2161
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2432

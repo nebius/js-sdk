@@ -8,4 +8,4 @@
 
 > **SuspensionState**: [`SuspensionStateClass`](../type-aliases/SuspensionStateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19428
+Defined in: src/generated/nebius/iam/v1/index.ts:19429

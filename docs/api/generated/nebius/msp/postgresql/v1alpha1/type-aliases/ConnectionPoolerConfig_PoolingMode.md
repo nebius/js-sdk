@@ -8,4 +8,4 @@
 
 > **ConnectionPoolerConfig_PoolingMode** = [`EnumInstance`](../../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"POOLING_MODE_UNSPECIFIED"` \| `"SESSION"` \| `"TRANSACTION"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2552
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2553

@@ -8,4 +8,4 @@
 
 > **StartInstanceRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), `"nebius.compute.v1alpha1.StartInstanceRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6064
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6065

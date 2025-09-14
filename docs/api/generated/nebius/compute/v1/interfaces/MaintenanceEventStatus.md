@@ -6,7 +6,7 @@
 
 # Interface: MaintenanceEventStatus
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9150
+Defined in: src/generated/nebius/compute/v1/index.ts:9151
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9150
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9152
+Defined in: src/generated/nebius/compute/v1/index.ts:9153
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9152
 
 > **$type**: `"nebius.compute.v1.MaintenanceEventStatus"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9151
+Defined in: src/generated/nebius/compute/v1/index.ts:9152
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9151
 
 > `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9158
+Defined in: src/generated/nebius/compute/v1/index.ts:9159
 
 Time when the maintenance event is created
 
@@ -40,7 +40,7 @@ Time when the maintenance event is created
 
 > `optional` **finishedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9163
+Defined in: src/generated/nebius/compute/v1/index.ts:9164
 
 Time when the maintenance event is finished
 
@@ -50,7 +50,7 @@ Time when the maintenance event is finished
 
 > **maintenanceId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9153
+Defined in: src/generated/nebius/compute/v1/index.ts:9154
 
 ---
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9153
 
 > `optional` **slaDeadlineTs**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9168
+Defined in: src/generated/nebius/compute/v1/index.ts:9169
 
 Time when the instance will be force stopped
 
@@ -68,6 +68,6 @@ Time when the instance will be force stopped
 
 > **supportCenterTicketId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9173
+Defined in: src/generated/nebius/compute/v1/index.ts:9174
 
 Ticket key, can be transformed into url where support is talking with the client

@@ -6,7 +6,7 @@
 
 # Interface: TransferSpec_StopConditionInfinite
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2819
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2820
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2819
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2821
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2822
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2821
 
 > **$type**: `"nebius.storage.v1alpha1.TransferSpec.StopConditionInfinite"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2820
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2821

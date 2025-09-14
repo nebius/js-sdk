@@ -6,7 +6,7 @@
 
 # Interface: ServicePySDKSettings
 
-Defined in: src/generated/nebius/index.ts:200
+Defined in: src/generated/nebius/index.ts:201
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/index.ts:200
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/index.ts:202
+Defined in: src/generated/nebius/index.ts:203
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/index.ts:202
 
 > **$type**: `"nebius.ServicePySDKSettings"`
 
-Defined in: src/generated/nebius/index.ts:201
+Defined in: src/generated/nebius/index.ts:202
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/index.ts:201
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/index.ts:203
+Defined in: src/generated/nebius/index.ts:204

@@ -8,4 +8,4 @@
 
 > **Condition_TransitionError**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Condition_TransitionError`](../interfaces/Condition_TransitionError.md), `"nebius.mk8s.v1alpha1.Condition.TransitionError"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2461
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2732

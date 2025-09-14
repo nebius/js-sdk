@@ -8,4 +8,4 @@
 
 > **ListTenantUserAccountsWithAttributesResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListTenantUserAccountsWithAttributesResponse`](../interfaces/ListTenantUserAccountsWithAttributesResponse.md), `"nebius.iam.v1.ListTenantUserAccountsWithAttributesResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20786
+Defined in: src/generated/nebius/iam/v1/index.ts:20787

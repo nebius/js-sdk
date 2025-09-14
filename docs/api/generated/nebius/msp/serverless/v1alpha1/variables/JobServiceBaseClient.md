@@ -8,7 +8,7 @@
 
 > **JobServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`JobServiceBaseClient`](../interfaces/JobServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1987
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1988
 
 ## Type Declaration
 

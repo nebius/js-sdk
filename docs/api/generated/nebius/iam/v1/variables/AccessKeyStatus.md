@@ -8,4 +8,4 @@
 
 > **AccessKeyStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AccessKeyStatus`](../interfaces/AccessKeyStatus.md), `"nebius.iam.v1.AccessKeyStatus"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2051
+Defined in: src/generated/nebius/iam/v1/index.ts:2052

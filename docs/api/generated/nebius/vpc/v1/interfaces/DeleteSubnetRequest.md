@@ -6,7 +6,7 @@
 
 # Interface: DeleteSubnetRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6944
+Defined in: src/generated/nebius/vpc/v1/index.ts:6945
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6944
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6946
+Defined in: src/generated/nebius/vpc/v1/index.ts:6947
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6946
 
 > **$type**: `"nebius.vpc.v1.DeleteSubnetRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6945
+Defined in: src/generated/nebius/vpc/v1/index.ts:6946
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6945
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6947
+Defined in: src/generated/nebius/vpc/v1/index.ts:6948

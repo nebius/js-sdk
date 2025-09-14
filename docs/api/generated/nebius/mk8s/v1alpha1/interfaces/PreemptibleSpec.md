@@ -6,7 +6,7 @@
 
 # Interface: PreemptibleSpec
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5664
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5982
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5664
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5666
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5984
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5666
 
 > **$type**: `"nebius.mk8s.v1alpha1.PreemptibleSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5665
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5983

@@ -6,11 +6,15 @@
 
 # Class: TemplateExpander
 
-Defined in: [src/runtime/resolver.ts:151](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L151)
+Defined in: [src/runtime/resolver.ts:220](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L220)
 
 ## Implements
 
 - [`Resolver`](../interfaces/Resolver.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/resolver.ts:151](https://github.com/nebius/nodejs-sdk/b
 
 > **new TemplateExpander**(`substitutions`, `next`): `TemplateExpander`
 
-Defined in: [src/runtime/resolver.ts:154](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L154)
+Defined in: [src/runtime/resolver.ts:223](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L223)
 
 #### Parameters
 
@@ -36,11 +40,23 @@ Defined in: [src/runtime/resolver.ts:154](https://github.com/nebius/nodejs-sdk/b
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `object`
+
+Defined in: [src/runtime/resolver.ts:230](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L230)
+
+#### Returns
+
+`object`
+
+---
+
 ### resolve()
 
 > **resolve**(`serviceId`, `apiServiceName?`): `string`
 
-Defined in: [src/runtime/resolver.ts:158](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L158)
+Defined in: [src/runtime/resolver.ts:237](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L237)
 
 Receive address of the service by its ID
 

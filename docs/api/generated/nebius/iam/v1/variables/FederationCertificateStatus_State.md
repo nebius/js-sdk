@@ -8,4 +8,4 @@
 
 > **FederationCertificateStatus_State**: [`FederationCertificateStatus_StateClass`](../type-aliases/FederationCertificateStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8029
+Defined in: src/generated/nebius/iam/v1/index.ts:8030

@@ -8,7 +8,7 @@
 
 > **SubnetServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7029
+Defined in: src/generated/nebius/vpc/v1/index.ts:7030
 
 ## Type Declaration
 

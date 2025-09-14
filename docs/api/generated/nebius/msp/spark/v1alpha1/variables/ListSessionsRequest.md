@@ -8,4 +8,4 @@
 
 > **ListSessionsRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), `"nebius.msp.spark.v1alpha1.ListSessionsRequest"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4065
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4110

@@ -8,4 +8,4 @@
 
 > **VersioningPolicyClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"VERSIONING_POLICY_UNSPECIFIED"` \| `"DISABLED"` \| `"ENABLED"` \| `"SUSPENDED"`\> & `VersioningPolicyValueMembers`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:40
+Defined in: src/generated/nebius/storage/v1/index.ts:41

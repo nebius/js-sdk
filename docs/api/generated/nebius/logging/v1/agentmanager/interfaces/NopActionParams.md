@@ -6,7 +6,7 @@
 
 # Interface: NopActionParams
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1496
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1497
 
 Parameters when no operation is required.
 
@@ -16,7 +16,7 @@ Parameters when no operation is required.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1498
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1499
 
 ---
 
@@ -24,4 +24,4 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1498
 
 > **$type**: `"nebius.logging.agentmanager.v1.NopActionParams"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1497
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1498

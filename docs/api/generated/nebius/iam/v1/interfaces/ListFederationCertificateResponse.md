@@ -6,7 +6,7 @@
 
 # Interface: ListFederationCertificateResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7739
+Defined in: src/generated/nebius/iam/v1/index.ts:7740
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7739
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7741
+Defined in: src/generated/nebius/iam/v1/index.ts:7742
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7741
 
 > **$type**: `"nebius.iam.v1.ListFederationCertificateResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7740
+Defined in: src/generated/nebius/iam/v1/index.ts:7741
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7740
 
 > **items**: [`FederationCertificate`](FederationCertificate.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7746
+Defined in: src/generated/nebius/iam/v1/index.ts:7747
 
 List of public keys returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of public keys returned in the response. The field should be named as `item
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7751
+Defined in: src/generated/nebius/iam/v1/index.ts:7752
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

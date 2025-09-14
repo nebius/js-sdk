@@ -6,7 +6,7 @@
 
 # ~~Interface: InstanceServiceBaseClient~~
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6343
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6344
 
 ## Deprecated
 
@@ -38,7 +38,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6347
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6348
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6347
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6349
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6350
 
 #### Parameters
 
@@ -98,7 +98,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6349
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6344
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6345
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6344
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6345
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6346
 
 #### Parameters
 
@@ -174,7 +174,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6346
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6347
 
 #### Parameters
 
@@ -204,7 +204,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6346
 
 > **listOperationsByParent**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6352
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6353
 
 #### Parameters
 
@@ -818,7 +818,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **start**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6350
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6351
 
 #### Parameters
 
@@ -848,7 +848,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6350
 
 > **stop**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6351
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6352
 
 #### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6351
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6348
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6349
 
 #### Parameters
 

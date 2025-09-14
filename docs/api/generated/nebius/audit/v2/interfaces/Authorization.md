@@ -6,7 +6,7 @@
 
 # Interface: Authorization
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1198
+Defined in: src/generated/nebius/audit/v2/index.ts:1199
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1198
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1200
+Defined in: src/generated/nebius/audit/v2/index.ts:1201
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1200
 
 > **$type**: `"nebius.audit.v2.Authorization"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1199
+Defined in: src/generated/nebius/audit/v2/index.ts:1200
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1199
 
 > **authorized**: `boolean`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1205
+Defined in: src/generated/nebius/audit/v2/index.ts:1206
 
 Field is required. We do not use «(buf.validate.field).required = true» here as false value considered as unset (validation violation)

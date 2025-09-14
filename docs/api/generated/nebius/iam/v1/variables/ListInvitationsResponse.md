@@ -8,4 +8,4 @@
 
 > **ListInvitationsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md), `"nebius.iam.v1.ListInvitationsResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13355
+Defined in: src/generated/nebius/iam/v1/index.ts:13356

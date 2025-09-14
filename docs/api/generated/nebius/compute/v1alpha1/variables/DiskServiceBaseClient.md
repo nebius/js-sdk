@@ -8,7 +8,7 @@
 
 > **DiskServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`DiskServiceBaseClient`](../interfaces/DiskServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:753
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:754
 
 ## Type Declaration
 

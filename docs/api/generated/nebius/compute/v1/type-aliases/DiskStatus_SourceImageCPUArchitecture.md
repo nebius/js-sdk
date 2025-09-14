@@ -8,4 +8,4 @@
 
 > **DiskStatus_SourceImageCPUArchitecture** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"SOURCE_IMAGE_CPU_UNSPECIFIED"` \| `"AMD64"` \| `"ARM64"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:993
+Defined in: src/generated/nebius/compute/v1/index.ts:994

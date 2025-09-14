@@ -6,7 +6,7 @@
 
 # Interface: ListPoolsBySourcePoolRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4500
+Defined in: src/generated/nebius/vpc/v1/index.ts:4501
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4500
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4502
+Defined in: src/generated/nebius/vpc/v1/index.ts:4503
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4502
 
 > **$type**: `"nebius.vpc.v1.ListPoolsBySourcePoolRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4501
+Defined in: src/generated/nebius/vpc/v1/index.ts:4502
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4501
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4504
+Defined in: src/generated/nebius/vpc/v1/index.ts:4505
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4504
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4505
+Defined in: src/generated/nebius/vpc/v1/index.ts:4506
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4505
 
 > **poolId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4503
+Defined in: src/generated/nebius/vpc/v1/index.ts:4504

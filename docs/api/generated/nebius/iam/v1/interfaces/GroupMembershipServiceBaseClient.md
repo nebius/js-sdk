@@ -6,7 +6,7 @@
 
 # Interface: GroupMembershipServiceBaseClient
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10806
+Defined in: src/generated/nebius/iam/v1/index.ts:10807
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10807
+Defined in: src/generated/nebius/iam/v1/index.ts:10808
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10807
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10810
+Defined in: src/generated/nebius/iam/v1/index.ts:10811
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10810
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10808
+Defined in: src/generated/nebius/iam/v1/index.ts:10809
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **getWithAttributes**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10809
+Defined in: src/generated/nebius/iam/v1/index.ts:10810
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10809
 
 > **listMemberOf**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10813
+Defined in: src/generated/nebius/iam/v1/index.ts:10814
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10813
 
 > **listMembers**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10811
+Defined in: src/generated/nebius/iam/v1/index.ts:10812
 
 #### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10811
 
 > **listMembersWithAttributes**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10812
+Defined in: src/generated/nebius/iam/v1/index.ts:10813
 
 #### Parameters
 

@@ -6,7 +6,7 @@
 
 # Interface: GpuClusterStatus
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4670
+Defined in: src/generated/nebius/compute/v1/index.ts:4671
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4670
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4672
+Defined in: src/generated/nebius/compute/v1/index.ts:4673
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4672
 
 > **$type**: `"nebius.compute.v1.GpuClusterStatus"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4671
+Defined in: src/generated/nebius/compute/v1/index.ts:4672
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4671
 
 > **instances**: `string`[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4673
+Defined in: src/generated/nebius/compute/v1/index.ts:4674
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4673
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4678
+Defined in: src/generated/nebius/compute/v1/index.ts:4679
 
 Indicates whether there is an ongoing operation
 
@@ -48,7 +48,7 @@ Indicates whether there is an ongoing operation
 
 > `optional` **topology**: `object`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4679
+Defined in: src/generated/nebius/compute/v1/index.ts:4680
 
 #### $case
 

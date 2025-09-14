@@ -8,4 +8,4 @@
 
 > **CreateEndpointRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), `"nebius.msp.serverless.v1alpha1.CreateEndpointRequest"`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:17
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:18

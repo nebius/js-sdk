@@ -6,7 +6,7 @@
 
 # Interface: AuthPublicKeyServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4758
+Defined in: src/generated/nebius/iam/v1/index.ts:4759
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4758
 
 > **activate**: `handleUnaryCall`\<[`ActivateAuthPublicKeyRequest`](ActivateAuthPublicKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4764
+Defined in: src/generated/nebius/iam/v1/index.ts:4765
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4764
 
 > **create**: `handleUnaryCall`\<[`CreateAuthPublicKeyRequest`](CreateAuthPublicKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4759
+Defined in: src/generated/nebius/iam/v1/index.ts:4760
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4759
 
 > **deactivate**: `handleUnaryCall`\<[`DeactivateAuthPublicKeyRequest`](DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4765
+Defined in: src/generated/nebius/iam/v1/index.ts:4766
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4765
 
 > **delete**: `handleUnaryCall`\<[`DeleteAuthPublicKeyRequest`](DeleteAuthPublicKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4766
+Defined in: src/generated/nebius/iam/v1/index.ts:4767
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4766
 
 > **get**: `handleUnaryCall`\<[`GetAuthPublicKeyRequest`](GetAuthPublicKeyRequest.md), [`AuthPublicKey`](AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4760
+Defined in: src/generated/nebius/iam/v1/index.ts:4761
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4760
 
 > **list**: `handleUnaryCall`\<[`ListAuthPublicKeyRequest`](ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4761
+Defined in: src/generated/nebius/iam/v1/index.ts:4762
 
 ---
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4761
 
 > **listByAccount**: `handleUnaryCall`\<[`ListAuthPublicKeyByAccountRequest`](ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4762
+Defined in: src/generated/nebius/iam/v1/index.ts:4763
 
 ---
 
@@ -78,4 +78,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4762
 
 > **update**: `handleUnaryCall`\<[`UpdateAuthPublicKeyRequest`](UpdateAuthPublicKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4763
+Defined in: src/generated/nebius/iam/v1/index.ts:4764

@@ -6,7 +6,7 @@
 
 # Interface: StopRequest
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:576
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:577
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:576
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:578
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:579
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:578
 
 > **$type**: `"nebius.msp.v1alpha1.StopRequest"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:577
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:578
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:577
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:583
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:584
 
 ID of the entity to stop.

@@ -8,4 +8,4 @@
 
 > **BucketStatus_SuspensionStateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"SUSPENSION_STATE_UNSPECIFIED"` \| `"NOT_SUSPENDED"` \| `"SUSPENDED"`\> & `BucketStatus_SuspensionStateValueMembers`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1898
+Defined in: src/generated/nebius/storage/v1/index.ts:1899

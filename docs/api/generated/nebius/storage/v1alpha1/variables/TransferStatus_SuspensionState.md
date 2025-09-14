@@ -8,4 +8,4 @@
 
 > **TransferStatus_SuspensionState**: [`TransferStatus_SuspensionStateClass`](../type-aliases/TransferStatus_SuspensionStateClass.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1484
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1485

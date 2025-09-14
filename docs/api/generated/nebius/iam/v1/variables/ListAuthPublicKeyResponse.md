@@ -8,4 +8,4 @@
 
 > **ListAuthPublicKeyResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md), `"nebius.iam.v1.ListAuthPublicKeyResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4570
+Defined in: src/generated/nebius/iam/v1/index.ts:4571

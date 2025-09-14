@@ -8,4 +8,4 @@
 
 > **ClusterStatus_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"PROVISIONING"` \| `"RUNNING"` \| `"DELETING"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:985
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1256

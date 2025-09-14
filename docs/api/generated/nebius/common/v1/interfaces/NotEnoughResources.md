@@ -6,7 +6,7 @@
 
 # Interface: NotEnoughResources
 
-Defined in: src/generated/nebius/common/v1/index.ts:2049
+Defined in: src/generated/nebius/common/v1/index.ts:2050
 
 Indicates that there are not enough resources available to perform the requested action.
 
@@ -16,7 +16,7 @@ Indicates that there are not enough resources available to perform the requested
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2051
+Defined in: src/generated/nebius/common/v1/index.ts:2052
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2051
 
 > **$type**: `"nebius.common.v1.NotEnoughResources"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2050
+Defined in: src/generated/nebius/common/v1/index.ts:2051
 
 ---
 
@@ -32,6 +32,6 @@ Defined in: src/generated/nebius/common/v1/index.ts:2050
 
 > **violations**: [`NotEnoughResources_Violation`](NotEnoughResources_Violation.md)[]
 
-Defined in: src/generated/nebius/common/v1/index.ts:2056
+Defined in: src/generated/nebius/common/v1/index.ts:2057
 
 Describes all resource violations.

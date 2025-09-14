@@ -6,7 +6,7 @@
 
 # Interface: ListSessionsRequest
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4065
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4110
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4065
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4067
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4112
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4067
 
 > **$type**: `"nebius.msp.spark.v1alpha1.ListSessionsRequest"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4066
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4111
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4066
 
 > **pageSize**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4077
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4122
 
 Specifies the maximum number of items to return in the response. Default value is 100.
 
@@ -40,7 +40,7 @@ Specifies the maximum number of items to return in the response. Default value i
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4082
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4127
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -50,6 +50,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4072
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4117
 
 Identifier of IAM container to list sessions from.

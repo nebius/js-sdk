@@ -6,7 +6,7 @@
 
 # Class: InstanceService
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6364
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6365
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6364
 
 > **new InstanceService**(`sdk`): `InstanceService`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6403
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6404
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6403
 
 > **$type**: `"nebius.compute.v1alpha1.InstanceService"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6365
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6366
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6365
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6375
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6376
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6375
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6376
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6377
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6376
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6377
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6378
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6377
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6453
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6454
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6453
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6454
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6455
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6454
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6455
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6456
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6455
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6381
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6382
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6381
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6382
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6383
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6382
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6383
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6384
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6383
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6483
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6484
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6483
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6484
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6485
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6484
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6485
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6486
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6485
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6366
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6367
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6366
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6367
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6368
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6367
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6368
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6369
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6368
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6417
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6418
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6417
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6418
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6419
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6418
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6419
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6420
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6419
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6369
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6370
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6369
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6370
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6371
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6370
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6371
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6372
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6371
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6429
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6430
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6429
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6430
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6431
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6430
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6431
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6432
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6431
 
 > **getOperationService**(): [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6413
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6414
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6413
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6372
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6373
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6372
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6373
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6374
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6373
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6374
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6375
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6374
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6441
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6442
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6441
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6442
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6443
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6442
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6443
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6444
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6443
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6390
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6391
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6390
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6391
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6392
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6391
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6392
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6393
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6392
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6528
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6529
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6528
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6529
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6530
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6529
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6530
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6531
 
 ##### Parameters
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6530
 
 > **start**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6384
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6385
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6384
 
 > **start**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6385
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6386
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6385
 
 > **start**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6386
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6387
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6386
 
 > **start**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6498
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6499
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6498
 
 > **start**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6499
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6500
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6499
 
 > **start**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6500
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6501
 
 ##### Parameters
 
@@ -926,7 +926,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6500
 
 > **stop**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6387
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6388
 
 ##### Parameters
 
@@ -942,7 +942,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6387
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6388
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6389
 
 ##### Parameters
 
@@ -962,7 +962,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6388
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6389
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6390
 
 ##### Parameters
 
@@ -986,7 +986,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6389
 
 > **stop**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6513
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6514
 
 ##### Parameters
 
@@ -1002,7 +1002,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6513
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6514
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6515
 
 ##### Parameters
 
@@ -1022,7 +1022,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6514
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6515
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6516
 
 ##### Parameters
 
@@ -1050,7 +1050,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6515
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6378
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6379
 
 ##### Parameters
 
@@ -1066,7 +1066,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6378
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6379
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6380
 
 ##### Parameters
 
@@ -1086,7 +1086,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6379
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6380
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6381
 
 ##### Parameters
 
@@ -1110,7 +1110,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6380
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6468
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6469
 
 ##### Parameters
 
@@ -1126,7 +1126,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6468
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6469
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6470
 
 ##### Parameters
 
@@ -1146,7 +1146,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6469
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6470
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6471
 
 ##### Parameters
 

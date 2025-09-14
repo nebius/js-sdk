@@ -6,7 +6,7 @@
 
 # Interface: DeleteStaticKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17973
+Defined in: src/generated/nebius/iam/v1/index.ts:17974
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17973
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17975
+Defined in: src/generated/nebius/iam/v1/index.ts:17976
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17975
 
 > **$type**: `"nebius.iam.v1.DeleteStaticKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17974
+Defined in: src/generated/nebius/iam/v1/index.ts:17975
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17974
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17980
+Defined in: src/generated/nebius/iam/v1/index.ts:17981
 
 id of the static key to delete

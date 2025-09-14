@@ -6,7 +6,7 @@
 
 # Interface: UpdateActionParams
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1566
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1567
 
 Parameters for agent update action.
 
@@ -16,7 +16,7 @@ Parameters for agent update action.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1568
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1569
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1568
 
 > **$type**: `"nebius.logging.agentmanager.v1.UpdateActionParams"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1567
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1568
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1567
 
 > **repoUrl**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1578
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1579
 
 URL of the repository containing the update.
 
@@ -42,6 +42,6 @@ URL of the repository containing the update.
 
 > **version**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1573
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1574
 
 Target version for the update.

@@ -6,7 +6,7 @@
 
 # Interface: FederationCertificateSpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8181
+Defined in: src/generated/nebius/iam/v1/index.ts:8182
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8181
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8183
+Defined in: src/generated/nebius/iam/v1/index.ts:8184
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8183
 
 > **$type**: `"nebius.iam.v1.FederationCertificateSpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8182
+Defined in: src/generated/nebius/iam/v1/index.ts:8183
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8182
 
 > **data**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8185
+Defined in: src/generated/nebius/iam/v1/index.ts:8186
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8185
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8184
+Defined in: src/generated/nebius/iam/v1/index.ts:8185

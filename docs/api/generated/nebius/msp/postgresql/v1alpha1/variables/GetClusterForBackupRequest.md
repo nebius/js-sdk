@@ -8,4 +8,4 @@
 
 > **GetClusterForBackupRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), `"nebius.msp.postgresql.v1alpha1.GetClusterForBackupRequest"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1124
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1125

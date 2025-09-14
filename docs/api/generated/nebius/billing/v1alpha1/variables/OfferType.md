@@ -8,4 +8,4 @@
 
 > **OfferType**: [`OfferTypeClass`](../type-aliases/OfferTypeClass.md)
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1324
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:1325

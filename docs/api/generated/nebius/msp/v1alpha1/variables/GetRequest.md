@@ -8,4 +8,4 @@
 
 > **GetRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetRequest`](../interfaces/GetRequest.md), `"nebius.msp.v1alpha1.GetRequest"`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:197
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:198

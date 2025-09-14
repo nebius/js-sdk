@@ -8,7 +8,7 @@
 
 > **ClusterServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ClusterServiceBaseClient`](../interfaces/ClusterServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:731
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:732
 
 ## Type Declaration
 

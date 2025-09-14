@@ -6,7 +6,7 @@
 
 # ~~Interface: GetOperationRequest~~
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:18
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:19
 
 ## Deprecated
 
@@ -18,7 +18,7 @@ Deprecated.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:20
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:21
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:20
 
 > **$type**: `"nebius.common.v1alpha1.GetOperationRequest"`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:19
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:20
 
 ---
 
@@ -34,6 +34,6 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:19
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:25
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:26
 
 Operation ID.

@@ -6,7 +6,7 @@
 
 # Interface: GetRegistryRequest
 
-Defined in: src/generated/nebius/registry/v1/index.ts:838
+Defined in: src/generated/nebius/registry/v1/index.ts:839
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:838
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:840
+Defined in: src/generated/nebius/registry/v1/index.ts:841
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:840
 
 > **$type**: `"nebius.registry.v1.GetRegistryRequest"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:839
+Defined in: src/generated/nebius/registry/v1/index.ts:840
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:839
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:841
+Defined in: src/generated/nebius/registry/v1/index.ts:842

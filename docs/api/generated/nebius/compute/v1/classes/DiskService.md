@@ -6,7 +6,7 @@
 
 # Class: DiskService
 
-Defined in: src/generated/nebius/compute/v1/index.ts:755
+Defined in: src/generated/nebius/compute/v1/index.ts:756
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:755
 
 > **new DiskService**(`sdk`): `DiskService`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:815
+Defined in: src/generated/nebius/compute/v1/index.ts:816
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:815
 
 > **$type**: `"nebius.compute.v1.DiskService"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:756
+Defined in: src/generated/nebius/compute/v1/index.ts:757
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:756
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:783
+Defined in: src/generated/nebius/compute/v1/index.ts:784
 
 Creates a new disk with the specified configuration.
 For details, see https://docs.nebius.com/compute/storage/manage
@@ -65,7 +65,7 @@ For details, see https://docs.nebius.com/compute/storage/manage
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:784
+Defined in: src/generated/nebius/compute/v1/index.ts:785
 
 ##### Parameters
 
@@ -85,7 +85,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:784
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:785
+Defined in: src/generated/nebius/compute/v1/index.ts:786
 
 ##### Parameters
 
@@ -109,7 +109,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:785
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:861
+Defined in: src/generated/nebius/compute/v1/index.ts:862
 
 Creates a new disk with the specified configuration.
 For details, see https://docs.nebius.com/compute/storage/manage
@@ -128,7 +128,7 @@ For details, see https://docs.nebius.com/compute/storage/manage
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:862
+Defined in: src/generated/nebius/compute/v1/index.ts:863
 
 Creates a new disk with the specified configuration.
 For details, see https://docs.nebius.com/compute/storage/manage
@@ -151,7 +151,7 @@ For details, see https://docs.nebius.com/compute/storage/manage
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:863
+Defined in: src/generated/nebius/compute/v1/index.ts:864
 
 Creates a new disk with the specified configuration.
 For details, see https://docs.nebius.com/compute/storage/manage
@@ -182,7 +182,7 @@ For details, see https://docs.nebius.com/compute/storage/manage
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:798
+Defined in: src/generated/nebius/compute/v1/index.ts:799
 
 Deletes a disk by its ID.
 
@@ -200,7 +200,7 @@ Deletes a disk by its ID.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:799
+Defined in: src/generated/nebius/compute/v1/index.ts:800
 
 ##### Parameters
 
@@ -220,7 +220,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:799
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:800
+Defined in: src/generated/nebius/compute/v1/index.ts:801
 
 ##### Parameters
 
@@ -244,7 +244,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:800
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:891
+Defined in: src/generated/nebius/compute/v1/index.ts:892
 
 Deletes a disk by its ID.
 
@@ -262,7 +262,7 @@ Deletes a disk by its ID.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:892
+Defined in: src/generated/nebius/compute/v1/index.ts:893
 
 Deletes a disk by its ID.
 
@@ -284,7 +284,7 @@ Deletes a disk by its ID.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:893
+Defined in: src/generated/nebius/compute/v1/index.ts:894
 
 Deletes a disk by its ID.
 
@@ -314,7 +314,7 @@ Deletes a disk by its ID.
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:761
+Defined in: src/generated/nebius/compute/v1/index.ts:762
 
 Retrieves information about a disk by its ID.
 
@@ -332,7 +332,7 @@ Retrieves information about a disk by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:762
+Defined in: src/generated/nebius/compute/v1/index.ts:763
 
 ##### Parameters
 
@@ -352,7 +352,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:762
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:763
+Defined in: src/generated/nebius/compute/v1/index.ts:764
 
 ##### Parameters
 
@@ -376,7 +376,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:763
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:825
+Defined in: src/generated/nebius/compute/v1/index.ts:826
 
 Retrieves information about a disk by its ID.
 
@@ -394,7 +394,7 @@ Retrieves information about a disk by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:826
+Defined in: src/generated/nebius/compute/v1/index.ts:827
 
 Retrieves information about a disk by its ID.
 
@@ -416,7 +416,7 @@ Retrieves information about a disk by its ID.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:827
+Defined in: src/generated/nebius/compute/v1/index.ts:828
 
 Retrieves information about a disk by its ID.
 
@@ -446,7 +446,7 @@ Retrieves information about a disk by its ID.
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:768
+Defined in: src/generated/nebius/compute/v1/index.ts:769
 
 Retrieves information about a disk by its parent and name.
 
@@ -464,7 +464,7 @@ Retrieves information about a disk by its parent and name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:769
+Defined in: src/generated/nebius/compute/v1/index.ts:770
 
 ##### Parameters
 
@@ -484,7 +484,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:769
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:770
+Defined in: src/generated/nebius/compute/v1/index.ts:771
 
 ##### Parameters
 
@@ -508,7 +508,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:770
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:837
+Defined in: src/generated/nebius/compute/v1/index.ts:838
 
 Retrieves information about a disk by its parent and name.
 
@@ -526,7 +526,7 @@ Retrieves information about a disk by its parent and name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:838
+Defined in: src/generated/nebius/compute/v1/index.ts:839
 
 Retrieves information about a disk by its parent and name.
 
@@ -548,7 +548,7 @@ Retrieves information about a disk by its parent and name.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](../interfaces/Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:839
+Defined in: src/generated/nebius/compute/v1/index.ts:840
 
 Retrieves information about a disk by its parent and name.
 
@@ -576,7 +576,7 @@ Retrieves information about a disk by its parent and name.
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:821
+Defined in: src/generated/nebius/compute/v1/index.ts:822
 
 #### Returns
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:821
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:775
+Defined in: src/generated/nebius/compute/v1/index.ts:776
 
 Lists all disks within a specified parent.
 
@@ -608,7 +608,7 @@ Lists all disks within a specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:776
+Defined in: src/generated/nebius/compute/v1/index.ts:777
 
 ##### Parameters
 
@@ -628,7 +628,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:776
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:777
+Defined in: src/generated/nebius/compute/v1/index.ts:778
 
 ##### Parameters
 
@@ -652,7 +652,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:777
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:849
+Defined in: src/generated/nebius/compute/v1/index.ts:850
 
 Lists all disks within a specified parent.
 
@@ -670,7 +670,7 @@ Lists all disks within a specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:850
+Defined in: src/generated/nebius/compute/v1/index.ts:851
 
 Lists all disks within a specified parent.
 
@@ -692,7 +692,7 @@ Lists all disks within a specified parent.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListDisksRequest`](../interfaces/ListDisksRequest.md), [`ListDisksResponse`](../interfaces/ListDisksResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:851
+Defined in: src/generated/nebius/compute/v1/index.ts:852
 
 Lists all disks within a specified parent.
 
@@ -722,7 +722,7 @@ Lists all disks within a specified parent.
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:805
+Defined in: src/generated/nebius/compute/v1/index.ts:806
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -740,7 +740,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:806
+Defined in: src/generated/nebius/compute/v1/index.ts:807
 
 ##### Parameters
 
@@ -760,7 +760,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:806
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:807
+Defined in: src/generated/nebius/compute/v1/index.ts:808
 
 ##### Parameters
 
@@ -784,7 +784,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:807
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:906
+Defined in: src/generated/nebius/compute/v1/index.ts:907
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -802,7 +802,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:907
+Defined in: src/generated/nebius/compute/v1/index.ts:908
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -824,7 +824,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:908
+Defined in: src/generated/nebius/compute/v1/index.ts:909
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -854,7 +854,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:791
+Defined in: src/generated/nebius/compute/v1/index.ts:792
 
 Updates an existing disk with new configuration parameters.
 For details, see https://docs.nebius.com/compute/storage/manage#parameters
@@ -873,7 +873,7 @@ For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:792
+Defined in: src/generated/nebius/compute/v1/index.ts:793
 
 ##### Parameters
 
@@ -893,7 +893,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:792
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:793
+Defined in: src/generated/nebius/compute/v1/index.ts:794
 
 ##### Parameters
 
@@ -917,7 +917,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:793
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:876
+Defined in: src/generated/nebius/compute/v1/index.ts:877
 
 Updates an existing disk with new configuration parameters.
 For details, see https://docs.nebius.com/compute/storage/manage#parameters
@@ -936,7 +936,7 @@ For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:877
+Defined in: src/generated/nebius/compute/v1/index.ts:878
 
 Updates an existing disk with new configuration parameters.
 For details, see https://docs.nebius.com/compute/storage/manage#parameters
@@ -959,7 +959,7 @@ For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateDiskRequest`](../interfaces/UpdateDiskRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:878
+Defined in: src/generated/nebius/compute/v1/index.ts:879
 
 Updates an existing disk with new configuration parameters.
 For details, see https://docs.nebius.com/compute/storage/manage#parameters

@@ -6,7 +6,7 @@
 
 # Interface: ListServiceAccountResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16697
+Defined in: src/generated/nebius/iam/v1/index.ts:16698
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16697
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16699
+Defined in: src/generated/nebius/iam/v1/index.ts:16700
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16699
 
 > **$type**: `"nebius.iam.v1.ListServiceAccountResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16698
+Defined in: src/generated/nebius/iam/v1/index.ts:16699
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16698
 
 > **items**: [`ServiceAccount`](ServiceAccount.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16704
+Defined in: src/generated/nebius/iam/v1/index.ts:16705
 
 List of service accounts returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of service accounts returned in the response. The field should be named as 
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16709
+Defined in: src/generated/nebius/iam/v1/index.ts:16710
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

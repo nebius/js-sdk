@@ -6,7 +6,7 @@
 
 # Interface: Cluster
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:869
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:870
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:869
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:871
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:872
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:871
 
 > **$type**: `"nebius.msp.mlflow.v1alpha1.Cluster"`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:870
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:871
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:870
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:872
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:873
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:872
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:873
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:874
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:873
 
 > `optional` **status**: [`MlflowClusterStatus`](MlflowClusterStatus.md)
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:874
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:875

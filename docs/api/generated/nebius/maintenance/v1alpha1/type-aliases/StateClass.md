@@ -8,4 +8,4 @@
 
 > **StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"STATE_SCHEDULED"` \| `"STATE_IN_PROGRESS"` \| `"STATE_FINISHED"` \| `"STATE_ERROR"` \| `"STATE_CANCELLED"`\> & `StateValueMembers`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:413
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:414

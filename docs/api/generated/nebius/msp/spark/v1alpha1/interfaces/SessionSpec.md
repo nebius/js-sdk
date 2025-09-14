@@ -6,7 +6,7 @@
 
 # Interface: SessionSpec
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4855
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4922
 
 Spark Session specification
 
@@ -16,7 +16,7 @@ Spark Session specification
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4857
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4924
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4857
 
 > **$type**: `"nebius.msp.spark.v1alpha1.SessionSpec"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4856
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4923
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4856
 
 > `optional` **description**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4862
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4929
 
 Description of the session.
 
@@ -42,7 +42,7 @@ Description of the session.
 
 > `optional` **driver**: [`DriverTemplateSpec`](DriverTemplateSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4863
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4930
 
 ---
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4863
 
 > `optional` **executor**: [`ExecutorTemplateSpec`](ExecutorTemplateSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4864
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4931
 
 ---
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4864
 
 > **fileUris**: `string`[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4870
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4937
 
 S3 URIs of files to be placed in executor working directory
 
@@ -68,7 +68,7 @@ S3 URIs of files to be placed in executor working directory
 
 > **jarUris**: `string`[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4875
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4942
 
 S3 URIs of Jars to be placed in classpaths of driver and executors for java applications
 
@@ -78,7 +78,7 @@ S3 URIs of Jars to be placed in classpaths of driver and executors for java appl
 
 > **packages**: `string`[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4880
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4947
 
 List of maven coordinates of jars to include on the driver and executor classpaths
 
@@ -88,7 +88,7 @@ List of maven coordinates of jars to include on the driver and executor classpat
 
 > `optional` **python**: [`PythonConfig`](PythonConfig.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4890
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4957
 
 Python runtime-specific session config
 
@@ -98,7 +98,7 @@ Python runtime-specific session config
 
 > **sparkConf**: `object`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4885
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4952
 
 Map of spark configuration parameters
 
@@ -112,4 +112,4 @@ Map of spark configuration parameters
 
 > **sparkVersion**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4865
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4932

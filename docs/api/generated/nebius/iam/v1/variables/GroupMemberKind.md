@@ -8,4 +8,4 @@
 
 > **GroupMemberKind**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GroupMemberKind`](../interfaces/GroupMemberKind.md), `"nebius.iam.v1.GroupMemberKind"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11366
+Defined in: src/generated/nebius/iam/v1/index.ts:11367

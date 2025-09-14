@@ -8,4 +8,4 @@
 
 > **AllocationServiceServiceDescription** = _typeof_ [`AllocationServiceServiceDescription`](../variables/AllocationServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:760
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:761

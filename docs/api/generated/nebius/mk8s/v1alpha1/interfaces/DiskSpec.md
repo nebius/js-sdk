@@ -6,7 +6,7 @@
 
 # Interface: DiskSpec
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2600
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2871
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2600
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2602
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2873
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2602
 
 > **$type**: `"nebius.mk8s.v1alpha1.DiskSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2601
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2872
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2601
 
 > **blockSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2603
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2874
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2603
 
 > `optional` **size**: \{ `$case`: `"sizeBytes"`; `sizeBytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeKibibytes"`; `sizeKibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeMebibytes"`; `sizeMebibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeGibibytes"`; `sizeGibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \}
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2605
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2876
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2605
 
 > **type**: [`DiskSpec_DiskType`](../type-aliases/DiskSpec_DiskType.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2604
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2875

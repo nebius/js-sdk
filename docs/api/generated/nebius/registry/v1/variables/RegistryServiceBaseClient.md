@@ -8,7 +8,7 @@
 
 > **RegistryServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`RegistryServiceBaseClient`](../interfaces/RegistryServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1535
+Defined in: src/generated/nebius/registry/v1/index.ts:1536
 
 ## Type Declaration
 

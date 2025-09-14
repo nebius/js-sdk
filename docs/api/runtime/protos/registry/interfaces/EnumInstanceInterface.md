@@ -6,7 +6,7 @@
 
 # Interface: EnumInstanceInterface
 
-Defined in: [src/runtime/protos/registry.ts:21](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L21)
+Defined in: [src/runtime/protos/registry.ts:21](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L21)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/protos/registry.ts:21](https://github.com/nebius/nodejs
 
 > `readonly` `optional` **\[ENUM_VALUE_META\]**: [`EnumValueMeta`](../../enum/interfaces/EnumValueMeta.md)
 
-Defined in: [src/runtime/protos/registry.ts:26](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L26)
+Defined in: [src/runtime/protos/registry.ts:26](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L26)
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/protos/registry.ts:26](https://github.com/nebius/nodejs
 
 > `readonly` **code**: `number`
 
-Defined in: [src/runtime/protos/registry.ts:22](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L22)
+Defined in: [src/runtime/protos/registry.ts:22](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L22)
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: [src/runtime/protos/registry.ts:22](https://github.com/nebius/nodejs
 
 > `readonly` **name**: `string`
 
-Defined in: [src/runtime/protos/registry.ts:23](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L23)
+Defined in: [src/runtime/protos/registry.ts:23](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L23)
 
 ## Methods
 
@@ -38,7 +38,7 @@ Defined in: [src/runtime/protos/registry.ts:23](https://github.com/nebius/nodejs
 
 > **toNumber**(): `number`
 
-Defined in: [src/runtime/protos/registry.ts:24](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L24)
+Defined in: [src/runtime/protos/registry.ts:24](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L24)
 
 #### Returns
 
@@ -50,7 +50,7 @@ Defined in: [src/runtime/protos/registry.ts:24](https://github.com/nebius/nodejs
 
 > **toString**(): `string`
 
-Defined in: [src/runtime/protos/registry.ts:25](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L25)
+Defined in: [src/runtime/protos/registry.ts:25](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L25)
 
 #### Returns
 

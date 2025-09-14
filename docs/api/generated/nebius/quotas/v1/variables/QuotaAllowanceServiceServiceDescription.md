@@ -8,7 +8,7 @@
 
 > **QuotaAllowanceServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:488
+Defined in: src/generated/nebius/quotas/v1/index.ts:489
 
 ## Type Declaration
 

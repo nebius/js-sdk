@@ -8,4 +8,4 @@
 
 > **AllocationStatus_State**: [`AllocationStatus_StateClass`](../type-aliases/AllocationStatus_StateClass.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1097
+Defined in: src/generated/nebius/vpc/v1/index.ts:1098

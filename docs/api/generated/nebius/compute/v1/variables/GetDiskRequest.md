@@ -8,4 +8,4 @@
 
 > **GetDiskRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetDiskRequest`](../interfaces/GetDiskRequest.md), `"nebius.compute.v1.GetDiskRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:15
+Defined in: src/generated/nebius/compute/v1/index.ts:16

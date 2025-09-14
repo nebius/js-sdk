@@ -6,7 +6,7 @@
 
 # Interface: Template
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:10
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:11
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:10
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:12
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:13
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:12
 
 > **$type**: `"nebius.msp.v1alpha1.resource.Template"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:11
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:12
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:11
 
 > `optional` **spec**: [`TemplateSpec`](TemplateSpec.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:14
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:15
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:14
 
 > `optional` **status**: [`TemplateStatus`](TemplateStatus.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:13
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:14

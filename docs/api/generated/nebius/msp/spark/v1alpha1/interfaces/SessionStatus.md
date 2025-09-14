@@ -6,7 +6,7 @@
 
 # Interface: SessionStatus
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5164
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5231
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5164
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5166
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5233
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5166
 
 > **$type**: `"nebius.msp.spark.v1alpha1.SessionStatus"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5165
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5232
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5165
 
 > `optional` **driverPresetDetails**: [`PresetDetails`](../../../v1alpha1/resource/interfaces/PresetDetails.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5186
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5253
 
 Session driver resource preset details
 
@@ -40,7 +40,7 @@ Session driver resource preset details
 
 > `optional` **executorPresetDetails**: [`PresetDetails`](../../../v1alpha1/resource/interfaces/PresetDetails.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5191
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5258
 
 Session executor resource preset details
 
@@ -50,7 +50,7 @@ Session executor resource preset details
 
 > **phase**: [`ClusterStatus_Phase`](../../../v1alpha1/type-aliases/ClusterStatus_Phase.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5171
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5238
 
 Current phase (or stage) of the cluster.
 
@@ -60,7 +60,7 @@ Current phase (or stage) of the cluster.
 
 > `optional` **sparkConnectEndpoint**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5181
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5248
 
 Spark Connect endpoint
 
@@ -70,6 +70,6 @@ Spark Connect endpoint
 
 > **state**: [`ClusterStatus_State`](../../../v1alpha1/type-aliases/ClusterStatus_State.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5176
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:5243
 
 State reflects substatus of the stage to define whether it's healthy or not.

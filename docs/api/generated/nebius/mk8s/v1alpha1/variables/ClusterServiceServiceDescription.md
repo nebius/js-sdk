@@ -8,7 +8,7 @@
 
 > **ClusterServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:781
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1022
 
 ## Type Declaration
 
@@ -369,6 +369,78 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:781
 `Buffer`\<`ArrayBuffer`\>
 
 #### list.responseStream
+
+> `readonly` **responseStream**: `false` = `false`
+
+### listControlPlaneVersions
+
+> `readonly` **listControlPlaneVersions**: `object`
+
+#### listControlPlaneVersions.path
+
+> `readonly` **path**: `"/nebius.mk8s.v1alpha1.ClusterService/ListControlPlaneVersions"` = `"/nebius.mk8s.v1alpha1.ClusterService/ListControlPlaneVersions"`
+
+#### listControlPlaneVersions.requestDeserialize()
+
+> `readonly` **requestDeserialize**: (`value`) => [`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+##### Parameters
+
+###### value
+
+`Buffer`
+
+##### Returns
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+#### listControlPlaneVersions.requestSerialize()
+
+> `readonly` **requestSerialize**: (`value`) => `Buffer`\<`ArrayBuffer`\>
+
+##### Parameters
+
+###### value
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+##### Returns
+
+`Buffer`\<`ArrayBuffer`\>
+
+#### listControlPlaneVersions.requestStream
+
+> `readonly` **requestStream**: `false` = `false`
+
+#### listControlPlaneVersions.responseDeserialize()
+
+> `readonly` **responseDeserialize**: (`value`) => [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)
+
+##### Parameters
+
+###### value
+
+`Buffer`
+
+##### Returns
+
+[`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)
+
+#### listControlPlaneVersions.responseSerialize()
+
+> `readonly` **responseSerialize**: (`value`) => `Buffer`\<`ArrayBuffer`\>
+
+##### Parameters
+
+###### value
+
+[`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)
+
+##### Returns
+
+`Buffer`\<`ArrayBuffer`\>
+
+#### listControlPlaneVersions.responseStream
 
 > `readonly` **responseStream**: `false` = `false`
 

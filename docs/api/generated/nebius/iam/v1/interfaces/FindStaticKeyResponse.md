@@ -6,7 +6,7 @@
 
 # Interface: FindStaticKeyResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18642
+Defined in: src/generated/nebius/iam/v1/index.ts:18643
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18642
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18644
+Defined in: src/generated/nebius/iam/v1/index.ts:18645
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18644
 
 > **$type**: `"nebius.iam.v1.FindStaticKeyResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18643
+Defined in: src/generated/nebius/iam/v1/index.ts:18644
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18643
 
 > `optional` **staticKey**: [`StaticKey`](StaticKey.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18645
+Defined in: src/generated/nebius/iam/v1/index.ts:18646

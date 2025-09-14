@@ -6,7 +6,7 @@
 
 # Interface: PlatformSpec
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11624
+Defined in: src/generated/nebius/compute/v1/index.ts:11625
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11624
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11626
+Defined in: src/generated/nebius/compute/v1/index.ts:11627
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11626
 
 > **$type**: `"nebius.compute.v1.PlatformSpec"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11625
+Defined in: src/generated/nebius/compute/v1/index.ts:11626
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11625
 
 > **allowPresetChange**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11630
+Defined in: src/generated/nebius/compute/v1/index.ts:11631
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11630
 
 > **gpuCountQuotaType**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11628
+Defined in: src/generated/nebius/compute/v1/index.ts:11629
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11628
 
 > **humanReadableName**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11629
+Defined in: src/generated/nebius/compute/v1/index.ts:11630
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11629
 
 > **presets**: [`Preset`](Preset.md)[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11627
+Defined in: src/generated/nebius/compute/v1/index.ts:11628

@@ -6,7 +6,7 @@
 
 # Interface: NetworkServiceBaseClient
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3344
+Defined in: src/generated/nebius/vpc/v1/index.ts:3345
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3348
+Defined in: src/generated/nebius/vpc/v1/index.ts:3349
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3348
 
 > **createDefault**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3349
+Defined in: src/generated/nebius/vpc/v1/index.ts:3350
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3349
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3351
+Defined in: src/generated/nebius/vpc/v1/index.ts:3352
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3351
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3345
+Defined in: src/generated/nebius/vpc/v1/index.ts:3346
 
 #### Parameters
 
@@ -154,7 +154,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3345
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3346
+Defined in: src/generated/nebius/vpc/v1/index.ts:3347
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3347
+Defined in: src/generated/nebius/vpc/v1/index.ts:3348
 
 #### Parameters
 
@@ -814,7 +814,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3350
+Defined in: src/generated/nebius/vpc/v1/index.ts:3351
 
 #### Parameters
 

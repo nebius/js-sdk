@@ -8,4 +8,4 @@
 
 > **DiskSpec_DiskTypeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"NETWORK_SSD"` \| `"NETWORK_HDD"` \| `"NETWORK_SSD_IO_M3"` \| `"NETWORK_SSD_NON_REPLICATED"`\> & `DiskSpec_DiskTypeValueMembers`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2580
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2851

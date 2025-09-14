@@ -6,7 +6,7 @@
 
 # Interface: NonCurrentBucketCounters
 
-Defined in: src/generated/nebius/storage/v1/index.ts:256
+Defined in: src/generated/nebius/storage/v1/index.ts:257
 
 Counters for non-current object versions (for versioning buckets).
 
@@ -16,7 +16,7 @@ Counters for non-current object versions (for versioning buckets).
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:258
+Defined in: src/generated/nebius/storage/v1/index.ts:259
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:258
 
 > **$type**: `"nebius.storage.v1.NonCurrentBucketCounters"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:257
+Defined in: src/generated/nebius/storage/v1/index.ts:258
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:257
 
 > **multipartObjectsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:261
+Defined in: src/generated/nebius/storage/v1/index.ts:262
 
 ---
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:261
 
 > **multipartObjectsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:262
+Defined in: src/generated/nebius/storage/v1/index.ts:263
 
 ---
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:262
 
 > **simpleObjectsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:259
+Defined in: src/generated/nebius/storage/v1/index.ts:260
 
 ---
 
@@ -56,4 +56,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:259
 
 > **simpleObjectsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:260
+Defined in: src/generated/nebius/storage/v1/index.ts:261

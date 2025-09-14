@@ -8,6 +8,6 @@
 
 > **NetworkStatus_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"DELETING"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3504
+Defined in: src/generated/nebius/vpc/v1/index.ts:3505
 
 Enumeration of possible states of the network.

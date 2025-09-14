@@ -8,7 +8,7 @@
 
 > **GroupMembershipServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`GroupMembershipServiceBaseClient`](../interfaces/GroupMembershipServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10806
+Defined in: src/generated/nebius/iam/v1/index.ts:10807
 
 ## Type Declaration
 

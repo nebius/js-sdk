@@ -6,7 +6,7 @@
 
 # Interface: ImageStatus
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5276
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5277
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5276
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5278
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5279
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5278
 
 > **$type**: `"nebius.compute.v1alpha1.ImageStatus"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5277
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5278
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5277
 
 > **minDiskSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5282
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5283
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5282
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5287
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5288
 
 Indicates whether there is an ongoing operation
 
@@ -48,7 +48,7 @@ Indicates whether there is an ongoing operation
 
 > **state**: [`ImageStatus_State`](../type-aliases/ImageStatus_State.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5279
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5280
 
 ---
 
@@ -56,7 +56,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5279
 
 > **stateDescription**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5280
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5281
 
 ---
 
@@ -64,4 +64,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5280
 
 > **storageSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5281
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5282

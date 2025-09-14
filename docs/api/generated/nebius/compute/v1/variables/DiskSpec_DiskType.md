@@ -8,4 +8,4 @@
 
 > **DiskSpec_DiskType**: [`DiskSpec_DiskTypeClass`](../type-aliases/DiskSpec_DiskTypeClass.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:926
+Defined in: src/generated/nebius/compute/v1/index.ts:927

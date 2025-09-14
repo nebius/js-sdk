@@ -8,4 +8,4 @@
 
 > **GpuClusterStatusInfinibandTopologyPathInstance**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GpuClusterStatusInfinibandTopologyPathInstance`](../interfaces/GpuClusterStatusInfinibandTopologyPathInstance.md), `"nebius.compute.v1.GpuClusterStatusInfinibandTopologyPathInstance"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4907
+Defined in: src/generated/nebius/compute/v1/index.ts:4908

@@ -6,7 +6,7 @@
 
 # Interface: UserAccountExternalId
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22641
+Defined in: src/generated/nebius/iam/v1/index.ts:22642
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22641
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22643
+Defined in: src/generated/nebius/iam/v1/index.ts:22644
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22643
 
 > **$type**: `"nebius.iam.v1.UserAccountExternalId"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22642
+Defined in: src/generated/nebius/iam/v1/index.ts:22643
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22642
 
 > **federationId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22645
+Defined in: src/generated/nebius/iam/v1/index.ts:22646
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22645
 
 > **federationUserAccountId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22644
+Defined in: src/generated/nebius/iam/v1/index.ts:22645

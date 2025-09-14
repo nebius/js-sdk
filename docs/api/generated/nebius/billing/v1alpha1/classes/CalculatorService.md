@@ -6,7 +6,7 @@
 
 # Class: CalculatorService
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:546
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:547
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:546
 
 > **new CalculatorService**(`sdk`): `CalculatorService`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:571
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:572
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:571
 
 > **$type**: `"nebius.billing.v1alpha1.CalculatorService"`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:547
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:548
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:547
 
 > **estimate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:553
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:554
 
 Estimates prices for a single resource.
 Returns both hourly and monthly cost estimates for the specified resource configuration.
@@ -65,7 +65,7 @@ Returns both hourly and monthly cost estimates for the specified resource config
 
 > **estimate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:554
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:555
 
 ##### Parameters
 
@@ -85,7 +85,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:554
 
 > **estimate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:555
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:556
 
 ##### Parameters
 
@@ -109,7 +109,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:555
 
 > **estimate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:577
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:578
 
 Estimates prices for a single resource.
 Returns both hourly and monthly cost estimates for the specified resource configuration.
@@ -128,7 +128,7 @@ Returns both hourly and monthly cost estimates for the specified resource config
 
 > **estimate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:578
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:579
 
 Estimates prices for a single resource.
 Returns both hourly and monthly cost estimates for the specified resource configuration.
@@ -151,7 +151,7 @@ Returns both hourly and monthly cost estimates for the specified resource config
 
 > **estimate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), [`EstimateResponse`](../interfaces/EstimateResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:579
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:580
 
 Estimates prices for a single resource.
 Returns both hourly and monthly cost estimates for the specified resource configuration.
@@ -182,7 +182,7 @@ Returns both hourly and monthly cost estimates for the specified resource config
 
 > **estimateBatch**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:561
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:562
 
 Estimates prices for multiple resources.
 Returns aggregated hourly and monthly cost estimates for all specified resources.
@@ -201,7 +201,7 @@ Returns aggregated hourly and monthly cost estimates for all specified resources
 
 > **estimateBatch**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:562
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:563
 
 ##### Parameters
 
@@ -221,7 +221,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:562
 
 > **estimateBatch**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:563
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:564
 
 ##### Parameters
 
@@ -245,7 +245,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:563
 
 > **estimateBatch**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:589
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:590
 
 Estimates prices for multiple resources.
 Returns aggregated hourly and monthly cost estimates for all specified resources.
@@ -264,7 +264,7 @@ Returns aggregated hourly and monthly cost estimates for all specified resources
 
 > **estimateBatch**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:590
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:591
 
 Estimates prices for multiple resources.
 Returns aggregated hourly and monthly cost estimates for all specified resources.
@@ -287,7 +287,7 @@ Returns aggregated hourly and monthly cost estimates for all specified resources
 
 > **estimateBatch**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`EstimateBatchRequest`](../interfaces/EstimateBatchRequest.md), [`EstimateBatchResponse`](../interfaces/EstimateBatchResponse.md)\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:591
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:592
 
 Estimates prices for multiple resources.
 Returns aggregated hourly and monthly cost estimates for all specified resources.

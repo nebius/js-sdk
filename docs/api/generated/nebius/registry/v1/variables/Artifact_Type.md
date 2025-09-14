@@ -8,4 +8,4 @@
 
 > **Artifact_Type**: [`Artifact_TypeClass`](../type-aliases/Artifact_TypeClass.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:568
+Defined in: src/generated/nebius/registry/v1/index.ts:569

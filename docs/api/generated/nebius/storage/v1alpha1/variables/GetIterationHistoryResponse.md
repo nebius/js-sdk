@@ -8,4 +8,4 @@
 
 > **GetIterationHistoryResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md), `"nebius.storage.v1alpha1.GetIterationHistoryResponse"`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:976
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:977

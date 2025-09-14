@@ -8,4 +8,4 @@
 
 > **DeleteGpuClusterRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), `"nebius.compute.v1.DeleteGpuClusterRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:3997
+Defined in: src/generated/nebius/compute/v1/index.ts:3998

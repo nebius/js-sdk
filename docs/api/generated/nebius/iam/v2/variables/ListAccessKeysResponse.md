@@ -8,4 +8,4 @@
 
 > **ListAccessKeysResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md), `"nebius.iam.v2.ListAccessKeysResponse"`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1242
+Defined in: src/generated/nebius/iam/v2/index.ts:1243

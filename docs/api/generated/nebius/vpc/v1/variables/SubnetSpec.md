@@ -8,4 +8,4 @@
 
 > **SubnetSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`SubnetSpec`](../interfaces/SubnetSpec.md), `"nebius.vpc.v1.SubnetSpec"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7474
+Defined in: src/generated/nebius/vpc/v1/index.ts:7475

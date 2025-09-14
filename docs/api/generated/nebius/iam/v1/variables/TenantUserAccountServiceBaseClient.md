@@ -8,7 +8,7 @@
 
 > **TenantUserAccountServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`TenantUserAccountServiceBaseClient`](../interfaces/TenantUserAccountServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20440
+Defined in: src/generated/nebius/iam/v1/index.ts:20441
 
 ## Type Declaration
 

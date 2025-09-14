@@ -8,4 +8,4 @@
 
 > **TransferSpec_OverwriteStrategyClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"OVERWRITE_STRATEGY_UNSPECIFIED"` \| `"NEVER"` \| `"IF_NEWER"` \| `"ALWAYS"`\> & `TransferSpec_OverwriteStrategyValueMembers`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1426
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1427

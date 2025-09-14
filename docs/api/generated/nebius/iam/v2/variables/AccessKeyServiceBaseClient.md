@@ -8,7 +8,7 @@
 
 > **AccessKeyServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`AccessKeyServiceBaseClient`](../interfaces/AccessKeyServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1481
+Defined in: src/generated/nebius/iam/v2/index.ts:1482
 
 ## Type Declaration
 

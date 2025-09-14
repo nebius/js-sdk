@@ -6,7 +6,7 @@
 
 # Interface: InstanceStatus
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7724
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7725
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7724
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7726
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7727
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7726
 
 > **$type**: `"nebius.compute.v1alpha1.InstanceStatus"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7725
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7726
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7725
 
 > **networkInterfaces**: [`NetworkInterfaceStatus`](../../../vpc/v1alpha1/interfaces/NetworkInterfaceStatus.md)[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7728
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7729
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7728
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7733
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7734
 
 Indicates whether there is an ongoing operation
 
@@ -48,4 +48,4 @@ Indicates whether there is an ongoing operation
 
 > **state**: [`InstanceStatus_InstanceState`](../type-aliases/InstanceStatus_InstanceState.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7727
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7728

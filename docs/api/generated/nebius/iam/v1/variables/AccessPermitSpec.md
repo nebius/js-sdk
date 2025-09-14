@@ -8,4 +8,4 @@
 
 > **AccessPermitSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AccessPermitSpec`](../interfaces/AccessPermitSpec.md), `"nebius.iam.v1.AccessPermitSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3088
+Defined in: src/generated/nebius/iam/v1/index.ts:3089

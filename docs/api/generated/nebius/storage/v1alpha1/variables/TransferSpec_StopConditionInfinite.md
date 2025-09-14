@@ -8,4 +8,4 @@
 
 > **TransferSpec_StopConditionInfinite**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TransferSpec_StopConditionInfinite`](../interfaces/TransferSpec_StopConditionInfinite.md), `"nebius.storage.v1alpha1.TransferSpec.StopConditionInfinite"`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2819
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2820

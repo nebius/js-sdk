@@ -8,4 +8,4 @@
 
 > **StartRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`StartRequest`](../interfaces/StartRequest.md), `"nebius.msp.v1alpha1.StartRequest"`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:487
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:488

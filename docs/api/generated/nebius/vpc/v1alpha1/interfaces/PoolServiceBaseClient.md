@@ -6,7 +6,7 @@
 
 # Interface: PoolServiceBaseClient
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4612
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4613
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4613
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4614
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4613
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4614
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4615
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4615
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4616
 
 #### Parameters
 

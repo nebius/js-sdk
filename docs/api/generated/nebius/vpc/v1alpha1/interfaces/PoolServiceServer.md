@@ -6,7 +6,7 @@
 
 # Interface: PoolServiceServer
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4606
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4607
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4606
 
 > **get**: `handleUnaryCall`\<[`GetPoolRequest`](GetPoolRequest.md), [`Pool`](Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4607
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4608
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4607
 
 > **getByName**: `handleUnaryCall`\<[`GetPoolByNameRequest`](GetPoolByNameRequest.md), [`Pool`](Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4608
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4609
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4608
 
 > **list**: `handleUnaryCall`\<[`ListPoolsRequest`](ListPoolsRequest.md), [`ListPoolsResponse`](ListPoolsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4609
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4610

@@ -6,7 +6,7 @@
 
 # Interface: NodeGroupDeploymentStrategy
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5857
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6175
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5857
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5859
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6177
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5859
 
 > **$type**: `"nebius.mk8s.v1alpha1.NodeGroupDeploymentStrategy"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5858
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6176
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5858
 
 > `optional` **drainTimeout**: `Duration`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5899
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6217
 
 DrainTimeout is the total amount of time that the service will spend on draining a node.
 By default, node can be drained without any time limitations.
@@ -42,7 +42,7 @@ NOTE: NodeDrainTimeout is different from `kubectl drain --timeout`
 
 > `optional` **maxSurge**: [`PercentOrCount`](PercentOrCount.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5892
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6210
 
 The maximum number of machines that can be scheduled above the
 desired number of machines.
@@ -64,7 +64,7 @@ at any time during the update is at most 130% of desired machines.
 
 > `optional` **maxUnavailable**: [`PercentOrCount`](PercentOrCount.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5875
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6193
 
 The maximum number of machines that can be unavailable during the update.
 Value can be an absolute number (ex: 5) or a percentage of desired

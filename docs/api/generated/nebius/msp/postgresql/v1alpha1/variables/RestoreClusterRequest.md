@@ -8,4 +8,4 @@
 
 > **RestoreClusterRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), `"nebius.msp.postgresql.v1alpha1.RestoreClusterRequest"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1606
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1607

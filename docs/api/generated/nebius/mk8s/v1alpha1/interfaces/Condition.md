@@ -6,7 +6,7 @@
 
 # Interface: Condition
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2229
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2500
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2229
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2231
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2502
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2231
 
 > **$type**: `"nebius.mk8s.v1alpha1.Condition"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2230
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2501
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2230
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2263
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2534
 
 A human readable description message of this detail.
 
@@ -40,7 +40,7 @@ A human readable description message of this detail.
 
 > `optional` **lastTransitionAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2246
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2517
 
 The last time the condition transitioned from one status to another.
 
@@ -50,7 +50,7 @@ The last time the condition transitioned from one status to another.
 
 > `optional` **lastTransitionError**: [`Condition_TransitionError`](Condition_TransitionError.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2264
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2535
 
 ---
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2264
 
 > **reason**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2252
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2523
 
 The reason for the condition's last transition in CamelCase.
 The values are considered a guaranteed API.
@@ -69,7 +69,7 @@ The values are considered a guaranteed API.
 
 > **severity**: [`Condition_Severity`](../type-aliases/Condition_Severity.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2258
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2529
 
 Explicit classification of Reason code, so the users or machines can immediately
 understand the current situation and act accordingly.
@@ -80,7 +80,7 @@ understand the current situation and act accordingly.
 
 > **status**: [`Condition_Status`](../type-aliases/Condition_Status.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2241
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2512
 
 Status of the condition, one of TRUE, FALSE or UNKNOWN.
 
@@ -90,6 +90,6 @@ Status of the condition, one of TRUE, FALSE or UNKNOWN.
 
 > **type**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2236
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2507
 
 Type of condition. Should be CamelCase

@@ -6,7 +6,7 @@
 
 # Interface: BucketSpec
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2043
+Defined in: src/generated/nebius/storage/v1/index.ts:2044
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2043
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2045
+Defined in: src/generated/nebius/storage/v1/index.ts:2046
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2045
 
 > **$type**: `"nebius.storage.v1.BucketSpec"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2044
+Defined in: src/generated/nebius/storage/v1/index.ts:2045
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2044
 
 > **defaultStorageClass**: [`StorageClass`](../type-aliases/StorageClass.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2068
+Defined in: src/generated/nebius/storage/v1/index.ts:2069
 
 Storage class to use by default for uploads to the bucket. It may be overridden by `x-amz-storage-class` header.
 If not set - STANDARD is used as a default storage class.
@@ -41,7 +41,7 @@ If not set - STANDARD is used as a default storage class.
 
 > `optional` **lifecycleConfiguration**: [`LifecycleConfiguration`](LifecycleConfiguration.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2062
+Defined in: src/generated/nebius/storage/v1/index.ts:2063
 
 ---
 
@@ -49,7 +49,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2062
 
 > **maxSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2061
+Defined in: src/generated/nebius/storage/v1/index.ts:2062
 
 Maximum bucket size.
 Zero means unlimited.
@@ -62,7 +62,7 @@ Real bucket size can go a little higher if customer writes too fast.
 
 > **overrideStorageClass**: [`StorageClass`](../type-aliases/StorageClass.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2075
+Defined in: src/generated/nebius/storage/v1/index.ts:2076
 
 Storage class to override any other storage class of uploading objects. It overrides the storage class regardless
 of how the original storage class was specified - either the default storage class
@@ -74,7 +74,7 @@ or the one provided via the `x-amz-storage-class` header.
 
 > **versioningPolicy**: [`VersioningPolicy`](../type-aliases/VersioningPolicy.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2053
+Defined in: src/generated/nebius/storage/v1/index.ts:2054
 
 Supports transitions:
 

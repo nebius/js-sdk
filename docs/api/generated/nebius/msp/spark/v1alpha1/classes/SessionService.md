@@ -6,7 +6,7 @@
 
 # Class: SessionService
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4592
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4652
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4592
 
 > **new SessionService**(`sdk`): `SessionService`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4636
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4699
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4636
 
 > **$type**: `"nebius.msp.spark.v1alpha1.SessionService"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4593
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4653
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4593
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4619
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4679
 
 Creates a session.
 
@@ -64,7 +64,7 @@ Creates a session.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4620
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4680
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4620
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4621
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4681
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4621
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4682
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4749
 
 Creates a session.
 
@@ -126,7 +126,7 @@ Creates a session.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4683
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4750
 
 Creates a session.
 
@@ -148,7 +148,7 @@ Creates a session.
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateSessionRequest`](../interfaces/CreateSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4684
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4751
 
 Creates a session.
 
@@ -178,7 +178,7 @@ Creates a session.
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4626
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4686
 
 Deletes a session.
 
@@ -196,7 +196,7 @@ Deletes a session.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4627
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4687
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4627
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4628
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4688
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4628
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4697
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4764
 
 Deletes a session.
 
@@ -258,7 +258,7 @@ Deletes a session.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4698
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4765
 
 Deletes a session.
 
@@ -280,7 +280,7 @@ Deletes a session.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4699
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4766
 
 Deletes a session.
 
@@ -310,7 +310,7 @@ Deletes a session.
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4598
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4658
 
 Returns the specified session.
 
@@ -328,7 +328,7 @@ Returns the specified session.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4599
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4659
 
 ##### Parameters
 
@@ -348,7 +348,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4599
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4600
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4660
 
 ##### Parameters
 
@@ -372,7 +372,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4600
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4646
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4713
 
 Returns the specified session.
 
@@ -390,7 +390,7 @@ Returns the specified session.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4647
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4714
 
 Returns the specified session.
 
@@ -412,7 +412,7 @@ Returns the specified session.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4648
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4715
 
 Returns the specified session.
 
@@ -442,7 +442,7 @@ Returns the specified session.
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4605
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4665
 
 Returns the specified session by name.
 
@@ -460,7 +460,7 @@ Returns the specified session by name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4606
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4666
 
 ##### Parameters
 
@@ -480,7 +480,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4606
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4607
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4667
 
 ##### Parameters
 
@@ -504,7 +504,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4607
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4658
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4725
 
 Returns the specified session by name.
 
@@ -522,7 +522,7 @@ Returns the specified session by name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4659
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4726
 
 Returns the specified session by name.
 
@@ -544,7 +544,7 @@ Returns the specified session by name.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetSessionByNameRequest`](../interfaces/GetSessionByNameRequest.md), [`Session`](../interfaces/Session.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4660
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4727
 
 Returns the specified session by name.
 
@@ -572,7 +572,7 @@ Returns the specified session by name.
 
 > **getOperationService**(): [`OperationService`](../../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4642
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4709
 
 #### Returns
 
@@ -586,7 +586,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4642
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4612
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4672
 
 Retrieves a list of sessions.
 
@@ -604,7 +604,7 @@ Retrieves a list of sessions.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4613
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4673
 
 ##### Parameters
 
@@ -624,7 +624,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4613
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4614
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4674
 
 ##### Parameters
 
@@ -648,7 +648,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4614
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4670
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4737
 
 Retrieves a list of sessions.
 
@@ -666,7 +666,7 @@ Retrieves a list of sessions.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4671
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4738
 
 Retrieves a list of sessions.
 
@@ -688,7 +688,7 @@ Retrieves a list of sessions.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListSessionsRequest`](../interfaces/ListSessionsRequest.md), [`ListSessionsResponse`](../interfaces/ListSessionsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4672
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4739
 
 Retrieves a list of sessions.
 

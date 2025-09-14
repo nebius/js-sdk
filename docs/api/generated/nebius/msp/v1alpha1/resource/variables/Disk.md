@@ -8,4 +8,4 @@
 
 > **Disk**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Disk`](../interfaces/Disk.md), `"nebius.msp.v1alpha1.resource.Disk"`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:738
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:739

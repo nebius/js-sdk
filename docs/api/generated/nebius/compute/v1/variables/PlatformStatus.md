@@ -8,4 +8,4 @@
 
 > **PlatformStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PlatformStatus`](../interfaces/PlatformStatus.md), `"nebius.compute.v1.PlatformStatus"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:12016
+Defined in: src/generated/nebius/compute/v1/index.ts:12017

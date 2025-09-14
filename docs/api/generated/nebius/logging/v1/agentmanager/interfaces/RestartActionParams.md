@@ -6,7 +6,7 @@
 
 # Interface: RestartActionParams
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1682
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1683
 
 Parameters for agent restart action.
 
@@ -16,7 +16,7 @@ Parameters for agent restart action.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1684
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1685
 
 ---
 
@@ -24,4 +24,4 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1684
 
 > **$type**: `"nebius.logging.agentmanager.v1.RestartActionParams"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1683
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1684

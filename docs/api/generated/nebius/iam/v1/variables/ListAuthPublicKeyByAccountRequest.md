@@ -8,4 +8,4 @@
 
 > **ListAuthPublicKeyByAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), `"nebius.iam.v1.ListAuthPublicKeyByAccountRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4040
+Defined in: src/generated/nebius/iam/v1/index.ts:4041

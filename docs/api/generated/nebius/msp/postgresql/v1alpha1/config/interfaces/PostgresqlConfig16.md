@@ -6,7 +6,7 @@
 
 # Interface: PostgresqlConfig16
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:10
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:11
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:10
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:12
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:13
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:12
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.config.PostgresqlConfig16"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:11
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:12
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:11
 
 > `optional` **autovacuumAnalyzeScaleFactor**: `number`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:40
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:41
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:40
 
 > `optional` **autovacuumNaptime**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:38
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:39
 
 in seconds.
 
@@ -48,7 +48,7 @@ in seconds.
 
 > `optional` **autovacuumVacuumCostDelay**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:32
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:33
 
 in milliseconds.
 
@@ -58,7 +58,7 @@ in milliseconds.
 
 > `optional` **autovacuumVacuumCostLimit**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:33
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:34
 
 ---
 
@@ -66,7 +66,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:33
 
 > `optional` **autovacuumVacuumScaleFactor**: `number`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:39
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:40
 
 ---
 
@@ -74,7 +74,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:39
 
 > `optional` **autovacuumWorkMem**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:17
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:18
 
 in kilobytes.
 
@@ -84,7 +84,7 @@ in kilobytes.
 
 > `optional` **defaultTransactionReadOnly**: `boolean`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:41
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:42
 
 ---
 
@@ -92,7 +92,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:41
 
 > `optional` **idleInTransactionSessionTimeout**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:27
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:28
 
 in milliseconds.
 
@@ -102,7 +102,7 @@ in milliseconds.
 
 > `optional` **maxConnections**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:43
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:44
 
 ---
 
@@ -110,7 +110,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:43
 
 > `optional` **searchPath**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:42
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:43
 
 ---
 
@@ -118,7 +118,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:42
 
 > `optional` **sharedBuffers**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:48
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:49
 
 in kilobytes.
 
@@ -128,6 +128,6 @@ in kilobytes.
 
 > `optional` **statementTimeout**: [`Long`](../../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:22
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/config/index.ts:23
 
 in milliseconds.

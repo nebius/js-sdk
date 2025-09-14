@@ -8,4 +8,4 @@
 
 > **ImageStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"UPDATING"` \| `"DELETING"` \| `"ERROR"`\> & `ImageStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5005
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5006

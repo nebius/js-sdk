@@ -6,7 +6,7 @@
 
 # Interface: TokenExchangeServiceBaseClient
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22102
+Defined in: src/generated/nebius/iam/v1/index.ts:22103
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **exchange**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22103
+Defined in: src/generated/nebius/iam/v1/index.ts:22104
 
 #### Parameters
 

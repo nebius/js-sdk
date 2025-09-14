@@ -8,4 +8,4 @@
 
 > **UserAccountExternalId**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UserAccountExternalId`](../interfaces/UserAccountExternalId.md), `"nebius.iam.v1.UserAccountExternalId"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22641
+Defined in: src/generated/nebius/iam/v1/index.ts:22642

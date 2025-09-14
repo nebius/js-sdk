@@ -6,7 +6,7 @@
 
 # Interface: GetSessionRequest
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3864
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3909
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3864
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3866
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3911
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3866
 
 > **$type**: `"nebius.msp.spark.v1alpha1.GetSessionRequest"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3865
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3910
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3865
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3871
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3916
 
 ID of the session to retrieve.

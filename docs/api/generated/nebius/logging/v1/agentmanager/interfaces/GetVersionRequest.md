@@ -6,7 +6,7 @@
 
 # Interface: GetVersionRequest
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:170
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:171
 
 Request message for GetVersion RPC containing agent status and system information.
 
@@ -16,7 +16,7 @@ Request message for GetVersion RPC containing agent status and system informatio
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:172
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:173
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:172
 
 > **$type**: `"nebius.logging.agentmanager.v1.GetVersionRequest"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:171
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:172
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:171
 
 > **agentState**: [`AgentState`](../type-aliases/AgentState.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:207
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:208
 
 Current operational state of the agent.
 
@@ -42,7 +42,7 @@ Current operational state of the agent.
 
 > **agentStateMessages**: `string`[]
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:227
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:228
 
 Status messages from the agent describing its current state.
 
@@ -52,7 +52,7 @@ Status messages from the agent describing its current state.
 
 > `optional` **agentUptime**: `Duration`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:212
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:213
 
 Time duration since the agent started.
 
@@ -62,7 +62,7 @@ Time duration since the agent started.
 
 > **agentVersion**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:182
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:183
 
 Current version of the agent software.
 
@@ -72,7 +72,7 @@ Current version of the agent software.
 
 > **cloudInitStatus**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:247
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:248
 
 Status of cloud initialization process.
 
@@ -82,7 +82,7 @@ Status of cloud initialization process.
 
 > **dcgmVersion**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:272
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:273
 
 Version of the DCGM (Data Center GPU Manager) used.
 
@@ -92,7 +92,7 @@ Version of the DCGM (Data Center GPU Manager) used.
 
 > **gpuModel**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:262
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:263
 
 Model of the GPU used in the system.
 
@@ -102,7 +102,7 @@ Model of the GPU used in the system.
 
 > **gpuNumber**: `number`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:267
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:268
 
 Number of GPUs available in the system.
 
@@ -112,7 +112,7 @@ Number of GPUs available in the system.
 
 > **instanceId**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:197
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:198
 
 Unique identifier for the instance where agent is running.
 
@@ -122,7 +122,7 @@ Unique identifier for the instance where agent is running.
 
 > **instanceIdUsedFallback**: `boolean`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:252
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:253
 
 Indicates if a fallback method was used to determine instance_id.
 
@@ -132,7 +132,7 @@ Indicates if a fallback method was used to determine instance_id.
 
 > **lastAgentLogs**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:257
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:258
 
 Recent agent log entries for diagnostic purposes.
 
@@ -142,7 +142,7 @@ Recent agent log entries for diagnostic purposes.
 
 > **lastUpdateError**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:232
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:233
 
 Description of the last update failure, if any.
 
@@ -152,7 +152,7 @@ Description of the last update failure, if any.
 
 > **mk8sClusterId**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:237
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:238
 
 Managed Kubernetes cluster identifier, if applicable.
 
@@ -162,7 +162,7 @@ Managed Kubernetes cluster identifier, if applicable.
 
 > `optional` **modulesHealth**: [`ModulesHealth`](ModulesHealth.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:242
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:243
 
 Health status of individual agent modules.
 
@@ -172,7 +172,7 @@ Health status of individual agent modules.
 
 > `optional` **osInfo**: [`OSInfo`](OSInfo.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:202
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:203
 
 Detailed information about the operating system.
 
@@ -182,7 +182,7 @@ Detailed information about the operating system.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:192
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:193
 
 Parent identifier for the VM
 
@@ -192,7 +192,7 @@ Parent identifier for the VM
 
 > `optional` **systemUptime**: `Duration`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:217
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:218
 
 Total system uptime.
 
@@ -202,7 +202,7 @@ Total system uptime.
 
 > **type**: [`AgentType`](../type-aliases/AgentType.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:177
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:178
 
 Type of the agent. Must be O11Y_AGENT (1).
 
@@ -212,7 +212,7 @@ Type of the agent. Must be O11Y_AGENT (1).
 
 > `optional` **updaterUptime**: `Duration`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:222
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:223
 
 Time duration since the updater component started.
 
@@ -222,6 +222,6 @@ Time duration since the updater component started.
 
 > **updaterVersion**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:187
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:188
 
 Version of the updater component.

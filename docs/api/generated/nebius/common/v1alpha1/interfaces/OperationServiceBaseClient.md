@@ -6,7 +6,7 @@
 
 # ~~Interface: OperationServiceBaseClient~~
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:617
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:618
 
 ## Deprecated
 
@@ -38,7 +38,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:618
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:619
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:619
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:620
 
 #### Parameters
 

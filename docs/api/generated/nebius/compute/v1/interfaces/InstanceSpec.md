@@ -6,7 +6,7 @@
 
 # Interface: InstanceSpec
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7471
+Defined in: src/generated/nebius/compute/v1/index.ts:7472
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7471
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7473
+Defined in: src/generated/nebius/compute/v1/index.ts:7474
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7473
 
 > **$type**: `"nebius.compute.v1.InstanceSpec"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7472
+Defined in: src/generated/nebius/compute/v1/index.ts:7473
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7472
 
 > `optional` **bootDisk**: [`AttachedDiskSpec`](AttachedDiskSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7503
+Defined in: src/generated/nebius/compute/v1/index.ts:7504
 
 Specified boot disk attached to the instance.
 
@@ -40,7 +40,7 @@ Specified boot disk attached to the instance.
 
 > **cloudInitUserData**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7519
+Defined in: src/generated/nebius/compute/v1/index.ts:7520
 
 Data in cloud-init format for customizing instance initialization.
 For details, see https://docs.nebius.com/compute/virtual-machines/manage#user-data
@@ -51,7 +51,7 @@ For details, see https://docs.nebius.com/compute/virtual-machines/manage#user-da
 
 > **filesystems**: [`AttachedFilesystemSpec`](AttachedFilesystemSpec.md)[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7513
+Defined in: src/generated/nebius/compute/v1/index.ts:7514
 
 List of Shared Filesystems attached to the instance.
 
@@ -61,7 +61,7 @@ List of Shared Filesystems attached to the instance.
 
 > `optional` **gpuCluster**: [`InstanceGpuClusterSpec`](InstanceGpuClusterSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7493
+Defined in: src/generated/nebius/compute/v1/index.ts:7494
 
 If you want to interconnect several instances in a GPU cluster via NVIDIA InfiniBand,
 set the ID of an existing GPU cluster.
@@ -74,7 +74,7 @@ For details, see https://docs.nebius.com/compute/clusters/gpu
 
 > **hostname**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7544
+Defined in: src/generated/nebius/compute/v1/index.ts:7545
 
 Instance's hostname. Used to generate default DNS record in format `<hostname>.<network_id>.compute.internal.`
 or `<instance_id>.<network_id>.compute.internal.` if hostname is not specified.
@@ -85,7 +85,7 @@ or `<instance_id>.<network_id>.compute.internal.` if hostname is not specified.
 
 > **networkInterfaces**: [`NetworkInterfaceSpec`](NetworkInterfaceSpec.md)[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7498
+Defined in: src/generated/nebius/compute/v1/index.ts:7499
 
 List of network interfaces attached to the instance.
 
@@ -95,7 +95,7 @@ List of network interfaces attached to the instance.
 
 > `optional` **preemptible**: [`PreemptibleSpec`](PreemptibleSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7538
+Defined in: src/generated/nebius/compute/v1/index.ts:7539
 
 Include these parameters to create a Preemptible VM and omit them to create a Regular VM
 For details, see https://docs.nebius.com/compute/virtual-machines/preemptible
@@ -106,7 +106,7 @@ For details, see https://docs.nebius.com/compute/virtual-machines/preemptible
 
 > **recoveryPolicy**: [`InstanceRecoveryPolicy`](../type-aliases/InstanceRecoveryPolicy.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7532
+Defined in: src/generated/nebius/compute/v1/index.ts:7533
 
 Recovery policy defines how the instance will be treated in case of a failure. Common source of failure is a host failure, but it can be any other failure.
 Instance undergoing a guest shutdown (poweroff, etc.) will be subject to recovery policy, meaning that it could be restarted and billed accordingly. Stop instance via API or UI to stop it to avoid recovering.
@@ -119,7 +119,7 @@ If set to FAIL, instance will be stopped and not restarted.
 
 > `optional` **resources**: [`ResourcesSpec`](ResourcesSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7485
+Defined in: src/generated/nebius/compute/v1/index.ts:7486
 
 Specification of compute resources allocated to the instance.
 For details, see https://docs.nebius.com/compute/virtual-machines/types
@@ -130,7 +130,7 @@ For details, see https://docs.nebius.com/compute/virtual-machines/types
 
 > **secondaryDisks**: [`AttachedDiskSpec`](AttachedDiskSpec.md)[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7508
+Defined in: src/generated/nebius/compute/v1/index.ts:7509
 
 List of additional data disks attached to the instance beyond the boot disk.
 
@@ -140,7 +140,7 @@ List of additional data disks attached to the instance beyond the boot disk.
 
 > **serviceAccountId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7479
+Defined in: src/generated/nebius/compute/v1/index.ts:7480
 
 Unique identifier of the service account associated with this instance.
 For details, see https://docs.nebius.dev/en/iam/about-iam/concepts/service-accounts
@@ -151,6 +151,6 @@ For details, see https://docs.nebius.dev/en/iam/about-iam/concepts/service-accou
 
 > **stopped**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7524
+Defined in: src/generated/nebius/compute/v1/index.ts:7525
 
 Indicates whether the instance should be stopped.

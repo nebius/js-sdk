@@ -8,4 +8,4 @@
 
 > **GetSessionRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetSessionRequest`](../interfaces/GetSessionRequest.md), `"nebius.msp.spark.v1alpha1.GetSessionRequest"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3864
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3909

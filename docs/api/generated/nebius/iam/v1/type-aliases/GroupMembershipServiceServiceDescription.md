@@ -8,4 +8,4 @@
 
 > **GroupMembershipServiceServiceDescription** = _typeof_ [`GroupMembershipServiceServiceDescription`](../variables/GroupMembershipServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10729
+Defined in: src/generated/nebius/iam/v1/index.ts:10730

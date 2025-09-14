@@ -8,4 +8,4 @@
 
 > **ClusterServiceServiceDescription** = _typeof_ [`ClusterServiceServiceDescription`](../variables/ClusterServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2188
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2189

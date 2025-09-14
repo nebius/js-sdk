@@ -6,7 +6,7 @@
 
 # Interface: ClusterServiceBaseClient
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2295
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2296
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2300
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2301
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2300
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2301
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2302
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2301
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2296
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2297
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2296
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2297
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2298
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **getForBackup**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2298
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2299
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2298
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2299
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2300
 
 #### Parameters
 
@@ -814,7 +814,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **restore**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2303
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2304
 
 #### Parameters
 
@@ -844,7 +844,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2303
 
 > **start**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2305
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2306
 
 #### Parameters
 
@@ -874,7 +874,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2305
 
 > **stop**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2304
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2305
 
 #### Parameters
 
@@ -904,7 +904,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2304
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2302
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2303
 
 #### Parameters
 

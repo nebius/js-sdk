@@ -6,7 +6,7 @@
 
 # Interface: NodeGroupServiceBaseClient
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3937
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4208
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3941
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4212
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3941
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3943
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4214
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3943
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3938
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4209
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3938
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3939
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4210
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3940
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4211
 
 #### Parameters
 
@@ -784,7 +784,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3942
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4213
 
 #### Parameters
 
@@ -814,7 +814,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3942
 
 > **upgrade**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3944
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4215
 
 #### Parameters
 

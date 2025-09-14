@@ -6,7 +6,7 @@
 
 # Interface: NodeSetUnhealthyRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10621
+Defined in: src/generated/nebius/compute/v1/index.ts:10622
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10621
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10623
+Defined in: src/generated/nebius/compute/v1/index.ts:10624
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10623
 
 > **$type**: `"nebius.compute.v1.NodeSetUnhealthyRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10622
+Defined in: src/generated/nebius/compute/v1/index.ts:10623
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10622
 
 > **dryRun**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10631
+Defined in: src/generated/nebius/compute/v1/index.ts:10632
 
 If set to true, the call performs the authorization and limit checks, but does not mark node unhealthy.
 False by default
@@ -41,7 +41,7 @@ False by default
 
 > `optional` **healthCheckInfo**: [`NodeSetUnhealthyRequest_HealthCheckInfo`](NodeSetUnhealthyRequest_HealthCheckInfo.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10625
+Defined in: src/generated/nebius/compute/v1/index.ts:10626
 
 ---
 
@@ -49,4 +49,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10625
 
 > **instanceId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10624
+Defined in: src/generated/nebius/compute/v1/index.ts:10625

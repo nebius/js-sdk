@@ -8,4 +8,4 @@
 
 > **ResourceGroupCost**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceGroupCost`](../interfaces/ResourceGroupCost.md), `"nebius.billing.v1alpha1.ResourceGroupCost"`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:891
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:892

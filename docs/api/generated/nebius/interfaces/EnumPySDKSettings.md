@@ -6,7 +6,7 @@
 
 # Interface: EnumPySDKSettings
 
-Defined in: src/generated/nebius/index.ts:625
+Defined in: src/generated/nebius/index.ts:626
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/index.ts:625
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/index.ts:627
+Defined in: src/generated/nebius/index.ts:628
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/index.ts:627
 
 > **$type**: `"nebius.EnumPySDKSettings"`
 
-Defined in: src/generated/nebius/index.ts:626
+Defined in: src/generated/nebius/index.ts:627
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/index.ts:626
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/index.ts:628
+Defined in: src/generated/nebius/index.ts:629

@@ -6,7 +6,7 @@
 
 # Interface: IssueStaticKeyResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18445
+Defined in: src/generated/nebius/iam/v1/index.ts:18446
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18445
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18447
+Defined in: src/generated/nebius/iam/v1/index.ts:18448
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18447
 
 > **$type**: `"nebius.iam.v1.IssueStaticKeyResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18446
+Defined in: src/generated/nebius/iam/v1/index.ts:18447
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18446
 
 > `optional` **operation**: [`Operation`](../../../common/v1/interfaces/Operation.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18449
+Defined in: src/generated/nebius/iam/v1/index.ts:18450
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18449
 
 > **token**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18448
+Defined in: src/generated/nebius/iam/v1/index.ts:18449

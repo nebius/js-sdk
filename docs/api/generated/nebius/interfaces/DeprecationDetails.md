@@ -6,7 +6,7 @@
 
 # Interface: DeprecationDetails
 
-Defined in: src/generated/nebius/index.ts:795
+Defined in: src/generated/nebius/index.ts:796
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/index.ts:795
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/index.ts:797
+Defined in: src/generated/nebius/index.ts:798
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/index.ts:797
 
 > **$type**: `"nebius.DeprecationDetails"`
 
-Defined in: src/generated/nebius/index.ts:796
+Defined in: src/generated/nebius/index.ts:797
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/index.ts:796
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/index.ts:807
+Defined in: src/generated/nebius/index.ts:808
 
 A description to help users understand the reason for deprecation and suggest alternatives
 
@@ -40,6 +40,6 @@ A description to help users understand the reason for deprecation and suggest al
 
 > **effectiveAt**: `string`
 
-Defined in: src/generated/nebius/index.ts:802
+Defined in: src/generated/nebius/index.ts:803
 
 The date when this method, service, message or field will stop working (format: YYYY-MM-DD)

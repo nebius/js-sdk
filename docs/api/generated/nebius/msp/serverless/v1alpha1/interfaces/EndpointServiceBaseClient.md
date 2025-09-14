@@ -6,7 +6,7 @@
 
 # Interface: EndpointServiceBaseClient
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:342
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:343
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:346
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:347
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:346
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:347
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:348
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:347
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:343
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:344
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:343
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:344
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:345
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:345
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:346
 
 #### Parameters
 
@@ -784,7 +784,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **start**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:348
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:349
 
 #### Parameters
 
@@ -814,7 +814,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:348
 
 > **stop**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:349
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:350
 
 #### Parameters
 

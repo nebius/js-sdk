@@ -6,7 +6,7 @@
 
 # Interface: GetJobRequest
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1872
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1895
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1872
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1874
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1897
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1874
 
 > **$type**: `"nebius.msp.spark.v1alpha1.GetJobRequest"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1873
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1896
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1873
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1879
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1902
 
 ID of the job to retrieve.

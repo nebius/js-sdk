@@ -8,7 +8,7 @@
 
 > **ArtifactServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:431
+Defined in: src/generated/nebius/registry/v1/index.ts:432
 
 ## Type Declaration
 

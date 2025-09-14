@@ -6,7 +6,7 @@
 
 # Interface: OperationServiceListResponse
 
-Defined in: src/generated/nebius/common/v1/index.ts:3042
+Defined in: src/generated/nebius/common/v1/index.ts:3043
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3042
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3042
+Defined in: src/generated/nebius/common/v1/index.ts:3043
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/common/v1/index.ts:3042
 
 > **operations**: [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](GetOperationRequest.md)\>[]
 
-Defined in: src/generated/nebius/common/v1/index.ts:3042
+Defined in: src/generated/nebius/common/v1/index.ts:3043

@@ -6,7 +6,7 @@
 
 # Interface: ListBucketsRequest
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1285
+Defined in: src/generated/nebius/storage/v1/index.ts:1286
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1285
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1287
+Defined in: src/generated/nebius/storage/v1/index.ts:1288
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1287
 
 > **$type**: `"nebius.storage.v1.ListBucketsRequest"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1286
+Defined in: src/generated/nebius/storage/v1/index.ts:1287
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1286
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1307
+Defined in: src/generated/nebius/storage/v1/index.ts:1308
 
 A filter to narrow down the results based on specific criteria.
 
@@ -40,7 +40,7 @@ A filter to narrow down the results based on specific criteria.
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1297
+Defined in: src/generated/nebius/storage/v1/index.ts:1298
 
 Specifies the maximum number of items to return in the response.
 
@@ -50,7 +50,7 @@ Specifies the maximum number of items to return in the response.
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1302
+Defined in: src/generated/nebius/storage/v1/index.ts:1303
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -60,6 +60,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1292
+Defined in: src/generated/nebius/storage/v1/index.ts:1293
 
 Represents the container ID.

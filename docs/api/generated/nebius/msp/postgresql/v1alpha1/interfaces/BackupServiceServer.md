@@ -6,7 +6,7 @@
 
 # Interface: BackupServiceServer
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:648
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:649
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:648
 
 > **create**: `handleUnaryCall`\<[`CreateBackupRequest`](CreateBackupRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:652
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:653
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:652
 
 > **delete**: `handleUnaryCall`\<[`DeleteBackupRequest`](DeleteBackupRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:653
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:654
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:653
 
 > **get**: `handleUnaryCall`\<[`GetBackupRequest`](GetBackupRequest.md), [`Backup`](Backup.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:649
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:650
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:649
 
 > **list**: `handleUnaryCall`\<[`ListBackupsRequest`](ListBackupsRequest.md), [`ListBackupsResponse`](ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:650
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:651
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:650
 
 > **listByCluster**: `handleUnaryCall`\<[`ListBackupsByClusterRequest`](ListBackupsByClusterRequest.md), [`ListBackupsResponse`](ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:651
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:652

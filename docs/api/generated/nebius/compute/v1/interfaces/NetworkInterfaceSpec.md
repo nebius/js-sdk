@@ -6,7 +6,7 @@
 
 # Interface: NetworkInterfaceSpec
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9749
+Defined in: src/generated/nebius/compute/v1/index.ts:9750
 
 Describes the specification of a network interface.
 
@@ -16,7 +16,7 @@ Describes the specification of a network interface.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9751
+Defined in: src/generated/nebius/compute/v1/index.ts:9752
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9751
 
 > **$type**: `"nebius.compute.v1.NetworkInterfaceSpec"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9750
+Defined in: src/generated/nebius/compute/v1/index.ts:9751
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9750
 
 > `optional` **ipAddress**: [`IPAddress`](IPAddress.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9768
+Defined in: src/generated/nebius/compute/v1/index.ts:9769
 
 Private IPv4 address associated with the interface.
 
@@ -42,7 +42,7 @@ Private IPv4 address associated with the interface.
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9763
+Defined in: src/generated/nebius/compute/v1/index.ts:9764
 
 Interface name
 Value of this field configures the name of the network interface inside VM's OS.
@@ -54,7 +54,7 @@ Longer values will persist in the specification but will be truncated to 15 symb
 
 > `optional` **publicIpAddress**: [`PublicIPAddress`](PublicIPAddress.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9773
+Defined in: src/generated/nebius/compute/v1/index.ts:9774
 
 Public IPv4 address associated with the interface.
 
@@ -64,6 +64,6 @@ Public IPv4 address associated with the interface.
 
 > **subnetId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9756
+Defined in: src/generated/nebius/compute/v1/index.ts:9757
 
 Subnet ID

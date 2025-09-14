@@ -8,4 +8,4 @@
 
 > **Bucket**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Bucket`](../interfaces/Bucket.md), `"nebius.storage.v1.Bucket"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1908
+Defined in: src/generated/nebius/storage/v1/index.ts:1909

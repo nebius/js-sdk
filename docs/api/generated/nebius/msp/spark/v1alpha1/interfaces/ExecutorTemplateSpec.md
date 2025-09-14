@@ -6,7 +6,7 @@
 
 # Interface: ExecutorTemplateSpec
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3671
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3716
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3671
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3673
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3718
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3673
 
 > **$type**: `"nebius.msp.spark.v1alpha1.ExecutorTemplateSpec"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3672
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3717
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3672
 
 > `optional` **disk**: [`DiskSpec`](../../../v1alpha1/resource/interfaces/DiskSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3674
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3719
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3674
 
 > `optional` **hostsSpec**: \{ `$case`: `"hosts"`; `hosts`: [`HostSpec`](../../../v1alpha1/resource/interfaces/HostSpec.md); \} \| \{ `$case`: `"hostsDynamicAllocation"`; `hostsDynamicAllocation`: [`DynamicAllocationSpec`](DynamicAllocationSpec.md); \}
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3676
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3721
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3676
 
 > `optional` **resources**: [`ResourcesSpec`](../../../v1alpha1/resource/interfaces/ResourcesSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3675
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3720

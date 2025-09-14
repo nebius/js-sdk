@@ -8,7 +8,7 @@
 
 > **NodeServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`NodeServiceBaseClient`](../interfaces/NodeServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10974
+Defined in: src/generated/nebius/compute/v1/index.ts:10975
 
 ## Type Declaration
 

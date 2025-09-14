@@ -6,7 +6,7 @@
 
 # Class: VersionService
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1780
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1781
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1780
 
 > **new VersionService**(`sdk`): `VersionService`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1797
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1798
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1797
 
 > **$type**: `"nebius.logging.agentmanager.v1.VersionService"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1781
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1782
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1781
 
 > **getVersion**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1787
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1788
 
 GetVersion retrieves version information and receives instructions for agent updates
 or maintenance based on the current state and health of the agent.
@@ -65,7 +65,7 @@ or maintenance based on the current state and health of the agent.
 
 > **getVersion**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1788
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1789
 
 ##### Parameters
 
@@ -85,7 +85,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1788
 
 > **getVersion**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1789
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1790
 
 ##### Parameters
 
@@ -109,7 +109,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1789
 
 > **getVersion**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1803
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1804
 
 GetVersion retrieves version information and receives instructions for agent updates
 or maintenance based on the current state and health of the agent.
@@ -128,7 +128,7 @@ or maintenance based on the current state and health of the agent.
 
 > **getVersion**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1804
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1805
 
 GetVersion retrieves version information and receives instructions for agent updates
 or maintenance based on the current state and health of the agent.
@@ -151,7 +151,7 @@ or maintenance based on the current state and health of the agent.
 
 > **getVersion**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetVersionRequest`](../interfaces/GetVersionRequest.md), [`GetVersionResponse`](../interfaces/GetVersionResponse.md)\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1805
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1806
 
 GetVersion retrieves version information and receives instructions for agent updates
 or maintenance based on the current state and health of the agent.

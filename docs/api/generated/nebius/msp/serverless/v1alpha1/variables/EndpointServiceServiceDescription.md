@@ -8,7 +8,7 @@
 
 > **EndpointServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:265
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:266
 
 ## Type Declaration
 

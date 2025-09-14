@@ -6,7 +6,7 @@
 
 # Interface: QuotaAllowanceServiceBaseClient
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:525
+Defined in: src/generated/nebius/quotas/v1/index.ts:526
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:527
+Defined in: src/generated/nebius/quotas/v1/index.ts:528
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:527
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:528
+Defined in: src/generated/nebius/quotas/v1/index.ts:529
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:526
+Defined in: src/generated/nebius/quotas/v1/index.ts:527
 
 #### Parameters
 

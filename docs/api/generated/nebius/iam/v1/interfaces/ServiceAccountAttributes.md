@@ -6,7 +6,7 @@
 
 # Interface: ServiceAccountAttributes
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17322
+Defined in: src/generated/nebius/iam/v1/index.ts:17323
 
 see also nebius/iam/v1/tenant_user_account.proto/UserAttributes
 
@@ -16,7 +16,7 @@ see also nebius/iam/v1/tenant_user_account.proto/UserAttributes
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17324
+Defined in: src/generated/nebius/iam/v1/index.ts:17325
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17324
 
 > **$type**: `"nebius.iam.v1.ServiceAccountAttributes"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17323
+Defined in: src/generated/nebius/iam/v1/index.ts:17324
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17323
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17326
+Defined in: src/generated/nebius/iam/v1/index.ts:17327
 
 ---
 
@@ -40,4 +40,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17326
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17325
+Defined in: src/generated/nebius/iam/v1/index.ts:17326

@@ -6,7 +6,7 @@
 
 # Interface: NetworkInterfaceAssignment
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2057
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2058
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2057
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2059
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2060
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2059
 
 > **$type**: `"nebius.vpc.v1alpha1.NetworkInterfaceAssignment"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2058
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2059
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2058
 
 > **instanceId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2064
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2065
 
 ID of the Compute instance network interface belongs to.
 
@@ -40,6 +40,6 @@ ID of the Compute instance network interface belongs to.
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2069
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2070
 
 Network interface name

@@ -6,7 +6,7 @@
 
 # Interface: Host
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:950
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:951
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:950
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:952
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:953
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:952
 
 > **$type**: `"nebius.msp.v1alpha1.resource.Host"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:951
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:952
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:951
 
 > `optional` **count**: [`Range`](Range.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:953
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:954

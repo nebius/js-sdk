@@ -6,7 +6,7 @@
 
 # Interface: ServiceAccount
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17013
+Defined in: src/generated/nebius/iam/v1/index.ts:17014
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17013
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17015
+Defined in: src/generated/nebius/iam/v1/index.ts:17016
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17015
 
 > **$type**: `"nebius.iam.v1.ServiceAccount"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17014
+Defined in: src/generated/nebius/iam/v1/index.ts:17015
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17014
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17016
+Defined in: src/generated/nebius/iam/v1/index.ts:17017
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17016
 
 > `optional` **spec**: [`ServiceAccountSpec`](ServiceAccountSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17017
+Defined in: src/generated/nebius/iam/v1/index.ts:17018
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17017
 
 > `optional` **status**: [`ServiceAccountStatus`](ServiceAccountStatus.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17018
+Defined in: src/generated/nebius/iam/v1/index.ts:17019

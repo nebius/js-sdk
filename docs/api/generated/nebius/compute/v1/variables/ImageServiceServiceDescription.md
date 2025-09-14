@@ -8,7 +8,7 @@
 
 > **ImageServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5457
+Defined in: src/generated/nebius/compute/v1/index.ts:5458
 
 ## Type Declaration
 

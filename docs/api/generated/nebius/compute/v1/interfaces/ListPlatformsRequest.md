@@ -6,7 +6,7 @@
 
 # Interface: ListPlatformsRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11167
+Defined in: src/generated/nebius/compute/v1/index.ts:11168
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11167
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11169
+Defined in: src/generated/nebius/compute/v1/index.ts:11170
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11169
 
 > **$type**: `"nebius.compute.v1.ListPlatformsRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11168
+Defined in: src/generated/nebius/compute/v1/index.ts:11169
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11168
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11170
+Defined in: src/generated/nebius/compute/v1/index.ts:11171
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11170
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11171
+Defined in: src/generated/nebius/compute/v1/index.ts:11172
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11171
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11172
+Defined in: src/generated/nebius/compute/v1/index.ts:11173

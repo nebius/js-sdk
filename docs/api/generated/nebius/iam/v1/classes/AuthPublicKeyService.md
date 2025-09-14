@@ -6,7 +6,7 @@
 
 # Class: AuthPublicKeyService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4786
+Defined in: src/generated/nebius/iam/v1/index.ts:4787
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4786
 
 > **new AuthPublicKeyService**(`sdk`): `AuthPublicKeyService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4819
+Defined in: src/generated/nebius/iam/v1/index.ts:4820
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4819
 
 > **$type**: `"nebius.iam.v1.AuthPublicKeyService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4787
+Defined in: src/generated/nebius/iam/v1/index.ts:4788
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4787
 
 > **activate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4803
+Defined in: src/generated/nebius/iam/v1/index.ts:4804
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4803
 
 > **activate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4804
+Defined in: src/generated/nebius/iam/v1/index.ts:4805
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4804
 
 > **activate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4805
+Defined in: src/generated/nebius/iam/v1/index.ts:4806
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4805
 
 > **activate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4895
+Defined in: src/generated/nebius/iam/v1/index.ts:4896
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4895
 
 > **activate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4896
+Defined in: src/generated/nebius/iam/v1/index.ts:4897
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4896
 
 > **activate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4897
+Defined in: src/generated/nebius/iam/v1/index.ts:4898
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4897
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4788
+Defined in: src/generated/nebius/iam/v1/index.ts:4789
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4788
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4789
+Defined in: src/generated/nebius/iam/v1/index.ts:4790
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4789
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4790
+Defined in: src/generated/nebius/iam/v1/index.ts:4791
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4790
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4829
+Defined in: src/generated/nebius/iam/v1/index.ts:4830
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4829
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4830
+Defined in: src/generated/nebius/iam/v1/index.ts:4831
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4830
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4831
+Defined in: src/generated/nebius/iam/v1/index.ts:4832
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4831
 
 > **deactivate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4806
+Defined in: src/generated/nebius/iam/v1/index.ts:4807
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4806
 
 > **deactivate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4807
+Defined in: src/generated/nebius/iam/v1/index.ts:4808
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4807
 
 > **deactivate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4808
+Defined in: src/generated/nebius/iam/v1/index.ts:4809
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4808
 
 > **deactivate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4910
+Defined in: src/generated/nebius/iam/v1/index.ts:4911
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4910
 
 > **deactivate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4911
+Defined in: src/generated/nebius/iam/v1/index.ts:4912
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4911
 
 > **deactivate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4912
+Defined in: src/generated/nebius/iam/v1/index.ts:4913
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4912
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4809
+Defined in: src/generated/nebius/iam/v1/index.ts:4810
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4809
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4810
+Defined in: src/generated/nebius/iam/v1/index.ts:4811
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4810
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4811
+Defined in: src/generated/nebius/iam/v1/index.ts:4812
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4811
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4925
+Defined in: src/generated/nebius/iam/v1/index.ts:4926
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4925
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4926
+Defined in: src/generated/nebius/iam/v1/index.ts:4927
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4926
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4927
+Defined in: src/generated/nebius/iam/v1/index.ts:4928
 
 ##### Parameters
 
@@ -542,7 +542,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4927
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4791
+Defined in: src/generated/nebius/iam/v1/index.ts:4792
 
 ##### Parameters
 
@@ -558,7 +558,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4791
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4792
+Defined in: src/generated/nebius/iam/v1/index.ts:4793
 
 ##### Parameters
 
@@ -578,7 +578,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4792
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4793
+Defined in: src/generated/nebius/iam/v1/index.ts:4794
 
 ##### Parameters
 
@@ -602,7 +602,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4793
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4844
+Defined in: src/generated/nebius/iam/v1/index.ts:4845
 
 ##### Parameters
 
@@ -618,7 +618,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4844
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4845
+Defined in: src/generated/nebius/iam/v1/index.ts:4846
 
 ##### Parameters
 
@@ -638,7 +638,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4845
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4846
+Defined in: src/generated/nebius/iam/v1/index.ts:4847
 
 ##### Parameters
 
@@ -664,7 +664,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4846
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4825
+Defined in: src/generated/nebius/iam/v1/index.ts:4826
 
 #### Returns
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4825
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4794
+Defined in: src/generated/nebius/iam/v1/index.ts:4795
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4794
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4795
+Defined in: src/generated/nebius/iam/v1/index.ts:4796
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4795
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4796
+Defined in: src/generated/nebius/iam/v1/index.ts:4797
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4796
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4856
+Defined in: src/generated/nebius/iam/v1/index.ts:4857
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4856
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4857
+Defined in: src/generated/nebius/iam/v1/index.ts:4858
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4857
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4858
+Defined in: src/generated/nebius/iam/v1/index.ts:4859
 
 ##### Parameters
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4858
 
 > **listByAccount**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4797
+Defined in: src/generated/nebius/iam/v1/index.ts:4798
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4797
 
 > **listByAccount**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4798
+Defined in: src/generated/nebius/iam/v1/index.ts:4799
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4798
 
 > **listByAccount**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4799
+Defined in: src/generated/nebius/iam/v1/index.ts:4800
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4799
 
 > **listByAccount**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4868
+Defined in: src/generated/nebius/iam/v1/index.ts:4869
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4868
 
 > **listByAccount**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4869
+Defined in: src/generated/nebius/iam/v1/index.ts:4870
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4869
 
 > **listByAccount**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4870
+Defined in: src/generated/nebius/iam/v1/index.ts:4871
 
 ##### Parameters
 
@@ -926,7 +926,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4870
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4800
+Defined in: src/generated/nebius/iam/v1/index.ts:4801
 
 ##### Parameters
 
@@ -942,7 +942,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4800
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4801
+Defined in: src/generated/nebius/iam/v1/index.ts:4802
 
 ##### Parameters
 
@@ -962,7 +962,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4801
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4802
+Defined in: src/generated/nebius/iam/v1/index.ts:4803
 
 ##### Parameters
 
@@ -986,7 +986,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4802
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4880
+Defined in: src/generated/nebius/iam/v1/index.ts:4881
 
 ##### Parameters
 
@@ -1002,7 +1002,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4880
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4881
+Defined in: src/generated/nebius/iam/v1/index.ts:4882
 
 ##### Parameters
 
@@ -1022,7 +1022,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:4881
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAuthPublicKeyRequest`](../interfaces/UpdateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4882
+Defined in: src/generated/nebius/iam/v1/index.ts:4883
 
 ##### Parameters
 

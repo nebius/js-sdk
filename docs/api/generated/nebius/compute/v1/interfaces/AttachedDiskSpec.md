@@ -6,7 +6,7 @@
 
 # Interface: AttachedDiskSpec
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8175
+Defined in: src/generated/nebius/compute/v1/index.ts:8176
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8175
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8177
+Defined in: src/generated/nebius/compute/v1/index.ts:8178
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8177
 
 > **$type**: `"nebius.compute.v1.AttachedDiskSpec"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8176
+Defined in: src/generated/nebius/compute/v1/index.ts:8177
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8176
 
 > **attachMode**: [`AttachedDiskSpec_AttachMode`](../type-aliases/AttachedDiskSpec_AttachMode.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8178
+Defined in: src/generated/nebius/compute/v1/index.ts:8179
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8178
 
 > **deviceId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8183
+Defined in: src/generated/nebius/compute/v1/index.ts:8184
 
 Specifies the user-defined identifier, allowing to use '/dev/disk/by-id/virtio-{device_id}' as a device path in mount command.
 
@@ -48,7 +48,7 @@ Specifies the user-defined identifier, allowing to use '/dev/disk/by-id/virtio-{
 
 > `optional` **type**: `object`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8184
+Defined in: src/generated/nebius/compute/v1/index.ts:8185
 
 #### $case
 

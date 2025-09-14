@@ -6,7 +6,7 @@
 
 # Interface: ClusterSpec
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1058
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1329
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1058
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1060
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1331
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1060
 
 > **$type**: `"nebius.mk8s.v1.ClusterSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1059
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1330
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1059
 
 > `optional` **controlPlane**: [`ControlPlaneSpec`](ControlPlaneSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1061
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1332
 
 ---
 
@@ -38,6 +38,6 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1061
 
 > `optional` **kubeNetwork**: [`KubeNetworkSpec`](KubeNetworkSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1066
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1337
 
 Defines kubernetes network configuration, like IP allocation.

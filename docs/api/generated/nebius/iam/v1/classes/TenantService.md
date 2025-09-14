@@ -6,7 +6,7 @@
 
 # Class: TenantService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19818
+Defined in: src/generated/nebius/iam/v1/index.ts:19819
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19818
 
 > **new TenantService**(`sdk`): `TenantService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19833
+Defined in: src/generated/nebius/iam/v1/index.ts:19834
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19833
 
 > **$type**: `"nebius.iam.v1.TenantService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19819
+Defined in: src/generated/nebius/iam/v1/index.ts:19820
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19819
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19820
+Defined in: src/generated/nebius/iam/v1/index.ts:19821
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19820
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19821
+Defined in: src/generated/nebius/iam/v1/index.ts:19822
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19821
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19822
+Defined in: src/generated/nebius/iam/v1/index.ts:19823
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19822
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19839
+Defined in: src/generated/nebius/iam/v1/index.ts:19840
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19839
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19840
+Defined in: src/generated/nebius/iam/v1/index.ts:19841
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19840
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTenantRequest`](../interfaces/GetTenantRequest.md), [`Container`](../interfaces/Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19841
+Defined in: src/generated/nebius/iam/v1/index.ts:19842
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19841
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19823
+Defined in: src/generated/nebius/iam/v1/index.ts:19824
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19823
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19824
+Defined in: src/generated/nebius/iam/v1/index.ts:19825
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19824
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19825
+Defined in: src/generated/nebius/iam/v1/index.ts:19826
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19825
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19851
+Defined in: src/generated/nebius/iam/v1/index.ts:19852
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19851
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19852
+Defined in: src/generated/nebius/iam/v1/index.ts:19853
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19852
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), [`ListTenantsResponse`](../interfaces/ListTenantsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19853
+Defined in: src/generated/nebius/iam/v1/index.ts:19854
 
 ##### Parameters
 

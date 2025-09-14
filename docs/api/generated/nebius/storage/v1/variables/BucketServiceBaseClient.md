@@ -8,7 +8,7 @@
 
 > **BucketServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`BucketServiceBaseClient`](../interfaces/BucketServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1642
+Defined in: src/generated/nebius/storage/v1/index.ts:1643
 
 ## Type Declaration
 

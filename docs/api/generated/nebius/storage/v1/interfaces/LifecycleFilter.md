@@ -6,7 +6,7 @@
 
 # Interface: LifecycleFilter
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2852
+Defined in: src/generated/nebius/storage/v1/index.ts:2853
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2852
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2854
+Defined in: src/generated/nebius/storage/v1/index.ts:2855
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2854
 
 > **$type**: `"nebius.storage.v1.LifecycleFilter"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2853
+Defined in: src/generated/nebius/storage/v1/index.ts:2854
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2853
 
 > **objectSizeGreaterThanBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2865
+Defined in: src/generated/nebius/storage/v1/index.ts:2866
 
 Minimum object size to which the rule applies.
 
@@ -40,7 +40,7 @@ Minimum object size to which the rule applies.
 
 > **objectSizeLessThanBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2870
+Defined in: src/generated/nebius/storage/v1/index.ts:2871
 
 Maximum object size to which the rule applies.
 
@@ -50,7 +50,7 @@ Maximum object size to which the rule applies.
 
 > **prefix**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2860
+Defined in: src/generated/nebius/storage/v1/index.ts:2861
 
 Prefix identifying one or more objects to which the rule applies.
 If prefix is empty, the rule applies to all objects in the bucket.

@@ -8,4 +8,4 @@
 
 > **OperationServiceServiceDescription** = _typeof_ [`OperationServiceServiceDescription`](../variables/OperationServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/common/v1/index.ts:2994
+Defined in: src/generated/nebius/common/v1/index.ts:2995

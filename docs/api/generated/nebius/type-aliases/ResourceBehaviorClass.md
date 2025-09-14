@@ -8,4 +8,4 @@
 
 > **ResourceBehaviorClass** = [`EnumClass`](../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"RESOURCE_BEHAVIOR_UNSPECIFIED"` \| `"MOVABLE"` \| `"UNNAMED"` \| `"IMMUTABLE_NAME"`\> & `ResourceBehaviorValueMembers`
 
-Defined in: src/generated/nebius/index.ts:40
+Defined in: src/generated/nebius/index.ts:41

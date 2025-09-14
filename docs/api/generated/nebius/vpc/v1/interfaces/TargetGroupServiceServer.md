@@ -6,7 +6,7 @@
 
 # Interface: TargetGroupServiceServer
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8422
+Defined in: src/generated/nebius/vpc/v1/index.ts:8423
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8422
 
 > **get**: `handleUnaryCall`\<[`GetTargetGroupRequest`](GetTargetGroupRequest.md), [`TargetGroup`](TargetGroup.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8423
+Defined in: src/generated/nebius/vpc/v1/index.ts:8424
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8423
 
 > **update**: `handleUnaryCall`\<[`UpdateTargetGroupRequest`](UpdateTargetGroupRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8424
+Defined in: src/generated/nebius/vpc/v1/index.ts:8425

@@ -6,7 +6,7 @@
 
 # Interface: TransferSpec_StopConditionAfterNEmptyIterations
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2730
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2731
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2730
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2732
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2733
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2732
 
 > **$type**: `"nebius.storage.v1alpha1.TransferSpec.StopConditionAfterNEmptyIterations"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2731
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2732
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2731
 
 > **emptyIterationsThreshold**: `number`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2737
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2738
 
 Number of consecutive iterations with zero transferred objects required to stop transfer.

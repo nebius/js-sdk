@@ -6,7 +6,7 @@
 
 # Interface: QuotaAllowanceSpec
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:713
+Defined in: src/generated/nebius/quotas/v1/index.ts:725
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:713
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:715
+Defined in: src/generated/nebius/quotas/v1/index.ts:727
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:715
 
 > **$type**: `"nebius.quotas.v1.QuotaAllowanceSpec"`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:714
+Defined in: src/generated/nebius/quotas/v1/index.ts:726
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:714
 
 > `optional` **limit**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:720
+Defined in: src/generated/nebius/quotas/v1/index.ts:732
 
 Total amount of resources allocated.
 
@@ -40,7 +40,7 @@ Total amount of resources allocated.
 
 > **region**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:726
+Defined in: src/generated/nebius/quotas/v1/index.ts:738
 
 Name of the region where the quota is allocated.
 Example: "eu-north1".

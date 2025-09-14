@@ -8,4 +8,4 @@
 
 > **DiskEncryption_DiskEncryptionType** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"DISK_ENCRYPTION_UNSPECIFIED"` \| `"DISK_ENCRYPTION_MANAGED"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1010
+Defined in: src/generated/nebius/compute/v1/index.ts:1011

@@ -6,7 +6,7 @@
 
 # Interface: QuotaAllowance
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:1083
+Defined in: src/generated/nebius/quotas/v1/index.ts:1095
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:1083
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:1085
+Defined in: src/generated/nebius/quotas/v1/index.ts:1097
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:1085
 
 > **$type**: `"nebius.quotas.v1.QuotaAllowance"`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:1084
+Defined in: src/generated/nebius/quotas/v1/index.ts:1096
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:1084
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:1086
+Defined in: src/generated/nebius/quotas/v1/index.ts:1098
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:1086
 
 > `optional` **spec**: [`QuotaAllowanceSpec`](QuotaAllowanceSpec.md)
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:1087
+Defined in: src/generated/nebius/quotas/v1/index.ts:1099
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:1087
 
 > `optional` **status**: [`QuotaAllowanceStatus`](QuotaAllowanceStatus.md)
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:1088
+Defined in: src/generated/nebius/quotas/v1/index.ts:1100

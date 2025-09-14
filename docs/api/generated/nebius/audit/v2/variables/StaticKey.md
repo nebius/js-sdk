@@ -8,4 +8,4 @@
 
 > **StaticKey**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`StaticKey`](../interfaces/StaticKey.md), `"nebius.audit.v2.StaticKey"`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2355
+Defined in: src/generated/nebius/audit/v2/index.ts:2356

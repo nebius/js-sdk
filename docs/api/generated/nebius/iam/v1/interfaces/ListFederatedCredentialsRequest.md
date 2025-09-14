@@ -6,7 +6,7 @@
 
 # Interface: ListFederatedCredentialsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6161
+Defined in: src/generated/nebius/iam/v1/index.ts:6162
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6161
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6163
+Defined in: src/generated/nebius/iam/v1/index.ts:6164
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6163
 
 > **$type**: `"nebius.iam.v1.ListFederatedCredentialsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6162
+Defined in: src/generated/nebius/iam/v1/index.ts:6163
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6162
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6183
+Defined in: src/generated/nebius/iam/v1/index.ts:6184
 
 A filter to narrow down the results based on specific criteria.
 
@@ -40,7 +40,7 @@ A filter to narrow down the results based on specific criteria.
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6173
+Defined in: src/generated/nebius/iam/v1/index.ts:6174
 
 Specifies the maximum number of items to return in the response. Default is 10
 
@@ -50,7 +50,7 @@ Specifies the maximum number of items to return in the response. Default is 10
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6178
+Defined in: src/generated/nebius/iam/v1/index.ts:6179
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -60,6 +60,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6168
+Defined in: src/generated/nebius/iam/v1/index.ts:6169
 
 Represents the parent NID

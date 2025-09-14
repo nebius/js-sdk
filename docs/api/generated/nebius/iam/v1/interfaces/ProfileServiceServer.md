@@ -6,7 +6,7 @@
 
 # Interface: ProfileServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15133
+Defined in: src/generated/nebius/iam/v1/index.ts:15134
 
 ## Extends
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15133
 
 > **get**: `handleUnaryCall`\<[`GetProfileRequest`](GetProfileRequest.md), [`GetProfileResponse`](GetProfileResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15134
+Defined in: src/generated/nebius/iam/v1/index.ts:15135

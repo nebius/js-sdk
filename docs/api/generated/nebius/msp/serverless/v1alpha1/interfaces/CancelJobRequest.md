@@ -6,7 +6,7 @@
 
 # Interface: CancelJobRequest
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1729
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1730
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1729
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1731
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1732
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1731
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.CancelJobRequest"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1730
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1731
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1730
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1736
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1737
 
 ID of the job to cancel.

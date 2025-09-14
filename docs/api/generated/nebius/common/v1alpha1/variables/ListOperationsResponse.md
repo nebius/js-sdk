@@ -8,4 +8,4 @@
 
 > **ListOperationsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListOperationsResponse`](../interfaces/ListOperationsResponse.md), `"nebius.common.v1alpha1.ListOperationsResponse"`\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:288
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:289

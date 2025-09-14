@@ -8,7 +8,7 @@
 
 > **AccessKeyServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`AccessKeyServiceBaseClient`](../interfaces/AccessKeyServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1540
+Defined in: src/generated/nebius/iam/v1/index.ts:1541
 
 ## Type Declaration
 
@@ -760,4 +760,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1540
 
 ## Deprecated
 
-Deprecated, will be removed on 2025-09-01: Access keys API v1 is deprecated, use the v2 version instead. Keys produced by API v1 are available using v2..
+Deprecated, will be removed on 2026-09-01: Access keys API v1 is deprecated, use the v2 version instead. Keys produced by API v1 are available using v2..

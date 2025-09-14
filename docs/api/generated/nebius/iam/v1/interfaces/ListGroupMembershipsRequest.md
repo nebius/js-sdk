@@ -6,7 +6,7 @@
 
 # Interface: ListGroupMembershipsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10106
+Defined in: src/generated/nebius/iam/v1/index.ts:10107
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10106
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10108
+Defined in: src/generated/nebius/iam/v1/index.ts:10109
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10108
 
 > **$type**: `"nebius.iam.v1.ListGroupMembershipsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10107
+Defined in: src/generated/nebius/iam/v1/index.ts:10108
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10107
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10116
+Defined in: src/generated/nebius/iam/v1/index.ts:10117
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10116
 
 > `optional` **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10114
+Defined in: src/generated/nebius/iam/v1/index.ts:10115
 
 Default value: 10
 
@@ -48,7 +48,7 @@ Default value: 10
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10115
+Defined in: src/generated/nebius/iam/v1/index.ts:10116
 
 ---
 
@@ -56,4 +56,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10115
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10109
+Defined in: src/generated/nebius/iam/v1/index.ts:10110

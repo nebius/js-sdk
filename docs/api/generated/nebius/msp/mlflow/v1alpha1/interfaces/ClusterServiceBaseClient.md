@@ -6,7 +6,7 @@
 
 # Interface: ClusterServiceBaseClient
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:731
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:732
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:735
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:736
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:735
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:736
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:737
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:736
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:732
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:733
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:732
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:733
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:734
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:734
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:735
 
 #### Parameters
 

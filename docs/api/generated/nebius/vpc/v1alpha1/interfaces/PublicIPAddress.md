@@ -6,7 +6,7 @@
 
 # Interface: PublicIPAddress
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2529
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2530
 
 Describes a public IP address.
 
@@ -16,7 +16,7 @@ Describes a public IP address.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2531
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2532
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2531
 
 > **$type**: `"nebius.vpc.v1alpha1.PublicIPAddress"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2530
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2531
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2530
 
 > `optional` **allocation**: `object`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2543
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2544
 
 Describes different methods of public IP address allocation.
 
@@ -50,7 +50,7 @@ Describes different methods of public IP address allocation.
 
 > **static**: `boolean`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2538
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2539
 
 If false - Lifecycle of allocation depends on NetworkInterface.Allocate/NetworkInterface.Deallocate
 If true - Lifecycle of allocation depends on NetworkInterface.Create/NetworkInterface.Delete

@@ -8,4 +8,4 @@
 
 > **RegistryServiceServiceDescription** = _typeof_ [`RegistryServiceServiceDescription`](../variables/RegistryServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1478
+Defined in: src/generated/nebius/registry/v1/index.ts:1479

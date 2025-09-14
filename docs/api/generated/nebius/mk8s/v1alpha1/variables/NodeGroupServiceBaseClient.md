@@ -8,7 +8,7 @@
 
 > **NodeGroupServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`NodeGroupServiceBaseClient`](../interfaces/NodeGroupServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3937
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4208
 
 ## Type Declaration
 

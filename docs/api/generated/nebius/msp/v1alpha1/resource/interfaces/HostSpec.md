@@ -6,7 +6,7 @@
 
 # Interface: HostSpec
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1039
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1040
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1039
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1041
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1042
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1041
 
 > **$type**: `"nebius.msp.v1alpha1.resource.HostSpec"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1040
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1041
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1040
 
 > **count**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1042
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:1043

@@ -6,7 +6,7 @@
 
 # ~~Interface: OperationServiceServer~~
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:609
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:610
 
 ## Deprecated
 
@@ -26,7 +26,7 @@ Deprecated.
 
 > **get**: `handleUnaryCall`\<[`GetOperationRequest`](GetOperationRequest.md), [`Operation`](Operation.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:610
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:611
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:610
 
 > **list**: `handleUnaryCall`\<[`ListOperationsRequest`](ListOperationsRequest.md), [`ListOperationsResponse`](ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:611
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:612

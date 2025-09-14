@@ -8,4 +8,4 @@
 
 > **FilesystemSpec_FilesystemType**: [`FilesystemSpec_FilesystemTypeClass`](../type-aliases/FilesystemSpec_FilesystemTypeClass.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2889
+Defined in: src/generated/nebius/compute/v1/index.ts:2890

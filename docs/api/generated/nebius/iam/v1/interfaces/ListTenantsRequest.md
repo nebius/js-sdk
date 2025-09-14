@@ -6,7 +6,7 @@
 
 # Interface: ListTenantsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19536
+Defined in: src/generated/nebius/iam/v1/index.ts:19537
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19536
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19538
+Defined in: src/generated/nebius/iam/v1/index.ts:19539
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19538
 
 > **$type**: `"nebius.iam.v1.ListTenantsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19537
+Defined in: src/generated/nebius/iam/v1/index.ts:19538
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19537
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19554
+Defined in: src/generated/nebius/iam/v1/index.ts:19555
 
 A filter to narrow down the results based on specific criteria.
 
@@ -40,7 +40,7 @@ A filter to narrow down the results based on specific criteria.
 
 > `optional` **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19544
+Defined in: src/generated/nebius/iam/v1/index.ts:19545
 
 Specifies the maximum number of items to return in the response.
 Default value: 10
@@ -51,6 +51,6 @@ Default value: 10
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19549
+Defined in: src/generated/nebius/iam/v1/index.ts:19550
 
 Token for pagination, allowing the retrieval of the next set of results.

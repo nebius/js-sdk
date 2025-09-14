@@ -6,7 +6,7 @@
 
 # Interface: CreateAccessKeyRequest
 
-Defined in: src/generated/nebius/iam/v2/index.ts:16
+Defined in: src/generated/nebius/iam/v2/index.ts:17
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:16
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:18
+Defined in: src/generated/nebius/iam/v2/index.ts:19
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:18
 
 > **$type**: `"nebius.iam.v2.CreateAccessKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:17
+Defined in: src/generated/nebius/iam/v2/index.ts:18
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:17
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:19
+Defined in: src/generated/nebius/iam/v2/index.ts:20
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:19
 
 > `optional` **spec**: [`AccessKeySpec`](AccessKeySpec.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:20
+Defined in: src/generated/nebius/iam/v2/index.ts:21

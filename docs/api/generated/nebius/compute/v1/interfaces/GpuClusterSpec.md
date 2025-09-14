@@ -6,7 +6,7 @@
 
 # Interface: GpuClusterSpec
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4580
+Defined in: src/generated/nebius/compute/v1/index.ts:4581
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4580
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4582
+Defined in: src/generated/nebius/compute/v1/index.ts:4583
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4582
 
 > **$type**: `"nebius.compute.v1.GpuClusterSpec"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4581
+Defined in: src/generated/nebius/compute/v1/index.ts:4582
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4581
 
 > **infinibandFabric**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4588
+Defined in: src/generated/nebius/compute/v1/index.ts:4589
 
 The identifier of the physical InfiniBand fabric to connect GPU instances to.
 For details, see https://docs.nebius.com/compute/clusters/gpu#fabrics

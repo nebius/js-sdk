@@ -6,7 +6,7 @@
 
 # Interface: GetClusterRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1034
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1035
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1034
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1036
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1037
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1036
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.GetClusterRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1035
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1036
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1035
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1042
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1043
 
 ID of the PostgreSQL Cluster resource to return.
 To get the cluster ID use a [ClusterService.List] request.

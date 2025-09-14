@@ -6,7 +6,7 @@
 
 # Interface: GetGpuClusterRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:3539
+Defined in: src/generated/nebius/compute/v1/index.ts:3540
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3539
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:3541
+Defined in: src/generated/nebius/compute/v1/index.ts:3542
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3541
 
 > **$type**: `"nebius.compute.v1.GetGpuClusterRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:3540
+Defined in: src/generated/nebius/compute/v1/index.ts:3541
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:3540
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:3542
+Defined in: src/generated/nebius/compute/v1/index.ts:3543

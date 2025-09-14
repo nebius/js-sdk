@@ -8,4 +8,4 @@
 
 > **EstimateRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`EstimateRequest`](../interfaces/EstimateRequest.md), `"nebius.billing.v1alpha1.EstimateRequest"`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:14
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:15

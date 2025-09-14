@@ -6,11 +6,15 @@
 
 # Class: Conventional
 
-Defined in: [src/runtime/resolver.ts:88](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L88)
+Defined in: [src/runtime/resolver.ts:131](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L131)
 
 ## Implements
 
 - [`Resolver`](../interfaces/Resolver.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
 
 ## Constructors
 
@@ -24,11 +28,23 @@ Defined in: [src/runtime/resolver.ts:88](https://github.com/nebius/nodejs-sdk/bl
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `object`
+
+Defined in: [src/runtime/resolver.ts:152](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L152)
+
+#### Returns
+
+`object`
+
+---
+
 ### resolve()
 
 > **resolve**(`serviceId`, `apiServiceName?`): `string`
 
-Defined in: [src/runtime/resolver.ts:91](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L91)
+Defined in: [src/runtime/resolver.ts:134](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L134)
 
 Receive address of the service by its ID
 

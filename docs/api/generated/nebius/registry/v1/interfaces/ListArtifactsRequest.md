@@ -6,7 +6,7 @@
 
 # Interface: ListArtifactsRequest
 
-Defined in: src/generated/nebius/registry/v1/index.ts:100
+Defined in: src/generated/nebius/registry/v1/index.ts:101
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:100
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:102
+Defined in: src/generated/nebius/registry/v1/index.ts:103
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:102
 
 > **$type**: `"nebius.registry.v1.ListArtifactsRequest"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:101
+Defined in: src/generated/nebius/registry/v1/index.ts:102
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:101
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:106
+Defined in: src/generated/nebius/registry/v1/index.ts:107
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:106
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:104
+Defined in: src/generated/nebius/registry/v1/index.ts:105
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:104
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:105
+Defined in: src/generated/nebius/registry/v1/index.ts:106
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:105
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:103
+Defined in: src/generated/nebius/registry/v1/index.ts:104

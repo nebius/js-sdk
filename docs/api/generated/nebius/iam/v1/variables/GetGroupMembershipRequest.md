@@ -8,4 +8,4 @@
 
 > **GetGroupMembershipRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetGroupMembershipRequest`](../interfaces/GetGroupMembershipRequest.md), `"nebius.iam.v1.GetGroupMembershipRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10021
+Defined in: src/generated/nebius/iam/v1/index.ts:10022

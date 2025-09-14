@@ -8,4 +8,4 @@
 
 > **AllocationDetails**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AllocationDetails`](../interfaces/AllocationDetails.md), `"nebius.vpc.v1.AllocationDetails"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1965
+Defined in: src/generated/nebius/vpc/v1/index.ts:1966

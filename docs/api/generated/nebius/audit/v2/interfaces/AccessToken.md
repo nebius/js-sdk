@@ -6,7 +6,7 @@
 
 # Interface: AccessToken
 
-Defined in: src/generated/nebius/audit/v2/index.ts:14
+Defined in: src/generated/nebius/audit/v2/index.ts:15
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:14
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:16
+Defined in: src/generated/nebius/audit/v2/index.ts:17
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:16
 
 > **$type**: `"nebius.audit.v2.AccessToken"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:15
+Defined in: src/generated/nebius/audit/v2/index.ts:16
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/audit/v2/index.ts:15
 
 > **maskedToken**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:21
+Defined in: src/generated/nebius/audit/v2/index.ts:22
 
 Token without signature.

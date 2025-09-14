@@ -6,7 +6,7 @@
 
 # Class: PKCE
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:8](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/federation_bearer/pkce.ts#L8)
+Defined in: [src/runtime/token/federation_bearer/pkce.ts:8](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L8)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/token/federation_bearer/pkce.ts:8](https://github.com/n
 
 > **new PKCE**(): `PKCE`
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:9](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/federation_bearer/pkce.ts#L9)
+Defined in: [src/runtime/token/federation_bearer/pkce.ts:9](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L9)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Returns the length of a String object.
 
 > **get** **challenge**(): `string`
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:13](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/federation_bearer/pkce.ts#L13)
+Defined in: [src/runtime/token/federation_bearer/pkce.ts:13](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L13)
 
 ##### Returns
 
@@ -68,7 +68,7 @@ Defined in: [src/runtime/token/federation_bearer/pkce.ts:13](https://github.com/
 
 > **get** **method**(): `string`
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:22](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/federation_bearer/pkce.ts#L22)
+Defined in: [src/runtime/token/federation_bearer/pkce.ts:22](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L22)
 
 ##### Returns
 
@@ -82,7 +82,7 @@ Defined in: [src/runtime/token/federation_bearer/pkce.ts:22](https://github.com/
 
 > **get** **verifier**(): `string`
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:25](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/federation_bearer/pkce.ts#L25)
+Defined in: [src/runtime/token/federation_bearer/pkce.ts:25](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L25)
 
 ##### Returns
 
@@ -1048,6 +1048,70 @@ A function that returns the replacement text.
 ##### Inherited from
 
 `String.replace`
+
+---
+
+### replaceAll()
+
+#### Call Signature
+
+> **replaceAll**(`searchValue`, `replaceValue`): `string`
+
+Defined in: node_modules/typescript/lib/lib.es2021.string.d.ts:25
+
+Replace all instances of a substring in a string, using a regular expression or search string.
+
+##### Parameters
+
+###### searchValue
+
+A string to search for.
+
+`string` | `RegExp`
+
+###### replaceValue
+
+`string`
+
+A string containing the text to replace for every successful match of searchValue in this string.
+
+##### Returns
+
+`string`
+
+##### Inherited from
+
+`String.replaceAll`
+
+#### Call Signature
+
+> **replaceAll**(`searchValue`, `replacer`): `string`
+
+Defined in: node_modules/typescript/lib/lib.es2021.string.d.ts:32
+
+Replace all instances of a substring in a string, using a regular expression or search string.
+
+##### Parameters
+
+###### searchValue
+
+A string to search for.
+
+`string` | `RegExp`
+
+###### replacer
+
+(`substring`, ...`args`) => `string`
+
+A function that returns the replacement text.
+
+##### Returns
+
+`string`
+
+##### Inherited from
+
+`String.replaceAll`
 
 ---
 

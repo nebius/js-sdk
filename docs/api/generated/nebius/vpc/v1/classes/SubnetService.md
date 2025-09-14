@@ -6,7 +6,7 @@
 
 # Class: SubnetService
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7122
+Defined in: src/generated/nebius/vpc/v1/index.ts:7123
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7122
 
 > **new SubnetService**(`sdk`): `SubnetService`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7152
+Defined in: src/generated/nebius/vpc/v1/index.ts:7153
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7152
 
 > **$type**: `"nebius.vpc.v1.SubnetService"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7123
+Defined in: src/generated/nebius/vpc/v1/index.ts:7124
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7123
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateSubnetRequest`](../interfaces/CreateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7136
+Defined in: src/generated/nebius/vpc/v1/index.ts:7137
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7136
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateSubnetRequest`](../interfaces/CreateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7137
+Defined in: src/generated/nebius/vpc/v1/index.ts:7138
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7137
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateSubnetRequest`](../interfaces/CreateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7138
+Defined in: src/generated/nebius/vpc/v1/index.ts:7139
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7138
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateSubnetRequest`](../interfaces/CreateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7210
+Defined in: src/generated/nebius/vpc/v1/index.ts:7211
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7210
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateSubnetRequest`](../interfaces/CreateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7211
+Defined in: src/generated/nebius/vpc/v1/index.ts:7212
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7211
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateSubnetRequest`](../interfaces/CreateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7212
+Defined in: src/generated/nebius/vpc/v1/index.ts:7213
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7212
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteSubnetRequest`](../interfaces/DeleteSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7142
+Defined in: src/generated/nebius/vpc/v1/index.ts:7143
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7142
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteSubnetRequest`](../interfaces/DeleteSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7143
+Defined in: src/generated/nebius/vpc/v1/index.ts:7144
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7143
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteSubnetRequest`](../interfaces/DeleteSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7144
+Defined in: src/generated/nebius/vpc/v1/index.ts:7145
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7144
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteSubnetRequest`](../interfaces/DeleteSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7240
+Defined in: src/generated/nebius/vpc/v1/index.ts:7241
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7240
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteSubnetRequest`](../interfaces/DeleteSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7241
+Defined in: src/generated/nebius/vpc/v1/index.ts:7242
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7241
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteSubnetRequest`](../interfaces/DeleteSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7242
+Defined in: src/generated/nebius/vpc/v1/index.ts:7243
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7242
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7124
+Defined in: src/generated/nebius/vpc/v1/index.ts:7125
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7124
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7125
+Defined in: src/generated/nebius/vpc/v1/index.ts:7126
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7125
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7126
+Defined in: src/generated/nebius/vpc/v1/index.ts:7127
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7126
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7162
+Defined in: src/generated/nebius/vpc/v1/index.ts:7163
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7162
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7163
+Defined in: src/generated/nebius/vpc/v1/index.ts:7164
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7163
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7164
+Defined in: src/generated/nebius/vpc/v1/index.ts:7165
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7164
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7127
+Defined in: src/generated/nebius/vpc/v1/index.ts:7128
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7127
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7128
+Defined in: src/generated/nebius/vpc/v1/index.ts:7129
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7128
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7129
+Defined in: src/generated/nebius/vpc/v1/index.ts:7130
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7129
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7174
+Defined in: src/generated/nebius/vpc/v1/index.ts:7175
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7174
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7175
+Defined in: src/generated/nebius/vpc/v1/index.ts:7176
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7175
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7176
+Defined in: src/generated/nebius/vpc/v1/index.ts:7177
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7176
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7158
+Defined in: src/generated/nebius/vpc/v1/index.ts:7159
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7158
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7130
+Defined in: src/generated/nebius/vpc/v1/index.ts:7131
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7130
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7131
+Defined in: src/generated/nebius/vpc/v1/index.ts:7132
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7131
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7132
+Defined in: src/generated/nebius/vpc/v1/index.ts:7133
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7132
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7186
+Defined in: src/generated/nebius/vpc/v1/index.ts:7187
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7186
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7187
+Defined in: src/generated/nebius/vpc/v1/index.ts:7188
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7187
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7188
+Defined in: src/generated/nebius/vpc/v1/index.ts:7189
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7188
 
 > **listByNetwork**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7133
+Defined in: src/generated/nebius/vpc/v1/index.ts:7134
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7133
 
 > **listByNetwork**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7134
+Defined in: src/generated/nebius/vpc/v1/index.ts:7135
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7134
 
 > **listByNetwork**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7135
+Defined in: src/generated/nebius/vpc/v1/index.ts:7136
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7135
 
 > **listByNetwork**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7198
+Defined in: src/generated/nebius/vpc/v1/index.ts:7199
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7198
 
 > **listByNetwork**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7199
+Defined in: src/generated/nebius/vpc/v1/index.ts:7200
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7199
 
 > **listByNetwork**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7200
+Defined in: src/generated/nebius/vpc/v1/index.ts:7201
 
 ##### Parameters
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7200
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateSubnetRequest`](../interfaces/UpdateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7139
+Defined in: src/generated/nebius/vpc/v1/index.ts:7140
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7139
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateSubnetRequest`](../interfaces/UpdateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7140
+Defined in: src/generated/nebius/vpc/v1/index.ts:7141
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7140
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateSubnetRequest`](../interfaces/UpdateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7141
+Defined in: src/generated/nebius/vpc/v1/index.ts:7142
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7141
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateSubnetRequest`](../interfaces/UpdateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7225
+Defined in: src/generated/nebius/vpc/v1/index.ts:7226
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7225
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateSubnetRequest`](../interfaces/UpdateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7226
+Defined in: src/generated/nebius/vpc/v1/index.ts:7227
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7226
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateSubnetRequest`](../interfaces/UpdateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7227
+Defined in: src/generated/nebius/vpc/v1/index.ts:7228
 
 ##### Parameters
 

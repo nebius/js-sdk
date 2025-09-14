@@ -6,7 +6,7 @@
 
 # Interface: GroupMembershipWithAttributes
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11455
+Defined in: src/generated/nebius/iam/v1/index.ts:11456
 
 see also nebius/iam/v1/tenant_user_account.proto/TenantUserAccountWithAttributes
 
@@ -16,7 +16,7 @@ see also nebius/iam/v1/tenant_user_account.proto/TenantUserAccountWithAttributes
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11457
+Defined in: src/generated/nebius/iam/v1/index.ts:11458
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11457
 
 > **$type**: `"nebius.iam.v1.GroupMembershipWithAttributes"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11456
+Defined in: src/generated/nebius/iam/v1/index.ts:11457
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11456
 
 > `optional` **attributesOptional**: \{ `$case`: `"userAttributes"`; `userAttributes`: [`UserAttributes`](UserAttributes.md); \} \| \{ `$case`: `"serviceAccountAttributes"`; `serviceAccountAttributes`: [`ServiceAccountAttributes`](ServiceAccountAttributes.md); \} \| \{ `$case`: `"error"`; `error`: [`Error`](Error.md); \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11460
+Defined in: src/generated/nebius/iam/v1/index.ts:11461
 
 ---
 
@@ -40,7 +40,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11460
 
 > `optional` **groupMemberKind**: [`GroupMemberKind`](GroupMemberKind.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11459
+Defined in: src/generated/nebius/iam/v1/index.ts:11460
 
 ---
 
@@ -48,4 +48,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11459
 
 > `optional` **groupMembership**: [`GroupMembership`](GroupMembership.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11458
+Defined in: src/generated/nebius/iam/v1/index.ts:11459

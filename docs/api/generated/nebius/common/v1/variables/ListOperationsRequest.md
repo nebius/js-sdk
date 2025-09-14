@@ -8,4 +8,4 @@
 
 > **ListOperationsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), `"nebius.common.v1.ListOperationsRequest"`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2755
+Defined in: src/generated/nebius/common/v1/index.ts:2756

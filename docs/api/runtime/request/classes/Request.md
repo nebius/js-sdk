@@ -6,7 +6,7 @@
 
 # Class: Request\<TReq, TRes\>
 
-Defined in: [src/runtime/request.ts:74](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L74)
+Defined in: [src/runtime/request.ts:94](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L94)
 
 ## Type Parameters
 
@@ -18,13 +18,17 @@ Defined in: [src/runtime/request.ts:74](https://github.com/nebius/nodejs-sdk/blo
 
 `TRes`
 
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `Record`\<`string`, `unknown`\>
+
 ## Constructors
 
 ### Constructor
 
 > **new Request**\<`TReq`, `TRes`\>(`sdk`, `serviceName`, `methodName`, `addr`, `serializer`, `deserializer`, `request`, `requestMetadata`, `requestOptions?`): `Request`\<`TReq`, `TRes`\>
 
-Defined in: [src/runtime/request.ts:89](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L89)
+Defined in: [src/runtime/request.ts:118](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L118)
 
 #### Parameters
 
@@ -70,11 +74,19 @@ Defined in: [src/runtime/request.ts:89](https://github.com/nebius/nodejs-sdk/blo
 
 ## Properties
 
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.Request"` = `'nebius.sdk.Request'`
+
+Defined in: [src/runtime/request.ts:95](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L95)
+
+---
+
 ### initialMetadata
 
 > `readonly` **initialMetadata**: `Promise`\<`Metadata`\>
 
-Defined in: [src/runtime/request.ts:77](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L77)
+Defined in: [src/runtime/request.ts:98](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L98)
 
 ---
 
@@ -82,7 +94,7 @@ Defined in: [src/runtime/request.ts:77](https://github.com/nebius/nodejs-sdk/blo
 
 > `readonly` **requestId**: `Promise`\<`string`\>
 
-Defined in: [src/runtime/request.ts:80](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L80)
+Defined in: [src/runtime/request.ts:101](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L101)
 
 ---
 
@@ -90,7 +102,7 @@ Defined in: [src/runtime/request.ts:80](https://github.com/nebius/nodejs-sdk/blo
 
 > `readonly` **result**: `Promise`\<`TRes`\>
 
-Defined in: [src/runtime/request.ts:76](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L76)
+Defined in: [src/runtime/request.ts:97](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L97)
 
 ---
 
@@ -98,7 +110,7 @@ Defined in: [src/runtime/request.ts:76](https://github.com/nebius/nodejs-sdk/blo
 
 > `readonly` **status**: `Promise`\<`Status`\>
 
-Defined in: [src/runtime/request.ts:79](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L79)
+Defined in: [src/runtime/request.ts:100](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L100)
 
 ---
 
@@ -106,7 +118,7 @@ Defined in: [src/runtime/request.ts:79](https://github.com/nebius/nodejs-sdk/blo
 
 > `readonly` **traceId**: `Promise`\<`string`\>
 
-Defined in: [src/runtime/request.ts:81](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L81)
+Defined in: [src/runtime/request.ts:102](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L102)
 
 ---
 
@@ -114,4 +126,34 @@ Defined in: [src/runtime/request.ts:81](https://github.com/nebius/nodejs-sdk/blo
 
 > `readonly` **trailingMetadata**: `Promise`\<`Metadata`\>
 
-Defined in: [src/runtime/request.ts:78](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/request.ts#L78)
+Defined in: [src/runtime/request.ts:99](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L99)
+
+## Methods
+
+### \[customJson\]()
+
+> **\[customJson\]**(): `Record`\<`string`, `unknown`\>
+
+Defined in: [src/runtime/request.ts:371](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L371)
+
+#### Returns
+
+`Record`\<`string`, `unknown`\>
+
+---
+
+### cancel()
+
+> **cancel**(`reason?`): `void`
+
+Defined in: [src/runtime/request.ts:444](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/request.ts#L444)
+
+#### Parameters
+
+##### reason?
+
+`string`
+
+#### Returns
+
+`void`

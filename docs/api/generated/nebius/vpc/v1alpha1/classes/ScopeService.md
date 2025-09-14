@@ -6,7 +6,7 @@
 
 # Class: ScopeService
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5935
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5936
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5935
 
 > **new ScopeService**(`sdk`): `ScopeService`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5953
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5954
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5953
 
 > **$type**: `"nebius.vpc.v1alpha1.ScopeService"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5936
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5937
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5936
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5937
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5938
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5937
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5938
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5939
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5938
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5939
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5940
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5939
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5959
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5960
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5959
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5960
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5961
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5960
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5961
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5962
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5961
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5940
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5941
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5940
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5941
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5942
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5941
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5942
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5943
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5942
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5971
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5972
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5971
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5972
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5973
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5972
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5973
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5974
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5973
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5943
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5944
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5943
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5944
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5945
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5944
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5945
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5946
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5945
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5983
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5984
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5983
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5984
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5985
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5984
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListScopesRequest`](../interfaces/ListScopesRequest.md), [`ListScopesResponse`](../interfaces/ListScopesResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5985
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5986
 
 ##### Parameters
 

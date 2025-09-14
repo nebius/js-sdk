@@ -6,7 +6,7 @@
 
 # Interface: TenantUserAccountSpec_VisibleAttributes
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21845
+Defined in: src/generated/nebius/iam/v1/index.ts:21846
 
 when a global user account is projected to a specific tenant
 they can give consent for that tenant's owner to view specific personal data
@@ -19,7 +19,7 @@ complete list of PDS attributes is described in ../../pds/inner/v1alpha1/iam_ide
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21847
+Defined in: src/generated/nebius/iam/v1/index.ts:21848
 
 ---
 
@@ -27,7 +27,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21847
 
 > **$type**: `"nebius.iam.v1.TenantUserAccountSpec.VisibleAttributes"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21846
+Defined in: src/generated/nebius/iam/v1/index.ts:21847
 
 ---
 
@@ -35,4 +35,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:21846
 
 > **attribute**: `string`[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:21848
+Defined in: src/generated/nebius/iam/v1/index.ts:21849

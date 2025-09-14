@@ -6,7 +6,7 @@
 
 # Interface: GpuClusterStatus
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4254
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4255
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4254
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4256
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4257
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4256
 
 > **$type**: `"nebius.compute.v1alpha1.GpuClusterStatus"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4255
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4256
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4255
 
 > **instances**: `string`[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4257
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4258
 
 ---
 
@@ -38,6 +38,6 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4257
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4262
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4263
 
 Indicates whether there is an ongoing operation

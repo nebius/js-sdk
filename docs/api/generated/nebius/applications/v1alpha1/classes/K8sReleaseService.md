@@ -6,7 +6,7 @@
 
 # Class: K8sReleaseService
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:745
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:746
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:745
 
 > **new K8sReleaseService**(`sdk`): `K8sReleaseService`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:769
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:770
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:769
 
 > **$type**: `"nebius.applications.v1alpha1.K8sReleaseService"`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:746
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:747
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:746
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateK8sReleaseRequest`](../interfaces/CreateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:753
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:754
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:753
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateK8sReleaseRequest`](../interfaces/CreateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:754
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:755
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:754
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateK8sReleaseRequest`](../interfaces/CreateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:755
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:756
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:755
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateK8sReleaseRequest`](../interfaces/CreateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:803
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:804
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:803
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateK8sReleaseRequest`](../interfaces/CreateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:804
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:805
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:804
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateK8sReleaseRequest`](../interfaces/CreateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:805
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:806
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:805
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteK8sReleaseRequest`](../interfaces/DeleteK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:759
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:760
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:759
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteK8sReleaseRequest`](../interfaces/DeleteK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:760
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:761
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:760
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteK8sReleaseRequest`](../interfaces/DeleteK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:761
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:762
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:761
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteK8sReleaseRequest`](../interfaces/DeleteK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:833
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:834
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:833
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteK8sReleaseRequest`](../interfaces/DeleteK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:834
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:835
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:834
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteK8sReleaseRequest`](../interfaces/DeleteK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:835
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:836
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:835
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetK8sReleaseRequest`](../interfaces/GetK8sReleaseRequest.md), [`K8sRelease`](../interfaces/K8sRelease.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:747
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:748
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:747
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetK8sReleaseRequest`](../interfaces/GetK8sReleaseRequest.md), [`K8sRelease`](../interfaces/K8sRelease.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:748
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:749
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:748
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetK8sReleaseRequest`](../interfaces/GetK8sReleaseRequest.md), [`K8sRelease`](../interfaces/K8sRelease.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:749
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:750
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:749
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetK8sReleaseRequest`](../interfaces/GetK8sReleaseRequest.md), [`K8sRelease`](../interfaces/K8sRelease.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:779
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:780
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:779
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetK8sReleaseRequest`](../interfaces/GetK8sReleaseRequest.md), [`K8sRelease`](../interfaces/K8sRelease.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:780
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:781
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:780
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetK8sReleaseRequest`](../interfaces/GetK8sReleaseRequest.md), [`K8sRelease`](../interfaces/K8sRelease.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:781
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:782
 
 ##### Parameters
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:781
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:775
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:776
 
 #### Returns
 
@@ -430,7 +430,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:775
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListK8sReleasesRequest`](../interfaces/ListK8sReleasesRequest.md), [`ListK8sReleasesResponse`](../interfaces/ListK8sReleasesResponse.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:750
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:751
 
 ##### Parameters
 
@@ -446,7 +446,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:750
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListK8sReleasesRequest`](../interfaces/ListK8sReleasesRequest.md), [`ListK8sReleasesResponse`](../interfaces/ListK8sReleasesResponse.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:751
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:752
 
 ##### Parameters
 
@@ -466,7 +466,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:751
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListK8sReleasesRequest`](../interfaces/ListK8sReleasesRequest.md), [`ListK8sReleasesResponse`](../interfaces/ListK8sReleasesResponse.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:752
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:753
 
 ##### Parameters
 
@@ -490,7 +490,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:752
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListK8sReleasesRequest`](../interfaces/ListK8sReleasesRequest.md), [`ListK8sReleasesResponse`](../interfaces/ListK8sReleasesResponse.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:791
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:792
 
 ##### Parameters
 
@@ -506,7 +506,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:791
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListK8sReleasesRequest`](../interfaces/ListK8sReleasesRequest.md), [`ListK8sReleasesResponse`](../interfaces/ListK8sReleasesResponse.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:792
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:793
 
 ##### Parameters
 
@@ -526,7 +526,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:792
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListK8sReleasesRequest`](../interfaces/ListK8sReleasesRequest.md), [`ListK8sReleasesResponse`](../interfaces/ListK8sReleasesResponse.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:793
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:794
 
 ##### Parameters
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:793
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateK8sReleaseRequest`](../interfaces/UpdateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:756
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:757
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:756
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateK8sReleaseRequest`](../interfaces/UpdateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:757
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:758
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:757
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateK8sReleaseRequest`](../interfaces/UpdateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:758
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:759
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:758
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateK8sReleaseRequest`](../interfaces/UpdateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:818
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:819
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:818
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateK8sReleaseRequest`](../interfaces/UpdateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:819
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:820
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:819
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateK8sReleaseRequest`](../interfaces/UpdateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:820
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:821
 
 ##### Parameters
 

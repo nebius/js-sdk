@@ -4,11 +4,11 @@
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / ClusterServiceBaseClient
 
-# Variable: ClusterServiceBaseClient
+# ~~Variable: ClusterServiceBaseClient~~
 
 > **ClusterServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ClusterServiceBaseClient`](../interfaces/ClusterServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:861
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:874
 
 ## Type Declaration
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:861
 
 [`ClusterServiceBaseClient`](../interfaces/ClusterServiceBaseClient.md)
 
-### service
+### ~~service~~
 
 > **service**: `object`
 
@@ -466,6 +466,10 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:861
 
 > `readonly` **responseStream**: `false` = `false`
 
-### serviceName
+### ~~serviceName~~
 
 > **serviceName**: `string`
+
+## Deprecated
+
+Deprecated, will be removed on 2025-08-12: Nebius AI Cloud no longer supports the service. Instead, use Application for Apache Spark™ Connect in Standalone Applications..

@@ -6,7 +6,7 @@
 
 # Interface: AllocationServiceBaseClient
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:827
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:828
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:831
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:832
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:831
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:833
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:834
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:833
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:828
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:829
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:828
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:829
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:830
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:830
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:831
 
 #### Parameters
 
@@ -784,7 +784,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:832
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:833
 
 #### Parameters
 

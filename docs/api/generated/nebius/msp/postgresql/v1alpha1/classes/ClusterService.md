@@ -6,7 +6,7 @@
 
 # Class: ClusterService
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2318
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2319
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2318
 
 > **new ClusterService**(`sdk`): `ClusterService`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2400
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2401
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2400
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ClusterService"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2319
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2320
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2319
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2355
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2356
 
 Creates a PostgreSQL cluster in the specified folder.
 
@@ -64,7 +64,7 @@ Creates a PostgreSQL cluster in the specified folder.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2356
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2357
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2356
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2357
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2358
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2357
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2458
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2459
 
 Creates a PostgreSQL cluster in the specified folder.
 
@@ -126,7 +126,7 @@ Creates a PostgreSQL cluster in the specified folder.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2459
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2460
 
 Creates a PostgreSQL cluster in the specified folder.
 
@@ -148,7 +148,7 @@ Creates a PostgreSQL cluster in the specified folder.
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2460
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2461
 
 Creates a PostgreSQL cluster in the specified folder.
 
@@ -178,7 +178,7 @@ Creates a PostgreSQL cluster in the specified folder.
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2362
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2363
 
 Deletes the specified PostgreSQL cluster.
 
@@ -196,7 +196,7 @@ Deletes the specified PostgreSQL cluster.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2363
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2364
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2363
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2364
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2365
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2364
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2473
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2474
 
 Deletes the specified PostgreSQL cluster.
 
@@ -258,7 +258,7 @@ Deletes the specified PostgreSQL cluster.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2474
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2475
 
 Deletes the specified PostgreSQL cluster.
 
@@ -280,7 +280,7 @@ Deletes the specified PostgreSQL cluster.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2475
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2476
 
 Deletes the specified PostgreSQL cluster.
 
@@ -310,7 +310,7 @@ Deletes the specified PostgreSQL cluster.
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2325
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2326
 
 Returns the specified PostgreSQL Cluster resource.
 To get the list of available PostgreSQL Cluster resources, make a [List] request.
@@ -329,7 +329,7 @@ To get the list of available PostgreSQL Cluster resources, make a [List] request
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2326
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2327
 
 ##### Parameters
 
@@ -349,7 +349,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2326
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2327
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2328
 
 ##### Parameters
 
@@ -373,7 +373,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2327
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2410
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2411
 
 Returns the specified PostgreSQL Cluster resource.
 To get the list of available PostgreSQL Cluster resources, make a [List] request.
@@ -392,7 +392,7 @@ To get the list of available PostgreSQL Cluster resources, make a [List] request
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2411
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2412
 
 Returns the specified PostgreSQL Cluster resource.
 To get the list of available PostgreSQL Cluster resources, make a [List] request.
@@ -415,7 +415,7 @@ To get the list of available PostgreSQL Cluster resources, make a [List] request
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2412
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2413
 
 Returns the specified PostgreSQL Cluster resource.
 To get the list of available PostgreSQL Cluster resources, make a [List] request.
@@ -446,7 +446,7 @@ To get the list of available PostgreSQL Cluster resources, make a [List] request
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2332
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2333
 
 Returns the specified PostgreSQL Cluster resource by name.
 
@@ -464,7 +464,7 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2333
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2334
 
 ##### Parameters
 
@@ -484,7 +484,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2333
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2334
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2335
 
 ##### Parameters
 
@@ -508,7 +508,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2334
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2422
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2423
 
 Returns the specified PostgreSQL Cluster resource by name.
 
@@ -526,7 +526,7 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2423
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2424
 
 Returns the specified PostgreSQL Cluster resource by name.
 
@@ -548,7 +548,7 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2424
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2425
 
 Returns the specified PostgreSQL Cluster resource by name.
 
@@ -578,7 +578,7 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 > **getForBackup**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2340
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2341
 
 Returns the specified PostgreSQL Cluster resource for backup.
 It should be used as a hint of cluster configuration in case of backup restoration.
@@ -597,7 +597,7 @@ It should be used as a hint of cluster configuration in case of backup restorati
 
 > **getForBackup**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2341
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2342
 
 ##### Parameters
 
@@ -617,7 +617,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2341
 
 > **getForBackup**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2342
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2343
 
 ##### Parameters
 
@@ -641,7 +641,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2342
 
 > **getForBackup**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2434
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2435
 
 Returns the specified PostgreSQL Cluster resource for backup.
 It should be used as a hint of cluster configuration in case of backup restoration.
@@ -660,7 +660,7 @@ It should be used as a hint of cluster configuration in case of backup restorati
 
 > **getForBackup**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2435
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2436
 
 Returns the specified PostgreSQL Cluster resource for backup.
 It should be used as a hint of cluster configuration in case of backup restoration.
@@ -683,7 +683,7 @@ It should be used as a hint of cluster configuration in case of backup restorati
 
 > **getForBackup**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2436
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2437
 
 Returns the specified PostgreSQL Cluster resource for backup.
 It should be used as a hint of cluster configuration in case of backup restoration.
@@ -712,7 +712,7 @@ It should be used as a hint of cluster configuration in case of backup restorati
 
 > **getOperationService**(): [`OperationService`](../../../../common/v1alpha1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2406
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2407
 
 #### Returns
 
@@ -726,7 +726,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2406
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2348
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2349
 
 Retrieves the list of PostgreSQL Cluster resources that belong
 to the specified folder.
@@ -745,7 +745,7 @@ to the specified folder.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2349
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2350
 
 ##### Parameters
 
@@ -765,7 +765,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2349
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2350
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2351
 
 ##### Parameters
 
@@ -789,7 +789,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2350
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2446
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2447
 
 Retrieves the list of PostgreSQL Cluster resources that belong
 to the specified folder.
@@ -808,7 +808,7 @@ to the specified folder.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2447
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2448
 
 Retrieves the list of PostgreSQL Cluster resources that belong
 to the specified folder.
@@ -831,7 +831,7 @@ to the specified folder.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2448
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2449
 
 Retrieves the list of PostgreSQL Cluster resources that belong
 to the specified folder.
@@ -862,7 +862,7 @@ to the specified folder.
 
 > **restore**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2376
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2377
 
 Creates a new PostgreSQL cluster from a previously created backup.
 
@@ -880,7 +880,7 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 > **restore**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2377
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2378
 
 ##### Parameters
 
@@ -900,7 +900,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2377
 
 > **restore**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2378
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2379
 
 ##### Parameters
 
@@ -924,7 +924,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2378
 
 > **restore**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2503
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2504
 
 Creates a new PostgreSQL cluster from a previously created backup.
 
@@ -942,7 +942,7 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 > **restore**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2504
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2505
 
 Creates a new PostgreSQL cluster from a previously created backup.
 
@@ -964,7 +964,7 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 > **restore**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2505
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2506
 
 Creates a new PostgreSQL cluster from a previously created backup.
 
@@ -994,7 +994,7 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 > **start**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2390
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2391
 
 Wakes up suspended PostgreSQL cluster.
 
@@ -1012,7 +1012,7 @@ Wakes up suspended PostgreSQL cluster.
 
 > **start**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2391
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2392
 
 ##### Parameters
 
@@ -1032,7 +1032,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2391
 
 > **start**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2392
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2393
 
 ##### Parameters
 
@@ -1056,7 +1056,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2392
 
 > **start**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2533
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2534
 
 Wakes up suspended PostgreSQL cluster.
 
@@ -1074,7 +1074,7 @@ Wakes up suspended PostgreSQL cluster.
 
 > **start**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2534
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2535
 
 Wakes up suspended PostgreSQL cluster.
 
@@ -1096,7 +1096,7 @@ Wakes up suspended PostgreSQL cluster.
 
 > **start**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2535
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2536
 
 Wakes up suspended PostgreSQL cluster.
 
@@ -1126,7 +1126,7 @@ Wakes up suspended PostgreSQL cluster.
 
 > **stop**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2383
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2384
 
 Suspends the PostgreSQL cluster to save resources.
 
@@ -1144,7 +1144,7 @@ Suspends the PostgreSQL cluster to save resources.
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2384
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2385
 
 ##### Parameters
 
@@ -1164,7 +1164,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2384
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2385
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2386
 
 ##### Parameters
 
@@ -1188,7 +1188,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2385
 
 > **stop**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2518
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2519
 
 Suspends the PostgreSQL cluster to save resources.
 
@@ -1206,7 +1206,7 @@ Suspends the PostgreSQL cluster to save resources.
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2519
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2520
 
 Suspends the PostgreSQL cluster to save resources.
 
@@ -1228,7 +1228,7 @@ Suspends the PostgreSQL cluster to save resources.
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2520
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2521
 
 Suspends the PostgreSQL cluster to save resources.
 
@@ -1258,7 +1258,7 @@ Suspends the PostgreSQL cluster to save resources.
 
 > **update**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2369
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2370
 
 Updates the PostgreSQL cluster.
 
@@ -1276,7 +1276,7 @@ Updates the PostgreSQL cluster.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2370
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2371
 
 ##### Parameters
 
@@ -1296,7 +1296,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2370
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2371
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2372
 
 ##### Parameters
 
@@ -1320,7 +1320,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2371
 
 > **update**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2488
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2489
 
 Updates the PostgreSQL cluster.
 
@@ -1338,7 +1338,7 @@ Updates the PostgreSQL cluster.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2489
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2490
 
 Updates the PostgreSQL cluster.
 
@@ -1360,7 +1360,7 @@ Updates the PostgreSQL cluster.
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`UpdateClusterRequest`](../interfaces/UpdateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2490
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2491
 
 Updates the PostgreSQL cluster.
 

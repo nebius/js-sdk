@@ -6,7 +6,7 @@
 
 # Interface: CreateRegistryRequest
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1169
+Defined in: src/generated/nebius/registry/v1/index.ts:1170
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1169
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1171
+Defined in: src/generated/nebius/registry/v1/index.ts:1172
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1171
 
 > **$type**: `"nebius.registry.v1.CreateRegistryRequest"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1170
+Defined in: src/generated/nebius/registry/v1/index.ts:1171
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1170
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1172
+Defined in: src/generated/nebius/registry/v1/index.ts:1173
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1172
 
 > `optional` **spec**: [`RegistrySpec`](RegistrySpec.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1173
+Defined in: src/generated/nebius/registry/v1/index.ts:1174

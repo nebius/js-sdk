@@ -6,7 +6,7 @@
 
 # Interface: StopTransferRequest
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:571
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:572
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:571
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:573
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:574
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:573
 
 > **$type**: `"nebius.storage.v1alpha1.StopTransferRequest"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:572
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:573
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:572
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:574
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:575

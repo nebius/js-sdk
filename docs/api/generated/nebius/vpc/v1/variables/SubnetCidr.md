@@ -8,4 +8,4 @@
 
 > **SubnetCidr**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`SubnetCidr`](../interfaces/SubnetCidr.md), `"nebius.vpc.v1.SubnetCidr"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7932
+Defined in: src/generated/nebius/vpc/v1/index.ts:7933

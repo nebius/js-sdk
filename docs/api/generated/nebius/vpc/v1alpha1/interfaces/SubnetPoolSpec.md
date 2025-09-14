@@ -6,7 +6,7 @@
 
 # Interface: SubnetPoolSpec
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7649
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7650
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7649
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7651
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7652
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7651
 
 > **$type**: `"nebius.vpc.v1alpha1.SubnetPoolSpec"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7650
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7651
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7650
 
 > **cidrs**: [`SubnetCidr`](SubnetCidr.md)[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7653
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7654
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7653
 
 > **version**: [`IpVersion`](../type-aliases/IpVersion.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7652
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7653

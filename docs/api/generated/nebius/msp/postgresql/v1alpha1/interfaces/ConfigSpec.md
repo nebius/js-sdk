@@ -6,7 +6,7 @@
 
 # Interface: ConfigSpec
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3342
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3343
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3342
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3344
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3345
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3344
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ConfigSpec"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3343
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3344
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3343
 
 > `optional` **config**: `object`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3370
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3371
 
 Config of the PostgreSQL cluster.
 
@@ -48,7 +48,7 @@ Config of the PostgreSQL cluster.
 
 > `optional` **poolerConfig**: [`ConnectionPoolerConfig`](ConnectionPoolerConfig.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3355
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3356
 
 Configuration of the connection pooler.
 
@@ -58,7 +58,7 @@ Configuration of the connection pooler.
 
 > **publicAccess**: `boolean`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3360
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3361
 
 Either make cluster public accessible or accessible only via private VPC.
 
@@ -68,7 +68,7 @@ Either make cluster public accessible or accessible only via private VPC.
 
 > `optional` **template**: [`TemplateSpec`](TemplateSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3365
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3366
 
 Resources allocated to PostgreSQL hosts.
 
@@ -78,7 +78,7 @@ Resources allocated to PostgreSQL hosts.
 
 > **version**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3350
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3351
 
 Version of PostgreSQL used in the cluster.
 Possible values: `16`

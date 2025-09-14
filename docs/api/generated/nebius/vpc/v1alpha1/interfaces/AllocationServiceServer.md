@@ -6,7 +6,7 @@
 
 # Interface: AllocationServiceServer
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:818
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:819
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:818
 
 > **create**: `handleUnaryCall`\<[`CreateAllocationRequest`](CreateAllocationRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:822
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:823
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:822
 
 > **delete**: `handleUnaryCall`\<[`DeleteAllocationRequest`](DeleteAllocationRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:824
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:825
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:824
 
 > **get**: `handleUnaryCall`\<[`GetAllocationRequest`](GetAllocationRequest.md), [`Allocation`](Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:819
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:820
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:819
 
 > **getByName**: `handleUnaryCall`\<[`GetAllocationByNameRequest`](GetAllocationByNameRequest.md), [`Allocation`](Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:820
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:821
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:820
 
 > **list**: `handleUnaryCall`\<[`ListAllocationsRequest`](ListAllocationsRequest.md), [`ListAllocationsResponse`](ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:821
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:822
 
 ---
 
@@ -62,4 +62,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:821
 
 > **update**: `handleUnaryCall`\<[`UpdateAllocationRequest`](UpdateAllocationRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:823
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:824

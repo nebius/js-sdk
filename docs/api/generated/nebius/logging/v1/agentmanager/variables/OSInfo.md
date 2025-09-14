@@ -8,4 +8,4 @@
 
 > **OSInfo**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`OSInfo`](../interfaces/OSInfo.md), `"nebius.logging.agentmanager.v1.OSInfo"`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1146
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1147

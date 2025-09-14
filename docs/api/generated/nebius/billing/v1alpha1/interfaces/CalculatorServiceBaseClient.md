@@ -6,7 +6,7 @@
 
 # Interface: CalculatorServiceBaseClient
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:531
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:532
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **estimate**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:532
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:533
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:532
 
 > **estimateBatch**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:533
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:534
 
 #### Parameters
 

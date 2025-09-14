@@ -6,7 +6,7 @@
 
 # Class: JobService
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2001
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2002
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2001
 
 > **new JobService**(`sdk`): `JobService`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2045
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2046
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2045
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.JobService"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2002
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2003
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2002
 
 > **cancel**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2035
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2036
 
 Cancel a job.
 
@@ -64,7 +64,7 @@ Cancel a job.
 
 > **cancel**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2036
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2037
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2036
 
 > **cancel**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2037
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2038
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2037
 
 > **cancel**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2109
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2110
 
 Cancel a job.
 
@@ -126,7 +126,7 @@ Cancel a job.
 
 > **cancel**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2110
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2111
 
 Cancel a job.
 
@@ -148,7 +148,7 @@ Cancel a job.
 
 > **cancel**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2111
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2112
 
 Cancel a job.
 
@@ -178,7 +178,7 @@ Cancel a job.
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2021
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2022
 
 Creates a job.
 
@@ -196,7 +196,7 @@ Creates a job.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2022
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2023
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2022
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2023
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2024
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2023
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2079
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2080
 
 Creates a job.
 
@@ -258,7 +258,7 @@ Creates a job.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2080
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2081
 
 Creates a job.
 
@@ -280,7 +280,7 @@ Creates a job.
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2081
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2082
 
 Creates a job.
 
@@ -310,7 +310,7 @@ Creates a job.
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2028
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2029
 
 Delete a job.
 
@@ -328,7 +328,7 @@ Delete a job.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2029
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2030
 
 ##### Parameters
 
@@ -348,7 +348,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2029
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2030
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2031
 
 ##### Parameters
 
@@ -372,7 +372,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2030
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2094
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2095
 
 Delete a job.
 
@@ -390,7 +390,7 @@ Delete a job.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2095
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2096
 
 Delete a job.
 
@@ -412,7 +412,7 @@ Delete a job.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2096
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2097
 
 Delete a job.
 
@@ -442,7 +442,7 @@ Delete a job.
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2007
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2008
 
 Returns the specified job.
 
@@ -460,7 +460,7 @@ Returns the specified job.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2008
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2009
 
 ##### Parameters
 
@@ -480,7 +480,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2008
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2009
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2010
 
 ##### Parameters
 
@@ -504,7 +504,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2009
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2055
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2056
 
 Returns the specified job.
 
@@ -522,7 +522,7 @@ Returns the specified job.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2056
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2057
 
 Returns the specified job.
 
@@ -544,7 +544,7 @@ Returns the specified job.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Job`](../interfaces/Job.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2057
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2058
 
 Returns the specified job.
 
@@ -572,7 +572,7 @@ Returns the specified job.
 
 > **getOperationService**(): [`OperationService`](../../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2051
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2052
 
 #### Returns
 
@@ -586,7 +586,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2051
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2014
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2015
 
 Retrieves a list of jobs.
 
@@ -604,7 +604,7 @@ Retrieves a list of jobs.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2015
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2016
 
 ##### Parameters
 
@@ -624,7 +624,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2015
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2016
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2017
 
 ##### Parameters
 
@@ -648,7 +648,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2016
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2067
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2068
 
 Retrieves a list of jobs.
 
@@ -666,7 +666,7 @@ Retrieves a list of jobs.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2068
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2069
 
 Retrieves a list of jobs.
 
@@ -688,7 +688,7 @@ Retrieves a list of jobs.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListJobsResponse`](../interfaces/ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2069
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2070
 
 Retrieves a list of jobs.
 

@@ -8,4 +8,4 @@
 
 > **TenantStatus_TenantState**: [`TenantStatus_TenantStateClass`](../type-aliases/TenantStatus_TenantStateClass.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2918
+Defined in: src/generated/nebius/iam/v2/index.ts:2919

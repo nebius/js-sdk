@@ -8,4 +8,4 @@
 
 > **AttachedFilesystemSpec_AttachModeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"READ_ONLY"` \| `"READ_WRITE"`\> & `AttachedFilesystemSpec_AttachModeValueMembers`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7297
+Defined in: src/generated/nebius/compute/v1/index.ts:7298

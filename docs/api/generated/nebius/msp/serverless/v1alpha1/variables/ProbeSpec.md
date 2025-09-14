@@ -8,4 +8,4 @@
 
 > **ProbeSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ProbeSpec`](../interfaces/ProbeSpec.md), `"nebius.msp.serverless.v1alpha1.ProbeSpec"`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1209
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1210

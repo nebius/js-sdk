@@ -6,7 +6,7 @@
 
 # Interface: Region
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1403
+Defined in: src/generated/nebius/audit/v2/index.ts:1404
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1403
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1405
+Defined in: src/generated/nebius/audit/v2/index.ts:1406
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1405
 
 > **$type**: `"nebius.audit.v2.Region"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1404
+Defined in: src/generated/nebius/audit/v2/index.ts:1405
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1404
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1410
+Defined in: src/generated/nebius/audit/v2/index.ts:1411
 
 Region name

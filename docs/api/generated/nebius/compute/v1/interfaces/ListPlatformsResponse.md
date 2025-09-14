@@ -6,7 +6,7 @@
 
 # Interface: ListPlatformsResponse
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11290
+Defined in: src/generated/nebius/compute/v1/index.ts:11291
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11290
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11292
+Defined in: src/generated/nebius/compute/v1/index.ts:11293
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11292
 
 > **$type**: `"nebius.compute.v1.ListPlatformsResponse"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11291
+Defined in: src/generated/nebius/compute/v1/index.ts:11292
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11291
 
 > **items**: [`Platform`](Platform.md)[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11293
+Defined in: src/generated/nebius/compute/v1/index.ts:11294
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11293
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11294
+Defined in: src/generated/nebius/compute/v1/index.ts:11295

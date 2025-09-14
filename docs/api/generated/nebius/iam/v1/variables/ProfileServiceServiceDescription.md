@@ -8,7 +8,7 @@
 
 > **ProfileServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15120
+Defined in: src/generated/nebius/iam/v1/index.ts:15121
 
 ## Type Declaration
 

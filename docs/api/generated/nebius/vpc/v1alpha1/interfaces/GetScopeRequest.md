@@ -6,7 +6,7 @@
 
 # Interface: GetScopeRequest
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5451
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5452
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5451
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5453
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5454
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5453
 
 > **$type**: `"nebius.vpc.v1alpha1.GetScopeRequest"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5452
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5453
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5452
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5454
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5455

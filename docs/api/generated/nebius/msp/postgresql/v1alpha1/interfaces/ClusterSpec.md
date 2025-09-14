@@ -6,7 +6,7 @@
 
 # Interface: ClusterSpec
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2837
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2838
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2837
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2839
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2840
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2839
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ClusterSpec"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2838
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2839
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2838
 
 > `optional` **backup**: [`BackupSpec`](BackupSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2852
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2853
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2852
 
 > `optional` **bootstrap**: [`BootstrapSpec`](BootstrapSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2851
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2852
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2851
 
 > `optional` **config**: [`ConfigSpec`](ConfigSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2850
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2851
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2850
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2844
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2845
 
 Description of the PostgreSQL cluster.
 
@@ -64,6 +64,6 @@ Description of the PostgreSQL cluster.
 
 > **networkId**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2849
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2850
 
 Network ID in which the cluster is created.

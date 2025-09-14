@@ -8,7 +8,7 @@
 
 > **OperationServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:581
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:582
 
 ## Type Declaration
 

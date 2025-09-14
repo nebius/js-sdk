@@ -6,7 +6,7 @@
 
 # Interface: SubnetSpec
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7474
+Defined in: src/generated/nebius/vpc/v1/index.ts:7475
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7474
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7476
+Defined in: src/generated/nebius/vpc/v1/index.ts:7477
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7476
 
 > **$type**: `"nebius.vpc.v1.SubnetSpec"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7475
+Defined in: src/generated/nebius/vpc/v1/index.ts:7476
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7475
 
 > `optional` **ipv4PrivatePools**: [`IPv4PrivateSubnetPools`](IPv4PrivateSubnetPools.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7487
+Defined in: src/generated/nebius/vpc/v1/index.ts:7488
 
 Pools for private ipv4 addresses.
 Default is 'use_network_pools = true'
@@ -41,7 +41,7 @@ Default is 'use_network_pools = true'
 
 > `optional` **ipv4PublicPools**: [`IPv4PublicSubnetPools`](IPv4PublicSubnetPools.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7493
+Defined in: src/generated/nebius/vpc/v1/index.ts:7494
 
 Pools for public ipv4 addresses.
 Default is 'use_network_pools = true'
@@ -52,6 +52,6 @@ Default is 'use_network_pools = true'
 
 > **networkId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7481
+Defined in: src/generated/nebius/vpc/v1/index.ts:7482
 
 Network ID.

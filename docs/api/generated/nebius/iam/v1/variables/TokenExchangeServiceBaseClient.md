@@ -8,7 +8,7 @@
 
 > **TokenExchangeServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`TokenExchangeServiceBaseClient`](../interfaces/TokenExchangeServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22102
+Defined in: src/generated/nebius/iam/v1/index.ts:22103
 
 ## Type Declaration
 

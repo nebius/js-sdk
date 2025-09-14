@@ -6,7 +6,7 @@
 
 # Interface: JobContainerSpec
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2460
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2461
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2460
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2462
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2463
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2462
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.JobContainerSpec"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2461
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2462
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2461
 
 > **args**: `string`[]
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2487
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2488
 
 Command args
 
@@ -40,7 +40,7 @@ Command args
 
 > **command**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2482
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2483
 
 Job command
 
@@ -50,7 +50,7 @@ Job command
 
 > **envs**: `object`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2492
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2493
 
 Environment variables
 
@@ -64,7 +64,7 @@ Environment variables
 
 > **image**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2467
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2468
 
 Image name
 
@@ -74,7 +74,7 @@ Image name
 
 > **maxRetries**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2507
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2508
 
 Max retries (0 - no retries)
 
@@ -84,7 +84,7 @@ Max retries (0 - no retries)
 
 > **replicaCount**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2472
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2473
 
 Replica count
 
@@ -94,7 +94,7 @@ Replica count
 
 > **sensitiveEnvs**: `object`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2497
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2498
 
 Environment variables with sensitive data
 
@@ -108,7 +108,7 @@ Environment variables with sensitive data
 
 > `optional` **template**: [`JobTemplateSpec`](JobTemplateSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2477
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2478
 
 Container resource template
 
@@ -118,6 +118,6 @@ Container resource template
 
 > **timeoutSeconds**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2502
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2503
 
 Job timeout in seconds (0 - no timeout)

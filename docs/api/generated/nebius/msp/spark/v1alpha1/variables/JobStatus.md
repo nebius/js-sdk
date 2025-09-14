@@ -8,4 +8,4 @@
 
 > **JobStatus**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`JobStatus`](../interfaces/JobStatus.md), `"nebius.msp.spark.v1alpha1.JobStatus"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3237
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3282

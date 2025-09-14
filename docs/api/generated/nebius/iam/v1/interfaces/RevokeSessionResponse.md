@@ -6,7 +6,7 @@
 
 # Interface: RevokeSessionResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17600
+Defined in: src/generated/nebius/iam/v1/index.ts:17601
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17600
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17602
+Defined in: src/generated/nebius/iam/v1/index.ts:17603
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17602
 
 > **$type**: `"nebius.iam.v1.RevokeSessionResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17601
+Defined in: src/generated/nebius/iam/v1/index.ts:17602

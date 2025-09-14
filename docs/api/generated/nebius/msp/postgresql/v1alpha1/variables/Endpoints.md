@@ -8,4 +8,4 @@
 
 > **Endpoints**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Endpoints`](../interfaces/Endpoints.md), `"nebius.msp.postgresql.v1alpha1.Endpoints"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3184
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3185

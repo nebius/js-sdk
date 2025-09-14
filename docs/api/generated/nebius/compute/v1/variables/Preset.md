@@ -8,4 +8,4 @@
 
 > **Preset**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Preset`](../interfaces/Preset.md), `"nebius.compute.v1.Preset"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11766
+Defined in: src/generated/nebius/compute/v1/index.ts:11767

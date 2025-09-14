@@ -8,4 +8,4 @@
 
 > **CreateFederationCertificateRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateFederationCertificateRequest`](../interfaces/CreateFederationCertificateRequest.md), `"nebius.iam.v1.CreateFederationCertificateRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7209
+Defined in: src/generated/nebius/iam/v1/index.ts:7210

@@ -6,7 +6,7 @@
 
 # Interface: OneofPySDKSettings
 
-Defined in: src/generated/nebius/index.ts:540
+Defined in: src/generated/nebius/index.ts:541
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/index.ts:540
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/index.ts:542
+Defined in: src/generated/nebius/index.ts:543
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/index.ts:542
 
 > **$type**: `"nebius.OneofPySDKSettings"`
 
-Defined in: src/generated/nebius/index.ts:541
+Defined in: src/generated/nebius/index.ts:542
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/index.ts:541
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/index.ts:543
+Defined in: src/generated/nebius/index.ts:544

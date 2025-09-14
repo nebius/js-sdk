@@ -6,7 +6,7 @@
 
 # Interface: CurrentBucketCounters
 
-Defined in: src/generated/nebius/storage/v1/index.ts:53
+Defined in: src/generated/nebius/storage/v1/index.ts:54
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:53
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:55
+Defined in: src/generated/nebius/storage/v1/index.ts:56
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:55
 
 > **$type**: `"nebius.storage.v1.CurrentBucketCounters"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:54
+Defined in: src/generated/nebius/storage/v1/index.ts:55
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:54
 
 > **inflightPartsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:61
+Defined in: src/generated/nebius/storage/v1/index.ts:62
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:61
 
 > **inflightPartsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:62
+Defined in: src/generated/nebius/storage/v1/index.ts:63
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:62
 
 > **multipartObjectsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:58
+Defined in: src/generated/nebius/storage/v1/index.ts:59
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:58
 
 > **multipartObjectsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:59
+Defined in: src/generated/nebius/storage/v1/index.ts:60
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:59
 
 > **multipartUploadsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:60
+Defined in: src/generated/nebius/storage/v1/index.ts:61
 
 ---
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:60
 
 > **simpleObjectsQuantity**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:56
+Defined in: src/generated/nebius/storage/v1/index.ts:57
 
 ---
 
@@ -78,4 +78,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:56
 
 > **simpleObjectsSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:57
+Defined in: src/generated/nebius/storage/v1/index.ts:58

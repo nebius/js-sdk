@@ -6,19 +6,23 @@
 
 # Class: ServiceAccount
 
-Defined in: [src/runtime/service_account/service_account.ts:20](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L20)
+Defined in: [src/runtime/service_account/service_account.ts:18](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L18)
 
 ## Implements
 
 - [`ServiceAccountLike`](../interfaces/ServiceAccountLike.md)
 
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
+
 ## Constructors
 
 ### Constructor
 
-> **new ServiceAccount**(`privateKeyPem`, `publicKeyId`, `serviceAccountId`): `ServiceAccount`
+> **new ServiceAccount**(`privateKeyPem`, `publicKeyId`, `serviceAccountId`, `logger?`): `ServiceAccount`
 
-Defined in: [src/runtime/service_account/service_account.ts:21](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L21)
+Defined in: [src/runtime/service_account/service_account.ts:19](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L19)
 
 #### Parameters
 
@@ -34,17 +38,29 @@ Defined in: [src/runtime/service_account/service_account.ts:21](https://github.c
 
 `string`
 
+##### logger?
+
+[`Logger`](../../../util/logging/classes/Logger.md)
+
 #### Returns
 
 `ServiceAccount`
 
 ## Properties
 
+### logger?
+
+> `readonly` `optional` **logger**: [`Logger`](../../../util/logging/classes/Logger.md)
+
+Defined in: [src/runtime/service_account/service_account.ts:23](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L23)
+
+---
+
 ### privateKeyPem
 
 > `readonly` **privateKeyPem**: `string`
 
-Defined in: [src/runtime/service_account/service_account.ts:22](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L22)
+Defined in: [src/runtime/service_account/service_account.ts:20](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L20)
 
 #### Implementation of
 
@@ -56,7 +72,7 @@ Defined in: [src/runtime/service_account/service_account.ts:22](https://github.c
 
 > `readonly` **publicKeyId**: `string`
 
-Defined in: [src/runtime/service_account/service_account.ts:23](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L23)
+Defined in: [src/runtime/service_account/service_account.ts:21](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L21)
 
 #### Implementation of
 
@@ -68,7 +84,7 @@ Defined in: [src/runtime/service_account/service_account.ts:23](https://github.c
 
 > `readonly` **serviceAccountId**: `string`
 
-Defined in: [src/runtime/service_account/service_account.ts:24](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L24)
+Defined in: [src/runtime/service_account/service_account.ts:22](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L22)
 
 #### Implementation of
 
@@ -76,11 +92,23 @@ Defined in: [src/runtime/service_account/service_account.ts:24](https://github.c
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `object`
+
+Defined in: [src/runtime/service_account/service_account.ts:29](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L29)
+
+#### Returns
+
+`object`
+
+---
+
 ### getExchangeTokenRequest()
 
 > **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
-Defined in: [src/runtime/service_account/service_account.ts:27](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/service_account.ts#L27)
+Defined in: [src/runtime/service_account/service_account.ts:36](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L36)
 
 #### Returns
 

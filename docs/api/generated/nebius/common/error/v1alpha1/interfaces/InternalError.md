@@ -6,7 +6,7 @@
 
 # Interface: InternalError
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:985
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:986
 
 Generic internal error.
 
@@ -16,7 +16,7 @@ Generic internal error.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:987
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:988
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:987
 
 > **$type**: `"nebius.common.error.v1alpha1.InternalError"`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:986
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:987
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:986
 
 > **requestId**: `string`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:992
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:993
 
 Error request ID.
 
@@ -42,6 +42,6 @@ Error request ID.
 
 > **traceId**: `string`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:997
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:998
 
 Trace ID for the failing request.

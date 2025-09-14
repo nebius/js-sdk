@@ -6,7 +6,7 @@
 
 # Interface: NetworkInterfaceSpec
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2264
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2265
 
 Describes the specification of a network interface.
 
@@ -16,7 +16,7 @@ Describes the specification of a network interface.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2266
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2267
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2266
 
 > **$type**: `"nebius.vpc.v1alpha1.NetworkInterfaceSpec"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2265
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2266
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2265
 
 > `optional` **ipAddress**: [`IPAddress`](IPAddress.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2283
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2284
 
 Private IPv4 address associated with the interface.
 
@@ -42,7 +42,7 @@ Private IPv4 address associated with the interface.
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2278
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2279
 
 Interface name
 Value of this field configures the name of the network interface inside VM's OS.
@@ -54,7 +54,7 @@ Longer values will persist in the specification but will be truncated to 15 symb
 
 > `optional` **publicIpAddress**: [`PublicIPAddress`](PublicIPAddress.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2288
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2289
 
 Public IPv4 address associated with the interface.
 
@@ -64,6 +64,6 @@ Public IPv4 address associated with the interface.
 
 > **subnetId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2271
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2272
 
 Subnet ID

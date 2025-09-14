@@ -8,4 +8,4 @@
 
 > **IssueStaticKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), `"nebius.iam.v1.IssueStaticKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18333
+Defined in: src/generated/nebius/iam/v1/index.ts:18334

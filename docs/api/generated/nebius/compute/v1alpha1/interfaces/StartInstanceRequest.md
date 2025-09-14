@@ -6,7 +6,7 @@
 
 # Interface: StartInstanceRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6064
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6065
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6064
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6066
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6067
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6066
 
 > **$type**: `"nebius.compute.v1alpha1.StartInstanceRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6065
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6066
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6065
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6067
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6068

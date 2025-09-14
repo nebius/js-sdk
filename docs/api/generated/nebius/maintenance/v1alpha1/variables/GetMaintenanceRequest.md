@@ -8,4 +8,4 @@
 
 > **GetMaintenanceRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), `"nebius.maintenance.v1alpha1.GetMaintenanceRequest"`\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:192
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:193

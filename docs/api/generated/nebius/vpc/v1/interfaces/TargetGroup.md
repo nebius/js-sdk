@@ -6,7 +6,7 @@
 
 # Interface: TargetGroup
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8547
+Defined in: src/generated/nebius/vpc/v1/index.ts:8548
 
 Target group represents the set of resources that receive traffic from a load balancer listener
 
@@ -16,7 +16,7 @@ Target group represents the set of resources that receive traffic from a load ba
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8549
+Defined in: src/generated/nebius/vpc/v1/index.ts:8550
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8549
 
 > **$type**: `"nebius.vpc.v1.TargetGroup"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8548
+Defined in: src/generated/nebius/vpc/v1/index.ts:8549
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8548
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8555
+Defined in: src/generated/nebius/vpc/v1/index.ts:8556
 
 Metadata for the TargetGroup resource.
 `metadata.parent_id` represents IAM container
@@ -43,7 +43,7 @@ Metadata for the TargetGroup resource.
 
 > `optional` **spec**: [`TargetGroupSpec`](TargetGroupSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8560
+Defined in: src/generated/nebius/vpc/v1/index.ts:8561
 
 Specification of the TargetGroup.
 
@@ -53,6 +53,6 @@ Specification of the TargetGroup.
 
 > `optional` **status**: [`TargetGroupStatus`](TargetGroupStatus.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8565
+Defined in: src/generated/nebius/vpc/v1/index.ts:8566
 
 Status of the TargetGroup.

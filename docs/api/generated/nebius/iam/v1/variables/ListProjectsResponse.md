@@ -8,4 +8,4 @@
 
 > **ListProjectsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListProjectsResponse`](../interfaces/ListProjectsResponse.md), `"nebius.iam.v1.ListProjectsResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15757
+Defined in: src/generated/nebius/iam/v1/index.ts:15758

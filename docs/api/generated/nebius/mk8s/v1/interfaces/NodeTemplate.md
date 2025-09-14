@@ -6,7 +6,7 @@
 
 # Interface: NodeTemplate
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4329
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4600
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4329
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4331
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4602
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4331
 
 > **$type**: `"nebius.mk8s.v1.NodeTemplate"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4330
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4601
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4330
 
 > `optional` **bootDisk**: [`DiskSpec`](DiskSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4351
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4622
 
 Parameters of a Node Nebius Compute Instance boot disk.
 
@@ -40,7 +40,7 @@ Parameters of a Node Nebius Compute Instance boot disk.
 
 > **cloudInitUserData**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4374
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4669
 
 cloud-init user-data
 Should contain at least one SSH key.
@@ -51,7 +51,7 @@ Should contain at least one SSH key.
 
 > **filesystems**: [`AttachedFilesystemSpec`](AttachedFilesystemSpec.md)[]
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4368
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4663
 
 Static attachments of Compute Filesystem.
 Can be used as a workaround, until CSI for Compute Disk and Filesystem will be available.
@@ -62,7 +62,7 @@ Can be used as a workaround, until CSI for Compute Disk and Filesystem will be a
 
 > `optional` **gpuCluster**: [`GpuClusterSpec`](GpuClusterSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4361
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4656
 
 Nebius Compute GPUCluster ID that will be attached to node.
 
@@ -72,7 +72,7 @@ Nebius Compute GPUCluster ID that will be attached to node.
 
 > `optional` **gpuSettings**: [`GpuSettings`](GpuSettings.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4356
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4627
 
 GPU-related settings.
 
@@ -82,7 +82,7 @@ GPU-related settings.
 
 > `optional` **metadata**: [`NodeMetadataTemplate`](NodeMetadataTemplate.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4332
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4603
 
 ---
 
@@ -90,7 +90,36 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4332
 
 > **networkInterfaces**: [`NetworkInterfaceTemplate`](NetworkInterfaceTemplate.md)[]
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4362
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4657
+
+---
+
+### os
+
+> **os**: `string`
+
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4651
+
+OS version that will be used to create the boot disk of Compute Instances in the NodeGroup.
+Supported platform / k8s version / OS / driver presets combinations
+gpu-l40s-a, gpu-l40s-d, gpu-h100-sxm, gpu-h200-sxm, cpu-e1, cpu-e2, cpu-d3:
+drivers_preset: ""
+k8s: 1.30 → "ubuntu22.04"
+k8s: 1.31 → "ubuntu22.04" (default), "ubuntu24.04"
+gpu-l40s-a, gpu-l40s-d, gpu-h100-sxm, gpu-h200-sxm:
+drivers_preset: "cuda12" (CUDA 12.4)
+k8s: 1.30, 1.31 → "ubuntu22.04"
+drivers_preset: "cuda12.4"
+k8s: 1.31 → "ubuntu22.04"
+drivers_preset: "cuda12.8"
+k8s: 1.31 → "ubuntu24.04"
+gpu-b200-sxm:
+drivers_preset: ""
+k8s: 1.30, 1.31 → "ubuntu24.04"
+drivers_preset: "cuda12" (CUDA 12.8)
+k8s: 1.30, 1.31 → "ubuntu24.04"
+drivers_preset: "cuda12.8"
+k8s: 1.31 → "ubuntu24.04"
 
 ---
 
@@ -98,7 +127,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4362
 
 > `optional` **preemptible**: [`PreemptibleSpec`](PreemptibleSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4389
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4684
 
 Configures whether the nodes in the group are preemptible.
 Set to empty value to enable preemptible nodes.
@@ -109,7 +138,7 @@ Set to empty value to enable preemptible nodes.
 
 > `optional` **resources**: [`ResourcesSpec`](ResourcesSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4346
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4617
 
 Resources that will have Nebius Compute Instance where Node kubelet will run.
 
@@ -119,7 +148,7 @@ Resources that will have Nebius Compute Instance where Node kubelet will run.
 
 > **serviceAccountId**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4383
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4678
 
 the Nebius service account whose credentials will be available on the nodes of the group.
 With these credentials, it is possible to make `nebius` CLI or public API requests from the nodes without the need for extra authentication.
@@ -133,7 +162,7 @@ This service account is also used to make requests to container registry.
 
 > **taints**: [`NodeTaint`](NodeTaint.md)[]
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4341
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4612
 
 Kubernetes Node taints.
 For now change will not be propagated to existing nodes, so will be applied only to Kubernetes Nodes created after the field change.

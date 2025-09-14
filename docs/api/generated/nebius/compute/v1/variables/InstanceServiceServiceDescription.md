@@ -8,7 +8,7 @@
 
 > **InstanceServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6918
+Defined in: src/generated/nebius/compute/v1/index.ts:6919
 
 ## Type Declaration
 

@@ -8,7 +8,7 @@
 
 > **PlatformServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`PlatformServiceBaseClient`](../interfaces/PlatformServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11421
+Defined in: src/generated/nebius/compute/v1/index.ts:11422
 
 ## Type Declaration
 

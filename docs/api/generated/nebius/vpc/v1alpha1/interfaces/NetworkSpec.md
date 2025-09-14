@@ -6,7 +6,7 @@
 
 # Interface: NetworkSpec
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3852
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3853
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3852
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3854
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3855
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3854
 
 > **$type**: `"nebius.vpc.v1alpha1.NetworkSpec"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3853
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3854
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3853
 
 > **pools**: [`NetworkPool`](NetworkPool.md)[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3859
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3860
 
 Pools for addresses

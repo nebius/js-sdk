@@ -6,7 +6,7 @@
 
 # Interface: ClusterServiceServer
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:839
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1089
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:839
 
 > **create**: `handleUnaryCall`\<[`CreateClusterRequest`](CreateClusterRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:843
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1093
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:843
 
 > **delete**: `handleUnaryCall`\<[`DeleteClusterRequest`](DeleteClusterRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:845
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1095
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:845
 
 > **get**: `handleUnaryCall`\<[`GetClusterRequest`](GetClusterRequest.md), [`Cluster`](Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:840
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1090
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:840
 
 > **getByName**: `handleUnaryCall`\<[`GetClusterByNameRequest`](GetClusterByNameRequest.md), [`Cluster`](Cluster.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:841
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1091
 
 ---
 
@@ -54,7 +54,15 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:841
 
 > **list**: `handleUnaryCall`\<[`ListClustersRequest`](ListClustersRequest.md), [`ListClustersResponse`](ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:842
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1092
+
+---
+
+### listControlPlaneVersions
+
+> **listControlPlaneVersions**: `handleUnaryCall`\<[`ListClusterControlPlaneVersionsRequest`](ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](ListClusterControlPlaneVersionsResponse.md)\>
+
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1096
 
 ---
 
@@ -62,4 +70,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:842
 
 > **update**: `handleUnaryCall`\<[`UpdateClusterRequest`](UpdateClusterRequest.md), [`Operation`](../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:844
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1094

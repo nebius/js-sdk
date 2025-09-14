@@ -6,7 +6,7 @@
 
 # Interface: MaintenanceEventSpec
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9061
+Defined in: src/generated/nebius/compute/v1/index.ts:9062
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9061
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9063
+Defined in: src/generated/nebius/compute/v1/index.ts:9064
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9063
 
 > **$type**: `"nebius.compute.v1.MaintenanceEventSpec"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9062
+Defined in: src/generated/nebius/compute/v1/index.ts:9063
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9062
 
 > **isPlanned**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9068
+Defined in: src/generated/nebius/compute/v1/index.ts:9069
 
 If the maintenance event is planned or not

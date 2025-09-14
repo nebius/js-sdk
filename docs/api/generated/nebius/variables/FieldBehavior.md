@@ -8,4 +8,4 @@
 
 > **FieldBehavior**: [`FieldBehaviorClass`](../type-aliases/FieldBehaviorClass.md)
 
-Defined in: src/generated/nebius/index.ts:80
+Defined in: src/generated/nebius/index.ts:81

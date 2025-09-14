@@ -8,4 +8,4 @@
 
 > **Transfer**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Transfer`](../interfaces/Transfer.md), `"nebius.storage.v1alpha1.Transfer"`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1522
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1523

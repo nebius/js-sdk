@@ -8,4 +8,4 @@
 
 > **DeleteClusterRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), `"nebius.mk8s.v1alpha1.DeleteClusterRequest"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:696
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:697

@@ -6,7 +6,7 @@
 
 # Interface: IPAddressStatus
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10370
+Defined in: src/generated/nebius/compute/v1/index.ts:10371
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10370
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10372
+Defined in: src/generated/nebius/compute/v1/index.ts:10373
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10372
 
 > **$type**: `"nebius.compute.v1.IPAddressStatus"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10371
+Defined in: src/generated/nebius/compute/v1/index.ts:10372
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10371
 
 > **address**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10377
+Defined in: src/generated/nebius/compute/v1/index.ts:10378
 
 Effective private IPv4 address assigned to the interface.
 
@@ -40,6 +40,6 @@ Effective private IPv4 address assigned to the interface.
 
 > **allocationId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10382
+Defined in: src/generated/nebius/compute/v1/index.ts:10383
 
 Allocation identifier.

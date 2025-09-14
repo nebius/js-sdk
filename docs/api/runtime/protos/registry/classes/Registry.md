@@ -6,7 +6,7 @@
 
 # Class: Registry
 
-Defined in: [src/runtime/protos/registry.ts:42](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L42)
+Defined in: [src/runtime/protos/registry.ts:42](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L42)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ Defined in: [src/runtime/protos/registry.ts:42](https://github.com/nebius/nodejs
 
 > **getEnum**(`type`): `undefined` \| [`EnumClassInterface`](../interfaces/EnumClassInterface.md)
 
-Defined in: [src/runtime/protos/registry.ts:63](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L63)
+Defined in: [src/runtime/protos/registry.ts:63](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L63)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [src/runtime/protos/registry.ts:63](https://github.com/nebius/nodejs
 
 > **getExtension**(`extendee`, `fieldNo`): `undefined` \| [`ExtensionDescriptor`](../interfaces/ExtensionDescriptor.md)
 
-Defined in: [src/runtime/protos/registry.ts:78](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L78)
+Defined in: [src/runtime/protos/registry.ts:78](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L78)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: [src/runtime/protos/registry.ts:78](https://github.com/nebius/nodejs
 
 > **getExtensionByName**(`fullName`): `undefined` \| [`ExtensionDescriptor`](../interfaces/ExtensionDescriptor.md)
 
-Defined in: [src/runtime/protos/registry.ts:82](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L82)
+Defined in: [src/runtime/protos/registry.ts:82](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L82)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [src/runtime/protos/registry.ts:82](https://github.com/nebius/nodejs
 
 > **getMessage**(`type`): `undefined` \| [`MessageClassInterface`](../interfaces/MessageClassInterface.md)
 
-Defined in: [src/runtime/protos/registry.ts:55](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L55)
+Defined in: [src/runtime/protos/registry.ts:55](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L55)
 
 #### Parameters
 
@@ -100,7 +100,7 @@ Defined in: [src/runtime/protos/registry.ts:55](https://github.com/nebius/nodejs
 
 > **listExtendees**(): `string`[]
 
-Defined in: [src/runtime/protos/registry.ts:90](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L90)
+Defined in: [src/runtime/protos/registry.ts:90](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L90)
 
 #### Returns
 
@@ -112,7 +112,7 @@ Defined in: [src/runtime/protos/registry.ts:90](https://github.com/nebius/nodejs
 
 > **listExtensions**(`extendee`): readonly [`ExtensionDescriptor`](../interfaces/ExtensionDescriptor.md)[]
 
-Defined in: [src/runtime/protos/registry.ts:86](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L86)
+Defined in: [src/runtime/protos/registry.ts:86](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L86)
 
 #### Parameters
 
@@ -130,7 +130,7 @@ readonly [`ExtensionDescriptor`](../interfaces/ExtensionDescriptor.md)[]
 
 > **registerEnum**(`enumClass`): `void`
 
-Defined in: [src/runtime/protos/registry.ts:59](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L59)
+Defined in: [src/runtime/protos/registry.ts:59](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L59)
 
 #### Parameters
 
@@ -148,7 +148,7 @@ Defined in: [src/runtime/protos/registry.ts:59](https://github.com/nebius/nodejs
 
 > **registerExtension**(`ext`): `void`
 
-Defined in: [src/runtime/protos/registry.ts:67](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L67)
+Defined in: [src/runtime/protos/registry.ts:67](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L67)
 
 #### Parameters
 
@@ -166,7 +166,7 @@ Defined in: [src/runtime/protos/registry.ts:67](https://github.com/nebius/nodejs
 
 > **registerMessage**(`message`): `void`
 
-Defined in: [src/runtime/protos/registry.ts:51](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L51)
+Defined in: [src/runtime/protos/registry.ts:51](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L51)
 
 #### Parameters
 

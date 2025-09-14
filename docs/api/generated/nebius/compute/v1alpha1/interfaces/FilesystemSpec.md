@@ -6,7 +6,7 @@
 
 # Interface: FilesystemSpec
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2712
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2713
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2712
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2714
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2715
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2714
 
 > **$type**: `"nebius.compute.v1alpha1.FilesystemSpec"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2713
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2714
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2713
 
 > **blockSizeBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2715
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2716
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2715
 
 > `optional` **size**: \{ `$case`: `"sizeBytes"`; `sizeBytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeKibibytes"`; `sizeKibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeMebibytes"`; `sizeMebibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"sizeGibibytes"`; `sizeGibibytes`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \}
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2717
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2718
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2717
 
 > **type**: [`FilesystemSpec_FilesystemType`](../type-aliases/FilesystemSpec_FilesystemType.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2716
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2717

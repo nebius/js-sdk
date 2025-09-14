@@ -6,7 +6,7 @@
 
 # Interface: ClusterServiceServer
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2282
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2283
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2282
 
 > **create**: `handleUnaryCall`\<[`CreateClusterRequest`](CreateClusterRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2287
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2288
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2287
 
 > **delete**: `handleUnaryCall`\<[`DeleteClusterRequest`](DeleteClusterRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2288
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2289
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2288
 
 > **get**: `handleUnaryCall`\<[`GetClusterRequest`](GetClusterRequest.md), [`Cluster`](Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2283
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2284
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2283
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2284
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2285
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2284
 
 > **getForBackup**: `handleUnaryCall`\<[`GetClusterForBackupRequest`](GetClusterForBackupRequest.md), [`Cluster`](Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2285
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2286
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2285
 
 > **list**: `handleUnaryCall`\<[`ListClustersRequest`](ListClustersRequest.md), [`ListClustersResponse`](ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2286
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2287
 
 ---
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2286
 
 > **restore**: `handleUnaryCall`\<[`RestoreClusterRequest`](RestoreClusterRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2290
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2291
 
 ---
 
@@ -78,7 +78,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2290
 
 > **start**: `handleUnaryCall`\<[`StartClusterRequest`](StartClusterRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2292
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2293
 
 ---
 
@@ -86,7 +86,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2292
 
 > **stop**: `handleUnaryCall`\<[`StopClusterRequest`](StopClusterRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2291
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2292
 
 ---
 
@@ -94,4 +94,4 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2291
 
 > **update**: `handleUnaryCall`\<[`UpdateClusterRequest`](UpdateClusterRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2289
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2290

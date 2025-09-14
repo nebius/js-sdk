@@ -8,4 +8,4 @@
 
 > **PythonConfig**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PythonConfig`](../interfaces/PythonConfig.md), `"nebius.msp.spark.v1alpha1.PythonConfig"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1673
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1696

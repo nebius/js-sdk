@@ -6,7 +6,7 @@
 
 # Interface: EndpointSpec
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:661
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:662
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:661
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:663
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:664
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:663
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.EndpointSpec"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:662
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:663
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:662
 
 > `optional` **container**: [`EndpointContainerSpec`](EndpointContainerSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:693
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:694
 
 Container spec
 
@@ -40,7 +40,7 @@ Container spec
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:668
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:669
 
 Description of the endpoint.
 
@@ -50,7 +50,7 @@ Description of the endpoint.
 
 > **networkId**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:673
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:674
 
 Network ID to run the endpoint in
 
@@ -60,7 +60,7 @@ Network ID to run the endpoint in
 
 > **password**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:683
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:684
 
 Password for accessing the container endpoint.
 
@@ -70,7 +70,7 @@ Password for accessing the container endpoint.
 
 > **port**: `number`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:688
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:689
 
 Container port to be exposed.
 
@@ -80,6 +80,6 @@ Container port to be exposed.
 
 > **username**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:678
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:679
 
 Username for accessing the container endpoint.

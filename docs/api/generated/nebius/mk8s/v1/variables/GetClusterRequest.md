@@ -8,4 +8,4 @@
 
 > **GetClusterRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), `"nebius.mk8s.v1.GetClusterRequest"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:127
+Defined in: src/generated/nebius/mk8s/v1/index.ts:128

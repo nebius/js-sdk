@@ -6,7 +6,7 @@
 
 # Interface: NodeSetUnhealthyRequest_HealthCheckInfo
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10753
+Defined in: src/generated/nebius/compute/v1/index.ts:10754
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10753
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10755
+Defined in: src/generated/nebius/compute/v1/index.ts:10756
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10755
 
 > **$type**: `"nebius.compute.v1.NodeSetUnhealthyRequest.HealthCheckInfo"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10754
+Defined in: src/generated/nebius/compute/v1/index.ts:10755
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10754
 
 > **checkId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10765
+Defined in: src/generated/nebius/compute/v1/index.ts:10766
 
 Identifies specific GPU check that failed in soperator (key for observability)
 
@@ -40,7 +40,7 @@ Identifies specific GPU check that failed in soperator (key for observability)
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10770
+Defined in: src/generated/nebius/compute/v1/index.ts:10771
 
 Human-readable description of the error for further investigation
 
@@ -50,6 +50,6 @@ Human-readable description of the error for further investigation
 
 > `optional` **observedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10760
+Defined in: src/generated/nebius/compute/v1/index.ts:10761
 
 Time when the unhealthy node was observed

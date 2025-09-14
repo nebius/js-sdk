@@ -6,7 +6,7 @@
 
 # Interface: ClusterStatus
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1669
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1940
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1669
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1671
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1942
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1671
 
 > **$type**: `"nebius.mk8s.v1alpha1.ClusterStatus"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1670
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1941
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1670
 
 > `optional` **controlPlane**: [`ControlPlaneStatus`](ControlPlaneStatus.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1673
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1944
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1673
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1678
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1949
 
 Show that changes are in flight
 
@@ -48,4 +48,4 @@ Show that changes are in flight
 
 > **state**: [`ClusterStatus_State`](../type-aliases/ClusterStatus_State.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1672
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1943

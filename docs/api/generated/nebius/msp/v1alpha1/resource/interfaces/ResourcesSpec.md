@@ -6,7 +6,7 @@
 
 # Interface: ResourcesSpec
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:365
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:366
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:365
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:367
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:368
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:367
 
 > **$type**: `"nebius.msp.v1alpha1.resource.ResourcesSpec"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:366
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:367
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:366
 
 > **platform**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:368
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:369
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:368
 
 > **preset**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:369
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:370

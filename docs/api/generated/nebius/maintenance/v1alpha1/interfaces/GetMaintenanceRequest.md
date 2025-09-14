@@ -6,7 +6,7 @@
 
 # Interface: GetMaintenanceRequest
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:192
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:193
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:192
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:194
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:195
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:194
 
 > **$type**: `"nebius.maintenance.v1alpha1.GetMaintenanceRequest"`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:193
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:194
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:193
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:200
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:201
 
 ID of the maintenance operation to return.
 To get the maintenance ID use a [MaintenanceService.List] request.

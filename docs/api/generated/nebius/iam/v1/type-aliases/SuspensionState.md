@@ -8,4 +8,4 @@
 
 > **SuspensionState** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"SUSPENSION_STATE_UNSPECIFIED"` \| `"NONE"` \| `"SUSPENDING"` \| `"SUSPENDED"` \| `"RESUMING"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19428
+Defined in: src/generated/nebius/iam/v1/index.ts:19429

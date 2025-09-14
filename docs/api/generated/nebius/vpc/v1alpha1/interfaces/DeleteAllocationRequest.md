@@ -6,7 +6,7 @@
 
 # Interface: DeleteAllocationRequest
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:675
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:676
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:675
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:677
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:678
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:677
 
 > **$type**: `"nebius.vpc.v1alpha1.DeleteAllocationRequest"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:676
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:677
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:676
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:678
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:679

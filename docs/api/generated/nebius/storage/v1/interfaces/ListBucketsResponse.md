@@ -6,7 +6,7 @@
 
 # Interface: ListBucketsResponse
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1443
+Defined in: src/generated/nebius/storage/v1/index.ts:1444
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1443
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1445
+Defined in: src/generated/nebius/storage/v1/index.ts:1446
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1445
 
 > **$type**: `"nebius.storage.v1.ListBucketsResponse"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1444
+Defined in: src/generated/nebius/storage/v1/index.ts:1445
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1444
 
 > **items**: [`Bucket`](Bucket.md)[]
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1450
+Defined in: src/generated/nebius/storage/v1/index.ts:1451
 
 List of buckets returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of buckets returned in the response. The field should be named as `items` f
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1455
+Defined in: src/generated/nebius/storage/v1/index.ts:1456
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

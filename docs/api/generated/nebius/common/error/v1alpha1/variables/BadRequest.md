@@ -8,4 +8,4 @@
 
 > **BadRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`BadRequest`](../interfaces/BadRequest.md), `"nebius.common.error.v1alpha1.BadRequest"`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:14
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:15

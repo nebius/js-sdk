@@ -8,4 +8,4 @@
 
 > **AddressBlockStateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"AVAILABLE"` \| `"DISABLED"`\> & `AddressBlockStateValueMembers`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5285
+Defined in: src/generated/nebius/vpc/v1/index.ts:5286

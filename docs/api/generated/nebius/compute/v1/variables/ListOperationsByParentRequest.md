@@ -8,4 +8,4 @@
 
 > **ListOperationsByParentRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), `"nebius.compute.v1.ListOperationsByParentRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11030
+Defined in: src/generated/nebius/compute/v1/index.ts:11031

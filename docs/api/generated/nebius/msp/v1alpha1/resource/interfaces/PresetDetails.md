@@ -6,7 +6,7 @@
 
 # Interface: PresetDetails
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:469
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:470
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:469
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:471
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:472
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:471
 
 > **$type**: `"nebius.msp.v1alpha1.resource.PresetDetails"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:470
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:471
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:470
 
 > **cpuCount**: `number`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:472
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:473
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:472
 
 > **gpuCount**: `number`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:474
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:475
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:474
 
 > **memoryGibibytes**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:473
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:474

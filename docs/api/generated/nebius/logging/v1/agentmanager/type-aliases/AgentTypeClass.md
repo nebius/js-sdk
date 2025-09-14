@@ -8,4 +8,4 @@
 
 > **AgentTypeClass** = [`EnumClass`](../../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"AGENT_UNDEFINED"` \| `"O11Y_AGENT"`\> & `AgentTypeValueMembers`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:31
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:32

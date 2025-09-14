@@ -6,7 +6,7 @@
 
 # ~~Interface: ListOperationsResponse~~
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:288
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:289
 
 ## Deprecated
 
@@ -18,7 +18,7 @@ Deprecated.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:290
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:291
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:290
 
 > **$type**: `"nebius.common.v1alpha1.ListOperationsResponse"`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:289
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:290
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:289
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:300
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:301
 
 Listing continuation token for the next page of results.
 
@@ -44,6 +44,6 @@ Listing continuation token for the next page of results.
 
 > **operations**: [`Operation`](Operation.md)[]
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:295
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:296
 
 List of operations on this result page.

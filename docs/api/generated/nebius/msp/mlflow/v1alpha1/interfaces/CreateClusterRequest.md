@@ -6,7 +6,7 @@
 
 # Interface: CreateClusterRequest
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:465
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:466
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:465
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:467
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:468
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:467
 
 > **$type**: `"nebius.msp.mlflow.v1alpha1.CreateClusterRequest"`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:466
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:467
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:466
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:472
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:473
 
 Metadata associated with the new cluster. Must include parent_id in which we create the cluster.
 
@@ -40,6 +40,6 @@ Metadata associated with the new cluster. Must include parent_id in which we cre
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:477
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:478
 
 Specification for the new cluster.

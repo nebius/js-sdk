@@ -6,7 +6,7 @@
 
 # Interface: Cluster
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1022
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1045
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1022
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1024
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1047
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1024
 
 > **$type**: `"nebius.msp.spark.v1alpha1.Cluster"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1023
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1046
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1023
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1025
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1048
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1025
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1026
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1049
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1026
 
 > `optional` **status**: [`ClusterStatus`](ClusterStatus.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1027
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1050

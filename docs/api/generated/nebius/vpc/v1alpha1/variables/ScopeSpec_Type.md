@@ -8,4 +8,4 @@
 
 > **ScopeSpec_Type**: [`ScopeSpec_TypeClass`](../type-aliases/ScopeSpec_TypeClass.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6003
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6004

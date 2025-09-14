@@ -8,4 +8,4 @@
 
 > **ResourceConflict**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceConflict`](../interfaces/ResourceConflict.md), `"nebius.common.error.v1alpha1.ResourceConflict"`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:521
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:522

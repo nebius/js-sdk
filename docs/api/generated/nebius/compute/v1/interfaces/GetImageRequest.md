@@ -6,7 +6,7 @@
 
 # Interface: GetImageRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5011
+Defined in: src/generated/nebius/compute/v1/index.ts:5012
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5011
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5013
+Defined in: src/generated/nebius/compute/v1/index.ts:5014
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5013
 
 > **$type**: `"nebius.compute.v1.GetImageRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5012
+Defined in: src/generated/nebius/compute/v1/index.ts:5013
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5012
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5014
+Defined in: src/generated/nebius/compute/v1/index.ts:5015

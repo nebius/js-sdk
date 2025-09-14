@@ -6,7 +6,7 @@
 
 # Interface: SubnetStatus
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7889
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7890
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7889
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7891
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7892
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7891
 
 > **$type**: `"nebius.vpc.v1alpha1.SubnetStatus"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7890
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7891
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7890
 
 > **ipv4Cidrs**: `string`[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7901
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7902
 
 CIDR blocks.
 
@@ -40,6 +40,6 @@ CIDR blocks.
 
 > **state**: [`SubnetStatus_State`](../type-aliases/SubnetStatus_State.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7896
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7897
 
 Current state of the subnet.

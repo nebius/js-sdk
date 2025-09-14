@@ -6,7 +6,7 @@
 
 # Interface: StaticKey
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2355
+Defined in: src/generated/nebius/audit/v2/index.ts:2356
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2355
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2357
+Defined in: src/generated/nebius/audit/v2/index.ts:2358
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2357
 
 > **$type**: `"nebius.audit.v2.StaticKey"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2356
+Defined in: src/generated/nebius/audit/v2/index.ts:2357
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/audit/v2/index.ts:2356
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2362
+Defined in: src/generated/nebius/audit/v2/index.ts:2363
 
 Unique identifier of static key.

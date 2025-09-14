@@ -8,4 +8,4 @@
 
 > **FilesystemStatus_State**: [`FilesystemStatus_StateClass`](../type-aliases/FilesystemStatus_StateClass.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2554
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2555

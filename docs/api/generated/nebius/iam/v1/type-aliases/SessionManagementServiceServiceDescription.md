@@ -8,4 +8,4 @@
 
 > **SessionManagementServiceServiceDescription** = _typeof_ [`SessionManagementServiceServiceDescription`](../variables/SessionManagementServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17666
+Defined in: src/generated/nebius/iam/v1/index.ts:17667

@@ -8,4 +8,4 @@
 
 > **TransferIteration_State**: [`TransferIteration_StateClass`](../type-aliases/TransferIteration_StateClass.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1501
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1502

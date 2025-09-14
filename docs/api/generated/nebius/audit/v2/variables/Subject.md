@@ -8,4 +8,4 @@
 
 > **Subject**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Subject`](../interfaces/Subject.md), `"nebius.audit.v2.Subject"`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2497
+Defined in: src/generated/nebius/audit/v2/index.ts:2498

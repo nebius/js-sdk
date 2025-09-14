@@ -6,7 +6,7 @@
 
 # Interface: StaticKeyServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18887
+Defined in: src/generated/nebius/iam/v1/index.ts:18888
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18887
 
 > **delete**: `handleUnaryCall`\<[`DeleteStaticKeyRequest`](DeleteStaticKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18892
+Defined in: src/generated/nebius/iam/v1/index.ts:18893
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18892
 
 > **find**: `handleUnaryCall`\<[`FindStaticKeyRequest`](FindStaticKeyRequest.md), [`FindStaticKeyResponse`](FindStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18893
+Defined in: src/generated/nebius/iam/v1/index.ts:18894
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18893
 
 > **get**: `handleUnaryCall`\<[`GetStaticKeyRequest`](GetStaticKeyRequest.md), [`StaticKey`](StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18890
+Defined in: src/generated/nebius/iam/v1/index.ts:18891
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18890
 
 > **getByName**: `handleUnaryCall`\<[`GetStaticKeyByNameRequest`](GetStaticKeyByNameRequest.md), [`StaticKey`](StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18891
+Defined in: src/generated/nebius/iam/v1/index.ts:18892
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18891
 
 > **issue**: `handleUnaryCall`\<[`IssueStaticKeyRequest`](IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18888
+Defined in: src/generated/nebius/iam/v1/index.ts:18889
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18888
 
 > **list**: `handleUnaryCall`\<[`ListStaticKeysRequest`](ListStaticKeysRequest.md), [`ListStaticKeysResponse`](ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18889
+Defined in: src/generated/nebius/iam/v1/index.ts:18890
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18889
 
 > **revoke**: `handleUnaryCall`\<[`RevokeStaticKeyRequest`](RevokeStaticKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18894
+Defined in: src/generated/nebius/iam/v1/index.ts:18895

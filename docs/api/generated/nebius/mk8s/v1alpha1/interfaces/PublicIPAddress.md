@@ -6,7 +6,7 @@
 
 # Interface: PublicIPAddress
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5259
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5577
 
 Describes a public IP address.
 
@@ -16,7 +16,7 @@ Describes a public IP address.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5261
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5579
 
 ---
 
@@ -24,4 +24,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5261
 
 > **$type**: `"nebius.mk8s.v1alpha1.PublicIPAddress"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5260
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5578

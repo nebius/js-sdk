@@ -6,7 +6,7 @@
 
 # Interface: QuotaAllowanceStatus
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:826
+Defined in: src/generated/nebius/quotas/v1/index.ts:838
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:826
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:828
+Defined in: src/generated/nebius/quotas/v1/index.ts:840
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:828
 
 > **$type**: `"nebius.quotas.v1.QuotaAllowanceStatus"`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:827
+Defined in: src/generated/nebius/quotas/v1/index.ts:839
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/quotas/v1/index.ts:827
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:850
+Defined in: src/generated/nebius/quotas/v1/index.ts:862
 
 Human-readable description of the quota.
 Example: "Total RAM across VMs".
@@ -41,7 +41,7 @@ Example: "Total RAM across VMs".
 
 > **service**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:844
+Defined in: src/generated/nebius/quotas/v1/index.ts:856
 
 Service in which the quota is allocated.
 Example: "mk8s".
@@ -52,7 +52,7 @@ Example: "mk8s".
 
 > **serviceDescription**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:856
+Defined in: src/generated/nebius/quotas/v1/index.ts:868
 
 Human-readable name of the service managing the quota.
 Example: "Managed Kubernetes®".
@@ -63,7 +63,7 @@ Example: "Managed Kubernetes®".
 
 > **state**: [`QuotaAllowanceStatus_State`](../type-aliases/QuotaAllowanceStatus_State.md)
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:833
+Defined in: src/generated/nebius/quotas/v1/index.ts:845
 
 Current state of the quota.
 
@@ -73,7 +73,7 @@ Current state of the quota.
 
 > **unit**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:862
+Defined in: src/generated/nebius/quotas/v1/index.ts:874
 
 Quota unit.
 Example: "byte".
@@ -84,7 +84,7 @@ Example: "byte".
 
 > **usage**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:838
+Defined in: src/generated/nebius/quotas/v1/index.ts:850
 
 Current quota usage.
 
@@ -94,7 +94,7 @@ Current quota usage.
 
 > **usagePercentage**: `string`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:870
+Defined in: src/generated/nebius/quotas/v1/index.ts:882
 
 Current quota usage as a percentage.
 Values range from 0.0 to 1.0, representing 0% to 100%.
@@ -107,6 +107,6 @@ Example: "0.12".
 
 > **usageState**: [`QuotaAllowanceStatus_UsageState`](../type-aliases/QuotaAllowanceStatus_UsageState.md)
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:875
+Defined in: src/generated/nebius/quotas/v1/index.ts:887
 
 Current state of the quota usage.

@@ -6,7 +6,7 @@
 
 # Interface: TenantUserAccountServiceBaseClient
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20440
+Defined in: src/generated/nebius/iam/v1/index.ts:20441
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:20440
 
 > **block**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20443
+Defined in: src/generated/nebius/iam/v1/index.ts:20444
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20441
+Defined in: src/generated/nebius/iam/v1/index.ts:20442
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20442
+Defined in: src/generated/nebius/iam/v1/index.ts:20443
 
 #### Parameters
 
@@ -724,7 +724,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **unblock**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20444
+Defined in: src/generated/nebius/iam/v1/index.ts:20445
 
 #### Parameters
 

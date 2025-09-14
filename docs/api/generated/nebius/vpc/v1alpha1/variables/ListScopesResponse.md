@@ -8,4 +8,4 @@
 
 > **ListScopesResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListScopesResponse`](../interfaces/ListScopesResponse.md), `"nebius.vpc.v1alpha1.ListScopesResponse"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5782
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5783

@@ -6,7 +6,7 @@
 
 # Interface: ListNodeGroupsRequest
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3292
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3563
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3292
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3294
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3565
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3294
 
 > **$type**: `"nebius.mk8s.v1alpha1.ListNodeGroupsRequest"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3293
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3564
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3293
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3304
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3575
 
 Specifies the maximum number of items to return in the response.
 
@@ -40,7 +40,7 @@ Specifies the maximum number of items to return in the response.
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3309
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3580
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -50,6 +50,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3299
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3570
 
 ID of the parent Cluster.

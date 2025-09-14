@@ -8,4 +8,4 @@
 
 > **ControlPlaneEndpointsSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ControlPlaneEndpointsSpec`](../interfaces/ControlPlaneEndpointsSpec.md), `"nebius.mk8s.v1.ControlPlaneEndpointsSpec"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1337
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1608

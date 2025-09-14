@@ -8,4 +8,4 @@
 
 > **ListGroupMembershipsWithAttributesResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListGroupMembershipsWithAttributesResponse`](../interfaces/ListGroupMembershipsWithAttributesResponse.md), `"nebius.iam.v1.ListGroupMembershipsWithAttributesResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10510
+Defined in: src/generated/nebius/iam/v1/index.ts:10511

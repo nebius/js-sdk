@@ -6,7 +6,7 @@
 
 # Interface: AccessPermitStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3200
+Defined in: src/generated/nebius/iam/v1/index.ts:3201
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3200
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3202
+Defined in: src/generated/nebius/iam/v1/index.ts:3203
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3202
 
 > **$type**: `"nebius.iam.v1.AccessPermitStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3201
+Defined in: src/generated/nebius/iam/v1/index.ts:3202

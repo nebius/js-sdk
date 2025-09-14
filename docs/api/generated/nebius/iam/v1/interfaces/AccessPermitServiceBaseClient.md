@@ -6,7 +6,7 @@
 
 # Interface: AccessPermitServiceBaseClient
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2832
+Defined in: src/generated/nebius/iam/v1/index.ts:2833
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2833
+Defined in: src/generated/nebius/iam/v1/index.ts:2834
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2833
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2835
+Defined in: src/generated/nebius/iam/v1/index.ts:2836
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2835
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2836
+Defined in: src/generated/nebius/iam/v1/index.ts:2837
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2834
+Defined in: src/generated/nebius/iam/v1/index.ts:2835
 
 #### Parameters
 

@@ -6,11 +6,15 @@
 
 # Class: FileBearer
 
-Defined in: [src/runtime/token/file.ts:27](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file.ts#L27)
+Defined in: [src/runtime/token/file.ts:37](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/file.ts#L37)
 
 ## Extends
 
 - [`Bearer`](../../classes/Bearer.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/token/file.ts:27](https://github.com/nebius/nodejs-sdk/
 
 > **new FileBearer**(`filePath`): `FileBearer`
 
-Defined in: [src/runtime/token/file.ts:29](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file.ts#L29)
+Defined in: [src/runtime/token/file.ts:40](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/file.ts#L40)
 
 #### Parameters
 
@@ -34,6 +38,18 @@ Defined in: [src/runtime/token/file.ts:29](https://github.com/nebius/nodejs-sdk/
 
 [`Bearer`](../../classes/Bearer.md).[`constructor`](../../classes/Bearer.md#constructor)
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.FileBearer"` = `'nebius.sdk.FileBearer'`
+
+Defined in: [src/runtime/token/file.ts:38](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/file.ts#L38)
+
+#### Overrides
+
+[`Bearer`](../../classes/Bearer.md).[`$type`](../../classes/Bearer.md#type)
+
 ## Accessors
 
 ### name
@@ -42,7 +58,7 @@ Defined in: [src/runtime/token/file.ts:29](https://github.com/nebius/nodejs-sdk/
 
 > **get** **name**(): `undefined` \| `string`
 
-Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L101)
+Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L113)
 
 ##### Returns
 
@@ -60,7 +76,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../classes/Bearer.md)
 
-Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L105)
+Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L117)
 
 ##### Returns
 
@@ -72,11 +88,23 @@ Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `unknown`
+
+Defined in: [src/runtime/token/file.ts:47](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/file.ts#L47)
+
+#### Returns
+
+`unknown`
+
+---
+
 ### close()
 
 > **close**(`_graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L109)
+Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L121)
 
 #### Parameters
 
@@ -98,7 +126,7 @@ Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob
 
 > **receiver**(): [`Receiver`](../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/file.ts:34](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/file.ts#L34)
+Defined in: [src/runtime/token/file.ts:54](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/file.ts#L54)
 
 #### Returns
 

@@ -6,7 +6,11 @@
 
 # Class: FieldKey
 
-Defined in: [src/runtime/fieldmask.ts:15](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/fieldmask.ts#L15)
+Defined in: [src/runtime/fieldmask.ts:16](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/fieldmask.ts#L16)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `string`
 
 ## Constructors
 
@@ -14,7 +18,7 @@ Defined in: [src/runtime/fieldmask.ts:15](https://github.com/nebius/nodejs-sdk/b
 
 > **new FieldKey**(`value`): `FieldKey`
 
-Defined in: [src/runtime/fieldmask.ts:17](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/fieldmask.ts#L17)
+Defined in: [src/runtime/fieldmask.ts:18](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/fieldmask.ts#L18)
 
 #### Parameters
 
@@ -32,15 +36,27 @@ Defined in: [src/runtime/fieldmask.ts:17](https://github.com/nebius/nodejs-sdk/b
 
 > `readonly` **value**: `string`
 
-Defined in: [src/runtime/fieldmask.ts:16](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/fieldmask.ts#L16)
+Defined in: [src/runtime/fieldmask.ts:17](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/fieldmask.ts#L17)
 
 ## Methods
+
+### \[customJson\]()
+
+> **\[customJson\]**(): `string`
+
+Defined in: [src/runtime/fieldmask.ts:48](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/fieldmask.ts#L48)
+
+#### Returns
+
+`string`
+
+---
 
 ### marshal()
 
 > **marshal**(): `string`
 
-Defined in: [src/runtime/fieldmask.ts:38](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/fieldmask.ts#L38)
+Defined in: [src/runtime/fieldmask.ts:39](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/fieldmask.ts#L39)
 
 #### Returns
 
@@ -52,7 +68,7 @@ Defined in: [src/runtime/fieldmask.ts:38](https://github.com/nebius/nodejs-sdk/b
 
 > **toString**(): `string`
 
-Defined in: [src/runtime/fieldmask.ts:20](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/fieldmask.ts#L20)
+Defined in: [src/runtime/fieldmask.ts:21](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/fieldmask.ts#L21)
 
 #### Returns
 
@@ -64,7 +80,7 @@ Defined in: [src/runtime/fieldmask.ts:20](https://github.com/nebius/nodejs-sdk/b
 
 > `static` **unmarshal**(`marshaled`): `FieldKey`
 
-Defined in: [src/runtime/fieldmask.ts:23](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/fieldmask.ts#L23)
+Defined in: [src/runtime/fieldmask.ts:24](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/fieldmask.ts#L24)
 
 #### Parameters
 

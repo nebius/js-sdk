@@ -6,7 +6,7 @@
 
 # Interface: StartRequest
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:487
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:488
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:487
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:489
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:490
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:489
 
 > **$type**: `"nebius.msp.v1alpha1.StartRequest"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:488
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:489
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:488
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:494
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:495
 
 ID of the entity to start.

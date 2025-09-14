@@ -6,7 +6,7 @@
 
 # Interface: ListClustersResponse
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:353
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:354
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:353
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:355
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:356
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:355
 
 > **$type**: `"nebius.msp.spark.v1alpha1.ListClustersResponse"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:354
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:355
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:354
 
 > **items**: [`Cluster`](Cluster.md)[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:360
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:361
 
 List of clusters.
 
@@ -40,6 +40,6 @@ List of clusters.
 
 > `optional` **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:365
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:366
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

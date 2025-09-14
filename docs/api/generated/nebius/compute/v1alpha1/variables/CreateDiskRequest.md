@@ -8,4 +8,4 @@
 
 > **CreateDiskRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateDiskRequest`](../interfaces/CreateDiskRequest.md), `"nebius.compute.v1alpha1.CreateDiskRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:251
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:252

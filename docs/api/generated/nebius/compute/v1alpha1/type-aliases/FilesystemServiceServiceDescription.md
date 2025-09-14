@@ -8,7 +8,7 @@
 
 > **FilesystemServiceServiceDescription** = _typeof_ [`FilesystemServiceServiceDescription`](../variables/FilesystemServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2276
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2277
 
 ## Deprecated
 

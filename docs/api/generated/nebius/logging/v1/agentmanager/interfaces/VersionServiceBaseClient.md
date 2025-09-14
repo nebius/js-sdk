@@ -6,7 +6,7 @@
 
 # Interface: VersionServiceBaseClient
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1765
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1766
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **getVersion**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1766
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1767
 
 #### Parameters
 

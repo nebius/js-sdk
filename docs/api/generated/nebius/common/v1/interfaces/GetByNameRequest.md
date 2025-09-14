@@ -6,7 +6,7 @@
 
 # Interface: GetByNameRequest
 
-Defined in: src/generated/nebius/common/v1/index.ts:2564
+Defined in: src/generated/nebius/common/v1/index.ts:2565
 
 if service supports uniqueness of ResourceMetadata.name within tuple (scope) <resource_type, parent_id>
 it also must have grpc method GetByName
@@ -17,7 +17,7 @@ it also must have grpc method GetByName
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2566
+Defined in: src/generated/nebius/common/v1/index.ts:2567
 
 ---
 
@@ -25,7 +25,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2566
 
 > **$type**: `"nebius.common.v1.GetByNameRequest"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2565
+Defined in: src/generated/nebius/common/v1/index.ts:2566
 
 ---
 
@@ -33,7 +33,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2565
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2568
+Defined in: src/generated/nebius/common/v1/index.ts:2569
 
 ---
 
@@ -41,4 +41,4 @@ Defined in: src/generated/nebius/common/v1/index.ts:2568
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2567
+Defined in: src/generated/nebius/common/v1/index.ts:2568

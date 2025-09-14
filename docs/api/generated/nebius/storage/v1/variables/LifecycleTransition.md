@@ -8,4 +8,4 @@
 
 > **LifecycleTransition**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`LifecycleTransition`](../interfaces/LifecycleTransition.md), `"nebius.storage.v1.LifecycleTransition"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3360
+Defined in: src/generated/nebius/storage/v1/index.ts:3361

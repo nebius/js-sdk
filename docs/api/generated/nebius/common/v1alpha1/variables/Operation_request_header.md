@@ -8,4 +8,4 @@
 
 > **Operation_request_header**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Operation_request_header`](../interfaces/Operation_request_header.md), `"nebius.common.v1alpha1.Operation.request_header"`\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:1137
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:1135

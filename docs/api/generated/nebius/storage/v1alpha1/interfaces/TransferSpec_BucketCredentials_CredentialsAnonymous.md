@@ -6,7 +6,7 @@
 
 # Interface: TransferSpec_BucketCredentials_CredentialsAnonymous
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2382
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2383
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2382
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2384
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2385
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2384
 
 > **$type**: `"nebius.storage.v1alpha1.TransferSpec.BucketCredentials.CredentialsAnonymous"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2383
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2384

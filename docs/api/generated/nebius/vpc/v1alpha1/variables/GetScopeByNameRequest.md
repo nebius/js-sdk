@@ -8,4 +8,4 @@
 
 > **GetScopeByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), `"nebius.vpc.v1alpha1.GetScopeByNameRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5536
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5537

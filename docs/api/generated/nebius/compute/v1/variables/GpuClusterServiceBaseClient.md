@@ -8,7 +8,7 @@
 
 > **GpuClusterServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`GpuClusterServiceBaseClient`](../interfaces/GpuClusterServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4263
+Defined in: src/generated/nebius/compute/v1/index.ts:4264
 
 ## Type Declaration
 

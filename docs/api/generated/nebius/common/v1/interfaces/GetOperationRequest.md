@@ -6,7 +6,7 @@
 
 # Interface: GetOperationRequest
 
-Defined in: src/generated/nebius/common/v1/index.ts:2670
+Defined in: src/generated/nebius/common/v1/index.ts:2671
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2670
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2672
+Defined in: src/generated/nebius/common/v1/index.ts:2673
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2672
 
 > **$type**: `"nebius.common.v1.GetOperationRequest"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2671
+Defined in: src/generated/nebius/common/v1/index.ts:2672
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/common/v1/index.ts:2671
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2673
+Defined in: src/generated/nebius/common/v1/index.ts:2674

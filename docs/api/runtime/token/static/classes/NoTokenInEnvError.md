@@ -6,7 +6,7 @@
 
 # Class: NoTokenInEnvError
 
-Defined in: [src/runtime/token/static.ts:4](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token/static.ts#L4)
+Defined in: [src/runtime/token/static.ts:7](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/static.ts#L7)
 
 ## Extends
 

@@ -6,7 +6,7 @@
 
 # Interface: DeleteK8sReleaseRequest
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:485
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:486
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:485
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:487
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:488
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:487
 
 > **$type**: `"nebius.applications.v1alpha1.DeleteK8sReleaseRequest"`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:486
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:487
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:486
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:488
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:489

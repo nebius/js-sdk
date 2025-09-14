@@ -6,7 +6,7 @@
 
 # Class: GpuClusterService
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3890
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3891
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3890
 
 > **new GpuClusterService**(`sdk`): `GpuClusterService`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3923
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3924
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3923
 
 > **$type**: `"nebius.compute.v1alpha1.GpuClusterService"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3891
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3892
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3891
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3901
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3902
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3901
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3902
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3903
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3902
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3903
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3904
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3903
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3973
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3974
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3973
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3974
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3975
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3974
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3975
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3976
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3975
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3907
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3908
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3907
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3908
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3909
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3908
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3909
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3910
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3909
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4003
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4004
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4003
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4004
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4005
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4004
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4005
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4006
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4005
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3892
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3893
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3892
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3893
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3894
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3893
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3894
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3895
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3894
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3937
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3938
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3937
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3938
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3939
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3938
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3939
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3940
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3939
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3895
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3896
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3895
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3896
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3897
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3896
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3897
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3898
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3897
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3949
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3950
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3949
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3950
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3951
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3950
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3951
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3952
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3951
 
 > **getOperationService**(): [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3933
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3934
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3933
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3898
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3899
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3898
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3899
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3900
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3899
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3900
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3901
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3900
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3961
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3962
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3961
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3962
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3963
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3962
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3963
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3964
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3963
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3910
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3911
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3910
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3911
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3912
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3911
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3912
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3913
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3912
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4018
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4019
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4018
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4019
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4020
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4019
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4020
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4021
 
 ##### Parameters
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4020
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3904
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3905
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3904
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3905
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3906
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3905
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3906
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3907
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3906
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3988
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3989
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3988
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3989
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3990
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3989
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateGpuClusterRequest`](../interfaces/UpdateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3990
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3991
 
 ##### Parameters
 

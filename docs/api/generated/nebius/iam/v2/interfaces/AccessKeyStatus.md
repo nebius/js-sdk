@@ -6,7 +6,7 @@
 
 # Interface: AccessKeyStatus
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2017
+Defined in: src/generated/nebius/iam/v2/index.ts:2018
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2017
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2019
+Defined in: src/generated/nebius/iam/v2/index.ts:2020
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2019
 
 > **$type**: `"nebius.iam.v2.AccessKeyStatus"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2018
+Defined in: src/generated/nebius/iam/v2/index.ts:2019
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2018
 
 > **algorithm**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2022
+Defined in: src/generated/nebius/iam/v2/index.ts:2023
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2022
 
 > **awsAccessKeyId**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2024
+Defined in: src/generated/nebius/iam/v2/index.ts:2025
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2024
 
 > **fingerprint**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2021
+Defined in: src/generated/nebius/iam/v2/index.ts:2022
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2021
 
 > **keySize**: `number`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2023
+Defined in: src/generated/nebius/iam/v2/index.ts:2024
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2023
 
 > **secret**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2025
+Defined in: src/generated/nebius/iam/v2/index.ts:2026
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2025
 
 > **state**: [`AccessKeyStatus_State`](../type-aliases/AccessKeyStatus_State.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2020
+Defined in: src/generated/nebius/iam/v2/index.ts:2021

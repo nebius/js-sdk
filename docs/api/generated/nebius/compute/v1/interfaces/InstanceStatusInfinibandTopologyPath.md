@@ -6,7 +6,7 @@
 
 # Interface: InstanceStatusInfinibandTopologyPath
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8845
+Defined in: src/generated/nebius/compute/v1/index.ts:8846
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8845
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8847
+Defined in: src/generated/nebius/compute/v1/index.ts:8848
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8847
 
 > **$type**: `"nebius.compute.v1.InstanceStatusInfinibandTopologyPath"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8846
+Defined in: src/generated/nebius/compute/v1/index.ts:8847
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8846
 
 > **path**: `string`[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8848
+Defined in: src/generated/nebius/compute/v1/index.ts:8849

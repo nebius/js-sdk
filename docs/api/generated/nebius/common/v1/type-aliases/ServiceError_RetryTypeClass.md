@@ -8,4 +8,4 @@
 
 > **ServiceError_RetryTypeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"CALL"` \| `"UNIT_OF_WORK"` \| `"NOTHING"`\> & `ServiceError_RetryTypeValueMembers`
 
-Defined in: src/generated/nebius/common/v1/index.ts:35
+Defined in: src/generated/nebius/common/v1/index.ts:36

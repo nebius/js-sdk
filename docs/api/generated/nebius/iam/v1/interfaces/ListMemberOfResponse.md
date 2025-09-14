@@ -6,7 +6,7 @@
 
 # Interface: ListMemberOfResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10621
+Defined in: src/generated/nebius/iam/v1/index.ts:10622
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10621
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10623
+Defined in: src/generated/nebius/iam/v1/index.ts:10624
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10623
 
 > **$type**: `"nebius.iam.v1.ListMemberOfResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10622
+Defined in: src/generated/nebius/iam/v1/index.ts:10623
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10622
 
 > **items**: [`Group`](Group.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10628
+Defined in: src/generated/nebius/iam/v1/index.ts:10629
 
 Groups that requested entity is a member of
 
@@ -40,4 +40,4 @@ Groups that requested entity is a member of
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10629
+Defined in: src/generated/nebius/iam/v1/index.ts:10630

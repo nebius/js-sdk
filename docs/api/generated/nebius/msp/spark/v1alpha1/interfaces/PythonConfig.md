@@ -6,7 +6,7 @@
 
 # Interface: PythonConfig
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1673
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1696
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1673
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1675
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1698
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1675
 
 > **$type**: `"nebius.msp.spark.v1alpha1.PythonConfig"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1674
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1697
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1674
 
 > **fileUris**: `string`[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1685
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1708
 
 S3 URIs of files to be placed in PYTHONPATH of driver and executors for python applications (.py, .zip, .egg)
 
@@ -40,6 +40,6 @@ S3 URIs of files to be placed in PYTHONPATH of driver and executors for python a
 
 > **requirements**: `string`[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1680
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1703
 
 Python requirements

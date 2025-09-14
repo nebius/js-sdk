@@ -6,7 +6,7 @@
 
 # Interface: TransferIteration
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3035
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3036
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3035
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3037
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3038
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3037
 
 > **$type**: `"nebius.storage.v1alpha1.TransferIteration"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3036
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3037
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3036
 
 > **averageThroughputBytes**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3051
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3052
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3051
 
 > `optional` **endTime**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3046
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3047
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3046
 
 > **error**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3044
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3045
 
 Human-readable error description. Populated only if state is FAILED.
 
@@ -56,7 +56,7 @@ Human-readable error description. Populated only if state is FAILED.
 
 > **objectsDiscoveredCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3047
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3048
 
 ---
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3047
 
 > **objectsMigratedCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3048
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3049
 
 ---
 
@@ -72,7 +72,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3048
 
 > **objectsMigratedSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3050
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3051
 
 ---
 
@@ -80,7 +80,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3050
 
 > **objectsSkippedCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3049
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3050
 
 ---
 
@@ -88,7 +88,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3049
 
 > **sequenceNumber**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3038
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3039
 
 ---
 
@@ -96,7 +96,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3038
 
 > `optional` **startTime**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3045
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3046
 
 ---
 
@@ -104,4 +104,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3045
 
 > **state**: [`TransferIteration_State`](../type-aliases/TransferIteration_State.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3039
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:3040

@@ -6,7 +6,7 @@
 
 # Interface: NetworkStatus
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4026
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4027
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4026
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4028
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4029
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4028
 
 > **$type**: `"nebius.vpc.v1alpha1.NetworkStatus"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4027
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4028
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4027
 
 > **scopeId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4038
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4039
 
 Scope ID of all pools
 
@@ -40,6 +40,6 @@ Scope ID of all pools
 
 > **state**: [`NetworkStatus_State`](../type-aliases/NetworkStatus_State.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4033
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4034
 
 Current state of the network.

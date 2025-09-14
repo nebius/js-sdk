@@ -8,4 +8,4 @@
 
 > **BucketStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"ACTIVE"` \| `"UPDATING"` \| `"SCHEDULED_FOR_DELETION"`\> & `BucketStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1854
+Defined in: src/generated/nebius/storage/v1/index.ts:1855

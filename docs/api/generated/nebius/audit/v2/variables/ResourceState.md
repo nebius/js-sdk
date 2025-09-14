@@ -8,4 +8,4 @@
 
 > **ResourceState**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ResourceState`](../interfaces/ResourceState.md), `"nebius.audit.v2.ResourceState"`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1863
+Defined in: src/generated/nebius/audit/v2/index.ts:1864

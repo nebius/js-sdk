@@ -6,7 +6,7 @@
 
 # Interface: DeleteFederationCertificateRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7654
+Defined in: src/generated/nebius/iam/v1/index.ts:7655
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7654
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7656
+Defined in: src/generated/nebius/iam/v1/index.ts:7657
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7656
 
 > **$type**: `"nebius.iam.v1.DeleteFederationCertificateRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7655
+Defined in: src/generated/nebius/iam/v1/index.ts:7656
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7655
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7657
+Defined in: src/generated/nebius/iam/v1/index.ts:7658

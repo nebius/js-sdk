@@ -6,7 +6,7 @@
 
 # Interface: DeleteNetworkRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3182
+Defined in: src/generated/nebius/vpc/v1/index.ts:3183
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3182
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3184
+Defined in: src/generated/nebius/vpc/v1/index.ts:3185
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3184
 
 > **$type**: `"nebius.vpc.v1.DeleteNetworkRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3183
+Defined in: src/generated/nebius/vpc/v1/index.ts:3184
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3183
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3185
+Defined in: src/generated/nebius/vpc/v1/index.ts:3186

@@ -8,4 +8,4 @@
 
 > **K8sReleaseStatus_State**: [`K8sReleaseStatus_StateClass`](../type-aliases/K8sReleaseStatus_StateClass.md)
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:852
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:853

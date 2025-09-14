@@ -6,7 +6,7 @@
 
 # Interface: MessagePySDKSettings
 
-Defined in: src/generated/nebius/index.ts:455
+Defined in: src/generated/nebius/index.ts:456
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/index.ts:455
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/index.ts:457
+Defined in: src/generated/nebius/index.ts:458
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/index.ts:457
 
 > **$type**: `"nebius.MessagePySDKSettings"`
 
-Defined in: src/generated/nebius/index.ts:456
+Defined in: src/generated/nebius/index.ts:457
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/index.ts:456
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/index.ts:458
+Defined in: src/generated/nebius/index.ts:459

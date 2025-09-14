@@ -8,7 +8,7 @@
 
 > **AllocationServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:863
+Defined in: src/generated/nebius/vpc/v1/index.ts:864
 
 ## Type Declaration
 

@@ -6,7 +6,7 @@
 
 # Class: FilesystemService
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2722
+Defined in: src/generated/nebius/compute/v1/index.ts:2723
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2722
 
 > **new FilesystemService**(`sdk`): `FilesystemService`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2782
+Defined in: src/generated/nebius/compute/v1/index.ts:2783
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2782
 
 > **$type**: `"nebius.compute.v1.FilesystemService"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2723
+Defined in: src/generated/nebius/compute/v1/index.ts:2724
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2723
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2750
+Defined in: src/generated/nebius/compute/v1/index.ts:2751
 
 Creates a new filesystem with the specified configuration.
 For details, see https://docs.nebius.com/compute/storage/manage
@@ -65,7 +65,7 @@ For details, see https://docs.nebius.com/compute/storage/manage
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2751
+Defined in: src/generated/nebius/compute/v1/index.ts:2752
 
 ##### Parameters
 
@@ -85,7 +85,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2751
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2752
+Defined in: src/generated/nebius/compute/v1/index.ts:2753
 
 ##### Parameters
 
@@ -109,7 +109,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2752
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2828
+Defined in: src/generated/nebius/compute/v1/index.ts:2829
 
 Creates a new filesystem with the specified configuration.
 For details, see https://docs.nebius.com/compute/storage/manage
@@ -128,7 +128,7 @@ For details, see https://docs.nebius.com/compute/storage/manage
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2829
+Defined in: src/generated/nebius/compute/v1/index.ts:2830
 
 Creates a new filesystem with the specified configuration.
 For details, see https://docs.nebius.com/compute/storage/manage
@@ -151,7 +151,7 @@ For details, see https://docs.nebius.com/compute/storage/manage
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2830
+Defined in: src/generated/nebius/compute/v1/index.ts:2831
 
 Creates a new filesystem with the specified configuration.
 For details, see https://docs.nebius.com/compute/storage/manage
@@ -182,7 +182,7 @@ For details, see https://docs.nebius.com/compute/storage/manage
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2765
+Defined in: src/generated/nebius/compute/v1/index.ts:2766
 
 Deletes a disk by its ID.
 
@@ -200,7 +200,7 @@ Deletes a disk by its ID.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2766
+Defined in: src/generated/nebius/compute/v1/index.ts:2767
 
 ##### Parameters
 
@@ -220,7 +220,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2766
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2767
+Defined in: src/generated/nebius/compute/v1/index.ts:2768
 
 ##### Parameters
 
@@ -244,7 +244,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2767
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2858
+Defined in: src/generated/nebius/compute/v1/index.ts:2859
 
 Deletes a disk by its ID.
 
@@ -262,7 +262,7 @@ Deletes a disk by its ID.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2859
+Defined in: src/generated/nebius/compute/v1/index.ts:2860
 
 Deletes a disk by its ID.
 
@@ -284,7 +284,7 @@ Deletes a disk by its ID.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2860
+Defined in: src/generated/nebius/compute/v1/index.ts:2861
 
 Deletes a disk by its ID.
 
@@ -314,7 +314,7 @@ Deletes a disk by its ID.
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2728
+Defined in: src/generated/nebius/compute/v1/index.ts:2729
 
 Retrieves information about a filesystem by its ID.
 
@@ -332,7 +332,7 @@ Retrieves information about a filesystem by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2729
+Defined in: src/generated/nebius/compute/v1/index.ts:2730
 
 ##### Parameters
 
@@ -352,7 +352,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2729
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2730
+Defined in: src/generated/nebius/compute/v1/index.ts:2731
 
 ##### Parameters
 
@@ -376,7 +376,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2730
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2792
+Defined in: src/generated/nebius/compute/v1/index.ts:2793
 
 Retrieves information about a filesystem by its ID.
 
@@ -394,7 +394,7 @@ Retrieves information about a filesystem by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2793
+Defined in: src/generated/nebius/compute/v1/index.ts:2794
 
 Retrieves information about a filesystem by its ID.
 
@@ -416,7 +416,7 @@ Retrieves information about a filesystem by its ID.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2794
+Defined in: src/generated/nebius/compute/v1/index.ts:2795
 
 Retrieves information about a filesystem by its ID.
 
@@ -446,7 +446,7 @@ Retrieves information about a filesystem by its ID.
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2735
+Defined in: src/generated/nebius/compute/v1/index.ts:2736
 
 Retrieves information about a filesystem by its parent and name.
 
@@ -464,7 +464,7 @@ Retrieves information about a filesystem by its parent and name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2736
+Defined in: src/generated/nebius/compute/v1/index.ts:2737
 
 ##### Parameters
 
@@ -484,7 +484,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2736
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2737
+Defined in: src/generated/nebius/compute/v1/index.ts:2738
 
 ##### Parameters
 
@@ -508,7 +508,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2737
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2804
+Defined in: src/generated/nebius/compute/v1/index.ts:2805
 
 Retrieves information about a filesystem by its parent and name.
 
@@ -526,7 +526,7 @@ Retrieves information about a filesystem by its parent and name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2805
+Defined in: src/generated/nebius/compute/v1/index.ts:2806
 
 Retrieves information about a filesystem by its parent and name.
 
@@ -548,7 +548,7 @@ Retrieves information about a filesystem by its parent and name.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2806
+Defined in: src/generated/nebius/compute/v1/index.ts:2807
 
 Retrieves information about a filesystem by its parent and name.
 
@@ -576,7 +576,7 @@ Retrieves information about a filesystem by its parent and name.
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2788
+Defined in: src/generated/nebius/compute/v1/index.ts:2789
 
 #### Returns
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2788
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2742
+Defined in: src/generated/nebius/compute/v1/index.ts:2743
 
 Lists all filesystems within a specified parent.
 
@@ -608,7 +608,7 @@ Lists all filesystems within a specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2743
+Defined in: src/generated/nebius/compute/v1/index.ts:2744
 
 ##### Parameters
 
@@ -628,7 +628,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2743
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2744
+Defined in: src/generated/nebius/compute/v1/index.ts:2745
 
 ##### Parameters
 
@@ -652,7 +652,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2744
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2816
+Defined in: src/generated/nebius/compute/v1/index.ts:2817
 
 Lists all filesystems within a specified parent.
 
@@ -670,7 +670,7 @@ Lists all filesystems within a specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2817
+Defined in: src/generated/nebius/compute/v1/index.ts:2818
 
 Lists all filesystems within a specified parent.
 
@@ -692,7 +692,7 @@ Lists all filesystems within a specified parent.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2818
+Defined in: src/generated/nebius/compute/v1/index.ts:2819
 
 Lists all filesystems within a specified parent.
 
@@ -722,7 +722,7 @@ Lists all filesystems within a specified parent.
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2772
+Defined in: src/generated/nebius/compute/v1/index.ts:2773
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -740,7 +740,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2773
+Defined in: src/generated/nebius/compute/v1/index.ts:2774
 
 ##### Parameters
 
@@ -760,7 +760,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2773
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2774
+Defined in: src/generated/nebius/compute/v1/index.ts:2775
 
 ##### Parameters
 
@@ -784,7 +784,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2774
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2873
+Defined in: src/generated/nebius/compute/v1/index.ts:2874
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -802,7 +802,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2874
+Defined in: src/generated/nebius/compute/v1/index.ts:2875
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -824,7 +824,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2875
+Defined in: src/generated/nebius/compute/v1/index.ts:2876
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -854,7 +854,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2758
+Defined in: src/generated/nebius/compute/v1/index.ts:2759
 
 Updates an existing filesystem with new configuration parameters.
 For details, see https://docs.nebius.com/compute/storage/manage#parameters
@@ -873,7 +873,7 @@ For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2759
+Defined in: src/generated/nebius/compute/v1/index.ts:2760
 
 ##### Parameters
 
@@ -893,7 +893,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2759
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2760
+Defined in: src/generated/nebius/compute/v1/index.ts:2761
 
 ##### Parameters
 
@@ -917,7 +917,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2760
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2843
+Defined in: src/generated/nebius/compute/v1/index.ts:2844
 
 Updates an existing filesystem with new configuration parameters.
 For details, see https://docs.nebius.com/compute/storage/manage#parameters
@@ -936,7 +936,7 @@ For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2844
+Defined in: src/generated/nebius/compute/v1/index.ts:2845
 
 Updates an existing filesystem with new configuration parameters.
 For details, see https://docs.nebius.com/compute/storage/manage#parameters
@@ -959,7 +959,7 @@ For details, see https://docs.nebius.com/compute/storage/manage#parameters
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2845
+Defined in: src/generated/nebius/compute/v1/index.ts:2846
 
 Updates an existing filesystem with new configuration parameters.
 For details, see https://docs.nebius.com/compute/storage/manage#parameters

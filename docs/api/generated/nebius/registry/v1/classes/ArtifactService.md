@@ -6,7 +6,7 @@
 
 # Class: ArtifactService
 
-Defined in: src/generated/nebius/registry/v1/index.ts:480
+Defined in: src/generated/nebius/registry/v1/index.ts:481
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:480
 
 > **new ArtifactService**(`sdk`): `ArtifactService`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:498
+Defined in: src/generated/nebius/registry/v1/index.ts:499
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:498
 
 > **$type**: `"nebius.registry.v1.ArtifactService"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:481
+Defined in: src/generated/nebius/registry/v1/index.ts:482
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:481
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:488
+Defined in: src/generated/nebius/registry/v1/index.ts:489
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:488
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:489
+Defined in: src/generated/nebius/registry/v1/index.ts:490
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:489
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:490
+Defined in: src/generated/nebius/registry/v1/index.ts:491
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:490
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:532
+Defined in: src/generated/nebius/registry/v1/index.ts:533
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:532
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:533
+Defined in: src/generated/nebius/registry/v1/index.ts:534
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:533
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteArtifactRequest`](../interfaces/DeleteArtifactRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:534
+Defined in: src/generated/nebius/registry/v1/index.ts:535
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:534
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:482
+Defined in: src/generated/nebius/registry/v1/index.ts:483
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:482
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:483
+Defined in: src/generated/nebius/registry/v1/index.ts:484
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:483
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:484
+Defined in: src/generated/nebius/registry/v1/index.ts:485
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:484
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:508
+Defined in: src/generated/nebius/registry/v1/index.ts:509
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:508
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:509
+Defined in: src/generated/nebius/registry/v1/index.ts:510
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:509
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetArtifactRequest`](../interfaces/GetArtifactRequest.md), [`Artifact`](../interfaces/Artifact.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:510
+Defined in: src/generated/nebius/registry/v1/index.ts:511
 
 ##### Parameters
 
@@ -292,7 +292,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:510
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:504
+Defined in: src/generated/nebius/registry/v1/index.ts:505
 
 #### Returns
 
@@ -306,7 +306,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:504
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:485
+Defined in: src/generated/nebius/registry/v1/index.ts:486
 
 ##### Parameters
 
@@ -322,7 +322,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:485
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:486
+Defined in: src/generated/nebius/registry/v1/index.ts:487
 
 ##### Parameters
 
@@ -342,7 +342,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:486
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:487
+Defined in: src/generated/nebius/registry/v1/index.ts:488
 
 ##### Parameters
 
@@ -366,7 +366,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:487
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:520
+Defined in: src/generated/nebius/registry/v1/index.ts:521
 
 ##### Parameters
 
@@ -382,7 +382,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:520
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:521
+Defined in: src/generated/nebius/registry/v1/index.ts:522
 
 ##### Parameters
 
@@ -402,7 +402,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:521
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListArtifactsRequest`](../interfaces/ListArtifactsRequest.md), [`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:522
+Defined in: src/generated/nebius/registry/v1/index.ts:523
 
 ##### Parameters
 

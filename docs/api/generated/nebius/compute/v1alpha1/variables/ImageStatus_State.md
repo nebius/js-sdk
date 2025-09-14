@@ -8,4 +8,4 @@
 
 > **ImageStatus_State**: [`ImageStatus_StateClass`](../type-aliases/ImageStatus_StateClass.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4995
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4996

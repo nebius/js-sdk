@@ -6,7 +6,7 @@
 
 # Interface: DeleteNodeGroupRequest
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3455
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3726
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3455
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3457
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3728
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3457
 
 > **$type**: `"nebius.mk8s.v1.DeleteNodeGroupRequest"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3456
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3727
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3456
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3458
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3729

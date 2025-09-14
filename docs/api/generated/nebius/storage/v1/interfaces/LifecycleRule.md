@@ -6,7 +6,7 @@
 
 # Interface: LifecycleRule
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2574
+Defined in: src/generated/nebius/storage/v1/index.ts:2575
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2574
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2576
+Defined in: src/generated/nebius/storage/v1/index.ts:2577
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2576
 
 > **$type**: `"nebius.storage.v1.LifecycleRule"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2575
+Defined in: src/generated/nebius/storage/v1/index.ts:2576
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2575
 
 > `optional` **abortIncompleteMultipartUpload**: [`LifecycleAbortIncompleteMultipartUpload`](LifecycleAbortIncompleteMultipartUpload.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2608
+Defined in: src/generated/nebius/storage/v1/index.ts:2609
 
 Specifies the days since the initiation of an incomplete multipart upload that
 the system will wait before permanently removing all parts of the upload.
@@ -41,7 +41,7 @@ the system will wait before permanently removing all parts of the upload.
 
 > `optional` **expiration**: [`LifecycleExpiration`](LifecycleExpiration.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2596
+Defined in: src/generated/nebius/storage/v1/index.ts:2597
 
 Specifies the expiration for the lifecycle of the object in the form of date, days and,
 whether the object has a delete marker.
@@ -52,7 +52,7 @@ whether the object has a delete marker.
 
 > `optional` **filter**: [`LifecycleFilter`](LifecycleFilter.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2590
+Defined in: src/generated/nebius/storage/v1/index.ts:2591
 
 The Filter is used to identify objects that a Lifecycle Rule applies to.
 The Lifecycle Rule will apply to any object matching all of the predicates
@@ -64,7 +64,7 @@ configured inside (using logical AND).
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2582
+Defined in: src/generated/nebius/storage/v1/index.ts:2583
 
 Unique identifier for the rule per configuration.
 The value cannot be longer than 255 characters.
@@ -75,7 +75,7 @@ The value cannot be longer than 255 characters.
 
 > `optional` **noncurrentVersionExpiration**: [`LifecycleNoncurrentVersionExpiration`](LifecycleNoncurrentVersionExpiration.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2602
+Defined in: src/generated/nebius/storage/v1/index.ts:2603
 
 Specifies when noncurrent object versions expire.
 It works only on a bucket that has versioning enabled (or suspended).
@@ -86,7 +86,7 @@ It works only on a bucket that has versioning enabled (or suspended).
 
 > `optional` **noncurrentVersionTransition**: [`LifecycleNoncurrentVersionTransition`](LifecycleNoncurrentVersionTransition.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2620
+Defined in: src/generated/nebius/storage/v1/index.ts:2621
 
 Spicifies the transition for the lifecycle of a noncurrent object.
 It works only on a bucket that has versioning enabled (or suspended).
@@ -97,7 +97,7 @@ It works only on a bucket that has versioning enabled (or suspended).
 
 > **status**: [`LifecycleRule_Status`](../type-aliases/LifecycleRule_Status.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2583
+Defined in: src/generated/nebius/storage/v1/index.ts:2584
 
 ---
 
@@ -105,7 +105,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:2583
 
 > `optional` **transition**: [`LifecycleTransition`](LifecycleTransition.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2614
+Defined in: src/generated/nebius/storage/v1/index.ts:2615
 
 Specifies the transition for the lifecycle of an object in the form of date or days and
 target storage class to transit object to.

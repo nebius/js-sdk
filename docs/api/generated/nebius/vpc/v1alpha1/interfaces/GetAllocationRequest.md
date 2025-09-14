@@ -6,7 +6,7 @@
 
 # Interface: GetAllocationRequest
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:16
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:17
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:16
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:18
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:19
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:18
 
 > **$type**: `"nebius.vpc.v1alpha1.GetAllocationRequest"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:17
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:18
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:17
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:19
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:20

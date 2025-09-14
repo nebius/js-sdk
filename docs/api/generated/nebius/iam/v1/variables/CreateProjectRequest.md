@@ -8,4 +8,4 @@
 
 > **CreateProjectRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateProjectRequest`](../interfaces/CreateProjectRequest.md), `"nebius.iam.v1.CreateProjectRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15185
+Defined in: src/generated/nebius/iam/v1/index.ts:15186

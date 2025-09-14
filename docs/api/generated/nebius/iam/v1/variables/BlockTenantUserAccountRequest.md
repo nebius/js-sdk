@@ -8,4 +8,4 @@
 
 > **BlockTenantUserAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`BlockTenantUserAccountRequest`](../interfaces/BlockTenantUserAccountRequest.md), `"nebius.iam.v1.BlockTenantUserAccountRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20223
+Defined in: src/generated/nebius/iam/v1/index.ts:20224

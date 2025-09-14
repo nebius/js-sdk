@@ -8,4 +8,4 @@
 
 > **GetSubnetByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), `"nebius.vpc.v1alpha1.GetSubnetByNameRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6525
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6526

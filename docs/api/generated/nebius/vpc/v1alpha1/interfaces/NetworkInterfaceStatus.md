@@ -6,7 +6,7 @@
 
 # Interface: NetworkInterfaceStatus
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2672
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2673
 
 Describes the status of a network interface.
 
@@ -16,7 +16,7 @@ Describes the status of a network interface.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2674
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2675
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2674
 
 > **$type**: `"nebius.vpc.v1alpha1.NetworkInterfaceStatus"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2673
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2674
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2673
 
 > **index**: `number`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2679
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2680
 
 The index of the network interface
 
@@ -42,7 +42,7 @@ The index of the network interface
 
 > `optional` **ipAddress**: [`IPAddressStatus`](IPAddressStatus.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2690
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2691
 
 Effective Private IPv4 address
 
@@ -52,7 +52,7 @@ Effective Private IPv4 address
 
 > **macAddress**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2700
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2701
 
 MAC address
 
@@ -62,7 +62,7 @@ MAC address
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2685
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2686
 
 Name for interface.
 Unique within instance's network interfaces
@@ -73,6 +73,6 @@ Unique within instance's network interfaces
 
 > `optional` **publicIpAddress**: [`PublicIPAddressStatus`](PublicIPAddressStatus.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2695
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2696
 
 Effective Public IPv4 address

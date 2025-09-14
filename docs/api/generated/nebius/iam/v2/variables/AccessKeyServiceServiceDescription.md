@@ -8,7 +8,7 @@
 
 > **AccessKeyServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1354
+Defined in: src/generated/nebius/iam/v2/index.ts:1355
 
 ## Type Declaration
 

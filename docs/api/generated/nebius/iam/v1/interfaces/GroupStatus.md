@@ -6,7 +6,7 @@
 
 # Interface: GroupStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12849
+Defined in: src/generated/nebius/iam/v1/index.ts:12850
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12849
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12851
+Defined in: src/generated/nebius/iam/v1/index.ts:12852
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12851
 
 > **$type**: `"nebius.iam.v1.GroupStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12850
+Defined in: src/generated/nebius/iam/v1/index.ts:12851
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12850
 
 > **membersCount**: `number`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12853
+Defined in: src/generated/nebius/iam/v1/index.ts:12854
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12853
 
 > **serviceAccountsCount**: `number`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12854
+Defined in: src/generated/nebius/iam/v1/index.ts:12855
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12854
 
 > **state**: [`GroupStatus_State`](../type-aliases/GroupStatus_State.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12852
+Defined in: src/generated/nebius/iam/v1/index.ts:12853
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:12852
 
 > **tenantUserAccountsCount**: `number`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12855
+Defined in: src/generated/nebius/iam/v1/index.ts:12856

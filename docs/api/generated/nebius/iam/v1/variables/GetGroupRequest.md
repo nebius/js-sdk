@@ -8,4 +8,4 @@
 
 > **GetGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetGroupRequest`](../interfaces/GetGroupRequest.md), `"nebius.iam.v1.GetGroupRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11793
+Defined in: src/generated/nebius/iam/v1/index.ts:11794

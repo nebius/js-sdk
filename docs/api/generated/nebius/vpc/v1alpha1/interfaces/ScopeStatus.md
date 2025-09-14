@@ -6,7 +6,7 @@
 
 # Interface: ScopeStatus
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6349
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6350
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6349
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6351
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6352
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6351
 
 > **$type**: `"nebius.vpc.v1alpha1.ScopeStatus"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6350
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6351
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6350
 
 > **state**: [`ScopeStatus_State`](../type-aliases/ScopeStatus_State.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6356
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6357
 
 Current state of the Scope.

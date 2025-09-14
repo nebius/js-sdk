@@ -6,7 +6,7 @@
 
 # Interface: LifecycleNoncurrentVersionTransition
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3527
+Defined in: src/generated/nebius/storage/v1/index.ts:3528
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3527
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3529
+Defined in: src/generated/nebius/storage/v1/index.ts:3530
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3529
 
 > **$type**: `"nebius.storage.v1.LifecycleNoncurrentVersionTransition"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3528
+Defined in: src/generated/nebius/storage/v1/index.ts:3529
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3528
 
 > `optional` **newerNoncurrentVersions**: `number`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3534
+Defined in: src/generated/nebius/storage/v1/index.ts:3535
 
 Specifies how many noncurrent versions the system will retain without transition.
 
@@ -40,7 +40,7 @@ Specifies how many noncurrent versions the system will retain without transition
 
 > **noncurrentDays**: `number`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3539
+Defined in: src/generated/nebius/storage/v1/index.ts:3540
 
 Specifies the number of days an object is noncurrent before the system will transit it.
 
@@ -50,6 +50,6 @@ Specifies the number of days an object is noncurrent before the system will tran
 
 > **storageClass**: [`StorageClass`](../type-aliases/StorageClass.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3544
+Defined in: src/generated/nebius/storage/v1/index.ts:3545
 
 Target storage class to transit to.

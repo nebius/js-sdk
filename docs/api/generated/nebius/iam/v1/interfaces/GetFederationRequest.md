@@ -6,7 +6,7 @@
 
 # Interface: GetFederationRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8566
+Defined in: src/generated/nebius/iam/v1/index.ts:8567
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8566
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8568
+Defined in: src/generated/nebius/iam/v1/index.ts:8569
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8568
 
 > **$type**: `"nebius.iam.v1.GetFederationRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8567
+Defined in: src/generated/nebius/iam/v1/index.ts:8568
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8567
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8569
+Defined in: src/generated/nebius/iam/v1/index.ts:8570

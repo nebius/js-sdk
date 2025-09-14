@@ -6,7 +6,7 @@
 
 # Interface: CreateJobRequest
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2208
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2231
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2208
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2210
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2233
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2210
 
 > **$type**: `"nebius.msp.spark.v1alpha1.CreateJobRequest"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2209
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2232
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2209
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2215
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2238
 
 Metadata associated with the new job. Must include parent_id - ID of the cluster to create job in.
 
@@ -40,6 +40,6 @@ Metadata associated with the new job. Must include parent_id - ID of the cluster
 
 > `optional` **spec**: [`JobSpec`](JobSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2220
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2243
 
 Specification for the new job.

@@ -6,7 +6,7 @@
 
 # Interface: AttachedFilesystemSpec
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5325
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5643
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5325
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5327
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5645
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5327
 
 > **$type**: `"nebius.mk8s.v1alpha1.AttachedFilesystemSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5326
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5644
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5326
 
 > **attachMode**: [`AttachedFilesystemSpec_AttachMode`](../type-aliases/AttachedFilesystemSpec_AttachMode.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5328
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5646
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5328
 
 > **deviceName**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5329
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5647
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5329
 
 > `optional` **type**: `object`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5330
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5648
 
 #### $case
 

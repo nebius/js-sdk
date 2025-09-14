@@ -8,4 +8,4 @@
 
 > **FilesystemSpec_FilesystemTypeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"NETWORK_SSD"` \| `"NETWORK_HDD"`\> & `FilesystemSpec_FilesystemTypeValueMembers`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2536
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2537

@@ -8,4 +8,4 @@
 
 > **QuotaAllowanceStatus_UsageState** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"USAGE_STATE_UNSPECIFIED"` \| `"USAGE_STATE_USED"` \| `"USAGE_STATE_NOT_USED"` \| `"USAGE_STATE_UNKNOWN"`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:662
+Defined in: src/generated/nebius/quotas/v1/index.ts:674

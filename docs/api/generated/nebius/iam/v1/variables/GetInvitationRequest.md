@@ -8,4 +8,4 @@
 
 > **GetInvitationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), `"nebius.iam.v1.GetInvitationRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13128
+Defined in: src/generated/nebius/iam/v1/index.ts:13129

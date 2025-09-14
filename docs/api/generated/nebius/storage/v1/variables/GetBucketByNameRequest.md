@@ -8,4 +8,4 @@
 
 > **GetBucketByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), `"nebius.storage.v1.GetBucketByNameRequest"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:616
+Defined in: src/generated/nebius/storage/v1/index.ts:617

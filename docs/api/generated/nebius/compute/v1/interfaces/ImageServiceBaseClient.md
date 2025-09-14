@@ -6,7 +6,7 @@
 
 # Interface: ImageServiceBaseClient
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5514
+Defined in: src/generated/nebius/compute/v1/index.ts:5515
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5515
+Defined in: src/generated/nebius/compute/v1/index.ts:5516
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5515
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5516
+Defined in: src/generated/nebius/compute/v1/index.ts:5517
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **getLatestByFamily**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5517
+Defined in: src/generated/nebius/compute/v1/index.ts:5518
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5517
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5518
+Defined in: src/generated/nebius/compute/v1/index.ts:5519
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5518
 
 > **listOperationsByParent**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5519
+Defined in: src/generated/nebius/compute/v1/index.ts:5520
 
 #### Parameters
 

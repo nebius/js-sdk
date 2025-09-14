@@ -6,7 +6,7 @@
 
 # Interface: TemplateSpec
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:211
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:212
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:211
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:213
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:214
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:213
 
 > **$type**: `"nebius.msp.v1alpha1.resource.TemplateSpec"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:212
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:213
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:212
 
 > `optional` **disk**: [`Disk`](Disk.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:216
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:217
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:216
 
 > `optional` **hosts**: [`Host`](Host.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:215
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:216
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:215
 
 > `optional` **resources**: [`ResourcesSpec`](ResourcesSpec.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:214
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:215
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:214
 
 > **role**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:217
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:218

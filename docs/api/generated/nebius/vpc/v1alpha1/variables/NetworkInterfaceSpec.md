@@ -8,4 +8,4 @@
 
 > **NetworkInterfaceSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkInterfaceSpec`](../interfaces/NetworkInterfaceSpec.md), `"nebius.vpc.v1alpha1.NetworkInterfaceSpec"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2264
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2265

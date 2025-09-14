@@ -6,7 +6,7 @@
 
 # Interface: ScopeServiceServer
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5917
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5918
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5917
 
 > **get**: `handleUnaryCall`\<[`GetScopeRequest`](GetScopeRequest.md), [`Scope`](Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5918
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5919
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5918
 
 > **getByName**: `handleUnaryCall`\<[`GetScopeByNameRequest`](GetScopeByNameRequest.md), [`Scope`](Scope.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5919
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5920
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5919
 
 > **list**: `handleUnaryCall`\<[`ListScopesRequest`](ListScopesRequest.md), [`ListScopesResponse`](ListScopesResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5920
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5921

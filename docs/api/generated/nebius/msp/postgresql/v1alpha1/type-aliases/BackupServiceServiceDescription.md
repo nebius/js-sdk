@@ -8,4 +8,4 @@
 
 > **BackupServiceServiceDescription** = _typeof_ [`BackupServiceServiceDescription`](../variables/BackupServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:599
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:600

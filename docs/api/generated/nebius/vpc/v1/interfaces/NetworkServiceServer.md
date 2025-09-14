@@ -6,7 +6,7 @@
 
 # Interface: NetworkServiceServer
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3334
+Defined in: src/generated/nebius/vpc/v1/index.ts:3335
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3334
 
 > **create**: `handleUnaryCall`\<[`CreateNetworkRequest`](CreateNetworkRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3338
+Defined in: src/generated/nebius/vpc/v1/index.ts:3339
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3338
 
 > **createDefault**: `handleUnaryCall`\<[`CreateDefaultNetworkRequest`](CreateDefaultNetworkRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3339
+Defined in: src/generated/nebius/vpc/v1/index.ts:3340
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3339
 
 > **delete**: `handleUnaryCall`\<[`DeleteNetworkRequest`](DeleteNetworkRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3341
+Defined in: src/generated/nebius/vpc/v1/index.ts:3342
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3341
 
 > **get**: `handleUnaryCall`\<[`GetNetworkRequest`](GetNetworkRequest.md), [`Network`](Network.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3335
+Defined in: src/generated/nebius/vpc/v1/index.ts:3336
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3335
 
 > **getByName**: `handleUnaryCall`\<[`GetNetworkByNameRequest`](GetNetworkByNameRequest.md), [`Network`](Network.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3336
+Defined in: src/generated/nebius/vpc/v1/index.ts:3337
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3336
 
 > **list**: `handleUnaryCall`\<[`ListNetworksRequest`](ListNetworksRequest.md), [`ListNetworksResponse`](ListNetworksResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3337
+Defined in: src/generated/nebius/vpc/v1/index.ts:3338
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:3337
 
 > **update**: `handleUnaryCall`\<[`UpdateNetworkRequest`](UpdateNetworkRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3340
+Defined in: src/generated/nebius/vpc/v1/index.ts:3341

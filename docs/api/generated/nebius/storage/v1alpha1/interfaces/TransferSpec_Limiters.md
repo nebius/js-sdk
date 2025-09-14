@@ -6,7 +6,7 @@
 
 # Interface: TransferSpec_Limiters
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2552
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2553
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2552
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2554
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2555
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2554
 
 > **$type**: `"nebius.storage.v1alpha1.TransferSpec.Limiters"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2553
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2554
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2553
 
 > **bandwidthBytesPerSecond**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2559
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2560
 
 Maximum bandwidth in bytes per second. If set to zero, default limit will be applied.
 
@@ -40,6 +40,6 @@ Maximum bandwidth in bytes per second. If set to zero, default limit will be app
 
 > **requestsPerSecond**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2564
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2565
 
 Maximum number of requests per second. If set to zero, default limit will be applied.

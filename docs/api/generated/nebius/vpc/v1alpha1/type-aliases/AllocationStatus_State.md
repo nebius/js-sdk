@@ -8,6 +8,6 @@
 
 > **AllocationStatus_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"ALLOCATED"` \| `"ASSIGNED"` \| `"DELETING"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:968
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:969
 
 Enumeration of possible states of the Allocation.

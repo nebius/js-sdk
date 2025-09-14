@@ -8,7 +8,7 @@
 
 > **AuditEventServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`AuditEventServiceBaseClient`](../interfaces/AuditEventServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/audit/v2/index.ts:444
+Defined in: src/generated/nebius/audit/v2/index.ts:445
 
 ## Type Declaration
 

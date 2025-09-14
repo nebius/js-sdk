@@ -6,7 +6,7 @@
 
 # Interface: GetTenantByNameRequest
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2284
+Defined in: src/generated/nebius/iam/v2/index.ts:2285
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2284
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2286
+Defined in: src/generated/nebius/iam/v2/index.ts:2287
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2286
 
 > **$type**: `"nebius.iam.v2.GetTenantByNameRequest"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2285
+Defined in: src/generated/nebius/iam/v2/index.ts:2286
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2285
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2293
+Defined in: src/generated/nebius/iam/v2/index.ts:2294
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2293
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2292
+Defined in: src/generated/nebius/iam/v2/index.ts:2293
 
 Only empty value is allowed. Field is needed for compatibility.
 parent_id parameter for tenants doesn't make real sense, because tenants are top-level objects.

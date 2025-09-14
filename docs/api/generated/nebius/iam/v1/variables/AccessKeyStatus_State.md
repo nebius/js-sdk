@@ -8,4 +8,4 @@
 
 > **AccessKeyStatus_State**: [`AccessKeyStatus_StateClass`](../type-aliases/AccessKeyStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1763
+Defined in: src/generated/nebius/iam/v1/index.ts:1764

@@ -8,4 +8,4 @@
 
 > **ListAccessKeysByAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), `"nebius.iam.v2.ListAccessKeysByAccountRequest"`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:457
+Defined in: src/generated/nebius/iam/v2/index.ts:458

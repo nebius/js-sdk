@@ -8,4 +8,4 @@
 
 > **TenantUserAccountStatus_State**: [`TenantUserAccountStatus_StateClass`](../type-aliases/TenantUserAccountStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20985
+Defined in: src/generated/nebius/iam/v1/index.ts:20986

@@ -8,4 +8,4 @@
 
 > **FederatedCredentialsStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`FederatedCredentialsStatus`](../interfaces/FederatedCredentialsStatus.md), `"nebius.iam.v1.FederatedCredentialsStatus"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7141
+Defined in: src/generated/nebius/iam/v1/index.ts:7142

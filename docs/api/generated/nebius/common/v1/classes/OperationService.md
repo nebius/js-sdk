@@ -6,7 +6,7 @@
 
 # Class: OperationService
 
-Defined in: src/generated/nebius/common/v1/index.ts:3032
+Defined in: src/generated/nebius/common/v1/index.ts:3033
 
 ## Implements
 
@@ -16,7 +16,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3032
 
 ### Constructor
 
-> **new OperationService**(`sdk`, `serviceType`, `apiServiceName?`): `OperationService`
+> **new OperationService**(`sdk`, `addr`): `OperationService`
 
 Defined in: src/generated/nebius/common/v1/index.ts:3048
 
@@ -26,11 +26,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3048
 
 [`SDKInterface`](../../../../../sdk/interfaces/SDKInterface.md)
 
-##### serviceType
-
-`string`
-
-##### apiServiceName?
+##### addr
 
 `string`
 
@@ -44,7 +40,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3048
 
 > **$type**: `"nebius.common.v1.OperationService"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3033
+Defined in: src/generated/nebius/common/v1/index.ts:3034
 
 ## Methods
 
@@ -54,7 +50,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3033
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3034
+Defined in: src/generated/nebius/common/v1/index.ts:3035
 
 ##### Parameters
 
@@ -70,7 +66,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3034
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3035
+Defined in: src/generated/nebius/common/v1/index.ts:3036
 
 ##### Parameters
 
@@ -90,7 +86,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3035
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3036
+Defined in: src/generated/nebius/common/v1/index.ts:3037
 
 ##### Parameters
 
@@ -114,7 +110,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3036
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3054
+Defined in: src/generated/nebius/common/v1/index.ts:3052
 
 ##### Parameters
 
@@ -130,7 +126,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3054
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3055
+Defined in: src/generated/nebius/common/v1/index.ts:3053
 
 ##### Parameters
 
@@ -150,7 +146,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3055
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3056
+Defined in: src/generated/nebius/common/v1/index.ts:3054
 
 ##### Parameters
 
@@ -178,7 +174,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3056
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3037
+Defined in: src/generated/nebius/common/v1/index.ts:3038
 
 ##### Parameters
 
@@ -194,7 +190,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3037
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3038
+Defined in: src/generated/nebius/common/v1/index.ts:3039
 
 ##### Parameters
 
@@ -214,7 +210,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3038
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3039
+Defined in: src/generated/nebius/common/v1/index.ts:3040
 
 ##### Parameters
 
@@ -238,7 +234,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3039
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3069
+Defined in: src/generated/nebius/common/v1/index.ts:3067
 
 ##### Parameters
 
@@ -254,7 +250,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3069
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3070
+Defined in: src/generated/nebius/common/v1/index.ts:3068
 
 ##### Parameters
 
@@ -274,7 +270,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3070
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsRequest`](../interfaces/ListOperationsRequest.md), [`OperationServiceListResponse`](../interfaces/OperationServiceListResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3071
+Defined in: src/generated/nebius/common/v1/index.ts:3069
 
 ##### Parameters
 

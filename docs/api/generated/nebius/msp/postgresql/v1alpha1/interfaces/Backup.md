@@ -6,7 +6,7 @@
 
 # Interface: Backup
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:799
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:800
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:799
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:801
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:802
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:801
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.Backup"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:800
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:801
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:800
 
 > `optional` **creationFinish**: [`Dayjs`](../../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:821
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:822
 
 Creation finish timestamp.
 
@@ -40,7 +40,7 @@ Creation finish timestamp.
 
 > `optional` **creationStart**: [`Dayjs`](../../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:816
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:817
 
 Creation start timestamp.
 
@@ -50,7 +50,7 @@ Creation start timestamp.
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:806
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:807
 
 Required. ID of the backup.
 
@@ -60,7 +60,7 @@ Required. ID of the backup.
 
 > **onDemand**: `boolean`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:836
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:837
 
 Is the backup an on-demand manual backup.
 
@@ -70,7 +70,7 @@ Is the backup an on-demand manual backup.
 
 > **sourceClusterId**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:811
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:812
 
 ID of the PostgreSQL cluster that the backup was created for.
 
@@ -80,7 +80,7 @@ ID of the PostgreSQL cluster that the backup was created for.
 
 > **sourceClusterName**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:826
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:827
 
 Name of the PostgreSQL cluster that the backup was created for.
 
@@ -90,6 +90,6 @@ Name of the PostgreSQL cluster that the backup was created for.
 
 > **sourceClusterVisible**: `boolean`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:831
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:832
 
 Is PostgreSQL cluster that the backup was created for visible.

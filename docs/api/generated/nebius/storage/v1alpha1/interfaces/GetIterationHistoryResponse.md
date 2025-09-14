@@ -6,7 +6,7 @@
 
 # Interface: GetIterationHistoryResponse
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:976
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:977
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:976
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:978
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:979
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:978
 
 > **$type**: `"nebius.storage.v1alpha1.GetIterationHistoryResponse"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:977
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:978
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:977
 
 > **iterations**: [`TransferIteration`](TransferIteration.md)[]
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:983
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:984
 
 List of transfer iterations sorted from newest to oldest.
 
@@ -40,6 +40,6 @@ List of transfer iterations sorted from newest to oldest.
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:988
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:989
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

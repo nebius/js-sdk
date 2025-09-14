@@ -8,4 +8,4 @@
 
 > **ContainerSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ContainerSpec`](../interfaces/ContainerSpec.md), `"nebius.iam.v1.ContainerSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5530
+Defined in: src/generated/nebius/iam/v1/index.ts:5531

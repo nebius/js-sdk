@@ -8,4 +8,4 @@
 
 > **TargetStatus_TargetState**: [`TargetStatus_TargetStateClass`](../type-aliases/TargetStatus_TargetStateClass.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8494
+Defined in: src/generated/nebius/vpc/v1/index.ts:8495

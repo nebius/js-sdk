@@ -8,4 +8,4 @@
 
 > **Federation**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Federation`](../interfaces/Federation.md), `"nebius.iam.v1.Federation"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9325
+Defined in: src/generated/nebius/iam/v1/index.ts:9326

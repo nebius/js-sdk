@@ -6,7 +6,7 @@
 
 # Interface: Parameter
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1030
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1031
 
 Key-value parameter for module configuration.
 
@@ -16,7 +16,7 @@ Key-value parameter for module configuration.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1032
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1033
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1032
 
 > **$type**: `"nebius.logging.agentmanager.v1.Parameter"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1031
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1032
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1031
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1037
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1038
 
 Name of the parameter.
 
@@ -42,6 +42,6 @@ Name of the parameter.
 
 > **value**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1042
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1043
 
 Value of the parameter.

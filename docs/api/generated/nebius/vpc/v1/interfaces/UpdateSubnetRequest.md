@@ -6,7 +6,7 @@
 
 # Interface: UpdateSubnetRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6832
+Defined in: src/generated/nebius/vpc/v1/index.ts:6833
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6832
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6834
+Defined in: src/generated/nebius/vpc/v1/index.ts:6835
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6834
 
 > **$type**: `"nebius.vpc.v1.UpdateSubnetRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6833
+Defined in: src/generated/nebius/vpc/v1/index.ts:6834
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6833
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6835
+Defined in: src/generated/nebius/vpc/v1/index.ts:6836
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6835
 
 > `optional` **spec**: [`SubnetSpec`](SubnetSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6836
+Defined in: src/generated/nebius/vpc/v1/index.ts:6837

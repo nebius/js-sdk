@@ -6,7 +6,7 @@
 
 # Interface: ListFilesystemsRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2067
+Defined in: src/generated/nebius/compute/v1/index.ts:2068
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2067
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2069
+Defined in: src/generated/nebius/compute/v1/index.ts:2070
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2069
 
 > **$type**: `"nebius.compute.v1.ListFilesystemsRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2068
+Defined in: src/generated/nebius/compute/v1/index.ts:2069
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2068
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2074
+Defined in: src/generated/nebius/compute/v1/index.ts:2075
 
 #### Deprecated
 
@@ -42,7 +42,7 @@ Deprecated, will be removed on 2025-06-16: it is not implemented, filtering coul
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2071
+Defined in: src/generated/nebius/compute/v1/index.ts:2072
 
 ---
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2071
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2072
+Defined in: src/generated/nebius/compute/v1/index.ts:2073
 
 ---
 
@@ -58,4 +58,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2072
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2070
+Defined in: src/generated/nebius/compute/v1/index.ts:2071

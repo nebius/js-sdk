@@ -8,4 +8,4 @@
 
 > **StaticKeySpec_ClientService**: [`StaticKeySpec_ClientServiceClass`](../type-aliases/StaticKeySpec_ClientServiceClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19047
+Defined in: src/generated/nebius/iam/v1/index.ts:19048

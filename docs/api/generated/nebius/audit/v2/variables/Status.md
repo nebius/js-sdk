@@ -8,4 +8,4 @@
 
 > **Status**: [`StatusClass`](../type-aliases/StatusClass.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2446
+Defined in: src/generated/nebius/audit/v2/index.ts:2447

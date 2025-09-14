@@ -6,7 +6,7 @@
 
 # Interface: UndeleteBucketRequest
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1200
+Defined in: src/generated/nebius/storage/v1/index.ts:1201
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1200
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1202
+Defined in: src/generated/nebius/storage/v1/index.ts:1203
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1202
 
 > **$type**: `"nebius.storage.v1.UndeleteBucketRequest"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1201
+Defined in: src/generated/nebius/storage/v1/index.ts:1202
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1201
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1203
+Defined in: src/generated/nebius/storage/v1/index.ts:1204

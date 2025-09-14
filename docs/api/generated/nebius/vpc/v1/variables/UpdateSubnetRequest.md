@@ -8,4 +8,4 @@
 
 > **UpdateSubnetRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateSubnetRequest`](../interfaces/UpdateSubnetRequest.md), `"nebius.vpc.v1.UpdateSubnetRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6832
+Defined in: src/generated/nebius/vpc/v1/index.ts:6833

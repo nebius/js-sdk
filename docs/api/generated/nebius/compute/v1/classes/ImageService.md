@@ -6,7 +6,7 @@
 
 # Class: ImageService
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5528
+Defined in: src/generated/nebius/compute/v1/index.ts:5529
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5528
 
 > **new ImageService**(`sdk`): `ImageService`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5573
+Defined in: src/generated/nebius/compute/v1/index.ts:5574
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5573
 
 > **$type**: `"nebius.compute.v1.ImageService"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5529
+Defined in: src/generated/nebius/compute/v1/index.ts:5530
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5529
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5534
+Defined in: src/generated/nebius/compute/v1/index.ts:5535
 
 Retrieves detailed information about a specific image by its ID.
 
@@ -64,7 +64,7 @@ Retrieves detailed information about a specific image by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5535
+Defined in: src/generated/nebius/compute/v1/index.ts:5536
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5535
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5536
+Defined in: src/generated/nebius/compute/v1/index.ts:5537
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5536
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5579
+Defined in: src/generated/nebius/compute/v1/index.ts:5580
 
 Retrieves detailed information about a specific image by its ID.
 
@@ -126,7 +126,7 @@ Retrieves detailed information about a specific image by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5580
+Defined in: src/generated/nebius/compute/v1/index.ts:5581
 
 Retrieves detailed information about a specific image by its ID.
 
@@ -148,7 +148,7 @@ Retrieves detailed information about a specific image by its ID.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5581
+Defined in: src/generated/nebius/compute/v1/index.ts:5582
 
 Retrieves detailed information about a specific image by its ID.
 
@@ -178,7 +178,7 @@ Retrieves detailed information about a specific image by its ID.
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5541
+Defined in: src/generated/nebius/compute/v1/index.ts:5542
 
 Retrieves detailed information about a specific image by its parent and name.
 
@@ -196,7 +196,7 @@ Retrieves detailed information about a specific image by its parent and name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5542
+Defined in: src/generated/nebius/compute/v1/index.ts:5543
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5542
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5543
+Defined in: src/generated/nebius/compute/v1/index.ts:5544
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5543
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5591
+Defined in: src/generated/nebius/compute/v1/index.ts:5592
 
 Retrieves detailed information about a specific image by its parent and name.
 
@@ -258,7 +258,7 @@ Retrieves detailed information about a specific image by its parent and name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5592
+Defined in: src/generated/nebius/compute/v1/index.ts:5593
 
 Retrieves detailed information about a specific image by its parent and name.
 
@@ -280,7 +280,7 @@ Retrieves detailed information about a specific image by its parent and name.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5593
+Defined in: src/generated/nebius/compute/v1/index.ts:5594
 
 Retrieves detailed information about a specific image by its parent and name.
 
@@ -310,7 +310,7 @@ Retrieves detailed information about a specific image by its parent and name.
 
 > **getLatestByFamily**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5549
+Defined in: src/generated/nebius/compute/v1/index.ts:5550
 
 Retrieves the most recent image from a specified family.
 Image families are used to organize related images and ensure easy access to the latest version.
@@ -329,7 +329,7 @@ Image families are used to organize related images and ensure easy access to the
 
 > **getLatestByFamily**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5550
+Defined in: src/generated/nebius/compute/v1/index.ts:5551
 
 ##### Parameters
 
@@ -349,7 +349,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5550
 
 > **getLatestByFamily**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5551
+Defined in: src/generated/nebius/compute/v1/index.ts:5552
 
 ##### Parameters
 
@@ -373,7 +373,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5551
 
 > **getLatestByFamily**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5603
+Defined in: src/generated/nebius/compute/v1/index.ts:5604
 
 Retrieves the most recent image from a specified family.
 Image families are used to organize related images and ensure easy access to the latest version.
@@ -392,7 +392,7 @@ Image families are used to organize related images and ensure easy access to the
 
 > **getLatestByFamily**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5604
+Defined in: src/generated/nebius/compute/v1/index.ts:5605
 
 Retrieves the most recent image from a specified family.
 Image families are used to organize related images and ensure easy access to the latest version.
@@ -415,7 +415,7 @@ Image families are used to organize related images and ensure easy access to the
 
 > **getLatestByFamily**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5605
+Defined in: src/generated/nebius/compute/v1/index.ts:5606
 
 Retrieves the most recent image from a specified family.
 Image families are used to organize related images and ensure easy access to the latest version.
@@ -446,7 +446,7 @@ Image families are used to organize related images and ensure easy access to the
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5556
+Defined in: src/generated/nebius/compute/v1/index.ts:5557
 
 Lists all images in a specific parent resource.
 
@@ -464,7 +464,7 @@ Lists all images in a specific parent resource.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5557
+Defined in: src/generated/nebius/compute/v1/index.ts:5558
 
 ##### Parameters
 
@@ -484,7 +484,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5557
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5558
+Defined in: src/generated/nebius/compute/v1/index.ts:5559
 
 ##### Parameters
 
@@ -508,7 +508,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5558
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5615
+Defined in: src/generated/nebius/compute/v1/index.ts:5616
 
 Lists all images in a specific parent resource.
 
@@ -526,7 +526,7 @@ Lists all images in a specific parent resource.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5616
+Defined in: src/generated/nebius/compute/v1/index.ts:5617
 
 Lists all images in a specific parent resource.
 
@@ -548,7 +548,7 @@ Lists all images in a specific parent resource.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5617
+Defined in: src/generated/nebius/compute/v1/index.ts:5618
 
 Lists all images in a specific parent resource.
 
@@ -578,7 +578,7 @@ Lists all images in a specific parent resource.
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5563
+Defined in: src/generated/nebius/compute/v1/index.ts:5564
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -596,7 +596,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5564
+Defined in: src/generated/nebius/compute/v1/index.ts:5565
 
 ##### Parameters
 
@@ -616,7 +616,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5564
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5565
+Defined in: src/generated/nebius/compute/v1/index.ts:5566
 
 ##### Parameters
 
@@ -640,7 +640,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5565
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5627
+Defined in: src/generated/nebius/compute/v1/index.ts:5628
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -658,7 +658,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5628
+Defined in: src/generated/nebius/compute/v1/index.ts:5629
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -680,7 +680,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5629
+Defined in: src/generated/nebius/compute/v1/index.ts:5630
 
 Lists all operations that were performed within a specific parent resource.
 

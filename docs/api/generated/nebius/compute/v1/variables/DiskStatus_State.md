@@ -8,4 +8,4 @@
 
 > **DiskStatus_State**: [`DiskStatus_StateClass`](../type-aliases/DiskStatus_StateClass.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:947
+Defined in: src/generated/nebius/compute/v1/index.ts:948

@@ -6,7 +6,7 @@
 
 # Interface: PresetResources
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11893
+Defined in: src/generated/nebius/compute/v1/index.ts:11894
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11893
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11895
+Defined in: src/generated/nebius/compute/v1/index.ts:11896
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11895
 
 > **$type**: `"nebius.compute.v1.PresetResources"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11894
+Defined in: src/generated/nebius/compute/v1/index.ts:11895
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11894
 
 > **gpuCount**: `number`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11898
+Defined in: src/generated/nebius/compute/v1/index.ts:11899
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11898
 
 > **memoryGibibytes**: `number`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11897
+Defined in: src/generated/nebius/compute/v1/index.ts:11898
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11897
 
 > **vcpuCount**: `number`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11896
+Defined in: src/generated/nebius/compute/v1/index.ts:11897

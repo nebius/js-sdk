@@ -6,7 +6,7 @@
 
 # Class: StaticKeyService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18913
+Defined in: src/generated/nebius/iam/v1/index.ts:18914
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18913
 
 > **new StaticKeyService**(`sdk`): `StaticKeyService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18943
+Defined in: src/generated/nebius/iam/v1/index.ts:18944
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18943
 
 > **$type**: `"nebius.iam.v1.StaticKeyService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18914
+Defined in: src/generated/nebius/iam/v1/index.ts:18915
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18914
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18927
+Defined in: src/generated/nebius/iam/v1/index.ts:18928
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18927
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18928
+Defined in: src/generated/nebius/iam/v1/index.ts:18929
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18928
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18929
+Defined in: src/generated/nebius/iam/v1/index.ts:18930
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18929
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19001
+Defined in: src/generated/nebius/iam/v1/index.ts:19002
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19001
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19002
+Defined in: src/generated/nebius/iam/v1/index.ts:19003
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19002
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19003
+Defined in: src/generated/nebius/iam/v1/index.ts:19004
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19003
 
 > **find**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18930
+Defined in: src/generated/nebius/iam/v1/index.ts:18931
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18930
 
 > **find**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18931
+Defined in: src/generated/nebius/iam/v1/index.ts:18932
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18931
 
 > **find**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18932
+Defined in: src/generated/nebius/iam/v1/index.ts:18933
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18932
 
 > **find**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19016
+Defined in: src/generated/nebius/iam/v1/index.ts:19017
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19016
 
 > **find**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19017
+Defined in: src/generated/nebius/iam/v1/index.ts:19018
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19017
 
 > **find**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19018
+Defined in: src/generated/nebius/iam/v1/index.ts:19019
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19018
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18921
+Defined in: src/generated/nebius/iam/v1/index.ts:18922
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18921
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18922
+Defined in: src/generated/nebius/iam/v1/index.ts:18923
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18922
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18923
+Defined in: src/generated/nebius/iam/v1/index.ts:18924
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18923
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18977
+Defined in: src/generated/nebius/iam/v1/index.ts:18978
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18977
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18978
+Defined in: src/generated/nebius/iam/v1/index.ts:18979
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18978
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18979
+Defined in: src/generated/nebius/iam/v1/index.ts:18980
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18979
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18924
+Defined in: src/generated/nebius/iam/v1/index.ts:18925
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18924
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18925
+Defined in: src/generated/nebius/iam/v1/index.ts:18926
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18925
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18926
+Defined in: src/generated/nebius/iam/v1/index.ts:18927
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18926
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18989
+Defined in: src/generated/nebius/iam/v1/index.ts:18990
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18989
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18990
+Defined in: src/generated/nebius/iam/v1/index.ts:18991
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18990
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18991
+Defined in: src/generated/nebius/iam/v1/index.ts:18992
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18991
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18949
+Defined in: src/generated/nebius/iam/v1/index.ts:18950
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18949
 
 > **issue**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18915
+Defined in: src/generated/nebius/iam/v1/index.ts:18916
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18915
 
 > **issue**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18916
+Defined in: src/generated/nebius/iam/v1/index.ts:18917
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18916
 
 > **issue**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18917
+Defined in: src/generated/nebius/iam/v1/index.ts:18918
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18917
 
 > **issue**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18953
+Defined in: src/generated/nebius/iam/v1/index.ts:18954
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18953
 
 > **issue**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18954
+Defined in: src/generated/nebius/iam/v1/index.ts:18955
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18954
 
 > **issue**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18955
+Defined in: src/generated/nebius/iam/v1/index.ts:18956
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18955
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18918
+Defined in: src/generated/nebius/iam/v1/index.ts:18919
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18918
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18919
+Defined in: src/generated/nebius/iam/v1/index.ts:18920
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18919
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18920
+Defined in: src/generated/nebius/iam/v1/index.ts:18921
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18920
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18965
+Defined in: src/generated/nebius/iam/v1/index.ts:18966
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18965
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18966
+Defined in: src/generated/nebius/iam/v1/index.ts:18967
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18966
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18967
+Defined in: src/generated/nebius/iam/v1/index.ts:18968
 
 ##### Parameters
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18967
 
 > **revoke**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18933
+Defined in: src/generated/nebius/iam/v1/index.ts:18934
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18933
 
 > **revoke**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18934
+Defined in: src/generated/nebius/iam/v1/index.ts:18935
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18934
 
 > **revoke**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18935
+Defined in: src/generated/nebius/iam/v1/index.ts:18936
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:18935
 
 > **revoke**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19028
+Defined in: src/generated/nebius/iam/v1/index.ts:19029
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19028
 
 > **revoke**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19029
+Defined in: src/generated/nebius/iam/v1/index.ts:19030
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19029
 
 > **revoke**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19030
+Defined in: src/generated/nebius/iam/v1/index.ts:19031
 
 ##### Parameters
 

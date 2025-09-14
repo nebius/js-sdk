@@ -6,7 +6,7 @@
 
 # Interface: TenantStatus
 
-Defined in: src/generated/nebius/iam/v2/index.ts:3136
+Defined in: src/generated/nebius/iam/v2/index.ts:3137
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:3136
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:3138
+Defined in: src/generated/nebius/iam/v2/index.ts:3139
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:3138
 
 > **$type**: `"nebius.iam.v2.TenantStatus"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:3137
+Defined in: src/generated/nebius/iam/v2/index.ts:3138
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:3137
 
 > **tenantState**: [`TenantStatus_TenantState`](../type-aliases/TenantStatus_TenantState.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:3139
+Defined in: src/generated/nebius/iam/v2/index.ts:3140

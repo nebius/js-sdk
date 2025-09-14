@@ -6,7 +6,7 @@
 
 # Interface: NetworkPool
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3941
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3942
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3941
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3943
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3944
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3943
 
 > **$type**: `"nebius.vpc.v1alpha1.NetworkPool"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3942
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3943
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3942
 
 > **poolId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3944
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3945

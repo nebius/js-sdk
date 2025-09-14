@@ -8,4 +8,4 @@
 
 > **TargetStatus_TargetStateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"TARGET_STATE_UNSPECIFIED"` \| `"READY"` \| `"DISABLED"` \| `"DELETED"`\> & `TargetStatus_TargetStateValueMembers`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8514
+Defined in: src/generated/nebius/vpc/v1/index.ts:8515

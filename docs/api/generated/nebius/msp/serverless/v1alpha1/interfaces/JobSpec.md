@@ -6,7 +6,7 @@
 
 # Interface: JobSpec
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2321
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2322
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2321
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2323
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2324
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2323
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.JobSpec"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2322
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2323
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2322
 
 > `optional` **container**: [`JobContainerSpec`](JobContainerSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2338
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2339
 
 Container spec
 
@@ -40,7 +40,7 @@ Container spec
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2328
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2329
 
 Description of the job.
 
@@ -50,6 +50,6 @@ Description of the job.
 
 > **networkId**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2333
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2334
 
 Network ID to run the job in

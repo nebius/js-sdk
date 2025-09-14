@@ -6,7 +6,7 @@
 
 # Interface: UpdateNodeGroupRequest
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3343
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3614
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3343
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3345
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3616
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3345
 
 > **$type**: `"nebius.mk8s.v1.UpdateNodeGroupRequest"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3344
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3615
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3344
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3346
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3617
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3346
 
 > `optional` **spec**: [`NodeGroupSpec`](NodeGroupSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3347
+Defined in: src/generated/nebius/mk8s/v1/index.ts:3618

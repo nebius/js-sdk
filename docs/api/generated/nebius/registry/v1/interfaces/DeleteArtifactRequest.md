@@ -6,7 +6,7 @@
 
 # Interface: DeleteArtifactRequest
 
-Defined in: src/generated/nebius/registry/v1/index.ts:346
+Defined in: src/generated/nebius/registry/v1/index.ts:347
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:346
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:348
+Defined in: src/generated/nebius/registry/v1/index.ts:349
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:348
 
 > **$type**: `"nebius.registry.v1.DeleteArtifactRequest"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:347
+Defined in: src/generated/nebius/registry/v1/index.ts:348
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:347
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:349
+Defined in: src/generated/nebius/registry/v1/index.ts:350

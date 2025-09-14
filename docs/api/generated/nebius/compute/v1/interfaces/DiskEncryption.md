@@ -6,7 +6,7 @@
 
 # Interface: DiskEncryption
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1895
+Defined in: src/generated/nebius/compute/v1/index.ts:1896
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:1895
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1897
+Defined in: src/generated/nebius/compute/v1/index.ts:1898
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:1897
 
 > **$type**: `"nebius.compute.v1.DiskEncryption"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1896
+Defined in: src/generated/nebius/compute/v1/index.ts:1897
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:1896
 
 > **type**: [`DiskEncryption_DiskEncryptionType`](../type-aliases/DiskEncryption_DiskEncryptionType.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1898
+Defined in: src/generated/nebius/compute/v1/index.ts:1899

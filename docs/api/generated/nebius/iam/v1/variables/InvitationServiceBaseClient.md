@@ -8,7 +8,7 @@
 
 > **InvitationServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`InvitationServiceBaseClient`](../interfaces/InvitationServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13808
+Defined in: src/generated/nebius/iam/v1/index.ts:13809
 
 ## Type Declaration
 

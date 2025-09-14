@@ -6,7 +6,7 @@
 
 # Interface: Disk
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:738
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:739
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:738
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:740
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:741
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:740
 
 > **$type**: `"nebius.msp.v1alpha1.resource.Disk"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:739
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:740
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:739
 
 > `optional` **sizeGibibytes**: [`Range`](Range.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:742
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:743
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:742
 
 > **type**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:741
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:742

@@ -6,7 +6,7 @@
 
 # Interface: ExistingFilesystem
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8414
+Defined in: src/generated/nebius/compute/v1/index.ts:8415
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8414
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8416
+Defined in: src/generated/nebius/compute/v1/index.ts:8417
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8416
 
 > **$type**: `"nebius.compute.v1.ExistingFilesystem"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8415
+Defined in: src/generated/nebius/compute/v1/index.ts:8416
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8415
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8417
+Defined in: src/generated/nebius/compute/v1/index.ts:8418

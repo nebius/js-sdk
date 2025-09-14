@@ -6,7 +6,7 @@
 
 # Interface: EstimateResponse
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:140
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:141
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:140
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:142
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:143
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:142
 
 > **$type**: `"nebius.billing.v1alpha1.EstimateResponse"`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:141
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:142
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:141
 
 > `optional` **hourlyCost**: [`ResourceGroupCost`](ResourceGroupCost.md)
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:147
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:148
 
 Estimated hourly cost for the resource.
 
@@ -40,7 +40,7 @@ Estimated hourly cost for the resource.
 
 > `optional` **monthlyCost**: [`ResourceGroupCost`](ResourceGroupCost.md)
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:153
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:154
 
 Estimated monthly cost for the resource.
-Calculated as hourly*cost * 24 \_ 30 (720 hours) for resources running continuously.
+Calculated as hourly_cost _ 24 _ 30 (720 hours) for resources running continuously.

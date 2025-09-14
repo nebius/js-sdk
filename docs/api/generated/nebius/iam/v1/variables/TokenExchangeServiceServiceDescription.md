@@ -8,7 +8,7 @@
 
 > **TokenExchangeServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22085
+Defined in: src/generated/nebius/iam/v1/index.ts:22086
 
 ## Type Declaration
 

@@ -8,4 +8,4 @@
 
 > **AttachedDiskSpec_AttachModeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"READ_ONLY"` \| `"READ_WRITE"`\> & `AttachedDiskSpec_AttachModeValueMembers`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6566
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6567

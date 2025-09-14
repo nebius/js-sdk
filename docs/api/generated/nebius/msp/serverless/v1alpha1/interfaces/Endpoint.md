@@ -6,7 +6,7 @@
 
 # Interface: Endpoint
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:526
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:527
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:526
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:528
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:529
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:528
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.Endpoint"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:527
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:528
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:527
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:529
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:530
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:529
 
 > `optional` **spec**: [`EndpointSpec`](EndpointSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:530
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:531
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:530
 
 > `optional` **status**: [`EndpointStatus`](EndpointStatus.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:531
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:532

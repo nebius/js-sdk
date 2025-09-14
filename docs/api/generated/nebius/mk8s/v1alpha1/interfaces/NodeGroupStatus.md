@@ -6,7 +6,7 @@
 
 # Interface: NodeGroupStatus
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6169
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6487
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6169
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6171
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6489
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6171
 
 > **$type**: `"nebius.mk8s.v1alpha1.NodeGroupStatus"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6170
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6488
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6170
 
 > **conditions**: [`Condition`](Condition.md)[]
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6203
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6521
 
 #### Deprecated
 
@@ -42,7 +42,7 @@ Deprecated, will be removed on 2025-08-01: it is not implemented well, messages 
 
 > **nodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6189
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6507
 
 Total number of nodes that are currently in the node group.
 Both ready and not ready nodes are counted.
@@ -53,7 +53,7 @@ Both ready and not ready nodes are counted.
 
 > **outdatedNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6195
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6513
 
 Total number of nodes that has outdated node configuration.
 These nodes will be replaced by new nodes with up-to-date configuration.
@@ -64,7 +64,7 @@ These nodes will be replaced by new nodes with up-to-date configuration.
 
 > **readyNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6201
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6519
 
 Total number of nodes that successfully joined the cluster and are ready to serve workloads.
 Both outdated and up-to-date nodes are counted.
@@ -75,7 +75,7 @@ Both outdated and up-to-date nodes are counted.
 
 > **reconciling**: `boolean`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6208
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6526
 
 Show that changes are in flight
 
@@ -85,7 +85,7 @@ Show that changes are in flight
 
 > **state**: [`NodeGroupStatus_State`](../type-aliases/NodeGroupStatus_State.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6172
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6490
 
 ---
 
@@ -93,7 +93,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6172
 
 > **targetNodeCount**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6183
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6501
 
 Desired total number of nodes that should be in the node group.
 It is either fixed_node_count or arbitrary number between min_node_count and max_node_count decided by autoscaler.
@@ -104,6 +104,6 @@ It is either fixed_node_count or arbitrary number between min_node_count and max
 
 > **version**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6177
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6495
 
 Version have format `MAJOR.MINOR.PATCH-nebius-node.n` like "1.30.0-nebius-node.10".

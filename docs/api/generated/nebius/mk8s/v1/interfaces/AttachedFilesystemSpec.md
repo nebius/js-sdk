@@ -6,7 +6,7 @@
 
 # Interface: AttachedFilesystemSpec
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5180
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5498
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5180
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5182
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5500
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5182
 
 > **$type**: `"nebius.mk8s.v1.AttachedFilesystemSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5181
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5499
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5181
 
 > **attachMode**: [`AttachedFilesystemSpec_AttachMode`](../type-aliases/AttachedFilesystemSpec_AttachMode.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5183
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5501
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5183
 
 > **mountTag**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5188
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5506
 
 Specifies the user-defined identifier, allowing to use it as a device in mount command.
 
@@ -48,7 +48,7 @@ Specifies the user-defined identifier, allowing to use it as a device in mount c
 
 > `optional` **type**: `object`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5189
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5507
 
 #### $case
 

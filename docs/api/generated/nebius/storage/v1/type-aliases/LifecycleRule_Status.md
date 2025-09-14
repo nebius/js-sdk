@@ -8,4 +8,4 @@
 
 > **LifecycleRule_Status** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATUS_UNSPECIFIED"` \| `"ENABLED"` \| `"DISABLED"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2458
+Defined in: src/generated/nebius/storage/v1/index.ts:2459

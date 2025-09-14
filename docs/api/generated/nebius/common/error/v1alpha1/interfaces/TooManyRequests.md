@@ -6,7 +6,7 @@
 
 # Interface: TooManyRequests
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1101
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1102
 
 You initiated too many requests to the service at once. Enhance your calm.
 
@@ -16,7 +16,7 @@ You initiated too many requests to the service at once. Enhance your calm.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1103
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1104
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1103
 
 > **$type**: `"nebius.common.error.v1alpha1.TooManyRequests"`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1102
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1103
 
 ---
 
@@ -32,6 +32,6 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1102
 
 > **violation**: `string`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1108
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1109
 
 What request limit is exceeded (service-dependent).

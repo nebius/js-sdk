@@ -8,4 +8,4 @@
 
 > **NetworkServiceServiceDescription** = _typeof_ [`NetworkServiceServiceDescription`](../variables/NetworkServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3267
+Defined in: src/generated/nebius/vpc/v1/index.ts:3268

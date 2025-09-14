@@ -6,7 +6,7 @@
 
 # Interface: ListMaintenancesResponse
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:103
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:104
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:103
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:105
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:106
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:105
 
 > **$type**: `"nebius.maintenance.v1alpha1.ListMaintenancesResponse"`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:104
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:105
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:104
 
 > **items**: [`Maintenance`](Maintenance.md)[]
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:110
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:111
 
 List of maintenance operations.

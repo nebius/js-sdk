@@ -6,7 +6,7 @@
 
 # Interface: ExistingDisk
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8329
+Defined in: src/generated/nebius/compute/v1/index.ts:8330
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8329
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8331
+Defined in: src/generated/nebius/compute/v1/index.ts:8332
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8331
 
 > **$type**: `"nebius.compute.v1.ExistingDisk"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8330
+Defined in: src/generated/nebius/compute/v1/index.ts:8331
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8330
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8332
+Defined in: src/generated/nebius/compute/v1/index.ts:8333

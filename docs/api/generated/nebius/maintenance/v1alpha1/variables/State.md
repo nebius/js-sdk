@@ -8,4 +8,4 @@
 
 > **State**: [`StateClass`](../type-aliases/StateClass.md)
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:383
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:384

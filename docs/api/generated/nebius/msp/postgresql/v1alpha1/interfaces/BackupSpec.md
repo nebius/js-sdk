@@ -6,7 +6,7 @@
 
 # Interface: BackupSpec
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3694
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3695
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3694
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3696
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3697
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3696
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.BackupSpec"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3695
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3696
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3695
 
 > **backupWindowStart**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3701
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3702
 
 Backup window start in "HH:MM:SS" format (UTC Time)
 
@@ -40,6 +40,6 @@ Backup window start in "HH:MM:SS" format (UTC Time)
 
 > **retentionPolicy**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3706
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3707
 
 Retention policy to be used for backups and WALs (i.e. '7d')

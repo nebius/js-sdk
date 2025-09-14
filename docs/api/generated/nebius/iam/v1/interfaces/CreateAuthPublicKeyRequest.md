@@ -6,7 +6,7 @@
 
 # Interface: CreateAuthPublicKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3684
+Defined in: src/generated/nebius/iam/v1/index.ts:3685
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3684
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3686
+Defined in: src/generated/nebius/iam/v1/index.ts:3687
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3686
 
 > **$type**: `"nebius.iam.v1.CreateAuthPublicKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3685
+Defined in: src/generated/nebius/iam/v1/index.ts:3686
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3685
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3687
+Defined in: src/generated/nebius/iam/v1/index.ts:3688
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:3687
 
 > `optional` **spec**: [`AuthPublicKeySpec`](AuthPublicKeySpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:3688
+Defined in: src/generated/nebius/iam/v1/index.ts:3689

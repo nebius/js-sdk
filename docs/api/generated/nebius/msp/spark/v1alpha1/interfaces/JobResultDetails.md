@@ -6,7 +6,7 @@
 
 # Interface: JobResultDetails
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3148
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3193
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3148
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3150
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3195
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3150
 
 > **$type**: `"nebius.msp.spark.v1alpha1.JobResultDetails"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3149
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3194
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3149
 
 > **code**: [`JobResultCode`](../type-aliases/JobResultCode.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3155
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3200
 
 Result code

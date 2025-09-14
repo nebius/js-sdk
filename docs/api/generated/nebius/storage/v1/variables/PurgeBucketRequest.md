@@ -8,4 +8,4 @@
 
 > **PurgeBucketRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), `"nebius.storage.v1.PurgeBucketRequest"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1115
+Defined in: src/generated/nebius/storage/v1/index.ts:1116

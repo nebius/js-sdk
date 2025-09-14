@@ -6,7 +6,7 @@
 
 # Interface: EndpointTemplateSpec
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1367
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1368
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1367
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1369
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1370
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1369
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.EndpointTemplateSpec"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1368
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1369
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1368
 
 > `optional` **resources**: [`ResourcesSpec`](../../../v1alpha1/resource/interfaces/ResourcesSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1370
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1371

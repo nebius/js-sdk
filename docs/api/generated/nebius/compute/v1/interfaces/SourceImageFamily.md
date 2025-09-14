@@ -6,7 +6,7 @@
 
 # Interface: SourceImageFamily
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1552
+Defined in: src/generated/nebius/compute/v1/index.ts:1553
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:1552
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1554
+Defined in: src/generated/nebius/compute/v1/index.ts:1555
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:1554
 
 > **$type**: `"nebius.compute.v1.SourceImageFamily"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1553
+Defined in: src/generated/nebius/compute/v1/index.ts:1554
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:1553
 
 > **imageFamily**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1555
+Defined in: src/generated/nebius/compute/v1/index.ts:1556
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:1555
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1556
+Defined in: src/generated/nebius/compute/v1/index.ts:1557

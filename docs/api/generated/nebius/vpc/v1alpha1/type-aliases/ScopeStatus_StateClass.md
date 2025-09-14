@@ -8,4 +8,4 @@
 
 > **ScopeStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"DELETING"`\> & `ScopeStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6078
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6079

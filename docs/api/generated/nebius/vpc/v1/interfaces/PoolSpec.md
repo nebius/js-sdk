@@ -6,7 +6,7 @@
 
 # Interface: PoolSpec
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5617
+Defined in: src/generated/nebius/vpc/v1/index.ts:5618
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5617
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5619
+Defined in: src/generated/nebius/vpc/v1/index.ts:5620
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5619
 
 > **$type**: `"nebius.vpc.v1.PoolSpec"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5618
+Defined in: src/generated/nebius/vpc/v1/index.ts:5619
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5618
 
 > **cidrs**: [`PoolCidr`](PoolCidr.md)[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5636
+Defined in: src/generated/nebius/vpc/v1/index.ts:5637
 
 CIDR blocks.
 
@@ -40,7 +40,7 @@ CIDR blocks.
 
 > **sourcePoolId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5625
+Defined in: src/generated/nebius/vpc/v1/index.ts:5626
 
 ID of source pool. Current pool will be created with the same scope.
 Pool is a root-pool if this field is empty
@@ -51,7 +51,7 @@ Pool is a root-pool if this field is empty
 
 > **version**: [`IpVersion`](../type-aliases/IpVersion.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5630
+Defined in: src/generated/nebius/vpc/v1/index.ts:5631
 
 IP version for the Pool.
 
@@ -61,4 +61,4 @@ IP version for the Pool.
 
 > **visibility**: [`IpVisibility`](../type-aliases/IpVisibility.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5631
+Defined in: src/generated/nebius/vpc/v1/index.ts:5632

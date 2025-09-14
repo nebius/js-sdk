@@ -6,7 +6,7 @@
 
 # Interface: ListOperationsRequest
 
-Defined in: src/generated/nebius/common/v1/index.ts:2755
+Defined in: src/generated/nebius/common/v1/index.ts:2756
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2755
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2757
+Defined in: src/generated/nebius/common/v1/index.ts:2758
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2757
 
 > **$type**: `"nebius.common.v1.ListOperationsRequest"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2756
+Defined in: src/generated/nebius/common/v1/index.ts:2757
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2756
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/common/v1/index.ts:2767
+Defined in: src/generated/nebius/common/v1/index.ts:2768
 
 Page size. [1...1000]. Optional, if not specified, a reasonable default will be chosen by the service.
 
@@ -40,7 +40,7 @@ Page size. [1...1000]. Optional, if not specified, a reasonable default will be 
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2772
+Defined in: src/generated/nebius/common/v1/index.ts:2773
 
 Listing continuation token. Empty to start listing from the first page.
 
@@ -50,6 +50,6 @@ Listing continuation token. Empty to start listing from the first page.
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2762
+Defined in: src/generated/nebius/common/v1/index.ts:2763
 
 ID of the Resource to list operations for.

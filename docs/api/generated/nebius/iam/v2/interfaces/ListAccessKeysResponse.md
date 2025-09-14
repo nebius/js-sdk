@@ -6,7 +6,7 @@
 
 # Interface: ListAccessKeysResponse
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1242
+Defined in: src/generated/nebius/iam/v2/index.ts:1243
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1242
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1244
+Defined in: src/generated/nebius/iam/v2/index.ts:1245
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1244
 
 > **$type**: `"nebius.iam.v2.ListAccessKeysResponse"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1243
+Defined in: src/generated/nebius/iam/v2/index.ts:1244
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1243
 
 > **items**: [`AccessKey`](AccessKey.md)[]
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1249
+Defined in: src/generated/nebius/iam/v2/index.ts:1250
 
 List of access keys returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of access keys returned in the response. The field should be named as `item
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1254
+Defined in: src/generated/nebius/iam/v2/index.ts:1255
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

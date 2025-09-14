@@ -8,4 +8,4 @@
 
 > **GetJobRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), `"nebius.msp.spark.v1alpha1.GetJobRequest"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1872
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1895

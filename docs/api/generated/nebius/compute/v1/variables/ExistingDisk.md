@@ -8,4 +8,4 @@
 
 > **ExistingDisk**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ExistingDisk`](../interfaces/ExistingDisk.md), `"nebius.compute.v1.ExistingDisk"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8329
+Defined in: src/generated/nebius/compute/v1/index.ts:8330

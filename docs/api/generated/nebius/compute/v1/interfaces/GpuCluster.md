@@ -6,7 +6,7 @@
 
 # Interface: GpuCluster
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4445
+Defined in: src/generated/nebius/compute/v1/index.ts:4446
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4445
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4447
+Defined in: src/generated/nebius/compute/v1/index.ts:4448
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4447
 
 > **$type**: `"nebius.compute.v1.GpuCluster"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4446
+Defined in: src/generated/nebius/compute/v1/index.ts:4447
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4446
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4448
+Defined in: src/generated/nebius/compute/v1/index.ts:4449
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4448
 
 > `optional` **spec**: [`GpuClusterSpec`](GpuClusterSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4449
+Defined in: src/generated/nebius/compute/v1/index.ts:4450
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4449
 
 > `optional` **status**: [`GpuClusterStatus`](GpuClusterStatus.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4450
+Defined in: src/generated/nebius/compute/v1/index.ts:4451

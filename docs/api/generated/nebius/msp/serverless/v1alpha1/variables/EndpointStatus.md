@@ -8,4 +8,4 @@
 
 > **EndpointStatus**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`EndpointStatus`](../interfaces/EndpointStatus.md), `"nebius.msp.serverless.v1alpha1.EndpointStatus"`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1456
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1457

@@ -6,7 +6,7 @@
 
 # Interface: ClusterSpec
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1161
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1184
 
 Cluster specification
 
@@ -16,7 +16,7 @@ Cluster specification
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1163
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1186
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1163
 
 > **$type**: `"nebius.msp.spark.v1alpha1.ClusterSpec"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1162
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1185
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1162
 
 > `optional` **authorization**: [`Password`](Password.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1178
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1201
 
 Password for Spark History server and Sessions.
 
@@ -42,7 +42,7 @@ Password for Spark History server and Sessions.
 
 > `optional` **description**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1168
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1191
 
 Description of the cluster.
 
@@ -52,7 +52,7 @@ Description of the cluster.
 
 > `optional` **limits**: [`Limits`](Limits.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1173
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1196
 
 Limits for the cluster
 
@@ -62,7 +62,7 @@ Limits for the cluster
 
 > **networkId**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1185
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1208
 
 ---
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1185
 
 > **serviceAccountId**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1184
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1207
 
 ID of the user service account for accessing
 S3 buckets in the user project

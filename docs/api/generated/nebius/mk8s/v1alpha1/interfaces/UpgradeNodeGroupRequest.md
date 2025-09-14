@@ -6,7 +6,7 @@
 
 # Interface: UpgradeNodeGroupRequest
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3728
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3999
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3728
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3730
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4001
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3730
 
 > **$type**: `"nebius.mk8s.v1alpha1.UpgradeNodeGroupRequest"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3729
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4000
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3729
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3731
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4002
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3731
 
 > `optional` **upgradeType**: `object`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3732
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4003
 
 #### $case
 

@@ -6,7 +6,7 @@
 
 # Interface: TenantSpec
 
-Defined in: src/generated/nebius/iam/v2/index.ts:3070
+Defined in: src/generated/nebius/iam/v2/index.ts:3071
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:3070
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:3072
+Defined in: src/generated/nebius/iam/v2/index.ts:3073
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:3072
 
 > **$type**: `"nebius.iam.v2.TenantSpec"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:3071
+Defined in: src/generated/nebius/iam/v2/index.ts:3072

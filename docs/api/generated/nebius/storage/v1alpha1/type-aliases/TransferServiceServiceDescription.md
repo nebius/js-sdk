@@ -8,4 +8,4 @@
 
 > **TransferServiceServiceDescription** = _typeof_ [`TransferServiceServiceDescription`](../variables/TransferServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1088
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1089

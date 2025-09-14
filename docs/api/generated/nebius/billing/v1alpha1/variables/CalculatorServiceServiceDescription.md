@@ -8,7 +8,7 @@
 
 > **CalculatorServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:504
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:505
 
 ## Type Declaration
 

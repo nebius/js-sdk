@@ -6,10 +6,9 @@
 
 # Interface: Operation_RequestHeader
 
-Defined in: src/generated/nebius/common/v1/index.ts:3473
+Defined in: src/generated/nebius/common/v1/index.ts:3468
 
-Request header is a container for all the values of a particular header of a request
-as there is no such thing as map<string, repeated string>
+Request header is a container for all the values of a particular header of a request because there is no such thing as `map<string, repeated string>`
 
 ## Properties
 
@@ -17,7 +16,7 @@ as there is no such thing as map<string, repeated string>
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3475
+Defined in: src/generated/nebius/common/v1/index.ts:3470
 
 ---
 
@@ -25,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3475
 
 > **$type**: `"nebius.common.v1.Operation.RequestHeader"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3474
+Defined in: src/generated/nebius/common/v1/index.ts:3469
 
 ---
 
@@ -33,6 +32,6 @@ Defined in: src/generated/nebius/common/v1/index.ts:3474
 
 > **values**: `string`[]
 
-Defined in: src/generated/nebius/common/v1/index.ts:3480
+Defined in: src/generated/nebius/common/v1/index.ts:3475
 
 The values of a particular header from a request

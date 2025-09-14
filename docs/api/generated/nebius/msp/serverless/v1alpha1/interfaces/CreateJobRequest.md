@@ -6,7 +6,7 @@
 
 # Interface: CreateJobRequest
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1593
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1594
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1593
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1595
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1596
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1595
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.CreateJobRequest"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1594
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1595
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1594
 
 > **dryRun**: `boolean`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1603
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1604
 
 If set to true, only API validation will be performed, without creating the job.
 Returned operation will be in "done" state. ID of resource will be empty.
@@ -41,7 +41,7 @@ Returned operation will be in "done" state. ID of resource will be empty.
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1596
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1597
 
 ---
 
@@ -49,4 +49,4 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1596
 
 > `optional` **spec**: [`JobSpec`](JobSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1597
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1598

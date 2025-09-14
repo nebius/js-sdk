@@ -6,7 +6,7 @@
 
 # Class: ServiceAccountService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16891
+Defined in: src/generated/nebius/iam/v1/index.ts:16892
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16891
 
 > **new ServiceAccountService**(`sdk`): `ServiceAccountService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16918
+Defined in: src/generated/nebius/iam/v1/index.ts:16919
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16918
 
 > **$type**: `"nebius.iam.v1.ServiceAccountService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16892
+Defined in: src/generated/nebius/iam/v1/index.ts:16893
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16892
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16893
+Defined in: src/generated/nebius/iam/v1/index.ts:16894
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16893
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16894
+Defined in: src/generated/nebius/iam/v1/index.ts:16895
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16894
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16895
+Defined in: src/generated/nebius/iam/v1/index.ts:16896
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16895
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16928
+Defined in: src/generated/nebius/iam/v1/index.ts:16929
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16928
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16929
+Defined in: src/generated/nebius/iam/v1/index.ts:16930
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16929
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16930
+Defined in: src/generated/nebius/iam/v1/index.ts:16931
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16930
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16908
+Defined in: src/generated/nebius/iam/v1/index.ts:16909
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16908
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16909
+Defined in: src/generated/nebius/iam/v1/index.ts:16910
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16909
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16910
+Defined in: src/generated/nebius/iam/v1/index.ts:16911
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16910
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16994
+Defined in: src/generated/nebius/iam/v1/index.ts:16995
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16994
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16995
+Defined in: src/generated/nebius/iam/v1/index.ts:16996
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16995
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16996
+Defined in: src/generated/nebius/iam/v1/index.ts:16997
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16996
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16896
+Defined in: src/generated/nebius/iam/v1/index.ts:16897
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16896
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16897
+Defined in: src/generated/nebius/iam/v1/index.ts:16898
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16897
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16898
+Defined in: src/generated/nebius/iam/v1/index.ts:16899
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16898
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16943
+Defined in: src/generated/nebius/iam/v1/index.ts:16944
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16943
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16944
+Defined in: src/generated/nebius/iam/v1/index.ts:16945
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16944
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16945
+Defined in: src/generated/nebius/iam/v1/index.ts:16946
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16945
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16899
+Defined in: src/generated/nebius/iam/v1/index.ts:16900
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16899
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16900
+Defined in: src/generated/nebius/iam/v1/index.ts:16901
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16900
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16901
+Defined in: src/generated/nebius/iam/v1/index.ts:16902
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16901
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16955
+Defined in: src/generated/nebius/iam/v1/index.ts:16956
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16955
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16956
+Defined in: src/generated/nebius/iam/v1/index.ts:16957
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16956
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16957
+Defined in: src/generated/nebius/iam/v1/index.ts:16958
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16957
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16924
+Defined in: src/generated/nebius/iam/v1/index.ts:16925
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16924
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16902
+Defined in: src/generated/nebius/iam/v1/index.ts:16903
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16902
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16903
+Defined in: src/generated/nebius/iam/v1/index.ts:16904
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16903
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16904
+Defined in: src/generated/nebius/iam/v1/index.ts:16905
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16904
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16967
+Defined in: src/generated/nebius/iam/v1/index.ts:16968
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16967
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16968
+Defined in: src/generated/nebius/iam/v1/index.ts:16969
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16968
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16969
+Defined in: src/generated/nebius/iam/v1/index.ts:16970
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16969
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16905
+Defined in: src/generated/nebius/iam/v1/index.ts:16906
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16905
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16906
+Defined in: src/generated/nebius/iam/v1/index.ts:16907
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16906
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16907
+Defined in: src/generated/nebius/iam/v1/index.ts:16908
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16907
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16979
+Defined in: src/generated/nebius/iam/v1/index.ts:16980
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16979
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16980
+Defined in: src/generated/nebius/iam/v1/index.ts:16981
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:16980
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateServiceAccountRequest`](../interfaces/UpdateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16981
+Defined in: src/generated/nebius/iam/v1/index.ts:16982
 
 ##### Parameters
 

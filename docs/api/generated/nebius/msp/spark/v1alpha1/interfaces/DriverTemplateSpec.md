@@ -6,7 +6,7 @@
 
 # Interface: DriverTemplateSpec
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3455
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3500
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3455
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3457
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3502
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3457
 
 > **$type**: `"nebius.msp.spark.v1alpha1.DriverTemplateSpec"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3456
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3501
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3456
 
 > `optional` **disk**: [`DiskSpec`](../../../v1alpha1/resource/interfaces/DiskSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3458
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3503
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3458
 
 > `optional` **resources**: [`ResourcesSpec`](../../../v1alpha1/resource/interfaces/ResourcesSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3459
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3504

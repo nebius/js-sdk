@@ -6,7 +6,7 @@
 
 # Interface: ListSubnetsRequest
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6629
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6630
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6629
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6631
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6632
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6631
 
 > **$type**: `"nebius.vpc.v1alpha1.ListSubnetsRequest"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6630
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6631
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6630
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6635
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6636
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6635
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6633
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6634
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6633
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6634
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6635
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6634
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6632
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6633

@@ -6,7 +6,7 @@
 
 # Interface: Preset
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11766
+Defined in: src/generated/nebius/compute/v1/index.ts:11767
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11766
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11768
+Defined in: src/generated/nebius/compute/v1/index.ts:11769
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11768
 
 > **$type**: `"nebius.compute.v1.Preset"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11767
+Defined in: src/generated/nebius/compute/v1/index.ts:11768
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11767
 
 > **allowGpuClustering**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11771
+Defined in: src/generated/nebius/compute/v1/index.ts:11772
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11771
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11769
+Defined in: src/generated/nebius/compute/v1/index.ts:11770
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11769
 
 > `optional` **resources**: [`PresetResources`](PresetResources.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11770
+Defined in: src/generated/nebius/compute/v1/index.ts:11771

@@ -8,7 +8,7 @@
 
 > **FilesystemServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2629
+Defined in: src/generated/nebius/compute/v1/index.ts:2630
 
 ## Type Declaration
 

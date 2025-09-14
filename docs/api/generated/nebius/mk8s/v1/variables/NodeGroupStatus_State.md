@@ -8,4 +8,4 @@
 
 > **NodeGroupStatus_State**: [`NodeGroupStatus_StateClass`](../type-aliases/NodeGroupStatus_StateClass.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3941
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4212

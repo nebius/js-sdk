@@ -8,7 +8,7 @@
 
 > **BackupServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`BackupServiceBaseClient`](../interfaces/BackupServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:656
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:657
 
 ## Type Declaration
 

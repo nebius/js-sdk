@@ -8,7 +8,7 @@
 
 > **AuditEventServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:427
+Defined in: src/generated/nebius/audit/v2/index.ts:428
 
 ## Type Declaration
 

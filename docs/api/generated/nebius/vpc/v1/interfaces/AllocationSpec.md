@@ -6,7 +6,7 @@
 
 # Interface: AllocationSpec
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1314
+Defined in: src/generated/nebius/vpc/v1/index.ts:1315
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1314
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1316
+Defined in: src/generated/nebius/vpc/v1/index.ts:1317
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1316
 
 > **$type**: `"nebius.vpc.v1.AllocationSpec"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1315
+Defined in: src/generated/nebius/vpc/v1/index.ts:1316
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1315
 
 > `optional` **ipSpec**: \{ `$case`: `"ipv4Private"`; `ipv4Private`: [`IPv4PrivateAllocationSpec`](IPv4PrivateAllocationSpec.md); \} \| \{ `$case`: `"ipv4Public"`; `ipv4Public`: [`IPv4PublicAllocationSpec`](IPv4PublicAllocationSpec.md); \}
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1321
+Defined in: src/generated/nebius/vpc/v1/index.ts:1322
 
 Holds the IP specifications for the allocation, including the type of IP (IPv4 or IPv6) and its corresponding configuration.

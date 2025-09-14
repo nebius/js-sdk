@@ -6,7 +6,7 @@
 
 # Interface: AllocationServiceBaseClient
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:940
+Defined in: src/generated/nebius/vpc/v1/index.ts:941
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:945
+Defined in: src/generated/nebius/vpc/v1/index.ts:946
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:945
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:947
+Defined in: src/generated/nebius/vpc/v1/index.ts:948
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:947
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:941
+Defined in: src/generated/nebius/vpc/v1/index.ts:942
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:941
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:942
+Defined in: src/generated/nebius/vpc/v1/index.ts:943
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:943
+Defined in: src/generated/nebius/vpc/v1/index.ts:944
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:943
 
 > **listByPool**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:944
+Defined in: src/generated/nebius/vpc/v1/index.ts:945
 
 #### Parameters
 
@@ -814,7 +814,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:946
+Defined in: src/generated/nebius/vpc/v1/index.ts:947
 
 #### Parameters
 

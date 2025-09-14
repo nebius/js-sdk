@@ -6,7 +6,7 @@
 
 # Interface: Filesystem
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2577
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2578
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2577
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2579
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2580
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2579
 
 > **$type**: `"nebius.compute.v1alpha1.Filesystem"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2578
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2579
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2578
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2580
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2581
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2580
 
 > `optional` **spec**: [`FilesystemSpec`](FilesystemSpec.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2581
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2582
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2581
 
 > `optional` **status**: [`FilesystemStatus`](FilesystemStatus.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2582
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2583

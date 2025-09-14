@@ -8,7 +8,7 @@
 
 > **VersionServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1748
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1749
 
 ## Type Declaration
 

@@ -6,11 +6,15 @@
 
 # Class: StaticReader
 
-Defined in: [src/runtime/service_account/static.ts:4](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/static.ts#L4)
+Defined in: [src/runtime/service_account/static.ts:8](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L8)
 
 ## Implements
 
 - [`Reader`](../../service_account/interfaces/Reader.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/service_account/static.ts:4](https://github.com/nebius/
 
 > **new StaticReader**(`sa`): `StaticReader`
 
-Defined in: [src/runtime/service_account/static.ts:5](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/static.ts#L5)
+Defined in: [src/runtime/service_account/static.ts:10](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L10)
 
 #### Parameters
 
@@ -30,13 +34,33 @@ Defined in: [src/runtime/service_account/static.ts:5](https://github.com/nebius/
 
 `StaticReader`
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.StaticReader"` = `'nebius.sdk.StaticReader'`
+
+Defined in: [src/runtime/service_account/static.ts:9](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L9)
+
 ## Methods
+
+### \[customJson\]()
+
+> **\[customJson\]**(): `unknown`
+
+Defined in: [src/runtime/service_account/static.ts:14](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L14)
+
+#### Returns
+
+`unknown`
+
+---
 
 ### getExchangeTokenRequest()
 
 > **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
-Defined in: [src/runtime/service_account/static.ts:9](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/static.ts#L9)
+Defined in: [src/runtime/service_account/static.ts:23](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L23)
 
 #### Returns
 
@@ -52,7 +76,7 @@ Defined in: [src/runtime/service_account/static.ts:9](https://github.com/nebius/
 
 > **read**(): [`ServiceAccount`](../../service_account/classes/ServiceAccount.md)
 
-Defined in: [src/runtime/service_account/static.ts:6](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/service_account/static.ts#L6)
+Defined in: [src/runtime/service_account/static.ts:20](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L20)
 
 #### Returns
 

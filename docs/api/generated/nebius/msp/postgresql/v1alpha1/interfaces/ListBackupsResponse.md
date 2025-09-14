@@ -6,7 +6,7 @@
 
 # Interface: ListBackupsResponse
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:309
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:310
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:309
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:311
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:312
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:311
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ListBackupsResponse"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:310
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:311
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:310
 
 > **backups**: [`Backup`](Backup.md)[]
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:316
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:317
 
 List of backups.

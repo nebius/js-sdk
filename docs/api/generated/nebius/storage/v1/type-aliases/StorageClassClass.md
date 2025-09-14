@@ -8,4 +8,4 @@
 
 > **StorageClassClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STORAGE_CLASS_UNSPECIFIED"` \| `"STANDARD"` \| `"ENHANCED_THROUGHPUT"`\> & `StorageClassValueMembers`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:22
+Defined in: src/generated/nebius/storage/v1/index.ts:23

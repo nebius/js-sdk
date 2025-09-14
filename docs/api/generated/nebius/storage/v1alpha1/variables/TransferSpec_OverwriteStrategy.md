@@ -8,4 +8,4 @@
 
 > **TransferSpec_OverwriteStrategy**: [`TransferSpec_OverwriteStrategyClass`](../type-aliases/TransferSpec_OverwriteStrategyClass.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1400
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1401

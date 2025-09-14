@@ -6,7 +6,7 @@
 
 # Class: FederationCertificateService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7922
+Defined in: src/generated/nebius/iam/v1/index.ts:7923
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7922
 
 > **new FederationCertificateService**(`sdk`): `FederationCertificateService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7946
+Defined in: src/generated/nebius/iam/v1/index.ts:7947
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7946
 
 > **$type**: `"nebius.iam.v1.FederationCertificateService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7923
+Defined in: src/generated/nebius/iam/v1/index.ts:7924
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7923
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationCertificateRequest`](../interfaces/CreateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7924
+Defined in: src/generated/nebius/iam/v1/index.ts:7925
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7924
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationCertificateRequest`](../interfaces/CreateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7925
+Defined in: src/generated/nebius/iam/v1/index.ts:7926
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7925
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationCertificateRequest`](../interfaces/CreateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7926
+Defined in: src/generated/nebius/iam/v1/index.ts:7927
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7926
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationCertificateRequest`](../interfaces/CreateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7956
+Defined in: src/generated/nebius/iam/v1/index.ts:7957
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7956
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationCertificateRequest`](../interfaces/CreateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7957
+Defined in: src/generated/nebius/iam/v1/index.ts:7958
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7957
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationCertificateRequest`](../interfaces/CreateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7958
+Defined in: src/generated/nebius/iam/v1/index.ts:7959
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7958
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7936
+Defined in: src/generated/nebius/iam/v1/index.ts:7937
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7936
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7937
+Defined in: src/generated/nebius/iam/v1/index.ts:7938
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7937
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7938
+Defined in: src/generated/nebius/iam/v1/index.ts:7939
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7938
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8010
+Defined in: src/generated/nebius/iam/v1/index.ts:8011
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8010
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8011
+Defined in: src/generated/nebius/iam/v1/index.ts:8012
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8011
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8012
+Defined in: src/generated/nebius/iam/v1/index.ts:8013
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8012
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationCertificateRequest`](../interfaces/GetFederationCertificateRequest.md), [`FederationCertificate`](../interfaces/FederationCertificate.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7927
+Defined in: src/generated/nebius/iam/v1/index.ts:7928
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7927
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationCertificateRequest`](../interfaces/GetFederationCertificateRequest.md), [`FederationCertificate`](../interfaces/FederationCertificate.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7928
+Defined in: src/generated/nebius/iam/v1/index.ts:7929
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7928
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationCertificateRequest`](../interfaces/GetFederationCertificateRequest.md), [`FederationCertificate`](../interfaces/FederationCertificate.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7929
+Defined in: src/generated/nebius/iam/v1/index.ts:7930
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7929
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationCertificateRequest`](../interfaces/GetFederationCertificateRequest.md), [`FederationCertificate`](../interfaces/FederationCertificate.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7971
+Defined in: src/generated/nebius/iam/v1/index.ts:7972
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7971
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationCertificateRequest`](../interfaces/GetFederationCertificateRequest.md), [`FederationCertificate`](../interfaces/FederationCertificate.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7972
+Defined in: src/generated/nebius/iam/v1/index.ts:7973
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7972
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationCertificateRequest`](../interfaces/GetFederationCertificateRequest.md), [`FederationCertificate`](../interfaces/FederationCertificate.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7973
+Defined in: src/generated/nebius/iam/v1/index.ts:7974
 
 ##### Parameters
 
@@ -416,7 +416,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7973
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7952
+Defined in: src/generated/nebius/iam/v1/index.ts:7953
 
 #### Returns
 
@@ -430,7 +430,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7952
 
 > **listByFederation**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationCertificateByFederationRequest`](../interfaces/ListFederationCertificateByFederationRequest.md), [`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7930
+Defined in: src/generated/nebius/iam/v1/index.ts:7931
 
 ##### Parameters
 
@@ -446,7 +446,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7930
 
 > **listByFederation**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationCertificateByFederationRequest`](../interfaces/ListFederationCertificateByFederationRequest.md), [`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7931
+Defined in: src/generated/nebius/iam/v1/index.ts:7932
 
 ##### Parameters
 
@@ -466,7 +466,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7931
 
 > **listByFederation**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationCertificateByFederationRequest`](../interfaces/ListFederationCertificateByFederationRequest.md), [`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7932
+Defined in: src/generated/nebius/iam/v1/index.ts:7933
 
 ##### Parameters
 
@@ -490,7 +490,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7932
 
 > **listByFederation**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationCertificateByFederationRequest`](../interfaces/ListFederationCertificateByFederationRequest.md), [`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7983
+Defined in: src/generated/nebius/iam/v1/index.ts:7984
 
 ##### Parameters
 
@@ -506,7 +506,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7983
 
 > **listByFederation**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationCertificateByFederationRequest`](../interfaces/ListFederationCertificateByFederationRequest.md), [`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7984
+Defined in: src/generated/nebius/iam/v1/index.ts:7985
 
 ##### Parameters
 
@@ -526,7 +526,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7984
 
 > **listByFederation**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationCertificateByFederationRequest`](../interfaces/ListFederationCertificateByFederationRequest.md), [`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7985
+Defined in: src/generated/nebius/iam/v1/index.ts:7986
 
 ##### Parameters
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7985
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationCertificateRequest`](../interfaces/UpdateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7933
+Defined in: src/generated/nebius/iam/v1/index.ts:7934
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7933
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationCertificateRequest`](../interfaces/UpdateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7934
+Defined in: src/generated/nebius/iam/v1/index.ts:7935
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7934
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationCertificateRequest`](../interfaces/UpdateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7935
+Defined in: src/generated/nebius/iam/v1/index.ts:7936
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7935
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationCertificateRequest`](../interfaces/UpdateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7995
+Defined in: src/generated/nebius/iam/v1/index.ts:7996
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7995
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationCertificateRequest`](../interfaces/UpdateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7996
+Defined in: src/generated/nebius/iam/v1/index.ts:7997
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7996
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederationCertificateRequest`](../interfaces/UpdateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7997
+Defined in: src/generated/nebius/iam/v1/index.ts:7998
 
 ##### Parameters
 

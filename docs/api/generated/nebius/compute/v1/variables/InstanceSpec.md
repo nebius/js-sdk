@@ -8,4 +8,4 @@
 
 > **InstanceSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`InstanceSpec`](../interfaces/InstanceSpec.md), `"nebius.compute.v1.InstanceSpec"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7471
+Defined in: src/generated/nebius/compute/v1/index.ts:7472

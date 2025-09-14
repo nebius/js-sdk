@@ -8,4 +8,4 @@
 
 > **ProgressData**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ProgressData`](../interfaces/ProgressData.md), `"nebius.mk8s.v1.ProgressData"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6282
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6600

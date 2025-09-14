@@ -8,4 +8,4 @@
 
 > **RegistryStatus_State**: [`RegistryStatus_StateClass`](../type-aliases/RegistryStatus_StateClass.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1656
+Defined in: src/generated/nebius/registry/v1/index.ts:1657

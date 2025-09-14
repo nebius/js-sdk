@@ -6,7 +6,7 @@
 
 # Interface: Limits
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1482
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1505
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1482
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1484
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1507
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1484
 
 > **$type**: `"nebius.msp.spark.v1alpha1.Limits"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1483
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1506
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1483
 
 > **cpu**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1485
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1508
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1485
 
 > **memoryGibibytes**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1486
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1509

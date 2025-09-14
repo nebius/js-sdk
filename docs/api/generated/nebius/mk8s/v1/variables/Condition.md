@@ -8,4 +8,4 @@
 
 > **Condition**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Condition`](../interfaces/Condition.md), `"nebius.mk8s.v1.Condition"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2157
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2428

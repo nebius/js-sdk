@@ -6,7 +6,7 @@
 
 # Interface: FederationSpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9460
+Defined in: src/generated/nebius/iam/v1/index.ts:9461
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9460
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9462
+Defined in: src/generated/nebius/iam/v1/index.ts:9463
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9462
 
 > **$type**: `"nebius.iam.v1.FederationSpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9461
+Defined in: src/generated/nebius/iam/v1/index.ts:9462
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9461
 
 > **active**: `boolean`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9464
+Defined in: src/generated/nebius/iam/v1/index.ts:9465
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9464
 
 > `optional` **settings**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9465
+Defined in: src/generated/nebius/iam/v1/index.ts:9466
 
 #### $case
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9465
 
 > **userAccountAutoCreation**: `boolean`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9463
+Defined in: src/generated/nebius/iam/v1/index.ts:9464

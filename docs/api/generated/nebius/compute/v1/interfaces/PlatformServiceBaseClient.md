@@ -6,7 +6,7 @@
 
 # Interface: PlatformServiceBaseClient
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11421
+Defined in: src/generated/nebius/compute/v1/index.ts:11422
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11422
+Defined in: src/generated/nebius/compute/v1/index.ts:11423
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11423
+Defined in: src/generated/nebius/compute/v1/index.ts:11424
 
 #### Parameters
 

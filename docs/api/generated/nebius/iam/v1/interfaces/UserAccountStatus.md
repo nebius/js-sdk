@@ -6,7 +6,7 @@
 
 # Interface: UserAccountStatus
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22745
+Defined in: src/generated/nebius/iam/v1/index.ts:22746
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22745
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22747
+Defined in: src/generated/nebius/iam/v1/index.ts:22748
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22747
 
 > **$type**: `"nebius.iam.v1.UserAccountStatus"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22746
+Defined in: src/generated/nebius/iam/v1/index.ts:22747
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:22746
 
 > **state**: [`UserAccountStatus_State`](../type-aliases/UserAccountStatus_State.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:22748
+Defined in: src/generated/nebius/iam/v1/index.ts:22749

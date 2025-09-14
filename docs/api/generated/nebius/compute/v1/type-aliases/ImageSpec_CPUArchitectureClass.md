@@ -8,4 +8,4 @@
 
 > **ImageSpec_CPUArchitectureClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"AMD64"` \| `"ARM64"`\> & `ImageSpec_CPUArchitectureValueMembers`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5650
+Defined in: src/generated/nebius/compute/v1/index.ts:5651

@@ -8,4 +8,4 @@
 
 > **ScopeStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ScopeStatus`](../interfaces/ScopeStatus.md), `"nebius.vpc.v1alpha1.ScopeStatus"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6349
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6350

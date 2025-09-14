@@ -8,4 +8,4 @@
 
 > **Authorization**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Authorization`](../interfaces/Authorization.md), `"nebius.audit.v2.Authorization"`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1198
+Defined in: src/generated/nebius/audit/v2/index.ts:1199

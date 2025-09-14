@@ -6,7 +6,7 @@
 
 # Interface: IPv4PublicAllocationSpec
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1501
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1502
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1501
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1503
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1504
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1503
 
 > **$type**: `"nebius.vpc.v1alpha1.IPv4PublicAllocationSpec"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1502
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1503
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1502
 
 > **cidr**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1511
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1512
 
 CIDR block for IPv4 Allocation.
 May be a single IP address (such as 10.2.3.4),
@@ -43,6 +43,6 @@ Random address (/32) from pool would be allocated if field is omitted.
 
 > **poolId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1516
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1517
 
 Pool for the IPv4 public allocation.

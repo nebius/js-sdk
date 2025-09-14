@@ -6,7 +6,7 @@
 
 # Interface: Image
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5018
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5019
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5018
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5020
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5021
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5020
 
 > **$type**: `"nebius.compute.v1alpha1.Image"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5019
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5020
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5019
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5021
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5022
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5021
 
 > `optional` **spec**: [`ImageSpec`](ImageSpec.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5022
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5023
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5022
 
 > `optional` **status**: [`ImageStatus`](ImageStatus.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5023
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:5024

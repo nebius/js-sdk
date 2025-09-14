@@ -6,7 +6,7 @@
 
 # Interface: GetBucketByNameRequest
 
-Defined in: src/generated/nebius/storage/v1/index.ts:616
+Defined in: src/generated/nebius/storage/v1/index.ts:617
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:616
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:618
+Defined in: src/generated/nebius/storage/v1/index.ts:619
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:618
 
 > **$type**: `"nebius.storage.v1.GetBucketByNameRequest"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:617
+Defined in: src/generated/nebius/storage/v1/index.ts:618
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:617
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:620
+Defined in: src/generated/nebius/storage/v1/index.ts:621
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:620
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:619
+Defined in: src/generated/nebius/storage/v1/index.ts:620

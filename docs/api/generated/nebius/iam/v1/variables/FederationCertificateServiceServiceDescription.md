@@ -8,7 +8,7 @@
 
 > **FederationCertificateServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7851
+Defined in: src/generated/nebius/iam/v1/index.ts:7852
 
 ## Type Declaration
 

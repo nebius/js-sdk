@@ -6,7 +6,7 @@
 
 # Interface: ResourceNotFound
 
-Defined in: src/generated/nebius/common/v1/index.ts:939
+Defined in: src/generated/nebius/common/v1/index.ts:940
 
 Resource we are trying to interact with does not exist.
 
@@ -16,7 +16,7 @@ Resource we are trying to interact with does not exist.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:941
+Defined in: src/generated/nebius/common/v1/index.ts:942
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:941
 
 > **$type**: `"nebius.common.v1.ResourceNotFound"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:940
+Defined in: src/generated/nebius/common/v1/index.ts:941
 
 ---
 
@@ -32,6 +32,6 @@ Defined in: src/generated/nebius/common/v1/index.ts:940
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:946
+Defined in: src/generated/nebius/common/v1/index.ts:947
 
 ID of the requested resource.

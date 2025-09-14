@@ -6,7 +6,7 @@
 
 # Class: AllocationService
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:956
+Defined in: src/generated/nebius/vpc/v1/index.ts:957
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:956
 
 > **new AllocationService**(`sdk`): `AllocationService`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:986
+Defined in: src/generated/nebius/vpc/v1/index.ts:987
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:986
 
 > **$type**: `"nebius.vpc.v1.AllocationService"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:957
+Defined in: src/generated/nebius/vpc/v1/index.ts:958
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:957
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAllocationRequest`](../interfaces/CreateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:970
+Defined in: src/generated/nebius/vpc/v1/index.ts:971
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:970
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAllocationRequest`](../interfaces/CreateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:971
+Defined in: src/generated/nebius/vpc/v1/index.ts:972
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:971
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAllocationRequest`](../interfaces/CreateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:972
+Defined in: src/generated/nebius/vpc/v1/index.ts:973
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:972
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAllocationRequest`](../interfaces/CreateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1044
+Defined in: src/generated/nebius/vpc/v1/index.ts:1045
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1044
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAllocationRequest`](../interfaces/CreateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1045
+Defined in: src/generated/nebius/vpc/v1/index.ts:1046
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1045
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAllocationRequest`](../interfaces/CreateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1046
+Defined in: src/generated/nebius/vpc/v1/index.ts:1047
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1046
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAllocationRequest`](../interfaces/DeleteAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:976
+Defined in: src/generated/nebius/vpc/v1/index.ts:977
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:976
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAllocationRequest`](../interfaces/DeleteAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:977
+Defined in: src/generated/nebius/vpc/v1/index.ts:978
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:977
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAllocationRequest`](../interfaces/DeleteAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:978
+Defined in: src/generated/nebius/vpc/v1/index.ts:979
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:978
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAllocationRequest`](../interfaces/DeleteAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1074
+Defined in: src/generated/nebius/vpc/v1/index.ts:1075
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1074
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAllocationRequest`](../interfaces/DeleteAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1075
+Defined in: src/generated/nebius/vpc/v1/index.ts:1076
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1075
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAllocationRequest`](../interfaces/DeleteAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1076
+Defined in: src/generated/nebius/vpc/v1/index.ts:1077
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1076
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationRequest`](../interfaces/GetAllocationRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:958
+Defined in: src/generated/nebius/vpc/v1/index.ts:959
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:958
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationRequest`](../interfaces/GetAllocationRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:959
+Defined in: src/generated/nebius/vpc/v1/index.ts:960
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:959
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationRequest`](../interfaces/GetAllocationRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:960
+Defined in: src/generated/nebius/vpc/v1/index.ts:961
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:960
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationRequest`](../interfaces/GetAllocationRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:996
+Defined in: src/generated/nebius/vpc/v1/index.ts:997
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:996
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationRequest`](../interfaces/GetAllocationRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:997
+Defined in: src/generated/nebius/vpc/v1/index.ts:998
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:997
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationRequest`](../interfaces/GetAllocationRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:998
+Defined in: src/generated/nebius/vpc/v1/index.ts:999
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:998
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationByNameRequest`](../interfaces/GetAllocationByNameRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:961
+Defined in: src/generated/nebius/vpc/v1/index.ts:962
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:961
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationByNameRequest`](../interfaces/GetAllocationByNameRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:962
+Defined in: src/generated/nebius/vpc/v1/index.ts:963
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:962
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationByNameRequest`](../interfaces/GetAllocationByNameRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:963
+Defined in: src/generated/nebius/vpc/v1/index.ts:964
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:963
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationByNameRequest`](../interfaces/GetAllocationByNameRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1008
+Defined in: src/generated/nebius/vpc/v1/index.ts:1009
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1008
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationByNameRequest`](../interfaces/GetAllocationByNameRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1009
+Defined in: src/generated/nebius/vpc/v1/index.ts:1010
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1009
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAllocationByNameRequest`](../interfaces/GetAllocationByNameRequest.md), [`Allocation`](../interfaces/Allocation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1010
+Defined in: src/generated/nebius/vpc/v1/index.ts:1011
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1010
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:992
+Defined in: src/generated/nebius/vpc/v1/index.ts:993
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:992
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsRequest`](../interfaces/ListAllocationsRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:964
+Defined in: src/generated/nebius/vpc/v1/index.ts:965
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:964
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsRequest`](../interfaces/ListAllocationsRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:965
+Defined in: src/generated/nebius/vpc/v1/index.ts:966
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:965
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsRequest`](../interfaces/ListAllocationsRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:966
+Defined in: src/generated/nebius/vpc/v1/index.ts:967
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:966
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsRequest`](../interfaces/ListAllocationsRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1020
+Defined in: src/generated/nebius/vpc/v1/index.ts:1021
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1020
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsRequest`](../interfaces/ListAllocationsRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1021
+Defined in: src/generated/nebius/vpc/v1/index.ts:1022
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1021
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsRequest`](../interfaces/ListAllocationsRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1022
+Defined in: src/generated/nebius/vpc/v1/index.ts:1023
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1022
 
 > **listByPool**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsByPoolRequest`](../interfaces/ListAllocationsByPoolRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:967
+Defined in: src/generated/nebius/vpc/v1/index.ts:968
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:967
 
 > **listByPool**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsByPoolRequest`](../interfaces/ListAllocationsByPoolRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:968
+Defined in: src/generated/nebius/vpc/v1/index.ts:969
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:968
 
 > **listByPool**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsByPoolRequest`](../interfaces/ListAllocationsByPoolRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:969
+Defined in: src/generated/nebius/vpc/v1/index.ts:970
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:969
 
 > **listByPool**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsByPoolRequest`](../interfaces/ListAllocationsByPoolRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1032
+Defined in: src/generated/nebius/vpc/v1/index.ts:1033
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1032
 
 > **listByPool**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsByPoolRequest`](../interfaces/ListAllocationsByPoolRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1033
+Defined in: src/generated/nebius/vpc/v1/index.ts:1034
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1033
 
 > **listByPool**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAllocationsByPoolRequest`](../interfaces/ListAllocationsByPoolRequest.md), [`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1034
+Defined in: src/generated/nebius/vpc/v1/index.ts:1035
 
 ##### Parameters
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1034
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAllocationRequest`](../interfaces/UpdateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:973
+Defined in: src/generated/nebius/vpc/v1/index.ts:974
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:973
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAllocationRequest`](../interfaces/UpdateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:974
+Defined in: src/generated/nebius/vpc/v1/index.ts:975
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:974
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAllocationRequest`](../interfaces/UpdateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:975
+Defined in: src/generated/nebius/vpc/v1/index.ts:976
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:975
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAllocationRequest`](../interfaces/UpdateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1059
+Defined in: src/generated/nebius/vpc/v1/index.ts:1060
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1059
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAllocationRequest`](../interfaces/UpdateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1060
+Defined in: src/generated/nebius/vpc/v1/index.ts:1061
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1060
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAllocationRequest`](../interfaces/UpdateAllocationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1061
+Defined in: src/generated/nebius/vpc/v1/index.ts:1062
 
 ##### Parameters
 

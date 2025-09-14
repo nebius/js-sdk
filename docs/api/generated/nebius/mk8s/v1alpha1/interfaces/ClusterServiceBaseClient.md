@@ -6,7 +6,7 @@
 
 # Interface: ClusterServiceBaseClient
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:848
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1099
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:852
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1103
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:852
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:854
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1105
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:854
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:849
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1100
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:849
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:850
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1101
 
 #### Parameters
 
@@ -170,13 +170,43 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:851
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1102
 
 #### Parameters
 
 ##### request
 
 [`ListClustersRequest`](ListClustersRequest.md)
+
+##### metadata
+
+`Metadata`
+
+##### options
+
+`Partial`\<`CallOptions`\>
+
+##### callback
+
+(`error`, `response`) => `void`
+
+#### Returns
+
+`SurfaceCall`
+
+---
+
+### listControlPlaneVersions()
+
+> **listControlPlaneVersions**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
+
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1106
+
+#### Parameters
+
+##### request
+
+[`ListClusterControlPlaneVersionsRequest`](ListClusterControlPlaneVersionsRequest.md)
 
 ##### metadata
 
@@ -784,7 +814,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:853
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1104
 
 #### Parameters
 

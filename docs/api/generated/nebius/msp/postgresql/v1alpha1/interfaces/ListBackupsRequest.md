@@ -6,7 +6,7 @@
 
 # Interface: ListBackupsRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:131
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:132
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:131
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:133
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:134
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:133
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ListBackupsRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:132
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:133
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:132
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:138
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:139
 
 Identifier of IAM container to list backups from.

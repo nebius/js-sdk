@@ -6,7 +6,7 @@
 
 # Interface: ResourceConflict
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:521
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:522
 
 There is a difference between the actual resource state and the expected one.
 
@@ -16,7 +16,7 @@ There is a difference between the actual resource state and the expected one.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:523
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:524
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:523
 
 > **$type**: `"nebius.common.error.v1alpha1.ResourceConflict"`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:522
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:523
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:522
 
 > **message**: `string`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:533
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:534
 
 Detailed info about conflict.
 
@@ -42,6 +42,6 @@ Detailed info about conflict.
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:528
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:529
 
 ID of conflicting resource.

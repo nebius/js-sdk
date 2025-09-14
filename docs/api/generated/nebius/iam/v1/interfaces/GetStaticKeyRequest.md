@@ -6,7 +6,7 @@
 
 # Interface: GetStaticKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17772
+Defined in: src/generated/nebius/iam/v1/index.ts:17773
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17772
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17774
+Defined in: src/generated/nebius/iam/v1/index.ts:17775
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17774
 
 > **$type**: `"nebius.iam.v1.GetStaticKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17773
+Defined in: src/generated/nebius/iam/v1/index.ts:17774
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17773
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17779
+Defined in: src/generated/nebius/iam/v1/index.ts:17780
 
 id of the static key

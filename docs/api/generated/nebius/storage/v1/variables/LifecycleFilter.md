@@ -8,4 +8,4 @@
 
 > **LifecycleFilter**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`LifecycleFilter`](../interfaces/LifecycleFilter.md), `"nebius.storage.v1.LifecycleFilter"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:2852
+Defined in: src/generated/nebius/storage/v1/index.ts:2853

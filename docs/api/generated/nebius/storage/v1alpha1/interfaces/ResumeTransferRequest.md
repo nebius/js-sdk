@@ -6,7 +6,7 @@
 
 # Interface: ResumeTransferRequest
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:656
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:657
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:656
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:658
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:659
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:658
 
 > **$type**: `"nebius.storage.v1alpha1.ResumeTransferRequest"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:657
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:658
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:657
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:659
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:660

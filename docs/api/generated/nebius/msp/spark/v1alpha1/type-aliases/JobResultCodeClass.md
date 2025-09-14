@@ -8,4 +8,4 @@
 
 > **JobResultCodeClass** = [`EnumClass`](../../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"JOB_RESULT_CODE_UNSPECIFIED"` \| `"SUCCEEDED"` \| `"ERROR"`\> & `JobResultCodeValueMembers`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2589
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2634

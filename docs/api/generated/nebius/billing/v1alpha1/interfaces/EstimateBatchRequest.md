@@ -6,7 +6,7 @@
 
 # Interface: EstimateBatchRequest
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:261
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:262
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:261
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:263
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:264
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:263
 
 > **$type**: `"nebius.billing.v1alpha1.EstimateBatchRequest"`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:262
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:263
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:262
 
 > **offerTypes**: [`OfferType`](../type-aliases/OfferType.md)[]
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:274
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:275
 
 Type of offers to be applied to the cost estimate.
 
@@ -40,7 +40,7 @@ Type of offers to be applied to the cost estimate.
 
 > **resourceSpecs**: [`ResourceSpec`](ResourceSpec.md)[]
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:269
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:270
 
 List of resource specifications for cost estimation.
 Each resource will be priced individually and then aggregated into total costs.

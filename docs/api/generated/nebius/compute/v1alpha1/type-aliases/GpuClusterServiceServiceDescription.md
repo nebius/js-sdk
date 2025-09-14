@@ -8,7 +8,7 @@
 
 > **GpuClusterServiceServiceDescription** = _typeof_ [`GpuClusterServiceServiceDescription`](../variables/GpuClusterServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3785
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3786
 
 ## Deprecated
 

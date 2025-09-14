@@ -6,7 +6,7 @@
 
 # Interface: BadRequest_Violation
 
-Defined in: src/generated/nebius/common/v1/index.ts:707
+Defined in: src/generated/nebius/common/v1/index.ts:708
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:707
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:709
+Defined in: src/generated/nebius/common/v1/index.ts:710
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:709
 
 > **$type**: `"nebius.common.v1.BadRequest.Violation"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:708
+Defined in: src/generated/nebius/common/v1/index.ts:709
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:708
 
 > **field**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:714
+Defined in: src/generated/nebius/common/v1/index.ts:715
 
 What field value is invalid.
 
@@ -40,6 +40,6 @@ What field value is invalid.
 
 > **message**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:719
+Defined in: src/generated/nebius/common/v1/index.ts:720
 
 Description why the value is invalid, in English.

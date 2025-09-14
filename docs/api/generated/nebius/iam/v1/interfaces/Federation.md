@@ -6,7 +6,7 @@
 
 # Interface: Federation
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9325
+Defined in: src/generated/nebius/iam/v1/index.ts:9326
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9325
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9327
+Defined in: src/generated/nebius/iam/v1/index.ts:9328
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9327
 
 > **$type**: `"nebius.iam.v1.Federation"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9326
+Defined in: src/generated/nebius/iam/v1/index.ts:9327
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9326
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9328
+Defined in: src/generated/nebius/iam/v1/index.ts:9329
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9328
 
 > `optional` **spec**: [`FederationSpec`](FederationSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9329
+Defined in: src/generated/nebius/iam/v1/index.ts:9330
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9329
 
 > `optional` **status**: [`FederationStatus`](FederationStatus.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9330
+Defined in: src/generated/nebius/iam/v1/index.ts:9331

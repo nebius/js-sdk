@@ -8,7 +8,7 @@
 
 > **PoolServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4575
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4576
 
 ## Type Declaration
 

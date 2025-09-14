@@ -6,7 +6,7 @@
 
 # Interface: Pool
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4844
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4845
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4844
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4846
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4847
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4846
 
 > **$type**: `"nebius.vpc.v1alpha1.Pool"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4845
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4846
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4845
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4852
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4853
 
 Metadata associated with the Pool.
 `metadata.parent_id` represents the Project.
@@ -41,7 +41,7 @@ Metadata associated with the Pool.
 
 > `optional` **spec**: [`PoolSpec`](PoolSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4857
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4858
 
 Specification of the Pool.
 
@@ -51,6 +51,6 @@ Specification of the Pool.
 
 > `optional` **status**: [`PoolStatus`](PoolStatus.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4862
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4863
 
 Status information for the Pool.

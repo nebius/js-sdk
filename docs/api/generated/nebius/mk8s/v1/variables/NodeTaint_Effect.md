@@ -8,4 +8,4 @@
 
 > **NodeTaint_Effect**: [`NodeTaint_EffectClass`](../type-aliases/NodeTaint_EffectClass.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3922
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4193

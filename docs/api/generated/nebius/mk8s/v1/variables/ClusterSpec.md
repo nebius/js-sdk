@@ -8,4 +8,4 @@
 
 > **ClusterSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ClusterSpec`](../interfaces/ClusterSpec.md), `"nebius.mk8s.v1.ClusterSpec"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1058
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1329

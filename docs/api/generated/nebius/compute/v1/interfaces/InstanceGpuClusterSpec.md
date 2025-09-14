@@ -6,7 +6,7 @@
 
 # Interface: InstanceGpuClusterSpec
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8083
+Defined in: src/generated/nebius/compute/v1/index.ts:8084
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8083
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8085
+Defined in: src/generated/nebius/compute/v1/index.ts:8086
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8085
 
 > **$type**: `"nebius.compute.v1.InstanceGpuClusterSpec"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8084
+Defined in: src/generated/nebius/compute/v1/index.ts:8085
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:8084
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:8093
+Defined in: src/generated/nebius/compute/v1/index.ts:8094
 
 If you want to interconnect several instances in a GPU cluster via NVIDIA InfiniBand,
 set the ID of an existing GPU cluster.

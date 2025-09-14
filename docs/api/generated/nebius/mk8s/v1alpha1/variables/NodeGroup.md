@@ -8,4 +8,4 @@
 
 > **NodeGroup**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeGroup`](../interfaces/NodeGroup.md), `"nebius.mk8s.v1alpha1.NodeGroup"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4152
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4423

@@ -6,7 +6,7 @@
 
 # Interface: BadResourceState
 
-Defined in: src/generated/nebius/common/v1/index.ts:823
+Defined in: src/generated/nebius/common/v1/index.ts:824
 
 The resource we are trying to use, create, change or delete is in a bad state and cannot be used.
 
@@ -16,7 +16,7 @@ The resource we are trying to use, create, change or delete is in a bad state an
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:825
+Defined in: src/generated/nebius/common/v1/index.ts:826
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:825
 
 > **$type**: `"nebius.common.v1.BadResourceState"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:824
+Defined in: src/generated/nebius/common/v1/index.ts:825
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:824
 
 > **message**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:835
+Defined in: src/generated/nebius/common/v1/index.ts:836
 
 The reason why this state is bad and cannot be used.
 
@@ -42,6 +42,6 @@ The reason why this state is bad and cannot be used.
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:830
+Defined in: src/generated/nebius/common/v1/index.ts:831
 
 ID of the resource which is bad.

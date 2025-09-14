@@ -6,7 +6,7 @@
 
 # Interface: Authentication
 
-Defined in: src/generated/nebius/audit/v2/index.ts:951
+Defined in: src/generated/nebius/audit/v2/index.ts:952
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:951
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:953
+Defined in: src/generated/nebius/audit/v2/index.ts:954
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:953
 
 > **$type**: `"nebius.audit.v2.Authentication"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:952
+Defined in: src/generated/nebius/audit/v2/index.ts:953
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:952
 
 > **authenticated**: `boolean`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:958
+Defined in: src/generated/nebius/audit/v2/index.ts:959
 
 Answers the question whether or not the subject has been successfully authenticated.
 
@@ -40,7 +40,7 @@ Answers the question whether or not the subject has been successfully authentica
 
 > **authenticationType**: [`AuthenticationType`](../type-aliases/AuthenticationType.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:973
+Defined in: src/generated/nebius/audit/v2/index.ts:974
 
 Describes the type of authentication.
 
@@ -50,7 +50,7 @@ Describes the type of authentication.
 
 > `optional` **credential**: \{ `$case`: `"tokenCredential"`; `tokenCredential`: [`AccessToken`](AccessToken.md); \} \| \{ `$case`: `"staticKeyCredential"`; `staticKeyCredential`: [`StaticKey`](StaticKey.md); \}
 
-Defined in: src/generated/nebius/audit/v2/index.ts:974
+Defined in: src/generated/nebius/audit/v2/index.ts:975
 
 ---
 
@@ -58,7 +58,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:974
 
 > `optional` **federation**: [`Federation`](Federation.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:968
+Defined in: src/generated/nebius/audit/v2/index.ts:969
 
 Information on the federation within which the subject exists.
 
@@ -68,6 +68,6 @@ Information on the federation within which the subject exists.
 
 > `optional` **subject**: [`Subject`](Subject.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:963
+Defined in: src/generated/nebius/audit/v2/index.ts:964
 
 Contains information about the subject of the call.

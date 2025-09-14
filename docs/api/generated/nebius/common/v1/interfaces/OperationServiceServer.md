@@ -6,7 +6,7 @@
 
 # Interface: OperationServiceServer
 
-Defined in: src/generated/nebius/common/v1/index.ts:3016
+Defined in: src/generated/nebius/common/v1/index.ts:3017
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3016
 
 > **get**: `handleUnaryCall`\<[`GetOperationRequest`](GetOperationRequest.md), [`Operation`](Operation.md)\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3017
+Defined in: src/generated/nebius/common/v1/index.ts:3018
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/common/v1/index.ts:3017
 
 > **list**: `handleUnaryCall`\<[`ListOperationsRequest`](ListOperationsRequest.md), [`ListOperationsResponse`](ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3018
+Defined in: src/generated/nebius/common/v1/index.ts:3019

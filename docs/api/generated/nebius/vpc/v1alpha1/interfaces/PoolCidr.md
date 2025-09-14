@@ -6,7 +6,7 @@
 
 # Interface: PoolCidr
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5179
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5180
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5179
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5181
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5182
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5181
 
 > **$type**: `"nebius.vpc.v1alpha1.PoolCidr"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5180
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5181
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5180
 
 > **allowedMask**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5198
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5199
 
 Maximum mask length for allocation from this IP pool including creation of sub-pools
 
@@ -40,7 +40,7 @@ Maximum mask length for allocation from this IP pool including creation of sub-p
 
 > **cidr**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5188
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5189
 
 CIDR block.
 May be a prefix length (such as /24) for non-top-level pools
@@ -52,6 +52,6 @@ or a CIDR-formatted string (such as 10.1.2.0/24).
 
 > **state**: [`PoolCidrState`](../type-aliases/PoolCidrState.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5193
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5194
 
 State of the Cidr.

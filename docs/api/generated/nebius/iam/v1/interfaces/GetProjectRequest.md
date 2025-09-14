@@ -6,7 +6,7 @@
 
 # Interface: GetProjectRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15297
+Defined in: src/generated/nebius/iam/v1/index.ts:15298
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15297
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15299
+Defined in: src/generated/nebius/iam/v1/index.ts:15300
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15299
 
 > **$type**: `"nebius.iam.v1.GetProjectRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15298
+Defined in: src/generated/nebius/iam/v1/index.ts:15299
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15298
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15300
+Defined in: src/generated/nebius/iam/v1/index.ts:15301

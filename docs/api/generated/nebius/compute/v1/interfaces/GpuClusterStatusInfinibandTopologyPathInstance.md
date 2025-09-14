@@ -6,7 +6,7 @@
 
 # Interface: GpuClusterStatusInfinibandTopologyPathInstance
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4907
+Defined in: src/generated/nebius/compute/v1/index.ts:4908
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4907
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4909
+Defined in: src/generated/nebius/compute/v1/index.ts:4910
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4909
 
 > **$type**: `"nebius.compute.v1.GpuClusterStatusInfinibandTopologyPathInstance"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4908
+Defined in: src/generated/nebius/compute/v1/index.ts:4909
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4908
 
 > **instanceId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4910
+Defined in: src/generated/nebius/compute/v1/index.ts:4911
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4910
 
 > **path**: `string`[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4911
+Defined in: src/generated/nebius/compute/v1/index.ts:4912

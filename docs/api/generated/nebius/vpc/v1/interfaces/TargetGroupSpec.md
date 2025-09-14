@@ -6,7 +6,7 @@
 
 # Interface: TargetGroupSpec
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8695
+Defined in: src/generated/nebius/vpc/v1/index.ts:8696
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8695
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8697
+Defined in: src/generated/nebius/vpc/v1/index.ts:8698
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8697
 
 > **$type**: `"nebius.vpc.v1.TargetGroupSpec"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8696
+Defined in: src/generated/nebius/vpc/v1/index.ts:8697
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8696
 
 > **targets**: [`Target`](Target.md)[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8702
+Defined in: src/generated/nebius/vpc/v1/index.ts:8703
 
 Targets of the TargetGroup

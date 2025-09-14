@@ -8,4 +8,4 @@
 
 > **DeleteSubnetRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteSubnetRequest`](../interfaces/DeleteSubnetRequest.md), `"nebius.vpc.v1.DeleteSubnetRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6944
+Defined in: src/generated/nebius/vpc/v1/index.ts:6945

@@ -6,7 +6,7 @@
 
 # Interface: DeleteInstanceRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6559
+Defined in: src/generated/nebius/compute/v1/index.ts:6560
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6559
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6561
+Defined in: src/generated/nebius/compute/v1/index.ts:6562
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6561
 
 > **$type**: `"nebius.compute.v1.DeleteInstanceRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6560
+Defined in: src/generated/nebius/compute/v1/index.ts:6561
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:6560
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:6562
+Defined in: src/generated/nebius/compute/v1/index.ts:6563

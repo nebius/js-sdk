@@ -8,4 +8,4 @@
 
 > **GetClusterRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), `"nebius.msp.spark.v1alpha1.GetClusterRequest"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:17
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:18

@@ -8,4 +8,4 @@
 
 > **ListAllocationsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListAllocationsResponse`](../interfaces/ListAllocationsResponse.md), `"nebius.vpc.v1alpha1.ListAllocationsResponse"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:347
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:348

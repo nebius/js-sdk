@@ -6,7 +6,7 @@
 
 # Interface: Target
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8788
+Defined in: src/generated/nebius/vpc/v1/index.ts:8789
 
 Represents the target which can receive traffic from a load balancer listener
 
@@ -16,7 +16,7 @@ Represents the target which can receive traffic from a load balancer listener
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8790
+Defined in: src/generated/nebius/vpc/v1/index.ts:8791
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8790
 
 > **$type**: `"nebius.vpc.v1.Target"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8789
+Defined in: src/generated/nebius/vpc/v1/index.ts:8790
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8789
 
 > `optional` **target**: `object`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8791
+Defined in: src/generated/nebius/vpc/v1/index.ts:8792
 
 #### $case
 

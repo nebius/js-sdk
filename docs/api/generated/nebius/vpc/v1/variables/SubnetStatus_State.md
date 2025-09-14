@@ -8,4 +8,4 @@
 
 > **SubnetStatus_State**: [`SubnetStatus_StateClass`](../type-aliases/SubnetStatus_StateClass.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7263
+Defined in: src/generated/nebius/vpc/v1/index.ts:7264

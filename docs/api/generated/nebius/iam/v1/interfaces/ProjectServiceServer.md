@@ -6,7 +6,7 @@
 
 # Interface: ProjectServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15914
+Defined in: src/generated/nebius/iam/v1/index.ts:15915
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15914
 
 > **create**: `handleUnaryCall`\<[`CreateProjectRequest`](CreateProjectRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15915
+Defined in: src/generated/nebius/iam/v1/index.ts:15916
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15915
 
 > **get**: `handleUnaryCall`\<[`GetProjectRequest`](GetProjectRequest.md), [`Container`](Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15916
+Defined in: src/generated/nebius/iam/v1/index.ts:15917
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15916
 
 > **getByName**: `handleUnaryCall`\<[`GetProjectByNameRequest`](GetProjectByNameRequest.md), [`Container`](Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15917
+Defined in: src/generated/nebius/iam/v1/index.ts:15918
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15917
 
 > **list**: `handleUnaryCall`\<[`ListProjectsRequest`](ListProjectsRequest.md), [`ListProjectsResponse`](ListProjectsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15918
+Defined in: src/generated/nebius/iam/v1/index.ts:15919
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:15918
 
 > **update**: `handleUnaryCall`\<[`UpdateProjectRequest`](UpdateProjectRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15919
+Defined in: src/generated/nebius/iam/v1/index.ts:15920

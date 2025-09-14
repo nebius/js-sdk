@@ -8,4 +8,4 @@
 
 > **Tenant**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Tenant`](../interfaces/Tenant.md), `"nebius.iam.v2.Tenant"`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2935
+Defined in: src/generated/nebius/iam/v2/index.ts:2936

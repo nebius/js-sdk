@@ -6,7 +6,7 @@
 
 # Interface: MaintenanceSpec
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:609
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:610
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:609
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:611
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:612
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:611
 
 > **$type**: `"nebius.maintenance.v1alpha1.MaintenanceSpec"`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:610
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:611
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:610
 
 > `optional` **scheduledAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:616
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:617
 
 Timestamp indicating when the maintenance operation is scheduled to run.

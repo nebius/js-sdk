@@ -6,7 +6,7 @@
 
 # Interface: GetImageLatestByFamilyRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5096
+Defined in: src/generated/nebius/compute/v1/index.ts:5097
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5096
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5098
+Defined in: src/generated/nebius/compute/v1/index.ts:5099
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5098
 
 > **$type**: `"nebius.compute.v1.GetImageLatestByFamilyRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5097
+Defined in: src/generated/nebius/compute/v1/index.ts:5098
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5097
 
 > **imageFamily**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5099
+Defined in: src/generated/nebius/compute/v1/index.ts:5100
 
 ---
 
@@ -38,6 +38,6 @@ Defined in: src/generated/nebius/compute/v1/index.ts:5099
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5104
+Defined in: src/generated/nebius/compute/v1/index.ts:5105
 
 default 'project-{region}public-images'

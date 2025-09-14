@@ -8,4 +8,4 @@
 
 > **PoolCidrStateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"AVAILABLE"` \| `"DISABLED"`\> & `PoolCidrStateValueMembers`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4707
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4708

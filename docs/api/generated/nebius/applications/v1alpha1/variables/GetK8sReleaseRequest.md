@@ -8,4 +8,4 @@
 
 > **GetK8sReleaseRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetK8sReleaseRequest`](../interfaces/GetK8sReleaseRequest.md), `"nebius.applications.v1alpha1.GetK8sReleaseRequest"`\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:15
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:16

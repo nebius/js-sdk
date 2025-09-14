@@ -6,7 +6,7 @@
 
 # Class: NodeService
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10984
+Defined in: src/generated/nebius/compute/v1/index.ts:10985
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10984
 
 > **new NodeService**(`sdk`): `NodeService`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11008
+Defined in: src/generated/nebius/compute/v1/index.ts:11009
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11008
 
 > **$type**: `"nebius.compute.v1.NodeService"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10985
+Defined in: src/generated/nebius/compute/v1/index.ts:10986
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10985
 
 > **setUnhealthy**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10998
+Defined in: src/generated/nebius/compute/v1/index.ts:10999
 
 SetUnhealthy marks the node underlying the Compute VM as unhealthy, which has the following effect:
 
@@ -72,7 +72,7 @@ for the VM's parent container. The permission is granted to the TSA inside the V
 
 > **setUnhealthy**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10999
+Defined in: src/generated/nebius/compute/v1/index.ts:11000
 
 ##### Parameters
 
@@ -92,7 +92,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10999
 
 > **setUnhealthy**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11000
+Defined in: src/generated/nebius/compute/v1/index.ts:11001
 
 ##### Parameters
 
@@ -116,7 +116,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11000
 
 > **setUnhealthy**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11014
+Defined in: src/generated/nebius/compute/v1/index.ts:11015
 
 SetUnhealthy marks the node underlying the Compute VM as unhealthy, which has the following effect:
 
@@ -142,7 +142,7 @@ for the VM's parent container. The permission is granted to the TSA inside the V
 
 > **setUnhealthy**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11015
+Defined in: src/generated/nebius/compute/v1/index.ts:11016
 
 SetUnhealthy marks the node underlying the Compute VM as unhealthy, which has the following effect:
 
@@ -172,7 +172,7 @@ for the VM's parent container. The permission is granted to the TSA inside the V
 
 > **setUnhealthy**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`NodeSetUnhealthyRequest`](../interfaces/NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](../interfaces/NodeSetUnhealthyResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11016
+Defined in: src/generated/nebius/compute/v1/index.ts:11017
 
 SetUnhealthy marks the node underlying the Compute VM as unhealthy, which has the following effect:
 

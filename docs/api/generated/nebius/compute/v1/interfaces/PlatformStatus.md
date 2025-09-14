@@ -6,7 +6,7 @@
 
 # Interface: PlatformStatus
 
-Defined in: src/generated/nebius/compute/v1/index.ts:12016
+Defined in: src/generated/nebius/compute/v1/index.ts:12017
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:12016
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:12018
+Defined in: src/generated/nebius/compute/v1/index.ts:12019
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:12018
 
 > **$type**: `"nebius.compute.v1.PlatformStatus"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:12017
+Defined in: src/generated/nebius/compute/v1/index.ts:12018
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:12017
 
 > **allowedForPreemptibles**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:12019
+Defined in: src/generated/nebius/compute/v1/index.ts:12020

@@ -8,4 +8,4 @@
 
 > **NetworkInterfaceAssignment**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkInterfaceAssignment`](../interfaces/NetworkInterfaceAssignment.md), `"nebius.vpc.v1alpha1.NetworkInterfaceAssignment"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2057
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2058

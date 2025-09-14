@@ -8,4 +8,4 @@
 
 > **PublicEndpointSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PublicEndpointSpec`](../interfaces/PublicEndpointSpec.md), `"nebius.mk8s.v1.PublicEndpointSpec"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1431
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1702

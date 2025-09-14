@@ -6,7 +6,7 @@
 
 # Interface: NotEnoughResources_Violation
 
-Defined in: src/generated/nebius/common/v1/index.ts:2138
+Defined in: src/generated/nebius/common/v1/index.ts:2139
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2138
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2140
+Defined in: src/generated/nebius/common/v1/index.ts:2141
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2140
 
 > **$type**: `"nebius.common.v1.NotEnoughResources.Violation"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2139
+Defined in: src/generated/nebius/common/v1/index.ts:2140
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2139
 
 > **message**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2152
+Defined in: src/generated/nebius/common/v1/index.ts:2153
 
 A description of how the resource is insufficient.
 
@@ -40,7 +40,7 @@ A description of how the resource is insufficient.
 
 > **requested**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2157
+Defined in: src/generated/nebius/common/v1/index.ts:2158
 
 Requested value.
 
@@ -50,7 +50,7 @@ Requested value.
 
 > **resourceType**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2147
+Defined in: src/generated/nebius/common/v1/index.ts:2148
 
 The type of resource that is insufficient.
 This field is populated when it is possible to determine the lacking resource type.

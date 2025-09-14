@@ -8,4 +8,4 @@
 
 > **ImageSpec_CPUArchitecture**: [`ImageSpec_CPUArchitectureClass`](../type-aliases/ImageSpec_CPUArchitectureClass.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5643
+Defined in: src/generated/nebius/compute/v1/index.ts:5644

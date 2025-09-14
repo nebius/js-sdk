@@ -6,7 +6,7 @@
 
 # Interface: NetworkServiceServer
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3554
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3555
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3554
 
 > **get**: `handleUnaryCall`\<[`GetNetworkRequest`](GetNetworkRequest.md), [`Network`](Network.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3555
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3556
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3555
 
 > **getByName**: `handleUnaryCall`\<[`GetNetworkByNameRequest`](GetNetworkByNameRequest.md), [`Network`](Network.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3556
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3557
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3556
 
 > **list**: `handleUnaryCall`\<[`ListNetworksRequest`](ListNetworksRequest.md), [`ListNetworksResponse`](ListNetworksResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3557
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3558

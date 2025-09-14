@@ -8,4 +8,4 @@
 
 > **UpdateTargetGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), `"nebius.vpc.v1.UpdateTargetGroupRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8288
+Defined in: src/generated/nebius/vpc/v1/index.ts:8289

@@ -6,7 +6,7 @@
 
 # Interface: NodeGroup
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4152
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4423
 
 NodeGroup represents Kubernetes node pool
 
@@ -16,7 +16,7 @@ NodeGroup represents Kubernetes node pool
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4154
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4425
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4154
 
 > **$type**: `"nebius.mk8s.v1alpha1.NodeGroup"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4153
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4424
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4153
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4159
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4430
 
 the parent_id is an ID of Cluster
 
@@ -42,7 +42,7 @@ the parent_id is an ID of Cluster
 
 > `optional` **spec**: [`NodeGroupSpec`](NodeGroupSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4160
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4431
 
 ---
 
@@ -50,4 +50,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4160
 
 > `optional` **status**: [`NodeGroupStatus`](NodeGroupStatus.md)
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4161
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4432

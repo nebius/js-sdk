@@ -8,4 +8,4 @@
 
 > **GroupMemberKind_KindClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"KIND_UNSPECIFIED"` \| `"ORDINARY_TENANT_USER_ACCOUNT"` \| `"INVITED_TENANT_USER_ACCOUNT"` \| `"SERVICE_ACCOUNT"`\> & `GroupMemberKind_KindValueMembers`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10964
+Defined in: src/generated/nebius/iam/v1/index.ts:10965

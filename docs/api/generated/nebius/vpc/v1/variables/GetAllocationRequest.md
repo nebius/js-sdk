@@ -8,4 +8,4 @@
 
 > **GetAllocationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetAllocationRequest`](../interfaces/GetAllocationRequest.md), `"nebius.vpc.v1.GetAllocationRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:15
+Defined in: src/generated/nebius/vpc/v1/index.ts:16

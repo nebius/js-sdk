@@ -8,7 +8,7 @@
 
 > **FilesystemServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`FilesystemServiceBaseClient`](../interfaces/FilesystemServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2706
+Defined in: src/generated/nebius/compute/v1/index.ts:2707
 
 ## Type Declaration
 

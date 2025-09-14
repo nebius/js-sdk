@@ -6,7 +6,7 @@
 
 # Interface: TransferSpec_StopConditionAfterOneIteration
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2664
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2665
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2664
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2666
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2667
 
 ---
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2666
 
 > **$type**: `"nebius.storage.v1alpha1.TransferSpec.StopConditionAfterOneIteration"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2665
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2666

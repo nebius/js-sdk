@@ -6,7 +6,7 @@
 
 # Interface: GetClusterByNameRequest
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:106
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:107
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:106
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:108
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:109
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:108
 
 > **$type**: `"nebius.msp.mlflow.v1alpha1.GetClusterByNameRequest"`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:107
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:108
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:107
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:118
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:119
 
 Name of the cluster.
 
@@ -40,6 +40,6 @@ Name of the cluster.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:113
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:114
 
 Identifier of IAM container to get cluster from.

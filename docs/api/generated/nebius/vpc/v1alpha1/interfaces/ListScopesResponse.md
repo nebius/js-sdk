@@ -6,7 +6,7 @@
 
 # Interface: ListScopesResponse
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5782
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5783
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5782
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5784
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5785
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5784
 
 > **$type**: `"nebius.vpc.v1alpha1.ListScopesResponse"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5783
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5784
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5783
 
 > **items**: [`Scope`](Scope.md)[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5785
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5786
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5785
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5786
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5787

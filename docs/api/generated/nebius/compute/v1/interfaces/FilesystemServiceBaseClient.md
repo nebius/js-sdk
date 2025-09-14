@@ -6,7 +6,7 @@
 
 # Interface: FilesystemServiceBaseClient
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2706
+Defined in: src/generated/nebius/compute/v1/index.ts:2707
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2710
+Defined in: src/generated/nebius/compute/v1/index.ts:2711
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2710
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2712
+Defined in: src/generated/nebius/compute/v1/index.ts:2713
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2712
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2707
+Defined in: src/generated/nebius/compute/v1/index.ts:2708
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2707
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2708
+Defined in: src/generated/nebius/compute/v1/index.ts:2709
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2709
+Defined in: src/generated/nebius/compute/v1/index.ts:2710
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2709
 
 > **listOperationsByParent**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2713
+Defined in: src/generated/nebius/compute/v1/index.ts:2714
 
 #### Parameters
 
@@ -814,7 +814,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2711
+Defined in: src/generated/nebius/compute/v1/index.ts:2712
 
 #### Parameters
 

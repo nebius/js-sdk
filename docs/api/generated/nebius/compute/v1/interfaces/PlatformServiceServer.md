@@ -6,7 +6,7 @@
 
 # Interface: PlatformServiceServer
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11416
+Defined in: src/generated/nebius/compute/v1/index.ts:11417
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11416
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](Platform.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11417
+Defined in: src/generated/nebius/compute/v1/index.ts:11418
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11417
 
 > **list**: `handleUnaryCall`\<[`ListPlatformsRequest`](ListPlatformsRequest.md), [`ListPlatformsResponse`](ListPlatformsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11418
+Defined in: src/generated/nebius/compute/v1/index.ts:11419

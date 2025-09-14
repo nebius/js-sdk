@@ -8,4 +8,4 @@
 
 > **AuthPublicKeyStatus_State**: [`AuthPublicKeyStatus_StateClass`](../type-aliases/AuthPublicKeyStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4944
+Defined in: src/generated/nebius/iam/v1/index.ts:4945

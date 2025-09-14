@@ -8,4 +8,4 @@
 
 > **ListGroupsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListGroupsRequest`](../interfaces/ListGroupsRequest.md), `"nebius.iam.v1.ListGroupsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11982
+Defined in: src/generated/nebius/iam/v1/index.ts:11983

@@ -8,6 +8,6 @@
 
 > **PoolStatus_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"DELETING"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5411
+Defined in: src/generated/nebius/vpc/v1/index.ts:5412
 
 Possible states of the Pool.

@@ -6,7 +6,7 @@
 
 # Interface: ListAllocationsRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:204
+Defined in: src/generated/nebius/vpc/v1/index.ts:205
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:204
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:206
+Defined in: src/generated/nebius/vpc/v1/index.ts:207
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:206
 
 > **$type**: `"nebius.vpc.v1.ListAllocationsRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:205
+Defined in: src/generated/nebius/vpc/v1/index.ts:206
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:205
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:208
+Defined in: src/generated/nebius/vpc/v1/index.ts:209
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:208
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:209
+Defined in: src/generated/nebius/vpc/v1/index.ts:210
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:209
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:207
+Defined in: src/generated/nebius/vpc/v1/index.ts:208

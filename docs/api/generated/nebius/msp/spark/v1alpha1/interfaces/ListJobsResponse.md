@@ -6,7 +6,7 @@
 
 # Interface: ListJobsResponse
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2096
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2119
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2096
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2098
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2121
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2098
 
 > **$type**: `"nebius.msp.spark.v1alpha1.ListJobsResponse"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2097
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2120
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2097
 
 > **items**: [`Job`](Job.md)[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2103
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2126
 
 List of jobs.
 
@@ -40,6 +40,6 @@ List of jobs.
 
 > `optional` **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2108
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2131
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

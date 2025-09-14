@@ -6,7 +6,7 @@
 
 # Interface: DeleteTransferRequest
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:741
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:742
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:741
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:743
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:744
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:743
 
 > **$type**: `"nebius.storage.v1alpha1.DeleteTransferRequest"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:742
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:743
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:742
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:744
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:745
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:744
 
 > **resourceVersion**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:745
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:746

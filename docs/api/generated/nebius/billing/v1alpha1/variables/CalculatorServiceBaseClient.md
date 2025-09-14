@@ -8,7 +8,7 @@
 
 > **CalculatorServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`CalculatorServiceBaseClient`](../interfaces/CalculatorServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:531
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:532
 
 ## Type Declaration
 

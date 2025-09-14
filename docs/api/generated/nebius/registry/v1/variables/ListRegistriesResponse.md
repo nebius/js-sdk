@@ -8,4 +8,4 @@
 
 > **ListRegistriesResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md), `"nebius.registry.v1.ListRegistriesResponse"`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1065
+Defined in: src/generated/nebius/registry/v1/index.ts:1066

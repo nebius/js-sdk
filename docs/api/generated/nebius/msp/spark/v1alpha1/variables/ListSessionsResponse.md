@@ -8,4 +8,4 @@
 
 > **ListSessionsResponse**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListSessionsResponse`](../interfaces/ListSessionsResponse.md), `"nebius.msp.spark.v1alpha1.ListSessionsResponse"`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4200
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4245

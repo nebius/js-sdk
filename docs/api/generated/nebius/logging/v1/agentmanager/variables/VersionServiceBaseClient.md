@@ -8,7 +8,7 @@
 
 > **VersionServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`VersionServiceBaseClient`](../interfaces/VersionServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1765
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1766
 
 ## Type Declaration
 

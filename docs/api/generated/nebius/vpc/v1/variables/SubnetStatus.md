@@ -8,4 +8,4 @@
 
 > **SubnetStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`SubnetStatus`](../interfaces/SubnetStatus.md), `"nebius.vpc.v1.SubnetStatus"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8070
+Defined in: src/generated/nebius/vpc/v1/index.ts:8071

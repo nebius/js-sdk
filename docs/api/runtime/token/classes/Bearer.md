@@ -6,12 +6,13 @@
 
 # Abstract Class: Bearer
 
-Defined in: [src/runtime/token.ts:98](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L98)
+Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L109)
 
 ## Extended by
 
 - [`NamedBearer`](NamedBearer.md)
 - [`ExchangeableBearer`](../exchangeable/classes/ExchangeableBearer.md)
+- [`FederatedCredentialsBearer`](../federated_credentials/classes/FederatedCredentialsBearer.md)
 - [`FederationAccountBearer`](../federation_account/classes/FederationAccountBearer.md)
 - [`FileBearer`](../file/classes/FileBearer.md)
 - [`RenewableBearer`](../renewable/classes/RenewableBearer.md)
@@ -32,6 +33,14 @@ Defined in: [src/runtime/token.ts:98](https://github.com/nebius/nodejs-sdk/blob/
 
 `Bearer`
 
+## Properties
+
+### $type
+
+> `abstract` `readonly` **$type**: `string`
+
+Defined in: [src/runtime/token.ts:110](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L110)
+
 ## Accessors
 
 ### name
@@ -40,7 +49,7 @@ Defined in: [src/runtime/token.ts:98](https://github.com/nebius/nodejs-sdk/blob/
 
 > **get** **name**(): `undefined` \| `string`
 
-Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L101)
+Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L113)
 
 ##### Returns
 
@@ -54,7 +63,7 @@ Defined in: [src/runtime/token.ts:101](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| `Bearer`
 
-Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L105)
+Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L117)
 
 ##### Returns
 
@@ -66,7 +75,7 @@ Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob
 
 > **close**(`_graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L109)
+Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L121)
 
 #### Parameters
 
@@ -84,7 +93,7 @@ Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob
 
 > `abstract` **receiver**(): [`Receiver`](Receiver.md)
 
-Defined in: [src/runtime/token.ts:99](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/token.ts#L99)
+Defined in: [src/runtime/token.ts:111](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L111)
 
 #### Returns
 

@@ -8,4 +8,4 @@
 
 > **IPv4PrivateNetworkPools**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`IPv4PrivateNetworkPools`](../interfaces/IPv4PrivateNetworkPools.md), `"nebius.vpc.v1.IPv4PrivateNetworkPools"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:3838
+Defined in: src/generated/nebius/vpc/v1/index.ts:3839

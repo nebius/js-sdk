@@ -6,7 +6,7 @@
 
 # Interface: DiskServiceServer
 
-Defined in: src/generated/nebius/compute/v1/index.ts:729
+Defined in: src/generated/nebius/compute/v1/index.ts:730
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:729
 
 > **create**: `handleUnaryCall`\<[`CreateDiskRequest`](CreateDiskRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:733
+Defined in: src/generated/nebius/compute/v1/index.ts:734
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:733
 
 > **delete**: `handleUnaryCall`\<[`DeleteDiskRequest`](DeleteDiskRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:735
+Defined in: src/generated/nebius/compute/v1/index.ts:736
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:735
 
 > **get**: `handleUnaryCall`\<[`GetDiskRequest`](GetDiskRequest.md), [`Disk`](Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:730
+Defined in: src/generated/nebius/compute/v1/index.ts:731
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:730
 
 > **getByName**: `handleUnaryCall`\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Disk`](Disk.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:731
+Defined in: src/generated/nebius/compute/v1/index.ts:732
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:731
 
 > **list**: `handleUnaryCall`\<[`ListDisksRequest`](ListDisksRequest.md), [`ListDisksResponse`](ListDisksResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:732
+Defined in: src/generated/nebius/compute/v1/index.ts:733
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:732
 
 > **listOperationsByParent**: `handleUnaryCall`\<[`ListOperationsByParentRequest`](ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:736
+Defined in: src/generated/nebius/compute/v1/index.ts:737
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:736
 
 > **update**: `handleUnaryCall`\<[`UpdateDiskRequest`](UpdateDiskRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:734
+Defined in: src/generated/nebius/compute/v1/index.ts:735

@@ -6,7 +6,7 @@
 
 # Interface: ResourceGroupCost
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:891
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:892
 
 Cost information for a group of resources.
 
@@ -16,7 +16,7 @@ Cost information for a group of resources.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:893
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:894
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:893
 
 > **$type**: `"nebius.billing.v1alpha1.ResourceGroupCost"`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:892
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:893
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:892
 
 > `optional` **costType**: `object`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:894
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:895
 
 #### $case
 

@@ -6,7 +6,7 @@
 
 # Interface: GetVersionResponse
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1287
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1288
 
 Response message for GetVersion RPC containing required action for the agent.
 
@@ -16,7 +16,7 @@ Response message for GetVersion RPC containing required action for the agent.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1289
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1290
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1289
 
 > **$type**: `"nebius.logging.agentmanager.v1.GetVersionResponse"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1288
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1289
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1288
 
 > **action**: [`Action`](../type-aliases/Action.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1294
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1295
 
 Required action for the agent to take.
 
@@ -42,6 +42,6 @@ Required action for the agent to take.
 
 > `optional` **response**: \{ `$case`: `"nop"`; `nop`: [`NopActionParams`](NopActionParams.md); \} \| \{ `$case`: `"update"`; `update`: [`UpdateActionParams`](UpdateActionParams.md); \} \| \{ `$case`: `"restart"`; `restart`: [`RestartActionParams`](RestartActionParams.md); \}
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1299
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1300
 
 Parameters specific to the required action.

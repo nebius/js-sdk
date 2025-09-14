@@ -8,4 +8,4 @@
 
 > **ListBackupsByClusterRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), `"nebius.msp.postgresql.v1alpha1.ListBackupsByClusterRequest"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:220
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:221

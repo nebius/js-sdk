@@ -8,4 +8,4 @@
 
 > **PoolAssignment**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PoolAssignment`](../interfaces/PoolAssignment.md), `"nebius.vpc.v1.PoolAssignment"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6071
+Defined in: src/generated/nebius/vpc/v1/index.ts:6072

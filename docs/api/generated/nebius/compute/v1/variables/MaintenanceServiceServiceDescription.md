@@ -8,7 +8,7 @@
 
 > **MaintenanceServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9650
+Defined in: src/generated/nebius/compute/v1/index.ts:9651
 
 ## Type Declaration
 

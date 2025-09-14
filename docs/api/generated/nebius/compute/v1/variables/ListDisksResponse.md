@@ -8,4 +8,4 @@
 
 > **ListDisksResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListDisksResponse`](../interfaces/ListDisksResponse.md), `"nebius.compute.v1.ListDisksResponse"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:558
+Defined in: src/generated/nebius/compute/v1/index.ts:559

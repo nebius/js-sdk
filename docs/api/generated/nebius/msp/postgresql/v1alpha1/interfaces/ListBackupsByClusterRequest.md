@@ -6,7 +6,7 @@
 
 # Interface: ListBackupsByClusterRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:220
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:221
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:220
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:222
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:223
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:222
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ListBackupsByClusterRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:221
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:222
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:221
 
 > **clusterId**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:227
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:228
 
 ID of the PostgreSQL cluster to list backups from.

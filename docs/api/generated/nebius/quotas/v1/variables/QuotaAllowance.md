@@ -8,4 +8,4 @@
 
 > **QuotaAllowance**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`QuotaAllowance`](../interfaces/QuotaAllowance.md), `"nebius.quotas.v1.QuotaAllowance"`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:1083
+Defined in: src/generated/nebius/quotas/v1/index.ts:1095

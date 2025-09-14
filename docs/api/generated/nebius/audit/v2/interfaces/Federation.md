@@ -6,7 +6,7 @@
 
 # Interface: Federation
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1289
+Defined in: src/generated/nebius/audit/v2/index.ts:1290
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1289
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1291
+Defined in: src/generated/nebius/audit/v2/index.ts:1292
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1291
 
 > **$type**: `"nebius.audit.v2.Federation"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1290
+Defined in: src/generated/nebius/audit/v2/index.ts:1291
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1290
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1296
+Defined in: src/generated/nebius/audit/v2/index.ts:1297
 
 Unique identifier of the federation.
 
@@ -40,6 +40,6 @@ Unique identifier of the federation.
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1301
+Defined in: src/generated/nebius/audit/v2/index.ts:1302
 
 Human-readable name of the federation.

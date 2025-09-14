@@ -6,7 +6,7 @@
 
 # Interface: ListClustersResponse
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:366
+Defined in: src/generated/nebius/mk8s/v1/index.ts:367
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:366
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:368
+Defined in: src/generated/nebius/mk8s/v1/index.ts:369
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:368
 
 > **$type**: `"nebius.mk8s.v1.ListClustersResponse"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:367
+Defined in: src/generated/nebius/mk8s/v1/index.ts:368
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:367
 
 > **items**: [`Cluster`](Cluster.md)[]
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:369
+Defined in: src/generated/nebius/mk8s/v1/index.ts:370
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:369
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:370
+Defined in: src/generated/nebius/mk8s/v1/index.ts:371

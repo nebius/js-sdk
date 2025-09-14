@@ -6,7 +6,7 @@
 
 # Interface: Scope
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6112
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6113
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6112
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6114
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6115
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6114
 
 > **$type**: `"nebius.vpc.v1alpha1.Scope"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6113
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6114
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6113
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6120
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6121
 
 Metadata associated with the Scope.
 `metadata.parent_id` represents the parent IAM container.
@@ -41,7 +41,7 @@ Metadata associated with the Scope.
 
 > `optional` **spec**: [`ScopeSpec`](ScopeSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6125
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6126
 
 Specification of the Scope.
 
@@ -51,6 +51,6 @@ Specification of the Scope.
 
 > `optional` **status**: [`ScopeStatus`](ScopeStatus.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6130
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6131
 
 Status information for the Scope.

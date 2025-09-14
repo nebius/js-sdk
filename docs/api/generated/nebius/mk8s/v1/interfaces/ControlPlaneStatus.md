@@ -6,7 +6,7 @@
 
 # Interface: ControlPlaneStatus
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1721
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1992
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1721
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1723
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1994
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1723
 
 > **$type**: `"nebius.mk8s.v1.ControlPlaneStatus"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1722
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1993
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1722
 
 > `optional` **auth**: [`ControlPlaneStatusAuth`](ControlPlaneStatusAuth.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1738
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2009
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1738
 
 > `optional` **endpoints**: [`ControlPlaneStatusEndpoints`](ControlPlaneStatusEndpoints.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1732
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2003
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1732
 
 > **etcdClusterSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1737
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2008
 
 Number of instances in etcd cluster.
 
@@ -56,7 +56,7 @@ Number of instances in etcd cluster.
 
 > **version**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1731
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2002
 
 Actual Kubernetes and configuration version.
 Version have format `<major>.<minor>.<patch>-nebius-cp.<infra_version>` like "1.30.0-nebius-cp.3".

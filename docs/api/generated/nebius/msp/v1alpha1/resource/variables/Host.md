@@ -8,4 +8,4 @@
 
 > **Host**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Host`](../interfaces/Host.md), `"nebius.msp.v1alpha1.resource.Host"`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:950
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:951

@@ -8,7 +8,7 @@
 
 > **MaintenanceServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`MaintenanceServiceBaseClient`](../interfaces/MaintenanceServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:309
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:310
 
 ## Type Declaration
 

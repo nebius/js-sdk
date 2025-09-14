@@ -8,4 +8,4 @@
 
 > **JobResult**: [`JobResultClass`](../type-aliases/JobResultClass.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2128
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2129

@@ -6,7 +6,7 @@
 
 # Interface: ServiceAccountProfile
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14965
+Defined in: src/generated/nebius/iam/v1/index.ts:14966
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14965
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14967
+Defined in: src/generated/nebius/iam/v1/index.ts:14968
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14967
 
 > **$type**: `"nebius.iam.v1.ServiceAccountProfile"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14966
+Defined in: src/generated/nebius/iam/v1/index.ts:14967
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14966
 
 > `optional` **info**: [`ServiceAccount`](ServiceAccount.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14968
+Defined in: src/generated/nebius/iam/v1/index.ts:14969

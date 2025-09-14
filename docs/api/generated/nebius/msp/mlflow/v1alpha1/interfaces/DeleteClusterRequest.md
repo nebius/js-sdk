@@ -6,7 +6,7 @@
 
 # Interface: DeleteClusterRequest
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:585
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:586
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:585
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:587
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:588
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:587
 
 > **$type**: `"nebius.msp.mlflow.v1alpha1.DeleteClusterRequest"`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:586
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:587
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:586
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:592
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:593
 
 ID of the cluster to delete.

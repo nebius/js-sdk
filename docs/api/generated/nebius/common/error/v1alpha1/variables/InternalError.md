@@ -8,4 +8,4 @@
 
 > **InternalError**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`InternalError`](../interfaces/InternalError.md), `"nebius.common.error.v1alpha1.InternalError"`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:985
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:986

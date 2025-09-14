@@ -8,4 +8,4 @@
 
 > **DiskStatus_SourceImageCPUArchitecture**: [`DiskStatus_SourceImageCPUArchitectureClass`](../type-aliases/DiskStatus_SourceImageCPUArchitectureClass.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:993
+Defined in: src/generated/nebius/compute/v1/index.ts:994

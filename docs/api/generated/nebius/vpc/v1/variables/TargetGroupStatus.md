@@ -8,4 +8,4 @@
 
 > **TargetGroupStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TargetGroupStatus`](../interfaces/TargetGroupStatus.md), `"nebius.vpc.v1.TargetGroupStatus"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9016
+Defined in: src/generated/nebius/vpc/v1/index.ts:9017

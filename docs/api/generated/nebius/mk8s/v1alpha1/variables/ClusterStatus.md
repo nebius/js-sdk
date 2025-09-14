@@ -8,4 +8,4 @@
 
 > **ClusterStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ClusterStatus`](../interfaces/ClusterStatus.md), `"nebius.mk8s.v1alpha1.ClusterStatus"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1669
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1940

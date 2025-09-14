@@ -6,7 +6,7 @@
 
 # Interface: TemplateSpec
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3808
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3809
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3808
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3810
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3811
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3810
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.TemplateSpec"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3809
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3810
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3809
 
 > `optional` **disk**: [`DiskSpec`](../../../v1alpha1/resource/interfaces/DiskSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3817
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3818
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3817
 
 > `optional` **hosts**: [`HostSpec`](../../../v1alpha1/resource/interfaces/HostSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3816
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3817
 
 ---
 
@@ -46,6 +46,6 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3816
 
 > `optional` **resources**: [`ResourcesSpec`](../../../v1alpha1/resource/interfaces/ResourcesSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3815
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3816
 
 reduced msp.v1alpha1.resource.TemplateSpec

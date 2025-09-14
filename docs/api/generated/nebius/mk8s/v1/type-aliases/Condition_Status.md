@@ -8,4 +8,4 @@
 
 > **Condition_Status** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNKNOWN"` \| `"TRUE"` \| `"FALSE"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2140
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2411

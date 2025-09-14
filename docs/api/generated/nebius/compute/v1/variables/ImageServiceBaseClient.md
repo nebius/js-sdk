@@ -8,7 +8,7 @@
 
 > **ImageServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ImageServiceBaseClient`](../interfaces/ImageServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/compute/v1/index.ts:5514
+Defined in: src/generated/nebius/compute/v1/index.ts:5515
 
 ## Type Declaration
 

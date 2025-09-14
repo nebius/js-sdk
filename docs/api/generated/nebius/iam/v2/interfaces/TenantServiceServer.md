@@ -6,7 +6,7 @@
 
 # Interface: TenantServiceServer
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2812
+Defined in: src/generated/nebius/iam/v2/index.ts:2813
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2812
 
 > **get**: `handleUnaryCall`\<[`GetTenantRequest`](GetTenantRequest.md), [`Tenant`](Tenant.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2813
+Defined in: src/generated/nebius/iam/v2/index.ts:2814
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2813
 
 > **getByName**: `handleUnaryCall`\<[`GetTenantByNameRequest`](GetTenantByNameRequest.md), [`Tenant`](Tenant.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2814
+Defined in: src/generated/nebius/iam/v2/index.ts:2815
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2814
 
 > **list**: `handleUnaryCall`\<[`ListTenantsRequest`](ListTenantsRequest.md), [`ListTenantsResponse`](ListTenantsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2815
+Defined in: src/generated/nebius/iam/v2/index.ts:2816
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2815
 
 > **update**: `handleUnaryCall`\<[`UpdateTenantRequest`](UpdateTenantRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2816
+Defined in: src/generated/nebius/iam/v2/index.ts:2817

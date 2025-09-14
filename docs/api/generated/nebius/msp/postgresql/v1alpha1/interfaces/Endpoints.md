@@ -6,7 +6,7 @@
 
 # Interface: Endpoints
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3184
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3185
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3184
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3186
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3187
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3186
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.Endpoints"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3185
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3186
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3185
 
 > **privateReadOnly**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3196
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3197
 
 Read only endpoint of the PostgreSQL cluster accessible from the private VPC.
 
@@ -40,7 +40,7 @@ Read only endpoint of the PostgreSQL cluster accessible from the private VPC.
 
 > **privateReadWrite**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3191
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3192
 
 Read write endpoint of the PostgreSQL cluster accessible from the private VPC.
 
@@ -50,7 +50,7 @@ Read write endpoint of the PostgreSQL cluster accessible from the private VPC.
 
 > **publicReadOnly**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3206
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3207
 
 Read only endpoint of the PostgreSQL cluster accessible from the internet.
 
@@ -60,6 +60,6 @@ Read only endpoint of the PostgreSQL cluster accessible from the internet.
 
 > **publicReadWrite**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3201
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3202
 
 Read write endpoint of the PostgreSQL cluster accessible from the internet.

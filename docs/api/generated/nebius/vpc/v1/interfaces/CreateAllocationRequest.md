@@ -6,7 +6,7 @@
 
 # Interface: CreateAllocationRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:554
+Defined in: src/generated/nebius/vpc/v1/index.ts:555
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:554
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:556
+Defined in: src/generated/nebius/vpc/v1/index.ts:557
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:556
 
 > **$type**: `"nebius.vpc.v1.CreateAllocationRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:555
+Defined in: src/generated/nebius/vpc/v1/index.ts:556
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:555
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:557
+Defined in: src/generated/nebius/vpc/v1/index.ts:558
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:557
 
 > `optional` **spec**: [`AllocationSpec`](AllocationSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:558
+Defined in: src/generated/nebius/vpc/v1/index.ts:559

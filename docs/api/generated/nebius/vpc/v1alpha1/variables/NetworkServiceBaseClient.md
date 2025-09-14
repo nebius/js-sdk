@@ -8,7 +8,7 @@
 
 > **NetworkServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`NetworkServiceBaseClient`](../interfaces/NetworkServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3560
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3561
 
 ## Type Declaration
 

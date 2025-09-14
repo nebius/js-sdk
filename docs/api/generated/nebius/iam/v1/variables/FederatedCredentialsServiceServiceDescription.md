@@ -8,7 +8,7 @@
 
 > **FederatedCredentialsServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6516
+Defined in: src/generated/nebius/iam/v1/index.ts:6517
 
 ## Type Declaration
 

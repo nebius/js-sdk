@@ -8,4 +8,4 @@
 
 > **DeleteAccessKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), `"nebius.iam.v1.DeleteAccessKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1135
+Defined in: src/generated/nebius/iam/v1/index.ts:1136

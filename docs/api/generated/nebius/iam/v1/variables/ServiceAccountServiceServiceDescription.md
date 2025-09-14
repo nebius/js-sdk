@@ -8,7 +8,7 @@
 
 > **ServiceAccountServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16809
+Defined in: src/generated/nebius/iam/v1/index.ts:16810
 
 ## Type Declaration
 

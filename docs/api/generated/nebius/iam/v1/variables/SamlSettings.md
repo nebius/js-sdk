@@ -8,4 +8,4 @@
 
 > **SamlSettings**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`SamlSettings`](../interfaces/SamlSettings.md), `"nebius.iam.v1.SamlSettings"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9610
+Defined in: src/generated/nebius/iam/v1/index.ts:9611

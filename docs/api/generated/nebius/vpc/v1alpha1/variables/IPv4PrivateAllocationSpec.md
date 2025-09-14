@@ -8,4 +8,4 @@
 
 > **IPv4PrivateAllocationSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`IPv4PrivateAllocationSpec`](../interfaces/IPv4PrivateAllocationSpec.md), `"nebius.vpc.v1alpha1.IPv4PrivateAllocationSpec"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1334
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1335

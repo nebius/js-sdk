@@ -6,7 +6,7 @@
 
 # Interface: MethodPySDKSettings
 
-Defined in: src/generated/nebius/index.ts:285
+Defined in: src/generated/nebius/index.ts:286
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/index.ts:285
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/index.ts:287
+Defined in: src/generated/nebius/index.ts:288
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/index.ts:287
 
 > **$type**: `"nebius.MethodPySDKSettings"`
 
-Defined in: src/generated/nebius/index.ts:286
+Defined in: src/generated/nebius/index.ts:287
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/index.ts:286
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/index.ts:288
+Defined in: src/generated/nebius/index.ts:289

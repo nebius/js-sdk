@@ -6,7 +6,7 @@
 
 # Interface: ArtifactServiceServer
 
-Defined in: src/generated/nebius/registry/v1/index.ts:462
+Defined in: src/generated/nebius/registry/v1/index.ts:463
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:462
 
 > **delete**: `handleUnaryCall`\<[`DeleteArtifactRequest`](DeleteArtifactRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:465
+Defined in: src/generated/nebius/registry/v1/index.ts:466
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:465
 
 > **get**: `handleUnaryCall`\<[`GetArtifactRequest`](GetArtifactRequest.md), [`Artifact`](Artifact.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:463
+Defined in: src/generated/nebius/registry/v1/index.ts:464
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:463
 
 > **list**: `handleUnaryCall`\<[`ListArtifactsRequest`](ListArtifactsRequest.md), [`ListArtifactsResponse`](ListArtifactsResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:464
+Defined in: src/generated/nebius/registry/v1/index.ts:465

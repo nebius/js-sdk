@@ -6,7 +6,7 @@
 
 # Interface: ListFilesystemsResponse
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2169
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2170
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2169
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2171
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2172
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2171
 
 > **$type**: `"nebius.compute.v1alpha1.ListFilesystemsResponse"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2170
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2171
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2170
 
 > **items**: [`Filesystem`](Filesystem.md)[]
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2172
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2173
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2172
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2173
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2174

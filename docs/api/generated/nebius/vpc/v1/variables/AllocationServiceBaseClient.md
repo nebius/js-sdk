@@ -8,7 +8,7 @@
 
 > **AllocationServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`AllocationServiceBaseClient`](../interfaces/AllocationServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:940
+Defined in: src/generated/nebius/vpc/v1/index.ts:941
 
 ## Type Declaration
 

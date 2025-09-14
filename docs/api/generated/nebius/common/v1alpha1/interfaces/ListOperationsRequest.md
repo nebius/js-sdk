@@ -6,7 +6,7 @@
 
 # ~~Interface: ListOperationsRequest~~
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:118
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:119
 
 ## Deprecated
 
@@ -18,7 +18,7 @@ Deprecated.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:120
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:121
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:120
 
 > **$type**: `"nebius.common.v1alpha1.ListOperationsRequest"`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:119
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:120
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:119
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:141
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:142
 
 Filter expression for the listing results. Optional.
 Filter expression format: TBD.
@@ -45,7 +45,7 @@ Filter expression format: TBD.
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:130
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:131
 
 Page size. [1...1000]. Optional, if not specified, a reasonable default will be chosen by the service.
 
@@ -55,7 +55,7 @@ Page size. [1...1000]. Optional, if not specified, a reasonable default will be 
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:135
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:136
 
 Listing continuation token. Empty to start listing from the first page.
 
@@ -65,6 +65,6 @@ Listing continuation token. Empty to start listing from the first page.
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:125
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:126
 
 ID of the Resource to list operations for.

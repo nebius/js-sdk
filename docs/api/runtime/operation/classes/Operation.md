@@ -6,7 +6,7 @@
 
 # Class: Operation\<TReq\>
 
-Defined in: [src/runtime/operation.ts:35](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L35)
+Defined in: [src/runtime/operation.ts:35](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L35)
 
 ## Type Parameters
 
@@ -14,13 +14,17 @@ Defined in: [src/runtime/operation.ts:35](https://github.com/nebius/nodejs-sdk/b
 
 `TReq`
 
+## Indexable
+
+\[`key`: `symbol`\]: () => `unknown`
+
 ## Constructors
 
 ### Constructor
 
-> **new Operation**\<`TReq`\>(`_op`, `service`): `Operation`\<`TReq`\>
+> **new Operation**\<`TReq`\>(`_op`, `service`, `logger`): `Operation`\<`TReq`\>
 
-Defined in: [src/runtime/operation.ts:36](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L36)
+Defined in: [src/runtime/operation.ts:38](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L38)
 
 #### Parameters
 
@@ -32,21 +36,41 @@ Defined in: [src/runtime/operation.ts:36](https://github.com/nebius/nodejs-sdk/b
 
 `OperationService`\<`TReq`\>
 
+##### logger
+
+[`Logger`](../../util/logging/classes/Logger.md)
+
 #### Returns
 
 `Operation`\<`TReq`\>
 
+## Properties
+
+### $type
+
+> `readonly` **$type**: `"nebius.sdk.Operation"` = `'nebius.sdk.Operation'`
+
+Defined in: [src/runtime/operation.ts:36](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L36)
+
+---
+
+### innerType
+
+> `readonly` **innerType**: `string`
+
+Defined in: [src/runtime/operation.ts:37](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L37)
+
 ## Methods
 
-### \[custom\]()
+### \[customJson\]()
 
-> **\[custom\]**(): `string`
+> **\[customJson\]**(): `unknown`
 
-Defined in: [src/runtime/operation.ts:46](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L46)
+Defined in: [src/runtime/operation.ts:59](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L59)
 
 #### Returns
 
-`string`
+`unknown`
 
 ---
 
@@ -54,7 +78,7 @@ Defined in: [src/runtime/operation.ts:46](https://github.com/nebius/nodejs-sdk/b
 
 > **createdAt**(): `undefined` \| [`Dayjs`](../../protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: [src/runtime/operation.ts:58](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L58)
+Defined in: [src/runtime/operation.ts:79](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L79)
 
 #### Returns
 
@@ -66,7 +90,7 @@ Defined in: [src/runtime/operation.ts:58](https://github.com/nebius/nodejs-sdk/b
 
 > **createdBy**(): `string`
 
-Defined in: [src/runtime/operation.ts:62](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L62)
+Defined in: [src/runtime/operation.ts:83](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L83)
 
 #### Returns
 
@@ -78,7 +102,7 @@ Defined in: [src/runtime/operation.ts:62](https://github.com/nebius/nodejs-sdk/b
 
 > **description**(): `string`
 
-Defined in: [src/runtime/operation.ts:54](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L54)
+Defined in: [src/runtime/operation.ts:75](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L75)
 
 #### Returns
 
@@ -90,7 +114,7 @@ Defined in: [src/runtime/operation.ts:54](https://github.com/nebius/nodejs-sdk/b
 
 > **done**(): `boolean`
 
-Defined in: [src/runtime/operation.ts:82](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L82)
+Defined in: [src/runtime/operation.ts:103](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L103)
 
 #### Returns
 
@@ -102,7 +126,7 @@ Defined in: [src/runtime/operation.ts:82](https://github.com/nebius/nodejs-sdk/b
 
 > **finishedAt**(): `undefined` \| [`Dayjs`](../../protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: [src/runtime/operation.ts:66](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L66)
+Defined in: [src/runtime/operation.ts:87](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L87)
 
 #### Returns
 
@@ -114,7 +138,7 @@ Defined in: [src/runtime/operation.ts:66](https://github.com/nebius/nodejs-sdk/b
 
 > **id**(): `string`
 
-Defined in: [src/runtime/operation.ts:50](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L50)
+Defined in: [src/runtime/operation.ts:71](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L71)
 
 #### Returns
 
@@ -126,7 +150,7 @@ Defined in: [src/runtime/operation.ts:50](https://github.com/nebius/nodejs-sdk/b
 
 > **raw**(): `GenericOperation`
 
-Defined in: [src/runtime/operation.ts:74](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L74)
+Defined in: [src/runtime/operation.ts:95](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L95)
 
 #### Returns
 
@@ -138,7 +162,7 @@ Defined in: [src/runtime/operation.ts:74](https://github.com/nebius/nodejs-sdk/b
 
 > **resourceId**(): `string`
 
-Defined in: [src/runtime/operation.ts:86](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L86)
+Defined in: [src/runtime/operation.ts:107](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L107)
 
 #### Returns
 
@@ -150,7 +174,7 @@ Defined in: [src/runtime/operation.ts:86](https://github.com/nebius/nodejs-sdk/b
 
 > **status**(): `undefined` \| `Status`
 
-Defined in: [src/runtime/operation.ts:78](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L78)
+Defined in: [src/runtime/operation.ts:99](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L99)
 
 #### Returns
 
@@ -162,7 +186,7 @@ Defined in: [src/runtime/operation.ts:78](https://github.com/nebius/nodejs-sdk/b
 
 > **successful**(): `boolean`
 
-Defined in: [src/runtime/operation.ts:70](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L70)
+Defined in: [src/runtime/operation.ts:91](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L91)
 
 #### Returns
 
@@ -174,7 +198,7 @@ Defined in: [src/runtime/operation.ts:70](https://github.com/nebius/nodejs-sdk/b
 
 > **toString**(): `string`
 
-Defined in: [src/runtime/operation.ts:42](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L42)
+Defined in: [src/runtime/operation.ts:52](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L52)
 
 #### Returns
 
@@ -186,7 +210,7 @@ Defined in: [src/runtime/operation.ts:42](https://github.com/nebius/nodejs-sdk/b
 
 > **update**(`metadata?`, `options?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/operation.ts:123](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L123)
+Defined in: [src/runtime/operation.ts:148](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L148)
 
 #### Parameters
 
@@ -208,7 +232,7 @@ Defined in: [src/runtime/operation.ts:123](https://github.com/nebius/nodejs-sdk/
 
 > **wait**(`intervalSec`, `metadata?`, `options?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/operation.ts:90](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/operation.ts#L90)
+Defined in: [src/runtime/operation.ts:111](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/operation.ts#L111)
 
 #### Parameters
 

@@ -6,7 +6,7 @@
 
 # Interface: NodeGroup
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3966
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4237
 
 NodeGroup represents Kubernetes node pool - set of worker machines having the same configuration.
 A Node is a Nebius Compute Instance created in Cluster.metadata.parent_id container, running kubelet
@@ -18,7 +18,7 @@ that registers in Kubernetes API and a Node object created.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3968
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4239
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3968
 
 > **$type**: `"nebius.mk8s.v1.NodeGroup"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3967
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4238
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3967
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3973
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4244
 
 The parent_id is an ID of Cluster
 
@@ -44,7 +44,7 @@ The parent_id is an ID of Cluster
 
 > `optional` **spec**: [`NodeGroupSpec`](NodeGroupSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3974
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4245
 
 ---
 
@@ -52,4 +52,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3974
 
 > `optional` **status**: [`NodeGroupStatus`](NodeGroupStatus.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3975
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4246

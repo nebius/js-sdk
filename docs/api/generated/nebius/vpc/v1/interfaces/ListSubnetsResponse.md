@@ -6,7 +6,7 @@
 
 # Interface: ListSubnetsResponse
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6616
+Defined in: src/generated/nebius/vpc/v1/index.ts:6617
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6616
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6618
+Defined in: src/generated/nebius/vpc/v1/index.ts:6619
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6618
 
 > **$type**: `"nebius.vpc.v1.ListSubnetsResponse"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6617
+Defined in: src/generated/nebius/vpc/v1/index.ts:6618
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6617
 
 > **items**: [`Subnet`](Subnet.md)[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6619
+Defined in: src/generated/nebius/vpc/v1/index.ts:6620
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6619
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6620
+Defined in: src/generated/nebius/vpc/v1/index.ts:6621

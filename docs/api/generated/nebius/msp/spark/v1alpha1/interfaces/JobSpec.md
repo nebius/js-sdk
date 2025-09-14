@@ -6,7 +6,7 @@
 
 # Interface: JobSpec
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2738
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2783
 
 Spark Job specification
 
@@ -16,7 +16,7 @@ Spark Job specification
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2740
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2785
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2740
 
 > **$type**: `"nebius.msp.spark.v1alpha1.JobSpec"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2739
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2784
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2739
 
 > **applicationArgs**: `string`[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2759
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2804
 
 Application args
 
@@ -42,7 +42,7 @@ Application args
 
 > **applicationFileUri**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2751
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2796
 
 S3 URI of main application file
 Example: s3a://mybucket/myapp.py
@@ -53,7 +53,7 @@ Example: s3a://mybucket/myapp.py
 
 > `optional` **description**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2745
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2790
 
 Description of the job.
 
@@ -63,7 +63,7 @@ Description of the job.
 
 > `optional` **driver**: [`DriverTemplateSpec`](DriverTemplateSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2752
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2797
 
 ---
 
@@ -71,7 +71,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2752
 
 > `optional` **executor**: [`ExecutorTemplateSpec`](ExecutorTemplateSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2753
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2798
 
 ---
 
@@ -79,7 +79,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2753
 
 > **fileUris**: `string`[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2764
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2809
 
 S3 URIs of files to be placed in executor working directory
 
@@ -89,7 +89,7 @@ S3 URIs of files to be placed in executor working directory
 
 > **jarUris**: `string`[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2769
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2814
 
 S3 URIs of Jars to be placed in classpaths of driver and executors for java applications
 
@@ -99,7 +99,7 @@ S3 URIs of Jars to be placed in classpaths of driver and executors for java appl
 
 > **packages**: `string`[]
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2774
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2819
 
 List of maven coordinates of jars to include on the driver and executor classpaths
 
@@ -109,7 +109,7 @@ List of maven coordinates of jars to include on the driver and executor classpat
 
 > `optional` **runtimeConfig**: \{ `$case`: `"python"`; `python`: [`PythonConfig`](PythonConfig.md); \} \| \{ `$case`: `"java"`; `java`: [`JavaConfig`](JavaConfig.md); \}
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2784
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2829
 
 Runtime-specific job config
 
@@ -119,7 +119,7 @@ Runtime-specific job config
 
 > **sparkConf**: `object`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2779
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2824
 
 Map of spark configuration parameters
 
@@ -133,4 +133,4 @@ Map of spark configuration parameters
 
 > **sparkVersion**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2754
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2799

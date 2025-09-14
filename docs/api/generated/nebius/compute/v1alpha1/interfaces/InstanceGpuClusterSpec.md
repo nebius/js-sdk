@@ -6,7 +6,7 @@
 
 # Interface: InstanceGpuClusterSpec
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7161
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7162
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7161
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7163
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7164
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7163
 
 > **$type**: `"nebius.compute.v1alpha1.InstanceGpuClusterSpec"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7162
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7163
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7162
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7164
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:7165

@@ -8,4 +8,4 @@
 
 > **EnumPySDKSettings**: [`MessageFns`](../../../runtime/protos/core/interfaces/MessageFns.md)\<[`EnumPySDKSettings`](../interfaces/EnumPySDKSettings.md), `"nebius.EnumPySDKSettings"`\>
 
-Defined in: src/generated/nebius/index.ts:625
+Defined in: src/generated/nebius/index.ts:626

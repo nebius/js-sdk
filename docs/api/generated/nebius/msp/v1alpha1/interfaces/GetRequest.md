@@ -6,7 +6,7 @@
 
 # Interface: GetRequest
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:197
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:198
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:197
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:199
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:200
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:199
 
 > **$type**: `"nebius.msp.v1alpha1.GetRequest"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:198
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:199
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/v1alpha1/index.ts:198
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:204
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:205
 
 ID of the entity to retrieve.

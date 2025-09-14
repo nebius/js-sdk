@@ -6,7 +6,7 @@
 
 # Interface: BadRequest
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:14
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:15
 
 The request is invalid.
 
@@ -16,7 +16,7 @@ The request is invalid.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:16
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:17
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:16
 
 > **$type**: `"nebius.common.error.v1alpha1.BadRequest"`
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:15
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:16
 
 ---
 
@@ -32,6 +32,6 @@ Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:15
 
 > **violations**: [`BadRequest_Violation`](BadRequest_Violation.md)[]
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:21
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:22
 
 Describes all violations.

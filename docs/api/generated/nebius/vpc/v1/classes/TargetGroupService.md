@@ -6,7 +6,7 @@
 
 # Class: TargetGroupService
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8438
+Defined in: src/generated/nebius/vpc/v1/index.ts:8439
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8438
 
 > **new TargetGroupService**(`sdk`): `TargetGroupService`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8453
+Defined in: src/generated/nebius/vpc/v1/index.ts:8454
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8453
 
 > **$type**: `"nebius.vpc.v1.TargetGroupService"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8439
+Defined in: src/generated/nebius/vpc/v1/index.ts:8440
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8439
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8440
+Defined in: src/generated/nebius/vpc/v1/index.ts:8441
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8440
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8441
+Defined in: src/generated/nebius/vpc/v1/index.ts:8442
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8441
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8442
+Defined in: src/generated/nebius/vpc/v1/index.ts:8443
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8442
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8463
+Defined in: src/generated/nebius/vpc/v1/index.ts:8464
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8463
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8464
+Defined in: src/generated/nebius/vpc/v1/index.ts:8465
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8464
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTargetGroupRequest`](../interfaces/GetTargetGroupRequest.md), [`TargetGroup`](../interfaces/TargetGroup.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8465
+Defined in: src/generated/nebius/vpc/v1/index.ts:8466
 
 ##### Parameters
 
@@ -168,7 +168,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8465
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8459
+Defined in: src/generated/nebius/vpc/v1/index.ts:8460
 
 #### Returns
 
@@ -182,7 +182,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8459
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8443
+Defined in: src/generated/nebius/vpc/v1/index.ts:8444
 
 ##### Parameters
 
@@ -198,7 +198,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8443
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8444
+Defined in: src/generated/nebius/vpc/v1/index.ts:8445
 
 ##### Parameters
 
@@ -218,7 +218,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8444
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8445
+Defined in: src/generated/nebius/vpc/v1/index.ts:8446
 
 ##### Parameters
 
@@ -242,7 +242,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8445
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8475
+Defined in: src/generated/nebius/vpc/v1/index.ts:8476
 
 ##### Parameters
 
@@ -258,7 +258,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8475
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8476
+Defined in: src/generated/nebius/vpc/v1/index.ts:8477
 
 ##### Parameters
 
@@ -278,7 +278,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8476
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTargetGroupRequest`](../interfaces/UpdateTargetGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8477
+Defined in: src/generated/nebius/vpc/v1/index.ts:8478
 
 ##### Parameters
 

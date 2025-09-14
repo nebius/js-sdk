@@ -6,7 +6,7 @@
 
 # Interface: Condition_TransitionError
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2389
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2660
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2389
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2391
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2662
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2391
 
 > **$type**: `"nebius.mk8s.v1.Condition.TransitionError"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2390
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2661
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2390
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2393
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2664
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2393
 
 > **reason**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2392
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2663

@@ -8,4 +8,4 @@
 
 > **PoolCidrState**: [`PoolCidrStateClass`](../type-aliases/PoolCidrStateClass.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4688
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4689

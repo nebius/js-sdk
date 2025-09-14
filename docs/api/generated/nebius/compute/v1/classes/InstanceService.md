@@ -6,7 +6,7 @@
 
 # Class: InstanceService
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7033
+Defined in: src/generated/nebius/compute/v1/index.ts:7034
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7033
 
 > **new InstanceService**(`sdk`): `InstanceService`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7106
+Defined in: src/generated/nebius/compute/v1/index.ts:7107
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7106
 
 > **$type**: `"nebius.compute.v1.InstanceService"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7034
+Defined in: src/generated/nebius/compute/v1/index.ts:7035
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7034
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7061
+Defined in: src/generated/nebius/compute/v1/index.ts:7062
 
 Creates a new VM instance based on the provided specification.
 For details, see https://docs.nebius.com/compute/virtual-machines/manage
@@ -65,7 +65,7 @@ For details, see https://docs.nebius.com/compute/virtual-machines/manage
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7062
+Defined in: src/generated/nebius/compute/v1/index.ts:7063
 
 ##### Parameters
 
@@ -85,7 +85,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7062
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7063
+Defined in: src/generated/nebius/compute/v1/index.ts:7064
 
 ##### Parameters
 
@@ -109,7 +109,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7063
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7152
+Defined in: src/generated/nebius/compute/v1/index.ts:7153
 
 Creates a new VM instance based on the provided specification.
 For details, see https://docs.nebius.com/compute/virtual-machines/manage
@@ -128,7 +128,7 @@ For details, see https://docs.nebius.com/compute/virtual-machines/manage
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7153
+Defined in: src/generated/nebius/compute/v1/index.ts:7154
 
 Creates a new VM instance based on the provided specification.
 For details, see https://docs.nebius.com/compute/virtual-machines/manage
@@ -151,7 +151,7 @@ For details, see https://docs.nebius.com/compute/virtual-machines/manage
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7154
+Defined in: src/generated/nebius/compute/v1/index.ts:7155
 
 Creates a new VM instance based on the provided specification.
 For details, see https://docs.nebius.com/compute/virtual-machines/manage
@@ -182,7 +182,7 @@ For details, see https://docs.nebius.com/compute/virtual-machines/manage
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7075
+Defined in: src/generated/nebius/compute/v1/index.ts:7076
 
 Deletes a VM instance by its ID.
 
@@ -200,7 +200,7 @@ Deletes a VM instance by its ID.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7076
+Defined in: src/generated/nebius/compute/v1/index.ts:7077
 
 ##### Parameters
 
@@ -220,7 +220,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7076
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7077
+Defined in: src/generated/nebius/compute/v1/index.ts:7078
 
 ##### Parameters
 
@@ -244,7 +244,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7077
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7182
+Defined in: src/generated/nebius/compute/v1/index.ts:7183
 
 Deletes a VM instance by its ID.
 
@@ -262,7 +262,7 @@ Deletes a VM instance by its ID.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7183
+Defined in: src/generated/nebius/compute/v1/index.ts:7184
 
 Deletes a VM instance by its ID.
 
@@ -284,7 +284,7 @@ Deletes a VM instance by its ID.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7184
+Defined in: src/generated/nebius/compute/v1/index.ts:7185
 
 Deletes a VM instance by its ID.
 
@@ -314,7 +314,7 @@ Deletes a VM instance by its ID.
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7039
+Defined in: src/generated/nebius/compute/v1/index.ts:7040
 
 Retrieves detailed information about a specific VM instance by its ID.
 
@@ -332,7 +332,7 @@ Retrieves detailed information about a specific VM instance by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7040
+Defined in: src/generated/nebius/compute/v1/index.ts:7041
 
 ##### Parameters
 
@@ -352,7 +352,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7040
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7041
+Defined in: src/generated/nebius/compute/v1/index.ts:7042
 
 ##### Parameters
 
@@ -376,7 +376,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7041
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7116
+Defined in: src/generated/nebius/compute/v1/index.ts:7117
 
 Retrieves detailed information about a specific VM instance by its ID.
 
@@ -394,7 +394,7 @@ Retrieves detailed information about a specific VM instance by its ID.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7117
+Defined in: src/generated/nebius/compute/v1/index.ts:7118
 
 Retrieves detailed information about a specific VM instance by its ID.
 
@@ -416,7 +416,7 @@ Retrieves detailed information about a specific VM instance by its ID.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7118
+Defined in: src/generated/nebius/compute/v1/index.ts:7119
 
 Retrieves detailed information about a specific VM instance by its ID.
 
@@ -446,7 +446,7 @@ Retrieves detailed information about a specific VM instance by its ID.
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7046
+Defined in: src/generated/nebius/compute/v1/index.ts:7047
 
 Retrieves detailed information about a specific VM instance by its parent and name.
 
@@ -464,7 +464,7 @@ Retrieves detailed information about a specific VM instance by its parent and na
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7047
+Defined in: src/generated/nebius/compute/v1/index.ts:7048
 
 ##### Parameters
 
@@ -484,7 +484,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7047
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7048
+Defined in: src/generated/nebius/compute/v1/index.ts:7049
 
 ##### Parameters
 
@@ -508,7 +508,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7048
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7128
+Defined in: src/generated/nebius/compute/v1/index.ts:7129
 
 Retrieves detailed information about a specific VM instance by its parent and name.
 
@@ -526,7 +526,7 @@ Retrieves detailed information about a specific VM instance by its parent and na
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7129
+Defined in: src/generated/nebius/compute/v1/index.ts:7130
 
 Retrieves detailed information about a specific VM instance by its parent and name.
 
@@ -548,7 +548,7 @@ Retrieves detailed information about a specific VM instance by its parent and na
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7130
+Defined in: src/generated/nebius/compute/v1/index.ts:7131
 
 Retrieves detailed information about a specific VM instance by its parent and name.
 
@@ -576,7 +576,7 @@ Retrieves detailed information about a specific VM instance by its parent and na
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7112
+Defined in: src/generated/nebius/compute/v1/index.ts:7113
 
 #### Returns
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7112
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7053
+Defined in: src/generated/nebius/compute/v1/index.ts:7054
 
 Lists all VM instances within a specified parent.
 
@@ -608,7 +608,7 @@ Lists all VM instances within a specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7054
+Defined in: src/generated/nebius/compute/v1/index.ts:7055
 
 ##### Parameters
 
@@ -628,7 +628,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7054
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7055
+Defined in: src/generated/nebius/compute/v1/index.ts:7056
 
 ##### Parameters
 
@@ -652,7 +652,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7055
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7140
+Defined in: src/generated/nebius/compute/v1/index.ts:7141
 
 Lists all VM instances within a specified parent.
 
@@ -670,7 +670,7 @@ Lists all VM instances within a specified parent.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7141
+Defined in: src/generated/nebius/compute/v1/index.ts:7142
 
 Lists all VM instances within a specified parent.
 
@@ -692,7 +692,7 @@ Lists all VM instances within a specified parent.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7142
+Defined in: src/generated/nebius/compute/v1/index.ts:7143
 
 Lists all VM instances within a specified parent.
 
@@ -722,7 +722,7 @@ Lists all VM instances within a specified parent.
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7096
+Defined in: src/generated/nebius/compute/v1/index.ts:7097
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -740,7 +740,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7097
+Defined in: src/generated/nebius/compute/v1/index.ts:7098
 
 ##### Parameters
 
@@ -760,7 +760,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7097
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7098
+Defined in: src/generated/nebius/compute/v1/index.ts:7099
 
 ##### Parameters
 
@@ -784,7 +784,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7098
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7227
+Defined in: src/generated/nebius/compute/v1/index.ts:7228
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -802,7 +802,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7228
+Defined in: src/generated/nebius/compute/v1/index.ts:7229
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -824,7 +824,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7229
+Defined in: src/generated/nebius/compute/v1/index.ts:7230
 
 Lists all operations that were performed within a specific parent resource.
 
@@ -854,7 +854,7 @@ Lists all operations that were performed within a specific parent resource.
 
 > **start**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7082
+Defined in: src/generated/nebius/compute/v1/index.ts:7083
 
 Starts a stopped VM instance.
 
@@ -872,7 +872,7 @@ Starts a stopped VM instance.
 
 > **start**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7083
+Defined in: src/generated/nebius/compute/v1/index.ts:7084
 
 ##### Parameters
 
@@ -892,7 +892,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7083
 
 > **start**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7084
+Defined in: src/generated/nebius/compute/v1/index.ts:7085
 
 ##### Parameters
 
@@ -916,7 +916,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7084
 
 > **start**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7197
+Defined in: src/generated/nebius/compute/v1/index.ts:7198
 
 Starts a stopped VM instance.
 
@@ -934,7 +934,7 @@ Starts a stopped VM instance.
 
 > **start**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7198
+Defined in: src/generated/nebius/compute/v1/index.ts:7199
 
 Starts a stopped VM instance.
 
@@ -956,7 +956,7 @@ Starts a stopped VM instance.
 
 > **start**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7199
+Defined in: src/generated/nebius/compute/v1/index.ts:7200
 
 Starts a stopped VM instance.
 
@@ -986,7 +986,7 @@ Starts a stopped VM instance.
 
 > **stop**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7089
+Defined in: src/generated/nebius/compute/v1/index.ts:7090
 
 Stops a running VM instance.
 
@@ -1004,7 +1004,7 @@ Stops a running VM instance.
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7090
+Defined in: src/generated/nebius/compute/v1/index.ts:7091
 
 ##### Parameters
 
@@ -1024,7 +1024,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7090
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7091
+Defined in: src/generated/nebius/compute/v1/index.ts:7092
 
 ##### Parameters
 
@@ -1048,7 +1048,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7091
 
 > **stop**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7212
+Defined in: src/generated/nebius/compute/v1/index.ts:7213
 
 Stops a running VM instance.
 
@@ -1066,7 +1066,7 @@ Stops a running VM instance.
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7213
+Defined in: src/generated/nebius/compute/v1/index.ts:7214
 
 Stops a running VM instance.
 
@@ -1088,7 +1088,7 @@ Stops a running VM instance.
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7214
+Defined in: src/generated/nebius/compute/v1/index.ts:7215
 
 Stops a running VM instance.
 
@@ -1118,7 +1118,7 @@ Stops a running VM instance.
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7068
+Defined in: src/generated/nebius/compute/v1/index.ts:7069
 
 Updates an existing VM instance with new configuration parameters.
 
@@ -1136,7 +1136,7 @@ Updates an existing VM instance with new configuration parameters.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7069
+Defined in: src/generated/nebius/compute/v1/index.ts:7070
 
 ##### Parameters
 
@@ -1156,7 +1156,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7069
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7070
+Defined in: src/generated/nebius/compute/v1/index.ts:7071
 
 ##### Parameters
 
@@ -1180,7 +1180,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7070
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7167
+Defined in: src/generated/nebius/compute/v1/index.ts:7168
 
 Updates an existing VM instance with new configuration parameters.
 
@@ -1198,7 +1198,7 @@ Updates an existing VM instance with new configuration parameters.
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7168
+Defined in: src/generated/nebius/compute/v1/index.ts:7169
 
 Updates an existing VM instance with new configuration parameters.
 
@@ -1220,7 +1220,7 @@ Updates an existing VM instance with new configuration parameters.
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateInstanceRequest`](../interfaces/UpdateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7169
+Defined in: src/generated/nebius/compute/v1/index.ts:7170
 
 Updates an existing VM instance with new configuration parameters.
 

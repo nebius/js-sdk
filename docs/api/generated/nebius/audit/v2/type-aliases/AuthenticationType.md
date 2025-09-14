@@ -8,4 +8,4 @@
 
 > **AuthenticationType** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"AUTHENTICATION_TYPE_UNSPECIFIED"` \| `"ACCESS_TOKEN"` \| `"STATIC_KEY"`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:932
+Defined in: src/generated/nebius/audit/v2/index.ts:933

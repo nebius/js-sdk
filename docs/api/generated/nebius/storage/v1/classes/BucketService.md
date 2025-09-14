@@ -6,7 +6,7 @@
 
 # Class: BucketService
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1659
+Defined in: src/generated/nebius/storage/v1/index.ts:1660
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1659
 
 > **new BucketService**(`sdk`): `BucketService`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1702
+Defined in: src/generated/nebius/storage/v1/index.ts:1703
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1702
 
 > **$type**: `"nebius.storage.v1.BucketService"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1660
+Defined in: src/generated/nebius/storage/v1/index.ts:1661
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1660
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1670
+Defined in: src/generated/nebius/storage/v1/index.ts:1671
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1670
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1671
+Defined in: src/generated/nebius/storage/v1/index.ts:1672
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1671
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1672
+Defined in: src/generated/nebius/storage/v1/index.ts:1673
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1672
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1748
+Defined in: src/generated/nebius/storage/v1/index.ts:1749
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1748
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1749
+Defined in: src/generated/nebius/storage/v1/index.ts:1750
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1749
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateBucketRequest`](../interfaces/CreateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1750
+Defined in: src/generated/nebius/storage/v1/index.ts:1751
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1750
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1676
+Defined in: src/generated/nebius/storage/v1/index.ts:1677
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1676
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1677
+Defined in: src/generated/nebius/storage/v1/index.ts:1678
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1677
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1678
+Defined in: src/generated/nebius/storage/v1/index.ts:1679
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1678
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1778
+Defined in: src/generated/nebius/storage/v1/index.ts:1779
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1778
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1779
+Defined in: src/generated/nebius/storage/v1/index.ts:1780
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1779
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteBucketRequest`](../interfaces/DeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1780
+Defined in: src/generated/nebius/storage/v1/index.ts:1781
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1780
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1661
+Defined in: src/generated/nebius/storage/v1/index.ts:1662
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1661
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1662
+Defined in: src/generated/nebius/storage/v1/index.ts:1663
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1662
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1663
+Defined in: src/generated/nebius/storage/v1/index.ts:1664
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1663
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1712
+Defined in: src/generated/nebius/storage/v1/index.ts:1713
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1712
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1713
+Defined in: src/generated/nebius/storage/v1/index.ts:1714
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1713
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketRequest`](../interfaces/GetBucketRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1714
+Defined in: src/generated/nebius/storage/v1/index.ts:1715
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1714
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1664
+Defined in: src/generated/nebius/storage/v1/index.ts:1665
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1664
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1665
+Defined in: src/generated/nebius/storage/v1/index.ts:1666
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1665
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1666
+Defined in: src/generated/nebius/storage/v1/index.ts:1667
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1666
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1724
+Defined in: src/generated/nebius/storage/v1/index.ts:1725
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1724
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1725
+Defined in: src/generated/nebius/storage/v1/index.ts:1726
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1725
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetBucketByNameRequest`](../interfaces/GetBucketByNameRequest.md), [`Bucket`](../interfaces/Bucket.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1726
+Defined in: src/generated/nebius/storage/v1/index.ts:1727
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1726
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1708
+Defined in: src/generated/nebius/storage/v1/index.ts:1709
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1708
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1667
+Defined in: src/generated/nebius/storage/v1/index.ts:1668
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1667
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1668
+Defined in: src/generated/nebius/storage/v1/index.ts:1669
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1668
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1669
+Defined in: src/generated/nebius/storage/v1/index.ts:1670
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1669
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1736
+Defined in: src/generated/nebius/storage/v1/index.ts:1737
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1736
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1737
+Defined in: src/generated/nebius/storage/v1/index.ts:1738
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1737
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListBucketsRequest`](../interfaces/ListBucketsRequest.md), [`ListBucketsResponse`](../interfaces/ListBucketsResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1738
+Defined in: src/generated/nebius/storage/v1/index.ts:1739
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1738
 
 > **purge**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1685
+Defined in: src/generated/nebius/storage/v1/index.ts:1686
 
 Purge instantly deletes the bucket in ScheduledForDeletion state.
 It can be used only for buckets in ScheduledForDeletion state.
@@ -698,7 +698,7 @@ If you want to delete Active bucket instantly, use Delete with zero ttl.
 
 > **purge**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1686
+Defined in: src/generated/nebius/storage/v1/index.ts:1687
 
 ##### Parameters
 
@@ -718,7 +718,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1686
 
 > **purge**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1687
+Defined in: src/generated/nebius/storage/v1/index.ts:1688
 
 ##### Parameters
 
@@ -742,7 +742,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1687
 
 > **purge**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1793
+Defined in: src/generated/nebius/storage/v1/index.ts:1794
 
 Purge instantly deletes the bucket in ScheduledForDeletion state.
 It can be used only for buckets in ScheduledForDeletion state.
@@ -762,7 +762,7 @@ If you want to delete Active bucket instantly, use Delete with zero ttl.
 
 > **purge**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1794
+Defined in: src/generated/nebius/storage/v1/index.ts:1795
 
 Purge instantly deletes the bucket in ScheduledForDeletion state.
 It can be used only for buckets in ScheduledForDeletion state.
@@ -786,7 +786,7 @@ If you want to delete Active bucket instantly, use Delete with zero ttl.
 
 > **purge**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`PurgeBucketRequest`](../interfaces/PurgeBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1795
+Defined in: src/generated/nebius/storage/v1/index.ts:1796
 
 Purge instantly deletes the bucket in ScheduledForDeletion state.
 It can be used only for buckets in ScheduledForDeletion state.
@@ -818,7 +818,7 @@ If you want to delete Active bucket instantly, use Delete with zero ttl.
 
 > **undelete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1692
+Defined in: src/generated/nebius/storage/v1/index.ts:1693
 
 Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
@@ -836,7 +836,7 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 > **undelete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1693
+Defined in: src/generated/nebius/storage/v1/index.ts:1694
 
 ##### Parameters
 
@@ -856,7 +856,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1693
 
 > **undelete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1694
+Defined in: src/generated/nebius/storage/v1/index.ts:1695
 
 ##### Parameters
 
@@ -880,7 +880,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1694
 
 > **undelete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1808
+Defined in: src/generated/nebius/storage/v1/index.ts:1809
 
 Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
@@ -898,7 +898,7 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 > **undelete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1809
+Defined in: src/generated/nebius/storage/v1/index.ts:1810
 
 Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
@@ -920,7 +920,7 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 > **undelete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UndeleteBucketRequest`](../interfaces/UndeleteBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1810
+Defined in: src/generated/nebius/storage/v1/index.ts:1811
 
 Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
@@ -950,7 +950,7 @@ Undelete recovers the bucket from ScheduledForDeletion state to Active.
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1673
+Defined in: src/generated/nebius/storage/v1/index.ts:1674
 
 ##### Parameters
 
@@ -966,7 +966,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1673
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1674
+Defined in: src/generated/nebius/storage/v1/index.ts:1675
 
 ##### Parameters
 
@@ -986,7 +986,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1674
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1675
+Defined in: src/generated/nebius/storage/v1/index.ts:1676
 
 ##### Parameters
 
@@ -1010,7 +1010,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1675
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1763
+Defined in: src/generated/nebius/storage/v1/index.ts:1764
 
 ##### Parameters
 
@@ -1026,7 +1026,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1763
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1764
+Defined in: src/generated/nebius/storage/v1/index.ts:1765
 
 ##### Parameters
 
@@ -1046,7 +1046,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:1764
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1765
+Defined in: src/generated/nebius/storage/v1/index.ts:1766
 
 ##### Parameters
 

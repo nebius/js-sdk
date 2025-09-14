@@ -6,7 +6,7 @@
 
 # Class: MaintenanceService
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:324
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:325
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:324
 
 > **new MaintenanceService**(`sdk`): `MaintenanceService`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:349
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:350
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:349
 
 > **$type**: `"nebius.maintenance.v1alpha1.MaintenanceService"`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:325
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:326
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:325
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:331
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:332
 
 Returns the specified maintenance operation.
 To get the list of upcoming and past maintenance operations, make a [List] request.
@@ -65,7 +65,7 @@ To get the list of upcoming and past maintenance operations, make a [List] reque
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:332
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:333
 
 ##### Parameters
 
@@ -85,7 +85,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:332
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:333
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:334
 
 ##### Parameters
 
@@ -109,7 +109,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:333
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:355
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:356
 
 Returns the specified maintenance operation.
 To get the list of upcoming and past maintenance operations, make a [List] request.
@@ -128,7 +128,7 @@ To get the list of upcoming and past maintenance operations, make a [List] reque
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:356
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:357
 
 Returns the specified maintenance operation.
 To get the list of upcoming and past maintenance operations, make a [List] request.
@@ -151,7 +151,7 @@ To get the list of upcoming and past maintenance operations, make a [List] reque
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:357
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:358
 
 Returns the specified maintenance operation.
 To get the list of upcoming and past maintenance operations, make a [List] request.
@@ -182,7 +182,7 @@ To get the list of upcoming and past maintenance operations, make a [List] reque
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:339
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:340
 
 Retrieves the list of maintenance operations that belong
 to the specified container.
@@ -201,7 +201,7 @@ to the specified container.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:340
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:341
 
 ##### Parameters
 
@@ -221,7 +221,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:340
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:341
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:342
 
 ##### Parameters
 
@@ -245,7 +245,7 @@ Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:341
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:367
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:368
 
 Retrieves the list of maintenance operations that belong
 to the specified container.
@@ -264,7 +264,7 @@ to the specified container.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:368
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:369
 
 Retrieves the list of maintenance operations that belong
 to the specified container.
@@ -287,7 +287,7 @@ to the specified container.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListMaintenancesRequest`](../interfaces/ListMaintenancesRequest.md), [`ListMaintenancesResponse`](../interfaces/ListMaintenancesResponse.md)\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:369
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:370
 
 Retrieves the list of maintenance operations that belong
 to the specified container.

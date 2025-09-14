@@ -6,7 +6,7 @@
 
 # Class: EndpointService
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:358
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:359
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:358
 
 > **new EndpointService**(`sdk`): `EndpointService`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:416
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:417
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:416
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.EndpointService"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:359
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:360
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:359
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:385
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:386
 
 Creates an endpoint.
 
@@ -64,7 +64,7 @@ Creates an endpoint.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:386
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:387
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:386
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:387
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:388
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:387
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:462
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:463
 
 Creates an endpoint.
 
@@ -126,7 +126,7 @@ Creates an endpoint.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:463
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:464
 
 Creates an endpoint.
 
@@ -148,7 +148,7 @@ Creates an endpoint.
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateEndpointRequest`](../interfaces/CreateEndpointRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:464
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:465
 
 Creates an endpoint.
 
@@ -178,7 +178,7 @@ Creates an endpoint.
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:392
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:393
 
 Delete an endpoint.
 
@@ -196,7 +196,7 @@ Delete an endpoint.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:393
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:394
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:393
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:394
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:395
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:394
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:477
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:478
 
 Delete an endpoint.
 
@@ -258,7 +258,7 @@ Delete an endpoint.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:478
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:479
 
 Delete an endpoint.
 
@@ -280,7 +280,7 @@ Delete an endpoint.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:479
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:480
 
 Delete an endpoint.
 
@@ -310,7 +310,7 @@ Delete an endpoint.
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:364
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:365
 
 Returns the specified endpoint.
 
@@ -328,7 +328,7 @@ Returns the specified endpoint.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:365
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:366
 
 ##### Parameters
 
@@ -348,7 +348,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:365
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:366
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:367
 
 ##### Parameters
 
@@ -372,7 +372,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:366
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:426
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:427
 
 Returns the specified endpoint.
 
@@ -390,7 +390,7 @@ Returns the specified endpoint.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:427
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:428
 
 Returns the specified endpoint.
 
@@ -412,7 +412,7 @@ Returns the specified endpoint.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:428
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:429
 
 Returns the specified endpoint.
 
@@ -442,7 +442,7 @@ Returns the specified endpoint.
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:371
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:372
 
 Returns the specified endpoint by name.
 
@@ -460,7 +460,7 @@ Returns the specified endpoint by name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:372
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:373
 
 ##### Parameters
 
@@ -480,7 +480,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:372
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:373
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:374
 
 ##### Parameters
 
@@ -504,7 +504,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:373
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:438
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:439
 
 Returns the specified endpoint by name.
 
@@ -522,7 +522,7 @@ Returns the specified endpoint by name.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:439
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:440
 
 Returns the specified endpoint by name.
 
@@ -544,7 +544,7 @@ Returns the specified endpoint by name.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../v1alpha1/interfaces/GetByNameRequest.md), [`Endpoint`](../interfaces/Endpoint.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:440
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:441
 
 Returns the specified endpoint by name.
 
@@ -572,7 +572,7 @@ Returns the specified endpoint by name.
 
 > **getOperationService**(): [`OperationService`](../../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:422
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:423
 
 #### Returns
 
@@ -586,7 +586,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:422
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:378
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:379
 
 Retrieves a list of Endpoints.
 
@@ -604,7 +604,7 @@ Retrieves a list of Endpoints.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:379
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:380
 
 ##### Parameters
 
@@ -624,7 +624,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:379
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:380
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:381
 
 ##### Parameters
 
@@ -648,7 +648,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:380
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:450
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:451
 
 Retrieves a list of Endpoints.
 
@@ -666,7 +666,7 @@ Retrieves a list of Endpoints.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:451
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:452
 
 Retrieves a list of Endpoints.
 
@@ -688,7 +688,7 @@ Retrieves a list of Endpoints.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListEndpointsResponse`](../interfaces/ListEndpointsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:452
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:453
 
 Retrieves a list of Endpoints.
 
@@ -718,7 +718,7 @@ Retrieves a list of Endpoints.
 
 > **start**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:399
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:400
 
 Start an endpoint.
 
@@ -736,7 +736,7 @@ Start an endpoint.
 
 > **start**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:400
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:401
 
 ##### Parameters
 
@@ -756,7 +756,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:400
 
 > **start**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:401
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:402
 
 ##### Parameters
 
@@ -780,7 +780,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:401
 
 > **start**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:492
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:493
 
 Start an endpoint.
 
@@ -798,7 +798,7 @@ Start an endpoint.
 
 > **start**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:493
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:494
 
 Start an endpoint.
 
@@ -820,7 +820,7 @@ Start an endpoint.
 
 > **start**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartRequest`](../../../v1alpha1/interfaces/StartRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:494
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:495
 
 Start an endpoint.
 
@@ -850,7 +850,7 @@ Start an endpoint.
 
 > **stop**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:406
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:407
 
 Stop an endpoint.
 
@@ -868,7 +868,7 @@ Stop an endpoint.
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:407
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:408
 
 ##### Parameters
 
@@ -888,7 +888,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:407
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:408
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:409
 
 ##### Parameters
 
@@ -912,7 +912,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:408
 
 > **stop**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:507
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:508
 
 Stop an endpoint.
 
@@ -930,7 +930,7 @@ Stop an endpoint.
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:508
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:509
 
 Stop an endpoint.
 
@@ -952,7 +952,7 @@ Stop an endpoint.
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopRequest`](../../../v1alpha1/interfaces/StopRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:509
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:510
 
 Stop an endpoint.
 

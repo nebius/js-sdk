@@ -8,4 +8,4 @@
 
 > **RegistryStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"CREATING"` \| `"ACTIVE"` \| `"DELETING"` \| `"SUSPENDED"`\> & `RegistryStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1664
+Defined in: src/generated/nebius/registry/v1/index.ts:1665

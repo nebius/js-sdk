@@ -6,7 +6,7 @@
 
 # Interface: OidcCredentialsProvider
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7017
+Defined in: src/generated/nebius/iam/v1/index.ts:7018
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7017
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7019
+Defined in: src/generated/nebius/iam/v1/index.ts:7020
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7019
 
 > **$type**: `"nebius.iam.v1.OidcCredentialsProvider"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7018
+Defined in: src/generated/nebius/iam/v1/index.ts:7019
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7018
 
 > **issuerUrl**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7033
+Defined in: src/generated/nebius/iam/v1/index.ts:7034
 
 - It's not required provider OIDC issuer should be real OIDC provider, but should expose OIDC configuration
   with "/.well-known/openid-configuration" endpoint. Configuration should contains the "jwks_uri" endpoint
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7033
 
 > **jwkSetJson**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7041
+Defined in: src/generated/nebius/iam/v1/index.ts:7042
 
 - Literally json, which represents JWKS with public keys for JWT verification.
   It worth mentioned that in a case of adding/rotating keys the jwk_set_json also should be updated here.

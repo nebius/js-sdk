@@ -8,4 +8,4 @@
 
 > **InvitationStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`InvitationStatus`](../interfaces/InvitationStatus.md), `"nebius.iam.v1.InvitationStatus"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14283
+Defined in: src/generated/nebius/iam/v1/index.ts:14284

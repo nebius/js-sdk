@@ -8,4 +8,4 @@
 
 > **ListImagesRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), `"nebius.compute.v1alpha1.ListImagesRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4555
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4556

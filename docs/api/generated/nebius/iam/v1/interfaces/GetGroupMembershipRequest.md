@@ -6,7 +6,7 @@
 
 # Interface: GetGroupMembershipRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10021
+Defined in: src/generated/nebius/iam/v1/index.ts:10022
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10021
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10023
+Defined in: src/generated/nebius/iam/v1/index.ts:10024
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10023
 
 > **$type**: `"nebius.iam.v1.GetGroupMembershipRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10022
+Defined in: src/generated/nebius/iam/v1/index.ts:10023
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:10022
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:10024
+Defined in: src/generated/nebius/iam/v1/index.ts:10025

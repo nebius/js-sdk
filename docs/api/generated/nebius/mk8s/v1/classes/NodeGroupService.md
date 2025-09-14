@@ -6,7 +6,7 @@
 
 # Class: NodeGroupService
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3765
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4036
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3765
 
 > **new NodeGroupService**(`sdk`): `NodeGroupService`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3795
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4066
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3795
 
 > **$type**: `"nebius.mk8s.v1.NodeGroupService"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3766
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4037
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3766
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3776
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4047
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3776
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3777
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4048
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3777
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3778
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4049
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3778
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3841
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4112
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3841
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3842
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4113
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3842
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3843
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4114
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3843
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3782
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4053
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3782
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3783
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4054
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3783
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3784
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4055
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3784
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3871
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4142
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3871
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3872
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4143
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3872
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3873
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4144
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3873
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3767
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4038
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3767
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3768
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4039
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3768
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3769
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4040
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3769
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3805
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4076
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3805
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3806
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4077
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3806
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3807
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4078
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3807
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3770
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4041
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3770
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3771
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4042
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3771
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3772
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4043
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3772
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3817
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4088
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3817
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3818
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4089
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3818
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3819
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4090
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3819
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3801
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4072
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3801
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3773
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4044
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3773
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3774
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4045
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3774
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3775
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4046
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3775
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3829
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4100
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3829
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3830
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4101
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3830
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3831
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4102
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3831
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3779
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4050
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3779
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3780
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4051
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3780
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3781
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4052
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3781
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3856
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4127
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3856
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3857
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4128
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3857
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3858
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4129
 
 ##### Parameters
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3858
 
 > **upgrade**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3785
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4056
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3785
 
 > **upgrade**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3786
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4057
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3786
 
 > **upgrade**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3787
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4058
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3787
 
 > **upgrade**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3886
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4157
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3886
 
 > **upgrade**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3887
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4158
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:3887
 
 > **upgrade**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpgradeNodeGroupRequest`](../interfaces/UpgradeNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:3888
+Defined in: src/generated/nebius/mk8s/v1/index.ts:4159
 
 ##### Parameters
 

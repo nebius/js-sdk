@@ -8,6 +8,6 @@
 
 > **ScopeSpec_Type** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"SCOPE_TYPE_UNSPECIFIED"` \| `"PUBLIC"` \| `"PRIVATE"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6003
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6004
 
 Type of scope.

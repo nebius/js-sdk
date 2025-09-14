@@ -8,7 +8,7 @@
 
 > **ClusterServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ClusterServiceBaseClient`](../interfaces/ClusterServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:848
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:1099
 
 ## Type Declaration
 
@@ -391,6 +391,78 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:848
 `Buffer`\<`ArrayBuffer`\>
 
 #### service.list.responseStream
+
+> `readonly` **responseStream**: `false` = `false`
+
+#### service.listControlPlaneVersions
+
+> `readonly` **listControlPlaneVersions**: `object`
+
+#### service.listControlPlaneVersions.path
+
+> `readonly` **path**: `"/nebius.mk8s.v1alpha1.ClusterService/ListControlPlaneVersions"` = `"/nebius.mk8s.v1alpha1.ClusterService/ListControlPlaneVersions"`
+
+#### service.listControlPlaneVersions.requestDeserialize()
+
+> `readonly` **requestDeserialize**: (`value`) => [`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+##### Parameters
+
+###### value
+
+`Buffer`
+
+##### Returns
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+#### service.listControlPlaneVersions.requestSerialize()
+
+> `readonly` **requestSerialize**: (`value`) => `Buffer`\<`ArrayBuffer`\>
+
+##### Parameters
+
+###### value
+
+[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md)
+
+##### Returns
+
+`Buffer`\<`ArrayBuffer`\>
+
+#### service.listControlPlaneVersions.requestStream
+
+> `readonly` **requestStream**: `false` = `false`
+
+#### service.listControlPlaneVersions.responseDeserialize()
+
+> `readonly` **responseDeserialize**: (`value`) => [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)
+
+##### Parameters
+
+###### value
+
+`Buffer`
+
+##### Returns
+
+[`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)
+
+#### service.listControlPlaneVersions.responseSerialize()
+
+> `readonly` **responseSerialize**: (`value`) => `Buffer`\<`ArrayBuffer`\>
+
+##### Parameters
+
+###### value
+
+[`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)
+
+##### Returns
+
+`Buffer`\<`ArrayBuffer`\>
+
+#### service.listControlPlaneVersions.responseStream
 
 > `readonly` **responseStream**: `false` = `false`
 

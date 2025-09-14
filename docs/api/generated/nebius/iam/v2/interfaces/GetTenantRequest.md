@@ -6,7 +6,7 @@
 
 # Interface: GetTenantRequest
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2199
+Defined in: src/generated/nebius/iam/v2/index.ts:2200
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2199
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2201
+Defined in: src/generated/nebius/iam/v2/index.ts:2202
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2201
 
 > **$type**: `"nebius.iam.v2.GetTenantRequest"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2200
+Defined in: src/generated/nebius/iam/v2/index.ts:2201
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2200
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2202
+Defined in: src/generated/nebius/iam/v2/index.ts:2203

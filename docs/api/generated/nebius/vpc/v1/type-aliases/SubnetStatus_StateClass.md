@@ -8,4 +8,4 @@
 
 > **SubnetStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"READY"` \| `"DELETING"`\> & `SubnetStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7287
+Defined in: src/generated/nebius/vpc/v1/index.ts:7288

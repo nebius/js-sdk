@@ -8,4 +8,4 @@
 
 > **Operation**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Operation`](../interfaces/Operation.md), `"nebius.common.v1.Operation"`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3088
+Defined in: src/generated/nebius/common/v1/index.ts:3086

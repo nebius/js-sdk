@@ -6,7 +6,7 @@
 
 # Interface: AccessPermitServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2825
+Defined in: src/generated/nebius/iam/v1/index.ts:2826
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2825
 
 > **create**: `handleUnaryCall`\<[`CreateAccessPermitRequest`](CreateAccessPermitRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2826
+Defined in: src/generated/nebius/iam/v1/index.ts:2827
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2826
 
 > **delete**: `handleUnaryCall`\<[`DeleteAccessPermitRequest`](DeleteAccessPermitRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2828
+Defined in: src/generated/nebius/iam/v1/index.ts:2829
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2828
 
 > **get**: `handleUnaryCall`\<[`GetAccessPermitRequest`](GetAccessPermitRequest.md), [`AccessPermit`](AccessPermit.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2829
+Defined in: src/generated/nebius/iam/v1/index.ts:2830
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2829
 
 > **list**: `handleUnaryCall`\<[`ListAccessPermitRequest`](ListAccessPermitRequest.md), [`ListAccessPermitResponse`](ListAccessPermitResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2827
+Defined in: src/generated/nebius/iam/v1/index.ts:2828

@@ -3,6 +3,9 @@
 import { BinaryReader, BinaryWriter, DeepPartial, isSet, Long, bytesFromBase64, base64FromBytes, wkt, createEnum, unknownFieldsSymbol } from "../../../../src/runtime/protos/index"
 import { protoRegistry } from "../registry";
 import type { Dayjs, Duration, MessageFns, EnumInstance, EnumClass } from "../../../../src/runtime/protos/index";
+import { deprecatedWarn } from "../../../../src/runtime/util/logging";
+
+const __deprecatedWarned = new Set<string>();
 
 // file: descriptor.proto
 /**
@@ -58,7 +61,7 @@ interface EditionValueMembers {
    */
   readonly EDITION_MAX: EnumInstance<"UNRECOGNIZED" | "EDITION_UNKNOWN" | "EDITION_LEGACY" | "EDITION_PROTO2" | "EDITION_PROTO3" | "EDITION_2023" | "EDITION_2024" | "EDITION_1_TEST_ONLY" | "EDITION_2_TEST_ONLY" | "EDITION_99997_TEST_ONLY" | "EDITION_99998_TEST_ONLY" | "EDITION_99999_TEST_ONLY" | "EDITION_MAX">;
 }
-type EditionClass = EnumClass<"UNRECOGNIZED" | "EDITION_UNKNOWN" | "EDITION_LEGACY" | "EDITION_PROTO2" | "EDITION_PROTO3" | "EDITION_2023" | "EDITION_2024" | "EDITION_1_TEST_ONLY" | "EDITION_2_TEST_ONLY" | "EDITION_99997_TEST_ONLY" | "EDITION_99998_TEST_ONLY" | "EDITION_99999_TEST_ONLY" | "EDITION_MAX"> & EditionValueMembers;
+export type EditionClass = EnumClass<"UNRECOGNIZED" | "EDITION_UNKNOWN" | "EDITION_LEGACY" | "EDITION_PROTO2" | "EDITION_PROTO3" | "EDITION_2023" | "EDITION_2024" | "EDITION_1_TEST_ONLY" | "EDITION_2_TEST_ONLY" | "EDITION_99997_TEST_ONLY" | "EDITION_99998_TEST_ONLY" | "EDITION_99999_TEST_ONLY" | "EDITION_MAX"> & EditionValueMembers;
 
 const Edition_VALUE_COMMENTS = {
   EDITION_UNKNOWN: " A placeholder for an unknown edition value.\n",
@@ -70,38 +73,50 @@ const Edition_VALUE_COMMENTS = {
 };
 
 export const Edition = createEnum("google.protobuf.Edition", {
-  /**  A placeholder for an unknown edition value. */
-  /**  */
+  /**
+   *  A placeholder for an unknown edition value.
+   * 
+   */
   EDITION_UNKNOWN: 0,
-  /**  A placeholder edition for specifying default behaviors *before* a feature */
-  /**  was first introduced.  This is effectively an "infinite past". */
-  /**  */
+  /**
+   *  A placeholder edition for specifying default behaviors *before* a feature
+   *  was first introduced.  This is effectively an "infinite past".
+   * 
+   */
   EDITION_LEGACY: 900,
-  /**  Legacy syntax "editions".  These pre-date editions, but behave much like */
-  /**  distinct editions.  These can't be used to specify the edition of proto */
-  /**  files, but feature definitions must supply proto2/proto3 defaults for */
-  /**  backwards compatibility. */
-  /**  */
+  /**
+   *  Legacy syntax "editions".  These pre-date editions, but behave much like
+   *  distinct editions.  These can't be used to specify the edition of proto
+   *  files, but feature definitions must supply proto2/proto3 defaults for
+   *  backwards compatibility.
+   * 
+   */
   EDITION_PROTO2: 998,
   EDITION_PROTO3: 999,
-  /**  Editions that have been released.  The specific values are arbitrary and */
-  /**  should not be depended on, but they will always be time-ordered for easy */
-  /**  comparison. */
-  /**  */
+  /**
+   *  Editions that have been released.  The specific values are arbitrary and
+   *  should not be depended on, but they will always be time-ordered for easy
+   *  comparison.
+   * 
+   */
   EDITION_2023: 1000,
   EDITION_2024: 1001,
-  /**  Placeholder editions for testing feature resolution.  These should not be */
-  /**  used or relied on outside of tests. */
-  /**  */
+  /**
+   *  Placeholder editions for testing feature resolution.  These should not be
+   *  used or relied on outside of tests.
+   * 
+   */
   EDITION_1_TEST_ONLY: 1,
   EDITION_2_TEST_ONLY: 2,
   EDITION_99997_TEST_ONLY: 99997,
   EDITION_99998_TEST_ONLY: 99998,
   EDITION_99999_TEST_ONLY: 99999,
-  /**  Placeholder for specifying unbounded edition support.  This should only */
-  /**  ever be used by plugins that can expect to never require any changes to */
-  /**  support a new edition. */
-  /**  */
+  /**
+   *  Placeholder for specifying unbounded edition support.  This should only
+   *  ever be used by plugins that can expect to never require any changes to
+   *  support a new edition.
+   * 
+   */
   EDITION_MAX: 2147483647,
 }, Edition_VALUE_COMMENTS) as EditionClass;
 
@@ -122,7 +137,7 @@ interface SymbolVisibilityValueMembers {
   readonly VISIBILITY_LOCAL: EnumInstance<"UNRECOGNIZED" | "VISIBILITY_UNSET" | "VISIBILITY_LOCAL" | "VISIBILITY_EXPORT">;
   readonly VISIBILITY_EXPORT: EnumInstance<"UNRECOGNIZED" | "VISIBILITY_UNSET" | "VISIBILITY_LOCAL" | "VISIBILITY_EXPORT">;
 }
-type SymbolVisibilityClass = EnumClass<"UNRECOGNIZED" | "VISIBILITY_UNSET" | "VISIBILITY_LOCAL" | "VISIBILITY_EXPORT"> & SymbolVisibilityValueMembers;
+export type SymbolVisibilityClass = EnumClass<"UNRECOGNIZED" | "VISIBILITY_UNSET" | "VISIBILITY_LOCAL" | "VISIBILITY_EXPORT"> & SymbolVisibilityValueMembers;
 
 export const SymbolVisibility = createEnum("google.protobuf.SymbolVisibility", {
   VISIBILITY_UNSET: 0,
@@ -146,15 +161,17 @@ interface ExtensionRangeOptions_VerificationStateValueMembers {
   readonly DECLARATION: EnumInstance<"UNRECOGNIZED" | "DECLARATION" | "UNVERIFIED">;
   readonly UNVERIFIED: EnumInstance<"UNRECOGNIZED" | "DECLARATION" | "UNVERIFIED">;
 }
-type ExtensionRangeOptions_VerificationStateClass = EnumClass<"UNRECOGNIZED" | "DECLARATION" | "UNVERIFIED"> & ExtensionRangeOptions_VerificationStateValueMembers;
+export type ExtensionRangeOptions_VerificationStateClass = EnumClass<"UNRECOGNIZED" | "DECLARATION" | "UNVERIFIED"> & ExtensionRangeOptions_VerificationStateValueMembers;
 
 const ExtensionRangeOptions_VerificationState_VALUE_COMMENTS = {
   DECLARATION: " All the extensions of the range must be declared.\n",
 };
 
 export const ExtensionRangeOptions_VerificationState = createEnum("google.protobuf.ExtensionRangeOptions.VerificationState", {
-  /**  All the extensions of the range must be declared. */
-  /**  */
+  /**
+   *  All the extensions of the range must be declared.
+   * 
+   */
   DECLARATION: 0,
   UNVERIFIED: 1,
 }, ExtensionRangeOptions_VerificationState_VALUE_COMMENTS) as ExtensionRangeOptions_VerificationStateClass;
@@ -222,7 +239,7 @@ interface FieldDescriptorProto_TypeValueMembers {
    */
   readonly TYPE_SINT64: EnumInstance<"UNRECOGNIZED" | "TYPE_DOUBLE" | "TYPE_FLOAT" | "TYPE_INT64" | "TYPE_UINT64" | "TYPE_INT32" | "TYPE_FIXED64" | "TYPE_FIXED32" | "TYPE_BOOL" | "TYPE_STRING" | "TYPE_GROUP" | "TYPE_MESSAGE" | "TYPE_BYTES" | "TYPE_UINT32" | "TYPE_ENUM" | "TYPE_SFIXED32" | "TYPE_SFIXED64" | "TYPE_SINT32" | "TYPE_SINT64">;
 }
-type FieldDescriptorProto_TypeClass = EnumClass<"UNRECOGNIZED" | "TYPE_DOUBLE" | "TYPE_FLOAT" | "TYPE_INT64" | "TYPE_UINT64" | "TYPE_INT32" | "TYPE_FIXED64" | "TYPE_FIXED32" | "TYPE_BOOL" | "TYPE_STRING" | "TYPE_GROUP" | "TYPE_MESSAGE" | "TYPE_BYTES" | "TYPE_UINT32" | "TYPE_ENUM" | "TYPE_SFIXED32" | "TYPE_SFIXED64" | "TYPE_SINT32" | "TYPE_SINT64"> & FieldDescriptorProto_TypeValueMembers;
+export type FieldDescriptorProto_TypeClass = EnumClass<"UNRECOGNIZED" | "TYPE_DOUBLE" | "TYPE_FLOAT" | "TYPE_INT64" | "TYPE_UINT64" | "TYPE_INT32" | "TYPE_FIXED64" | "TYPE_FIXED32" | "TYPE_BOOL" | "TYPE_STRING" | "TYPE_GROUP" | "TYPE_MESSAGE" | "TYPE_BYTES" | "TYPE_UINT32" | "TYPE_ENUM" | "TYPE_SFIXED32" | "TYPE_SFIXED64" | "TYPE_SINT32" | "TYPE_SINT64"> & FieldDescriptorProto_TypeValueMembers;
 
 const FieldDescriptorProto_Type_VALUE_COMMENTS = {
   TYPE_DOUBLE: " 0 is reserved for errors.\n Order is weird for historical reasons.\n",
@@ -236,46 +253,62 @@ const FieldDescriptorProto_Type_VALUE_COMMENTS = {
 };
 
 export const FieldDescriptorProto_Type = createEnum("google.protobuf.FieldDescriptorProto.Type", {
-  /**  0 is reserved for errors. */
-  /**  Order is weird for historical reasons. */
-  /**  */
+  /**
+   *  0 is reserved for errors.
+   *  Order is weird for historical reasons.
+   * 
+   */
   TYPE_DOUBLE: 1,
   TYPE_FLOAT: 2,
-  /**  Not ZigZag encoded.  Negative numbers take 10 bytes.  Use TYPE_SINT64 if */
-  /**  negative values are likely. */
-  /**  */
+  /**
+   *  Not ZigZag encoded.  Negative numbers take 10 bytes.  Use TYPE_SINT64 if
+   *  negative values are likely.
+   * 
+   */
   TYPE_INT64: 3,
   TYPE_UINT64: 4,
-  /**  Not ZigZag encoded.  Negative numbers take 10 bytes.  Use TYPE_SINT32 if */
-  /**  negative values are likely. */
-  /**  */
+  /**
+   *  Not ZigZag encoded.  Negative numbers take 10 bytes.  Use TYPE_SINT32 if
+   *  negative values are likely.
+   * 
+   */
   TYPE_INT32: 5,
   TYPE_FIXED64: 6,
   TYPE_FIXED32: 7,
   TYPE_BOOL: 8,
   TYPE_STRING: 9,
-  /**  Tag-delimited aggregate. */
-  /**  Group type is deprecated and not supported after google.protobuf. However, Proto3 */
-  /**  implementations should still be able to parse the group wire format and */
-  /**  treat group fields as unknown fields.  In Editions, the group wire format */
-  /**  can be enabled via the `message_encoding` feature. */
-  /**  */
+  /**
+   *  Tag-delimited aggregate.
+   *  Group type is deprecated and not supported after google.protobuf. However, Proto3
+   *  implementations should still be able to parse the group wire format and
+   *  treat group fields as unknown fields.  In Editions, the group wire format
+   *  can be enabled via the `message_encoding` feature.
+   * 
+   */
   TYPE_GROUP: 10,
-  /**  Length-delimited aggregate. */
-  /**  */
+  /**
+   *  Length-delimited aggregate.
+   * 
+   */
   TYPE_MESSAGE: 11,
-  /**  New in version 2. */
-  /**  */
+  /**
+   *  New in version 2.
+   * 
+   */
   TYPE_BYTES: 12,
   TYPE_UINT32: 13,
   TYPE_ENUM: 14,
   TYPE_SFIXED32: 15,
   TYPE_SFIXED64: 16,
-  /**  Uses ZigZag encoding. */
-  /**  */
+  /**
+   *  Uses ZigZag encoding.
+   * 
+   */
   TYPE_SINT32: 17,
-  /**  Uses ZigZag encoding. */
-  /**  */
+  /**
+   *  Uses ZigZag encoding.
+   * 
+   */
   TYPE_SINT64: 18,
 }, FieldDescriptorProto_Type_VALUE_COMMENTS) as FieldDescriptorProto_TypeClass;
 
@@ -298,7 +331,7 @@ interface FieldDescriptorProto_LabelValueMembers {
    */
   readonly LABEL_REQUIRED: EnumInstance<"UNRECOGNIZED" | "LABEL_OPTIONAL" | "LABEL_REPEATED" | "LABEL_REQUIRED">;
 }
-type FieldDescriptorProto_LabelClass = EnumClass<"UNRECOGNIZED" | "LABEL_OPTIONAL" | "LABEL_REPEATED" | "LABEL_REQUIRED"> & FieldDescriptorProto_LabelValueMembers;
+export type FieldDescriptorProto_LabelClass = EnumClass<"UNRECOGNIZED" | "LABEL_OPTIONAL" | "LABEL_REPEATED" | "LABEL_REQUIRED"> & FieldDescriptorProto_LabelValueMembers;
 
 const FieldDescriptorProto_Label_VALUE_COMMENTS = {
   LABEL_OPTIONAL: " 0 is reserved for errors\n",
@@ -306,14 +339,18 @@ const FieldDescriptorProto_Label_VALUE_COMMENTS = {
 };
 
 export const FieldDescriptorProto_Label = createEnum("google.protobuf.FieldDescriptorProto.Label", {
-  /**  0 is reserved for errors */
-  /**  */
+  /**
+   *  0 is reserved for errors
+   * 
+   */
   LABEL_OPTIONAL: 1,
   LABEL_REPEATED: 3,
-  /**  The required label is only allowed in google.protobuf.  In proto3 and Editions */
-  /**  it's explicitly prohibited.  In Editions, the `field_presence` feature */
-  /**  can be used to get this behavior. */
-  /**  */
+  /**
+   *  The required label is only allowed in google.protobuf.  In proto3 and Editions
+   *  it's explicitly prohibited.  In Editions, the `field_presence` feature
+   *  can be used to get this behavior.
+   * 
+   */
   LABEL_REQUIRED: 2,
 }, FieldDescriptorProto_Label_VALUE_COMMENTS) as FieldDescriptorProto_LabelClass;
 
@@ -345,7 +382,7 @@ interface FileOptions_OptimizeModeValueMembers {
    */
   readonly LITE_RUNTIME: EnumInstance<"UNRECOGNIZED" | "SPEED" | "CODE_SIZE" | "LITE_RUNTIME">;
 }
-type FileOptions_OptimizeModeClass = EnumClass<"UNRECOGNIZED" | "SPEED" | "CODE_SIZE" | "LITE_RUNTIME"> & FileOptions_OptimizeModeValueMembers;
+export type FileOptions_OptimizeModeClass = EnumClass<"UNRECOGNIZED" | "SPEED" | "CODE_SIZE" | "LITE_RUNTIME"> & FileOptions_OptimizeModeValueMembers;
 
 const FileOptions_OptimizeMode_VALUE_COMMENTS = {
   SPEED: " Generate complete code for parsing, serialization,\n",
@@ -354,17 +391,23 @@ const FileOptions_OptimizeMode_VALUE_COMMENTS = {
 };
 
 export const FileOptions_OptimizeMode = createEnum("google.protobuf.FileOptions.OptimizeMode", {
-  /**  Generate complete code for parsing, serialization, */
-  /**  */
+  /**
+   *  Generate complete code for parsing, serialization,
+   * 
+   */
   SPEED: 1,
-  /**  etc. */
-  /**  */
-  /**  */
-  /**  Use ReflectionOps to implement these methods. */
-  /**  */
+  /**
+   *  etc.
+   * 
+   * 
+   *  Use ReflectionOps to implement these methods.
+   * 
+   */
   CODE_SIZE: 2,
-  /**  Generate code using MessageLite and the lite runtime. */
-  /**  */
+  /**
+   *  Generate code using MessageLite and the lite runtime.
+   * 
+   */
   LITE_RUNTIME: 3,
 }, FileOptions_OptimizeMode_VALUE_COMMENTS) as FileOptions_OptimizeModeClass;
 
@@ -390,7 +433,7 @@ interface FieldOptions_CTypeValueMembers {
   readonly CORD: EnumInstance<"UNRECOGNIZED" | "STRING" | "CORD" | "STRING_PIECE">;
   readonly STRING_PIECE: EnumInstance<"UNRECOGNIZED" | "STRING" | "CORD" | "STRING_PIECE">;
 }
-type FieldOptions_CTypeClass = EnumClass<"UNRECOGNIZED" | "STRING" | "CORD" | "STRING_PIECE"> & FieldOptions_CTypeValueMembers;
+export type FieldOptions_CTypeClass = EnumClass<"UNRECOGNIZED" | "STRING" | "CORD" | "STRING_PIECE"> & FieldOptions_CTypeValueMembers;
 
 const FieldOptions_CType_VALUE_COMMENTS = {
   STRING: " Default mode.\n",
@@ -398,16 +441,20 @@ const FieldOptions_CType_VALUE_COMMENTS = {
 };
 
 export const FieldOptions_CType = createEnum("google.protobuf.FieldOptions.CType", {
-  /**  Default mode. */
-  /**  */
+  /**
+   *  Default mode.
+   * 
+   */
   STRING: 0,
-  /**  The option [ctype=CORD] may be applied to a non-repeated field of type */
-  /**  "bytes". It indicates that in C++, the data should be stored in a Cord */
-  /**  instead of a string.  For very large strings, this may reduce memory */
-  /**  fragmentation. It may also allow better performance when parsing from a */
-  /**  Cord, or when parsing with aliasing enabled, as the parsed Cord may then */
-  /**  alias the original buffer. */
-  /**  */
+  /**
+   *  The option [ctype=CORD] may be applied to a non-repeated field of type
+   *  "bytes". It indicates that in C++, the data should be stored in a Cord
+   *  instead of a string.  For very large strings, this may reduce memory
+   *  fragmentation. It may also allow better performance when parsing from a
+   *  Cord, or when parsing with aliasing enabled, as the parsed Cord may then
+   *  alias the original buffer.
+   * 
+   */
   CORD: 1,
   STRING_PIECE: 2,
 }, FieldOptions_CType_VALUE_COMMENTS) as FieldOptions_CTypeClass;
@@ -433,7 +480,7 @@ interface FieldOptions_JSTypeValueMembers {
    */
   readonly JS_NUMBER: EnumInstance<"UNRECOGNIZED" | "JS_NORMAL" | "JS_STRING" | "JS_NUMBER">;
 }
-type FieldOptions_JSTypeClass = EnumClass<"UNRECOGNIZED" | "JS_NORMAL" | "JS_STRING" | "JS_NUMBER"> & FieldOptions_JSTypeValueMembers;
+export type FieldOptions_JSTypeClass = EnumClass<"UNRECOGNIZED" | "JS_NORMAL" | "JS_STRING" | "JS_NUMBER"> & FieldOptions_JSTypeValueMembers;
 
 const FieldOptions_JSType_VALUE_COMMENTS = {
   JS_NORMAL: " Use the default type.\n",
@@ -442,14 +489,20 @@ const FieldOptions_JSType_VALUE_COMMENTS = {
 };
 
 export const FieldOptions_JSType = createEnum("google.protobuf.FieldOptions.JSType", {
-  /**  Use the default type. */
-  /**  */
+  /**
+   *  Use the default type.
+   * 
+   */
   JS_NORMAL: 0,
-  /**  Use JavaScript strings. */
-  /**  */
+  /**
+   *  Use JavaScript strings.
+   * 
+   */
   JS_STRING: 1,
-  /**  Use JavaScript numbers. */
-  /**  */
+  /**
+   *  Use JavaScript numbers.
+   * 
+   */
   JS_NUMBER: 2,
 }, FieldOptions_JSType_VALUE_COMMENTS) as FieldOptions_JSTypeClass;
 
@@ -466,7 +519,7 @@ interface FieldOptions_OptionRetentionValueMembers {
   readonly RETENTION_RUNTIME: EnumInstance<"UNRECOGNIZED" | "RETENTION_UNKNOWN" | "RETENTION_RUNTIME" | "RETENTION_SOURCE">;
   readonly RETENTION_SOURCE: EnumInstance<"UNRECOGNIZED" | "RETENTION_UNKNOWN" | "RETENTION_RUNTIME" | "RETENTION_SOURCE">;
 }
-type FieldOptions_OptionRetentionClass = EnumClass<"UNRECOGNIZED" | "RETENTION_UNKNOWN" | "RETENTION_RUNTIME" | "RETENTION_SOURCE"> & FieldOptions_OptionRetentionValueMembers;
+export type FieldOptions_OptionRetentionClass = EnumClass<"UNRECOGNIZED" | "RETENTION_UNKNOWN" | "RETENTION_RUNTIME" | "RETENTION_SOURCE"> & FieldOptions_OptionRetentionValueMembers;
 
 export const FieldOptions_OptionRetention = createEnum("google.protobuf.FieldOptions.OptionRetention", {
   RETENTION_UNKNOWN: 0,
@@ -496,7 +549,7 @@ interface FieldOptions_OptionTargetTypeValueMembers {
   readonly TARGET_TYPE_SERVICE: EnumInstance<"UNRECOGNIZED" | "TARGET_TYPE_UNKNOWN" | "TARGET_TYPE_FILE" | "TARGET_TYPE_EXTENSION_RANGE" | "TARGET_TYPE_MESSAGE" | "TARGET_TYPE_FIELD" | "TARGET_TYPE_ONEOF" | "TARGET_TYPE_ENUM" | "TARGET_TYPE_ENUM_ENTRY" | "TARGET_TYPE_SERVICE" | "TARGET_TYPE_METHOD">;
   readonly TARGET_TYPE_METHOD: EnumInstance<"UNRECOGNIZED" | "TARGET_TYPE_UNKNOWN" | "TARGET_TYPE_FILE" | "TARGET_TYPE_EXTENSION_RANGE" | "TARGET_TYPE_MESSAGE" | "TARGET_TYPE_FIELD" | "TARGET_TYPE_ONEOF" | "TARGET_TYPE_ENUM" | "TARGET_TYPE_ENUM_ENTRY" | "TARGET_TYPE_SERVICE" | "TARGET_TYPE_METHOD">;
 }
-type FieldOptions_OptionTargetTypeClass = EnumClass<"UNRECOGNIZED" | "TARGET_TYPE_UNKNOWN" | "TARGET_TYPE_FILE" | "TARGET_TYPE_EXTENSION_RANGE" | "TARGET_TYPE_MESSAGE" | "TARGET_TYPE_FIELD" | "TARGET_TYPE_ONEOF" | "TARGET_TYPE_ENUM" | "TARGET_TYPE_ENUM_ENTRY" | "TARGET_TYPE_SERVICE" | "TARGET_TYPE_METHOD"> & FieldOptions_OptionTargetTypeValueMembers;
+export type FieldOptions_OptionTargetTypeClass = EnumClass<"UNRECOGNIZED" | "TARGET_TYPE_UNKNOWN" | "TARGET_TYPE_FILE" | "TARGET_TYPE_EXTENSION_RANGE" | "TARGET_TYPE_MESSAGE" | "TARGET_TYPE_FIELD" | "TARGET_TYPE_ONEOF" | "TARGET_TYPE_ENUM" | "TARGET_TYPE_ENUM_ENTRY" | "TARGET_TYPE_SERVICE" | "TARGET_TYPE_METHOD"> & FieldOptions_OptionTargetTypeValueMembers;
 
 export const FieldOptions_OptionTargetType = createEnum("google.protobuf.FieldOptions.OptionTargetType", {
   TARGET_TYPE_UNKNOWN: 0,
@@ -534,7 +587,7 @@ interface MethodOptions_IdempotencyLevelValueMembers {
    */
   readonly IDEMPOTENT: EnumInstance<"UNRECOGNIZED" | "IDEMPOTENCY_UNKNOWN" | "NO_SIDE_EFFECTS" | "IDEMPOTENT">;
 }
-type MethodOptions_IdempotencyLevelClass = EnumClass<"UNRECOGNIZED" | "IDEMPOTENCY_UNKNOWN" | "NO_SIDE_EFFECTS" | "IDEMPOTENT"> & MethodOptions_IdempotencyLevelValueMembers;
+export type MethodOptions_IdempotencyLevelClass = EnumClass<"UNRECOGNIZED" | "IDEMPOTENCY_UNKNOWN" | "NO_SIDE_EFFECTS" | "IDEMPOTENT"> & MethodOptions_IdempotencyLevelValueMembers;
 
 const MethodOptions_IdempotencyLevel_VALUE_COMMENTS = {
   NO_SIDE_EFFECTS: " implies idempotent\n",
@@ -543,11 +596,15 @@ const MethodOptions_IdempotencyLevel_VALUE_COMMENTS = {
 
 export const MethodOptions_IdempotencyLevel = createEnum("google.protobuf.MethodOptions.IdempotencyLevel", {
   IDEMPOTENCY_UNKNOWN: 0,
-  /**  implies idempotent */
-  /**  */
+  /**
+   *  implies idempotent
+   * 
+   */
   NO_SIDE_EFFECTS: 1,
-  /**  idempotent, but may have side effects */
-  /**  */
+  /**
+   *  idempotent, but may have side effects
+   * 
+   */
   IDEMPOTENT: 2,
 }, MethodOptions_IdempotencyLevel_VALUE_COMMENTS) as MethodOptions_IdempotencyLevelClass;
 
@@ -561,7 +618,7 @@ interface FeatureSet_FieldPresenceValueMembers {
   readonly IMPLICIT: EnumInstance<"UNRECOGNIZED" | "FIELD_PRESENCE_UNKNOWN" | "EXPLICIT" | "IMPLICIT" | "LEGACY_REQUIRED">;
   readonly LEGACY_REQUIRED: EnumInstance<"UNRECOGNIZED" | "FIELD_PRESENCE_UNKNOWN" | "EXPLICIT" | "IMPLICIT" | "LEGACY_REQUIRED">;
 }
-type FeatureSet_FieldPresenceClass = EnumClass<"UNRECOGNIZED" | "FIELD_PRESENCE_UNKNOWN" | "EXPLICIT" | "IMPLICIT" | "LEGACY_REQUIRED"> & FeatureSet_FieldPresenceValueMembers;
+export type FeatureSet_FieldPresenceClass = EnumClass<"UNRECOGNIZED" | "FIELD_PRESENCE_UNKNOWN" | "EXPLICIT" | "IMPLICIT" | "LEGACY_REQUIRED"> & FeatureSet_FieldPresenceValueMembers;
 
 export const FeatureSet_FieldPresence = createEnum("google.protobuf.FeatureSet.FieldPresence", {
   FIELD_PRESENCE_UNKNOWN: 0,
@@ -579,7 +636,7 @@ interface FeatureSet_EnumTypeValueMembers {
   readonly OPEN: EnumInstance<"UNRECOGNIZED" | "ENUM_TYPE_UNKNOWN" | "OPEN" | "CLOSED">;
   readonly CLOSED: EnumInstance<"UNRECOGNIZED" | "ENUM_TYPE_UNKNOWN" | "OPEN" | "CLOSED">;
 }
-type FeatureSet_EnumTypeClass = EnumClass<"UNRECOGNIZED" | "ENUM_TYPE_UNKNOWN" | "OPEN" | "CLOSED"> & FeatureSet_EnumTypeValueMembers;
+export type FeatureSet_EnumTypeClass = EnumClass<"UNRECOGNIZED" | "ENUM_TYPE_UNKNOWN" | "OPEN" | "CLOSED"> & FeatureSet_EnumTypeValueMembers;
 
 export const FeatureSet_EnumType = createEnum("google.protobuf.FeatureSet.EnumType", {
   ENUM_TYPE_UNKNOWN: 0,
@@ -596,7 +653,7 @@ interface FeatureSet_RepeatedFieldEncodingValueMembers {
   readonly PACKED: EnumInstance<"UNRECOGNIZED" | "REPEATED_FIELD_ENCODING_UNKNOWN" | "PACKED" | "EXPANDED">;
   readonly EXPANDED: EnumInstance<"UNRECOGNIZED" | "REPEATED_FIELD_ENCODING_UNKNOWN" | "PACKED" | "EXPANDED">;
 }
-type FeatureSet_RepeatedFieldEncodingClass = EnumClass<"UNRECOGNIZED" | "REPEATED_FIELD_ENCODING_UNKNOWN" | "PACKED" | "EXPANDED"> & FeatureSet_RepeatedFieldEncodingValueMembers;
+export type FeatureSet_RepeatedFieldEncodingClass = EnumClass<"UNRECOGNIZED" | "REPEATED_FIELD_ENCODING_UNKNOWN" | "PACKED" | "EXPANDED"> & FeatureSet_RepeatedFieldEncodingValueMembers;
 
 export const FeatureSet_RepeatedFieldEncoding = createEnum("google.protobuf.FeatureSet.RepeatedFieldEncoding", {
   REPEATED_FIELD_ENCODING_UNKNOWN: 0,
@@ -613,7 +670,7 @@ interface FeatureSet_Utf8ValidationValueMembers {
   readonly VERIFY: EnumInstance<"UNRECOGNIZED" | "UTF8_VALIDATION_UNKNOWN" | "VERIFY" | "NONE">;
   readonly NONE: EnumInstance<"UNRECOGNIZED" | "UTF8_VALIDATION_UNKNOWN" | "VERIFY" | "NONE">;
 }
-type FeatureSet_Utf8ValidationClass = EnumClass<"UNRECOGNIZED" | "UTF8_VALIDATION_UNKNOWN" | "VERIFY" | "NONE"> & FeatureSet_Utf8ValidationValueMembers;
+export type FeatureSet_Utf8ValidationClass = EnumClass<"UNRECOGNIZED" | "UTF8_VALIDATION_UNKNOWN" | "VERIFY" | "NONE"> & FeatureSet_Utf8ValidationValueMembers;
 
 export const FeatureSet_Utf8Validation = createEnum("google.protobuf.FeatureSet.Utf8Validation", {
   UTF8_VALIDATION_UNKNOWN: 0,
@@ -630,7 +687,7 @@ interface FeatureSet_MessageEncodingValueMembers {
   readonly LENGTH_PREFIXED: EnumInstance<"UNRECOGNIZED" | "MESSAGE_ENCODING_UNKNOWN" | "LENGTH_PREFIXED" | "DELIMITED">;
   readonly DELIMITED: EnumInstance<"UNRECOGNIZED" | "MESSAGE_ENCODING_UNKNOWN" | "LENGTH_PREFIXED" | "DELIMITED">;
 }
-type FeatureSet_MessageEncodingClass = EnumClass<"UNRECOGNIZED" | "MESSAGE_ENCODING_UNKNOWN" | "LENGTH_PREFIXED" | "DELIMITED"> & FeatureSet_MessageEncodingValueMembers;
+export type FeatureSet_MessageEncodingClass = EnumClass<"UNRECOGNIZED" | "MESSAGE_ENCODING_UNKNOWN" | "LENGTH_PREFIXED" | "DELIMITED"> & FeatureSet_MessageEncodingValueMembers;
 
 export const FeatureSet_MessageEncoding = createEnum("google.protobuf.FeatureSet.MessageEncoding", {
   MESSAGE_ENCODING_UNKNOWN: 0,
@@ -647,7 +704,7 @@ interface FeatureSet_JsonFormatValueMembers {
   readonly ALLOW: EnumInstance<"UNRECOGNIZED" | "JSON_FORMAT_UNKNOWN" | "ALLOW" | "LEGACY_BEST_EFFORT">;
   readonly LEGACY_BEST_EFFORT: EnumInstance<"UNRECOGNIZED" | "JSON_FORMAT_UNKNOWN" | "ALLOW" | "LEGACY_BEST_EFFORT">;
 }
-type FeatureSet_JsonFormatClass = EnumClass<"UNRECOGNIZED" | "JSON_FORMAT_UNKNOWN" | "ALLOW" | "LEGACY_BEST_EFFORT"> & FeatureSet_JsonFormatValueMembers;
+export type FeatureSet_JsonFormatClass = EnumClass<"UNRECOGNIZED" | "JSON_FORMAT_UNKNOWN" | "ALLOW" | "LEGACY_BEST_EFFORT"> & FeatureSet_JsonFormatValueMembers;
 
 export const FeatureSet_JsonFormat = createEnum("google.protobuf.FeatureSet.JsonFormat", {
   JSON_FORMAT_UNKNOWN: 0,
@@ -664,7 +721,7 @@ interface FeatureSet_EnforceNamingStyleValueMembers {
   readonly STYLE2024: EnumInstance<"UNRECOGNIZED" | "ENFORCE_NAMING_STYLE_UNKNOWN" | "STYLE2024" | "STYLE_LEGACY">;
   readonly STYLE_LEGACY: EnumInstance<"UNRECOGNIZED" | "ENFORCE_NAMING_STYLE_UNKNOWN" | "STYLE2024" | "STYLE_LEGACY">;
 }
-type FeatureSet_EnforceNamingStyleClass = EnumClass<"UNRECOGNIZED" | "ENFORCE_NAMING_STYLE_UNKNOWN" | "STYLE2024" | "STYLE_LEGACY"> & FeatureSet_EnforceNamingStyleValueMembers;
+export type FeatureSet_EnforceNamingStyleClass = EnumClass<"UNRECOGNIZED" | "ENFORCE_NAMING_STYLE_UNKNOWN" | "STYLE2024" | "STYLE_LEGACY"> & FeatureSet_EnforceNamingStyleValueMembers;
 
 export const FeatureSet_EnforceNamingStyle = createEnum("google.protobuf.FeatureSet.EnforceNamingStyle", {
   ENFORCE_NAMING_STYLE_UNKNOWN: 0,
@@ -701,7 +758,7 @@ interface FeatureSet_VisibilityFeature_DefaultSymbolVisibilityValueMembers {
    */
   readonly STRICT: EnumInstance<"UNRECOGNIZED" | "DEFAULT_SYMBOL_VISIBILITY_UNKNOWN" | "EXPORT_ALL" | "EXPORT_TOP_LEVEL" | "LOCAL_ALL" | "STRICT">;
 }
-type FeatureSet_VisibilityFeature_DefaultSymbolVisibilityClass = EnumClass<"UNRECOGNIZED" | "DEFAULT_SYMBOL_VISIBILITY_UNKNOWN" | "EXPORT_ALL" | "EXPORT_TOP_LEVEL" | "LOCAL_ALL" | "STRICT"> & FeatureSet_VisibilityFeature_DefaultSymbolVisibilityValueMembers;
+export type FeatureSet_VisibilityFeature_DefaultSymbolVisibilityClass = EnumClass<"UNRECOGNIZED" | "DEFAULT_SYMBOL_VISIBILITY_UNKNOWN" | "EXPORT_ALL" | "EXPORT_TOP_LEVEL" | "LOCAL_ALL" | "STRICT"> & FeatureSet_VisibilityFeature_DefaultSymbolVisibilityValueMembers;
 
 const FeatureSet_VisibilityFeature_DefaultSymbolVisibility_VALUE_COMMENTS = {
   EXPORT_ALL: " Default pre-EDITION_2024, all UNSET visibility are export.\n",
@@ -712,19 +769,27 @@ const FeatureSet_VisibilityFeature_DefaultSymbolVisibility_VALUE_COMMENTS = {
 
 export const FeatureSet_VisibilityFeature_DefaultSymbolVisibility = createEnum("google.protobuf.FeatureSet.VisibilityFeature.DefaultSymbolVisibility", {
   DEFAULT_SYMBOL_VISIBILITY_UNKNOWN: 0,
-  /**  Default pre-EDITION_2024, all UNSET visibility are export. */
-  /**  */
+  /**
+   *  Default pre-EDITION_2024, all UNSET visibility are export.
+   * 
+   */
   EXPORT_ALL: 1,
-  /**  All top-level symbols default to export, nested default to local. */
-  /**  */
+  /**
+   *  All top-level symbols default to export, nested default to local.
+   * 
+   */
   EXPORT_TOP_LEVEL: 2,
-  /**  All symbols default to local. */
-  /**  */
+  /**
+   *  All symbols default to local.
+   * 
+   */
   LOCAL_ALL: 3,
-  /**  All symbols local by default. Nested types cannot be exported. */
-  /**  With special case caveat for message { enum {} reserved 1 to max; } */
-  /**  This is the recommended setting for new protos. */
-  /**  */
+  /**
+   *  All symbols local by default. Nested types cannot be exported.
+   *  With special case caveat for message { enum {} reserved 1 to max; }
+   *  This is the recommended setting for new protos.
+   * 
+   */
   STRICT: 4,
 }, FeatureSet_VisibilityFeature_DefaultSymbolVisibility_VALUE_COMMENTS) as FeatureSet_VisibilityFeature_DefaultSymbolVisibilityClass;
 
@@ -754,7 +819,7 @@ interface GeneratedCodeInfo_Annotation_SemanticValueMembers {
    */
   readonly ALIAS: EnumInstance<"UNRECOGNIZED" | "NONE" | "SET" | "ALIAS">;
 }
-type GeneratedCodeInfo_Annotation_SemanticClass = EnumClass<"UNRECOGNIZED" | "NONE" | "SET" | "ALIAS"> & GeneratedCodeInfo_Annotation_SemanticValueMembers;
+export type GeneratedCodeInfo_Annotation_SemanticClass = EnumClass<"UNRECOGNIZED" | "NONE" | "SET" | "ALIAS"> & GeneratedCodeInfo_Annotation_SemanticValueMembers;
 
 const GeneratedCodeInfo_Annotation_Semantic_VALUE_COMMENTS = {
   NONE: " There is no effect or the effect is indescribable.\n",
@@ -763,14 +828,20 @@ const GeneratedCodeInfo_Annotation_Semantic_VALUE_COMMENTS = {
 };
 
 export const GeneratedCodeInfo_Annotation_Semantic = createEnum("google.protobuf.GeneratedCodeInfo.Annotation.Semantic", {
-  /**  There is no effect or the effect is indescribable. */
-  /**  */
+  /**
+   *  There is no effect or the effect is indescribable.
+   * 
+   */
   NONE: 0,
-  /**  The element is set or otherwise mutated. */
-  /**  */
+  /**
+   *  The element is set or otherwise mutated.
+   * 
+   */
   SET: 1,
-  /**  An alias to the element is returned. */
-  /**  */
+  /**
+   *  An alias to the element is returned.
+   * 
+   */
   ALIAS: 2,
 }, GeneratedCodeInfo_Annotation_Semantic_VALUE_COMMENTS) as GeneratedCodeInfo_Annotation_SemanticClass;
 
@@ -3632,6 +3703,12 @@ export const FileOptions: MessageFns<FileOptions, "google.protobuf.FileOptions">
   $type: "google.protobuf.FileOptions" as const,
 
   encode(message: FileOptions, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {
+    if (message.javaGenerateEqualsAndHash !== undefined) {
+      if (!__deprecatedWarned.has("google.protobuf.FileOptions.java_generate_equals_and_hash")) {
+        __deprecatedWarned.add("google.protobuf.FileOptions.java_generate_equals_and_hash");
+        deprecatedWarn("", "field", "google.protobuf.FileOptions.java_generate_equals_and_hash", undefined);
+      }
+    }
     if (message.javaPackage !== undefined) {
       writer.uint32(10).string(message.javaPackage);
     }
@@ -4196,6 +4273,12 @@ export const MessageOptions: MessageFns<MessageOptions, "google.protobuf.Message
   $type: "google.protobuf.MessageOptions" as const,
 
   encode(message: MessageOptions, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {
+    if (message.deprecatedLegacyJsonFieldConflicts !== undefined) {
+      if (!__deprecatedWarned.has("google.protobuf.MessageOptions.deprecated_legacy_json_field_conflicts")) {
+        __deprecatedWarned.add("google.protobuf.MessageOptions.deprecated_legacy_json_field_conflicts");
+        deprecatedWarn("", "field", "google.protobuf.MessageOptions.deprecated_legacy_json_field_conflicts", undefined);
+      }
+    }
     if (message.messageSetWireFormat !== undefined) {
       writer.uint32(8).bool(message.messageSetWireFormat);
     }
@@ -5344,6 +5427,12 @@ export const EnumOptions: MessageFns<EnumOptions, "google.protobuf.EnumOptions">
   $type: "google.protobuf.EnumOptions" as const,
 
   encode(message: EnumOptions, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {
+    if (message.deprecatedLegacyJsonFieldConflicts !== undefined) {
+      if (!__deprecatedWarned.has("google.protobuf.EnumOptions.deprecated_legacy_json_field_conflicts")) {
+        __deprecatedWarned.add("google.protobuf.EnumOptions.deprecated_legacy_json_field_conflicts");
+        deprecatedWarn("", "field", "google.protobuf.EnumOptions.deprecated_legacy_json_field_conflicts", undefined);
+      }
+    }
     if (message.allowAlias !== undefined) {
       writer.uint32(16).bool(message.allowAlias);
     }

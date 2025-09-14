@@ -6,7 +6,7 @@
 
 # Interface: ContainerSpec
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5530
+Defined in: src/generated/nebius/iam/v1/index.ts:5531
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5530
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5532
+Defined in: src/generated/nebius/iam/v1/index.ts:5533
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5532
 
 > **$type**: `"nebius.iam.v1.ContainerSpec"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5531
+Defined in: src/generated/nebius/iam/v1/index.ts:5532
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5531
 
 > **region**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5533
+Defined in: src/generated/nebius/iam/v1/index.ts:5534

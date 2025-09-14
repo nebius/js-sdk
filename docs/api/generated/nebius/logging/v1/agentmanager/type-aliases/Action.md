@@ -8,6 +8,6 @@
 
 > **Action** = [`EnumInstance`](../../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"ACTION_UNDEFINED"` \| `"NOP"` \| `"UPDATE"` \| `"RESTART"`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:108
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:109
 
 Action to be taken by the agent based on version check.

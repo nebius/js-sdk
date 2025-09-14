@@ -6,7 +6,7 @@
 
 # Interface: AuditEventServiceBaseClient
 
-Defined in: src/generated/nebius/audit/v2/index.ts:444
+Defined in: src/generated/nebius/audit/v2/index.ts:445
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:445
+Defined in: src/generated/nebius/audit/v2/index.ts:446
 
 #### Parameters
 

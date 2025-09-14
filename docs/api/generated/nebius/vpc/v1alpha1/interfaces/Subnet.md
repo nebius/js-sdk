@@ -6,7 +6,7 @@
 
 # Interface: Subnet
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7223
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7224
 
 Defines a Subnet, a segment of a network used for more granular control and management.
 Subnet uses pools to organize address space.
@@ -17,7 +17,7 @@ Subnet uses pools to organize address space.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7225
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7226
 
 ---
 
@@ -25,7 +25,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7225
 
 > **$type**: `"nebius.vpc.v1alpha1.Subnet"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7224
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7225
 
 ---
 
@@ -33,7 +33,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7224
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7231
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7232
 
 Metadata for the subnet resource.
 `metadata.parent_id` represents IAM container
@@ -44,7 +44,7 @@ Metadata for the subnet resource.
 
 > `optional` **spec**: [`SubnetSpec`](SubnetSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7236
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7237
 
 Specification of the subnet.
 
@@ -54,6 +54,6 @@ Specification of the subnet.
 
 > `optional` **status**: [`SubnetStatus`](SubnetStatus.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7241
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7242
 
 Status of the subnet.

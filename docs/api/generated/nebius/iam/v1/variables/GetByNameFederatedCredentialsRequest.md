@@ -8,4 +8,4 @@
 
 > **GetByNameFederatedCredentialsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetByNameFederatedCredentialsRequest`](../interfaces/GetByNameFederatedCredentialsRequest.md), `"nebius.iam.v1.GetByNameFederatedCredentialsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5825
+Defined in: src/generated/nebius/iam/v1/index.ts:5826

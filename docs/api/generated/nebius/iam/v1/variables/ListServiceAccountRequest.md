@@ -8,4 +8,4 @@
 
 > **ListServiceAccountRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), `"nebius.iam.v1.ListServiceAccountRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:16341
+Defined in: src/generated/nebius/iam/v1/index.ts:16342

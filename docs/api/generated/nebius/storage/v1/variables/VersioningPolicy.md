@@ -8,4 +8,4 @@
 
 > **VersioningPolicy**: [`VersioningPolicyClass`](../type-aliases/VersioningPolicyClass.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:32
+Defined in: src/generated/nebius/storage/v1/index.ts:33

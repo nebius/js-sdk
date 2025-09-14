@@ -8,4 +8,4 @@
 
 > **ClusterStatus_Phase**: [`ClusterStatus_PhaseClass`](../type-aliases/ClusterStatus_PhaseClass.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:10
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:11

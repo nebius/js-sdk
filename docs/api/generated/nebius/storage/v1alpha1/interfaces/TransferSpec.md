@@ -6,7 +6,7 @@
 
 # Interface: TransferSpec
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1657
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1658
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1657
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1659
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1660
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1659
 
 > **$type**: `"nebius.storage.v1alpha1.TransferSpec"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1658
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1659
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1658
 
 > `optional` **destination**: [`TransferSpec_DestinationBucket`](TransferSpec_DestinationBucket.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1661
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1662
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1661
 
 > `optional` **interIterationInterval**: `Duration`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1666
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1667
 
 Time to wait between transfer iterations. Default is 15 minutes if not specified.
 
@@ -48,7 +48,7 @@ Time to wait between transfer iterations. Default is 15 minutes if not specified
 
 > **overwriteStrategy**: [`TransferSpec_OverwriteStrategy`](../type-aliases/TransferSpec_OverwriteStrategy.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1671
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1672
 
 Overwrite strategy set logic of overwrite already existed objects in destination bucket.
 
@@ -58,7 +58,7 @@ Overwrite strategy set logic of overwrite already existed objects in destination
 
 > `optional` **source**: [`TransferSpec_SourceBucket`](TransferSpec_SourceBucket.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1660
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1661
 
 ---
 
@@ -66,6 +66,6 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1660
 
 > `optional` **stopCondition**: \{ `$case`: `"afterOneIteration"`; `afterOneIteration`: [`TransferSpec_StopConditionAfterOneIteration`](TransferSpec_StopConditionAfterOneIteration.md); \} \| \{ `$case`: `"afterNEmptyIterations"`; `afterNEmptyIterations`: [`TransferSpec_StopConditionAfterNEmptyIterations`](TransferSpec_StopConditionAfterNEmptyIterations.md); \} \| \{ `$case`: `"infinite"`; `infinite`: [`TransferSpec_StopConditionInfinite`](TransferSpec_StopConditionInfinite.md); \}
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1676
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1677
 
 The stop condition is checked after every iteration. If the condition is met, the transfer will stop.

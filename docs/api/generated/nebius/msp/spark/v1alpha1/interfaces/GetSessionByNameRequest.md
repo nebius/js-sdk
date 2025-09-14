@@ -6,7 +6,7 @@
 
 # Interface: GetSessionByNameRequest
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3953
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3998
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3953
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3955
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4000
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3955
 
 > **$type**: `"nebius.msp.spark.v1alpha1.GetSessionByNameRequest"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3954
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3999
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3954
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3965
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4010
 
 Name of the session to retrieve.
 
@@ -40,6 +40,6 @@ Name of the session to retrieve.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3960
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4005
 
 Parent ID of the session to retrieve.

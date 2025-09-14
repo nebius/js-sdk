@@ -8,4 +8,4 @@
 
 > **GetByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetByNameRequest`](../interfaces/GetByNameRequest.md), `"nebius.quotas.v1.GetByNameRequest"`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:351
+Defined in: src/generated/nebius/quotas/v1/index.ts:352

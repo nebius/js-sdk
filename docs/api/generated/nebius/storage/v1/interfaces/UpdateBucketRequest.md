@@ -6,7 +6,7 @@
 
 # Interface: UpdateBucketRequest
 
-Defined in: src/generated/nebius/storage/v1/index.ts:832
+Defined in: src/generated/nebius/storage/v1/index.ts:833
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:832
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:834
+Defined in: src/generated/nebius/storage/v1/index.ts:835
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:834
 
 > **$type**: `"nebius.storage.v1.UpdateBucketRequest"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:833
+Defined in: src/generated/nebius/storage/v1/index.ts:834
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:833
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:835
+Defined in: src/generated/nebius/storage/v1/index.ts:836
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:835
 
 > `optional` **spec**: [`BucketSpec`](BucketSpec.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:836
+Defined in: src/generated/nebius/storage/v1/index.ts:837

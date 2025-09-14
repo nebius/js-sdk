@@ -6,7 +6,7 @@
 
 # Interface: PercentOrCount
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5817
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6135
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5817
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5819
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6137
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5819
 
 > **$type**: `"nebius.mk8s.v1.PercentOrCount"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5818
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6136
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5818
 
 > `optional` **value**: \{ `$case`: `"percent"`; `percent`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \} \| \{ `$case`: `"count"`; `count`: [`Long`](../../../../../runtime/protos/core/classes/Long.md); \}
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5820
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6138

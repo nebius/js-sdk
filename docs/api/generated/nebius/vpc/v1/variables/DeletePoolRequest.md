@@ -8,4 +8,4 @@
 
 > **DeletePoolRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeletePoolRequest`](../interfaces/DeletePoolRequest.md), `"nebius.vpc.v1.DeletePoolRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4951
+Defined in: src/generated/nebius/vpc/v1/index.ts:4952

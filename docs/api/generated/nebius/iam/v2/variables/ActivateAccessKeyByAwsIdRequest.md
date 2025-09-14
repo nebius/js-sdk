@@ -8,4 +8,4 @@
 
 > **ActivateAccessKeyByAwsIdRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), `"nebius.iam.v2.ActivateAccessKeyByAwsIdRequest"`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:902
+Defined in: src/generated/nebius/iam/v2/index.ts:903

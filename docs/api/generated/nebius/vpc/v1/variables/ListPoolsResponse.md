@@ -8,4 +8,4 @@
 
 > **ListPoolsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListPoolsResponse`](../interfaces/ListPoolsResponse.md), `"nebius.vpc.v1.ListPoolsResponse"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4623
+Defined in: src/generated/nebius/vpc/v1/index.ts:4624

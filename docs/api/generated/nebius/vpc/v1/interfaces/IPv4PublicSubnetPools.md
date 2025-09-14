@@ -6,7 +6,7 @@
 
 # Interface: IPv4PublicSubnetPools
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7733
+Defined in: src/generated/nebius/vpc/v1/index.ts:7734
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7733
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7735
+Defined in: src/generated/nebius/vpc/v1/index.ts:7736
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7735
 
 > **$type**: `"nebius.vpc.v1.IPv4PublicSubnetPools"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7734
+Defined in: src/generated/nebius/vpc/v1/index.ts:7735
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7734
 
 > **pools**: [`SubnetPool`](SubnetPool.md)[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7741
+Defined in: src/generated/nebius/vpc/v1/index.ts:7742
 
 Pools for public ipv4 allocations in subnet
 Must be empty if 'use_network_pools = true'
@@ -41,7 +41,7 @@ Must be empty if 'use_network_pools = true'
 
 > **useNetworkPools**: `boolean`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7747
+Defined in: src/generated/nebius/vpc/v1/index.ts:7748
 
 Allow using of public ipv4 pools which are specified in network
 Must be false if 'pools' is not empty

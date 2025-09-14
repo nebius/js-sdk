@@ -4,9 +4,13 @@
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / ClusterServiceServer
 
-# Interface: ClusterServiceServer
+# ~~Interface: ClusterServiceServer~~
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:852
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:862
+
+## Deprecated
+
+Deprecated, will be removed on 2025-08-12: Nebius AI Cloud no longer supports the service. Instead, use Application for Apache Spark™ Connect in Standalone Applications..
 
 ## Extends
 
@@ -18,48 +22,48 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:852
 
 ## Properties
 
-### create
+### ~~create~~
 
 > **create**: `handleUnaryCall`\<[`CreateClusterRequest`](CreateClusterRequest.md), [`Operation`](../../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:856
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:866
 
 ---
 
-### delete
+### ~~delete~~
 
 > **delete**: `handleUnaryCall`\<[`DeleteClusterRequest`](DeleteClusterRequest.md), [`Operation`](../../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:858
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:868
 
 ---
 
-### get
+### ~~get~~
 
 > **get**: `handleUnaryCall`\<[`GetClusterRequest`](GetClusterRequest.md), [`Cluster`](Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:853
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:863
 
 ---
 
-### getByName
+### ~~getByName~~
 
 > **getByName**: `handleUnaryCall`\<[`GetClusterByNameRequest`](GetClusterByNameRequest.md), [`Cluster`](Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:854
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:864
 
 ---
 
-### list
+### ~~list~~
 
 > **list**: `handleUnaryCall`\<[`ListClustersRequest`](ListClustersRequest.md), [`ListClustersResponse`](ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:855
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:865
 
 ---
 
-### update
+### ~~update~~
 
 > **update**: `handleUnaryCall`\<[`UpdateClusterRequest`](UpdateClusterRequest.md), [`Operation`](../../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:857
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:867

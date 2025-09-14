@@ -8,4 +8,4 @@
 
 > **UpdateBucketRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateBucketRequest`](../interfaces/UpdateBucketRequest.md), `"nebius.storage.v1.UpdateBucketRequest"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:832
+Defined in: src/generated/nebius/storage/v1/index.ts:833

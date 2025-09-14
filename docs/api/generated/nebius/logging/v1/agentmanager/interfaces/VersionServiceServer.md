@@ -6,7 +6,7 @@
 
 # Interface: VersionServiceServer
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1761
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1762
 
 ## Extends
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1761
 
 > **getVersion**: `handleUnaryCall`\<[`GetVersionRequest`](GetVersionRequest.md), [`GetVersionResponse`](GetVersionResponse.md)\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1762
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1763

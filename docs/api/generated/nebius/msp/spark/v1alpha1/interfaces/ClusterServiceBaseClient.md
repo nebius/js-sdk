@@ -4,9 +4,13 @@
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / ClusterServiceBaseClient
 
-# Interface: ClusterServiceBaseClient
+# ~~Interface: ClusterServiceBaseClient~~
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:861
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:874
+
+## Deprecated
+
+Deprecated, will be removed on 2025-08-12: Nebius AI Cloud no longer supports the service. Instead, use Application for Apache Spark™ Connect in Standalone Applications..
 
 ## Extends
 
@@ -14,7 +18,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:861
 
 ## Methods
 
-### close()
+### ~~close()~~
 
 > **close**(): `void`
 
@@ -30,11 +34,11 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 ---
 
-### create()
+### ~~create()~~
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:865
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:878
 
 #### Parameters
 
@@ -60,11 +64,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:865
 
 ---
 
-### delete()
+### ~~delete()~~
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:867
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:880
 
 #### Parameters
 
@@ -90,11 +94,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:867
 
 ---
 
-### get()
+### ~~get()~~
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:862
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:875
 
 #### Parameters
 
@@ -120,11 +124,11 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:862
 
 ---
 
-### getByName()
+### ~~getByName()~~
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:863
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:876
 
 #### Parameters
 
@@ -150,7 +154,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:863
 
 ---
 
-### getChannel()
+### ~~getChannel()~~
 
 > **getChannel**(): `Channel`
 
@@ -166,11 +170,11 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 ---
 
-### list()
+### ~~list()~~
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:864
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:877
 
 #### Parameters
 
@@ -196,7 +200,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:864
 
 ---
 
-### makeBidiStreamRequest()
+### ~~makeBidiStreamRequest()~~
 
 #### Call Signature
 
@@ -288,7 +292,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:72
 
 ---
 
-### makeClientStreamRequest()
+### ~~makeClientStreamRequest()~~
 
 #### Call Signature
 
@@ -476,7 +480,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:67
 
 ---
 
-### makeServerStreamRequest()
+### ~~makeServerStreamRequest()~~
 
 #### Call Signature
 
@@ -576,7 +580,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:70
 
 ---
 
-### makeUnaryRequest()
+### ~~makeUnaryRequest()~~
 
 #### Call Signature
 
@@ -780,11 +784,11 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 ---
 
-### update()
+### ~~update()~~
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:866
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:879
 
 #### Parameters
 
@@ -810,7 +814,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:866
 
 ---
 
-### waitForReady()
+### ~~waitForReady()~~
 
 > **waitForReady**(`deadline`, `callback`): `void`
 

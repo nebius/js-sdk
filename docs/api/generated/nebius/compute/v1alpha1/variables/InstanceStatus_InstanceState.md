@@ -8,4 +8,4 @@
 
 > **InstanceStatus_InstanceState**: [`InstanceStatus_InstanceStateClass`](../type-aliases/InstanceStatus_InstanceStateClass.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6593
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:6594

@@ -6,7 +6,7 @@
 
 # Interface: Resource
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1983
+Defined in: src/generated/nebius/audit/v2/index.ts:1984
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1983
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1985
+Defined in: src/generated/nebius/audit/v2/index.ts:1986
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1985
 
 > **$type**: `"nebius.audit.v2.Resource"`
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1984
+Defined in: src/generated/nebius/audit/v2/index.ts:1985
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/audit/v2/index.ts:1984
 
 > **hierarchy**: [`ResourceMetadata`](ResourceMetadata.md)[]
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2000
+Defined in: src/generated/nebius/audit/v2/index.ts:2001
 
 Top-down resources hierarchy from tenant to resource.
 
@@ -40,7 +40,7 @@ Top-down resources hierarchy from tenant to resource.
 
 > `optional` **metadata**: [`ResourceMetadata`](ResourceMetadata.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1990
+Defined in: src/generated/nebius/audit/v2/index.ts:1991
 
 Provides basic information about the resource.
 
@@ -50,6 +50,6 @@ Provides basic information about the resource.
 
 > `optional` **state**: [`ResourceState`](ResourceState.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:1995
+Defined in: src/generated/nebius/audit/v2/index.ts:1996
 
 Gives an understanding of how the resource was changed in the call.

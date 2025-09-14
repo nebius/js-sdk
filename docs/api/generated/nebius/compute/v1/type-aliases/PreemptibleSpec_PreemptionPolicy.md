@@ -8,4 +8,4 @@
 
 > **PreemptibleSpec_PreemptionPolicy** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"STOP"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7258
+Defined in: src/generated/nebius/compute/v1/index.ts:7259

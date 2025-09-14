@@ -8,4 +8,4 @@
 
 > **SubnetPool**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`SubnetPool`](../interfaces/SubnetPool.md), `"nebius.vpc.v1.SubnetPool"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7847
+Defined in: src/generated/nebius/vpc/v1/index.ts:7848

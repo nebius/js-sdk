@@ -8,4 +8,4 @@
 
 > **OutOfRange**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`OutOfRange`](../interfaces/OutOfRange.md), `"nebius.common.error.v1alpha1.OutOfRange"`\>
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:776
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:777

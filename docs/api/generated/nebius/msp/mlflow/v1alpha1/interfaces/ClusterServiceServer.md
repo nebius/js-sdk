@@ -6,7 +6,7 @@
 
 # Interface: ClusterServiceServer
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:723
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:724
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:723
 
 > **create**: `handleUnaryCall`\<[`CreateClusterRequest`](CreateClusterRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:727
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:728
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:727
 
 > **delete**: `handleUnaryCall`\<[`DeleteClusterRequest`](DeleteClusterRequest.md), [`Operation`](../../../../common/v1alpha1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:728
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:729
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:728
 
 > **get**: `handleUnaryCall`\<[`GetClusterRequest`](GetClusterRequest.md), [`Cluster`](Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:724
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:725
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:724
 
 > **getByName**: `handleUnaryCall`\<[`GetClusterByNameRequest`](GetClusterByNameRequest.md), [`Cluster`](Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:725
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:726
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:725
 
 > **list**: `handleUnaryCall`\<[`ListClustersRequest`](ListClustersRequest.md), [`ListClustersResponse`](ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:726
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:727

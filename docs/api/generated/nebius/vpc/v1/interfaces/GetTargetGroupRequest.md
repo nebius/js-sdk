@@ -6,7 +6,7 @@
 
 # Interface: GetTargetGroupRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8203
+Defined in: src/generated/nebius/vpc/v1/index.ts:8204
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8203
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8205
+Defined in: src/generated/nebius/vpc/v1/index.ts:8206
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8205
 
 > **$type**: `"nebius.vpc.v1.GetTargetGroupRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8204
+Defined in: src/generated/nebius/vpc/v1/index.ts:8205
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:8204
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8206
+Defined in: src/generated/nebius/vpc/v1/index.ts:8207

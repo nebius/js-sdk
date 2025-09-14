@@ -8,4 +8,4 @@
 
 > **AttachedFilesystemSpec_AttachMode** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"READ_ONLY"` \| `"READ_WRITE"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4093
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4364

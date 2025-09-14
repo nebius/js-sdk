@@ -8,4 +8,4 @@
 
 > **GroupStatus_State**: [`GroupStatus_StateClass`](../type-aliases/GroupStatus_StateClass.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12633
+Defined in: src/generated/nebius/iam/v1/index.ts:12634

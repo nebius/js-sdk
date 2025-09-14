@@ -8,4 +8,4 @@
 
 > **IPAddress**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`IPAddress`](../interfaces/IPAddress.md), `"nebius.vpc.v1alpha1.IPAddress"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2436
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:2437

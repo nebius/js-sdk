@@ -6,7 +6,7 @@
 
 # Interface: JavaConfig
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1781
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1804
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1781
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1783
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1806
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1783
 
 > **$type**: `"nebius.msp.spark.v1alpha1.JavaConfig"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1782
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1805
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1782
 
 > **entrypointClass**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1788
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1811
 
 Entrypoint class for Java application

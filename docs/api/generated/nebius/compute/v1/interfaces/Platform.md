@@ -6,7 +6,7 @@
 
 # Interface: Platform
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11489
+Defined in: src/generated/nebius/compute/v1/index.ts:11490
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11489
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11491
+Defined in: src/generated/nebius/compute/v1/index.ts:11492
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11491
 
 > **$type**: `"nebius.compute.v1.Platform"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11490
+Defined in: src/generated/nebius/compute/v1/index.ts:11491
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11490
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11492
+Defined in: src/generated/nebius/compute/v1/index.ts:11493
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11492
 
 > `optional` **spec**: [`PlatformSpec`](PlatformSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11493
+Defined in: src/generated/nebius/compute/v1/index.ts:11494
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11493
 
 > `optional` **status**: [`PlatformStatus`](PlatformStatus.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11494
+Defined in: src/generated/nebius/compute/v1/index.ts:11495

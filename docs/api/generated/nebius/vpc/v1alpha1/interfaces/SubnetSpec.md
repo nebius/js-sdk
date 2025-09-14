@@ -6,7 +6,7 @@
 
 # Interface: SubnetSpec
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7371
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7372
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7371
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7373
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7374
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7373
 
 > **$type**: `"nebius.vpc.v1alpha1.SubnetSpec"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7372
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7373
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7372
 
 > **enableEgressNat**: `boolean`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7388
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7389
 
 Enable egress NAT gateway
 
@@ -40,7 +40,7 @@ Enable egress NAT gateway
 
 > **networkId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7378
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7379
 
 Network ID.
 
@@ -50,6 +50,6 @@ Network ID.
 
 > **pools**: [`SubnetPool`](SubnetPool.md)[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7383
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7384
 
 Pool for addresses

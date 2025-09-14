@@ -8,4 +8,4 @@
 
 > **TransferSpec_OverwriteStrategy** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"OVERWRITE_STRATEGY_UNSPECIFIED"` \| `"NEVER"` \| `"IF_NEWER"` \| `"ALWAYS"`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1400
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1401

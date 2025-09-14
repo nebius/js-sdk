@@ -8,7 +8,7 @@
 
 > **ScopeServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ScopeServiceBaseClient`](../interfaces/ScopeServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5923
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5924
 
 ## Type Declaration
 

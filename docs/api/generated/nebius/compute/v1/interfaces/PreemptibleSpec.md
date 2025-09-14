@@ -6,7 +6,7 @@
 
 # Interface: PreemptibleSpec
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7840
+Defined in: src/generated/nebius/compute/v1/index.ts:7841
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7840
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7842
+Defined in: src/generated/nebius/compute/v1/index.ts:7843
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7842
 
 > **$type**: `"nebius.compute.v1.PreemptibleSpec"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7841
+Defined in: src/generated/nebius/compute/v1/index.ts:7842
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:7841
 
 > **onPreemption**: [`PreemptibleSpec_PreemptionPolicy`](../type-aliases/PreemptibleSpec_PreemptionPolicy.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7848
+Defined in: src/generated/nebius/compute/v1/index.ts:7849
 
 Specifies what happens when the VM is preempted. The only supported value is STOP:
 Compute stops the VM without deleting or restarting it.
@@ -41,7 +41,7 @@ Compute stops the VM without deleting or restarting it.
 
 > **priority**: `number`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7854
+Defined in: src/generated/nebius/compute/v1/index.ts:7855
 
 The value can range from 1 to 5, where 5 indicates the highest priority.
 Affects the order in which Compute tries to preempt VMs, but does not guarantee the exact order.

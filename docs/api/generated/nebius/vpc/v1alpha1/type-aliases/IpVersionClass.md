@@ -8,4 +8,4 @@
 
 > **IpVersionClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"IP_VERSION_UNSPECIFIED"` \| `"IPV4"` \| `"IPV6"`\> & `IpVersionValueMembers`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4754
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4755

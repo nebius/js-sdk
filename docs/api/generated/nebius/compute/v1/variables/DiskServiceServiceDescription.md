@@ -8,7 +8,7 @@
 
 > **DiskServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:662
+Defined in: src/generated/nebius/compute/v1/index.ts:663
 
 ## Type Declaration
 

@@ -6,7 +6,7 @@
 
 # Interface: UserTenantInfo
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14861
+Defined in: src/generated/nebius/iam/v1/index.ts:14862
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14861
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14863
+Defined in: src/generated/nebius/iam/v1/index.ts:14864
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14863
 
 > **$type**: `"nebius.iam.v1.UserTenantInfo"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14862
+Defined in: src/generated/nebius/iam/v1/index.ts:14863
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14862
 
 > **tenantId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14864
+Defined in: src/generated/nebius/iam/v1/index.ts:14865
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14864
 
 > **tenantUserAccountId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14865
+Defined in: src/generated/nebius/iam/v1/index.ts:14866

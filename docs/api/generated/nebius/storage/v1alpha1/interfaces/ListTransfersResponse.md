@@ -6,7 +6,7 @@
 
 # Interface: ListTransfersResponse
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:235
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:236
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:235
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:237
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:238
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:237
 
 > **$type**: `"nebius.storage.v1alpha1.ListTransfersResponse"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:236
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:237
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:236
 
 > **items**: [`Transfer`](Transfer.md)[]
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:242
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:243
 
 List of transfers returned in the response.
 
@@ -40,6 +40,6 @@ List of transfers returned in the response.
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:247
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:248
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

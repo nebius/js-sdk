@@ -6,7 +6,7 @@
 
 # Interface: ListRegistriesResponse
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1065
+Defined in: src/generated/nebius/registry/v1/index.ts:1066
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1065
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1067
+Defined in: src/generated/nebius/registry/v1/index.ts:1068
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1067
 
 > **$type**: `"nebius.registry.v1.ListRegistriesResponse"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1066
+Defined in: src/generated/nebius/registry/v1/index.ts:1067
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1066
 
 > **items**: [`Registry`](Registry.md)[]
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1068
+Defined in: src/generated/nebius/registry/v1/index.ts:1069
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1068
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1069
+Defined in: src/generated/nebius/registry/v1/index.ts:1070

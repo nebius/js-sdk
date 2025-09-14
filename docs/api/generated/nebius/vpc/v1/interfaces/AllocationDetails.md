@@ -6,7 +6,7 @@
 
 # Interface: AllocationDetails
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1965
+Defined in: src/generated/nebius/vpc/v1/index.ts:1966
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1965
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1967
+Defined in: src/generated/nebius/vpc/v1/index.ts:1968
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1967
 
 > **$type**: `"nebius.vpc.v1.AllocationDetails"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1966
+Defined in: src/generated/nebius/vpc/v1/index.ts:1967
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1966
 
 > **allocatedCidr**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1972
+Defined in: src/generated/nebius/vpc/v1/index.ts:1973
 
 The actual CIDR block that has been allocated.
 
@@ -40,7 +40,7 @@ The actual CIDR block that has been allocated.
 
 > **poolId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1977
+Defined in: src/generated/nebius/vpc/v1/index.ts:1978
 
 ID of the pool from which this allocation was made.
 
@@ -50,6 +50,6 @@ ID of the pool from which this allocation was made.
 
 > **version**: [`IpVersion`](../type-aliases/IpVersion.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1982
+Defined in: src/generated/nebius/vpc/v1/index.ts:1983
 
 The IP version of this allocation (IPv4 or IPv6).

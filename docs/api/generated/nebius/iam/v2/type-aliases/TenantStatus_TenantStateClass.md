@@ -8,4 +8,4 @@
 
 > **TenantStatus_TenantStateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"CREATING"` \| `"ACTIVE"`\> & `TenantStatus_TenantStateValueMembers`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2925
+Defined in: src/generated/nebius/iam/v2/index.ts:2926

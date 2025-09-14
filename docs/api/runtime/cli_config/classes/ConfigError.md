@@ -6,7 +6,7 @@
 
 # Class: ConfigError
 
-Defined in: [src/runtime/cli_config.ts:24](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L24)
+Defined in: [src/runtime/cli_config.ts:28](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L28)
 
 ## Extends
 

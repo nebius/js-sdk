@@ -6,7 +6,7 @@
 
 # Interface: Assignment
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1907
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1908
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1907
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1909
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1910
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1909
 
 > **$type**: `"nebius.vpc.v1alpha1.Assignment"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1908
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1909
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1908
 
 > `optional` **type**: \{ `$case`: `"networkInterface"`; `networkInterface`: [`NetworkInterfaceAssignment`](NetworkInterfaceAssignment.md); \} \| \{ `$case`: `"loadBalancer"`; `loadBalancer`: [`LoadBalancerAssignment`](LoadBalancerAssignment.md); \}
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1915
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1916
 
 This field specifies the type of assignment associated with the allocation,
 which could be a network interface or load balancer assignment.

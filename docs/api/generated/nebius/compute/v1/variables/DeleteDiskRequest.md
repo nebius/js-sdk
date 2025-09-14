@@ -8,4 +8,4 @@
 
 > **DeleteDiskRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteDiskRequest`](../interfaces/DeleteDiskRequest.md), `"nebius.compute.v1.DeleteDiskRequest"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:473
+Defined in: src/generated/nebius/compute/v1/index.ts:474

@@ -6,7 +6,7 @@
 
 # Interface: ArtifactServiceBaseClient
 
-Defined in: src/generated/nebius/registry/v1/index.ts:468
+Defined in: src/generated/nebius/registry/v1/index.ts:469
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:471
+Defined in: src/generated/nebius/registry/v1/index.ts:472
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:471
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:469
+Defined in: src/generated/nebius/registry/v1/index.ts:470
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:470
+Defined in: src/generated/nebius/registry/v1/index.ts:471
 
 #### Parameters
 

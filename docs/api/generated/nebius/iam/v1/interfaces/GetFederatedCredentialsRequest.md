@@ -6,7 +6,7 @@
 
 # Interface: GetFederatedCredentialsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5740
+Defined in: src/generated/nebius/iam/v1/index.ts:5741
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5740
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5742
+Defined in: src/generated/nebius/iam/v1/index.ts:5743
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5742
 
 > **$type**: `"nebius.iam.v1.GetFederatedCredentialsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5741
+Defined in: src/generated/nebius/iam/v1/index.ts:5742
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5741
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5743
+Defined in: src/generated/nebius/iam/v1/index.ts:5744

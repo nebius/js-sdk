@@ -8,4 +8,4 @@
 
 > **ListFederationCertificateResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md), `"nebius.iam.v1.ListFederationCertificateResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7739
+Defined in: src/generated/nebius/iam/v1/index.ts:7740

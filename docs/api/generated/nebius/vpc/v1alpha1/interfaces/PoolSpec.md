@@ -6,7 +6,7 @@
 
 # Interface: PoolSpec
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4992
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4993
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4992
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4994
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4995
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4994
 
 > **$type**: `"nebius.vpc.v1alpha1.PoolSpec"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4993
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4994
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4993
 
 > **cidrs**: [`PoolCidr`](PoolCidr.md)[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5004
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5005
 
 CIDR blocks.
 
@@ -40,7 +40,7 @@ CIDR blocks.
 
 > `optional` **source**: \{ `$case`: `"sourcePoolId"`; `sourcePoolId`: `string`; \} \| \{ `$case`: `"sourceScopeId"`; `sourceScopeId`: `string`; \}
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5005
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5006
 
 ---
 
@@ -48,6 +48,6 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5005
 
 > **version**: [`IpVersion`](../type-aliases/IpVersion.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4999
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5000
 
 IP version for the Pool.

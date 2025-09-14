@@ -6,7 +6,7 @@
 
 # Interface: CreateGpuClusterRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3369
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3370
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3369
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3371
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3372
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3371
 
 > **$type**: `"nebius.compute.v1alpha1.CreateGpuClusterRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3370
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3371
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3370
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3372
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3373
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3372
 
 > `optional` **spec**: [`GpuClusterSpec`](GpuClusterSpec.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3373
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3374

@@ -8,4 +8,4 @@
 
 > **OidcCredentialsProvider**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`OidcCredentialsProvider`](../interfaces/OidcCredentialsProvider.md), `"nebius.iam.v1.OidcCredentialsProvider"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7017
+Defined in: src/generated/nebius/iam/v1/index.ts:7018

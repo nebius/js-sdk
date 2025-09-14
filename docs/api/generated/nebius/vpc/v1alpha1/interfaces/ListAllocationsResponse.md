@@ -6,7 +6,7 @@
 
 # Interface: ListAllocationsResponse
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:347
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:348
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:347
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:349
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:350
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:349
 
 > **$type**: `"nebius.vpc.v1alpha1.ListAllocationsResponse"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:348
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:349
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:348
 
 > **items**: [`Allocation`](Allocation.md)[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:350
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:351
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:350
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:351
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:352

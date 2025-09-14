@@ -6,7 +6,7 @@
 
 # Interface: ListPoolsResponse
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4471
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4472
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4471
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4473
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4474
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4473
 
 > **$type**: `"nebius.vpc.v1alpha1.ListPoolsResponse"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4472
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4473
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4472
 
 > **items**: [`Pool`](Pool.md)[]
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4474
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4475
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4474
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4475
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4476

@@ -6,7 +6,7 @@
 
 # Interface: ClusterStatus
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3018
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3019
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3018
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3020
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3021
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3020
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ClusterStatus"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3019
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3020
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3019
 
 > `optional` **connectionEndpoints**: [`Endpoints`](Endpoints.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3040
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3041
 
 Connection endpoints of the PostgreSQL cluster.
 
@@ -40,7 +40,7 @@ Connection endpoints of the PostgreSQL cluster.
 
 > **phase**: [`ClusterStatus_Phase`](../../../v1alpha1/type-aliases/ClusterStatus_Phase.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3025
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3026
 
 Current phase of the cluster.
 
@@ -50,7 +50,7 @@ Current phase of the cluster.
 
 > `optional` **presetDetails**: [`PresetDetails`](../../../v1alpha1/resource/interfaces/PresetDetails.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3035
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3036
 
 Cluster resource preset details
 
@@ -60,6 +60,6 @@ Cluster resource preset details
 
 > **state**: [`ClusterStatus_State`](../../../v1alpha1/type-aliases/ClusterStatus_State.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3030
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3031
 
 State reflects substatus of the phase to define whether it's healthy or not.

@@ -8,4 +8,4 @@
 
 > **ResourceBehavior**: [`ResourceBehaviorClass`](../type-aliases/ResourceBehaviorClass.md)
 
-Defined in: src/generated/nebius/index.ts:10
+Defined in: src/generated/nebius/index.ts:11

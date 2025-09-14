@@ -6,7 +6,7 @@
 
 # Interface: UpdateClusterRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1888
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1889
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1888
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1890
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1891
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1890
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.UpdateClusterRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1889
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1890
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1889
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1895
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1896
 
 Metadata associated with the cluster. Must include id of the cluster we are going to update.
 
@@ -40,6 +40,6 @@ Metadata associated with the cluster. Must include id of the cluster we are goin
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1900
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1901
 
 Updated specification for the cluster.

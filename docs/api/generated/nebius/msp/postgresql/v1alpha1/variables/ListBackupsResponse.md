@@ -8,4 +8,4 @@
 
 > **ListBackupsResponse**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListBackupsResponse`](../interfaces/ListBackupsResponse.md), `"nebius.msp.postgresql.v1alpha1.ListBackupsResponse"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:309
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:310

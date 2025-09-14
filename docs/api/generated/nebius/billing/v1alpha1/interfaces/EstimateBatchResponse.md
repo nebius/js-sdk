@@ -6,7 +6,7 @@
 
 # Interface: EstimateBatchResponse
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:383
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:384
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:383
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:385
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:386
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:385
 
 > **$type**: `"nebius.billing.v1alpha1.EstimateBatchResponse"`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:384
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:385
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:384
 
 > `optional` **hourlyCost**: [`ResourceGroupCost`](ResourceGroupCost.md)
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:390
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:391
 
 Estimated hourly cost for all resources in the batch.
 
@@ -40,7 +40,7 @@ Estimated hourly cost for all resources in the batch.
 
 > `optional` **monthlyCost**: [`ResourceGroupCost`](ResourceGroupCost.md)
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:396
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:397
 
 Estimated monthly cost for all resources in the batch.
-Calculated as hourly*cost * 24 \_ 30 (720 hours) for resources running continuously.
+Calculated as hourly_cost _ 24 _ 30 (720 hours) for resources running continuously.

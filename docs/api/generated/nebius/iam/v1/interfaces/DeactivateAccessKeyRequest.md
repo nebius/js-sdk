@@ -6,7 +6,7 @@
 
 # Interface: DeactivateAccessKeyRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1046
+Defined in: src/generated/nebius/iam/v1/index.ts:1047
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1046
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1048
+Defined in: src/generated/nebius/iam/v1/index.ts:1049
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1048
 
 > **$type**: `"nebius.iam.v1.DeactivateAccessKeyRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1047
+Defined in: src/generated/nebius/iam/v1/index.ts:1048
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1047
 
 > `optional` **id**: [`KeyIdentity`](KeyIdentity.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1049
+Defined in: src/generated/nebius/iam/v1/index.ts:1050

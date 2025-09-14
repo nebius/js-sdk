@@ -8,4 +8,4 @@
 
 > **NodeGroupDeploymentStrategy**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeGroupDeploymentStrategy`](../interfaces/NodeGroupDeploymentStrategy.md), `"nebius.mk8s.v1.NodeGroupDeploymentStrategy"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5650
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5968

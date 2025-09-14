@@ -6,7 +6,7 @@
 
 # Interface: Session
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4716
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4783
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4716
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4718
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4785
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4718
 
 > **$type**: `"nebius.msp.spark.v1alpha1.Session"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4717
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4784
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4717
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4719
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4786
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4719
 
 > `optional` **spec**: [`SessionSpec`](SessionSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4720
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4787
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4720
 
 > `optional` **status**: [`SessionStatus`](SessionStatus.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4721
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4788

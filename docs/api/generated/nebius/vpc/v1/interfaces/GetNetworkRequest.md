@@ -6,7 +6,7 @@
 
 # Interface: GetNetworkRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2453
+Defined in: src/generated/nebius/vpc/v1/index.ts:2454
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2453
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2455
+Defined in: src/generated/nebius/vpc/v1/index.ts:2456
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2455
 
 > **$type**: `"nebius.vpc.v1.GetNetworkRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2454
+Defined in: src/generated/nebius/vpc/v1/index.ts:2455
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:2454
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:2456
+Defined in: src/generated/nebius/vpc/v1/index.ts:2457

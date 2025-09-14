@@ -6,7 +6,7 @@
 
 # Interface: ControlPlaneSpec
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1174
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1445
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1174
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1176
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1447
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1176
 
 > **$type**: `"nebius.mk8s.v1.ControlPlaneSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1175
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1446
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1175
 
 > `optional` **endpoints**: [`ControlPlaneEndpointsSpec`](ControlPlaneEndpointsSpec.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1189
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1460
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1189
 
 > **etcdClusterSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1197
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1468
 
 Number of instances in etcd cluster.
 3 by default.
@@ -51,7 +51,7 @@ will be available despite a failure of one control plane instance.
 
 > **subnetId**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1188
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1459
 
 Nebius VPC Subnet ID where control plane instances will be located.
 Also will be default NodeGroup subnet.
@@ -62,7 +62,7 @@ Also will be default NodeGroup subnet.
 
 > **version**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1182
+Defined in: src/generated/nebius/mk8s/v1/index.ts:1453
 
 Desired Kubernetes version of the cluster. For now only acceptable format is
 `<major>.<minor>` like "1.31". Option for patch version update will be added later.

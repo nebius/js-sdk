@@ -8,7 +8,7 @@
 
 > **GpuClusterServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3785
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:3786
 
 ## Type Declaration
 

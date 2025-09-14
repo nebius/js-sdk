@@ -8,4 +8,4 @@
 
 > **Filesystem**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Filesystem`](../interfaces/Filesystem.md), `"nebius.compute.v1alpha1.Filesystem"`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2577
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2578

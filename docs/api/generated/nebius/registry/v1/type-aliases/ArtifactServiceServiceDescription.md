@@ -8,4 +8,4 @@
 
 > **ArtifactServiceServiceDescription** = _typeof_ [`ArtifactServiceServiceDescription`](../variables/ArtifactServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:431
+Defined in: src/generated/nebius/registry/v1/index.ts:432

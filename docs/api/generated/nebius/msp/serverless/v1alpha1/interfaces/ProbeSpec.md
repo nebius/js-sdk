@@ -6,7 +6,7 @@
 
 # Interface: ProbeSpec
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1209
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1210
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1209
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1211
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1212
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1211
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.ProbeSpec"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1210
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1211
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1210
 
 > **delaySeconds**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1221
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1222
 
 Initial delay before starting probing in seconds
 
@@ -40,7 +40,7 @@ Initial delay before starting probing in seconds
 
 > **failureThreshold**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1231
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1232
 
 Failure threshold for the probe after which the container will be restarted
 
@@ -50,7 +50,7 @@ Failure threshold for the probe after which the container will be restarted
 
 > **path**: `string`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1216
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1217
 
 Probe path
 
@@ -60,6 +60,6 @@ Probe path
 
 > **periodSeconds**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1226
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1227
 
 Probing period in seconds

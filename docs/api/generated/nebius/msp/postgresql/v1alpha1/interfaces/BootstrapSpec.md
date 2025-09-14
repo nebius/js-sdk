@@ -6,7 +6,7 @@
 
 # Interface: BootstrapSpec
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3559
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3560
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3559
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3561
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3562
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3561
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.BootstrapSpec"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3560
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3561
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3560
 
 > **dbName**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3576
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3577
 
 Name of the PostgreSQL database. 1-63 characters long.
 
@@ -40,7 +40,7 @@ Name of the PostgreSQL database. 1-63 characters long.
 
 > **userName**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3566
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3567
 
 Name of the bootstrap PostgreSQL user.
 
@@ -50,6 +50,6 @@ Name of the bootstrap PostgreSQL user.
 
 > **userPassword**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3571
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:3572
 
 Password of the bootstrap PostgreSQL user.

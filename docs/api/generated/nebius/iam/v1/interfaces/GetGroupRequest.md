@@ -6,7 +6,7 @@
 
 # Interface: GetGroupRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11793
+Defined in: src/generated/nebius/iam/v1/index.ts:11794
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11793
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11795
+Defined in: src/generated/nebius/iam/v1/index.ts:11796
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11795
 
 > **$type**: `"nebius.iam.v1.GetGroupRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11794
+Defined in: src/generated/nebius/iam/v1/index.ts:11795
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:11794
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11796
+Defined in: src/generated/nebius/iam/v1/index.ts:11797

@@ -6,7 +6,7 @@
 
 # Interface: K8sReleaseServiceServer
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:723
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:724
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:723
 
 > **create**: `handleUnaryCall`\<[`CreateK8sReleaseRequest`](CreateK8sReleaseRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:726
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:727
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:726
 
 > **delete**: `handleUnaryCall`\<[`DeleteK8sReleaseRequest`](DeleteK8sReleaseRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:728
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:729
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:728
 
 > **get**: `handleUnaryCall`\<[`GetK8sReleaseRequest`](GetK8sReleaseRequest.md), [`K8sRelease`](K8sRelease.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:724
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:725
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:724
 
 > **list**: `handleUnaryCall`\<[`ListK8sReleasesRequest`](ListK8sReleasesRequest.md), [`ListK8sReleasesResponse`](ListK8sReleasesResponse.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:725
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:726
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:725
 
 > **update**: `handleUnaryCall`\<[`UpdateK8sReleaseRequest`](UpdateK8sReleaseRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:727
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:728

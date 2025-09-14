@@ -6,7 +6,7 @@
 
 # Class: FilesystemService
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2381
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2382
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2381
 
 > **new FilesystemService**(`sdk`): `FilesystemService`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2414
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2415
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2414
 
 > **$type**: `"nebius.compute.v1alpha1.FilesystemService"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2382
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2383
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2382
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2392
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2393
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2392
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2393
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2394
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2393
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2394
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2395
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2394
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2464
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2465
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2464
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2465
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2466
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2465
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFilesystemRequest`](../interfaces/CreateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2466
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2467
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2466
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2398
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2399
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2398
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2399
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2400
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2399
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2400
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2401
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2400
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2494
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2495
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2494
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2495
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2496
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2495
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFilesystemRequest`](../interfaces/DeleteFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2496
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2497
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2496
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2383
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2384
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2383
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2384
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2385
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2384
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2385
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2386
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2385
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2428
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2429
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2428
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2429
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2430
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2429
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFilesystemRequest`](../interfaces/GetFilesystemRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2430
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2431
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2430
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2386
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2387
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2386
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2387
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2388
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2387
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2388
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2389
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2388
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2440
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2441
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2440
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2441
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2442
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2441
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Filesystem`](../interfaces/Filesystem.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2442
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2443
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2442
 
 > **getOperationService**(): [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2424
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2425
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2424
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2389
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2390
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2389
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2390
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2391
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2390
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2391
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2392
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2391
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2452
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2453
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2452
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2453
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2454
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2453
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFilesystemsRequest`](../interfaces/ListFilesystemsRequest.md), [`ListFilesystemsResponse`](../interfaces/ListFilesystemsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2454
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2455
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2454
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2401
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2402
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2401
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2402
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2403
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2402
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2403
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2404
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2403
 
 > **listOperationsByParent**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2509
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2510
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2509
 
 > **listOperationsByParent**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2510
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2511
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2510
 
 > **listOperationsByParent**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2511
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2512
 
 ##### Parameters
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2511
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2395
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2396
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2395
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2396
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2397
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2396
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2397
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2398
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2397
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2479
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2480
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2479
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2480
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2481
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2480
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFilesystemRequest`](../interfaces/UpdateFilesystemRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2481
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:2482
 
 ##### Parameters
 

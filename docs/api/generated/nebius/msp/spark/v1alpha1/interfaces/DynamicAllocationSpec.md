@@ -6,7 +6,7 @@
 
 # Interface: DynamicAllocationSpec
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3567
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3612
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3567
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3569
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3614
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3569
 
 > **$type**: `"nebius.msp.spark.v1alpha1.DynamicAllocationSpec"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3568
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3613
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3568
 
 > **max**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3571
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3616
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3571
 
 > **min**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3570
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3615

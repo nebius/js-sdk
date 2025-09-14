@@ -8,4 +8,4 @@
 
 > **ListTenantsRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListTenantsRequest`](../interfaces/ListTenantsRequest.md), `"nebius.iam.v2.ListTenantsRequest"`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2528
+Defined in: src/generated/nebius/iam/v2/index.ts:2529

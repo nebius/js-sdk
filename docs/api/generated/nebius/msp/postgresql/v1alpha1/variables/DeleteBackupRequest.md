@@ -8,4 +8,4 @@
 
 > **DeleteBackupRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), `"nebius.msp.postgresql.v1alpha1.DeleteBackupRequest"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:487
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:488

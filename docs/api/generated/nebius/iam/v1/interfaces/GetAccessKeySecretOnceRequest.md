@@ -6,7 +6,7 @@
 
 # Interface: GetAccessKeySecretOnceRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:268
+Defined in: src/generated/nebius/iam/v1/index.ts:269
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:268
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:270
+Defined in: src/generated/nebius/iam/v1/index.ts:271
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:270
 
 > **$type**: `"nebius.iam.v1.GetAccessKeySecretOnceRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:269
+Defined in: src/generated/nebius/iam/v1/index.ts:270
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:269
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:271
+Defined in: src/generated/nebius/iam/v1/index.ts:272

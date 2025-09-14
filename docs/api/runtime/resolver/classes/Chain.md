@@ -6,11 +6,15 @@
 
 # Class: Chain
 
-Defined in: [src/runtime/resolver.ts:108](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L108)
+Defined in: [src/runtime/resolver.ts:159](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L159)
 
 ## Implements
 
 - [`Resolver`](../interfaces/Resolver.md)
+
+## Indexable
+
+\[`key`: `symbol`\]: () => `string` \| () => `object`
 
 ## Constructors
 
@@ -18,7 +22,7 @@ Defined in: [src/runtime/resolver.ts:108](https://github.com/nebius/nodejs-sdk/b
 
 > **new Chain**(...`resolvers`): `Chain`
 
-Defined in: [src/runtime/resolver.ts:110](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L110)
+Defined in: [src/runtime/resolver.ts:161](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L161)
 
 #### Parameters
 
@@ -32,11 +36,23 @@ Defined in: [src/runtime/resolver.ts:110](https://github.com/nebius/nodejs-sdk/b
 
 ## Methods
 
+### \[customJson\]()
+
+> **\[customJson\]**(): `object`
+
+Defined in: [src/runtime/resolver.ts:167](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L167)
+
+#### Returns
+
+`object`
+
+---
+
 ### resolve()
 
 > **resolve**(`serviceId`, `apiServiceName?`): `string`
 
-Defined in: [src/runtime/resolver.ts:113](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/resolver.ts#L113)
+Defined in: [src/runtime/resolver.ts:173](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/resolver.ts#L173)
 
 Receive address of the service by its ID
 

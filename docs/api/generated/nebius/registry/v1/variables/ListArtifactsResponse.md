@@ -8,4 +8,4 @@
 
 > **ListArtifactsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListArtifactsResponse`](../interfaces/ListArtifactsResponse.md), `"nebius.registry.v1.ListArtifactsResponse"`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:242
+Defined in: src/generated/nebius/registry/v1/index.ts:243

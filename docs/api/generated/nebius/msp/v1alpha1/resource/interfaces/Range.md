@@ -6,7 +6,7 @@
 
 # Interface: Range
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:592
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:593
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:592
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:594
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:595
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:594
 
 > **$type**: `"nebius.msp.v1alpha1.resource.Range"`
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:593
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:594
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:593
 
 > **max**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:596
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:597
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:596
 
 > **min**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:595
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:596
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:595
 
 > **step**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:601
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:602
 
 step 0 is no step validation
 
@@ -56,4 +56,4 @@ step 0 is no step validation
 
 > **value**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:602
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:603

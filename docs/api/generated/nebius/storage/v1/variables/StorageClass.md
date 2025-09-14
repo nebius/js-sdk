@@ -8,4 +8,4 @@
 
 > **StorageClass**: [`StorageClassClass`](../type-aliases/StorageClassClass.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:15
+Defined in: src/generated/nebius/storage/v1/index.ts:16

@@ -6,7 +6,7 @@
 
 # Interface: JobServiceServer
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1979
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1980
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1979
 
 > **cancel**: `handleUnaryCall`\<[`CancelJobRequest`](CancelJobRequest.md), [`Operation`](../../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1984
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1985
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1984
 
 > **create**: `handleUnaryCall`\<[`CreateJobRequest`](CreateJobRequest.md), [`Operation`](../../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1982
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1983
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1982
 
 > **delete**: `handleUnaryCall`\<[`DeleteRequest`](../../../v1alpha1/interfaces/DeleteRequest.md), [`Operation`](../../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1983
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1984
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1983
 
 > **get**: `handleUnaryCall`\<[`GetRequest`](../../../v1alpha1/interfaces/GetRequest.md), [`Job`](Job.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1980
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1981
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1980
 
 > **list**: `handleUnaryCall`\<[`ListRequest`](../../../v1alpha1/interfaces/ListRequest.md), [`ListJobsResponse`](ListJobsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1981
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1982

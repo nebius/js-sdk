@@ -6,7 +6,7 @@
 
 # Interface: Cluster
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2590
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2591
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2590
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2592
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2593
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2592
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.Cluster"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2591
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2592
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2591
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2593
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2594
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2593
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2594
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2595
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2594
 
 > `optional` **status**: [`ClusterStatus`](ClusterStatus.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2595
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2596

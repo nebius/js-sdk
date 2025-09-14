@@ -8,7 +8,7 @@
 
 > **ClusterServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`ClusterServiceBaseClient`](../interfaces/ClusterServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2295
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2296
 
 ## Type Declaration
 

@@ -8,4 +8,4 @@
 
 > **JobSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`JobSpec`](../interfaces/JobSpec.md), `"nebius.msp.serverless.v1alpha1.JobSpec"`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2321
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2322

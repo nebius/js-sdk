@@ -6,7 +6,7 @@
 
 # Interface: CreateClusterRequest
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1486
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1487
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1486
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1488
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1489
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1488
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.CreateClusterRequest"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1487
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1488
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1487
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1493
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1494
 
 Metadata associated with the new cluster.
 
@@ -40,6 +40,6 @@ Metadata associated with the new cluster.
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1498
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1499
 
 Specification for the new cluster.

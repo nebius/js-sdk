@@ -6,7 +6,7 @@
 
 # Interface: NodeServiceServer
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10970
+Defined in: src/generated/nebius/compute/v1/index.ts:10971
 
 ## Extends
 
@@ -22,4 +22,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10970
 
 > **setUnhealthy**: `handleUnaryCall`\<[`NodeSetUnhealthyRequest`](NodeSetUnhealthyRequest.md), [`NodeSetUnhealthyResponse`](NodeSetUnhealthyResponse.md)\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10971
+Defined in: src/generated/nebius/compute/v1/index.ts:10972

@@ -6,7 +6,7 @@
 
 # Interface: RegistryStatus
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1932
+Defined in: src/generated/nebius/registry/v1/index.ts:1933
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1932
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1934
+Defined in: src/generated/nebius/registry/v1/index.ts:1935
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1934
 
 > **$type**: `"nebius.registry.v1.RegistryStatus"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1933
+Defined in: src/generated/nebius/registry/v1/index.ts:1934
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1933
 
 > **imagesCount**: `number`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1936
+Defined in: src/generated/nebius/registry/v1/index.ts:1937
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1936
 
 > **registryFqdn**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1941
+Defined in: src/generated/nebius/registry/v1/index.ts:1942
 
 regional fqdn "cr.eu-north1.nebius.cloud"
 
@@ -48,4 +48,4 @@ regional fqdn "cr.eu-north1.nebius.cloud"
 
 > **state**: [`RegistryStatus_State`](../type-aliases/RegistryStatus_State.md)
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1935
+Defined in: src/generated/nebius/registry/v1/index.ts:1936

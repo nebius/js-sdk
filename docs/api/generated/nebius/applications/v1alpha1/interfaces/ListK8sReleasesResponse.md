@@ -6,7 +6,7 @@
 
 # Interface: ListK8sReleasesResponse
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:570
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:571
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:570
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:572
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:573
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:572
 
 > **$type**: `"nebius.applications.v1alpha1.ListK8sReleasesResponse"`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:571
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:572
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:571
 
 > **items**: [`K8sRelease`](K8sRelease.md)[]
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:573
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:574
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:573
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:574
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:575

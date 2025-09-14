@@ -8,4 +8,4 @@
 
 > **TemplateStatus**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TemplateStatus`](../interfaces/TemplateStatus.md), `"nebius.msp.v1alpha1.resource.TemplateStatus"`\>
 
-Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:122
+Defined in: src/generated/nebius/msp/v1alpha1/resource/index.ts:123

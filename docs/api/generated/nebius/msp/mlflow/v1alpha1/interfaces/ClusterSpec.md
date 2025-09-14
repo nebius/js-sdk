@@ -6,7 +6,7 @@
 
 # Interface: ClusterSpec
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1008
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1009
 
 Cluster specification
 
@@ -16,7 +16,7 @@ Cluster specification
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1010
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1011
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1010
 
 > **$type**: `"nebius.msp.mlflow.v1alpha1.ClusterSpec"`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1009
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1010
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1009
 
 > **adminPassword**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1030
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1031
 
 MLflow admin password.
 
@@ -42,7 +42,7 @@ MLflow admin password.
 
 > **adminUsername**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1025
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1026
 
 MLflow admin username.
 
@@ -52,7 +52,7 @@ MLflow admin username.
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1015
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1016
 
 Description of the cluster.
 
@@ -62,7 +62,7 @@ Description of the cluster.
 
 > **networkId**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1045
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1046
 
 ID of the vpc network.
 
@@ -72,7 +72,7 @@ ID of the vpc network.
 
 > **publicAccess**: `boolean`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1020
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1021
 
 Either make cluster public accessible or accessible only via private VPC.
 
@@ -82,7 +82,7 @@ Either make cluster public accessible or accessible only via private VPC.
 
 > **serviceAccountId**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1035
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1036
 
 Id of the service account that will be used to access S3 bucket (and create one if not provided).
 
@@ -92,7 +92,7 @@ Id of the service account that will be used to access S3 bucket (and create one 
 
 > **size**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1051
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1052
 
 Size defines how much resources will be allocated to mlflow
 See supported sizes in the documentation. Default size is the smallest available in the region.
@@ -103,6 +103,6 @@ See supported sizes in the documentation. Default size is the smallest available
 
 > **storageBucketName**: `string`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1040
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:1041
 
 Name of the Nebius S3 bucket for MLflow artifacts. If not provided, will be created under the same parent.

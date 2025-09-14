@@ -8,7 +8,7 @@
 
 > **RegistryServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1478
+Defined in: src/generated/nebius/registry/v1/index.ts:1479
 
 ## Type Declaration
 

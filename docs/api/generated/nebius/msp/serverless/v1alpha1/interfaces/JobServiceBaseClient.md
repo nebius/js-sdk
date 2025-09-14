@@ -6,7 +6,7 @@
 
 # Interface: JobServiceBaseClient
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1987
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1988
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1987
 
 > **cancel**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1992
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1993
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1990
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1991
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1990
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1991
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1992
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1991
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1988
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1989
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1989
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1990
 
 #### Parameters
 

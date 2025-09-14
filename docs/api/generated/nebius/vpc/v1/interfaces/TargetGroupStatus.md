@@ -6,7 +6,7 @@
 
 # Interface: TargetGroupStatus
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9016
+Defined in: src/generated/nebius/vpc/v1/index.ts:9017
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9016
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9018
+Defined in: src/generated/nebius/vpc/v1/index.ts:9019
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9018
 
 > **$type**: `"nebius.vpc.v1.TargetGroupStatus"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9017
+Defined in: src/generated/nebius/vpc/v1/index.ts:9018
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9017
 
 > **loadBalancerIds**: `string`[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9023
+Defined in: src/generated/nebius/vpc/v1/index.ts:9024
 
 LoadBalancer ids target group is attached to
 
@@ -40,6 +40,6 @@ LoadBalancer ids target group is attached to
 
 > **targetStatuses**: [`TargetStatus`](TargetStatus.md)[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9028
+Defined in: src/generated/nebius/vpc/v1/index.ts:9029
 
 Statuses of specified targets

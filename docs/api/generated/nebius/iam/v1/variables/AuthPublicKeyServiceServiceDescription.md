@@ -8,7 +8,7 @@
 
 > **AuthPublicKeyServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4682
+Defined in: src/generated/nebius/iam/v1/index.ts:4683
 
 ## Type Declaration
 

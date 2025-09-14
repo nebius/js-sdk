@@ -6,7 +6,7 @@
 
 # Interface: SubnetPool
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7847
+Defined in: src/generated/nebius/vpc/v1/index.ts:7848
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7847
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7849
+Defined in: src/generated/nebius/vpc/v1/index.ts:7850
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7849
 
 > **$type**: `"nebius.vpc.v1.SubnetPool"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7848
+Defined in: src/generated/nebius/vpc/v1/index.ts:7849
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:7848
 
 > **cidrs**: [`SubnetCidr`](SubnetCidr.md)[]
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:7850
+Defined in: src/generated/nebius/vpc/v1/index.ts:7851

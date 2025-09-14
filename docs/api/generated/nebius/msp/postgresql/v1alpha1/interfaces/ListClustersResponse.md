@@ -6,7 +6,7 @@
 
 # Interface: ListClustersResponse
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1371
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1372
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1371
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1373
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1374
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1373
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.ListClustersResponse"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1372
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1373
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1372
 
 > **clusters**: [`Cluster`](Cluster.md)[]
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1378
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1379
 
 List of PostgreSQL Cluster resources.
 
@@ -40,7 +40,7 @@ List of PostgreSQL Cluster resources.
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1386
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:1387
 
 This token allows you to get the next page of results for list requests. If the number of results
 is larger than [ListClustersRequest.page_size], use the [next_page_token] as the value

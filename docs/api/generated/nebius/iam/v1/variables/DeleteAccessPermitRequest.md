@@ -8,4 +8,4 @@
 
 > **DeleteAccessPermitRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteAccessPermitRequest`](../interfaces/DeleteAccessPermitRequest.md), `"nebius.iam.v1.DeleteAccessPermitRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2503
+Defined in: src/generated/nebius/iam/v1/index.ts:2504

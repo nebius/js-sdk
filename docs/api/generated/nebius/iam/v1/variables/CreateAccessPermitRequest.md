@@ -8,4 +8,4 @@
 
 > **CreateAccessPermitRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`CreateAccessPermitRequest`](../interfaces/CreateAccessPermitRequest.md), `"nebius.iam.v1.CreateAccessPermitRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2233
+Defined in: src/generated/nebius/iam/v1/index.ts:2234

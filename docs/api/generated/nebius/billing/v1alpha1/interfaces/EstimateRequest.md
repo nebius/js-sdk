@@ -6,7 +6,7 @@
 
 # Interface: EstimateRequest
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:14
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:15
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:14
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:16
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:17
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:16
 
 > **$type**: `"nebius.billing.v1alpha1.EstimateRequest"`
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:15
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:16
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/billing/v1alpha1/index.ts:15
 
 > **offerTypes**: [`OfferType`](../type-aliases/OfferType.md)[]
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:27
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:28
 
 Type of offers to be applied to the cost estimate.
 
@@ -40,7 +40,7 @@ Type of offers to be applied to the cost estimate.
 
 > `optional` **resourceSpec**: [`ResourceSpec`](ResourceSpec.md)
 
-Defined in: src/generated/nebius/billing/v1alpha1/index.ts:22
+Defined in: src/generated/nebius/billing/v1alpha1/index.ts:23
 
 Resource specification for cost estimation.
 Must contain exactly one resource type.

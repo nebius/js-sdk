@@ -8,4 +8,4 @@
 
 > **GroupSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GroupSpec`](../interfaces/GroupSpec.md), `"nebius.iam.v1.GroupSpec"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12783
+Defined in: src/generated/nebius/iam/v1/index.ts:12784

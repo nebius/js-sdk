@@ -6,7 +6,7 @@
 
 # Interface: GetScopeByNameRequest
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5536
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5537
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5536
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5538
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5539
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5538
 
 > **$type**: `"nebius.vpc.v1alpha1.GetScopeByNameRequest"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5537
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5538
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5537
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5540
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5541
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5540
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5539
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5540

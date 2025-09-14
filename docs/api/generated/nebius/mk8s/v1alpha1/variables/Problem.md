@@ -8,4 +8,4 @@
 
 > **Problem**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Problem`](../interfaces/Problem.md), `"nebius.mk8s.v1alpha1.Problem"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6513
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:6831

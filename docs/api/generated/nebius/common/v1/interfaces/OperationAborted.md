@@ -6,7 +6,7 @@
 
 # Interface: OperationAborted
 
-Defined in: src/generated/nebius/common/v1/index.ts:1241
+Defined in: src/generated/nebius/common/v1/index.ts:1242
 
 Operation on the resource has been aborted by a subsequent operation.
 
@@ -16,7 +16,7 @@ Operation on the resource has been aborted by a subsequent operation.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:1243
+Defined in: src/generated/nebius/common/v1/index.ts:1244
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1243
 
 > **$type**: `"nebius.common.v1.OperationAborted"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1242
+Defined in: src/generated/nebius/common/v1/index.ts:1243
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:1242
 
 > **abortedByOperationId**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1253
+Defined in: src/generated/nebius/common/v1/index.ts:1254
 
 ID of the subsequent operation.
 
@@ -42,7 +42,7 @@ ID of the subsequent operation.
 
 > **operationId**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1248
+Defined in: src/generated/nebius/common/v1/index.ts:1249
 
 ID of the aborted operation.
 
@@ -52,6 +52,6 @@ ID of the aborted operation.
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:1258
+Defined in: src/generated/nebius/common/v1/index.ts:1259
 
 Resource ID corresponding to both of the operations.

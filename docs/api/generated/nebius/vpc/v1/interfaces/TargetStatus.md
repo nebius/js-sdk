@@ -6,7 +6,7 @@
 
 # Interface: TargetStatus
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9126
+Defined in: src/generated/nebius/vpc/v1/index.ts:9127
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9126
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9128
+Defined in: src/generated/nebius/vpc/v1/index.ts:9129
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9128
 
 > **$type**: `"nebius.vpc.v1.TargetStatus"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9127
+Defined in: src/generated/nebius/vpc/v1/index.ts:9128
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9127
 
 > **computeInstanceId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9129
+Defined in: src/generated/nebius/vpc/v1/index.ts:9130
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:9129
 
 > **targetState**: [`TargetStatus_TargetState`](../type-aliases/TargetStatus_TargetState.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:9130
+Defined in: src/generated/nebius/vpc/v1/index.ts:9131

@@ -6,7 +6,7 @@
 
 # Interface: TransferSpec_DestinationBucket
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2124
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2125
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2124
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2126
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2127
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2126
 
 > **$type**: `"nebius.storage.v1alpha1.TransferSpec.DestinationBucket"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2125
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2126
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2125
 
 > **bucketName**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2127
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2128
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2127
 
 > `optional` **credentials**: [`TransferSpec_BucketCredentials`](TransferSpec_BucketCredentials.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2133
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2134
 
 Credentials for accessing the destination bucket. These credentials must have head and write permissions.
 This parameter must be specified only during create operations.

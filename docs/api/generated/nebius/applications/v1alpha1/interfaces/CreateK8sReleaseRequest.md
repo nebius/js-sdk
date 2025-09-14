@@ -6,7 +6,7 @@
 
 # Interface: CreateK8sReleaseRequest
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:261
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:262
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:261
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:263
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:264
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:263
 
 > **$type**: `"nebius.applications.v1alpha1.CreateK8sReleaseRequest"`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:262
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:263
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:262
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:264
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:265
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:264
 
 > `optional` **spec**: [`K8sReleaseSpec`](K8sReleaseSpec.md)
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:265
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:266

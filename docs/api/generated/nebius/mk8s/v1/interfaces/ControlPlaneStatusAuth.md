@@ -6,7 +6,7 @@
 
 # Interface: ControlPlaneStatusAuth
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1998
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2269
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1998
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2000
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2271
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:2000
 
 > **$type**: `"nebius.mk8s.v1.ControlPlaneStatusAuth"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1999
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2270
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1999
 
 > **clusterCaCertificate**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2005
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2276
 
 PEM with the Cluster Certificate Authority, that must be used for TLS connection to Kubernetes API.

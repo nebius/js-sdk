@@ -6,7 +6,7 @@
 
 # Interface: ListAccessKeysRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:523
+Defined in: src/generated/nebius/iam/v1/index.ts:524
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:523
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:525
+Defined in: src/generated/nebius/iam/v1/index.ts:526
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:525
 
 > **$type**: `"nebius.iam.v1.ListAccessKeysRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:524
+Defined in: src/generated/nebius/iam/v1/index.ts:525
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:524
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:546
+Defined in: src/generated/nebius/iam/v1/index.ts:547
 
 A filter to narrow down the results based on specific criteria.
 
@@ -40,7 +40,7 @@ A filter to narrow down the results based on specific criteria.
 
 > `optional` **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:536
+Defined in: src/generated/nebius/iam/v1/index.ts:537
 
 Specifies the maximum number of items to return in the response.
 Default value: 10
@@ -51,7 +51,7 @@ Default value: 10
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:541
+Defined in: src/generated/nebius/iam/v1/index.ts:542
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -61,6 +61,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:530
+Defined in: src/generated/nebius/iam/v1/index.ts:531
 
 Represents the container ID.

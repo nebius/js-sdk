@@ -6,7 +6,7 @@
 
 # Interface: FieldPySDKSettings
 
-Defined in: src/generated/nebius/index.ts:370
+Defined in: src/generated/nebius/index.ts:371
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/index.ts:370
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/index.ts:372
+Defined in: src/generated/nebius/index.ts:373
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/index.ts:372
 
 > **$type**: `"nebius.FieldPySDKSettings"`
 
-Defined in: src/generated/nebius/index.ts:371
+Defined in: src/generated/nebius/index.ts:372
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/index.ts:371
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/index.ts:373
+Defined in: src/generated/nebius/index.ts:374

@@ -6,7 +6,7 @@
 
 # Class: ClusterService
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:745
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:746
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:745
 
 > **new ClusterService**(`sdk`): `ClusterService`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:789
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:790
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:789
 
 > **$type**: `"nebius.msp.mlflow.v1alpha1.ClusterService"`
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:746
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:747
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:746
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:772
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:773
 
 Creates a cluster.
 
@@ -64,7 +64,7 @@ Creates a cluster.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:773
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:774
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:773
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:774
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:775
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:774
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:835
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:836
 
 Creates a cluster.
 
@@ -126,7 +126,7 @@ Creates a cluster.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:836
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:837
 
 Creates a cluster.
 
@@ -148,7 +148,7 @@ Creates a cluster.
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:837
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:838
 
 Creates a cluster.
 
@@ -178,7 +178,7 @@ Creates a cluster.
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:779
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:780
 
 Delete a cluster.
 
@@ -196,7 +196,7 @@ Delete a cluster.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:780
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:781
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:780
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:781
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:782
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:781
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:850
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:851
 
 Delete a cluster.
 
@@ -258,7 +258,7 @@ Delete a cluster.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:851
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:852
 
 Delete a cluster.
 
@@ -280,7 +280,7 @@ Delete a cluster.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:852
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:853
 
 Delete a cluster.
 
@@ -310,7 +310,7 @@ Delete a cluster.
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:751
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:752
 
 Returns the specified cluster.
 
@@ -328,7 +328,7 @@ Returns the specified cluster.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:752
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:753
 
 ##### Parameters
 
@@ -348,7 +348,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:752
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:753
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:754
 
 ##### Parameters
 
@@ -372,7 +372,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:753
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:799
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:800
 
 Returns the specified cluster.
 
@@ -390,7 +390,7 @@ Returns the specified cluster.
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:800
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:801
 
 Returns the specified cluster.
 
@@ -412,7 +412,7 @@ Returns the specified cluster.
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:801
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:802
 
 Returns the specified cluster.
 
@@ -442,7 +442,7 @@ Returns the specified cluster.
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:758
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:759
 
 Returns the specified cluster.
 
@@ -460,7 +460,7 @@ Returns the specified cluster.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:759
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:760
 
 ##### Parameters
 
@@ -480,7 +480,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:759
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:760
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:761
 
 ##### Parameters
 
@@ -504,7 +504,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:760
 
 > **getByName**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:811
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:812
 
 Returns the specified cluster.
 
@@ -522,7 +522,7 @@ Returns the specified cluster.
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:812
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:813
 
 Returns the specified cluster.
 
@@ -544,7 +544,7 @@ Returns the specified cluster.
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:813
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:814
 
 Returns the specified cluster.
 
@@ -572,7 +572,7 @@ Returns the specified cluster.
 
 > **getOperationService**(): [`OperationService`](../../../../common/v1alpha1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:795
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:796
 
 #### Returns
 
@@ -586,7 +586,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:795
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:765
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:766
 
 Retrieves a list of clusters.
 
@@ -604,7 +604,7 @@ Retrieves a list of clusters.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:766
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:767
 
 ##### Parameters
 
@@ -624,7 +624,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:766
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:767
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:768
 
 ##### Parameters
 
@@ -648,7 +648,7 @@ Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:767
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:823
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:824
 
 Retrieves a list of clusters.
 
@@ -666,7 +666,7 @@ Retrieves a list of clusters.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:824
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:825
 
 Retrieves a list of clusters.
 
@@ -688,7 +688,7 @@ Retrieves a list of clusters.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:825
+Defined in: src/generated/nebius/msp/mlflow/v1alpha1/index.ts:826
 
 Retrieves a list of clusters.
 

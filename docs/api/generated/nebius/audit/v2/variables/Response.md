@@ -8,4 +8,4 @@
 
 > **Response**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`Response`](../interfaces/Response.md), `"nebius.audit.v2.Response"`\>
 
-Defined in: src/generated/nebius/audit/v2/index.ts:2128
+Defined in: src/generated/nebius/audit/v2/index.ts:2129

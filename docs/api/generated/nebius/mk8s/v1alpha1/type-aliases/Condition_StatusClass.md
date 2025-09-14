@@ -8,4 +8,4 @@
 
 > **Condition_StatusClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNKNOWN"` \| `"TRUE"` \| `"FALSE"`\> & `Condition_StatusValueMembers`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2219
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2490

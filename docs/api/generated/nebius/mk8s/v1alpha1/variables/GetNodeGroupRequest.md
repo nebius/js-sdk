@@ -8,4 +8,4 @@
 
 > **GetNodeGroupRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), `"nebius.mk8s.v1alpha1.GetNodeGroupRequest"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3084
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3355

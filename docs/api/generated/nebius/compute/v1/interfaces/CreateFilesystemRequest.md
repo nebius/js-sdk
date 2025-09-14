@@ -6,7 +6,7 @@
 
 # Interface: CreateFilesystemRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2216
+Defined in: src/generated/nebius/compute/v1/index.ts:2217
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2216
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2218
+Defined in: src/generated/nebius/compute/v1/index.ts:2219
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2218
 
 > **$type**: `"nebius.compute.v1.CreateFilesystemRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2217
+Defined in: src/generated/nebius/compute/v1/index.ts:2218
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2217
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2219
+Defined in: src/generated/nebius/compute/v1/index.ts:2220
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:2219
 
 > `optional` **spec**: [`FilesystemSpec`](FilesystemSpec.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:2220
+Defined in: src/generated/nebius/compute/v1/index.ts:2221

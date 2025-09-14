@@ -6,7 +6,7 @@
 
 # Interface: ListJobsRequest
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1961
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1984
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1961
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1963
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1986
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1963
 
 > **$type**: `"nebius.msp.spark.v1alpha1.ListJobsRequest"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1962
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1985
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1962
 
 > **pageSize**: [`Long`](../../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1973
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1996
 
 Specifies the maximum number of items to return in the response. Default value is 100.
 
@@ -40,7 +40,7 @@ Specifies the maximum number of items to return in the response. Default value i
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1978
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:2001
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -50,6 +50,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1968
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1991
 
 Identifier of IAM container to list jobs from.

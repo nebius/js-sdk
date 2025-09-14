@@ -8,4 +8,4 @@
 
 > **ClusterSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ClusterSpec`](../interfaces/ClusterSpec.md), `"nebius.msp.postgresql.v1alpha1.ClusterSpec"`\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2837
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:2838

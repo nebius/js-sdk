@@ -8,4 +8,4 @@
 
 > **BucketServiceServiceDescription** = _typeof_ [`BucketServiceServiceDescription`](../variables/BucketServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:1555
+Defined in: src/generated/nebius/storage/v1/index.ts:1556

@@ -6,7 +6,7 @@
 
 # Interface: CreateSessionRequest
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4312
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4357
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4312
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4314
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4359
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4314
 
 > **$type**: `"nebius.msp.spark.v1alpha1.CreateSessionRequest"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4313
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4358
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4313
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4319
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4364
 
 Metadata associated with the new session. Must include parent_id - ID of the cluster to create session in.
 
@@ -40,6 +40,6 @@ Metadata associated with the new session. Must include parent_id - ID of the clu
 
 > `optional` **spec**: [`SessionSpec`](SessionSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4324
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:4369
 
 Specification for the new session.

@@ -6,7 +6,7 @@
 
 # Interface: DeleteInvitationRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13459
+Defined in: src/generated/nebius/iam/v1/index.ts:13460
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13459
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13461
+Defined in: src/generated/nebius/iam/v1/index.ts:13462
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13461
 
 > **$type**: `"nebius.iam.v1.DeleteInvitationRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13460
+Defined in: src/generated/nebius/iam/v1/index.ts:13461
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13460
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13462
+Defined in: src/generated/nebius/iam/v1/index.ts:13463

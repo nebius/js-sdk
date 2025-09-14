@@ -6,7 +6,7 @@
 
 # Class: PoolService
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4624
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4625
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4624
 
 > **new PoolService**(`sdk`): `PoolService`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4642
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4643
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4642
 
 > **$type**: `"nebius.vpc.v1alpha1.PoolService"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4625
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4626
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4625
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4626
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4627
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4626
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4627
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4628
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4627
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4628
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4629
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4628
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4648
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4649
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4648
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4649
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4650
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4649
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4650
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4651
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4650
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4629
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4630
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4629
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4630
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4631
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4630
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4631
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4632
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4631
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4660
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4661
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4660
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4661
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4662
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4661
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4662
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4663
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4662
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4632
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4633
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4632
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4633
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4634
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4633
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4634
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4635
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4634
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4672
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4673
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4672
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4673
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4674
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4673
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListPoolsRequest`](../interfaces/ListPoolsRequest.md), [`ListPoolsResponse`](../interfaces/ListPoolsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4674
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4675
 
 ##### Parameters
 

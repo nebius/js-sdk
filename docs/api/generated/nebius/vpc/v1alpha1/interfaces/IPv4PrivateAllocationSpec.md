@@ -6,7 +6,7 @@
 
 # Interface: IPv4PrivateAllocationSpec
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1334
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1335
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1334
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1336
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1337
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1336
 
 > **$type**: `"nebius.vpc.v1alpha1.IPv4PrivateAllocationSpec"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1335
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1336
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1335
 
 > **cidr**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1344
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1345
 
 CIDR block for IPv4 Allocation.
 May be a single IP address (such as 10.2.3.4),
@@ -43,4 +43,4 @@ Random address (/32) from pool would be allocated if field is omitted.
 
 > `optional` **pool**: \{ `$case`: `"subnetId"`; `subnetId`: `string`; \} \| \{ `$case`: `"poolId"`; `poolId`: `string`; \}
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1345
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1346

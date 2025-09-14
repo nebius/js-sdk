@@ -6,7 +6,7 @@
 
 # Class: FederatedCredentialsService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6598
+Defined in: src/generated/nebius/iam/v1/index.ts:6599
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6598
 
 > **new FederatedCredentialsService**(`sdk`): `FederatedCredentialsService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6625
+Defined in: src/generated/nebius/iam/v1/index.ts:6626
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6625
 
 > **$type**: `"nebius.iam.v1.FederatedCredentialsService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6599
+Defined in: src/generated/nebius/iam/v1/index.ts:6600
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6599
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederatedCredentialsRequest`](../interfaces/CreateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6609
+Defined in: src/generated/nebius/iam/v1/index.ts:6610
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6609
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederatedCredentialsRequest`](../interfaces/CreateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6610
+Defined in: src/generated/nebius/iam/v1/index.ts:6611
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6610
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederatedCredentialsRequest`](../interfaces/CreateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6611
+Defined in: src/generated/nebius/iam/v1/index.ts:6612
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6611
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederatedCredentialsRequest`](../interfaces/CreateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6671
+Defined in: src/generated/nebius/iam/v1/index.ts:6672
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6671
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederatedCredentialsRequest`](../interfaces/CreateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6672
+Defined in: src/generated/nebius/iam/v1/index.ts:6673
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6672
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederatedCredentialsRequest`](../interfaces/CreateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6673
+Defined in: src/generated/nebius/iam/v1/index.ts:6674
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6673
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederatedCredentialsRequest`](../interfaces/DeleteFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6615
+Defined in: src/generated/nebius/iam/v1/index.ts:6616
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6615
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederatedCredentialsRequest`](../interfaces/DeleteFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6616
+Defined in: src/generated/nebius/iam/v1/index.ts:6617
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6616
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederatedCredentialsRequest`](../interfaces/DeleteFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6617
+Defined in: src/generated/nebius/iam/v1/index.ts:6618
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6617
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederatedCredentialsRequest`](../interfaces/DeleteFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6701
+Defined in: src/generated/nebius/iam/v1/index.ts:6702
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6701
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederatedCredentialsRequest`](../interfaces/DeleteFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6702
+Defined in: src/generated/nebius/iam/v1/index.ts:6703
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6702
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederatedCredentialsRequest`](../interfaces/DeleteFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6703
+Defined in: src/generated/nebius/iam/v1/index.ts:6704
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6703
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederatedCredentialsRequest`](../interfaces/GetFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6600
+Defined in: src/generated/nebius/iam/v1/index.ts:6601
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6600
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederatedCredentialsRequest`](../interfaces/GetFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6601
+Defined in: src/generated/nebius/iam/v1/index.ts:6602
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6601
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederatedCredentialsRequest`](../interfaces/GetFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6602
+Defined in: src/generated/nebius/iam/v1/index.ts:6603
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6602
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederatedCredentialsRequest`](../interfaces/GetFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6635
+Defined in: src/generated/nebius/iam/v1/index.ts:6636
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6635
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederatedCredentialsRequest`](../interfaces/GetFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6636
+Defined in: src/generated/nebius/iam/v1/index.ts:6637
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6636
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederatedCredentialsRequest`](../interfaces/GetFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6637
+Defined in: src/generated/nebius/iam/v1/index.ts:6638
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6637
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameFederatedCredentialsRequest`](../interfaces/GetByNameFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6603
+Defined in: src/generated/nebius/iam/v1/index.ts:6604
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6603
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameFederatedCredentialsRequest`](../interfaces/GetByNameFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6604
+Defined in: src/generated/nebius/iam/v1/index.ts:6605
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6604
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameFederatedCredentialsRequest`](../interfaces/GetByNameFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6605
+Defined in: src/generated/nebius/iam/v1/index.ts:6606
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6605
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameFederatedCredentialsRequest`](../interfaces/GetByNameFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6647
+Defined in: src/generated/nebius/iam/v1/index.ts:6648
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6647
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameFederatedCredentialsRequest`](../interfaces/GetByNameFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6648
+Defined in: src/generated/nebius/iam/v1/index.ts:6649
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6648
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameFederatedCredentialsRequest`](../interfaces/GetByNameFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6649
+Defined in: src/generated/nebius/iam/v1/index.ts:6650
 
 ##### Parameters
 
@@ -540,7 +540,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6649
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6631
+Defined in: src/generated/nebius/iam/v1/index.ts:6632
 
 #### Returns
 
@@ -554,7 +554,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6631
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederatedCredentialsRequest`](../interfaces/ListFederatedCredentialsRequest.md), [`ListFederatedCredentialsResponse`](../interfaces/ListFederatedCredentialsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6606
+Defined in: src/generated/nebius/iam/v1/index.ts:6607
 
 ##### Parameters
 
@@ -570,7 +570,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6606
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederatedCredentialsRequest`](../interfaces/ListFederatedCredentialsRequest.md), [`ListFederatedCredentialsResponse`](../interfaces/ListFederatedCredentialsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6607
+Defined in: src/generated/nebius/iam/v1/index.ts:6608
 
 ##### Parameters
 
@@ -590,7 +590,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6607
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederatedCredentialsRequest`](../interfaces/ListFederatedCredentialsRequest.md), [`ListFederatedCredentialsResponse`](../interfaces/ListFederatedCredentialsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6608
+Defined in: src/generated/nebius/iam/v1/index.ts:6609
 
 ##### Parameters
 
@@ -614,7 +614,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6608
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederatedCredentialsRequest`](../interfaces/ListFederatedCredentialsRequest.md), [`ListFederatedCredentialsResponse`](../interfaces/ListFederatedCredentialsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6659
+Defined in: src/generated/nebius/iam/v1/index.ts:6660
 
 ##### Parameters
 
@@ -630,7 +630,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6659
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederatedCredentialsRequest`](../interfaces/ListFederatedCredentialsRequest.md), [`ListFederatedCredentialsResponse`](../interfaces/ListFederatedCredentialsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6660
+Defined in: src/generated/nebius/iam/v1/index.ts:6661
 
 ##### Parameters
 
@@ -650,7 +650,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6660
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederatedCredentialsRequest`](../interfaces/ListFederatedCredentialsRequest.md), [`ListFederatedCredentialsResponse`](../interfaces/ListFederatedCredentialsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6661
+Defined in: src/generated/nebius/iam/v1/index.ts:6662
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6661
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederatedCredentialsRequest`](../interfaces/UpdateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6612
+Defined in: src/generated/nebius/iam/v1/index.ts:6613
 
 ##### Parameters
 
@@ -694,7 +694,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6612
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederatedCredentialsRequest`](../interfaces/UpdateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6613
+Defined in: src/generated/nebius/iam/v1/index.ts:6614
 
 ##### Parameters
 
@@ -714,7 +714,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6613
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederatedCredentialsRequest`](../interfaces/UpdateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6614
+Defined in: src/generated/nebius/iam/v1/index.ts:6615
 
 ##### Parameters
 
@@ -738,7 +738,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6614
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederatedCredentialsRequest`](../interfaces/UpdateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6686
+Defined in: src/generated/nebius/iam/v1/index.ts:6687
 
 ##### Parameters
 
@@ -754,7 +754,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6686
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederatedCredentialsRequest`](../interfaces/UpdateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6687
+Defined in: src/generated/nebius/iam/v1/index.ts:6688
 
 ##### Parameters
 
@@ -774,7 +774,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6687
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateFederatedCredentialsRequest`](../interfaces/UpdateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6688
+Defined in: src/generated/nebius/iam/v1/index.ts:6689
 
 ##### Parameters
 

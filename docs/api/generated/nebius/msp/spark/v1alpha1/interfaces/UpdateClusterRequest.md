@@ -6,7 +6,7 @@
 
 # Interface: UpdateClusterRequest
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:585
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:586
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:585
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:587
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:588
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:587
 
 > **$type**: `"nebius.msp.spark.v1alpha1.UpdateClusterRequest"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:586
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:587
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:586
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:592
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:593
 
 Metadata associated with the cluster. Must include id of the cluster we are going to update.
 
@@ -40,6 +40,6 @@ Metadata associated with the cluster. Must include id of the cluster we are goin
 
 > `optional` **spec**: [`ClusterSpec`](ClusterSpec.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:597
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:598
 
 Updated specification for the cluster.

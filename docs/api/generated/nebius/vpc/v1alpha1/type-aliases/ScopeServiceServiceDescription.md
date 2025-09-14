@@ -8,4 +8,4 @@
 
 > **ScopeServiceServiceDescription** = _typeof_ [`ScopeServiceServiceDescription`](../variables/ScopeServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5886
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:5887

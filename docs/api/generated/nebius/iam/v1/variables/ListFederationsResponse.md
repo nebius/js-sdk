@@ -8,4 +8,4 @@
 
 > **ListFederationsResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListFederationsResponse`](../interfaces/ListFederationsResponse.md), `"nebius.iam.v1.ListFederationsResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8797
+Defined in: src/generated/nebius/iam/v1/index.ts:8798

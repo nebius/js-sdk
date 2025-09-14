@@ -6,7 +6,7 @@
 
 # Class: TransferService
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1212
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1213
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1212
 
 > **new TransferService**(`sdk`): `TransferService`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1263
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1264
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1263
 
 > **$type**: `"nebius.storage.v1alpha1.TransferService"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1213
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1214
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1213
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1223
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1224
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1223
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1224
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1225
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1224
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1225
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1226
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1225
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1309
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1310
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1309
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1310
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1311
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1310
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1311
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1312
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1311
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1250
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1251
 
 Fully delete a transfer along with its history. Only stopped or failed transfers can be deleted.
 
@@ -188,7 +188,7 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1251
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1252
 
 ##### Parameters
 
@@ -208,7 +208,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1251
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1252
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1253
 
 ##### Parameters
 
@@ -232,7 +232,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1252
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1369
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1370
 
 Fully delete a transfer along with its history. Only stopped or failed transfers can be deleted.
 
@@ -250,7 +250,7 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1370
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1371
 
 Fully delete a transfer along with its history. Only stopped or failed transfers can be deleted.
 
@@ -272,7 +272,7 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1371
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1372
 
 Fully delete a transfer along with its history. Only stopped or failed transfers can be deleted.
 
@@ -302,7 +302,7 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1214
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1215
 
 ##### Parameters
 
@@ -318,7 +318,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1214
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1215
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1216
 
 ##### Parameters
 
@@ -338,7 +338,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1215
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1216
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1217
 
 ##### Parameters
 
@@ -362,7 +362,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1216
 
 > **get**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1273
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1274
 
 ##### Parameters
 
@@ -378,7 +378,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1273
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1274
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1275
 
 ##### Parameters
 
@@ -398,7 +398,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1274
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1275
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1276
 
 ##### Parameters
 
@@ -426,7 +426,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1275
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1217
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1218
 
 ##### Parameters
 
@@ -442,7 +442,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1217
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1218
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1219
 
 ##### Parameters
 
@@ -462,7 +462,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1218
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1219
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1220
 
 ##### Parameters
 
@@ -486,7 +486,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1219
 
 > **getByName**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1285
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1286
 
 ##### Parameters
 
@@ -502,7 +502,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1285
 
 > **getByName**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1286
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1287
 
 ##### Parameters
 
@@ -522,7 +522,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1286
 
 > **getByName**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1287
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1288
 
 ##### Parameters
 
@@ -550,7 +550,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1287
 
 > **getIterationHistory**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1253
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1254
 
 ##### Parameters
 
@@ -566,7 +566,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1253
 
 > **getIterationHistory**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1254
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1255
 
 ##### Parameters
 
@@ -586,7 +586,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1254
 
 > **getIterationHistory**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1255
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1256
 
 ##### Parameters
 
@@ -610,7 +610,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1255
 
 > **getIterationHistory**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1384
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1385
 
 ##### Parameters
 
@@ -626,7 +626,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1384
 
 > **getIterationHistory**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1385
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1386
 
 ##### Parameters
 
@@ -646,7 +646,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1385
 
 > **getIterationHistory**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1386
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1387
 
 ##### Parameters
 
@@ -672,7 +672,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1386
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1269
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1270
 
 #### Returns
 
@@ -686,7 +686,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1269
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1220
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1221
 
 ##### Parameters
 
@@ -702,7 +702,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1220
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1221
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1222
 
 ##### Parameters
 
@@ -722,7 +722,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1221
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1222
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1223
 
 ##### Parameters
 
@@ -746,7 +746,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1222
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1297
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1298
 
 ##### Parameters
 
@@ -762,7 +762,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1297
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1298
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1299
 
 ##### Parameters
 
@@ -782,7 +782,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1298
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1299
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1300
 
 ##### Parameters
 
@@ -810,7 +810,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1299
 
 > **resume**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1243
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1244
 
 Resume stopped or failed transfer.
 
@@ -828,7 +828,7 @@ Resume stopped or failed transfer.
 
 > **resume**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1244
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1245
 
 ##### Parameters
 
@@ -848,7 +848,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1244
 
 > **resume**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1245
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1246
 
 ##### Parameters
 
@@ -872,7 +872,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1245
 
 > **resume**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1354
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1355
 
 Resume stopped or failed transfer.
 
@@ -890,7 +890,7 @@ Resume stopped or failed transfer.
 
 > **resume**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1355
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1356
 
 Resume stopped or failed transfer.
 
@@ -912,7 +912,7 @@ Resume stopped or failed transfer.
 
 > **resume**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1356
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1357
 
 Resume stopped or failed transfer.
 
@@ -942,7 +942,7 @@ Resume stopped or failed transfer.
 
 > **stop**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1236
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1237
 
 Stop active transfer. If the transfer is currently moving data,
 it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
@@ -963,7 +963,7 @@ Only transfer in Active state can be stopped.
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1237
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1238
 
 ##### Parameters
 
@@ -983,7 +983,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1237
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1238
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1239
 
 ##### Parameters
 
@@ -1007,7 +1007,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1238
 
 > **stop**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1339
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1340
 
 Stop active transfer. If the transfer is currently moving data,
 it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
@@ -1028,7 +1028,7 @@ Only transfer in Active state can be stopped.
 
 > **stop**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1340
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1341
 
 Stop active transfer. If the transfer is currently moving data,
 it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
@@ -1053,7 +1053,7 @@ Only transfer in Active state can be stopped.
 
 > **stop**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1341
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1342
 
 Stop active transfer. If the transfer is currently moving data,
 it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
@@ -1086,7 +1086,7 @@ Only transfer in Active state can be stopped.
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1226
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1227
 
 ##### Parameters
 
@@ -1102,7 +1102,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1226
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1227
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1228
 
 ##### Parameters
 
@@ -1122,7 +1122,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1227
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1228
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1229
 
 ##### Parameters
 
@@ -1146,7 +1146,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1228
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1324
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1325
 
 ##### Parameters
 
@@ -1162,7 +1162,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1324
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1325
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1326
 
 ##### Parameters
 
@@ -1182,7 +1182,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1325
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateTransferRequest`](../interfaces/UpdateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1326
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1327
 
 ##### Parameters
 

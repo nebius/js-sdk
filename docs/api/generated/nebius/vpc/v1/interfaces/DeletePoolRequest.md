@@ -6,7 +6,7 @@
 
 # Interface: DeletePoolRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4951
+Defined in: src/generated/nebius/vpc/v1/index.ts:4952
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4951
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4953
+Defined in: src/generated/nebius/vpc/v1/index.ts:4954
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4953
 
 > **$type**: `"nebius.vpc.v1.DeletePoolRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4952
+Defined in: src/generated/nebius/vpc/v1/index.ts:4953
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4952
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4954
+Defined in: src/generated/nebius/vpc/v1/index.ts:4955

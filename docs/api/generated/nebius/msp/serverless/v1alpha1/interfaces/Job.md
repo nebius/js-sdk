@@ -6,7 +6,7 @@
 
 # Interface: Job
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2186
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2187
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2186
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2188
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2189
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2188
 
 > **$type**: `"nebius.msp.serverless.v1alpha1.Job"`
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2187
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2188
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2187
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2189
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2190
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2189
 
 > `optional` **spec**: [`JobSpec`](JobSpec.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2190
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2191
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2190
 
 > `optional` **status**: [`JobStatus`](JobStatus.md)
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2191
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2192

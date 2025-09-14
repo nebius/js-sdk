@@ -8,7 +8,7 @@
 
 > **SubnetServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`SubnetServiceBaseClient`](../interfaces/SubnetServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7064
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7065
 
 ## Type Declaration
 

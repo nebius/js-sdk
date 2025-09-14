@@ -6,7 +6,7 @@
 
 # Interface: ListGpuClustersResponse
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4082
+Defined in: src/generated/nebius/compute/v1/index.ts:4083
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4082
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4084
+Defined in: src/generated/nebius/compute/v1/index.ts:4085
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4084
 
 > **$type**: `"nebius.compute.v1.ListGpuClustersResponse"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4083
+Defined in: src/generated/nebius/compute/v1/index.ts:4084
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4083
 
 > **items**: [`GpuCluster`](GpuCluster.md)[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4085
+Defined in: src/generated/nebius/compute/v1/index.ts:4086
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:4085
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:4086
+Defined in: src/generated/nebius/compute/v1/index.ts:4087

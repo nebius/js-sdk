@@ -6,7 +6,7 @@
 
 # Interface: TransferStatus
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2885
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2886
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2885
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2887
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2888
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2887
 
 > **$type**: `"nebius.storage.v1alpha1.TransferStatus"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2886
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2887
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2886
 
 > **error**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2893
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2894
 
 Error information if the transfer has failed.
 
@@ -40,7 +40,7 @@ Error information if the transfer has failed.
 
 > `optional` **lastIteration**: [`TransferIteration`](TransferIteration.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2895
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2896
 
 ---
 
@@ -48,7 +48,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2895
 
 > **state**: [`TransferStatus_State`](../type-aliases/TransferStatus_State.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2888
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2889
 
 ---
 
@@ -56,4 +56,4 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2888
 
 > **suspensionState**: [`TransferStatus_SuspensionState`](../type-aliases/TransferStatus_SuspensionState.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2894
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:2895

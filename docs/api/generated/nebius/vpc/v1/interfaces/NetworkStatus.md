@@ -6,7 +6,7 @@
 
 # Interface: NetworkStatus
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4097
+Defined in: src/generated/nebius/vpc/v1/index.ts:4098
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4097
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4099
+Defined in: src/generated/nebius/vpc/v1/index.ts:4100
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4099
 
 > **$type**: `"nebius.vpc.v1.NetworkStatus"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4098
+Defined in: src/generated/nebius/vpc/v1/index.ts:4099
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4098
 
 > **state**: [`NetworkStatus_State`](../type-aliases/NetworkStatus_State.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4104
+Defined in: src/generated/nebius/vpc/v1/index.ts:4105
 
 Current state of the network.

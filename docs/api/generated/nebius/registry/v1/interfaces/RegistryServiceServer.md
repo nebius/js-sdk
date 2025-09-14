@@ -6,7 +6,7 @@
 
 # Interface: RegistryServiceServer
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1527
+Defined in: src/generated/nebius/registry/v1/index.ts:1528
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1527
 
 > **create**: `handleUnaryCall`\<[`CreateRegistryRequest`](CreateRegistryRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1530
+Defined in: src/generated/nebius/registry/v1/index.ts:1531
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1530
 
 > **delete**: `handleUnaryCall`\<[`DeleteRegistryRequest`](DeleteRegistryRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1532
+Defined in: src/generated/nebius/registry/v1/index.ts:1533
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1532
 
 > **get**: `handleUnaryCall`\<[`GetRegistryRequest`](GetRegistryRequest.md), [`Registry`](Registry.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1528
+Defined in: src/generated/nebius/registry/v1/index.ts:1529
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1528
 
 > **list**: `handleUnaryCall`\<[`ListRegistriesRequest`](ListRegistriesRequest.md), [`ListRegistriesResponse`](ListRegistriesResponse.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1529
+Defined in: src/generated/nebius/registry/v1/index.ts:1530
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1529
 
 > **update**: `handleUnaryCall`\<[`UpdateRegistryRequest`](UpdateRegistryRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1531
+Defined in: src/generated/nebius/registry/v1/index.ts:1532

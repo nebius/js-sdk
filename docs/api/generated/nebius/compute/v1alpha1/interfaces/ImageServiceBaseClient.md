@@ -6,7 +6,7 @@
 
 # ~~Interface: ImageServiceBaseClient~~
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4877
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4878
 
 ## Deprecated
 
@@ -38,7 +38,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4878
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4879
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4878
 
 > **getByName**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4879
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4880
 
 #### Parameters
 
@@ -114,7 +114,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **getLatestByFamily**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4880
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4881
 
 #### Parameters
 
@@ -144,7 +144,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4880
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4881
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4882
 
 #### Parameters
 
@@ -174,7 +174,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4881
 
 > **listOperationsByParent**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4882
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4883
 
 #### Parameters
 

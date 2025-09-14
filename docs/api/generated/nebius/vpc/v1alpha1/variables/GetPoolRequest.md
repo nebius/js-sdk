@@ -8,4 +8,4 @@
 
 > **GetPoolRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), `"nebius.vpc.v1alpha1.GetPoolRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4140
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:4141

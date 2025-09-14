@@ -6,7 +6,7 @@
 
 # Interface: GetImageLatestByFamilyRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4447
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4448
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4447
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4449
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4450
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4449
 
 > **$type**: `"nebius.compute.v1alpha1.GetImageLatestByFamilyRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4448
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4449
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4448
 
 > **imageFamily**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4450
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4451
 
 ---
 
@@ -38,6 +38,6 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4450
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4455
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4456
 
 default 'project-{region}public-images'

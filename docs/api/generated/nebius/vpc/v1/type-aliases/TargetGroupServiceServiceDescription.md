@@ -8,4 +8,4 @@
 
 > **TargetGroupServiceServiceDescription** = _typeof_ [`TargetGroupServiceServiceDescription`](../variables/TargetGroupServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8400
+Defined in: src/generated/nebius/vpc/v1/index.ts:8401

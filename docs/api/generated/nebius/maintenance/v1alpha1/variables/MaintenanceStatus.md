@@ -8,4 +8,4 @@
 
 > **MaintenanceStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`MaintenanceStatus`](../interfaces/MaintenanceStatus.md), `"nebius.maintenance.v1alpha1.MaintenanceStatus"`\>
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:701
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:702

@@ -6,7 +6,7 @@
 
 # Interface: GetProfileResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14477
+Defined in: src/generated/nebius/iam/v1/index.ts:14478
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14477
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14479
+Defined in: src/generated/nebius/iam/v1/index.ts:14480
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14479
 
 > **$type**: `"nebius.iam.v1.GetProfileResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14478
+Defined in: src/generated/nebius/iam/v1/index.ts:14479
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:14478
 
 > `optional` **profile**: \{ `$case`: `"userProfile"`; `userProfile`: [`UserProfile`](UserProfile.md); \} \| \{ `$case`: `"serviceAccountProfile"`; `serviceAccountProfile`: [`ServiceAccountProfile`](ServiceAccountProfile.md); \} \| \{ `$case`: `"anonymousProfile"`; `anonymousProfile`: [`AnonymousAccount`](AnonymousAccount.md); \}
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14480
+Defined in: src/generated/nebius/iam/v1/index.ts:14481

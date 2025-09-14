@@ -8,4 +8,4 @@
 
 > **ControlPlaneStatusAuth**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ControlPlaneStatusAuth`](../interfaces/ControlPlaneStatusAuth.md), `"nebius.mk8s.v1alpha1.ControlPlaneStatusAuth"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2074
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:2345

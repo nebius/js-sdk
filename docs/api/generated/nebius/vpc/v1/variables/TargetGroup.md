@@ -8,4 +8,4 @@
 
 > **TargetGroup**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`TargetGroup`](../interfaces/TargetGroup.md), `"nebius.vpc.v1.TargetGroup"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:8547
+Defined in: src/generated/nebius/vpc/v1/index.ts:8548

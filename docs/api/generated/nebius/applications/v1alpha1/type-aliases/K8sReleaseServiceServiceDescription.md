@@ -8,4 +8,4 @@
 
 > **K8sReleaseServiceServiceDescription** = _typeof_ [`K8sReleaseServiceServiceDescription`](../variables/K8sReleaseServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:674
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:675

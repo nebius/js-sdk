@@ -8,7 +8,7 @@
 
 > **InvitationServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13741
+Defined in: src/generated/nebius/iam/v1/index.ts:13742
 
 ## Type Declaration
 

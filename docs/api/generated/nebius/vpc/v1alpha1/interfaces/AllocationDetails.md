@@ -6,7 +6,7 @@
 
 # Interface: AllocationDetails
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1784
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1785
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1784
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1786
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1787
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1786
 
 > **$type**: `"nebius.vpc.v1alpha1.AllocationDetails"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1785
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1786
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1785
 
 > **allocatedCidr**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1787
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1788
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1787
 
 > **poolId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1788
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1789
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1788
 
 > **version**: [`IpVersion`](../type-aliases/IpVersion.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1789
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:1790

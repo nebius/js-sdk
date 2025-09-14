@@ -8,4 +8,4 @@
 
 > **ListQuotaAllowancesRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListQuotaAllowancesRequest`](../interfaces/ListQuotaAllowancesRequest.md), `"nebius.quotas.v1.ListQuotaAllowancesRequest"`\>
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:14
+Defined in: src/generated/nebius/quotas/v1/index.ts:15

@@ -6,7 +6,7 @@
 
 # Interface: ListInvitationsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13213
+Defined in: src/generated/nebius/iam/v1/index.ts:13214
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13213
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13215
+Defined in: src/generated/nebius/iam/v1/index.ts:13216
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13215
 
 > **$type**: `"nebius.iam.v1.ListInvitationsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13214
+Defined in: src/generated/nebius/iam/v1/index.ts:13215
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13214
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13219
+Defined in: src/generated/nebius/iam/v1/index.ts:13220
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13219
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13217
+Defined in: src/generated/nebius/iam/v1/index.ts:13218
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13217
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13218
+Defined in: src/generated/nebius/iam/v1/index.ts:13219
 
 ---
 
@@ -54,4 +54,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:13218
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13216
+Defined in: src/generated/nebius/iam/v1/index.ts:13217

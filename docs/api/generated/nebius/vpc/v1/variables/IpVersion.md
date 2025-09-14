@@ -8,4 +8,4 @@
 
 > **IpVersion**: [`IpVersionClass`](../type-aliases/IpVersionClass.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5313
+Defined in: src/generated/nebius/vpc/v1/index.ts:5314

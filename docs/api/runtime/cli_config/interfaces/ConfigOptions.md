@@ -6,7 +6,7 @@
 
 # Interface: ConfigOptions
 
-Defined in: [src/runtime/cli_config.ts:44](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L44)
+Defined in: [src/runtime/cli_config.ts:33](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L33)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/cli_config.ts:44](https://github.com/nebius/nodejs-sdk/
 
 > `optional` **clientId**: `string`
 
-Defined in: [src/runtime/cli_config.ts:45](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L45)
+Defined in: [src/runtime/cli_config.ts:34](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L34)
 
 ---
 
@@ -22,7 +22,15 @@ Defined in: [src/runtime/cli_config.ts:45](https://github.com/nebius/nodejs-sdk/
 
 > `optional` **configFile**: `string`
 
-Defined in: [src/runtime/cli_config.ts:46](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L46)
+Defined in: [src/runtime/cli_config.ts:35](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L35)
+
+---
+
+### logger?
+
+> `optional` **logger**: `string` \| `number` \| [`Handler`](../../util/logging/interfaces/Handler.md) \| [`Logger`](../../util/logging/classes/Logger.md)
+
+Defined in: [src/runtime/cli_config.ts:43](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L43)
 
 ---
 
@@ -30,7 +38,7 @@ Defined in: [src/runtime/cli_config.ts:46](https://github.com/nebius/nodejs-sdk/
 
 > `optional` **maxRetries**: `number`
 
-Defined in: [src/runtime/cli_config.ts:52](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L52)
+Defined in: [src/runtime/cli_config.ts:41](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L41)
 
 ---
 
@@ -38,7 +46,7 @@ Defined in: [src/runtime/cli_config.ts:52](https://github.com/nebius/nodejs-sdk/
 
 > `optional` **noEnv**: `boolean`
 
-Defined in: [src/runtime/cli_config.ts:50](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L50)
+Defined in: [src/runtime/cli_config.ts:39](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L39)
 
 ---
 
@@ -46,7 +54,7 @@ Defined in: [src/runtime/cli_config.ts:50](https://github.com/nebius/nodejs-sdk/
 
 > `optional` **noParentId**: `boolean`
 
-Defined in: [src/runtime/cli_config.ts:51](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L51)
+Defined in: [src/runtime/cli_config.ts:40](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L40)
 
 ---
 
@@ -54,7 +62,7 @@ Defined in: [src/runtime/cli_config.ts:51](https://github.com/nebius/nodejs-sdk/
 
 > `optional` **profile**: `null` \| `string`
 
-Defined in: [src/runtime/cli_config.ts:47](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L47)
+Defined in: [src/runtime/cli_config.ts:36](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L36)
 
 ---
 
@@ -62,7 +70,7 @@ Defined in: [src/runtime/cli_config.ts:47](https://github.com/nebius/nodejs-sdk/
 
 > `optional` **profileEnv**: `string`
 
-Defined in: [src/runtime/cli_config.ts:48](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L48)
+Defined in: [src/runtime/cli_config.ts:37](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L37)
 
 ---
 
@@ -70,4 +78,4 @@ Defined in: [src/runtime/cli_config.ts:48](https://github.com/nebius/nodejs-sdk/
 
 > `optional` **tokenEnv**: `string`
 
-Defined in: [src/runtime/cli_config.ts:49](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/cli_config.ts#L49)
+Defined in: [src/runtime/cli_config.ts:38](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/cli_config.ts#L38)

@@ -8,4 +8,4 @@
 
 > **GroupMembershipStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GroupMembershipStatus`](../interfaces/GroupMembershipStatus.md), `"nebius.iam.v1.GroupMembershipStatus"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:11221
+Defined in: src/generated/nebius/iam/v1/index.ts:11222

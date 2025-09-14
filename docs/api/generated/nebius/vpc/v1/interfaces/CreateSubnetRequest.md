@@ -6,7 +6,7 @@
 
 # Interface: CreateSubnetRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6720
+Defined in: src/generated/nebius/vpc/v1/index.ts:6721
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6720
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6722
+Defined in: src/generated/nebius/vpc/v1/index.ts:6723
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6722
 
 > **$type**: `"nebius.vpc.v1.CreateSubnetRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6721
+Defined in: src/generated/nebius/vpc/v1/index.ts:6722
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6721
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6723
+Defined in: src/generated/nebius/vpc/v1/index.ts:6724
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:6723
 
 > `optional` **spec**: [`SubnetSpec`](SubnetSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:6724
+Defined in: src/generated/nebius/vpc/v1/index.ts:6725

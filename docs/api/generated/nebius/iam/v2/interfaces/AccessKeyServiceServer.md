@@ -6,7 +6,7 @@
 
 # Interface: AccessKeyServiceServer
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1466
+Defined in: src/generated/nebius/iam/v2/index.ts:1467
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1466
 
 > **activate**: `handleUnaryCall`\<[`ActivateAccessKeyRequest`](ActivateAccessKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1472
+Defined in: src/generated/nebius/iam/v2/index.ts:1473
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1472
 
 > **activateByAwsId**: `handleUnaryCall`\<[`ActivateAccessKeyByAwsIdRequest`](ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1477
+Defined in: src/generated/nebius/iam/v2/index.ts:1478
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1477
 
 > **create**: `handleUnaryCall`\<[`CreateAccessKeyRequest`](CreateAccessKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1467
+Defined in: src/generated/nebius/iam/v2/index.ts:1468
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1467
 
 > **deactivate**: `handleUnaryCall`\<[`DeactivateAccessKeyRequest`](DeactivateAccessKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1473
+Defined in: src/generated/nebius/iam/v2/index.ts:1474
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1473
 
 > **deactivateByAwsId**: `handleUnaryCall`\<[`DeactivateAccessKeyByAwsIdRequest`](DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1478
+Defined in: src/generated/nebius/iam/v2/index.ts:1479
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1478
 
 > **delete**: `handleUnaryCall`\<[`DeleteAccessKeyRequest`](DeleteAccessKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1471
+Defined in: src/generated/nebius/iam/v2/index.ts:1472
 
 ---
 
@@ -70,7 +70,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1471
 
 > **deleteByAwsId**: `handleUnaryCall`\<[`DeleteAccessKeyByAwsIdRequest`](DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1476
+Defined in: src/generated/nebius/iam/v2/index.ts:1477
 
 ---
 
@@ -78,7 +78,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1476
 
 > **get**: `handleUnaryCall`\<[`GetAccessKeyRequest`](GetAccessKeyRequest.md), [`AccessKey`](AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1468
+Defined in: src/generated/nebius/iam/v2/index.ts:1469
 
 ---
 
@@ -86,7 +86,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1468
 
 > **getByAwsId**: `handleUnaryCall`\<[`GetAccessKeyByAwsIdRequest`](GetAccessKeyByAwsIdRequest.md), [`AccessKey`](AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1475
+Defined in: src/generated/nebius/iam/v2/index.ts:1476
 
 ---
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1475
 
 > **list**: `handleUnaryCall`\<[`ListAccessKeysRequest`](ListAccessKeysRequest.md), [`ListAccessKeysResponse`](ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1469
+Defined in: src/generated/nebius/iam/v2/index.ts:1470
 
 ---
 
@@ -102,7 +102,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1469
 
 > **listByAccount**: `handleUnaryCall`\<[`ListAccessKeysByAccountRequest`](ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1474
+Defined in: src/generated/nebius/iam/v2/index.ts:1475
 
 ---
 
@@ -110,4 +110,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:1474
 
 > **update**: `handleUnaryCall`\<[`UpdateAccessKeyRequest`](UpdateAccessKeyRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1470
+Defined in: src/generated/nebius/iam/v2/index.ts:1471

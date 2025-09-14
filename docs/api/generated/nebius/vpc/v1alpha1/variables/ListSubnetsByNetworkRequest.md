@@ -8,4 +8,4 @@
 
 > **ListSubnetsByNetworkRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), `"nebius.vpc.v1alpha1.ListSubnetsByNetworkRequest"`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6771
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6772

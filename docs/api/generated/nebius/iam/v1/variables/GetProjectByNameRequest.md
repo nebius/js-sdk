@@ -8,4 +8,4 @@
 
 > **GetProjectByNameRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetProjectByNameRequest`](../interfaces/GetProjectByNameRequest.md), `"nebius.iam.v1.GetProjectByNameRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:15382
+Defined in: src/generated/nebius/iam/v1/index.ts:15383

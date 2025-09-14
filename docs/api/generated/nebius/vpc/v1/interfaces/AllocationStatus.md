@@ -6,7 +6,7 @@
 
 # Interface: AllocationStatus
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1797
+Defined in: src/generated/nebius/vpc/v1/index.ts:1798
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1797
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1799
+Defined in: src/generated/nebius/vpc/v1/index.ts:1800
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1799
 
 > **$type**: `"nebius.vpc.v1.AllocationStatus"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1798
+Defined in: src/generated/nebius/vpc/v1/index.ts:1799
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:1798
 
 > `optional` **assignment**: [`Assignment`](Assignment.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1816
+Defined in: src/generated/nebius/vpc/v1/index.ts:1817
 
 Information about the assignment associated with the allocation,
 such as network interface or load balancer assignment.
@@ -41,7 +41,7 @@ such as network interface or load balancer assignment.
 
 > `optional` **details**: [`AllocationDetails`](AllocationDetails.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1810
+Defined in: src/generated/nebius/vpc/v1/index.ts:1811
 
 Detailed information about the allocation status,
 including the allocated CIDR, pool ID and IP version.
@@ -52,7 +52,7 @@ including the allocated CIDR, pool ID and IP version.
 
 > **state**: [`AllocationStatus_State`](../type-aliases/AllocationStatus_State.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1804
+Defined in: src/generated/nebius/vpc/v1/index.ts:1805
 
 This field represents the current state of the allocation.
 
@@ -62,6 +62,6 @@ This field represents the current state of the allocation.
 
 > **static**: `boolean`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:1821
+Defined in: src/generated/nebius/vpc/v1/index.ts:1822
 
 If false - Lifecycle of allocation depends on resource that using it.

@@ -8,4 +8,4 @@
 
 > **DeleteFederationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteFederationRequest`](../interfaces/DeleteFederationRequest.md), `"nebius.iam.v1.DeleteFederationRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9036
+Defined in: src/generated/nebius/iam/v1/index.ts:9037

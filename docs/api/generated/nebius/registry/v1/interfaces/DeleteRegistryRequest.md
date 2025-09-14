@@ -6,7 +6,7 @@
 
 # Interface: DeleteRegistryRequest
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1393
+Defined in: src/generated/nebius/registry/v1/index.ts:1394
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1393
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1395
+Defined in: src/generated/nebius/registry/v1/index.ts:1396
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1395
 
 > **$type**: `"nebius.registry.v1.DeleteRegistryRequest"`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1394
+Defined in: src/generated/nebius/registry/v1/index.ts:1395
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/registry/v1/index.ts:1394
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/registry/v1/index.ts:1396
+Defined in: src/generated/nebius/registry/v1/index.ts:1397

@@ -6,7 +6,7 @@
 
 # Interface: ListFederatedCredentialsResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6319
+Defined in: src/generated/nebius/iam/v1/index.ts:6320
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6319
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6321
+Defined in: src/generated/nebius/iam/v1/index.ts:6322
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6321
 
 > **$type**: `"nebius.iam.v1.ListFederatedCredentialsResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6320
+Defined in: src/generated/nebius/iam/v1/index.ts:6321
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:6320
 
 > **items**: [`FederatedCredentials`](FederatedCredentials.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6326
+Defined in: src/generated/nebius/iam/v1/index.ts:6327
 
 List of user accounts returned in the response. The field should be named as `items` for consistency.
 
@@ -40,6 +40,6 @@ List of user accounts returned in the response. The field should be named as `it
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:6331
+Defined in: src/generated/nebius/iam/v1/index.ts:6332
 
 Token for pagination, indicating the next set of results can be retrieved using this token.

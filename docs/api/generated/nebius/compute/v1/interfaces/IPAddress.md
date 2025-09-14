@@ -6,7 +6,7 @@
 
 # Interface: IPAddress
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9921
+Defined in: src/generated/nebius/compute/v1/index.ts:9922
 
 Describes an IPv4 address.
 
@@ -16,7 +16,7 @@ Describes an IPv4 address.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9923
+Defined in: src/generated/nebius/compute/v1/index.ts:9924
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9923
 
 > **$type**: `"nebius.compute.v1.IPAddress"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9922
+Defined in: src/generated/nebius/compute/v1/index.ts:9923
 
 ---
 
@@ -32,6 +32,6 @@ Defined in: src/generated/nebius/compute/v1/index.ts:9922
 
 > **allocationId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:9928
+Defined in: src/generated/nebius/compute/v1/index.ts:9929
 
 Allocation identifier if it was created before.

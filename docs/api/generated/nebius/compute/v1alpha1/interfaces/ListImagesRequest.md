@@ -6,7 +6,7 @@
 
 # Interface: ListImagesRequest
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4555
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4556
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4555
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4557
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4558
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4557
 
 > **$type**: `"nebius.compute.v1alpha1.ListImagesRequest"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4556
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4557
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4556
 
 > **filter**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4562
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4563
 
 #### Deprecated
 
@@ -42,7 +42,7 @@ Deprecated, will be removed on 2025-06-16: it is not implemented, filtering coul
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4559
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4560
 
 ---
 
@@ -50,7 +50,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4559
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4560
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4561
 
 ---
 
@@ -58,4 +58,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4560
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4558
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4559

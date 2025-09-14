@@ -8,4 +8,4 @@
 
 > **NodeGroupStatus**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeGroupStatus`](../interfaces/NodeGroupStatus.md), `"nebius.mk8s.v1.NodeGroupStatus"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6024
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6342

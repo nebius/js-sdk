@@ -6,7 +6,7 @@
 
 # Interface: CreatePoolRequest
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4727
+Defined in: src/generated/nebius/vpc/v1/index.ts:4728
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4727
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4729
+Defined in: src/generated/nebius/vpc/v1/index.ts:4730
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4729
 
 > **$type**: `"nebius.vpc.v1.CreatePoolRequest"`
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4728
+Defined in: src/generated/nebius/vpc/v1/index.ts:4729
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4728
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4730
+Defined in: src/generated/nebius/vpc/v1/index.ts:4731
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:4730
 
 > `optional` **spec**: [`PoolSpec`](PoolSpec.md)
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:4731
+Defined in: src/generated/nebius/vpc/v1/index.ts:4732

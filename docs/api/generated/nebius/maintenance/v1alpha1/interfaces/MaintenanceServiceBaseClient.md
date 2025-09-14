@@ -6,7 +6,7 @@
 
 # Interface: MaintenanceServiceBaseClient
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:309
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:310
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:310
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:311
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **list**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:311
+Defined in: src/generated/nebius/maintenance/v1alpha1/index.ts:312
 
 #### Parameters
 

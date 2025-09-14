@@ -6,7 +6,7 @@
 
 # Interface: K8sReleaseStatus
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1232
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1233
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1232
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1234
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1235
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1234
 
 > **$type**: `"nebius.applications.v1alpha1.K8sReleaseStatus"`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1233
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1234
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1233
 
 > **errorMessage**: `string`
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1236
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1237
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1236
 
 > **state**: [`K8sReleaseStatus_State`](../type-aliases/K8sReleaseStatus_State.md)
 
-Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1235
+Defined in: src/generated/nebius/applications/v1alpha1/index.ts:1236

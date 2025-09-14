@@ -8,4 +8,4 @@
 
 > **AttachedFilesystemSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`AttachedFilesystemSpec`](../interfaces/AttachedFilesystemSpec.md), `"nebius.mk8s.v1.AttachedFilesystemSpec"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5180
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5498

@@ -6,7 +6,7 @@
 
 # Interface: LifecycleNoncurrentVersionExpiration
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3158
+Defined in: src/generated/nebius/storage/v1/index.ts:3159
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3158
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3160
+Defined in: src/generated/nebius/storage/v1/index.ts:3161
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3160
 
 > **$type**: `"nebius.storage.v1.LifecycleNoncurrentVersionExpiration"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3159
+Defined in: src/generated/nebius/storage/v1/index.ts:3160
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3159
 
 > `optional` **newerNoncurrentVersions**: `number`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3165
+Defined in: src/generated/nebius/storage/v1/index.ts:3166
 
 Specifies how many noncurrent versions the system will retain.
 
@@ -40,6 +40,6 @@ Specifies how many noncurrent versions the system will retain.
 
 > **noncurrentDays**: `number`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3170
+Defined in: src/generated/nebius/storage/v1/index.ts:3171
 
 Specifies the number of days an object is noncurrent before the system will expire it.

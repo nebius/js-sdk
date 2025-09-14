@@ -6,7 +6,7 @@
 
 # Interface: ListFederationsResponse
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8797
+Defined in: src/generated/nebius/iam/v1/index.ts:8798
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8797
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8799
+Defined in: src/generated/nebius/iam/v1/index.ts:8800
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8799
 
 > **$type**: `"nebius.iam.v1.ListFederationsResponse"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8798
+Defined in: src/generated/nebius/iam/v1/index.ts:8799
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8798
 
 > **items**: [`Federation`](Federation.md)[]
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8800
+Defined in: src/generated/nebius/iam/v1/index.ts:8801
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:8800
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8801
+Defined in: src/generated/nebius/iam/v1/index.ts:8802

@@ -8,4 +8,4 @@
 
 > **LifecycleNoncurrentVersionTransition**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`LifecycleNoncurrentVersionTransition`](../interfaces/LifecycleNoncurrentVersionTransition.md), `"nebius.storage.v1.LifecycleNoncurrentVersionTransition"`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3527
+Defined in: src/generated/nebius/storage/v1/index.ts:3528

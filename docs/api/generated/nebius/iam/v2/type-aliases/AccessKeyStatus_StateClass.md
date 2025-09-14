@@ -8,4 +8,4 @@
 
 > **AccessKeyStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"EXPIRED"` \| `"DELETING"` \| `"DELETED"`\> & `AccessKeyStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:1739
+Defined in: src/generated/nebius/iam/v2/index.ts:1740

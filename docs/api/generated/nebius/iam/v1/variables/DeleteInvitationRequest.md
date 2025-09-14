@@ -8,4 +8,4 @@
 
 > **DeleteInvitationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), `"nebius.iam.v1.DeleteInvitationRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:13459
+Defined in: src/generated/nebius/iam/v1/index.ts:13460

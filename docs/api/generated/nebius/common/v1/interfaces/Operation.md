@@ -6,7 +6,7 @@
 
 # Interface: Operation
 
-Defined in: src/generated/nebius/common/v1/index.ts:3088
+Defined in: src/generated/nebius/common/v1/index.ts:3086
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3088
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:3090
+Defined in: src/generated/nebius/common/v1/index.ts:3088
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3090
 
 > **$type**: `"nebius.common.v1.Operation"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3089
+Defined in: src/generated/nebius/common/v1/index.ts:3087
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:3089
 
 > `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/common/v1/index.ts:3105
+Defined in: src/generated/nebius/common/v1/index.ts:3103
 
 Creation timestamp.
 
@@ -40,7 +40,7 @@ Creation timestamp.
 
 > **createdBy**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3110
+Defined in: src/generated/nebius/common/v1/index.ts:3108
 
 ID of the user or service account who initiated the operation.
 
@@ -50,7 +50,7 @@ ID of the user or service account who initiated the operation.
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3100
+Defined in: src/generated/nebius/common/v1/index.ts:3098
 
 Human-readable description of the operation. 0-256 characters long.
 
@@ -60,7 +60,7 @@ Human-readable description of the operation. 0-256 characters long.
 
 > `optional` **finishedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/common/v1/index.ts:3115
+Defined in: src/generated/nebius/common/v1/index.ts:3113
 
 The time when the operation has finished.
 
@@ -70,7 +70,7 @@ The time when the operation has finished.
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3095
+Defined in: src/generated/nebius/common/v1/index.ts:3093
 
 ID of the operation.
 
@@ -80,13 +80,12 @@ ID of the operation.
 
 > `optional` **progressData**: `object`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3147
+Defined in: src/generated/nebius/common/v1/index.ts:3144
 
 Additional information about the progress of an operation, e.g., a progress percentage.
 MAY be absent while the operation is running, MUST be absent after the operation has completed.
 
-Format of message inside [progress_data] is service-dependent and MUST be documented by the
-service, IF it is used.
+Type of message that's stored inside [progress_data] is service-dependent.
 
 #### typeUrl
 
@@ -102,7 +101,7 @@ service, IF it is used.
 
 > `optional` **request**: `object`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3120
+Defined in: src/generated/nebius/common/v1/index.ts:3118
 
 The request that generated this operation.
 
@@ -120,7 +119,7 @@ The request that generated this operation.
 
 > **requestHeaders**: `object`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3130
+Defined in: src/generated/nebius/common/v1/index.ts:3128
 
 The request headers that are essential for the request that generated the operation.
 For instance, `x-resetmask`. Without these headers the request might have been processed
@@ -139,7 +138,7 @@ https://httpwg.org/specs/rfc9110.html#considerations.for.new.field.names
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3138
+Defined in: src/generated/nebius/common/v1/index.ts:3136
 
 ID of the resource that this operation creates, updates, deletes or otherwise changes.
 
@@ -152,7 +151,7 @@ If the operation affects multiple resources or does not affect any API resources
 
 > `optional` **status**: `Status`
 
-Defined in: src/generated/nebius/common/v1/index.ts:3162
+Defined in: src/generated/nebius/common/v1/index.ts:3158
 
 The status of this operation. Set when this operation is completed.
 See https://github.com/grpc/grpc/blob/master/src/proto/grpc/status/status.proto.
@@ -162,7 +161,6 @@ See https://github.com/grpc/grpc/blob/master/src/proto/grpc/status/status.proto.
 - If [status.code] == OK, the operation has completed successfully.
 - If [status.code] != OK, the operation has failed or has been cancelled.
   - [status.message] will contain a user-readable and actionable error message.
-  - [status.details] will contain additional diagnostic information in the form of
-    [ServiceError] from nebius/common/v1/error.proto
+  - [status.details] will contain additional diagnostic information in the form of [ServiceError] from nebius/common/v1/error.proto
 - [status.code] must belong to an Operation-compatible subset of GRPC codes:
   OK, CANCELLED, PERMISSION_DENIED, RESOURCE_EXHAUSTED, FAILED_PRECONDITION, ABORTED, INTERNAL

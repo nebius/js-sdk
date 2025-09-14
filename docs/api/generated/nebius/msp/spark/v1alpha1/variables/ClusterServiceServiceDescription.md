@@ -4,15 +4,15 @@
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [generated/nebius/msp/spark/v1alpha1](../README.md) / ClusterServiceServiceDescription
 
-# Variable: ClusterServiceServiceDescription
+# ~~Variable: ClusterServiceServiceDescription~~
 
 > **ClusterServiceServiceDescription**: `object`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:794
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:798
 
 ## Type Declaration
 
-### create
+### ~~create~~
 
 > `readonly` **create**: `object`
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:794
 
 > `readonly` **responseStream**: `false` = `false`
 
-### delete
+### ~~delete~~
 
 > `readonly` **delete**: `object`
 
@@ -156,7 +156,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:794
 
 > `readonly` **responseStream**: `false` = `false`
 
-### get
+### ~~get~~
 
 > `readonly` **get**: `object`
 
@@ -228,7 +228,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:794
 
 > `readonly` **responseStream**: `false` = `false`
 
-### getByName
+### ~~getByName~~
 
 > `readonly` **getByName**: `object`
 
@@ -300,7 +300,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:794
 
 > `readonly` **responseStream**: `false` = `false`
 
-### list
+### ~~list~~
 
 > `readonly` **list**: `object`
 
@@ -372,7 +372,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:794
 
 > `readonly` **responseStream**: `false` = `false`
 
-### update
+### ~~update~~
 
 > `readonly` **update**: `object`
 
@@ -443,3 +443,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:794
 #### update.responseStream
 
 > `readonly` **responseStream**: `false` = `false`
+
+## Deprecated
+
+Deprecated, will be removed on 2025-08-12: Nebius AI Cloud no longer supports the service. Instead, use Application for Apache Spark™ Connect in Standalone Applications..

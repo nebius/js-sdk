@@ -8,4 +8,4 @@
 
 > **GetProfileResponse**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetProfileResponse`](../interfaces/GetProfileResponse.md), `"nebius.iam.v1.GetProfileResponse"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:14477
+Defined in: src/generated/nebius/iam/v1/index.ts:14478

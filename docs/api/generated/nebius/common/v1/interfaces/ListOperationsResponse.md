@@ -6,7 +6,7 @@
 
 # Interface: ListOperationsResponse
 
-Defined in: src/generated/nebius/common/v1/index.ts:2890
+Defined in: src/generated/nebius/common/v1/index.ts:2891
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2890
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2892
+Defined in: src/generated/nebius/common/v1/index.ts:2893
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2892
 
 > **$type**: `"nebius.common.v1.ListOperationsResponse"`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2891
+Defined in: src/generated/nebius/common/v1/index.ts:2892
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/common/v1/index.ts:2891
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/common/v1/index.ts:2894
+Defined in: src/generated/nebius/common/v1/index.ts:2895
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/common/v1/index.ts:2894
 
 > **operations**: [`Operation`](Operation.md)[]
 
-Defined in: src/generated/nebius/common/v1/index.ts:2893
+Defined in: src/generated/nebius/common/v1/index.ts:2894

@@ -6,7 +6,7 @@
 
 # Interface: GpuClusterSpec
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4906
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5224
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4906
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4908
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5226
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4908
 
 > **$type**: `"nebius.mk8s.v1.GpuClusterSpec"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4907
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5225
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4907
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4909
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5227

@@ -8,7 +8,7 @@
 
 > **TransferServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`TransferServiceBaseClient`](../interfaces/TransferServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1185
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1186
 
 ## Type Declaration
 

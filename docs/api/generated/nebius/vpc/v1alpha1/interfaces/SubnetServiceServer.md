@@ -6,7 +6,7 @@
 
 # Interface: SubnetServiceServer
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7057
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7058
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7057
 
 > **get**: `handleUnaryCall`\<[`GetSubnetRequest`](GetSubnetRequest.md), [`Subnet`](Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7058
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7059
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7058
 
 > **getByName**: `handleUnaryCall`\<[`GetSubnetByNameRequest`](GetSubnetByNameRequest.md), [`Subnet`](Subnet.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7059
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7060
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7059
 
 > **list**: `handleUnaryCall`\<[`ListSubnetsRequest`](ListSubnetsRequest.md), [`ListSubnetsResponse`](ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7060
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7061
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7060
 
 > **listByNetwork**: `handleUnaryCall`\<[`ListSubnetsByNetworkRequest`](ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](ListSubnetsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7061
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:7062

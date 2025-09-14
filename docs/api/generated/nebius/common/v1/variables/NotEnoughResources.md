@@ -8,4 +8,4 @@
 
 > **NotEnoughResources**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NotEnoughResources`](../interfaces/NotEnoughResources.md), `"nebius.common.v1.NotEnoughResources"`\>
 
-Defined in: src/generated/nebius/common/v1/index.ts:2049
+Defined in: src/generated/nebius/common/v1/index.ts:2050

@@ -6,7 +6,7 @@
 
 # Interface: Password
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1586
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1609
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1586
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1588
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1611
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1588
 
 > **$type**: `"nebius.msp.spark.v1alpha1.Password"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1587
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1610
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1587
 
 > **password**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1589
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:1612

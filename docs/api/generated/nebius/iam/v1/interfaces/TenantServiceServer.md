@@ -6,7 +6,7 @@
 
 # Interface: TenantServiceServer
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19802
+Defined in: src/generated/nebius/iam/v1/index.ts:19803
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19802
 
 > **get**: `handleUnaryCall`\<[`GetTenantRequest`](GetTenantRequest.md), [`Container`](Container.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19803
+Defined in: src/generated/nebius/iam/v1/index.ts:19804
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:19803
 
 > **list**: `handleUnaryCall`\<[`ListTenantsRequest`](ListTenantsRequest.md), [`ListTenantsResponse`](ListTenantsResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19804
+Defined in: src/generated/nebius/iam/v1/index.ts:19805

@@ -6,7 +6,7 @@
 
 # Interface: NodeGroupDeploymentStrategy
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5650
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5968
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5650
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5652
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5970
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5652
 
 > **$type**: `"nebius.mk8s.v1.NodeGroupDeploymentStrategy"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5651
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5969
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:5651
 
 > `optional` **drainTimeout**: `Duration`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5688
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6006
 
 Maximum amount of time that the service will spend on attempting gracefully draining a node (evicting it's pods), before
 falling back to pod deletion.
@@ -45,7 +45,7 @@ Note, that it is different from `kubectl drain --timeout`
 
 > `optional` **maxSurge**: [`PercentOrCount`](PercentOrCount.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5678
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5996
 
 The maximum number of additional nodes that can be provisioned above the desired number of nodes during the update process.
 This value can be specified either as an absolute number (for example 3) or as a percentage of the desired number of nodes (for example 5%).
@@ -65,7 +65,7 @@ Such error will be visible in Operation.progress_data.
 
 > `optional` **maxUnavailable**: [`PercentOrCount`](PercentOrCount.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5663
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5981
 
 The maximum number of nodes that can be simultaneously unavailable during the update process.
 This value can be specified either as an absolute number (for example 3) or as a percentage of the desired number of nodes (for example 5%).

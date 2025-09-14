@@ -6,7 +6,7 @@
 
 # Interface: Problem
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6371
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6689
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:6371
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6373
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6691
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:6373
 
 > **$type**: `"nebius.mk8s.v1.Problem"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6372
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6690
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:6372
 
 > **message**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6383
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6701
 
 Message describing the problem.
 
@@ -40,6 +40,6 @@ Message describing the problem.
 
 > **stage**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6378
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6696
 
 Stage on which the problem occurred.

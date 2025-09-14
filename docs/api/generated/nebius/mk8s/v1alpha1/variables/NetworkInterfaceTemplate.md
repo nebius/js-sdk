@@ -8,4 +8,4 @@
 
 > **NetworkInterfaceTemplate**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NetworkInterfaceTemplate`](../interfaces/NetworkInterfaceTemplate.md), `"nebius.mk8s.v1alpha1.NetworkInterfaceTemplate"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5137
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:5455

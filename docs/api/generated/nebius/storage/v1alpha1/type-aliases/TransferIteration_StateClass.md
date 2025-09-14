@@ -8,4 +8,4 @@
 
 > **TransferIteration_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"IN_PROGRESS"` \| `"COMPLETED"` \| `"STOPPED"` \| `"FAILED"`\> & `TransferIteration_StateValueMembers`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1510
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:1511

@@ -6,6 +6,6 @@
 
 # Type Alias: QuotaAllowanceStatus_StateClass
 
-> **QuotaAllowanceStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"STATE_PROVISIONING"` \| `"STATE_ACTIVE"` \| `"STATE_DELETED"`\> & `QuotaAllowanceStatus_StateValueMembers`
+> **QuotaAllowanceStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"STATE_PROVISIONING"` \| `"STATE_ACTIVE"` \| `"STATE_FROZEN"` \| `"STATE_DELETED"`\> & `QuotaAllowanceStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/quotas/v1/index.ts:633
+Defined in: src/generated/nebius/quotas/v1/index.ts:639

@@ -6,7 +6,7 @@
 
 # Interface: GetByNameFederatedCredentialsRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5825
+Defined in: src/generated/nebius/iam/v1/index.ts:5826
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5825
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5827
+Defined in: src/generated/nebius/iam/v1/index.ts:5828
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5827
 
 > **$type**: `"nebius.iam.v1.GetByNameFederatedCredentialsRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5826
+Defined in: src/generated/nebius/iam/v1/index.ts:5827
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:5826
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5837
+Defined in: src/generated/nebius/iam/v1/index.ts:5838
 
 Federated credentials name.
 
@@ -40,6 +40,6 @@ Federated credentials name.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:5832
+Defined in: src/generated/nebius/iam/v1/index.ts:5833
 
 Container (project), which contains desired credentials.

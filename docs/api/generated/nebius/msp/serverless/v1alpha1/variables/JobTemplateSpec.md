@@ -8,4 +8,4 @@
 
 > **JobTemplateSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`JobTemplateSpec`](../interfaces/JobTemplateSpec.md), `"nebius.msp.serverless.v1alpha1.JobTemplateSpec"`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2819
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:2820

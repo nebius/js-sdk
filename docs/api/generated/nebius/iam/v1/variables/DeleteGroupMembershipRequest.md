@@ -8,4 +8,4 @@
 
 > **DeleteGroupMembershipRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteGroupMembershipRequest`](../interfaces/DeleteGroupMembershipRequest.md), `"nebius.iam.v1.DeleteGroupMembershipRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9936
+Defined in: src/generated/nebius/iam/v1/index.ts:9937

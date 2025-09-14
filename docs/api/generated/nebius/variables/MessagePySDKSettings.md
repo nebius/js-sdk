@@ -8,4 +8,4 @@
 
 > **MessagePySDKSettings**: [`MessageFns`](../../../runtime/protos/core/interfaces/MessageFns.md)\<[`MessagePySDKSettings`](../interfaces/MessagePySDKSettings.md), `"nebius.MessagePySDKSettings"`\>
 
-Defined in: src/generated/nebius/index.ts:455
+Defined in: src/generated/nebius/index.ts:456

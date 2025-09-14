@@ -8,4 +8,4 @@
 
 > **ClusterStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"STATE_IN_PROGRESS"` \| `"STATE_FINISHED"` \| `"STATE_ERROR"` \| `"STATE_DEGRADED"` \| `"STATE_SCHEDULED"`\> & `ClusterStatus_StateValueMembers`
 
-Defined in: src/generated/nebius/msp/v1alpha1/index.ts:51
+Defined in: src/generated/nebius/msp/v1alpha1/index.ts:52

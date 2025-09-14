@@ -6,7 +6,7 @@
 
 # Interface: ListTransfersRequest
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:100
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:101
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:100
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:102
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:103
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:102
 
 > **$type**: `"nebius.storage.v1alpha1.ListTransfersRequest"`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:101
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:102
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1alpha1/index.ts:101
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:112
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:113
 
 Specifies the maximum number of items to return in the response. Default: 10.
 
@@ -40,7 +40,7 @@ Specifies the maximum number of items to return in the response. Default: 10.
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:117
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:118
 
 Token for pagination, allowing the retrieval of the next set of results.
 
@@ -50,6 +50,6 @@ Token for pagination, allowing the retrieval of the next set of results.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/storage/v1alpha1/index.ts:107
+Defined in: src/generated/nebius/storage/v1alpha1/index.ts:108
 
 Represents the container ID.

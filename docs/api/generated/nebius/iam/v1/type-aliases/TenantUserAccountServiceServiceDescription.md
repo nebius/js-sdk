@@ -8,4 +8,4 @@
 
 > **TenantUserAccountServiceServiceDescription** = _typeof_ [`TenantUserAccountServiceServiceDescription`](../variables/TenantUserAccountServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:20393
+Defined in: src/generated/nebius/iam/v1/index.ts:20394

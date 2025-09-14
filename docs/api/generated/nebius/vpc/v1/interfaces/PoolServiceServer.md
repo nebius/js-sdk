@@ -6,7 +6,7 @@
 
 # Interface: PoolServiceServer
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5103
+Defined in: src/generated/nebius/vpc/v1/index.ts:5104
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5103
 
 > **create**: `handleUnaryCall`\<[`CreatePoolRequest`](CreatePoolRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5108
+Defined in: src/generated/nebius/vpc/v1/index.ts:5109
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5108
 
 > **delete**: `handleUnaryCall`\<[`DeletePoolRequest`](DeletePoolRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5110
+Defined in: src/generated/nebius/vpc/v1/index.ts:5111
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5110
 
 > **get**: `handleUnaryCall`\<[`GetPoolRequest`](GetPoolRequest.md), [`Pool`](Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5104
+Defined in: src/generated/nebius/vpc/v1/index.ts:5105
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5104
 
 > **getByName**: `handleUnaryCall`\<[`GetPoolByNameRequest`](GetPoolByNameRequest.md), [`Pool`](Pool.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5105
+Defined in: src/generated/nebius/vpc/v1/index.ts:5106
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5105
 
 > **list**: `handleUnaryCall`\<[`ListPoolsRequest`](ListPoolsRequest.md), [`ListPoolsResponse`](ListPoolsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5106
+Defined in: src/generated/nebius/vpc/v1/index.ts:5107
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5106
 
 > **listBySourcePool**: `handleUnaryCall`\<[`ListPoolsBySourcePoolRequest`](ListPoolsBySourcePoolRequest.md), [`ListPoolsResponse`](ListPoolsResponse.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5107
+Defined in: src/generated/nebius/vpc/v1/index.ts:5108
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: src/generated/nebius/vpc/v1/index.ts:5107
 
 > **update**: `handleUnaryCall`\<[`UpdatePoolRequest`](UpdatePoolRequest.md), [`Operation`](../../../common/v1/interfaces/Operation.md)\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5109
+Defined in: src/generated/nebius/vpc/v1/index.ts:5110

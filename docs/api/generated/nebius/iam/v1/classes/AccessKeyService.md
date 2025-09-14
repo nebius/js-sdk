@@ -6,7 +6,7 @@
 
 # Class: AccessKeyService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1568
+Defined in: src/generated/nebius/iam/v1/index.ts:1569
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1568
 
 > **new AccessKeyService**(`sdk`): `AccessKeyService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1610
+Defined in: src/generated/nebius/iam/v1/index.ts:1611
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1610
 
 > **$type**: `"nebius.iam.v1.AccessKeyService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1569
+Defined in: src/generated/nebius/iam/v1/index.ts:1570
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1569
 
 > **activate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1591
+Defined in: src/generated/nebius/iam/v1/index.ts:1592
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1591
 
 > **activate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1592
+Defined in: src/generated/nebius/iam/v1/index.ts:1593
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1592
 
 > **activate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1593
+Defined in: src/generated/nebius/iam/v1/index.ts:1594
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1593
 
 > **activate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1714
+Defined in: src/generated/nebius/iam/v1/index.ts:1715
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1714
 
 > **activate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1715
+Defined in: src/generated/nebius/iam/v1/index.ts:1716
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1715
 
 > **activate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1716
+Defined in: src/generated/nebius/iam/v1/index.ts:1717
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1716
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1570
+Defined in: src/generated/nebius/iam/v1/index.ts:1571
 
 ##### Parameters
 
@@ -186,7 +186,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1570
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1571
+Defined in: src/generated/nebius/iam/v1/index.ts:1572
 
 ##### Parameters
 
@@ -206,7 +206,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1571
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1572
+Defined in: src/generated/nebius/iam/v1/index.ts:1573
 
 ##### Parameters
 
@@ -230,7 +230,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1572
 
 > **create**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1624
+Defined in: src/generated/nebius/iam/v1/index.ts:1625
 
 ##### Parameters
 
@@ -246,7 +246,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1624
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1625
+Defined in: src/generated/nebius/iam/v1/index.ts:1626
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1625
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1626
+Defined in: src/generated/nebius/iam/v1/index.ts:1627
 
 ##### Parameters
 
@@ -294,7 +294,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1626
 
 > **deactivate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1594
+Defined in: src/generated/nebius/iam/v1/index.ts:1595
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1594
 
 > **deactivate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1595
+Defined in: src/generated/nebius/iam/v1/index.ts:1596
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1595
 
 > **deactivate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1596
+Defined in: src/generated/nebius/iam/v1/index.ts:1597
 
 ##### Parameters
 
@@ -354,7 +354,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1596
 
 > **deactivate**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1729
+Defined in: src/generated/nebius/iam/v1/index.ts:1730
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1729
 
 > **deactivate**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1730
+Defined in: src/generated/nebius/iam/v1/index.ts:1731
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1730
 
 > **deactivate**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1731
+Defined in: src/generated/nebius/iam/v1/index.ts:1732
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1731
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1597
+Defined in: src/generated/nebius/iam/v1/index.ts:1598
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1597
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1598
+Defined in: src/generated/nebius/iam/v1/index.ts:1599
 
 ##### Parameters
 
@@ -454,7 +454,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1598
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1599
+Defined in: src/generated/nebius/iam/v1/index.ts:1600
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1599
 
 > **delete**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1744
+Defined in: src/generated/nebius/iam/v1/index.ts:1745
 
 ##### Parameters
 
@@ -494,7 +494,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1744
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1745
+Defined in: src/generated/nebius/iam/v1/index.ts:1746
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1745
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1746
+Defined in: src/generated/nebius/iam/v1/index.ts:1747
 
 ##### Parameters
 
@@ -542,7 +542,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1746
 
 > **getByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1585
+Defined in: src/generated/nebius/iam/v1/index.ts:1586
 
 ##### Parameters
 
@@ -558,7 +558,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1585
 
 > **getByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1586
+Defined in: src/generated/nebius/iam/v1/index.ts:1587
 
 ##### Parameters
 
@@ -578,7 +578,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1586
 
 > **getByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1587
+Defined in: src/generated/nebius/iam/v1/index.ts:1588
 
 ##### Parameters
 
@@ -602,7 +602,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1587
 
 > **getByAwsId**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1690
+Defined in: src/generated/nebius/iam/v1/index.ts:1691
 
 ##### Parameters
 
@@ -618,7 +618,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1690
 
 > **getByAwsId**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1691
+Defined in: src/generated/nebius/iam/v1/index.ts:1692
 
 ##### Parameters
 
@@ -638,7 +638,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1691
 
 > **getByAwsId**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1692
+Defined in: src/generated/nebius/iam/v1/index.ts:1693
 
 ##### Parameters
 
@@ -666,7 +666,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1692
 
 > **getById**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByIdRequest`](../interfaces/GetAccessKeyByIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1582
+Defined in: src/generated/nebius/iam/v1/index.ts:1583
 
 ##### Parameters
 
@@ -682,7 +682,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1582
 
 > **getById**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByIdRequest`](../interfaces/GetAccessKeyByIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1583
+Defined in: src/generated/nebius/iam/v1/index.ts:1584
 
 ##### Parameters
 
@@ -702,7 +702,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1583
 
 > **getById**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByIdRequest`](../interfaces/GetAccessKeyByIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1584
+Defined in: src/generated/nebius/iam/v1/index.ts:1585
 
 ##### Parameters
 
@@ -726,7 +726,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1584
 
 > **getById**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByIdRequest`](../interfaces/GetAccessKeyByIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1678
+Defined in: src/generated/nebius/iam/v1/index.ts:1679
 
 ##### Parameters
 
@@ -742,7 +742,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1678
 
 > **getById**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByIdRequest`](../interfaces/GetAccessKeyByIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1679
+Defined in: src/generated/nebius/iam/v1/index.ts:1680
 
 ##### Parameters
 
@@ -762,7 +762,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1679
 
 > **getById**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByIdRequest`](../interfaces/GetAccessKeyByIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1680
+Defined in: src/generated/nebius/iam/v1/index.ts:1681
 
 ##### Parameters
 
@@ -788,7 +788,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1680
 
 > **getOperationService**(): [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1620
+Defined in: src/generated/nebius/iam/v1/index.ts:1621
 
 #### Returns
 
@@ -802,7 +802,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1620
 
 > **getSecretOnce**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeySecretOnceRequest`](../interfaces/GetAccessKeySecretOnceRequest.md), [`GetAccessKeySecretOnceResponse`](../interfaces/GetAccessKeySecretOnceResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1588
+Defined in: src/generated/nebius/iam/v1/index.ts:1589
 
 ##### Parameters
 
@@ -818,7 +818,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1588
 
 > **getSecretOnce**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeySecretOnceRequest`](../interfaces/GetAccessKeySecretOnceRequest.md), [`GetAccessKeySecretOnceResponse`](../interfaces/GetAccessKeySecretOnceResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1589
+Defined in: src/generated/nebius/iam/v1/index.ts:1590
 
 ##### Parameters
 
@@ -838,7 +838,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1589
 
 > **getSecretOnce**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeySecretOnceRequest`](../interfaces/GetAccessKeySecretOnceRequest.md), [`GetAccessKeySecretOnceResponse`](../interfaces/GetAccessKeySecretOnceResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1590
+Defined in: src/generated/nebius/iam/v1/index.ts:1591
 
 ##### Parameters
 
@@ -862,7 +862,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1590
 
 > **getSecretOnce**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeySecretOnceRequest`](../interfaces/GetAccessKeySecretOnceRequest.md), [`GetAccessKeySecretOnceResponse`](../interfaces/GetAccessKeySecretOnceResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1702
+Defined in: src/generated/nebius/iam/v1/index.ts:1703
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1702
 
 > **getSecretOnce**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeySecretOnceRequest`](../interfaces/GetAccessKeySecretOnceRequest.md), [`GetAccessKeySecretOnceResponse`](../interfaces/GetAccessKeySecretOnceResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1703
+Defined in: src/generated/nebius/iam/v1/index.ts:1704
 
 ##### Parameters
 
@@ -898,7 +898,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1703
 
 > **getSecretOnce**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeySecretOnceRequest`](../interfaces/GetAccessKeySecretOnceRequest.md), [`GetAccessKeySecretOnceResponse`](../interfaces/GetAccessKeySecretOnceResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1704
+Defined in: src/generated/nebius/iam/v1/index.ts:1705
 
 ##### Parameters
 
@@ -926,7 +926,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1704
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1573
+Defined in: src/generated/nebius/iam/v1/index.ts:1574
 
 ##### Parameters
 
@@ -942,7 +942,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1573
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1574
+Defined in: src/generated/nebius/iam/v1/index.ts:1575
 
 ##### Parameters
 
@@ -962,7 +962,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1574
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1575
+Defined in: src/generated/nebius/iam/v1/index.ts:1576
 
 ##### Parameters
 
@@ -986,7 +986,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1575
 
 > **list**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1639
+Defined in: src/generated/nebius/iam/v1/index.ts:1640
 
 ##### Parameters
 
@@ -1002,7 +1002,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1639
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1640
+Defined in: src/generated/nebius/iam/v1/index.ts:1641
 
 ##### Parameters
 
@@ -1022,7 +1022,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1640
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1641
+Defined in: src/generated/nebius/iam/v1/index.ts:1642
 
 ##### Parameters
 
@@ -1050,7 +1050,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1641
 
 > **listByAccount**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1576
+Defined in: src/generated/nebius/iam/v1/index.ts:1577
 
 ##### Parameters
 
@@ -1066,7 +1066,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1576
 
 > **listByAccount**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1577
+Defined in: src/generated/nebius/iam/v1/index.ts:1578
 
 ##### Parameters
 
@@ -1086,7 +1086,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1577
 
 > **listByAccount**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1578
+Defined in: src/generated/nebius/iam/v1/index.ts:1579
 
 ##### Parameters
 
@@ -1110,7 +1110,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1578
 
 > **listByAccount**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1651
+Defined in: src/generated/nebius/iam/v1/index.ts:1652
 
 ##### Parameters
 
@@ -1126,7 +1126,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1651
 
 > **listByAccount**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1652
+Defined in: src/generated/nebius/iam/v1/index.ts:1653
 
 ##### Parameters
 
@@ -1146,7 +1146,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1652
 
 > **listByAccount**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1653
+Defined in: src/generated/nebius/iam/v1/index.ts:1654
 
 ##### Parameters
 
@@ -1174,7 +1174,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1653
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1579
+Defined in: src/generated/nebius/iam/v1/index.ts:1580
 
 ##### Parameters
 
@@ -1190,7 +1190,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1579
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1580
+Defined in: src/generated/nebius/iam/v1/index.ts:1581
 
 ##### Parameters
 
@@ -1210,7 +1210,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1580
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1581
+Defined in: src/generated/nebius/iam/v1/index.ts:1582
 
 ##### Parameters
 
@@ -1234,7 +1234,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1581
 
 > **update**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1663
+Defined in: src/generated/nebius/iam/v1/index.ts:1664
 
 ##### Parameters
 
@@ -1250,7 +1250,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1663
 
 > **update**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1664
+Defined in: src/generated/nebius/iam/v1/index.ts:1665
 
 ##### Parameters
 
@@ -1270,7 +1270,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:1664
 
 > **update**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:1665
+Defined in: src/generated/nebius/iam/v1/index.ts:1666
 
 ##### Parameters
 

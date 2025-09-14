@@ -8,4 +8,4 @@
 
 > **NodeTemplate**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`NodeTemplate`](../interfaces/NodeTemplate.md), `"nebius.mk8s.v1alpha1.NodeTemplate"`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4505
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:4776

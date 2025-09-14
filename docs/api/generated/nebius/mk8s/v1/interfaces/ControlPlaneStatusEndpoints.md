@@ -6,7 +6,7 @@
 
 # Interface: ControlPlaneStatusEndpoints
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1886
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2157
 
 Endpoints of Kubernetes control plane. Kubernetes API can be accessed at `https://endpoint/`.
 
@@ -16,7 +16,7 @@ Endpoints of Kubernetes control plane. Kubernetes API can be accessed at `https:
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1888
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2159
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1888
 
 > **$type**: `"nebius.mk8s.v1.ControlPlaneStatusEndpoints"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1887
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2158
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:1887
 
 > **privateEndpoint**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1898
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2169
 
 DNS name or IP address accessible from the user VPC.
 
@@ -42,6 +42,6 @@ DNS name or IP address accessible from the user VPC.
 
 > **publicEndpoint**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:1893
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2164
 
 DNS name or IP address accessible from the Internet.

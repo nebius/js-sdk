@@ -8,4 +8,4 @@
 
 > **ModuleHealth**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ModuleHealth`](../interfaces/ModuleHealth.md), `"nebius.logging.agentmanager.v1.ModuleHealth"`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:893
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:894

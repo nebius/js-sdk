@@ -6,7 +6,7 @@
 
 # Interface: ListNodeGroupsResponse
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3427
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3698
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3427
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3429
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3700
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3429
 
 > **$type**: `"nebius.mk8s.v1alpha1.ListNodeGroupsResponse"`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3428
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3699
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3428
 
 > **items**: [`NodeGroup`](NodeGroup.md)[]
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3430
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3701
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3430
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3431
+Defined in: src/generated/nebius/mk8s/v1alpha1/index.ts:3702

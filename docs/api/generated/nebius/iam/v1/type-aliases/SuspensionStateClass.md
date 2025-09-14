@@ -8,4 +8,4 @@
 
 > **SuspensionStateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"SUSPENSION_STATE_UNSPECIFIED"` \| `"NONE"` \| `"SUSPENDING"` \| `"SUSPENDED"` \| `"RESUMING"`\> & `SuspensionStateValueMembers`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:19437
+Defined in: src/generated/nebius/iam/v1/index.ts:19438

@@ -8,4 +8,4 @@
 
 > **EndpointTemplateSpec**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`EndpointTemplateSpec`](../interfaces/EndpointTemplateSpec.md), `"nebius.msp.serverless.v1alpha1.EndpointTemplateSpec"`\>
 
-Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1367
+Defined in: src/generated/nebius/msp/serverless/v1alpha1/index.ts:1368

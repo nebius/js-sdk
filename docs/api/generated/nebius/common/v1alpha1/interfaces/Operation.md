@@ -6,7 +6,7 @@
 
 # ~~Interface: Operation~~
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:705
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:703
 
 ## Deprecated
 
@@ -18,7 +18,7 @@ Deprecated.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:707
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:705
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:707
 
 > **$type**: `"nebius.common.v1alpha1.Operation"`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:706
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:704
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: src/generated/nebius/common/v1alpha1/index.ts:706
 
 > `optional` **createdAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:722
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:720
 
 Creation timestamp.
 
@@ -44,7 +44,7 @@ Creation timestamp.
 
 > **createdBy**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:727
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:725
 
 ID of the user or service account who initiated the operation.
 
@@ -54,7 +54,7 @@ ID of the user or service account who initiated the operation.
 
 > **description**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:717
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:715
 
 Human readable description of the operation. 0-256 characters long.
 
@@ -64,7 +64,7 @@ Human readable description of the operation. 0-256 characters long.
 
 > `optional` **finishedAt**: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md)
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:732
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:730
 
 The time when the operation finished.
 
@@ -74,7 +74,7 @@ The time when the operation finished.
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:712
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:710
 
 ID of the operation.
 
@@ -84,7 +84,7 @@ ID of the operation.
 
 > `optional` **progressData**: `object`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:782
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:780
 
 Additional information about the progress of an operation, e.g., a progress percentage.
 MAY be absent while the operation is running, MUST be absent after the operation has completed.
@@ -106,7 +106,7 @@ service, IF it is used.
 
 > `optional` **request**: `object`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:737
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:735
 
 The request that generated this operation.
 
@@ -124,7 +124,7 @@ The request that generated this operation.
 
 > **requestHeaders**: `object`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:747
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:745
 
 The request headers that are essential for the request that generated the operation.
 For instance, `x-resetmask`. Without these headers the request might have been processed
@@ -143,7 +143,7 @@ https://httpwg.org/specs/rfc9110.html#considerations.for.new.field.names
 
 > `optional` **resource**: `object`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:773
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:771
 
 Snapshot of the resource at the moment this operation started.
 
@@ -175,7 +175,7 @@ the [resource] inside MUST be a [google.protobuf.Empty].
 
 > **resourceId**: `string`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:755
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:753
 
 ID of the resource that this operation creates, updates, deletes or otherwise changes.
 
@@ -188,7 +188,7 @@ If the operation affects multiple resources or does not affect any API resources
 
 > `optional` **status**: `Status`
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:797
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:795
 
 The status of this operation. Set when this operation is completed.
 See https://github.com/grpc/grpc/blob/master/src/proto/grpc/status/status.proto.

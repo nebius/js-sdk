@@ -6,7 +6,7 @@
 
 # Interface: ProgressData
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6282
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6600
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:6282
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6284
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6602
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:6284
 
 > **$type**: `"nebius.mk8s.v1.ProgressData"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6283
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6601
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:6283
 
 > **problems**: [`Problem`](Problem.md)[]
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:6289
+Defined in: src/generated/nebius/mk8s/v1/index.ts:6607
 
 Problems encountered during the operation execution.

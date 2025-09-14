@@ -6,7 +6,7 @@
 
 # Interface: NetworkInterfaceTemplate
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4991
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5309
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4991
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4993
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5311
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4993
 
 > **$type**: `"nebius.mk8s.v1.NetworkInterfaceTemplate"`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4992
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5310
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/mk8s/v1/index.ts:4992
 
 > `optional` **publicIpAddress**: [`PublicIPAddress`](PublicIPAddress.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4999
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5317
 
 Parameters for Public IPv4 address associated with the interface.
 Set to empty value, to enable it.
@@ -41,7 +41,7 @@ Set to empty value, to enable it.
 
 > **subnetId**: `string`
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5006
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5324
 
 Nebius VPC Subnet ID that will be attached to a node cloud instance network interface.
 By default Cluster control plane subnet_id used.

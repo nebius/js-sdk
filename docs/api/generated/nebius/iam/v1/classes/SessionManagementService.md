@@ -6,7 +6,7 @@
 
 # Class: SessionManagementService
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17693
+Defined in: src/generated/nebius/iam/v1/index.ts:17694
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17693
 
 > **new SessionManagementService**(`sdk`): `SessionManagementService`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17705
+Defined in: src/generated/nebius/iam/v1/index.ts:17706
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17705
 
 > **$type**: `"nebius.iam.v1.SessionManagementService"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17694
+Defined in: src/generated/nebius/iam/v1/index.ts:17695
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17694
 
 > **revoke**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17695
+Defined in: src/generated/nebius/iam/v1/index.ts:17696
 
 ##### Parameters
 
@@ -62,7 +62,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17695
 
 > **revoke**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17696
+Defined in: src/generated/nebius/iam/v1/index.ts:17697
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17696
 
 > **revoke**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17697
+Defined in: src/generated/nebius/iam/v1/index.ts:17698
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17697
 
 > **revoke**(`request`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17711
+Defined in: src/generated/nebius/iam/v1/index.ts:17712
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17711
 
 > **revoke**(`request`, `metadata`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17712
+Defined in: src/generated/nebius/iam/v1/index.ts:17713
 
 ##### Parameters
 
@@ -142,7 +142,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:17712
 
 > **revoke**(`request`, `metadata`, `options`): [`Request`](../../../../../runtime/request/classes/Request.md)\<[`RevokeSessionRequest`](../interfaces/RevokeSessionRequest.md), [`RevokeSessionResponse`](../interfaces/RevokeSessionResponse.md)\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:17713
+Defined in: src/generated/nebius/iam/v1/index.ts:17714
 
 ##### Parameters
 

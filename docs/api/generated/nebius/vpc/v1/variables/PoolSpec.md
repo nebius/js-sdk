@@ -8,4 +8,4 @@
 
 > **PoolSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PoolSpec`](../interfaces/PoolSpec.md), `"nebius.vpc.v1.PoolSpec"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5617
+Defined in: src/generated/nebius/vpc/v1/index.ts:5618

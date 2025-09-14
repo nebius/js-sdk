@@ -6,7 +6,7 @@
 
 # Interface: GpuClusterSpec
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4169
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4170
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4169
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4171
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4172
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4171
 
 > **$type**: `"nebius.compute.v1alpha1.GpuClusterSpec"`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4170
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4171
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4170
 
 > **infinibandFabric**: `string`
 
-Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4172
+Defined in: src/generated/nebius/compute/v1alpha1/index.ts:4173

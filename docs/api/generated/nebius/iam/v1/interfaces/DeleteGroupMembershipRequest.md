@@ -6,7 +6,7 @@
 
 # Interface: DeleteGroupMembershipRequest
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9936
+Defined in: src/generated/nebius/iam/v1/index.ts:9937
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9936
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9938
+Defined in: src/generated/nebius/iam/v1/index.ts:9939
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9938
 
 > **$type**: `"nebius.iam.v1.DeleteGroupMembershipRequest"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9937
+Defined in: src/generated/nebius/iam/v1/index.ts:9938
 
 ---
 
@@ -30,4 +30,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:9937
 
 > **id**: `string`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:9939
+Defined in: src/generated/nebius/iam/v1/index.ts:9940

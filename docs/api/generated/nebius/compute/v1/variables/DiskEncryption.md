@@ -8,4 +8,4 @@
 
 > **DiskEncryption**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DiskEncryption`](../interfaces/DiskEncryption.md), `"nebius.compute.v1.DiskEncryption"`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:1895
+Defined in: src/generated/nebius/compute/v1/index.ts:1896

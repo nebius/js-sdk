@@ -1,0 +1,49 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+---
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [generated/nebius/storage/v1](../README.md) / DeleteObjectsResponse_DeleteSuccess
+
+# Interface: DeleteObjectsResponse_DeleteSuccess
+
+Defined in: src/generated/nebius/storage/v1/index.ts:4908
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/generated/nebius/storage/v1/index.ts:4910
+
+---
+
+### $type
+
+> **$type**: `"nebius.storage.v1.DeleteObjectsResponse.DeleteSuccess"`
+
+Defined in: src/generated/nebius/storage/v1/index.ts:4909
+
+---
+
+### deleteMarker
+
+> **deleteMarker**: `boolean`
+
+Defined in: src/generated/nebius/storage/v1/index.ts:4911
+
+---
+
+### objectKey
+
+> **objectKey**: `string`
+
+Defined in: src/generated/nebius/storage/v1/index.ts:4912
+
+---
+
+### version
+
+> **version**: `string`
+
+Defined in: src/generated/nebius/storage/v1/index.ts:4913

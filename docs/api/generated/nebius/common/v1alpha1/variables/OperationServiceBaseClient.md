@@ -8,7 +8,7 @@
 
 > **OperationServiceBaseClient**: \{(`address`, `credentials`, `options?`): [`OperationServiceBaseClient`](../interfaces/OperationServiceBaseClient.md); `service`: `object`; `serviceName`: `string`; \}
 
-Defined in: src/generated/nebius/common/v1alpha1/index.ts:617
+Defined in: src/generated/nebius/common/v1alpha1/index.ts:618
 
 ## Type Declaration
 

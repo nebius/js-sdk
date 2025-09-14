@@ -6,7 +6,7 @@
 
 # Interface: ListDisksResponse
 
-Defined in: src/generated/nebius/compute/v1/index.ts:558
+Defined in: src/generated/nebius/compute/v1/index.ts:559
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:558
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:560
+Defined in: src/generated/nebius/compute/v1/index.ts:561
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:560
 
 > **$type**: `"nebius.compute.v1.ListDisksResponse"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:559
+Defined in: src/generated/nebius/compute/v1/index.ts:560
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:559
 
 > **items**: [`Disk`](Disk.md)[]
 
-Defined in: src/generated/nebius/compute/v1/index.ts:561
+Defined in: src/generated/nebius/compute/v1/index.ts:562
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/compute/v1/index.ts:561
 
 > **nextPageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:562
+Defined in: src/generated/nebius/compute/v1/index.ts:563

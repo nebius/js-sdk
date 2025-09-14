@@ -6,7 +6,7 @@
 
 # Interface: ModulesHealth
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:715
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:716
 
 Health status information for all agent modules.
 
@@ -16,7 +16,7 @@ Health status information for all agent modules.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:717
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:718
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:717
 
 > **$type**: `"nebius.logging.agentmanager.v1.ModulesHealth"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:716
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:717
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:716
 
 > `optional` **ciliumPipeline**: [`ModuleHealth`](ModuleHealth.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:737
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:738
 
 Health status of the Cilium pipeline module.
 
@@ -42,7 +42,7 @@ Health status of the Cilium pipeline module.
 
 > `optional` **cpuPipeline**: [`ModuleHealth`](ModuleHealth.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:732
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:733
 
 Health status of the CPU pipeline module.
 
@@ -52,7 +52,7 @@ Health status of the CPU pipeline module.
 
 > `optional` **gpuPipeline**: [`ModuleHealth`](ModuleHealth.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:727
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:728
 
 Health status of the GPU pipeline module.
 
@@ -62,6 +62,6 @@ Health status of the GPU pipeline module.
 
 > `optional` **process**: [`ModuleHealth`](ModuleHealth.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:722
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:723
 
 Health status of the process module.

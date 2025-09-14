@@ -6,7 +6,7 @@
 
 # Interface: ModuleHealth
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:893
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:894
 
 Health status information for an individual module.
 
@@ -16,7 +16,7 @@ Health status information for an individual module.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:895
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:896
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:895
 
 > **$type**: `"nebius.logging.agentmanager.v1.ModuleHealth"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:894
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:895
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:894
 
 > **messages**: `string`[]
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:905
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:906
 
 Status messages describing the module's state.
 
@@ -42,7 +42,7 @@ Status messages describing the module's state.
 
 > **parameters**: [`Parameter`](Parameter.md)[]
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:910
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:911
 
 Current parameters of the module.
 
@@ -52,6 +52,6 @@ Current parameters of the module.
 
 > **state**: [`AgentState`](../type-aliases/AgentState.md)
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:900
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:901
 
 Current operational state of the module.

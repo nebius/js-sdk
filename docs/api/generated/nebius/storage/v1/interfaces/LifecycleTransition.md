@@ -6,7 +6,7 @@
 
 # Interface: LifecycleTransition
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3360
+Defined in: src/generated/nebius/storage/v1/index.ts:3361
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3360
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3362
+Defined in: src/generated/nebius/storage/v1/index.ts:3363
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3362
 
 > **$type**: `"nebius.storage.v1.LifecycleTransition"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3361
+Defined in: src/generated/nebius/storage/v1/index.ts:3362
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:3361
 
 > **storageClass**: [`StorageClass`](../type-aliases/StorageClass.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3367
+Defined in: src/generated/nebius/storage/v1/index.ts:3368
 
 Target storage class to transit to.
 
@@ -40,4 +40,4 @@ Target storage class to transit to.
 
 > `optional` **transitedWith**: \{ `$case`: `"date"`; `date`: [`Dayjs`](../../../../../runtime/protos/core/dayjs/classes/Dayjs.md); \} \| \{ `$case`: `"days"`; `days`: `number`; \}
 
-Defined in: src/generated/nebius/storage/v1/index.ts:3368
+Defined in: src/generated/nebius/storage/v1/index.ts:3369

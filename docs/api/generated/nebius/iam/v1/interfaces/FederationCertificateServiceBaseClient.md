@@ -6,7 +6,7 @@
 
 # Interface: FederationCertificateServiceBaseClient
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7908
+Defined in: src/generated/nebius/iam/v1/index.ts:7909
 
 ## Extends
 
@@ -34,7 +34,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 > **create**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7909
+Defined in: src/generated/nebius/iam/v1/index.ts:7910
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7909
 
 > **delete**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7913
+Defined in: src/generated/nebius/iam/v1/index.ts:7914
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:7913
 
 > **get**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7910
+Defined in: src/generated/nebius/iam/v1/index.ts:7911
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 > **listByFederation**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7911
+Defined in: src/generated/nebius/iam/v1/index.ts:7912
 
 #### Parameters
 
@@ -754,7 +754,7 @@ Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 > **update**(`request`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:7912
+Defined in: src/generated/nebius/iam/v1/index.ts:7913
 
 #### Parameters
 

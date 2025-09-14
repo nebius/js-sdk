@@ -6,7 +6,7 @@
 
 # Interface: Tenant
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2935
+Defined in: src/generated/nebius/iam/v2/index.ts:2936
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2935
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2937
+Defined in: src/generated/nebius/iam/v2/index.ts:2938
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2937
 
 > **$type**: `"nebius.iam.v2.Tenant"`
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2936
+Defined in: src/generated/nebius/iam/v2/index.ts:2937
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2936
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2938
+Defined in: src/generated/nebius/iam/v2/index.ts:2939
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2938
 
 > `optional` **spec**: [`TenantSpec`](TenantSpec.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2939
+Defined in: src/generated/nebius/iam/v2/index.ts:2940
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v2/index.ts:2939
 
 > `optional` **status**: [`TenantStatus`](TenantStatus.md)
 
-Defined in: src/generated/nebius/iam/v2/index.ts:2940
+Defined in: src/generated/nebius/iam/v2/index.ts:2941

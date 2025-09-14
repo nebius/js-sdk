@@ -6,7 +6,7 @@
 
 # Interface: ScopeSpec
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6260
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6261
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6260
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6262
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6263
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6262
 
 > **$type**: `"nebius.vpc.v1alpha1.ScopeSpec"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6261
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6262
 
 ---
 
@@ -30,6 +30,6 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6261
 
 > **type**: [`ScopeSpec_Type`](../type-aliases/ScopeSpec_Type.md)
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6267
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:6268
 
 Type of the Scope (Private or Public).

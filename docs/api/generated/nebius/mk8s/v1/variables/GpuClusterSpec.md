@@ -8,4 +8,4 @@
 
 > **GpuClusterSpec**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GpuClusterSpec`](../interfaces/GpuClusterSpec.md), `"nebius.mk8s.v1.GpuClusterSpec"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:4906
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5224

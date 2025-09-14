@@ -6,7 +6,7 @@
 
 # Interface: ListOperationsByParentRequest
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11030
+Defined in: src/generated/nebius/compute/v1/index.ts:11031
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11030
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11032
+Defined in: src/generated/nebius/compute/v1/index.ts:11033
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11032
 
 > **$type**: `"nebius.compute.v1.ListOperationsByParentRequest"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11031
+Defined in: src/generated/nebius/compute/v1/index.ts:11032
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:11031
 
 > **pageSize**: [`Long`](../../../../../runtime/protos/core/classes/Long.md)
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11042
+Defined in: src/generated/nebius/compute/v1/index.ts:11043
 
 Page size. [1...1000]. Optional, if not specified, a reasonable default will be chosen by the service.
 
@@ -40,7 +40,7 @@ Page size. [1...1000]. Optional, if not specified, a reasonable default will be 
 
 > **pageToken**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11047
+Defined in: src/generated/nebius/compute/v1/index.ts:11048
 
 Listing continuation token. Empty to start listing from the first page.
 
@@ -50,6 +50,6 @@ Listing continuation token. Empty to start listing from the first page.
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:11037
+Defined in: src/generated/nebius/compute/v1/index.ts:11038
 
 ID of the parent to list operations for resource type at.

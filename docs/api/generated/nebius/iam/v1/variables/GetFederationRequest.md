@@ -8,4 +8,4 @@
 
 > **GetFederationRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`GetFederationRequest`](../interfaces/GetFederationRequest.md), `"nebius.iam.v1.GetFederationRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:8566
+Defined in: src/generated/nebius/iam/v1/index.ts:8567

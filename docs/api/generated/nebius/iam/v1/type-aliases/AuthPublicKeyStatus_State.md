@@ -8,4 +8,4 @@
 
 > **AuthPublicKeyStatus_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"EXPIRED"` \| `"DELETING"` \| `"DELETED"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4944
+Defined in: src/generated/nebius/iam/v1/index.ts:4945

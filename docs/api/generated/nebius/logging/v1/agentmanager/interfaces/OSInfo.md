@@ -6,7 +6,7 @@
 
 # Interface: OSInfo
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1146
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1147
 
 Operating system information for the instance.
 
@@ -16,7 +16,7 @@ Operating system information for the instance.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1148
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1149
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1148
 
 > **$type**: `"nebius.logging.agentmanager.v1.OSInfo"`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1147
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1148
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1147
 
 > **architecture**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1165
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1166
 
 System architecture.
 
@@ -42,7 +42,7 @@ System architecture.
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1154
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1155
 
 Operating system name and version.
 Example: "Ubuntu 22.04.4 LTS"
@@ -53,7 +53,7 @@ Example: "Ubuntu 22.04.4 LTS"
 
 > **uname**: `string`
 
-Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1160
+Defined in: src/generated/nebius/logging/v1/agentmanager/index.ts:1161
 
 Detailed system information from uname command.
 Example: "Linux computeimage-abcdef 6.5.0-44-generic #44~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jun 18 14:36:16 UTC 2 x86_64 x86_64 x86_64 GNU/Linux"

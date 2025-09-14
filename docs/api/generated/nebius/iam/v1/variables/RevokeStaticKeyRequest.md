@@ -8,4 +8,4 @@
 
 > **RevokeStaticKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`RevokeStaticKeyRequest`](../interfaces/RevokeStaticKeyRequest.md), `"nebius.iam.v1.RevokeStaticKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:18731
+Defined in: src/generated/nebius/iam/v1/index.ts:18732

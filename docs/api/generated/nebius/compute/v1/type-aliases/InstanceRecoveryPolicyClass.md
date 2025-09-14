@@ -8,4 +8,4 @@
 
 > **InstanceRecoveryPolicyClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"RECOVER"` \| `"FAIL"`\> & `InstanceRecoveryPolicyValueMembers`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:7249
+Defined in: src/generated/nebius/compute/v1/index.ts:7250

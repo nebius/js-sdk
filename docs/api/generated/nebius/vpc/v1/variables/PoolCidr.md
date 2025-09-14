@@ -8,4 +8,4 @@
 
 > **PoolCidr**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PoolCidr`](../interfaces/PoolCidr.md), `"nebius.vpc.v1.PoolCidr"`\>
 
-Defined in: src/generated/nebius/vpc/v1/index.ts:5772
+Defined in: src/generated/nebius/vpc/v1/index.ts:5773

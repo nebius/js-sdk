@@ -8,4 +8,4 @@
 
 > **PublicIPAddress**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`PublicIPAddress`](../interfaces/PublicIPAddress.md), `"nebius.mk8s.v1.PublicIPAddress"`\>
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:5114
+Defined in: src/generated/nebius/mk8s/v1/index.ts:5432

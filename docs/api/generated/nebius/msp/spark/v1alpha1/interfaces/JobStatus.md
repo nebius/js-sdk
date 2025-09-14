@@ -6,7 +6,7 @@
 
 # Interface: JobStatus
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3237
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3282
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3237
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3239
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3284
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3239
 
 > **$type**: `"nebius.msp.spark.v1alpha1.JobStatus"`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3238
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3283
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3238
 
 > `optional` **driverEndpoint**: `string`
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3254
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3299
 
 Job Driver Web UI endpoint
 
@@ -40,7 +40,7 @@ Job Driver Web UI endpoint
 
 > `optional` **driverPresetDetails**: [`PresetDetails`](../../../v1alpha1/resource/interfaces/PresetDetails.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3259
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3304
 
 Job driver resource preset details
 
@@ -50,7 +50,7 @@ Job driver resource preset details
 
 > `optional` **executorPresetDetails**: [`PresetDetails`](../../../v1alpha1/resource/interfaces/PresetDetails.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3264
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3309
 
 Job executor resource preset details
 
@@ -60,7 +60,7 @@ Job executor resource preset details
 
 > **phase**: [`ClusterStatus_Phase`](../../../v1alpha1/type-aliases/ClusterStatus_Phase.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3244
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3289
 
 Current phase (or stage) of the cluster.
 
@@ -70,7 +70,7 @@ Current phase (or stage) of the cluster.
 
 > `optional` **resultDetails**: [`JobResultDetails`](JobResultDetails.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3269
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3314
 
 Job execution result details
 
@@ -80,6 +80,6 @@ Job execution result details
 
 > **state**: [`ClusterStatus_State`](../../../v1alpha1/type-aliases/ClusterStatus_State.md)
 
-Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3249
+Defined in: src/generated/nebius/msp/spark/v1alpha1/index.ts:3294
 
 State reflects substatus of the stage to define whether it's healthy or not.

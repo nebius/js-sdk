@@ -6,7 +6,7 @@
 
 # Interface: PublicIPAddress
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10014
+Defined in: src/generated/nebius/compute/v1/index.ts:10015
 
 Describes a public IP address.
 
@@ -16,7 +16,7 @@ Describes a public IP address.
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10016
+Defined in: src/generated/nebius/compute/v1/index.ts:10017
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10016
 
 > **$type**: `"nebius.compute.v1.PublicIPAddress"`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10015
+Defined in: src/generated/nebius/compute/v1/index.ts:10016
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: src/generated/nebius/compute/v1/index.ts:10015
 
 > `optional` **allocation**: `object`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10028
+Defined in: src/generated/nebius/compute/v1/index.ts:10029
 
 Describes different methods of public IP address allocation.
 
@@ -50,7 +50,7 @@ Describes different methods of public IP address allocation.
 
 > **static**: `boolean`
 
-Defined in: src/generated/nebius/compute/v1/index.ts:10023
+Defined in: src/generated/nebius/compute/v1/index.ts:10024
 
 If false - Allocation will be created/deleted during NetworkInterface.Allocate/NetworkInterface.Deallocate
 If true - Allocation will be created/deleted during NetworkInterface.Create/NetworkInterface.Delete

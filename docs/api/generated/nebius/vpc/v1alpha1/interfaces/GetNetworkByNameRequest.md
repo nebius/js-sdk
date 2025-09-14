@@ -6,7 +6,7 @@
 
 # Interface: GetNetworkByNameRequest
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3173
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3174
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3173
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3175
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3176
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3175
 
 > **$type**: `"nebius.vpc.v1alpha1.GetNetworkByNameRequest"`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3174
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3175
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3174
 
 > **name**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3177
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3178
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3177
 
 > **parentId**: `string`
 
-Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3176
+Defined in: src/generated/nebius/vpc/v1alpha1/index.ts:3177

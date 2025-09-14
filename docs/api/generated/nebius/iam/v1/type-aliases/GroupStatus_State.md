@@ -8,4 +8,4 @@
 
 > **GroupStatus_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"ACTIVE"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:12633
+Defined in: src/generated/nebius/iam/v1/index.ts:12634

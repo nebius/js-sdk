@@ -6,7 +6,7 @@
 
 # Class: BackupService
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:674
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:675
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:674
 
 > **new BackupService**(`sdk`): `BackupService`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:719
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:720
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:719
 
 > **$type**: `"nebius.msp.postgresql.v1alpha1.BackupService"`
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:675
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:676
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:675
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:702
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:703
 
 Creates a new on-demand backup.
 
@@ -64,7 +64,7 @@ Creates a new on-demand backup.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:703
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:704
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:703
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:704
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:705
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:704
 
 > **create**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:765
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:766
 
 Creates a new on-demand backup.
 
@@ -126,7 +126,7 @@ Creates a new on-demand backup.
 
 > **create**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:766
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:767
 
 Creates a new on-demand backup.
 
@@ -148,7 +148,7 @@ Creates a new on-demand backup.
 
 > **create**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:767
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:768
 
 Creates a new on-demand backup.
 
@@ -178,7 +178,7 @@ Creates a new on-demand backup.
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:709
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:710
 
 Deletes an on-demand backup.
 
@@ -196,7 +196,7 @@ Deletes an on-demand backup.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:710
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:711
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:710
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:711
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:712
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:711
 
 > **delete**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:780
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:781
 
 Deletes an on-demand backup.
 
@@ -258,7 +258,7 @@ Deletes an on-demand backup.
 
 > **delete**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:781
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:782
 
 Deletes an on-demand backup.
 
@@ -280,7 +280,7 @@ Deletes an on-demand backup.
 
 > **delete**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:782
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:783
 
 Deletes an on-demand backup.
 
@@ -310,7 +310,7 @@ Deletes an on-demand backup.
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:681
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:682
 
 Returns the specified PostgreSQL Cluster backup.
 To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
@@ -329,7 +329,7 @@ To get the list of available PostgreSQL Cluster backups, make a [List] or [ListB
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:682
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:683
 
 ##### Parameters
 
@@ -349,7 +349,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:682
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:683
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:684
 
 ##### Parameters
 
@@ -373,7 +373,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:683
 
 > **get**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:729
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:730
 
 Returns the specified PostgreSQL Cluster backup.
 To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
@@ -392,7 +392,7 @@ To get the list of available PostgreSQL Cluster backups, make a [List] or [ListB
 
 > **get**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:730
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:731
 
 Returns the specified PostgreSQL Cluster backup.
 To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
@@ -415,7 +415,7 @@ To get the list of available PostgreSQL Cluster backups, make a [List] or [ListB
 
 > **get**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:731
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:732
 
 Returns the specified PostgreSQL Cluster backup.
 To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
@@ -444,7 +444,7 @@ To get the list of available PostgreSQL Cluster backups, make a [List] or [ListB
 
 > **getOperationService**(): [`OperationService`](../../../../common/v1alpha1/classes/OperationService.md)
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:725
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:726
 
 #### Returns
 
@@ -458,7 +458,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:725
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:688
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:689
 
 Retrieves the list of PostgreSQL Cluster backups by project.
 
@@ -476,7 +476,7 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:689
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:690
 
 ##### Parameters
 
@@ -496,7 +496,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:689
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:690
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:691
 
 ##### Parameters
 
@@ -520,7 +520,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:690
 
 > **list**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:741
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:742
 
 Retrieves the list of PostgreSQL Cluster backups by project.
 
@@ -538,7 +538,7 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 > **list**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:742
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:743
 
 Retrieves the list of PostgreSQL Cluster backups by project.
 
@@ -560,7 +560,7 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 > **list**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:743
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:744
 
 Retrieves the list of PostgreSQL Cluster backups by project.
 
@@ -590,7 +590,7 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 > **listByCluster**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:695
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:696
 
 Retrieves the list of PostgreSQL Cluster backups by cluster.
 
@@ -608,7 +608,7 @@ Retrieves the list of PostgreSQL Cluster backups by cluster.
 
 > **listByCluster**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:696
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:697
 
 ##### Parameters
 
@@ -628,7 +628,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:696
 
 > **listByCluster**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:697
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:698
 
 ##### Parameters
 
@@ -652,7 +652,7 @@ Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:697
 
 > **listByCluster**(`request`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:753
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:754
 
 Retrieves the list of PostgreSQL Cluster backups by cluster.
 
@@ -670,7 +670,7 @@ Retrieves the list of PostgreSQL Cluster backups by cluster.
 
 > **listByCluster**(`request`, `metadata`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:754
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:755
 
 Retrieves the list of PostgreSQL Cluster backups by cluster.
 
@@ -692,7 +692,7 @@ Retrieves the list of PostgreSQL Cluster backups by cluster.
 
 > **listByCluster**(`request`, `metadata`, `options`): [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsByClusterRequest`](../interfaces/ListBackupsByClusterRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:755
+Defined in: src/generated/nebius/msp/postgresql/v1alpha1/index.ts:756
 
 Retrieves the list of PostgreSQL Cluster backups by cluster.
 

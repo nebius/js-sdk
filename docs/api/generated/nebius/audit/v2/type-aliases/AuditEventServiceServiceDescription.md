@@ -8,4 +8,4 @@
 
 > **AuditEventServiceServiceDescription** = _typeof_ [`AuditEventServiceServiceDescription`](../variables/AuditEventServiceServiceDescription.md)
 
-Defined in: src/generated/nebius/audit/v2/index.ts:427
+Defined in: src/generated/nebius/audit/v2/index.ts:428

@@ -6,7 +6,7 @@
 
 # Interface: AccessPermit
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2953
+Defined in: src/generated/nebius/iam/v1/index.ts:2954
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2953
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2955
+Defined in: src/generated/nebius/iam/v1/index.ts:2956
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2955
 
 > **$type**: `"nebius.iam.v1.AccessPermit"`
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2954
+Defined in: src/generated/nebius/iam/v1/index.ts:2955
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2954
 
 > `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2956
+Defined in: src/generated/nebius/iam/v1/index.ts:2957
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2956
 
 > `optional` **spec**: [`AccessPermitSpec`](AccessPermitSpec.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2957
+Defined in: src/generated/nebius/iam/v1/index.ts:2958
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/iam/v1/index.ts:2957
 
 > `optional` **status**: [`AccessPermitStatus`](AccessPermitStatus.md)
 
-Defined in: src/generated/nebius/iam/v1/index.ts:2958
+Defined in: src/generated/nebius/iam/v1/index.ts:2959

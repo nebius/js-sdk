@@ -8,4 +8,4 @@
 
 > **ServiceError_RetryType**: [`ServiceError_RetryTypeClass`](../type-aliases/ServiceError_RetryTypeClass.md)
 
-Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1443
+Defined in: src/generated/nebius/common/error/v1alpha1/index.ts:1444

@@ -8,4 +8,4 @@
 
 > **Condition_Status**: [`Condition_StatusClass`](../type-aliases/Condition_StatusClass.md)
 
-Defined in: src/generated/nebius/mk8s/v1/index.ts:2140
+Defined in: src/generated/nebius/mk8s/v1/index.ts:2411

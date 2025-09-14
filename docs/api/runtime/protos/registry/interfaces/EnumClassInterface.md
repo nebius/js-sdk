@@ -6,7 +6,7 @@
 
 # Interface: EnumClassInterface
 
-Defined in: [src/runtime/protos/registry.ts:29](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L29)
+Defined in: [src/runtime/protos/registry.ts:29](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L29)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/protos/registry.ts:29](https://github.com/nebius/nodejs
 
 > `readonly` **\_byCode**: `Map`\<`number`, [`EnumInstanceInterface`](EnumInstanceInterface.md)\>
 
-Defined in: [src/runtime/protos/registry.ts:33](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L33)
+Defined in: [src/runtime/protos/registry.ts:33](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L33)
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/protos/registry.ts:33](https://github.com/nebius/nodejs
 
 > `readonly` **\_byName**: `Map`\<`string`, [`EnumInstanceInterface`](EnumInstanceInterface.md)\>
 
-Defined in: [src/runtime/protos/registry.ts:34](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L34)
+Defined in: [src/runtime/protos/registry.ts:34](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L34)
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: [src/runtime/protos/registry.ts:34](https://github.com/nebius/nodejs
 
 > `readonly` **$type**: `string`
 
-Defined in: [src/runtime/protos/registry.ts:30](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L30)
+Defined in: [src/runtime/protos/registry.ts:30](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L30)
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: [src/runtime/protos/registry.ts:30](https://github.com/nebius/nodejs
 
 > `readonly` **UNRECOGNIZED**: [`EnumInstanceInterface`](EnumInstanceInterface.md)
 
-Defined in: [src/runtime/protos/registry.ts:31](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L31)
+Defined in: [src/runtime/protos/registry.ts:31](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L31)
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: [src/runtime/protos/registry.ts:31](https://github.com/nebius/nodejs
 
 > `readonly` **values**: readonly [`EnumInstanceInterface`](EnumInstanceInterface.md)[]
 
-Defined in: [src/runtime/protos/registry.ts:32](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L32)
+Defined in: [src/runtime/protos/registry.ts:32](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L32)
 
 ## Methods
 
@@ -54,7 +54,7 @@ Defined in: [src/runtime/protos/registry.ts:32](https://github.com/nebius/nodejs
 
 > **encodeField**(`writer`, `fieldNo`, `v?`): `void`
 
-Defined in: [src/runtime/protos/registry.ts:39](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L39)
+Defined in: [src/runtime/protos/registry.ts:39](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L39)
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Defined in: [src/runtime/protos/registry.ts:39](https://github.com/nebius/nodejs
 
 > **fromJSON**(`o`): [`EnumInstanceInterface`](EnumInstanceInterface.md)
 
-Defined in: [src/runtime/protos/registry.ts:37](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L37)
+Defined in: [src/runtime/protos/registry.ts:37](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L37)
 
 #### Parameters
 
@@ -98,7 +98,7 @@ Defined in: [src/runtime/protos/registry.ts:37](https://github.com/nebius/nodejs
 
 > **fromNumber**(`n`): [`EnumInstanceInterface`](EnumInstanceInterface.md)
 
-Defined in: [src/runtime/protos/registry.ts:35](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L35)
+Defined in: [src/runtime/protos/registry.ts:35](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L35)
 
 #### Parameters
 
@@ -116,7 +116,7 @@ Defined in: [src/runtime/protos/registry.ts:35](https://github.com/nebius/nodejs
 
 > **toJSON**(`v`): `string` \| `number`
 
-Defined in: [src/runtime/protos/registry.ts:38](https://github.com/nebius/nodejs-sdk/blob/2ec552fb564ad8fdbf78c4eb6e73ce9101501e8a/src/runtime/protos/registry.ts#L38)
+Defined in: [src/runtime/protos/registry.ts:38](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/registry.ts#L38)
 
 #### Parameters
 

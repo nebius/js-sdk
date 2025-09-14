@@ -8,4 +8,4 @@
 
 > **UpdateAccessKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`UpdateAccessKeyRequest`](../interfaces/UpdateAccessKeyRequest.md), `"nebius.iam.v1.UpdateAccessKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:845
+Defined in: src/generated/nebius/iam/v1/index.ts:846

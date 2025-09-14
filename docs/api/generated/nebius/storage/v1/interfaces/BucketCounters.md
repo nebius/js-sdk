@@ -6,7 +6,7 @@
 
 # Interface: BucketCounters
 
-Defined in: src/generated/nebius/storage/v1/index.ts:398
+Defined in: src/generated/nebius/storage/v1/index.ts:399
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:398
 
 > `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: src/generated/nebius/storage/v1/index.ts:400
+Defined in: src/generated/nebius/storage/v1/index.ts:401
 
 ---
 
@@ -22,7 +22,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:400
 
 > **$type**: `"nebius.storage.v1.BucketCounters"`
 
-Defined in: src/generated/nebius/storage/v1/index.ts:399
+Defined in: src/generated/nebius/storage/v1/index.ts:400
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:399
 
 > `optional` **counters**: [`CurrentBucketCounters`](CurrentBucketCounters.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:402
+Defined in: src/generated/nebius/storage/v1/index.ts:403
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: src/generated/nebius/storage/v1/index.ts:402
 
 > `optional` **nonCurrentCounters**: [`NonCurrentBucketCounters`](NonCurrentBucketCounters.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:403
+Defined in: src/generated/nebius/storage/v1/index.ts:404
 
 ---
 
@@ -46,4 +46,4 @@ Defined in: src/generated/nebius/storage/v1/index.ts:403
 
 > **storageClass**: [`StorageClass`](../type-aliases/StorageClass.md)
 
-Defined in: src/generated/nebius/storage/v1/index.ts:401
+Defined in: src/generated/nebius/storage/v1/index.ts:402

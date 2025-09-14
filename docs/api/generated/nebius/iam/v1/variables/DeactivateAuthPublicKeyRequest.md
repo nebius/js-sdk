@@ -8,4 +8,4 @@
 
 > **DeactivateAuthPublicKeyRequest**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), `"nebius.iam.v1.DeactivateAuthPublicKeyRequest"`\>
 
-Defined in: src/generated/nebius/iam/v1/index.ts:4400
+Defined in: src/generated/nebius/iam/v1/index.ts:4401
