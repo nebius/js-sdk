@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / IssueStaticKeyResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18446
 
 Defined in: src/api/nebius/iam/v1/index.ts:18448
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18448
 
 Defined in: src/api/nebius/iam/v1/index.ts:18447
 
-***
+---
 
 ### operation?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18447
 
 Defined in: src/api/nebius/iam/v1/index.ts:18450
 
-***
+---
 
 ### token
 

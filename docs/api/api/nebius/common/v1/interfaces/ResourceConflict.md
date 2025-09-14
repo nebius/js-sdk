@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / ResourceConflict
 
@@ -18,7 +18,7 @@ There is a difference between the actual resource state and the expected one.
 
 Defined in: src/api/nebius/common/v1/index.ts:1128
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/common/v1/index.ts:1128
 
 Defined in: src/api/nebius/common/v1/index.ts:1127
 
-***
+---
 
 ### message
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/common/v1/index.ts:1138
 
 Detailed info about conflict.
 
-***
+---
 
 ### resourceId
 

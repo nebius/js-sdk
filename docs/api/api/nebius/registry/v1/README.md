@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / api/nebius/registry/v1
 
@@ -34,20 +34,20 @@
 
 ## Type Aliases
 
-- [Artifact\_Status](type-aliases/Artifact_Status.md)
-- [Artifact\_StatusClass](type-aliases/Artifact_StatusClass.md)
-- [Artifact\_Type](type-aliases/Artifact_Type.md)
-- [Artifact\_TypeClass](type-aliases/Artifact_TypeClass.md)
+- [Artifact_Status](type-aliases/Artifact_Status.md)
+- [Artifact_StatusClass](type-aliases/Artifact_StatusClass.md)
+- [Artifact_Type](type-aliases/Artifact_Type.md)
+- [Artifact_TypeClass](type-aliases/Artifact_TypeClass.md)
 - [ArtifactServiceServiceDescription](type-aliases/ArtifactServiceServiceDescription.md)
 - [RegistryServiceServiceDescription](type-aliases/RegistryServiceServiceDescription.md)
-- [RegistryStatus\_State](type-aliases/RegistryStatus_State.md)
-- [RegistryStatus\_StateClass](type-aliases/RegistryStatus_StateClass.md)
+- [RegistryStatus_State](type-aliases/RegistryStatus_State.md)
+- [RegistryStatus_StateClass](type-aliases/RegistryStatus_StateClass.md)
 
 ## Variables
 
 - [Artifact](variables/Artifact.md)
-- [Artifact\_Status](variables/Artifact_Status.md)
-- [Artifact\_Type](variables/Artifact_Type.md)
+- [Artifact_Status](variables/Artifact_Status.md)
+- [Artifact_Type](variables/Artifact_Type.md)
 - [ArtifactServiceBaseClient](variables/ArtifactServiceBaseClient.md)
 - [ArtifactServiceServiceDescription](variables/ArtifactServiceServiceDescription.md)
 - [CreateRegistryRequest](variables/CreateRegistryRequest.md)
@@ -64,5 +64,5 @@
 - [RegistryServiceServiceDescription](variables/RegistryServiceServiceDescription.md)
 - [RegistrySpec](variables/RegistrySpec.md)
 - [RegistryStatus](variables/RegistryStatus.md)
-- [RegistryStatus\_State](variables/RegistryStatus_State.md)
+- [RegistryStatus_State](variables/RegistryStatus_State.md)
 - [UpdateRegistryRequest](variables/UpdateRegistryRequest.md)

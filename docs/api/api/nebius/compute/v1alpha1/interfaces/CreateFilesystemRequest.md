@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / CreateFilesystemRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:1861
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:1863
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:1863
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:1862
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:1862
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:1864
 
-***
+---
 
 ### spec?
 

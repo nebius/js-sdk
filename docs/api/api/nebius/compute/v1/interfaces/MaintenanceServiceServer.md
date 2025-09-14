@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / MaintenanceServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9673
 
 Defined in: src/api/nebius/compute/v1/index.ts:9674
 
-***
+---
 
 ### listActive
 

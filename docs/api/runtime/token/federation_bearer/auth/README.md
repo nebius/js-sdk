@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/federation\_bearer/auth
+[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/federation_bearer/auth
 
-# runtime/token/federation\_bearer/auth
+# runtime/token/federation_bearer/auth
 
 ## Interfaces
 

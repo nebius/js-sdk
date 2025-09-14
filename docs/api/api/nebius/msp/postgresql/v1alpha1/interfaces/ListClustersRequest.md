@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / ListClustersRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1237
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1239
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1239
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1238
 
-***
+---
 
 ### pageSize
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1249
 
 Specifies the maximum number of items to return in the response.
 
-***
+---
 
 ### pageToken
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1254
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../README.md) / [sdk](../README.md) / FederationCredentialsOptions
 
@@ -18,7 +18,7 @@ Defined in: [src/sdk.ts:45](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:48](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L48)
 
-***
+---
 
 ### federationEndpoint
 
@@ -26,7 +26,7 @@ Defined in: [src/sdk.ts:48](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:49](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L49)
 
-***
+---
 
 ### federationId
 
@@ -34,7 +34,7 @@ Defined in: [src/sdk.ts:49](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:50](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L50)
 
-***
+---
 
 ### noBrowserOpen?
 
@@ -42,7 +42,7 @@ Defined in: [src/sdk.ts:50](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:52](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L52)
 
-***
+---
 
 ### profileName
 
@@ -50,7 +50,7 @@ Defined in: [src/sdk.ts:52](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:47](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L47)
 
-***
+---
 
 ### timeoutMs?
 
@@ -58,7 +58,7 @@ Defined in: [src/sdk.ts:47](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:53](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L53)
 
-***
+---
 
 ### type
 
@@ -66,7 +66,7 @@ Defined in: [src/sdk.ts:53](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:46](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L46)
 
-***
+---
 
 ### writer()?
 

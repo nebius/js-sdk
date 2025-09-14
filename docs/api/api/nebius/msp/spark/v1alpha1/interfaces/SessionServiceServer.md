@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / SessionServiceServer
 
@@ -28,7 +28,7 @@ Deprecated, will be removed on 2025-08-12: Nebius AI Cloud no longer supports th
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4628
 
-***
+---
 
 ### ~~delete~~
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4628
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4629
 
-***
+---
 
 ### ~~get~~
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4629
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4625
 
-***
+---
 
 ### ~~getByName~~
 
@@ -52,7 +52,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4625
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4626
 
-***
+---
 
 ### ~~list~~
 

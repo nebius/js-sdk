@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/msp/v1alpha1](../README.md) / GetByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/v1alpha1/index.ts:287
 
 Defined in: src/api/nebius/msp/v1alpha1/index.ts:289
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/v1alpha1/index.ts:289
 
 Defined in: src/api/nebius/msp/v1alpha1/index.ts:288
 
-***
+---
 
 ### name
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/v1alpha1/index.ts:299
 
 Name of the entity to retrieve.
 
-***
+---
 
 ### parentId
 

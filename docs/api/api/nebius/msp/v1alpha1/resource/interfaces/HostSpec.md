@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/v1alpha1/resource](../README.md) / HostSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:1040
 
 Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:1042
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:1042
 
 Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:1041
 
-***
+---
 
 ### count
 

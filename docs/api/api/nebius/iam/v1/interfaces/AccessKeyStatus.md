@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / AccessKeyStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2052
 
 Defined in: src/api/nebius/iam/v1/index.ts:2054
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2054
 
 Defined in: src/api/nebius/iam/v1/index.ts:2053
 
-***
+---
 
 ### algorithm
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2053
 
 Defined in: src/api/nebius/iam/v1/index.ts:2057
 
-***
+---
 
 ### awsAccessKeyId
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2057
 
 Defined in: src/api/nebius/iam/v1/index.ts:2059
 
-***
+---
 
 ### fingerprint
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2059
 
 Defined in: src/api/nebius/iam/v1/index.ts:2056
 
-***
+---
 
 ### keySize
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2056
 
 Defined in: src/api/nebius/iam/v1/index.ts:2058
 
-***
+---
 
 ### secret
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2058
 
 Defined in: src/api/nebius/iam/v1/index.ts:2060
 
-***
+---
 
 ### state
 

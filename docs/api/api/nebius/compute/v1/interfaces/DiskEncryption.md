@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / DiskEncryption
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1896
 
 Defined in: src/api/nebius/compute/v1/index.ts:1898
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1898
 
 Defined in: src/api/nebius/compute/v1/index.ts:1897
 
-***
+---
 
 ### type
 

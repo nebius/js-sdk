@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / AccessKeyService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1717
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### create()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1627
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### deactivate()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1732
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1747
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### getByAwsId()
 
@@ -658,7 +658,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1693
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-***
+---
 
 ### getById()
 
@@ -782,7 +782,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1681
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByIdRequest`](../interfaces/GetAccessKeyByIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -794,7 +794,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1621
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### getSecretOnce()
 
@@ -918,7 +918,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1705
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeySecretOnceRequest`](../interfaces/GetAccessKeySecretOnceRequest.md), [`GetAccessKeySecretOnceResponse`](../interfaces/GetAccessKeySecretOnceResponse.md)\>
 
-***
+---
 
 ### list()
 
@@ -1042,7 +1042,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1642
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-***
+---
 
 ### listByAccount()
 
@@ -1166,7 +1166,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1654
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-***
+---
 
 ### update()
 

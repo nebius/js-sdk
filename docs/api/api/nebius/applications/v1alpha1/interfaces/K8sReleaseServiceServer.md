@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/applications/v1alpha1](../README.md) / K8sReleaseServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:724
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:727
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:727
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:729
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:729
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:725
 
-***
+---
 
 ### list
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:725
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:726
 
-***
+---
 
 ### update
 

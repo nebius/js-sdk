@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / NetworkInterfaceStatus
 
@@ -18,7 +18,7 @@ Describes the status of a network interface.
 
 Defined in: src/api/nebius/compute/v1/index.ts:10160
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10160
 
 Defined in: src/api/nebius/compute/v1/index.ts:10159
 
-***
+---
 
 ### fqdn
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10191
 
 FQDN of the interface
 
-***
+---
 
 ### index
 
@@ -46,7 +46,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10165
 
 The index of the network interface
 
-***
+---
 
 ### ipAddress?
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10176
 
 Effective Private IPv4 address
 
-***
+---
 
 ### macAddress
 
@@ -66,7 +66,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10186
 
 MAC address
 
-***
+---
 
 ### name
 
@@ -75,9 +75,9 @@ MAC address
 Defined in: src/api/nebius/compute/v1/index.ts:10171
 
 Name for interface.
- Unique within instance's network interfaces
+Unique within instance's network interfaces
 
-***
+---
 
 ### publicIpAddress?
 

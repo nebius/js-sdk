@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ContainerStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5616
 
 Defined in: src/api/nebius/iam/v1/index.ts:5618
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5618
 
 Defined in: src/api/nebius/iam/v1/index.ts:5617
 
-***
+---
 
 ### containerState
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5617
 
 Defined in: src/api/nebius/iam/v1/index.ts:5620
 
-***
+---
 
 ### region
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5620
 
 Defined in: src/api/nebius/iam/v1/index.ts:5621
 
-***
+---
 
 ### suspensionState
 

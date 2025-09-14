@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / UpdateClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:471
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:473
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:473
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:472
 
-***
+---
 
 ### metadata?
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:472
 Defined in: src/api/nebius/mk8s/v1/index.ts:479
 
 Metadata associated with the instance.
- Includes ID of the instance to update.
+Includes ID of the instance to update.
 
-***
+---
 
 ### spec?
 

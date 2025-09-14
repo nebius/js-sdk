@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / ClusterService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1197
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1227
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1161
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1173
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterByNameRequest`](../interfaces/GetClusterByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1155
 
 [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1185
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-***
+---
 
 ### listControlPlaneVersions()
 
@@ -802,7 +802,7 @@ ListControlPlaneVersions returns all k8s release versions available in Nebius AP
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
 
-***
+---
 
 ### update()
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / PlatformServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11417
 
 Defined in: src/api/nebius/compute/v1/index.ts:11418
 
-***
+---
 
 ### list
 

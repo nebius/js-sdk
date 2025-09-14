@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/authorization/provider](../README.md) / Provider
 
@@ -20,7 +20,7 @@ Defined in: [src/runtime/authorization/provider.ts:20](https://github.com/nebius
 
 [`Authenticator`](Authenticator.md)
 
-***
+---
 
 ### close()?
 

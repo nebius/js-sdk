@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / ListDisksResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:559
 
 Defined in: src/api/nebius/compute/v1/index.ts:561
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:561
 
 Defined in: src/api/nebius/compute/v1/index.ts:560
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:560
 
 Defined in: src/api/nebius/compute/v1/index.ts:562
 
-***
+---
 
 ### nextPageToken
 

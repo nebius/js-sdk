@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/static](../README.md) / StaticBearer
 
@@ -72,7 +72,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`name`](../../classes/Bearer.md#name)
 
-***
+---
 
 ### wrapped
 
@@ -102,7 +102,7 @@ Defined in: [src/runtime/token/static.ts:50](https://github.com/nebius/nodejs-sd
 
 `unknown`
 
-***
+---
 
 ### close()
 
@@ -124,7 +124,7 @@ Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`close`](../../classes/Bearer.md#close)
 
-***
+---
 
 ### receiver()
 

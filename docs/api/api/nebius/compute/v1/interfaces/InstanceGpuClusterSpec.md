@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / InstanceGpuClusterSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:8084
 
 Defined in: src/api/nebius/compute/v1/index.ts:8086
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:8086
 
 Defined in: src/api/nebius/compute/v1/index.ts:8085
 
-***
+---
 
 ### id
 
@@ -33,6 +33,6 @@ Defined in: src/api/nebius/compute/v1/index.ts:8085
 Defined in: src/api/nebius/compute/v1/index.ts:8094
 
 If you want to interconnect several instances in a GPU cluster via NVIDIA InfiniBand,
- set the ID of an existing GPU cluster.
- You can only add the VM to the cluster when creating the VM.
- For details, see https://docs.nebius.com/compute/clusters/gpu
+set the ID of an existing GPU cluster.
+You can only add the VM to the cluster when creating the VM.
+For details, see https://docs.nebius.com/compute/clusters/gpu

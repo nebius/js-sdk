@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / DeleteGpuClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:3998
 
 Defined in: src/api/nebius/compute/v1/index.ts:4000
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:4000
 
 Defined in: src/api/nebius/compute/v1/index.ts:3999
 
-***
+---
 
 ### id
 

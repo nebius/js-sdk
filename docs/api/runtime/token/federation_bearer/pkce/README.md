@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/federation\_bearer/pkce
+[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/federation_bearer/pkce
 
-# runtime/token/federation\_bearer/pkce
+# runtime/token/federation_bearer/pkce
 
 ## Classes
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ServiceAccountStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:17234
 
 Defined in: src/api/nebius/iam/v1/index.ts:17236
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:17236
 
 Defined in: src/api/nebius/iam/v1/index.ts:17235
 
-***
+---
 
 ### active
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / InvitationSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14155
 
 Defined in: src/api/nebius/iam/v1/index.ts:14157
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14157
 
 Defined in: src/api/nebius/iam/v1/index.ts:14156
 
-***
+---
 
 ### contact?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14159
 
 > **email**: `string`
 
-***
+---
 
 ### description
 

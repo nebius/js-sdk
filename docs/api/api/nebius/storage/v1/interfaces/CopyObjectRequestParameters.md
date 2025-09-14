@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / CopyObjectRequestParameters
 
@@ -8,7 +8,7 @@
 
 Defined in: src/api/nebius/storage/v1/index.ts:4019
 
-----------------------------------------
+---
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4019
 
 Defined in: src/api/nebius/storage/v1/index.ts:4021
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4021
 
 Defined in: src/api/nebius/storage/v1/index.ts:4020
 
-***
+---
 
 ### source?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4020
 
 Defined in: src/api/nebius/storage/v1/index.ts:4022
 
-***
+---
 
 ### target?
 

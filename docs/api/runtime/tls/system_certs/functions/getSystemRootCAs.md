@@ -1,14 +1,14 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/tls/system\_certs](../README.md) / getSystemRootCAs
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/tls/system_certs](../README.md) / getSystemRootCAs
 
 # Function: getSystemRootCAs()
 
 > **getSystemRootCAs**(`logger`): `undefined` \| `Buffer`\<`ArrayBufferLike`\>
 
-Defined in: [src/runtime/tls/system\_certs.ts:23](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/tls/system_certs.ts#L23)
+Defined in: [src/runtime/tls/system_certs.ts:23](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/tls/system_certs.ts#L23)
 
 Best-effort loading of system root CAs from common locations.
 Also respects NODE_EXTRA_CA_CERTS and SSL_CERT_FILE if set.

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / AccessKeyServiceServer
 
@@ -28,7 +28,7 @@ Deprecated, will be removed on 2026-09-01: Access keys API v1 is deprecated, use
 
 Defined in: src/api/nebius/iam/v1/index.ts:1533
 
-***
+---
 
 ### ~~create~~
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1533
 
 Defined in: src/api/nebius/iam/v1/index.ts:1526
 
-***
+---
 
 ### ~~deactivate~~
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1526
 
 Defined in: src/api/nebius/iam/v1/index.ts:1534
 
-***
+---
 
 ### ~~delete~~
 
@@ -52,7 +52,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1534
 
 Defined in: src/api/nebius/iam/v1/index.ts:1535
 
-***
+---
 
 ### ~~getByAwsId~~
 
@@ -60,7 +60,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1535
 
 Defined in: src/api/nebius/iam/v1/index.ts:1531
 
-***
+---
 
 ### ~~getById~~
 
@@ -68,7 +68,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1531
 
 Defined in: src/api/nebius/iam/v1/index.ts:1530
 
-***
+---
 
 ### ~~getSecretOnce~~
 
@@ -76,7 +76,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1530
 
 Defined in: src/api/nebius/iam/v1/index.ts:1532
 
-***
+---
 
 ### ~~list~~
 
@@ -84,7 +84,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1532
 
 Defined in: src/api/nebius/iam/v1/index.ts:1527
 
-***
+---
 
 ### ~~listByAccount~~
 
@@ -92,7 +92,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1527
 
 Defined in: src/api/nebius/iam/v1/index.ts:1528
 
-***
+---
 
 ### ~~update~~
 

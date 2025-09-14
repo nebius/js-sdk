@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / DeleteAllocationRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:779
 
 Defined in: src/api/nebius/vpc/v1/index.ts:781
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:781
 
 Defined in: src/api/nebius/vpc/v1/index.ts:780
 
-***
+---
 
 ### id
 

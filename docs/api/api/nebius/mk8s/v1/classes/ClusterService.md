@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / ClusterService
 
@@ -170,7 +170,7 @@ Creates a new mk8s cluster.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -302,7 +302,7 @@ Deletes an mk8s cluster.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -434,7 +434,7 @@ Returns a specific mk8s cluster by its unique identifier.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -566,7 +566,7 @@ Returns a specific mk8s cluster by its unique name.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -578,7 +578,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1074
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -710,7 +710,7 @@ Returns a list of all mk8s clusters in the specified project.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-***
+---
 
 ### listControlPlaneVersions()
 
@@ -842,7 +842,7 @@ ListControlPlaneVersions returns all k8s release versions available in Nebius AP
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListClusterControlPlaneVersionsRequest`](../interfaces/ListClusterControlPlaneVersionsRequest.md), [`ListClusterControlPlaneVersionsResponse`](../interfaces/ListClusterControlPlaneVersionsResponse.md)\>
 
-***
+---
 
 ### update()
 

@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../README.md) / runtime/fieldmask\_parser
+[@nebius/nodejs-sdk](../../README.md) / runtime/fieldmask_parser
 
-# runtime/fieldmask\_parser
+# runtime/fieldmask_parser
 
 ## Functions
 

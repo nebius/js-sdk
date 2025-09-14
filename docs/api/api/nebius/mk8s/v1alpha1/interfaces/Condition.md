@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / Condition
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2500
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2502
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2502
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2501
 
-***
+---
 
 ### description
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2534
 
 A human readable description message of this detail.
 
-***
+---
 
 ### lastTransitionAt?
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2517
 
 The last time the condition transitioned from one status to another.
 
-***
+---
 
 ### lastTransitionError?
 
@@ -52,7 +52,7 @@ The last time the condition transitioned from one status to another.
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2535
 
-***
+---
 
 ### reason
 
@@ -61,9 +61,9 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2535
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2523
 
 The reason for the condition's last transition in CamelCase.
- The values are considered a guaranteed API.
+The values are considered a guaranteed API.
 
-***
+---
 
 ### severity
 
@@ -72,9 +72,9 @@ The reason for the condition's last transition in CamelCase.
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2529
 
 Explicit classification of Reason code, so the users or machines can immediately
- understand the current situation and act accordingly.
+understand the current situation and act accordingly.
 
-***
+---
 
 ### status
 
@@ -84,7 +84,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2512
 
 Status of the condition, one of TRUE, FALSE or UNKNOWN.
 
-***
+---
 
 ### type
 

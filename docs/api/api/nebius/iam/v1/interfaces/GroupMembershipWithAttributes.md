@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / GroupMembershipWithAttributes
 
@@ -18,7 +18,7 @@ see also nebius/iam/v1/tenant_user_account.proto/TenantUserAccountWithAttributes
 
 Defined in: src/api/nebius/iam/v1/index.ts:11458
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:11458
 
 Defined in: src/api/nebius/iam/v1/index.ts:11457
 
-***
+---
 
 ### attributesOptional?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:11457
 
 Defined in: src/api/nebius/iam/v1/index.ts:11461
 
-***
+---
 
 ### groupMemberKind?
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:11461
 
 Defined in: src/api/nebius/iam/v1/index.ts:11460
 
-***
+---
 
 ### groupMembership?
 

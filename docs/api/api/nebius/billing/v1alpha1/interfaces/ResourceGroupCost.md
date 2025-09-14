@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/billing/v1alpha1](../README.md) / ResourceGroupCost
 
@@ -18,7 +18,7 @@ Cost information for a group of resources.
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:894
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:894
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:893
 
-***
+---
 
 ### costType?
 

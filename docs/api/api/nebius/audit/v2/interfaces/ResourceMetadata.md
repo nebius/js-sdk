@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/audit/v2](../README.md) / ResourceMetadata
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1727
 
 Defined in: src/api/nebius/audit/v2/index.ts:1729
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1729
 
 Defined in: src/api/nebius/audit/v2/index.ts:1728
 
-***
+---
 
 ### id
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1734
 
 Unique identifier of the resource.
 
-***
+---
 
 ### name
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1739
 
 Name of the resource.
 
-***
+---
 
 ### type
 

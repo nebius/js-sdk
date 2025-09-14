@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / Federation
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:9326
 
 Defined in: src/api/nebius/iam/v1/index.ts:9328
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:9328
 
 Defined in: src/api/nebius/iam/v1/index.ts:9327
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:9327
 
 Defined in: src/api/nebius/iam/v1/index.ts:9329
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:9329
 
 Defined in: src/api/nebius/iam/v1/index.ts:9330
 
-***
+---
 
 ### status?
 

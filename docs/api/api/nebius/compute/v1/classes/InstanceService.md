@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / InstanceService
 
@@ -49,7 +49,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7035
 Defined in: src/api/nebius/compute/v1/index.ts:7062
 
 Creates a new VM instance based on the provided specification.
- For details, see https://docs.nebius.com/compute/virtual-machines/manage
+For details, see https://docs.nebius.com/compute/virtual-machines/manage
 
 ##### Parameters
 
@@ -112,7 +112,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7064
 Defined in: src/api/nebius/compute/v1/index.ts:7153
 
 Creates a new VM instance based on the provided specification.
- For details, see https://docs.nebius.com/compute/virtual-machines/manage
+For details, see https://docs.nebius.com/compute/virtual-machines/manage
 
 ##### Parameters
 
@@ -131,7 +131,7 @@ Creates a new VM instance based on the provided specification.
 Defined in: src/api/nebius/compute/v1/index.ts:7154
 
 Creates a new VM instance based on the provided specification.
- For details, see https://docs.nebius.com/compute/virtual-machines/manage
+For details, see https://docs.nebius.com/compute/virtual-machines/manage
 
 ##### Parameters
 
@@ -154,7 +154,7 @@ Creates a new VM instance based on the provided specification.
 Defined in: src/api/nebius/compute/v1/index.ts:7155
 
 Creates a new VM instance based on the provided specification.
- For details, see https://docs.nebius.com/compute/virtual-machines/manage
+For details, see https://docs.nebius.com/compute/virtual-machines/manage
 
 ##### Parameters
 
@@ -174,7 +174,7 @@ Creates a new VM instance based on the provided specification.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -306,7 +306,7 @@ Deletes a VM instance by its ID.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -438,7 +438,7 @@ Retrieves detailed information about a specific VM instance by its ID.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -570,7 +570,7 @@ Retrieves detailed information about a specific VM instance by its parent and na
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -582,7 +582,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7113
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -714,7 +714,7 @@ Lists all VM instances within a specified parent.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-***
+---
 
 ### listOperationsByParent()
 
@@ -846,7 +846,7 @@ Lists all operations that were performed within a specific parent resource.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1/interfaces/ListOperationsResponse.md)\>
 
-***
+---
 
 ### start()
 
@@ -978,7 +978,7 @@ Starts a stopped VM instance.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### stop()
 
@@ -1110,7 +1110,7 @@ Stops a running VM instance.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### update()
 

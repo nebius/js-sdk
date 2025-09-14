@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / QuotaFailure
 
@@ -18,7 +18,7 @@ Indicates a failure due to exceeding specified limits or allocations in a system
 
 Defined in: src/api/nebius/common/v1/index.ts:1801
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/common/v1/index.ts:1801
 
 Defined in: src/api/nebius/common/v1/index.ts:1800
 
-***
+---
 
 ### violations
 

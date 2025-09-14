@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/serverless/v1alpha1](../README.md) / EndpointServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:333
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:337
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:337
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:338
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:338
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:334
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:334
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:335
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:335
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:336
 
-***
+---
 
 ### start
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:336
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:339
 
-***
+---
 
 ### stop
 

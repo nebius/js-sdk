@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / StartClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2099
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2101
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2101
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2100
 
-***
+---
 
 ### id
 
@@ -33,4 +33,4 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2100
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2107
 
 ID of the PostgreSQL Cluster resource to resume.
- To get the cluster ID use a [ClusterService.List] request.
+To get the cluster ID use a [ClusterService.List] request.

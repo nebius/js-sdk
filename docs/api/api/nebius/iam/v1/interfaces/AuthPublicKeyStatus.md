@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / AuthPublicKeyStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5252
 
 Defined in: src/api/nebius/iam/v1/index.ts:5254
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5254
 
 Defined in: src/api/nebius/iam/v1/index.ts:5253
 
-***
+---
 
 ### algorithm
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5253
 
 Defined in: src/api/nebius/iam/v1/index.ts:5257
 
-***
+---
 
 ### fingerprint
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5257
 
 Defined in: src/api/nebius/iam/v1/index.ts:5256
 
-***
+---
 
 ### keySize
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5256
 
 Defined in: src/api/nebius/iam/v1/index.ts:5258
 
-***
+---
 
 ### state
 

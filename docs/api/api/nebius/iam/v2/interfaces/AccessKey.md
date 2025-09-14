@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v2](../README.md) / AccessKey
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1753
 
 Defined in: src/api/nebius/iam/v2/index.ts:1755
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1755
 
 Defined in: src/api/nebius/iam/v2/index.ts:1754
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1754
 
 Defined in: src/api/nebius/iam/v2/index.ts:1756
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1756
 
 Defined in: src/api/nebius/iam/v2/index.ts:1757
 
-***
+---
 
 ### status?
 

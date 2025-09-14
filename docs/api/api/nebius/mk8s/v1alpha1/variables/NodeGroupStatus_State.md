@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / NodeGroupStatus\_State
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / NodeGroupStatus_State
 
-# Variable: NodeGroupStatus\_State
+# Variable: NodeGroupStatus_State
 
-> **NodeGroupStatus\_State**: [`NodeGroupStatus_StateClass`](../type-aliases/NodeGroupStatus_StateClass.md)
+> **NodeGroupStatus_State**: [`NodeGroupStatus_StateClass`](../type-aliases/NodeGroupStatus_StateClass.md)
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4400

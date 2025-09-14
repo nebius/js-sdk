@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / Cluster
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1045
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1047
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1047
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1046
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1046
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1048
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1048
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1049
 
-***
+---
 
 ### status?
 

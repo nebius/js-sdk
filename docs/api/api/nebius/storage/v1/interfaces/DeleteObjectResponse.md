@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteObjectResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4592
 
 Defined in: src/api/nebius/storage/v1/index.ts:4594
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4594
 
 Defined in: src/api/nebius/storage/v1/index.ts:4593
 
-***
+---
 
 ### deleteMarker
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / IPAddressStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10371
 
 Defined in: src/api/nebius/compute/v1/index.ts:10373
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10373
 
 Defined in: src/api/nebius/compute/v1/index.ts:10372
 
-***
+---
 
 ### address
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10378
 
 Effective private IPv4 address assigned to the interface.
 
-***
+---
 
 ### allocationId
 

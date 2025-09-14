@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / Condition\_Severity
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / Condition_Severity
 
-# Type Alias: Condition\_Severity
+# Type Alias: Condition_Severity
 
-> **Condition\_Severity** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"NONE"` \| `"INFO"` \| `"ERROR"`\>
+> **Condition_Severity** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"NONE"` \| `"INFO"` \| `"ERROR"`\>
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:2360

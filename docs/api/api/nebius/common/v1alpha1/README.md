@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / api/nebius/common/v1alpha1
 
@@ -17,7 +17,7 @@
 - [~~ListOperationsRequest~~](interfaces/ListOperationsRequest.md)
 - [~~ListOperationsResponse~~](interfaces/ListOperationsResponse.md)
 - [~~Operation~~](interfaces/Operation.md)
-- [Operation\_request\_header](interfaces/Operation_request_header.md)
+- [Operation_request_header](interfaces/Operation_request_header.md)
 - [~~OperationServiceBaseClient~~](interfaces/OperationServiceBaseClient.md)
 - [OperationServiceListResponse](interfaces/OperationServiceListResponse.md)
 - [~~OperationServiceServer~~](interfaces/OperationServiceServer.md)
@@ -33,6 +33,6 @@
 - [ListOperationsRequest](variables/ListOperationsRequest.md)
 - [ListOperationsResponse](variables/ListOperationsResponse.md)
 - [Operation](variables/Operation.md)
-- [Operation\_request\_header](variables/Operation_request_header.md)
+- [Operation_request_header](variables/Operation_request_header.md)
 - [~~OperationServiceBaseClient~~](variables/OperationServiceBaseClient.md)
 - [~~OperationServiceServiceDescription~~](variables/OperationServiceServiceDescription.md)

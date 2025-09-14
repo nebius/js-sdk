@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / NetworkServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3555
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3556
 
-***
+---
 
 ### getByName
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3556
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3557
 
-***
+---
 
 ### list
 

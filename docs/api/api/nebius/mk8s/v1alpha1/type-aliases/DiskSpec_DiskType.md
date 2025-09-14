@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / DiskSpec\_DiskType
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / DiskSpec_DiskType
 
-# Type Alias: DiskSpec\_DiskType
+# Type Alias: DiskSpec_DiskType
 
-> **DiskSpec\_DiskType** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"NETWORK_SSD"` \| `"NETWORK_HDD"` \| `"NETWORK_SSD_IO_M3"` \| `"NETWORK_SSD_NON_REPLICATED"`\>
+> **DiskSpec_DiskType** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"NETWORK_SSD"` \| `"NETWORK_HDD"` \| `"NETWORK_SSD_IO_M3"` \| `"NETWORK_SSD_NON_REPLICATED"`\>
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2838

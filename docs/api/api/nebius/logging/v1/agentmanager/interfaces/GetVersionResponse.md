@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/logging/v1/agentmanager](../README.md) / GetVersionResponse
 
@@ -18,7 +18,7 @@ Response message for GetVersion RPC containing required action for the agent.
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1290
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1290
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1289
 
-***
+---
 
 ### action
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1295
 
 Required action for the agent to take.
 
-***
+---
 
 ### response?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListBucketsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:1444
 
 Defined in: src/api/nebius/storage/v1/index.ts:1446
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:1446
 
 Defined in: src/api/nebius/storage/v1/index.ts:1445
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:1451
 
 List of buckets returned in the response. The field should be named as `items` for consistency.
 
-***
+---
 
 ### nextPageToken
 

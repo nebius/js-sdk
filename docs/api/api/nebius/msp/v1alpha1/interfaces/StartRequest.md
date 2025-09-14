@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/msp/v1alpha1](../README.md) / StartRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/v1alpha1/index.ts:488
 
 Defined in: src/api/nebius/msp/v1alpha1/index.ts:490
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/v1alpha1/index.ts:490
 
 Defined in: src/api/nebius/msp/v1alpha1/index.ts:489
 
-***
+---
 
 ### id
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / ListAllocationsByPoolRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:328
 
 Defined in: src/api/nebius/vpc/v1/index.ts:330
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:330
 
 Defined in: src/api/nebius/vpc/v1/index.ts:329
 
-***
+---
 
 ### pageSize
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:329
 
 Defined in: src/api/nebius/vpc/v1/index.ts:332
 
-***
+---
 
 ### pageToken
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:332
 
 Defined in: src/api/nebius/vpc/v1/index.ts:333
 
-***
+---
 
 ### poolId
 

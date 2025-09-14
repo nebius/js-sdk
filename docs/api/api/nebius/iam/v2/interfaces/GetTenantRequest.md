@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v2](../README.md) / GetTenantRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2200
 
 Defined in: src/api/nebius/iam/v2/index.ts:2202
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2202
 
 Defined in: src/api/nebius/iam/v2/index.ts:2201
 
-***
+---
 
 ### id
 

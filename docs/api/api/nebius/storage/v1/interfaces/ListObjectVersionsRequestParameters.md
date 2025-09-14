@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListObjectVersionsRequestParameters
 
@@ -8,7 +8,7 @@
 
 Defined in: src/api/nebius/storage/v1/index.ts:5430
 
-----------------------------------------
+---
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5430
 
 Defined in: src/api/nebius/storage/v1/index.ts:5432
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5432
 
 Defined in: src/api/nebius/storage/v1/index.ts:5431
 
-***
+---
 
 ### bucketName
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5431
 
 Defined in: src/api/nebius/storage/v1/index.ts:5433
 
-***
+---
 
 ### delimiter
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5433
 
 Defined in: src/api/nebius/storage/v1/index.ts:5438
 
-***
+---
 
 ### keyMarker
 
@@ -50,7 +50,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5438
 
 Defined in: src/api/nebius/storage/v1/index.ts:5435
 
-***
+---
 
 ### limit
 
@@ -58,7 +58,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5435
 
 Defined in: src/api/nebius/storage/v1/index.ts:5437
 
-***
+---
 
 ### prefix
 
@@ -66,7 +66,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5437
 
 Defined in: src/api/nebius/storage/v1/index.ts:5434
 
-***
+---
 
 ### versionIdMarker
 

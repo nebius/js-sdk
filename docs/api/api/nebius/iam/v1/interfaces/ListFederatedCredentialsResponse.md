@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListFederatedCredentialsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6320
 
 Defined in: src/api/nebius/iam/v1/index.ts:6322
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6322
 
 Defined in: src/api/nebius/iam/v1/index.ts:6321
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6327
 
 List of user accounts returned in the response. The field should be named as `items` for consistency.
 
-***
+---
 
 ### nextPageToken
 

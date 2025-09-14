@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/v1alpha1/resource](../README.md) / Disk
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:739
 
 Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:741
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:741
 
 Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:740
 
-***
+---
 
 ### sizeGibibytes?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:740
 
 Defined in: src/api/nebius/msp/v1alpha1/resource/index.ts:743
 
-***
+---
 
 ### type
 

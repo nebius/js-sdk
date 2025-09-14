@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / BootstrapSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3560
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3562
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3562
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3561
 
-***
+---
 
 ### dbName
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3577
 
 Name of the PostgreSQL database. 1-63 characters long.
 
-***
+---
 
 ### userName
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3567
 
 Name of the bootstrap PostgreSQL user.
 
-***
+---
 
 ### userPassword
 

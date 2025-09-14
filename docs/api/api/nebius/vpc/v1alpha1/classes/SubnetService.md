@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / SubnetService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:7107
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:7119
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-***
+---
 
 ### list()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:7131
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-***
+---
 
 ### listByNetwork()
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / AccessKeySpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1922
 
 Defined in: src/api/nebius/iam/v1/index.ts:1924
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1924
 
 Defined in: src/api/nebius/iam/v1/index.ts:1923
 
-***
+---
 
 ### account?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1923
 
 Defined in: src/api/nebius/iam/v1/index.ts:1925
 
-***
+---
 
 ### description
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1925
 
 Defined in: src/api/nebius/iam/v1/index.ts:1927
 
-***
+---
 
 ### expiresAt?
 

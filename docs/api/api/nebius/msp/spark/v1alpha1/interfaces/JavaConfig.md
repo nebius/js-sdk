@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / JavaConfig
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1804
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1806
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1806
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1805
 
-***
+---
 
 ### entrypointClass
 

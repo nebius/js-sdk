@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1alpha1](../README.md) / Operation
 
@@ -20,7 +20,7 @@ Deprecated.
 
 Defined in: src/api/nebius/common/v1alpha1/index.ts:705
 
-***
+---
 
 ### ~~$type~~
 
@@ -28,7 +28,7 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:705
 
 Defined in: src/api/nebius/common/v1alpha1/index.ts:704
 
-***
+---
 
 ### ~~createdAt?~~
 
@@ -38,7 +38,7 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:720
 
 Creation timestamp.
 
-***
+---
 
 ### ~~createdBy~~
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:725
 
 ID of the user or service account who initiated the operation.
 
-***
+---
 
 ### ~~description~~
 
@@ -58,7 +58,7 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:715
 
 Human readable description of the operation. 0-256 characters long.
 
-***
+---
 
 ### ~~finishedAt?~~
 
@@ -68,7 +68,7 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:730
 
 The time when the operation finished.
 
-***
+---
 
 ### ~~id~~
 
@@ -78,7 +78,7 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:710
 
 ID of the operation.
 
-***
+---
 
 ### ~~progressData?~~
 
@@ -87,10 +87,10 @@ ID of the operation.
 Defined in: src/api/nebius/common/v1alpha1/index.ts:780
 
 Additional information about the progress of an operation, e.g., a progress percentage.
- MAY be absent while the operation is running, MUST be absent after the operation has completed.
+MAY be absent while the operation is running, MUST be absent after the operation has completed.
 
- Format of message inside [progress_data] is service-dependent and MUST be documented by the
- service, IF it is used.
+Format of message inside [progress_data] is service-dependent and MUST be documented by the
+service, IF it is used.
 
 #### ~~typeUrl~~
 
@@ -100,7 +100,7 @@ Additional information about the progress of an operation, e.g., a progress perc
 
 > **value**: `Uint8Array`
 
-***
+---
 
 ### ~~request?~~
 
@@ -118,7 +118,7 @@ The request that generated this operation.
 
 > **value**: `Uint8Array`
 
-***
+---
 
 ### ~~requestHeaders~~
 
@@ -127,17 +127,17 @@ The request that generated this operation.
 Defined in: src/api/nebius/common/v1alpha1/index.ts:745
 
 The request headers that are essential for the request that generated the operation.
- For instance, `x-resetmask`. Without these headers the request might have been processed
- differently if repeated.
- All the header names *must* be converted to lower case.
- Validator is based on:
- https://httpwg.org/specs/rfc9110.html#considerations.for.new.field.names
+For instance, `x-resetmask`. Without these headers the request might have been processed
+differently if repeated.
+All the header names _must_ be converted to lower case.
+Validator is based on:
+https://httpwg.org/specs/rfc9110.html#considerations.for.new.field.names
 
 #### Index Signature
 
 \[`key`: `string`\]: [`Operation_request_header`](Operation_request_header.md)
 
-***
+---
 
 ### ~~resource?~~
 
@@ -146,19 +146,20 @@ The request headers that are essential for the request that generated the operat
 Defined in: src/api/nebius/common/v1alpha1/index.ts:771
 
 Snapshot of the resource at the moment this operation started.
- - [resource.spec] and [resource.metadata] reflect the desired resource state at the moment
-   this operation started.
-   E.g., in an Update operation it will be the *updated* resource spec and metadata,
-   in a Create operation it will be the spec and metadata *of the resource being created*,
-   and so on.
- - [resource.status] reflects the status of the resource at the moment this operation started.
-   This is a snapshot, call the <Resource>Service/Get to get current status of the resource.
 
- The [resource] field MUST never be updated *after* this operation has started.
+- [resource.spec] and [resource.metadata] reflect the desired resource state at the moment
+  this operation started.
+  E.g., in an Update operation it will be the _updated_ resource spec and metadata,
+  in a Create operation it will be the spec and metadata _of the resource being created_,
+  and so on.
+- [resource.status] reflects the status of the resource at the moment this operation started.
+  This is a snapshot, call the <Resource>Service/Get to get current status of the resource.
 
- In a Delete operation, an operation affecting multiple resources or an operation that doesn't
- affect any API resources at all (e.g. a routine maintenance operation visible to the user),
- the [resource] inside MUST be a [google.protobuf.Empty].
+The [resource] field MUST never be updated _after_ this operation has started.
+
+In a Delete operation, an operation affecting multiple resources or an operation that doesn't
+affect any API resources at all (e.g. a routine maintenance operation visible to the user),
+the [resource] inside MUST be a [google.protobuf.Empty].
 
 #### ~~typeUrl~~
 
@@ -168,7 +169,7 @@ Snapshot of the resource at the moment this operation started.
 
 > **value**: `Uint8Array`
 
-***
+---
 
 ### ~~resourceId~~
 
@@ -178,10 +179,10 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:753
 
 ID of the resource that this operation creates, updates, deletes or otherwise changes.
 
- If the operation affects multiple resources or does not affect any API resources at all
- (e.g. a routine maintenance operation visible to the user), the [resource_id] must be empty.
+If the operation affects multiple resources or does not affect any API resources at all
+(e.g. a routine maintenance operation visible to the user), the [resource_id] must be empty.
 
-***
+---
 
 ### ~~status?~~
 
@@ -190,13 +191,14 @@ ID of the resource that this operation creates, updates, deletes or otherwise ch
 Defined in: src/api/nebius/common/v1alpha1/index.ts:795
 
 The status of this operation. Set when this operation is completed.
- See https://github.com/grpc/grpc/blob/master/src/proto/grpc/status/status.proto.
+See https://github.com/grpc/grpc/blob/master/src/proto/grpc/status/status.proto.
 
- [status.code] is https://github.com/googleapis/googleapis/blob/master/google/rpc/code.proto:
- - If [status.code] == OK, the operation has completed successfully.
- - If [status.code] != OK, the operation has failed or has been cancelled.
-   - [status.message] will contain a user-readable and actionable error message.
-   - [status.details] will contain additional diagnostic information in the form of
-     [ServiceError] from ../error/v1alpha1/error.proto
- - [status.code] must belong to an Operation-compatible subset of GRPC codes:
-   OK, CANCELLED, PERMISSION_DENIED, RESOURCE_EXHAUSTED, FAILED_PRECONDITION, ABORTED, INTERNAL
+[status.code] is https://github.com/googleapis/googleapis/blob/master/google/rpc/code.proto:
+
+- If [status.code] == OK, the operation has completed successfully.
+- If [status.code] != OK, the operation has failed or has been cancelled.
+  - [status.message] will contain a user-readable and actionable error message.
+  - [status.details] will contain additional diagnostic information in the form of
+    [ServiceError] from ../error/v1alpha1/error.proto
+- [status.code] must belong to an Operation-compatible subset of GRPC codes:
+  OK, CANCELLED, PERMISSION_DENIED, RESOURCE_EXHAUSTED, FAILED_PRECONDITION, ABORTED, INTERNAL

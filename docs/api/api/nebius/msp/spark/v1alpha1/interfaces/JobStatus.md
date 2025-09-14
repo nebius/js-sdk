@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / JobStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3282
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3284
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3284
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3283
 
-***
+---
 
 ### driverEndpoint?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3299
 
 Job Driver Web UI endpoint
 
-***
+---
 
 ### driverPresetDetails?
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3304
 
 Job driver resource preset details
 
-***
+---
 
 ### executorPresetDetails?
 
@@ -54,7 +54,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3309
 
 Job executor resource preset details
 
-***
+---
 
 ### phase
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3289
 
 Current phase (or stage) of the cluster.
 
-***
+---
 
 ### resultDetails?
 
@@ -74,7 +74,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3314
 
 Job execution result details
 
-***
+---
 
 ### state
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/billing/v1alpha1](../README.md) / GeneralTotalCost
 
@@ -9,7 +9,7 @@
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:1009
 
 General total cost with a single fixed amount.
- Used for resources with predictable, non-variable pricing.
+Used for resources with predictable, non-variable pricing.
 
 ## Properties
 
@@ -19,7 +19,7 @@ General total cost with a single fixed amount.
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:1011
 
-***
+---
 
 ### $type
 
@@ -27,7 +27,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:1011
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:1010
 
-***
+---
 
 ### total?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / PublicIPAddressStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:2975
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:2977
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:2977
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:2976
 
-***
+---
 
 ### address
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:2982
 
 Effective public IPv4 address assigned to the interface.
 
-***
+---
 
 ### allocationId
 

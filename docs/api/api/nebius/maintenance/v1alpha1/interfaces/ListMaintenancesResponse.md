@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/maintenance/v1alpha1](../README.md) / ListMaintenancesResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:104
 
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:106
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:106
 
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:105
 
-***
+---
 
 ### items
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / GpuCluster
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4035
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:4037
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4037
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:4036
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4036
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:4038
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4038
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:4039
 
-***
+---
 
 ### status?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / ControlPlaneSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1445
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:1447
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1447
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:1446
 
-***
+---
 
 ### endpoints?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1446
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:1460
 
-***
+---
 
 ### etcdClusterSize
 
@@ -41,11 +41,11 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1460
 Defined in: src/api/nebius/mk8s/v1/index.ts:1468
 
 Number of instances in etcd cluster.
- 3 by default.
- Control plane with `etcd_cluster_size: 3` called "Highly Available" ("HA"), because it's Kubernetes API
- will be available despite a failure of one control plane instance.
+3 by default.
+Control plane with `etcd_cluster_size: 3` called "Highly Available" ("HA"), because it's Kubernetes API
+will be available despite a failure of one control plane instance.
 
-***
+---
 
 ### subnetId
 
@@ -54,9 +54,9 @@ Number of instances in etcd cluster.
 Defined in: src/api/nebius/mk8s/v1/index.ts:1459
 
 Nebius VPC Subnet ID where control plane instances will be located.
- Also will be default NodeGroup subnet.
+Also will be default NodeGroup subnet.
 
-***
+---
 
 ### version
 
@@ -65,4 +65,4 @@ Nebius VPC Subnet ID where control plane instances will be located.
 Defined in: src/api/nebius/mk8s/v1/index.ts:1453
 
 Desired Kubernetes version of the cluster. For now only acceptable format is
- `<major>.<minor>` like "1.31". Option for patch version update will be added later.
+`<major>.<minor>` like "1.31". Option for patch version update will be added later.

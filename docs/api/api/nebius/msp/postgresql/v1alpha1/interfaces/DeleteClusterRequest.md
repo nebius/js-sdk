@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / DeleteClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1799
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1801
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1801
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1800
 
-***
+---
 
 ### id
 
@@ -33,4 +33,4 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1800
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1807
 
 ID of the PostgreSQL cluster to delete.
- To get the PostgreSQL cluster ID, use a [ClusterService.List] request.
+To get the PostgreSQL cluster ID, use a [ClusterService.List] request.

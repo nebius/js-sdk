@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / UpdateBucketRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:833
 
 Defined in: src/api/nebius/storage/v1/index.ts:835
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:835
 
 Defined in: src/api/nebius/storage/v1/index.ts:834
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:834
 
 Defined in: src/api/nebius/storage/v1/index.ts:836
 
-***
+---
 
 ### spec?
 

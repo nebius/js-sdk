@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / Invitation
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14020
 
 Defined in: src/api/nebius/iam/v1/index.ts:14022
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14022
 
 Defined in: src/api/nebius/iam/v1/index.ts:14021
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14021
 
 Defined in: src/api/nebius/iam/v1/index.ts:14023
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14023
 
 Defined in: src/api/nebius/iam/v1/index.ts:14024
 
-***
+---
 
 ### status?
 

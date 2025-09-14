@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / CopyObjectResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4358
 
 Defined in: src/api/nebius/storage/v1/index.ts:4360
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4360
 
 Defined in: src/api/nebius/storage/v1/index.ts:4359
 
-***
+---
 
 ### etag
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4359
 
 Defined in: src/api/nebius/storage/v1/index.ts:4361
 
-***
+---
 
 ### lastModified?
 

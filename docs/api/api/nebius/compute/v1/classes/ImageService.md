@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / ImageService
 
@@ -170,7 +170,7 @@ Retrieves detailed information about a specific image by its ID.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -302,7 +302,7 @@ Retrieves detailed information about a specific image by its parent and name.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
-***
+---
 
 ### getLatestByFamily()
 
@@ -313,7 +313,7 @@ Retrieves detailed information about a specific image by its parent and name.
 Defined in: src/api/nebius/compute/v1/index.ts:5550
 
 Retrieves the most recent image from a specified family.
- Image families are used to organize related images and ensure easy access to the latest version.
+Image families are used to organize related images and ensure easy access to the latest version.
 
 ##### Parameters
 
@@ -376,7 +376,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:5552
 Defined in: src/api/nebius/compute/v1/index.ts:5604
 
 Retrieves the most recent image from a specified family.
- Image families are used to organize related images and ensure easy access to the latest version.
+Image families are used to organize related images and ensure easy access to the latest version.
 
 ##### Parameters
 
@@ -395,7 +395,7 @@ Retrieves the most recent image from a specified family.
 Defined in: src/api/nebius/compute/v1/index.ts:5605
 
 Retrieves the most recent image from a specified family.
- Image families are used to organize related images and ensure easy access to the latest version.
+Image families are used to organize related images and ensure easy access to the latest version.
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Retrieves the most recent image from a specified family.
 Defined in: src/api/nebius/compute/v1/index.ts:5606
 
 Retrieves the most recent image from a specified family.
- Image families are used to organize related images and ensure easy access to the latest version.
+Image families are used to organize related images and ensure easy access to the latest version.
 
 ##### Parameters
 
@@ -438,7 +438,7 @@ Retrieves the most recent image from a specified family.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-***
+---
 
 ### list()
 
@@ -570,7 +570,7 @@ Lists all images in a specific parent resource.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-***
+---
 
 ### listOperationsByParent()
 

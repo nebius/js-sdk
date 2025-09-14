@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/applications/v1alpha1](../README.md) / K8sReleaseService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:806
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateK8sReleaseRequest`](../interfaces/CreateK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:836
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteK8sReleaseRequest`](../interfaces/DeleteK8sReleaseRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:782
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetK8sReleaseRequest`](../interfaces/GetK8sReleaseRequest.md), [`K8sRelease`](../interfaces/K8sRelease.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -422,7 +422,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:776
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:794
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListK8sReleasesRequest`](../interfaces/ListK8sReleasesRequest.md), [`ListK8sReleasesResponse`](../interfaces/ListK8sReleasesResponse.md)\>
 
-***
+---
 
 ### update()
 

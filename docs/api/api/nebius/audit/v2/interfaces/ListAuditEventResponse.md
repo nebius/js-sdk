@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/audit/v2](../README.md) / ListAuditEventResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:324
 
 Defined in: src/api/nebius/audit/v2/index.ts:326
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:326
 
 Defined in: src/api/nebius/audit/v2/index.ts:325
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:325
 
 Defined in: src/api/nebius/audit/v2/index.ts:327
 
-***
+---
 
 ### nextPageToken
 

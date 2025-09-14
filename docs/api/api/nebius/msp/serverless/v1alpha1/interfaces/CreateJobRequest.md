@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/serverless/v1alpha1](../README.md) / CreateJobRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1594
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1596
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1596
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1595
 
-***
+---
 
 ### dryRun
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1595
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1604
 
 If set to true, only API validation will be performed, without creating the job.
- Returned operation will be in "done" state. ID of resource will be empty.
+Returned operation will be in "done" state. ID of resource will be empty.
 
-***
+---
 
 ### metadata?
 
@@ -43,7 +43,7 @@ If set to true, only API validation will be performed, without creating the job.
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1597
 
-***
+---
 
 ### spec?
 

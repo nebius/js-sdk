@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / IPv4PrivateAllocationSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1335
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1337
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1337
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1336
 
-***
+---
 
 ### cidr
 
@@ -33,11 +33,11 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1336
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1345
 
 CIDR block for IPv4 Allocation.
- May be a single IP address (such as 10.2.3.4),
- a prefix length (such as /24) or a CIDR-formatted string (such as 10.1.2.0/24).
- Random address (/32) from pool would be allocated if field is omitted.
+May be a single IP address (such as 10.2.3.4),
+a prefix length (such as /24) or a CIDR-formatted string (such as 10.1.2.0/24).
+Random address (/32) from pool would be allocated if field is omitted.
 
-***
+---
 
 ### pool?
 

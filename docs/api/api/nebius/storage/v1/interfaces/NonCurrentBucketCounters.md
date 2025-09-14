@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / NonCurrentBucketCounters
 
@@ -18,7 +18,7 @@ Counters for non-current object versions (for versioning buckets).
 
 Defined in: src/api/nebius/storage/v1/index.ts:259
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:259
 
 Defined in: src/api/nebius/storage/v1/index.ts:258
 
-***
+---
 
 ### multipartObjectsQuantity
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:258
 
 Defined in: src/api/nebius/storage/v1/index.ts:262
 
-***
+---
 
 ### multipartObjectsSize
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:262
 
 Defined in: src/api/nebius/storage/v1/index.ts:263
 
-***
+---
 
 ### simpleObjectsQuantity
 
@@ -50,7 +50,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:263
 
 Defined in: src/api/nebius/storage/v1/index.ts:260
 
-***
+---
 
 ### simpleObjectsSize
 

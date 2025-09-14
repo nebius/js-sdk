@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / TransferSpec\_StopConditionAfterOneIteration
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / TransferSpec_StopConditionAfterOneIteration
 
-# Interface: TransferSpec\_StopConditionAfterOneIteration
+# Interface: TransferSpec_StopConditionAfterOneIteration
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:2665
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:2665
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:2667
 
-***
+---
 
 ### $type
 

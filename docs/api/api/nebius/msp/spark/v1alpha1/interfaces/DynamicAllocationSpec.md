@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / DynamicAllocationSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3612
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3614
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3614
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3613
 
-***
+---
 
 ### max
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3613
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3616
 
-***
+---
 
 ### min
 

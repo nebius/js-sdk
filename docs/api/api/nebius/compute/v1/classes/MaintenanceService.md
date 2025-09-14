@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / MaintenanceService
 
@@ -170,7 +170,7 @@ Returns only active maintenance event for the instance
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceEventByInstanceRequest`](../interfaces/GetMaintenanceEventByInstanceRequest.md), [`MaintenanceEvent`](../interfaces/MaintenanceEvent.md)\>
 
-***
+---
 
 ### listActive()
 

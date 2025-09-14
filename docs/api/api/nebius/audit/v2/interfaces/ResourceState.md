@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/audit/v2](../README.md) / ResourceState
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1864
 
 Defined in: src/api/nebius/audit/v2/index.ts:1866
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1866
 
 Defined in: src/api/nebius/audit/v2/index.ts:1865
 
-***
+---
 
 ### current?
 
@@ -38,7 +38,7 @@ The state of the resource after the change in the call.
 
 \[`key`: `string`\]: `any`
 
-***
+---
 
 ### previous?
 

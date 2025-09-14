@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / Endpoints
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3185
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3187
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3187
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3186
 
-***
+---
 
 ### privateReadOnly
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3197
 
 Read only endpoint of the PostgreSQL cluster accessible from the private VPC.
 
-***
+---
 
 ### privateReadWrite
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3192
 
 Read write endpoint of the PostgreSQL cluster accessible from the private VPC.
 
-***
+---
 
 ### publicReadOnly
 
@@ -54,7 +54,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3207
 
 Read only endpoint of the PostgreSQL cluster accessible from the internet.
 
-***
+---
 
 ### publicReadWrite
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/resolver](../README.md) / TemplateExpander
 
@@ -50,7 +50,7 @@ Defined in: [src/runtime/resolver.ts:230](https://github.com/nebius/nodejs-sdk/b
 
 `object`
 
-***
+---
 
 ### resolve()
 

@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / CopyObjectRequestParameters\_Target
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / CopyObjectRequestParameters_Target
 
-# Interface: CopyObjectRequestParameters\_Target
+# Interface: CopyObjectRequestParameters_Target
 
 Defined in: src/api/nebius/storage/v1/index.ts:4254
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4254
 
 Defined in: src/api/nebius/storage/v1/index.ts:4256
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4256
 
 Defined in: src/api/nebius/storage/v1/index.ts:4255
 
-***
+---
 
 ### bucketName
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4255
 
 Defined in: src/api/nebius/storage/v1/index.ts:4257
 
-***
+---
 
 ### objectKey
 

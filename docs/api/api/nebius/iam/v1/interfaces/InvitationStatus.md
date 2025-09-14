@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / InvitationStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14284
 
 Defined in: src/api/nebius/iam/v1/index.ts:14286
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14286
 
 Defined in: src/api/nebius/iam/v1/index.ts:14285
 
-***
+---
 
 ### expiresAt?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14285
 
 Defined in: src/api/nebius/iam/v1/index.ts:14288
 
-***
+---
 
 ### state
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14288
 
 Defined in: src/api/nebius/iam/v1/index.ts:14289
 
-***
+---
 
 ### tenantUserAccountId
 

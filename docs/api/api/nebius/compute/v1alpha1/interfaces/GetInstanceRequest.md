@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / GetInstanceRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:5444
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:5446
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:5446
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:5445
 
-***
+---
 
 ### id
 

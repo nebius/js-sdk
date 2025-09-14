@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / ListClustersRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:219
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:221
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:221
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:220
 
-***
+---
 
 ### pageSize
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:231
 
 Specifies the maximum number of items to return in the response. Default value is 100.
 
-***
+---
 
 ### pageToken
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:236
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

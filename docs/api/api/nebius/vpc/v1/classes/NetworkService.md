@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / NetworkService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3439
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNetworkRequest`](../interfaces/CreateNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### createDefault()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3454
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateDefaultNetworkRequest`](../interfaces/CreateDefaultNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3484
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNetworkRequest`](../interfaces/DeleteNetworkRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3403
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -658,7 +658,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3415
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3397
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -794,7 +794,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3427
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNetworksRequest`](../interfaces/ListNetworksRequest.md), [`ListNetworksResponse`](../interfaces/ListNetworksResponse.md)\>
 
-***
+---
 
 ### update()
 

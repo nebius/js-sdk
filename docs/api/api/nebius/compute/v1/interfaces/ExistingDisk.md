@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / ExistingDisk
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:8330
 
 Defined in: src/api/nebius/compute/v1/index.ts:8332
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:8332
 
 Defined in: src/api/nebius/compute/v1/index.ts:8331
 
-***
+---
 
 ### id
 

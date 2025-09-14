@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / Pool
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5470
 
 Defined in: src/api/nebius/vpc/v1/index.ts:5472
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5472
 
 Defined in: src/api/nebius/vpc/v1/index.ts:5471
 
-***
+---
 
 ### metadata?
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5471
 Defined in: src/api/nebius/vpc/v1/index.ts:5478
 
 Metadata associated with the Pool.
- `metadata.parent_id` represents the Project.
+`metadata.parent_id` represents the Project.
 
-***
+---
 
 ### spec?
 
@@ -45,7 +45,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5483
 
 Specification of the Pool.
 
-***
+---
 
 ### status?
 

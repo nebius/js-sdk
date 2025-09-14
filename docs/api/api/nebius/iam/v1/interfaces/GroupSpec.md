@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / GroupSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:12784
 
 Defined in: src/api/nebius/iam/v1/index.ts:12786
 
-***
+---
 
 ### $type
 

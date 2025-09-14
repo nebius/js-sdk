@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/resolver](../README.md) / Conventional
 
@@ -38,7 +38,7 @@ Defined in: [src/runtime/resolver.ts:152](https://github.com/nebius/nodejs-sdk/b
 
 `object`
 
-***
+---
 
 ### resolve()
 

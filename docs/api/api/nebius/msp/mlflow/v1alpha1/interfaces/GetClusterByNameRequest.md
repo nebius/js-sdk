@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/mlflow/v1alpha1](../README.md) / GetClusterByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:107
 
 Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:109
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:109
 
 Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:108
 
-***
+---
 
 ### name
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:119
 
 Name of the cluster.
 
-***
+---
 
 ### parentId
 

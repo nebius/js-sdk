@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / GetByNameFederatedCredentialsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5826
 
 Defined in: src/api/nebius/iam/v1/index.ts:5828
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5828
 
 Defined in: src/api/nebius/iam/v1/index.ts:5827
 
-***
+---
 
 ### name
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:5838
 
 Federated credentials name.
 
-***
+---
 
 ### parentId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/billing/v1alpha1](../README.md) / EstimateBatchResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:384
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:386
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:386
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:385
 
-***
+---
 
 ### hourlyCost?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:391
 
 Estimated hourly cost for all resources in the batch.
 
-***
+---
 
 ### monthlyCost?
 
@@ -43,4 +43,4 @@ Estimated hourly cost for all resources in the batch.
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:397
 
 Estimated monthly cost for all resources in the batch.
- Calculated as hourly_cost * 24 * 30 (720 hours) for resources running continuously.
+Calculated as hourly_cost _ 24 _ 30 (720 hours) for resources running continuously.

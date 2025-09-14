@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v2](../README.md) / TenantServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2813
 
 Defined in: src/api/nebius/iam/v2/index.ts:2814
 
-***
+---
 
 ### getByName
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2814
 
 Defined in: src/api/nebius/iam/v2/index.ts:2815
 
-***
+---
 
 ### list
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2815
 
 Defined in: src/api/nebius/iam/v2/index.ts:2816
 
-***
+---
 
 ### update
 

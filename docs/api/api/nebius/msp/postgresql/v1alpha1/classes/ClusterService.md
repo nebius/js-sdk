@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / ClusterService
 
@@ -170,7 +170,7 @@ Creates a PostgreSQL cluster in the specified folder.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateClusterRequest`](../interfaces/CreateClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -302,7 +302,7 @@ Deletes the specified PostgreSQL cluster.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteClusterRequest`](../interfaces/DeleteClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -313,7 +313,7 @@ Deletes the specified PostgreSQL cluster.
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2326
 
 Returns the specified PostgreSQL Cluster resource.
- To get the list of available PostgreSQL Cluster resources, make a [List] request.
+To get the list of available PostgreSQL Cluster resources, make a [List] request.
 
 ##### Parameters
 
@@ -376,7 +376,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2328
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2411
 
 Returns the specified PostgreSQL Cluster resource.
- To get the list of available PostgreSQL Cluster resources, make a [List] request.
+To get the list of available PostgreSQL Cluster resources, make a [List] request.
 
 ##### Parameters
 
@@ -395,7 +395,7 @@ Returns the specified PostgreSQL Cluster resource.
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2412
 
 Returns the specified PostgreSQL Cluster resource.
- To get the list of available PostgreSQL Cluster resources, make a [List] request.
+To get the list of available PostgreSQL Cluster resources, make a [List] request.
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Returns the specified PostgreSQL Cluster resource.
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2413
 
 Returns the specified PostgreSQL Cluster resource.
- To get the list of available PostgreSQL Cluster resources, make a [List] request.
+To get the list of available PostgreSQL Cluster resources, make a [List] request.
 
 ##### Parameters
 
@@ -438,7 +438,7 @@ Returns the specified PostgreSQL Cluster resource.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterRequest`](../interfaces/GetClusterRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -570,7 +570,7 @@ Returns the specified PostgreSQL Cluster resource by name.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../../common/v1/interfaces/GetByNameRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-***
+---
 
 ### getForBackup()
 
@@ -581,7 +581,7 @@ Returns the specified PostgreSQL Cluster resource by name.
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2341
 
 Returns the specified PostgreSQL Cluster resource for backup.
- It should be used as a hint of cluster configuration in case of backup restoration.
+It should be used as a hint of cluster configuration in case of backup restoration.
 
 ##### Parameters
 
@@ -644,7 +644,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2343
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2435
 
 Returns the specified PostgreSQL Cluster resource for backup.
- It should be used as a hint of cluster configuration in case of backup restoration.
+It should be used as a hint of cluster configuration in case of backup restoration.
 
 ##### Parameters
 
@@ -663,7 +663,7 @@ Returns the specified PostgreSQL Cluster resource for backup.
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2436
 
 Returns the specified PostgreSQL Cluster resource for backup.
- It should be used as a hint of cluster configuration in case of backup restoration.
+It should be used as a hint of cluster configuration in case of backup restoration.
 
 ##### Parameters
 
@@ -686,7 +686,7 @@ Returns the specified PostgreSQL Cluster resource for backup.
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2437
 
 Returns the specified PostgreSQL Cluster resource for backup.
- It should be used as a hint of cluster configuration in case of backup restoration.
+It should be used as a hint of cluster configuration in case of backup restoration.
 
 ##### Parameters
 
@@ -706,7 +706,7 @@ Returns the specified PostgreSQL Cluster resource for backup.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetClusterForBackupRequest`](../interfaces/GetClusterForBackupRequest.md), [`Cluster`](../interfaces/Cluster.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -718,7 +718,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2407
 
 [`OperationService`](../../../../common/v1alpha1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -729,7 +729,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2407
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2349
 
 Retrieves the list of PostgreSQL Cluster resources that belong
- to the specified folder.
+to the specified folder.
 
 ##### Parameters
 
@@ -792,7 +792,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2351
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2447
 
 Retrieves the list of PostgreSQL Cluster resources that belong
- to the specified folder.
+to the specified folder.
 
 ##### Parameters
 
@@ -811,7 +811,7 @@ Retrieves the list of PostgreSQL Cluster resources that belong
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2448
 
 Retrieves the list of PostgreSQL Cluster resources that belong
- to the specified folder.
+to the specified folder.
 
 ##### Parameters
 
@@ -834,7 +834,7 @@ Retrieves the list of PostgreSQL Cluster resources that belong
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2449
 
 Retrieves the list of PostgreSQL Cluster resources that belong
- to the specified folder.
+to the specified folder.
 
 ##### Parameters
 
@@ -854,7 +854,7 @@ Retrieves the list of PostgreSQL Cluster resources that belong
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListClustersRequest`](../interfaces/ListClustersRequest.md), [`ListClustersResponse`](../interfaces/ListClustersResponse.md)\>
 
-***
+---
 
 ### restore()
 
@@ -986,7 +986,7 @@ Creates a new PostgreSQL cluster from a previously created backup.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`RestoreClusterRequest`](../interfaces/RestoreClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### start()
 
@@ -1118,7 +1118,7 @@ Wakes up suspended PostgreSQL cluster.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StartClusterRequest`](../interfaces/StartClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### stop()
 
@@ -1250,7 +1250,7 @@ Suspends the PostgreSQL cluster to save resources.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`StopClusterRequest`](../interfaces/StopClusterRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### update()
 

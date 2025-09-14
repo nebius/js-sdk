@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / PlatformService
 
@@ -170,7 +170,7 @@ Retrieves detailed information about a specific compute platform by its parent a
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Platform`](../interfaces/Platform.md)\>
 
-***
+---
 
 ### list()
 

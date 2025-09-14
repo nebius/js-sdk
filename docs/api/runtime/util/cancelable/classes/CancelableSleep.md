@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/cancelable](../README.md) / CancelableSleep
 
@@ -40,19 +40,19 @@ Defined in: [src/runtime/util/cancelable.ts:109](https://github.com/nebius/nodej
 
 > `readonly` **\[toStringTag\]**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:176
+Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:176
 
 #### Inherited from
 
 `Promise.[toStringTag]`
 
-***
+---
 
 ### \[species\]
 
 > `readonly` `static` **\[species\]**: `PromiseConstructor`
 
-Defined in: node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:180
+Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:180
 
 #### Inherited from
 
@@ -70,13 +70,13 @@ Defined in: [src/runtime/util/cancelable.ts:121](https://github.com/nebius/nodej
 
 `void`
 
-***
+---
 
 ### catch()
 
 > **catch**\<`TResult`\>(`onrejected?`): `Promise`\<`void` \| `TResult`\>
 
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1564
+Defined in: node_modules/typescript/lib/lib.es5.d.ts:1564
 
 Attaches a callback for only the rejection of the Promise.
 
@@ -104,13 +104,13 @@ A Promise for the completion of the callback.
 
 `Promise.catch`
 
-***
+---
 
 ### finally()
 
 > **finally**(`onfinally?`): `Promise`\<`void`\>
 
-Defined in: node\_modules/typescript/lib/lib.es2018.promise.d.ts:29
+Defined in: node_modules/typescript/lib/lib.es2018.promise.d.ts:29
 
 Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
 resolved value cannot be modified from the callback.
@@ -133,13 +133,13 @@ A Promise for the completion of the callback.
 
 `Promise.finally`
 
-***
+---
 
 ### then()
 
 > **then**\<`TResult1`, `TResult2`\>(`onfulfilled?`, `onrejected?`): `Promise`\<`TResult1` \| `TResult2`\>
 
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1557
+Defined in: node_modules/typescript/lib/lib.es5.d.ts:1557
 
 Attaches callbacks for the resolution and/or rejection of the Promise.
 
@@ -177,7 +177,7 @@ A Promise for the completion of which ever callback is executed.
 
 `Promise.then`
 
-***
+---
 
 ### all()
 
@@ -185,7 +185,7 @@ A Promise for the completion of which ever callback is executed.
 
 > `static` **all**\<`T`\>(`values`): `Promise`\<`Awaited`\<`T`\>[]\>
 
-Defined in: node\_modules/typescript/lib/lib.es2015.iterable.d.ts:255
+Defined in: node_modules/typescript/lib/lib.es2015.iterable.d.ts:255
 
 Creates a Promise that is resolved with an array of results when all of the provided Promises
 resolve, or rejected when any Promise is rejected.
@@ -218,7 +218,7 @@ A new Promise.
 
 > `static` **all**\<`T`\>(`values`): `Promise`\<\{ -readonly \[P in string \| number \| symbol\]: Awaited\<T\[P\<P\>\]\> \}\>
 
-Defined in: node\_modules/typescript/lib/lib.es2015.promise.d.ts:39
+Defined in: node_modules/typescript/lib/lib.es2015.promise.d.ts:39
 
 Creates a Promise that is resolved with an array of results when all of the provided Promises
 resolve, or rejected when any Promise is rejected.
@@ -227,7 +227,7 @@ resolve, or rejected when any Promise is rejected.
 
 ###### T
 
-`T` *extends* readonly `unknown`[] \| \[\]
+`T` _extends_ readonly `unknown`[] \| \[\]
 
 ##### Parameters
 
@@ -247,7 +247,7 @@ A new Promise.
 
 `Promise.all`
 
-***
+---
 
 ### allSettled()
 
@@ -255,7 +255,7 @@ A new Promise.
 
 > `static` **allSettled**\<`T`\>(`values`): `Promise`\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<Awaited\<T\[P\<P\>\]\>\> \}\>
 
-Defined in: node\_modules/typescript/lib/lib.es2020.promise.d.ts:38
+Defined in: node_modules/typescript/lib/lib.es2020.promise.d.ts:38
 
 Creates a Promise that is resolved with an array of results when all
 of the provided Promises resolve or reject.
@@ -264,7 +264,7 @@ of the provided Promises resolve or reject.
 
 ###### T
 
-`T` *extends* readonly `unknown`[] \| \[\]
+`T` _extends_ readonly `unknown`[] \| \[\]
 
 ##### Parameters
 
@@ -288,7 +288,7 @@ A new Promise.
 
 > `static` **allSettled**\<`T`\>(`values`): `Promise`\<`PromiseSettledResult`\<`Awaited`\<`T`\>\>[]\>
 
-Defined in: node\_modules/typescript/lib/lib.es2020.promise.d.ts:46
+Defined in: node_modules/typescript/lib/lib.es2020.promise.d.ts:46
 
 Creates a Promise that is resolved with an array of results when all
 of the provided Promises resolve or reject.
@@ -317,7 +317,7 @@ A new Promise.
 
 `Promise.allSettled`
 
-***
+---
 
 ### any()
 
@@ -325,7 +325,7 @@ A new Promise.
 
 > `static` **any**\<`T`\>(`values`): `Promise`\<`Awaited`\<`T`\[`number`\]\>\>
 
-Defined in: node\_modules/typescript/lib/lib.es2021.promise.d.ts:40
+Defined in: node_modules/typescript/lib/lib.es2021.promise.d.ts:40
 
 The any function returns a promise that is fulfilled by the first given promise to be fulfilled, or rejected with an AggregateError containing an array of rejection reasons if all of the given promises are rejected. It resolves all elements of the passed iterable to promises as it runs this algorithm.
 
@@ -333,7 +333,7 @@ The any function returns a promise that is fulfilled by the first given promise 
 
 ###### T
 
-`T` *extends* readonly `unknown`[] \| \[\]
+`T` _extends_ readonly `unknown`[] \| \[\]
 
 ##### Parameters
 
@@ -357,7 +357,7 @@ A new Promise.
 
 > `static` **any**\<`T`\>(`values`): `Promise`\<`Awaited`\<`T`\>\>
 
-Defined in: node\_modules/typescript/lib/lib.es2021.promise.d.ts:47
+Defined in: node_modules/typescript/lib/lib.es2021.promise.d.ts:47
 
 The any function returns a promise that is fulfilled by the first given promise to be fulfilled, or rejected with an AggregateError containing an array of rejection reasons if all of the given promises are rejected. It resolves all elements of the passed iterable to promises as it runs this algorithm.
 
@@ -385,7 +385,7 @@ A new Promise.
 
 `Promise.any`
 
-***
+---
 
 ### race()
 
@@ -393,7 +393,7 @@ A new Promise.
 
 > `static` **race**\<`T`\>(`values`): `Promise`\<`Awaited`\<`T`\>\>
 
-Defined in: node\_modules/typescript/lib/lib.es2015.iterable.d.ts:263
+Defined in: node_modules/typescript/lib/lib.es2015.iterable.d.ts:263
 
 Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
 or rejected.
@@ -426,7 +426,7 @@ A new Promise.
 
 > `static` **race**\<`T`\>(`values`): `Promise`\<`Awaited`\<`T`\[`number`\]\>\>
 
-Defined in: node\_modules/typescript/lib/lib.es2015.promise.d.ts:50
+Defined in: node_modules/typescript/lib/lib.es2015.promise.d.ts:50
 
 Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
 or rejected.
@@ -435,7 +435,7 @@ or rejected.
 
 ###### T
 
-`T` *extends* readonly `unknown`[] \| \[\]
+`T` _extends_ readonly `unknown`[] \| \[\]
 
 ##### Parameters
 
@@ -455,13 +455,13 @@ A new Promise.
 
 `Promise.race`
 
-***
+---
 
 ### reject()
 
 > `static` **reject**\<`T`\>(`reason?`): `Promise`\<`T`\>
 
-Defined in: node\_modules/typescript/lib/lib.es2015.promise.d.ts:60
+Defined in: node_modules/typescript/lib/lib.es2015.promise.d.ts:60
 
 Creates a new rejected promise for the provided reason.
 
@@ -489,7 +489,7 @@ A new rejected Promise.
 
 `Promise.reject`
 
-***
+---
 
 ### resolve()
 
@@ -497,7 +497,7 @@ A new rejected Promise.
 
 > `static` **resolve**(): `Promise`\<`void`\>
 
-Defined in: node\_modules/typescript/lib/lib.es2015.promise.d.ts:66
+Defined in: node_modules/typescript/lib/lib.es2015.promise.d.ts:66
 
 Creates a new resolved promise.
 
@@ -515,7 +515,7 @@ A resolved promise.
 
 > `static` **resolve**\<`T`\>(`value`): `Promise`\<`Awaited`\<`T`\>\>
 
-Defined in: node\_modules/typescript/lib/lib.es2015.promise.d.ts:72
+Defined in: node_modules/typescript/lib/lib.es2015.promise.d.ts:72
 
 Creates a new resolved promise for the provided value.
 
@@ -547,7 +547,7 @@ A promise whose internal state matches the provided promise.
 
 > `static` **resolve**\<`T`\>(`value`): `Promise`\<`Awaited`\<`T`\>\>
 
-Defined in: node\_modules/typescript/lib/lib.es2015.promise.d.ts:78
+Defined in: node_modules/typescript/lib/lib.es2015.promise.d.ts:78
 
 Creates a new resolved promise for the provided value.
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListAccessPermitRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2346
 
 Defined in: src/api/nebius/iam/v1/index.ts:2348
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2348
 
 Defined in: src/api/nebius/iam/v1/index.ts:2347
 
-***
+---
 
 ### filter
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2368
 
 A filter to narrow down the results based on specific criteria.
 
-***
+---
 
 ### pageSize
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2358
 
 Specifies the maximum number of items to return in the response.
 
-***
+---
 
 ### pageToken
 
@@ -54,7 +54,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2363
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

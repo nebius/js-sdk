@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [api/nebius](../README.md) / OneofPySDKSettings
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/index.ts:541
 
 Defined in: src/api/nebius/index.ts:543
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/index.ts:543
 
 Defined in: src/api/nebius/index.ts:542
 
-***
+---
 
 ### name
 

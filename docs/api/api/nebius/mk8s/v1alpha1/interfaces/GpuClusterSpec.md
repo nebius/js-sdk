@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / GpuClusterSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5370
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5372
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5372
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5371
 
-***
+---
 
 ### id
 

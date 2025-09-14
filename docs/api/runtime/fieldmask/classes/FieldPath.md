@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/fieldmask](../README.md) / FieldPath
 
@@ -64,7 +64,7 @@ Defined in: [src/runtime/fieldmask.ts:131](https://github.com/nebius/nodejs-sdk/
 
 `string`
 
-***
+---
 
 ### \[iterator\]()
 
@@ -76,7 +76,7 @@ Defined in: [src/runtime/fieldmask.ts:67](https://github.com/nebius/nodejs-sdk/b
 
 `Iterator`\<[`FieldKey`](FieldKey.md)\>
 
-***
+---
 
 ### append()
 
@@ -94,7 +94,7 @@ Defined in: [src/runtime/fieldmask.ts:76](https://github.com/nebius/nodejs-sdk/b
 
 `this`
 
-***
+---
 
 ### appendMany()
 
@@ -112,7 +112,7 @@ Defined in: [src/runtime/fieldmask.ts:80](https://github.com/nebius/nodejs-sdk/b
 
 `this`
 
-***
+---
 
 ### at()
 
@@ -130,7 +130,7 @@ Defined in: [src/runtime/fieldmask.ts:73](https://github.com/nebius/nodejs-sdk/b
 
 `undefined` \| [`FieldKey`](FieldKey.md)
 
-***
+---
 
 ### concat()
 
@@ -148,7 +148,7 @@ Defined in: [src/runtime/fieldmask.ts:84](https://github.com/nebius/nodejs-sdk/b
 
 `FieldPath`
 
-***
+---
 
 ### copy()
 
@@ -160,7 +160,7 @@ Defined in: [src/runtime/fieldmask.ts:93](https://github.com/nebius/nodejs-sdk/b
 
 `FieldPath`
 
-***
+---
 
 ### equals()
 
@@ -178,7 +178,7 @@ Defined in: [src/runtime/fieldmask.ts:96](https://github.com/nebius/nodejs-sdk/b
 
 `boolean`
 
-***
+---
 
 ### isPrefixOf()
 
@@ -196,7 +196,7 @@ Defined in: [src/runtime/fieldmask.ts:104](https://github.com/nebius/nodejs-sdk/
 
 `boolean`
 
-***
+---
 
 ### marshal()
 
@@ -208,7 +208,7 @@ Defined in: [src/runtime/fieldmask.ts:122](https://github.com/nebius/nodejs-sdk/
 
 `string`
 
-***
+---
 
 ### parent()
 
@@ -220,7 +220,7 @@ Defined in: [src/runtime/fieldmask.ts:89](https://github.com/nebius/nodejs-sdk/b
 
 `null` \| `FieldPath`
 
-***
+---
 
 ### toMask()
 
@@ -232,7 +232,7 @@ Defined in: [src/runtime/fieldmask.ts:112](https://github.com/nebius/nodejs-sdk/
 
 [`Mask`](Mask.md)
 
-***
+---
 
 ### toString()
 
@@ -244,7 +244,7 @@ Defined in: [src/runtime/fieldmask.ts:125](https://github.com/nebius/nodejs-sdk/
 
 `string`
 
-***
+---
 
 ### from()
 

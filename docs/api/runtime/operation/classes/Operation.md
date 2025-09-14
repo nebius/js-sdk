@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/operation](../README.md) / Operation
 
@@ -52,7 +52,7 @@ Defined in: [src/runtime/operation.ts:38](https://github.com/nebius/nodejs-sdk/b
 
 Defined in: [src/runtime/operation.ts:36](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/operation.ts#L36)
 
-***
+---
 
 ### innerType
 
@@ -72,7 +72,7 @@ Defined in: [src/runtime/operation.ts:59](https://github.com/nebius/nodejs-sdk/b
 
 `unknown`
 
-***
+---
 
 ### createdAt()
 
@@ -84,7 +84,7 @@ Defined in: [src/runtime/operation.ts:79](https://github.com/nebius/nodejs-sdk/b
 
 `undefined` \| [`Dayjs`](../../protos/core/dayjs/classes/Dayjs.md)
 
-***
+---
 
 ### createdBy()
 
@@ -96,7 +96,7 @@ Defined in: [src/runtime/operation.ts:83](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### description()
 
@@ -108,7 +108,7 @@ Defined in: [src/runtime/operation.ts:75](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### done()
 
@@ -120,7 +120,7 @@ Defined in: [src/runtime/operation.ts:103](https://github.com/nebius/nodejs-sdk/
 
 `boolean`
 
-***
+---
 
 ### finishedAt()
 
@@ -132,7 +132,7 @@ Defined in: [src/runtime/operation.ts:87](https://github.com/nebius/nodejs-sdk/b
 
 `undefined` \| [`Dayjs`](../../protos/core/dayjs/classes/Dayjs.md)
 
-***
+---
 
 ### id()
 
@@ -144,7 +144,7 @@ Defined in: [src/runtime/operation.ts:71](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### raw()
 
@@ -156,7 +156,7 @@ Defined in: [src/runtime/operation.ts:95](https://github.com/nebius/nodejs-sdk/b
 
 `GenericOperation`
 
-***
+---
 
 ### resourceId()
 
@@ -168,7 +168,7 @@ Defined in: [src/runtime/operation.ts:107](https://github.com/nebius/nodejs-sdk/
 
 `string`
 
-***
+---
 
 ### status()
 
@@ -180,7 +180,7 @@ Defined in: [src/runtime/operation.ts:99](https://github.com/nebius/nodejs-sdk/b
 
 `undefined` \| `Status`
 
-***
+---
 
 ### successful()
 
@@ -192,7 +192,7 @@ Defined in: [src/runtime/operation.ts:91](https://github.com/nebius/nodejs-sdk/b
 
 `boolean`
 
-***
+---
 
 ### toString()
 
@@ -204,7 +204,7 @@ Defined in: [src/runtime/operation.ts:52](https://github.com/nebius/nodejs-sdk/b
 
 `string`
 
-***
+---
 
 ### update()
 
@@ -226,7 +226,7 @@ Defined in: [src/runtime/operation.ts:148](https://github.com/nebius/nodejs-sdk/
 
 `Promise`\<`void`\>
 
-***
+---
 
 ### wait()
 

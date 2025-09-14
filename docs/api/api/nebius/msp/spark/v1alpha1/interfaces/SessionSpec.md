@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / SessionSpec
 
@@ -18,7 +18,7 @@ Spark Session specification
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4924
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4924
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4923
 
-***
+---
 
 ### description?
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4929
 
 Description of the session.
 
-***
+---
 
 ### driver?
 
@@ -44,7 +44,7 @@ Description of the session.
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4930
 
-***
+---
 
 ### executor?
 
@@ -52,7 +52,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4930
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4931
 
-***
+---
 
 ### fileUris
 
@@ -62,7 +62,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4937
 
 S3 URIs of files to be placed in executor working directory
 
-***
+---
 
 ### jarUris
 
@@ -72,7 +72,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4942
 
 S3 URIs of Jars to be placed in classpaths of driver and executors for java applications
 
-***
+---
 
 ### packages
 
@@ -82,7 +82,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4947
 
 List of maven coordinates of jars to include on the driver and executor classpaths
 
-***
+---
 
 ### python?
 
@@ -92,7 +92,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4957
 
 Python runtime-specific session config
 
-***
+---
 
 ### sparkConf
 
@@ -106,7 +106,7 @@ Map of spark configuration parameters
 
 \[`key`: `string`\]: `string`
 
-***
+---
 
 ### sparkVersion
 

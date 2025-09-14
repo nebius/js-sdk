@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListObjectsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6300
 
 Defined in: src/api/nebius/storage/v1/index.ts:6302
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6302
 
 Defined in: src/api/nebius/storage/v1/index.ts:6301
 
-***
+---
 
 ### commonPrefixes
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6301
 
 Defined in: src/api/nebius/storage/v1/index.ts:6304
 
-***
+---
 
 ### objects
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6304
 
 Defined in: src/api/nebius/storage/v1/index.ts:6303
 
-***
+---
 
 ### truncated
 

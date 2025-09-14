@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListAuthPublicKeyByAccountRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4041
 
 Defined in: src/api/nebius/iam/v1/index.ts:4043
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4043
 
 Defined in: src/api/nebius/iam/v1/index.ts:4042
 
-***
+---
 
 ### account?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4048
 
 Represents the parent account ID.
 
-***
+---
 
 ### filter
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4064
 
 A filter to narrow down the results based on specific criteria.
 
-***
+---
 
 ### pageSize
 
@@ -53,9 +53,9 @@ A filter to narrow down the results based on specific criteria.
 Defined in: src/api/nebius/iam/v1/index.ts:4054
 
 Specifies the maximum number of items to return in the response.
- Default value: 10
+Default value: 10
 
-***
+---
 
 ### pageToken
 

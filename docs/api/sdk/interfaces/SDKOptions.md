@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../README.md) / [sdk](../README.md) / SDKOptions
 
@@ -16,7 +16,7 @@ Defined in: [src/sdk.ts:74](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:80](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L80)
 
-***
+---
 
 ### clientOptions?
 
@@ -24,7 +24,7 @@ Defined in: [src/sdk.ts:80](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:82](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L82)
 
-***
+---
 
 ### configReader?
 
@@ -32,7 +32,7 @@ Defined in: [src/sdk.ts:82](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:78](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L78)
 
-***
+---
 
 ### credentials?
 
@@ -40,7 +40,7 @@ Defined in: [src/sdk.ts:78](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:85](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L85)
 
-***
+---
 
 ### domain?
 
@@ -48,7 +48,7 @@ Defined in: [src/sdk.ts:85](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:77](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L77)
 
-***
+---
 
 ### federationInvitationNoBrowserOpen?
 
@@ -56,7 +56,7 @@ Defined in: [src/sdk.ts:77](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:90](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L90)
 
-***
+---
 
 ### federationInvitationTimeoutMs?
 
@@ -64,7 +64,7 @@ Defined in: [src/sdk.ts:90](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:91](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L91)
 
-***
+---
 
 ### federationInvitationWriter()?
 
@@ -82,7 +82,7 @@ Defined in: [src/sdk.ts:89](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 `void`
 
-***
+---
 
 ### insecure?
 
@@ -90,7 +90,7 @@ Defined in: [src/sdk.ts:89](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:81](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L81)
 
-***
+---
 
 ### interceptors?
 
@@ -98,7 +98,7 @@ Defined in: [src/sdk.ts:81](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:83](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L83)
 
-***
+---
 
 ### logger?
 
@@ -106,7 +106,7 @@ Defined in: [src/sdk.ts:83](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:94](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L94)
 
-***
+---
 
 ### parentId?
 
@@ -114,7 +114,7 @@ Defined in: [src/sdk.ts:94](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:79](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L79)
 
-***
+---
 
 ### perAddress?
 
@@ -122,7 +122,7 @@ Defined in: [src/sdk.ts:79](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:96](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L96)
 
-***
+---
 
 ### resolver?
 
@@ -130,7 +130,7 @@ Defined in: [src/sdk.ts:96](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:75](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L75)
 
-***
+---
 
 ### substitutions?
 
@@ -138,7 +138,7 @@ Defined in: [src/sdk.ts:75](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:76](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L76)
 
-***
+---
 
 ### tlsRootCAs?
 
@@ -146,7 +146,7 @@ Defined in: [src/sdk.ts:76](https://github.com/nebius/nodejs-sdk/blob/a37d220b28
 
 Defined in: [src/sdk.ts:87](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/sdk.ts#L87)
 
-***
+---
 
 ### userAgentPrefix?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / DeleteServiceAccountRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:16613
 
 Defined in: src/api/nebius/iam/v1/index.ts:16615
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:16615
 
 Defined in: src/api/nebius/iam/v1/index.ts:16614
 
-***
+---
 
 ### id
 

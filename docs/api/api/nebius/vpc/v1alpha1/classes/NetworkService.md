@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / NetworkService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3599
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkRequest`](../interfaces/GetNetworkRequest.md), [`Network`](../interfaces/Network.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3611
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNetworkByNameRequest`](../interfaces/GetNetworkByNameRequest.md), [`Network`](../interfaces/Network.md)\>
 
-***
+---
 
 ### list()
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/serverless/v1alpha1](../README.md) / JobSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2322
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2324
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2324
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2323
 
-***
+---
 
 ### container?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2339
 
 Container spec
 
-***
+---
 
 ### description
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2329
 
 Description of the job.
 
-***
+---
 
 ### networkId
 

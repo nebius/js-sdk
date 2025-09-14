@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/quotas/v1](../README.md) / QuotaAllowanceServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/quotas/v1/index.ts:520
 
 Defined in: src/api/nebius/quotas/v1/index.ts:522
 
-***
+---
 
 ### getByName
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/quotas/v1/index.ts:522
 
 Defined in: src/api/nebius/quotas/v1/index.ts:523
 
-***
+---
 
 ### list
 

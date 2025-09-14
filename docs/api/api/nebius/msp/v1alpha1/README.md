@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / api/nebius/msp/v1alpha1
 
@@ -18,16 +18,16 @@
 
 ## Type Aliases
 
-- [ClusterStatus\_Phase](type-aliases/ClusterStatus_Phase.md)
-- [ClusterStatus\_PhaseClass](type-aliases/ClusterStatus_PhaseClass.md)
-- [ClusterStatus\_State](type-aliases/ClusterStatus_State.md)
-- [ClusterStatus\_StateClass](type-aliases/ClusterStatus_StateClass.md)
+- [ClusterStatus_Phase](type-aliases/ClusterStatus_Phase.md)
+- [ClusterStatus_PhaseClass](type-aliases/ClusterStatus_PhaseClass.md)
+- [ClusterStatus_State](type-aliases/ClusterStatus_State.md)
+- [ClusterStatus_StateClass](type-aliases/ClusterStatus_StateClass.md)
 
 ## Variables
 
 - [ClusterStatus](variables/ClusterStatus.md)
-- [ClusterStatus\_Phase](variables/ClusterStatus_Phase.md)
-- [ClusterStatus\_State](variables/ClusterStatus_State.md)
+- [ClusterStatus_Phase](variables/ClusterStatus_Phase.md)
+- [ClusterStatus_State](variables/ClusterStatus_State.md)
 - [DeleteRequest](variables/DeleteRequest.md)
 - [GetByNameRequest](variables/GetByNameRequest.md)
 - [GetRequest](variables/GetRequest.md)

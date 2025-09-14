@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / AuthPublicKeyService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4898
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAuthPublicKeyRequest`](../interfaces/ActivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### create()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4832
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAuthPublicKeyRequest`](../interfaces/CreateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### deactivate()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4913
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAuthPublicKeyRequest`](../interfaces/DeactivateAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4928
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAuthPublicKeyRequest`](../interfaces/DeleteAuthPublicKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -658,7 +658,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4847
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAuthPublicKeyRequest`](../interfaces/GetAuthPublicKeyRequest.md), [`AuthPublicKey`](../interfaces/AuthPublicKey.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4826
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -794,7 +794,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4859
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyRequest`](../interfaces/ListAuthPublicKeyRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-***
+---
 
 ### listByAccount()
 
@@ -918,7 +918,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4871
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAuthPublicKeyByAccountRequest`](../interfaces/ListAuthPublicKeyByAccountRequest.md), [`ListAuthPublicKeyResponse`](../interfaces/ListAuthPublicKeyResponse.md)\>
 
-***
+---
 
 ### update()
 

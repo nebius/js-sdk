@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/serverless/v1alpha1](../README.md) / ListEndpointsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:154
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:156
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:156
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:155
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:161
 
 List of Endpoints.
 
-***
+---
 
 ### nextPageToken
 

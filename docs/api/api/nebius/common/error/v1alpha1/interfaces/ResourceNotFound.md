@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/common/error/v1alpha1](../README.md) / ResourceNotFound
 
@@ -18,7 +18,7 @@ Resource we are trying to interact with does not exist.
 
 Defined in: src/api/nebius/common/error/v1alpha1/index.ts:338
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/common/error/v1alpha1/index.ts:338
 
 Defined in: src/api/nebius/common/error/v1alpha1/index.ts:337
 
-***
+---
 
 ### resourceId
 

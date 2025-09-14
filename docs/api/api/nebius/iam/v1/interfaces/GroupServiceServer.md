@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / GroupServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:12488
 
 Defined in: src/api/nebius/iam/v1/index.ts:12489
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:12489
 
 Defined in: src/api/nebius/iam/v1/index.ts:12493
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:12493
 
 Defined in: src/api/nebius/iam/v1/index.ts:12490
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:12490
 
 Defined in: src/api/nebius/iam/v1/index.ts:12491
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:12491
 
 Defined in: src/api/nebius/iam/v1/index.ts:12492
 
-***
+---
 
 ### update
 

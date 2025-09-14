@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/audit/v2](../README.md) / Request
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1495
 
 Defined in: src/api/nebius/audit/v2/index.ts:1497
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1497
 
 Defined in: src/api/nebius/audit/v2/index.ts:1496
 
-***
+---
 
 ### clientIp
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1502
 
 Ip of the subject who initiated the RPC call.
 
-***
+---
 
 ### idempotencyId
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1522
 
 Unique key that the server uses to recognize subsequent retries of the same request.
 
-***
+---
 
 ### ja3Fingerprint
 
@@ -54,7 +54,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1532
 
 Client Ja3 fingerprint
 
-***
+---
 
 ### parameters?
 
@@ -68,7 +68,7 @@ Parameters of the request.
 
 \[`key`: `string`\]: `any`
 
-***
+---
 
 ### requestId
 
@@ -78,7 +78,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1512
 
 Unique identifier of the request.
 
-***
+---
 
 ### traceId
 
@@ -88,7 +88,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1527
 
 A unique identifier that allows you to link calls to different services within an operation.
 
-***
+---
 
 ### userAgent
 

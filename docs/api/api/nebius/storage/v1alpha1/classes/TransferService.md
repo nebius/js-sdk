@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / TransferService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1312
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateTransferRequest`](../interfaces/CreateTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -294,7 +294,7 @@ Fully delete a transfer along with its history. Only stopped or failed transfers
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteTransferRequest`](../interfaces/DeleteTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -418,7 +418,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1276
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetTransferRequest`](../interfaces/GetTransferRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -542,7 +542,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1288
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Transfer`](../interfaces/Transfer.md)\>
 
-***
+---
 
 ### getIterationHistory()
 
@@ -666,7 +666,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1387
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetIterationHistoryRequest`](../interfaces/GetIterationHistoryRequest.md), [`GetIterationHistoryResponse`](../interfaces/GetIterationHistoryResponse.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -678,7 +678,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1270
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -802,7 +802,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1300
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListTransfersRequest`](../interfaces/ListTransfersRequest.md), [`ListTransfersResponse`](../interfaces/ListTransfersResponse.md)\>
 
-***
+---
 
 ### resume()
 
@@ -934,7 +934,7 @@ Resume stopped or failed transfer.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResumeTransferRequest`](../interfaces/ResumeTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### stop()
 
@@ -945,9 +945,9 @@ Resume stopped or failed transfer.
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1237
 
 Stop active transfer. If the transfer is currently moving data,
- it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
- If the transfer is waiting between iterations, it will stop immediately.
- Only transfer in Active state can be stopped.
+it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
+If the transfer is waiting between iterations, it will stop immediately.
+Only transfer in Active state can be stopped.
 
 ##### Parameters
 
@@ -1010,9 +1010,9 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1239
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1340
 
 Stop active transfer. If the transfer is currently moving data,
- it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
- If the transfer is waiting between iterations, it will stop immediately.
- Only transfer in Active state can be stopped.
+it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
+If the transfer is waiting between iterations, it will stop immediately.
+Only transfer in Active state can be stopped.
 
 ##### Parameters
 
@@ -1031,9 +1031,9 @@ Stop active transfer. If the transfer is currently moving data,
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1341
 
 Stop active transfer. If the transfer is currently moving data,
- it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
- If the transfer is waiting between iterations, it will stop immediately.
- Only transfer in Active state can be stopped.
+it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
+If the transfer is waiting between iterations, it will stop immediately.
+Only transfer in Active state can be stopped.
 
 ##### Parameters
 
@@ -1056,9 +1056,9 @@ Stop active transfer. If the transfer is currently moving data,
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1342
 
 Stop active transfer. If the transfer is currently moving data,
- it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
- If the transfer is waiting between iterations, it will stop immediately.
- Only transfer in Active state can be stopped.
+it will be transitioned to the Stopping state and will move to the Stopped state once all processes have been stopped.
+If the transfer is waiting between iterations, it will stop immediately.
+Only transfer in Active state can be stopped.
 
 ##### Parameters
 
@@ -1078,7 +1078,7 @@ Stop active transfer. If the transfer is currently moving data,
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopTransferRequest`](../interfaces/StopTransferRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### update()
 

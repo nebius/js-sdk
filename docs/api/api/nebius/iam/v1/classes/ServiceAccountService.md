@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ServiceAccountService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:16931
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateServiceAccountRequest`](../interfaces/CreateServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:16997
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteServiceAccountRequest`](../interfaces/DeleteServiceAccountRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:16946
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountRequest`](../interfaces/GetServiceAccountRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:16958
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetServiceAccountByNameRequest`](../interfaces/GetServiceAccountByNameRequest.md), [`ServiceAccount`](../interfaces/ServiceAccount.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:16925
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:16970
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListServiceAccountRequest`](../interfaces/ListServiceAccountRequest.md), [`ListServiceAccountResponse`](../interfaces/ListServiceAccountResponse.md)\>
 
-***
+---
 
 ### update()
 

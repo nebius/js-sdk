@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / StaticKeyServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18888
 
 Defined in: src/api/nebius/iam/v1/index.ts:18893
 
-***
+---
 
 ### find
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18893
 
 Defined in: src/api/nebius/iam/v1/index.ts:18894
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18894
 
 Defined in: src/api/nebius/iam/v1/index.ts:18891
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18891
 
 Defined in: src/api/nebius/iam/v1/index.ts:18892
 
-***
+---
 
 ### issue
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18892
 
 Defined in: src/api/nebius/iam/v1/index.ts:18889
 
-***
+---
 
 ### list
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18889
 
 Defined in: src/api/nebius/iam/v1/index.ts:18890
 
-***
+---
 
 ### revoke
 

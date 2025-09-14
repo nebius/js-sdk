@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / NodeGroupService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4302
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateNodeGroupRequest`](../interfaces/CreateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4332
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteNodeGroupRequest`](../interfaces/DeleteNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4266
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupRequest`](../interfaces/GetNodeGroupRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4278
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetNodeGroupByNameRequest`](../interfaces/GetNodeGroupByNameRequest.md), [`NodeGroup`](../interfaces/NodeGroup.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4260
 
 [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4290
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListNodeGroupsRequest`](../interfaces/ListNodeGroupsRequest.md), [`ListNodeGroupsResponse`](../interfaces/ListNodeGroupsResponse.md)\>
 
-***
+---
 
 ### update()
 
@@ -794,7 +794,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4317
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`UpdateNodeGroupRequest`](../interfaces/UpdateNodeGroupRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### upgrade()
 

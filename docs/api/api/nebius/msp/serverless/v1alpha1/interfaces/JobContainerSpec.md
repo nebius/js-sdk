@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/serverless/v1alpha1](../README.md) / JobContainerSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2461
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2463
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2463
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2462
 
-***
+---
 
 ### args
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2488
 
 Command args
 
-***
+---
 
 ### command
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2483
 
 Job command
 
-***
+---
 
 ### envs
 
@@ -58,7 +58,7 @@ Environment variables
 
 \[`key`: `string`\]: `string`
 
-***
+---
 
 ### image
 
@@ -68,7 +68,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2468
 
 Image name
 
-***
+---
 
 ### maxRetries
 
@@ -78,7 +78,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2508
 
 Max retries (0 - no retries)
 
-***
+---
 
 ### replicaCount
 
@@ -88,7 +88,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2473
 
 Replica count
 
-***
+---
 
 ### sensitiveEnvs
 
@@ -102,7 +102,7 @@ Environment variables with sensitive data
 
 \[`key`: `string`\]: `string`
 
-***
+---
 
 ### template?
 
@@ -112,7 +112,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2478
 
 Container resource template
 
-***
+---
 
 ### timeoutSeconds
 

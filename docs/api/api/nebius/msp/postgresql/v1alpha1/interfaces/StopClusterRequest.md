@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / StopClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2009
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2011
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2011
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2010
 
-***
+---
 
 ### id
 
@@ -33,4 +33,4 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2010
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2017
 
 ID of the PostgreSQL Cluster resource to pause.
- To get the cluster ID use a [ClusterService.List] request.
+To get the cluster ID use a [ClusterService.List] request.

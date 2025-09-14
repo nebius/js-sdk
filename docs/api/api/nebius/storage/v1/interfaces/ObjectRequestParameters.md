@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ObjectRequestParameters
 
@@ -8,7 +8,7 @@
 
 Defined in: src/api/nebius/storage/v1/index.ts:5177
 
-----------------------------------------
+---
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5177
 
 Defined in: src/api/nebius/storage/v1/index.ts:5179
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5179
 
 Defined in: src/api/nebius/storage/v1/index.ts:5178
 
-***
+---
 
 ### bucketName
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5178
 
 Defined in: src/api/nebius/storage/v1/index.ts:5180
 
-***
+---
 
 ### objectKey
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5180
 
 Defined in: src/api/nebius/storage/v1/index.ts:5181
 
-***
+---
 
 ### version
 

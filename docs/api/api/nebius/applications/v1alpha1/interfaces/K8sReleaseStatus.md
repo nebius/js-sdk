@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/applications/v1alpha1](../README.md) / K8sReleaseStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1233
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:1235
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1235
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:1234
 
-***
+---
 
 ### errorMessage
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1234
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:1237
 
-***
+---
 
 ### state
 

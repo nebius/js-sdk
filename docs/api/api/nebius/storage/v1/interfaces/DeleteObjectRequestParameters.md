@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteObjectRequestParameters
 
@@ -8,7 +8,7 @@
 
 Defined in: src/api/nebius/storage/v1/index.ts:4469
 
-----------------------------------------
+---
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4469
 
 Defined in: src/api/nebius/storage/v1/index.ts:4471
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4471
 
 Defined in: src/api/nebius/storage/v1/index.ts:4470
 
-***
+---
 
 ### bucketName
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4470
 
 Defined in: src/api/nebius/storage/v1/index.ts:4472
 
-***
+---
 
 ### objectKey
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4472
 
 Defined in: src/api/nebius/storage/v1/index.ts:4473
 
-***
+---
 
 ### version
 

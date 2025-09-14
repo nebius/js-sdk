@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / LifecycleNoncurrentVersionTransition
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3528
 
 Defined in: src/api/nebius/storage/v1/index.ts:3530
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3530
 
 Defined in: src/api/nebius/storage/v1/index.ts:3529
 
-***
+---
 
 ### newerNoncurrentVersions?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3535
 
 Specifies how many noncurrent versions the system will retain without transition.
 
-***
+---
 
 ### noncurrentDays
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3540
 
 Specifies the number of days an object is noncurrent before the system will transit it.
 
-***
+---
 
 ### storageClass
 

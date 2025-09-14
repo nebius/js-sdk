@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/resolver](../README.md) / Constant
 
@@ -46,7 +46,7 @@ Defined in: [src/runtime/resolver.ts:65](https://github.com/nebius/nodejs-sdk/bl
 
 `object`
 
-***
+---
 
 ### resolve()
 

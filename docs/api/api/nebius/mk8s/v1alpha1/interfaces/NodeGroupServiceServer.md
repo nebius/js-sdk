@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / NodeGroupServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4198
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4202
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4202
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4204
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4204
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4199
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4199
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4200
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4200
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4201
 
-***
+---
 
 ### update
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4201
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4203
 
-***
+---
 
 ### upgrade
 

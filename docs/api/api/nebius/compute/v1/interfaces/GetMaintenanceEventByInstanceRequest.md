@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / GetMaintenanceEventByInstanceRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9339
 
 Defined in: src/api/nebius/compute/v1/index.ts:9341
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9341
 
 Defined in: src/api/nebius/compute/v1/index.ts:9340
 
-***
+---
 
 ### instanceId
 

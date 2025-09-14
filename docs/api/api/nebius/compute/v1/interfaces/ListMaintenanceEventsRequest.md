@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / ListMaintenanceEventsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9424
 
 Defined in: src/api/nebius/compute/v1/index.ts:9426
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9426
 
 Defined in: src/api/nebius/compute/v1/index.ts:9425
 
-***
+---
 
 ### pageSize
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9425
 
 Defined in: src/api/nebius/compute/v1/index.ts:9428
 
-***
+---
 
 ### pageToken
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9428
 
 Defined in: src/api/nebius/compute/v1/index.ts:9429
 
-***
+---
 
 ### parentId
 

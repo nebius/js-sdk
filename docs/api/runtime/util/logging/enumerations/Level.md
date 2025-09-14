@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/logging](../README.md) / Level
 
@@ -16,7 +16,7 @@ Defined in: [src/runtime/util/logging.ts:23](https://github.com/nebius/nodejs-sd
 
 Defined in: [src/runtime/util/logging.ts:25](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L25)
 
-***
+---
 
 ### ERROR
 
@@ -24,7 +24,7 @@ Defined in: [src/runtime/util/logging.ts:25](https://github.com/nebius/nodejs-sd
 
 Defined in: [src/runtime/util/logging.ts:28](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L28)
 
-***
+---
 
 ### INFO
 
@@ -32,7 +32,7 @@ Defined in: [src/runtime/util/logging.ts:28](https://github.com/nebius/nodejs-sd
 
 Defined in: [src/runtime/util/logging.ts:26](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L26)
 
-***
+---
 
 ### NONE
 
@@ -40,7 +40,7 @@ Defined in: [src/runtime/util/logging.ts:26](https://github.com/nebius/nodejs-sd
 
 Defined in: [src/runtime/util/logging.ts:29](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L29)
 
-***
+---
 
 ### TRACE
 
@@ -48,7 +48,7 @@ Defined in: [src/runtime/util/logging.ts:29](https://github.com/nebius/nodejs-sd
 
 Defined in: [src/runtime/util/logging.ts:24](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L24)
 
-***
+---
 
 ### WARN
 

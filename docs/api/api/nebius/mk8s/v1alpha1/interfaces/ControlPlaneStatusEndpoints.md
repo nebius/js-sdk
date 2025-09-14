@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / ControlPlaneStatusEndpoints
 
@@ -18,7 +18,7 @@ Endpoints of Kubernetes control plane. Kubernetes API can be accessed at `https:
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2235
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2235
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2234
 
-***
+---
 
 ### privateEndpoint
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2245
 
 DNS name or IP address accessible from the user VPC.
 
-***
+---
 
 ### publicEndpoint
 

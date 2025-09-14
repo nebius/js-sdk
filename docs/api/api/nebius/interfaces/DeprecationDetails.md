@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [api/nebius](../README.md) / DeprecationDetails
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/index.ts:796
 
 Defined in: src/api/nebius/index.ts:798
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/index.ts:798
 
 Defined in: src/api/nebius/index.ts:797
 
-***
+---
 
 ### description
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/index.ts:808
 
 A description to help users understand the reason for deprecation and suggest alternatives
 
-***
+---
 
 ### effectiveAt
 

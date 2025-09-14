@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/registry/v1](../README.md) / RegistryServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1528
 
 Defined in: src/api/nebius/registry/v1/index.ts:1531
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1531
 
 Defined in: src/api/nebius/registry/v1/index.ts:1533
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1533
 
 Defined in: src/api/nebius/registry/v1/index.ts:1529
 
-***
+---
 
 ### list
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1529
 
 Defined in: src/api/nebius/registry/v1/index.ts:1530
 
-***
+---
 
 ### update
 

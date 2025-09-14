@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / BackupSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3695
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3697
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3697
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3696
 
-***
+---
 
 ### backupWindowStart
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:3702
 
 Backup window start in "HH:MM:SS" format (UTC Time)
 
-***
+---
 
 ### retentionPolicy
 

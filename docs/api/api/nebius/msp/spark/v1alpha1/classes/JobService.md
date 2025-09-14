@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / JobService
 
@@ -170,7 +170,7 @@ Cancel the job.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CancelJobRequest`](../interfaces/CancelJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### create()
 
@@ -302,7 +302,7 @@ Creates a job.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateJobRequest`](../interfaces/CreateJobRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -434,7 +434,7 @@ Returns the specified job.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetJobRequest`](../interfaces/GetJobRequest.md), [`Job`](../interfaces/Job.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -446,7 +446,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2565
 
 [`OperationService`](../../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 

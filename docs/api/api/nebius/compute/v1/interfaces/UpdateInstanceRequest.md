@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / UpdateInstanceRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:6448
 
 Defined in: src/api/nebius/compute/v1/index.ts:6450
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:6450
 
 Defined in: src/api/nebius/compute/v1/index.ts:6449
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:6449
 
 Defined in: src/api/nebius/compute/v1/index.ts:6451
 
-***
+---
 
 ### spec?
 

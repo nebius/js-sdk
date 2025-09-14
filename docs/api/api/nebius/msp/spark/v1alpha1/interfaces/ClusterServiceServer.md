@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / ClusterServiceServer
 
@@ -28,7 +28,7 @@ Deprecated, will be removed on 2025-08-12: Nebius AI Cloud no longer supports th
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:866
 
-***
+---
 
 ### ~~delete~~
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:866
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:868
 
-***
+---
 
 ### ~~get~~
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:868
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:863
 
-***
+---
 
 ### ~~getByName~~
 
@@ -52,7 +52,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:863
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:864
 
-***
+---
 
 ### ~~list~~
 
@@ -60,7 +60,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:864
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:865
 
-***
+---
 
 ### ~~update~~
 

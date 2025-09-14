@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/logging](../README.md) / ConsoleHandler
 
@@ -72,7 +72,7 @@ Defined in: [src/runtime/util/logging.ts:267](https://github.com/nebius/nodejs-s
 
 `object`
 
-***
+---
 
 ### argString()
 
@@ -90,7 +90,7 @@ Defined in: [src/runtime/util/logging.ts:292](https://github.com/nebius/nodejs-s
 
 `string`
 
-***
+---
 
 ### log()
 

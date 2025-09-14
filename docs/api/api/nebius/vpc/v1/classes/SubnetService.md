@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / SubnetService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7213
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateSubnetRequest`](../interfaces/CreateSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7243
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteSubnetRequest`](../interfaces/DeleteSubnetRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7165
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetRequest`](../interfaces/GetSubnetRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7177
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetSubnetByNameRequest`](../interfaces/GetSubnetByNameRequest.md), [`Subnet`](../interfaces/Subnet.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7159
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7189
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsRequest`](../interfaces/ListSubnetsRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-***
+---
 
 ### listByNetwork()
 
@@ -794,7 +794,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7201
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListSubnetsByNetworkRequest`](../interfaces/ListSubnetsByNetworkRequest.md), [`ListSubnetsResponse`](../interfaces/ListSubnetsResponse.md)\>
 
-***
+---
 
 ### update()
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/authorization/token](../README.md) / TokenProvider
 
@@ -54,7 +54,7 @@ Defined in: [src/runtime/authorization/token.ts:44](https://github.com/nebius/no
 
 `unknown`
 
-***
+---
 
 ### authenticator()
 
@@ -70,7 +70,7 @@ Defined in: [src/runtime/authorization/token.ts:51](https://github.com/nebius/no
 
 [`Provider`](../../provider/interfaces/Provider.md).[`authenticator`](../../provider/interfaces/Provider.md#authenticator)
 
-***
+---
 
 ### close()
 

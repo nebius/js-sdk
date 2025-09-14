@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / ListAllocationsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:206
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:208
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:208
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:207
 
-***
+---
 
 ### filter
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:207
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:212
 
-***
+---
 
 ### pageSize
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:212
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:210
 
-***
+---
 
 ### pageToken
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:210
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:211
 
-***
+---
 
 ### parentId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / UserTenantInfo
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14862
 
 Defined in: src/api/nebius/iam/v1/index.ts:14864
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14864
 
 Defined in: src/api/nebius/iam/v1/index.ts:14863
 
-***
+---
 
 ### tenantId
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:14863
 
 Defined in: src/api/nebius/iam/v1/index.ts:14865
 
-***
+---
 
 ### tenantUserAccountId
 

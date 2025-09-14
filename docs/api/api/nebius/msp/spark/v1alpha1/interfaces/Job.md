@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / Job
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2644
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2646
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2646
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2645
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2645
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2647
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2647
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2648
 
-***
+---
 
 ### status?
 

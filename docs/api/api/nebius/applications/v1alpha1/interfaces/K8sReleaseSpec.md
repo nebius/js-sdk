@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/applications/v1alpha1](../README.md) / K8sReleaseSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1011
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:1013
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1013
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:1012
 
-***
+---
 
 ### applicationName
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1012
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:1017
 
-***
+---
 
 ### clusterId
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1017
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:1014
 
-***
+---
 
 ### namespace
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1014
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:1016
 
-***
+---
 
 ### productSlug
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1016
 
 Defined in: src/api/nebius/applications/v1alpha1/index.ts:1015
 
-***
+---
 
 ### set
 
@@ -68,7 +68,7 @@ Defined in: src/api/nebius/applications/v1alpha1/index.ts:1019
 
 \[`key`: `string`\]: `string`
 
-***
+---
 
 ### values
 

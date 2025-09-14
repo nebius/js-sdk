@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / DiskSpec\_DiskType
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / DiskSpec_DiskType
 
-# Variable: DiskSpec\_DiskType
+# Variable: DiskSpec_DiskType
 
-> **DiskSpec\_DiskType**: [`DiskSpec_DiskTypeClass`](../type-aliases/DiskSpec_DiskTypeClass.md)
+> **DiskSpec_DiskType**: [`DiskSpec_DiskTypeClass`](../type-aliases/DiskSpec_DiskTypeClass.md)
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2838

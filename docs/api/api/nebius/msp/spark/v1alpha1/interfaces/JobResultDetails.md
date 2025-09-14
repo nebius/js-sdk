@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / JobResultDetails
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3193
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3195
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3195
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3194
 
-***
+---
 
 ### code
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListAuthPublicKeyResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4571
 
 Defined in: src/api/nebius/iam/v1/index.ts:4573
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4573
 
 Defined in: src/api/nebius/iam/v1/index.ts:4572
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:4578
 
 List of auth public keys returned in the response. The field should be named as `items` for consistency.
 
-***
+---
 
 ### nextPageToken
 

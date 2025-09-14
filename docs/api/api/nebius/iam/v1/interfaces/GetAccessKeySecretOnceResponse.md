@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / GetAccessKeySecretOnceResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1225
 
 Defined in: src/api/nebius/iam/v1/index.ts:1227
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:1227
 
 Defined in: src/api/nebius/iam/v1/index.ts:1226
 
-***
+---
 
 ### secret
 

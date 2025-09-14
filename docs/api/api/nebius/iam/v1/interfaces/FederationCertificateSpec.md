@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / FederationCertificateSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8182
 
 Defined in: src/api/nebius/iam/v1/index.ts:8184
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8184
 
 Defined in: src/api/nebius/iam/v1/index.ts:8183
 
-***
+---
 
 ### data
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8183
 
 Defined in: src/api/nebius/iam/v1/index.ts:8186
 
-***
+---
 
 ### description
 

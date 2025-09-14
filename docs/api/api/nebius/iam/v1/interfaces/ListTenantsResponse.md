@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListTenantsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:19673
 
 Defined in: src/api/nebius/iam/v1/index.ts:19675
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:19675
 
 Defined in: src/api/nebius/iam/v1/index.ts:19674
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:19674
 
 Defined in: src/api/nebius/iam/v1/index.ts:19676
 
-***
+---
 
 ### nextPageToken
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / ListTransfersRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:101
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:103
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:103
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:102
 
-***
+---
 
 ### pageSize
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:113
 
 Specifies the maximum number of items to return in the response. Default: 10.
 
-***
+---
 
 ### pageToken
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:118
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

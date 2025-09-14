@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / SubnetServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7097
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7102
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7102
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7104
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7104
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7098
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7098
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7099
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7099
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7100
 
-***
+---
 
 ### listByNetwork
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7100
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7101
 
-***
+---
 
 ### update
 

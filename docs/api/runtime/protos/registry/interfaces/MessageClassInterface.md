@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/registry](../README.md) / MessageClassInterface
 
@@ -34,7 +34,7 @@ Defined in: [src/runtime/protos/registry.ts:16](https://github.com/nebius/nodejs
 
 [`MessageInstanceInterface`](MessageInstanceInterface.md)
 
-***
+---
 
 ### decode()
 
@@ -56,7 +56,7 @@ Defined in: [src/runtime/protos/registry.ts:11](https://github.com/nebius/nodejs
 
 [`MessageInstanceInterface`](MessageInstanceInterface.md)
 
-***
+---
 
 ### encode()
 
@@ -78,7 +78,7 @@ Defined in: [src/runtime/protos/registry.ts:10](https://github.com/nebius/nodejs
 
 [`BinaryWriter`](../../core/classes/BinaryWriter.md)
 
-***
+---
 
 ### fromJSON()
 
@@ -96,7 +96,7 @@ Defined in: [src/runtime/protos/registry.ts:13](https://github.com/nebius/nodejs
 
 [`MessageInstanceInterface`](MessageInstanceInterface.md)
 
-***
+---
 
 ### fromPartial()
 
@@ -114,7 +114,7 @@ Defined in: [src/runtime/protos/registry.ts:18](https://github.com/nebius/nodejs
 
 [`MessageInstanceInterface`](MessageInstanceInterface.md)
 
-***
+---
 
 ### toJSON()
 

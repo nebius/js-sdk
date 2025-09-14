@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/logging](../README.md) / JsonHandler
 
@@ -60,7 +60,7 @@ Defined in: [src/runtime/util/logging.ts:516](https://github.com/nebius/nodejs-s
 
 `object`
 
-***
+---
 
 ### log()
 

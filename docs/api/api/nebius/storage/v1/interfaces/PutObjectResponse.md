@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / PutObjectResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6981
 
 Defined in: src/api/nebius/storage/v1/index.ts:6983
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6983
 
 Defined in: src/api/nebius/storage/v1/index.ts:6982
 
-***
+---
 
 ### etag
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6982
 
 Defined in: src/api/nebius/storage/v1/index.ts:6984
 
-***
+---
 
 ### version
 

@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../README.md) / [runtime/cli\_config](../README.md) / Config
+[@nebius/nodejs-sdk](../../../README.md) / [runtime/cli_config](../README.md) / Config
 
 # Class: Config
 
-Defined in: [src/runtime/cli\_config.ts:46](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L46)
+Defined in: [src/runtime/cli_config.ts:46](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L46)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/cli\_config.ts:46](https://github.com/nebius/nodejs-sdk
 
 > **new Config**(`options`): `Config`
 
-Defined in: [src/runtime/cli\_config.ts:58](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L58)
+Defined in: [src/runtime/cli_config.ts:58](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L58)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [src/runtime/cli\_config.ts:58](https://github.com/nebius/nodejs-sdk
 
 > `readonly` **$type**: `"nebius.sdk.Config"` = `'nebius.sdk.Config'`
 
-Defined in: [src/runtime/cli\_config.ts:47](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L47)
+Defined in: [src/runtime/cli_config.ts:47](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L47)
 
 ## Methods
 
@@ -48,19 +48,19 @@ Defined in: [src/runtime/cli\_config.ts:47](https://github.com/nebius/nodejs-sdk
 
 > **\[customJson\]**(): `unknown`
 
-Defined in: [src/runtime/cli\_config.ts:103](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L103)
+Defined in: [src/runtime/cli_config.ts:103](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L103)
 
 #### Returns
 
 `unknown`
 
-***
+---
 
 ### endpoint()
 
 > **endpoint**(): `undefined` \| `string`
 
-Defined in: [src/runtime/cli\_config.ts:136](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L136)
+Defined in: [src/runtime/cli_config.ts:136](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L136)
 
 #### Returns
 
@@ -70,13 +70,13 @@ Defined in: [src/runtime/cli\_config.ts:136](https://github.com/nebius/nodejs-sd
 
 [`ConfigReaderLike`](../../cli_config_interfaces/interfaces/ConfigReaderLike.md).[`endpoint`](../../cli_config_interfaces/interfaces/ConfigReaderLike.md#endpoint)
 
-***
+---
 
 ### getCredentials()
 
 > **getCredentials**(`opts`): [`Credentials`](../../cli_config_interfaces/type-aliases/Credentials.md)
 
-Defined in: [src/runtime/cli\_config.ts:140](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L140)
+Defined in: [src/runtime/cli_config.ts:140](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L140)
 
 #### Parameters
 
@@ -92,25 +92,25 @@ Defined in: [src/runtime/cli\_config.ts:140](https://github.com/nebius/nodejs-sd
 
 [`ConfigReaderLike`](../../cli_config_interfaces/interfaces/ConfigReaderLike.md).[`getCredentials`](../../cli_config_interfaces/interfaces/ConfigReaderLike.md#getcredentials)
 
-***
+---
 
 ### logger()
 
 > **logger**(): `undefined` \| [`Logger`](../../util/logging/classes/Logger.md)
 
-Defined in: [src/runtime/cli\_config.ts:111](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L111)
+Defined in: [src/runtime/cli_config.ts:111](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L111)
 
 #### Returns
 
 `undefined` \| [`Logger`](../../util/logging/classes/Logger.md)
 
-***
+---
 
 ### parentId()
 
 > **parentId**(): `undefined` \| `string`
 
-Defined in: [src/runtime/cli\_config.ts:115](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L115)
+Defined in: [src/runtime/cli_config.ts:115](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L115)
 
 #### Returns
 
@@ -120,13 +120,13 @@ Defined in: [src/runtime/cli\_config.ts:115](https://github.com/nebius/nodejs-sd
 
 [`ConfigReaderLike`](../../cli_config_interfaces/interfaces/ConfigReaderLike.md).[`parentId`](../../cli_config_interfaces/interfaces/ConfigReaderLike.md#parentid)
 
-***
+---
 
 ### profileName()
 
 > **profileName**(): `undefined` \| `string`
 
-Defined in: [src/runtime/cli\_config.ts:132](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L132)
+Defined in: [src/runtime/cli_config.ts:132](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config.ts#L132)
 
 #### Returns
 

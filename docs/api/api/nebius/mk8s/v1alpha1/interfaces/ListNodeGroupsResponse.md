@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / ListNodeGroupsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:3698
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:3700
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:3700
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:3699
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:3699
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:3701
 
-***
+---
 
 ### nextPageToken
 

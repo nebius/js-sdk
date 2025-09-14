@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/logging/v1/agentmanager](../README.md) / OSInfo
 
@@ -18,7 +18,7 @@ Operating system information for the instance.
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1149
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1149
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1148
 
-***
+---
 
 ### architecture
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1166
 
 System architecture.
 
-***
+---
 
 ### name
 
@@ -45,9 +45,9 @@ System architecture.
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1155
 
 Operating system name and version.
- Example: "Ubuntu 22.04.4 LTS"
+Example: "Ubuntu 22.04.4 LTS"
 
-***
+---
 
 ### uname
 
@@ -56,4 +56,4 @@ Operating system name and version.
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1161
 
 Detailed system information from uname command.
- Example: "Linux computeimage-abcdef 6.5.0-44-generic #44~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jun 18 14:36:16 UTC 2 x86_64 x86_64 x86_64 GNU/Linux"
+Example: "Linux computeimage-abcdef 6.5.0-44-generic #44~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jun 18 14:36:16 UTC 2 x86_64 x86_64 x86_64 GNU/Linux"

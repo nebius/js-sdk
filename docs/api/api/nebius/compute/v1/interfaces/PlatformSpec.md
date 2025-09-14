@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / PlatformSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11625
 
 Defined in: src/api/nebius/compute/v1/index.ts:11627
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11627
 
 Defined in: src/api/nebius/compute/v1/index.ts:11626
 
-***
+---
 
 ### allowPresetChange
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11626
 
 Defined in: src/api/nebius/compute/v1/index.ts:11631
 
-***
+---
 
 ### gpuCountQuotaType
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11631
 
 Defined in: src/api/nebius/compute/v1/index.ts:11629
 
-***
+---
 
 ### humanReadableName
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11629
 
 Defined in: src/api/nebius/compute/v1/index.ts:11630
 
-***
+---
 
 ### presets
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / GetOperationRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2671
 
 Defined in: src/api/nebius/common/v1/index.ts:2673
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2673
 
 Defined in: src/api/nebius/common/v1/index.ts:2672
 
-***
+---
 
 ### id
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / ListBackupsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:310
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:312
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:312
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:311
 
-***
+---
 
 ### backups
 

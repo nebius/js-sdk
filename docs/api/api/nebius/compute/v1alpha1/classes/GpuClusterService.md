@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / GpuClusterService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:3976
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateGpuClusterRequest`](../interfaces/CreateGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4006
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteGpuClusterRequest`](../interfaces/DeleteGpuClusterRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:3940
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetGpuClusterRequest`](../interfaces/GetGpuClusterRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:3952
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`GpuCluster`](../interfaces/GpuCluster.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:3934
 
 [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:3964
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListGpuClustersRequest`](../interfaces/ListGpuClustersRequest.md), [`ListGpuClustersResponse`](../interfaces/ListGpuClustersResponse.md)\>
 
-***
+---
 
 ### listOperationsByParent()
 
@@ -794,7 +794,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4021
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-***
+---
 
 ### update()
 

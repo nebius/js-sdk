@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/maintenance/v1alpha1](../README.md) / MaintenanceServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:305
 
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:306
 
-***
+---
 
 ### list
 

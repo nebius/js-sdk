@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/audit/v2](../README.md) / Authorization
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1199
 
 Defined in: src/api/nebius/audit/v2/index.ts:1201
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:1201
 
 Defined in: src/api/nebius/audit/v2/index.ts:1200
 
-***
+---
 
 ### authorized
 

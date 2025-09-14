@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / JobServiceServer
 
@@ -28,7 +28,7 @@ Deprecated, will be removed on 2025-08-12: Nebius AI Cloud no longer supports th
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2493
 
-***
+---
 
 ### ~~create~~
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2493
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2492
 
-***
+---
 
 ### ~~get~~
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2492
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2490
 
-***
+---
 
 ### ~~list~~
 

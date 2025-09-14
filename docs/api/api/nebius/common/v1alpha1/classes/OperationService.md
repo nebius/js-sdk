@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1alpha1](../README.md) / OperationService
 
@@ -178,7 +178,7 @@ Returns the latest state of the specified operation.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### list()
 

@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../README.md) / runtime/cli\_config\_interfaces
+[@nebius/nodejs-sdk](../../README.md) / runtime/cli_config_interfaces
 
-# runtime/cli\_config\_interfaces
+# runtime/cli_config_interfaces
 
 ## Interfaces
 

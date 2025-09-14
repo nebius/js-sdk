@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / Network
 
@@ -9,8 +9,8 @@
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3705
 
 Defines a Network, which serves as a virtual representation of a traditional LAN
- within a cloud environment.
- Networks facilitate communication between subnets.
+within a cloud environment.
+Networks facilitate communication between subnets.
 
 ## Properties
 
@@ -20,7 +20,7 @@ Defines a Network, which serves as a virtual representation of a traditional LAN
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3707
 
-***
+---
 
 ### $type
 
@@ -28,7 +28,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3707
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3706
 
-***
+---
 
 ### metadata?
 
@@ -37,9 +37,9 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3706
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3713
 
 Metadata for the network resource.
- `metadata.parent_id` represents IAM container
+`metadata.parent_id` represents IAM container
 
-***
+---
 
 ### spec?
 
@@ -49,7 +49,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:3718
 
 Specification of the network.
 
-***
+---
 
 ### status?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / RestoreClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1607
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1609
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1609
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1608
 
-***
+---
 
 ### backupId
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1624
 
 ID of the backup to restore from.
 
-***
+---
 
 ### metadata?
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1614
 
 Metadata associated with the new cluster.
 
-***
+---
 
 ### recoveryTime?
 
@@ -54,7 +54,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1634
 
 Timestamp for point in time recovery.
 
-***
+---
 
 ### sourceClusterId
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:1629
 
 ID of the PostgreSQL cluster to restore from.
 
-***
+---
 
 ### spec?
 

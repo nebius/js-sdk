@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / GetIterationHistoryResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:977
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:979
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:979
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:978
 
-***
+---
 
 ### iterations
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:984
 
 List of transfer iterations sorted from newest to oldest.
 
-***
+---
 
 ### nextPageToken
 

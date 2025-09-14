@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / BucketCounters
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:399
 
 Defined in: src/api/nebius/storage/v1/index.ts:401
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:401
 
 Defined in: src/api/nebius/storage/v1/index.ts:400
 
-***
+---
 
 ### counters?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:400
 
 Defined in: src/api/nebius/storage/v1/index.ts:403
 
-***
+---
 
 ### nonCurrentCounters?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:403
 
 Defined in: src/api/nebius/storage/v1/index.ts:404
 
-***
+---
 
 ### storageClass
 

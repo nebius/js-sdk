@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / LifecycleTransition
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3361
 
 Defined in: src/api/nebius/storage/v1/index.ts:3363
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3363
 
 Defined in: src/api/nebius/storage/v1/index.ts:3362
 
-***
+---
 
 ### storageClass
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3368
 
 Target storage class to transit to.
 
-***
+---
 
 ### transitedWith?
 

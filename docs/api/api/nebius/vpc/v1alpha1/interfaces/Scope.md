@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / Scope
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:6113
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:6115
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:6115
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:6114
 
-***
+---
 
 ### metadata?
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:6114
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:6121
 
 Metadata associated with the Scope.
- `metadata.parent_id` represents the parent IAM container.
+`metadata.parent_id` represents the parent IAM container.
 
-***
+---
 
 ### spec?
 
@@ -45,7 +45,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:6126
 
 Specification of the Scope.
 
-***
+---
 
 ### status?
 

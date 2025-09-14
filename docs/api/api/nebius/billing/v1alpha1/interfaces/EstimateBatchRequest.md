@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/billing/v1alpha1](../README.md) / EstimateBatchRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:262
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:264
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:264
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:263
 
-***
+---
 
 ### offerTypes
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:275
 
 Type of offers to be applied to the cost estimate.
 
-***
+---
 
 ### resourceSpecs
 
@@ -43,4 +43,4 @@ Type of offers to be applied to the cost estimate.
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:270
 
 List of resource specifications for cost estimation.
- Each resource will be priced individually and then aggregated into total costs.
+Each resource will be priced individually and then aggregated into total costs.

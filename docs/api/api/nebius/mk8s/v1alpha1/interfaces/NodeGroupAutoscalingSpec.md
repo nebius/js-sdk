@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / NodeGroupAutoscalingSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5878
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5880
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5880
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5879
 
-***
+---
 
 ### maxNodeCount
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5879
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:5882
 
-***
+---
 
 ### minNodeCount
 

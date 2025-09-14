@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/enum](../README.md) / EnumInstance
 
@@ -14,17 +14,17 @@ Defined in: [src/runtime/protos/enum.ts:15](https://github.com/nebius/nodejs-sdk
 
 ### TName
 
-`TName` *extends* `string` = `string`
+`TName` _extends_ `string` = `string`
 
 ## Properties
 
-### \[ENUM\_VALUE\_META\]?
+### \[ENUM_VALUE_META\]?
 
-> `readonly` `optional` **\[ENUM\_VALUE\_META\]**: [`EnumValueMeta`](../interfaces/EnumValueMeta.md)
+> `readonly` `optional` **\[ENUM_VALUE_META\]**: [`EnumValueMeta`](../interfaces/EnumValueMeta.md)
 
 Defined in: [src/runtime/protos/enum.ts:20](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/enum.ts#L20)
 
-***
+---
 
 ### code
 
@@ -32,7 +32,7 @@ Defined in: [src/runtime/protos/enum.ts:20](https://github.com/nebius/nodejs-sdk
 
 Defined in: [src/runtime/protos/enum.ts:16](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/enum.ts#L16)
 
-***
+---
 
 ### name
 
@@ -52,7 +52,7 @@ Defined in: [src/runtime/protos/enum.ts:18](https://github.com/nebius/nodejs-sdk
 
 `number`
 
-***
+---
 
 ### toString()
 

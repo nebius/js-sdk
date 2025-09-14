@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / FederatedCredentialsSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6856
 
 Defined in: src/api/nebius/iam/v1/index.ts:6858
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6858
 
 Defined in: src/api/nebius/iam/v1/index.ts:6857
 
-***
+---
 
 ### credentialsProvider?
 
@@ -42,7 +42,7 @@ provider of federated credentials used for federated subject authentication
 
 > **oidcProvider**: [`OidcCredentialsProvider`](OidcCredentialsProvider.md)
 
-***
+---
 
 ### federatedSubjectId
 
@@ -52,7 +52,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6863
 
 Federated subject ID.For oidc_provider subject will be calculated based on the “sub” claim of the JWT federation token.
 
-***
+---
 
 ### subjectId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / TooManyRequests
 
@@ -18,7 +18,7 @@ You initiated too many requests to the service at once. Enhance your calm.
 
 Defined in: src/api/nebius/common/v1/index.ts:1708
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/common/v1/index.ts:1708
 
 Defined in: src/api/nebius/common/v1/index.ts:1707
 
-***
+---
 
 ### violation
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / ImageService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4934
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageRequest`](../interfaces/GetImageRequest.md), [`Image`](../interfaces/Image.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4946
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Image`](../interfaces/Image.md)\>
 
-***
+---
 
 ### getLatestByFamily()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4958
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetImageLatestByFamilyRequest`](../interfaces/GetImageLatestByFamilyRequest.md), [`Image`](../interfaces/Image.md)\>
 
-***
+---
 
 ### list()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4970
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListImagesRequest`](../interfaces/ListImagesRequest.md), [`ListImagesResponse`](../interfaces/ListImagesResponse.md)\>
 
-***
+---
 
 ### listOperationsByParent()
 

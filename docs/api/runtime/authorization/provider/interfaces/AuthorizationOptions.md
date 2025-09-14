@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/authorization/provider](../README.md) / AuthorizationOptions
 
@@ -16,7 +16,7 @@ Defined in: [src/runtime/authorization/provider.ts:1](https://github.com/nebius/
 
 Defined in: [src/runtime/authorization/provider.ts:7](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L7)
 
-***
+---
 
 ### renewRequestTimeoutMs?
 
@@ -24,7 +24,7 @@ Defined in: [src/runtime/authorization/provider.ts:7](https://github.com/nebius/
 
 Defined in: [src/runtime/authorization/provider.ts:6](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L6)
 
-***
+---
 
 ### renewRequired?
 
@@ -32,7 +32,7 @@ Defined in: [src/runtime/authorization/provider.ts:6](https://github.com/nebius/
 
 Defined in: [src/runtime/authorization/provider.ts:3](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L3)
 
-***
+---
 
 ### renewSynchronous?
 
@@ -40,7 +40,7 @@ Defined in: [src/runtime/authorization/provider.ts:3](https://github.com/nebius/
 
 Defined in: [src/runtime/authorization/provider.ts:4](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/authorization/provider.ts#L4)
 
-***
+---
 
 ### reportError?
 

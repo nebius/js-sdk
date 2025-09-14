@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / InstanceStatusInfinibandTopologyPath
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:8846
 
 Defined in: src/api/nebius/compute/v1/index.ts:8848
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:8848
 
 Defined in: src/api/nebius/compute/v1/index.ts:8847
 
-***
+---
 
 ### path
 

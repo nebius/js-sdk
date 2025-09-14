@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / NetworkInterfaceTemplate
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:5309
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:5311
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:5311
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:5310
 
-***
+---
 
 ### publicIpAddress?
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:5310
 Defined in: src/api/nebius/mk8s/v1/index.ts:5317
 
 Parameters for Public IPv4 address associated with the interface.
- Set to empty value, to enable it.
+Set to empty value, to enable it.
 
-***
+---
 
 ### subnetId
 
@@ -44,5 +44,5 @@ Parameters for Public IPv4 address associated with the interface.
 Defined in: src/api/nebius/mk8s/v1/index.ts:5324
 
 Nebius VPC Subnet ID that will be attached to a node cloud instance network interface.
- By default Cluster control plane subnet_id used.
- Subnet should be located in the same network with control plane.
+By default Cluster control plane subnet_id used.
+Subnet should be located in the same network with control plane.

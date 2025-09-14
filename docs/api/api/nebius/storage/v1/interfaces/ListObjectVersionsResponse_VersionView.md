@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListObjectVersionsResponse\_VersionView
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListObjectVersionsResponse_VersionView
 
-# Interface: ListObjectVersionsResponse\_VersionView
+# Interface: ListObjectVersionsResponse_VersionView
 
 Defined in: src/api/nebius/storage/v1/index.ts:5788
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5788
 
 Defined in: src/api/nebius/storage/v1/index.ts:5790
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5790
 
 Defined in: src/api/nebius/storage/v1/index.ts:5789
 
-***
+---
 
 ### etag
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5789
 
 Defined in: src/api/nebius/storage/v1/index.ts:5791
 
-***
+---
 
 ### lastModified?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5791
 
 Defined in: src/api/nebius/storage/v1/index.ts:5794
 
-***
+---
 
 ### latest
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5794
 
 Defined in: src/api/nebius/storage/v1/index.ts:5792
 
-***
+---
 
 ### objectKey
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5792
 
 Defined in: src/api/nebius/storage/v1/index.ts:5793
 
-***
+---
 
 ### size
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5793
 
 Defined in: src/api/nebius/storage/v1/index.ts:5795
 
-***
+---
 
 ### storageClass
 
@@ -72,7 +72,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5795
 
 Defined in: src/api/nebius/storage/v1/index.ts:5797
 
-***
+---
 
 ### versionId
 

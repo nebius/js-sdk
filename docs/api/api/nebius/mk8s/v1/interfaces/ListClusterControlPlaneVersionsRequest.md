@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / ListClusterControlPlaneVersionsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:677
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:679
 
-***
+---
 
 ### $type
 

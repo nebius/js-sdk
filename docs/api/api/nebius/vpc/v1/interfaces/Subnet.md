@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / Subnet
 
@@ -9,7 +9,7 @@
 Defined in: src/api/nebius/vpc/v1/index.ts:7327
 
 Defines a Subnet, a segment of a network used for more granular control and management.
- Subnet uses pools to organize address space.
+Subnet uses pools to organize address space.
 
 ## Properties
 
@@ -19,7 +19,7 @@ Defines a Subnet, a segment of a network used for more granular control and mana
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7329
 
-***
+---
 
 ### $type
 
@@ -27,7 +27,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7329
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7328
 
-***
+---
 
 ### metadata?
 
@@ -36,9 +36,9 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7328
 Defined in: src/api/nebius/vpc/v1/index.ts:7335
 
 Metadata for the subnet resource.
- `metadata.parent_id` represents IAM container
+`metadata.parent_id` represents IAM container
 
-***
+---
 
 ### spec?
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7340
 
 Specification of the subnet.
 
-***
+---
 
 ### status?
 

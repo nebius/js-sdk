@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / DiskSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1186
 
 Defined in: src/api/nebius/compute/v1/index.ts:1188
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1188
 
 Defined in: src/api/nebius/compute/v1/index.ts:1187
 
-***
+---
 
 ### blockSizeBytes
 
@@ -33,10 +33,10 @@ Defined in: src/api/nebius/compute/v1/index.ts:1187
 Defined in: src/api/nebius/compute/v1/index.ts:1195
 
 Block size in bytes.
- The block size must be a power of two between 4096 bytes (4 KiB) and 131072 bytes (128 KiB).
- The default value is 4096 bytes (4 KiB).
+The block size must be a power of two between 4096 bytes (4 KiB) and 131072 bytes (128 KiB).
+The default value is 4096 bytes (4 KiB).
 
-***
+---
 
 ### diskEncryption?
 
@@ -46,7 +46,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1206
 
 Defines how data on the disk is encrypted. By default, no encryption is applied.
 
-***
+---
 
 ### size?
 
@@ -55,9 +55,9 @@ Defines how data on the disk is encrypted. By default, no encryption is applied.
 Defined in: src/api/nebius/compute/v1/index.ts:1212
 
 Size of the disk. The size must be within the limits for the selected disk type.
- For current limits, see https://docs.nebius.com/compute/storage/types#disks-types-comparison
+For current limits, see https://docs.nebius.com/compute/storage/types#disks-types-comparison
 
-***
+---
 
 ### source?
 
@@ -66,10 +66,10 @@ Size of the disk. The size must be within the limits for the selected disk type.
 Defined in: src/api/nebius/compute/v1/index.ts:1224
 
 Source for disk creation.
- Boot disk must be created from an image https://docs.nebius.com/compute/storage/manage#boot
- Additional disks can be created as an empty volume https://docs.nebius.com/compute/storage/manage#additional
+Boot disk must be created from an image https://docs.nebius.com/compute/storage/manage#boot
+Additional disks can be created as an empty volume https://docs.nebius.com/compute/storage/manage#additional
 
-***
+---
 
 ### type
 
@@ -78,4 +78,4 @@ Source for disk creation.
 Defined in: src/api/nebius/compute/v1/index.ts:1201
 
 The type of disk defines the performance and reliability characteristics of the block device.
- For details, see https://docs.nebius.com/compute/storage/types#disks-types
+For details, see https://docs.nebius.com/compute/storage/types#disks-types

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteObjectsResponse
 
@@ -8,7 +8,7 @@
 
 Defined in: src/api/nebius/storage/v1/index.ts:4804
 
-----------------------------------------
+---
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4804
 
 Defined in: src/api/nebius/storage/v1/index.ts:4806
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4806
 
 Defined in: src/api/nebius/storage/v1/index.ts:4805
 
-***
+---
 
 ### deleted
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4805
 
 Defined in: src/api/nebius/storage/v1/index.ts:4807
 
-***
+---
 
 ### errors
 

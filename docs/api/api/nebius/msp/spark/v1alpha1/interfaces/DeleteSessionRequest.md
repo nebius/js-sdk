@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / DeleteSessionRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4477
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4479
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4479
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4478
 
-***
+---
 
 ### id
 

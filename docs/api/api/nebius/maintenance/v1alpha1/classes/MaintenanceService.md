@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/maintenance/v1alpha1](../README.md) / MaintenanceService
 
@@ -49,7 +49,7 @@ Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:326
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:332
 
 Returns the specified maintenance operation.
- To get the list of upcoming and past maintenance operations, make a [List] request.
+To get the list of upcoming and past maintenance operations, make a [List] request.
 
 ##### Parameters
 
@@ -112,7 +112,7 @@ Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:334
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:356
 
 Returns the specified maintenance operation.
- To get the list of upcoming and past maintenance operations, make a [List] request.
+To get the list of upcoming and past maintenance operations, make a [List] request.
 
 ##### Parameters
 
@@ -131,7 +131,7 @@ Returns the specified maintenance operation.
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:357
 
 Returns the specified maintenance operation.
- To get the list of upcoming and past maintenance operations, make a [List] request.
+To get the list of upcoming and past maintenance operations, make a [List] request.
 
 ##### Parameters
 
@@ -154,7 +154,7 @@ Returns the specified maintenance operation.
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:358
 
 Returns the specified maintenance operation.
- To get the list of upcoming and past maintenance operations, make a [List] request.
+To get the list of upcoming and past maintenance operations, make a [List] request.
 
 ##### Parameters
 
@@ -174,7 +174,7 @@ Returns the specified maintenance operation.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetMaintenanceRequest`](../interfaces/GetMaintenanceRequest.md), [`Maintenance`](../interfaces/Maintenance.md)\>
 
-***
+---
 
 ### list()
 
@@ -185,7 +185,7 @@ Returns the specified maintenance operation.
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:340
 
 Retrieves the list of maintenance operations that belong
- to the specified container.
+to the specified container.
 
 ##### Parameters
 
@@ -248,7 +248,7 @@ Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:342
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:368
 
 Retrieves the list of maintenance operations that belong
- to the specified container.
+to the specified container.
 
 ##### Parameters
 
@@ -267,7 +267,7 @@ Retrieves the list of maintenance operations that belong
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:369
 
 Retrieves the list of maintenance operations that belong
- to the specified container.
+to the specified container.
 
 ##### Parameters
 
@@ -290,7 +290,7 @@ Retrieves the list of maintenance operations that belong
 Defined in: src/api/nebius/maintenance/v1alpha1/index.ts:370
 
 Retrieves the list of maintenance operations that belong
- to the specified container.
+to the specified container.
 
 ##### Parameters
 

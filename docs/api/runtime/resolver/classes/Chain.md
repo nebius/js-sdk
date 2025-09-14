@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/resolver](../README.md) / Chain
 
@@ -46,7 +46,7 @@ Defined in: [src/runtime/resolver.ts:167](https://github.com/nebius/nodejs-sdk/b
 
 `object`
 
-***
+---
 
 ### resolve()
 

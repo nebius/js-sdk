@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / ClusterStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1370
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1372
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1372
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1371
 
-***
+---
 
 ### historyServerEndpoint?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1387
 
 History Server WebUI endpoint
 
-***
+---
 
 ### phase
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1377
 
 Current phase (or stage) of the cluster.
 
-***
+---
 
 ### state
 

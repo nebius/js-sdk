@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / GroupMembershipServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10797
 
 Defined in: src/api/nebius/iam/v1/index.ts:10798
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10798
 
 Defined in: src/api/nebius/iam/v1/index.ts:10801
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10801
 
 Defined in: src/api/nebius/iam/v1/index.ts:10799
 
-***
+---
 
 ### getWithAttributes
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10799
 
 Defined in: src/api/nebius/iam/v1/index.ts:10800
 
-***
+---
 
 ### listMemberOf
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10800
 
 Defined in: src/api/nebius/iam/v1/index.ts:10804
 
-***
+---
 
 ### listMembers
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10804
 
 Defined in: src/api/nebius/iam/v1/index.ts:10802
 
-***
+---
 
 ### listMembersWithAttributes
 

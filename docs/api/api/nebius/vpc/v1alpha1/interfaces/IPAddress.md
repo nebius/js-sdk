@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / IPAddress
 
@@ -18,7 +18,7 @@ Describes an IPv4 address.
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:2439
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:2439
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:2438
 
-***
+---
 
 ### allocationId
 

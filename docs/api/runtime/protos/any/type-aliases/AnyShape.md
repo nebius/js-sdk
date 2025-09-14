@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/any](../README.md) / AnyShape
 
@@ -18,7 +18,7 @@ Defined in: [src/runtime/protos/any.ts:5](https://github.com/nebius/nodejs-sdk/b
 
 Defined in: [src/runtime/protos/any.ts:5](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/any.ts#L5)
 
-***
+---
 
 ### value
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/registry/v1](../README.md) / RegistrySpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1825
 
 Defined in: src/api/nebius/registry/v1/index.ts:1827
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1827
 
 Defined in: src/api/nebius/registry/v1/index.ts:1826
 
-***
+---
 
 ### description
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1826
 
 Defined in: src/api/nebius/registry/v1/index.ts:1828
 
-***
+---
 
 ### imagesCount
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / ResourceMetadata
 
@@ -18,7 +18,7 @@ Common resource metadata.
 
 Defined in: src/api/nebius/common/v1/index.ts:2284
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2284
 
 Defined in: src/api/nebius/common/v1/index.ts:2283
 
-***
+---
 
 ### createdAt?
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2312
 
 Timestamp indicating when the resource was created.
 
-***
+---
 
 ### id
 
@@ -46,7 +46,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2289
 
 Identifier for the resource, unique for its resource type.
 
-***
+---
 
 ### labels
 
@@ -60,7 +60,7 @@ Labels associated with the resource.
 
 \[`key`: `string`\]: `string`
 
-***
+---
 
 ### name
 
@@ -70,7 +70,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2299
 
 Human readable name for the resource.
 
-***
+---
 
 ### parentId
 
@@ -80,7 +80,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2294
 
 Identifier of the parent resource to which the resource belongs.
 
-***
+---
 
 ### resourceVersion
 
@@ -89,11 +89,11 @@ Identifier of the parent resource to which the resource belongs.
 Defined in: src/api/nebius/common/v1/index.ts:2307
 
 Version of the resource for safe concurrent modifications and consistent reads.
- Positive and monotonically increases on each resource spec change (but *not* on each change of the
- resource's container(s) or status).
- Service allows zero value or current.
+Positive and monotonically increases on each resource spec change (but _not_ on each change of the
+resource's container(s) or status).
+Service allows zero value or current.
 
-***
+---
 
 ### updatedAt?
 

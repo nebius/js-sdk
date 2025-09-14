@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [api/nebius](../README.md) / EnumValuePySDKSettings
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/index.ts:711
 
 Defined in: src/api/nebius/index.ts:713
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/index.ts:713
 
 Defined in: src/api/nebius/index.ts:712
 
-***
+---
 
 ### name
 

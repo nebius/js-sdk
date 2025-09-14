@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/logging/v1/agentmanager](../README.md) / RestartActionParams
 
@@ -18,7 +18,7 @@ Parameters for agent restart action.
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1685
 
-***
+---
 
 ### $type
 

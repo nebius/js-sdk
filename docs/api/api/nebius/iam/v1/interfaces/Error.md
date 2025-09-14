@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / Error
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21665
 
 Defined in: src/api/nebius/iam/v1/index.ts:21667
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21667
 
 Defined in: src/api/nebius/iam/v1/index.ts:21666
 
-***
+---
 
 ### message
 

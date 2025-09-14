@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/audit/v2](../README.md) / Authentication
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:952
 
 Defined in: src/api/nebius/audit/v2/index.ts:954
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:954
 
 Defined in: src/api/nebius/audit/v2/index.ts:953
 
-***
+---
 
 ### authenticated
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:959
 
 Answers the question whether or not the subject has been successfully authenticated.
 
-***
+---
 
 ### authenticationType
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:974
 
 Describes the type of authentication.
 
-***
+---
 
 ### credential?
 
@@ -52,7 +52,7 @@ Describes the type of authentication.
 
 Defined in: src/api/nebius/audit/v2/index.ts:975
 
-***
+---
 
 ### federation?
 
@@ -62,7 +62,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:969
 
 Information on the federation within which the subject exists.
 
-***
+---
 
 ### subject?
 

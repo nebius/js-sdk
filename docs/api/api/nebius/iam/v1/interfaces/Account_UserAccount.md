@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / Account\_UserAccount
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / Account_UserAccount
 
-# Interface: Account\_UserAccount
+# Interface: Account_UserAccount
 
 Defined in: src/api/nebius/iam/v1/index.ts:3447
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:3447
 
 Defined in: src/api/nebius/iam/v1/index.ts:3449
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:3449
 
 Defined in: src/api/nebius/iam/v1/index.ts:3448
 
-***
+---
 
 ### id
 

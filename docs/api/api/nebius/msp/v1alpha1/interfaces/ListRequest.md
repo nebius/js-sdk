@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/msp/v1alpha1](../README.md) / ListRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/v1alpha1/index.ts:666
 
 Defined in: src/api/nebius/msp/v1alpha1/index.ts:668
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/v1alpha1/index.ts:668
 
 Defined in: src/api/nebius/msp/v1alpha1/index.ts:667
 
-***
+---
 
 ### pageSize
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/v1alpha1/index.ts:678
 
 Specifies the maximum number of items to return in the response. Default value is 100.
 
-***
+---
 
 ### pageToken
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/v1alpha1/index.ts:683
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

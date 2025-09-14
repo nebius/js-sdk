@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / ResourcesSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7955
 
 Defined in: src/api/nebius/compute/v1/index.ts:7957
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7957
 
 Defined in: src/api/nebius/compute/v1/index.ts:7956
 
-***
+---
 
 ### platform
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7956
 
 Defined in: src/api/nebius/compute/v1/index.ts:7958
 
-***
+---
 
 ### size?
 

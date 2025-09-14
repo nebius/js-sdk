@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / Cluster
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1275
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1277
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1277
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1276
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1276
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1278
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1278
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1279
 
-***
+---
 
 ### status?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / ScopeService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5962
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeRequest`](../interfaces/GetScopeRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5974
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetScopeByNameRequest`](../interfaces/GetScopeByNameRequest.md), [`Scope`](../interfaces/Scope.md)\>
 
-***
+---
 
 ### list()
 

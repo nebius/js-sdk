@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / api/nebius/msp/postgresql/v1alpha1
 
@@ -48,8 +48,8 @@
 
 - [BackupServiceServiceDescription](type-aliases/BackupServiceServiceDescription.md)
 - [ClusterServiceServiceDescription](type-aliases/ClusterServiceServiceDescription.md)
-- [ConnectionPoolerConfig\_PoolingMode](type-aliases/ConnectionPoolerConfig_PoolingMode.md)
-- [ConnectionPoolerConfig\_PoolingModeClass](type-aliases/ConnectionPoolerConfig_PoolingModeClass.md)
+- [ConnectionPoolerConfig_PoolingMode](type-aliases/ConnectionPoolerConfig_PoolingMode.md)
+- [ConnectionPoolerConfig_PoolingModeClass](type-aliases/ConnectionPoolerConfig_PoolingModeClass.md)
 
 ## Variables
 
@@ -65,7 +65,7 @@
 - [ClusterStatus](variables/ClusterStatus.md)
 - [ConfigSpec](variables/ConfigSpec.md)
 - [ConnectionPoolerConfig](variables/ConnectionPoolerConfig.md)
-- [ConnectionPoolerConfig\_PoolingMode](variables/ConnectionPoolerConfig_PoolingMode.md)
+- [ConnectionPoolerConfig_PoolingMode](variables/ConnectionPoolerConfig_PoolingMode.md)
 - [CreateBackupRequest](variables/CreateBackupRequest.md)
 - [CreateClusterRequest](variables/CreateClusterRequest.md)
 - [DeleteBackupRequest](variables/DeleteBackupRequest.md)

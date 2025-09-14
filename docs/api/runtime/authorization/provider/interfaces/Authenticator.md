@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/authorization/provider](../README.md) / Authenticator
 
@@ -34,7 +34,7 @@ Defined in: [src/runtime/authorization/provider.ts:11](https://github.com/nebius
 
 `Promise`\<`void`\>
 
-***
+---
 
 ### canRetry()?
 

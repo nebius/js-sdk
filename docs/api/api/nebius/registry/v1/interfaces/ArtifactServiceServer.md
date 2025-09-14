@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/registry/v1](../README.md) / ArtifactServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:463
 
 Defined in: src/api/nebius/registry/v1/index.ts:466
 
-***
+---
 
 ### get
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:466
 
 Defined in: src/api/nebius/registry/v1/index.ts:464
 
-***
+---
 
 ### list
 

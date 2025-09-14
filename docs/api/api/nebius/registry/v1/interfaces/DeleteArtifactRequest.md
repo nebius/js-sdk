@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/registry/v1](../README.md) / DeleteArtifactRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:347
 
 Defined in: src/api/nebius/registry/v1/index.ts:349
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:349
 
 Defined in: src/api/nebius/registry/v1/index.ts:348
 
-***
+---
 
 ### id
 

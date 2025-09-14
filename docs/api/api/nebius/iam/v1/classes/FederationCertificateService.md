@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / FederationCertificateService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:7959
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederationCertificateRequest`](../interfaces/CreateFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8013
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederationCertificateRequest`](../interfaces/DeleteFederationCertificateRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:7974
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederationCertificateRequest`](../interfaces/GetFederationCertificateRequest.md), [`FederationCertificate`](../interfaces/FederationCertificate.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -422,7 +422,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:7953
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### listByFederation()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:7986
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederationCertificateByFederationRequest`](../interfaces/ListFederationCertificateByFederationRequest.md), [`ListFederationCertificateResponse`](../interfaces/ListFederationCertificateResponse.md)\>
 
-***
+---
 
 ### update()
 

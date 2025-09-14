@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [runtime/protos/core](../../README.md) / [dayjs](../README.md) / locale
 
@@ -8,7 +8,7 @@
 
 > **locale**(`preset?`, `object?`, `isLocal?`): `string`
 
-Defined in: node\_modules/dayjs/index.d.ts:422
+Defined in: node_modules/dayjs/index.d.ts:422
 
 ## Parameters
 

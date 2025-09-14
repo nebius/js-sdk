@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / Preset
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11767
 
 Defined in: src/api/nebius/compute/v1/index.ts:11769
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11769
 
 Defined in: src/api/nebius/compute/v1/index.ts:11768
 
-***
+---
 
 ### allowGpuClustering
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11768
 
 Defined in: src/api/nebius/compute/v1/index.ts:11772
 
-***
+---
 
 ### name
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11772
 
 Defined in: src/api/nebius/compute/v1/index.ts:11770
 
-***
+---
 
 ### resources?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListBucketsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:1286
 
 Defined in: src/api/nebius/storage/v1/index.ts:1288
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:1288
 
 Defined in: src/api/nebius/storage/v1/index.ts:1287
 
-***
+---
 
 ### filter
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:1308
 
 A filter to narrow down the results based on specific criteria.
 
-***
+---
 
 ### pageSize
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:1298
 
 Specifies the maximum number of items to return in the response.
 
-***
+---
 
 ### pageToken
 
@@ -54,7 +54,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:1303
 
 Token for pagination, allowing the retrieval of the next set of results.
 
-***
+---
 
 ### parentId
 

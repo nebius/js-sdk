@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / FederationCertificateStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8286
 
 Defined in: src/api/nebius/iam/v1/index.ts:8288
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8288
 
 Defined in: src/api/nebius/iam/v1/index.ts:8287
 
-***
+---
 
 ### algorithm
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8287
 
 Defined in: src/api/nebius/iam/v1/index.ts:8290
 
-***
+---
 
 ### keySize
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8290
 
 Defined in: src/api/nebius/iam/v1/index.ts:8291
 
-***
+---
 
 ### notAfter?
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8291
 
 Defined in: src/api/nebius/iam/v1/index.ts:8293
 
-***
+---
 
 ### notBefore?
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:8293
 
 Defined in: src/api/nebius/iam/v1/index.ts:8292
 
-***
+---
 
 ### state
 

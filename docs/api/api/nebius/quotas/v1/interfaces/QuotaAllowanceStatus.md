@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/quotas/v1](../README.md) / QuotaAllowanceStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/quotas/v1/index.ts:838
 
 Defined in: src/api/nebius/quotas/v1/index.ts:840
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/quotas/v1/index.ts:840
 
 Defined in: src/api/nebius/quotas/v1/index.ts:839
 
-***
+---
 
 ### description
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/quotas/v1/index.ts:839
 Defined in: src/api/nebius/quotas/v1/index.ts:862
 
 Human-readable description of the quota.
- Example: "Total RAM across VMs".
+Example: "Total RAM across VMs".
 
-***
+---
 
 ### service
 
@@ -44,9 +44,9 @@ Human-readable description of the quota.
 Defined in: src/api/nebius/quotas/v1/index.ts:856
 
 Service in which the quota is allocated.
- Example: "mk8s".
+Example: "mk8s".
 
-***
+---
 
 ### serviceDescription
 
@@ -55,9 +55,9 @@ Service in which the quota is allocated.
 Defined in: src/api/nebius/quotas/v1/index.ts:868
 
 Human-readable name of the service managing the quota.
- Example: "Managed Kubernetes®".
+Example: "Managed Kubernetes®".
 
-***
+---
 
 ### state
 
@@ -67,7 +67,7 @@ Defined in: src/api/nebius/quotas/v1/index.ts:845
 
 Current state of the quota.
 
-***
+---
 
 ### unit
 
@@ -76,9 +76,9 @@ Current state of the quota.
 Defined in: src/api/nebius/quotas/v1/index.ts:874
 
 Quota unit.
- Example: "byte".
+Example: "byte".
 
-***
+---
 
 ### usage
 
@@ -88,7 +88,7 @@ Defined in: src/api/nebius/quotas/v1/index.ts:850
 
 Current quota usage.
 
-***
+---
 
 ### usagePercentage
 
@@ -97,11 +97,11 @@ Current quota usage.
 Defined in: src/api/nebius/quotas/v1/index.ts:882
 
 Current quota usage as a percentage.
- Values range from 0.0 to 1.0, representing 0% to 100%.
- Values can exceed 1.0 if usage exceeds the limit.
- Example: "0.12".
+Values range from 0.0 to 1.0, representing 0% to 100%.
+Values can exceed 1.0 if usage exceeds the limit.
+Example: "0.12".
 
-***
+---
 
 ### usageState
 

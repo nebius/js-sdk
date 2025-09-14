@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / BucketSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:2044
 
 Defined in: src/api/nebius/storage/v1/index.ts:2046
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:2046
 
 Defined in: src/api/nebius/storage/v1/index.ts:2045
 
-***
+---
 
 ### defaultStorageClass
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/storage/v1/index.ts:2045
 Defined in: src/api/nebius/storage/v1/index.ts:2069
 
 Storage class to use by default for uploads to the bucket. It may be overridden by `x-amz-storage-class` header.
- If not set - STANDARD is used as a default storage class.
+If not set - STANDARD is used as a default storage class.
 
-***
+---
 
 ### lifecycleConfiguration?
 
@@ -43,7 +43,7 @@ Storage class to use by default for uploads to the bucket. It may be overridden 
 
 Defined in: src/api/nebius/storage/v1/index.ts:2063
 
-***
+---
 
 ### maxSizeBytes
 
@@ -52,11 +52,11 @@ Defined in: src/api/nebius/storage/v1/index.ts:2063
 Defined in: src/api/nebius/storage/v1/index.ts:2062
 
 Maximum bucket size.
- Zero means unlimited.
- Actual limit can be lower if customer doesn't have enough quota.
- Real bucket size can go a little higher if customer writes too fast.
+Zero means unlimited.
+Actual limit can be lower if customer doesn't have enough quota.
+Real bucket size can go a little higher if customer writes too fast.
 
-***
+---
 
 ### overrideStorageClass
 
@@ -65,10 +65,10 @@ Maximum bucket size.
 Defined in: src/api/nebius/storage/v1/index.ts:2076
 
 Storage class to override any other storage class of uploading objects. It overrides the storage class regardless
- of how the original storage class was specified - either the default storage class
- or the one provided via the `x-amz-storage-class` header.
+of how the original storage class was specified - either the default storage class
+or the one provided via the `x-amz-storage-class` header.
 
-***
+---
 
 ### versioningPolicy
 
@@ -77,6 +77,7 @@ Storage class to override any other storage class of uploading objects. It overr
 Defined in: src/api/nebius/storage/v1/index.ts:2054
 
 Supports transitions:
-  * disabled -> enabled
-  * disabled -> suspended
-  * enabled <-> suspended
+
+- disabled -> enabled
+- disabled -> suspended
+- enabled <-> suspended

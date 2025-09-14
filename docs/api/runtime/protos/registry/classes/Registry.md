@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/registry](../README.md) / Registry
 
@@ -36,7 +36,7 @@ Defined in: [src/runtime/protos/registry.ts:63](https://github.com/nebius/nodejs
 
 `undefined` \| [`EnumClassInterface`](../interfaces/EnumClassInterface.md)
 
-***
+---
 
 ### getExtension()
 
@@ -58,7 +58,7 @@ Defined in: [src/runtime/protos/registry.ts:78](https://github.com/nebius/nodejs
 
 `undefined` \| [`ExtensionDescriptor`](../interfaces/ExtensionDescriptor.md)
 
-***
+---
 
 ### getExtensionByName()
 
@@ -76,7 +76,7 @@ Defined in: [src/runtime/protos/registry.ts:82](https://github.com/nebius/nodejs
 
 `undefined` \| [`ExtensionDescriptor`](../interfaces/ExtensionDescriptor.md)
 
-***
+---
 
 ### getMessage()
 
@@ -94,7 +94,7 @@ Defined in: [src/runtime/protos/registry.ts:55](https://github.com/nebius/nodejs
 
 `undefined` \| [`MessageClassInterface`](../interfaces/MessageClassInterface.md)
 
-***
+---
 
 ### listExtendees()
 
@@ -106,7 +106,7 @@ Defined in: [src/runtime/protos/registry.ts:90](https://github.com/nebius/nodejs
 
 `string`[]
 
-***
+---
 
 ### listExtensions()
 
@@ -124,7 +124,7 @@ Defined in: [src/runtime/protos/registry.ts:86](https://github.com/nebius/nodejs
 
 readonly [`ExtensionDescriptor`](../interfaces/ExtensionDescriptor.md)[]
 
-***
+---
 
 ### registerEnum()
 
@@ -142,7 +142,7 @@ Defined in: [src/runtime/protos/registry.ts:59](https://github.com/nebius/nodejs
 
 `void`
 
-***
+---
 
 ### registerExtension()
 
@@ -160,7 +160,7 @@ Defined in: [src/runtime/protos/registry.ts:67](https://github.com/nebius/nodejs
 
 `void`
 
-***
+---
 
 ### registerMessage()
 

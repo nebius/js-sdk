@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / BackupService
 
@@ -170,7 +170,7 @@ Creates a new on-demand backup.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`CreateBackupRequest`](../interfaces/CreateBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -302,7 +302,7 @@ Deletes an on-demand backup.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`DeleteBackupRequest`](../interfaces/DeleteBackupRequest.md), [`Operation`](../../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -313,7 +313,7 @@ Deletes an on-demand backup.
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:682
 
 Returns the specified PostgreSQL Cluster backup.
- To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
+To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
 
 ##### Parameters
 
@@ -376,7 +376,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:684
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:730
 
 Returns the specified PostgreSQL Cluster backup.
- To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
+To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
 
 ##### Parameters
 
@@ -395,7 +395,7 @@ Returns the specified PostgreSQL Cluster backup.
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:731
 
 Returns the specified PostgreSQL Cluster backup.
- To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
+To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
 
 ##### Parameters
 
@@ -418,7 +418,7 @@ Returns the specified PostgreSQL Cluster backup.
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:732
 
 Returns the specified PostgreSQL Cluster backup.
- To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
+To get the list of available PostgreSQL Cluster backups, make a [List] or [ListByCluster] request.
 
 ##### Parameters
 
@@ -438,7 +438,7 @@ Returns the specified PostgreSQL Cluster backup.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`GetBackupRequest`](../interfaces/GetBackupRequest.md), [`Backup`](../interfaces/Backup.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -450,7 +450,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:726
 
 [`OperationService`](../../../../common/v1alpha1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -582,7 +582,7 @@ Retrieves the list of PostgreSQL Cluster backups by project.
 
 [`Request`](../../../../../../runtime/request/classes/Request.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), [`ListBackupsResponse`](../interfaces/ListBackupsResponse.md)\>
 
-***
+---
 
 ### listByCluster()
 

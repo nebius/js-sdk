@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / SubnetSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:7372
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:7374
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:7374
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:7373
 
-***
+---
 
 ### enableEgressNat
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:7389
 
 Enable egress NAT gateway
 
-***
+---
 
 ### networkId
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:7379
 
 Network ID.
 
-***
+---
 
 ### pools
 

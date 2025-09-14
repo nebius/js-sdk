@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / UserAttributes
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21350
 
 Defined in: src/api/nebius/iam/v1/index.ts:21352
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21352
 
 Defined in: src/api/nebius/iam/v1/index.ts:21351
 
-***
+---
 
 ### email?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21351
 
 Defined in: src/api/nebius/iam/v1/index.ts:21359
 
-***
+---
 
 ### ~~emailVerified?~~
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21361
 
 Deprecated.
 
-***
+---
 
 ### familyName?
 
@@ -52,7 +52,7 @@ Deprecated.
 
 Defined in: src/api/nebius/iam/v1/index.ts:21356
 
-***
+---
 
 ### givenName?
 
@@ -60,7 +60,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21356
 
 Defined in: src/api/nebius/iam/v1/index.ts:21355
 
-***
+---
 
 ### locale?
 
@@ -68,7 +68,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21355
 
 Defined in: src/api/nebius/iam/v1/index.ts:21364
 
-***
+---
 
 ### name?
 
@@ -76,7 +76,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21364
 
 Defined in: src/api/nebius/iam/v1/index.ts:21354
 
-***
+---
 
 ### phoneNumber?
 
@@ -84,7 +84,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21354
 
 Defined in: src/api/nebius/iam/v1/index.ts:21365
 
-***
+---
 
 ### ~~phoneNumberVerified?~~
 
@@ -96,7 +96,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21367
 
 Deprecated.
 
-***
+---
 
 ### picture?
 
@@ -104,7 +104,7 @@ Deprecated.
 
 Defined in: src/api/nebius/iam/v1/index.ts:21358
 
-***
+---
 
 ### preferredUsername?
 
@@ -112,7 +112,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21358
 
 Defined in: src/api/nebius/iam/v1/index.ts:21357
 
-***
+---
 
 ### sub?
 
@@ -120,7 +120,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:21357
 
 Defined in: src/api/nebius/iam/v1/index.ts:21353
 
-***
+---
 
 ### ~~zoneinfo?~~
 

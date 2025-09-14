@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/fieldmask](../README.md) / Mask
 
@@ -42,7 +42,7 @@ Defined in: [src/runtime/fieldmask.ts:139](https://github.com/nebius/nodejs-sdk/
 
 Defined in: [src/runtime/fieldmask.ts:137](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/fieldmask.ts#L137)
 
-***
+---
 
 ### fieldParts
 
@@ -62,7 +62,7 @@ Defined in: [src/runtime/fieldmask.ts:278](https://github.com/nebius/nodejs-sdk/
 
 `string`
 
-***
+---
 
 ### addPath()
 
@@ -80,7 +80,7 @@ Defined in: [src/runtime/fieldmask.ts:203](https://github.com/nebius/nodejs-sdk/
 
 `this`
 
-***
+---
 
 ### copy()
 
@@ -92,7 +92,7 @@ Defined in: [src/runtime/fieldmask.ts:146](https://github.com/nebius/nodejs-sdk/
 
 `Mask`
 
-***
+---
 
 ### equals()
 
@@ -110,7 +110,7 @@ Defined in: [src/runtime/fieldmask.ts:152](https://github.com/nebius/nodejs-sdk/
 
 `boolean`
 
-***
+---
 
 ### getSubMask()
 
@@ -128,7 +128,7 @@ Defined in: [src/runtime/fieldmask.ts:184](https://github.com/nebius/nodejs-sdk/
 
 `null` \| `Mask`
 
-***
+---
 
 ### getSubMaskByPath()
 
@@ -146,7 +146,7 @@ Defined in: [src/runtime/fieldmask.ts:191](https://github.com/nebius/nodejs-sdk/
 
 `null` \| `Mask`
 
-***
+---
 
 ### intersectDumb()
 
@@ -164,7 +164,7 @@ Defined in: [src/runtime/fieldmask.ts:353](https://github.com/nebius/nodejs-sdk/
 
 `null` \| `Mask`
 
-***
+---
 
 ### intersectResetMask()
 
@@ -182,7 +182,7 @@ Defined in: [src/runtime/fieldmask.ts:334](https://github.com/nebius/nodejs-sdk/
 
 `null` \| `Mask`
 
-***
+---
 
 ### isEmpty()
 
@@ -194,7 +194,7 @@ Defined in: [src/runtime/fieldmask.ts:143](https://github.com/nebius/nodejs-sdk/
 
 `boolean`
 
-***
+---
 
 ### isFieldPath()
 
@@ -206,7 +206,7 @@ Defined in: [src/runtime/fieldmask.ts:180](https://github.com/nebius/nodejs-sdk/
 
 `boolean`
 
-***
+---
 
 ### marshal()
 
@@ -218,7 +218,7 @@ Defined in: [src/runtime/fieldmask.ts:272](https://github.com/nebius/nodejs-sdk/
 
 `string`
 
-***
+---
 
 ### merge()
 
@@ -236,7 +236,7 @@ Defined in: [src/runtime/fieldmask.ts:223](https://github.com/nebius/nodejs-sdk/
 
 `this`
 
-***
+---
 
 ### subMask()
 
@@ -254,7 +254,7 @@ Defined in: [src/runtime/fieldmask.ts:199](https://github.com/nebius/nodejs-sdk/
 
 `null` \| `Mask`
 
-***
+---
 
 ### subtractDumb()
 
@@ -272,7 +272,7 @@ Defined in: [src/runtime/fieldmask.ts:375](https://github.com/nebius/nodejs-sdk/
 
 `this`
 
-***
+---
 
 ### subtractResetMask()
 
@@ -290,7 +290,7 @@ Defined in: [src/runtime/fieldmask.ts:400](https://github.com/nebius/nodejs-sdk/
 
 `this`
 
-***
+---
 
 ### toFieldPath()
 
@@ -302,7 +302,7 @@ Defined in: [src/runtime/fieldmask.ts:163](https://github.com/nebius/nodejs-sdk/
 
 `null` \| [`FieldPath`](FieldPath.md)
 
-***
+---
 
 ### toJSON()
 
@@ -314,7 +314,7 @@ Defined in: [src/runtime/fieldmask.ts:452](https://github.com/nebius/nodejs-sdk/
 
 `unknown`
 
-***
+---
 
 ### toObject()
 
@@ -326,7 +326,7 @@ Defined in: [src/runtime/fieldmask.ts:441](https://github.com/nebius/nodejs-sdk/
 
 `unknown`
 
-***
+---
 
 ### toString()
 
@@ -338,7 +338,7 @@ Defined in: [src/runtime/fieldmask.ts:285](https://github.com/nebius/nodejs-sdk/
 
 `string`
 
-***
+---
 
 ### fromObject()
 
@@ -356,7 +356,7 @@ Defined in: [src/runtime/fieldmask.ts:406](https://github.com/nebius/nodejs-sdk/
 
 `Mask`
 
-***
+---
 
 ### parse()
 
@@ -374,7 +374,7 @@ Defined in: [src/runtime/fieldmask.ts:236](https://github.com/nebius/nodejs-sdk/
 
 `Mask`
 
-***
+---
 
 ### Parse()
 
@@ -392,7 +392,7 @@ Defined in: [src/runtime/fieldmask.ts:239](https://github.com/nebius/nodejs-sdk/
 
 `Mask`
 
-***
+---
 
 ### parseJSON()
 

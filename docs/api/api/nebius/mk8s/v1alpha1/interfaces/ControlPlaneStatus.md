@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / ControlPlaneStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2071
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2073
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2073
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2072
 
-***
+---
 
 ### auth?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2072
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2085
 
-***
+---
 
 ### endpoints?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2085
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2079
 
-***
+---
 
 ### etcdClusterSize
 
@@ -50,7 +50,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2084
 
 Number of instances in etcd cluster.
 
-***
+---
 
 ### version
 

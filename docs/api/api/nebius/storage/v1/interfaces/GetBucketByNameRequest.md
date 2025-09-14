@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / GetBucketByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:617
 
 Defined in: src/api/nebius/storage/v1/index.ts:619
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:619
 
 Defined in: src/api/nebius/storage/v1/index.ts:618
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:618
 
 Defined in: src/api/nebius/storage/v1/index.ts:621
 
-***
+---
 
 ### parentId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / AllocationSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:1315
 
 Defined in: src/api/nebius/vpc/v1/index.ts:1317
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:1317
 
 Defined in: src/api/nebius/vpc/v1/index.ts:1316
 
-***
+---
 
 ### ipSpec?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / GetClusterByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:233
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:235
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:235
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:234
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:234
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:237
 
-***
+---
 
 ### parentId
 

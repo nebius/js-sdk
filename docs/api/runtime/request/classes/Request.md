@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/request](../README.md) / Request
 
@@ -80,7 +80,7 @@ Defined in: [src/runtime/request.ts:118](https://github.com/nebius/nodejs-sdk/bl
 
 Defined in: [src/runtime/request.ts:95](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/request.ts#L95)
 
-***
+---
 
 ### initialMetadata
 
@@ -88,7 +88,7 @@ Defined in: [src/runtime/request.ts:95](https://github.com/nebius/nodejs-sdk/blo
 
 Defined in: [src/runtime/request.ts:98](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/request.ts#L98)
 
-***
+---
 
 ### requestId
 
@@ -96,7 +96,7 @@ Defined in: [src/runtime/request.ts:98](https://github.com/nebius/nodejs-sdk/blo
 
 Defined in: [src/runtime/request.ts:101](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/request.ts#L101)
 
-***
+---
 
 ### result
 
@@ -104,7 +104,7 @@ Defined in: [src/runtime/request.ts:101](https://github.com/nebius/nodejs-sdk/bl
 
 Defined in: [src/runtime/request.ts:97](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/request.ts#L97)
 
-***
+---
 
 ### status
 
@@ -112,7 +112,7 @@ Defined in: [src/runtime/request.ts:97](https://github.com/nebius/nodejs-sdk/blo
 
 Defined in: [src/runtime/request.ts:100](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/request.ts#L100)
 
-***
+---
 
 ### traceId
 
@@ -120,7 +120,7 @@ Defined in: [src/runtime/request.ts:100](https://github.com/nebius/nodejs-sdk/bl
 
 Defined in: [src/runtime/request.ts:102](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/request.ts#L102)
 
-***
+---
 
 ### trailingMetadata
 
@@ -140,7 +140,7 @@ Defined in: [src/runtime/request.ts:371](https://github.com/nebius/nodejs-sdk/bl
 
 `Record`\<`string`, `unknown`\>
 
-***
+---
 
 ### cancel()
 

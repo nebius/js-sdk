@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/audit/v2](../README.md) / Response
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:2129
 
 Defined in: src/api/nebius/audit/v2/index.ts:2131
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:2131
 
 Defined in: src/api/nebius/audit/v2/index.ts:2130
 
-***
+---
 
 ### errorMessage
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/audit/v2/index.ts:2141
 
 Error message if the call was not successful.
 
-***
+---
 
 ### payload?
 
@@ -48,7 +48,7 @@ The payload of the response.
 
 \[`key`: `string`\]: `any`
 
-***
+---
 
 ### statusCode
 

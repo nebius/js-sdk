@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ExchangeTokenRequest
 
@@ -18,7 +18,7 @@ https://www.rfc-editor.org/rfc/rfc8693.html
 
 Defined in: src/api/nebius/iam/v1/index.ts:22153
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:22153
 
 Defined in: src/api/nebius/iam/v1/index.ts:22152
 
-***
+---
 
 ### actorToken
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:22188
 
 optional, subject token for impersonation/delegation (who want to impersonate/delegate) in subject_token.
 
-***
+---
 
 ### actorTokenType
 
@@ -46,7 +46,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:22193
 
 optional, token type for the impersonation/delegation (who want to impersonate/delegate). Usually it's urn:ietf:params:oauth:token-type:access_token
 
-***
+---
 
 ### audience
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:22183
 
 optional, name of the oauth client id on which this token will be used
 
-***
+---
 
 ### grantType
 
@@ -66,7 +66,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:22158
 
 required - urn:ietf:params:oauth:grant-type:token-exchange
 
-***
+---
 
 ### requestedTokenType
 
@@ -76,7 +76,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:22163
 
 optional type of requested token, default is urn:ietf:params:oauth:token-type:access_token
 
-***
+---
 
 ### resource
 
@@ -86,7 +86,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:22198
 
 optional, list of resources approved to use by token, if applicable
 
-***
+---
 
 ### scopes
 
@@ -96,7 +96,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:22178
 
 optional (scopes of the token)
 
-***
+---
 
 ### subjectToken
 
@@ -106,7 +106,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:22168
 
 required - could be self signed JWT token
 
-***
+---
 
 ### subjectTokenType
 

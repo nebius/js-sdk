@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / ListOperationsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2891
 
 Defined in: src/api/nebius/common/v1/index.ts:2893
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2893
 
 Defined in: src/api/nebius/common/v1/index.ts:2892
 
-***
+---
 
 ### nextPageToken
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/common/v1/index.ts:2892
 
 Defined in: src/api/nebius/common/v1/index.ts:2895
 
-***
+---
 
 ### operations
 

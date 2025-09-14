@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / GetAllocationByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:101
 
 Defined in: src/api/nebius/vpc/v1/index.ts:103
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:103
 
 Defined in: src/api/nebius/vpc/v1/index.ts:102
 
-***
+---
 
 ### name
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:102
 
 Defined in: src/api/nebius/vpc/v1/index.ts:105
 
-***
+---
 
 ### parentId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / ClusterStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1861
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:1863
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1863
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:1862
 
-***
+---
 
 ### controlPlane?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1862
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:1865
 
-***
+---
 
 ### reconciling
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1870
 
 Show that changes are in flight
 
-***
+---
 
 ### state
 

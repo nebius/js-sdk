@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / KubeNetworkSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1768
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:1770
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1770
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:1769
 
-***
+---
 
 ### serviceCidrs
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:1769
 Defined in: src/api/nebius/mk8s/v1/index.ts:1781
 
 CIDR blocks for Service ClusterIP allocation.
- For now, only one value is supported.
- Must be a valid CIDR block or prefix length.
- In case of prefix length, certain CIDR is auto allocated.
- Specified CIDR blocks will be reserved in Cluster.spec.control_plane.subnet_id to prevent address duplication.
- Allowed prefix length is from "/12" to "/28".
- Empty value treated as ["/16"].
+For now, only one value is supported.
+Must be a valid CIDR block or prefix length.
+In case of prefix length, certain CIDR is auto allocated.
+Specified CIDR blocks will be reserved in Cluster.spec.control_plane.subnet_id to prevent address duplication.
+Allowed prefix length is from "/12" to "/28".
+Empty value treated as ["/16"].

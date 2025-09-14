@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / AccessPermitService
 
@@ -49,9 +49,9 @@ Defined in: src/api/nebius/iam/v1/index.ts:2847
 Defined in: src/api/nebius/iam/v1/index.ts:2855
 
 Creates access permit for provided resource with provided role.
- Subject of access permit is also a parent of access permit.
- If resource is unknown - NOT_FOUND will be thrown.
- If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown.
+Subject of access permit is also a parent of access permit.
+If resource is unknown - NOT_FOUND will be thrown.
+If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown.
 
 ##### Parameters
 
@@ -114,9 +114,9 @@ Defined in: src/api/nebius/iam/v1/index.ts:2857
 Defined in: src/api/nebius/iam/v1/index.ts:2896
 
 Creates access permit for provided resource with provided role.
- Subject of access permit is also a parent of access permit.
- If resource is unknown - NOT_FOUND will be thrown.
- If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown.
+Subject of access permit is also a parent of access permit.
+If resource is unknown - NOT_FOUND will be thrown.
+If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown.
 
 ##### Parameters
 
@@ -135,9 +135,9 @@ Creates access permit for provided resource with provided role.
 Defined in: src/api/nebius/iam/v1/index.ts:2897
 
 Creates access permit for provided resource with provided role.
- Subject of access permit is also a parent of access permit.
- If resource is unknown - NOT_FOUND will be thrown.
- If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown.
+Subject of access permit is also a parent of access permit.
+If resource is unknown - NOT_FOUND will be thrown.
+If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown.
 
 ##### Parameters
 
@@ -160,9 +160,9 @@ Creates access permit for provided resource with provided role.
 Defined in: src/api/nebius/iam/v1/index.ts:2898
 
 Creates access permit for provided resource with provided role.
- Subject of access permit is also a parent of access permit.
- If resource is unknown - NOT_FOUND will be thrown.
- If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown.
+Subject of access permit is also a parent of access permit.
+If resource is unknown - NOT_FOUND will be thrown.
+If parent of subject is not from resource's hierarchy - NOT_FOUND will be thrown.
 
 ##### Parameters
 
@@ -182,7 +182,7 @@ Creates access permit for provided resource with provided role.
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessPermitRequest`](../interfaces/CreateAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -314,7 +314,7 @@ Delete access permit by id
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessPermitRequest`](../interfaces/DeleteAccessPermitRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -446,7 +446,7 @@ Gets access permit by id
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessPermitRequest`](../interfaces/GetAccessPermitRequest.md), [`AccessPermit`](../interfaces/AccessPermit.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -458,7 +458,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2892
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 

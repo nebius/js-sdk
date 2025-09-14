@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v2](../README.md) / Tenant
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2936
 
 Defined in: src/api/nebius/iam/v2/index.ts:2938
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2938
 
 Defined in: src/api/nebius/iam/v2/index.ts:2937
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2937
 
 Defined in: src/api/nebius/iam/v2/index.ts:2939
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2939
 
 Defined in: src/api/nebius/iam/v2/index.ts:2940
 
-***
+---
 
 ### status?
 

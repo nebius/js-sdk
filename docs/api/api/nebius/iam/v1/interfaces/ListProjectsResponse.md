@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListProjectsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:15758
 
 Defined in: src/api/nebius/iam/v1/index.ts:15760
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:15760
 
 Defined in: src/api/nebius/iam/v1/index.ts:15759
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:15759
 
 Defined in: src/api/nebius/iam/v1/index.ts:15761
 
-***
+---
 
 ### nextPageToken
 

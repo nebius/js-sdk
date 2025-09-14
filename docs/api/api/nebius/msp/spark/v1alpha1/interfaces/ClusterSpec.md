@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / ClusterSpec
 
@@ -18,7 +18,7 @@ Cluster specification
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1186
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1186
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1185
 
-***
+---
 
 ### authorization?
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1201
 
 Password for Spark History server and Sessions.
 
-***
+---
 
 ### description?
 
@@ -46,7 +46,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1191
 
 Description of the cluster.
 
-***
+---
 
 ### limits?
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1196
 
 Limits for the cluster
 
-***
+---
 
 ### networkId
 
@@ -64,7 +64,7 @@ Limits for the cluster
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1208
 
-***
+---
 
 ### serviceAccountId
 
@@ -73,4 +73,4 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1208
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1207
 
 ID of the user service account for accessing
- S3 buckets in the user project
+S3 buckets in the user project

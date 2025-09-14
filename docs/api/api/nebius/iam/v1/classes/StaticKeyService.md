@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / StaticKeyService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:19004
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteStaticKeyRequest`](../interfaces/DeleteStaticKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### find()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:19019
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`FindStaticKeyRequest`](../interfaces/FindStaticKeyRequest.md), [`FindStaticKeyResponse`](../interfaces/FindStaticKeyResponse.md)\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18980
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyRequest`](../interfaces/GetStaticKeyRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18992
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetStaticKeyByNameRequest`](../interfaces/GetStaticKeyByNameRequest.md), [`StaticKey`](../interfaces/StaticKey.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18950
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### issue()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18956
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`IssueStaticKeyRequest`](../interfaces/IssueStaticKeyRequest.md), [`IssueStaticKeyResponse`](../interfaces/IssueStaticKeyResponse.md)\>
 
-***
+---
 
 ### list()
 
@@ -794,7 +794,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:18968
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListStaticKeysRequest`](../interfaces/ListStaticKeysRequest.md), [`ListStaticKeysResponse`](../interfaces/ListStaticKeysResponse.md)\>
 
-***
+---
 
 ### revoke()
 

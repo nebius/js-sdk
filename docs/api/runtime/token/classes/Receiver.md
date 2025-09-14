@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/token](../README.md) / Receiver
 
@@ -62,7 +62,7 @@ Defined in: [src/runtime/token.ts:105](https://github.com/nebius/nodejs-sdk/blob
 
 `boolean`
 
-***
+---
 
 ### fetch()
 

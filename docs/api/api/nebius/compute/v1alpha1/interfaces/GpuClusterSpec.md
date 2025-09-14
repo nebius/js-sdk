@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / GpuClusterSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4170
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:4172
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4172
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:4171
 
-***
+---
 
 ### infinibandFabric
 

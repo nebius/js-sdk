@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / IPv4PrivateSubnetPools
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7620
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7622
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7622
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7621
 
-***
+---
 
 ### pools
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7621
 Defined in: src/api/nebius/vpc/v1/index.ts:7628
 
 Pools for private ipv4 allocations in subnet
- Must be empty if 'use_network_pools = true'
+Must be empty if 'use_network_pools = true'
 
-***
+---
 
 ### useNetworkPools
 
@@ -44,4 +44,4 @@ Pools for private ipv4 allocations in subnet
 Defined in: src/api/nebius/vpc/v1/index.ts:7634
 
 Allow using of private ipv4 pools which are specified in network
- Must be false if 'pools' is not empty
+Must be false if 'pools' is not empty

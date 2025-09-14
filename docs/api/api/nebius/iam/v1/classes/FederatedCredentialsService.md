@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / FederatedCredentialsService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6674
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateFederatedCredentialsRequest`](../interfaces/CreateFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6704
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteFederatedCredentialsRequest`](../interfaces/DeleteFederatedCredentialsRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6638
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetFederatedCredentialsRequest`](../interfaces/GetFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6650
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameFederatedCredentialsRequest`](../interfaces/GetByNameFederatedCredentialsRequest.md), [`FederatedCredentials`](../interfaces/FederatedCredentials.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6632
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:6662
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListFederatedCredentialsRequest`](../interfaces/ListFederatedCredentialsRequest.md), [`ListFederatedCredentialsResponse`](../interfaces/ListFederatedCredentialsResponse.md)\>
 
-***
+---
 
 ### update()
 

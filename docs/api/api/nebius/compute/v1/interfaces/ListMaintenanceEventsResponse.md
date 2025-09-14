@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / ListMaintenanceEventsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9547
 
 Defined in: src/api/nebius/compute/v1/index.ts:9549
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9549
 
 Defined in: src/api/nebius/compute/v1/index.ts:9548
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:9548
 
 Defined in: src/api/nebius/compute/v1/index.ts:9550
 
-***
+---
 
 ### nextPageToken
 

@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / UserAccountStatus\_State
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / UserAccountStatus_State
 
-# Type Alias: UserAccountStatus\_State
+# Type Alias: UserAccountStatus_State
 
-> **UserAccountStatus\_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"DELETING"`\>
+> **UserAccountStatus_State** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"STATE_UNSPECIFIED"` \| `"ACTIVE"` \| `"INACTIVE"` \| `"DELETING"`\>
 
 Defined in: src/api/nebius/iam/v1/index.ts:22593

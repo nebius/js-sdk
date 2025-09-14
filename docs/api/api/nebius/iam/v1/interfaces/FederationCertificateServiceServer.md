@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / FederationCertificateServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:7901
 
 Defined in: src/api/nebius/iam/v1/index.ts:7902
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:7902
 
 Defined in: src/api/nebius/iam/v1/index.ts:7906
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:7906
 
 Defined in: src/api/nebius/iam/v1/index.ts:7903
 
-***
+---
 
 ### listByFederation
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:7903
 
 Defined in: src/api/nebius/iam/v1/index.ts:7904
 
-***
+---
 
 ### update
 

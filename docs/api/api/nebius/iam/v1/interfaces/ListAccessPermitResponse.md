@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListAccessPermitResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2674
 
 Defined in: src/api/nebius/iam/v1/index.ts:2676
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2676
 
 Defined in: src/api/nebius/iam/v1/index.ts:2675
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:2681
 
 List of access bindings returned in the response. The field should be named as `items` for consistency.
 
-***
+---
 
 ### nextPageToken
 

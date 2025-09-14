@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / CreateJobRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2231
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2233
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2233
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2232
 
-***
+---
 
 ### metadata?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2238
 
 Metadata associated with the new job. Must include parent_id - ID of the cluster to create job in.
 
-***
+---
 
 ### spec?
 

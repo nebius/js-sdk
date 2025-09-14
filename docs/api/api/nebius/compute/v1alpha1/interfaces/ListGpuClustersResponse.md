@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / ListGpuClustersResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:3679
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:3681
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:3681
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:3680
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:3680
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:3682
 
-***
+---
 
 ### nextPageToken
 

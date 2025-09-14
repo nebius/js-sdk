@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / GetStaticKeyByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:17862
 
 Defined in: src/api/nebius/iam/v1/index.ts:17864
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:17864
 
 Defined in: src/api/nebius/iam/v1/index.ts:17863
 
-***
+---
 
 ### name
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:17874
 
 name of the static key
 
-***
+---
 
 ### parentId
 

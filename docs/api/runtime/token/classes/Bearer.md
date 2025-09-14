@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/token](../README.md) / Bearer
 
@@ -55,7 +55,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 `undefined` \| `string`
 
-***
+---
 
 ### wrapped
 
@@ -87,7 +87,7 @@ Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob
 
 `Promise`\<`void`\>
 
-***
+---
 
 ### receiver()
 

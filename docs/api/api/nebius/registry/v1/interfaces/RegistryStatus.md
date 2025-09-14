@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/registry/v1](../README.md) / RegistryStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1933
 
 Defined in: src/api/nebius/registry/v1/index.ts:1935
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1935
 
 Defined in: src/api/nebius/registry/v1/index.ts:1934
 
-***
+---
 
 ### imagesCount
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1934
 
 Defined in: src/api/nebius/registry/v1/index.ts:1937
 
-***
+---
 
 ### registryFqdn
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1942
 
 regional fqdn "cr.eu-north1.nebius.cloud"
 
-***
+---
 
 ### state
 

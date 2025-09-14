@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/logging/v1/agentmanager](../README.md) / Parameter
 
@@ -18,7 +18,7 @@ Key-value parameter for module configuration.
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1033
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1033
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1032
 
-***
+---
 
 ### name
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1038
 
 Name of the parameter.
 
-***
+---
 
 ### value
 

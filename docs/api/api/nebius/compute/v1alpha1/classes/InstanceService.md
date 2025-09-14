@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / InstanceService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:6456
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInstanceRequest`](../interfaces/CreateInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:6486
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInstanceRequest`](../interfaces/DeleteInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:6420
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInstanceRequest`](../interfaces/GetInstanceRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:6432
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetByNameRequest`](../../../common/v1/interfaces/GetByNameRequest.md), [`Instance`](../interfaces/Instance.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:6414
 
 [`OperationService`](../../../common/v1alpha1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:6444
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInstancesRequest`](../interfaces/ListInstancesRequest.md), [`ListInstancesResponse`](../interfaces/ListInstancesResponse.md)\>
 
-***
+---
 
 ### listOperationsByParent()
 
@@ -794,7 +794,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:6531
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListOperationsByParentRequest`](../../../common/v1alpha1/interfaces/ListOperationsByParentRequest.md), [`ListOperationsResponse`](../../../common/v1alpha1/interfaces/ListOperationsResponse.md)\>
 
-***
+---
 
 ### start()
 
@@ -918,7 +918,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:6501
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StartInstanceRequest`](../interfaces/StartInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### stop()
 
@@ -1042,7 +1042,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:6516
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`StopInstanceRequest`](../interfaces/StopInstanceRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1alpha1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### update()
 

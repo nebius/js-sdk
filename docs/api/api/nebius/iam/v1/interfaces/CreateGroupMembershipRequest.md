@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / CreateGroupMembershipRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:9806
 
 Defined in: src/api/nebius/iam/v1/index.ts:9808
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:9808
 
 Defined in: src/api/nebius/iam/v1/index.ts:9807
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:9807
 
 Defined in: src/api/nebius/iam/v1/index.ts:9809
 
-***
+---
 
 ### revokeAfterHours
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:9809
 
 Defined in: src/api/nebius/iam/v1/index.ts:9811
 
-***
+---
 
 ### spec?
 

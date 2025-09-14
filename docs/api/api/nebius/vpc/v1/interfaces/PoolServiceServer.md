@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / PoolServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5104
 
 Defined in: src/api/nebius/vpc/v1/index.ts:5109
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5109
 
 Defined in: src/api/nebius/vpc/v1/index.ts:5111
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5111
 
 Defined in: src/api/nebius/vpc/v1/index.ts:5105
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5105
 
 Defined in: src/api/nebius/vpc/v1/index.ts:5106
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5106
 
 Defined in: src/api/nebius/vpc/v1/index.ts:5107
 
-***
+---
 
 ### listBySourcePool
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:5107
 
 Defined in: src/api/nebius/vpc/v1/index.ts:5108
 
-***
+---
 
 ### update
 

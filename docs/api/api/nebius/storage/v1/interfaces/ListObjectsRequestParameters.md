@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListObjectsRequestParameters
 
@@ -8,7 +8,7 @@
 
 Defined in: src/api/nebius/storage/v1/index.ts:6139
 
-----------------------------------------
+---
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6139
 
 Defined in: src/api/nebius/storage/v1/index.ts:6141
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6141
 
 Defined in: src/api/nebius/storage/v1/index.ts:6140
 
-***
+---
 
 ### bucketName
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6140
 
 Defined in: src/api/nebius/storage/v1/index.ts:6142
 
-***
+---
 
 ### delimiter
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6142
 
 Defined in: src/api/nebius/storage/v1/index.ts:6144
 
-***
+---
 
 ### limit
 
@@ -50,7 +50,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6144
 
 Defined in: src/api/nebius/storage/v1/index.ts:6146
 
-***
+---
 
 ### prefix
 
@@ -58,7 +58,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:6146
 
 Defined in: src/api/nebius/storage/v1/index.ts:6143
 
-***
+---
 
 ### startAfter
 

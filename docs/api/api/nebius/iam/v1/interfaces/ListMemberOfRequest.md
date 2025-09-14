@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListMemberOfRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10253
 
 Defined in: src/api/nebius/iam/v1/index.ts:10255
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10255
 
 Defined in: src/api/nebius/iam/v1/index.ts:10254
 
-***
+---
 
 ### filter
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10254
 
 Defined in: src/api/nebius/iam/v1/index.ts:10267
 
-***
+---
 
 ### pageSize?
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:10265
 
 Default value: 10
 
-***
+---
 
 ### pageToken
 
@@ -50,7 +50,7 @@ Default value: 10
 
 Defined in: src/api/nebius/iam/v1/index.ts:10266
 
-***
+---
 
 ### subjectId
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/registry/v1](../README.md) / RegistryService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1610
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateRegistryRequest`](../interfaces/CreateRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1640
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteRegistryRequest`](../interfaces/DeleteRegistryRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1586
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetRegistryRequest`](../interfaces/GetRegistryRequest.md), [`Registry`](../interfaces/Registry.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -422,7 +422,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1580
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:1598
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListRegistriesRequest`](../interfaces/ListRegistriesRequest.md), [`ListRegistriesResponse`](../interfaces/ListRegistriesResponse.md)\>
 
-***
+---
 
 ### update()
 

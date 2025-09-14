@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/quotas/v1](../README.md) / ListQuotaAllowancesResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/quotas/v1/index.ts:240
 
 Defined in: src/api/nebius/quotas/v1/index.ts:242
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/quotas/v1/index.ts:242
 
 Defined in: src/api/nebius/quotas/v1/index.ts:241
 
-***
+---
 
 ### items
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/quotas/v1/index.ts:247
 
 List of quotas on this result page.
 
-***
+---
 
 ### nextPageToken
 

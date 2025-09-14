@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / GpuClusterStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4255
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:4257
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4257
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:4256
 
-***
+---
 
 ### instances
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:4256
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:4258
 
-***
+---
 
 ### reconciling
 

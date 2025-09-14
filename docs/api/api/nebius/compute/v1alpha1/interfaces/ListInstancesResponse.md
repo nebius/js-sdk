@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / ListInstancesResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:5961
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:5963
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:5963
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:5962
 
-***
+---
 
 ### items
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:5962
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:5964
 
-***
+---
 
 ### nextPageToken
 

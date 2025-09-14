@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / ControlPlaneEndpointsSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1688
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1690
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1690
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1689
 
-***
+---
 
 ### publicEndpoint?
 

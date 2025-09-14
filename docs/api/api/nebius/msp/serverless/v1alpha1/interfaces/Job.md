@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/serverless/v1alpha1](../README.md) / Job
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2187
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2189
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2189
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2188
 
-***
+---
 
 ### metadata?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2188
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2190
 
-***
+---
 
 ### spec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2190
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2191
 
-***
+---
 
 ### status?
 

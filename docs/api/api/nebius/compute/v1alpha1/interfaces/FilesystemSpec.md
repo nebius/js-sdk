@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / FilesystemSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2713
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2715
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2715
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2714
 
-***
+---
 
 ### blockSizeBytes
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2714
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2716
 
-***
+---
 
 ### size?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2716
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2718
 
-***
+---
 
 ### type
 

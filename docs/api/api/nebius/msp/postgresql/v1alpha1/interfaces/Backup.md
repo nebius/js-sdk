@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / Backup
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:800
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:802
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:802
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:801
 
-***
+---
 
 ### creationFinish?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:822
 
 Creation finish timestamp.
 
-***
+---
 
 ### creationStart?
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:817
 
 Creation start timestamp.
 
-***
+---
 
 ### id
 
@@ -54,7 +54,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:807
 
 Required. ID of the backup.
 
-***
+---
 
 ### onDemand
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:837
 
 Is the backup an on-demand manual backup.
 
-***
+---
 
 ### sourceClusterId
 
@@ -74,7 +74,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:812
 
 ID of the PostgreSQL cluster that the backup was created for.
 
-***
+---
 
 ### sourceClusterName
 
@@ -84,7 +84,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:827
 
 Name of the PostgreSQL cluster that the backup was created for.
 
-***
+---
 
 ### sourceClusterVisible
 

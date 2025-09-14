@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListObjectVersionsResponse\_DeleteMarkerView
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListObjectVersionsResponse_DeleteMarkerView
 
-# Interface: ListObjectVersionsResponse\_DeleteMarkerView
+# Interface: ListObjectVersionsResponse_DeleteMarkerView
 
 Defined in: src/api/nebius/storage/v1/index.ts:5990
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5990
 
 Defined in: src/api/nebius/storage/v1/index.ts:5992
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5992
 
 Defined in: src/api/nebius/storage/v1/index.ts:5991
 
-***
+---
 
 ### lastModified?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5991
 
 Defined in: src/api/nebius/storage/v1/index.ts:5995
 
-***
+---
 
 ### latest
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5995
 
 Defined in: src/api/nebius/storage/v1/index.ts:5993
 
-***
+---
 
 ### objectKey
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5993
 
 Defined in: src/api/nebius/storage/v1/index.ts:5994
 
-***
+---
 
 ### versionId
 

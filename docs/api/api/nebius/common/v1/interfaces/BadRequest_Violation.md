@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / BadRequest\_Violation
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / BadRequest_Violation
 
-# Interface: BadRequest\_Violation
+# Interface: BadRequest_Violation
 
 Defined in: src/api/nebius/common/v1/index.ts:708
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/common/v1/index.ts:708
 
 Defined in: src/api/nebius/common/v1/index.ts:710
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/common/v1/index.ts:710
 
 Defined in: src/api/nebius/common/v1/index.ts:709
 
-***
+---
 
 ### field
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/common/v1/index.ts:715
 
 What field value is invalid.
 
-***
+---
 
 ### message
 

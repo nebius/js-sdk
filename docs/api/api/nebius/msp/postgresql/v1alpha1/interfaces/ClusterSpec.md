@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / ClusterSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2838
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2840
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2840
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2839
 
-***
+---
 
 ### backup?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2839
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2853
 
-***
+---
 
 ### bootstrap?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2853
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2852
 
-***
+---
 
 ### config?
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2852
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2851
 
-***
+---
 
 ### description
 
@@ -58,7 +58,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:2845
 
 Description of the PostgreSQL cluster.
 
-***
+---
 
 ### networkId
 

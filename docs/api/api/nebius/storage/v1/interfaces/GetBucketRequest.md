@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / GetBucketRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:532
 
 Defined in: src/api/nebius/storage/v1/index.ts:534
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:534
 
 Defined in: src/api/nebius/storage/v1/index.ts:533
 
-***
+---
 
 ### id
 

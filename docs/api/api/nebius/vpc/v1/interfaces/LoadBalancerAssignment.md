@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / LoadBalancerAssignment
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:2363
 
 Defined in: src/api/nebius/vpc/v1/index.ts:2365
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:2365
 
 Defined in: src/api/nebius/vpc/v1/index.ts:2364
 
-***
+---
 
 ### id
 

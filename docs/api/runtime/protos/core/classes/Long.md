@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/core](../README.md) / Long
 
 # Class: Long
 
-Defined in: node\_modules/long/umd/types.d.ts:12
+Defined in: node_modules/long/umd/types.d.ts:12
 
 ## Constructors
 
@@ -14,9 +14,9 @@ Defined in: node\_modules/long/umd/types.d.ts:12
 
 > **new Long**(`low`, `high?`, `unsigned?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:16
+Defined in: node_modules/long/umd/types.d.ts:16
 
-Constructs a 64 bit two's-complement integer, given its low and high 32 bit values as signed integers. See the from* functions below for more convenient ways of constructing Longs.
+Constructs a 64 bit two's-complement integer, given its low and high 32 bit values as signed integers. See the from\* functions below for more convenient ways of constructing Longs.
 
 #### Parameters
 
@@ -42,107 +42,107 @@ Constructs a 64 bit two's-complement integer, given its low and high 32 bit valu
 
 > **high**: `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:61
+Defined in: node_modules/long/umd/types.d.ts:61
 
 The high 32 bits as a signed value.
 
-***
+---
 
 ### low
 
 > **low**: `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:66
+Defined in: node_modules/long/umd/types.d.ts:66
 
 The low 32 bits as a signed value.
 
-***
+---
 
 ### unsigned
 
 > **unsigned**: `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:71
+Defined in: node_modules/long/umd/types.d.ts:71
 
 Whether unsigned or not.
 
-***
+---
 
-### MAX\_UNSIGNED\_VALUE
+### MAX_UNSIGNED_VALUE
 
-> `static` **MAX\_UNSIGNED\_VALUE**: `Long`
+> `static` **MAX_UNSIGNED_VALUE**: `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:21
+Defined in: node_modules/long/umd/types.d.ts:21
 
 Maximum unsigned value.
 
-***
+---
 
-### MAX\_VALUE
+### MAX_VALUE
 
-> `static` **MAX\_VALUE**: `Long`
+> `static` **MAX_VALUE**: `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:26
+Defined in: node_modules/long/umd/types.d.ts:26
 
 Maximum signed value.
 
-***
+---
 
-### MIN\_VALUE
+### MIN_VALUE
 
-> `static` **MIN\_VALUE**: `Long`
+> `static` **MIN_VALUE**: `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:31
+Defined in: node_modules/long/umd/types.d.ts:31
 
 Minimum signed value.
 
-***
+---
 
-### NEG\_ONE
+### NEG_ONE
 
-> `static` **NEG\_ONE**: `Long`
+> `static` **NEG_ONE**: `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:36
+Defined in: node_modules/long/umd/types.d.ts:36
 
 Signed negative one.
 
-***
+---
 
 ### ONE
 
 > `static` **ONE**: `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:41
+Defined in: node_modules/long/umd/types.d.ts:41
 
 Signed one.
 
-***
+---
 
 ### UONE
 
 > `static` **UONE**: `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:46
+Defined in: node_modules/long/umd/types.d.ts:46
 
 Unsigned one.
 
-***
+---
 
 ### UZERO
 
 > `static` **UZERO**: `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:51
+Defined in: node_modules/long/umd/types.d.ts:51
 
 Unsigned zero.
 
-***
+---
 
 ### ZERO
 
 > `static` **ZERO**: `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:56
+Defined in: node_modules/long/umd/types.d.ts:56
 
 Signed zero
 
@@ -152,7 +152,7 @@ Signed zero
 
 > **add**(`addend`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:130
+Defined in: node_modules/long/umd/types.d.ts:130
 
 Returns the sum of this and the specified Long.
 
@@ -166,13 +166,13 @@ Returns the sum of this and the specified Long.
 
 `Long`
 
-***
+---
 
 ### and()
 
 > **and**(`other`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:135
+Defined in: node_modules/long/umd/types.d.ts:135
 
 Returns the bitwise AND of this Long and the specified.
 
@@ -186,13 +186,13 @@ Returns the bitwise AND of this Long and the specified.
 
 `Long`
 
-***
+---
 
 ### clz()
 
 > **clz**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:325
+Defined in: node_modules/long/umd/types.d.ts:325
 
 Returns count leading zeros of this Long.
 
@@ -200,13 +200,13 @@ Returns count leading zeros of this Long.
 
 `number`
 
-***
+---
 
 ### comp()
 
 > **comp**(`other`): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:145
+Defined in: node_modules/long/umd/types.d.ts:145
 
 Compares this Long's value with the specified's.
 
@@ -220,13 +220,13 @@ Compares this Long's value with the specified's.
 
 `number`
 
-***
+---
 
 ### compare()
 
 > **compare**(`other`): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:140
+Defined in: node_modules/long/umd/types.d.ts:140
 
 Compares this Long's value with the specified's.
 
@@ -240,13 +240,13 @@ Compares this Long's value with the specified's.
 
 `number`
 
-***
+---
 
 ### countLeadingZeros()
 
 > **countLeadingZeros**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:320
+Defined in: node_modules/long/umd/types.d.ts:320
 
 Returns count leading zeros of this Long.
 
@@ -254,13 +254,13 @@ Returns count leading zeros of this Long.
 
 `number`
 
-***
+---
 
 ### countTrailingZeros()
 
 > **countTrailingZeros**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:330
+Defined in: node_modules/long/umd/types.d.ts:330
 
 Returns count trailing zeros of this Long.
 
@@ -268,13 +268,13 @@ Returns count trailing zeros of this Long.
 
 `number`
 
-***
+---
 
 ### ctz()
 
 > **ctz**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:335
+Defined in: node_modules/long/umd/types.d.ts:335
 
 Returns count trailing zeros of this Long.
 
@@ -282,13 +282,13 @@ Returns count trailing zeros of this Long.
 
 `number`
 
-***
+---
 
 ### div()
 
 > **div**(`divisor`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:155
+Defined in: node_modules/long/umd/types.d.ts:155
 
 Returns this Long divided by the specified.
 
@@ -302,13 +302,13 @@ Returns this Long divided by the specified.
 
 `Long`
 
-***
+---
 
 ### divide()
 
 > **divide**(`divisor`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:150
+Defined in: node_modules/long/umd/types.d.ts:150
 
 Returns this Long divided by the specified.
 
@@ -322,13 +322,13 @@ Returns this Long divided by the specified.
 
 `Long`
 
-***
+---
 
 ### eq()
 
 > **eq**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:165
+Defined in: node_modules/long/umd/types.d.ts:165
 
 Tests if this Long's value equals the specified's.
 
@@ -342,13 +342,13 @@ Tests if this Long's value equals the specified's.
 
 `boolean`
 
-***
+---
 
 ### equals()
 
 > **equals**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:160
+Defined in: node_modules/long/umd/types.d.ts:160
 
 Tests if this Long's value equals the specified's.
 
@@ -362,13 +362,13 @@ Tests if this Long's value equals the specified's.
 
 `boolean`
 
-***
+---
 
 ### eqz()
 
 > **eqz**(): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:250
+Defined in: node_modules/long/umd/types.d.ts:250
 
 Tests if this Long's value equals zero.
 
@@ -376,13 +376,13 @@ Tests if this Long's value equals zero.
 
 `boolean`
 
-***
+---
 
 ### ge()
 
 > **ge**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:215
+Defined in: node_modules/long/umd/types.d.ts:215
 
 Tests if this Long's value is greater than or equal the specified's.
 
@@ -396,13 +396,13 @@ Tests if this Long's value is greater than or equal the specified's.
 
 `boolean`
 
-***
+---
 
 ### getHighBits()
 
 > **getHighBits**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:170
+Defined in: node_modules/long/umd/types.d.ts:170
 
 Gets the high 32 bits as a signed integer.
 
@@ -410,13 +410,13 @@ Gets the high 32 bits as a signed integer.
 
 `number`
 
-***
+---
 
 ### getHighBitsUnsigned()
 
 > **getHighBitsUnsigned**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:175
+Defined in: node_modules/long/umd/types.d.ts:175
 
 Gets the high 32 bits as an unsigned integer.
 
@@ -424,13 +424,13 @@ Gets the high 32 bits as an unsigned integer.
 
 `number`
 
-***
+---
 
 ### getLowBits()
 
 > **getLowBits**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:180
+Defined in: node_modules/long/umd/types.d.ts:180
 
 Gets the low 32 bits as a signed integer.
 
@@ -438,13 +438,13 @@ Gets the low 32 bits as a signed integer.
 
 `number`
 
-***
+---
 
 ### getLowBitsUnsigned()
 
 > **getLowBitsUnsigned**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:185
+Defined in: node_modules/long/umd/types.d.ts:185
 
 Gets the low 32 bits as an unsigned integer.
 
@@ -452,13 +452,13 @@ Gets the low 32 bits as an unsigned integer.
 
 `number`
 
-***
+---
 
 ### getNumBitsAbs()
 
 > **getNumBitsAbs**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:190
+Defined in: node_modules/long/umd/types.d.ts:190
 
 Gets the number of bits needed to represent the absolute value of this Long.
 
@@ -466,13 +466,13 @@ Gets the number of bits needed to represent the absolute value of this Long.
 
 `number`
 
-***
+---
 
 ### greaterThan()
 
 > **greaterThan**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:195
+Defined in: node_modules/long/umd/types.d.ts:195
 
 Tests if this Long's value is greater than the specified's.
 
@@ -486,13 +486,13 @@ Tests if this Long's value is greater than the specified's.
 
 `boolean`
 
-***
+---
 
 ### greaterThanOrEqual()
 
 > **greaterThanOrEqual**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:205
+Defined in: node_modules/long/umd/types.d.ts:205
 
 Tests if this Long's value is greater than or equal the specified's.
 
@@ -506,13 +506,13 @@ Tests if this Long's value is greater than or equal the specified's.
 
 `boolean`
 
-***
+---
 
 ### gt()
 
 > **gt**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:200
+Defined in: node_modules/long/umd/types.d.ts:200
 
 Tests if this Long's value is greater than the specified's.
 
@@ -526,13 +526,13 @@ Tests if this Long's value is greater than the specified's.
 
 `boolean`
 
-***
+---
 
 ### gte()
 
 > **gte**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:210
+Defined in: node_modules/long/umd/types.d.ts:210
 
 Tests if this Long's value is greater than or equal the specified's.
 
@@ -546,13 +546,13 @@ Tests if this Long's value is greater than or equal the specified's.
 
 `boolean`
 
-***
+---
 
 ### isEven()
 
 > **isEven**(): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:220
+Defined in: node_modules/long/umd/types.d.ts:220
 
 Tests if this Long's value is even.
 
@@ -560,13 +560,13 @@ Tests if this Long's value is even.
 
 `boolean`
 
-***
+---
 
 ### isNegative()
 
 > **isNegative**(): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:225
+Defined in: node_modules/long/umd/types.d.ts:225
 
 Tests if this Long's value is negative.
 
@@ -574,13 +574,13 @@ Tests if this Long's value is negative.
 
 `boolean`
 
-***
+---
 
 ### isOdd()
 
 > **isOdd**(): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:230
+Defined in: node_modules/long/umd/types.d.ts:230
 
 Tests if this Long's value is odd.
 
@@ -588,13 +588,13 @@ Tests if this Long's value is odd.
 
 `boolean`
 
-***
+---
 
 ### isPositive()
 
 > **isPositive**(): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:235
+Defined in: node_modules/long/umd/types.d.ts:235
 
 Tests if this Long's value is positive or zero.
 
@@ -602,13 +602,13 @@ Tests if this Long's value is positive or zero.
 
 `boolean`
 
-***
+---
 
 ### isSafeInteger()
 
 > **isSafeInteger**(): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:240
+Defined in: node_modules/long/umd/types.d.ts:240
 
 Tests if this Long can be safely represented as a JavaScript number.
 
@@ -616,13 +616,13 @@ Tests if this Long can be safely represented as a JavaScript number.
 
 `boolean`
 
-***
+---
 
 ### isZero()
 
 > **isZero**(): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:245
+Defined in: node_modules/long/umd/types.d.ts:245
 
 Tests if this Long's value equals zero.
 
@@ -630,13 +630,13 @@ Tests if this Long's value equals zero.
 
 `boolean`
 
-***
+---
 
 ### le()
 
 > **le**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:275
+Defined in: node_modules/long/umd/types.d.ts:275
 
 Tests if this Long's value is less than or equal the specified's.
 
@@ -650,13 +650,13 @@ Tests if this Long's value is less than or equal the specified's.
 
 `boolean`
 
-***
+---
 
 ### lessThan()
 
 > **lessThan**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:255
+Defined in: node_modules/long/umd/types.d.ts:255
 
 Tests if this Long's value is less than the specified's.
 
@@ -670,13 +670,13 @@ Tests if this Long's value is less than the specified's.
 
 `boolean`
 
-***
+---
 
 ### lessThanOrEqual()
 
 > **lessThanOrEqual**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:265
+Defined in: node_modules/long/umd/types.d.ts:265
 
 Tests if this Long's value is less than or equal the specified's.
 
@@ -690,13 +690,13 @@ Tests if this Long's value is less than or equal the specified's.
 
 `boolean`
 
-***
+---
 
 ### lt()
 
 > **lt**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:260
+Defined in: node_modules/long/umd/types.d.ts:260
 
 Tests if this Long's value is less than the specified's.
 
@@ -710,13 +710,13 @@ Tests if this Long's value is less than the specified's.
 
 `boolean`
 
-***
+---
 
 ### lte()
 
 > **lte**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:270
+Defined in: node_modules/long/umd/types.d.ts:270
 
 Tests if this Long's value is less than or equal the specified's.
 
@@ -730,13 +730,13 @@ Tests if this Long's value is less than or equal the specified's.
 
 `boolean`
 
-***
+---
 
 ### mod()
 
 > **mod**(`other`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:285
+Defined in: node_modules/long/umd/types.d.ts:285
 
 Returns this Long modulo the specified.
 
@@ -750,13 +750,13 @@ Returns this Long modulo the specified.
 
 `Long`
 
-***
+---
 
 ### modulo()
 
 > **modulo**(`other`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:280
+Defined in: node_modules/long/umd/types.d.ts:280
 
 Returns this Long modulo the specified.
 
@@ -770,13 +770,13 @@ Returns this Long modulo the specified.
 
 `Long`
 
-***
+---
 
 ### mul()
 
 > **mul**(`multiplier`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:300
+Defined in: node_modules/long/umd/types.d.ts:300
 
 Returns the product of this and the specified Long.
 
@@ -790,13 +790,13 @@ Returns the product of this and the specified Long.
 
 `Long`
 
-***
+---
 
 ### multiply()
 
 > **multiply**(`multiplier`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:295
+Defined in: node_modules/long/umd/types.d.ts:295
 
 Returns the product of this and the specified Long.
 
@@ -810,13 +810,13 @@ Returns the product of this and the specified Long.
 
 `Long`
 
-***
+---
 
 ### ne()
 
 > **ne**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:350
+Defined in: node_modules/long/umd/types.d.ts:350
 
 Tests if this Long's value differs from the specified's.
 
@@ -830,13 +830,13 @@ Tests if this Long's value differs from the specified's.
 
 `boolean`
 
-***
+---
 
 ### neg()
 
 > **neg**(): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:310
+Defined in: node_modules/long/umd/types.d.ts:310
 
 Negates this Long's value.
 
@@ -844,13 +844,13 @@ Negates this Long's value.
 
 `Long`
 
-***
+---
 
 ### negate()
 
 > **negate**(): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:305
+Defined in: node_modules/long/umd/types.d.ts:305
 
 Negates this Long's value.
 
@@ -858,13 +858,13 @@ Negates this Long's value.
 
 `Long`
 
-***
+---
 
 ### neq()
 
 > **neq**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:345
+Defined in: node_modules/long/umd/types.d.ts:345
 
 Tests if this Long's value differs from the specified's.
 
@@ -878,13 +878,13 @@ Tests if this Long's value differs from the specified's.
 
 `boolean`
 
-***
+---
 
 ### not()
 
 > **not**(): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:315
+Defined in: node_modules/long/umd/types.d.ts:315
 
 Returns the bitwise NOT of this Long.
 
@@ -892,13 +892,13 @@ Returns the bitwise NOT of this Long.
 
 `Long`
 
-***
+---
 
 ### notEquals()
 
 > **notEquals**(`other`): `boolean`
 
-Defined in: node\_modules/long/umd/types.d.ts:340
+Defined in: node_modules/long/umd/types.d.ts:340
 
 Tests if this Long's value differs from the specified's.
 
@@ -912,13 +912,13 @@ Tests if this Long's value differs from the specified's.
 
 `boolean`
 
-***
+---
 
 ### or()
 
 > **or**(`other`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:355
+Defined in: node_modules/long/umd/types.d.ts:355
 
 Returns the bitwise OR of this Long and the specified.
 
@@ -932,13 +932,13 @@ Returns the bitwise OR of this Long and the specified.
 
 `Long`
 
-***
+---
 
 ### rem()
 
 > **rem**(`other`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:290
+Defined in: node_modules/long/umd/types.d.ts:290
 
 Returns this Long modulo the specified.
 
@@ -952,13 +952,13 @@ Returns this Long modulo the specified.
 
 `Long`
 
-***
+---
 
 ### rotateLeft()
 
 > **rotateLeft**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:395
+Defined in: node_modules/long/umd/types.d.ts:395
 
 Returns this Long with bits rotated to the left by the given amount.
 
@@ -972,13 +972,13 @@ Returns this Long with bits rotated to the left by the given amount.
 
 `Long`
 
-***
+---
 
 ### rotateRight()
 
 > **rotateRight**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:405
+Defined in: node_modules/long/umd/types.d.ts:405
 
 Returns this Long with bits rotated to the right by the given amount.
 
@@ -992,13 +992,13 @@ Returns this Long with bits rotated to the right by the given amount.
 
 `Long`
 
-***
+---
 
 ### rotl()
 
 > **rotl**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:400
+Defined in: node_modules/long/umd/types.d.ts:400
 
 Returns this Long with bits rotated to the left by the given amount.
 
@@ -1012,13 +1012,13 @@ Returns this Long with bits rotated to the left by the given amount.
 
 `Long`
 
-***
+---
 
 ### rotr()
 
 > **rotr**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:410
+Defined in: node_modules/long/umd/types.d.ts:410
 
 Returns this Long with bits rotated to the right by the given amount.
 
@@ -1032,13 +1032,13 @@ Returns this Long with bits rotated to the right by the given amount.
 
 `Long`
 
-***
+---
 
 ### shiftLeft()
 
 > **shiftLeft**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:360
+Defined in: node_modules/long/umd/types.d.ts:360
 
 Returns this Long with bits shifted to the left by the given amount.
 
@@ -1052,13 +1052,13 @@ Returns this Long with bits shifted to the left by the given amount.
 
 `Long`
 
-***
+---
 
 ### shiftRight()
 
 > **shiftRight**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:370
+Defined in: node_modules/long/umd/types.d.ts:370
 
 Returns this Long with bits arithmetically shifted to the right by the given amount.
 
@@ -1072,13 +1072,13 @@ Returns this Long with bits arithmetically shifted to the right by the given amo
 
 `Long`
 
-***
+---
 
 ### shiftRightUnsigned()
 
 > **shiftRightUnsigned**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:380
+Defined in: node_modules/long/umd/types.d.ts:380
 
 Returns this Long with bits logically shifted to the right by the given amount.
 
@@ -1092,13 +1092,13 @@ Returns this Long with bits logically shifted to the right by the given amount.
 
 `Long`
 
-***
+---
 
 ### shl()
 
 > **shl**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:365
+Defined in: node_modules/long/umd/types.d.ts:365
 
 Returns this Long with bits shifted to the left by the given amount.
 
@@ -1112,13 +1112,13 @@ Returns this Long with bits shifted to the left by the given amount.
 
 `Long`
 
-***
+---
 
 ### shr()
 
 > **shr**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:375
+Defined in: node_modules/long/umd/types.d.ts:375
 
 Returns this Long with bits arithmetically shifted to the right by the given amount.
 
@@ -1132,13 +1132,13 @@ Returns this Long with bits arithmetically shifted to the right by the given amo
 
 `Long`
 
-***
+---
 
-### shr\_u()
+### shr_u()
 
-> **shr\_u**(`numBits`): `Long`
+> **shr_u**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:390
+Defined in: node_modules/long/umd/types.d.ts:390
 
 Returns this Long with bits logically shifted to the right by the given amount.
 
@@ -1152,13 +1152,13 @@ Returns this Long with bits logically shifted to the right by the given amount.
 
 `Long`
 
-***
+---
 
 ### shru()
 
 > **shru**(`numBits`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:385
+Defined in: node_modules/long/umd/types.d.ts:385
 
 Returns this Long with bits logically shifted to the right by the given amount.
 
@@ -1172,13 +1172,13 @@ Returns this Long with bits logically shifted to the right by the given amount.
 
 `Long`
 
-***
+---
 
 ### sub()
 
 > **sub**(`subtrahend`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:420
+Defined in: node_modules/long/umd/types.d.ts:420
 
 Returns the difference of this and the specified Long.
 
@@ -1192,13 +1192,13 @@ Returns the difference of this and the specified Long.
 
 `Long`
 
-***
+---
 
 ### subtract()
 
 > **subtract**(`subtrahend`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:415
+Defined in: node_modules/long/umd/types.d.ts:415
 
 Returns the difference of this and the specified Long.
 
@@ -1212,13 +1212,13 @@ Returns the difference of this and the specified Long.
 
 `Long`
 
-***
+---
 
 ### toBigInt()
 
 > **toBigInt**(): `bigint`
 
-Defined in: node\_modules/long/umd/types.d.ts:425
+Defined in: node_modules/long/umd/types.d.ts:425
 
 Converts the Long to a big integer.
 
@@ -1226,13 +1226,13 @@ Converts the Long to a big integer.
 
 `bigint`
 
-***
+---
 
 ### toBytes()
 
 > **toBytes**(`le?`): `number`[]
 
-Defined in: node\_modules/long/umd/types.d.ts:441
+Defined in: node_modules/long/umd/types.d.ts:441
 
 Converts this Long to its byte representation.
 
@@ -1246,13 +1246,13 @@ Converts this Long to its byte representation.
 
 `number`[]
 
-***
+---
 
 ### toBytesBE()
 
 > **toBytesBE**(): `number`[]
 
-Defined in: node\_modules/long/umd/types.d.ts:453
+Defined in: node_modules/long/umd/types.d.ts:453
 
 Converts this Long to its big endian byte representation.
 
@@ -1260,13 +1260,13 @@ Converts this Long to its big endian byte representation.
 
 `number`[]
 
-***
+---
 
 ### toBytesLE()
 
 > **toBytesLE**(): `number`[]
 
-Defined in: node\_modules/long/umd/types.d.ts:447
+Defined in: node_modules/long/umd/types.d.ts:447
 
 Converts this Long to its little endian byte representation.
 
@@ -1274,13 +1274,13 @@ Converts this Long to its little endian byte representation.
 
 `number`[]
 
-***
+---
 
 ### toInt()
 
 > **toInt**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:430
+Defined in: node_modules/long/umd/types.d.ts:430
 
 Converts the Long to a 32 bit integer, assuming it is a 32 bit integer.
 
@@ -1288,13 +1288,13 @@ Converts the Long to a 32 bit integer, assuming it is a 32 bit integer.
 
 `number`
 
-***
+---
 
 ### toNumber()
 
 > **toNumber**(): `number`
 
-Defined in: node\_modules/long/umd/types.d.ts:435
+Defined in: node_modules/long/umd/types.d.ts:435
 
 Converts the Long to a the nearest floating-point representation of this value (double, 53 bit mantissa).
 
@@ -1302,13 +1302,13 @@ Converts the Long to a the nearest floating-point representation of this value (
 
 `number`
 
-***
+---
 
 ### toSigned()
 
 > **toSigned**(): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:458
+Defined in: node_modules/long/umd/types.d.ts:458
 
 Converts this Long to signed.
 
@@ -1316,13 +1316,13 @@ Converts this Long to signed.
 
 `Long`
 
-***
+---
 
 ### toString()
 
 > **toString**(`radix?`): `string`
 
-Defined in: node\_modules/long/umd/types.d.ts:463
+Defined in: node_modules/long/umd/types.d.ts:463
 
 Converts the Long to a string written in the specified radix.
 
@@ -1336,13 +1336,13 @@ Converts the Long to a string written in the specified radix.
 
 `string`
 
-***
+---
 
 ### toUnsigned()
 
 > **toUnsigned**(): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:468
+Defined in: node_modules/long/umd/types.d.ts:468
 
 Converts this Long to unsigned.
 
@@ -1350,13 +1350,13 @@ Converts this Long to unsigned.
 
 `Long`
 
-***
+---
 
 ### xor()
 
 > **xor**(`other`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:473
+Defined in: node_modules/long/umd/types.d.ts:473
 
 Returns the bitwise XOR of this Long and the given one.
 
@@ -1370,13 +1370,13 @@ Returns the bitwise XOR of this Long and the given one.
 
 `Long`
 
-***
+---
 
 ### fromBigInt()
 
 > `static` **fromBigInt**(`value`, `unsigned?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:91
+Defined in: node_modules/long/umd/types.d.ts:91
 
 Returns a Long representing the given big integer value.
 
@@ -1394,13 +1394,13 @@ Returns a Long representing the given big integer value.
 
 `Long`
 
-***
+---
 
 ### fromBits()
 
 > `static` **fromBits**(`lowBits`, `highBits`, `unsigned?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:76
+Defined in: node_modules/long/umd/types.d.ts:76
 
 Returns a Long representing the 64 bit integer that comes by concatenating the given low and high bits. Each is assumed to use 32 bits.
 
@@ -1422,13 +1422,13 @@ Returns a Long representing the 64 bit integer that comes by concatenating the g
 
 `Long`
 
-***
+---
 
 ### fromBytes()
 
 > `static` **fromBytes**(`bytes`, `unsigned?`, `le?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:105
+Defined in: node_modules/long/umd/types.d.ts:105
 
 Creates a Long from its byte representation.
 
@@ -1450,13 +1450,13 @@ Creates a Long from its byte representation.
 
 `Long`
 
-***
+---
 
 ### fromBytesBE()
 
 > `static` **fromBytesBE**(`bytes`, `unsigned?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:115
+Defined in: node_modules/long/umd/types.d.ts:115
 
 Creates a Long from its big endian byte representation.
 
@@ -1474,13 +1474,13 @@ Creates a Long from its big endian byte representation.
 
 `Long`
 
-***
+---
 
 ### fromBytesLE()
 
 > `static` **fromBytesLE**(`bytes`, `unsigned?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:110
+Defined in: node_modules/long/umd/types.d.ts:110
 
 Creates a Long from its little endian byte representation.
 
@@ -1498,13 +1498,13 @@ Creates a Long from its little endian byte representation.
 
 `Long`
 
-***
+---
 
 ### fromInt()
 
 > `static` **fromInt**(`value`, `unsigned?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:81
+Defined in: node_modules/long/umd/types.d.ts:81
 
 Returns a Long representing the given 32 bit integer value.
 
@@ -1522,13 +1522,13 @@ Returns a Long representing the given 32 bit integer value.
 
 `Long`
 
-***
+---
 
 ### fromNumber()
 
 > `static` **fromNumber**(`value`, `unsigned?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:86
+Defined in: node_modules/long/umd/types.d.ts:86
 
 Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned.
 
@@ -1546,13 +1546,13 @@ Returns a Long representing the given value, provided that it is a finite number
 
 `Long`
 
-***
+---
 
 ### fromString()
 
 > `static` **fromString**(`str`, `unsigned?`, `radix?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:96
+Defined in: node_modules/long/umd/types.d.ts:96
 
 Returns a Long representation of the given string, written using the specified radix.
 
@@ -1574,13 +1574,13 @@ Returns a Long representation of the given string, written using the specified r
 
 `Long`
 
-***
+---
 
 ### fromValue()
 
 > `static` **fromValue**(`val`, `unsigned?`): `Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:125
+Defined in: node_modules/long/umd/types.d.ts:125
 
 Converts the specified value to a Long.
 
@@ -1598,13 +1598,13 @@ Converts the specified value to a Long.
 
 `Long`
 
-***
+---
 
 ### isLong()
 
 > `static` **isLong**(`obj`): `obj is Long`
 
-Defined in: node\_modules/long/umd/types.d.ts:120
+Defined in: node_modules/long/umd/types.d.ts:120
 
 Tests if the specified object is a Long.
 

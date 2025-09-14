@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / Operation
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/common/v1/index.ts:3086
 
 Defined in: src/api/nebius/common/v1/index.ts:3088
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/common/v1/index.ts:3088
 
 Defined in: src/api/nebius/common/v1/index.ts:3087
 
-***
+---
 
 ### createdAt?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/common/v1/index.ts:3103
 
 Creation timestamp.
 
-***
+---
 
 ### createdBy
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/common/v1/index.ts:3108
 
 ID of the user or service account who initiated the operation.
 
-***
+---
 
 ### description
 
@@ -54,7 +54,7 @@ Defined in: src/api/nebius/common/v1/index.ts:3098
 
 Human-readable description of the operation. 0-256 characters long.
 
-***
+---
 
 ### finishedAt?
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/common/v1/index.ts:3113
 
 The time when the operation has finished.
 
-***
+---
 
 ### id
 
@@ -74,7 +74,7 @@ Defined in: src/api/nebius/common/v1/index.ts:3093
 
 ID of the operation.
 
-***
+---
 
 ### progressData?
 
@@ -83,9 +83,9 @@ ID of the operation.
 Defined in: src/api/nebius/common/v1/index.ts:3144
 
 Additional information about the progress of an operation, e.g., a progress percentage.
- MAY be absent while the operation is running, MUST be absent after the operation has completed.
+MAY be absent while the operation is running, MUST be absent after the operation has completed.
 
- Type of message that's stored inside [progress_data] is service-dependent.
+Type of message that's stored inside [progress_data] is service-dependent.
 
 #### typeUrl
 
@@ -95,7 +95,7 @@ Additional information about the progress of an operation, e.g., a progress perc
 
 > **value**: `Uint8Array`
 
-***
+---
 
 ### request?
 
@@ -113,7 +113,7 @@ The request that generated this operation.
 
 > **value**: `Uint8Array`
 
-***
+---
 
 ### requestHeaders
 
@@ -122,17 +122,17 @@ The request that generated this operation.
 Defined in: src/api/nebius/common/v1/index.ts:3128
 
 The request headers that are essential for the request that generated the operation.
- For instance, `x-resetmask`. Without these headers the request might have been processed
- differently if repeated.
- All the header names *must* be converted to lower case.
- Validator is based on:
- https://httpwg.org/specs/rfc9110.html#considerations.for.new.field.names
+For instance, `x-resetmask`. Without these headers the request might have been processed
+differently if repeated.
+All the header names _must_ be converted to lower case.
+Validator is based on:
+https://httpwg.org/specs/rfc9110.html#considerations.for.new.field.names
 
 #### Index Signature
 
 \[`key`: `string`\]: [`Operation_RequestHeader`](Operation_RequestHeader.md)
 
-***
+---
 
 ### resourceId
 
@@ -142,10 +142,10 @@ Defined in: src/api/nebius/common/v1/index.ts:3136
 
 ID of the resource that this operation creates, updates, deletes or otherwise changes.
 
- If the operation affects multiple resources or does not affect any API resources at all
- (e.g. a routine maintenance operation visible to the user), the [resource_id] must be empty.
+If the operation affects multiple resources or does not affect any API resources at all
+(e.g. a routine maintenance operation visible to the user), the [resource_id] must be empty.
 
-***
+---
 
 ### status?
 
@@ -154,12 +154,13 @@ ID of the resource that this operation creates, updates, deletes or otherwise ch
 Defined in: src/api/nebius/common/v1/index.ts:3158
 
 The status of this operation. Set when this operation is completed.
- See https://github.com/grpc/grpc/blob/master/src/proto/grpc/status/status.proto.
+See https://github.com/grpc/grpc/blob/master/src/proto/grpc/status/status.proto.
 
- [status.code] is https://github.com/googleapis/googleapis/blob/master/google/rpc/code.proto:
- - If [status.code] == OK, the operation has completed successfully.
- - If [status.code] != OK, the operation has failed or has been cancelled.
-   - [status.message] will contain a user-readable and actionable error message.
-   - [status.details] will contain additional diagnostic information in the form of [ServiceError] from nebius/common/v1/error.proto
- - [status.code] must belong to an Operation-compatible subset of GRPC codes:
-   OK, CANCELLED, PERMISSION_DENIED, RESOURCE_EXHAUSTED, FAILED_PRECONDITION, ABORTED, INTERNAL
+[status.code] is https://github.com/googleapis/googleapis/blob/master/google/rpc/code.proto:
+
+- If [status.code] == OK, the operation has completed successfully.
+- If [status.code] != OK, the operation has failed or has been cancelled.
+  - [status.message] will contain a user-readable and actionable error message.
+  - [status.details] will contain additional diagnostic information in the form of [ServiceError] from nebius/common/v1/error.proto
+- [status.code] must belong to an Operation-compatible subset of GRPC codes:
+  OK, CANCELLED, PERMISSION_DENIED, RESOURCE_EXHAUSTED, FAILED_PRECONDITION, ABORTED, INTERNAL

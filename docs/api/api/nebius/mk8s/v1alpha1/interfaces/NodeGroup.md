@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / NodeGroup
 
@@ -18,7 +18,7 @@ NodeGroup represents Kubernetes node pool
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4425
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4425
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4424
 
-***
+---
 
 ### metadata?
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4430
 
 the parent_id is an ID of Cluster
 
-***
+---
 
 ### spec?
 
@@ -44,7 +44,7 @@ the parent_id is an ID of Cluster
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:4431
 
-***
+---
 
 ### status?
 

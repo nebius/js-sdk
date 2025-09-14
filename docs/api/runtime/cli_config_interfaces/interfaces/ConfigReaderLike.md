@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../README.md) / [runtime/cli\_config\_interfaces](../README.md) / ConfigReaderLike
+[@nebius/nodejs-sdk](../../../README.md) / [runtime/cli_config_interfaces](../README.md) / ConfigReaderLike
 
 # Interface: ConfigReaderLike
 
-Defined in: [src/runtime/cli\_config\_interfaces.ts:20](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L20)
+Defined in: [src/runtime/cli_config_interfaces.ts:20](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L20)
 
 ## Methods
 
@@ -14,19 +14,19 @@ Defined in: [src/runtime/cli\_config\_interfaces.ts:20](https://github.com/nebiu
 
 > **endpoint**(): `undefined` \| `string`
 
-Defined in: [src/runtime/cli\_config\_interfaces.ts:21](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L21)
+Defined in: [src/runtime/cli_config_interfaces.ts:21](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L21)
 
 #### Returns
 
 `undefined` \| `string`
 
-***
+---
 
 ### getCredentials()
 
 > **getCredentials**(`options`): [`Credentials`](../type-aliases/Credentials.md)
 
-Defined in: [src/runtime/cli\_config\_interfaces.ts:25](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L25)
+Defined in: [src/runtime/cli_config_interfaces.ts:25](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L25)
 
 #### Parameters
 
@@ -38,25 +38,25 @@ Defined in: [src/runtime/cli\_config\_interfaces.ts:25](https://github.com/nebiu
 
 [`Credentials`](../type-aliases/Credentials.md)
 
-***
+---
 
 ### parentId()
 
 > **parentId**(): `undefined` \| `string`
 
-Defined in: [src/runtime/cli\_config\_interfaces.ts:22](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L22)
+Defined in: [src/runtime/cli_config_interfaces.ts:22](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L22)
 
 #### Returns
 
 `undefined` \| `string`
 
-***
+---
 
 ### profileName()
 
 > **profileName**(): `undefined` \| `string`
 
-Defined in: [src/runtime/cli\_config\_interfaces.ts:23](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L23)
+Defined in: [src/runtime/cli_config_interfaces.ts:23](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/cli_config_interfaces.ts#L23)
 
 #### Returns
 

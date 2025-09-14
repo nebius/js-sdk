@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / SourceImageFamily
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1553
 
 Defined in: src/api/nebius/compute/v1/index.ts:1555
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1555
 
 Defined in: src/api/nebius/compute/v1/index.ts:1554
 
-***
+---
 
 ### imageFamily
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1554
 
 Defined in: src/api/nebius/compute/v1/index.ts:1556
 
-***
+---
 
 ### parentId
 

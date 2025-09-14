@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/logging](../README.md) / PrettyHandler
 
@@ -72,7 +72,7 @@ Defined in: [src/runtime/util/logging.ts:365](https://github.com/nebius/nodejs-s
 
 `object`
 
-***
+---
 
 ### log()
 

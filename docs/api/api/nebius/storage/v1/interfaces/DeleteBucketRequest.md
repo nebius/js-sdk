@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteBucketRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:945
 
 Defined in: src/api/nebius/storage/v1/index.ts:947
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:947
 
 Defined in: src/api/nebius/storage/v1/index.ts:946
 
-***
+---
 
 ### id
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:946
 
 Defined in: src/api/nebius/storage/v1/index.ts:948
 
-***
+---
 
 ### purge?
 
@@ -41,4 +41,4 @@ Defined in: src/api/nebius/storage/v1/index.ts:948
 Defined in: src/api/nebius/storage/v1/index.ts:954
 
 You can provide purge_at or ttl after which the bucket will be purged automatically.
- Otherwise, default ttl of 7 days will be applied.
+Otherwise, default ttl of 7 days will be applied.

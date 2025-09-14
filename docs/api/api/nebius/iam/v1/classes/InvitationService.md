@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / InvitationService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13863
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateInvitationRequest`](../interfaces/CreateInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13902
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteInvitationRequest`](../interfaces/DeleteInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13878
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetInvitationRequest`](../interfaces/GetInvitationRequest.md), [`Invitation`](../interfaces/Invitation.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -422,7 +422,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13857
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -546,7 +546,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13890
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListInvitationsRequest`](../interfaces/ListInvitationsRequest.md), [`ListInvitationsResponse`](../interfaces/ListInvitationsResponse.md)\>
 
-***
+---
 
 ### resend()
 
@@ -670,7 +670,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13932
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ResendInvitationRequest`](../interfaces/ResendInvitationRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### update()
 

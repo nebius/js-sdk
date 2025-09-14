@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/logging/v1/agentmanager](../README.md) / GetVersionRequest
 
@@ -18,7 +18,7 @@ Request message for GetVersion RPC containing agent status and system informatio
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:173
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:173
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:172
 
-***
+---
 
 ### agentState
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:208
 
 Current operational state of the agent.
 
-***
+---
 
 ### agentStateMessages
 
@@ -46,7 +46,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:228
 
 Status messages from the agent describing its current state.
 
-***
+---
 
 ### agentUptime?
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:213
 
 Time duration since the agent started.
 
-***
+---
 
 ### agentVersion
 
@@ -66,7 +66,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:183
 
 Current version of the agent software.
 
-***
+---
 
 ### cloudInitStatus
 
@@ -76,7 +76,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:248
 
 Status of cloud initialization process.
 
-***
+---
 
 ### dcgmVersion
 
@@ -86,7 +86,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:273
 
 Version of the DCGM (Data Center GPU Manager) used.
 
-***
+---
 
 ### gpuModel
 
@@ -96,7 +96,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:263
 
 Model of the GPU used in the system.
 
-***
+---
 
 ### gpuNumber
 
@@ -106,7 +106,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:268
 
 Number of GPUs available in the system.
 
-***
+---
 
 ### instanceId
 
@@ -116,7 +116,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:198
 
 Unique identifier for the instance where agent is running.
 
-***
+---
 
 ### instanceIdUsedFallback
 
@@ -126,7 +126,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:253
 
 Indicates if a fallback method was used to determine instance_id.
 
-***
+---
 
 ### lastAgentLogs
 
@@ -136,7 +136,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:258
 
 Recent agent log entries for diagnostic purposes.
 
-***
+---
 
 ### lastUpdateError
 
@@ -146,7 +146,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:233
 
 Description of the last update failure, if any.
 
-***
+---
 
 ### mk8sClusterId
 
@@ -156,7 +156,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:238
 
 Managed Kubernetes cluster identifier, if applicable.
 
-***
+---
 
 ### modulesHealth?
 
@@ -166,7 +166,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:243
 
 Health status of individual agent modules.
 
-***
+---
 
 ### osInfo?
 
@@ -176,7 +176,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:203
 
 Detailed information about the operating system.
 
-***
+---
 
 ### parentId
 
@@ -186,7 +186,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:193
 
 Parent identifier for the VM
 
-***
+---
 
 ### systemUptime?
 
@@ -196,7 +196,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:218
 
 Total system uptime.
 
-***
+---
 
 ### type
 
@@ -206,7 +206,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:178
 
 Type of the agent. Must be O11Y_AGENT (1).
 
-***
+---
 
 ### updaterUptime?
 
@@ -216,7 +216,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:223
 
 Time duration since the updater component started.
 
-***
+---
 
 ### updaterVersion
 

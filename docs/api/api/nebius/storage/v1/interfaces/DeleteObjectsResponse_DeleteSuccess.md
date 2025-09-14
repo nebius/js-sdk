@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteObjectsResponse\_DeleteSuccess
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteObjectsResponse_DeleteSuccess
 
-# Interface: DeleteObjectsResponse\_DeleteSuccess
+# Interface: DeleteObjectsResponse_DeleteSuccess
 
 Defined in: src/api/nebius/storage/v1/index.ts:4908
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4908
 
 Defined in: src/api/nebius/storage/v1/index.ts:4910
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4910
 
 Defined in: src/api/nebius/storage/v1/index.ts:4909
 
-***
+---
 
 ### deleteMarker
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4909
 
 Defined in: src/api/nebius/storage/v1/index.ts:4911
 
-***
+---
 
 ### objectKey
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:4911
 
 Defined in: src/api/nebius/storage/v1/index.ts:4912
 
-***
+---
 
 ### version
 

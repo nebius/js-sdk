@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [runtime/protos/core](../../README.md) / [dayjs](../README.md) / duration
 
@@ -8,7 +8,7 @@
 
 > `const` **duration**: `plugin.CreateDurationType`
 
-Defined in: node\_modules/dayjs/plugin/duration.d.ts:86
+Defined in: node_modules/dayjs/plugin/duration.d.ts:86
 
 ## Param
 

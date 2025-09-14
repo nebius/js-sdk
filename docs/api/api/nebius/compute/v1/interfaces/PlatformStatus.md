@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / PlatformStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:12017
 
 Defined in: src/api/nebius/compute/v1/index.ts:12019
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:12019
 
 Defined in: src/api/nebius/compute/v1/index.ts:12018
 
-***
+---
 
 ### allowedForPreemptibles
 

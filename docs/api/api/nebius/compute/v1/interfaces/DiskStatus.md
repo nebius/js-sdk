@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / DiskStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1657
 
 Defined in: src/api/nebius/compute/v1/index.ts:1659
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1659
 
 Defined in: src/api/nebius/compute/v1/index.ts:1658
 
-***
+---
 
 ### blockSizeBytes
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1658
 
 Defined in: src/api/nebius/compute/v1/index.ts:1671
 
-***
+---
 
 ### readOnlyAttachments
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1671
 
 Defined in: src/api/nebius/compute/v1/index.ts:1663
 
-***
+---
 
 ### readWriteAttachment
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1663
 
 Defined in: src/api/nebius/compute/v1/index.ts:1662
 
-***
+---
 
 ### reconciling
 
@@ -58,7 +58,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1670
 
 Indicates whether there is an ongoing operation
 
-***
+---
 
 ### sizeBytes
 
@@ -66,7 +66,7 @@ Indicates whether there is an ongoing operation
 
 Defined in: src/api/nebius/compute/v1/index.ts:1665
 
-***
+---
 
 ### sourceImageCpuArchitecture
 
@@ -74,7 +74,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1665
 
 Defined in: src/api/nebius/compute/v1/index.ts:1672
 
-***
+---
 
 ### sourceImageId
 
@@ -82,7 +82,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1672
 
 Defined in: src/api/nebius/compute/v1/index.ts:1664
 
-***
+---
 
 ### state
 
@@ -90,7 +90,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:1664
 
 Defined in: src/api/nebius/compute/v1/index.ts:1660
 
-***
+---
 
 ### stateDescription
 

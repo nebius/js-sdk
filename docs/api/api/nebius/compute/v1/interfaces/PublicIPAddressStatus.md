@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / PublicIPAddressStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10483
 
 Defined in: src/api/nebius/compute/v1/index.ts:10485
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10485
 
 Defined in: src/api/nebius/compute/v1/index.ts:10484
 
-***
+---
 
 ### address
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10490
 
 Effective public IPv4 address assigned to the interface.
 
-***
+---
 
 ### allocationId
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:10495
 
 Allocation identifier.
 
-***
+---
 
 ### static
 
@@ -53,5 +53,5 @@ Allocation identifier.
 Defined in: src/api/nebius/compute/v1/index.ts:10502
 
 If false - Allocation will be created/deleted during NetworkInterface.Allocate/NetworkInterface.Deallocate
- If true  - Allocation will be created/deleted during NetworkInterface.Create/NetworkInterface.Delete
- False by default
+If true - Allocation will be created/deleted during NetworkInterface.Create/NetworkInterface.Delete
+False by default

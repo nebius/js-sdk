@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / ListObjectVersionsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5610
 
 Defined in: src/api/nebius/storage/v1/index.ts:5612
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5612
 
 Defined in: src/api/nebius/storage/v1/index.ts:5611
 
-***
+---
 
 ### commonPrefixes
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5611
 
 Defined in: src/api/nebius/storage/v1/index.ts:5615
 
-***
+---
 
 ### deleteMarkers
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5615
 
 Defined in: src/api/nebius/storage/v1/index.ts:5614
 
-***
+---
 
 ### nextKeyMarker
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5614
 
 Defined in: src/api/nebius/storage/v1/index.ts:5617
 
-***
+---
 
 ### nextVersionIdMarker
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5617
 
 Defined in: src/api/nebius/storage/v1/index.ts:5618
 
-***
+---
 
 ### truncated
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5618
 
 Defined in: src/api/nebius/storage/v1/index.ts:5616
 
-***
+---
 
 ### versions
 

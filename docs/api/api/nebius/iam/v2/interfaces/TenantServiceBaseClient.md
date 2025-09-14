@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v2](../README.md) / TenantServiceBaseClient
 
@@ -18,7 +18,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2820
 
 > **close**(): `void`
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:56
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 #### Returns
 
@@ -28,7 +28,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:56
 
 `Client.close`
 
-***
+---
 
 ### get()
 
@@ -58,7 +58,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2821
 
 `SurfaceCall`
 
-***
+---
 
 ### getByName()
 
@@ -88,13 +88,13 @@ Defined in: src/api/nebius/iam/v2/index.ts:2822
 
 `SurfaceCall`
 
-***
+---
 
 ### getChannel()
 
 > **getChannel**(): `Channel`
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:57
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 #### Returns
 
@@ -104,7 +104,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:57
 
 `Client.getChannel`
 
-***
+---
 
 ### list()
 
@@ -134,7 +134,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2823
 
 `SurfaceCall`
 
-***
+---
 
 ### makeBidiStreamRequest()
 
@@ -142,7 +142,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:2823
 
 > **makeBidiStreamRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `metadata`, `options?`): `ClientDuplexStream`\<`RequestType`, `ResponseType`\>
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:71
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:71
 
 ##### Type Parameters
 
@@ -188,7 +188,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:71
 
 > **makeBidiStreamRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `options?`): `ClientDuplexStream`\<`RequestType`, `ResponseType`\>
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:72
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:72
 
 ##### Type Parameters
 
@@ -226,7 +226,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:72
 
 `Client.makeBidiStreamRequest`
 
-***
+---
 
 ### makeClientStreamRequest()
 
@@ -234,7 +234,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:72
 
 > **makeClientStreamRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `metadata`, `options`, `callback`): `ClientWritableStream`\<`RequestType`\>
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:64
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:64
 
 ##### Type Parameters
 
@@ -284,7 +284,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:64
 
 > **makeClientStreamRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `metadata`, `callback`): `ClientWritableStream`\<`RequestType`\>
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:65
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:65
 
 ##### Type Parameters
 
@@ -330,7 +330,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:65
 
 > **makeClientStreamRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `options`, `callback`): `ClientWritableStream`\<`RequestType`\>
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:66
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:66
 
 ##### Type Parameters
 
@@ -376,7 +376,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:66
 
 > **makeClientStreamRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `callback`): `ClientWritableStream`\<`RequestType`\>
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:67
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:67
 
 ##### Type Parameters
 
@@ -414,7 +414,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:67
 
 `Client.makeClientStreamRequest`
 
-***
+---
 
 ### makeServerStreamRequest()
 
@@ -422,7 +422,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:67
 
 > **makeServerStreamRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `argument`, `metadata`, `options?`): `ClientReadableStream`\<`ResponseType`\>
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:69
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:69
 
 ##### Type Parameters
 
@@ -472,7 +472,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:69
 
 > **makeServerStreamRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `argument`, `options?`): `ClientReadableStream`\<`ResponseType`\>
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:70
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:70
 
 ##### Type Parameters
 
@@ -514,7 +514,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:70
 
 `Client.makeServerStreamRequest`
 
-***
+---
 
 ### makeUnaryRequest()
 
@@ -522,7 +522,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:70
 
 > **makeUnaryRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `argument`, `metadata`, `options`, `callback`): `SurfaceCall`
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:60
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:60
 
 ##### Type Parameters
 
@@ -576,7 +576,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:60
 
 > **makeUnaryRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `argument`, `metadata`, `callback`): `SurfaceCall`
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:61
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:61
 
 ##### Type Parameters
 
@@ -626,7 +626,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:61
 
 > **makeUnaryRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `argument`, `options`, `callback`): `SurfaceCall`
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:62
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:62
 
 ##### Type Parameters
 
@@ -676,7 +676,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:62
 
 > **makeUnaryRequest**\<`RequestType`, `ResponseType`\>(`method`, `serialize`, `deserialize`, `argument`, `callback`): `SurfaceCall`
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:63
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 ##### Type Parameters
 
@@ -718,7 +718,7 @@ Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:63
 
 `Client.makeUnaryRequest`
 
-***
+---
 
 ### update()
 
@@ -748,13 +748,13 @@ Defined in: src/api/nebius/iam/v2/index.ts:2824
 
 `SurfaceCall`
 
-***
+---
 
 ### waitForReady()
 
 > **waitForReady**(`deadline`, `callback`): `void`
 
-Defined in: node\_modules/@grpc/grpc-js/build/src/client.d.ts:58
+Defined in: node_modules/@grpc/grpc-js/build/src/client.d.ts:58
 
 #### Parameters
 

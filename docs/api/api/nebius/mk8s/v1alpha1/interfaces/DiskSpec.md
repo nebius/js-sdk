@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / DiskSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2871
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2873
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2873
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2872
 
-***
+---
 
 ### blockSizeBytes
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2872
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2874
 
-***
+---
 
 ### size?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2874
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:2876
 
-***
+---
 
 ### type
 

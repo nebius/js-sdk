@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/mlflow/v1alpha1](../README.md) / CreateClusterRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:466
 
 Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:468
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:468
 
 Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:467
 
-***
+---
 
 ### metadata?
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/mlflow/v1alpha1/index.ts:473
 
 Metadata associated with the new cluster. Must include parent_id in which we create the cluster.
 
-***
+---
 
 ### spec?
 

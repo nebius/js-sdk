@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / TenantUserAccountServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:20434
 
 Defined in: src/api/nebius/iam/v1/index.ts:20437
 
-***
+---
 
 ### get
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:20437
 
 Defined in: src/api/nebius/iam/v1/index.ts:20435
 
-***
+---
 
 ### list
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:20435
 
 Defined in: src/api/nebius/iam/v1/index.ts:20436
 
-***
+---
 
 ### unblock
 

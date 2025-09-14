@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/logging/v1/agentmanager](../README.md) / UpdateActionParams
 
@@ -18,7 +18,7 @@ Parameters for agent update action.
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1569
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1569
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1568
 
-***
+---
 
 ### repoUrl
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:1579
 
 URL of the repository containing the update.
 
-***
+---
 
 ### version
 

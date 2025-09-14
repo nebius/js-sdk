@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / PoolSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4993
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4995
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4995
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4994
 
-***
+---
 
 ### cidrs
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5005
 
 CIDR blocks.
 
-***
+---
 
 ### source?
 
@@ -42,7 +42,7 @@ CIDR blocks.
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5006
 
-***
+---
 
 ### version
 

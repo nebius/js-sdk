@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / GetNodeGroupRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:3271
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:3273
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:3273
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:3272
 
-***
+---
 
 ### id
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:3272
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:3274
 
-***
+---
 
 ### resourceVersion
 

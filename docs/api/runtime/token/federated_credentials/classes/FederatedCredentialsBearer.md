@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/federated\_credentials](../README.md) / FederatedCredentialsBearer
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/federated_credentials](../README.md) / FederatedCredentialsBearer
 
 # Class: FederatedCredentialsBearer
 
-Defined in: [src/runtime/token/federated\_credentials.ts:15](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L15)
+Defined in: [src/runtime/token/federated_credentials.ts:15](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L15)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/token/federated\_credentials.ts:15](https://github.com/
 
 > **new FederatedCredentialsBearer**(`federatedCredentials`, `opts?`): `FederatedCredentialsBearer`
 
-Defined in: [src/runtime/token/federated\_credentials.ts:20](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L20)
+Defined in: [src/runtime/token/federated_credentials.ts:20](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L20)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [src/runtime/token/federated\_credentials.ts:20](https://github.com/
 
 > `readonly` **$type**: `"nebius.sdk.FederatedCredentialsBearer"` = `'nebius.sdk.FederatedCredentialsBearer'`
 
-Defined in: [src/runtime/token/federated\_credentials.ts:16](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L16)
+Defined in: [src/runtime/token/federated_credentials.ts:16](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L16)
 
 #### Overrides
 
@@ -106,7 +106,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`name`](../../classes/Bearer.md#name)
 
-***
+---
 
 ### wrapped
 
@@ -114,7 +114,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../classes/Bearer.md)
 
-Defined in: [src/runtime/token/federated\_credentials.ts:117](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L117)
+Defined in: [src/runtime/token/federated_credentials.ts:117](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L117)
 
 ##### Returns
 
@@ -130,13 +130,13 @@ Defined in: [src/runtime/token/federated\_credentials.ts:117](https://github.com
 
 > **\[customJson\]**(): `unknown`
 
-Defined in: [src/runtime/token/federated\_credentials.ts:106](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L106)
+Defined in: [src/runtime/token/federated_credentials.ts:106](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L106)
 
 #### Returns
 
 `unknown`
 
-***
+---
 
 ### close()
 
@@ -158,13 +158,13 @@ Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`close`](../../classes/Bearer.md#close)
 
-***
+---
 
 ### receiver()
 
 > **receiver**(): [`Receiver`](../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/federated\_credentials.ts:121](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L121)
+Defined in: [src/runtime/token/federated_credentials.ts:121](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L121)
 
 #### Returns
 
@@ -174,13 +174,13 @@ Defined in: [src/runtime/token/federated\_credentials.ts:121](https://github.com
 
 [`Bearer`](../../classes/Bearer.md).[`receiver`](../../classes/Bearer.md#receiver)
 
-***
+---
 
 ### setSDK()
 
 > **setSDK**(`sdk`): `void`
 
-Defined in: [src/runtime/token/federated\_credentials.ts:113](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L113)
+Defined in: [src/runtime/token/federated_credentials.ts:113](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federated_credentials.ts#L113)
 
 #### Parameters
 

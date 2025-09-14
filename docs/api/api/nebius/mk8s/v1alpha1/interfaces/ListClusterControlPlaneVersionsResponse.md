@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / ListClusterControlPlaneVersionsResponse
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:848
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:850
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:850
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:849
 
-***
+---
 
 ### items
 

@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / FilesystemSpec\_FilesystemType
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / FilesystemSpec_FilesystemType
 
-# Variable: FilesystemSpec\_FilesystemType
+# Variable: FilesystemSpec_FilesystemType
 
-> **FilesystemSpec\_FilesystemType**: [`FilesystemSpec_FilesystemTypeClass`](../type-aliases/FilesystemSpec_FilesystemTypeClass.md)
+> **FilesystemSpec_FilesystemType**: [`FilesystemSpec_FilesystemTypeClass`](../type-aliases/FilesystemSpec_FilesystemTypeClass.md)
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2526

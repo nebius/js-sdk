@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteObjectsResponse\_DeleteSuccess
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteObjectsResponse_DeleteSuccess
 
-# Variable: DeleteObjectsResponse\_DeleteSuccess
+# Variable: DeleteObjectsResponse_DeleteSuccess
 
-> **DeleteObjectsResponse\_DeleteSuccess**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteObjectsResponse_DeleteSuccess`](../interfaces/DeleteObjectsResponse_DeleteSuccess.md), `"nebius.storage.v1.DeleteObjectsResponse.DeleteSuccess"`\>
+> **DeleteObjectsResponse_DeleteSuccess**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteObjectsResponse_DeleteSuccess`](../interfaces/DeleteObjectsResponse_DeleteSuccess.md), `"nebius.storage.v1.DeleteObjectsResponse.DeleteSuccess"`\>
 
 Defined in: src/api/nebius/storage/v1/index.ts:4908

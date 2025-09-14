@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / Operation\_RequestHeader
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1](../README.md) / Operation_RequestHeader
 
-# Interface: Operation\_RequestHeader
+# Interface: Operation_RequestHeader
 
 Defined in: src/api/nebius/common/v1/index.ts:3468
 
@@ -18,7 +18,7 @@ Request header is a container for all the values of a particular header of a req
 
 Defined in: src/api/nebius/common/v1/index.ts:3470
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/common/v1/index.ts:3470
 
 Defined in: src/api/nebius/common/v1/index.ts:3469
 
-***
+---
 
 ### values
 

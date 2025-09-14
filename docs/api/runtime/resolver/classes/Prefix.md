@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/resolver](../README.md) / Prefix
 
@@ -50,7 +50,7 @@ Defined in: [src/runtime/resolver.ts:114](https://github.com/nebius/nodejs-sdk/b
 
 `object`
 
-***
+---
 
 ### resolve()
 

@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / GroupStatus\_StateClass
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / GroupStatus_StateClass
 
-# Type Alias: GroupStatus\_StateClass
+# Type Alias: GroupStatus_StateClass
 
-> **GroupStatus\_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"ACTIVE"`\> & `GroupStatus_StateValueMembers`
+> **GroupStatus_StateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"ACTIVE"`\> & `GroupStatus_StateValueMembers`
 
 Defined in: src/api/nebius/iam/v1/index.ts:12640

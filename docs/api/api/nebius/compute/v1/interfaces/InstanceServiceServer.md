@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / InstanceServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7004
 
 Defined in: src/api/nebius/compute/v1/index.ts:7008
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7008
 
 Defined in: src/api/nebius/compute/v1/index.ts:7010
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7010
 
 Defined in: src/api/nebius/compute/v1/index.ts:7005
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7005
 
 Defined in: src/api/nebius/compute/v1/index.ts:7006
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7006
 
 Defined in: src/api/nebius/compute/v1/index.ts:7007
 
-***
+---
 
 ### listOperationsByParent
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7007
 
 Defined in: src/api/nebius/compute/v1/index.ts:7013
 
-***
+---
 
 ### start
 
@@ -72,7 +72,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7013
 
 Defined in: src/api/nebius/compute/v1/index.ts:7011
 
-***
+---
 
 ### stop
 
@@ -80,7 +80,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:7011
 
 Defined in: src/api/nebius/compute/v1/index.ts:7012
 
-***
+---
 
 ### update
 

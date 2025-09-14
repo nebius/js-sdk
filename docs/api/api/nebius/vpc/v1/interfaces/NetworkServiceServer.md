@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / NetworkServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3335
 
 Defined in: src/api/nebius/vpc/v1/index.ts:3339
 
-***
+---
 
 ### createDefault
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3339
 
 Defined in: src/api/nebius/vpc/v1/index.ts:3340
 
-***
+---
 
 ### delete
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3340
 
 Defined in: src/api/nebius/vpc/v1/index.ts:3342
 
-***
+---
 
 ### get
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3342
 
 Defined in: src/api/nebius/vpc/v1/index.ts:3336
 
-***
+---
 
 ### getByName
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3336
 
 Defined in: src/api/nebius/vpc/v1/index.ts:3337
 
-***
+---
 
 ### list
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:3337
 
 Defined in: src/api/nebius/vpc/v1/index.ts:3338
 
-***
+---
 
 ### update
 

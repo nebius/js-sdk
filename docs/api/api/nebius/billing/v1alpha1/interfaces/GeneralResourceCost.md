@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/billing/v1alpha1](../README.md) / GeneralResourceCost
 
@@ -9,7 +9,7 @@
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:1107
 
 General resource cost for single-unit resources.
- Used for resources like compute instances or disks where the unit count is not variable.
+Used for resources like compute instances or disks where the unit count is not variable.
 
 ## Properties
 
@@ -19,7 +19,7 @@ General resource cost for single-unit resources.
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:1109
 
-***
+---
 
 ### $type
 
@@ -27,7 +27,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:1109
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:1108
 
-***
+---
 
 ### total?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/serverless/v1alpha1](../README.md) / JobStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2909
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2911
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2911
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2910
 
-***
+---
 
 ### phase
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2916
 
 Current phase (or stage) of the workload.
 
-***
+---
 
 ### result
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:2926
 
 Job result
 
-***
+---
 
 ### state
 

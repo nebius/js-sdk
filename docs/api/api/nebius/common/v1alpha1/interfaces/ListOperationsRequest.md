@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1alpha1](../README.md) / ListOperationsRequest
 
@@ -20,7 +20,7 @@ Deprecated.
 
 Defined in: src/api/nebius/common/v1alpha1/index.ts:121
 
-***
+---
 
 ### ~~$type~~
 
@@ -28,7 +28,7 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:121
 
 Defined in: src/api/nebius/common/v1alpha1/index.ts:120
 
-***
+---
 
 ### ~~filter~~
 
@@ -37,9 +37,9 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:120
 Defined in: src/api/nebius/common/v1alpha1/index.ts:142
 
 Filter expression for the listing results. Optional.
- Filter expression format: TBD.
+Filter expression format: TBD.
 
-***
+---
 
 ### ~~pageSize~~
 
@@ -49,7 +49,7 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:131
 
 Page size. [1...1000]. Optional, if not specified, a reasonable default will be chosen by the service.
 
-***
+---
 
 ### ~~pageToken~~
 
@@ -59,7 +59,7 @@ Defined in: src/api/nebius/common/v1alpha1/index.ts:136
 
 Listing continuation token. Empty to start listing from the first page.
 
-***
+---
 
 ### ~~resourceId~~
 

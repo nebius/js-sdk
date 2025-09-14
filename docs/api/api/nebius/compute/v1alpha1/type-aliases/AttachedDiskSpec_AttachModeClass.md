@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / AttachedDiskSpec\_AttachModeClass
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / AttachedDiskSpec_AttachModeClass
 
-# Type Alias: AttachedDiskSpec\_AttachModeClass
+# Type Alias: AttachedDiskSpec_AttachModeClass
 
-> **AttachedDiskSpec\_AttachModeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"READ_ONLY"` \| `"READ_WRITE"`\> & `AttachedDiskSpec_AttachModeValueMembers`
+> **AttachedDiskSpec_AttachModeClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"UNSPECIFIED"` \| `"READ_ONLY"` \| `"READ_WRITE"`\> & `AttachedDiskSpec_AttachModeValueMembers`
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:6567

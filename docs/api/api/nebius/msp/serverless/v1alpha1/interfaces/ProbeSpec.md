@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/serverless/v1alpha1](../README.md) / ProbeSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1210
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1212
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1212
 
 Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1211
 
-***
+---
 
 ### delaySeconds
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1222
 
 Initial delay before starting probing in seconds
 
-***
+---
 
 ### failureThreshold
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1232
 
 Failure threshold for the probe after which the container will be restarted
 
-***
+---
 
 ### path
 
@@ -54,7 +54,7 @@ Defined in: src/api/nebius/msp/serverless/v1alpha1/index.ts:1217
 
 Probe path
 
-***
+---
 
 ### periodSeconds
 

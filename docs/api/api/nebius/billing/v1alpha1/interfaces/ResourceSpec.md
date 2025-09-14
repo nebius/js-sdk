@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/billing/v1alpha1](../README.md) / ResourceSpec
 
@@ -9,7 +9,7 @@
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:611
 
 Resource specification for cost estimation.
- Contains the specifications for creating and updating different types of resources.
+Contains the specifications for creating and updating different types of resources.
 
 ## Properties
 
@@ -19,7 +19,7 @@ Resource specification for cost estimation.
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:613
 
-***
+---
 
 ### $type
 
@@ -27,7 +27,7 @@ Defined in: src/api/nebius/billing/v1alpha1/index.ts:613
 
 Defined in: src/api/nebius/billing/v1alpha1/index.ts:612
 
-***
+---
 
 ### resourceSpec?
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / PoolService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4651
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolRequest`](../interfaces/GetPoolRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-***
+---
 
 ### getByName()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4663
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetPoolByNameRequest`](../interfaces/GetPoolByNameRequest.md), [`Pool`](../interfaces/Pool.md)\>
 
-***
+---
 
 ### list()
 

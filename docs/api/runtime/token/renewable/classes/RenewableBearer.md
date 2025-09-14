@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/renewable](../README.md) / RenewableBearer
 
@@ -106,7 +106,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`name`](../../classes/Bearer.md#name)
 
-***
+---
 
 ### wrapped
 
@@ -136,7 +136,7 @@ Defined in: [src/runtime/token/renewable.ts:122](https://github.com/nebius/nodej
 
 `unknown`
 
-***
+---
 
 ### close()
 
@@ -158,7 +158,7 @@ Defined in: [src/runtime/token/renewable.ts:434](https://github.com/nebius/nodej
 
 [`Bearer`](../../classes/Bearer.md).[`close`](../../classes/Bearer.md#close)
 
-***
+---
 
 ### fetch()
 
@@ -180,7 +180,7 @@ Defined in: [src/runtime/token/renewable.ts:281](https://github.com/nebius/nodej
 
 `Promise`\<[`Token`](../../classes/Token.md)\>
 
-***
+---
 
 ### isRenewalRequired()
 
@@ -192,7 +192,7 @@ Defined in: [src/runtime/token/renewable.ts:382](https://github.com/nebius/nodej
 
 `boolean`
 
-***
+---
 
 ### receiver()
 
@@ -208,7 +208,7 @@ Defined in: [src/runtime/token/renewable.ts:137](https://github.com/nebius/nodej
 
 [`Bearer`](../../classes/Bearer.md).[`receiver`](../../classes/Bearer.md#receiver)
 
-***
+---
 
 ### requestRenewal()
 

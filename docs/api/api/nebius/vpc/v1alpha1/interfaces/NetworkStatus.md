@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / NetworkStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4027
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4029
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4029
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4028
 
-***
+---
 
 ### scopeId
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:4039
 
 Scope ID of all pools
 
-***
+---
 
 ### state
 

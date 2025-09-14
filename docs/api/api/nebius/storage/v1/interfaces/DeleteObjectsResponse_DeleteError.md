@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteObjectsResponse\_DeleteError
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / DeleteObjectsResponse_DeleteError
 
-# Interface: DeleteObjectsResponse\_DeleteError
+# Interface: DeleteObjectsResponse_DeleteError
 
 Defined in: src/api/nebius/storage/v1/index.ts:5031
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5031
 
 Defined in: src/api/nebius/storage/v1/index.ts:5033
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5033
 
 Defined in: src/api/nebius/storage/v1/index.ts:5032
 
-***
+---
 
 ### code
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5032
 
 Defined in: src/api/nebius/storage/v1/index.ts:5034
 
-***
+---
 
 ### message
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5034
 
 Defined in: src/api/nebius/storage/v1/index.ts:5035
 
-***
+---
 
 ### objectKey
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:5035
 
 Defined in: src/api/nebius/storage/v1/index.ts:5036
 
-***
+---
 
 ### version
 

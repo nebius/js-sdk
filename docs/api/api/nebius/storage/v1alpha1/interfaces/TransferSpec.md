@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / TransferSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1658
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1660
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1660
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1659
 
-***
+---
 
 ### destination?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1659
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1662
 
-***
+---
 
 ### interIterationInterval?
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1667
 
 Time to wait between transfer iterations. Default is 15 minutes if not specified.
 
-***
+---
 
 ### overwriteStrategy
 
@@ -52,7 +52,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1672
 
 Overwrite strategy set logic of overwrite already existed objects in destination bucket.
 
-***
+---
 
 ### source?
 
@@ -60,7 +60,7 @@ Overwrite strategy set logic of overwrite already existed objects in destination
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1661
 
-***
+---
 
 ### stopCondition?
 

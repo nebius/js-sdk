@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/logging](../README.md) / Logger
 
@@ -68,7 +68,7 @@ Defined in: [src/runtime/util/logging.ts:980](https://github.com/nebius/nodejs-s
 
 [`Handler`](../interfaces/Handler.md)
 
-***
+---
 
 ### getName
 
@@ -94,7 +94,7 @@ Defined in: [src/runtime/util/logging.ts:865](https://github.com/nebius/nodejs-s
 
 `object`
 
-***
+---
 
 ### child()
 
@@ -120,7 +120,7 @@ Defined in: [src/runtime/util/logging.ts:936](https://github.com/nebius/nodejs-s
 
 `Logger`
 
-***
+---
 
 ### debug()
 
@@ -146,7 +146,7 @@ Defined in: [src/runtime/util/logging.ts:889](https://github.com/nebius/nodejs-s
 
 `void`
 
-***
+---
 
 ### detached()
 
@@ -172,7 +172,7 @@ Defined in: [src/runtime/util/logging.ts:928](https://github.com/nebius/nodejs-s
 
 `Logger`
 
-***
+---
 
 ### error()
 
@@ -198,7 +198,7 @@ Defined in: [src/runtime/util/logging.ts:885](https://github.com/nebius/nodejs-s
 
 `void`
 
-***
+---
 
 ### info()
 
@@ -224,7 +224,7 @@ Defined in: [src/runtime/util/logging.ts:877](https://github.com/nebius/nodejs-s
 
 `void`
 
-***
+---
 
 ### log()
 
@@ -254,7 +254,7 @@ Defined in: [src/runtime/util/logging.ts:913](https://github.com/nebius/nodejs-s
 
 `void`
 
-***
+---
 
 ### sibling()
 
@@ -280,7 +280,7 @@ Defined in: [src/runtime/util/logging.ts:950](https://github.com/nebius/nodejs-s
 
 `Logger`
 
-***
+---
 
 ### trace()
 
@@ -306,7 +306,7 @@ Defined in: [src/runtime/util/logging.ts:893](https://github.com/nebius/nodejs-s
 
 `void`
 
-***
+---
 
 ### warn()
 
@@ -332,7 +332,7 @@ Defined in: [src/runtime/util/logging.ts:881](https://github.com/nebius/nodejs-s
 
 `void`
 
-***
+---
 
 ### withFields()
 

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/common/v1alpha1](../README.md) / OperationServiceServer
 
@@ -28,7 +28,7 @@ Deprecated.
 
 Defined in: src/api/nebius/common/v1alpha1/index.ts:611
 
-***
+---
 
 ### ~~list~~
 

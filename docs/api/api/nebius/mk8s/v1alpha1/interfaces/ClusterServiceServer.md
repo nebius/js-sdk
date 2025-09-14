@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1alpha1](../README.md) / ClusterServiceServer
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1089
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1093
 
-***
+---
 
 ### delete
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1093
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1095
 
-***
+---
 
 ### get
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1095
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1090
 
-***
+---
 
 ### getByName
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1090
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1091
 
-***
+---
 
 ### list
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1091
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1092
 
-***
+---
 
 ### listControlPlaneVersions
 
@@ -64,7 +64,7 @@ Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1092
 
 Defined in: src/api/nebius/mk8s/v1alpha1/index.ts:1096
 
-***
+---
 
 ### update
 

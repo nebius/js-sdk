@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / GetScopeRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5452
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5454
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5454
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5453
 
-***
+---
 
 ### id
 

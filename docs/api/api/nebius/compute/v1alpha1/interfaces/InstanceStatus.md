@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / InstanceStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:7725
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:7727
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:7727
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:7726
 
-***
+---
 
 ### networkInterfaces
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:7726
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:7729
 
-***
+---
 
 ### reconciling
 
@@ -42,7 +42,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:7734
 
 Indicates whether there is an ongoing operation
 
-***
+---
 
 ### state
 

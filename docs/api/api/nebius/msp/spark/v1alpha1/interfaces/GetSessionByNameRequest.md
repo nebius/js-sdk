@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / GetSessionByNameRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3998
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4000
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4000
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3999
 
-***
+---
 
 ### name
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4010
 
 Name of the session to retrieve.
 
-***
+---
 
 ### parentId
 

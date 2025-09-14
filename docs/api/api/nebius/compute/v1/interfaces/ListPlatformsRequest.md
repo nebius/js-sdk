@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / ListPlatformsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11168
 
 Defined in: src/api/nebius/compute/v1/index.ts:11170
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11170
 
 Defined in: src/api/nebius/compute/v1/index.ts:11169
 
-***
+---
 
 ### pageSize
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11169
 
 Defined in: src/api/nebius/compute/v1/index.ts:11171
 
-***
+---
 
 ### pageToken
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:11171
 
 Defined in: src/api/nebius/compute/v1/index.ts:11172
 
-***
+---
 
 ### parentId
 

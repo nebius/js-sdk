@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/cancelable](../README.md) / Cancelable
 
@@ -44,7 +44,7 @@ Defined in: [src/runtime/util/cancelable.ts:20](https://github.com/nebius/nodejs
 
 `void`
 
-***
+---
 
 ### guard()
 
@@ -68,7 +68,7 @@ Defined in: [src/runtime/util/cancelable.ts:49](https://github.com/nebius/nodejs
 
 `Promise`\<`T`\>
 
-***
+---
 
 ### sleep()
 
@@ -86,7 +86,7 @@ Defined in: [src/runtime/util/cancelable.ts:32](https://github.com/nebius/nodejs
 
 `Promise`\<`void`\>
 
-***
+---
 
 ### withTimeout()
 

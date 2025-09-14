@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / PoolStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5317
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5319
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5319
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5318
 
-***
+---
 
 ### cidrs
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5329
 
 CIDR blocks.
 
-***
+---
 
 ### scopeId
 
@@ -44,7 +44,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:5334
 
 ID of the scope
 
-***
+---
 
 ### state
 

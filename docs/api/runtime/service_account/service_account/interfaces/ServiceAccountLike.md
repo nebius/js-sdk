@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service\_account/service\_account](../README.md) / ServiceAccountLike
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service_account/service_account](../README.md) / ServiceAccountLike
 
 # Interface: ServiceAccountLike
 
-Defined in: [src/runtime/service\_account/service\_account.ts:7](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L7)
+Defined in: [src/runtime/service_account/service_account.ts:7](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L7)
 
 ## Extends
 
@@ -18,23 +18,23 @@ Defined in: [src/runtime/service\_account/service\_account.ts:7](https://github.
 
 > `readonly` **privateKeyPem**: `string`
 
-Defined in: [src/runtime/service\_account/service\_account.ts:8](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L8)
+Defined in: [src/runtime/service_account/service_account.ts:8](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L8)
 
-***
+---
 
 ### publicKeyId
 
 > `readonly` **publicKeyId**: `string`
 
-Defined in: [src/runtime/service\_account/service\_account.ts:9](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L9)
+Defined in: [src/runtime/service_account/service_account.ts:9](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L9)
 
-***
+---
 
 ### serviceAccountId
 
 > `readonly` **serviceAccountId**: `string`
 
-Defined in: [src/runtime/service\_account/service\_account.ts:10](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L10)
+Defined in: [src/runtime/service_account/service_account.ts:10](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L10)
 
 ## Methods
 

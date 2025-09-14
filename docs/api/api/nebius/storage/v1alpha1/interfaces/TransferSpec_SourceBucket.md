@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / TransferSpec\_SourceBucket
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / TransferSpec_SourceBucket
 
-# Interface: TransferSpec\_SourceBucket
+# Interface: TransferSpec_SourceBucket
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1935
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1935
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1937
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1937
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1936
 
-***
+---
 
 ### bucketName
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1936
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1945
 
-***
+---
 
 ### credentials?
 
@@ -41,9 +41,9 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:1945
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1952
 
 Credentials for accessing the source bucket. These credentials must have list and get permissions.
- This parameter must be specified only during create operations.
+This parameter must be specified only during create operations.
 
-***
+---
 
 ### endpoint
 
@@ -52,10 +52,10 @@ Credentials for accessing the source bucket. These credentials must have list an
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1944
 
 The endpoint must be in the form of a URL, starting with the protocol (https),
- followed by the endpoint address without a trailing slash.
- Example: https://storage.us-central1.nebius.cloud
+followed by the endpoint address without a trailing slash.
+Example: https://storage.us-central1.nebius.cloud
 
-***
+---
 
 ### limiters?
 
@@ -64,14 +64,14 @@ The endpoint must be in the form of a URL, starting with the protocol (https),
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:1963
 
 Limiters applied to source bucket operations. These limits include all operations
- required for transfer (HeadObject, GetObject, ListObjects). For details about
- which operations are used, see public documentation: http://docs.nebius.com/object-storage/transfer/quickstart#background.
+required for transfer (HeadObject, GetObject, ListObjects). For details about
+which operations are used, see public documentation: http://docs.nebius.com/object-storage/transfer/quickstart#background.
 
- Note: Since the service performs comparable request volumes and data transfers
- to both source and destination, these limits will indirectly constrain
- destination operations as well.
+Note: Since the service performs comparable request volumes and data transfers
+to both source and destination, these limits will indirectly constrain
+destination operations as well.
 
-***
+---
 
 ### region
 

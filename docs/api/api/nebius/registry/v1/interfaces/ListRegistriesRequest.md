@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/registry/v1](../README.md) / ListRegistriesRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:924
 
 Defined in: src/api/nebius/registry/v1/index.ts:926
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:926
 
 Defined in: src/api/nebius/registry/v1/index.ts:925
 
-***
+---
 
 ### filter
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:925
 
 Defined in: src/api/nebius/registry/v1/index.ts:930
 
-***
+---
 
 ### pageSize
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:930
 
 Defined in: src/api/nebius/registry/v1/index.ts:928
 
-***
+---
 
 ### pageToken
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/registry/v1/index.ts:928
 
 Defined in: src/api/nebius/registry/v1/index.ts:929
 
-***
+---
 
 ### parentId
 

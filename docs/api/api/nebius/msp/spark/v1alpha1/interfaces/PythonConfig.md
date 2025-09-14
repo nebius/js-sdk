@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / PythonConfig
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1696
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1698
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1698
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1697
 
-***
+---
 
 ### fileUris
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:1708
 
 S3 URIs of files to be placed in PYTHONPATH of driver and executors for python applications (.py, .zip, .egg)
 
-***
+---
 
 ### requirements
 

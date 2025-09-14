@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / TargetGroupSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:8696
 
 Defined in: src/api/nebius/vpc/v1/index.ts:8698
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:8698
 
 Defined in: src/api/nebius/vpc/v1/index.ts:8697
 
-***
+---
 
 ### targets
 

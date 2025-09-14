@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1alpha1](../README.md) / AllocationStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1617
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1619
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1619
 
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1618
 
-***
+---
 
 ### assignment?
 
@@ -33,9 +33,9 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1618
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1636
 
 Information about the assignment associated with the allocation,
- such as network interface or load balancer assignment.
+such as network interface or load balancer assignment.
 
-***
+---
 
 ### details?
 
@@ -44,9 +44,9 @@ Information about the assignment associated with the allocation,
 Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1630
 
 Detailed information about the allocation status,
- including the allocated CIDR, pool ID, scope type, and IP version.
+including the allocated CIDR, pool ID, scope type, and IP version.
 
-***
+---
 
 ### state
 
@@ -56,7 +56,7 @@ Defined in: src/api/nebius/vpc/v1alpha1/index.ts:1624
 
 This field represents the current state of the allocation.
 
-***
+---
 
 ### static
 

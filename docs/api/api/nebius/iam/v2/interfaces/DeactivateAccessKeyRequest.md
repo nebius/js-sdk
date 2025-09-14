@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v2](../README.md) / DeactivateAccessKeyRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:818
 
 Defined in: src/api/nebius/iam/v2/index.ts:820
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:820
 
 Defined in: src/api/nebius/iam/v2/index.ts:819
 
-***
+---
 
 ### id
 

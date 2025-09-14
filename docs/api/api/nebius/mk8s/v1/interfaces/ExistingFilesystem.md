@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / ExistingFilesystem
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:5652
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:5654
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:5654
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:5653
 
-***
+---
 
 ### id
 

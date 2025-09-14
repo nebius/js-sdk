@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1alpha1](../README.md) / TransferStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:2886
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:2888
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:2888
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:2887
 
-***
+---
 
 ### error
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:2894
 
 Error information if the transfer has failed.
 
-***
+---
 
 ### lastIteration?
 
@@ -42,7 +42,7 @@ Error information if the transfer has failed.
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:2896
 
-***
+---
 
 ### state
 
@@ -50,7 +50,7 @@ Defined in: src/api/nebius/storage/v1alpha1/index.ts:2896
 
 Defined in: src/api/nebius/storage/v1alpha1/index.ts:2889
 
-***
+---
 
 ### suspensionState
 

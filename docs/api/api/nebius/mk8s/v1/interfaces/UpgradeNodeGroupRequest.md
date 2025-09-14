@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / UpgradeNodeGroupRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:3811
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:3813
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:3813
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:3812
 
-***
+---
 
 ### id
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/mk8s/v1/index.ts:3812
 
 Defined in: src/api/nebius/mk8s/v1/index.ts:3814
 
-***
+---
 
 ### upgradeType?
 

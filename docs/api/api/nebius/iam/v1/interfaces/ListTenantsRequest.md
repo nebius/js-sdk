@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListTenantsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:19537
 
 Defined in: src/api/nebius/iam/v1/index.ts:19539
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:19539
 
 Defined in: src/api/nebius/iam/v1/index.ts:19538
 
-***
+---
 
 ### filter
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:19555
 
 A filter to narrow down the results based on specific criteria.
 
-***
+---
 
 ### pageSize?
 
@@ -43,9 +43,9 @@ A filter to narrow down the results based on specific criteria.
 Defined in: src/api/nebius/iam/v1/index.ts:19545
 
 Specifies the maximum number of items to return in the response.
- Default value: 10
+Default value: 10
 
-***
+---
 
 ### pageToken
 

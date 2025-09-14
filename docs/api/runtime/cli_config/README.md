@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../README.md) / runtime/cli\_config
+[@nebius/nodejs-sdk](../../README.md) / runtime/cli_config
 
-# runtime/cli\_config
+# runtime/cli_config
 
 ## Classes
 

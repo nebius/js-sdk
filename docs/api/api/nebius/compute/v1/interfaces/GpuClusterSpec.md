@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / GpuClusterSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:4581
 
 Defined in: src/api/nebius/compute/v1/index.ts:4583
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1/index.ts:4583
 
 Defined in: src/api/nebius/compute/v1/index.ts:4582
 
-***
+---
 
 ### infinibandFabric
 
@@ -33,4 +33,4 @@ Defined in: src/api/nebius/compute/v1/index.ts:4582
 Defined in: src/api/nebius/compute/v1/index.ts:4589
 
 The identifier of the physical InfiniBand fabric to connect GPU instances to.
- For details, see https://docs.nebius.com/compute/clusters/gpu#fabrics
+For details, see https://docs.nebius.com/compute/clusters/gpu#fabrics

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1alpha1](../README.md) / FilesystemStatus
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2954
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2956
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2956
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2955
 
-***
+---
 
 ### readOnlyAttachments
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2955
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2960
 
-***
+---
 
 ### readWriteAttachments
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2960
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2959
 
-***
+---
 
 ### reconciling
 
@@ -50,7 +50,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2966
 
 Indicates whether there is an ongoing operation
 
-***
+---
 
 ### sizeBytes
 
@@ -58,7 +58,7 @@ Indicates whether there is an ongoing operation
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2961
 
-***
+---
 
 ### state
 
@@ -66,7 +66,7 @@ Defined in: src/api/nebius/compute/v1alpha1/index.ts:2961
 
 Defined in: src/api/nebius/compute/v1alpha1/index.ts:2957
 
-***
+---
 
 ### stateDescription
 

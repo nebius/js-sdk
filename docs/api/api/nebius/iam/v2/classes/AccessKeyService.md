@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v2](../README.md) / AccessKeyService
 
@@ -162,7 +162,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1629
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyRequest`](../interfaces/ActivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### activateByAwsId()
 
@@ -286,7 +286,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1698
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ActivateAccessKeyByAwsIdRequest`](../interfaces/ActivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### create()
 
@@ -410,7 +410,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1560
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`CreateAccessKeyRequest`](../interfaces/CreateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### deactivate()
 
@@ -534,7 +534,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1644
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyRequest`](../interfaces/DeactivateAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### deactivateByAwsId()
 
@@ -658,7 +658,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1713
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeactivateAccessKeyByAwsIdRequest`](../interfaces/DeactivateAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### delete()
 
@@ -782,7 +782,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1614
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyRequest`](../interfaces/DeleteAccessKeyRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### deleteByAwsId()
 
@@ -906,7 +906,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1683
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`DeleteAccessKeyByAwsIdRequest`](../interfaces/DeleteAccessKeyByAwsIdRequest.md), [`Operation`](../../../../../runtime/operation/classes/Operation.md)\<[`GetOperationRequest`](../../../common/v1/interfaces/GetOperationRequest.md)\>\>
 
-***
+---
 
 ### get()
 
@@ -1030,7 +1030,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1575
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyRequest`](../interfaces/GetAccessKeyRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-***
+---
 
 ### getByAwsId()
 
@@ -1154,7 +1154,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1671
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`GetAccessKeyByAwsIdRequest`](../interfaces/GetAccessKeyByAwsIdRequest.md), [`AccessKey`](../interfaces/AccessKey.md)\>
 
-***
+---
 
 ### getOperationService()
 
@@ -1166,7 +1166,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1554
 
 [`OperationService`](../../../common/v1/classes/OperationService.md)
 
-***
+---
 
 ### list()
 
@@ -1290,7 +1290,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1587
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysRequest`](../interfaces/ListAccessKeysRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-***
+---
 
 ### listByAccount()
 
@@ -1414,7 +1414,7 @@ Defined in: src/api/nebius/iam/v2/index.ts:1659
 
 [`Request`](../../../../../runtime/request/classes/Request.md)\<[`ListAccessKeysByAccountRequest`](../interfaces/ListAccessKeysByAccountRequest.md), [`ListAccessKeysResponse`](../interfaces/ListAccessKeysResponse.md)\>
 
-***
+---
 
 ### update()
 

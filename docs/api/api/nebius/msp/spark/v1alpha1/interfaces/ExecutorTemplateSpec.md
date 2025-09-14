@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / ExecutorTemplateSpec
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3716
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3718
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3718
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3717
 
-***
+---
 
 ### disk?
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3717
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3719
 
-***
+---
 
 ### hostsSpec?
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3719
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:3721
 
-***
+---
 
 ### resources?
 

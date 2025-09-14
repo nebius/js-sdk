@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / ListInvitationsRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13214
 
 Defined in: src/api/nebius/iam/v1/index.ts:13216
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13216
 
 Defined in: src/api/nebius/iam/v1/index.ts:13215
 
-***
+---
 
 ### filter
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13215
 
 Defined in: src/api/nebius/iam/v1/index.ts:13220
 
-***
+---
 
 ### pageSize
 
@@ -40,7 +40,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13220
 
 Defined in: src/api/nebius/iam/v1/index.ts:13218
 
-***
+---
 
 ### pageToken
 
@@ -48,7 +48,7 @@ Defined in: src/api/nebius/iam/v1/index.ts:13218
 
 Defined in: src/api/nebius/iam/v1/index.ts:13219
 
-***
+---
 
 ### parentId
 

@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / CompleteMultipartUploadRequestParameters\_Part
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / CompleteMultipartUploadRequestParameters_Part
 
-# Interface: CompleteMultipartUploadRequestParameters\_Part
+# Interface: CompleteMultipartUploadRequestParameters_Part
 
 Defined in: src/api/nebius/storage/v1/index.ts:3788
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3788
 
 Defined in: src/api/nebius/storage/v1/index.ts:3790
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3790
 
 Defined in: src/api/nebius/storage/v1/index.ts:3789
 
-***
+---
 
 ### etag
 
@@ -32,7 +32,7 @@ Defined in: src/api/nebius/storage/v1/index.ts:3789
 
 Defined in: src/api/nebius/storage/v1/index.ts:3792
 
-***
+---
 
 ### partNumber
 

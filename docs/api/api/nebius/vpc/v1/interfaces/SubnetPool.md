@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / SubnetPool
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7848
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7850
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/vpc/v1/index.ts:7850
 
 Defined in: src/api/nebius/vpc/v1/index.ts:7849
 
-***
+---
 
 ### cidrs
 

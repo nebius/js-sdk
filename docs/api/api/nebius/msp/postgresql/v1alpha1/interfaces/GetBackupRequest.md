@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / GetBackupRequest
 
@@ -16,7 +16,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:20
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:22
 
-***
+---
 
 ### $type
 
@@ -24,7 +24,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:22
 
 Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:21
 
-***
+---
 
 ### backupId
 
@@ -34,7 +34,7 @@ Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:32
 
 ID of the designated backup.
 
-***
+---
 
 ### clusterId
 

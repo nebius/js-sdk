@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/logging/v1/agentmanager](../README.md) / ModuleHealth
 
@@ -18,7 +18,7 @@ Health status information for an individual module.
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:896
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:896
 
 Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:895
 
-***
+---
 
 ### messages
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:906
 
 Status messages describing the module's state.
 
-***
+---
 
 ### parameters
 
@@ -46,7 +46,7 @@ Defined in: src/api/nebius/logging/v1/agentmanager/index.ts:911
 
 Current parameters of the module.
 
-***
+---
 
 ### state
 

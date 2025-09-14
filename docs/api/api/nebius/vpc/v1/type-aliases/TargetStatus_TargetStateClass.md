@@ -1,11 +1,11 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
-***
+---
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / TargetStatus\_TargetStateClass
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/vpc/v1](../README.md) / TargetStatus_TargetStateClass
 
-# Type Alias: TargetStatus\_TargetStateClass
+# Type Alias: TargetStatus_TargetStateClass
 
-> **TargetStatus\_TargetStateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"TARGET_STATE_UNSPECIFIED"` \| `"READY"` \| `"DISABLED"` \| `"DELETED"`\> & `TargetStatus_TargetStateValueMembers`
+> **TargetStatus_TargetStateClass** = [`EnumClass`](../../../../../runtime/protos/enum/type-aliases/EnumClass.md)\<`"UNRECOGNIZED"` \| `"TARGET_STATE_UNSPECIFIED"` \| `"READY"` \| `"DISABLED"` \| `"DELETED"`\> & `TargetStatus_TargetStateValueMembers`
 
 Defined in: src/api/nebius/vpc/v1/index.ts:8515

@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../../README.md)
 
-***
+---
 
 [@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / JobSpec
 
@@ -18,7 +18,7 @@ Spark Job specification
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2785
 
-***
+---
 
 ### $type
 
@@ -26,7 +26,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2785
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2784
 
-***
+---
 
 ### applicationArgs
 
@@ -36,7 +36,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2804
 
 Application args
 
-***
+---
 
 ### applicationFileUri
 
@@ -45,9 +45,9 @@ Application args
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2796
 
 S3 URI of main application file
- Example: s3a://mybucket/myapp.py
+Example: s3a://mybucket/myapp.py
 
-***
+---
 
 ### description?
 
@@ -57,7 +57,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2790
 
 Description of the job.
 
-***
+---
 
 ### driver?
 
@@ -65,7 +65,7 @@ Description of the job.
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2797
 
-***
+---
 
 ### executor?
 
@@ -73,7 +73,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2797
 
 Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2798
 
-***
+---
 
 ### fileUris
 
@@ -83,7 +83,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2809
 
 S3 URIs of files to be placed in executor working directory
 
-***
+---
 
 ### jarUris
 
@@ -93,7 +93,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2814
 
 S3 URIs of Jars to be placed in classpaths of driver and executors for java applications
 
-***
+---
 
 ### packages
 
@@ -103,7 +103,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2819
 
 List of maven coordinates of jars to include on the driver and executor classpaths
 
-***
+---
 
 ### runtimeConfig?
 
@@ -113,7 +113,7 @@ Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:2829
 
 Runtime-specific job config
 
-***
+---
 
 ### sparkConf
 
@@ -127,7 +127,7 @@ Map of spark configuration parameters
 
 \[`key`: `string`\]: `string`
 
-***
+---
 
 ### sparkVersion
 
