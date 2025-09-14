@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/static](../README.md) / EnvBearer
 
 # Class: EnvBearer
 
-Defined in: [src/runtime/token/static.ts:62](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/static.ts#L62)
+Defined in: [src/runtime/token/static.ts:62](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/static.ts#L62)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/token/static.ts:62](https://github.com/nebius/nodejs-sd
 
 > **new EnvBearer**(`envVarName`): `EnvBearer`
 
-Defined in: [src/runtime/token/static.ts:64](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/static.ts#L64)
+Defined in: [src/runtime/token/static.ts:64](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/static.ts#L64)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [src/runtime/token/static.ts:64](https://github.com/nebius/nodejs-sd
 
 > `readonly` **$type**: `"nebius.sdk.EnvBearer"` = `'nebius.sdk.EnvBearer'`
 
-Defined in: [src/runtime/token/static.ts:63](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/static.ts#L63)
+Defined in: [src/runtime/token/static.ts:63](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/static.ts#L63)
 
 #### Overrides
 
@@ -58,7 +58,7 @@ Defined in: [src/runtime/token/static.ts:63](https://github.com/nebius/nodejs-sd
 
 > **get** **name**(): `undefined` \| `string`
 
-Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L113)
+Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L113)
 
 ##### Returns
 
@@ -68,7 +68,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 [`StaticBearer`](StaticBearer.md).[`name`](StaticBearer.md#name)
 
----
+***
 
 ### wrapped
 
@@ -76,7 +76,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../classes/Bearer.md)
 
-Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L117)
+Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L117)
 
 ##### Returns
 
@@ -92,7 +92,7 @@ Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob
 
 > **\[customJson\]**(): `unknown`
 
-Defined in: [src/runtime/token/static.ts:50](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/static.ts#L50)
+Defined in: [src/runtime/token/static.ts:50](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/static.ts#L50)
 
 #### Returns
 
@@ -102,13 +102,13 @@ Defined in: [src/runtime/token/static.ts:50](https://github.com/nebius/nodejs-sd
 
 [`StaticBearer`](StaticBearer.md).[`[customJson]`](StaticBearer.md#customjson)
 
----
+***
 
 ### close()
 
 > **close**(`_graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L121)
+Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L121)
 
 #### Parameters
 
@@ -124,13 +124,13 @@ Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob
 
 [`StaticBearer`](StaticBearer.md).[`close`](StaticBearer.md#close)
 
----
+***
 
 ### receiver()
 
 > **receiver**(): [`Receiver`](../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/static.ts:57](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/static.ts#L57)
+Defined in: [src/runtime/token/static.ts:57](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/static.ts#L57)
 
 #### Returns
 

@@ -1,6 +1,6 @@
 import { createSign } from 'crypto';
 
-import { ExchangeTokenRequest } from '../../generated/nebius/iam/v1/index';
+import { ExchangeTokenRequest } from '../../api/nebius/iam/v1/index';
 import { TokenRequester } from '../token/exchangeable';
 import { custom, customJson, Logger } from '../util/logging';
 

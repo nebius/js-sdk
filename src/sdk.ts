@@ -13,8 +13,7 @@ import {
   GetProfileRequest,
   type GetProfileResponse,
   ProfileService as ProfileServiceClient,
-} from './generated/nebius/iam/v1/index';
-import { VERSION } from './generated/version';
+} from './api/nebius/iam/v1/index';
 import { createAuthorizationInterceptor } from './runtime/authorization/interceptor';
 import type { Provider as AuthorizationProvider } from './runtime/authorization/provider';
 import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token';
@@ -33,6 +32,7 @@ import { FileBearer } from './runtime/token/file';
 import { ServiceAccountBearer } from './runtime/token/service_account';
 import { StaticBearer } from './runtime/token/static';
 import { Handler as SDKHandler, Logger as SDKLogger, resolveLogger } from './runtime/util/logging';
+import { VERSION } from './version';
 
 export interface SDKInterface {
   getClientByAddress(address: string): Client;

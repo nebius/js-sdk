@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../README.md) / runtime/token/federated_credentials
+[@nebius/nodejs-sdk](../../../README.md) / runtime/token/federated\_credentials
 
-# runtime/token/federated_credentials
+# runtime/token/federated\_credentials
 
 ## Classes
 

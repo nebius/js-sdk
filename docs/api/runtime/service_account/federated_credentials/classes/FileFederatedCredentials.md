@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service_account/federated_credentials](../README.md) / FileFederatedCredentials
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service\_account/federated\_credentials](../README.md) / FileFederatedCredentials
 
 # Class: FileFederatedCredentials
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:73](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L73)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:73](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L73)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/service_account/federated_credentials.ts:73](https://gi
 
 > **new FileFederatedCredentials**(`filePath`): `FileFederatedCredentials`
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:74](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L74)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:74](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L74)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [src/runtime/service_account/federated_credentials.ts:74](https://gi
 
 > `readonly` **filePath**: `string`
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:74](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L74)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:74](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L74)
 
 ## Methods
 
@@ -48,19 +48,19 @@ Defined in: [src/runtime/service_account/federated_credentials.ts:74](https://gi
 
 > **\[customJson\]**(): `object`
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:79](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L79)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:79](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L79)
 
 #### Returns
 
 `object`
 
----
+***
 
 ### credentials()
 
 > **credentials**(): `string`
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:86](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L86)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:86](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L86)
 
 #### Returns
 

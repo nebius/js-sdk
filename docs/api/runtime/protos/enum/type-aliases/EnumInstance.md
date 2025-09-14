@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/enum](../README.md) / EnumInstance
 
@@ -8,37 +8,37 @@
 
 > **EnumInstance**\<`TName`\> = `object`
 
-Defined in: [src/runtime/protos/enum.ts:15](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/enum.ts#L15)
+Defined in: [src/runtime/protos/enum.ts:15](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/enum.ts#L15)
 
 ## Type Parameters
 
 ### TName
 
-`TName` _extends_ `string` = `string`
+`TName` *extends* `string` = `string`
 
 ## Properties
 
-### \[ENUM_VALUE_META\]?
+### \[ENUM\_VALUE\_META\]?
 
-> `readonly` `optional` **\[ENUM_VALUE_META\]**: [`EnumValueMeta`](../interfaces/EnumValueMeta.md)
+> `readonly` `optional` **\[ENUM\_VALUE\_META\]**: [`EnumValueMeta`](../interfaces/EnumValueMeta.md)
 
-Defined in: [src/runtime/protos/enum.ts:20](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/enum.ts#L20)
+Defined in: [src/runtime/protos/enum.ts:20](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/enum.ts#L20)
 
----
+***
 
 ### code
 
 > `readonly` **code**: `number`
 
-Defined in: [src/runtime/protos/enum.ts:16](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/enum.ts#L16)
+Defined in: [src/runtime/protos/enum.ts:16](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/enum.ts#L16)
 
----
+***
 
 ### name
 
 > `readonly` **name**: `TName`
 
-Defined in: [src/runtime/protos/enum.ts:17](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/enum.ts#L17)
+Defined in: [src/runtime/protos/enum.ts:17](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/enum.ts#L17)
 
 ## Methods
 
@@ -46,19 +46,19 @@ Defined in: [src/runtime/protos/enum.ts:17](https://github.com/nebius/nodejs-sdk
 
 > **toNumber**(): `number`
 
-Defined in: [src/runtime/protos/enum.ts:18](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/enum.ts#L18)
+Defined in: [src/runtime/protos/enum.ts:18](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/enum.ts#L18)
 
 #### Returns
 
 `number`
 
----
+***
 
 ### toString()
 
 > **toString**(): `string`
 
-Defined in: [src/runtime/protos/enum.ts:19](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/enum.ts#L19)
+Defined in: [src/runtime/protos/enum.ts:19](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/enum.ts#L19)
 
 #### Returns
 

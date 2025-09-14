@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/spark/v1alpha1](../README.md) / DeleteSessionRequest
+
+# Variable: DeleteSessionRequest
+
+> **DeleteSessionRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`DeleteSessionRequest`](../interfaces/DeleteSessionRequest.md), `"nebius.msp.spark.v1alpha1.DeleteSessionRequest"`\>
+
+Defined in: src/api/nebius/msp/spark/v1alpha1/index.ts:4477

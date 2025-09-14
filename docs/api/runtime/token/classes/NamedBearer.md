@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/token](../README.md) / NamedBearer
 
 # Class: NamedBearer
 
-Defined in: [src/runtime/token.ts:129](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L129)
+Defined in: [src/runtime/token.ts:129](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L129)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/token.ts:129](https://github.com/nebius/nodejs-sdk/blob
 
 > **new NamedBearer**(`_wrapped`, `_name`): `NamedBearer`
 
-Defined in: [src/runtime/token.ts:131](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L131)
+Defined in: [src/runtime/token.ts:131](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L131)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [src/runtime/token.ts:131](https://github.com/nebius/nodejs-sdk/blob
 
 > `readonly` **$type**: `"nebius.sdk.NamedBearer"` = `'nebius.sdk.NamedBearer'`
 
-Defined in: [src/runtime/token.ts:130](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L130)
+Defined in: [src/runtime/token.ts:130](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L130)
 
 #### Overrides
 
@@ -62,7 +62,7 @@ Defined in: [src/runtime/token.ts:130](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **name**(): `undefined` \| `string`
 
-Defined in: [src/runtime/token.ts:152](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L152)
+Defined in: [src/runtime/token.ts:152](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L152)
 
 ##### Returns
 
@@ -72,7 +72,7 @@ Defined in: [src/runtime/token.ts:152](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](Bearer.md).[`name`](Bearer.md#name)
 
----
+***
 
 ### wrapped
 
@@ -80,7 +80,7 @@ Defined in: [src/runtime/token.ts:152](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](Bearer.md)
 
-Defined in: [src/runtime/token.ts:148](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L148)
+Defined in: [src/runtime/token.ts:148](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L148)
 
 ##### Returns
 
@@ -96,19 +96,19 @@ Defined in: [src/runtime/token.ts:148](https://github.com/nebius/nodejs-sdk/blob
 
 > **\[customJson\]**(): `unknown`
 
-Defined in: [src/runtime/token.ts:140](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L140)
+Defined in: [src/runtime/token.ts:140](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L140)
 
 #### Returns
 
 `unknown`
 
----
+***
 
 ### close()
 
 > **close**(`_graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L121)
+Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L121)
 
 #### Parameters
 
@@ -124,13 +124,13 @@ Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](Bearer.md).[`close`](Bearer.md#close)
 
----
+***
 
 ### receiver()
 
 > **receiver**(): [`Receiver`](Receiver.md)
 
-Defined in: [src/runtime/token.ts:156](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L156)
+Defined in: [src/runtime/token.ts:156](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L156)
 
 #### Returns
 

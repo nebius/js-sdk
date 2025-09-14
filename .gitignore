@@ -1,7 +1,7 @@
 node_modules/
 dist/
 dist-scripts/
-src/generated/
+src/api/
 *.log
 .env
 .env.local

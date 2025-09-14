@@ -1,7 +1,7 @@
 import { Metadata, status, type CallOptions } from '@grpc/grpc-js';
 import { Dayjs } from 'dayjs';
 
-import { Status, Code as StatusCode } from '../generated/google/rpc/index';
+import { Status, Code as StatusCode } from '../api/google/rpc/index';
 
 import { Request, RetryOptions } from './request';
 import { Logger, custom, customJson, inspectJson } from './util/logging';

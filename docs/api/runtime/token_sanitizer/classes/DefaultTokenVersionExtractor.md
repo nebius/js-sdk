@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../README.md) / [runtime/token_sanitizer](../README.md) / DefaultTokenVersionExtractor
+[@nebius/nodejs-sdk](../../../README.md) / [runtime/token\_sanitizer](../README.md) / DefaultTokenVersionExtractor
 
 # Class: DefaultTokenVersionExtractor
 
-Defined in: [src/runtime/token_sanitizer.ts:29](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token_sanitizer.ts#L29)
+Defined in: [src/runtime/token\_sanitizer.ts:29](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token_sanitizer.ts#L29)
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: [src/runtime/token_sanitizer.ts:29](https://github.com/nebius/nodejs
 
 > **new DefaultTokenVersionExtractor**(`versions`): `DefaultTokenVersionExtractor`
 
-Defined in: [src/runtime/token_sanitizer.ts:30](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token_sanitizer.ts#L30)
+Defined in: [src/runtime/token\_sanitizer.ts:30](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token_sanitizer.ts#L30)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [src/runtime/token_sanitizer.ts:30](https://github.com/nebius/nodejs
 
 > **extract**(`token`): \[[`TokenVersion`](TokenVersion.md), `boolean`\]
 
-Defined in: [src/runtime/token_sanitizer.ts:31](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token_sanitizer.ts#L31)
+Defined in: [src/runtime/token\_sanitizer.ts:31](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token_sanitizer.ts#L31)
 
 #### Parameters
 

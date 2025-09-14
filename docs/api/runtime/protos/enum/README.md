@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../README.md) / runtime/protos/enum
 
@@ -17,7 +17,7 @@
 
 ## Variables
 
-- [ENUM_VALUE_META](variables/ENUM_VALUE_META.md)
+- [ENUM\_VALUE\_META](variables/ENUM_VALUE_META.md)
 
 ## Functions
 

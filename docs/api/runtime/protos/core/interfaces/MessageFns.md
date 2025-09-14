@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/core](../README.md) / MessageFns
 
 # Interface: MessageFns\<T, TType\>
 
-Defined in: [src/runtime/protos/core.ts:19](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/core.ts#L19)
+Defined in: [src/runtime/protos/core.ts:19](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L19)
 
 ## Type Parameters
 
@@ -16,7 +16,7 @@ Defined in: [src/runtime/protos/core.ts:19](https://github.com/nebius/nodejs-sdk
 
 ### TType
 
-`TType` _extends_ `string`
+`TType` *extends* `string`
 
 ## Properties
 
@@ -24,7 +24,7 @@ Defined in: [src/runtime/protos/core.ts:19](https://github.com/nebius/nodejs-sdk
 
 > **$type**: `TType`
 
-Defined in: [src/runtime/protos/core.ts:20](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/core.ts#L20)
+Defined in: [src/runtime/protos/core.ts:20](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L20)
 
 ## Methods
 
@@ -32,13 +32,13 @@ Defined in: [src/runtime/protos/core.ts:20](https://github.com/nebius/nodejs-sdk
 
 > **create**\<`I`\>(`base?`): `T`
 
-Defined in: [src/runtime/protos/core.ts:28](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/core.ts#L28)
+Defined in: [src/runtime/protos/core.ts:28](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L28)
 
 #### Type Parameters
 
 ##### I
 
-`I` _extends_ `undefined` \| `string` \| `number` \| `boolean` \| `Function` \| [`Long`](../classes/Long.md) \| `Date` \| `Uint8Array`\<`ArrayBufferLike`\> \| `Partial`\<`unknown`\>[] \| readonly `Partial`\<`unknown`\>[] \| \{ \[K in string \| number \| symbol\]?: DeepPartial\<T\<T\>\[K\]\> \} \| `Partial`\<`T`\>
+`I` *extends* `undefined` \| `string` \| `number` \| `boolean` \| `Function` \| [`Long`](../classes/Long.md) \| `Date` \| `Uint8Array`\<`ArrayBufferLike`\> \| `Partial`\<`unknown`\>[] \| readonly `Partial`\<`unknown`\>[] \| \{ \[K in string \| number \| symbol\]?: DeepPartial\<T\<T\>\[K\]\> \} \| `Partial`\<`T`\>
 
 #### Parameters
 
@@ -50,13 +50,13 @@ Defined in: [src/runtime/protos/core.ts:28](https://github.com/nebius/nodejs-sdk
 
 `T`
 
----
+***
 
 ### decode()
 
 > **decode**(`input`, `length?`): `T`
 
-Defined in: [src/runtime/protos/core.ts:25](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/core.ts#L25)
+Defined in: [src/runtime/protos/core.ts:25](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L25)
 
 #### Parameters
 
@@ -72,13 +72,13 @@ Defined in: [src/runtime/protos/core.ts:25](https://github.com/nebius/nodejs-sdk
 
 `T`
 
----
+***
 
 ### encode()
 
 > **encode**(`message`, `writer?`): [`BinaryWriter`](../classes/BinaryWriter.md)
 
-Defined in: [src/runtime/protos/core.ts:21](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/core.ts#L21)
+Defined in: [src/runtime/protos/core.ts:21](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L21)
 
 #### Parameters
 
@@ -94,13 +94,13 @@ Defined in: [src/runtime/protos/core.ts:21](https://github.com/nebius/nodejs-sdk
 
 [`BinaryWriter`](../classes/BinaryWriter.md)
 
----
+***
 
 ### fromJSON()
 
 > **fromJSON**(`object`): `T`
 
-Defined in: [src/runtime/protos/core.ts:26](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/core.ts#L26)
+Defined in: [src/runtime/protos/core.ts:26](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L26)
 
 #### Parameters
 
@@ -112,19 +112,19 @@ Defined in: [src/runtime/protos/core.ts:26](https://github.com/nebius/nodejs-sdk
 
 `T`
 
----
+***
 
 ### fromPartial()
 
 > **fromPartial**\<`I`\>(`object`): `T`
 
-Defined in: [src/runtime/protos/core.ts:29](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/core.ts#L29)
+Defined in: [src/runtime/protos/core.ts:29](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L29)
 
 #### Type Parameters
 
 ##### I
 
-`I` _extends_ `undefined` \| `string` \| `number` \| `boolean` \| `Function` \| [`Long`](../classes/Long.md) \| `Date` \| `Uint8Array`\<`ArrayBufferLike`\> \| `Partial`\<`unknown`\>[] \| readonly `Partial`\<`unknown`\>[] \| \{ \[K in string \| number \| symbol\]?: DeepPartial\<T\<T\>\[K\]\> \} \| `Partial`\<`T`\>
+`I` *extends* `undefined` \| `string` \| `number` \| `boolean` \| `Function` \| [`Long`](../classes/Long.md) \| `Date` \| `Uint8Array`\<`ArrayBufferLike`\> \| `Partial`\<`unknown`\>[] \| readonly `Partial`\<`unknown`\>[] \| \{ \[K in string \| number \| symbol\]?: DeepPartial\<T\<T\>\[K\]\> \} \| `Partial`\<`T`\>
 
 #### Parameters
 
@@ -136,13 +136,13 @@ Defined in: [src/runtime/protos/core.ts:29](https://github.com/nebius/nodejs-sdk
 
 `T`
 
----
+***
 
 ### toJSON()
 
 > **toJSON**(`message`, `use?`): `unknown`
 
-Defined in: [src/runtime/protos/core.ts:27](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/core.ts#L27)
+Defined in: [src/runtime/protos/core.ts:27](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/core.ts#L27)
 
 #### Parameters
 

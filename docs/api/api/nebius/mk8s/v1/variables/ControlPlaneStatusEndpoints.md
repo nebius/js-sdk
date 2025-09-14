@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/mk8s/v1](../README.md) / ControlPlaneStatusEndpoints
+
+# Variable: ControlPlaneStatusEndpoints
+
+> **ControlPlaneStatusEndpoints**: [`MessageFns`](../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ControlPlaneStatusEndpoints`](../interfaces/ControlPlaneStatusEndpoints.md), `"nebius.mk8s.v1.ControlPlaneStatusEndpoints"`\>
+
+Defined in: src/api/nebius/mk8s/v1/index.ts:2157

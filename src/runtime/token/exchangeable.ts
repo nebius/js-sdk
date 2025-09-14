@@ -6,7 +6,7 @@ import { Metadata as GrpcMetadata } from '@grpc/grpc-js';
 import {
   TokenExchangeService as ExchangeSvc,
   ExchangeTokenRequest,
-} from '../../generated/nebius/iam/v1/index';
+} from '../../api/nebius/iam/v1/index';
 import type { SDKInterface } from '../../sdk';
 import type { AuthorizationOptions } from '../authorization/provider';
 import { Bearer, Receiver, Token } from '../token';

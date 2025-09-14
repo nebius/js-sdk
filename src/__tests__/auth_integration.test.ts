@@ -13,13 +13,13 @@ import {
   DiskServiceServiceDescription as DiskServiceService,
   ListDisksRequest,
   ListDisksResponse,
-} from '../generated/nebius/compute/v1/index';
+} from '../api/nebius/compute/v1/index';
 import {
   CreateTokenResponse,
   ExchangeTokenRequest,
   TokenExchangeServiceServiceDescription as TokenExchangeService,
   TokenExchangeServiceServer,
-} from '../generated/nebius/iam/v1/index';
+} from '../api/nebius/iam/v1/index';
 import { Config } from '../runtime/cli_config';
 import { Basic, Chain } from '../runtime/resolver';
 import { SDK } from '../sdk';

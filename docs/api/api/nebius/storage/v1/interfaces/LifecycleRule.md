@@ -1,0 +1,111 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/storage/v1](../README.md) / LifecycleRule
+
+# Interface: LifecycleRule
+
+Defined in: src/api/nebius/storage/v1/index.ts:2575
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/api/nebius/storage/v1/index.ts:2577
+
+***
+
+### $type
+
+> **$type**: `"nebius.storage.v1.LifecycleRule"`
+
+Defined in: src/api/nebius/storage/v1/index.ts:2576
+
+***
+
+### abortIncompleteMultipartUpload?
+
+> `optional` **abortIncompleteMultipartUpload**: [`LifecycleAbortIncompleteMultipartUpload`](LifecycleAbortIncompleteMultipartUpload.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2609
+
+Specifies the days since the initiation of an incomplete multipart upload that
+ the system will wait before permanently removing all parts of the upload.
+
+***
+
+### expiration?
+
+> `optional` **expiration**: [`LifecycleExpiration`](LifecycleExpiration.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2597
+
+Specifies the expiration for the lifecycle of the object in the form of date, days and,
+ whether the object has a delete marker.
+
+***
+
+### filter?
+
+> `optional` **filter**: [`LifecycleFilter`](LifecycleFilter.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2591
+
+The Filter is used to identify objects that a Lifecycle Rule applies to.
+ The Lifecycle Rule will apply to any object matching all of the predicates
+ configured inside (using logical AND).
+
+***
+
+### id
+
+> **id**: `string`
+
+Defined in: src/api/nebius/storage/v1/index.ts:2583
+
+Unique identifier for the rule per configuration.
+ The value cannot be longer than 255 characters.
+
+***
+
+### noncurrentVersionExpiration?
+
+> `optional` **noncurrentVersionExpiration**: [`LifecycleNoncurrentVersionExpiration`](LifecycleNoncurrentVersionExpiration.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2603
+
+Specifies when noncurrent object versions expire.
+ It works only on a bucket that has versioning enabled (or suspended).
+
+***
+
+### noncurrentVersionTransition?
+
+> `optional` **noncurrentVersionTransition**: [`LifecycleNoncurrentVersionTransition`](LifecycleNoncurrentVersionTransition.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2621
+
+Spicifies the transition for the lifecycle of a noncurrent object.
+ It works only on a bucket that has versioning enabled (or suspended).
+
+***
+
+### status
+
+> **status**: [`LifecycleRule_Status`](../type-aliases/LifecycleRule_Status.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2584
+
+***
+
+### transition?
+
+> `optional` **transition**: [`LifecycleTransition`](LifecycleTransition.md)
+
+Defined in: src/api/nebius/storage/v1/index.ts:2615
+
+Specifies the transition for the lifecycle of an object in the form of date or days and
+ target storage class to transit object to.

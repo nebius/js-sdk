@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [runtime/protos/core](../../README.md) / [dayjs](../README.md) / OpUnitType
 
@@ -8,4 +8,4 @@
 
 > **OpUnitType** = [`UnitType`](UnitType.md) \| `"week"` \| `"weeks"` \| `"w"`
 
-Defined in: node_modules/dayjs/index.d.ts:30
+Defined in: node\_modules/dayjs/index.d.ts:30

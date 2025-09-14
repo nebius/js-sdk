@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/federation_account](../README.md) / FederationAccountBearer
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/token/federation\_account](../README.md) / FederationAccountBearer
 
 # Class: FederationAccountBearer
 
-Defined in: [src/runtime/token/federation_account.ts:9](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_account.ts#L9)
+Defined in: [src/runtime/token/federation\_account.ts:9](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_account.ts#L9)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/token/federation_account.ts:9](https://github.com/nebiu
 
 > **new FederationAccountBearer**(`profileName`, `clientId`, `federationEndpoint`, `federationId`, `opts?`): `FederationAccountBearer`
 
-Defined in: [src/runtime/token/federation_account.ts:13](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_account.ts#L13)
+Defined in: [src/runtime/token/federation\_account.ts:13](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_account.ts#L13)
 
 #### Parameters
 
@@ -114,7 +114,7 @@ Defined in: [src/runtime/token/federation_account.ts:13](https://github.com/nebi
 
 > `readonly` **$type**: `"nebius.sdk.FederationAccountBearer"` = `'nebius.sdk.FederationAccountBearer'`
 
-Defined in: [src/runtime/token/federation_account.ts:10](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_account.ts#L10)
+Defined in: [src/runtime/token/federation\_account.ts:10](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_account.ts#L10)
 
 #### Overrides
 
@@ -128,7 +128,7 @@ Defined in: [src/runtime/token/federation_account.ts:10](https://github.com/nebi
 
 > **get** **name**(): `undefined` \| `string`
 
-Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L113)
+Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L113)
 
 ##### Returns
 
@@ -138,7 +138,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`name`](../../classes/Bearer.md#name)
 
----
+***
 
 ### wrapped
 
@@ -146,7 +146,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| [`Bearer`](../../classes/Bearer.md)
 
-Defined in: [src/runtime/token/federation_account.ts:74](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_account.ts#L74)
+Defined in: [src/runtime/token/federation\_account.ts:74](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_account.ts#L74)
 
 ##### Returns
 
@@ -162,19 +162,19 @@ Defined in: [src/runtime/token/federation_account.ts:74](https://github.com/nebi
 
 > **\[customJson\]**(): `unknown`
 
-Defined in: [src/runtime/token/federation_account.ts:67](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_account.ts#L67)
+Defined in: [src/runtime/token/federation\_account.ts:67](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_account.ts#L67)
 
 #### Returns
 
 `unknown`
 
----
+***
 
 ### close()
 
 > **close**(`_graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L121)
+Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L121)
 
 #### Parameters
 
@@ -190,13 +190,13 @@ Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob
 
 [`Bearer`](../../classes/Bearer.md).[`close`](../../classes/Bearer.md#close)
 
----
+***
 
 ### receiver()
 
 > **receiver**(): [`Receiver`](../../classes/Receiver.md)
 
-Defined in: [src/runtime/token/federation_account.ts:78](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_account.ts#L78)
+Defined in: [src/runtime/token/federation\_account.ts:78](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_account.ts#L78)
 
 #### Returns
 

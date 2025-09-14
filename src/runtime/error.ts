@@ -1,11 +1,8 @@
 import type { ServiceError as GrpcServiceError, Metadata } from '@grpc/grpc-js';
 import { Client } from '@grpc/grpc-js';
 
-import { Status as GrpcStatus, Code as StatusCode } from '../generated/google/rpc/index';
-import {
-  InternalError,
-  ServiceError as NebiusServiceError,
-} from '../generated/nebius/common/v1/index';
+import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index';
+import { InternalError, ServiceError as NebiusServiceError } from '../api/nebius/common/v1/index';
 import type { AnyShape } from '../runtime/protos/any';
 
 // Helper: get first string value from metadata by key

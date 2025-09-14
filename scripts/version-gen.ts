@@ -4,7 +4,7 @@ import * as path from 'path';
 function main() {
   const root = path.resolve(__dirname, '../..');
   const pkgPath = path.join(root, 'package.json');
-  const outDir = path.join(root, 'src', 'generated');
+  const outDir = path.join(root, 'src');
   const outFile = path.join(outDir, 'version.ts');
 
   const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));

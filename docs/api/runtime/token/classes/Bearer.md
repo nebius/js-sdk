@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/token](../README.md) / Bearer
 
 # Abstract Class: Bearer
 
-Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L109)
+Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L109)
 
 ## Extended by
 
@@ -39,7 +39,7 @@ Defined in: [src/runtime/token.ts:109](https://github.com/nebius/nodejs-sdk/blob
 
 > `abstract` `readonly` **$type**: `string`
 
-Defined in: [src/runtime/token.ts:110](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L110)
+Defined in: [src/runtime/token.ts:110](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L110)
 
 ## Accessors
 
@@ -49,13 +49,13 @@ Defined in: [src/runtime/token.ts:110](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **name**(): `undefined` \| `string`
 
-Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L113)
+Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L113)
 
 ##### Returns
 
 `undefined` \| `string`
 
----
+***
 
 ### wrapped
 
@@ -63,7 +63,7 @@ Defined in: [src/runtime/token.ts:113](https://github.com/nebius/nodejs-sdk/blob
 
 > **get** **wrapped**(): `undefined` \| `Bearer`
 
-Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L117)
+Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L117)
 
 ##### Returns
 
@@ -75,7 +75,7 @@ Defined in: [src/runtime/token.ts:117](https://github.com/nebius/nodejs-sdk/blob
 
 > **close**(`_graceMs?`): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L121)
+Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L121)
 
 #### Parameters
 
@@ -87,13 +87,13 @@ Defined in: [src/runtime/token.ts:121](https://github.com/nebius/nodejs-sdk/blob
 
 `Promise`\<`void`\>
 
----
+***
 
 ### receiver()
 
 > `abstract` **receiver**(): [`Receiver`](Receiver.md)
 
-Defined in: [src/runtime/token.ts:111](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token.ts#L111)
+Defined in: [src/runtime/token.ts:111](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token.ts#L111)
 
 #### Returns
 

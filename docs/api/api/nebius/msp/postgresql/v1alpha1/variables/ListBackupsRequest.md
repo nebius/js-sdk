@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../../README.md) / [api/nebius/msp/postgresql/v1alpha1](../README.md) / ListBackupsRequest
+
+# Variable: ListBackupsRequest
+
+> **ListBackupsRequest**: [`MessageFns`](../../../../../../runtime/protos/core/interfaces/MessageFns.md)\<[`ListBackupsRequest`](../interfaces/ListBackupsRequest.md), `"nebius.msp.postgresql.v1alpha1.ListBackupsRequest"`\>
+
+Defined in: src/api/nebius/msp/postgresql/v1alpha1/index.ts:132

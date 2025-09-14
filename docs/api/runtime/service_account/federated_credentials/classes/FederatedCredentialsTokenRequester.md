@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service_account/federated_credentials](../README.md) / FederatedCredentialsTokenRequester
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service\_account/federated\_credentials](../README.md) / FederatedCredentialsTokenRequester
 
 # Class: FederatedCredentialsTokenRequester
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:14](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L14)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:14](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L14)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/service_account/federated_credentials.ts:14](https://gi
 
 > **new FederatedCredentialsTokenRequester**(`serviceAccountId`, `credentials`, `logger?`): `FederatedCredentialsTokenRequester`
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:16](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L16)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:16](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L16)
 
 #### Parameters
 
@@ -48,23 +48,23 @@ Defined in: [src/runtime/service_account/federated_credentials.ts:16](https://gi
 
 > `readonly` **$type**: `"nebius.sdk.FederatedCredentialsTokenRequester"` = `'nebius.sdk.FederatedCredentialsTokenRequester'`
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:15](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L15)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:15](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L15)
 
----
+***
 
 ### credentials
 
 > `readonly` **credentials**: [`FederatedCredentialsReader`](../interfaces/FederatedCredentialsReader.md)
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:18](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L18)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:18](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L18)
 
----
+***
 
 ### serviceAccountId
 
 > `readonly` **serviceAccountId**: `string`
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:17](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L17)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:17](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L17)
 
 ## Methods
 
@@ -72,23 +72,23 @@ Defined in: [src/runtime/service_account/federated_credentials.ts:17](https://gi
 
 > **\[customJson\]**(): `object`
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:24](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L24)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:24](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L24)
 
 #### Returns
 
 `object`
 
----
+***
 
 ### getExchangeTokenRequest()
 
-> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
-Defined in: [src/runtime/service_account/federated_credentials.ts:32](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/federated_credentials.ts#L32)
+Defined in: [src/runtime/service\_account/federated\_credentials.ts:32](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/federated_credentials.ts#L32)
 
 #### Returns
 
-[`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+[`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
 #### Implementation of
 

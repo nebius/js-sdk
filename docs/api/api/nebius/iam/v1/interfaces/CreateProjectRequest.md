@@ -1,0 +1,41 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/iam/v1](../README.md) / CreateProjectRequest
+
+# Interface: CreateProjectRequest
+
+Defined in: src/api/nebius/iam/v1/index.ts:15186
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/api/nebius/iam/v1/index.ts:15188
+
+***
+
+### $type
+
+> **$type**: `"nebius.iam.v1.CreateProjectRequest"`
+
+Defined in: src/api/nebius/iam/v1/index.ts:15187
+
+***
+
+### metadata?
+
+> `optional` **metadata**: [`ResourceMetadata`](../../../common/v1/interfaces/ResourceMetadata.md)
+
+Defined in: src/api/nebius/iam/v1/index.ts:15189
+
+***
+
+### spec?
+
+> `optional` **spec**: [`ContainerSpec`](ContainerSpec.md)
+
+Defined in: src/api/nebius/iam/v1/index.ts:15190

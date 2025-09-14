@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/logging](../README.md) / Logger
 
 # Class: Logger
 
-Defined in: [src/runtime/util/logging.ts:853](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L853)
+Defined in: [src/runtime/util/logging.ts:853](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L853)
 
 ## Indexable
 
@@ -18,7 +18,7 @@ Defined in: [src/runtime/util/logging.ts:853](https://github.com/nebius/nodejs-s
 
 > **new Logger**(`handler`, `name`, `withFieldsArg`, `parent?`, `traceByDefault?`): `Logger`
 
-Defined in: [src/runtime/util/logging.ts:854](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L854)
+Defined in: [src/runtime/util/logging.ts:854](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L854)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [src/runtime/util/logging.ts:854](https://github.com/nebius/nodejs-s
 
 > **traceByDefault**: `boolean` = `false`
 
-Defined in: [src/runtime/util/logging.ts:859](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L859)
+Defined in: [src/runtime/util/logging.ts:859](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L859)
 
 ## Accessors
 
@@ -62,13 +62,13 @@ Defined in: [src/runtime/util/logging.ts:859](https://github.com/nebius/nodejs-s
 
 > **get** **getHandler**(): [`Handler`](../interfaces/Handler.md)
 
-Defined in: [src/runtime/util/logging.ts:980](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L980)
+Defined in: [src/runtime/util/logging.ts:980](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L980)
 
 ##### Returns
 
 [`Handler`](../interfaces/Handler.md)
 
----
+***
 
 ### getName
 
@@ -76,7 +76,7 @@ Defined in: [src/runtime/util/logging.ts:980](https://github.com/nebius/nodejs-s
 
 > **get** **getName**(): `string`
 
-Defined in: [src/runtime/util/logging.ts:873](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L873)
+Defined in: [src/runtime/util/logging.ts:873](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L873)
 
 ##### Returns
 
@@ -88,19 +88,19 @@ Defined in: [src/runtime/util/logging.ts:873](https://github.com/nebius/nodejs-s
 
 > **\[customJson\]**(): `object`
 
-Defined in: [src/runtime/util/logging.ts:865](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L865)
+Defined in: [src/runtime/util/logging.ts:865](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L865)
 
 #### Returns
 
 `object`
 
----
+***
 
 ### child()
 
 > **child**(`suffix`, `additionalArguments`, `traceByDefault`): `Logger`
 
-Defined in: [src/runtime/util/logging.ts:936](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L936)
+Defined in: [src/runtime/util/logging.ts:936](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L936)
 
 #### Parameters
 
@@ -120,13 +120,13 @@ Defined in: [src/runtime/util/logging.ts:936](https://github.com/nebius/nodejs-s
 
 `Logger`
 
----
+***
 
 ### debug()
 
 > **debug**(`message`, `args?`, `withTrace?`): `void`
 
-Defined in: [src/runtime/util/logging.ts:889](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L889)
+Defined in: [src/runtime/util/logging.ts:889](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L889)
 
 #### Parameters
 
@@ -146,13 +146,13 @@ Defined in: [src/runtime/util/logging.ts:889](https://github.com/nebius/nodejs-s
 
 `void`
 
----
+***
 
 ### detached()
 
 > **detached**(`name`, `additionalArguments`, `traceByDefault`): `Logger`
 
-Defined in: [src/runtime/util/logging.ts:928](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L928)
+Defined in: [src/runtime/util/logging.ts:928](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L928)
 
 #### Parameters
 
@@ -172,13 +172,13 @@ Defined in: [src/runtime/util/logging.ts:928](https://github.com/nebius/nodejs-s
 
 `Logger`
 
----
+***
 
 ### error()
 
 > **error**(`message`, `args?`, `withTrace?`): `void`
 
-Defined in: [src/runtime/util/logging.ts:885](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L885)
+Defined in: [src/runtime/util/logging.ts:885](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L885)
 
 #### Parameters
 
@@ -198,13 +198,13 @@ Defined in: [src/runtime/util/logging.ts:885](https://github.com/nebius/nodejs-s
 
 `void`
 
----
+***
 
 ### info()
 
 > **info**(`message`, `args?`, `withTrace?`): `void`
 
-Defined in: [src/runtime/util/logging.ts:877](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L877)
+Defined in: [src/runtime/util/logging.ts:877](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L877)
 
 #### Parameters
 
@@ -224,13 +224,13 @@ Defined in: [src/runtime/util/logging.ts:877](https://github.com/nebius/nodejs-s
 
 `void`
 
----
+***
 
 ### log()
 
 > **log**(`level`, `message`, `args?`, `withTrace?`): `void`
 
-Defined in: [src/runtime/util/logging.ts:913](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L913)
+Defined in: [src/runtime/util/logging.ts:913](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L913)
 
 #### Parameters
 
@@ -254,13 +254,13 @@ Defined in: [src/runtime/util/logging.ts:913](https://github.com/nebius/nodejs-s
 
 `void`
 
----
+***
 
 ### sibling()
 
 > **sibling**(`siblingName`, `additionalArguments`, `traceByDefault`): `Logger`
 
-Defined in: [src/runtime/util/logging.ts:950](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L950)
+Defined in: [src/runtime/util/logging.ts:950](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L950)
 
 #### Parameters
 
@@ -280,13 +280,13 @@ Defined in: [src/runtime/util/logging.ts:950](https://github.com/nebius/nodejs-s
 
 `Logger`
 
----
+***
 
 ### trace()
 
 > **trace**(`message`, `args?`, `withTrace?`): `void`
 
-Defined in: [src/runtime/util/logging.ts:893](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L893)
+Defined in: [src/runtime/util/logging.ts:893](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L893)
 
 #### Parameters
 
@@ -306,13 +306,13 @@ Defined in: [src/runtime/util/logging.ts:893](https://github.com/nebius/nodejs-s
 
 `void`
 
----
+***
 
 ### warn()
 
 > **warn**(`message`, `args?`, `withTrace?`): `void`
 
-Defined in: [src/runtime/util/logging.ts:881](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L881)
+Defined in: [src/runtime/util/logging.ts:881](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L881)
 
 #### Parameters
 
@@ -332,13 +332,13 @@ Defined in: [src/runtime/util/logging.ts:881](https://github.com/nebius/nodejs-s
 
 `void`
 
----
+***
 
 ### withFields()
 
 > **withFields**(`fields`, `traceByDefault?`): `Logger`
 
-Defined in: [src/runtime/util/logging.ts:917](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L917)
+Defined in: [src/runtime/util/logging.ts:917](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L917)
 
 #### Parameters
 

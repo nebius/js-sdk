@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/wkt](../README.md) / wkt
 
@@ -8,7 +8,7 @@
 
 > `const` **wkt**: `object`
 
-Defined in: [src/runtime/protos/wkt.ts:76](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/wkt.ts#L76)
+Defined in: [src/runtime/protos/wkt.ts:76](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/wkt.ts#L76)
 
 ## Type Declaration
 

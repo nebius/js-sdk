@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [runtime/token/federation_bearer/server](../README.md) / CallbackHandler
+[@nebius/nodejs-sdk](../../../../../README.md) / [runtime/token/federation\_bearer/server](../README.md) / CallbackHandler
 
 # Class: CallbackHandler
 
-Defined in: [src/runtime/token/federation_bearer/server.ts:10](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/server.ts#L10)
+Defined in: [src/runtime/token/federation\_bearer/server.ts:10](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/server.ts#L10)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/token/federation_bearer/server.ts:10](https://github.co
 
 > **new CallbackHandler**(`logger?`): `CallbackHandler`
 
-Defined in: [src/runtime/token/federation_bearer/server.ts:19](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/server.ts#L19)
+Defined in: [src/runtime/token/federation\_bearer/server.ts:19](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/server.ts#L19)
 
 #### Parameters
 
@@ -34,13 +34,13 @@ Defined in: [src/runtime/token/federation_bearer/server.ts:19](https://github.co
 
 > **get** **addr**(): `string`
 
-Defined in: [src/runtime/token/federation_bearer/server.ts:33](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/server.ts#L33)
+Defined in: [src/runtime/token/federation\_bearer/server.ts:33](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/server.ts#L33)
 
 ##### Returns
 
 `string`
 
----
+***
 
 ### code
 
@@ -48,13 +48,13 @@ Defined in: [src/runtime/token/federation_bearer/server.ts:33](https://github.co
 
 > **get** **code**(): `null` \| `string`
 
-Defined in: [src/runtime/token/federation_bearer/server.ts:30](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/server.ts#L30)
+Defined in: [src/runtime/token/federation\_bearer/server.ts:30](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/server.ts#L30)
 
 ##### Returns
 
 `null` \| `string`
 
----
+***
 
 ### state
 
@@ -62,7 +62,7 @@ Defined in: [src/runtime/token/federation_bearer/server.ts:30](https://github.co
 
 > **get** **state**(): `string`
 
-Defined in: [src/runtime/token/federation_bearer/server.ts:27](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/server.ts#L27)
+Defined in: [src/runtime/token/federation\_bearer/server.ts:27](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/server.ts#L27)
 
 ##### Returns
 
@@ -74,31 +74,31 @@ Defined in: [src/runtime/token/federation_bearer/server.ts:27](https://github.co
 
 > **listenAndServe**(): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token/federation_bearer/server.ts:38](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/server.ts#L38)
+Defined in: [src/runtime/token/federation\_bearer/server.ts:38](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/server.ts#L38)
 
 #### Returns
 
 `Promise`\<`void`\>
 
----
+***
 
 ### shutdown()
 
 > **shutdown**(): `Promise`\<`void`\>
 
-Defined in: [src/runtime/token/federation_bearer/server.ts:111](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/server.ts#L111)
+Defined in: [src/runtime/token/federation\_bearer/server.ts:111](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/server.ts#L111)
 
 #### Returns
 
 `Promise`\<`void`\>
 
----
+***
 
 ### waitForCode()
 
 > **waitForCode**(`timeoutMs`): `Promise`\<`null` \| `string`\>
 
-Defined in: [src/runtime/token/federation_bearer/server.ts:120](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/server.ts#L120)
+Defined in: [src/runtime/token/federation\_bearer/server.ts:120](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/server.ts#L120)
 
 #### Parameters
 

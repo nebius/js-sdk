@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../README.md) / [runtime/error](../README.md) / NebiusGrpcError
 
 # Class: NebiusGrpcError
 
-Defined in: [src/runtime/error.ts:153](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L153)
+Defined in: [src/runtime/error.ts:150](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L150)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/error.ts:153](https://github.com/nebius/nodejs-sdk/blob
 
 > **new NebiusGrpcError**(`base`, `status?`, `serviceErrors?`, `requestId?`, `traceId?`): `NebiusGrpcError`
 
-Defined in: [src/runtime/error.ts:162](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L162)
+Defined in: [src/runtime/error.ts:159](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L159)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [src/runtime/error.ts:162](https://github.com/nebius/nodejs-sdk/blob
 
 ##### serviceErrors?
 
-[`ServiceError`](../../../generated/nebius/common/v1/interfaces/ServiceError.md)[] = `[]`
+[`ServiceError`](../../../api/nebius/common/v1/interfaces/ServiceError.md)[] = `[]`
 
 ##### requestId?
 
@@ -56,35 +56,51 @@ Defined in: [src/runtime/error.ts:162](https://github.com/nebius/nodejs-sdk/blob
 
 ## Properties
 
+### cause?
+
+> `optional` **cause**: `unknown`
+
+Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
+
+#### Implementation of
+
+`GrpcServiceError.cause`
+
+#### Inherited from
+
+`Error.cause`
+
+***
+
 ### code
 
 > **code**: `number`
 
-Defined in: [src/runtime/error.ts:154](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L154)
+Defined in: [src/runtime/error.ts:151](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L151)
 
 #### Implementation of
 
 `GrpcServiceError.code`
 
----
+***
 
 ### details
 
 > **details**: `string`
 
-Defined in: [src/runtime/error.ts:155](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L155)
+Defined in: [src/runtime/error.ts:152](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L152)
 
 #### Implementation of
 
 `GrpcServiceError.details`
 
----
+***
 
 ### message
 
 > **message**: `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:1077
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 #### Implementation of
 
@@ -94,25 +110,25 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:1077
 
 `Error.message`
 
----
+***
 
 ### metadata
 
 > **metadata**: `Metadata`
 
-Defined in: [src/runtime/error.ts:156](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L156)
+Defined in: [src/runtime/error.ts:153](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L153)
 
 #### Implementation of
 
 `GrpcServiceError.metadata`
 
----
+***
 
 ### name
 
 > **name**: `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:1076
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1076
 
 #### Implementation of
 
@@ -122,29 +138,29 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:1076
 
 `Error.name`
 
----
+***
 
 ### requestId
 
 > **requestId**: `string`
 
-Defined in: [src/runtime/error.ts:157](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L157)
+Defined in: [src/runtime/error.ts:154](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L154)
 
----
+***
 
 ### serviceErrors
 
-> **serviceErrors**: [`ServiceError`](../../../generated/nebius/common/v1/interfaces/ServiceError.md)[]
+> **serviceErrors**: [`ServiceError`](../../../api/nebius/common/v1/interfaces/ServiceError.md)[]
 
-Defined in: [src/runtime/error.ts:159](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L159)
+Defined in: [src/runtime/error.ts:156](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L156)
 
----
+***
 
 ### stack?
 
 > `optional` **stack**: `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:1078
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1078
 
 #### Implementation of
 
@@ -154,29 +170,29 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:1078
 
 `Error.stack`
 
----
+***
 
 ### status?
 
 > `optional` **status**: `Status`
 
-Defined in: [src/runtime/error.ts:160](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L160)
+Defined in: [src/runtime/error.ts:157](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L157)
 
----
+***
 
 ### traceId
 
 > **traceId**: `string`
 
-Defined in: [src/runtime/error.ts:158](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L158)
+Defined in: [src/runtime/error.ts:155](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L155)
 
----
+***
 
 ### stackTraceLimit
 
 > `static` **stackTraceLimit**: `number`
 
-Defined in: node_modules/@types/node/globals.d.ts:162
+Defined in: node\_modules/@types/node/globals.d.ts:162
 
 The `Error.stackTraceLimit` property specifies the number of stack frames
 collected by a stack trace (whether generated by `new Error().stack` or
@@ -198,7 +214,7 @@ not capture any frames.
 
 > **toString**(): `string`
 
-Defined in: [src/runtime/error.ts:216](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L216)
+Defined in: [src/runtime/error.ts:213](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L213)
 
 Returns a string representation of an object.
 
@@ -206,13 +222,13 @@ Returns a string representation of an object.
 
 `string`
 
----
+***
 
 ### buildMessage()
 
 > `static` **buildMessage**(`base`, `status?`, `serviceErrors?`, `requestId?`, `traceId?`): `string`
 
-Defined in: [src/runtime/error.ts:181](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/error.ts#L181)
+Defined in: [src/runtime/error.ts:178](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/error.ts#L178)
 
 #### Parameters
 
@@ -226,7 +242,7 @@ Defined in: [src/runtime/error.ts:181](https://github.com/nebius/nodejs-sdk/blob
 
 ##### serviceErrors?
 
-[`ServiceError`](../../../generated/nebius/common/v1/interfaces/ServiceError.md)[] = `[]`
+[`ServiceError`](../../../api/nebius/common/v1/interfaces/ServiceError.md)[] = `[]`
 
 ##### requestId?
 
@@ -240,13 +256,13 @@ Defined in: [src/runtime/error.ts:181](https://github.com/nebius/nodejs-sdk/blob
 
 `string`
 
----
+***
 
 ### captureStackTrace()
 
 > `static` **captureStackTrace**(`targetObject`, `constructorOpt?`): `void`
 
-Defined in: node_modules/@types/node/globals.d.ts:146
+Defined in: node\_modules/@types/node/globals.d.ts:146
 
 Creates a `.stack` property on `targetObject`, which when accessed returns
 a string representing the location in the code at which
@@ -255,7 +271,7 @@ a string representing the location in the code at which
 ```js
 const myObject = {};
 Error.captureStackTrace(myObject);
-myObject.stack; // Similar to `new Error().stack`
+myObject.stack;  // Similar to `new Error().stack`
 ```
 
 The first line of the trace will be prefixed with
@@ -310,13 +326,13 @@ a();
 
 `Error.captureStackTrace`
 
----
+***
 
 ### prepareStackTrace()
 
 > `static` **prepareStackTrace**(`err`, `stackTraces`): `any`
 
-Defined in: node_modules/@types/node/globals.d.ts:150
+Defined in: node\_modules/@types/node/globals.d.ts:150
 
 #### Parameters
 

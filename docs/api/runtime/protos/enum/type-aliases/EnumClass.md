@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/protos/enum](../README.md) / EnumClass
 
@@ -8,7 +8,7 @@
 
 > **EnumClass**\<`TNames`\> = `object` & `{ readonly [K in TNames]: EnumInstance<TNames> }`
 
-Defined in: [src/runtime/protos/enum.ts:23](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/protos/enum.ts#L23)
+Defined in: [src/runtime/protos/enum.ts:23](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/protos/enum.ts#L23)
 
 ## Type Declaration
 
@@ -100,4 +100,4 @@ Defined in: [src/runtime/protos/enum.ts:23](https://github.com/nebius/nodejs-sdk
 
 ### TNames
 
-`TNames` _extends_ `string` = `string`
+`TNames` *extends* `string` = `string`

@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../../../README.md) / [runtime/token/federation_bearer/pkce](../README.md) / PKCE
+[@nebius/nodejs-sdk](../../../../../README.md) / [runtime/token/federation\_bearer/pkce](../README.md) / PKCE
 
 # Class: PKCE
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:8](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L8)
+Defined in: [src/runtime/token/federation\_bearer/pkce.ts:8](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/pkce.ts#L8)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/token/federation_bearer/pkce.ts:8](https://github.com/n
 
 > **new PKCE**(): `PKCE`
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:9](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L9)
+Defined in: [src/runtime/token/federation\_bearer/pkce.ts:9](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/pkce.ts#L9)
 
 #### Returns
 
@@ -38,7 +38,7 @@ Defined in: [src/runtime/token/federation_bearer/pkce.ts:9](https://github.com/n
 
 > `readonly` **length**: `number`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:517
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:517
 
 Returns the length of a String object.
 
@@ -54,13 +54,13 @@ Returns the length of a String object.
 
 > **get** **challenge**(): `string`
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:13](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L13)
+Defined in: [src/runtime/token/federation\_bearer/pkce.ts:13](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/pkce.ts#L13)
 
 ##### Returns
 
 `string`
 
----
+***
 
 ### method
 
@@ -68,13 +68,13 @@ Defined in: [src/runtime/token/federation_bearer/pkce.ts:13](https://github.com/
 
 > **get** **method**(): `string`
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:22](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L22)
+Defined in: [src/runtime/token/federation\_bearer/pkce.ts:22](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/pkce.ts#L22)
 
 ##### Returns
 
 `string`
 
----
+***
 
 ### verifier
 
@@ -82,7 +82,7 @@ Defined in: [src/runtime/token/federation_bearer/pkce.ts:22](https://github.com/
 
 > **get** **verifier**(): `string`
 
-Defined in: [src/runtime/token/federation_bearer/pkce.ts:25](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/federation_bearer/pkce.ts#L25)
+Defined in: [src/runtime/token/federation\_bearer/pkce.ts:25](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/federation_bearer/pkce.ts#L25)
 
 ##### Returns
 
@@ -94,7 +94,7 @@ Defined in: [src/runtime/token/federation_bearer/pkce.ts:25](https://github.com/
 
 > **\[iterator\]**(): `StringIterator`\<`string`\>
 
-Defined in: node_modules/typescript/lib/lib.es2015.iterable.d.ts:272
+Defined in: node\_modules/typescript/lib/lib.es2015.iterable.d.ts:272
 
 Iterator
 
@@ -106,13 +106,13 @@ Iterator
 
 `String.[iterator]`
 
----
+***
 
 ### ~~anchor()~~
 
 > **anchor**(`name`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:463
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:463
 
 Returns an `<a>` HTML anchor element and sets the name attribute to the text value
 
@@ -134,13 +134,39 @@ A legacy feature for browser compatibility
 
 `String.anchor`
 
----
+***
+
+### at()
+
+> **at**(`index`): `undefined` \| `string`
+
+Defined in: node\_modules/typescript/lib/lib.es2022.string.d.ts:24
+
+Returns a new String consisting of the single UTF-16 code unit located at the specified index.
+
+#### Parameters
+
+##### index
+
+`number`
+
+The zero-based index of the desired code unit. A negative index will count back from the last item.
+
+#### Returns
+
+`undefined` \| `string`
+
+#### Inherited from
+
+`String.at`
+
+***
 
 ### ~~big()~~
 
 > **big**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:469
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:469
 
 Returns a `<big>` HTML element
 
@@ -156,13 +182,13 @@ A legacy feature for browser compatibility
 
 `String.big`
 
----
+***
 
 ### ~~blink()~~
 
 > **blink**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:475
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:475
 
 Returns a `<blink>` HTML element
 
@@ -178,13 +204,13 @@ A legacy feature for browser compatibility
 
 `String.blink`
 
----
+***
 
 ### ~~bold()~~
 
 > **bold**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:481
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:481
 
 Returns a `<b>` HTML element
 
@@ -200,13 +226,13 @@ A legacy feature for browser compatibility
 
 `String.bold`
 
----
+***
 
 ### charAt()
 
 > **charAt**(`pos`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:418
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:418
 
 Returns the character at the specified index.
 
@@ -226,13 +252,13 @@ The zero-based index of the desired character.
 
 `String.charAt`
 
----
+***
 
 ### charCodeAt()
 
 > **charCodeAt**(`index`): `number`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:424
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:424
 
 Returns the Unicode value of the character at the specified location.
 
@@ -252,13 +278,13 @@ The zero-based index of the desired character. If there is no character at the s
 
 `String.charCodeAt`
 
----
+***
 
 ### codePointAt()
 
 > **codePointAt**(`pos`): `undefined` \| `number`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:410
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:410
 
 Returns a nonnegative integer Number less than 1114112 (0x110000) that is the code point
 value of the UTF-16 encoded code point starting at the string element at position pos in
@@ -280,13 +306,13 @@ If a valid UTF-16 surrogate pair does not begin at pos, the result is the code u
 
 `String.codePointAt`
 
----
+***
 
 ### concat()
 
 > **concat**(...`strings`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:430
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:430
 
 Returns a string that contains the concatenation of two or more strings.
 
@@ -306,13 +332,13 @@ The strings to append to the end of the string.
 
 `String.concat`
 
----
+***
 
 ### endsWith()
 
 > **endsWith**(`searchString`, `endPosition?`): `boolean`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:426
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:426
 
 Returns true if the sequence of elements of searchString converted to a String is the
 same as the corresponding elements of this object (converted to a String) starting at
@@ -336,13 +362,13 @@ endPosition – length(this). Otherwise returns false.
 
 `String.endsWith`
 
----
+***
 
 ### ~~fixed()~~
 
 > **fixed**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:487
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:487
 
 Returns a `<tt>` HTML element
 
@@ -358,13 +384,13 @@ A legacy feature for browser compatibility
 
 `String.fixed`
 
----
+***
 
 ### ~~fontcolor()~~
 
 > **fontcolor**(`color`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:493
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:493
 
 Returns a `<font>` HTML element and sets the color attribute value
 
@@ -386,7 +412,7 @@ A legacy feature for browser compatibility
 
 `String.fontcolor`
 
----
+***
 
 ### ~~fontsize()~~
 
@@ -394,7 +420,7 @@ A legacy feature for browser compatibility
 
 > **fontsize**(`size`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:499
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:499
 
 Returns a `<font>` HTML element and sets the size attribute value
 
@@ -420,7 +446,7 @@ A legacy feature for browser compatibility
 
 > **fontsize**(`size`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:505
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:505
 
 Returns a `<font>` HTML element and sets the size attribute value
 
@@ -442,13 +468,13 @@ A legacy feature for browser compatibility
 
 `String.fontsize`
 
----
+***
 
 ### includes()
 
 > **includes**(`searchString`, `position?`): `boolean`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:419
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:419
 
 Returns true if searchString appears as a substring of the result of converting this
 object to a String, at one or more positions that are
@@ -476,13 +502,13 @@ If position is undefined, 0 is assumed, so as to search all of the String.
 
 `String.includes`
 
----
+***
 
 ### indexOf()
 
 > **indexOf**(`searchString`, `position?`): `number`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:437
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:437
 
 Returns the position of the first occurrence of a substring.
 
@@ -508,13 +534,13 @@ The index at which to begin searching the String object. If omitted, search star
 
 `String.indexOf`
 
----
+***
 
 ### ~~italics()~~
 
 > **italics**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:511
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:511
 
 Returns an `<i>` HTML element
 
@@ -530,13 +556,13 @@ A legacy feature for browser compatibility
 
 `String.italics`
 
----
+***
 
 ### lastIndexOf()
 
 > **lastIndexOf**(`searchString`, `position?`): `number`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:444
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:444
 
 Returns the last occurrence of a substring in the string.
 
@@ -562,13 +588,13 @@ The index at which to begin searching. If omitted, the search begins at the end 
 
 `String.lastIndexOf`
 
----
+***
 
 ### ~~link()~~
 
 > **link**(`url`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:517
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:517
 
 Returns an `<a>` HTML element and sets the href attribute value
 
@@ -590,7 +616,7 @@ A legacy feature for browser compatibility
 
 `String.link`
 
----
+***
 
 ### localeCompare()
 
@@ -598,7 +624,7 @@ A legacy feature for browser compatibility
 
 > **localeCompare**(`that`): `number`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:450
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:450
 
 Determines whether two strings are equivalent in the current locale.
 
@@ -622,7 +648,7 @@ String to compare to target string
 
 > **localeCompare**(`that`, `locales?`, `options?`): `number`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:4569
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:4569
 
 Determines whether two strings are equivalent in the current or specified locale.
 
@@ -658,7 +684,7 @@ An object that contains one or more properties that specify comparison options. 
 
 > **localeCompare**(`that`, `locales?`, `options?`): `number`
 
-Defined in: node_modules/typescript/lib/lib.es2020.string.d.ts:43
+Defined in: node\_modules/typescript/lib/lib.es2020.string.d.ts:43
 
 Determines whether two strings are equivalent in the current or specified locale.
 
@@ -690,7 +716,7 @@ An object that contains one or more properties that specify comparison options. 
 
 `String.localeCompare`
 
----
+***
 
 ### match()
 
@@ -698,7 +724,7 @@ An object that contains one or more properties that specify comparison options. 
 
 > **match**(`regexp`): `null` \| `RegExpMatchArray`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:456
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:456
 
 Matches a string with a regular expression, and returns an array containing the results of that search.
 
@@ -722,7 +748,7 @@ A variable name or string literal containing the regular expression pattern and 
 
 > **match**(`matcher`): `null` \| `RegExpMatchArray`
 
-Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:241
+Defined in: node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:241
 
 Matches a string or an object that supports being matched against, and returns an array
 containing the results of that search, or null if no matches are found.
@@ -743,13 +769,13 @@ An object that supports being matched against.
 
 `String.match`
 
----
+***
 
 ### matchAll()
 
 > **matchAll**(`regexp`): `RegExpStringIterator`\<`RegExpExecArray`\>
 
-Defined in: node_modules/typescript/lib/lib.es2020.string.d.ts:29
+Defined in: node\_modules/typescript/lib/lib.es2020.string.d.ts:29
 
 Matches a string with a regular expression, and returns an iterable of matches
 containing the results of that search.
@@ -770,7 +796,7 @@ A variable name or string literal containing the regular expression pattern and 
 
 `String.matchAll`
 
----
+***
 
 ### normalize()
 
@@ -778,7 +804,7 @@ A variable name or string literal containing the regular expression pattern and 
 
 > **normalize**(`form`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:434
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:434
 
 Returns the String value result of normalizing the string into the normalization form
 named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
@@ -804,7 +830,7 @@ is "NFC"
 
 > **normalize**(`form?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:442
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:442
 
 Returns the String value result of normalizing the string into the normalization form
 named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
@@ -826,13 +852,13 @@ is "NFC"
 
 `String.normalize`
 
----
+***
 
 ### padEnd()
 
 > **padEnd**(`maxLength`, `fillString?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2017.string.d.ts:44
+Defined in: node\_modules/typescript/lib/lib.es2017.string.d.ts:44
 
 Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length.
 The padding is applied from the end (right) of the current string.
@@ -844,15 +870,15 @@ The padding is applied from the end (right) of the current string.
 `number`
 
 The length of the resulting string once the current string has been padded.
-If this parameter is smaller than the current string's length, the current string will be returned as it is.
+       If this parameter is smaller than the current string's length, the current string will be returned as it is.
 
 ##### fillString?
 
 `string`
 
 The string to pad the current string with.
-If this string is too long, it will be truncated and the left-most part will be applied.
-The default value for this parameter is " " (U+0020).
+       If this string is too long, it will be truncated and the left-most part will be applied.
+       The default value for this parameter is " " (U+0020).
 
 #### Returns
 
@@ -862,13 +888,13 @@ The default value for this parameter is " " (U+0020).
 
 `String.padEnd`
 
----
+***
 
 ### padStart()
 
 > **padStart**(`maxLength`, `fillString?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2017.string.d.ts:31
+Defined in: node\_modules/typescript/lib/lib.es2017.string.d.ts:31
 
 Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length.
 The padding is applied from the start (left) of the current string.
@@ -880,15 +906,15 @@ The padding is applied from the start (left) of the current string.
 `number`
 
 The length of the resulting string once the current string has been padded.
-If this parameter is smaller than the current string's length, the current string will be returned as it is.
+       If this parameter is smaller than the current string's length, the current string will be returned as it is.
 
 ##### fillString?
 
 `string`
 
 The string to pad the current string with.
-If this string is too long, it will be truncated and the left-most part will be applied.
-The default value for this parameter is " " (U+0020).
+       If this string is too long, it will be truncated and the left-most part will be applied.
+       The default value for this parameter is " " (U+0020).
 
 #### Returns
 
@@ -898,13 +924,13 @@ The default value for this parameter is " " (U+0020).
 
 `String.padStart`
 
----
+***
 
 ### repeat()
 
 > **repeat**(`count`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:449
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:449
 
 Returns a String value that is made from count copies appended together. If count is 0,
 the empty string is returned.
@@ -925,7 +951,7 @@ number of copies to append
 
 `String.repeat`
 
----
+***
 
 ### replace()
 
@@ -933,7 +959,7 @@ number of copies to append
 
 > **replace**(`searchValue`, `replaceValue`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:463
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:463
 
 Replaces text in a string, using a regular expression or search string.
 
@@ -963,7 +989,7 @@ A string containing the text to replace. When the [`searchValue`](#replace-1) is
 
 > **replace**(`searchValue`, `replacer`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:470
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:470
 
 Replaces text in a string, using a regular expression or search string.
 
@@ -993,7 +1019,7 @@ A function that returns the replacement text.
 
 > **replace**(`searchValue`, `replaceValue`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:248
+Defined in: node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:248
 
 Passes a string and [`replaceValue`](#replace-3) to the `[Symbol.replace]` method on [`searchValue`](#replace-3). This method is expected to implement its own replacement algorithm.
 
@@ -1023,7 +1049,7 @@ The replacement text.
 
 > **replace**(`searchValue`, `replacer`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:255
+Defined in: node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:255
 
 Replaces text in a string, using an object that supports replacement within a string.
 
@@ -1049,7 +1075,7 @@ A function that returns the replacement text.
 
 `String.replace`
 
----
+***
 
 ### replaceAll()
 
@@ -1057,7 +1083,7 @@ A function that returns the replacement text.
 
 > **replaceAll**(`searchValue`, `replaceValue`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2021.string.d.ts:25
+Defined in: node\_modules/typescript/lib/lib.es2021.string.d.ts:25
 
 Replace all instances of a substring in a string, using a regular expression or search string.
 
@@ -1087,7 +1113,7 @@ A string containing the text to replace for every successful match of searchValu
 
 > **replaceAll**(`searchValue`, `replacer`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2021.string.d.ts:32
+Defined in: node\_modules/typescript/lib/lib.es2021.string.d.ts:32
 
 Replace all instances of a substring in a string, using a regular expression or search string.
 
@@ -1113,7 +1139,7 @@ A function that returns the replacement text.
 
 `String.replaceAll`
 
----
+***
 
 ### search()
 
@@ -1121,7 +1147,7 @@ A function that returns the replacement text.
 
 > **search**(`regexp`): `number`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:476
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:476
 
 Finds the first substring match in a regular expression search.
 
@@ -1145,7 +1171,7 @@ The regular expression pattern and applicable flags.
 
 > **search**(`searcher`): `number`
 
-Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:261
+Defined in: node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:261
 
 Finds the first substring match in a regular expression search.
 
@@ -1165,13 +1191,13 @@ An object which supports searching within a string.
 
 `String.search`
 
----
+***
 
 ### slice()
 
 > **slice**(`start?`, `end?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:484
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:484
 
 Returns a section of a string.
 
@@ -1198,13 +1224,13 @@ If this value is not specified, the substring continues to the end of stringObj.
 
 `String.slice`
 
----
+***
 
 ### ~~small()~~
 
 > **small**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:523
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:523
 
 Returns a `<small>` HTML element
 
@@ -1220,7 +1246,7 @@ A legacy feature for browser compatibility
 
 `String.small`
 
----
+***
 
 ### split()
 
@@ -1228,7 +1254,7 @@ A legacy feature for browser compatibility
 
 > **split**(`separator`, `limit?`): `string`[]
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:491
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:491
 
 Split a string into substrings using the specified separator and return them as an array.
 
@@ -1258,7 +1284,7 @@ A value used to limit the number of elements returned in the array.
 
 > **split**(`splitter`, `limit?`): `string`[]
 
-Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:268
+Defined in: node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:268
 
 Split a string into substrings using the specified separator and return them as an array.
 
@@ -1284,13 +1310,13 @@ A value used to limit the number of elements returned in the array.
 
 `String.split`
 
----
+***
 
 ### startsWith()
 
 > **startsWith**(`searchString`, `position?`): `boolean`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:456
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:456
 
 Returns true if the sequence of elements of searchString converted to a String is the
 same as the corresponding elements of this object (converted to a String) starting at
@@ -1314,13 +1340,13 @@ position. Otherwise returns false.
 
 `String.startsWith`
 
----
+***
 
 ### ~~strike()~~
 
 > **strike**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:529
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:529
 
 Returns a `<strike>` HTML element
 
@@ -1336,13 +1362,13 @@ A legacy feature for browser compatibility
 
 `String.strike`
 
----
+***
 
 ### ~~sub()~~
 
 > **sub**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:535
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:535
 
 Returns a `<sub>` HTML element
 
@@ -1358,13 +1384,13 @@ A legacy feature for browser compatibility
 
 `String.sub`
 
----
+***
 
 ### ~~substr()~~
 
 > **substr**(`from`, `length?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:526
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:526
 
 Gets a substring beginning at the specified location and having the specified length.
 
@@ -1394,13 +1420,13 @@ A legacy feature for browser compatibility
 
 `String.substr`
 
----
+***
 
 ### substring()
 
 > **substring**(`start`, `end?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:499
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:499
 
 Returns the substring at the specified location within a String object.
 
@@ -1427,13 +1453,13 @@ If end is omitted, the characters from start through the end of the original str
 
 `String.substring`
 
----
+***
 
 ### ~~sup()~~
 
 > **sup**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:541
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:541
 
 Returns a `<sup>` HTML element
 
@@ -1449,7 +1475,7 @@ A legacy feature for browser compatibility
 
 `String.sup`
 
----
+***
 
 ### toLocaleLowerCase()
 
@@ -1457,7 +1483,7 @@ A legacy feature for browser compatibility
 
 > **toLocaleLowerCase**(`locales?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:505
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:505
 
 Converts all alphabetic characters to lowercase, taking into account the host environment's current locale.
 
@@ -1479,7 +1505,7 @@ Converts all alphabetic characters to lowercase, taking into account the host en
 
 > **toLocaleLowerCase**(`locales?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2020.string.d.ts:32
+Defined in: node\_modules/typescript/lib/lib.es2020.string.d.ts:32
 
 Converts all alphabetic characters to lowercase, taking into account the host environment's current locale.
 
@@ -1497,7 +1523,7 @@ Converts all alphabetic characters to lowercase, taking into account the host en
 
 `String.toLocaleLowerCase`
 
----
+***
 
 ### toLocaleUpperCase()
 
@@ -1505,7 +1531,7 @@ Converts all alphabetic characters to lowercase, taking into account the host en
 
 > **toLocaleUpperCase**(`locales?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:511
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:511
 
 Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale.
 
@@ -1527,7 +1553,7 @@ Returns a string where all alphabetic characters have been converted to uppercas
 
 > **toLocaleUpperCase**(`locales?`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2020.string.d.ts:35
+Defined in: node\_modules/typescript/lib/lib.es2020.string.d.ts:35
 
 Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale.
 
@@ -1545,13 +1571,13 @@ Returns a string where all alphabetic characters have been converted to uppercas
 
 `String.toLocaleUpperCase`
 
----
+***
 
 ### toLowerCase()
 
 > **toLowerCase**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:502
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:502
 
 Converts all the alphabetic characters in a string to lowercase.
 
@@ -1563,13 +1589,13 @@ Converts all the alphabetic characters in a string to lowercase.
 
 `String.toLowerCase`
 
----
+***
 
 ### toString()
 
 > **toString**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:412
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:412
 
 Returns a string representation of a string.
 
@@ -1581,13 +1607,13 @@ Returns a string representation of a string.
 
 `String.toString`
 
----
+***
 
 ### toUpperCase()
 
 > **toUpperCase**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:508
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:508
 
 Converts all the alphabetic characters in a string to uppercase.
 
@@ -1599,13 +1625,13 @@ Converts all the alphabetic characters in a string to uppercase.
 
 `String.toUpperCase`
 
----
+***
 
 ### trim()
 
 > **trim**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:514
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:514
 
 Removes the leading and trailing white space and line terminator characters from a string.
 
@@ -1617,13 +1643,13 @@ Removes the leading and trailing white space and line terminator characters from
 
 `String.trim`
 
----
+***
 
 ### trimEnd()
 
 > **trimEnd**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2019.string.d.ts:21
+Defined in: node\_modules/typescript/lib/lib.es2019.string.d.ts:21
 
 Removes the trailing white space and line terminator characters from a string.
 
@@ -1635,13 +1661,13 @@ Removes the trailing white space and line terminator characters from a string.
 
 `String.trimEnd`
 
----
+***
 
 ### ~~trimLeft()~~
 
 > **trimLeft**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2019.string.d.ts:30
+Defined in: node\_modules/typescript/lib/lib.es2019.string.d.ts:30
 
 Removes the leading white space and line terminator characters from a string.
 
@@ -1657,13 +1683,13 @@ A legacy feature for browser compatibility. Use `trimStart` instead
 
 `String.trimLeft`
 
----
+***
 
 ### ~~trimRight()~~
 
 > **trimRight**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2019.string.d.ts:36
+Defined in: node\_modules/typescript/lib/lib.es2019.string.d.ts:36
 
 Removes the trailing white space and line terminator characters from a string.
 
@@ -1679,13 +1705,13 @@ A legacy feature for browser compatibility. Use `trimEnd` instead
 
 `String.trimRight`
 
----
+***
 
 ### trimStart()
 
 > **trimStart**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2019.string.d.ts:24
+Defined in: node\_modules/typescript/lib/lib.es2019.string.d.ts:24
 
 Removes the leading white space and line terminator characters from a string.
 
@@ -1697,13 +1723,13 @@ Removes the leading white space and line terminator characters from a string.
 
 `String.trimStart`
 
----
+***
 
 ### valueOf()
 
 > **valueOf**(): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:529
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:529
 
 Returns the primitive value of the specified object.
 
@@ -1715,13 +1741,13 @@ Returns the primitive value of the specified object.
 
 `String.valueOf`
 
----
+***
 
 ### fromCharCode()
 
 > `static` **fromCharCode**(...`codes`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:538
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:538
 
 #### Parameters
 
@@ -1737,13 +1763,13 @@ Defined in: node_modules/typescript/lib/lib.es5.d.ts:538
 
 `String.fromCharCode`
 
----
+***
 
 ### fromCodePoint()
 
 > `static` **fromCodePoint**(...`codePoints`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:549
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:549
 
 Return the String value whose elements are, in order, the elements in the List elements.
 If length is 0, the empty string is returned.
@@ -1762,13 +1788,13 @@ If length is 0, the empty string is returned.
 
 `String.fromCodePoint`
 
----
+***
 
 ### raw()
 
 > `static` **raw**(`template`, ...`substitutions`): `string`
 
-Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:560
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:560
 
 String.raw is usually used as a tag function of a Tagged Template String. When called as
 such, the first argument will be a well formed template call site object and the rest

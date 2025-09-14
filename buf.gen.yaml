@@ -1,8 +1,8 @@
 version: v2
 plugins:
-  - local: ./dist-scripts/scripts/protoc-gen-nebius-ts.js
-    out: src/generated
-    opt:
-      - outFromSrc=generated
-    strategy: all
-    include_imports: true
+- local: ./dist-scripts/scripts/protoc-gen-nebius-ts.js
+  out: src/api
+  opt:
+  - outFromSrc=api
+  strategy: all
+  include_imports: true

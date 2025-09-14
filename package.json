@@ -2,8 +2,27 @@
   "name": "@nebius/nodejs-sdk",
   "version": "0.1.0",
   "description": "Nebius AI SDK for NodeJS",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./api/*": {
+      "types": "./dist/esm/api/*.d.ts",
+      "import": "./dist/esm/api/*.js",
+      "require": "./dist/cjs/api/*.js"
+    },
+    "./runtime/*": {
+      "types": "./dist/esm/runtime/*.d.ts",
+      "import": "./dist/esm/runtime/*.js",
+      "require": "./dist/cjs/runtime/*.js"
+    },
+    "./package.json": "./package.json"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nebius/nodejs-sdk.git"
@@ -21,8 +40,13 @@
   "scripts": {
     "build:scripts": "tsc -p tsconfig.scripts.json && chmod +x dist-scripts/scripts/protoc-gen-nebius-ts-sdk.js dist-scripts/scripts/protoc-gen-nebius-ts.js",
     "bootstrap:generator": "node scripts/bootstrap-generator.js",
-    "build": "npm run generate && tsc",
-    "generate": "npm run build:scripts && rimraf src/generated && buf generate nebius-api && npm run generate:version",
+    "build": "rimraf dist && npm run generate && npm run build:cjs && node scripts/build-esm-facades.js && node scripts/postbuild-mark-module-type.js",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "node scripts/build-esm-wrapper.js",
+    "build:types": "tsc -p tsconfig.cjs.json --emitDeclarationOnly --outDir dist/cjs",
+    "clean": "npm run clean:generated && rimraf dist dist-scripts src/generated_test generated_test.lock",
+    "clean:generated": "rimraf src/version.ts src/api",
+    "generate": "npm run build:scripts && npm run clean:generated && buf generate nebius-api && npm run generate:version",
     "generate:full": "npm run generate && npm run bootstrap:generator",
     "generate:version": "node dist-scripts/scripts/version-gen.js",
     "indexgen": "node -r ts-node/register scripts/gen-indexes.ts",
@@ -35,7 +59,6 @@
     "lint:fix": "eslint src/**/*.ts --fix --no-warn-ignored && npm run format",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "clean": "rimraf dist dist-scripts src/generated src/generated_test generated_test.lock",
     "prepublishOnly": "npm run build",
     "prepare": "husky"
   },

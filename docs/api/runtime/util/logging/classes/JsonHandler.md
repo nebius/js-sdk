@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/logging](../README.md) / JsonHandler
 
 # Class: JsonHandler
 
-Defined in: [src/runtime/util/logging.ts:496](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L496)
+Defined in: [src/runtime/util/logging.ts:496](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L496)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/util/logging.ts:496](https://github.com/nebius/nodejs-s
 
 > **new JsonHandler**(`opts?`): `JsonHandler`
 
-Defined in: [src/runtime/util/logging.ts:502](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L502)
+Defined in: [src/runtime/util/logging.ts:502](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L502)
 
 #### Parameters
 
@@ -54,19 +54,19 @@ Defined in: [src/runtime/util/logging.ts:502](https://github.com/nebius/nodejs-s
 
 > **\[customJson\]**(): `object`
 
-Defined in: [src/runtime/util/logging.ts:516](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L516)
+Defined in: [src/runtime/util/logging.ts:516](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L516)
 
 #### Returns
 
 `object`
 
----
+***
 
 ### log()
 
 > **log**(`level`, `message`, `args`, `name`, `traceLevel`): `void`
 
-Defined in: [src/runtime/util/logging.ts:545](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L545)
+Defined in: [src/runtime/util/logging.ts:545](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L545)
 
 #### Parameters
 

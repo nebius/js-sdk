@@ -9,15 +9,15 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.ts',
     '!src/**/*.d.ts',
-    '!src/generated/**/*',
+    '!src/api/**/*',
     '!src/generated_test/**/*',
   ],
   setupFilesAfterEnv: ['<rootDir>/src/test/setup.ts'],
   testPathIgnorePatterns: [
     '/node_modules/',
-    '<rootDir>/src/generated/',
+    '<rootDir>/src/api/',
     '<rootDir>/src/generated_test/',
     // '<rootDir>/src/__tests__/wkt*',
   ],
-  modulePathIgnorePatterns: ['<rootDir>/src/generated/', '<rootDir>/src/generated_test/'],
+  modulePathIgnorePatterns: ['<rootDir>/src/api/', '<rootDir>/src/generated_test/'],
 };

@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import { inspect } from 'node:util';
 
-import { ExchangeTokenRequest } from '../../generated/nebius/iam/v1/index';
+import { ExchangeTokenRequest } from '../../api/nebius/iam/v1/index';
 import type { TokenRequester } from '../token/exchangeable';
 import { TokenSanitizer } from '../token_sanitizer';
 import { custom, customJson, inspectJson, Logger } from '../util/logging';

@@ -1,0 +1,37 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / IPAddress
+
+# Interface: IPAddress
+
+Defined in: src/api/nebius/compute/v1/index.ts:9922
+
+Describes an IPv4 address.
+
+## Properties
+
+### \[unknownFieldsSymbol\]?
+
+> `optional` **\[unknownFieldsSymbol\]**: `Uint8Array`\<`ArrayBufferLike`\>
+
+Defined in: src/api/nebius/compute/v1/index.ts:9924
+
+***
+
+### $type
+
+> **$type**: `"nebius.compute.v1.IPAddress"`
+
+Defined in: src/api/nebius/compute/v1/index.ts:9923
+
+***
+
+### allocationId
+
+> **allocationId**: `string`
+
+Defined in: src/api/nebius/compute/v1/index.ts:9929
+
+Allocation identifier if it was created before.

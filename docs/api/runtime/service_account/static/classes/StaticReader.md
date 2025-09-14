@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service_account/static](../README.md) / StaticReader
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service\_account/static](../README.md) / StaticReader
 
 # Class: StaticReader
 
-Defined in: [src/runtime/service_account/static.ts:8](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L8)
+Defined in: [src/runtime/service\_account/static.ts:8](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/static.ts#L8)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/service_account/static.ts:8](https://github.com/nebius/
 
 > **new StaticReader**(`sa`): `StaticReader`
 
-Defined in: [src/runtime/service_account/static.ts:10](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L10)
+Defined in: [src/runtime/service\_account/static.ts:10](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/static.ts#L10)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [src/runtime/service_account/static.ts:10](https://github.com/nebius
 
 > `readonly` **$type**: `"nebius.sdk.StaticReader"` = `'nebius.sdk.StaticReader'`
 
-Defined in: [src/runtime/service_account/static.ts:9](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L9)
+Defined in: [src/runtime/service\_account/static.ts:9](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/static.ts#L9)
 
 ## Methods
 
@@ -48,35 +48,35 @@ Defined in: [src/runtime/service_account/static.ts:9](https://github.com/nebius/
 
 > **\[customJson\]**(): `unknown`
 
-Defined in: [src/runtime/service_account/static.ts:14](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L14)
+Defined in: [src/runtime/service\_account/static.ts:14](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/static.ts#L14)
 
 #### Returns
 
 `unknown`
 
----
+***
 
 ### getExchangeTokenRequest()
 
-> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
-Defined in: [src/runtime/service_account/static.ts:23](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L23)
+Defined in: [src/runtime/service\_account/static.ts:23](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/static.ts#L23)
 
 #### Returns
 
-[`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+[`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
 #### Implementation of
 
 [`Reader`](../../service_account/interfaces/Reader.md).[`getExchangeTokenRequest`](../../service_account/interfaces/Reader.md#getexchangetokenrequest)
 
----
+***
 
 ### read()
 
 > **read**(): [`ServiceAccount`](../../service_account/classes/ServiceAccount.md)
 
-Defined in: [src/runtime/service_account/static.ts:20](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/static.ts#L20)
+Defined in: [src/runtime/service\_account/static.ts:20](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/static.ts#L20)
 
 #### Returns
 

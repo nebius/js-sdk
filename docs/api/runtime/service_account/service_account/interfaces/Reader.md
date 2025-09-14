@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service_account/service_account](../README.md) / Reader
+[@nebius/nodejs-sdk](../../../../README.md) / [runtime/service\_account/service\_account](../README.md) / Reader
 
 # Interface: Reader
 
-Defined in: [src/runtime/service_account/service_account.ts:80](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L80)
+Defined in: [src/runtime/service\_account/service\_account.ts:80](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L80)
 
 ## Extends
 
@@ -16,25 +16,25 @@ Defined in: [src/runtime/service_account/service_account.ts:80](https://github.c
 
 ### getExchangeTokenRequest()
 
-> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+> **getExchangeTokenRequest**(): [`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
-Defined in: [src/runtime/token/exchangeable.ts:176](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token/exchangeable.ts#L176)
+Defined in: [src/runtime/token/exchangeable.ts:176](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token/exchangeable.ts#L176)
 
 #### Returns
 
-[`ExchangeTokenRequest`](../../../../generated/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
+[`ExchangeTokenRequest`](../../../../api/nebius/iam/v1/interfaces/ExchangeTokenRequest.md)
 
 #### Inherited from
 
 [`TokenRequester`](../../../token/exchangeable/interfaces/TokenRequester.md).[`getExchangeTokenRequest`](../../../token/exchangeable/interfaces/TokenRequester.md#getexchangetokenrequest)
 
----
+***
 
 ### read()
 
 > **read**(): [`ServiceAccount`](../classes/ServiceAccount.md)
 
-Defined in: [src/runtime/service_account/service_account.ts:81](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/service_account/service_account.ts#L81)
+Defined in: [src/runtime/service\_account/service\_account.ts:81](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/service_account/service_account.ts#L81)
 
 #### Returns
 

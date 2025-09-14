@@ -1,10 +1,10 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../README.md) / runtime/service_account/cached
+[@nebius/nodejs-sdk](../../../README.md) / runtime/service\_account/cached
 
-# runtime/service_account/cached
+# runtime/service\_account/cached
 
 ## Classes
 

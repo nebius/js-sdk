@@ -1,7 +1,7 @@
 import type { CallOptions, InterceptingCall, Interceptor, Listener, Metadata } from '@grpc/grpc-js';
 import { Metadata as GrpcMetadata } from '@grpc/grpc-js';
 
-import { Code } from '../../generated/google/rpc/index';
+import { Code } from '../../api/google/rpc/index';
 import { Logger } from '../util/logging';
 
 import type { Provider } from './provider';

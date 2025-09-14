@@ -1,6 +1,6 @@
 [**@nebius/nodejs-sdk**](../../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../../README.md) / [runtime/protos/core](../../README.md) / [dayjs](../README.md) / PluginFunc
 
@@ -8,7 +8,7 @@
 
 > **PluginFunc**\<`T`\> = (`option`, `c`, `d`) => `void`
 
-Defined in: node_modules/dayjs/index.d.ts:418
+Defined in: node\_modules/dayjs/index.d.ts:418
 
 ## Type Parameters
 
@@ -24,11 +24,11 @@ Defined in: node_modules/dayjs/index.d.ts:418
 
 ### c
 
-_typeof_ [`Dayjs`](../classes/Dayjs.md)
+*typeof* [`Dayjs`](../classes/Dayjs.md)
 
 ### d
 
-_typeof_ [`dayjs`](../../functions/dayjs.md)
+*typeof* [`dayjs`](../../functions/dayjs.md)
 
 ## Returns
 

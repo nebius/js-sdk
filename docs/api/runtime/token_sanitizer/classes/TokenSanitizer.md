@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../README.md) / [runtime/token_sanitizer](../README.md) / TokenSanitizer
+[@nebius/nodejs-sdk](../../../README.md) / [runtime/token\_sanitizer](../README.md) / TokenSanitizer
 
 # Class: TokenSanitizer
 
-Defined in: [src/runtime/token_sanitizer.ts:39](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token_sanitizer.ts#L39)
+Defined in: [src/runtime/token\_sanitizer.ts:39](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token_sanitizer.ts#L39)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/runtime/token_sanitizer.ts:39](https://github.com/nebius/nodejs
 
 > **new TokenSanitizer**(`extractor`): `TokenSanitizer`
 
-Defined in: [src/runtime/token_sanitizer.ts:40](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token_sanitizer.ts#L40)
+Defined in: [src/runtime/token\_sanitizer.ts:40](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token_sanitizer.ts#L40)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/runtime/token_sanitizer.ts:40](https://github.com/nebius/nodejs
 
 > **isSupported**(`token`): `boolean`
 
-Defined in: [src/runtime/token_sanitizer.ts:66](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token_sanitizer.ts#L66)
+Defined in: [src/runtime/token\_sanitizer.ts:66](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token_sanitizer.ts#L66)
 
 #### Parameters
 
@@ -44,13 +44,13 @@ Defined in: [src/runtime/token_sanitizer.ts:66](https://github.com/nebius/nodejs
 
 `boolean`
 
----
+***
 
 ### sanitize()
 
 > **sanitize**(`token`): `string`
 
-Defined in: [src/runtime/token_sanitizer.ts:50](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token_sanitizer.ts#L50)
+Defined in: [src/runtime/token\_sanitizer.ts:50](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token_sanitizer.ts#L50)
 
 #### Parameters
 
@@ -62,25 +62,25 @@ Defined in: [src/runtime/token_sanitizer.ts:50](https://github.com/nebius/nodejs
 
 `string`
 
----
+***
 
 ### accessTokenSanitizer()
 
 > `static` **accessTokenSanitizer**(): `TokenSanitizer`
 
-Defined in: [src/runtime/token_sanitizer.ts:42](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token_sanitizer.ts#L42)
+Defined in: [src/runtime/token\_sanitizer.ts:42](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token_sanitizer.ts#L42)
 
 #### Returns
 
 `TokenSanitizer`
 
----
+***
 
 ### credentialsSanitizer()
 
 > `static` **credentialsSanitizer**(): `TokenSanitizer`
 
-Defined in: [src/runtime/token_sanitizer.ts:46](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/token_sanitizer.ts#L46)
+Defined in: [src/runtime/token\_sanitizer.ts:46](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/token_sanitizer.ts#L46)
 
 #### Returns
 

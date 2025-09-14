@@ -1,17 +1,17 @@
-import { Server, ServerCredentials, Metadata, status } from '@grpc/grpc-js';
+import { Metadata, Server, ServerCredentials } from '@grpc/grpc-js';
 import Long from 'long';
 
-import { Operation, ResourceMetadata } from '../generated/nebius/common/v1/index';
+import { Operation, ResourceMetadata } from '../api/nebius/common/v1/index';
 import {
-  DiskServiceServiceDescription as DiskServiceService,
-  type DiskServiceServer,
-  UpdateDiskRequest,
   DiskService as DiskServiceClient,
-  InstanceServiceServiceDescription as InstanceServiceService,
-  type InstanceServiceServer,
-  UpdateInstanceRequest,
+  DiskServiceServiceDescription as DiskServiceService,
   InstanceService as InstanceServiceClient,
-} from '../generated/nebius/compute/v1/index';
+  InstanceServiceServiceDescription as InstanceServiceService,
+  UpdateDiskRequest,
+  UpdateInstanceRequest,
+  type DiskServiceServer,
+  type InstanceServiceServer,
+} from '../api/nebius/compute/v1/index';
 import { parseFieldMask } from '../runtime/fieldmask';
 import { Basic } from '../runtime/resolver';
 import { SDK } from '../sdk';

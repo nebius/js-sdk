@@ -57,7 +57,7 @@ function toModuleBase(protoFile: string): string {
 }
 
 function relImportPath(fromFileName: string, toModuleBase: string): string {
-  // fromFileName and to path are both under 'src/generated/...'
+  // fromFileName and to path are both under 'src/api/...'
   const fromDir = path.posix.dirname(fromFileName);
   // Ensure paths are posix
   let rel = path.posix.relative(fromDir, path.posix.join('src/generated_test/1', toModuleBase));

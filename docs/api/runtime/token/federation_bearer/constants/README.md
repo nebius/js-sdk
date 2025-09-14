@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
-[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/federation_bearer/constants
+[@nebius/nodejs-sdk](../../../../README.md) / runtime/token/federation\_bearer/constants
 
-# runtime/token/federation_bearer/constants
+# runtime/token/federation\_bearer/constants
 
 ## Variables
 
-- [AUTH_ENDPOINT](variables/AUTH_ENDPOINT.md)
-- [TOKEN_ENDPOINT](variables/TOKEN_ENDPOINT.md)
+- [AUTH\_ENDPOINT](variables/AUTH_ENDPOINT.md)
+- [TOKEN\_ENDPOINT](variables/TOKEN_ENDPOINT.md)

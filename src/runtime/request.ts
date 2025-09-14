@@ -1,11 +1,11 @@
 import type { CallOptions, ClientUnaryCall, ServiceError as GrpcServiceError } from '@grpc/grpc-js';
 import { Metadata } from '@grpc/grpc-js';
 
-import { Status as GrpcStatus, Code as StatusCode } from '../generated/google/rpc/index';
+import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index';
 import {
   ServiceError as NebiusServiceError,
   ServiceError_RetryType,
-} from '../generated/nebius/common/v1/index';
+} from '../api/nebius/common/v1/index';
 import { SDKInterface } from '../sdk';
 
 import { NebiusGrpcError } from './error';

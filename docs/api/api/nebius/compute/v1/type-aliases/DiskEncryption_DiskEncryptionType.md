@@ -1,0 +1,11 @@
+[**@nebius/nodejs-sdk**](../../../../../README.md)
+
+***
+
+[@nebius/nodejs-sdk](../../../../../README.md) / [api/nebius/compute/v1](../README.md) / DiskEncryption\_DiskEncryptionType
+
+# Type Alias: DiskEncryption\_DiskEncryptionType
+
+> **DiskEncryption\_DiskEncryptionType** = [`EnumInstance`](../../../../../runtime/protos/enum/type-aliases/EnumInstance.md)\<`"UNRECOGNIZED"` \| `"DISK_ENCRYPTION_UNSPECIFIED"` \| `"DISK_ENCRYPTION_MANAGED"`\>
+
+Defined in: src/api/nebius/compute/v1/index.ts:1011

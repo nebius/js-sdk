@@ -1,12 +1,12 @@
 [**@nebius/nodejs-sdk**](../../../../README.md)
 
----
+***
 
 [@nebius/nodejs-sdk](../../../../README.md) / [runtime/util/logging](../README.md) / PrettyHandler
 
 # Class: PrettyHandler
 
-Defined in: [src/runtime/util/logging.ts:335](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L335)
+Defined in: [src/runtime/util/logging.ts:335](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L335)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [src/runtime/util/logging.ts:335](https://github.com/nebius/nodejs-s
 
 > **new PrettyHandler**(`opts?`): `PrettyHandler`
 
-Defined in: [src/runtime/util/logging.ts:344](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L344)
+Defined in: [src/runtime/util/logging.ts:344](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L344)
 
 #### Parameters
 
@@ -66,19 +66,19 @@ Defined in: [src/runtime/util/logging.ts:344](https://github.com/nebius/nodejs-s
 
 > **\[customJson\]**(): `object`
 
-Defined in: [src/runtime/util/logging.ts:365](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L365)
+Defined in: [src/runtime/util/logging.ts:365](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L365)
 
 #### Returns
 
 `object`
 
----
+***
 
 ### log()
 
 > **log**(`level`, `message`, `args`, `name`, `traceLevel`): `void`
 
-Defined in: [src/runtime/util/logging.ts:456](https://github.com/nebius/nodejs-sdk/blob/b305f8e478cb0251c26d73900b264b3bd9a5cc58/src/runtime/util/logging.ts#L456)
+Defined in: [src/runtime/util/logging.ts:456](https://github.com/nebius/nodejs-sdk/blob/a37d220b2851e3bf0d396cb03828d544f584df45/src/runtime/util/logging.ts#L456)
 
 #### Parameters
 
