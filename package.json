@@ -67,7 +67,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.13.4",
     "@grpc/proto-loader": "^0.8.0",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.18",
     "fs-ext": "^2.1.1",
     "google-protobuf": "^3.21.4",
     "long": "^5.3.2",
