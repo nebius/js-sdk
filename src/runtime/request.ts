@@ -91,7 +91,7 @@ class CancelledError extends NebiusGrpcError {
   }
 }
 
-export class Request<TReq, TRes> {
+export class Request<TReq, TRes> implements PromiseLike<TRes> {
   public readonly $type: 'nebius.sdk.Request' = 'nebius.sdk.Request';
   // Promises
   readonly result: Promise<TRes>;
@@ -359,6 +359,13 @@ export class Request<TReq, TRes> {
 
       runAttempt(0);
     });
+  }
+
+  then<TResult1 = TRes, TResult2 = never>(
+    onfulfilled?: ((value: TRes) => TResult1 | PromiseLike<TResult1>) | undefined | null,
+    onrejected?: ((reason: unknown) => TResult2 | PromiseLike<TResult2>) | undefined | null,
+  ): Promise<TResult1 | TResult2> {
+    return this.result.then(onfulfilled, onrejected);
   }
 
   [custom](): string {

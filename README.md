@@ -116,7 +116,7 @@ const sdk = new SDK({
   /* ... */
 });
 const profileReq = sdk.whoami();
-const profile = await profileReq.result;
+const profile = await profileReq;
 console.log('Signed-in profile:', profile);
 
 await sdk.close();
@@ -170,7 +170,7 @@ You can obtain request-level metadata from the returned `Request` object without
 
 ```ts
 const req = bucketSvc.get(GetBucketRequest.create({ id: '...' }));
-const response = await req.result;
+const response = await req;
 const requestId = await req.requestId();
 const traceId = await req.traceId();
 console.log({ requestId, traceId });
@@ -194,11 +194,11 @@ const callOptions = {
 };
 
 // whoami accepts (metadata?, options?) so pass the options directly
-await sdk.whoami(undefined, callOptions).result;
+await sdk.whoami(undefined, callOptions);
 
 // For normal RPCs provide metadata and callOptions as the second and third args
 const md = new (require('@grpc/grpc-js').Metadata)();
-const op = await bucketSvc.update(updateReq, md, callOptions).result;
+const op = await bucketSvc.update(updateReq, md, callOptions);
 await op.wait();
 ```
 
@@ -209,7 +209,7 @@ Some generated RPCs return an `Operation` wrapper. To list or fetch operations y
 ```ts
 const svc = new BucketServiceClient(sdk);
 const opService = svc.getOperationService();
-const listResp = await opService.list({ resourceId: '...' } as any).result;
+const listResp = await opService.list({ resourceId: '...' } as any);
 // listResp.operations contains OperationWrapper elements; call opService.get(opId) to fetch real Operation
 ```
 
@@ -233,7 +233,7 @@ const updateReq = UpdateBucketRequest.create({
   },
 });
 const md = ensureResetMaskInMetadata(updateReq);
-const op = await bucketSvc.update(updateReq, undefined as any, md).result;
+const op = await bucketSvc.update(updateReq, undefined as any, md);
 await op.wait();
 ```
 
