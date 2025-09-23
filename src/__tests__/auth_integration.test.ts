@@ -294,7 +294,7 @@ default: p1
           pageToken: '',
           filter: '',
         });
-        await client.list(req, new Metadata(), {}).result;
+        await client.list(req, new Metadata(), {});
         await sdk.close();
 
         expect(capture.lastAuth).toBe('Bearer test-access-inline');
@@ -354,7 +354,7 @@ default: p1
           pageToken: '',
           filter: '',
         });
-        await client.list(req, new Metadata(), {}).result;
+        await client.list(req, new Metadata(), {});
         await sdk.close();
 
         expect(capture.lastAuth).toBe('Bearer test-access-creds-file');
@@ -512,7 +512,7 @@ default: p1
             renewRequestTimeoutMs: 200,
           },
         };
-        await expect(client.list(req, new Metadata(), opts).result).rejects.toThrow(
+        await expect(client.list(req, new Metadata(), opts)).rejects.toThrow(
           /Unsupported token received/,
         );
         await sdk.close(100);
@@ -573,7 +573,7 @@ default: p1
             renewRequestTimeoutMs: 200,
           },
         };
-        await expect(client.list(req, new Metadata(), opts).result).rejects.toBeTruthy();
+        await expect(client.list(req, new Metadata(), opts)).rejects.toBeTruthy();
         await sdk.close(100);
       },
     );
@@ -676,7 +676,7 @@ default: p1
         filter: '',
       });
       // Kick off the call to trigger federation flow (which will print URL and wait)
-      const listP = client.list(req, new Metadata(), {}).result;
+      const listP = client.list(req, new Metadata(), {});
 
       // Wait for writer to capture URL (poll briefly)
       const start = Date.now();
