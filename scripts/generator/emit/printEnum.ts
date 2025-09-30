@@ -109,6 +109,8 @@ export function printEnum(e: TSDescriptorEnum): string {
     lines.push(`}) as ${e.tsName}Class;`);
   }
   lines.push('');
+  // No extra wiring is needed for enum custom inspectors, runtime already provides
+  // util.inspect.custom and customJson on enum instances.
   // Register enum in local registry
   lines.push(`protoRegistry.registerEnum(${e.tsName});`);
   lines.push('');

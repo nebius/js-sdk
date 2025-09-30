@@ -5,7 +5,7 @@ export function emitBaseFactory(m: TSDescriptorMessage, typeName: string): strin
   const lines: string[] = [];
   const nonOneofFields = m.fields.filter((f) => !f.is_in_oneof);
   lines.push(`function createBase${m.tsName}(): ${m.tsName} {`);
-  lines.push('  return {');
+  lines.push('  const message: ' + m.tsName + ' = {');
   lines.push(`    $type: "${typeName}",`);
   for (const f of nonOneofFields) {
     const name = f.tsName;
@@ -17,6 +17,7 @@ export function emitBaseFactory(m: TSDescriptorMessage, typeName: string): strin
     lines.push(`    ${prop}: undefined,`);
   }
   lines.push('  };');
+  lines.push(`  return apply${m.tsName}Custom(message);`);
   lines.push('}');
   lines.push('');
   return lines;

@@ -20,6 +20,9 @@ export function emitInterface(m: TSDescriptorMessage, typeName: string): string[
   lines.push(`export interface ${m.tsName} {`);
   lines.push(`  $type: "${typeName}";`);
   lines.push(`  [unknownFieldsSymbol]?: Uint8Array | undefined;`);
+  // logging/inspect support
+  lines.push(`  [custom]?: () => string;`);
+  lines.push(`  [customJson]?: () => unknown;`);
   for (const f of nonOneofFields) {
     if (f.containingMessage && f.containingMessage.isMapEntry()) continue;
     const name = f.tsName;
