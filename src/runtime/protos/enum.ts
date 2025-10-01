@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import util from 'node:util';
 
+import { customJson } from '../util/logging';
+
 import type { BinaryWriter } from './core';
 
 // Symbol used to attach metadata (e.g., original proto comments) to enum value instances without
@@ -18,6 +20,8 @@ export type EnumInstance<TName extends string = string> = {
   toNumber(): number;
   toString(): string;
   readonly [ENUM_VALUE_META]?: EnumValueMeta;
+  [util.inspect.custom]?: () => string;
+  [customJson]?: () => unknown;
 };
 
 export type EnumClass<TNames extends string = string> = {
@@ -56,6 +60,10 @@ export function createEnum<TDef extends Record<string, number>>(
     }
     [util.inspect.custom]() {
       return this.toString();
+    }
+    [customJson]() {
+      // Return a JSON-friendly, readable form. Prefer the enum name.
+      return this.name;
     }
     // Static side populated below
     static $type: string;

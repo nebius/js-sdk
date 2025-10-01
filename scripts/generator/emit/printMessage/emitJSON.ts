@@ -18,7 +18,7 @@ export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[]
   if (isOptions) {
     lines.push(`    const message: ${m.tsName} = {`);
   } else {
-    lines.push(`    return {`);
+    lines.push(`    return apply${m.tsName}Custom({`);
   }
   lines.push(`      $type: "${typeName}",`);
   const emitted = new Set<string>();
@@ -175,10 +175,10 @@ export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[]
     for (const _ext of protoRegistry.listExtensions("${fullType}")) {
       _ext.fromJSON?.(message as any, object);
     }`);
-    lines.push('    return message;');
+    lines.push(`    return apply${m.tsName}Custom(message);`);
     lines.push('  },');
   } else {
-    lines.push(`    };`);
+    lines.push(`    });`);
     lines.push('  },');
   }
   return lines;

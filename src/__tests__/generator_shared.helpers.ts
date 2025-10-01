@@ -53,6 +53,7 @@ import "google/protobuf/field_mask.proto";
 import "google/protobuf/any.proto";
 import "google/protobuf/struct.proto";
 import "google/protobuf/empty.proto";
+import "nebius/annotations.proto";
 import "nebius/common/v1/metadata.proto";
 
 // Enum PlainColor leading comment line A
@@ -184,7 +185,17 @@ message Optionals {
     optional bool opt_bool = 5; // optional bool trailing
     optional bytes opt_bytes = 6; // optional bytes trailing
     optional AliasedState opt_state = 7; // optional state trailing
-}`;
+}
+
+// Demonstrates sensitive and credentials sanitization for generator inspectors
+message SanitizeDemo {
+  string plain = 1;
+  string secret = 2 [(nebius.sensitive) = true];
+  string creds = 3 [(nebius.credentials) = true];
+  repeated string creds_list = 4 [(nebius.credentials) = true];
+  map<string, string> creds_map = 5 [(nebius.credentials) = true];
+}
+`;
 
 const EXT_PROTO = `syntax = "proto3";
 package nebius.example.test;
