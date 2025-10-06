@@ -101,7 +101,7 @@
     "ts-proto": "^2.7.7",
     "typedoc": "^0.28.13",
     "typedoc-plugin-markdown": "^4.9.0",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
