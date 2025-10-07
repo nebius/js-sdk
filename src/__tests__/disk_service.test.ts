@@ -83,7 +83,9 @@ describe('DiskService gRPC mock', () => {
           filter: '',
         }),
         new Metadata(),
-        {},
+        {
+          deadline: Date.now() + 5000,
+        },
         (err, res) => {
           if (err) return reject(err);
           resolve(res);

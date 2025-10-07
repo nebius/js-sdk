@@ -54,10 +54,17 @@ describe('DiskService error propagation', () => {
 
     await expect(
       new Promise((resolve, reject) => {
-        client.get(GetDiskRequest.create({ id: 'bad' }), new Metadata(), {}, (err, _res) => {
-          if (err) return reject(err);
-          resolve(_res);
-        });
+        client.get(
+          GetDiskRequest.create({ id: 'bad' }),
+          new Metadata(),
+          {
+            deadline: Date.now() + 5000,
+          },
+          (err, _res) => {
+            if (err) return reject(err);
+            resolve(_res);
+          },
+        );
       }),
     ).rejects.toMatchObject({ code: status.INVALID_ARGUMENT });
 

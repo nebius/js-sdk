@@ -243,6 +243,64 @@ See [ensureResetMaskInMetadata](docs/api/runtime/resetmask/functions/ensureReset
 
 Tune per-call deadlines and per-retry timeouts using call options passed to RPCs. Long-running operations expose `.wait()`; prefer bounding waits in examples/tests with your own timeout helper to avoid indefinite hangs in CI.
 
+#### Deadlines and timeouts (Node.js)
+
+The SDK applies two layers of timing when making a unary RPC:
+
+- Overall deadline: `deadline` (gRPC CallOptions)
+  - Covers the entire request, including authorization (token acquisition/renewal) and all request retries.
+  - Accepts a JavaScript `Date` or an absolute epoch timestamp in milliseconds (number).
+  - If omitted, the SDK uses a default overall timeout of 15 minutes.
+
+- Authorized request window: `RequestTimeout` (SDK retry option)
+  - Starts after a successful authorization attempt and bounds the inner retry cycle for the actual RPC.
+  - Defaults to 60 seconds when not provided.
+
+- Per-retry timeout: `PerRetryTimeout` (SDK retry option)
+  - Timeout for each individual retry attempt inside the authorized window.
+  - Defaults to `RequestTimeout / RetryCount` when not provided. With defaults (`RequestTimeout = 60s`, `RetryCount = 3`) this is 20 seconds.
+
+- Retry count: `RetryCount` (SDK retry option)
+  - Maximum number of inner retries after a failed attempt (network/transient errors, selected gRPC codes).
+  - Defaults to 3.
+
+Behavior highlights:
+
+- The authorization phase is retried according to the provider’s `canRetry` policy, but is always bounded by the overall `deadline`.
+- After a successful authorization, the SDK runs the actual RPC with internal retries within a single “authorized window” limited by `RequestTimeout` (clipped by the overall `deadline`).
+- Retriable conditions include common transient system errors (e.g., ECONNRESET, ETIMEDOUT) and gRPC status codes `UNAVAILABLE` and `RESOURCE_EXHAUSTED`, as well as SDK and API-specific retry conditions.
+
+Minimal example:
+
+```ts
+import { Metadata } from '@grpc/grpc-js';
+
+const md = new Metadata();
+const options = {
+  // Overall wall-clock cap (auth + request + retries)
+  deadline: new Date(Date.now() + 30_000), // 30 seconds, if we know, that we don't need a browser authorization for instance
+
+  // Inner retry window after successful authorization
+  RequestTimeout: 10_000, // 10 seconds
+  RetryCount: 2, // up to 2 retries
+  PerRetryTimeout: 5_000, // 5 seconds per attempt (optional; otherwise derives from RequestTimeout/RetryCount)
+
+  // Optional: authorization hints (for renewable credentials)
+  authorizationOptions: {
+    renewRequired: true,
+    renewSynchronous: true,
+    renewRequestTimeoutMs: 900,
+  },
+} as const;
+
+const resp = await bucketSvc.get({ id: '...' } as any, md, options);
+```
+
+Notes:
+
+- If you provide a numeric `deadline`, it is interpreted as an absolute epoch time in milliseconds.
+- If `authorizationOptions` are set and renewal is needed, renewal will be attempted synchronously within the overall `deadline`. If renewal cannot succeed before the deadline (or is non-retriable), the SDK returns an `UNAUTHENTICATED` error.
+
 ### Where to look for types and detailed API
 
 - SDK overview and constructor options: [docs/api/sdk/README.md](docs/api/sdk/README.md) and [SDK class](docs/api/sdk/classes/SDK.md).

@@ -294,7 +294,9 @@ default: p1
           pageToken: '',
           filter: '',
         });
-        await client.list(req, new Metadata(), {});
+        await client.list(req, new Metadata(), {
+          deadline: Date.now() + 5000,
+        });
         await sdk.close();
 
         expect(capture.lastAuth).toBe('Bearer test-access-inline');
@@ -354,7 +356,9 @@ default: p1
           pageToken: '',
           filter: '',
         });
-        await client.list(req, new Metadata(), {});
+        await client.list(req, new Metadata(), {
+          deadline: Date.now() + 5000,
+        });
         await sdk.close();
 
         expect(capture.lastAuth).toBe('Bearer test-access-creds-file');
@@ -401,7 +405,9 @@ default: p1
           pageToken: '',
           filter: '',
         });
-        await client.list(req, new Metadata(), {}).result;
+        await client.list(req, new Metadata(), {
+          deadline: Date.now() + 5000,
+        }).result;
         await sdk.close();
 
         expect(capture.lastAuth).toBe('Bearer test-access-federated');
@@ -451,7 +457,9 @@ default: p1
           pageToken: '',
           filter: '',
         });
-        await client.list(req, new Metadata(), {}).result;
+        await client.list(req, new Metadata(), {
+          deadline: Date.now() + 5000,
+        }).result;
         await sdk.close();
 
         expect(capture.lastAuth).toBe('Bearer test-access-pkfile');
@@ -505,6 +513,7 @@ default: p1
         const opts: any = {
           PerRetryTimeout: 300,
           RetryCount: 0,
+          deadline: Date.now() + 5000,
           authorizationOptions: {
             maxRetries: 1,
             renewSynchronous: true,
@@ -565,6 +574,7 @@ default: p1
         });
         const opts: any = {
           PerRetryTimeout: 300,
+          deadline: Date.now() + 5000,
           RetryCount: 0,
           authorizationOptions: {
             maxRetries: 1,
@@ -676,7 +686,9 @@ default: p1
         filter: '',
       });
       // Kick off the call to trigger federation flow (which will print URL and wait)
-      const listP = client.list(req, new Metadata(), {});
+      const listP = client.list(req, new Metadata(), {
+        deadline: Date.now() + 10000,
+      });
 
       // Wait for writer to capture URL (poll briefly)
       const start = Date.now();
@@ -927,7 +939,9 @@ default: p1
           pageToken: '',
           filter: '',
         });
-        await client.list(req, new Metadata(), {}).result;
+        await client.list(req, new Metadata(), {
+          deadline: Date.now() + 5000,
+        }).result;
         await sdk.close(100);
 
         expect(capture.lastAuth).toBe(`Bearer ${fileToken}`);
@@ -986,6 +1000,7 @@ default: p1
         });
         // First call: forces initial exchange
         await client.list(req, new Metadata(), {
+          deadline: Date.now() + 5000,
           authorizationOptions: {
             renewSynchronous: true,
             reportError: true,
@@ -996,6 +1011,7 @@ default: p1
         // Wait ~1.2s for token to expire, next call should synchronously renew
         await new Promise((r) => setTimeout(r, 1200));
         await client.list(req, new Metadata(), {
+          deadline: Date.now() + 5000,
           authorizationOptions: {
             renewSynchronous: true,
             reportError: true,
@@ -1061,6 +1077,7 @@ default: p1
         });
         // First call obtains tok-1
         await client.list(req, new Metadata(), {
+          deadline: Date.now() + 5000,
           authorizationOptions: {
             renewSynchronous: false,
             reportError: false,
@@ -1073,6 +1090,7 @@ default: p1
         // Next call should use tok-2 without waiting long
         const t0 = Date.now();
         await client.list(req, new Metadata(), {
+          deadline: Date.now() + 5000,
           authorizationOptions: {
             renewSynchronous: false,
             reportError: false,

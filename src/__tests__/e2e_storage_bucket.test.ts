@@ -80,7 +80,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
   const bucketService = new BucketServiceClient(sdk);
   // Common call options: add a per-retry deadline to bound waits on network issues
   // 4 seconds for each request, so cold-start can get through dns
-  const callOptions = { deadline: 12000, perRetry: 4000 } as const;
+  const callOptions = { deadline: Date.now() + 12000, perRetry: 4000 };
   const withTimeout = async <T>(p: Promise<T>, ms: number, label: string): Promise<T> => {
     let to: NodeJS.Timeout | undefined;
     try {
@@ -113,6 +113,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
     });
     const createReq = CreateBucketRequest.create({ metadata, spec });
 
+    callOptions.deadline = Date.now() + 12000;
     const createOp = await bucketService.create(createReq, undefined as any, callOptions).result;
     await withTimeout(createOp.wait(), 60_000, 'create bucket wait');
     bucketId = createOp.resourceId();
@@ -120,6 +121,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
 
     // Get bucket by ID
     const getReq = GetBucketRequest.create({ id: bucketId! });
+    callOptions.deadline = Date.now() + 12000;
     const bucket = await bucketService.get(getReq, undefined as any, callOptions).result;
     expect(bucket.metadata?.id).toBe(bucketId);
     expect(bucket.metadata?.name).toBe(bucketName);
@@ -133,6 +135,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
       pageToken: '',
       filter: '',
     });
+    callOptions.deadline = Date.now() + 12000;
     const listRes = await bucketService.list(listReq, undefined as any, callOptions as any).result;
     const found = (listRes.items || []).find((b) => b.metadata?.id === bucketId);
     expect(found).toBeTruthy();
@@ -140,6 +143,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
 
     // Delete bucket
     const delReq = DeleteBucketRequest.create({ id: bucketId! });
+    callOptions.deadline = Date.now() + 12000;
     const delOp = await bucketService.delete(delReq, undefined as any, callOptions as any).result;
     await withTimeout(delOp.wait(), 60_000, 'delete bucket wait');
     bucketId = null;
@@ -148,6 +152,7 @@ maybe('storage bucket lifecycle (e2e)', async () => {
     if (bucketId) {
       try {
         const delReq = DeleteBucketRequest.create({ id: bucketId });
+        callOptions.deadline = Date.now() + 12000;
         const delOp = await bucketService.delete(delReq, undefined as any, callOptions as any)
           .result;
         await withTimeout(delOp.wait(), 60_000, 'cleanup delete bucket wait');
