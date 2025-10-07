@@ -60,10 +60,17 @@ describe('DiskService gRPC mock - get', () => {
     const client = new DiskServiceClient(address, credentials.createInsecure());
 
     const response = await new Promise<Disk>((resolve, reject) => {
-      client.get(GetDiskRequest.create({ id: 'foo-bar' }), new Metadata(), {}, (err, res) => {
-        if (err) return reject(err);
-        resolve(res);
-      });
+      client.get(
+        GetDiskRequest.create({ id: 'foo-bar' }),
+        new Metadata(),
+        {
+          deadline: Date.now() + 5000,
+        },
+        (err, res) => {
+          if (err) return reject(err);
+          resolve(res);
+        },
+      );
     });
 
     expect(response.metadata?.id).toBe('foo-bar');

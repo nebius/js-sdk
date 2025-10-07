@@ -14,7 +14,6 @@ import {
   type GetProfileResponse,
   ProfileService as ProfileServiceClient,
 } from './api/nebius/iam/v1/index';
-import { createAuthorizationInterceptor } from './runtime/authorization/interceptor';
 import type { Provider as AuthorizationProvider } from './runtime/authorization/provider';
 import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token';
 import type { ConfigReaderLike } from './runtime/cli_config_interfaces';
@@ -38,6 +37,7 @@ export interface SDKInterface {
   getClientByAddress(address: string): Client;
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string;
   parentId(): string | undefined;
+  getAuthorizationProvider(): AuthorizationProvider | undefined;
   logger: SDKLogger;
 }
 
@@ -542,25 +542,24 @@ export class SDK implements SDKInterface {
     return this._creds;
   }
 
+  getAuthorizationProvider(): AuthorizationProvider | undefined {
+    this._logger.trace('Getting authorization provider.');
+    return this._authorizationProvider;
+  }
+
   getAddressOptions(address: string): Partial<ClientOptions> {
     const logger = this._logger.withFields({ address });
     logger.trace('Getting gRPC client options by address.');
     const addrCfg = this._perAddress.get(address);
 
-    const authInterceptor = this._authorizationProvider
-      ? createAuthorizationInterceptor(this._authorizationProvider, logger.child('auth'))
-      : undefined;
-
     const combinedInterceptors = [
       ...(this._extraInterceptors || []),
       ...(addrCfg?.interceptors ?? []),
-      ...(authInterceptor ? [authInterceptor] : []),
     ];
     const hasInts = combinedInterceptors.length > 0;
     if (hasInts) {
       logger.trace('Using combined interceptors.', {
         count: combinedInterceptors.length,
-        hasAuthorization: !!authInterceptor,
         hasExtraInterceptors: (this._extraInterceptors || []).length > 0,
         hasPerAddressInterceptors: (addrCfg?.interceptors ?? []).length > 0,
       });

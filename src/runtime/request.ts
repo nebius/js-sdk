@@ -1,5 +1,6 @@
 import type { CallOptions, ClientUnaryCall, ServiceError as GrpcServiceError } from '@grpc/grpc-js';
 import { Metadata } from '@grpc/grpc-js';
+import { getRelativeTimeout } from '@grpc/grpc-js/build/src/deadline';
 
 import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index';
 import {
@@ -8,11 +9,14 @@ import {
 } from '../api/nebius/common/v1/index';
 import { SDKInterface } from '../sdk';
 
+import type { AuthorizationOptions } from './authorization/provider';
 import { NebiusGrpcError } from './error';
 import { resetMaskFromMessage } from './resetmask';
+import { withTimeout } from './util/cancelable';
 import { custom, customJson, inspectJson, Logger } from './util/logging';
 
 export interface RetryOptions {
+  RequestTimeout?: number; // ms
   PerRetryTimeout?: number; // ms
   RetryCount?: number;
 }
@@ -68,9 +72,10 @@ function generateIdempotencyKey(): string {
   }
 }
 
-const DEFAULT_TIMEOUT = 60000;
+const DEFAULT_OVERALL_TIMEOUT = 15 * 60000; // 15 minutes
+const DEFAULT_REQUEST_TIMEOUT = 60000; // 1 minute
 const DEFAULT_RETRY_COUNT = 3;
-const DEFAULT_PER_RETRY_TIMEOUT = DEFAULT_TIMEOUT / DEFAULT_RETRY_COUNT;
+const DEFAULT_PER_RETRY_TIMEOUT = DEFAULT_REQUEST_TIMEOUT / DEFAULT_RETRY_COUNT;
 
 class CancelledError extends NebiusGrpcError {
   constructor(reason?: string) {
@@ -139,8 +144,13 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
 
     // Normalize numeric overall deadline (absolute ms since epoch) into a Date
     // and work on a shallow copy so we don't mutate caller's object.
-    const baseOptions: (Partial<CallOptions> & RetryOptions) | undefined = this.requestOptions
-      ? { ...(this.requestOptions as Partial<CallOptions> & RetryOptions) }
+    type ExtendedCallOptions = Partial<CallOptions> &
+      RetryOptions & {
+        authorizationDisable?: boolean;
+        authorizationOptions?: AuthorizationOptions;
+      };
+    const baseOptions: ExtendedCallOptions | undefined = this.requestOptions
+      ? { ...(this.requestOptions as ExtendedCallOptions) }
       : undefined;
     if (baseOptions?.deadline !== undefined && typeof baseOptions.deadline === 'number') {
       baseOptions.deadline = new Date(
@@ -175,15 +185,21 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
       this.logger.trace('Using idempotency key for this request');
     }
 
-    let overallMs = DEFAULT_TIMEOUT;
+    let overallMs = DEFAULT_OVERALL_TIMEOUT;
     if (baseOptions?.deadline !== undefined) {
-      overallMs =
-        typeof baseOptions.deadline === 'number'
-          ? baseOptions.deadline
-          : baseOptions.deadline.getTime();
+      overallMs = getRelativeTimeout(baseOptions.deadline);
       this.logger.trace('Using caller-provided overall deadline', { overall_ms: overallMs });
     } else {
       this.logger.trace('Using default overall deadline', { overall_ms: overallMs });
+    }
+    let requestTimeout = DEFAULT_REQUEST_TIMEOUT;
+    if (baseOptions?.RequestTimeout !== undefined) {
+      requestTimeout = baseOptions.RequestTimeout;
+      this.logger.trace('Using caller-provided request timeout', {
+        request_timeout_ms: requestTimeout,
+      });
+    } else {
+      this.logger.trace('Using default request timeout', { request_timeout_ms: requestTimeout });
     }
     let perRetry = DEFAULT_PER_RETRY_TIMEOUT;
     if (baseOptions?.PerRetryTimeout !== undefined) {
@@ -228,9 +244,19 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
       }
     }
 
-    // Start the request flow with retry
+    // Start the request flow with authorization outer-loop and internal retry attempts
     this.result = new Promise<TRes>((resolve, reject) => {
-      const runAttempt = (attempt: number) => {
+      // Helper: compute ms left until a deadline
+      const timeLeftMs = (deadline?: CallOptions['deadline']): number | undefined => {
+        if (!deadline) return undefined;
+        const now = Date.now();
+        if (deadline instanceof Date) return Math.max(0, deadline.getTime() - now);
+        if (typeof deadline === 'number') return Math.max(0, deadline - now);
+        return undefined;
+      };
+
+      // Inner: run one authorized request window that includes several retries using the same authorized metadata
+      const runAttempt = (attempt: number, callMd: Metadata, attemptDeadline: Date) => {
         if (this._canceled) {
           this.logger.debug('Request canceled by client before attempt start', { attempt });
           const err = new CancelledError();
@@ -243,10 +269,10 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
         logger.trace('Starting request attempt');
 
         // Compute a per-retry deadline relative to now, but clip it to the
-        // overall deadline if one was provided and is earlier.
+        // authorized request attempt deadline if it is earlier.
         let perDeadline = new Date(Date.now() + perRetry);
-        if (perDeadline.getTime() > overallDeadline.getTime()) {
-          perDeadline = overallDeadline;
+        if (perDeadline.getTime() > attemptDeadline.getTime()) {
+          perDeadline = attemptDeadline;
         }
         const deadlineOpt = {
           ...(baseOptions ?? {}),
@@ -266,7 +292,7 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
           this.serializer,
           this.deserializer,
           this.request,
-          metadata,
+          callMd,
           deadlineOpt,
           (err, resp) => {
             try {
@@ -296,7 +322,7 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
 
               if (retriable && attempt < maxRetries && !this._canceled) {
                 errLogger.trace('Retrying request attempt after retriable error');
-                runAttempt(attempt + 1);
+                runAttempt(attempt + 1, callMd, attemptDeadline);
                 return;
               }
 
@@ -357,7 +383,103 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
         this.logger.trace('Tracking call for potential cancellation', { calls: this._calls.size });
       };
 
-      runAttempt(0);
+      // Outer: authorization loop
+      const startAuthorizedFlow = async () => {
+        // Compute overall deadline (already prepared above)
+        // Prepare baseline metadata (already has reset-mask and idempotency if needed)
+        const baseMd = metadata;
+        const disableAuth = baseOptions?.authorizationDisable === true;
+        const authOptions: AuthorizationOptions | undefined = baseOptions?.authorizationOptions;
+        const provider = this.sdk.getAuthorizationProvider();
+
+        if (disableAuth || !provider) {
+          this.logger.trace(
+            disableAuth
+              ? 'Authorization disabled by call options; starting request attempts without auth.'
+              : 'No authorization provider; starting request attempts without auth.',
+          );
+          // Single authorized window: requestTimeout, clipped by overall deadline
+          const attemptDeadline = new Date(
+            Math.min(Date.now() + requestTimeout, overallDeadline.getTime()),
+          );
+          runAttempt(0, baseMd, attemptDeadline);
+          return;
+        }
+
+        const auth = provider.authenticator();
+        let authAttempt = 0;
+        while (true) {
+          if (this._canceled) {
+            const cerr = new CancelledError('cancelled before authentication');
+            this._resolveStatus(cerr.status!);
+            reject(cerr);
+            return;
+          }
+          authAttempt += 1;
+          const left = timeLeftMs(overallDeadline);
+          const timeoutMs = left === undefined ? undefined : Math.max(0, left);
+          const aLog = this.logger.withFields({ auth_attempt: authAttempt, left, timeoutMs });
+          aLog.debug('Starting authentication attempt');
+          // Always start from the baseline metadata to avoid stacking headers between attempts
+          const mdAttempt = baseMd.clone();
+          try {
+            const promise = auth.authenticate(mdAttempt, timeoutMs, authOptions);
+            if (timeoutMs !== undefined) {
+              await withTimeout(promise, timeoutMs);
+            } else {
+              await promise;
+            }
+            aLog.debug('Authentication successful');
+            // Within this authenticated window, run the request with internal retries for requestTimeout
+            const attemptDeadline = new Date(
+              Math.min(Date.now() + requestTimeout, overallDeadline.getTime()),
+            );
+            runAttempt(0, mdAttempt, attemptDeadline);
+            return;
+          } catch (e) {
+            const canRetry =
+              typeof auth.canRetry === 'function' ? auth.canRetry(e, authOptions) : false;
+            const stillLeft = timeLeftMs(overallDeadline);
+            aLog.error('Authentication error', { err: e, canRetry, stillLeft });
+            if (!canRetry || (stillLeft !== undefined && stillLeft <= 0)) {
+              // Synthesize UNAUTHENTICATED error
+              const message = ((): string => {
+                if (typeof e === 'string') return e;
+                if (e && typeof e === 'object') {
+                  const m = (e as { message?: unknown }).message;
+                  if (typeof m === 'string') return m;
+                }
+                return 'authentication failed';
+              })();
+              const baseErr = Object.assign(new Error(message), {
+                code: StatusCode.UNAUTHENTICATED.code,
+                details: message,
+                metadata: new Metadata(),
+              }) as unknown as GrpcServiceError;
+              const st = GrpcStatus.create({
+                code: StatusCode.UNAUTHENTICATED.code,
+                message,
+                details: [],
+              });
+              this._resolveStatus(st);
+              reject(new NebiusGrpcError(baseErr, st));
+              return;
+            }
+            // else retry auth loop
+          }
+        }
+      };
+
+      // Kick off
+      startAuthorizedFlow().catch((err) => {
+        // Safety net: if something throws synchronously above
+        try {
+          if (err instanceof NebiusGrpcError && err.status) this._resolveStatus(err.status);
+        } catch {
+          /* ignore */
+        }
+        reject(err);
+      });
     });
   }
 

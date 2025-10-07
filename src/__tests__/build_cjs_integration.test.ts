@@ -93,7 +93,9 @@ default: p1
       filter: '',
     });
 
-    await client.list(req, new Metadata(), {}).result;
+    await client.list(req, new Metadata(), {
+      deadline: Date.now() + 5000,
+    }).result;
     await sdk.close(100);
     await new Promise<void>((resolve) => server.tryShutdown(() => resolve()));
 

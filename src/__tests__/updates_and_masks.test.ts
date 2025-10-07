@@ -116,7 +116,7 @@ describe('updates and masks — DiskService.Update', () => {
         labels: {},
       }),
     });
-    const req = client.update(upd);
+    const req = client.update(upd, new Metadata(), { deadline: Date.now() + 5000 });
     const ret = await req.result;
     // Returns Operation wrapper
     expect(String(ret)).toContain('Operation(');
@@ -191,7 +191,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
       } as any,
     } as any;
 
-    const req = client.update(upd);
+    const req = client.update(upd, new Metadata(), { deadline: Date.now() + 5000 });
     const ret = await req.result;
     expect(String(ret)).toContain('Operation(');
 
