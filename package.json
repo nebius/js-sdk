@@ -99,7 +99,7 @@
     "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2",
     "ts-proto": "^2.7.7",
-    "typedoc": "^0.28.13",
+    "typedoc": "^0.28.14",
     "typedoc-plugin-markdown": "^4.9.0",
     "typescript": "^5.9.3"
   },
