@@ -1,6 +1,6 @@
 # Contribution Guide
 
-We appreciate your interest in contributing to the Nebius Node-JS SDK. This guide explains the preferred workflow and common developer commands for working on this repository.
+We appreciate your interest in contributing to the Nebius AI SDK for Node.js. This guide explains the preferred workflow and common developer commands for working on this repository.
 
 ## 🐞 Reporting Issues
 
@@ -42,8 +42,8 @@ Quick start:
 
 ```bash
 # clone and install
-git clone git@github.com:nebius/nodejs-sdk.git
-cd nodejs-sdk
+git clone git@github.com:nebius/ts-sdk.git
+cd ts-sdk
 npm ci
 
 # build generated artifacts and TypeScript
@@ -102,6 +102,6 @@ Run the same linting/format/test commands locally that CI runs. This reduces PR 
 - If types or generated clients are missing, run the generator scripts described under `scripts/`.
 - For API docs, run `npm run docs` and open `docs/api/index.html`.
 
-[issues]: https://github.com/nebius/nodejs-sdk/issues
-[new-issue]: https://github.com/nebius/nodejs-sdk/issues/new/choose
-[new-security]: https://github.com/nebius/nodejs-sdk/security/advisories/new
+[issues]: https://github.com/nebius/ts-sdk/issues
+[new-issue]: https://github.com/nebius/ts-sdk/issues/new/choose
+[new-security]: https://github.com/nebius/ts-sdk/security/advisories/new
