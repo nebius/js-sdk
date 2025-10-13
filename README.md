@@ -1,6 +1,6 @@
 # Nebius AI SDK for Node.js (TypeScript)
 
-This repository contains the Nebius TypeScript SDK for interacting with Nebius AI services from Node.js.
+This repository contains the Nebius SDK for interacting with Nebius AI services from Node.js.
 
 ## Quick links
 
@@ -18,8 +18,8 @@ npm install nebius
 Or, when developing locally from this repository:
 
 ```bash
-git clone git@github.com:nebius/nodejs-sdk.git
-cd nodejs-sdk
+git clone git@github.com:nebius/ts-sdk.git
+cd ts-sdk
 npm install
 npm run build
 ```
@@ -33,13 +33,13 @@ This package publishes dual outputs and an exports map so you can use either syn
 - ESM:
 
 ```ts
-import { SDK } from '@nebius/nodejs-sdk';
+import { SDK } from '@nebius/ts-sdk';
 ```
 
 - CommonJS:
 
 ```js
-const { SDK } = require('@nebius/nodejs-sdk');
+const { SDK } = require('@nebius/ts-sdk');
 ```
 
 Under the hood:

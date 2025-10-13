@@ -1,4 +1,4 @@
-// Public entry for the Nebius NodeJS SDK
+// Public entry for the Nebius AI SDK for Node.js.
 // Keep this file minimal and re-export from the main SDK surface.
 
 import { VERSION } from './version.js';
