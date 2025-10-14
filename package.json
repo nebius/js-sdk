@@ -1,7 +1,7 @@
 {
   "name": "@nebius/ts-sdk",
   "version": "0.1.0",
-  "description": "Nebius AI SDK for Node.js",
+  "description": "Nebius AI SDK",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
