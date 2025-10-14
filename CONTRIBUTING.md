@@ -1,6 +1,6 @@
 # Contribution Guide
 
-We appreciate your interest in contributing to the Nebius AI SDK for Node.js. This guide explains the preferred workflow and common developer commands for working on this repository.
+We appreciate your interest in contributing to the Nebius AI SDK. This guide explains the preferred workflow and common developer commands for working on this repository.
 
 ## 🐞 Reporting Issues
 

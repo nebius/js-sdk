@@ -1,6 +1,6 @@
-# Nebius AI SDK for Node.js (TypeScript)
+# Nebius AI SDK for TypeScript and ECMAScript environments
 
-This repository contains the Nebius SDK for interacting with Nebius AI services from Node.js.
+This repository contains the Nebius SDK for interacting with Nebius AI services from Node.js and other TypeScript and ECMAScript environments.
 
 ## Quick links
 
