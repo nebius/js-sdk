@@ -1,4 +1,4 @@
-# Publishing @nebius/ts-sdk
+# Publishing @nebius/js-sdk
 
 This package now ships dual builds for CommonJS and ES Modules.
 
@@ -9,19 +9,19 @@ Outputs:
 
 Package entry points are configured via the `exports` map:
 
-- `import { SDK } from '@nebius/ts-sdk'` -> `dist/esm/index.js`
-- `const { SDK } = require('@nebius/ts-sdk')` -> `dist/cjs/index.js`
+- `import { SDK } from '@nebius/js-sdk'` -> `dist/esm/index.js`
+- `const { SDK } = require('@nebius/js-sdk')` -> `dist/cjs/index.js`
 
 Usage examples:
 
 ```ts
 // ESM
-import { SDK } from '@nebius/ts-sdk';
+import { SDK } from '@nebius/js-sdk';
 ```
 
 ```js
 // CJS
-const { SDK } = require('@nebius/ts-sdk');
+const { SDK } = require('@nebius/js-sdk');
 ```
 
 Build & publish:

@@ -68,7 +68,7 @@ describe('updates and masks — DiskService.Update', () => {
 
           const ua = mdGetString(md, 'user-agent');
           // JS reality: ensure primary UA parts are present
-          expect(ua).toContain('nebius-ts-sdk/');
+          expect(ua).toContain('nebius-js-sdk/');
           expect(ua).toContain('a');
           expect(ua).toContain('b');
           expect(ua).toContain('c');
