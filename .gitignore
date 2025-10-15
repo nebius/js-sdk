@@ -10,6 +10,7 @@ src/api/
 .DS_Store
 coverage/
 src/generated_test/
+src/version.ts
 .vscode/
 *generated_test.lock*
 
