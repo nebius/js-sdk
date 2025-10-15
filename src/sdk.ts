@@ -239,7 +239,7 @@ export class SDK implements SDKInterface {
       }
     }
 
-    let userAgent = 'nebius-ts-sdk/' + VERSION;
+    let userAgent = 'nebius-js-sdk/' + VERSION;
     if (options?.userAgentPrefix) {
       userAgent = `${options.userAgentPrefix} ${userAgent}`;
     }
