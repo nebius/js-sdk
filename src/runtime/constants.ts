@@ -5,3 +5,4 @@ export const defaultConfigFile = 'config.yaml';
 export const defaultCredentialsFile = 'credentials.yaml';
 export const tokenEnv = 'NEBIUS_IAM_TOKEN'; // noqa: S105 equivalent in TS context
 export const profileEnv = 'NEBIUS_PROFILE';
+export const endpointEnv = 'NEBIUS_ENDPOINT';
