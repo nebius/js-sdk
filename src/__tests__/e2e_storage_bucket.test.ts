@@ -70,7 +70,10 @@ maybe('storage bucket lifecycle (e2e)', async () => {
     configFile: cfgPath,
     clientId: process.env.NEBIUS_E2E_CLIENT_ID || 'ts-e2e',
   });
-  const sdk = new SDK({ configReader: config });
+  const sdk = new SDK({
+    configReader: config,
+    userAgentPrefix: 'js-sdk-e2e-test/1.0 (bucket-service)',
+  });
 
   // Ensure parentId is available and matches SDK
   const parentId = config.parentId();
