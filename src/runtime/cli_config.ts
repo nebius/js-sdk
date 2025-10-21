@@ -6,6 +6,7 @@ import type { ConfigReaderLike, Credentials, GetCredentialsOptions } from './cli
 import {
   defaultConfigDir,
   defaultConfigFile,
+  endpointEnv as ENDPOINT_ENV,
   profileEnv as PROFILE_ENV,
   tokenEnv as TOKEN_ENV,
 } from './constants';
@@ -39,6 +40,8 @@ export interface ConfigOptions {
   noEnv?: boolean;
   noParentId?: boolean;
   maxRetries?: number;
+  endpoint?: string;
+  endpointEnv?: string;
   // optional logger configuration for config reader
   logger?: SDKLogger | SDKHandler | string | number;
 }
@@ -65,6 +68,8 @@ export class Config implements ConfigReaderLike {
       noEnv = false,
       noParentId = false,
       maxRetries = 2,
+      endpoint = undefined,
+      endpointEnv = ENDPOINT_ENV,
     } = options;
 
     // resolve logger if provided
@@ -72,6 +77,7 @@ export class Config implements ConfigReaderLike {
 
     this._clientId = clientId;
     this._profileName = profile ?? null;
+    this._endpoint = endpoint;
 
     if (!noEnv) {
       try {
@@ -87,11 +93,13 @@ export class Config implements ConfigReaderLike {
         }
         this._profileName = fromEnv && fromEnv.trim() !== '' ? fromEnv : null;
       }
+      if (typeof this._endpoint !== 'string' || this._endpoint.trim() === '') {
+        this._endpoint = process.env[endpointEnv] ?? undefined;
+      }
     }
 
     this._noParentId = noParentId;
     this._configFile = resolveHomeDir(configFile);
-    this._endpoint = undefined;
     this._maxRetries = maxRetries;
 
     this._getProfile();
@@ -134,6 +142,9 @@ export class Config implements ConfigReaderLike {
   }
 
   endpoint(): string | undefined {
+    if (typeof this._endpoint !== 'string' || this._endpoint.trim() === '') {
+      return undefined;
+    }
     return this._endpoint;
   }
 
@@ -383,7 +394,10 @@ export class Config implements ConfigReaderLike {
     }
     this._profile = profVal as Record<string, unknown>;
 
-    if ('endpoint' in this._profile) {
+    if (
+      (typeof this._endpoint !== 'string' || this._endpoint.trim() === '') &&
+      'endpoint' in this._profile
+    ) {
       const ep = this._profile['endpoint'];
       if (typeof ep !== 'string') {
         throw new ConfigError(`Endpoint should be a string, got ${typeof ep}.`);
