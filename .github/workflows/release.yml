@@ -1,0 +1,65 @@
+name: Release the new version
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  # workflow_call: # probably not necessary as the release will be triggered by the tag
+  workflow_dispatch: # if necessary to rerun the release job
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  npmjs_publish:
+    name: Upload release to NPM
+    runs-on: ubuntu-latest
+    environment:
+      name: npmjs-publish
+      url: https://www.npmjs.com/package/@nebius/js-sdk
+    permissions:
+      id-token: write # IMPORTANT: this permission is mandatory for trusted publishing
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+        env:
+          # Ensure devDependencies are installed for codegen, lint and tests
+          NPM_CONFIG_PRODUCTION: false
+
+      - name: Publish to NPM
+        run: npm publish --provenance --access public
+
+  notify-slack-on-failure:
+    name: Notify Slack on failure
+    if: failure()
+    needs: [npmjs_publish]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post text to a Slack channel
+        uses: slackapi/slack-github-action@v2.1.1
+        with:
+          method: chat.postMessage
+          token: ${{ secrets.SLACK_OAUTH_TOKEN }}
+          payload: |
+            channel: ${{ secrets.SLACK_CHANNEL }}
+            text: |
+              🚨 Workflow *${{ github.workflow }}* failed on <${{ github.server_url }}/${{ github.repository }}|${{ github.repository }}>
+              <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View run>
