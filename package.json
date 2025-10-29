@@ -36,7 +36,10 @@
     "protobuf"
   ],
   "author": "Nebius",
-  "license": "Apache-2.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "bootstrap:generator": "node scripts/bootstrap-generator.js",
     "build:cjs": "tsc -p tsconfig.cjs.json",

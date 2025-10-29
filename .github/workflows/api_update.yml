@@ -13,8 +13,6 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    outputs:
-      changes_detected: ${{ steps.check_changes.outputs.changes_detected }}
 
     steps:
       - name: Checkout repository with submodules
@@ -98,32 +96,32 @@ jobs:
           git status
           git branch -r --contains HEAD
 
-    # - name: Tag commit
-    #   if: steps.check_changes.outputs.changes_detected == 'true'
-    #   run: |
-    #     make tag-ver
+      - name: Tag commit
+        run: |
+          git status --porcelain || exit 1
+          TAG="v$(node -p "require('./package.json').version")"
+          git tag $TAG
 
-    # - name: Push changes
-    #   if: steps.check_changes.outputs.changes_detected == 'true'
-    #   uses: ad-m/github-push-action@master
-    #   with:
-    #     tags: true
-    #     ssh: true
-    #     force_with_lease: true
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          tags: true
+          ssh: true
+          force_with_lease: true
 
-#   notify-slack-on-failure:
-#     name: Notify Slack on failure
-#     if: failure()
-#     needs: [update]
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Post text to a Slack channel
-#         uses: slackapi/slack-github-action@v2.1.1
-#         with:
-#           method: chat.postMessage
-#           token: ${{ secrets.SLACK_OAUTH_TOKEN }}
-#           payload: |
-#             channel: ${{ secrets.SLACK_CHANNEL }}
-#             text: |
-#               🚨 Workflow *${{ github.workflow }}* failed on <${{ github.server_url }}/${{ github.repository }}|${{ github.repository }}>
-#               <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View run>
+  notify-slack-on-failure:
+    name: Notify Slack on failure
+    if: failure()
+    needs: [update]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post text to a Slack channel
+        uses: slackapi/slack-github-action@v2.1.1
+        with:
+          method: chat.postMessage
+          token: ${{ secrets.SLACK_OAUTH_TOKEN }}
+          payload: |
+            channel: ${{ secrets.SLACK_CHANNEL }}
+            text: |
+              🚨 Workflow *${{ github.workflow }}* failed on <${{ github.server_url }}/${{ github.repository }}|${{ github.repository }}>
+              <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View run>
