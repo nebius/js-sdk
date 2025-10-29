@@ -23,25 +23,13 @@ jobs:
           ssh-key: ${{ secrets.AUTOCOMMITTER_PRIVATE_KEY }}
           submodules: recursive
 
-      - name: Check for Changes
-        id: check_changes
-        run: |
-          git add .
-          if git diff --cached --quiet; then
-            echo "changes_detected=false" >> $GITHUB_OUTPUT
-          else
-            echo "changes_detected=true" >> $GITHUB_OUTPUT
-          fi
-
       - name: Set up Node.js
-        if: steps.check_changes.outputs.changes_detected == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
           cache: 'npm'
 
       - name: Install dependencies
-        if: steps.check_changes.outputs.changes_detected == 'true'
         run: |
           npm ci
         env:
@@ -49,21 +37,22 @@ jobs:
           NPM_CONFIG_PRODUCTION: false
 
       - name: Bump version
-        if: steps.check_changes.outputs.changes_detected == 'true'
         run: |
           npm version patch --no-git-tag-version
           git add package.json package-lock.json
 
+      - name: Update API submodule
+        run: |
+          git submodule update --remote nebius-api
+          git add nebius-api
+
       - name: Build
-        if: steps.check_changes.outputs.changes_detected == 'true'
         run: npm run build
 
       - name: Lint
-        if: steps.check_changes.outputs.changes_detected == 'true'
         run: npm run lint
 
       - name: Run auth test
-        if: steps.check_changes.outputs.changes_detected == 'true'
         env:
           NEBIUS_LOG: TRACE
           NEBIUS_LOG_OUTPUT: stderr
@@ -73,7 +62,6 @@ jobs:
         run: npm run test:noserver -- --runInBand --testPathPatterns='auth_integration.test.ts' -t "federation flow"
 
       - name: Run basic tests
-        if: steps.check_changes.outputs.changes_detected == 'true'
         env:
           NEBIUS_LOG: DEBUG
           NEBIUS_LOG_OUTPUT: stderr
@@ -81,7 +69,6 @@ jobs:
         run: npm run test:noserver -- --runInBand
 
       - name: Run build tests
-        if: steps.check_changes.outputs.changes_detected == 'true'
         env:
           NEBIUS_LOG: DEBUG
           NEBIUS_LOG_OUTPUT: stderr
@@ -89,7 +76,6 @@ jobs:
         run: npm run test:builds -- --runInBand
 
       - name: Run E2E tests
-        if: steps.check_changes.outputs.changes_detected == 'true'
         env:
           NEBIUS_E2E_CONFIG_B64: ${{ secrets.NEBIUS_E2E_CONFIG_B64 }}
           NEBIUS_LOG: DEBUG
@@ -100,14 +86,12 @@ jobs:
         run: npm run test:e2e
 
       - name: Commit changes
-        if: steps.check_changes.outputs.changes_detected == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git commit -m "Auto-update API to: $(git -C nebius-api log -1 --format='%h, %ci')"
 
       - name: Push and pull changes
-        if: steps.check_changes.outputs.changes_detected == 'true'
         run: |
           git push origin main
           git pull
