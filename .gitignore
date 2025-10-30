@@ -13,6 +13,7 @@ src/generated_test/
 src/version.ts
 .vscode/
 *generated_test.lock*
+.typedoc/
 
 # Local examples/tests not checked in
 local/

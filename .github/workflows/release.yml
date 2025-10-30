@@ -17,6 +17,46 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  pages:
+    name: Deploy docs to Github Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.pages_deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+        env:
+          # Ensure devDependencies are installed for codegen, lint and tests
+          NPM_CONFIG_PRODUCTION: false
+
+      - name: Run generation script
+        run: |
+          npm run generate
+          npm run docs
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: 'docs'
+
+      - name: Deploy to GitHub Pages
+        id: pages_deploy
+        uses: actions/deploy-pages@v4
+
   npmjs_publish:
     name: Upload release to NPM
     runs-on: ubuntu-latest
@@ -50,7 +90,7 @@ jobs:
   notify-slack-on-failure:
     name: Notify Slack on failure
     if: failure()
-    needs: [npmjs_publish]
+    needs: [npmjs_publish, pages]
     runs-on: ubuntu-latest
     steps:
       - name: Post text to a Slack channel
