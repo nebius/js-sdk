@@ -33,13 +33,13 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
   if (m.tsName.endsWith('Options') && m.containingFile.package === 'google.protobuf') {
     const fullType = m.fullQualifiedName().replace(/^\./, '');
     lines.push(`    const _exts = protoRegistry.listExtensions("${fullType}");`);
-    lines.push('    const _extMap: Record<number, any> = {};');
+    lines.push('    const _extMap: globalThis.Record<number, any> = {};');
     lines.push('    for (const _e of _exts) _extMap[_e.fieldNo] = _e;');
     const declaredNos = new Set<number>();
     for (const f of nonOneofFields) declaredNos.add(f.descriptor.number!);
     for (const o of m.oneofs) for (const f of o.fields) declaredNos.add(f.descriptor.number!);
     lines.push(
-      `    const _declared: Record<number, true> = { ${[...declaredNos].map((n) => `${n}: true`).join(', ')} };`,
+      `    const _declared: globalThis.Record<number, true> = { ${[...declaredNos].map((n) => `${n}: true`).join(', ')} };`,
     );
   }
   lines.push('    while (reader.pos < end) {');
