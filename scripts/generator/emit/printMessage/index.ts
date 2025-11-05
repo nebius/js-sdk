@@ -220,7 +220,7 @@ export function printMessage(m: TSDescriptorMessage): string {
   lines.push('}');
   lines.push('');
   lines.push(`function ${customJsonFnName}(this: ${m.tsName}): unknown {`);
-  lines.push(`  const obj: Record<string, unknown> = {`);
+  lines.push(`  const obj: globalThis.Record<string, unknown> = {`);
   lines.push(`    type: this.$type,`);
   lines.push('  };');
   for (const l of objAssignLines) lines.push(l);
