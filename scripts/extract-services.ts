@@ -135,7 +135,6 @@ function generateMarkdown(services: ServiceInfo[]): string {
         .replace(/\//g, '_');
 
       markdown += `**Package:** \`nebius.${service.namespace}.${service.version}\`\n\n`;
-      markdown += `**Source:** [\`${service.relativePath}\`](https://github.com/nebius/js-sdk/blob/main/${service.relativePath})\n\n`;
       markdown += `**API Documentation:** [${service.className} API Reference](../classes/${docLink}.${service.className}.html)\n\n`;
       markdown += `---\n\n`;
     }

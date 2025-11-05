@@ -13,11 +13,11 @@
   "categorizeByGroup": true,
   "hideGenerator": true,
   "navigationLinks": {
-    "Services Index": "documents/SERVICES.html",
+    "Services Index": "../documents/SERVICES.html",
     "GitHub": "https://github.com/nebius/js-sdk"
   },
   "sidebarLinks": {
-    "Services Index": "documents/SERVICES.html"
+    "Services Index": "../documents/SERVICES.html"
   },
   "includeVersion": true,
   "projectDocuments": [".typedoc/*.md"]
