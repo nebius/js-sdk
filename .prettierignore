@@ -7,3 +7,4 @@ scripts/generator/nebius/
 scripts/generator/extensions/
 nebius-api/
 *.yaml
+*.yml
