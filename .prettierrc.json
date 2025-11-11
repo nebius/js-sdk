@@ -4,5 +4,19 @@
   "trailingComma": "all",
   "semi": true,
   "arrowParens": "always",
-  "bracketSpacing": true
+  "bracketSpacing": true,
+  "overrides": [
+    {
+      "files": "*.yaml",
+      "options": {
+        "parser": "yaml"
+      }
+    },
+    {
+      "files": "*.yml",
+      "options": {
+        "parser": "yaml"
+      }
+    }
+  ]
 }
