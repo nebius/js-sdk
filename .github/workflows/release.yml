@@ -86,6 +86,10 @@ jobs:
         env:
           # Ensure devDependencies are installed for codegen, lint and tests
           NPM_CONFIG_PRODUCTION: false
+      
+      - name: Build dist packages
+        run: |
+          npm run build
 
       - uses: JS-DevTools/npm-publish@v4
 

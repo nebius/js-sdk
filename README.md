@@ -12,7 +12,7 @@ This repository contains the Nebius SDK for interacting with Nebius AI services 
 Install from npm (if published):
 
 ```bash
-npm install nebius
+npm install @nebius/js-sdk
 ```
 
 Or, when developing locally from this repository:
@@ -58,15 +58,15 @@ The [`SDK`](https://nebius.github.io/js-sdk/classes/sdk.SDK.html) is the base.
 Here is the simplest way to initialize it:
 
 ```ts
-import { SDK } from './src/sdk';
+import { SDK } from '@nebius/js-sdk';
 const sdk = new SDK({});
 ```
 
 #### Initialize using an IAM token from the environment (Static/Env bearer):
 
 ```ts
-import { SDK } from './src/sdk';
-import { StaticBearer, EnvBearer } from './src/runtime/token/static';
+import { SDK } from '@nebius/js-sdk';
+import { StaticBearer, EnvBearer } from '@nebius/js-sdk/runtime/token/static';
 
 const sdk = new SDK({ credentials: process.env.NEBIUS_IAM_TOKEN });
 
@@ -79,8 +79,8 @@ const sdk = new SDK({ credentials: new EnvBearer('NEBIUS_IAM_TOKEN') });
 #### Using Config Reader:
 
 ```ts
-import { Config } from './src/runtime/cli_config';
-import { SDK } from './src/sdk';
+import { Config } from '@nebius/js-sdk/runtime/cli_config';
+import { SDK } from '@nebius/js-sdk/sdk';
 
 const cfg = new Config({ clientId: 'my-client' });
 const sdk = new SDK({ configReader: cfg });
@@ -89,7 +89,7 @@ const sdk = new SDK({ configReader: cfg });
 - Using a service account (private key / credentials file):
 
 ```ts
-import { SDK } from './src/sdk';
+import { SDK } from '@nebius/js-sdk';
 
 // pass a service account object (id + key) directly
 const sdk = new SDK({
@@ -110,7 +110,7 @@ Refer to TypeDoc for all the constructor options: [SDK class](https://nebius.git
 Use the `whoami()` helper to validate credentials quickly and `sdk.close()` to gracefully shutdown.
 
 ```ts
-const { SDK } = require('./src/sdk');
+const { SDK } = require('@nebius/js-sdk');
 
 const sdk = new SDK({
   /* ... */
@@ -127,11 +127,11 @@ await sdk.close();
 Generated service clients take the `sdk` instance as the first parameter. Many RPCs return an [`Operation`](https://nebius.github.io/js-sdk/classes/runtime_operation.Operation.html) object — use `.result` to access a helper that exposes `.wait()` and `.resourceId()`.
 
 ```ts
-import { SDK } from './src/sdk';
+import { SDK } from '@nebius/js-sdk';
 import {
   BucketService as BucketServiceClient,
   CreateBucketRequest,
-} from './src/api/nebius/storage/v1';
+} from '@nebius/js-sdk/api/nebius/storage/v1';
 
 const sdk = new SDK({
   /* ... */
@@ -224,7 +224,7 @@ When performing partial updates, the generated types and helpers follow the usua
 If you need to send a partial update that should explicitly reset certain fields to defaults, set the `x-resetmask` metadata header. The runtime provides helpers to compute and ensure the header is present.
 
 ```ts
-import { ensureResetMaskInMetadata } from './src/runtime/resetmask';
+import { ensureResetMaskInMetadata } from '@nebius/js-sdk/runtime/resetmask';
 
 const updateReq = UpdateBucketRequest.create({
   metadata: bucket.metadata,
