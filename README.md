@@ -131,7 +131,7 @@ import { SDK } from '@nebius/js-sdk';
 import {
   BucketService as BucketServiceClient,
   CreateBucketRequest,
-} from '@nebius/js-sdk/api/nebius/storage/v1';
+} from '@nebius/js-sdk/api/nebius/storage/v1/index';
 
 const sdk = new SDK({
   /* ... */
