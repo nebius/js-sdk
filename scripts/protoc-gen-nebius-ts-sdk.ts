@@ -27,7 +27,7 @@ function readAllStdin(): Promise<Uint8Array> {
   return new Promise((resolve) => {
     const chunks: Buffer[] = [];
     process.stdin.on('data', (c: Buffer | Uint8Array | string) => {
-      const buf = typeof c === 'string' ? Buffer.from(c) : Buffer.isBuffer(c) ? c : Buffer.from(c);
+      const buf = Buffer.isBuffer(c) ? c : Buffer.from(c);
       chunks.push(buf);
     });
     process.stdin.on('end', () => resolve(Buffer.concat(chunks)));
