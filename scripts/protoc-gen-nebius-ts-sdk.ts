@@ -25,9 +25,12 @@ import {
 
 function readAllStdin(): Promise<Uint8Array> {
   return new Promise((resolve) => {
-    const chunks: Uint8Array[] = [];
-    process.stdin.on('data', (c) => chunks.push(Buffer.isBuffer(c) ? new Uint8Array(c) : c));
-    process.stdin.on('end', () => resolve(Buffer.concat(chunks as unknown as Buffer[])));
+    const chunks: Buffer[] = [];
+    process.stdin.on('data', (c: Buffer | Uint8Array | string) => {
+      const buf = Buffer.isBuffer(c) ? c : Buffer.from(c);
+      chunks.push(buf);
+    });
+    process.stdin.on('end', () => resolve(Buffer.concat(chunks)));
   });
 }
 
