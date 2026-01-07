@@ -26,6 +26,12 @@ export const DefaultRetriableCodes: StatusCode[] = [
   StatusCode.UNAVAILABLE,
 ];
 
+export interface RequestSpec<TReq> {
+  path: string;
+  requestSerialize: (value: TReq) => Buffer;
+  sendResetMask?: boolean;
+}
+
 export type CallCreator<TReq, TRes> = (
   request: TReq,
   metadata: Metadata | undefined,
@@ -119,19 +125,32 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
   // Cancellation and cleanup helpers
   private _canceled = false;
   private _calls = new Set<ClientUnaryCall>();
+  private readonly serviceName: string;
+  private readonly methodName: string;
+  private readonly path: string;
+  private readonly serializer: (value: TReq) => Buffer;
+  private readonly sendResetMask: boolean;
 
   constructor(
     private sdk: SDKInterface,
-    private serviceName: string,
-    private methodName: string,
+    spec: RequestSpec<TReq>,
     private addr: string,
-    private serializer: (value: TReq) => Buffer,
     private deserializer: (value: Buffer) => TRes,
     private request: TReq,
     private requestMetadata: Metadata | undefined,
     private requestOptions?: (Partial<CallOptions> & RetryOptions) | undefined,
   ) {
-    const path = `/${this.serviceName}/${this.methodName}`;
+    this.path = normalizeRequestPath(spec.path);
+    const names = extractNamesFromPath(this.path);
+    this.serviceName = names.serviceName;
+    this.methodName = names.methodName;
+    this.serializer = spec.requestSerialize;
+
+    const path = this.path;
+    const methodName = this.methodName;
+    this.sendResetMask =
+      spec.sendResetMask === true ||
+      ((methodName || '').toLowerCase() === 'update' && spec.sendResetMask !== false);
     const client = this.sdk.getClientByAddress(this.addr);
     const metadata = this.requestMetadata ?? new Metadata();
     this.logger = this.sdk.logger.child('request', {
@@ -219,9 +238,8 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     injectParentIdIfNeeded(methodName, sdk?.parentId(), this.request, this.logger);
 
     // Ensure reset mask header for update methods if absent
-    const isUpdate = (methodName || '').toLowerCase() === 'update';
-    if (isUpdate) {
-      this.logger.trace('Detected update method, inserting reset mask if needed');
+    if (this.sendResetMask) {
+      this.logger.trace('sendResetMask enabled, inserting reset mask if needed');
       const existing = metadata.get(RESET_MASK_HEADER);
       if (!existing || existing.length === 0) {
         const rm = resetMaskFromMessage(this.request);
@@ -692,4 +710,14 @@ function injectParentIdIfNeeded(
   } else {
     logger.trace('Update method, skipping parentId injection');
   }
+}
+
+function normalizeRequestPath(path: string): string {
+  if (!path) return '';
+  return path.startsWith('/') ? path : `/${path}`;
+}
+
+function extractNamesFromPath(path: string): { serviceName: string; methodName: string } {
+  const segments = (path.startsWith('/') ? path.slice(1) : path).split('/').filter(Boolean);
+  return { serviceName: segments[0] ?? '', methodName: segments[1] ?? '' };
 }

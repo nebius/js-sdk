@@ -67,17 +67,22 @@ export function printService(
   lines.push(`export const ${svcName}ServiceDescription = {`);
   for (const m of svc.methods) {
     const methodName = m.tsName;
+    const pbMethodName = m.pb_name;
+    const sendResetMaskOpt = m.descriptor?.options?.sendResetMask;
+    const sendResetMask =
+      sendResetMaskOpt === true || (pbMethodName === 'Update' && sendResetMaskOpt !== false);
     const inInfo = typeIndex.get(normalizeFqn(m.descriptor.inputType || '', pkg));
     const outInfo = typeIndex.get(normalizeFqn(m.descriptor.outputType || '', pkg));
     const Req = inInfo?.tsName || 'any';
     const Res = outInfo?.tsName || 'any';
     lines.push(`  ${methodName}: {`);
-    lines.push(`    path: "/${pkg ? `${pkg}.` : ''}${pbSvcName}/${m.pb_name}",`);
+    lines.push(`    path: "/${pkg ? `${pkg}.` : ''}${pbSvcName}/${pbMethodName}",`);
     lines.push(`    requestStream: false,`);
     lines.push(`    responseStream: false,`);
     lines.push(
       `    requestSerialize: (value: ${Req}) => Buffer.from(${Req}.encode(value).finish()),`,
     );
+    lines.push(`    sendResetMask: ${sendResetMask ? 'true' : 'false'},`);
     lines.push(`    requestDeserialize: (value: Buffer) => ${Req}.decode(value),`);
     lines.push(
       `    responseSerialize: (value: ${Res}) => Buffer.from(${Res}.encode(value).finish()),`,
@@ -319,7 +324,7 @@ export function printService(
       lines.push('    }');
     }
     lines.push(
-      `    return new SDKRequestClass(this.sdk, this.$type, ${JSON.stringify(m.pb_name)}, this.addr, spec.requestSerialize, deserialize, request, metadata, options);`,
+      `    return new SDKRequestClass(this.sdk, spec, this.addr, deserialize, request, metadata, options);`,
     );
     lines.push(`  }`);
     lines.push('');
