@@ -186,7 +186,9 @@ export class File extends DescriptorBase<FileDescriptorProto> {
     for (const m of this.messages) walk(m);
     // dedupe by tsName
     const seen = new Set<string>();
-    return ans.filter((e) => (seen.has(e.tsName) ? false : (seen.add(e.tsName), true)));
+    return ans.filter((e) =>
+      seen.has(e.tsNameOriginal ?? e.tsName) ? false : (seen.add(e.tsNameOriginal ?? e.tsName), true),
+    );
   }
 
   collectAllMessages(): Message[] {
@@ -198,7 +200,9 @@ export class File extends DescriptorBase<FileDescriptorProto> {
     for (const m of this.messages) walk(m);
     // dedupe by tsName
     const seen = new Set<string>();
-    return ans.filter((m) => (seen.has(m.tsName) ? false : (seen.add(m.tsName), true)));
+    return ans.filter((m) =>
+      seen.has(m.tsNameOriginal ?? m.tsName) ? false : (seen.add(m.tsNameOriginal ?? m.tsName), true),
+    );
   }
 
   getLeadingComment(path: number[]): string | undefined {
@@ -229,6 +233,7 @@ export class OneOf extends DescriptorBase<OneofDescriptorProto> {
   readonly containingMessage: Message;
   readonly containingFile: File;
   fields: Field[] = [];
+  readonly tsNameOriginal: string;
   readonly tsName: string;
   readonly path: number[]; // location path for comments
   fullQualifiedName(): string {
@@ -248,7 +253,9 @@ export class OneOf extends DescriptorBase<OneofDescriptorProto> {
     this.containingMessage = containingMessage;
     this.containingFile = containingFile;
     // TypeScript-friendly name (camelCase)
-    this.tsName = toCamel(this.pb_name);
+    const tsName = toCamel(this.pb_name);
+    this.tsNameOriginal = tsName;
+    this.tsName = tsName;
     this.path = path;
   }
 }
@@ -257,6 +264,7 @@ export class Field extends DescriptorBase<FieldDescriptorProto> {
   // Undefined for file-level extension field declarations.
   readonly containingMessage?: Message;
   readonly containingFile: File;
+  readonly tsNameOriginal: string;
   readonly tsName: string;
   readonly jsonName: string;
   readonly path: number[]; // location path for comments
@@ -280,7 +288,9 @@ export class Field extends DescriptorBase<FieldDescriptorProto> {
     this.containingMessage = containingMessage;
     this.containingFile = containingFile;
     // Compute TS and JSON-friendly names
-    this.tsName = toCamel(this.pb_name);
+    const tsName = toCamel(this.pb_name);
+    this.tsNameOriginal = tsName;
+    this.tsName = tsName;
     // Prefer descriptor-provided jsonName when available
     // Fallback to lowerCamel of pb_name
     this.jsonName = this.descriptor.jsonName ?? toCamel(this.pb_name);
@@ -425,6 +435,7 @@ export class Field extends DescriptorBase<FieldDescriptorProto> {
 
 export class Enum extends DescriptorBase<EnumDescriptorProto> {
   readonly values: EnumValue[];
+  readonly tsNameOriginal: string;
   readonly tsName: string;
   readonly containingFile: File;
   readonly containingMessage?: Message;
@@ -447,7 +458,9 @@ export class Enum extends DescriptorBase<EnumDescriptorProto> {
     );
     const base = this.typescript_name;
     const prefix = namePrefix.filter(Boolean);
-    this.tsName = [...prefix, base].join('_');
+    const tsName = [...prefix, base].join('_');
+    this.tsNameOriginal = tsName;
+    this.tsName = tsName;
     this.containingFile = containingFile;
     this.containingMessage = containingMessage;
     this.path = path;
@@ -480,6 +493,7 @@ export class Message extends DescriptorBase<DescriptorProto> {
   readonly syntheticOptionalOneofIndices: Set<number> = new Set();
   readonly containingMessage?: Message;
   readonly containingFile: File;
+  readonly tsNameOriginal: string;
   readonly tsName: string;
 
   readonly path: number[]; // location path for comments
@@ -538,7 +552,9 @@ export class Message extends DescriptorBase<DescriptorProto> {
 
     const base = this.typescript_name;
     const prefix = namePrefix.filter(Boolean);
-    this.tsName = [...prefix, base].join('_');
+    const tsName = [...prefix, base].join('_');
+    this.tsNameOriginal = tsName;
+    this.tsName = tsName;
 
     // (debug logging removed)
     for (const f of this.fields) {
@@ -614,6 +630,7 @@ export class Service extends DescriptorBase<ServiceDescriptorProto> {
   readonly containingFile: File;
   readonly index: number;
   readonly path: number[]; // location path for comments
+  readonly tsNameOriginal: string;
   // Service name in TS mirrors proto (usually PascalCase)
   get tsName(): string {
     return this.typescript_name;
@@ -623,6 +640,7 @@ export class Service extends DescriptorBase<ServiceDescriptorProto> {
     this.containingFile = containingFile;
     this.index = index;
     this.path = [6, index];
+    this.tsNameOriginal = this.typescript_name;
     this.methods = (descriptor.method ?? []).map(
       (m: MethodDescriptorProto, mi: number) => new Method(m, this, mi, [6, index, 2, mi]),
     );

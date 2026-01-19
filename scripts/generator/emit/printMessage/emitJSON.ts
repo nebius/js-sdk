@@ -9,6 +9,7 @@ import {
   msgToJSONConv,
   wktFqnOf,
 } from '../helpers';
+import { resolveMessageName } from '../typeNames';
 
 export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[] {
   const lines: string[] = [];
@@ -37,7 +38,8 @@ export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[]
         if (wktFqnOf(vf)) {
           vFrom = `wkt["${wktFqnOf(vf)}"].fromJSON`;
         } else {
-          vFrom = `${vf.message()!.tsName}.fromJSON`;
+          const msgRef = resolveMessageName(vf.message());
+          vFrom = `${msgRef}.fromJSON`;
         }
       } else if (vf.isEnum()) {
         vFrom = enumFromJSONConv(vf);
@@ -202,7 +204,7 @@ export function emitToJSON(m: TSDescriptorMessage): string[] {
         return vf.isMessage()
           ? wktFqnOf(vf)
             ? `wkt["${wktFqnOf(vf)!}"].toJSON(v, use)`
-            : `${vf.message()!.tsName}.toJSON(v, use)`
+            : `${resolveMessageName(vf.message())}.toJSON(v, use)`
           : vf.typeCode() === 12
             ? `base64FromBytes(v)`
             : vf.isEnum()
