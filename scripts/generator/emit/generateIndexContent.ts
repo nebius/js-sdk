@@ -11,6 +11,7 @@ import { printEnum } from './printEnum';
 import { printExtensions } from './printExtensions';
 import { printMessage } from './printMessage/index';
 import { printService, type TypeIndex } from './printService';
+import { withTypeNameContext } from './typeNames';
 
 export function generateIndexContent(
   dir: string,
@@ -97,11 +98,69 @@ export function generateIndexContent(
   let needsOpServiceV1 = false;
   let needsOpServiceV1A = false;
 
+  const localNames = new Set<string>();
+  for (const { enums, messages, services } of entries) {
+    for (const e of enums) localNames.add(e.tsNameOriginal ?? e.tsName);
+    for (const m of messages ?? []) localNames.add(m.tsNameOriginal ?? m.tsName);
+    for (const s of services ?? []) localNames.add(s.tsNameOriginal ?? s.tsName);
+  }
+  const usedNames = new Set<string>(localNames);
+  const typeNameOverrides = new Map<string, string>();
+  const symbolNameOverrides = new Map<string, string>();
+  type ImportSpec = { original: string; name: string };
   // Build external imports for referenced symbols in other directories
-  const importMap = new Map<string, Set<string>>(); // targetDir -> symbols
-  const addImport = (targetDir: string, name: string) => {
-    if (!importMap.has(targetDir)) importMap.set(targetDir, new Set());
-    importMap.get(targetDir)!.add(name);
+  const importMap = new Map<string, Map<string, ImportSpec>>(); // targetDir -> original -> spec
+  const importSpecs = new Map<string, ImportSpec>();
+  const localDir = dir || '.';
+  const toPascal = (value: string): string => {
+    const parts = value.split(/[^a-zA-Z0-9]+/).filter(Boolean);
+    if (!parts.length) return '';
+    const out = parts
+      .map((part) => (part ? part[0].toUpperCase() + part.slice(1) : ''))
+      .join('');
+    if (!out) return '';
+    return /^\d/.test(out) ? `V${out}` : out;
+  };
+  const importPrefix = (targetDir: string): string => {
+    const targetParts = targetDir === '.' ? [] : targetDir.split('/').filter(Boolean);
+    const localParts = localDir === '.' ? [] : localDir.split('/').filter(Boolean);
+    let idx = 0;
+    while (idx < targetParts.length && idx < localParts.length) {
+      if (targetParts[idx] !== localParts[idx]) break;
+      idx += 1;
+    }
+    let parts = targetParts.slice(idx);
+    if (!parts.length) parts = targetParts.slice(-2);
+    const prefix = parts.map(toPascal).join('');
+    return prefix || 'Imported';
+  };
+  const uniqueName = (base: string): string => {
+    let name = base;
+    let i = 2;
+    while (usedNames.has(name)) {
+      name = `${base}${i}`;
+      i += 1;
+    }
+    return name;
+  };
+  const addImport = (targetDir: string, originalName: string, fqn?: string): string => {
+    const key = `${targetDir}::${originalName}`;
+    let spec = importSpecs.get(key);
+    if (!spec) {
+      let name = originalName;
+      if (usedNames.has(name)) {
+        const base = `${importPrefix(targetDir)}${originalName}`;
+        name = uniqueName(base);
+      }
+      spec = { original: originalName, name };
+      importSpecs.set(key, spec);
+      if (!importMap.has(targetDir)) importMap.set(targetDir, new Map());
+      importMap.get(targetDir)!.set(originalName, spec);
+      usedNames.add(name);
+      symbolNameOverrides.set(key, name);
+    }
+    if (fqn) typeNameOverrides.set(fqn, spec.name);
+    return spec.name;
   };
 
   for (const { messages } of entries) {
@@ -120,7 +179,13 @@ export function generateIndexContent(
               const fileName = ref?.containingFile.descriptor.name;
               if (fileName) {
                 const targetDir = path.posix.dirname(fileName);
-                if (targetDir !== (dir || '.')) addImport(targetDir, ref!.tsName);
+                if (targetDir !== (dir || '.')) {
+                  addImport(
+                    targetDir,
+                    ref!.tsNameOriginal ?? ref!.tsName,
+                    ref!.fullQualifiedName(),
+                  );
+                }
               }
             }
           } else if (vf.isEnum()) {
@@ -129,7 +194,11 @@ export function generateIndexContent(
             if (fileName) {
               const targetDir = path.posix.dirname(fileName);
               if (targetDir !== (dir || '.')) {
-                addImport(targetDir, ref!.tsName);
+                addImport(
+                  targetDir,
+                  ref!.tsNameOriginal ?? ref!.tsName,
+                  ref!.fullQualifiedName(),
+                );
               }
             }
           }
@@ -143,14 +212,24 @@ export function generateIndexContent(
           const fileName = ref?.containingFile.descriptor.name;
           if (!fileName) continue;
           const targetDir = path.posix.dirname(fileName);
-          if (targetDir !== (dir || '.')) addImport(targetDir, ref!.tsName);
+          if (targetDir !== (dir || '.')) {
+            addImport(
+              targetDir,
+              ref!.tsNameOriginal ?? ref!.tsName,
+              ref!.fullQualifiedName(),
+            );
+          }
         } else if (f.isEnum()) {
           const ref = f.enum();
           const fileName = ref?.containingFile.descriptor.name;
           if (!fileName) continue;
           const targetDir = path.posix.dirname(fileName);
           if (targetDir !== (dir || '.')) {
-            addImport(targetDir, ref!.tsName);
+            addImport(
+              targetDir,
+              ref!.tsNameOriginal ?? ref!.tsName,
+              ref!.fullQualifiedName(),
+            );
           }
         }
       }
@@ -169,8 +248,12 @@ export function generateIndexContent(
         const outKey = outType.startsWith('.') ? outType : `.${pkg}${outType ? '.' + outType : ''}`;
         const inInfo = typeIndex.get(inKey);
         const outInfo = typeIndex.get(outKey);
-        if (inInfo && inInfo.dir !== (dir || '.')) addImport(inInfo.dir, inInfo.tsName);
-        if (outInfo && outInfo.dir !== (dir || '.')) addImport(outInfo.dir, outInfo.tsName);
+        if (inInfo && inInfo.dir !== (dir || '.')) {
+          addImport(inInfo.dir, inInfo.tsNameOriginal ?? inInfo.tsName, inKey);
+        }
+        if (outInfo && outInfo.dir !== (dir || '.')) {
+          addImport(outInfo.dir, outInfo.tsNameOriginal ?? outInfo.tsName, outKey);
+        }
         if (outKey === OP_V1) {
           needsOperationWrapper = true;
           needsOpServiceV1 = true;
@@ -200,21 +283,39 @@ export function generateIndexContent(
   // If we need Operation service base client, import it from common directories
   if (needsOpServiceV1) {
     // Import from nebius/common/v1 index
-    addImport('nebius/common/v1', 'OperationServiceServiceDescription');
-    addImport('nebius/common/v1', 'OperationService');
-    addImport('nebius/common/v1', 'GetOperationRequest');
+    if (localDir !== 'nebius/common/v1') {
+      addImport('nebius/common/v1', 'OperationServiceServiceDescription');
+      addImport('nebius/common/v1', 'OperationService');
+      addImport(
+        'nebius/common/v1',
+        'GetOperationRequest',
+        '.nebius.common.v1.GetOperationRequest',
+      );
+    }
   }
   if (needsOpServiceV1A) {
-    addImport('nebius/common/v1alpha1', 'OperationServiceServiceDescription');
-    addImport('nebius/common/v1alpha1', 'OperationService');
-    addImport('nebius/common/v1alpha1', 'GetOperationRequest');
+    if (localDir !== 'nebius/common/v1alpha1') {
+      addImport('nebius/common/v1alpha1', 'OperationServiceServiceDescription');
+      addImport('nebius/common/v1alpha1', 'OperationService');
+      addImport(
+        'nebius/common/v1alpha1',
+        'GetOperationRequest',
+        '.nebius.common.v1alpha1.GetOperationRequest',
+      );
+    }
   }
 
   // Emit imports (sorted) after runtime/grpc imports
   if (importMap.size) {
     const sortedDirs = [...importMap.keys()].sort();
     for (const tDir of sortedDirs) {
-      const names = [...(importMap.get(tDir) ?? new Set())].sort();
+      const specs = [...(importMap.get(tDir)?.values() ?? [])].sort((a, b) => {
+        const byName = a.name.localeCompare(b.name);
+        return byName !== 0 ? byName : a.original.localeCompare(b.original);
+      });
+      const names = specs.map((spec) =>
+        spec.name === spec.original ? spec.original : `${spec.original} as ${spec.name}`,
+      );
       let rel = path.posix.relative(dir || '.', tDir || '.');
       if (!rel || rel === '.') continue; // same dir, no import
       if (!rel.startsWith('.')) rel = `./${rel}`;
@@ -229,24 +330,26 @@ export function generateIndexContent(
   lines.push('const __deprecatedWarned = new Set<string>();');
   lines.push('');
 
-  for (const { pbFile, pkg, enums, messages, services, extensions } of entries) {
-    lines.push(`// file: ${pbFile}`);
-    for (const e of enums) lines.push(printEnum(e));
-    if (messages && messages.length) {
-      for (const m of messages) {
-        lines.push(printMessage(m));
+  return withTypeNameContext(typeNameOverrides, symbolNameOverrides, () => {
+    for (const { pbFile, pkg, enums, messages, services, extensions } of entries) {
+      lines.push(`// file: ${pbFile}`);
+      for (const e of enums) lines.push(printEnum(e));
+      if (messages && messages.length) {
+        for (const m of messages) {
+          lines.push(printMessage(m));
+        }
       }
-    }
-    if (services && services.length) {
-      // pbFile is just the basename; reconstruct relative proto path for source fallback
-      const protoRelPath = dir && dir !== '.' ? `${dir}/${pbFile}` : pbFile;
-      for (const s of services) {
-        lines.push(printService(s, pkg, typeIndex, protoRelPath));
+      if (services && services.length) {
+        // pbFile is just the basename; reconstruct relative proto path for source fallback
+        const protoRelPath = dir && dir !== '.' ? `${dir}/${pbFile}` : pbFile;
+        for (const s of services) {
+          lines.push(printService(s, pkg, typeIndex, protoRelPath));
+        }
       }
+      // Emit extensions via dedicated printer
+      lines.push(...printExtensions(extensions, pkg, dir || '.', augmentationImported));
+      lines.push('');
     }
-    // Emit extensions via dedicated printer
-    lines.push(...printExtensions(extensions, pkg, dir || '.', augmentationImported));
-    lines.push('');
-  }
-  return lines.join('\n');
+    return lines.join('\n');
+  });
 }

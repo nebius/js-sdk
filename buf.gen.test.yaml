@@ -7,7 +7,7 @@ plugins:
       - outFromSrc=generated_test/2
       - registryFile=someotherfolder/protoregistry.ts
     include_imports: true
-  - remote: buf.build/community/stephenh-ts-proto
+  - remote: buf.build/community/stephenh-ts-proto:v2.6.1 # our version is created in parity with this version
     out: src/generated_test/1
     opt:
       - esModuleInterop=true

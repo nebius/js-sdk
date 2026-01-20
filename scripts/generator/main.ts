@@ -16,7 +16,7 @@ import {
 // raw_service_options pre-scan no longer needed; extensions are decoded directly via augmentation.
 
 // Local mirror of the type index consumed by printService
-type TypeIndex = Map<string, { fileName: string; tsName: string; dir: string }>;
+type TypeIndex = Map<string, { fileName: string; tsName: string; tsNameOriginal: string; dir: string }>;
 
 function parseParams(p?: string): Map<string, string> {
   const map = new Map<string, string>();
@@ -166,7 +166,12 @@ export async function main(): Promise<void> {
       const dir = path.posix.dirname(f.descriptor.name || '.');
       for (const m of f.collectAllMessages()) {
         const key = `${pkgPrefix}${m.pathQualifiedName()}`;
-        typeIndex.set(key, { fileName: f.descriptor.name || '', tsName: m.tsName, dir });
+        typeIndex.set(key, {
+          fileName: f.descriptor.name || '',
+          tsName: m.tsName,
+          tsNameOriginal: m.tsNameOriginal ?? m.tsName,
+          dir,
+        });
       }
     }
 

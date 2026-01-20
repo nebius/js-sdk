@@ -1,5 +1,6 @@
 import type { Message as TSDescriptorMessage } from '../../descriptors';
 import { is64Bit, readerMethodFor, wireTypeFor, wktFqnOf } from '../helpers';
+import { resolveEnumName, resolveMessageName } from '../typeNames';
 
 export function emitDecodeOneofs(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];
@@ -24,7 +25,7 @@ export function emitDecodeOneofs(m: TSDescriptorMessage): string[] {
         }`,
         );
       } else if (f.isMessage()) {
-        const ref = f.message()?.tsName;
+        const ref = resolveMessageName(f.message());
         if (ref) {
           const expectedTag = (fieldNo << 3) | 2;
           lines.push(
@@ -61,7 +62,7 @@ export function emitDecodeOneofs(m: TSDescriptorMessage): string[] {
           if (tag !== ${expectedTag}) break;
           message.${prop} = {
             $case: "${caseName}",
-            ${caseName}: ${f.enum()!.tsName}.fromNumber(reader.${readM}())
+            ${caseName}: ${resolveEnumName(f.enum())}.fromNumber(reader.${readM}())
           };
           continue;
         }`,
