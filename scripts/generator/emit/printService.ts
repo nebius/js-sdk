@@ -1,6 +1,7 @@
 import type { Method, Service as TSService } from '../descriptors';
 
 import { deprecationLine, deprecationOptions } from './helpers';
+import { resolveImportSymbol, resolveTypeNameByFqn } from './typeNames';
 
 function normalizeFqn(name: string, pkg?: string): string {
   let n = name || '';
@@ -14,6 +15,8 @@ const OP_SVC_V1 = '.nebius.common.v1.OperationService';
 const OP_SVC_V1A = '.nebius.common.v1alpha1.OperationService';
 const OP_V1 = '.nebius.common.v1.Operation';
 const OP_V1A = '.nebius.common.v1alpha1.Operation';
+const OP_SVC_V1_DIR = 'nebius/common/v1';
+const OP_SVC_V1A_DIR = 'nebius/common/v1alpha1';
 
 function isOperationService(service: TSService): boolean {
   const fqn = service.fullQualifiedName();
@@ -30,6 +33,7 @@ function isListOperationsMethod(method: Method): boolean {
 export interface TypeIndexEntry {
   fileName: string;
   tsName: string;
+  tsNameOriginal: string;
   dir: string;
 }
 export type TypeIndex = Map<string, TypeIndexEntry>; // key is fully-qualified name such as .pkg.Message
@@ -48,6 +52,26 @@ export function printService(
   // api_service_name is now decoded directly onto ServiceOptions via extension augmentation (apiServiceName camelCase)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const apiServiceName = (svc.descriptor as any)?.options?.apiServiceName as string | undefined;
+  const hasOpV1 = svc.methods.some(
+    (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1,
+  );
+  const hasOpV1A = svc.methods.some(
+    (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1A,
+  );
+  const opServiceDir = hasOpV1 ? OP_SVC_V1_DIR : hasOpV1A ? OP_SVC_V1A_DIR : undefined;
+  const getOpReqFqn = hasOpV1
+    ? '.nebius.common.v1.GetOperationRequest'
+    : hasOpV1A
+      ? '.nebius.common.v1alpha1.GetOperationRequest'
+      : '';
+  const getOpReqName = getOpReqFqn
+    ? resolveTypeNameByFqn(getOpReqFqn, 'GetOperationRequest')
+    : 'GetOperationRequest';
+  const opServiceName = opServiceDir
+    ? resolveImportSymbol(opServiceDir, 'OperationService')
+    : 'OperationService';
+  const typeNameFor = (fqn: string, info?: TypeIndexEntry): string =>
+    info ? resolveTypeNameByFqn(fqn, info.tsName) : 'any';
 
   // Service description const and type alias
   // Add @deprecated JSDoc to the ServiceDescription if the service is deprecated
@@ -71,10 +95,12 @@ export function printService(
     const sendResetMaskOpt = m.descriptor?.options?.sendResetMask;
     const sendResetMask =
       sendResetMaskOpt === true || (pbMethodName === 'Update' && sendResetMaskOpt !== false);
-    const inInfo = typeIndex.get(normalizeFqn(m.descriptor.inputType || '', pkg));
-    const outInfo = typeIndex.get(normalizeFqn(m.descriptor.outputType || '', pkg));
-    const Req = inInfo?.tsName || 'any';
-    const Res = outInfo?.tsName || 'any';
+    const inKey = normalizeFqn(m.descriptor.inputType || '', pkg);
+    const outKey = normalizeFqn(m.descriptor.outputType || '', pkg);
+    const inInfo = typeIndex.get(inKey);
+    const outInfo = typeIndex.get(outKey);
+    const Req = typeNameFor(inKey, inInfo);
+    const Res = typeNameFor(outKey, outInfo);
     lines.push(`  ${methodName}: {`);
     lines.push(`    path: "/${pkg ? `${pkg}.` : ''}${pbSvcName}/${pbMethodName}",`);
     lines.push(`    requestStream: false,`);
@@ -103,10 +129,12 @@ export function printService(
   lines.push(`export interface ${svcName}Server extends UntypedServiceImplementation {`);
   for (const m of svc.methods) {
     const methodName = m.tsName;
-    const inInfo = typeIndex.get(normalizeFqn(m.descriptor.inputType || '', pkg));
-    const outInfo = typeIndex.get(normalizeFqn(m.descriptor.outputType || '', pkg));
-    const Req = inInfo?.tsName || 'any';
-    const Res = outInfo?.tsName || 'any';
+    const inKey = normalizeFqn(m.descriptor.inputType || '', pkg);
+    const outKey = normalizeFqn(m.descriptor.outputType || '', pkg);
+    const inInfo = typeIndex.get(inKey);
+    const outInfo = typeIndex.get(outKey);
+    const Req = typeNameFor(inKey, inInfo);
+    const Res = typeNameFor(outKey, outInfo);
     lines.push(`  ${methodName}: handleUnaryCall<${Req}, ${Res}>;`);
   }
   lines.push(`}`);
@@ -121,10 +149,12 @@ export function printService(
   lines.push(`export interface ${svcName}BaseClient extends Client {`);
   for (const m of svc.methods) {
     const methodName = m.tsName;
-    const inInfo = typeIndex.get(normalizeFqn(m.descriptor.inputType || '', pkg));
-    const outInfo = typeIndex.get(normalizeFqn(m.descriptor.outputType || '', pkg));
-    const Req = inInfo?.tsName || 'any';
-    const Res = outInfo?.tsName || 'any';
+    const inKey = normalizeFqn(m.descriptor.inputType || '', pkg);
+    const outKey = normalizeFqn(m.descriptor.outputType || '', pkg);
+    const inInfo = typeIndex.get(inKey);
+    const outInfo = typeIndex.get(outKey);
+    const Req = typeNameFor(inKey, inInfo);
+    const Res = typeNameFor(outKey, outInfo);
     lines.push(
       `  ${methodName}(request: ${Req}, metadata: Metadata, options: Partial<CallOptions>, callback: (error: GrpcServiceError | null, response: ${Res}) => void): ClientUnaryCall;`,
     );
@@ -165,15 +195,17 @@ export function printService(
   lines.push(`  $type: ${JSON.stringify(pbFullSvcName)};`);
   for (const m of svc.methods) {
     const lower = m.tsName;
-    const inInfo = typeIndex.get(normalizeFqn(m.descriptor.inputType || '', pkg));
-    const outInfo = typeIndex.get(normalizeFqn(m.descriptor.outputType || '', pkg));
-    const Req = inInfo?.tsName || 'any';
+    const inKey = normalizeFqn(m.descriptor.inputType || '', pkg);
+    const outKey = normalizeFqn(m.descriptor.outputType || '', pkg);
+    const inInfo = typeIndex.get(inKey);
+    const outInfo = typeIndex.get(outKey);
+    const Req = typeNameFor(inKey, inInfo);
     const outFqn = normalizeFqn(m.descriptor.outputType || '', pkg);
     const wrapOp = outFqn === OP_V1 || outFqn === OP_V1A;
     const isOperationsList = isListOperationsMethod(m);
-    const ResBase = outInfo?.tsName || 'any';
+    const ResBase = typeNameFor(outKey, outInfo);
     const Res = wrapOp
-      ? 'OperationWrapper<GetOperationRequest>'
+      ? `OperationWrapper<${getOpReqName}>`
       : isOperationsList
         ? 'OperationServiceListResponse'
         : ResBase;
@@ -199,7 +231,7 @@ export function printService(
   // Extra interface for wrapped list response in OperationService (after closing service interface)
   if (isOpSvc) {
     lines.push(
-      `export interface OperationServiceListResponse { operations: OperationWrapper<GetOperationRequest>[]; nextPageToken: string; }`,
+      `export interface OperationServiceListResponse { operations: OperationWrapper<${getOpReqName}>[]; nextPageToken: string; }`,
     );
     lines.push('');
   }
@@ -211,12 +243,6 @@ export function printService(
   //   lines.push(' */');
   // }
   // Static helper to obtain OperationService for services that return Operation(s)
-  const hasOpV1 = svc.methods.some(
-    (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1,
-  );
-  const hasOpV1A = svc.methods.some(
-    (m) => normalizeFqn(m.descriptor.outputType || '', pkg) === OP_V1A,
-  );
   const compiledApiName = apiServiceName ? JSON.stringify(apiServiceName) : 'undefined';
   lines.push(`export class ${svcName} implements ${svcName} {`);
   lines.push(`  $type: ${JSON.stringify(pbFullSvcName)} = ${JSON.stringify(pbFullSvcName)};`);
@@ -253,23 +279,25 @@ export function printService(
   if (!isOpSvc && (hasOpV1 || hasOpV1A)) {
     lines.push('');
     // Embed original service's compile-time apiServiceName (same as used in its own constructor)
-    lines.push(`  getOperationService(): OperationService {`);
-    lines.push(`    return new OperationService(this.sdk, this.addr);`);
+    lines.push(`  getOperationService(): ${opServiceName} {`);
+    lines.push(`    return new ${opServiceName}(this.sdk, this.addr);`);
     lines.push('  }');
   }
   lines.push('');
 
   for (const m of svc.methods) {
     const lower = m.tsName;
-    const inInfo = typeIndex.get(normalizeFqn(m.descriptor.inputType || '', pkg));
-    const outInfo = typeIndex.get(normalizeFqn(m.descriptor.outputType || '', pkg));
-    const Req = inInfo?.tsName || 'any';
+    const inKey = normalizeFqn(m.descriptor.inputType || '', pkg);
+    const outKey = normalizeFqn(m.descriptor.outputType || '', pkg);
+    const inInfo = typeIndex.get(inKey);
+    const outInfo = typeIndex.get(outKey);
+    const Req = typeNameFor(inKey, inInfo);
     const outFqn = normalizeFqn(m.descriptor.outputType || '', pkg);
     const wrapOp = outFqn === OP_V1 || outFqn === OP_V1A;
     const isOperationsList = isListOperationsMethod(m);
-    const ResBase = outInfo?.tsName || 'any';
+    const ResBase = typeNameFor(outKey, outInfo);
     const retT = wrapOp
-      ? `SDKRequestClass<${Req}, OperationWrapper<GetOperationRequest>>`
+      ? `SDKRequestClass<${Req}, OperationWrapper<${getOpReqName}>>`
       : isOperationsList
         ? `SDKRequestClass<${Req}, OperationServiceListResponse>`
         : `SDKRequestClass<${Req}, ${ResBase}>`;

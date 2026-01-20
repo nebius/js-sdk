@@ -12,6 +12,7 @@ import {
   wktFqnOf,
   writerMethodFor,
 } from './helpers';
+import { resolveEnumName, resolveMessageName } from './typeNames';
 
 /**
  * Emit extension registrations (and any needed module augmentations) for a set of extension fields.
@@ -47,8 +48,8 @@ export function printExtensions(
     const msgDesc = ext.isMessage() ? ext.message() : undefined;
     const enumProtoType = enumDesc ? enumDesc.fullQualifiedName().replace(/^\./, '') : undefined;
     const msgProtoType = msgDesc ? msgDesc.fullQualifiedName().replace(/^\./, '') : undefined;
-    const enumTsName = enumDesc?.tsName; // e.g. MyEnum
-    const msgTsName = msgDesc?.tsName; // e.g. MyMessage
+    const enumTsName = resolveEnumName(enumDesc); // e.g. MyEnum
+    const msgTsName = resolveMessageName(msgDesc); // e.g. MyMessage
     const wktName = ext.isMessage() ? wktFqnOf(ext as TSDescriptorField) : undefined;
     const fullName = ext.extensionRegistryFullName();
     const prop = ext.tsName; // already camel-cased

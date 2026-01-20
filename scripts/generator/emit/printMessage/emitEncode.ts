@@ -9,6 +9,7 @@ import {
   wktFqnOf,
   writerMethodFor,
 } from '../helpers';
+import { resolveEnumName, resolveMessageName } from '../typeNames';
 
 export function emitEncode(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];
@@ -107,14 +108,16 @@ export function emitEncode(m: TSDescriptorMessage): string[] {
         w2.join();
       })()`;
         } else {
+          const msgRef = resolveMessageName(vf.message());
           valWrite = `(() => {
         const w2 = writer.uint32(${valTag}).fork();
-        ${vf.message()!.tsName}.encode(v, w2);
+        ${msgRef}.encode(v, w2);
         w2.join();
       })()`;
         }
       } else if (vf.isEnum()) {
-        valWrite = `${vf.enum()!.tsName}.encodeField(w, ${valTag >>> 3}, v)`;
+        const enumRef = resolveEnumName(vf.enum());
+        valWrite = `${enumRef}.encodeField(w, ${valTag >>> 3}, v)`;
       }
       lines.push(
         `    for (const [k, v] of Object.entries(message.${name} ?? {})) {
@@ -154,7 +157,7 @@ export function emitEncode(m: TSDescriptorMessage): string[] {
     }`,
         );
       } else if (f.isMessage()) {
-        const ref = f.message()?.tsName;
+        const ref = resolveMessageName(f.message());
         if (ref) {
           lines.push(`    for (const v of (message.${name} ?? [])) {
       const w = writer.uint32(${tag}).fork();
@@ -169,7 +172,7 @@ export function emitEncode(m: TSDescriptorMessage): string[] {
         }
       } else if (f.isEnum()) {
         lines.push(`    for (const v of (message.${name} ?? [])) {
-      ${f.enum()!.tsName}.encodeField(writer, ${tag >>> 3}, v);
+      ${resolveEnumName(f.enum())}.encodeField(writer, ${tag >>> 3}, v);
     }`);
       } else {
         lines.push(`    for (const v of (message.${name} ?? [])) {
@@ -189,7 +192,7 @@ export function emitEncode(m: TSDescriptorMessage): string[] {
       continue;
     }
     if (f.isMessage()) {
-      const ref = f.message()?.tsName;
+      const ref = resolveMessageName(f.message());
       if (ref) {
         lines.push(`    if (message.${name} !== undefined) {
       const w = writer.uint32(${tag}).fork();
@@ -202,7 +205,7 @@ export function emitEncode(m: TSDescriptorMessage): string[] {
     if (f.tracksPresence()) {
       if (f.isEnum()) {
         lines.push(`    if (message.${name} !== undefined) {
-      ${f.enum()!.tsName}.encodeField(writer, ${tag >>> 3}, message.${name});
+      ${resolveEnumName(f.enum())}.encodeField(writer, ${tag >>> 3}, message.${name});
     }`);
       } else {
         let longToString = '';
@@ -216,7 +219,7 @@ export function emitEncode(m: TSDescriptorMessage): string[] {
     } else if (f.isEnum()) {
       const def = defaultValueFor(f);
       lines.push(`    if ((message.${name} ?? ${def}) !== ${def}) {
-      ${f.enum()!.tsName}.encodeField(writer, ${tag >>> 3}, message.${name});
+      ${resolveEnumName(f.enum())}.encodeField(writer, ${tag >>> 3}, message.${name});
     }`);
     } else if (is64Bit(f)) {
       lines.push(`    if (message.${name} !== undefined && !message.${name}.isZero?.()) {
@@ -254,7 +257,7 @@ export function emitEncode(m: TSDescriptorMessage): string[] {
       w.join();
     }`);
       } else if (f.isMessage()) {
-        const ref = f.message()?.tsName;
+        const ref = resolveMessageName(f.message());
         if (ref) {
           lines.push(`    else if (message.${prop}?.$case === "${caseName}") {
       const w = writer.uint32(${tag}).fork();
@@ -264,7 +267,7 @@ export function emitEncode(m: TSDescriptorMessage): string[] {
         }
       } else if (f.isEnum()) {
         lines.push(`    else if (message.${prop}?.$case === "${caseName}") {
-      ${f.enum()!.tsName}.encodeField(writer, ${tag >>> 3}, message.${prop}.${caseName});
+      ${resolveEnumName(f.enum())}.encodeField(writer, ${tag >>> 3}, message.${prop}.${caseName});
     }`);
       } else {
         let longToString = '';

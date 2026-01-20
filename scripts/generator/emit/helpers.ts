@@ -1,5 +1,7 @@
 import type { Field as TSDescriptorField } from '../descriptors';
 
+import { resolveEnumName, resolveMessageName } from './typeNames';
+
 // Basic string helpers
 export function lowerFirst(s: string): string {
   return s.length ? s[0].toLowerCase() + s.slice(1) : s;
@@ -12,19 +14,19 @@ export function camel(s: string): string {
 
 // Enum/Message JSON converters used during codegen
 export function msgFromJSONConv(f: TSDescriptorField): string {
-  const ref = f.message()?.tsName;
+  const ref = resolveMessageName(f.message());
   return ref ? `${ref}.fromJSON` : '(x: any) => x';
 }
 export function msgToJSONConv(f: TSDescriptorField): string {
-  const ref = f.message()?.tsName;
+  const ref = resolveMessageName(f.message());
   return ref ? `${ref}.toJSON` : '(x: any) => x';
 }
 export function enumFromJSONConv(f: TSDescriptorField): string {
-  const ref = f.enum()?.tsName;
+  const ref = resolveEnumName(f.enum());
   return ref ? `${ref}.fromJSON` : 'Number';
 }
 export function enumToJSONConv(f: TSDescriptorField): string {
-  const ref = f.enum()?.tsName;
+  const ref = resolveEnumName(f.enum());
   return ref ? `${ref}.toJSON` : '(x: any) => x';
 }
 
@@ -231,11 +233,11 @@ export function tsFieldType(f: TSDescriptorField): string {
 }
 
 export function scalarOrRef(f: TSDescriptorField): string {
-  if (f.isEnum()) return f.enum()?.tsName ?? 'number';
+  if (f.isEnum()) return resolveEnumName(f.enum()) ?? 'number';
   if (f.isMessage()) {
     const w = wktFqnOf(f);
     if (w) return WKT_TYPE_MAP[w];
-    return f.message()?.tsName ?? 'any';
+    return resolveMessageName(f.message()) ?? 'any';
   }
   // rough scalar mapping
   switch (f.typeCode()) {
@@ -297,7 +299,8 @@ export function defaultValueFor(f: TSDescriptorField): string {
   if (f.tracksPresence()) return 'undefined';
   if (f.isEnum()) {
     const first = f.enum()?.valueList?.[0]?.name;
-    return first ? `${f.enum()!.tsName}.${first}` : '0';
+    const ref = resolveEnumName(f.enum());
+    return first && ref ? `${ref}.${first}` : '0';
   }
   if (wktFqnOf(f)) return 'undefined';
   if (isTimestampField(f)) return 'undefined';

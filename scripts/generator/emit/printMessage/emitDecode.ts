@@ -8,6 +8,7 @@ import {
   wireTypeFor,
   wktFqnOf,
 } from '../helpers';
+import { resolveEnumName, resolveMessageName } from '../typeNames';
 
 import { emitDecodeOneofs } from './decodeOneofs';
 
@@ -75,10 +76,10 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
         if (vIsWkt) {
           valueDecoder = `wkt["${vIsWkt}"].readMessage(reader, reader.uint32())`;
         } else {
-          valueDecoder = `${vf.message()!.tsName}.decode(reader, reader.uint32())`;
+          valueDecoder = `${resolveMessageName(vf.message())}.decode(reader, reader.uint32())`;
         }
       } else if (vf.isEnum()) {
-        valueDecoder = `${vf.enum()!.tsName}.fromNumber(reader.${readerMethodFor(vf)}())`;
+        valueDecoder = `${resolveEnumName(vf.enum())}.fromNumber(reader.${readerMethodFor(vf)}())`;
       } else if (is64Bit(vf)) {
         valueDecoder = `Long.fromValue(reader.${readerMethodFor(vf)}())`;
       }
@@ -130,11 +131,11 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
           if ((tag & 7) === 2) {
             const end2 = reader.uint32() + reader.pos;
             while (reader.pos < end2) {
-              message.${name}.push(${f.enum()!.tsName}.fromNumber(reader.${readM}()));
+              message.${name}.push(${resolveEnumName(f.enum())}.fromNumber(reader.${readM}()));
             }
             continue;
           } else if ((tag & 7) === 0) {
-            message.${name}.push(${f.enum()!.tsName}.fromNumber(reader.${readM}()));
+            message.${name}.push(${resolveEnumName(f.enum())}.fromNumber(reader.${readM}()));
             continue;
           }
           break; // wrong wire type
@@ -168,7 +169,7 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
           continue;
         }`);
       } else if (f.isMessage()) {
-        const ref = f.message()?.tsName;
+        const ref = resolveMessageName(f.message());
         if (ref) {
           const expectedTag = (fieldNo << 3) | 2;
           lines.push(`        case ${fieldNo}: {
@@ -188,7 +189,7 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
         const expectedTag = (fieldNo << 3) | wireTypeFor(f);
         lines.push(`        case ${fieldNo}: {
           if (tag !== ${expectedTag}) break;
-          message.${name}.push(${f.enum()!.tsName}.fromNumber(reader.${readM}()));
+          message.${name}.push(${resolveEnumName(f.enum())}.fromNumber(reader.${readM}()));
           continue;
         }`);
       } else {
@@ -212,7 +213,7 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
       continue;
     }
     if (f.isMessage()) {
-      const ref = f.message()?.tsName;
+      const ref = resolveMessageName(f.message());
       if (ref) {
         const expectedTag = (fieldNo << 3) | 2;
         lines.push(`        case ${fieldNo}: {
@@ -227,7 +228,7 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
       const expectedTag = (fieldNo << 3) | wireTypeFor(f);
       lines.push(`        case ${fieldNo}: {
           if (tag !== ${expectedTag}) break;
-          message.${name} = ${f.enum()!.tsName}.fromNumber(reader.${readM}());
+          message.${name} = ${resolveEnumName(f.enum())}.fromNumber(reader.${readM}());
           continue;
         }`);
     } else {

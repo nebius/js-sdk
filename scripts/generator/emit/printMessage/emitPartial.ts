@@ -1,5 +1,6 @@
 import type { Message as TSDescriptorMessage } from '../../descriptors';
 import { defaultValueFor, is64Bit, scalarOrRef, wktFqnOf } from '../helpers';
+import { resolveEnumName, resolveMessageName } from '../typeNames';
 
 export function emitCreate(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];
@@ -27,10 +28,10 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
       let valueEncoder = 'value';
       if (vf.isMessage()) {
         if (!wktFqnOf(vf)) {
-          valueEncoder = `${vf.message()?.tsName}.fromPartial(value)`;
+          valueEncoder = `${resolveMessageName(vf.message())}.fromPartial(value)`;
         }
       } else if (vf.isEnum()) {
-        valueEncoder = `${vf.enum()!.tsName}.fromJSON(value.name)`;
+        valueEncoder = `${resolveEnumName(vf.enum())}.fromJSON(value.name)`;
       } else if (is64Bit(vf)) {
         valueEncoder = `Long.fromValue(value)`;
       }
@@ -52,7 +53,7 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
     if (f.isRepeated()) {
       if (f.isMessage()) {
         const wktName = wktFqnOf(f);
-        const ref = f.message()?.tsName;
+        const ref = resolveMessageName(f.message());
         if (wktName) {
           lines.push(`    message.${name} = object.${name}?.map((e: any) => {
       return wkt[${JSON.stringify(wktName)}].fromPartial(e);
@@ -66,7 +67,7 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
         }
       } else if (f.isEnum()) {
         lines.push(
-          `    message.${name} = object.${name}?.map((e) => ${f.enum()?.tsName}.fromJSON(e.name)) || [];`,
+          `    message.${name} = object.${name}?.map((e) => ${resolveEnumName(f.enum())}.fromJSON(e.name)) || [];`,
         );
       } else if (is64Bit(f)) {
         lines.push(`    message.${name} = object.${name}?.map((e) => Long.fromValue(e)) || [];`);
@@ -75,7 +76,7 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
       }
     } else if (f.isMessage()) {
       const wktName = wktFqnOf(f);
-      const ref = f.message()?.tsName;
+      const ref = resolveMessageName(f.message());
       if (wktName) {
         lines.push(
           `    message.${name} = (object.${name} !== undefined && object.${name} !== null)
@@ -98,7 +99,7 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
     } else if (f.isEnum()) {
       lines.push(
         `    message.${name} = (object.${name} !== undefined && object.${name} !== null)
-      ? ${f.enum()?.tsName}.fromJSON(object.${name}.name)
+      ? ${resolveEnumName(f.enum())}.fromJSON(object.${name}.name)
       : ${defaultValueFor(f)};`,
       );
     } else if (is64Bit(f)) {
@@ -122,7 +123,7 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
       const caseName = f.tsName;
       if (f.isMessage()) {
         const wktName = wktFqnOf(f);
-        const ref = f.message()?.tsName;
+        const ref = resolveMessageName(f.message());
         if (wktName) {
           // For WKTs, pass through the value without calling .fromPartial
           lines.push(
@@ -167,7 +168,7 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
         if (object.${prop}?.${caseName} !== undefined && object.${prop}?.${caseName} !== null) {
           message.${prop} = {
             $case: "${caseName}",
-            ${caseName}: ${f.enum()?.tsName}.fromJSON(object.${prop}.${caseName}.name)
+            ${caseName}: ${resolveEnumName(f.enum())}.fromJSON(object.${prop}.${caseName}.name)
           };
         }
         break;
