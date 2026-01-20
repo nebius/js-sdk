@@ -12,7 +12,7 @@ updates:
     groups:
       version-bumps:
         applies-to: version-updates
-        patterns: &with-minor
+        patterns:
           - "@typescript-eslint/*"
           - "@bufbuild/buf"
           - "prettier"
@@ -24,6 +24,10 @@ updates:
         applies-to: version-updates
         patterns:
           - "*"
-        exclude-patterns: *with-minor
+        exclude-patterns:
+          - "@typescript-eslint/*"
+          - "@bufbuild/buf"
+          - "prettier"
+          - "ts-proto"
         update-types:
           - "patch"
