@@ -13,12 +13,12 @@ updates:
       version-bumps:
         applies-to: version-updates
         patterns:
-          - "@typescript-eslint/*"
           - "@bufbuild/buf"
           - "@bufbuild/protobuf"
+          - "@typescript-eslint/*"
+          - "globals"
           - "prettier"
           - "ts-proto"
-          - "globals"
         update-types:
           - "patch"
           - "minor"
@@ -27,11 +27,11 @@ updates:
         patterns:
           - "*"
         exclude-patterns:
-          - "@typescript-eslint/*"
           - "@bufbuild/buf"
           - "@bufbuild/protobuf"
+          - "@typescript-eslint/*"
+          - "globals"
           - "prettier"
           - "ts-proto"
-          - "globals"
         update-types:
           - "patch"
