@@ -15,8 +15,10 @@ updates:
         patterns:
           - "@typescript-eslint/*"
           - "@bufbuild/buf"
+          - "@bufbuild/protobuf"
           - "prettier"
           - "ts-proto"
+          - "globals"
         update-types:
           - "patch"
           - "minor"
@@ -27,7 +29,9 @@ updates:
         exclude-patterns:
           - "@typescript-eslint/*"
           - "@bufbuild/buf"
+          - "@bufbuild/protobuf"
           - "prettier"
           - "ts-proto"
+          - "globals"
         update-types:
           - "patch"
