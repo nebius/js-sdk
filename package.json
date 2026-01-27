@@ -1,6 +1,6 @@
 {
   "name": "@nebius/js-sdk",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "description": "Nebius AI SDK",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
