@@ -500,7 +500,7 @@ class ProgressTrackerWrapper implements OperationProgressTracker {
     const total = toNumber(workDone?.totalTickCount);
     if (total === undefined || total <= 0) return undefined;
     const done = toNumber(workDone?.doneTickCount) ?? 0;
-    return done / total;
+    return Math.min(1.0, done / total);
   }
 
   estimatedFinishedAt(): Dayjs | undefined {
