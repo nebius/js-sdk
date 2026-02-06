@@ -151,6 +151,44 @@ await sdk.close();
 
 Per-request call options (deadlines and per-retry timeouts) can be passed as the request options, including operation's `wait()`.
 
+#### Progress tracker
+
+Some operations expose a progress tracker with ETA, work completion, and step details. You can access it via
+[`Operation.progressTracker()`](https://nebius.github.io/js-sdk/classes/runtime_operation.Operation.html#progressTracker).
+For operations that do not provide progress details (or v1alpha1 operations), this returns `undefined`.
+
+Example of polling with a single-line progress display:
+
+```ts
+while (!op.done()) {
+  await op.update();
+  const tracker = op.progressTracker();
+  const parts = [`waiting for operation ${op.id()} to complete:`];
+
+  if (tracker) {
+    const work = tracker.workFraction();
+    if (work !== undefined) parts.push(`${Math.round(work * 100)}%`);
+
+    const desc = tracker.description();
+    if (desc) parts.push(desc);
+
+    const started = tracker.startedAt();
+    if (started) {
+      const elapsedMs = Date.now() - started.valueOf();
+      parts.push(`${Math.round(elapsedMs / 1000)}s`);
+    }
+
+    const eta = tracker.estimatedFinishedAt();
+    if (eta) parts.push(`eta ${eta.toISOString()}`);
+  }
+
+  process.stdout.write(parts.join(' ') + '\r');
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+}
+
+process.stdout.write('\n');
+```
+
 ### Parent IDs and resource scoping
 
 Some methods may include `parentId` in the requests, for certain methods this field is populated automatically:
