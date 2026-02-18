@@ -35,6 +35,15 @@ export function registerSelfCompatTests() {
       expect(txt).toContain('optional string trailing');
       expect(txt).toContain('optString?');
     });
+    test('service sendResetMask follows method_behavior options', () => {
+      const our: any = requireOur();
+      const spec = our.BehaviorServiceServiceDescription;
+      expect(spec.update.sendResetMask).toBe(true);
+      expect(spec.updateWithUpdater.sendResetMask).toBe(true);
+      expect(spec.updateWithoutUpdater.sendResetMask).toBe(false);
+      expect(spec.updateMixed.sendResetMask).toBe(true);
+      expect(spec.create.sendResetMask).toBe(false);
+    });
     test('enum value runtime metadata comments', () => {
       const { ENUM_VALUE_META } = require(path.join(ROOT, 'src/runtime/protos/index'));
       const our: any = requireOur();

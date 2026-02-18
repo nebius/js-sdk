@@ -1,4 +1,5 @@
 import type { Method, Service as TSService } from '../descriptors';
+import { MethodBehavior as MethodBehaviorEnum } from '../extensions/index';
 
 import { deprecationLine, deprecationOptions } from './helpers';
 import { resolveImportSymbol, resolveTypeNameByFqn } from './typeNames';
@@ -28,6 +29,36 @@ function isListOperationsMethod(method: Method): boolean {
     return method.pb_name === 'List';
   }
   return false;
+}
+
+type ExtractedMethodBehavior = ReturnType<typeof MethodBehaviorEnum.fromJSON>;
+
+function normalizeMethodBehavior(value: unknown): ExtractedMethodBehavior {
+  if (value && typeof value === 'object') {
+    const maybeEnum = value as { code?: unknown; name?: unknown };
+    if (typeof maybeEnum.code === 'number') return MethodBehaviorEnum.fromNumber(maybeEnum.code);
+    if (typeof maybeEnum.name === 'string') return MethodBehaviorEnum.fromJSON(maybeEnum.name);
+  }
+  return MethodBehaviorEnum.fromJSON(value);
+}
+
+function extractMethodBehaviors(method: Method): ExtractedMethodBehavior[] {
+  const opts = method.descriptor?.options as
+    | { methodBehavior?: unknown; method_behavior?: unknown }
+    | undefined;
+  const methodBehavior = opts?.methodBehavior ?? opts?.method_behavior;
+  if (methodBehavior === undefined || methodBehavior === null) return [];
+
+  const behaviors = Array.isArray(methodBehavior) ? methodBehavior : [methodBehavior];
+  return behaviors.map(normalizeMethodBehavior);
+}
+
+function shouldSendResetMask(method: Method): boolean {
+  const methodBehaviors = extractMethodBehaviors(method);
+  if (methodBehaviors.length === 0) {
+    return method.pb_name === 'Update';
+  }
+  return methodBehaviors.some((behavior) => behavior === MethodBehaviorEnum.METHOD_UPDATER);
 }
 
 export interface TypeIndexEntry {
@@ -92,9 +123,7 @@ export function printService(
   for (const m of svc.methods) {
     const methodName = m.tsName;
     const pbMethodName = m.pb_name;
-    const sendResetMaskOpt = m.descriptor?.options?.sendResetMask;
-    const sendResetMask =
-      sendResetMaskOpt === true || (pbMethodName === 'Update' && sendResetMaskOpt !== false);
+    const sendResetMask = shouldSendResetMask(m);
     const inKey = normalizeFqn(m.descriptor.inputType || '', pkg);
     const outKey = normalizeFqn(m.descriptor.outputType || '', pkg);
     const inInfo = typeIndex.get(inKey);
