@@ -1,4 +1,5 @@
 import type { Method, Service as TSService } from '../descriptors';
+import { MethodBehavior as MethodBehaviorEnum } from '../extensions/index';
 
 import { deprecationLine, deprecationOptions } from './helpers';
 import { resolveImportSymbol, resolveTypeNameByFqn } from './typeNames';
@@ -30,26 +31,34 @@ function isListOperationsMethod(method: Method): boolean {
   return false;
 }
 
-function isMethodUpdaterBehavior(value: unknown): boolean {
-  if (typeof value === 'number') return value === 2; // METHOD_UPDATER
-  if (typeof value === 'string') return value === 'METHOD_UPDATER';
+type ExtractedMethodBehavior = ReturnType<typeof MethodBehaviorEnum.fromJSON>;
+
+function normalizeMethodBehavior(value: unknown): ExtractedMethodBehavior {
   if (value && typeof value === 'object') {
     const maybeEnum = value as { code?: unknown; name?: unknown };
-    return maybeEnum.code === 2 || maybeEnum.name === 'METHOD_UPDATER';
+    if (typeof maybeEnum.code === 'number') return MethodBehaviorEnum.fromNumber(maybeEnum.code);
+    if (typeof maybeEnum.name === 'string') return MethodBehaviorEnum.fromJSON(maybeEnum.name);
   }
-  return false;
+  return MethodBehaviorEnum.fromJSON(value);
 }
 
-function shouldSendResetMask(method: Method): boolean {
+function extractMethodBehaviors(method: Method): ExtractedMethodBehavior[] {
   const opts = method.descriptor?.options as
     | { methodBehavior?: unknown; method_behavior?: unknown }
     | undefined;
   const methodBehavior = opts?.methodBehavior ?? opts?.method_behavior;
-  if (methodBehavior === undefined || methodBehavior === null) {
+  if (methodBehavior === undefined || methodBehavior === null) return [];
+
+  const behaviors = Array.isArray(methodBehavior) ? methodBehavior : [methodBehavior];
+  return behaviors.map(normalizeMethodBehavior);
+}
+
+function shouldSendResetMask(method: Method): boolean {
+  const methodBehaviors = extractMethodBehaviors(method);
+  if (methodBehaviors.length === 0) {
     return method.pb_name === 'Update';
   }
-  const behaviors = Array.isArray(methodBehavior) ? methodBehavior : [methodBehavior];
-  return behaviors.some(isMethodUpdaterBehavior);
+  return methodBehaviors.some((behavior) => behavior === MethodBehaviorEnum.METHOD_UPDATER);
 }
 
 export interface TypeIndexEntry {
