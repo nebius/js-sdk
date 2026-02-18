@@ -30,6 +30,28 @@ function isListOperationsMethod(method: Method): boolean {
   return false;
 }
 
+function isMethodUpdaterBehavior(value: unknown): boolean {
+  if (typeof value === 'number') return value === 2; // METHOD_UPDATER
+  if (typeof value === 'string') return value === 'METHOD_UPDATER';
+  if (value && typeof value === 'object') {
+    const maybeEnum = value as { code?: unknown; name?: unknown };
+    return maybeEnum.code === 2 || maybeEnum.name === 'METHOD_UPDATER';
+  }
+  return false;
+}
+
+function shouldSendResetMask(method: Method): boolean {
+  const opts = method.descriptor?.options as
+    | { methodBehavior?: unknown; method_behavior?: unknown }
+    | undefined;
+  const methodBehavior = opts?.methodBehavior ?? opts?.method_behavior;
+  if (methodBehavior === undefined || methodBehavior === null) {
+    return method.pb_name === 'Update';
+  }
+  const behaviors = Array.isArray(methodBehavior) ? methodBehavior : [methodBehavior];
+  return behaviors.some(isMethodUpdaterBehavior);
+}
+
 export interface TypeIndexEntry {
   fileName: string;
   tsName: string;
@@ -92,9 +114,7 @@ export function printService(
   for (const m of svc.methods) {
     const methodName = m.tsName;
     const pbMethodName = m.pb_name;
-    const sendResetMaskOpt = m.descriptor?.options?.sendResetMask;
-    const sendResetMask =
-      sendResetMaskOpt === true || (pbMethodName === 'Update' && sendResetMaskOpt !== false);
+    const sendResetMask = shouldSendResetMask(m);
     const inKey = normalizeFqn(m.descriptor.inputType || '', pkg);
     const outKey = normalizeFqn(m.descriptor.outputType || '', pkg);
     const inInfo = typeIndex.get(inKey);

@@ -16,7 +16,10 @@ import {
 // raw_service_options pre-scan no longer needed; extensions are decoded directly via augmentation.
 
 // Local mirror of the type index consumed by printService
-type TypeIndex = Map<string, { fileName: string; tsName: string; tsNameOriginal: string; dir: string }>;
+type TypeIndex = Map<
+  string,
+  { fileName: string; tsName: string; tsNameOriginal: string; dir: string }
+>;
 
 function parseParams(p?: string): Map<string, string> {
   const map = new Map<string, string>();

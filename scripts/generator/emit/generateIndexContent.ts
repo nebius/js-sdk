@@ -115,9 +115,7 @@ export function generateIndexContent(
   const toPascal = (value: string): string => {
     const parts = value.split(/[^a-zA-Z0-9]+/).filter(Boolean);
     if (!parts.length) return '';
-    const out = parts
-      .map((part) => (part ? part[0].toUpperCase() + part.slice(1) : ''))
-      .join('');
+    const out = parts.map((part) => (part ? part[0].toUpperCase() + part.slice(1) : '')).join('');
     if (!out) return '';
     return /^\d/.test(out) ? `V${out}` : out;
   };
@@ -194,11 +192,7 @@ export function generateIndexContent(
             if (fileName) {
               const targetDir = path.posix.dirname(fileName);
               if (targetDir !== (dir || '.')) {
-                addImport(
-                  targetDir,
-                  ref!.tsNameOriginal ?? ref!.tsName,
-                  ref!.fullQualifiedName(),
-                );
+                addImport(targetDir, ref!.tsNameOriginal ?? ref!.tsName, ref!.fullQualifiedName());
               }
             }
           }
@@ -213,11 +207,7 @@ export function generateIndexContent(
           if (!fileName) continue;
           const targetDir = path.posix.dirname(fileName);
           if (targetDir !== (dir || '.')) {
-            addImport(
-              targetDir,
-              ref!.tsNameOriginal ?? ref!.tsName,
-              ref!.fullQualifiedName(),
-            );
+            addImport(targetDir, ref!.tsNameOriginal ?? ref!.tsName, ref!.fullQualifiedName());
           }
         } else if (f.isEnum()) {
           const ref = f.enum();
@@ -225,11 +215,7 @@ export function generateIndexContent(
           if (!fileName) continue;
           const targetDir = path.posix.dirname(fileName);
           if (targetDir !== (dir || '.')) {
-            addImport(
-              targetDir,
-              ref!.tsNameOriginal ?? ref!.tsName,
-              ref!.fullQualifiedName(),
-            );
+            addImport(targetDir, ref!.tsNameOriginal ?? ref!.tsName, ref!.fullQualifiedName());
           }
         }
       }
@@ -286,11 +272,7 @@ export function generateIndexContent(
     if (localDir !== 'nebius/common/v1') {
       addImport('nebius/common/v1', 'OperationServiceServiceDescription');
       addImport('nebius/common/v1', 'OperationService');
-      addImport(
-        'nebius/common/v1',
-        'GetOperationRequest',
-        '.nebius.common.v1.GetOperationRequest',
-      );
+      addImport('nebius/common/v1', 'GetOperationRequest', '.nebius.common.v1.GetOperationRequest');
     }
   }
   if (needsOpServiceV1A) {

@@ -200,6 +200,91 @@ export const FieldBehavior = createEnum("nebius.FieldBehavior", {
 
 protoRegistry.registerEnum(FieldBehavior);
 
+/**
+ *  MethodBehavior describes special behaviors of a method that affect
+ *  code generation and tooling.
+ *
+ */
+export type MethodBehavior = EnumInstance<"UNRECOGNIZED" | "METHOD_BEHAVIOR_UNSPECIFIED" | "METHOD_UPDATER" | "METHOD_PAGINATED" | "METHOD_WITHOUT_GET">;
+
+interface MethodBehaviorValueMembers {
+  /**
+   *  Indicates that the method behavior is default and is not specified.
+   *  For instance, an Update method will lose its update semantics if this value
+   *  is set.
+   *  Does not mean anything if set along with other values.
+   *
+   */
+  readonly METHOD_BEHAVIOR_UNSPECIFIED: EnumInstance<"UNRECOGNIZED" | "METHOD_BEHAVIOR_UNSPECIFIED" | "METHOD_UPDATER" | "METHOD_PAGINATED" | "METHOD_WITHOUT_GET">;
+  /**
+   *  Indicates that the method is used to update a resource or a number of
+   *  resources, therefore it requires a reset mask to unset fields.
+   *  This will enable SDKs to generate the reset mask on request, as well as the
+   *  gateway to pass and sanitize it. The CLI will add flags to set partial or
+   *  full updates and custom reset masks.
+   *
+   */
+  readonly METHOD_UPDATER: EnumInstance<"UNRECOGNIZED" | "METHOD_BEHAVIOR_UNSPECIFIED" | "METHOD_UPDATER" | "METHOD_PAGINATED" | "METHOD_WITHOUT_GET">;
+  /**
+   *  Indicates that the method is used to list something, and supports
+   *  pagination.
+   *
+   */
+  readonly METHOD_PAGINATED: EnumInstance<"UNRECOGNIZED" | "METHOD_BEHAVIOR_UNSPECIFIED" | "METHOD_UPDATER" | "METHOD_PAGINATED" | "METHOD_WITHOUT_GET">;
+  /**
+   *  Indicates that the method will create an operation, which doesn't have a
+   *  gettable resource after its completion, and therefore must not call a `get`
+   *  method. For instance, it can be used for long-running operations that
+   *  don't return any resource, or for resource deletion operations.
+   *
+   */
+  readonly METHOD_WITHOUT_GET: EnumInstance<"UNRECOGNIZED" | "METHOD_BEHAVIOR_UNSPECIFIED" | "METHOD_UPDATER" | "METHOD_PAGINATED" | "METHOD_WITHOUT_GET">;
+}
+export type MethodBehaviorClass = EnumClass<"UNRECOGNIZED" | "METHOD_BEHAVIOR_UNSPECIFIED" | "METHOD_UPDATER" | "METHOD_PAGINATED" | "METHOD_WITHOUT_GET"> & MethodBehaviorValueMembers;
+
+const MethodBehavior_VALUE_COMMENTS = {
+  METHOD_BEHAVIOR_UNSPECIFIED: " Indicates that the method behavior is default and is not specified.\n For instance, an Update method will lose its update semantics if this value\n is set.\n Does not mean anything if set along with other values.\n",
+  METHOD_UPDATER: " Indicates that the method is used to update a resource or a number of\n resources, therefore it requires a reset mask to unset fields.\n This will enable SDKs to generate the reset mask on request, as well as the\n gateway to pass and sanitize it. The CLI will add flags to set partial or\n full updates and custom reset masks.\n",
+  METHOD_PAGINATED: " Indicates that the method is used to list something, and supports\n pagination.\n",
+  METHOD_WITHOUT_GET: " Indicates that the method will create an operation, which doesn't have a\n gettable resource after its completion, and therefore must not call a `get`\n method. For instance, it can be used for long-running operations that\n don't return any resource, or for resource deletion operations.\n",
+};
+
+export const MethodBehavior = createEnum("nebius.MethodBehavior", {
+  /**
+   *  Indicates that the method behavior is default and is not specified.
+   *  For instance, an Update method will lose its update semantics if this value
+   *  is set.
+   *  Does not mean anything if set along with other values.
+   * 
+   */
+  METHOD_BEHAVIOR_UNSPECIFIED: 0,
+  /**
+   *  Indicates that the method is used to update a resource or a number of
+   *  resources, therefore it requires a reset mask to unset fields.
+   *  This will enable SDKs to generate the reset mask on request, as well as the
+   *  gateway to pass and sanitize it. The CLI will add flags to set partial or
+   *  full updates and custom reset masks.
+   * 
+   */
+  METHOD_UPDATER: 2,
+  /**
+   *  Indicates that the method is used to list something, and supports
+   *  pagination.
+   * 
+   */
+  METHOD_PAGINATED: 3,
+  /**
+   *  Indicates that the method will create an operation, which doesn't have a
+   *  gettable resource after its completion, and therefore must not call a `get`
+   *  method. For instance, it can be used for long-running operations that
+   *  don't return any resource, or for resource deletion operations.
+   * 
+   */
+  METHOD_WITHOUT_GET: 4,
+}, MethodBehavior_VALUE_COMMENTS) as MethodBehaviorClass;
+
+protoRegistry.registerEnum(MethodBehavior);
+
 export interface ServicePySDKSettings {
   $type: "nebius.ServicePySDKSettings";
   [unknownFieldsSymbol]?: Uint8Array | undefined;
@@ -1531,6 +1616,53 @@ protoRegistry.registerExtension({
 declare module '../protos/protobuf/index' {
   interface MethodOptions {
     sendResetMask?: any;
+  }
+}
+
+protoRegistry.registerExtension({
+  extendee: "google.protobuf.MethodOptions",
+  fullName: "nebius.method_behavior",
+  fieldNo: 1197,
+  name: "method_behavior",
+  kind: "repeated_enum",
+  enumType: "nebius.MethodBehavior",
+  encode(message, writer) {
+    for (const v of message.methodBehavior ?? []) {
+      MethodBehavior?.encodeField(writer, 1197, v);
+    }
+  },
+  decode(message, reader, tag) {
+    const fn = tag >>> 3;
+    const wt = tag & 7;
+    if (fn !== 1197) return false;
+    if (wt === 2) {
+      const len = reader.uint32();
+      const end2 = reader.pos + len;
+      while (reader.pos < end2) { (message.methodBehavior ??= []).push(MethodBehavior.fromNumber(reader.int32())); }
+      return true;
+    }
+    if (wt === 0) {
+      (message.methodBehavior ??= []).push(MethodBehavior.fromNumber(reader.int32()));
+      return true;
+    }
+    return false;
+  },
+  fromJSON(message, object) {
+    const _v = object?.methodBehavior ?? object?.method_behavior;
+    if (_v === undefined || _v === null) return;
+    if (globalThis.Array.isArray(_v)) {
+      message.methodBehavior = _v.map((e: any) => MethodBehavior.fromJSON(e));
+    }
+  },
+  toJSON(message, obj, use) {
+    const _val = message.methodBehavior;
+    if (_val?.length) { obj[(use === "json" ? "methodBehavior" : "method_behavior")] = _val.map((e: any) => MethodBehavior.toJSON(e)); }
+  }
+});
+
+declare module '../protos/protobuf/index' {
+  interface MethodOptions {
+    methodBehavior?: MethodBehavior[];
   }
 }
 

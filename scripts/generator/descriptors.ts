@@ -187,7 +187,9 @@ export class File extends DescriptorBase<FileDescriptorProto> {
     // dedupe by tsName
     const seen = new Set<string>();
     return ans.filter((e) =>
-      seen.has(e.tsNameOriginal ?? e.tsName) ? false : (seen.add(e.tsNameOriginal ?? e.tsName), true),
+      seen.has(e.tsNameOriginal ?? e.tsName)
+        ? false
+        : (seen.add(e.tsNameOriginal ?? e.tsName), true),
     );
   }
 
@@ -201,7 +203,9 @@ export class File extends DescriptorBase<FileDescriptorProto> {
     // dedupe by tsName
     const seen = new Set<string>();
     return ans.filter((m) =>
-      seen.has(m.tsNameOriginal ?? m.tsName) ? false : (seen.add(m.tsNameOriginal ?? m.tsName), true),
+      seen.has(m.tsNameOriginal ?? m.tsName)
+        ? false
+        : (seen.add(m.tsNameOriginal ?? m.tsName), true),
     );
   }
 

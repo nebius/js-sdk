@@ -195,6 +195,21 @@ message SanitizeDemo {
   repeated string creds_list = 4 [(nebius.credentials) = true];
   map<string, string> creds_map = 5 [(nebius.credentials) = true];
 }
+
+service BehaviorService {
+  rpc Update(Payload) returns (Payload);
+  rpc UpdateWithUpdater(Payload) returns (Payload) {
+    option (nebius.method_behavior) = METHOD_UPDATER;
+  }
+  rpc UpdateWithoutUpdater(Payload) returns (Payload) {
+    option (nebius.method_behavior) = METHOD_PAGINATED;
+  }
+  rpc UpdateMixed(Payload) returns (Payload) {
+    option (nebius.method_behavior) = METHOD_PAGINATED;
+    option (nebius.method_behavior) = METHOD_UPDATER;
+  }
+  rpc Create(Payload) returns (Payload);
+}
 `;
 
 const EXT_PROTO = `syntax = "proto3";
