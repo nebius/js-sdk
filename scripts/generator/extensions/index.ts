@@ -87,6 +87,9 @@ interface FieldBehaviorValueMembers {
   /**
    *  This indicates that the field can't be changed during a resource update.
    *  Changing the field value will cause an `INVALID_ARGUMENT` error.
+   *  For message fields, this applies to the field itself. Nested immutable
+   *  fields do not make a mutable parent message immutable, and such a parent
+   *  message may still be cleared.
    *  Resource recreate requires a change of the field value.
    *
    */
@@ -137,7 +140,7 @@ interface FieldBehaviorValueMembers {
 export type FieldBehaviorClass = EnumClass<"UNRECOGNIZED" | "FIELD_BEHAVIOR_UNSPECIFIED" | "IMMUTABLE" | "IDENTIFIER" | "INPUT_ONLY" | "OUTPUT_ONLY" | "MEANINGFUL_EMPTY_VALUE" | "NON_EMPTY_DEFAULT"> & FieldBehaviorValueMembers;
 
 const FieldBehavior_VALUE_COMMENTS = {
-  IMMUTABLE: " This indicates that the field can't be changed during a resource update.\n Changing the field value will cause an `INVALID_ARGUMENT` error.\n Resource recreate requires a change of the field value.\n",
+  IMMUTABLE: " This indicates that the field can't be changed during a resource update.\n Changing the field value will cause an `INVALID_ARGUMENT` error.\n For message fields, this applies to the field itself. Nested immutable\n fields do not make a mutable parent message immutable, and such a parent\n message may still be cleared.\n Resource recreate requires a change of the field value.\n",
   IDENTIFIER: " Indicates field is a resource ID, so it MUST be present on a resource\n update, but MUST NOT be set on create.\n Otherwise, RPC will fail with the `INVALID_ARGUMENT` error\n",
   INPUT_ONLY: " Indicates field is not present in output.\n",
   OUTPUT_ONLY: " Indicates field can't be set on create or changed on update.\n Otherwise, RPC will fail with the `INVALID_ARGUMENT` error\n",
@@ -150,6 +153,9 @@ export const FieldBehavior = createEnum("nebius.FieldBehavior", {
   /**
    *  This indicates that the field can't be changed during a resource update.
    *  Changing the field value will cause an `INVALID_ARGUMENT` error.
+   *  For message fields, this applies to the field itself. Nested immutable
+   *  fields do not make a mutable parent message immutable, and such a parent
+   *  message may still be cleared.
    *  Resource recreate requires a change of the field value.
    * 
    */
@@ -1212,14 +1218,14 @@ export interface NIDFieldSettings {
   [customJson]?: () => unknown;
   /**
    *  Fields annotated with this option are treated as NIDs.
-   *  `resource` lists allowed NID resource types (prefixes). Leave empty to accept any type.
+   *  `resource` lists allowed NID resource types (prefixes). Leave empty or set to `*` to accept any type.
    *  Validation only produces warnings.
    *
    */
   resource: string[];
   /**
    *  For metadata fields, `parent_resource` lists allowed parent resource types for `metadata.parent_id`.
-   *  Leave empty to allow any type. Validation only produces warnings.
+   *  Leave empty or set to `*` to allow any type. Validation only produces warnings.
    *  Typically set on the resource message; request-level overrides are supported.
    *
    */
@@ -1340,6 +1346,207 @@ function createBaseNIDFieldSettings(): NIDFieldSettings {
     parentResource: [],
   };
   return applyNIDFieldSettingsCustom(message);
+}
+
+/**
+ *  SubfieldSettings describes overrides for some settings for subfields of a
+ *  field. Overrides are applied to fields in order of appearance, so the first
+ *  matching override is applied, and the rest are ignored.
+ *
+ *  Example:
+ *  ```protobuf
+ *  message MyMessage {
+ *    string field1 = 1;
+ *  }
+ *  message MyMessage2 {
+ *    MyMessage field2 = 1 [(subfield_settings) = { field_path: "field1", is_required: true }];
+ *  }
+ *  ```
+ *  In this example, `field1` in `MyMessage2` is required, even if it is not
+ *  required in `MyMessage`.
+ *  The following example will override the setting again:
+ *  ```protobuf
+ *  service MyService {
+ *    rpc MyMethod(MyMessage2) returns (MyMessage2) {
+ *      option (method_behavior) = METHOD_UPDATER;
+ *      option (request_fields) = { field_path: "field2.field1", is_required: false };
+ *    }
+ *  }
+ *  ```
+ *  In this example, `field1` in `MyMessage2` is not required for the `MyMethod`,
+ *  even if it is required in `MyMessage2`.
+ *
+ */
+export interface SubfieldSettings {
+  $type: "nebius.SubfieldSettings";
+  [unknownFieldsSymbol]?: Uint8Array | undefined;
+  [custom]?: () => string;
+  [customJson]?: () => unknown;
+  /**
+   *  Subfield path in the message, for example `metadata.parent_id` or `metadata.name`.
+   *  Must be a valid SelectMask.
+   *  May match several fields, if necessary. For example, `some.*.subfield` or
+   *  `some.(subfield,another_field)`.
+   *
+   */
+  fieldPath: string;
+  /**
+   *  For fields annotated with this option, values are treated as NIDs and
+   *  warnings are emitted when they are not valid. These warnings are separate from server-side validation.
+   *
+   */
+  nid?: NIDFieldSettings | undefined;
+  /**
+   *  Mark a field as required, even if it is not required in the message it contains.
+   *  Unlike cel expressions, this setting can be reflected in tools documentation and
+   *  help messages.
+   *
+   */
+  isRequired?: boolean | undefined;
+}
+
+export const SubfieldSettings: MessageFns<SubfieldSettings, "nebius.SubfieldSettings"> = {
+  $type: "nebius.SubfieldSettings" as const,
+
+  encode(message: SubfieldSettings, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {
+    if (message.fieldPath !== "") {
+      writer.uint32(10).string(message.fieldPath);
+    }
+    if (message.nid !== undefined) {
+      const w = writer.uint32(18).fork();
+      NIDFieldSettings.encode(message.nid, w);
+      w.join();
+    }
+    if (message.isRequired !== undefined) {
+      writer.uint32(32).bool(message.isRequired);
+    }
+    if (message[unknownFieldsSymbol]) {
+      writer.raw(message[unknownFieldsSymbol]);
+    }
+    return writer;
+  },
+  decode(input: BinaryReader | Uint8Array, length?: number): SubfieldSettings {
+    const reader = input instanceof BinaryReader ? input : new BinaryReader(input);
+    const end = length === undefined ? reader.len : reader.pos + length;
+    const message = createBaseSubfieldSettings();
+    let writer: BinaryWriter | undefined = undefined;
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1: {
+        if (tag !== 10) break;
+        message.fieldPath = reader.string();
+        continue;
+      }
+        case 2: {
+          if (tag !== 18) break;
+          message.nid = NIDFieldSettings.decode(reader, reader.uint32());
+          continue;
+        }
+        case 4: {
+        if (tag !== 32) break;
+        message.isRequired = reader.bool();
+        continue;
+      }
+        default:
+          break;
+      }
+      if ((tag & 7) === 4 || tag === 0) {
+        break;
+      }
+      {
+        if (!writer) writer = new BinaryWriter();
+        const skipped = reader.skip(tag & 7, tag >>> 3);
+        writer.uint32(tag).raw(skipped);
+      }
+    }
+    if (writer) {
+      message[unknownFieldsSymbol] = writer.finish();
+    }
+    return message;
+  },
+  fromJSON(object: any): SubfieldSettings {
+    return applySubfieldSettingsCustom({
+      $type: "nebius.SubfieldSettings",
+      fieldPath: isSet(object.fieldPath ?? object.field_path)
+        ? String(object.fieldPath ?? object.field_path)
+        : "",
+      nid: isSet(object.nid ?? object.nid)
+        ? NIDFieldSettings.fromJSON(object.nid ?? object.nid)
+        : undefined,
+      isRequired: isSet(object.isRequired ?? object.is_required)
+        ? Boolean(object.isRequired ?? object.is_required)
+        : undefined,
+    });
+  },
+  toJSON(message: SubfieldSettings, use: "json" | "pb" = "json"): unknown {
+    const obj: any = {};
+    const pick = (json: string, pb: string) => (use === "json" ? json : pb);
+    if (message.fieldPath !== "") {
+      obj[pick("fieldPath", "field_path")] = message.fieldPath;
+    }
+    if (message.nid !== undefined) {
+      obj[pick("nid", "nid")] = message.nid
+        ? NIDFieldSettings.toJSON(message.nid, use)
+        : undefined;
+    }
+    if (message.isRequired !== undefined) {
+      obj[pick("isRequired", "is_required")] = message.isRequired;
+    }
+    return obj;
+  },
+  create<I extends DeepPartial<SubfieldSettings>>(base?: I): SubfieldSettings {
+    return SubfieldSettings.fromPartial(base ?? {});
+  },
+  fromPartial<I extends DeepPartial<SubfieldSettings>>(object: I): SubfieldSettings {
+    const message = createBaseSubfieldSettings();
+    message.fieldPath = (object.fieldPath !== undefined && object.fieldPath !== null)
+      ? object.fieldPath
+      : "";
+    message.nid = (object.nid !== undefined && object.nid !== null)
+      ? NIDFieldSettings.fromPartial(object.nid)
+      : undefined;
+    message.isRequired = (object.isRequired !== undefined && object.isRequired !== null)
+      ? object.isRequired
+      : undefined;
+    return message;
+  },
+};
+
+protoRegistry.registerMessage(SubfieldSettings);
+
+function SubfieldSettingsCustomInspect(this: SubfieldSettings): string {
+  const parts: string[] = [];
+  if (this.fieldPath !== "") parts.push("fieldPath" + "=" + inspect(this.fieldPath));
+  if (this.nid !== undefined) parts.push("nid" + "=" + inspect(this.nid));
+  if (this.isRequired !== undefined) parts.push("isRequired" + "=" + inspect(this.isRequired));
+  return `${this.$type}(${parts.join(", ")})`;
+}
+
+function SubfieldSettingsCustomJson(this: SubfieldSettings): unknown {
+  const obj: globalThis.Record<string, unknown> = {
+    type: this.$type,
+  };
+  if (this.fieldPath !== "") obj.fieldPath = inspectJson(this.fieldPath);
+  if (this.nid !== undefined) obj.nid = inspectJson(this.nid);
+  if (this.isRequired !== undefined) obj.isRequired = inspectJson(this.isRequired);
+  return obj;
+}
+
+function applySubfieldSettingsCustom(message: SubfieldSettings): SubfieldSettings {
+  message[custom] = SubfieldSettingsCustomInspect;
+  message[customJson] = SubfieldSettingsCustomJson;
+  return message;
+}
+
+function createBaseSubfieldSettings(): SubfieldSettings {
+  const message: SubfieldSettings = {
+    $type: "nebius.SubfieldSettings",
+    fieldPath: "",
+    nid: undefined,
+    isRequired: undefined,
+  };
+  return applySubfieldSettingsCustom(message);
 }
 
 protoRegistry.registerExtension({
@@ -1583,44 +1790,6 @@ declare module '../protos/protobuf/index' {
 
 protoRegistry.registerExtension({
   extendee: "google.protobuf.MethodOptions",
-  fullName: "nebius.send_reset_mask",
-  fieldNo: 1196,
-  name: "send_reset_mask",
-  kind: "scalar",
-  scalarType: 8,
-  encode(message, writer) {
-    const v = message.sendResetMask;
-    if (v !== undefined) {
-      writer.uint32(9568).bool(v);
-    }
-  },
-  decode(message, reader, tag) {
-    const fn = tag >>> 3;
-    const wt = tag & 7;
-    if (fn !== 1196) return false;
-    if (wt !== 0) return false;
-    message.sendResetMask = reader.bool();
-    return true;
-  },
-  fromJSON(message, object) {
-    const _v = object?.sendResetMask ?? object?.send_reset_mask;
-    if (_v === undefined || _v === null) return;
-    message.sendResetMask = Boolean(_v ?? false);
-  },
-  toJSON(message, obj, use) {
-    const _val = message.sendResetMask;
-    if (_val === true) obj[(use === "json" ? "sendResetMask" : "send_reset_mask")] = _val;
-  }
-});
-
-declare module '../protos/protobuf/index' {
-  interface MethodOptions {
-    sendResetMask?: any;
-  }
-}
-
-protoRegistry.registerExtension({
-  extendee: "google.protobuf.MethodOptions",
   fullName: "nebius.method_behavior",
   fieldNo: 1197,
   name: "method_behavior",
@@ -1663,6 +1832,47 @@ protoRegistry.registerExtension({
 declare module '../protos/protobuf/index' {
   interface MethodOptions {
     methodBehavior?: MethodBehavior[];
+  }
+}
+
+protoRegistry.registerExtension({
+  extendee: "google.protobuf.MethodOptions",
+  fullName: "nebius.request_fields",
+  fieldNo: 1198,
+  name: "request_fields",
+  kind: "repeated_message",
+  messageType: "nebius.SubfieldSettings",
+  encode(message, writer) {
+    for (const v of message.requestFields ?? []) {
+      const w2 = writer.uint32(9586).fork();
+      SubfieldSettings.encode(v, w2);
+      w2.join();
+    }
+  },
+  decode(message, reader, tag) {
+    const fn = tag >>> 3;
+    const wt = tag & 7;
+    if (fn !== 1198) return false;
+    if (wt !== 2) return false;
+    (message.requestFields ??= []).push(SubfieldSettings.decode(reader, reader.uint32()));
+    return true;
+  },
+  fromJSON(message, object) {
+    const _v = object?.requestFields ?? object?.request_fields;
+    if (_v === undefined || _v === null) return;
+    if (globalThis.Array.isArray(_v)) {
+      message.requestFields = _v.map((e: any) => SubfieldSettings.fromJSON(e));
+    }
+  },
+  toJSON(message, obj, use) {
+    const _val = message.requestFields;
+    if (_val?.length) { obj[(use === "json" ? "requestFields" : "request_fields")] = _val.map((e: any) => SubfieldSettings.toJSON(e, use)); }
+  }
+});
+
+declare module '../protos/protobuf/index' {
+  interface MethodOptions {
+    requestFields?: SubfieldSettings[];
   }
 }
 
@@ -2033,6 +2243,47 @@ protoRegistry.registerExtension({
 declare module '../protos/protobuf/index' {
   interface FieldOptions {
     nid?: NIDFieldSettings;
+  }
+}
+
+protoRegistry.registerExtension({
+  extendee: "google.protobuf.FieldOptions",
+  fullName: "nebius.subfield_settings",
+  fieldNo: 1197,
+  name: "subfield_settings",
+  kind: "repeated_message",
+  messageType: "nebius.SubfieldSettings",
+  encode(message, writer) {
+    for (const v of message.subfieldSettings ?? []) {
+      const w2 = writer.uint32(9578).fork();
+      SubfieldSettings.encode(v, w2);
+      w2.join();
+    }
+  },
+  decode(message, reader, tag) {
+    const fn = tag >>> 3;
+    const wt = tag & 7;
+    if (fn !== 1197) return false;
+    if (wt !== 2) return false;
+    (message.subfieldSettings ??= []).push(SubfieldSettings.decode(reader, reader.uint32()));
+    return true;
+  },
+  fromJSON(message, object) {
+    const _v = object?.subfieldSettings ?? object?.subfield_settings;
+    if (_v === undefined || _v === null) return;
+    if (globalThis.Array.isArray(_v)) {
+      message.subfieldSettings = _v.map((e: any) => SubfieldSettings.fromJSON(e));
+    }
+  },
+  toJSON(message, obj, use) {
+    const _val = message.subfieldSettings;
+    if (_val?.length) { obj[(use === "json" ? "subfieldSettings" : "subfield_settings")] = _val.map((e: any) => SubfieldSettings.toJSON(e, use)); }
+  }
+});
+
+declare module '../protos/protobuf/index' {
+  interface FieldOptions {
+    subfieldSettings?: SubfieldSettings[];
   }
 }
 
