@@ -4,7 +4,6 @@ const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const globals = require('globals');
 // Additional plugins
 const perfectionistPlugin = require('eslint-plugin-perfectionist');
-const promisePlugin = require('eslint-plugin-promise');
 const nPlugin = require('eslint-plugin-n');
 const jestPlugin = require('eslint-plugin-jest');
 
@@ -30,6 +29,9 @@ module.exports = [
       parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
+        project: ['./tsconfig.json', './tsconfig.test.json'],
+        tsconfigRootDir: __dirname,
+        projectService: false,
       },
       globals: {
         ...globals.node,
@@ -46,7 +48,6 @@ module.exports = [
     plugins: {
       '@typescript-eslint': tsPlugin,
       perfectionist: perfectionistPlugin,
-      promise: promisePlugin,
       n: nPlugin,
       jest: jestPlugin,
       // prettier formatting handled by Prettier directly; eslint-plugin-prettier removed to avoid conflicts
@@ -88,10 +89,8 @@ module.exports = [
       'perfectionist/sort-named-exports': ['warn', { type: 'natural', order: 'asc' }],
       'perfectionist/sort-intersection-types': ['warn', { type: 'natural', order: 'asc' }],
 
-      // promises
-      'promise/no-return-wrap': 'error',
-      'promise/catch-or-return': 'warn',
-      'promise/no-multiple-resolved': 'error',
+      // async handling
+      '@typescript-eslint/no-floating-promises': 'warn',
 
       // Node.js checks
       // These rules treat src/package.json as the package boundary and produce false
