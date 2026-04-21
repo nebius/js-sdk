@@ -7,7 +7,7 @@
  */
 
 // Use vendored google.protobuf descriptor types (kept in sync via sync:descriptors script)
-import type * as GPB from './protos/protobuf/index';
+import type * as GPB from './protos/protobuf/index.js';
 
 // Narrow helper to safely read enum-like values from generated types without runtime imports
 function enumCode(v: unknown): number | undefined {

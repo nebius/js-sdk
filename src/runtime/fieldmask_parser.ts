@@ -12,7 +12,7 @@
   Whitespace around commas/dots and inside groups is ignored.
 */
 
-import { FieldKey, Mask } from './fieldmask';
+import { FieldKey, Mask } from './fieldmask.js';
 
 class ParseError extends Error {}
 

@@ -1,6 +1,6 @@
-import type { Enum as TSDescriptorEnum } from '../descriptors';
+import type { Enum as TSDescriptorEnum } from '../descriptors.js';
 
-import { deprecationLine } from './helpers';
+import { deprecationLine } from './helpers.js';
 
 function normalizeComment(comment: string | undefined): string | undefined {
   if (!comment) return undefined;

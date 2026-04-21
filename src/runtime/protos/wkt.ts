@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { anyFromJSON, AnyShape, anyToJSON, readAny, writeAny } from './any';
-import { BinaryReader, BinaryWriter, dayjs, Dayjs, DeepPartial, Duration, Long } from './core';
-import { fmFromJSON, fmToJSON, readFieldMask, writeFieldMask } from './fieldmask';
-import { readValue, valueFromJSON, valueToJSON, writeValue } from './values';
+import { anyFromJSON, AnyShape, anyToJSON, readAny, writeAny } from './any.js';
+import { BinaryReader, BinaryWriter, dayjs, Dayjs, DeepPartial, Duration, Long, MessageFns } from './core.js';
+import { fmFromJSON, fmToJSON, readFieldMask, writeFieldMask } from './fieldmask.js';
+import { readValue, valueFromJSON, valueToJSON, writeValue } from './values.js';
 
 // Timestamp helpers
 function tsToWire(d: Dayjs): { seconds: Long; nanos: number } {
@@ -274,3 +274,33 @@ export const wkt = {
 } as const;
 
 export type WktRegistry = typeof wkt;
+
+export interface Empty {}
+
+export const Empty: MessageFns<Empty, 'google.protobuf.Empty'> = {
+  $type: 'google.protobuf.Empty',
+  encode(_message: Empty, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {
+    return writer;
+  },
+  decode(input: BinaryReader | Uint8Array, length?: number): Empty {
+    const reader = input instanceof BinaryReader ? input : new BinaryReader(input);
+    const end = length === undefined ? reader.len : reader.pos + length;
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      reader.skip(tag & 7);
+    }
+    return {};
+  },
+  fromJSON(object: unknown): Empty {
+    return wkt['.google.protobuf.Empty'].fromJSON(object);
+  },
+  toJSON(message: Empty, use?: 'json' | 'pb'): unknown {
+    return wkt['.google.protobuf.Empty'].toJSON(message, use);
+  },
+  create<I extends DeepPartial<Empty>>(base?: I): Empty {
+    return Empty.fromPartial(base ?? {});
+  },
+  fromPartial<I extends DeepPartial<Empty>>(_object: I): Empty {
+    return {};
+  },
+};

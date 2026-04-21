@@ -1,6 +1,6 @@
-import type { Field as TSDescriptorField } from '../descriptors';
+import type { Field as TSDescriptorField } from '../descriptors.js';
 
-import { resolveEnumName, resolveMessageName } from './typeNames';
+import { resolveEnumName, resolveMessageName } from './typeNames.js';
 
 // Basic string helpers
 export function lowerFirst(s: string): string {

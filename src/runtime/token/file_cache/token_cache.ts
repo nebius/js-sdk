@@ -4,10 +4,10 @@ import { dirname } from 'path';
 import * as fsExt from 'fs-ext';
 import * as YAML from 'yaml';
 
-import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
-import { Token } from '../../token';
-import { custom, customJson, Logger } from '../../util/logging';
-import { resolveHomeDir } from '../../util/path';
+import { defaultConfigDir, defaultCredentialsFile } from '../../constants.js';
+import { Token } from '../../token.js';
+import { custom, customJson, Logger } from '../../util/logging.js';
+import { resolveHomeDir } from '../../util/path.js';
 
 export interface TokenCacheOptions {
   cacheFile?: string;

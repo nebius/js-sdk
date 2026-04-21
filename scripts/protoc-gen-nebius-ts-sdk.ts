@@ -13,7 +13,7 @@ import {
   CodeGeneratorResponse,
   CodeGeneratorResponse_Feature,
   CodeGeneratorResponse_File,
-} from './generator/protos/protobuf/compiler/index';
+} from './generator/protos/protobuf/compiler/index.js';
 import {
   DescriptorProto,
   FileDescriptorProto,
@@ -21,7 +21,7 @@ import {
   MethodDescriptorProto,
   ServiceDescriptorProto,
   UninterpretedOption,
-} from './generator/protos/protobuf/index';
+} from './generator/protos/protobuf/index.js';
 
 function readAllStdin(): Promise<Uint8Array> {
   return new Promise((resolve) => {
@@ -65,7 +65,7 @@ function relImportPath(fromFileName: string, toModuleBase: string): string {
   // Ensure paths are posix
   let rel = path.posix.relative(fromDir, path.posix.join('src/generated_test/1', toModuleBase));
   if (!rel.startsWith('.')) rel = './' + rel;
-  return rel;
+  return rel.endsWith('.js') ? rel : `${rel}.js`;
 }
 
 function relToSrc(fromFileName: string): string {
@@ -153,9 +153,9 @@ function buildWrapperContent(
   const serviceModuleBase = moduleBase.endsWith('_service') ? moduleBase : `${moduleBase}_service`;
   const serviceModuleImport = relImportPath(outFileName, serviceModuleBase);
   const localMsgModuleImport = relImportPath(outFileName, moduleBase);
-  const sdkRel = path.posix.join(relToSrc(outFileName), 'sdk');
-  const reqRel = path.posix.join(relToSrc(outFileName), 'runtime', 'request');
-  const opRel = path.posix.join(relToSrc(outFileName), 'runtime', 'operation');
+  const sdkRel = `${path.posix.join(relToSrc(outFileName), 'sdk')}.js`;
+  const reqRel = `${path.posix.join(relToSrc(outFileName), 'runtime', 'request')}.js`;
+  const opRel = `${path.posix.join(relToSrc(outFileName), 'runtime', 'operation')}.js`;
 
   // Collect types per file for foreign imports
   const localProto = fd.name!;
@@ -313,7 +313,7 @@ function buildWrapperContent(
       cls += `    const transformResponse = (resp: any) => {\n`;
       if (isOperationService) {
         cls += `      const serviceName = this.serviceType;\n`;
-        cls += `      const { OperationServiceClient } = require('${opSvcImport}');\n`;
+      cls += `      const { OperationServiceClient } = require('${opSvcImport}');\n`;
         cls += `      const opClient = this.inner;\n`;
         cls += `      const getOpFn = (id: string, x: any, y: any) => new Promise<any>((resolve, reject) => {\n`;
         cls += `        (opClient as any).get({ id } as any, x, y, (e: any, r: any) => e ? reject(e) : resolve(r));\n`;
@@ -332,7 +332,7 @@ function buildWrapperContent(
         cls += `      });\n`;
         cls += `      const sourceMethod = serviceName + '.' + ${JSON.stringify(m.name)};\n`;
       }
-      cls += `      const { Operation } = require('${path.posix.join(relToSrc(outFileName), 'runtime', 'operation')}');\n`;
+      cls += `      const { Operation } = require('${path.posix.join(relToSrc(outFileName), 'runtime', 'operation')}.js');\n`;
       cls += `      return new Operation(this.sdk, sourceMethod, resp, getOpFn);\n`;
       cls += `    };\n`;
       cls += `    return wrapUnaryCall({ request, metadata, options, createCall, transformResponse, methodName: ${JSON.stringify(m.name)}, profileParentId: this.sdk.parentId?.() ?? this.sdk.parentId?.call(this.sdk) });\n`;
@@ -342,7 +342,7 @@ function buildWrapperContent(
       cls += `      const getOpFn = (id: string, x: any, y: any) => new Promise<any>((resolve, reject) => {\n`;
       cls += `        (this.inner as any).get({ id } as any, x, y, (e: any, r: any) => e ? reject(e) : resolve(r));\n`;
       cls += `      });\n`;
-      cls += `      const { Operation } = require('${path.posix.join(relToSrc(outFileName), 'runtime', 'operation')}');\n`;
+      cls += `      const { Operation } = require('${path.posix.join(relToSrc(outFileName), 'runtime', 'operation')}.js');\n`;
       cls += `      return { operations: (resp?.operations ?? []).map((o: any) => new Operation(this.sdk, serviceName + '.Get', o, getOpFn)), nextPageToken: resp?.nextPageToken || '' };\n`;
       cls += `    };\n`;
       cls += `    return wrapUnaryCall({ request, metadata, options, createCall, transformResponse, methodName: ${JSON.stringify(m.name)}, profileParentId: this.sdk.parentId?.() ?? this.sdk.parentId?.call(this.sdk) });\n`;

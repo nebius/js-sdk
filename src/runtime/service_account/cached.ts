@@ -1,8 +1,8 @@
 import { inspect } from 'util';
 
-import { custom, customJson, inspectJson } from '../util/logging';
+import { custom, customJson, inspectJson } from '../util/logging.js';
 
-import type { Reader } from './service_account';
+import type { Reader } from './service_account.js';
 
 export class CachedReader implements Reader {
   public readonly $type = 'nebius.sdk.CachedReader';

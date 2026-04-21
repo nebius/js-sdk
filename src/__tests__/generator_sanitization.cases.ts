@@ -1,6 +1,6 @@
 import path from 'node:path';
 
-import { ROOT, requireOur } from './generator_shared.helpers';
+import { ROOT, requireOur } from './generator_shared.helpers.js';
 
 export function registerSanitizationTests() {
   describe('Sanitization in [custom]/[customJson]', () => {

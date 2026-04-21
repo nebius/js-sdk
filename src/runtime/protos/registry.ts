@@ -1,5 +1,5 @@
-import { BinaryReader, BinaryWriter } from './core';
-import { ENUM_VALUE_META, EnumValueMeta } from './enum';
+import { BinaryReader, BinaryWriter } from './core.js';
+import { ENUM_VALUE_META, EnumValueMeta } from './enum.js';
 
 export interface MessageInstanceInterface {
   readonly $type: string;

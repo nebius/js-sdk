@@ -1,6 +1,6 @@
 import Long from 'long';
 
-import { dayjs, requireBoth } from './generator_shared.helpers';
+import { dayjs, requireBoth } from './generator_shared.helpers.js';
 
 export function registerCrossCompatTests() {
   describe('cross-compat serialization', () => {

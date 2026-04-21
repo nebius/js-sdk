@@ -12,5 +12,14 @@
     "verbatimModuleSyntax": false
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "__tests__", "generated_test", "**/*.test.ts", "**/*.spec.ts"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "__tests__",
+    "generated_test",
+    "src/__tests__/**/*",
+    "src/test/**/*",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
 }

@@ -4,7 +4,7 @@
 
 import { inspect } from 'util';
 
-import { custom, customJson, inspectJson } from './util/logging';
+import { custom, customJson, inspectJson } from './util/logging.js';
 
 export class UnknownServiceError extends Error {
   constructor(id: string) {

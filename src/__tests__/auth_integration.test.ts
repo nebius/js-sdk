@@ -13,16 +13,16 @@ import {
   DiskServiceServiceDescription as DiskServiceService,
   ListDisksRequest,
   ListDisksResponse,
-} from '../api/nebius/compute/v1/index';
+} from '../api/nebius/compute/v1/index.js';
 import {
   CreateTokenResponse,
   ExchangeTokenRequest,
   TokenExchangeServiceServiceDescription as TokenExchangeService,
   TokenExchangeServiceServer,
-} from '../api/nebius/iam/v1/index';
-import { Config } from '../runtime/cli_config';
-import { Basic, Chain } from '../runtime/resolver';
-import { SDK } from '../sdk';
+} from '../api/nebius/iam/v1/index.js';
+import { Config } from '../runtime/cli_config.js';
+import { Basic, Chain } from '../runtime/resolver.js';
+import { SDK } from '../sdk.js';
 
 // Start a gRPC server on an ephemeral port and return its address
 function startServer(
@@ -1125,7 +1125,7 @@ default: p1
     const addrInfo = httpServer.address() as any;
     const httpPort = typeof addrInfo === 'object' && addrInfo ? addrInfo.port : 0;
 
-    const { getToken } = await import('../runtime/token/federation_bearer/auth');
+    const { getToken } = await import('../runtime/token/federation_bearer/auth.js');
     await expect(
       getToken({
         clientId: 'c',

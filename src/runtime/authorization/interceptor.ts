@@ -1,10 +1,10 @@
-import type { CallOptions, InterceptingCall, Interceptor, Listener, Metadata } from '@grpc/grpc-js';
-import { Metadata as GrpcMetadata } from '@grpc/grpc-js';
+import type { CallOptions, Interceptor, Listener, Metadata } from '@grpc/grpc-js';
+import { InterceptingCall, Metadata as GrpcMetadata } from '@grpc/grpc-js';
 
-import { Code } from '../../api/google/rpc/index';
-import { Logger } from '../util/logging';
+import { Code } from '../../api/google/rpc/index.js';
+import { Logger } from '../util/logging.js';
 
-import type { Provider } from './provider';
+import type { Provider } from './provider.js';
 
 function timeLeftMs(deadline: CallOptions['deadline']): number | undefined {
   if (!deadline) return undefined;
@@ -124,9 +124,6 @@ export function createAuthorizationInterceptor(provider: Provider, logger: Logge
       },
     } as const;
 
-    return new (require('@grpc/grpc-js').InterceptingCall as typeof InterceptingCall)(
-      nextCall(options),
-      requester,
-    );
+    return new InterceptingCall(nextCall(options), requester);
   };
 }

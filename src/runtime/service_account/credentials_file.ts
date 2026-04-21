@@ -1,11 +1,11 @@
 import { readFileSync } from 'fs';
 import { inspect } from 'util';
 
-import { custom, customJson, inspectJson, Logger } from '../util/logging';
-import { resolveHomeDir } from '../util/path';
+import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
+import { resolveHomeDir } from '../util/path.js';
 
-import type { Reader } from './service_account';
-import { ServiceAccount } from './service_account';
+import type { Reader } from './service_account.js';
+import { ServiceAccount } from './service_account.js';
 
 interface SubjectCredentials {
   type?: string; // should be 'JWT' or empty

@@ -1,4 +1,4 @@
-import { parseFieldMask } from '../runtime/fieldmask';
+import { parseFieldMask } from '../runtime/fieldmask.js';
 
 describe('Go parse compatibility', () => {
   const errorCases = [

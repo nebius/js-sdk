@@ -1,5 +1,5 @@
 /* Jest tests ported from Python tests/test_fieldmask.py (subset & equivalents) */
-import { FieldKey, FieldPath, Mask, parseFieldMask } from '../runtime/fieldmask';
+import { FieldKey, FieldPath, Mask, parseFieldMask } from '../runtime/fieldmask.js';
 
 function FK(s: string) {
   return new FieldKey(s);

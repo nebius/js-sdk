@@ -4,7 +4,7 @@
 import '@grpc/grpc-js';
 
 // Use the SDK's AuthorizationOptions type for strongly typed options
-import type { AuthorizationOptions } from '../runtime/authorization/provider';
+import type { AuthorizationOptions } from '../runtime/authorization/provider.js';
 
 declare module '@grpc/grpc-js' {
   interface CallOptions {

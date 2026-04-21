@@ -1,4 +1,4 @@
-import type { Field as TSDescriptorField } from '../descriptors';
+import type { Field as TSDescriptorField } from '../descriptors.js';
 
 import {
   defaultValueFor,
@@ -11,8 +11,8 @@ import {
   WKT_TYPE_MAP,
   wktFqnOf,
   writerMethodFor,
-} from './helpers';
-import { resolveEnumName, resolveMessageName } from './typeNames';
+} from './helpers.js';
+import { resolveEnumName, resolveMessageName } from './typeNames.js';
 
 /**
  * Emit extension registrations (and any needed module augmentations) for a set of extension fields.
@@ -325,9 +325,10 @@ export function printExtensions(
       let modPath: string;
       if (extendee.startsWith('google.protobuf.')) {
         const rel = require('path').posix.relative(dir || '.', 'google/protobuf');
-        modPath = (rel ? (rel.startsWith('.') ? rel : `./${rel}`) : './google/protobuf') + '/index';
+        modPath =
+          (rel ? (rel.startsWith('.') ? rel : `./${rel}`) : './google/protobuf') + '/index.js';
       } else {
-        modPath = './index';
+        modPath = './index.js';
       }
       if (!augmentationImported.has(modPath)) {
         lines.push(`import "${modPath}"; // ensure module exists for augmentation`);

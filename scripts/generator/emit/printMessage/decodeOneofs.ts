@@ -1,6 +1,6 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors';
-import { is64Bit, readerMethodFor, wireTypeFor, wktFqnOf } from '../helpers';
-import { resolveEnumName, resolveMessageName } from '../typeNames';
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
+import { is64Bit, readerMethodFor, wireTypeFor, wktFqnOf } from '../helpers.js';
+import { resolveEnumName, resolveMessageName } from '../typeNames.js';
 
 export function emitDecodeOneofs(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];

@@ -11,6 +11,36 @@ function walk(dir, out = []) {
   return out;
 }
 
+function createDirectoryEntryFacades(rootDir, format) {
+  const files = walk(rootDir);
+  for (const absFile of files) {
+    if (!absFile.endsWith(`${path.sep}index.js`)) continue;
+    const moduleDir = path.dirname(absFile);
+    if (moduleDir === rootDir) continue;
+
+    const parentDir = path.dirname(moduleDir);
+    const moduleBaseName = path.basename(moduleDir);
+    const relFromFacadeToIndex = `./${path.posix.join(moduleBaseName, 'index.js')}`;
+    const jsFacade = path.join(parentDir, `${moduleBaseName}.js`);
+    if (!fs.existsSync(jsFacade)) {
+      const content =
+        format === 'esm'
+          ? [`export * from '${relFromFacadeToIndex}';`, ''].join('\n')
+          : ["'use strict';", `module.exports = require('${relFromFacadeToIndex}');`, ''].join(
+              '\n',
+            );
+      fs.writeFileSync(jsFacade, content);
+    }
+
+    const dtsSource = path.join(moduleDir, 'index.d.ts');
+    const dtsFacade = path.join(parentDir, `${moduleBaseName}.d.ts`);
+    if (fs.existsSync(dtsSource) && !fs.existsSync(dtsFacade)) {
+      const content = [`export * from '${relFromFacadeToIndex}';`, ''].join('\n');
+      fs.writeFileSync(dtsFacade, content);
+    }
+  }
+}
+
 const root = path.resolve(__dirname, '..');
 const distCjs = path.join(root, 'dist', 'cjs');
 const distEsm = path.join(root, 'dist', 'esm');
@@ -20,30 +50,13 @@ if (!fs.existsSync(distCjs)) {
   process.exit(1);
 }
 
-fs.mkdirSync(distEsm, { recursive: true });
+createDirectoryEntryFacades(distCjs, 'cjs');
 
-const files = walk(distCjs);
-for (const absCjsFile of files) {
-  const relFromCjsRoot = path.relative(distCjs, absCjsFile);
-  const absEsmFile = path.join(distEsm, relFromCjsRoot);
-  const esmDir = path.dirname(absEsmFile);
-  fs.mkdirSync(esmDir, { recursive: true });
-
-  if (absCjsFile.endsWith('.js')) {
-    // Create a facade that re-exports from the CJS file with a relative path
-    const relToCjsFromEsm = path.relative(esmDir, absCjsFile).split(path.sep).join('/');
-    const content = [
-      '// Auto-generated ESM facade re-exporting the CJS build',
-      `export * from '${relToCjsFromEsm}';`,
-      `import def from '${relToCjsFromEsm}';`,
-      'export default def;',
-      '',
-    ].join('\n');
-    fs.writeFileSync(absEsmFile, content);
-  } else if (absCjsFile.endsWith('.d.ts') || absCjsFile.endsWith('.d.ts.map')) {
-    // Copy type declarations
-    fs.copyFileSync(absCjsFile, absEsmFile);
-  }
+if (!fs.existsSync(distEsm)) {
+  console.error('ESM build missing at dist/esm. Run build:esm first.');
+  process.exit(1);
 }
 
-console.log('Created ESM facades mirroring dist/cjs into dist/esm');
+createDirectoryEntryFacades(distEsm, 'esm');
+
+console.log('Created directory-entry facades in dist/cjs and dist/esm');

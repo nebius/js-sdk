@@ -1,8 +1,8 @@
 import { createSign } from 'crypto';
 
-import { ExchangeTokenRequest } from '../../api/nebius/iam/v1/index';
-import { TokenRequester } from '../token/exchangeable';
-import { custom, customJson, Logger } from '../util/logging';
+import { ExchangeTokenRequest } from '../../api/nebius/iam/v1/index.js';
+import { TokenRequester } from '../token/exchangeable.js';
+import { custom, customJson, Logger } from '../util/logging.js';
 
 export interface ServiceAccountLike extends TokenRequester {
   readonly privateKeyPem: string; // PEM-encoded private key (PKCS#8 or PKCS#1)

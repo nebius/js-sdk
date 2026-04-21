@@ -1,4 +1,4 @@
-import { FieldKey } from '../runtime/fieldmask';
+import { FieldKey } from '../runtime/fieldmask.js';
 
 describe('Go FieldKey compatibility', () => {
   test('simple marshal', () => {

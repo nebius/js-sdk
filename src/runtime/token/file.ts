@@ -1,9 +1,9 @@
 import { readFile } from 'fs/promises';
 
-import type { AuthorizationOptions } from '../authorization/provider';
-import { Bearer, Receiver, Token } from '../token';
-import { custom, customJson } from '../util/logging';
-import { resolveHomeDir } from '../util/path';
+import type { AuthorizationOptions } from '../authorization/provider.js';
+import { Bearer, Receiver, Token } from '../token.js';
+import { custom, customJson } from '../util/logging.js';
+import { resolveHomeDir } from '../util/path.js';
 
 class FileReceiver extends Receiver {
   public readonly $type = 'nebius.sdk.FileReceiver';

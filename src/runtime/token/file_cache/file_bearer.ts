@@ -1,10 +1,10 @@
 import { inspect } from 'util';
 
-import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
-import { Bearer, Receiver, Token } from '../../token';
-import { custom, customJson, inspectJson, Logger } from '../../util/logging';
+import { defaultConfigDir, defaultCredentialsFile } from '../../constants.js';
+import { Bearer, Receiver, Token } from '../../token.js';
+import { custom, customJson, inspectJson, Logger } from '../../util/logging.js';
 
-import { ThrottledTokenCache } from './throttled_token_cache';
+import { ThrottledTokenCache } from './throttled_token_cache.js';
 
 class PureFileCacheReceiver extends Receiver {
   public readonly $type = 'nebius.sdk.PureFileCacheReceiver';
@@ -70,5 +70,5 @@ export class PureFileCacheBearer extends Bearer {
   }
 }
 
-export { AsyncRenewableBearer as AsynchronousRenewableFileCacheBearer } from './async_renewable_bearer';
-export { RenewableFileCacheBearer } from './renewable_bearer';
+export { AsyncRenewableBearer as AsynchronousRenewableFileCacheBearer } from './async_renewable_bearer.js';
+export { RenewableFileCacheBearer } from './renewable_bearer.js';

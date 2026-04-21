@@ -1,4 +1,4 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors';
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 import {
   defaultValueFor,
   enumFromJSONConv,
@@ -8,8 +8,8 @@ import {
   msgFromJSONConv,
   msgToJSONConv,
   wktFqnOf,
-} from '../helpers';
-import { resolveMessageName } from '../typeNames';
+} from '../helpers.js';
+import { resolveMessageName } from '../typeNames.js';
 
 export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[] {
   const lines: string[] = [];

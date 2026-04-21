@@ -1,16 +1,16 @@
 import { inspect } from 'util';
 
-import type { SDKInterface } from '../../sdk';
-import type { FederatedCredentialsReader } from '../service_account/federated_credentials';
+import type { SDKInterface } from '../../sdk.js';
+import type { FederatedCredentialsReader } from '../service_account/federated_credentials.js';
 import {
   FederatedCredentialsTokenRequester,
   FileFederatedCredentials,
-} from '../service_account/federated_credentials';
-import { Bearer, NamedBearer, Receiver } from '../token';
-import { custom, customJson, inspectJson, Logger } from '../util/logging';
+} from '../service_account/federated_credentials.js';
+import { Bearer, NamedBearer, Receiver } from '../token.js';
+import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 
-import { ExchangeableBearer } from './exchangeable';
-import { RenewableBearer } from './renewable';
+import { ExchangeableBearer } from './exchangeable.js';
+import { RenewableBearer } from './renewable.js';
 
 export class FederatedCredentialsBearer extends Bearer {
   public readonly $type = 'nebius.sdk.FederatedCredentialsBearer';

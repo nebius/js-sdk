@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type { BinaryReader, BinaryWriter } from './core';
+import type { BinaryReader, BinaryWriter } from './core.js';
 
 // Struct/Value/ListValue
 export function valueFromJSON(o: any): any {

@@ -1,5 +1,5 @@
 // Replaced external ts-proto-descriptors with internally generated plugin protos
-import { CodeGeneratorRequest, CodeGeneratorResponse } from './protos/protobuf/compiler/index';
+import { CodeGeneratorRequest, CodeGeneratorResponse } from './protos/protobuf/compiler/index.js';
 
 export async function readAllStdin(): Promise<Uint8Array> {
   return new Promise((resolve, reject) => {

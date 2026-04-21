@@ -4,12 +4,12 @@ import { request as httpRequest } from 'http';
 import { request as httpsRequest } from 'https';
 import { URL } from 'url';
 
-import { Logger } from '../../util/logging';
+import { Logger } from '../../util/logging.js';
 
-import { AUTH_ENDPOINT, TOKEN_ENDPOINT } from './constants';
-import { isWsl } from './is_wsl';
-import { PKCE } from './pkce';
-import { CallbackHandler } from './server';
+import { AUTH_ENDPOINT, TOKEN_ENDPOINT } from './constants.js';
+import { isWsl } from './is_wsl.js';
+import { PKCE } from './pkce.js';
+import { CallbackHandler } from './server.js';
 
 export interface GetTokenResult {
   access_token: string;

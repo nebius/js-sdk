@@ -5,8 +5,8 @@
   paths.
 */
 
-import { parseMask } from './fieldmask_parser';
-import { custom, customJson } from './util/logging';
+import { parseMask } from './fieldmask_parser.js';
+import { custom, customJson } from './util/logging.js';
 
 const SIMPLE_STRING_RE = /^[a-zA-Z0-9_]+$/;
 const RECURSION_TOO_DEEP = 1000;

@@ -8,7 +8,7 @@ import {
   parseDurationMs,
   requireOur,
   ROOT,
-} from './generator_shared.helpers';
+} from './generator_shared.helpers.js';
 
 export function registerSelfCompatTests() {
   describe('self-compat serialization', () => {

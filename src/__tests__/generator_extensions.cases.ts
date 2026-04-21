@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { ROOT } from './generator_shared.helpers';
+import { ROOT } from './generator_shared.helpers.js';
 
 export function registerExtensionTests(): void {
   describe('Extensions generation', () => {

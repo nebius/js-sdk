@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 import dayjs from 'dayjs';
-import durationPlugin from 'dayjs/plugin/duration';
+import durationPlugin from 'dayjs/plugin/duration.js';
 import Long from 'long';
 
 dayjs.extend(durationPlugin as any);

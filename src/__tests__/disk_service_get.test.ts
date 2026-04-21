@@ -1,14 +1,14 @@
 import { Metadata, Server, ServerCredentials, credentials } from '@grpc/grpc-js';
 import Long from 'long';
 
-import { ResourceMetadata } from '../api/nebius/common/v1/index';
+import { ResourceMetadata } from '../api/nebius/common/v1/index.js';
 import {
   Disk,
   DiskServiceBaseClient as DiskServiceClient,
   DiskServiceServer,
   DiskServiceServiceDescription as DiskServiceService,
   GetDiskRequest,
-} from '../api/nebius/compute/v1/index';
+} from '../api/nebius/compute/v1/index.js';
 
 // Start a gRPC server on an ephemeral port and return its address
 function startServerWithPort(

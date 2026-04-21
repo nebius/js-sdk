@@ -1,4 +1,4 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors';
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 import {
   deprecationOptions,
   is64Bit,
@@ -7,10 +7,10 @@ import {
   scalarOrRef,
   wireTypeFor,
   wktFqnOf,
-} from '../helpers';
-import { resolveEnumName, resolveMessageName } from '../typeNames';
+} from '../helpers.js';
+import { resolveEnumName, resolveMessageName } from '../typeNames.js';
 
-import { emitDecodeOneofs } from './decodeOneofs';
+import { emitDecodeOneofs } from './decodeOneofs.js';
 
 export function emitDecode(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];

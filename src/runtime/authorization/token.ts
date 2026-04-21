@@ -2,10 +2,10 @@ import { inspect } from 'util';
 
 import type { Metadata } from '@grpc/grpc-js';
 
-import { Bearer, Receiver, Token } from '../token';
-import { custom, customJson, inspectJson } from '../util/logging';
+import { Bearer, Receiver, Token } from '../token.js';
+import { custom, customJson, inspectJson } from '../util/logging.js';
 
-import type { Authenticator, AuthorizationOptions, Provider } from './provider';
+import type { Authenticator, AuthorizationOptions, Provider } from './provider.js';
 
 const HEADER = 'authorization';
 

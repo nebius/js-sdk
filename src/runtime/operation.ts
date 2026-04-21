@@ -1,10 +1,10 @@
 import { Metadata, status, type CallOptions } from '@grpc/grpc-js';
 import { Dayjs } from 'dayjs';
 
-import { Status, Code as StatusCode } from '../api/google/rpc/index';
+import { Status, Code as StatusCode } from '../api/google/rpc/index.js';
 
-import { Request, RetryOptions } from './request';
-import { Logger, custom, customJson, inspectJson } from './util/logging';
+import { Request, RetryOptions } from './request.js';
+import { Logger, custom, customJson, inspectJson } from './util/logging.js';
 
 type TickCount = number | { toNumber?: () => number; toString?: () => string };
 

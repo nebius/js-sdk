@@ -13,7 +13,7 @@ import { join } from 'path';
 import Long from 'long';
 import { parse as parseYAML } from 'yaml';
 
-import { ResourceMetadata } from '../api/nebius/common/v1/index';
+import { ResourceMetadata } from '../api/nebius/common/v1/index.js';
 import {
   BucketService as BucketServiceClient,
   BucketSpec,
@@ -22,9 +22,9 @@ import {
   GetBucketRequest,
   ListBucketsRequest,
   VersioningPolicy,
-} from '../api/nebius/storage/v1/index';
-import { Config } from '../runtime/cli_config';
-import { SDK } from '../sdk';
+} from '../api/nebius/storage/v1/index.js';
+import { Config } from '../runtime/cli_config.js';
+import { SDK } from '../sdk.js';
 
 jest.setTimeout(120_000);
 

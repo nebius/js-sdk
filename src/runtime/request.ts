@@ -1,19 +1,19 @@
+import * as crypto from 'node:crypto';
 import type { CallOptions, ClientUnaryCall, ServiceError as GrpcServiceError } from '@grpc/grpc-js';
 import { Metadata } from '@grpc/grpc-js';
-import { getRelativeTimeout } from '@grpc/grpc-js/build/src/deadline';
 
-import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index';
+import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index.js';
 import {
   ServiceError as NebiusServiceError,
   ServiceError_RetryType,
-} from '../api/nebius/common/v1/index';
-import { SDKInterface } from '../sdk';
+} from '../api/nebius/common/v1/index.js';
+import { SDKInterface } from '../sdk.js';
 
-import type { AuthorizationOptions } from './authorization/provider';
-import { NebiusGrpcError } from './error';
-import { resetMaskFromMessage } from './resetmask';
-import { withTimeout } from './util/cancelable';
-import { custom, customJson, inspectJson, Logger } from './util/logging';
+import type { AuthorizationOptions } from './authorization/provider.js';
+import { NebiusGrpcError } from './error.js';
+import { resetMaskFromMessage } from './resetmask.js';
+import { withTimeout } from './util/cancelable.js';
+import { custom, customJson, inspectJson, Logger } from './util/logging.js';
 
 export interface RetryOptions {
   RequestTimeout?: number; // ms
@@ -42,6 +42,16 @@ export type CallCreator<TReq, TRes> = (
 const RESET_MASK_HEADER = 'x-resetmask';
 const IDEMPOTENCY_HEADER = 'x-idempotency-key';
 
+function getRelativeTimeoutMs(deadline: CallOptions['deadline']): number {
+  if (deadline instanceof Date) {
+    return Math.max(0, deadline.getTime() - Date.now());
+  }
+  if (typeof deadline === 'number') {
+    return Math.max(0, deadline - Date.now());
+  }
+  return 0;
+}
+
 function shouldUseIdempotencyKey(methodName?: string): boolean {
   if (!methodName) return false;
   const m = methodName.toLowerCase();
@@ -56,8 +66,6 @@ function shouldUseIdempotencyKey(methodName?: string): boolean {
 function generateIdempotencyKey(): string {
   try {
     // Prefer crypto.randomUUID if available (RFC 4122 v4)
-
-    const crypto = require('crypto') as typeof import('crypto');
     if (typeof crypto.randomUUID === 'function') {
       return crypto.randomUUID();
     }
@@ -206,7 +214,7 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
 
     let overallMs = DEFAULT_OVERALL_TIMEOUT;
     if (baseOptions?.deadline !== undefined) {
-      overallMs = getRelativeTimeout(baseOptions.deadline);
+      overallMs = getRelativeTimeoutMs(baseOptions.deadline);
       this.logger.trace('Using caller-provided overall deadline', { overall_ms: overallMs });
     } else {
       this.logger.trace('Using default overall deadline', { overall_ms: overallMs });

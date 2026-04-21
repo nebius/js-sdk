@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, statSync } from 'fs';
 import { resolve } from 'path';
 
-import { Logger } from '../util/logging';
+import { Logger } from '../util/logging.js';
 
 function readIfExists(filePath: string): Buffer | undefined {
   try {

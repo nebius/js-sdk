@@ -2,10 +2,10 @@ import { createServer, Server } from 'http';
 import { AddressInfo } from 'net';
 import { URL } from 'url';
 
-import { withTimeout } from '../../util/cancelable';
-import { Logger } from '../../util/logging';
+import { withTimeout } from '../../util/cancelable.js';
+import { Logger } from '../../util/logging.js';
 
-import { PKCE } from './pkce';
+import { PKCE } from './pkce.js';
 
 export class CallbackHandler {
   private _code: string | null = null;

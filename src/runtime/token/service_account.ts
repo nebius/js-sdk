@@ -1,14 +1,14 @@
 import { inspect } from 'util';
 
-import type { SDKInterface } from '../../sdk';
-import type { Reader as ServiceAccountReader } from '../service_account/service_account';
-import { ServiceAccount } from '../service_account/service_account';
-import { StaticReader } from '../service_account/static';
-import { Bearer, NamedBearer, Receiver } from '../token';
-import { custom, customJson, inspectJson, Logger } from '../util/logging';
+import type { SDKInterface } from '../../sdk.js';
+import type { Reader as ServiceAccountReader } from '../service_account/service_account.js';
+import { ServiceAccount } from '../service_account/service_account.js';
+import { StaticReader } from '../service_account/static.js';
+import { Bearer, NamedBearer, Receiver } from '../token.js';
+import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 
-import { ExchangeableBearer } from './exchangeable';
-import { RenewableBearer } from './renewable';
+import { ExchangeableBearer } from './exchangeable.js';
+import { RenewableBearer } from './renewable.js';
 
 export class ServiceAccountBearer extends Bearer {
   public readonly $type = 'nebius.sdk.ServiceAccountBearer';

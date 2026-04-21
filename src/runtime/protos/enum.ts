@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import util from 'node:util';
 
-import { customJson } from '../util/logging';
+import { customJson } from '../util/logging.js';
 
-import type { BinaryWriter } from './core';
+import type { BinaryWriter } from './core.js';
 
 // Symbol used to attach metadata (e.g., original proto comments) to enum value instances without
 // polluting their enumerable keys. Publicly exported via barrel.

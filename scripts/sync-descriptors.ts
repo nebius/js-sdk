@@ -28,7 +28,7 @@ function rewriteImports(code: string): string {
   // From new location to src/runtime/protos: ../../../../src/runtime/protos
   return code.replace(
     /from\s+"\.\.\/\.\.\/\.\.\/runtime\/protos/g,
-    'from "../../../../src/runtime/protos',
+    'from "../../../../src/runtime/protos.js',
   );
 }
 

@@ -1,12 +1,12 @@
 import { inspect } from 'util';
 
-import type { AuthorizationOptions } from '../../authorization/provider';
-import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
-import { Bearer, Receiver, Token } from '../../token';
-import { custom, customJson, inspectJson, Logger } from '../../util/logging';
-import { RenewalError } from '../renewable';
+import type { AuthorizationOptions } from '../../authorization/provider.js';
+import { defaultConfigDir, defaultCredentialsFile } from '../../constants.js';
+import { Bearer, Receiver, Token } from '../../token.js';
+import { custom, customJson, inspectJson, Logger } from '../../util/logging.js';
+import { RenewalError } from '../renewable.js';
 
-import { ThrottledTokenCache } from './throttled_token_cache';
+import { ThrottledTokenCache } from './throttled_token_cache.js';
 
 // A lightweight async renewable bearer using setTimeout for background scheduling
 

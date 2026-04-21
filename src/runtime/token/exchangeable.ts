@@ -6,12 +6,12 @@ import { Metadata as GrpcMetadata } from '@grpc/grpc-js';
 import {
   TokenExchangeService as ExchangeSvc,
   ExchangeTokenRequest,
-} from '../../api/nebius/iam/v1/index';
-import type { SDKInterface } from '../../sdk';
-import type { AuthorizationOptions } from '../authorization/provider';
-import { Bearer, Receiver, Token } from '../token';
-import { TokenSanitizer } from '../token_sanitizer';
-import { custom, customJson, inspectJson, Logger } from '../util/logging';
+} from '../../api/nebius/iam/v1/index.js';
+import type { SDKInterface } from '../../sdk.js';
+import type { AuthorizationOptions } from '../authorization/provider.js';
+import { Bearer, Receiver, Token } from '../token.js';
+import { TokenSanitizer } from '../token_sanitizer.js';
+import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 
 export class UnsupportedResponseError extends Error {
   constructor(expected: string, got: unknown) {

@@ -1,4 +1,4 @@
-import { FieldKey, FieldPath } from '../runtime/fieldmask';
+import { FieldKey, FieldPath } from '../runtime/fieldmask.js';
 
 describe('Go FieldPath compatibility', () => {
   test('join', () => {
