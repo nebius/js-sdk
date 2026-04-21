@@ -31,6 +31,10 @@ export function registerSelfCompatTests() {
       // Enum value comments (now emitted as JSDoc blocks inside createEnum literal)
       expect(txt).toContain('red value trailing');
       expect(txt).toContain('green block trailing');
+      // Trailing block comment after one field attaches to the next declaration.
+      expect(txt).toMatch(
+        /payload block after name[\s\S]{0,120}count:\s+number;/,
+      );
       // Optional field trailing comment (presence in interface JSDoc + property line)
       expect(txt).toContain('optional string trailing');
       expect(txt).toContain('optString?');

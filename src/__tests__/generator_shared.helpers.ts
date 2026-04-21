@@ -111,7 +111,7 @@ message AllWkts {
 
 // Payload message leading comment
 message Payload {
-    string name = 1; // payload name trailing
+    string name = 1; /* payload block after name */
     int32 count = 2; // payload count trailing
 }
 

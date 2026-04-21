@@ -2,20 +2,60 @@ import type { Enum as TSDescriptorEnum } from '../descriptors';
 
 import { deprecationLine } from './helpers';
 
+function normalizeComment(comment: string | undefined): string | undefined {
+  if (!comment) return undefined;
+  return comment.replace(/\*\//g, '* /');
+}
+
+function enumValueComments(e: TSDescriptorEnum): Map<string, string> {
+  const comments = new Map<string, string>();
+
+  for (let i = 0; i < e.values.length; i++) {
+    const v = e.values[i];
+    const leading = e.containingFile.getLeadingComment?.(v.path);
+    const trailing = e.containingFile.getTrailingComment?.(v.path);
+    const detached = e.containingFile.getDocComment?.(v.path);
+    const prev = i > 0 ? e.values[i - 1] : undefined;
+
+    // Compatibility rule: newer protoc/buf versions can attach a block comment
+    // written after the previous enum value as leading_comments on the next value.
+    // When an enum value has both leading and trailing comments and the previous
+    // value has no explicit comment of its own, split them back across the pair.
+    const prevHasOwnComment =
+      !!prev &&
+      !!(
+        e.containingFile.getLeadingComment?.(prev.path) ||
+        e.containingFile.getTrailingComment?.(prev.path)
+      );
+
+    if (prev && leading && trailing && !prevHasOwnComment) {
+      comments.set(prev.pb_name, leading);
+      comments.set(v.pb_name, trailing);
+      continue;
+    }
+
+    if (detached) {
+      comments.set(v.pb_name, detached);
+    } else if (leading || trailing) {
+      comments.set(v.pb_name, [leading, trailing].filter(Boolean).join('\n\n'));
+    }
+  }
+
+  return comments;
+}
+
 export function printEnum(e: TSDescriptorEnum): string {
   const names = e.valueList.map((v) => v.name || 'UNKNOWN');
   const enumDep = deprecationLine(e.descriptor);
+  const valueComments = enumValueComments(e);
   // EnumOptions does not have custom deprecation details extension in annotations.proto, so only tag.
   // Build definition entries with trailing (or leading/aggregated) comments for each enum value if any
   const defEntries = e.values
     .map((v) => {
-      const c =
-        e.containingFile.getDocComment?.(v.path) ||
-        e.containingFile.getLeadingComment?.(v.path) ||
-        e.containingFile.getTrailingComment?.(v.path);
+      const c = valueComments.get(v.pb_name);
       const vDep = deprecationLine(v.descriptor);
       if (c) {
-        const safe = c.replace(/\*\//g, '* /');
+        const safe = normalizeComment(c)!;
         const docLines: string[] = [];
         docLines.push('  /**');
         for (const raw of safe.split(/\r?\n/)) {
@@ -53,13 +93,10 @@ export function printEnum(e: TSDescriptorEnum): string {
   const memberInterfaceLines: string[] = [];
   memberInterfaceLines.push(`interface ${e.tsName}ValueMembers {`);
   for (const v of e.values) {
-    const vc =
-      e.containingFile.getDocComment?.(v.path) ||
-      e.containingFile.getLeadingComment?.(v.path) ||
-      e.containingFile.getTrailingComment?.(v.path);
+    const vc = valueComments.get(v.pb_name);
     const vDep = deprecationLine(v.descriptor);
     if (vc) {
-      const safe = vc.replace(/\*\//g, '* /');
+      const safe = normalizeComment(vc)!;
       const docLines = safe.split(/\r?\n/);
       memberInterfaceLines.push('  /**');
       for (const dl of docLines) memberInterfaceLines.push(`   * ${dl}`.replace(/\s+$/, ''));
@@ -85,12 +122,9 @@ export function printEnum(e: TSDescriptorEnum): string {
   // Build value comments map (only include entries with comments to keep output smaller)
   const commentEntries: string[] = [];
   for (const v of e.values) {
-    const c =
-      e.containingFile.getDocComment?.(v.path) ||
-      e.containingFile.getLeadingComment?.(v.path) ||
-      e.containingFile.getTrailingComment?.(v.path);
+    const c = valueComments.get(v.pb_name);
     if (c) {
-      const safe = c.replace(/\*\//g, '* /');
+      const safe = normalizeComment(c)!;
       commentEntries.push(`  ${v.pb_name}: ${JSON.stringify(safe)},`);
     }
   }
