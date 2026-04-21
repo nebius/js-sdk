@@ -20,9 +20,16 @@ Or, when developing locally from this repository:
 ```bash
 git clone git@github.com:nebius/js-sdk.git
 cd js-sdk
+nvm use
 npm install
 npm run build
 ```
+
+## Node.js version
+
+- Build and release automation uses Node.js 24.x (current Active LTS).
+- CI verifies the SDK on Node.js 22.x and 24.x, with 25.x kept as a forward-compatibility check.
+- If you use `nvm`, this repository includes `.nvmrc`; run `nvm use` before installing dependencies.
 
 When developing inside the repo you can import from the `src/` path directly (examples below use local imports for clarity).
 

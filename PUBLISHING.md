@@ -37,5 +37,6 @@ Build & publish:
 
 Notes:
 
+- Release automation runs on Node.js 24.x. Use `nvm use` in this repository to match the CI/release baseline.
 - `prepublishOnly` runs `npm run build` automatically during `npm publish`.
 - The build writes `package.json` markers into `dist/esm` and `dist/cjs` to make Node resolution robust.

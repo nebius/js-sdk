@@ -37,6 +37,9 @@
   ],
   "author": "Nebius",
   "license": "MIT",
+  "engines": {
+    "node": ">=22 <26"
+  },
   "publishConfig": {
     "access": "public"
   },
