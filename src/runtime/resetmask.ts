@@ -1,6 +1,6 @@
 import { Metadata } from '@grpc/grpc-js';
 
-import { Mask } from './fieldmask';
+import { Mask } from './fieldmask.js';
 
 export const ErrRecursionTooDeep = new Error('recursion too deep');
 const RECURSION_TOO_DEEP = 1000;

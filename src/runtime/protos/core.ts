@@ -3,7 +3,7 @@
 
 // dayjs + plugins
 import dayjs, { Dayjs } from 'dayjs';
-import durationPlugin from 'dayjs/plugin/duration';
+import durationPlugin from 'dayjs/plugin/duration.js';
 import Long from 'long';
 
 (dayjs as unknown as { extend: (p: unknown) => void }).extend(durationPlugin as unknown);

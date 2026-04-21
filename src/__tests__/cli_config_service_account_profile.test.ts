@@ -1,8 +1,8 @@
-import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
+import { existsSync, mkdirSync, rmSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
-import { Config } from '../runtime/cli_config';
-import { ServiceAccountBearer } from '../runtime/token/service_account';
+import { Config } from '../runtime/cli_config.js';
+import { ServiceAccountBearer } from '../runtime/token/service_account.js';
 
 function withTempHome(tmp: string, fn: () => void) {
   const oldHome = process.env.HOME;

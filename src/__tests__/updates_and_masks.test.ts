@@ -1,20 +1,20 @@
 import { Metadata, Server, ServerCredentials } from '@grpc/grpc-js';
 import Long from 'long';
 
-import { Operation, ResourceMetadata } from '../api/nebius/common/v1/index';
+import { Operation, ResourceMetadata } from '../api/nebius/common/v1/index.js';
 import {
   DiskService as DiskServiceClient,
+  type DiskServiceServer,
   DiskServiceServiceDescription as DiskServiceService,
   InstanceService as InstanceServiceClient,
+  type InstanceServiceServer,
   InstanceServiceServiceDescription as InstanceServiceService,
   UpdateDiskRequest,
   UpdateInstanceRequest,
-  type DiskServiceServer,
-  type InstanceServiceServer,
-} from '../api/nebius/compute/v1/index';
-import { parseFieldMask } from '../runtime/fieldmask';
-import { Basic } from '../runtime/resolver';
-import { SDK } from '../sdk';
+} from '../api/nebius/compute/v1/index.js';
+import { parseFieldMask } from '../runtime/fieldmask.js';
+import { Basic } from '../runtime/resolver.js';
+import { SDK } from '../sdk.js';
 
 function startServerWithPort(
   addImpl: (server: Server) => void,
@@ -132,6 +132,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
       const impl: InstanceServiceServer = {
         get: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
         getByName: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
+        batchGet: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
         list: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
         create: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
         update: (call, callback) => {
@@ -167,7 +168,6 @@ describe('updates and masks — InstanceService.Update with list field', () => {
         start: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
         stop: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
         listOperationsByParent: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        batchGet: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
       };
       server.addService(InstanceServiceService, impl);
     });

@@ -3,8 +3,7 @@ const tsParser = require('@typescript-eslint/parser');
 const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const globals = require('globals');
 // Additional plugins
-const importPlugin = require('eslint-plugin-import');
-const promisePlugin = require('eslint-plugin-promise');
+const perfectionistPlugin = require('eslint-plugin-perfectionist');
 const nPlugin = require('eslint-plugin-n');
 const jestPlugin = require('eslint-plugin-jest');
 
@@ -30,6 +29,9 @@ module.exports = [
       parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
+        project: ['./tsconfig.json', './tsconfig.test.json'],
+        tsconfigRootDir: __dirname,
+        projectService: false,
       },
       globals: {
         ...globals.node,
@@ -37,14 +39,7 @@ module.exports = [
         ...globals.jest,
       },
     },
-    // Settings for plugins
     settings: {
-      // Let eslint-plugin-import resolve TS paths via tsconfig
-      'import/resolver': {
-        typescript: {
-          project: ['./tsconfig.json', './tsconfig.scripts.json'],
-        },
-      },
       // Extensions to consider for Node resolution (used by eslint-plugin-n)
       n: {
         tryExtensions: ['.ts', '.tsx', '.js', '.json', '.node'],
@@ -52,8 +47,7 @@ module.exports = [
     },
     plugins: {
       '@typescript-eslint': tsPlugin,
-      import: importPlugin,
-      promise: promisePlugin,
+      perfectionist: perfectionistPlugin,
       n: nPlugin,
       jest: jestPlugin,
       // prettier formatting handled by Prettier directly; eslint-plugin-prettier removed to avoid conflicts
@@ -75,27 +69,34 @@ module.exports = [
       ],
 
       // import hygiene
-      'import/no-unresolved': 'error',
-      'import/no-duplicates': 'error',
-      'import/newline-after-import': 'warn',
-      'import/no-cycle': 'warn',
-      'import/order': [
+      'no-duplicate-imports': 'error',
+      'perfectionist/sort-imports': [
         'warn',
         {
-          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-          'newlines-between': 'always',
-          alphabetize: { order: 'asc', caseInsensitive: true },
+          type: 'natural',
+          order: 'asc',
+          sortSideEffects: false,
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            ['parent', 'sibling', 'index'],
+            'type',
+          ],
         },
       ],
+      'perfectionist/sort-named-imports': ['warn', { type: 'natural', order: 'asc' }],
+      'perfectionist/sort-named-exports': ['warn', { type: 'natural', order: 'asc' }],
+      'perfectionist/sort-intersection-types': ['warn', { type: 'natural', order: 'asc' }],
 
-      // promises
-      'promise/no-return-wrap': 'error',
-      'promise/catch-or-return': 'warn',
-      'promise/no-multiple-resolved': 'error',
+      // async handling
+      '@typescript-eslint/no-floating-promises': 'warn',
 
       // Node.js checks
-      'n/no-missing-import': 'error',
-      'n/no-extraneous-import': 'error',
+      // These rules treat src/package.json as the package boundary and produce false
+      // positives for dependencies declared in the repo root package.json.
+      'n/no-missing-import': 'off',
+      'n/no-extraneous-import': 'off',
       'n/no-process-exit': 'warn',
 
       // Basic Jest safety even in TS files (tests block below adds more)

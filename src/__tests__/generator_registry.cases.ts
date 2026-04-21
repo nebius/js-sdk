@@ -1,9 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
-import { MessageClassInterface } from '../runtime/protos/registry';
-
-import { GENERATED_NB, ROOT } from './generator_shared.helpers';
+import { MessageClassInterface } from '../runtime/protos/registry.js';
+import { GENERATED_NB, ROOT } from './generator_shared.helpers.js';
 
 /**
  * Registers tests validating that the local message type registry file is generated

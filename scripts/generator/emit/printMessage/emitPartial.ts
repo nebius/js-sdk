@@ -1,6 +1,6 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors';
-import { defaultValueFor, is64Bit, scalarOrRef, wktFqnOf } from '../helpers';
-import { resolveEnumName, resolveMessageName } from '../typeNames';
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
+import { defaultValueFor, is64Bit, scalarOrRef, wktFqnOf } from '../helpers.js';
+import { resolveEnumName, resolveMessageName } from '../typeNames.js';
 
 export function emitCreate(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];

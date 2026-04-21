@@ -1,9 +1,9 @@
-import type { AuthorizationOptions } from '../../authorization/provider';
-import { Bearer, Receiver, Token } from '../../token';
-import { TokenSanitizer } from '../../token_sanitizer';
-import { custom, customJson, Logger } from '../../util/logging';
+import type { AuthorizationOptions } from '../../authorization/provider.js';
+import { Bearer, Receiver, Token } from '../../token.js';
+import { TokenSanitizer } from '../../token_sanitizer.js';
+import { custom, customJson, Logger } from '../../util/logging.js';
 
-import { authorize } from './auth';
+import { authorize } from './auth.js';
 
 class FederationReceiver extends Receiver {
   public readonly $type = 'nebius.sdk.FederationReceiver';

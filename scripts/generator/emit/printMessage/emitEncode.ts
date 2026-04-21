@@ -1,4 +1,4 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors';
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 import {
   defaultValueFor,
   deprecationOptions,
@@ -8,8 +8,8 @@ import {
   wireTypeFor,
   wktFqnOf,
   writerMethodFor,
-} from '../helpers';
-import { resolveEnumName, resolveMessageName } from '../typeNames';
+} from '../helpers.js';
+import { resolveEnumName, resolveMessageName } from '../typeNames.js';
 
 export function emitEncode(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];

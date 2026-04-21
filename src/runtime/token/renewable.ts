@@ -1,9 +1,9 @@
 import { inspect } from 'util';
 
-import type { AuthorizationOptions } from '../authorization/provider';
-import { Bearer, Receiver, Token } from '../token';
-import { withTimeout } from '../util/cancelable';
-import { custom, customJson, inspectJson, Logger } from '../util/logging';
+import type { AuthorizationOptions } from '../authorization/provider.js';
+import { Bearer, Receiver, Token } from '../token.js';
+import { withTimeout } from '../util/cancelable.js';
+import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 
 export class RenewalError extends Error {
   constructor(message: string) {

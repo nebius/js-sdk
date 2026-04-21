@@ -1,8 +1,8 @@
-import type { Method, Service as TSService } from '../descriptors';
-import { MethodBehavior as MethodBehaviorEnum } from '../extensions/index';
+import type { Method, Service as TSService } from '../descriptors.js';
+import { MethodBehavior as MethodBehaviorEnum } from '../extensions/index.js';
 
-import { deprecationLine, deprecationOptions } from './helpers';
-import { resolveImportSymbol, resolveTypeNameByFqn } from './typeNames';
+import { deprecationLine, deprecationOptions } from './helpers.js';
+import { resolveImportSymbol, resolveTypeNameByFqn } from './typeNames.js';
 
 function normalizeFqn(name: string, pkg?: string): string {
   let n = name || '';

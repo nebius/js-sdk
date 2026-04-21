@@ -1,9 +1,9 @@
-import { registerSelfCompatTests } from './generator_basic.cases';
-import { registerCrossCompatTests } from './generator_cross.cases';
-import { registerExtensionTests } from './generator_extensions.cases';
-import { registerRegistryTests } from './generator_registry.cases';
-import { registerSanitizationTests } from './generator_sanitization.cases';
-import { cleanupGenerated, ensureProto, runBufGenerateOnce } from './generator_shared.helpers';
+import { registerSelfCompatTests } from './generator_basic.cases.js';
+import { registerCrossCompatTests } from './generator_cross.cases.js';
+import { registerExtensionTests } from './generator_extensions.cases.js';
+import { registerRegistryTests } from './generator_registry.cases.js';
+import { registerSanitizationTests } from './generator_sanitization.cases.js';
+import { cleanupGenerated, ensureProto, runBufGenerateOnce } from './generator_shared.helpers.js';
 
 beforeAll(() => {
   // these functions are strictly synchronous

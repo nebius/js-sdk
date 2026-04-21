@@ -1,4 +1,4 @@
-import { resetMaskFromMessage } from '../runtime/resetmask';
+import { resetMaskFromMessage } from '../runtime/resetmask.js';
 
 function msg(v: any) {
   return v;

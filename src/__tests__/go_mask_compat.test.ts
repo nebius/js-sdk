@@ -1,4 +1,4 @@
-import { FieldKey, FieldPath, Mask, parseFieldMask } from '../runtime/fieldmask';
+import { FieldKey, FieldPath, Mask, parseFieldMask } from '../runtime/fieldmask.js';
 
 describe('Go Mask compatibility', () => {
   test('isEmpty', () => {

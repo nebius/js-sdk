@@ -1,2 +1,2 @@
-export { createResponse, pushFile, toIndexFilePath } from './emit/response';
-export { generateIndexContent } from './emit/generateIndexContent';
+export { createResponse, pushFile, toIndexFilePath } from './emit/response.js';
+export { generateIndexContent } from './emit/generateIndexContent.js';

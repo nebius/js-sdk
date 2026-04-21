@@ -1,4 +1,4 @@
-import type { Enum as TSDescriptorEnum, Message as TSDescriptorMessage } from '../descriptors';
+import type { Enum as TSDescriptorEnum, Message as TSDescriptorMessage } from '../descriptors.js';
 
 export type TypeNameMap = Map<string, string>;
 export type SymbolNameMap = Map<string, string>;

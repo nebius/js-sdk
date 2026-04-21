@@ -1,10 +1,10 @@
 import { inspect } from 'util';
 
-import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
-import { Token } from '../../token';
-import { custom, customJson, inspectJson, Logger } from '../../util/logging';
+import { defaultConfigDir, defaultCredentialsFile } from '../../constants.js';
+import { Token } from '../../token.js';
+import { custom, customJson, inspectJson, Logger } from '../../util/logging.js';
 
-import { TokenCache } from './token_cache';
+import { TokenCache } from './token_cache.js';
 
 export class ThrottledTokenCache {
   public readonly $type = 'nebius.sdk.ThrottledTokenCache';

@@ -1,5 +1,5 @@
 // FieldMask helpers (TS type: string[]). JSON: single string (comma-separated)
-import type { BinaryReader, BinaryWriter } from './core';
+import type { BinaryReader, BinaryWriter } from './core.js';
 
 export function fmFromJSON(o: unknown): string[] {
   if (Array.isArray(o)) return o.map(String);

@@ -1,6 +1,7 @@
+import * as fs from 'node:fs';
 import { inspect } from 'util';
 
-import { resolveHomeDir } from './path';
+import { resolveHomeDir } from './path.js';
 
 // Symbol used to allow objects to provide a JSON-safe representation for
 // logging. Works similar to util.inspect.custom but is used for JSON
@@ -169,11 +170,11 @@ class ConsoleLikeWrapper implements ConsoleLike {
 }
 
 export class FileWrapper implements ConsoleLike {
-  private fs: typeof import('fs');
+  private fs: typeof fs;
   private stream: import('stream').Writable;
   constructor(filePath: string) {
     const resolved = resolveHomeDir(filePath);
-    this.fs = require('fs');
+    this.fs = fs;
     this.stream = this.fs.createWriteStream(resolved, { flags: 'a' });
   }
   error(message?: unknown, ...optionalParams: unknown[]): void {

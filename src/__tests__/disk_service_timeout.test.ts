@@ -1,11 +1,11 @@
-import { Metadata, Server, ServerCredentials, credentials, status } from '@grpc/grpc-js';
+import { credentials, Metadata, Server, ServerCredentials, status } from '@grpc/grpc-js';
 
 import {
   DiskServiceBaseClient as DiskServiceClient,
   DiskServiceServer,
   DiskServiceServiceDescription as DiskServiceService,
   GetDiskRequest,
-} from '../api/nebius/compute/v1/index';
+} from '../api/nebius/compute/v1/index.js';
 
 function startServerWithPort(
   addImpl: (server: Server) => void,

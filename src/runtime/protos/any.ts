@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { base64FromBytes, bytesFromBase64 } from './base64';
-import type { BinaryReader, BinaryWriter } from './core';
+import { base64FromBytes, bytesFromBase64 } from './base64.js';
+import type { BinaryReader, BinaryWriter } from './core.js';
 
 type AnyShape = { typeUrl: string; value: Uint8Array };
 export type { AnyShape };

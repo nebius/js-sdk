@@ -1,11 +1,11 @@
 import { inspect } from 'util';
 
-import type { AuthorizationOptions } from '../../authorization/provider';
-import { defaultConfigDir, defaultCredentialsFile } from '../../constants';
-import { Bearer, Receiver, Token } from '../../token';
-import { custom, customJson, inspectJson, Logger } from '../../util/logging';
+import type { AuthorizationOptions } from '../../authorization/provider.js';
+import { defaultConfigDir, defaultCredentialsFile } from '../../constants.js';
+import { Bearer, Receiver, Token } from '../../token.js';
+import { custom, customJson, inspectJson, Logger } from '../../util/logging.js';
 
-import { ThrottledTokenCache } from './throttled_token_cache';
+import { ThrottledTokenCache } from './throttled_token_cache.js';
 
 // RenewableFileCacheBearer: fetches from cache first; if stale or near expiry, pulls from wrapped bearer
 // and stores back.

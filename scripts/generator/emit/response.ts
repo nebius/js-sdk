@@ -6,7 +6,7 @@ import {
   CodeGeneratorResponse,
   CodeGeneratorResponse_Feature,
   CodeGeneratorResponse_File,
-} from '../protos/protobuf/compiler/index';
+} from '../protos/protobuf/compiler/index.js';
 
 export function createResponse(): CodeGeneratorResponse {
   return CodeGeneratorResponse.fromPartial({

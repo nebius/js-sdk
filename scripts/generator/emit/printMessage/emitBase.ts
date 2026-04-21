@@ -1,5 +1,5 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors';
-import { defaultValueFor } from '../helpers';
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
+import { defaultValueFor } from '../helpers.js';
 
 export function emitBaseFactory(m: TSDescriptorMessage, typeName: string): string[] {
   const lines: string[] = [];

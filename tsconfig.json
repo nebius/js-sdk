@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "commonjs",
     "lib": ["ES2022"],
     "outDir": "./dist",
     "rootDir": "./src",
@@ -12,12 +11,20 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
   "files": ["types.d.ts"],
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "__tests__", "generated_test", "**/*.test.ts", "**/*.spec.ts"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "__tests__",
+    "generated_test",
+    "src/__tests__/**/*",
+    "src/test/**/*",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
 }

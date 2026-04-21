@@ -1,10 +1,10 @@
 import { inspect } from 'util';
 
-import { Bearer, Receiver } from '../token';
-import { custom, customJson, inspectJson, Logger } from '../util/logging';
+import { Bearer, Receiver } from '../token.js';
+import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 
-import { FederationBearer as FederationAuthBearer } from './federation_bearer/index';
-import { AsyncRenewableBearer } from './file_cache/async_renewable_bearer';
+import { FederationBearer as FederationAuthBearer } from './federation_bearer/index.js';
+import { AsyncRenewableBearer } from './file_cache/async_renewable_bearer.js';
 
 export class FederationAccountBearer extends Bearer {
   public readonly $type = 'nebius.sdk.FederationAccountBearer';

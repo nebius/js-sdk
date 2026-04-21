@@ -2,29 +2,30 @@ import { existsSync, readFileSync } from 'fs';
 
 import { parse as parseYAML } from 'yaml';
 
-import type { ConfigReaderLike, Credentials, GetCredentialsOptions } from './cli_config_interfaces';
 import {
   defaultConfigDir,
   defaultConfigFile,
   endpointEnv as ENDPOINT_ENV,
   profileEnv as PROFILE_ENV,
   tokenEnv as TOKEN_ENV,
-} from './constants';
-import { CredentialsFileReader } from './service_account/credentials_file';
-import { PkFileReader } from './service_account/pk_file';
-import { FederatedCredentialsBearer } from './token/federated_credentials';
-import { FederationAccountBearer } from './token/federation_account';
-import { FileBearer } from './token/file';
-import { ServiceAccountBearer } from './token/service_account';
-import { EnvBearer, NoTokenInEnvError } from './token/static';
+} from './constants.js';
+import { CredentialsFileReader } from './service_account/credentials_file.js';
+import { PkFileReader } from './service_account/pk_file.js';
+import { FederatedCredentialsBearer } from './token/federated_credentials.js';
+import { FederationAccountBearer } from './token/federation_account.js';
+import { FileBearer } from './token/file.js';
+import { ServiceAccountBearer } from './token/service_account.js';
+import { EnvBearer, NoTokenInEnvError } from './token/static.js';
 import {
   custom,
   customJson,
   resolveLogger,
   Handler as SDKHandler,
   Logger as SDKLogger,
-} from './util/logging';
-import { resolveHomeDir } from './util/path';
+} from './util/logging.js';
+import { resolveHomeDir } from './util/path.js';
+
+import type { ConfigReaderLike, Credentials, GetCredentialsOptions } from './cli_config_interfaces.js';
 
 export class ConfigError extends Error {}
 export class NoParentIdError extends ConfigError {}

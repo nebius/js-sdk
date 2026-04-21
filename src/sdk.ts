@@ -13,25 +13,25 @@ import {
   GetProfileRequest,
   type GetProfileResponse,
   ProfileService as ProfileServiceClient,
-} from './api/nebius/iam/v1/index';
-import type { Provider as AuthorizationProvider } from './runtime/authorization/provider';
-import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token';
-import type { ConfigReaderLike } from './runtime/cli_config_interfaces';
-import { domain as DEFAULT_DOMAIN } from './runtime/constants';
-import type { Request, RetryOptions } from './runtime/request';
-import { Chain, Conventional, type Resolver, TemplateExpander } from './runtime/resolver';
+} from './api/nebius/iam/v1/index.js';
+import type { Provider as AuthorizationProvider } from './runtime/authorization/provider.js';
+import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token.js';
+import type { ConfigReaderLike } from './runtime/cli_config_interfaces.js';
+import { domain as DEFAULT_DOMAIN } from './runtime/constants.js';
+import type { Request, RetryOptions } from './runtime/request.js';
+import { Chain, Conventional, type Resolver, TemplateExpander } from './runtime/resolver.js';
 import {
   ServiceAccount as SA,
   type Reader as SAReader,
-} from './runtime/service_account/service_account';
-import { getSystemRootCAs, normalizeRootCAs } from './runtime/tls/system_certs';
-import type { Token as AccessToken, Bearer as TokenBearer } from './runtime/token';
-import { FederationAccountBearer } from './runtime/token/federation_account';
-import { FileBearer } from './runtime/token/file';
-import { ServiceAccountBearer } from './runtime/token/service_account';
-import { StaticBearer } from './runtime/token/static';
-import { Handler as SDKHandler, Logger as SDKLogger, resolveLogger } from './runtime/util/logging';
-import { VERSION } from './version';
+} from './runtime/service_account/service_account.js';
+import { getSystemRootCAs, normalizeRootCAs } from './runtime/tls/system_certs.js';
+import type { Token as AccessToken, Bearer as TokenBearer } from './runtime/token.js';
+import { FederationAccountBearer } from './runtime/token/federation_account.js';
+import { FileBearer } from './runtime/token/file.js';
+import { ServiceAccountBearer } from './runtime/token/service_account.js';
+import { StaticBearer } from './runtime/token/static.js';
+import { Handler as SDKHandler, Logger as SDKLogger, resolveLogger } from './runtime/util/logging.js';
+import { VERSION } from './version.js';
 
 export interface SDKInterface {
   getClientByAddress(address: string): Client;
@@ -602,7 +602,7 @@ export class SDK implements SDKInterface {
     this._authorizationProvider = provider;
   }
 
-  setTokenBearerAsAuthorization(bearer: import('./runtime/token').Bearer): void {
+  setTokenBearerAsAuthorization(bearer: import('./runtime/token.js').Bearer): void {
     this._logger.trace('Setting token bearer as authorization.', { bearer });
     this._authorizationProvider = new TokenAuthProvider(bearer);
   }

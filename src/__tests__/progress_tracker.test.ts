@@ -1,28 +1,28 @@
 import { Server, ServerCredentials } from '@grpc/grpc-js';
 import Long from 'long';
 
-import { Status } from '../api/google/rpc/index';
+import { Status } from '../api/google/rpc/index.js';
 import {
   GetOperationRequest,
   Operation as OperationPb,
   OperationService as OperationServiceClient,
+  type OperationServiceServer,
   OperationServiceServiceDescription as OperationServiceService,
   ProgressTracker,
   ProgressTracker_Step,
   ProgressTracker_WorkDone,
-  type OperationServiceServer,
-} from '../api/nebius/common/v1/index';
-import { Operation as OperationAlpha } from '../api/nebius/common/v1alpha1/index';
+} from '../api/nebius/common/v1/index.js';
+import { Operation as OperationAlpha } from '../api/nebius/common/v1alpha1/index.js';
 import {
-  ClusterService as MlflowClusterServiceClient,
-  ClusterServiceServiceDescription as MlflowClusterServiceService,
   CreateClusterRequest,
+  ClusterService as MlflowClusterServiceClient,
   type ClusterServiceServer as MlflowClusterServiceServer,
-} from '../api/nebius/msp/mlflow/v1alpha1/index';
-import { Operation as OperationWrapper } from '../runtime/operation';
-import { dayjs } from '../runtime/protos/core';
-import { Basic } from '../runtime/resolver';
-import { SDK } from '../sdk';
+  ClusterServiceServiceDescription as MlflowClusterServiceService,
+} from '../api/nebius/msp/mlflow/v1alpha1/index.js';
+import { Operation as OperationWrapper } from '../runtime/operation.js';
+import { dayjs } from '../runtime/protos/core.js';
+import { Basic } from '../runtime/resolver.js';
+import { SDK } from '../sdk.js';
 
 function startServerWithPort(
   addImpl: (server: Server) => void,

@@ -1,8 +1,9 @@
 import { inspect } from 'util';
 
-import type { AuthorizationOptions } from './authorization/provider';
-import { TokenSanitizer } from './token_sanitizer';
-import { custom, customJson, inspectJson } from './util/logging';
+import { TokenSanitizer } from './token_sanitizer.js';
+import { custom, customJson, inspectJson } from './util/logging.js';
+
+import type { AuthorizationOptions } from './authorization/provider.js';
 
 // A bearer token with optional expiration time
 export class Token {

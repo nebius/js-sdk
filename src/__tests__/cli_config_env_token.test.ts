@@ -1,8 +1,8 @@
-import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
+import { existsSync, mkdirSync, rmSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
-import { Config } from '../runtime/cli_config';
-import { EnvBearer } from '../runtime/token/static';
+import { Config } from '../runtime/cli_config.js';
+import { EnvBearer } from '../runtime/token/static.js';
 
 // Helper to set HOME for tests
 function withTempHome(tmp: string, fn: () => Promise<void> | void) {

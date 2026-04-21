@@ -1,5 +1,5 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors';
-import { deprecationLine, scalarOrRef, tsFieldType } from '../helpers';
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
+import { deprecationLine, scalarOrRef, tsFieldType } from '../helpers.js';
 
 export function emitInterface(m: TSDescriptorMessage, typeName: string): string[] {
   const lines: string[] = [];

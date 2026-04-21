@@ -1,8 +1,8 @@
 import { inspect } from 'util';
 
-import type { AuthorizationOptions } from '../authorization/provider';
-import { Bearer, Receiver, Token } from '../token';
-import { custom, customJson, inspectJson } from '../util/logging';
+import type { AuthorizationOptions } from '../authorization/provider.js';
+import { Bearer, Receiver, Token } from '../token.js';
+import { custom, customJson, inspectJson } from '../util/logging.js';
 
 export class NoTokenInEnvError extends Error {}
 

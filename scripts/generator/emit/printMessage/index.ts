@@ -1,12 +1,12 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors';
-import type * as GPB from '../../protos/protobuf/index';
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
+import type * as GPB from '../../protos/protobuf/index.js';
 
-import { emitBaseFactory } from './emitBase';
-import { emitDecode } from './emitDecode';
-import { emitEncode } from './emitEncode';
-import { emitInterface } from './emitInterface';
-import { emitFromJSON, emitToJSON } from './emitJSON';
-import { emitCreate, emitFromPartial } from './emitPartial';
+import { emitBaseFactory } from './emitBase.js';
+import { emitDecode } from './emitDecode.js';
+import { emitEncode } from './emitEncode.js';
+import { emitInterface } from './emitInterface.js';
+import { emitFromJSON, emitToJSON } from './emitJSON.js';
+import { emitCreate, emitFromPartial } from './emitPartial.js';
 
 function fqTypeName(m: TSDescriptorMessage): string {
   const pkg = m.containingFile.package || '';

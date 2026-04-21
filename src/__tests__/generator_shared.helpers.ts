@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 import dayjs from 'dayjs';
-import durationPlugin from 'dayjs/plugin/duration';
+import durationPlugin from 'dayjs/plugin/duration.js';
 import Long from 'long';
 
 dayjs.extend(durationPlugin as any);
@@ -111,7 +111,7 @@ message AllWkts {
 
 // Payload message leading comment
 message Payload {
-    string name = 1; // payload name trailing
+    string name = 1; /* payload block after name */
     int32 count = 2; // payload count trailing
 }
 
