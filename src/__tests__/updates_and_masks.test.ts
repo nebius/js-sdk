@@ -167,7 +167,6 @@ describe('updates and masks — InstanceService.Update with list field', () => {
         start: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
         stop: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
         listOperationsByParent: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        batchGet: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
       };
       server.addService(InstanceServiceService, impl);
     });
