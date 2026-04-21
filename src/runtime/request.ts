@@ -1,5 +1,5 @@
 import * as crypto from 'node:crypto';
-import type { CallOptions, ClientUnaryCall, ServiceError as GrpcServiceError } from '@grpc/grpc-js';
+
 import { Metadata } from '@grpc/grpc-js';
 
 import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index.js';
@@ -8,12 +8,13 @@ import {
   ServiceError_RetryType,
 } from '../api/nebius/common/v1/index.js';
 import { SDKInterface } from '../sdk.js';
-
-import type { AuthorizationOptions } from './authorization/provider.js';
 import { NebiusGrpcError } from './error.js';
 import { resetMaskFromMessage } from './resetmask.js';
 import { withTimeout } from './util/cancelable.js';
 import { custom, customJson, inspectJson, Logger } from './util/logging.js';
+
+import type { AuthorizationOptions } from './authorization/provider.js';
+import type { CallOptions, ClientUnaryCall, ServiceError as GrpcServiceError } from '@grpc/grpc-js';
 
 export interface RetryOptions {
   RequestTimeout?: number; // ms

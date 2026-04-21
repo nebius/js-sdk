@@ -4,6 +4,7 @@ const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const globals = require('globals');
 // Additional plugins
 const importPlugin = require('eslint-plugin-import');
+const perfectionistPlugin = require('eslint-plugin-perfectionist');
 const promisePlugin = require('eslint-plugin-promise');
 const nPlugin = require('eslint-plugin-n');
 const jestPlugin = require('eslint-plugin-jest');
@@ -53,6 +54,7 @@ module.exports = [
     plugins: {
       '@typescript-eslint': tsPlugin,
       import: importPlugin,
+      perfectionist: perfectionistPlugin,
       promise: promisePlugin,
       n: nPlugin,
       jest: jestPlugin,
@@ -79,14 +81,25 @@ module.exports = [
       'import/no-duplicates': 'error',
       'import/newline-after-import': 'warn',
       'import/no-cycle': 'warn',
-      'import/order': [
+      'import/order': 'off',
+      'perfectionist/sort-imports': [
         'warn',
         {
-          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-          'newlines-between': 'always',
-          alphabetize: { order: 'asc', caseInsensitive: true },
+          type: 'natural',
+          order: 'asc',
+          sortSideEffects: false,
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            ['parent', 'sibling', 'index'],
+            'type',
+          ],
         },
       ],
+      'perfectionist/sort-named-imports': ['warn', { type: 'natural', order: 'asc' }],
+      'perfectionist/sort-named-exports': ['warn', { type: 'natural', order: 'asc' }],
+      'perfectionist/sort-intersection-types': ['warn', { type: 'natural', order: 'asc' }],
 
       // promises
       'promise/no-return-wrap': 'error',
@@ -94,8 +107,10 @@ module.exports = [
       'promise/no-multiple-resolved': 'error',
 
       // Node.js checks
-      'n/no-missing-import': 'error',
-      'n/no-extraneous-import': 'error',
+      // These rules treat src/package.json as the package boundary and produce false
+      // positives for dependencies declared in the repo root package.json.
+      'n/no-missing-import': 'off',
+      'n/no-extraneous-import': 'off',
       'n/no-process-exit': 'warn',
 
       // Basic Jest safety even in TS files (tests block below adds more)

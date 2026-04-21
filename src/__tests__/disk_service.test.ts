@@ -1,4 +1,4 @@
-import { Metadata, Server, ServerCredentials, credentials } from '@grpc/grpc-js';
+import { credentials, Metadata, Server, ServerCredentials } from '@grpc/grpc-js';
 import Long from 'long';
 
 import { ResourceMetadata } from '../api/nebius/common/v1/index.js';

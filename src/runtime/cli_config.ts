@@ -2,7 +2,6 @@ import { existsSync, readFileSync } from 'fs';
 
 import { parse as parseYAML } from 'yaml';
 
-import type { ConfigReaderLike, Credentials, GetCredentialsOptions } from './cli_config_interfaces.js';
 import {
   defaultConfigDir,
   defaultConfigFile,
@@ -25,6 +24,8 @@ import {
   Logger as SDKLogger,
 } from './util/logging.js';
 import { resolveHomeDir } from './util/path.js';
+
+import type { ConfigReaderLike, Credentials, GetCredentialsOptions } from './cli_config_interfaces.js';
 
 export class ConfigError extends Error {}
 export class NoParentIdError extends ConfigError {}

@@ -1,4 +1,4 @@
-import { Metadata, Server, ServerCredentials, credentials, status } from '@grpc/grpc-js';
+import { credentials, Metadata, Server, ServerCredentials, status } from '@grpc/grpc-js';
 
 import {
   DiskServiceBaseClient as DiskServiceClient,

@@ -1,9 +1,9 @@
 import {
+  credentials,
   Metadata,
   Server,
   ServerCredentials,
   ServiceError,
-  credentials,
   status,
 } from '@grpc/grpc-js';
 

@@ -1,9 +1,9 @@
-import type { SDKInterface } from '../sdk.js';
-
-import type { Provider as AuthorizationProvider } from './authorization/provider.js';
-import type { Reader as TokenRequestReader } from './service_account/service_account.js';
 import { Bearer, Token } from './token.js';
 import { Logger } from './util/logging.js';
+
+import type { SDKInterface } from '../sdk.js';
+import type { Provider as AuthorizationProvider } from './authorization/provider.js';
+import type { Reader as TokenRequestReader } from './service_account/service_account.js';
 
 export type Credentials = AuthorizationProvider | Bearer | TokenRequestReader | Token | string;
 

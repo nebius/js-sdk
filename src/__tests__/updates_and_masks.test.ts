@@ -4,13 +4,13 @@ import Long from 'long';
 import { Operation, ResourceMetadata } from '../api/nebius/common/v1/index.js';
 import {
   DiskService as DiskServiceClient,
+  type DiskServiceServer,
   DiskServiceServiceDescription as DiskServiceService,
   InstanceService as InstanceServiceClient,
+  type InstanceServiceServer,
   InstanceServiceServiceDescription as InstanceServiceService,
   UpdateDiskRequest,
   UpdateInstanceRequest,
-  type DiskServiceServer,
-  type InstanceServiceServer,
 } from '../api/nebius/compute/v1/index.js';
 import { parseFieldMask } from '../runtime/fieldmask.js';
 import { Basic } from '../runtime/resolver.js';

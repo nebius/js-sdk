@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 
 import { MessageClassInterface } from '../runtime/protos/registry.js';
-
 import { GENERATED_NB, ROOT } from './generator_shared.helpers.js';
 
 /**

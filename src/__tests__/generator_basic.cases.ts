@@ -15,6 +15,7 @@ export function registerSelfCompatTests() {
     test('generated comments presence (leading/trailing/detached/oneof)', () => {
       const fs = require('node:fs');
       const path = require('node:path');
+
       const { ROOT, GENERATED_NB } = require('./generator_shared.helpers');
       const dir = path.join(ROOT, GENERATED_NB, 'nebius/example/test');
       const file = path.join(dir, 'index.ts');

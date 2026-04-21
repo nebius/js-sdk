@@ -30,9 +30,9 @@ describe('build integration (CJS bundle)', () => {
       return;
     }
     const cjs = require(cjsPath);
+    const ApiMod = require('../../dist/cjs/api/nebius/compute/v1/index.js');
     const ConfigMod = require('../../dist/cjs/runtime/cli_config.js');
     const ResolverMod = require('../../dist/cjs/runtime/resolver.js');
-    const ApiMod = require('../../dist/cjs/api/nebius/compute/v1/index.js');
 
     const SDK = cjs.SDK;
     const Config = ConfigMod.Config;

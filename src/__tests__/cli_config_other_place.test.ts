@@ -1,4 +1,4 @@
-import { writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
+import { existsSync, mkdirSync, rmSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 import { Config } from '../runtime/cli_config.js';
