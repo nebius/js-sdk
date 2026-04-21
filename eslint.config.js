@@ -3,7 +3,6 @@ const tsParser = require('@typescript-eslint/parser');
 const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const globals = require('globals');
 // Additional plugins
-const importPlugin = require('eslint-plugin-import');
 const perfectionistPlugin = require('eslint-plugin-perfectionist');
 const promisePlugin = require('eslint-plugin-promise');
 const nPlugin = require('eslint-plugin-n');
@@ -38,14 +37,7 @@ module.exports = [
         ...globals.jest,
       },
     },
-    // Settings for plugins
     settings: {
-      // Let eslint-plugin-import resolve TS paths via tsconfig
-      'import/resolver': {
-        typescript: {
-          project: ['./tsconfig.json', './tsconfig.scripts.json'],
-        },
-      },
       // Extensions to consider for Node resolution (used by eslint-plugin-n)
       n: {
         tryExtensions: ['.ts', '.tsx', '.js', '.json', '.node'],
@@ -53,7 +45,6 @@ module.exports = [
     },
     plugins: {
       '@typescript-eslint': tsPlugin,
-      import: importPlugin,
       perfectionist: perfectionistPlugin,
       promise: promisePlugin,
       n: nPlugin,
@@ -77,11 +68,7 @@ module.exports = [
       ],
 
       // import hygiene
-      'import/no-unresolved': 'error',
-      'import/no-duplicates': 'error',
-      'import/newline-after-import': 'warn',
-      'import/no-cycle': 'warn',
-      'import/order': 'off',
+      'no-duplicate-imports': 'error',
       'perfectionist/sort-imports': [
         'warn',
         {

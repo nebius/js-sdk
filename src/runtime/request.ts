@@ -1,6 +1,11 @@
 import * as crypto from 'node:crypto';
 
-import { Metadata } from '@grpc/grpc-js';
+import {
+  type CallOptions,
+  type ClientUnaryCall,
+  type ServiceError as GrpcServiceError,
+  Metadata,
+} from '@grpc/grpc-js';
 
 import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index.js';
 import {
@@ -14,7 +19,6 @@ import { withTimeout } from './util/cancelable.js';
 import { custom, customJson, inspectJson, Logger } from './util/logging.js';
 
 import type { AuthorizationOptions } from './authorization/provider.js';
-import type { CallOptions, ClientUnaryCall, ServiceError as GrpcServiceError } from '@grpc/grpc-js';
 
 export interface RetryOptions {
   RequestTimeout?: number; // ms

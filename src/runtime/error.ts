@@ -1,10 +1,9 @@
-import { Client } from '@grpc/grpc-js';
+import { Client, type ServiceError as GrpcServiceError, type Metadata } from '@grpc/grpc-js';
 
 import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index.js';
 import { InternalError, ServiceError as NebiusServiceError } from '../api/nebius/common/v1/index.js';
 
 import type { AnyShape } from '../runtime/protos/any.js';
-import type { ServiceError as GrpcServiceError, Metadata } from '@grpc/grpc-js';
 
 // Helper: get first string value from metadata by key
 function mdGetString(md: Metadata | undefined, key: string): string | undefined {
