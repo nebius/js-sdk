@@ -1,21 +1,28 @@
 import { inspect } from 'util';
 
-import type { SDKInterface } from '../../sdk.js';
-import type { FederatedCredentialsReader } from '../service_account/federated_credentials.js';
 import {
+  type AuthMetricsInput,
+  authMetricsRecorder,
+  type AuthMetricsRecorder,
+} from '../metrics.js';
+import {
+  type FederatedCredentialsReader,
   FederatedCredentialsTokenRequester,
   FileFederatedCredentials,
 } from '../service_account/federated_credentials.js';
 import { Bearer, NamedBearer, Receiver } from '../token.js';
 import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
-
 import { ExchangeableBearer } from './exchangeable.js';
 import { RenewableBearer } from './renewable.js';
+
+import type { SDKInterface } from '../../sdk.js';
 
 export class FederatedCredentialsBearer extends Bearer {
   public readonly $type = 'nebius.sdk.FederatedCredentialsBearer';
   private _exchangeable: ExchangeableBearer;
+  private _renewable: RenewableBearer;
   private _source: Bearer;
+  private readonly metrics: AuthMetricsRecorder;
 
   constructor(
     federatedCredentials: FederatedCredentialsTokenRequester | FederatedCredentialsReader | string,
@@ -28,6 +35,7 @@ export class FederatedCredentialsBearer extends Bearer {
       retryTimeoutExponent?: number;
       refreshRequestTimeoutMs?: number;
       serviceAccountId?: string | null; // required when passing reader
+      metrics?: AuthMetricsInput;
       logger?: Logger;
     },
   ) {
@@ -66,25 +74,29 @@ export class FederatedCredentialsBearer extends Bearer {
     }
 
     const maxRetries = opts?.maxRetries ?? 2;
+    this.metrics = authMetricsRecorder(opts?.metrics, 'federated-credentials');
 
     this._exchangeable = new ExchangeableBearer(
       fc,
       opts?.sdk ?? null,
       maxRetries,
       opts?.logger?.child('exchangeable'),
+      this.metrics,
     );
 
-    const renewable = new RenewableBearer(this._exchangeable, {
+    this._renewable = new RenewableBearer(this._exchangeable, {
       maxRetries,
       lifetimeSafeFraction: opts?.lifetimeSafeFraction,
       initialRetryTimeoutMs: opts?.initialRetryTimeoutMs,
       maxRetryTimeoutMs: opts?.maxRetryTimeoutMs,
       retryTimeoutExponent: opts?.retryTimeoutExponent,
       refreshRequestTimeoutMs: opts?.refreshRequestTimeoutMs,
+      metrics: this.metrics,
+      provider: 'federated-credentials',
       logger: opts?.logger?.child('renewable'),
     });
 
-    this._source = renewable;
+    this._source = this._renewable;
 
     if (
       fc instanceof FederatedCredentialsTokenRequester &&
@@ -112,6 +124,12 @@ export class FederatedCredentialsBearer extends Bearer {
 
   setSDK(sdk: SDKInterface | Promise<SDKInterface> | null): void {
     this._exchangeable.setSDK(sdk);
+  }
+
+  setMetrics(metrics: AuthMetricsInput): void {
+    this.metrics.setMetrics(metrics);
+    this._exchangeable.setMetrics(this.metrics);
+    this._renewable.setMetrics(this.metrics);
   }
 
   get wrapped(): Bearer | undefined {

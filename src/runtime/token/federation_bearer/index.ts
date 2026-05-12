@@ -1,9 +1,18 @@
-import type { AuthorizationOptions } from '../../authorization/provider.js';
+import {
+  type AuthMetricsInput,
+  authMetricsRecorder,
+  type AuthMetricsRecorder,
+  METRIC_RESULT_ERROR,
+  METRIC_RESULT_SUCCESS,
+  metricDurationMs,
+  metricStart,
+} from '../../metrics.js';
 import { Bearer, Receiver, Token } from '../../token.js';
 import { TokenSanitizer } from '../../token_sanitizer.js';
 import { custom, customJson, Logger } from '../../util/logging.js';
-
 import { authorize } from './auth.js';
+
+import type { AuthorizationOptions } from '../../authorization/provider.js';
 
 class FederationReceiver extends Receiver {
   public readonly $type = 'nebius.sdk.FederationReceiver';
@@ -15,6 +24,7 @@ class FederationReceiver extends Receiver {
     private readonly noBrowserOpen: boolean = false,
     private readonly ca?: Buffer,
     private readonly logger?: Logger,
+    private readonly metrics: AuthMetricsRecorder = authMetricsRecorder(undefined, 'federation'),
   ) {
     super();
   }
@@ -37,31 +47,39 @@ class FederationReceiver extends Receiver {
     timeoutMs?: number,
     _options?: AuthorizationOptions | undefined,
   ): Promise<Token> {
-    const start = Date.now();
-    this.logger?.debug('receiver._fetch: start', { timeoutMs, start });
-    const res = await authorize({
-      clientId: this.clientId,
-      federationEndpoint: this.federationEndpoint,
-      federationId: this.federationId,
-      writer: this.writer,
-      noBrowserOpen: this.noBrowserOpen,
-      timeoutMs:
-        timeoutMs === undefined ? undefined : Math.max(0, timeoutMs - (Date.now() - start)),
-      ca: this.ca,
-      logger: this.logger?.child('auth'),
-    });
-    this.logger?.trace('receiver._fetch: authorize result', {
-      expires_in: res?.expires_in,
-      access_token: TokenSanitizer.accessTokenSanitizer().sanitize(res?.access_token),
-    });
-    if (!res || typeof res.access_token !== 'string' || typeof res.expires_in !== 'number') {
-      throw new Error('invalid token response');
+    const start = metricStart();
+    const startWallMs = Date.now();
+    this.logger?.debug('receiver._fetch: start', { timeoutMs, start: startWallMs });
+    try {
+      const res = await authorize({
+        clientId: this.clientId,
+        federationEndpoint: this.federationEndpoint,
+        federationId: this.federationId,
+        writer: this.writer,
+        noBrowserOpen: this.noBrowserOpen,
+        timeoutMs:
+          timeoutMs === undefined ? undefined : Math.max(0, timeoutMs - (Date.now() - startWallMs)),
+        ca: this.ca,
+        logger: this.logger?.child('auth'),
+      });
+      this.logger?.trace('receiver._fetch: authorize result', {
+        expires_in: res?.expires_in,
+        access_token: TokenSanitizer.accessTokenSanitizer().sanitize(res?.access_token),
+      });
+      if (!res || typeof res.access_token !== 'string' || typeof res.expires_in !== 'number') {
+        throw new Error('invalid token response');
+      }
+      const expiration =
+        res.expires_in > 0 ? new Date(Date.now() + res.expires_in * 1000) : undefined;
+      const tok = new Token(res.access_token, expiration);
+      this.metrics.tokenAcquire(METRIC_RESULT_SUCCESS, metricDurationMs(start), 1);
+      this.metrics.tokenLifetime(tok);
+      this.logger?.debug('receiver._fetch: received token', { token: tok });
+      return tok;
+    } catch (err) {
+      this.metrics.tokenAcquire(METRIC_RESULT_ERROR, metricDurationMs(start), 1);
+      throw err;
     }
-    const expiration =
-      res.expires_in > 0 ? new Date(Date.now() + res.expires_in * 1000) : undefined;
-    const tok = new Token(res.access_token, expiration);
-    this.logger?.debug('receiver._fetch: received token', { token: tok });
-    return tok;
   }
 
   canRetry(_err: unknown, _options?: AuthorizationOptions | undefined): boolean {
@@ -73,6 +91,7 @@ class FederationReceiver extends Receiver {
 export class FederationBearer extends Bearer {
   public readonly $type = 'nebius.sdk.FederationBearer';
   private readonly logger?: Logger;
+  private readonly metrics: AuthMetricsRecorder;
   constructor(
     private readonly profileName: string,
     private readonly clientId: string,
@@ -82,8 +101,10 @@ export class FederationBearer extends Bearer {
     private readonly noBrowserOpen: boolean = false,
     private readonly ca?: Buffer,
     logger?: Logger,
+    metrics?: AuthMetricsInput,
   ) {
     super();
+    this.metrics = authMetricsRecorder(metrics, 'federation');
     this.logger = logger?.withFields({
       profile: profileName,
       federationEndpoint,
@@ -91,6 +112,10 @@ export class FederationBearer extends Bearer {
       clientId,
     });
     this.logger?.trace('bearer: created');
+  }
+
+  setMetrics(metrics: AuthMetricsInput): void {
+    this.metrics.setMetrics(metrics);
   }
   [custom](): string {
     return `${this.$type}(profileName=${this.profileName}, clientId=${this.clientId}, federationEndpoint=${this.federationEndpoint}, federationId=${this.federationId}, noBrowserOpen=${this.noBrowserOpen})`;
@@ -120,6 +145,7 @@ export class FederationBearer extends Bearer {
       this.noBrowserOpen,
       this.ca,
       this.logger,
+      this.metrics,
     );
   }
 }

@@ -1,17 +1,26 @@
 import { inspect } from 'util';
 
-import type { CallOptions, Metadata } from '@grpc/grpc-js';
-import { Metadata as GrpcMetadata } from '@grpc/grpc-js';
+import { type CallOptions, Metadata as GrpcMetadata, type Metadata } from '@grpc/grpc-js';
 
 import {
   TokenExchangeService as ExchangeSvc,
   ExchangeTokenRequest,
 } from '../../api/nebius/iam/v1/index.js';
-import type { SDKInterface } from '../../sdk.js';
-import type { AuthorizationOptions } from '../authorization/provider.js';
+import {
+  type AuthMetricsInput,
+  authMetricsRecorder,
+  type AuthMetricsRecorder,
+  METRIC_RESULT_ERROR,
+  METRIC_RESULT_SUCCESS,
+  metricDurationMs,
+  metricStart,
+} from '../metrics.js';
 import { Bearer, Receiver, Token } from '../token.js';
 import { TokenSanitizer } from '../token_sanitizer.js';
 import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
+
+import type { SDKInterface } from '../../sdk.js';
+import type { AuthorizationOptions } from '../authorization/provider.js';
 
 export class UnsupportedResponseError extends Error {
   constructor(expected: string, got: unknown) {
@@ -35,6 +44,7 @@ class ExchangeableReceiver extends Receiver {
     private svcOrPromise: ExchangeSvc | Promise<ExchangeSvc>,
     private defaultMaxRetries: number = 2,
     private logger?: Logger,
+    private metrics: AuthMetricsRecorder = authMetricsRecorder(undefined, 'token-exchange'),
   ) {
     super();
     this.logger =
@@ -63,51 +73,59 @@ class ExchangeableReceiver extends Receiver {
     _options?: AuthorizationOptions | undefined,
   ): Promise<Token> {
     this.trial += 1;
-    const req = this.requester.getExchangeTokenRequest();
+    const start = metricStart();
     const now = Date.now();
     this.logger = this.logger?.withFields({ trial: this.trial, start: now }) ?? undefined;
+    try {
+      const req = this.requester.getExchangeTokenRequest();
+      const md: Metadata = new GrpcMetadata();
 
-    const md: Metadata = new GrpcMetadata();
+      // Disable SDK-side authorization for this call
+      const options: Partial<CallOptions> & { authorizationDisable: boolean } = {
+        authorizationDisable: true,
+      };
 
-    // Disable SDK-side authorization for this call
-    const options: Partial<CallOptions> & { authorizationDisable: boolean } = {
-      authorizationDisable: true,
-    };
+      if (typeof timeoutMs === 'number' && Number.isFinite(timeoutMs)) {
+        this.logger = this.logger?.withFields({ timeoutMs }) ?? undefined;
+        this.logger?.trace('setting deadline for exchange call');
+        options.deadline = new Date(now + Math.max(0, timeoutMs));
+      }
 
-    if (typeof timeoutMs === 'number' && Number.isFinite(timeoutMs)) {
-      this.logger = this.logger?.withFields({ timeoutMs }) ?? undefined;
-      this.logger?.trace('setting deadline for exchange call');
-      options.deadline = new Date(now + Math.max(0, timeoutMs));
+      this.logger?.trace('fetching service client');
+      const svc = await this.getSvc();
+      this.logger?.trace('making exchange call');
+      const res = await svc.exchange(req, md, options).result;
+
+      if (!res || typeof res !== 'object') {
+        throw new UnsupportedResponseError('CreateTokenResponse', res);
+      }
+
+      if (res.tokenType !== 'Bearer') {
+        throw new UnsupportedTokenTypeError(res.tokenType ?? String(res.tokenType));
+      }
+
+      const expSec =
+        typeof res.expiresIn === 'object' &&
+        res.expiresIn !== null &&
+        typeof res.expiresIn.toString === 'function'
+          ? Number(res.expiresIn.toString())
+          : Number(res.expiresIn ?? 0);
+
+      this.logger?.debug('token fetched', {
+        expires_in: res.expiresIn,
+        expiresInSec: expSec,
+        access_token: TokenSanitizer.accessTokenSanitizer().sanitize(res.accessToken),
+      });
+
+      const expiration = isFinite(expSec) && expSec > 0 ? new Date(now + expSec * 1000) : undefined;
+      const token = new Token(res.accessToken, expiration);
+      this.metrics.tokenAcquire(METRIC_RESULT_SUCCESS, metricDurationMs(start), this.trial);
+      this.metrics.tokenLifetime(token);
+      return token;
+    } catch (err) {
+      this.metrics.tokenAcquire(METRIC_RESULT_ERROR, metricDurationMs(start), this.trial);
+      throw err;
     }
-
-    this.logger?.trace('fetching service client');
-    const svc = await this.getSvc();
-    this.logger?.trace('making exchange call');
-    const res = await svc.exchange(req, md, options).result;
-
-    if (!res || typeof res !== 'object') {
-      throw new UnsupportedResponseError('CreateTokenResponse', res);
-    }
-
-    if (res.tokenType !== 'Bearer') {
-      throw new UnsupportedTokenTypeError(res.tokenType ?? String(res.tokenType));
-    }
-
-    const expSec =
-      typeof res.expiresIn === 'object' &&
-      res.expiresIn !== null &&
-      typeof res.expiresIn.toString === 'function'
-        ? Number(res.expiresIn.toString())
-        : Number(res.expiresIn ?? 0);
-
-    this.logger?.debug('token fetched', {
-      expires_in: res.expiresIn,
-      expiresInSec: expSec,
-      access_token: TokenSanitizer.accessTokenSanitizer().sanitize(res.accessToken),
-    });
-
-    const expiration = isFinite(expSec) && expSec > 0 ? new Date(now + expSec * 1000) : undefined;
-    return new Token(res.accessToken, expiration);
   }
 
   canRetry(_err: unknown, options?: AuthorizationOptions | undefined): boolean {
@@ -125,15 +143,22 @@ class ExchangeableReceiver extends Receiver {
 export class ExchangeableBearer extends Bearer {
   public readonly $type = 'nebius.sdk.ExchangeableBearer';
   private svc: ExchangeSvc | Promise<ExchangeSvc> | null = null;
+  private readonly metrics: AuthMetricsRecorder;
 
   constructor(
     private readonly requester: TokenRequester,
     sdk: SDKInterface | Promise<SDKInterface> | null,
     private readonly maxRetries: number = 2,
     private readonly logger?: Logger,
+    metrics?: AuthMetricsInput,
   ) {
     super();
+    this.metrics = authMetricsRecorder(metrics, 'token-exchange');
     this.setSDK(sdk);
+  }
+
+  setMetrics(metrics: AuthMetricsInput): void {
+    this.metrics.setMetrics(metrics);
   }
 
   [custom](): string {
@@ -168,7 +193,13 @@ export class ExchangeableBearer extends Bearer {
 
   receiver(): Receiver {
     if (!this.svc) throw new Error('SDK is not set for the bearer.');
-    return new ExchangeableReceiver(this.requester, this.svc, this.maxRetries, this.logger);
+    return new ExchangeableReceiver(
+      this.requester,
+      this.svc,
+      this.maxRetries,
+      this.logger,
+      this.metrics,
+    );
   }
 }
 

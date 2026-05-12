@@ -3,10 +3,10 @@ import {
   ChannelCredentials,
   Client,
   ClientOptions,
-  Interceptor,
-  Metadata,
   connectivityState,
   credentials,
+  Interceptor,
+  Metadata,
 } from '@grpc/grpc-js';
 
 import {
@@ -14,28 +14,45 @@ import {
   type GetProfileResponse,
   ProfileService as ProfileServiceClient,
 } from './api/nebius/iam/v1/index.js';
-import type { Provider as AuthorizationProvider } from './runtime/authorization/provider.js';
 import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token.js';
-import type { ConfigReaderLike } from './runtime/cli_config_interfaces.js';
 import { domain as DEFAULT_DOMAIN } from './runtime/constants.js';
-import type { Request, RetryOptions } from './runtime/request.js';
+import {
+  keepaliveClientOptions,
+  type KeepaliveConfig,
+  keepaliveConfigFromOptions,
+  type KeepaliveOptions,
+} from './runtime/keepalive.js';
+import {
+  type AuthMetricsLike,
+  instrumentBearer,
+  METRIC_RESULT_ERROR,
+  METRIC_RESULT_SUCCESS,
+  metricDurationMs,
+  type MetricsLike,
+  metricStart,
+  recordConfigMetric,
+} from './runtime/metrics.js';
 import { Chain, Conventional, type Resolver, TemplateExpander } from './runtime/resolver.js';
 import {
   ServiceAccount as SA,
   type Reader as SAReader,
 } from './runtime/service_account/service_account.js';
 import { getSystemRootCAs, normalizeRootCAs } from './runtime/tls/system_certs.js';
-import type { Token as AccessToken, Bearer as TokenBearer } from './runtime/token.js';
 import { FederationAccountBearer } from './runtime/token/federation_account.js';
 import { FileBearer } from './runtime/token/file.js';
 import { ServiceAccountBearer } from './runtime/token/service_account.js';
 import { StaticBearer } from './runtime/token/static.js';
 import {
+  resolveLogger,
   Handler as SDKHandler,
   Logger as SDKLogger,
-  resolveLogger,
 } from './runtime/util/logging.js';
 import { VERSION } from './version.js';
+
+import type { Provider as AuthorizationProvider } from './runtime/authorization/provider.js';
+import type { ConfigReaderLike } from './runtime/cli_config_interfaces.js';
+import type { Request, RetryOptions } from './runtime/request.js';
+import type { Token as AccessToken, Bearer as TokenBearer } from './runtime/token.js';
 
 export interface SDKInterface {
   getClientByAddress(address: string): Client;
@@ -94,6 +111,9 @@ export interface SDKOptions {
   federationInvitationNoBrowserOpen?: boolean;
   federationInvitationTimeoutMs?: number;
   userAgentPrefix?: string; // Optional user agent prefix for requests
+  keepalive?: KeepaliveOptions | false; // false disables SDK default keepalive
+  metrics?: MetricsLike; // public config-reader and auth metrics callbacks
+  authMetrics?: AuthMetricsLike; // auth-only metrics callbacks
   // Logger options: can be a Logger instance, a Handler, or a level (string/number)
   logger?: SDKLogger | SDKHandler | string | number;
   // Per-address overrides (by fully resolved address like "compute.localhost:1234")
@@ -130,10 +150,25 @@ export class SDK implements SDKInterface {
   > = new Map();
   private _tlsRootCAs?: Buffer | string | string[];
   private _userAgent: string;
+  private _keepaliveConfig: KeepaliveConfig;
+  private _metrics: MetricsLike;
+  private _authMetrics: AuthMetricsLike;
 
   constructor(options?: SDKOptions) {
     this._logger = resolveLogger(options?.logger, 'nebius.sdk');
     this._logger.debug('Initializing Nebius SDK');
+    this._metrics = options?.metrics;
+    this._authMetrics = options?.metrics ?? options?.authMetrics;
+    if (options?.metrics && options?.authMetrics) {
+      this._logger.warn('Both metrics and authMetrics provided; using metrics for auth callbacks.');
+    }
+    this._keepaliveConfig = keepaliveConfigFromOptions(options?.keepalive);
+    this._logger.debug('Using gRPC keepalive config', { keepalive: this._keepaliveConfig });
+
+    if (options?.configReader) {
+      this._configureMetricsOnReader(options.configReader);
+    }
+
     // Resolve domain
     let domain = options?.domain;
     if (domain && domain.trim() !== '') {
@@ -292,6 +327,8 @@ export class SDK implements SDKInterface {
     // Finally: pull from configReader if available
     const cr = options.configReader;
     if (cr) {
+      const configMetricsAware = this._isConfigMetricsAwareConfigReader(cr);
+      const start = metricStart();
       try {
         this._logger.debug('Using config reader for authorization.');
         const cred = cr.getCredentials({
@@ -301,12 +338,51 @@ export class SDK implements SDKInterface {
           sdk: this,
           logger: this._logger.child('config_reader'),
         });
+        if (!configMetricsAware) {
+          recordConfigMetric(
+            this._metrics,
+            'credentialsResolve',
+            'config-reader',
+            METRIC_RESULT_SUCCESS,
+            metricDurationMs(start),
+          );
+        }
         const prov2 = this._normalizeCredentials(cred);
         if (prov2) this._authorizationProvider = prov2;
       } catch (err) {
+        if (!configMetricsAware) {
+          recordConfigMetric(
+            this._metrics,
+            'credentialsResolve',
+            'config-reader',
+            METRIC_RESULT_ERROR,
+            metricDurationMs(start),
+          );
+        }
         this._logger.warn('Error using config reader for authorization.', { err });
       }
     }
+  }
+
+  private _configureMetricsOnReader(configReader: ConfigReaderLike): void {
+    const reader = configReader as ConfigReaderLike & {
+      setMetrics?: (metrics: MetricsLike) => void;
+      setAuthMetrics?: (metrics: AuthMetricsLike) => void;
+    };
+    if (this._metrics && typeof reader.setMetrics === 'function') {
+      reader.setMetrics(this._metrics);
+      return;
+    }
+    if (this._authMetrics && typeof reader.setAuthMetrics === 'function') {
+      reader.setAuthMetrics(this._authMetrics);
+    }
+  }
+
+  private _isConfigMetricsAwareConfigReader(configReader: ConfigReaderLike): boolean {
+    const reader = configReader as ConfigReaderLike & {
+      setMetrics?: unknown;
+    };
+    return Boolean(this._metrics) && typeof reader.setMetrics === 'function';
   }
 
   private _normalizeCredentials(init: CredentialsInit): AuthorizationProvider | undefined {
@@ -324,7 +400,7 @@ export class SDK implements SDKInterface {
     // Bearer
     if (this._isBearer(init)) {
       this._logger.trace('Using token bearer provider for authorization.');
-      return new TokenAuthProvider(init as TokenBearer);
+      return new TokenAuthProvider(instrumentBearer(init as TokenBearer, this._authMetrics));
     }
 
     // Token
@@ -332,13 +408,15 @@ export class SDK implements SDKInterface {
       this._logger.trace('Using static token for authorization.', {
         token: init as AccessToken,
       });
-      return new TokenAuthProvider(new StaticBearer(init as AccessToken));
+      return new TokenAuthProvider(
+        instrumentBearer(new StaticBearer(init as AccessToken), this._authMetrics),
+      );
     }
 
     // token string
     if (typeof init === 'string') {
       this._logger.trace('Using token string for authorization.');
-      return new TokenAuthProvider(new StaticBearer(init));
+      return new TokenAuthProvider(instrumentBearer(new StaticBearer(init), this._authMetrics));
     }
 
     // token file
@@ -346,7 +424,9 @@ export class SDK implements SDKInterface {
       this._logger.trace('Using token file for authorization.', {
         tokenFile: init.tokenFile,
       });
-      return new TokenAuthProvider(new FileBearer(init.tokenFile));
+      return new TokenAuthProvider(
+        instrumentBearer(new FileBearer(init.tokenFile), this._authMetrics),
+      );
     }
 
     // Federation direct config
@@ -358,28 +438,30 @@ export class SDK implements SDKInterface {
         federationEndpoint: f.federationEndpoint,
         federationId: f.federationId,
       });
-      return new TokenAuthProvider(
-        new FederationAccountBearer(
-          f.profileName,
-          f.clientId,
-          f.federationEndpoint,
-          f.federationId,
-          {
-            writer: f.writer,
-            noBrowserOpen: !!f.noBrowserOpen,
-            timeoutMs: f.timeoutMs,
-            ca: this._tlsRootCAs,
-            logger: this._logger.child('federation_account'),
-          },
-        ),
+      const bearer = new FederationAccountBearer(
+        f.profileName,
+        f.clientId,
+        f.federationEndpoint,
+        f.federationId,
+        {
+          writer: f.writer,
+          noBrowserOpen: !!f.noBrowserOpen,
+          timeoutMs: f.timeoutMs,
+          ca: this._tlsRootCAs,
+          metrics: this._authMetrics,
+          logger: this._logger.child('federation_account'),
+        },
       );
+      return new TokenAuthProvider(instrumentBearer(bearer, this._authMetrics));
     }
 
     // Service account (reader or concrete or raw params)
     if (this._isSAReader(init) || this._isSA(init) || this._isSAParams(init)) {
       this._logger.trace('Using service account for authorization.');
       const bearer = this._mkSABearer(init);
-      return bearer ? new TokenAuthProvider(bearer) : undefined;
+      return bearer
+        ? new TokenAuthProvider(instrumentBearer(bearer, this._authMetrics))
+        : undefined;
     }
 
     this._logger.warn('Unrecognized credentials format; authorization disabled.', { init });
@@ -403,6 +485,7 @@ export class SDK implements SDKInterface {
         });
         return new ServiceAccountBearer(sa, {
           sdk: this,
+          metrics: this._authMetrics,
           logger: this._logger.child('service_account'),
         });
       }
@@ -410,6 +493,7 @@ export class SDK implements SDKInterface {
         this._logger.trace('Using service account for authorization.', { sa });
         return new ServiceAccountBearer(sa, {
           sdk: this,
+          metrics: this._authMetrics,
           logger: this._logger.child('service_account'),
         });
       }
@@ -423,6 +507,7 @@ export class SDK implements SDKInterface {
           publicKeyId: p.publicKeyId,
           privateKeyPem: p.privateKeyPem,
           sdk: this,
+          metrics: this._authMetrics,
           logger: this._logger.child('service_account'),
         });
       }
@@ -584,6 +669,7 @@ export class SDK implements SDKInterface {
     const primaryUA =
       (primaryParts.length > 0 ? primaryParts.join(' ') + ' ' : '') + this._userAgent;
     const ret = {
+      ...keepaliveClientOptions(this._keepaliveConfig),
       ...(this._clientOptions || {}),
       ...(addrCfg?.clientOptions || {}),
       ...(hasInts ? { interceptors: combinedInterceptors } : {}),
@@ -608,7 +694,7 @@ export class SDK implements SDKInterface {
 
   setTokenBearerAsAuthorization(bearer: import('./runtime/token.js').Bearer): void {
     this._logger.trace('Setting token bearer as authorization.', { bearer });
-    this._authorizationProvider = new TokenAuthProvider(bearer);
+    this._authorizationProvider = new TokenAuthProvider(instrumentBearer(bearer, this._authMetrics));
   }
 
   // Allow adding extra interceptors (idempotency/cleaner analogs)

@@ -1,14 +1,19 @@
 import { inspect } from 'util';
 
+import {
+  type AuthMetricsInput,
+  authMetricsRecorder,
+  type AuthMetricsRecorder,
+} from '../metrics.js';
 import { Bearer, Receiver } from '../token.js';
 import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
-
 import { FederationBearer as FederationAuthBearer } from './federation_bearer/index.js';
 import { AsyncRenewableBearer } from './file_cache/async_renewable_bearer.js';
 
 export class FederationAccountBearer extends Bearer {
   public readonly $type = 'nebius.sdk.FederationAccountBearer';
   private _source: AsyncRenewableBearer;
+  private readonly metrics: AuthMetricsRecorder;
 
   constructor(
     profileName: string,
@@ -30,9 +35,11 @@ export class FederationAccountBearer extends Bearer {
       fileCacheThrottleMs?: number; // default 5m
       cacheFilePath?: string; // custom credentials file path
       ca?: Buffer | string | string[]; // optional extra CA bundle
+      metrics?: AuthMetricsInput;
     },
   ) {
     super();
+    this.metrics = authMetricsRecorder(opts?.metrics, 'federation');
 
     const auth = new FederationAuthBearer(
       profileName,
@@ -43,6 +50,7 @@ export class FederationAccountBearer extends Bearer {
       opts?.noBrowserOpen ?? false,
       opts?.ca instanceof Buffer ? opts.ca : undefined,
       opts?.logger?.child('federation_auth'),
+      this.metrics,
     );
 
     const renewable = new AsyncRenewableBearer(auth, {
@@ -56,6 +64,8 @@ export class FederationAccountBearer extends Bearer {
       refreshRequestTimeoutMs: opts?.timeoutMs ?? 5 * 60 * 1000,
       fileCacheThrottleMs: opts?.fileCacheThrottleMs ?? 5 * 60 * 1000,
       cacheFilePath: opts?.cacheFilePath,
+      metrics: this.metrics,
+      provider: 'federation',
       logger: opts?.logger?.child('renewable'),
     });
 
@@ -73,6 +83,11 @@ export class FederationAccountBearer extends Bearer {
 
   get wrapped(): Bearer | undefined {
     return this._source;
+  }
+
+  setMetrics(metrics: AuthMetricsInput): void {
+    this.metrics.setMetrics(metrics);
+    this._source.setMetrics(this.metrics);
   }
 
   receiver(): Receiver {
