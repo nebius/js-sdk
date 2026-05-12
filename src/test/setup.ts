@@ -1,4 +1,5 @@
 // Jest setup for gRPC tests
+import { format } from 'node:util';
 
 // Increase default test timeout for async server startup/shutdown
 jest.setTimeout(20000);
@@ -12,7 +13,7 @@ beforeAll(() => {
         return;
       }
 
-      process.stderr.write(require('util').format(msg, ...args) + '\n');
+      process.stderr.write(format(msg, ...args) + '\n');
     };
   }
 });
