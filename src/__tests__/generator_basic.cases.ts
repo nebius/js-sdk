@@ -33,9 +33,7 @@ export function registerSelfCompatTests() {
       expect(txt).toContain('red value trailing');
       expect(txt).toContain('green block trailing');
       // Trailing block comment after one field attaches to the next declaration.
-      expect(txt).toMatch(
-        /payload block after name[\s\S]{0,120}count:\s+number;/,
-      );
+      expect(txt).toMatch(/payload block after name[\s\S]{0,120}count:\s+number;/);
       // Optional field trailing comment (presence in interface JSDoc + property line)
       expect(txt).toContain('optional string trailing');
       expect(txt).toContain('optString?');

@@ -4,8 +4,10 @@ const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const globals = require('globals');
 // Additional plugins
 const perfectionistPlugin = require('eslint-plugin-perfectionist');
-const nPlugin = require('eslint-plugin-n');
+const nPluginModule = require('eslint-plugin-n');
 const jestPlugin = require('eslint-plugin-jest');
+
+const nPlugin = nPluginModule.default ?? nPluginModule;
 
 module.exports = [
   // Ignore build artifacts and generated code
@@ -76,13 +78,7 @@ module.exports = [
           type: 'natural',
           order: 'asc',
           sortSideEffects: false,
-          groups: [
-            'builtin',
-            'external',
-            'internal',
-            ['parent', 'sibling', 'index'],
-            'type',
-          ],
+          groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index'], 'type'],
         },
       ],
       'perfectionist/sort-named-imports': ['warn', { type: 'natural', order: 'asc' }],

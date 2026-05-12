@@ -97,7 +97,9 @@ export function generateIndexContent(
     `import { deprecatedWarn, custom, customJson, inspectJson } from "${toJsModuleSpecifier(`${up}/runtime/util/logging`)}";`,
   );
   // Token sanitizer for credential fields
-  lines.push(`import { TokenSanitizer } from "${toJsModuleSpecifier(`${up}/runtime/token_sanitizer`)}";`);
+  lines.push(
+    `import { TokenSanitizer } from "${toJsModuleSpecifier(`${up}/runtime/token_sanitizer`)}";`,
+  );
 
   // If there are any services in this directory, import grpc-js types used by printed services
   const hasServices = entries.some((e) => (e.services?.length ?? 0) > 0);
@@ -275,7 +277,9 @@ export function generateIndexContent(
       `import { Request as SDKRequestClass, type RetryOptions } from "${toJsModuleSpecifier(`${up}/runtime/request`)}";`,
     );
     if (needsOperationWrapper) {
-      lines.push(`import { Operation as OperationWrapper } from "${toJsModuleSpecifier(`${up}/runtime/operation`)}";`);
+      lines.push(
+        `import { Operation as OperationWrapper } from "${toJsModuleSpecifier(`${up}/runtime/operation`)}";`,
+      );
     }
   }
 
