@@ -313,7 +313,7 @@ function buildWrapperContent(
       cls += `    const transformResponse = (resp: any) => {\n`;
       if (isOperationService) {
         cls += `      const serviceName = this.serviceType;\n`;
-      cls += `      const { OperationServiceClient } = require('${opSvcImport}');\n`;
+        cls += `      const { OperationServiceClient } = require('${opSvcImport}');\n`;
         cls += `      const opClient = this.inner;\n`;
         cls += `      const getOpFn = (id: string, x: any, y: any) => new Promise<any>((resolve, reject) => {\n`;
         cls += `        (opClient as any).get({ id } as any, x, y, (e: any, r: any) => e ? reject(e) : resolve(r));\n`;

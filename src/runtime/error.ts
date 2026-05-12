@@ -1,7 +1,10 @@
 import { Client, type ServiceError as GrpcServiceError, type Metadata } from '@grpc/grpc-js';
 
 import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index.js';
-import { InternalError, ServiceError as NebiusServiceError } from '../api/nebius/common/v1/index.js';
+import {
+  InternalError,
+  ServiceError as NebiusServiceError,
+} from '../api/nebius/common/v1/index.js';
 
 import type { AnyShape } from '../runtime/protos/any.js';
 

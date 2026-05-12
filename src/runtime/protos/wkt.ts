@@ -1,6 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { anyFromJSON, AnyShape, anyToJSON, readAny, writeAny } from './any.js';
-import { BinaryReader, BinaryWriter, dayjs, Dayjs, DeepPartial, Duration, Long, MessageFns } from './core.js';
+import {
+  BinaryReader,
+  BinaryWriter,
+  dayjs,
+  Dayjs,
+  DeepPartial,
+  Duration,
+  Long,
+  MessageFns,
+} from './core.js';
 import { fmFromJSON, fmToJSON, readFieldMask, writeFieldMask } from './fieldmask.js';
 import { readValue, valueFromJSON, valueToJSON, writeValue } from './values.js';
 

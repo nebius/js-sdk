@@ -30,7 +30,11 @@ import { FederationAccountBearer } from './runtime/token/federation_account.js';
 import { FileBearer } from './runtime/token/file.js';
 import { ServiceAccountBearer } from './runtime/token/service_account.js';
 import { StaticBearer } from './runtime/token/static.js';
-import { Handler as SDKHandler, Logger as SDKLogger, resolveLogger } from './runtime/util/logging.js';
+import {
+  Handler as SDKHandler,
+  Logger as SDKLogger,
+  resolveLogger,
+} from './runtime/util/logging.js';
 import { VERSION } from './version.js';
 
 export interface SDKInterface {
