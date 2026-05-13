@@ -119,10 +119,14 @@ export abstract class Bearer {
     return undefined;
   }
 
-  async close(_graceMs?: number): Promise<void> {
-    if (this.wrapped && typeof this.wrapped.close === 'function') {
-      await this.wrapped.close(_graceMs);
-    }
+  get metricProvider(): string {
+    const namedProvider = this.name?.split('/')[0];
+    if (namedProvider) return namedProvider;
+    return this.wrapped?.metricProvider ?? this.$type;
+  }
+
+  async close(graceMs?: number): Promise<void> {
+    await this.wrapped?.close(graceMs);
   }
 }
 

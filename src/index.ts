@@ -4,5 +4,7 @@
 import { VERSION } from './version.js';
 
 // Use explicit .js extension to be ESM-friendly after compile.
+export * from './runtime/keepalive.js';
+export * from './runtime/metrics.js';
 export * from './sdk.js';
 export { VERSION };

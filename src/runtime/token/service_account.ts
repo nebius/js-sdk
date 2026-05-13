@@ -1,19 +1,28 @@
 import { inspect } from 'util';
 
-import type { SDKInterface } from '../../sdk.js';
-import type { Reader as ServiceAccountReader } from '../service_account/service_account.js';
-import { ServiceAccount } from '../service_account/service_account.js';
+import {
+  type AuthMetricsInput,
+  authMetricsRecorder,
+  type AuthMetricsRecorder,
+} from '../metrics.js';
+import {
+  ServiceAccount,
+  type Reader as ServiceAccountReader,
+} from '../service_account/service_account.js';
 import { StaticReader } from '../service_account/static.js';
 import { Bearer, NamedBearer, Receiver } from '../token.js';
 import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
-
 import { ExchangeableBearer } from './exchangeable.js';
 import { RenewableBearer } from './renewable.js';
+
+import type { SDKInterface } from '../../sdk.js';
 
 export class ServiceAccountBearer extends Bearer {
   public readonly $type = 'nebius.sdk.ServiceAccountBearer';
   private _exchangeable: ExchangeableBearer;
+  private _renewable: RenewableBearer;
   private _source: NamedBearer;
+  private readonly metrics: AuthMetricsRecorder;
 
   constructor(
     serviceAccount: ServiceAccountReader | ServiceAccount | string,
@@ -27,6 +36,7 @@ export class ServiceAccountBearer extends Bearer {
       maxRetryTimeoutMs?: number;
       retryTimeoutExponent?: number;
       refreshRequestTimeoutMs?: number;
+      metrics?: AuthMetricsInput;
       logger?: Logger;
     },
   ) {
@@ -79,25 +89,29 @@ export class ServiceAccountBearer extends Bearer {
     const publicKeyId = serviceAccount.publicKeyId;
 
     const maxRetries = opts?.maxRetries ?? 2;
+    this.metrics = authMetricsRecorder(opts?.metrics, 'service-account');
 
     this._exchangeable = new ExchangeableBearer(
       reader,
       opts?.sdk ?? null,
       maxRetries,
       opts?.logger?.child('exchangeable'),
+      this.metrics,
     );
 
-    const renewable = new RenewableBearer(this._exchangeable, {
+    this._renewable = new RenewableBearer(this._exchangeable, {
       maxRetries,
       lifetimeSafeFraction: opts?.lifetimeSafeFraction,
       initialRetryTimeoutMs: opts?.initialRetryTimeoutMs,
       maxRetryTimeoutMs: opts?.maxRetryTimeoutMs,
       retryTimeoutExponent: opts?.retryTimeoutExponent,
       refreshRequestTimeoutMs: opts?.refreshRequestTimeoutMs,
+      metrics: this.metrics,
+      provider: 'service-account',
       logger: opts?.logger?.child('renewable'),
     });
 
-    this._source = new NamedBearer(renewable, `service-account/${saId}/${publicKeyId}`);
+    this._source = new NamedBearer(this._renewable, `service-account/${saId}/${publicKeyId}`);
   }
   [custom](): string {
     return `${this.$type}(${inspect(this._source)})`;
@@ -113,6 +127,12 @@ export class ServiceAccountBearer extends Bearer {
     this._exchangeable.setSDK(sdk);
   }
 
+  setMetrics(metrics: AuthMetricsInput): void {
+    this.metrics.setMetrics(metrics);
+    this._exchangeable.setMetrics(this.metrics);
+    this._renewable.setMetrics(this.metrics);
+  }
+
   get wrapped(): Bearer | undefined {
     return this._source;
   }
@@ -122,12 +142,14 @@ export class ServiceAccountBearer extends Bearer {
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function isServiceAccountReader(x: any): x is ServiceAccountReader {
+function isServiceAccountReader(x: unknown): x is ServiceAccountReader {
   return (
-    x &&
-    typeof x === 'object' &&
+    isObject(x) &&
     typeof x.read === 'function' &&
     typeof x.getExchangeTokenRequest === 'function'
   );
+}
+
+function isObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null;
 }

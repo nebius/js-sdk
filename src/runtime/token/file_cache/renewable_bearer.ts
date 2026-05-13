@@ -1,11 +1,20 @@
 import { inspect } from 'util';
 
-import type { AuthorizationOptions } from '../../authorization/provider.js';
 import { defaultConfigDir, defaultCredentialsFile } from '../../constants.js';
+import {
+  authMetricProvider,
+  type AuthMetricsInput,
+  authMetricsRecorder,
+  type AuthMetricsRecorder,
+  bindAuthMetrics,
+  METRIC_RESULT_ERROR,
+  METRIC_RESULT_SUCCESS,
+} from '../../metrics.js';
 import { Bearer, Receiver, Token } from '../../token.js';
 import { custom, customJson, inspectJson, Logger } from '../../util/logging.js';
-
 import { ThrottledTokenCache } from './throttled_token_cache.js';
+
+import type { AuthorizationOptions } from '../../authorization/provider.js';
 
 // RenewableFileCacheBearer: fetches from cache first; if stale or near expiry, pulls from wrapped bearer
 // and stores back.
@@ -42,13 +51,25 @@ class RenewableFileCacheReceiver extends Receiver {
     let token: Token | undefined;
     if (this.fromCache) {
       this.logger?.trace('Fetching token from cache');
-      token = await this.cache.get();
+      try {
+        token = await this.cache.get();
+      } catch (err) {
+        this.bearer.metrics.cacheMiss(METRIC_RESULT_ERROR);
+        throw err;
+      }
     } else {
       this.logger?.trace('Refreshing token from file cache as refresh requested');
-      token = await this.cache.refresh();
+      try {
+        token = await this.cache.refresh();
+      } catch (err) {
+        this.bearer.metrics.cacheRefresh(METRIC_RESULT_ERROR);
+        throw err;
+      }
       if (this.lastSaved && token && this.lastSaved.equals(token)) {
         this.logger?.debug('Token in file cache is same as last saved, need renewal');
         token = undefined; // avoid reusing the same token on error
+      } else if (token) {
+        this.bearer.metrics.cacheRefresh(METRIC_RESULT_SUCCESS);
       }
     }
 
@@ -58,6 +79,7 @@ class RenewableFileCacheReceiver extends Receiver {
         this.logger?.trace('Using token from cache', { token });
         this.fromCache = true;
         this.lastSaved = token;
+        this.bearer.metrics.cacheHit();
         return token;
       }
       this.logger?.debug('Token from cache is expired or outside safety margin, needs renewal', {
@@ -70,18 +92,32 @@ class RenewableFileCacheReceiver extends Receiver {
     const wrapped = this.bearer.wrapped;
     if (!wrapped) {
       this.logger?.debug('Fresh token source is not available, returning empty token');
+      this.bearer.metrics.cacheMiss(METRIC_RESULT_SUCCESS);
       return Token.empty();
     }
     if (!this.receiver) this.receiver = wrapped.receiver();
     this.logger?.trace('Fetching fresh token from wrapped bearer', { wrapped });
-    const fresh = await this.receiver.fetch(timeoutMs);
+    let fresh: Token;
+    try {
+      fresh = await this.receiver.fetch(timeoutMs);
+    } catch (err) {
+      this.bearer.metrics.cacheMiss(METRIC_RESULT_ERROR);
+      throw err;
+    }
+    this.bearer.metrics.cacheMiss(METRIC_RESULT_SUCCESS);
     if (fresh.isEmpty()) {
       this.logger?.debug('Wrapped bearer returned empty token, not updating cache');
       this.lastSaved = undefined;
       return fresh;
     }
     this.logger?.trace('Storing fresh token to cache', { token: fresh });
-    await this.cache.set(fresh);
+    try {
+      await this.cache.set(fresh);
+      this.bearer.metrics.cacheStore(METRIC_RESULT_SUCCESS);
+    } catch (err) {
+      this.bearer.metrics.cacheStore(METRIC_RESULT_ERROR);
+      throw err;
+    }
     this.lastSaved = fresh;
     this.logger?.debug('Fetched fresh token', { token: fresh });
     return fresh;
@@ -92,6 +128,7 @@ class RenewableFileCacheReceiver extends Receiver {
     if (this.fromCache) {
       this.logger?.debug('Error occurred while using cached token, will try refreshing', { err });
       this.fromCache = false;
+      this.bearer.metrics.cacheInvalidate();
       return true;
     }
     if (!this.receiver) {
@@ -109,17 +146,23 @@ class RenewableFileCacheReceiver extends Receiver {
 export class RenewableFileCacheBearer extends Bearer {
   public readonly $type = 'nebius.sdk.RenewableFileCacheBearer';
   private readonly _cache: ThrottledTokenCache;
+  private _wrapped: Bearer;
+  public readonly metrics: AuthMetricsRecorder;
   public safetyMargin: number | null; // in ms
 
   constructor(
-    private readonly _wrapped: Bearer,
+    _wrapped: Bearer,
     safetyMarginMs: number = 2 * 60 * 60 * 1000,
     cacheFile: string = `${defaultConfigDir}/${defaultCredentialsFile}`,
     throttleMs: number = 5 * 60 * 1000,
     private logger?: Logger,
+    metrics?: AuthMetricsInput,
+    provider?: string,
   ) {
     super();
     this.safetyMargin = safetyMarginMs;
+    this.metrics = authMetricsRecorder(metrics, provider ?? authMetricProvider(_wrapped));
+    this._wrapped = bindAuthMetrics(_wrapped, this.metrics);
     const name = _wrapped.name;
     if (!name) throw new Error('Bearer must have a name for the cache.');
     this._cache = new ThrottledTokenCache(
@@ -149,5 +192,10 @@ export class RenewableFileCacheBearer extends Bearer {
 
   receiver(): Receiver {
     return new RenewableFileCacheReceiver(this, this._cache, this.logger);
+  }
+
+  setMetrics(metrics: AuthMetricsInput): void {
+    this.metrics.setMetrics(metrics);
+    this._wrapped = bindAuthMetrics(this._wrapped, this.metrics);
   }
 }

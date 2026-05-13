@@ -1,41 +1,55 @@
 import {
-  CallOptions,
-  ChannelCredentials,
   Client,
-  ClientOptions,
-  Interceptor,
-  Metadata,
   connectivityState,
   credentials,
+  Metadata,
 } from '@grpc/grpc-js';
+import type { CallOptions, ChannelCredentials, ClientOptions, Interceptor } from '@grpc/grpc-js';
 
 import {
   GetProfileRequest,
   type GetProfileResponse,
   ProfileService as ProfileServiceClient,
 } from './api/nebius/iam/v1/index.js';
-import type { Provider as AuthorizationProvider } from './runtime/authorization/provider.js';
 import { TokenProvider as TokenAuthProvider } from './runtime/authorization/token.js';
-import type { ConfigReaderLike } from './runtime/cli_config_interfaces.js';
 import { domain as DEFAULT_DOMAIN } from './runtime/constants.js';
-import type { Request, RetryOptions } from './runtime/request.js';
+import {
+  keepaliveClientOptions,
+  type KeepaliveConfig,
+  keepaliveConfigFromOptions,
+  type KeepaliveOptions,
+} from './runtime/keepalive.js';
+import {
+  type AuthMetricsLike,
+  instrumentBearer,
+  METRIC_RESULT_ERROR,
+  METRIC_RESULT_SUCCESS,
+  metricDurationMs,
+  type MetricsLike,
+  metricStart,
+  recordConfigMetric,
+} from './runtime/metrics.js';
 import { Chain, Conventional, type Resolver, TemplateExpander } from './runtime/resolver.js';
 import {
   ServiceAccount as SA,
   type Reader as SAReader,
 } from './runtime/service_account/service_account.js';
 import { getSystemRootCAs, normalizeRootCAs } from './runtime/tls/system_certs.js';
-import type { Token as AccessToken, Bearer as TokenBearer } from './runtime/token.js';
 import { FederationAccountBearer } from './runtime/token/federation_account.js';
 import { FileBearer } from './runtime/token/file.js';
 import { ServiceAccountBearer } from './runtime/token/service_account.js';
 import { StaticBearer } from './runtime/token/static.js';
 import {
+  resolveLogger,
   Handler as SDKHandler,
   Logger as SDKLogger,
-  resolveLogger,
 } from './runtime/util/logging.js';
 import { VERSION } from './version.js';
+
+import type { Provider as AuthorizationProvider } from './runtime/authorization/provider.js';
+import type { ConfigReaderLike } from './runtime/cli_config_interfaces.js';
+import type { Request, RetryOptions } from './runtime/request.js';
+import type { Token as AccessToken, Bearer as TokenBearer } from './runtime/token.js';
 
 export interface SDKInterface {
   getClientByAddress(address: string): Client;
@@ -94,6 +108,9 @@ export interface SDKOptions {
   federationInvitationNoBrowserOpen?: boolean;
   federationInvitationTimeoutMs?: number;
   userAgentPrefix?: string; // Optional user agent prefix for requests
+  keepalive?: KeepaliveOptions | false; // false disables SDK default keepalive
+  metrics?: MetricsLike; // public config-reader and auth metrics callbacks
+  authMetrics?: AuthMetricsLike; // auth-only metrics callbacks
   // Logger options: can be a Logger instance, a Handler, or a level (string/number)
   logger?: SDKLogger | SDKHandler | string | number;
   // Per-address overrides (by fully resolved address like "compute.localhost:1234")
@@ -109,6 +126,10 @@ export interface SDKOptions {
 }
 
 const DEFAULT_CLOSE_TIMEOUT = 20000;
+
+function isObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null;
+}
 
 export class SDK implements SDKInterface {
   private _resolver: Resolver;
@@ -130,10 +151,25 @@ export class SDK implements SDKInterface {
   > = new Map();
   private _tlsRootCAs?: Buffer | string | string[];
   private _userAgent: string;
+  private _keepaliveConfig: KeepaliveConfig;
+  private _metrics: MetricsLike;
+  private _authMetrics: AuthMetricsLike;
 
   constructor(options?: SDKOptions) {
     this._logger = resolveLogger(options?.logger, 'nebius.sdk');
     this._logger.debug('Initializing Nebius SDK');
+    this._metrics = options?.metrics;
+    this._authMetrics = options?.metrics ?? options?.authMetrics;
+    if (options?.metrics && options?.authMetrics) {
+      this._logger.warn('Both metrics and authMetrics provided; using metrics for auth callbacks.');
+    }
+    this._keepaliveConfig = keepaliveConfigFromOptions(options?.keepalive);
+    this._logger.debug('Using gRPC keepalive config', { keepalive: this._keepaliveConfig });
+
+    if (options?.configReader) {
+      this._configureMetricsOnReader(options.configReader);
+    }
+
     // Resolve domain
     let domain = options?.domain;
     if (domain && domain.trim() !== '') {
@@ -292,6 +328,8 @@ export class SDK implements SDKInterface {
     // Finally: pull from configReader if available
     const cr = options.configReader;
     if (cr) {
+      const configMetricsAware = this._isConfigMetricsAwareConfigReader(cr);
+      const start = metricStart();
       try {
         this._logger.debug('Using config reader for authorization.');
         const cred = cr.getCredentials({
@@ -301,12 +339,48 @@ export class SDK implements SDKInterface {
           sdk: this,
           logger: this._logger.child('config_reader'),
         });
+        if (!configMetricsAware) {
+          recordConfigMetric(
+            this._metrics,
+            'credentialsResolve',
+            'config-reader',
+            METRIC_RESULT_SUCCESS,
+            metricDurationMs(start),
+          );
+        }
         const prov2 = this._normalizeCredentials(cred);
         if (prov2) this._authorizationProvider = prov2;
       } catch (err) {
+        if (!configMetricsAware) {
+          recordConfigMetric(
+            this._metrics,
+            'credentialsResolve',
+            'config-reader',
+            METRIC_RESULT_ERROR,
+            metricDurationMs(start),
+          );
+        }
         this._logger.warn('Error using config reader for authorization.', { err });
       }
     }
+  }
+
+  private _configureMetricsOnReader(configReader: ConfigReaderLike): void {
+    const reader = configReader as ConfigReaderLike & {
+      setMetrics?: (metrics: MetricsLike) => void;
+      setAuthMetrics?: (metrics: AuthMetricsLike) => void;
+    };
+    if (this._metrics && typeof reader.setMetrics === 'function') {
+      reader.setMetrics(this._metrics);
+      return;
+    }
+    if (this._authMetrics && typeof reader.setAuthMetrics === 'function') {
+      reader.setAuthMetrics(this._authMetrics);
+    }
+  }
+
+  private _isConfigMetricsAwareConfigReader(configReader: ConfigReaderLike): boolean {
+    return Boolean(this._metrics) && configReader.emitsCredentialsResolveMetrics === true;
   }
 
   private _normalizeCredentials(init: CredentialsInit): AuthorizationProvider | undefined {
@@ -324,21 +398,23 @@ export class SDK implements SDKInterface {
     // Bearer
     if (this._isBearer(init)) {
       this._logger.trace('Using token bearer provider for authorization.');
-      return new TokenAuthProvider(init as TokenBearer);
+      return new TokenAuthProvider(instrumentBearer(init as TokenBearer, this._authMetrics));
     }
 
     // Token
     if (this._isAccessToken(init)) {
       this._logger.trace('Using static token for authorization.', {
-        token: init as AccessToken,
+        token: init,
       });
-      return new TokenAuthProvider(new StaticBearer(init as AccessToken));
+      return new TokenAuthProvider(
+        instrumentBearer(new StaticBearer(init), this._authMetrics),
+      );
     }
 
     // token string
     if (typeof init === 'string') {
       this._logger.trace('Using token string for authorization.');
-      return new TokenAuthProvider(new StaticBearer(init));
+      return new TokenAuthProvider(instrumentBearer(new StaticBearer(init), this._authMetrics));
     }
 
     // token file
@@ -346,40 +422,43 @@ export class SDK implements SDKInterface {
       this._logger.trace('Using token file for authorization.', {
         tokenFile: init.tokenFile,
       });
-      return new TokenAuthProvider(new FileBearer(init.tokenFile));
+      return new TokenAuthProvider(
+        instrumentBearer(new FileBearer(init.tokenFile), this._authMetrics),
+      );
     }
 
     // Federation direct config
     if (this._isFederationInit(init)) {
-      const f = init as FederationCredentialsOptions;
       this._logger.trace('Using federation credentials for authorization.', {
-        profile: f.profileName,
-        clientId: f.clientId,
-        federationEndpoint: f.federationEndpoint,
-        federationId: f.federationId,
+        profile: init.profileName,
+        clientId: init.clientId,
+        federationEndpoint: init.federationEndpoint,
+        federationId: init.federationId,
       });
-      return new TokenAuthProvider(
-        new FederationAccountBearer(
-          f.profileName,
-          f.clientId,
-          f.federationEndpoint,
-          f.federationId,
-          {
-            writer: f.writer,
-            noBrowserOpen: !!f.noBrowserOpen,
-            timeoutMs: f.timeoutMs,
-            ca: this._tlsRootCAs,
-            logger: this._logger.child('federation_account'),
-          },
-        ),
+      const bearer = new FederationAccountBearer(
+        init.profileName,
+        init.clientId,
+        init.federationEndpoint,
+        init.federationId,
+        {
+          writer: init.writer,
+          noBrowserOpen: !!init.noBrowserOpen,
+          timeoutMs: init.timeoutMs,
+          ca: this._tlsRootCAs,
+          metrics: this._authMetrics,
+          logger: this._logger.child('federation_account'),
+        },
       );
+      return new TokenAuthProvider(instrumentBearer(bearer, this._authMetrics));
     }
 
     // Service account (reader or concrete or raw params)
     if (this._isSAReader(init) || this._isSA(init) || this._isSAParams(init)) {
       this._logger.trace('Using service account for authorization.');
       const bearer = this._mkSABearer(init);
-      return bearer ? new TokenAuthProvider(bearer) : undefined;
+      return bearer
+        ? new TokenAuthProvider(instrumentBearer(bearer, this._authMetrics))
+        : undefined;
     }
 
     this._logger.warn('Unrecognized credentials format; authorization disabled.', { init });
@@ -403,6 +482,7 @@ export class SDK implements SDKInterface {
         });
         return new ServiceAccountBearer(sa, {
           sdk: this,
+          metrics: this._authMetrics,
           logger: this._logger.child('service_account'),
         });
       }
@@ -410,6 +490,7 @@ export class SDK implements SDKInterface {
         this._logger.trace('Using service account for authorization.', { sa });
         return new ServiceAccountBearer(sa, {
           sdk: this,
+          metrics: this._authMetrics,
           logger: this._logger.child('service_account'),
         });
       }
@@ -418,11 +499,11 @@ export class SDK implements SDKInterface {
           serviceAccountId: sa.serviceAccountId,
           publicKeyId: sa.publicKeyId,
         });
-        const p = sa as { serviceAccountId: string; publicKeyId: string; privateKeyPem: string };
-        return new ServiceAccountBearer(p.serviceAccountId, {
-          publicKeyId: p.publicKeyId,
-          privateKeyPem: p.privateKeyPem,
+        return new ServiceAccountBearer(sa.serviceAccountId, {
+          publicKeyId: sa.publicKeyId,
+          privateKeyPem: sa.privateKeyPem,
           sdk: this,
+          metrics: this._authMetrics,
           logger: this._logger.child('service_account'),
         });
       }
@@ -436,59 +517,53 @@ export class SDK implements SDKInterface {
     }
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isAuthProvider(x: any): x is AuthorizationProvider {
-    return x && typeof x === 'object' && typeof x.authenticator === 'function';
+  private _isAuthProvider(x: unknown): x is AuthorizationProvider {
+    return isObject(x) && typeof x.authenticator === 'function';
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isBearer(x: any): x is TokenBearer {
-    return x && typeof x === 'object' && typeof x.receiver === 'function';
+
+  private _isBearer(x: unknown): x is TokenBearer {
+    return isObject(x) && typeof x.receiver === 'function';
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isAccessToken(x: any): x is AccessToken {
+
+  private _isAccessToken(x: unknown): x is AccessToken {
     return (
-      x &&
-      typeof x === 'object' &&
+      isObject(x) &&
       typeof x.token === 'string' &&
       x.$type === 'nebius.iam.AccessToken'
     );
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isTokenFile(x: any): x is { tokenFile: string } {
-    return x && typeof x === 'object' && typeof x.tokenFile === 'string';
+
+  private _isTokenFile(x: unknown): x is { tokenFile: string } {
+    return isObject(x) && typeof x.tokenFile === 'string';
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isFederationInit(x: any): x is FederationCredentialsOptions {
+
+  private _isFederationInit(x: unknown): x is FederationCredentialsOptions {
     return (
-      x &&
-      typeof x === 'object' &&
+      isObject(x) &&
       x.type === 'federation' &&
       typeof x.clientId === 'string' &&
       typeof x.federationEndpoint === 'string' &&
       typeof x.federationId === 'string'
     );
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isSAReader(x: any): x is SAReader {
+
+  private _isSAReader(x: unknown): x is SAReader {
     return (
-      x &&
-      typeof x === 'object' &&
+      isObject(x) &&
       typeof x.read === 'function' &&
       typeof x.getExchangeTokenRequest === 'function'
     );
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isSA(x: any): x is SA {
+
+  private _isSA(x: unknown): x is SA {
     return x instanceof SA;
   }
 
   private _isSAParams(
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    x: any,
+    x: unknown,
   ): x is { serviceAccountId: string; publicKeyId: string; privateKeyPem: string } {
     return (
-      x &&
-      typeof x === 'object' &&
+      isObject(x) &&
       typeof x.serviceAccountId === 'string' &&
       typeof x.publicKeyId === 'string' &&
       typeof x.privateKeyPem === 'string'
@@ -556,15 +631,12 @@ export class SDK implements SDKInterface {
     logger.trace('Getting gRPC client options by address.');
     const addrCfg = this._perAddress.get(address);
 
-    const combinedInterceptors = [
-      ...(this._extraInterceptors || []),
-      ...(addrCfg?.interceptors ?? []),
-    ];
+    const combinedInterceptors = [...this._extraInterceptors, ...(addrCfg?.interceptors ?? [])];
     const hasInts = combinedInterceptors.length > 0;
     if (hasInts) {
       logger.trace('Using combined interceptors.', {
         count: combinedInterceptors.length,
-        hasExtraInterceptors: (this._extraInterceptors || []).length > 0,
+        hasExtraInterceptors: this._extraInterceptors.length > 0,
         hasPerAddressInterceptors: (addrCfg?.interceptors ?? []).length > 0,
       });
     }
@@ -581,11 +653,11 @@ export class SDK implements SDKInterface {
     collect(this._clientOptions);
     collect(addrCfg?.clientOptions);
 
-    const primaryUA =
-      (primaryParts.length > 0 ? primaryParts.join(' ') + ' ' : '') + this._userAgent;
+    const primaryUA = [...primaryParts, this._userAgent].join(' ');
     const ret = {
-      ...(this._clientOptions || {}),
-      ...(addrCfg?.clientOptions || {}),
+      ...keepaliveClientOptions(this._keepaliveConfig),
+      ...(this._clientOptions ?? {}),
+      ...(addrCfg?.clientOptions ?? {}),
       ...(hasInts ? { interceptors: combinedInterceptors } : {}),
       'grpc.primary_user_agent': primaryUA,
     };
@@ -608,7 +680,7 @@ export class SDK implements SDKInterface {
 
   setTokenBearerAsAuthorization(bearer: import('./runtime/token.js').Bearer): void {
     this._logger.trace('Setting token bearer as authorization.', { bearer });
-    this._authorizationProvider = new TokenAuthProvider(bearer);
+    this._authorizationProvider = new TokenAuthProvider(instrumentBearer(bearer, this._authMetrics));
   }
 
   // Allow adding extra interceptors (idempotency/cleaner analogs)
