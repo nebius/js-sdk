@@ -171,6 +171,18 @@ describe('gRPC keepalive settings', () => {
     process.env[ENV_GRPC_KEEPALIVE_PERMIT_WITHOUT_STREAM] = 'sometimes';
     expect(() => new SDK({ insecure: true })).toThrow(ENV_GRPC_KEEPALIVE_PERMIT_WITHOUT_STREAM);
   });
+
+  test('validates explicit keepalive option types at runtime', () => {
+    expect(
+      () =>
+        new SDK({
+          insecure: true,
+          keepalive: {
+            permitWithoutStream: 'false' as unknown as boolean,
+          },
+        }),
+    ).toThrow('keepalive.permitWithoutStream must be boolean');
+  });
 });
 
 describe('public metrics callbacks', () => {
@@ -187,6 +199,10 @@ describe('public metrics callbacks', () => {
       'jssdk_auth_token_lifetime_seconds',
     );
     expect(metricName(DEFAULT_METRIC_PREFIX, names.configLoad)).toBe('jssdk_config_load_seconds');
+    expect(metricName('jssdk_', names.configLoad)).toBe('jssdk_config_load_seconds');
+    expect(metricName(DEFAULT_METRIC_PREFIX, '_config_load_seconds')).toBe(
+      'jssdk_config_load_seconds',
+    );
   });
 
   test('records auth token acquire and lifetime metrics', async () => {
@@ -210,13 +226,13 @@ describe('public metrics callbacks', () => {
     expect(acquired).toHaveLength(1);
     expect(acquired[0]).toMatchObject({
       attempt: 1,
-      provider: 'static',
+      provider: 'nebius.sdk.StaticBearer',
       result: 'success',
     });
     expect(acquired[0].durationSeconds).toBeGreaterThanOrEqual(0);
     expect(acquired[0].durationSeconds).toBeLessThan(1);
     expect(lifetimes).toHaveLength(1);
-    expect(lifetimes[0].provider).toBe('static');
+    expect(lifetimes[0].provider).toBe('nebius.sdk.StaticBearer');
     expect(lifetimes[0].ttlSeconds).toBeGreaterThan(0);
     expect(lifetimes[0].ttlSeconds).toBeLessThanOrEqual(60);
   });
@@ -267,16 +283,12 @@ describe('public metrics callbacks', () => {
     ]);
   });
 
-  test('records token-file acquire and cache metrics', async () => {
+  test('records token-file acquire metrics on every read', async () => {
     const dir = mkdtempSync(join(tmpdir(), 'nebius-js-sdk-token-file-metrics-'));
     const acquired: TokenAcquireMetric[] = [];
-    const hits: CacheMetric[] = [];
-    const misses: CacheMetric[] = [];
     const tokenFile = join(dir, 'token.txt');
     writeFileSync(tokenFile, 'file-token');
     const metrics: MetricsLike = {
-      cacheHit: (metric) => hits.push(metric),
-      cacheMiss: (metric) => misses.push(metric),
       tokenAcquire: (metric) => acquired.push(metric),
     };
     const sdk = new SDK({
@@ -296,21 +308,18 @@ describe('public metrics callbacks', () => {
       expect(second.get('authorization')).toEqual(['Bearer file-token']);
       expect(acquired).toEqual([
         expect.objectContaining({ attempt: 1, provider: 'file', result: 'success' }),
+        expect.objectContaining({ attempt: 1, provider: 'file', result: 'success' }),
       ]);
-      expect(misses).toEqual([expect.objectContaining({ provider: 'file', result: 'success' })]);
-      expect(hits).toEqual([expect.objectContaining({ provider: 'file' })]);
     } finally {
       await sdk.close();
       rmSync(dir, { force: true, recursive: true });
     }
   });
 
-  test('records token-file read errors as acquire and cache miss errors', async () => {
+  test('records token-file read errors as acquire errors', async () => {
     const dir = mkdtempSync(join(tmpdir(), 'nebius-js-sdk-token-file-error-metrics-'));
     const acquired: TokenAcquireMetric[] = [];
-    const misses: CacheMetric[] = [];
     const metrics: MetricsLike = {
-      cacheMiss: (metric) => misses.push(metric),
       tokenAcquire: (metric) => acquired.push(metric),
     };
     const sdk = new SDK({
@@ -326,9 +335,90 @@ describe('public metrics callbacks', () => {
       expect(acquired).toEqual([
         expect.objectContaining({ attempt: 1, provider: 'file', result: 'error' }),
       ]);
-      expect(misses).toEqual([expect.objectContaining({ provider: 'file', result: 'error' })]);
     } finally {
       await sdk.close();
+      rmSync(dir, { force: true, recursive: true });
+    }
+  });
+
+  test('Config passes auth metrics to direct token-file credentials', async () => {
+    const dir = mkdtempSync(join(tmpdir(), 'nebius-js-sdk-config-token-file-auth-metrics-'));
+    try {
+      const tokenFile = join(dir, 'token.txt');
+      const configFile = join(dir, 'config.yaml');
+      writeFileSync(tokenFile, 'config-file-token');
+      writeFileSync(
+        configFile,
+        [
+          'default: test',
+          'profiles:',
+          '  test:',
+          '    endpoint: api.example.test:443',
+          `    token-file: ${tokenFile}`,
+        ].join('\n'),
+      );
+
+      const acquired: TokenAcquireMetric[] = [];
+      const config = new Config({
+        configFile,
+        metrics: {
+          tokenAcquire: (metric) => acquired.push(metric),
+        },
+      });
+      const credentials = config.getCredentials();
+
+      expect(credentials).toBeInstanceOf(Bearer);
+      await (credentials as Bearer).receiver().fetch();
+
+      expect(acquired).toEqual([
+        expect.objectContaining({ attempt: 1, provider: 'file', result: 'success' }),
+      ]);
+    } finally {
+      rmSync(dir, { force: true, recursive: true });
+    }
+  });
+
+  test('Config passes auth metrics to direct environment credentials', async () => {
+    const dir = mkdtempSync(join(tmpdir(), 'nebius-js-sdk-config-env-auth-metrics-'));
+    const envName = 'NEBIUS_TEST_TOKEN_METRICS';
+    const original = process.env[envName];
+    try {
+      process.env[envName] = 'env-token';
+      const configFile = join(dir, 'config.yaml');
+      writeFileSync(
+        configFile,
+        [
+          'default: test',
+          'profiles:',
+          '  test:',
+          '    endpoint: api.example.test:443',
+          '    token-file: /tmp/nebius-token',
+        ].join('\n'),
+      );
+
+      const acquired: TokenAcquireMetric[] = [];
+      const config = new Config({
+        configFile,
+        tokenEnv: envName,
+        metrics: {
+          tokenAcquire: (metric) => acquired.push(metric),
+        },
+      });
+      const credentials = config.getCredentials();
+
+      expect(credentials).toBeInstanceOf(Bearer);
+      await (credentials as Bearer).receiver().fetch();
+
+      expect(acquired).toEqual([
+        expect.objectContaining({
+          attempt: 1,
+          provider: 'nebius.sdk.EnvBearer',
+          result: 'success',
+        }),
+      ]);
+    } finally {
+      if (original === undefined) delete process.env[envName];
+      else process.env[envName] = original;
       rmSync(dir, { force: true, recursive: true });
     }
   });
@@ -675,6 +765,31 @@ describe('public metrics callbacks', () => {
     new SDK({ configReader: reader, insecure: true, metrics });
 
     expect(reader.setAuthMetrics).toHaveBeenCalledWith(metrics);
+    expect(configEvents).toEqual([
+      expect.objectContaining({
+        kind: 'credentialsResolve',
+        result: 'success',
+        source: 'config-reader',
+      }),
+    ]);
+  });
+
+  test('SDK records credentialsResolve fallback for custom setMetrics readers by default', () => {
+    const configEvents: Array<ConfigMetric & { kind: string }> = [];
+    const metrics: MetricsLike = {
+      credentialsResolve: (metric) => configEvents.push({ ...metric, kind: 'credentialsResolve' }),
+    };
+    const reader = {
+      endpoint: () => undefined,
+      getCredentials: () => new Token('reader-token', new Date(Date.now() + 60_000)),
+      parentId: () => undefined,
+      profileName: () => 'test',
+      setMetrics: jest.fn(),
+    };
+
+    new SDK({ configReader: reader, insecure: true, metrics });
+
+    expect(reader.setMetrics).toHaveBeenCalledWith(metrics);
     expect(configEvents).toEqual([
       expect.objectContaining({
         kind: 'credentialsResolve',

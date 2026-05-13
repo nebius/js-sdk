@@ -142,12 +142,14 @@ export class ServiceAccountBearer extends Bearer {
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function isServiceAccountReader(x: any): x is ServiceAccountReader {
+function isServiceAccountReader(x: unknown): x is ServiceAccountReader {
   return (
-    x &&
-    typeof x === 'object' &&
+    isObject(x) &&
     typeof x.read === 'function' &&
     typeof x.getExchangeTokenRequest === 'function'
   );
+}
+
+function isObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null;
 }

@@ -1,4 +1,4 @@
-const durationUnitsMs: Record<string, number> = {
+const durationUnitsMs = {
   h: 60 * 60 * 1000,
   m: 60 * 1000,
   ms: 1,
@@ -7,7 +7,9 @@ const durationUnitsMs: Record<string, number> = {
   us: 1 / 1000,
   µs: 1 / 1000,
   μs: 1 / 1000,
-};
+} as const;
+
+type DurationUnit = keyof typeof durationUnitsMs;
 
 export class GolangDurationParser {
   static parseMs(name: string, value: string): number {
@@ -31,23 +33,18 @@ export class GolangDurationParser {
 
     let index = 0;
     let totalMs = 0;
-    const token = /(?:\d+(?:\.\d*)?|\.\d+)(?:ns|us|µs|μs|ms|s|m|h)/y;
+    const token = /(\d+(?:\.\d*)?|\.\d+)(ns|us|µs|μs|ms|s|m|h)/y;
     while (index < input.length) {
       token.lastIndex = index;
       const match = token.exec(input);
       if (!match) {
         throw new Error(`parse ${name}: invalid duration ${JSON.stringify(value)}`);
       }
-      const part = match[0];
-      const unitMatch = part.match(/(ns|us|µs|μs|ms|s|m|h)$/);
-      if (!unitMatch) {
-        throw new Error(`parse ${name}: invalid duration ${JSON.stringify(value)}`);
-      }
-      const unit = unitMatch[1];
-      const amount = Number(part.slice(0, part.length - unit.length));
+      const amount = Number(match[1]);
       if (!Number.isFinite(amount)) {
         throw new Error(`parse ${name}: invalid duration ${JSON.stringify(value)}`);
       }
+      const unit = match[2] as DurationUnit;
       totalMs += amount * durationUnitsMs[unit];
       index = token.lastIndex;
     }

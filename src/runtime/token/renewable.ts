@@ -173,9 +173,8 @@ export class RenewableBearer extends Bearer {
     this.logger?.debug('scheduleNext', { delayMs: delay });
     this.refreshTimer = setTimeout(() => void this.run(), delay);
 
-    // Don't keep Node process alive because of this timer
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (this.refreshTimer as any)?.unref?.();
+    // Don't keep Node process alive because of this timer.
+    this.refreshTimer.unref?.();
   }
 
   /** Compute when to renew next, based on token expiration. */

@@ -45,19 +45,11 @@ class FileReceiver extends Receiver {
 export class FileBearer extends Bearer {
   public readonly $type = 'nebius.sdk.FileBearer';
   private readonly filePath: string;
-  private readonly refreshPeriodMs: number;
   private readonly metrics: AuthMetricsRecorder;
-  private cachedToken: Token | undefined;
-  private refreshAt = 0;
 
-  constructor(
-    filePath: string,
-    refreshPeriodMs: number = 5 * 60 * 1000,
-    metrics?: AuthMetricsInput,
-  ) {
+  constructor(filePath: string, metrics?: AuthMetricsInput) {
     super();
     this.filePath = resolveHomeDir(filePath);
-    this.refreshPeriodMs = refreshPeriodMs;
     this.metrics = authMetricsRecorder(metrics, 'file');
   }
   [custom](): string {
@@ -67,7 +59,6 @@ export class FileBearer extends Bearer {
     return {
       type: 'FileBearer',
       filePath: this.filePath,
-      refreshPeriodMs: this.refreshPeriodMs,
     };
   }
 
@@ -76,16 +67,6 @@ export class FileBearer extends Bearer {
   }
 
   async fetchToken(): Promise<Token> {
-    const now = Date.now();
-    if (
-      this.cachedToken &&
-      !this.cachedToken.isEmpty() &&
-      (this.refreshPeriodMs === 0 || now < this.refreshAt)
-    ) {
-      this.metrics.cacheHit();
-      return this.cachedToken;
-    }
-
     const start = metricStart();
     try {
       const content = (await readFile(this.filePath, 'utf8')).trim();
@@ -94,15 +75,11 @@ export class FileBearer extends Bearer {
         throw new Error(`invalid token file: ${this.filePath} contains newline`);
       }
       const token = new Token(content);
-      this.cachedToken = token;
-      this.refreshAt = Date.now() + this.refreshPeriodMs;
       this.metrics.tokenAcquire(METRIC_RESULT_SUCCESS, metricDurationMs(start), 0);
       this.metrics.tokenLifetime(token);
-      this.metrics.cacheMiss(METRIC_RESULT_SUCCESS);
       return token;
     } catch (err) {
       this.metrics.tokenAcquire(METRIC_RESULT_ERROR, metricDurationMs(start), 0);
-      this.metrics.cacheMiss(METRIC_RESULT_ERROR);
       throw err;
     }
   }

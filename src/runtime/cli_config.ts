@@ -11,6 +11,7 @@ import {
 } from './constants.js';
 import {
   type AuthMetricsLike,
+  bindAuthMetrics,
   METRIC_RESULT_ERROR,
   METRIC_RESULT_SUCCESS,
   metricDurationMs,
@@ -44,7 +45,6 @@ import type {
 export class ConfigError extends Error {}
 export class NoParentIdError extends ConfigError {}
 
-// (no-op) helper types removed
 interface ConfigMetricInput {
   source: string;
   result: MetricResult;
@@ -56,9 +56,8 @@ class CredentialSourceError extends ConfigError {
     public readonly source: string,
     cause: unknown,
   ) {
-    super(cause instanceof Error ? cause.message : String(cause));
+    super(cause instanceof Error ? cause.message : String(cause), { cause });
     this.name = cause instanceof Error ? cause.name : 'CredentialSourceError';
-    this.cause = cause;
   }
 }
 
@@ -90,6 +89,7 @@ export interface ConfigOptions {
 
 export class Config implements ConfigReaderLike {
   public readonly $type = 'nebius.sdk.Config';
+  public readonly emitsCredentialsResolveMetrics = true;
   private readonly _clientId: string | undefined;
   private _priorityBearer: EnvBearer | null = null;
   private _profileName: string | null;
@@ -170,7 +170,7 @@ export class Config implements ConfigReaderLike {
     };
   }
 
-  logger(): SDKLogger | undefined {
+  logger(): SDKLogger {
     return this._logger;
   }
 
@@ -263,7 +263,12 @@ export class Config implements ConfigReaderLike {
     source: string;
   } {
     const logger = opts.logger ?? this._logger;
-    if (this._priorityBearer) return { credentials: this._priorityBearer, source: 'env' };
+    if (this._priorityBearer) {
+      return {
+        credentials: bindAuthMetrics(this._priorityBearer, this._authMetrics),
+        source: 'env',
+      };
+    }
 
     if ('token-file' in this._profile) {
       const source = 'token-file';
@@ -275,7 +280,7 @@ export class Config implements ConfigReaderLike {
         if (typeof tf !== 'string') {
           throw new ConfigError(`Token file should be a string, got ${typeof tf}.`);
         }
-        return { credentials: new FileBearer(tf), source };
+        return { credentials: new FileBearer(tf, this._authMetrics), source };
       } catch (err) {
         tagCredentialSource(source, err);
       }

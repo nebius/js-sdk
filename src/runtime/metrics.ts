@@ -61,7 +61,7 @@ export type AuthMetricsLike = Partial<AuthMetrics> | undefined;
 export type MetricsLike = Partial<Metrics> | undefined;
 export type AuthMetricsInput = AuthMetricsLike | AuthMetricsRecorder;
 
-export interface AuthMetricsSetter {
+interface AuthMetricsSetter {
   setMetrics(metrics: AuthMetricsInput): void;
 }
 
@@ -97,7 +97,8 @@ export function defaultMetricNames(): MetricNames {
 
 export function metricName(prefix: string, name: string): string {
   if (prefix === '') return name;
-  return `${prefix.endsWith('_') ? prefix : `${prefix}_`}${name}`;
+  if (name === '') return prefix;
+  return `${prefix.replace(/_+$/, '')}_${name.replace(/^_+/, '')}`;
 }
 
 export function metricStart(): number {
@@ -123,19 +124,6 @@ function emitMetric(fn: () => void | PromiseLike<void>): void {
 
 function secondsFromMs(durationMs: number): number {
   return durationMs / 1000;
-}
-
-export class DiscardMetrics implements Metrics {
-  tokenAcquire(_metric: TokenAcquireMetric): void {}
-  tokenLifetime(_metric: TokenLifetimeMetric): void {}
-  tokenRefresh(_metric: TokenRefreshMetric): void {}
-  cacheHit(_metric: CacheMetric): void {}
-  cacheMiss(_metric: CacheMetric): void {}
-  cacheStore(_metric: CacheMetric): void {}
-  cacheRefresh(_metric: CacheMetric): void {}
-  cacheInvalidate(_metric: CacheMetric): void {}
-  configLoad(_metric: ConfigMetric): void {}
-  credentialsResolve(_metric: ConfigMetric): void {}
 }
 
 interface AuthMetricsCell {
@@ -229,27 +217,7 @@ export function authMetricsRecorder(
 }
 
 export function authMetricProvider(bearer: Bearer | undefined): string {
-  if (!bearer) return 'custom';
-  switch (bearer.$type) {
-    case 'nebius.sdk.NamedBearer':
-      return bearer.name ? bearer.name.split('/')[0] || 'custom' : providerFromWrapped(bearer);
-    case 'nebius.sdk.EnvBearer':
-    case 'nebius.sdk.StaticBearer':
-      return 'static';
-    case 'nebius.sdk.FileBearer':
-      return 'file';
-    case 'nebius.sdk.ExchangeableBearer':
-      return 'token-exchange';
-    case 'nebius.sdk.FederationAccountBearer':
-    case 'nebius.sdk.FederationBearer':
-      return 'federation';
-    case 'nebius.sdk.ServiceAccountBearer':
-      return 'service-account';
-    case 'nebius.sdk.FederatedCredentialsBearer':
-      return 'federated-credentials';
-    default:
-      return bearer.name ? bearer.name.split('/')[0] || 'custom' : providerFromWrapped(bearer);
-  }
+  return bearer?.metricProvider ?? 'custom';
 }
 
 export function instrumentBearer(bearer: Bearer, metrics: AuthMetricsLike): Bearer {
@@ -278,66 +246,6 @@ export function recordConfigMetric(
   emitMetric(() =>
     metrics?.[kind]?.({ durationSeconds: secondsFromMs(durationMs), result, source }),
   );
-}
-
-export function recordTokenAcquire(
-  metrics: AuthMetricsInput,
-  provider: string,
-  result: MetricResult,
-  durationMs: number,
-  attempt: number,
-): void {
-  authMetricsRecorder(metrics, provider).tokenAcquire(result, durationMs, attempt);
-}
-
-export function recordTokenLifetime(
-  metrics: AuthMetricsInput,
-  provider: string,
-  token: Token,
-): void {
-  authMetricsRecorder(metrics, provider).tokenLifetime(token);
-}
-
-export function recordTokenRefresh(
-  metrics: AuthMetricsInput,
-  provider: string,
-  result: MetricResult,
-  durationMs: number,
-  background = true,
-): void {
-  authMetricsRecorder(metrics, provider).tokenRefresh(result, durationMs, background);
-}
-
-export function recordCacheHit(metrics: AuthMetricsInput, provider: string): void {
-  authMetricsRecorder(metrics, provider).cacheHit();
-}
-
-export function recordCacheMiss(
-  metrics: AuthMetricsInput,
-  provider: string,
-  result: MetricResult,
-): void {
-  authMetricsRecorder(metrics, provider).cacheMiss(result);
-}
-
-export function recordCacheStore(
-  metrics: AuthMetricsInput,
-  provider: string,
-  result: MetricResult,
-): void {
-  authMetricsRecorder(metrics, provider).cacheStore(result);
-}
-
-export function recordCacheRefresh(
-  metrics: AuthMetricsInput,
-  provider: string,
-  result: MetricResult,
-): void {
-  authMetricsRecorder(metrics, provider).cacheRefresh(result);
-}
-
-export function recordCacheInvalidate(metrics: AuthMetricsInput, provider: string): void {
-  authMetricsRecorder(metrics, provider).cacheInvalidate();
 }
 
 class InstrumentedReceiver extends Receiver {
@@ -422,16 +330,12 @@ class InstrumentedBearer extends Bearer {
 
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
-    bindAuthMetrics(this.bearer, this.metrics);
+    applyMetricsSetter(this.bearer, this.metrics);
   }
 
   async close(graceMs?: number): Promise<void> {
     await this.bearer.close(graceMs);
   }
-}
-
-function providerFromWrapped(bearer: Bearer): string {
-  return bearer.wrapped ? authMetricProvider(bearer.wrapped) : 'custom';
 }
 
 function isAuthMetricsSetter(bearer: Bearer): bearer is AuthMetricsSetter & Bearer {
@@ -441,13 +345,15 @@ function isAuthMetricsSetter(bearer: Bearer): bearer is AuthMetricsSetter & Bear
 function applyMetricsSetter(
   bearer: Bearer,
   metrics: AuthMetricsInput,
-  seen: Set<Bearer> = new Set(),
 ): boolean {
-  if (seen.has(bearer)) return false;
-  seen.add(bearer);
-  if (isAuthMetricsSetter(bearer)) {
-    bearer.setMetrics(metrics);
-    return true;
+  const seen = new Set<Bearer>();
+  for (let current: Bearer | undefined = bearer; current && !seen.has(current); ) {
+    seen.add(current);
+    if (isAuthMetricsSetter(current)) {
+      current.setMetrics(metrics);
+      return true;
+    }
+    current = current.wrapped;
   }
-  return bearer.wrapped ? applyMetricsSetter(bearer.wrapped, metrics, seen) : false;
+  return false;
 }

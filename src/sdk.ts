@@ -1,13 +1,10 @@
 import {
-  CallOptions,
-  ChannelCredentials,
   Client,
-  ClientOptions,
   connectivityState,
   credentials,
-  Interceptor,
   Metadata,
 } from '@grpc/grpc-js';
+import type { CallOptions, ChannelCredentials, ClientOptions, Interceptor } from '@grpc/grpc-js';
 
 import {
   GetProfileRequest,
@@ -129,6 +126,10 @@ export interface SDKOptions {
 }
 
 const DEFAULT_CLOSE_TIMEOUT = 20000;
+
+function isObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null;
+}
 
 export class SDK implements SDKInterface {
   private _resolver: Resolver;
@@ -379,10 +380,7 @@ export class SDK implements SDKInterface {
   }
 
   private _isConfigMetricsAwareConfigReader(configReader: ConfigReaderLike): boolean {
-    const reader = configReader as ConfigReaderLike & {
-      setMetrics?: unknown;
-    };
-    return Boolean(this._metrics) && typeof reader.setMetrics === 'function';
+    return Boolean(this._metrics) && configReader.emitsCredentialsResolveMetrics === true;
   }
 
   private _normalizeCredentials(init: CredentialsInit): AuthorizationProvider | undefined {
@@ -406,10 +404,10 @@ export class SDK implements SDKInterface {
     // Token
     if (this._isAccessToken(init)) {
       this._logger.trace('Using static token for authorization.', {
-        token: init as AccessToken,
+        token: init,
       });
       return new TokenAuthProvider(
-        instrumentBearer(new StaticBearer(init as AccessToken), this._authMetrics),
+        instrumentBearer(new StaticBearer(init), this._authMetrics),
       );
     }
 
@@ -431,22 +429,21 @@ export class SDK implements SDKInterface {
 
     // Federation direct config
     if (this._isFederationInit(init)) {
-      const f = init as FederationCredentialsOptions;
       this._logger.trace('Using federation credentials for authorization.', {
-        profile: f.profileName,
-        clientId: f.clientId,
-        federationEndpoint: f.federationEndpoint,
-        federationId: f.federationId,
+        profile: init.profileName,
+        clientId: init.clientId,
+        federationEndpoint: init.federationEndpoint,
+        federationId: init.federationId,
       });
       const bearer = new FederationAccountBearer(
-        f.profileName,
-        f.clientId,
-        f.federationEndpoint,
-        f.federationId,
+        init.profileName,
+        init.clientId,
+        init.federationEndpoint,
+        init.federationId,
         {
-          writer: f.writer,
-          noBrowserOpen: !!f.noBrowserOpen,
-          timeoutMs: f.timeoutMs,
+          writer: init.writer,
+          noBrowserOpen: !!init.noBrowserOpen,
+          timeoutMs: init.timeoutMs,
           ca: this._tlsRootCAs,
           metrics: this._authMetrics,
           logger: this._logger.child('federation_account'),
@@ -502,10 +499,9 @@ export class SDK implements SDKInterface {
           serviceAccountId: sa.serviceAccountId,
           publicKeyId: sa.publicKeyId,
         });
-        const p = sa as { serviceAccountId: string; publicKeyId: string; privateKeyPem: string };
-        return new ServiceAccountBearer(p.serviceAccountId, {
-          publicKeyId: p.publicKeyId,
-          privateKeyPem: p.privateKeyPem,
+        return new ServiceAccountBearer(sa.serviceAccountId, {
+          publicKeyId: sa.publicKeyId,
+          privateKeyPem: sa.privateKeyPem,
           sdk: this,
           metrics: this._authMetrics,
           logger: this._logger.child('service_account'),
@@ -521,59 +517,53 @@ export class SDK implements SDKInterface {
     }
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isAuthProvider(x: any): x is AuthorizationProvider {
-    return x && typeof x === 'object' && typeof x.authenticator === 'function';
+  private _isAuthProvider(x: unknown): x is AuthorizationProvider {
+    return isObject(x) && typeof x.authenticator === 'function';
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isBearer(x: any): x is TokenBearer {
-    return x && typeof x === 'object' && typeof x.receiver === 'function';
+
+  private _isBearer(x: unknown): x is TokenBearer {
+    return isObject(x) && typeof x.receiver === 'function';
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isAccessToken(x: any): x is AccessToken {
+
+  private _isAccessToken(x: unknown): x is AccessToken {
     return (
-      x &&
-      typeof x === 'object' &&
+      isObject(x) &&
       typeof x.token === 'string' &&
       x.$type === 'nebius.iam.AccessToken'
     );
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isTokenFile(x: any): x is { tokenFile: string } {
-    return x && typeof x === 'object' && typeof x.tokenFile === 'string';
+
+  private _isTokenFile(x: unknown): x is { tokenFile: string } {
+    return isObject(x) && typeof x.tokenFile === 'string';
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isFederationInit(x: any): x is FederationCredentialsOptions {
+
+  private _isFederationInit(x: unknown): x is FederationCredentialsOptions {
     return (
-      x &&
-      typeof x === 'object' &&
+      isObject(x) &&
       x.type === 'federation' &&
       typeof x.clientId === 'string' &&
       typeof x.federationEndpoint === 'string' &&
       typeof x.federationId === 'string'
     );
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isSAReader(x: any): x is SAReader {
+
+  private _isSAReader(x: unknown): x is SAReader {
     return (
-      x &&
-      typeof x === 'object' &&
+      isObject(x) &&
       typeof x.read === 'function' &&
       typeof x.getExchangeTokenRequest === 'function'
     );
   }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _isSA(x: any): x is SA {
+
+  private _isSA(x: unknown): x is SA {
     return x instanceof SA;
   }
 
   private _isSAParams(
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    x: any,
+    x: unknown,
   ): x is { serviceAccountId: string; publicKeyId: string; privateKeyPem: string } {
     return (
-      x &&
-      typeof x === 'object' &&
+      isObject(x) &&
       typeof x.serviceAccountId === 'string' &&
       typeof x.publicKeyId === 'string' &&
       typeof x.privateKeyPem === 'string'
@@ -641,15 +631,12 @@ export class SDK implements SDKInterface {
     logger.trace('Getting gRPC client options by address.');
     const addrCfg = this._perAddress.get(address);
 
-    const combinedInterceptors = [
-      ...(this._extraInterceptors || []),
-      ...(addrCfg?.interceptors ?? []),
-    ];
+    const combinedInterceptors = [...this._extraInterceptors, ...(addrCfg?.interceptors ?? [])];
     const hasInts = combinedInterceptors.length > 0;
     if (hasInts) {
       logger.trace('Using combined interceptors.', {
         count: combinedInterceptors.length,
-        hasExtraInterceptors: (this._extraInterceptors || []).length > 0,
+        hasExtraInterceptors: this._extraInterceptors.length > 0,
         hasPerAddressInterceptors: (addrCfg?.interceptors ?? []).length > 0,
       });
     }
@@ -666,12 +653,11 @@ export class SDK implements SDKInterface {
     collect(this._clientOptions);
     collect(addrCfg?.clientOptions);
 
-    const primaryUA =
-      (primaryParts.length > 0 ? primaryParts.join(' ') + ' ' : '') + this._userAgent;
+    const primaryUA = [...primaryParts, this._userAgent].join(' ');
     const ret = {
       ...keepaliveClientOptions(this._keepaliveConfig),
-      ...(this._clientOptions || {}),
-      ...(addrCfg?.clientOptions || {}),
+      ...(this._clientOptions ?? {}),
+      ...(addrCfg?.clientOptions ?? {}),
       ...(hasInts ? { interceptors: combinedInterceptors } : {}),
       'grpc.primary_user_agent': primaryUA,
     };

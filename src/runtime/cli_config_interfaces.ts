@@ -1,10 +1,9 @@
-import { Bearer, Token } from './token.js';
-import { Logger } from './util/logging.js';
-
 import type { SDKInterface } from '../sdk.js';
 import type { Provider as AuthorizationProvider } from './authorization/provider.js';
 import type { AuthMetricsLike, MetricsLike } from './metrics.js';
 import type { Reader as TokenRequestReader } from './service_account/service_account.js';
+import type { Bearer, Token } from './token.js';
+import type { Logger } from './util/logging.js';
 
 export type Credentials = AuthorizationProvider | Bearer | TokenRequestReader | Token | string;
 
@@ -24,6 +23,12 @@ export interface ConfigReaderLike {
   profileName(): string | undefined;
   // If present, use it to auto-construct credentials similar to Python
   getCredentials(options: GetCredentialsOptions): Credentials;
+  /**
+   * True when this reader emits its own credentialsResolve metrics after
+   * setMetrics(). If not set, SDK records a generic config-reader fallback
+   * metric around getCredentials().
+   */
+  emitsCredentialsResolveMetrics?: boolean;
   setMetrics?(metrics: MetricsLike): void;
   setAuthMetrics?(metrics: AuthMetricsLike): void;
 }

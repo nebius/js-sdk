@@ -91,6 +91,9 @@ export function keepaliveConfigFromOptions(
     cfg.timeoutMs = options.timeoutMs;
   }
   if (options.permitWithoutStream !== undefined) {
+    if (typeof options.permitWithoutStream !== 'boolean') {
+      throw new Error('keepalive.permitWithoutStream must be boolean');
+    }
     cfg.permitWithoutStream = options.permitWithoutStream;
   }
 
@@ -114,7 +117,7 @@ function lookupKeepaliveEnv(env: Environment, name: string): string | undefined 
   return trimmed === '' ? undefined : trimmed;
 }
 
-export function parseKeepaliveDurationEnv(name: string, value: string): number {
+function parseKeepaliveDurationEnv(name: string, value: string): number {
   return GolangDurationParser.parseMs(name, value);
 }
 
