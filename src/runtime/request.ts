@@ -31,6 +31,14 @@ export const DefaultRetriableCodes: StatusCode[] = [
   StatusCode.UNAVAILABLE,
 ];
 
+const UNKNOWN_GRPC_CODE = StatusCode.UNKNOWN.code;
+
+const HTTP_52X_STATUS_PATTERNS = [
+  /\bunexpected\s+http\s+status(?:\s+code)?(?:\s+received\s+from\s+server)?\s*[:=]?\s*(?<code>\d{3})/gi,
+  /\breceived\s+http2?\s+header\s+with\s+status\s*[:=]?\s*(?<code>\d{3})/gi,
+  /\bhttp(?:\/2|2)?\s+status(?:\s+code)?\s*[:=]?\s*(?<code>\d{3})/gi,
+];
+
 export interface RequestSpec<TReq> {
   path: string;
   requestSerialize: (value: TReq) => Buffer;
@@ -587,6 +595,13 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
       return true;
     }
 
+    if (grpcCode === UNKNOWN_GRPC_CODE && hasUnexpectedHttp52xStatus(err)) {
+      this.logger.trace('Error has retriable HTTP 52x status wrapped as UNKNOWN', {
+        grpc_code: grpcCode,
+      });
+      return true;
+    }
+
     // Our wrapped NebiusGrpcError may carry serviceErrors with retryType
     const seList: NebiusServiceError[] | undefined =
       (err?.serviceErrors as NebiusServiceError[]) || undefined;
@@ -621,6 +636,32 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     this.logger.trace('All calls cancelled, clearing tracked calls');
     this._calls.clear();
   }
+}
+
+function hasUnexpectedHttp52xStatus(err: NebiusGrpcError): boolean {
+  return [
+    err.status?.message,
+    err.details,
+    err.message,
+    String(err),
+  ].some((message) => messageHasHttp52xStatus(message));
+}
+
+function messageHasHttp52xStatus(message: string | undefined): boolean {
+  if (!message) return false;
+
+  for (const pattern of HTTP_52X_STATUS_PATTERNS) {
+    pattern.lastIndex = 0;
+    let match: RegExpExecArray | null;
+    while ((match = pattern.exec(message)) !== null) {
+      const rawCode = match.groups?.code ?? match[1];
+      const code = Number(rawCode);
+      if (Number.isInteger(code) && code >= 520 && code < 530) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 // Helper: get first string value from metadata by key
