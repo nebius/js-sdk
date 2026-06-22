@@ -22,9 +22,11 @@ import {
 } from './metrics.js';
 import { CredentialsFileReader } from './service_account/credentials_file.js';
 import { PkFileReader } from './service_account/pk_file.js';
+import { Bearer } from './token.js';
 import { FederatedCredentialsBearer } from './token/federated_credentials.js';
 import { FederationAccountBearer } from './token/federation_account.js';
 import { FileBearer } from './token/file.js';
+import { CachedImpersonatedBearer } from './token/impersonated.js';
 import { ServiceAccountBearer } from './token/service_account.js';
 import { EnvBearer, NoTokenInEnvError } from './token/static.js';
 import {
@@ -83,6 +85,7 @@ export interface ConfigOptions {
   endpointEnv?: string;
   metrics?: MetricsLike;
   authMetrics?: AuthMetricsLike;
+  impersonateServiceAccountId?: string;
   // optional logger configuration for config reader
   logger?: SDKLogger | SDKHandler | string | number;
 }
@@ -101,6 +104,7 @@ export class Config implements ConfigReaderLike {
   private _metrics: MetricsLike;
   private _authMetrics: AuthMetricsLike;
   private _lastConfigLoadMetric: ConfigMetricInput | undefined;
+  private readonly _impersonateServiceAccountId: string | undefined;
   private _profile!: Record<string, unknown>;
 
   constructor(options: ConfigOptions = {}) {
@@ -115,6 +119,7 @@ export class Config implements ConfigReaderLike {
       maxRetries = 2,
       endpoint = undefined,
       endpointEnv = ENDPOINT_ENV,
+      impersonateServiceAccountId,
     } = options;
 
     // resolve logger if provided
@@ -146,6 +151,7 @@ export class Config implements ConfigReaderLike {
     this._noParentId = noParentId;
     this._configFile = resolveHomeDir(configFile);
     this._maxRetries = maxRetries;
+    this._impersonateServiceAccountId = impersonateServiceAccountId;
     this._metrics = options.metrics;
     this._authMetrics = options.metrics ?? options.authMetrics;
 
@@ -237,6 +243,7 @@ export class Config implements ConfigReaderLike {
     try {
       const resolved = this._resolveCredentials(opts);
       source = resolved.source;
+      const credentials = this._addImpersonationIfSet(resolved.credentials, opts);
       recordConfigMetric(
         this._metrics,
         'credentialsResolve',
@@ -244,7 +251,7 @@ export class Config implements ConfigReaderLike {
         METRIC_RESULT_SUCCESS,
         metricDurationMs(start),
       );
-      return resolved.credentials;
+      return credentials;
     } catch (err) {
       source = credentialErrorSource(err) ?? source;
       recordConfigMetric(
@@ -477,6 +484,38 @@ export class Config implements ConfigReaderLike {
     }
 
     throw new ConfigError(`Unsupported auth-type ${String(authType)} in the profile.`);
+  }
+
+  private _addImpersonationIfSet(
+    credentials: Credentials,
+    opts: GetCredentialsOptions,
+  ): Credentials {
+    let serviceAccountId = this._impersonateServiceAccountId;
+    if (serviceAccountId === undefined) {
+      const profileValue = this._profile['impersonate-service-account-id'];
+      if (profileValue === undefined || profileValue === null) {
+        return credentials;
+      }
+      if (typeof profileValue !== 'string') {
+        throw new ConfigError(
+          `Impersonate service account id should be a string, got ${typeof profileValue}.`,
+        );
+      }
+      serviceAccountId = profileValue;
+    }
+    if (serviceAccountId.trim() === '') {
+      return credentials;
+    }
+    if (!(credentials instanceof Bearer)) {
+      throw new ConfigError(
+        `Impersonation requires token bearer credentials, got ${typeof credentials}.`,
+      );
+    }
+    return new CachedImpersonatedBearer(serviceAccountId, credentials, opts.sdk ?? null, {
+      maxRetries: this._maxRetries,
+      metrics: this._authMetrics,
+      logger: (opts.logger ?? this._logger)?.sibling('impersonated'),
+    });
   }
 
   private _getProfile(): void {
