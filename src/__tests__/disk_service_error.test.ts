@@ -8,11 +8,17 @@ import {
 } from '@grpc/grpc-js';
 
 import {
+  ServiceError as NebiusServiceError,
+  OperationConflict,
+  ServiceError_RetryType,
+} from '../api/nebius/common/v1/index.js';
+import {
   DiskServiceBaseClient as DiskServiceClient,
   DiskServiceServer,
   DiskServiceServiceDescription as DiskServiceService,
   GetDiskRequest,
 } from '../api/nebius/compute/v1/index.js';
+import { NebiusGrpcError } from '../runtime/error.js';
 
 function startServerWithPort(
   addImpl: (server: Server) => void,
@@ -69,5 +75,55 @@ describe('DiskService error propagation', () => {
     ).rejects.toMatchObject({ code: status.INVALID_ARGUMENT });
 
     await new Promise<void>((resolve) => server.tryShutdown(() => resolve()));
+  });
+});
+
+describe('ServiceError rendering', () => {
+  function baseGrpcError(): ServiceError {
+    return Object.assign(new Error('request failed'), {
+      code: status.FAILED_PRECONDITION,
+      details: 'request failed',
+      metadata: new Metadata(),
+    });
+  }
+
+  test('renders operation conflict details', () => {
+    const serviceError = NebiusServiceError.create({
+      service: 'compute',
+      code: 'OperationConflict',
+      retryType: ServiceError_RetryType.UNSPECIFIED,
+      details: {
+        $case: 'operationConflict',
+        operationConflict: OperationConflict.create({
+          resourceId: 'instance-1',
+          conflictingOperationId: 'operation-2',
+        }),
+      },
+    });
+
+    const err = new NebiusGrpcError(baseGrpcError(), undefined, [serviceError]);
+
+    expect(err.message).toContain(
+      'OperationConflict in service compute operation conflict: resource: instance-1, conflicting operation ID: operation-2',
+    );
+  });
+
+  test('renders unknown details with raw formatting', () => {
+    const serviceError = {
+      $type: 'nebius.common.v1.ServiceError',
+      service: 'compute',
+      code: 'NewError',
+      retryType: ServiceError_RetryType.UNSPECIFIED,
+      details: {
+        $case: 'newDetail',
+        newDetail: { field: 'value' },
+      },
+    } as unknown as NebiusServiceError;
+
+    const err = new NebiusGrpcError(baseGrpcError(), undefined, [serviceError]);
+
+    expect(err.message).toContain(
+      'NewError in service compute newDetail: {"field":"value"}',
+    );
   });
 });
