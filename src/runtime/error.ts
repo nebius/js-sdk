@@ -121,6 +121,12 @@ function toStrServiceError(err: NebiusServiceError): string {
         );
         break;
       }
+      case 'operationConflict': {
+        parts.push(
+          ` operation conflict: resource: ${d.operationConflict?.resourceId}, conflicting operation ID: ${d.operationConflict?.conflictingOperationId}`,
+        );
+        break;
+      }
       case 'tooManyRequests': {
         parts.push(` too many requests: ${d.tooManyRequests?.violation}`);
         break;
@@ -143,6 +149,14 @@ function toStrServiceError(err: NebiusServiceError): string {
         parts.push(
           ` internal service error: request ID: ${d.internalError?.requestId} trace ID: ${d.internalError?.traceId}`,
         );
+        break;
+      }
+      default: {
+        // Must not be used, but is added for the cases of forward
+        // compatibility, in case new error types are added in the future,
+        // and the API update is lagging.
+        const raw = d as Record<string, unknown> & { $case: string };
+        parts.push(` ${raw.$case}: ${JSON.stringify(raw[raw.$case])}`);
         break;
       }
     }
