@@ -44,8 +44,7 @@ function normalizeMethodBehavior(value: unknown): ExtractedMethodBehavior {
 
 function extractMethodBehaviors(method: Method): ExtractedMethodBehavior[] {
   const opts = method.descriptor?.options as
-    | { methodBehavior?: unknown; method_behavior?: unknown }
-    | undefined;
+    { methodBehavior?: unknown; method_behavior?: unknown } | undefined;
   const methodBehavior = opts?.methodBehavior ?? opts?.method_behavior;
   if (methodBehavior === undefined || methodBehavior === null) return [];
 

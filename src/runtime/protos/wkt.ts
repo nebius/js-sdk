@@ -9,9 +9,14 @@ import {
   Duration,
   Long,
   MessageFns,
+  type MessageDescriptor,
 } from './core.js';
 import { fmFromJSON, fmToJSON, readFieldMask, writeFieldMask } from './fieldmask.js';
 import { readValue, valueFromJSON, valueToJSON, writeValue } from './values.js';
+
+function wktDescriptor(type: string): MessageDescriptor | undefined {
+  return (wkt as Record<string, { $descriptor?: MessageDescriptor }>)[type]?.$descriptor;
+}
 
 // Timestamp helpers
 function tsToWire(d: Dayjs): { seconds: Long; nanos: number } {
@@ -84,6 +89,12 @@ function durToJSON(d: Duration): string {
 
 export const wkt = {
   ['.google.protobuf.Timestamp']: {
+    $descriptor: {
+      fields: {
+        seconds: { pbName: 'seconds' },
+        nanos: { pbName: 'nanos' },
+      },
+    },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => tsFromJSON(o),
     toJSON: (d: Dayjs, use?: 'json' | 'pb') => {
       if (use === 'pb') {
@@ -126,6 +137,12 @@ export const wkt = {
     },
   },
   ['.google.protobuf.Duration']: {
+    $descriptor: {
+      fields: {
+        seconds: { pbName: 'seconds' },
+        nanos: { pbName: 'nanos' },
+      },
+    },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => durFromJSON(o),
     toJSON: (d: Duration, use?: 'json' | 'pb') => {
       if (use === 'pb') {
@@ -168,6 +185,11 @@ export const wkt = {
     },
   },
   ['.google.protobuf.FieldMask']: {
+    $descriptor: {
+      fields: {
+        paths: { pbName: 'paths' },
+      },
+    },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => fmFromJSON(o),
     toJSON: (paths: string[], _use?: 'json' | 'pb') => fmToJSON(paths),
     fromPartial: (object: DeepPartial<string[]>) =>
@@ -176,6 +198,12 @@ export const wkt = {
     readMessage: (reader: BinaryReader, length: number): string[] => readFieldMask(reader, length),
   },
   ['.google.protobuf.Any']: {
+    $descriptor: {
+      fields: {
+        typeUrl: { pbName: 'type_url' },
+        value: { pbName: 'value' },
+      },
+    },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => anyFromJSON(o),
     toJSON: (a: AnyShape, _use?: 'json' | 'pb') => anyToJSON(a),
     fromPartial: (object: DeepPartial<AnyShape>) => ({
@@ -186,6 +214,14 @@ export const wkt = {
     readMessage: (reader: BinaryReader, length: number): AnyShape => readAny(reader, length),
   },
   ['.google.protobuf.Struct']: {
+    $descriptor: {
+      fields: {
+        fields: {
+          pbName: 'fields',
+          mapValue: () => wktDescriptor('.google.protobuf.Value'),
+        },
+      },
+    },
     fromJSON: (o: any, _use?: 'json' | 'pb') => valueFromJSON(o ?? {}),
     toJSON: (o: any, _use?: 'json' | 'pb') => valueToJSON(o ?? {}),
     fromPartial: (object: any) => object ?? {},
@@ -232,6 +268,22 @@ export const wkt = {
     },
   },
   ['.google.protobuf.Value']: {
+    $descriptor: {
+      fields: {
+        nullValue: { pbName: 'null_value' },
+        numberValue: { pbName: 'number_value' },
+        stringValue: { pbName: 'string_value' },
+        boolValue: { pbName: 'bool_value' },
+        structValue: {
+          pbName: 'struct_value',
+          message: () => wktDescriptor('.google.protobuf.Struct'),
+        },
+        listValue: {
+          pbName: 'list_value',
+          message: () => wktDescriptor('.google.protobuf.ListValue'),
+        },
+      },
+    },
     fromJSON: (o: any, _use?: 'json' | 'pb') => valueFromJSON(o),
     toJSON: (o: any, _use?: 'json' | 'pb') => valueToJSON(o),
     fromPartial: (object: any) => object,
@@ -239,6 +291,14 @@ export const wkt = {
     readMessage: (reader: BinaryReader, length: number): any => readValue(reader, length),
   },
   ['.google.protobuf.ListValue']: {
+    $descriptor: {
+      fields: {
+        values: {
+          pbName: 'values',
+          message: () => wktDescriptor('.google.protobuf.Value'),
+        },
+      },
+    },
     fromJSON: (o: any, _use?: 'json' | 'pb') => (Array.isArray(o) ? o.map(valueFromJSON) : []),
     toJSON: (o: any[], _use?: 'json' | 'pb') => (Array.isArray(o) ? o.map(valueToJSON) : []),
     fromPartial: (object: any[]) => (Array.isArray(object) ? object.map((e) => e) : []),
@@ -265,6 +325,9 @@ export const wkt = {
     },
   },
   ['.google.protobuf.Empty']: {
+    $descriptor: {
+      fields: {},
+    },
     fromJSON: (_o: any, _use?: 'json' | 'pb') => ({}) as any,
     toJSON: (_e: any, _use?: 'json' | 'pb') => ({}) as any,
     fromPartial: (_o: any) => ({}) as any,

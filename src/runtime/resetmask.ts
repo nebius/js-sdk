@@ -1,10 +1,7 @@
 import { Metadata } from '@grpc/grpc-js';
 
 import { Mask } from './fieldmask.js';
-import {
-  messageDescriptorSymbol,
-  type MessageDescriptor,
-} from './protos/core.js';
+import { type MessageDescriptor, messageDescriptorSymbol } from './protos/core.js';
 
 export const ErrRecursionTooDeep = new Error('recursion too deep');
 const RECURSION_TOO_DEEP = 1000;
@@ -56,7 +53,6 @@ function isPlainObject(o: any): o is Record<string, any> {
   return Object.prototype.toString.call(o) === '[object Object]';
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function descriptorForObject(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   updObj: any,
@@ -69,9 +65,9 @@ function descriptorForObject(
   );
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function rmFromObjectRecursive(
   resetMask: Mask,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   updObj: any,
   recursion: number,
   descriptor?: MessageDescriptor,

@@ -169,7 +169,10 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     this.methodName = names.methodName;
     this.serializer = spec.requestSerialize;
     if (spec.requestDescriptor && this.request && typeof this.request === 'object') {
-      attachMessageDescriptor(this.request as object, spec.requestDescriptor);
+      this.request = attachMessageDescriptor(
+        this.request as object,
+        spec.requestDescriptor,
+      ) as TReq;
     }
 
     const path = this.path;

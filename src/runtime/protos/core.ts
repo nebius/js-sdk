@@ -33,12 +33,19 @@ export function attachMessageDescriptor<T extends object>(
   descriptor: MessageDescriptor | undefined,
 ): T {
   if (!descriptor) return message;
-  Object.defineProperty(message, messageDescriptorSymbol, {
-    configurable: true,
-    enumerable: false,
-    value: descriptor,
-  });
-  return message;
+  const defineDescriptor = (target: T): T => {
+    Object.defineProperty(target, messageDescriptorSymbol, {
+      configurable: true,
+      enumerable: false,
+      value: descriptor,
+    });
+    return target;
+  };
+  try {
+    return defineDescriptor(message);
+  } catch {
+    return defineDescriptor((Array.isArray(message) ? [...message] : { ...message }) as T);
+  }
 }
 
 export interface MessageFns<T, TType extends string> {

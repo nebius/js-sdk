@@ -24,20 +24,28 @@ function oneofDescriptorConstName(m: TSDescriptorMessage, oneofTsName: string): 
   return `${m.tsName}_${oneofTsName}_ONEOF_DESCRIPTOR`;
 }
 
-function descriptorPartsForField(
-  f: TSDescriptorMessage['fields'][number],
-): string[] {
+function descriptorPartsForField(f: TSDescriptorMessage['fields'][number]): string[] {
   const parts = [`pbName: ${JSON.stringify(f.pb_name)}`];
   if (f.isMap()) {
     const entry = f.message();
     const valueField = entry?.fields.find((x) => x.descriptor.number === 2);
-    if (valueField?.isMessage() && !wktFqnOf(valueField)) {
-      const ref = resolveMessageName(valueField.message());
-      if (ref) parts.push(`mapValue: () => ${ref}.$descriptor`);
+    if (valueField?.isMessage()) {
+      const wktName = wktFqnOf(valueField);
+      if (wktName) {
+        parts.push(`mapValue: () => wkt[${JSON.stringify(wktName)}].$descriptor`);
+      } else {
+        const ref = resolveMessageName(valueField.message());
+        if (ref) parts.push(`mapValue: () => ${ref}.$descriptor`);
+      }
     }
-  } else if (f.isMessage() && !wktFqnOf(f)) {
-    const ref = resolveMessageName(f.message());
-    if (ref) parts.push(`message: () => ${ref}.$descriptor`);
+  } else if (f.isMessage()) {
+    const wktName = wktFqnOf(f);
+    if (wktName) {
+      parts.push(`message: () => wkt[${JSON.stringify(wktName)}].$descriptor`);
+    } else {
+      const ref = resolveMessageName(f.message());
+      if (ref) parts.push(`message: () => ${ref}.$descriptor`);
+    }
   }
   return parts;
 }
@@ -52,9 +60,7 @@ function emitMessageDescriptor(m: TSDescriptorMessage): string[] {
     lines.push(`const ${oneofDescriptorName}: MessageDescriptor = {`);
     lines.push(`  fields: {`);
     for (const f of o.fields) {
-      lines.push(
-        `    ${JSON.stringify(f.tsName)}: { ${descriptorPartsForField(f).join(', ')} },`,
-      );
+      lines.push(`    ${JSON.stringify(f.tsName)}: { ${descriptorPartsForField(f).join(', ')} },`);
     }
     lines.push(`  },`);
     lines.push(`};`);

@@ -178,7 +178,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
     });
 
     const client = new InstanceServiceClient(sdk);
-    const upd: UpdateInstanceRequest = {
+    const upd = Object.freeze({
       metadata: { id: 'foo-bar', parentId: '', name: '', resourceVersion: Long.ZERO, labels: {} },
       spec: {
         filesystems: [],
@@ -190,7 +190,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
         hostname: '',
         serviceAccountId: '',
       } as any,
-    } as any;
+    }) as any as UpdateInstanceRequest;
 
     const req = client.update(upd, new Metadata(), { deadline: Date.now() + 5000 });
     const ret = await req.result;

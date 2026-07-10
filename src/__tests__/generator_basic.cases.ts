@@ -54,9 +54,10 @@ export function registerSelfCompatTests() {
       expect(our.CrossMessage.$descriptor.fields.title.pbName).toBe('title');
       expect(our.CrossMessage.$descriptor.fields.topColor.pbName).toBe('top_color');
       expect(our.CrossMessage.$descriptor.fields.wkts.message()).toBe(our.AllWkts.$descriptor);
-      expect(our.CrossMessage.$descriptor.fields.itemMap.mapValue()).toBe(
-        our.Payload.$descriptor,
-      );
+      const anyDescriptor = our.AllWkts.$descriptor.fields.any.message();
+      expect(anyDescriptor.fields.typeUrl.pbName).toBe('type_url');
+      expect(anyDescriptor.fields.value.pbName).toBe('value');
+      expect(our.CrossMessage.$descriptor.fields.itemMap.mapValue()).toBe(our.Payload.$descriptor);
       expect(our.CrossMessage.$descriptor.fields.pick.pbName).toBe('pick');
       const pickDescriptor = our.CrossMessage.$descriptor.fields.pick.message();
       expect(pickDescriptor.fields.payloadOneof.pbName).toBe('payload_oneof');

@@ -1,8 +1,5 @@
+import { attachMessageDescriptor, type MessageDescriptor, wkt } from '../runtime/protos/index.js';
 import { resetMaskFromMessage } from '../runtime/resetmask.js';
-import {
-  attachMessageDescriptor,
-  type MessageDescriptor,
-} from '../runtime/protos/core.js';
 
 function msg(v: any) {
   return v;
@@ -10,6 +7,10 @@ function msg(v: any) {
 
 const descriptor: MessageDescriptor = {
   fields: {
+    anyValue: {
+      pbName: 'any_value',
+      message: () => wkt['.google.protobuf.Any'].$descriptor,
+    },
     createdAt: { pbName: 'created_at' },
     size: {
       pbName: 'size',
@@ -57,6 +58,7 @@ describe('resetMaskFromMessage', () => {
   test('descriptor protobuf field names are used in emitted masks', () => {
     const m = attachMessageDescriptor(
       {
+        anyValue: { typeUrl: '', value: new Uint8Array(0) },
         createdAt: undefined,
         itemMap: { a: { resetValue: '' }, b: { resetValue: 'x' } },
         size: { sizeGibibytes: 0 },
@@ -64,7 +66,9 @@ describe('resetMaskFromMessage', () => {
       descriptor,
     );
     const mask = resetMaskFromMessage(m)!;
-    expect(mask.marshal()).toBe('created_at,item_map.*.reset_value,size.size_gibibytes');
+    expect(mask.marshal()).toBe(
+      'any_value.(type_url,value),created_at,item_map.*.reset_value,size.size_gibibytes',
+    );
   });
 
   test('list empty marks field; list of messages recurses into Any', () => {
