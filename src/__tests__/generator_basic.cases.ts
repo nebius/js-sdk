@@ -47,6 +47,30 @@ export function registerSelfCompatTests() {
       expect(spec.updateMixed.sendResetMask).toBe(true);
       expect(spec.create.sendResetMask).toBe(false);
     });
+    test('generated message descriptors are exposed without changing object enumeration', () => {
+      const { messageDescriptorSymbol } = require(path.join(ROOT, 'src/runtime/protos/index'));
+      const our: any = requireOur();
+
+      expect(our.CrossMessage.$descriptor.fields.title.pbName).toBe('title');
+      expect(our.CrossMessage.$descriptor.fields.topColor.pbName).toBe('top_color');
+      expect(our.CrossMessage.$descriptor.fields.wkts.message()).toBe(our.AllWkts.$descriptor);
+      expect(our.CrossMessage.$descriptor.fields.itemMap.mapValue()).toBe(
+        our.Payload.$descriptor,
+      );
+      expect(our.CrossMessage.$descriptor.fields.pick.pbName).toBe('pick');
+      const pickDescriptor = our.CrossMessage.$descriptor.fields.pick.message();
+      expect(pickDescriptor.fields.payloadOneof.pbName).toBe('payload_oneof');
+      expect(pickDescriptor.fields.payloadOneof.message()).toBe(our.Payload.$descriptor);
+      expect(pickDescriptor.fields.idOneof.pbName).toBe('id_oneof');
+      expect(our.BehaviorServiceServiceDescription.update.requestDescriptor).toBe(
+        our.Payload.$descriptor,
+      );
+
+      const msg = our.CrossMessage.create({ title: '' });
+      expect((msg as any)[messageDescriptorSymbol]).toBe(our.CrossMessage.$descriptor);
+      expect(Object.keys(msg)).not.toContain(String(messageDescriptorSymbol));
+      expect(Object.getOwnPropertySymbols(msg)).toContain(messageDescriptorSymbol);
+    });
     test('enum value runtime metadata comments', () => {
       const { ENUM_VALUE_META } = require(path.join(ROOT, 'src/runtime/protos/index'));
       const our: any = requireOur();

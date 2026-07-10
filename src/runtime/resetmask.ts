@@ -1,6 +1,10 @@
 import { Metadata } from '@grpc/grpc-js';
 
 import { Mask } from './fieldmask.js';
+import {
+  messageDescriptorSymbol,
+  type MessageDescriptor,
+} from './protos/core.js';
 
 export const ErrRecursionTooDeep = new Error('recursion too deep');
 const RECURSION_TOO_DEEP = 1000;
@@ -53,37 +57,59 @@ function isPlainObject(o: any): o is Record<string, any> {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number): void {
+function descriptorForObject(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  updObj: any,
+  fallback?: MessageDescriptor,
+): MessageDescriptor | undefined {
+  if (!updObj || typeof updObj !== 'object') return fallback;
+  return (
+    (updObj as { [messageDescriptorSymbol]?: MessageDescriptor })[messageDescriptorSymbol] ??
+    fallback
+  );
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function rmFromObjectRecursive(
+  resetMask: Mask,
+  updObj: any,
+  recursion: number,
+  descriptor?: MessageDescriptor,
+): void {
   if (recursion >= RECURSION_TOO_DEEP) throw ErrRecursionTooDeep;
   recursion++;
   if (!updObj || typeof updObj !== 'object') return;
+  descriptor = descriptorForObject(updObj, descriptor);
 
   for (const [key, value] of Object.entries(updObj)) {
-    const fieldMask = resetMask.fieldParts.get(key) || new Mask();
+    const fieldDescriptor = descriptor?.fields[key];
+    const maskKey = fieldDescriptor?.pbName ?? key;
+    const fieldMask = resetMask.fieldParts.get(maskKey) || new Mask();
 
     // If field is undefined/null => considered reset
     if (value === undefined || value === null) {
-      resetMask.fieldParts.set(key, fieldMask);
+      resetMask.fieldParts.set(maskKey, fieldMask);
       continue;
     }
 
     // Arrays (repeated fields)
     if (Array.isArray(value)) {
       if (value.length === 0) {
-        resetMask.fieldParts.set(key, fieldMask);
+        resetMask.fieldParts.set(maskKey, fieldMask);
       } else {
+        const messageDescriptor = fieldDescriptor?.message?.();
         // Add wildcard only if elements look like messages (objects)
         const hasObjectElement = value.some(
           (el) => el && typeof el === 'object' && !Array.isArray(el),
         );
-        if (hasObjectElement) {
+        if (messageDescriptor || hasObjectElement) {
           const innerMask = fieldMask.any || new Mask();
           fieldMask.any = innerMask;
-          resetMask.fieldParts.set(key, fieldMask);
+          resetMask.fieldParts.set(maskKey, fieldMask);
           for (let i = 0; i < value.length; i++) {
             const el = value[i];
             if (el && typeof el === 'object' && !Array.isArray(el)) {
-              rmFromObjectRecursive(innerMask, el, recursion);
+              rmFromObjectRecursive(innerMask, el, recursion, messageDescriptor);
             }
           }
         }
@@ -95,6 +121,9 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
     // Byte arrays already handled in isDefaultScalar
 
     if (typeof value === 'object') {
+      const messageDescriptor = descriptorForObject(value, fieldDescriptor?.message?.());
+      const mapValueDescriptor = fieldDescriptor?.mapValue?.();
+
       // Distinguish map-of-messages vs nested message using a heuristic:
       // - empty object => mark field (reset)
       // - if all values are plain objects => treat as map-of-messages using Any
@@ -103,7 +132,19 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const entries = Object.entries(value as Record<string, any>);
         if (entries.length === 0) {
-          resetMask.fieldParts.set(key, fieldMask);
+          resetMask.fieldParts.set(maskKey, fieldMask);
+        } else if (mapValueDescriptor) {
+          const innerMask = fieldMask.any || new Mask();
+          fieldMask.any = innerMask;
+          resetMask.fieldParts.set(maskKey, fieldMask);
+          for (const [, v] of entries) {
+            rmFromObjectRecursive(innerMask, v, recursion, mapValueDescriptor);
+          }
+        } else if (messageDescriptor) {
+          rmFromObjectRecursive(fieldMask, value, recursion, messageDescriptor);
+          if (!fieldMask.isEmpty()) {
+            resetMask.fieldParts.set(maskKey, fieldMask);
+          }
         } else if (
           entries.every(
             ([, v]) => v && typeof v === 'object' && !Array.isArray(v) && isPlainObject(v),
@@ -111,7 +152,7 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
         ) {
           const innerMask = fieldMask.any || new Mask();
           fieldMask.any = innerMask;
-          resetMask.fieldParts.set(key, fieldMask);
+          resetMask.fieldParts.set(maskKey, fieldMask);
           for (const [, v] of entries) {
             rmFromObjectRecursive(innerMask, v, recursion);
           }
@@ -120,13 +161,13 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
           rmFromObjectRecursive(fieldMask, value, recursion);
           // Only set if something was added under fieldMask
           if (!fieldMask.isEmpty()) {
-            resetMask.fieldParts.set(key, fieldMask);
+            resetMask.fieldParts.set(maskKey, fieldMask);
           }
         }
       } else {
         // Non-plain objects: if default-like, mark; else leave unmarked
         if (isDefaultScalar(value)) {
-          resetMask.fieldParts.set(key, fieldMask);
+          resetMask.fieldParts.set(maskKey, fieldMask);
         }
       }
       continue;
@@ -134,7 +175,7 @@ function rmFromObjectRecursive(resetMask: Mask, updObj: any, recursion: number):
 
     // Scalars: include if equal to default value
     if (isDefaultScalar(value)) {
-      resetMask.fieldParts.set(key, fieldMask);
+      resetMask.fieldParts.set(maskKey, fieldMask);
     }
   }
 }

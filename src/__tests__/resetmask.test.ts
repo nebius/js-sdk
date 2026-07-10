@@ -1,8 +1,34 @@
 import { resetMaskFromMessage } from '../runtime/resetmask.js';
+import {
+  attachMessageDescriptor,
+  type MessageDescriptor,
+} from '../runtime/protos/core.js';
 
 function msg(v: any) {
   return v;
 }
+
+const descriptor: MessageDescriptor = {
+  fields: {
+    createdAt: { pbName: 'created_at' },
+    size: {
+      pbName: 'size',
+      message: () => ({
+        fields: {
+          sizeGibibytes: { pbName: 'size_gibibytes' },
+        },
+      }),
+    },
+    itemMap: {
+      pbName: 'item_map',
+      mapValue: () => ({
+        fields: {
+          resetValue: { pbName: 'reset_value' },
+        },
+      }),
+    },
+  },
+};
 
 describe('resetMaskFromMessage', () => {
   test('null message', () => {
@@ -26,6 +52,19 @@ describe('resetMaskFromMessage', () => {
     const m = msg({ user: { name: '', age: 0 } });
     const mask = resetMaskFromMessage(m)!;
     expect(mask.marshal()).toBe('user.(age,name)');
+  });
+
+  test('descriptor protobuf field names are used in emitted masks', () => {
+    const m = attachMessageDescriptor(
+      {
+        createdAt: undefined,
+        itemMap: { a: { resetValue: '' }, b: { resetValue: 'x' } },
+        size: { sizeGibibytes: 0 },
+      },
+      descriptor,
+    );
+    const mask = resetMaskFromMessage(m)!;
+    expect(mask.marshal()).toBe('created_at,item_map.*.reset_value,size.size_gibibytes');
   });
 
   test('list empty marks field; list of messages recurses into Any', () => {

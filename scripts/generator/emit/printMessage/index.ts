@@ -1,5 +1,7 @@
 import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 import type * as GPB from '../../protos/protobuf/index.js';
+import { wktFqnOf } from '../helpers.js';
+import { resolveMessageName } from '../typeNames.js';
 
 import { emitBaseFactory } from './emitBase.js';
 import { emitDecode } from './emitDecode.js';
@@ -14,16 +16,83 @@ function fqTypeName(m: TSDescriptorMessage): string {
   return pkg ? `${pkg}.${pathName}` : pathName;
 }
 
+function descriptorConstName(m: TSDescriptorMessage): string {
+  return `${m.tsName}_MESSAGE_DESCRIPTOR`;
+}
+
+function oneofDescriptorConstName(m: TSDescriptorMessage, oneofTsName: string): string {
+  return `${m.tsName}_${oneofTsName}_ONEOF_DESCRIPTOR`;
+}
+
+function descriptorPartsForField(
+  f: TSDescriptorMessage['fields'][number],
+): string[] {
+  const parts = [`pbName: ${JSON.stringify(f.pb_name)}`];
+  if (f.isMap()) {
+    const entry = f.message();
+    const valueField = entry?.fields.find((x) => x.descriptor.number === 2);
+    if (valueField?.isMessage() && !wktFqnOf(valueField)) {
+      const ref = resolveMessageName(valueField.message());
+      if (ref) parts.push(`mapValue: () => ${ref}.$descriptor`);
+    }
+  } else if (f.isMessage() && !wktFqnOf(f)) {
+    const ref = resolveMessageName(f.message());
+    if (ref) parts.push(`message: () => ${ref}.$descriptor`);
+  }
+  return parts;
+}
+
+function emitMessageDescriptor(m: TSDescriptorMessage): string[] {
+  const lines: string[] = [];
+  const descriptorName = descriptorConstName(m);
+  const nonOneofFields = m.fields.filter((f) => !f.is_in_oneof);
+
+  for (const o of m.oneofs) {
+    const oneofDescriptorName = oneofDescriptorConstName(m, o.tsName);
+    lines.push(`const ${oneofDescriptorName}: MessageDescriptor = {`);
+    lines.push(`  fields: {`);
+    for (const f of o.fields) {
+      lines.push(
+        `    ${JSON.stringify(f.tsName)}: { ${descriptorPartsForField(f).join(', ')} },`,
+      );
+    }
+    lines.push(`  },`);
+    lines.push(`};`);
+    lines.push('');
+  }
+
+  lines.push(`const ${descriptorName}: MessageDescriptor = {`);
+  lines.push(`  fields: {`);
+  for (const f of nonOneofFields) {
+    lines.push(`    ${JSON.stringify(f.tsName)}: { ${descriptorPartsForField(f).join(', ')} },`);
+  }
+  for (const o of m.oneofs) {
+    const oneofDescriptorName = oneofDescriptorConstName(m, o.tsName);
+    lines.push(
+      `    ${JSON.stringify(o.tsName)}: { pbName: ${JSON.stringify(o.pb_name)}, message: () => ${oneofDescriptorName} },`,
+    );
+  }
+  lines.push(`  },`);
+  lines.push(`};`);
+  lines.push('');
+  return lines;
+}
+
 export function printMessage(m: TSDescriptorMessage): string {
   const lines: string[] = [];
   const typeName = fqTypeName(m);
+  const descriptorName = descriptorConstName(m);
 
   // Interface
   lines.push(...emitInterface(m, typeName));
 
+  // Descriptor metadata used by runtime helpers such as reset masks.
+  lines.push(...emitMessageDescriptor(m));
+
   // static block with type, and registration
   lines.push(`export const ${m.tsName}: MessageFns<${m.tsName}, "${typeName}"> = {`);
   lines.push(`  $type: "${typeName}" as const,`);
+  lines.push(`  $descriptor: ${descriptorName},`);
   lines.push('');
   lines.push(...emitEncode(m));
   lines.push(...emitDecode(m));
@@ -230,7 +299,7 @@ export function printMessage(m: TSDescriptorMessage): string {
   lines.push(`function ${applyFnName}(message: ${m.tsName}): ${m.tsName} {`);
   lines.push(`  message[custom] = ${customFnName};`);
   lines.push(`  message[customJson] = ${customJsonFnName};`);
-  lines.push('  return message;');
+  lines.push(`  return attachMessageDescriptor(message, ${m.tsName}.$descriptor);`);
   lines.push('}');
   lines.push('');
 

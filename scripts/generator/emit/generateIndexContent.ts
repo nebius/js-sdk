@@ -82,7 +82,7 @@ export function generateIndexContent(
 
   // Always import common runtime helpers. Some may be unused in a given file; consumers can tree-shake.
   lines.push(
-    `import { BinaryReader, BinaryWriter, DeepPartial, Empty as WktEmpty, isSet, Long, bytesFromBase64, base64FromBytes, wkt, createEnum, unknownFieldsSymbol } from "${runtimeImport}"`,
+    `import { attachMessageDescriptor, BinaryReader, BinaryWriter, DeepPartial, Empty as WktEmpty, isSet, Long, bytesFromBase64, base64FromBytes, wkt, createEnum, unknownFieldsSymbol } from "${runtimeImport}"`,
   );
   // util.inspect for human-friendly string formatting
   lines.push(`import { inspect } from "util";`);
@@ -91,7 +91,7 @@ export function generateIndexContent(
   // Import runtime types used in generated declarations. EnumClass is required for the per-enum
   // intersection type (<EnumName>Class) that augments value members with hover JSDoc.
   lines.push(
-    `import type { Dayjs, Duration, MessageFns, EnumInstance, EnumClass } from "${runtimeImport}";`,
+    `import type { Dayjs, Duration, MessageDescriptor, MessageFns, EnumInstance, EnumClass } from "${runtimeImport}";`,
   );
   lines.push(
     `import { deprecatedWarn, custom, customJson, inspectJson } from "${toJsModuleSpecifier(`${up}/runtime/util/logging`)}";`,

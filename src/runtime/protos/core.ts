@@ -16,8 +16,34 @@ export { default as Long } from 'long';
 export { BinaryReader, BinaryWriter } from '@bufbuild/protobuf/wire';
 
 // Message typing for generated messages
+export interface MessageFieldDescriptor {
+  pbName: string;
+  message?: () => MessageDescriptor | undefined;
+  mapValue?: () => MessageDescriptor | undefined;
+}
+
+export interface MessageDescriptor {
+  fields: Record<string, MessageFieldDescriptor>;
+}
+
+export const messageDescriptorSymbol: unique symbol = Symbol('nebius.messageDescriptor');
+
+export function attachMessageDescriptor<T extends object>(
+  message: T,
+  descriptor: MessageDescriptor | undefined,
+): T {
+  if (!descriptor) return message;
+  Object.defineProperty(message, messageDescriptorSymbol, {
+    configurable: true,
+    enumerable: false,
+    value: descriptor,
+  });
+  return message;
+}
+
 export interface MessageFns<T, TType extends string> {
   $type: TType;
+  $descriptor?: MessageDescriptor;
   encode(
     message: T,
     writer?: import('@bufbuild/protobuf/wire').BinaryWriter,

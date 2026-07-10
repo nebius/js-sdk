@@ -120,6 +120,7 @@ export function printService(
     lines.push(' */');
   }
   lines.push(`export const ${svcName}ServiceDescription = {`);
+  const requestDescriptorLines: string[] = [];
   for (const m of svc.methods) {
     const methodName = m.tsName;
     const pbMethodName = m.pb_name;
@@ -137,6 +138,11 @@ export function printService(
     lines.push(
       `    requestSerialize: (value: ${Req}) => Buffer.from(${Req}.encode(value).finish()),`,
     );
+    if (Req !== 'any') {
+      requestDescriptorLines.push(
+        `Object.defineProperty(${svcName}ServiceDescription.${methodName}, "requestDescriptor", { enumerable: false, get() { return ${Req}.$descriptor; } });`,
+      );
+    }
     lines.push(`    sendResetMask: ${sendResetMask ? 'true' : 'false'},`);
     lines.push(`    requestDeserialize: (value: Buffer) => ${Req}.decode(value),`);
     lines.push(
@@ -146,6 +152,7 @@ export function printService(
     lines.push(`  },`);
   }
   lines.push(`} as const;`);
+  lines.push(...requestDescriptorLines);
   lines.push('');
   // ServiceDescription was just emitted above; keep moving on.
 

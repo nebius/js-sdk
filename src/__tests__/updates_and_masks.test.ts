@@ -59,8 +59,8 @@ describe('updates and masks — DiskService.Update', () => {
           expect(meta).not.toBeNull();
           expect(meta?.fieldParts.has('labels')).toBe(true);
           expect(meta?.fieldParts.has('name')).toBe(true);
-          expect(meta?.fieldParts.has('parentId')).toBe(true);
-          const rv = meta?.fieldParts.get('resourceVersion') || null;
+          expect(meta?.fieldParts.has('parent_id')).toBe(true);
+          const rv = meta?.fieldParts.get('resource_version') || null;
           expect(rv).not.toBeNull();
           expect(rv?.fieldParts.has('high')).toBe(true);
           expect(rv?.fieldParts.has('low')).toBe(true);
@@ -147,8 +147,8 @@ describe('updates and masks — InstanceService.Update with list field', () => {
           expect(meta).not.toBeNull();
           expect(meta?.fieldParts.has('labels')).toBe(true);
           expect(meta?.fieldParts.has('name')).toBe(true);
-          expect(meta?.fieldParts.has('parentId')).toBe(true);
-          const rv = meta?.fieldParts.get('resourceVersion') || null;
+          expect(meta?.fieldParts.has('parent_id')).toBe(true);
+          const rv = meta?.fieldParts.get('resource_version') || null;
           expect(rv).not.toBeNull();
           expect(rv?.fieldParts.has('high')).toBe(true);
           expect(rv?.fieldParts.has('low')).toBe(true);
