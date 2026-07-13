@@ -65,6 +65,23 @@ function descriptorForObject(
   );
 }
 
+function rmFromValueRecursive(
+  resetMask: Mask,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  updObj: any,
+  recursion: number,
+  descriptor?: MessageDescriptor,
+): boolean {
+  const reflected = descriptor?.reflect?.(updObj);
+  if (reflected !== undefined) {
+    rmFromObjectRecursive(resetMask, reflected, recursion, descriptor);
+    return true;
+  }
+  if (!updObj || typeof updObj !== 'object') return false;
+  rmFromObjectRecursive(resetMask, updObj, recursion, descriptor);
+  return true;
+}
+
 function rmFromObjectRecursive(
   resetMask: Mask,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -81,35 +98,68 @@ function rmFromObjectRecursive(
     const fieldDescriptor = descriptor?.fields[key];
     const maskKey = fieldDescriptor?.pbName ?? key;
     const fieldMask = resetMask.fieldParts.get(maskKey) || new Mask();
+    const messageDescriptor = fieldDescriptor?.message?.();
 
-    // If field is undefined/null => considered reset
+    // Missing values reset the field. Null message values may still be reflected
+    // by descriptor adapters, for example google.protobuf.Value => null_value.
     if (value === undefined || value === null) {
+      if (
+        value === null &&
+        messageDescriptor &&
+        fieldDescriptor?.repeated !== true &&
+        rmFromValueRecursive(fieldMask, value, recursion, messageDescriptor)
+      ) {
+        if (!fieldMask.isEmpty()) {
+          resetMask.fieldParts.set(maskKey, fieldMask);
+        }
+        continue;
+      }
       resetMask.fieldParts.set(maskKey, fieldMask);
       continue;
     }
 
-    // Arrays (repeated fields)
+    if (
+      messageDescriptor &&
+      fieldDescriptor?.repeated !== true &&
+      (!Array.isArray(value) || messageDescriptor.reflect) &&
+      rmFromValueRecursive(fieldMask, value, recursion, messageDescriptor)
+    ) {
+      if (!fieldMask.isEmpty()) {
+        resetMask.fieldParts.set(maskKey, fieldMask);
+      }
+      continue;
+    }
+
+    // Arrays are repeated fields only when descriptor metadata says so.
+    // Untyped inputs keep the object-element heuristic.
     if (Array.isArray(value)) {
+      if (fieldDescriptor && fieldDescriptor.repeated !== true) {
+        continue;
+      }
+      const repeatedMessageDescriptor =
+        fieldDescriptor?.repeated === true ? messageDescriptor : undefined;
       if (value.length === 0) {
         resetMask.fieldParts.set(maskKey, fieldMask);
       } else {
-        const messageDescriptor = fieldDescriptor?.message?.();
-        // Add wildcard only if elements look like messages (objects)
+        // Add wildcard for repeated messages, or for untyped arrays whose
+        // elements look like messages.
         const hasObjectElement = value.some(
           (el) => el && typeof el === 'object' && !Array.isArray(el),
         );
-        if (messageDescriptor || hasObjectElement) {
+        if (repeatedMessageDescriptor || hasObjectElement) {
           const innerMask = fieldMask.any || new Mask();
           fieldMask.any = innerMask;
           resetMask.fieldParts.set(maskKey, fieldMask);
           for (let i = 0; i < value.length; i++) {
             const el = value[i];
-            if (el && typeof el === 'object' && !Array.isArray(el)) {
-              rmFromObjectRecursive(innerMask, el, recursion, messageDescriptor);
+            if (repeatedMessageDescriptor) {
+              rmFromValueRecursive(innerMask, el, recursion, repeatedMessageDescriptor);
+            } else if (el && typeof el === 'object' && !Array.isArray(el)) {
+              rmFromObjectRecursive(innerMask, el, recursion);
             }
           }
         }
-        // If it's a list of scalars, do not mark
+        // Non-empty scalar arrays are not resets.
       }
       continue;
     }
@@ -120,10 +170,11 @@ function rmFromObjectRecursive(
       const messageDescriptor = descriptorForObject(value, fieldDescriptor?.message?.());
       const mapValueDescriptor = fieldDescriptor?.mapValue?.();
 
-      // Distinguish map-of-messages vs nested message using a heuristic:
+      // Prefer descriptor metadata for maps/messages. Without descriptors,
+      // fall back to the old plain-object heuristic:
       // - empty object => mark field (reset)
-      // - if all values are plain objects => treat as map-of-messages using Any
-      // - otherwise => nested message
+      // - all values plain objects => treat as map of messages
+      // - otherwise => nested object
       if (isPlainObject(value)) {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const entries = Object.entries(value as Record<string, any>);
@@ -134,7 +185,7 @@ function rmFromObjectRecursive(
           fieldMask.any = innerMask;
           resetMask.fieldParts.set(maskKey, fieldMask);
           for (const [, v] of entries) {
-            rmFromObjectRecursive(innerMask, v, recursion, mapValueDescriptor);
+            rmFromValueRecursive(innerMask, v, recursion, mapValueDescriptor);
           }
         } else if (messageDescriptor) {
           rmFromObjectRecursive(fieldMask, value, recursion, messageDescriptor);
@@ -153,7 +204,7 @@ function rmFromObjectRecursive(
             rmFromObjectRecursive(innerMask, v, recursion);
           }
         } else {
-          // Not a map-of-messages; treat as nested message if plain-object, otherwise scalar-like
+          // Not a map of messages; recurse as a nested plain object.
           rmFromObjectRecursive(fieldMask, value, recursion);
           // Only set if something was added under fieldMask
           if (!fieldMask.isEmpty()) {

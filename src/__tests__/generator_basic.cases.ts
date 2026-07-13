@@ -51,9 +51,12 @@ export function registerSelfCompatTests() {
       const { messageDescriptorSymbol } = require(path.join(ROOT, 'src/runtime/protos/index'));
       const our: any = requireOur();
 
+      expect(our.CrossMessage.$type).toBe('nebius.example.test.CrossMessage');
       expect(our.CrossMessage.$descriptor.fields.title.pbName).toBe('title');
       expect(our.CrossMessage.$descriptor.fields.topColor.pbName).toBe('top_color');
       expect(our.CrossMessage.$descriptor.fields.wkts.message()).toBe(our.AllWkts.$descriptor);
+      expect(our.AllWkts.$descriptor.fields.mask.repeated).toBeUndefined();
+      expect(our.AllWkts.$descriptor.fields.tsList.repeated).toBe(true);
       const anyDescriptor = our.AllWkts.$descriptor.fields.any.message();
       expect(anyDescriptor.fields.typeUrl.pbName).toBe('type_url');
       expect(anyDescriptor.fields.value.pbName).toBe('value');

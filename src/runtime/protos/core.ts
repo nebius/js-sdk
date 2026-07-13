@@ -12,17 +12,18 @@ export type { Dayjs };
 export type Duration = ReturnType<typeof dayjs.duration>;
 
 export { default as Long } from 'long';
-// eslint-disable-next-line n/no-extraneous-import
 export { BinaryReader, BinaryWriter } from '@bufbuild/protobuf/wire';
 
 // Message typing for generated messages
 export interface MessageFieldDescriptor {
   pbName: string;
+  repeated?: boolean;
   message?: () => MessageDescriptor | undefined;
   mapValue?: () => MessageDescriptor | undefined;
 }
 
 export interface MessageDescriptor {
+  reflect?: (value: unknown) => Record<string, unknown> | undefined;
   fields: Record<string, MessageFieldDescriptor>;
 }
 

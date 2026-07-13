@@ -26,6 +26,9 @@ function oneofDescriptorConstName(m: TSDescriptorMessage, oneofTsName: string): 
 
 function descriptorPartsForField(f: TSDescriptorMessage['fields'][number]): string[] {
   const parts = [`pbName: ${JSON.stringify(f.pb_name)}`];
+  if (f.isRepeated() && !f.isMap()) {
+    parts.push('repeated: true');
+  }
   if (f.isMap()) {
     const entry = f.message();
     const valueField = entry?.fields.find((x) => x.descriptor.number === 2);

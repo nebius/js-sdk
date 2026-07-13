@@ -1,4 +1,9 @@
-import { attachMessageDescriptor, type MessageDescriptor, wkt } from '../runtime/protos/index.js';
+import {
+  attachMessageDescriptor,
+  dayjs,
+  type MessageDescriptor,
+  wkt,
+} from '../runtime/protos/index.js';
 import { resetMaskFromMessage } from '../runtime/resetmask.js';
 
 function msg(v: any) {
@@ -27,6 +32,52 @@ const descriptor: MessageDescriptor = {
           resetValue: { pbName: 'reset_value' },
         },
       }),
+    },
+    mask: {
+      pbName: 'mask',
+      message: () => wkt['.google.protobuf.FieldMask'].$descriptor,
+    },
+    masks: {
+      pbName: 'masks',
+      repeated: true,
+      message: () => wkt['.google.protobuf.FieldMask'].$descriptor,
+    },
+    nullValue: {
+      pbName: 'null_value',
+      message: () => wkt['.google.protobuf.Value'].$descriptor,
+    },
+    numberValue: {
+      pbName: 'number_value',
+      message: () => wkt['.google.protobuf.Value'].$descriptor,
+    },
+    stringValue: {
+      pbName: 'string_value',
+      message: () => wkt['.google.protobuf.Value'].$descriptor,
+    },
+    boolValue: {
+      pbName: 'bool_value',
+      message: () => wkt['.google.protobuf.Value'].$descriptor,
+    },
+    structValue: {
+      pbName: 'struct_value',
+      message: () => wkt['.google.protobuf.Struct'].$descriptor,
+    },
+    listValue: {
+      pbName: 'list_value',
+      message: () => wkt['.google.protobuf.ListValue'].$descriptor,
+    },
+    values: {
+      pbName: 'values',
+      repeated: true,
+      message: () => wkt['.google.protobuf.Value'].$descriptor,
+    },
+    timestamp: {
+      pbName: 'timestamp',
+      message: () => wkt['.google.protobuf.Timestamp'].$descriptor,
+    },
+    duration: {
+      pbName: 'duration',
+      message: () => wkt['.google.protobuf.Duration'].$descriptor,
     },
   },
 };
@@ -110,5 +161,43 @@ describe('resetMaskFromMessage', () => {
     const rm2 = resetMaskFromMessage(m2)!;
     expect(rm1.marshal()).toBe('');
     expect(rm2.marshal()).toBe('');
+  });
+
+  test('WKT fields use protobuf structure behind JS surface types', () => {
+    const m = attachMessageDescriptor(
+      {
+        mask: [],
+        masks: [[], ['a']],
+        nullValue: null,
+        numberValue: 0,
+        stringValue: '',
+        boolValue: false,
+        structValue: {},
+        listValue: [],
+        values: [0, 'x', false, { a: '' }, []],
+      },
+      descriptor,
+    );
+
+    const mask = resetMaskFromMessage(m)!;
+    expect(mask.marshal()).toBe(
+      'bool_value.bool_value,list_value.values,mask.paths,masks.*.paths,' +
+        'null_value.null_value,number_value.number_value,string_value.string_value,' +
+        'struct_value.fields,values.*.(bool_value,list_value.values,number_value,' +
+        'struct_value.fields.*.string_value)',
+    );
+  });
+
+  test('Timestamp and Duration WKT fields expose seconds/nanos defaults', () => {
+    const m = attachMessageDescriptor(
+      {
+        timestamp: dayjs('1970-01-01T00:00:01.000Z'),
+        duration: dayjs.duration(0, 'milliseconds'),
+      },
+      descriptor,
+    );
+
+    const mask = resetMaskFromMessage(m)!;
+    expect(mask.marshal()).toBe('duration.(nanos,seconds),timestamp.nanos');
   });
 });
