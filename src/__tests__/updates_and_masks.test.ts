@@ -6,6 +6,7 @@ import {
   DiskService as DiskServiceClient,
   type DiskServiceServer,
   DiskServiceServiceDescription as DiskServiceService,
+  DiskSpec,
   InstanceService as InstanceServiceClient,
   type InstanceServiceServer,
   InstanceServiceServiceDescription as InstanceServiceService,
@@ -57,14 +58,21 @@ describe('updates and masks — DiskService.Update', () => {
           const m = parseFieldMask(maskStr);
           const meta = m.getSubMask('metadata');
           expect(meta).not.toBeNull();
-          expect(meta?.fieldParts.has('labels')).toBe(true);
+          for (const key of ['created_at', 'labels']) {
+            expect(meta?.fieldParts.get(key)?.isEmpty()).toBe(true);
+          }
           expect(meta?.fieldParts.has('name')).toBe(true);
           expect(meta?.fieldParts.has('parent_id')).toBe(true);
-          const rv = meta?.fieldParts.get('resource_version') || null;
-          expect(rv).not.toBeNull();
-          expect(rv?.fieldParts.has('high')).toBe(true);
-          expect(rv?.fieldParts.has('low')).toBe(true);
-          expect(rv?.fieldParts.has('unsigned')).toBe(true);
+          expect(meta?.fieldParts.get('resource_version')?.isEmpty()).toBe(true);
+
+          const spec = m.getSubMask('spec');
+          expect(spec).not.toBeNull();
+          for (const key of ['size_bytes', 'size_gibibytes', 'type']) {
+            expect(spec?.fieldParts.get(key)?.isEmpty()).toBe(true);
+          }
+          expect(spec?.fieldParts.has('size')).toBe(false);
+          expect(maskStr).not.toContain('high');
+          expect(maskStr).not.toContain('unsigned');
 
           const ua = mdGetString(md, 'user-agent');
           // JS reality: ensure primary UA parts are present
@@ -115,6 +123,7 @@ describe('updates and masks — DiskService.Update', () => {
         resourceVersion: Long.ZERO,
         labels: {},
       }),
+      spec: DiskSpec.create({}),
     });
     const req = client.update(upd, new Metadata(), { deadline: Date.now() + 5000 });
     const ret = await req.result;
@@ -148,11 +157,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
           expect(meta?.fieldParts.has('labels')).toBe(true);
           expect(meta?.fieldParts.has('name')).toBe(true);
           expect(meta?.fieldParts.has('parent_id')).toBe(true);
-          const rv = meta?.fieldParts.get('resource_version') || null;
-          expect(rv).not.toBeNull();
-          expect(rv?.fieldParts.has('high')).toBe(true);
-          expect(rv?.fieldParts.has('low')).toBe(true);
-          expect(rv?.fieldParts.has('unsigned')).toBe(true);
+          expect(meta?.fieldParts.get('resource_version')?.isEmpty()).toBe(true);
 
           const spec = m.getSubMask('spec');
           expect(spec).not.toBeNull();

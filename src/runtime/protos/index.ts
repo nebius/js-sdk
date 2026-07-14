@@ -16,6 +16,7 @@ export type {
   Duration,
   MessageDescriptor,
   MessageFieldDescriptor,
+  MessageFieldScalarType,
   MessageFns,
 } from './core.js';
 

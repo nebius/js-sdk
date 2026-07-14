@@ -195,8 +195,8 @@ export const wkt = {
     $descriptor: {
       reflect: timestampReflect,
       fields: {
-        seconds: { pbName: 'seconds' },
-        nanos: { pbName: 'nanos' },
+        seconds: { pbName: 'seconds', scalarType: 3 },
+        nanos: { pbName: 'nanos', scalarType: 5 },
       },
     },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => tsFromJSON(o),
@@ -245,8 +245,8 @@ export const wkt = {
     $descriptor: {
       reflect: durationReflect,
       fields: {
-        seconds: { pbName: 'seconds' },
-        nanos: { pbName: 'nanos' },
+        seconds: { pbName: 'seconds', scalarType: 3 },
+        nanos: { pbName: 'nanos', scalarType: 5 },
       },
     },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => durFromJSON(o),
@@ -295,7 +295,7 @@ export const wkt = {
     $descriptor: {
       reflect: (value: unknown) => ({ paths: fieldMaskPaths(value) }),
       fields: {
-        paths: { pbName: 'paths', repeated: true },
+        paths: { pbName: 'paths', repeated: true, scalarType: 9 },
       },
     },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => fmFromJSON(o),
@@ -309,8 +309,8 @@ export const wkt = {
     $type: 'google.protobuf.Any',
     $descriptor: {
       fields: {
-        typeUrl: { pbName: 'type_url' },
-        value: { pbName: 'value' },
+        typeUrl: { pbName: 'type_url', scalarType: 9 },
+        value: { pbName: 'value', scalarType: 12 },
       },
     },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => anyFromJSON(o),
@@ -329,6 +329,7 @@ export const wkt = {
       fields: {
         fields: {
           pbName: 'fields',
+          map: true,
           mapValue: () => wktDescriptor('.google.protobuf.Value'),
         },
       },
@@ -383,10 +384,10 @@ export const wkt = {
     $descriptor: {
       reflect: valueReflect,
       fields: {
-        nullValue: { pbName: 'null_value' },
-        numberValue: { pbName: 'number_value' },
-        stringValue: { pbName: 'string_value' },
-        boolValue: { pbName: 'bool_value' },
+        nullValue: { pbName: 'null_value', scalarType: 14 },
+        numberValue: { pbName: 'number_value', scalarType: 1 },
+        stringValue: { pbName: 'string_value', scalarType: 9 },
+        boolValue: { pbName: 'bool_value', scalarType: 8 },
         structValue: {
           pbName: 'struct_value',
           message: () => wktDescriptor('.google.protobuf.Struct'),

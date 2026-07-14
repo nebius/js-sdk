@@ -1,6 +1,7 @@
 import {
   attachMessageDescriptor,
   dayjs,
+  Long,
   type MessageDescriptor,
   wkt,
 } from '../runtime/protos/index.js';
@@ -21,7 +22,7 @@ const descriptor: MessageDescriptor = {
       pbName: 'size',
       message: () => ({
         fields: {
-          sizeGibibytes: { pbName: 'size_gibibytes' },
+          sizeGibibytes: { pbName: 'size_gibibytes', scalarType: 1 },
         },
       }),
     },
@@ -29,7 +30,7 @@ const descriptor: MessageDescriptor = {
       pbName: 'item_map',
       mapValue: () => ({
         fields: {
-          resetValue: { pbName: 'reset_value' },
+          resetValue: { pbName: 'reset_value', scalarType: 9 },
         },
       }),
     },
@@ -163,7 +164,89 @@ describe('resetMaskFromMessage', () => {
     expect(rm2.marshal()).toBe('');
   });
 
-  test('WKT fields use protobuf structure behind JS surface types', () => {
+  test('Long handling treats generated scalar values separately from WKT reflection', () => {
+    const longDescriptor: MessageDescriptor = {
+      fields: {
+        resourceVersion: { pbName: 'resource_version', scalarType: 3 },
+        duration: {
+          pbName: 'duration',
+          message: () => wkt['.google.protobuf.Duration'].$descriptor,
+        },
+      },
+    };
+    const zero = attachMessageDescriptor({ resourceVersion: Long.ZERO }, longDescriptor);
+    const nonZero = attachMessageDescriptor(
+      { resourceVersion: Long.fromNumber(1) },
+      longDescriptor,
+    );
+    const duration = attachMessageDescriptor(
+      { duration: { seconds: Long.ZERO, nanos: 0 } },
+      longDescriptor,
+    );
+
+    expect(resetMaskFromMessage(zero)!.marshal()).toBe('resource_version');
+    expect(resetMaskFromMessage(nonZero)!.marshal()).toBe('');
+    expect(resetMaskFromMessage(duration)!.marshal()).toBe('duration.(nanos,seconds)');
+  });
+
+  describe('oneof descriptors', () => {
+    const payloadDescriptor: MessageDescriptor = {
+      fields: {
+        resetValue: { pbName: 'reset_value', scalarType: 9 },
+      },
+    };
+    const choiceDescriptor: MessageDescriptor = {
+      fields: {
+        textChoice: { pbName: 'text_choice', scalarType: 9 },
+        payloadChoice: {
+          pbName: 'payload_choice',
+          message: () => payloadDescriptor,
+        },
+      },
+    };
+    const oneofDescriptor: MessageDescriptor = {
+      fields: {
+        choice: {
+          pbName: 'choice',
+          oneof: true,
+          message: () => choiceDescriptor,
+        },
+      },
+    };
+
+    test.each([
+      [
+        'selected default scalar',
+        { choice: { $case: 'textChoice', textChoice: '' } },
+        'payload_choice,text_choice',
+      ],
+      [
+        'selected non-default scalar',
+        { choice: { $case: 'textChoice', textChoice: 'x' } },
+        'payload_choice',
+      ],
+      [
+        'selected message with default child',
+        { choice: { $case: 'payloadChoice', payloadChoice: { resetValue: '' } } },
+        'payload_choice.reset_value,text_choice',
+      ],
+      ['empty wrapper', { choice: {} }, 'payload_choice,text_choice'],
+      ['undefined wrapper', { choice: undefined }, 'payload_choice,text_choice'],
+    ])('%s', (_name, update, expected) => {
+      const message = attachMessageDescriptor(update, oneofDescriptor);
+      expect(resetMaskFromMessage(message)!.marshal()).toBe(expected);
+    });
+  });
+
+  test('WKT Value reflects selected JS branch only', () => {
+    const value = attachMessageDescriptor({ nullValue: null }, descriptor);
+    expect(resetMaskFromMessage(value)!.marshal()).toBe('null_value.null_value');
+
+    const nestedValue = attachMessageDescriptor({ structValue: { a: null } }, descriptor);
+    expect(resetMaskFromMessage(nestedValue)!.marshal()).toBe('struct_value.fields.*.null_value');
+  });
+
+  test('WKT fields include child masks needed by patching present messages', () => {
     const m = attachMessageDescriptor(
       {
         mask: [],
@@ -181,10 +264,17 @@ describe('resetMaskFromMessage', () => {
 
     const mask = resetMaskFromMessage(m)!;
     expect(mask.marshal()).toBe(
-      'bool_value.bool_value,list_value.values,mask.paths,masks.*.paths,' +
-        'null_value.null_value,number_value.number_value,string_value.string_value,' +
-        'struct_value.fields,values.*.(bool_value,list_value.values,number_value,' +
-        'struct_value.fields.*.string_value)',
+      [
+        'bool_value.bool_value',
+        'list_value.values',
+        'mask.paths',
+        'masks.*.paths',
+        'null_value.null_value',
+        'number_value.number_value',
+        'string_value.string_value',
+        'struct_value.fields',
+        'values.*.(bool_value,list_value.values,number_value,struct_value.fields.*.string_value)',
+      ].join(','),
     );
   });
 

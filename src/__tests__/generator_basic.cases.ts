@@ -53,19 +53,25 @@ export function registerSelfCompatTests() {
 
       expect(our.CrossMessage.$type).toBe('nebius.example.test.CrossMessage');
       expect(our.CrossMessage.$descriptor.fields.title.pbName).toBe('title');
+      expect(our.CrossMessage.$descriptor.fields.title.scalarType).toBe(9);
       expect(our.CrossMessage.$descriptor.fields.topColor.pbName).toBe('top_color');
+      expect(our.CrossMessage.$descriptor.fields.topColor.scalarType).toBe(14);
       expect(our.CrossMessage.$descriptor.fields.wkts.message()).toBe(our.AllWkts.$descriptor);
       expect(our.AllWkts.$descriptor.fields.mask.repeated).toBeUndefined();
       expect(our.AllWkts.$descriptor.fields.tsList.repeated).toBe(true);
+      expect(our.AllWkts.$descriptor.fields.stateMap.map).toBe(true);
       const anyDescriptor = our.AllWkts.$descriptor.fields.any.message();
       expect(anyDescriptor.fields.typeUrl.pbName).toBe('type_url');
       expect(anyDescriptor.fields.value.pbName).toBe('value');
       expect(our.CrossMessage.$descriptor.fields.itemMap.mapValue()).toBe(our.Payload.$descriptor);
+      expect(our.CrossMessage.$descriptor.fields.itemMap.map).toBe(true);
       expect(our.CrossMessage.$descriptor.fields.pick.pbName).toBe('pick');
+      expect(our.CrossMessage.$descriptor.fields.pick.oneof).toBe(true);
       const pickDescriptor = our.CrossMessage.$descriptor.fields.pick.message();
       expect(pickDescriptor.fields.payloadOneof.pbName).toBe('payload_oneof');
       expect(pickDescriptor.fields.payloadOneof.message()).toBe(our.Payload.$descriptor);
       expect(pickDescriptor.fields.idOneof.pbName).toBe('id_oneof');
+      expect(pickDescriptor.fields.idOneof.scalarType).toBe(3);
       expect(our.BehaviorServiceServiceDescription.update.requestDescriptor).toBe(
         our.Payload.$descriptor,
       );

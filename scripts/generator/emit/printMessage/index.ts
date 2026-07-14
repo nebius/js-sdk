@@ -24,12 +24,23 @@ function oneofDescriptorConstName(m: TSDescriptorMessage, oneofTsName: string): 
   return `${m.tsName}_${oneofTsName}_ONEOF_DESCRIPTOR`;
 }
 
+function scalarTypeForField(f: TSDescriptorMessage['fields'][number]): number | undefined {
+  if (f.isMessage()) return undefined;
+  if (f.isEnum()) return 14;
+  return f.typeCode() || undefined;
+}
+
 function descriptorPartsForField(f: TSDescriptorMessage['fields'][number]): string[] {
   const parts = [`pbName: ${JSON.stringify(f.pb_name)}`];
+  const scalarType = scalarTypeForField(f);
+  if (scalarType !== undefined) {
+    parts.push(`scalarType: ${scalarType}`);
+  }
   if (f.isRepeated() && !f.isMap()) {
     parts.push('repeated: true');
   }
   if (f.isMap()) {
+    parts.push('map: true');
     const entry = f.message();
     const valueField = entry?.fields.find((x) => x.descriptor.number === 2);
     if (valueField?.isMessage()) {
@@ -78,7 +89,7 @@ function emitMessageDescriptor(m: TSDescriptorMessage): string[] {
   for (const o of m.oneofs) {
     const oneofDescriptorName = oneofDescriptorConstName(m, o.tsName);
     lines.push(
-      `    ${JSON.stringify(o.tsName)}: { pbName: ${JSON.stringify(o.pb_name)}, message: () => ${oneofDescriptorName} },`,
+      `    ${JSON.stringify(o.tsName)}: { pbName: ${JSON.stringify(o.pb_name)}, oneof: true, message: () => ${oneofDescriptorName} },`,
     );
   }
   lines.push(`  },`);

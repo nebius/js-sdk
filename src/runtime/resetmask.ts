@@ -1,7 +1,12 @@
 import { Metadata } from '@grpc/grpc-js';
 
 import { Mask } from './fieldmask.js';
-import { type MessageDescriptor, messageDescriptorSymbol } from './protos/core.js';
+import {
+  Long,
+  type MessageDescriptor,
+  messageDescriptorSymbol,
+  type MessageFieldScalarType,
+} from './protos/core.js';
 
 export const ErrRecursionTooDeep = new Error('recursion too deep');
 const RECURSION_TOO_DEEP = 1000;
@@ -23,6 +28,7 @@ export function ensureResetMaskInMetadata(msg: any, metadata?: Metadata): Metada
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function isDefaultScalar(v: any): boolean {
   if (v === null || v === undefined) return true;
+  if (Long.isLong(v)) return v.isZero();
   switch (typeof v) {
     case 'string':
       return v === '';
@@ -46,6 +52,45 @@ function isDefaultScalar(v: any): boolean {
     return (v as Buffer).length === 0;
   }
   return false;
+}
+
+function numericValue(v: unknown): number | undefined {
+  if (typeof v === 'number') return v;
+  if (typeof v === 'bigint') return Number(v);
+  if (typeof v === 'string') {
+    const n = Number(v);
+    return Number.isFinite(n) ? n : undefined;
+  }
+  if (Long.isLong(v)) return v.toNumber();
+  if (v && typeof v === 'object') {
+    const maybeNumber = v as { code?: unknown; toNumber?: unknown };
+    if (typeof maybeNumber.toNumber === 'function') {
+      const n = Number((maybeNumber.toNumber as () => unknown)());
+      return Number.isFinite(n) ? n : undefined;
+    }
+    if (typeof maybeNumber.code === 'number') return maybeNumber.code;
+  }
+  return undefined;
+}
+
+function isDefaultForScalarType(v: unknown, scalarType: MessageFieldScalarType): boolean {
+  switch (scalarType) {
+    case 8:
+      return v === false;
+    case 9:
+      return v === '';
+    case 12:
+      return v instanceof Uint8Array ||
+        (typeof Buffer !== 'undefined' &&
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          typeof (Buffer as any).isBuffer === 'function' &&
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          (Buffer as any).isBuffer(v))
+        ? (v as Uint8Array).length === 0
+        : false;
+    default:
+      return numericValue(v) === 0;
+  }
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -82,6 +127,32 @@ function rmFromValueRecursive(
   return true;
 }
 
+function rmFromOneofRecursive(
+  resetMask: Mask,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  updObj: any,
+  recursion: number,
+  descriptor: MessageDescriptor,
+): void {
+  const selected =
+    updObj && typeof updObj === 'object' && typeof updObj.$case === 'string'
+      ? updObj.$case
+      : undefined;
+
+  for (const [key, fieldDescriptor] of Object.entries(descriptor.fields)) {
+    if (key !== selected) {
+      resetMask.fieldParts.set(
+        fieldDescriptor.pbName,
+        resetMask.fieldParts.get(fieldDescriptor.pbName) || new Mask(),
+      );
+    }
+  }
+
+  if (selected && descriptor.fields[selected] && updObj && typeof updObj === 'object') {
+    rmFromObjectRecursive(resetMask, { [selected]: updObj[selected] }, recursion, descriptor);
+  }
+}
+
 function rmFromObjectRecursive(
   resetMask: Mask,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -99,6 +170,12 @@ function rmFromObjectRecursive(
     const maskKey = fieldDescriptor?.pbName ?? key;
     const fieldMask = resetMask.fieldParts.get(maskKey) || new Mask();
     const messageDescriptor = fieldDescriptor?.message?.();
+    const scalarType = fieldDescriptor?.scalarType;
+
+    if (fieldDescriptor?.oneof && messageDescriptor) {
+      rmFromOneofRecursive(resetMask, value, recursion, messageDescriptor);
+      continue;
+    }
 
     // Missing values reset the field. Null message values may still be reflected
     // by descriptor adapters, for example google.protobuf.Value => null_value.
@@ -146,7 +223,7 @@ function rmFromObjectRecursive(
         const hasObjectElement = value.some(
           (el) => el && typeof el === 'object' && !Array.isArray(el),
         );
-        if (repeatedMessageDescriptor || hasObjectElement) {
+        if (repeatedMessageDescriptor || (!fieldDescriptor && hasObjectElement)) {
           const innerMask = fieldMask.any || new Mask();
           fieldMask.any = innerMask;
           resetMask.fieldParts.set(maskKey, fieldMask);
@@ -164,7 +241,17 @@ function rmFromObjectRecursive(
       continue;
     }
 
-    // Byte arrays already handled in isDefaultScalar
+    if (scalarType !== undefined) {
+      if (isDefaultForScalarType(value, scalarType)) {
+        resetMask.fieldParts.set(maskKey, fieldMask);
+      }
+      continue;
+    }
+
+    if (isDefaultScalar(value)) {
+      resetMask.fieldParts.set(maskKey, fieldMask);
+      continue;
+    }
 
     if (typeof value === 'object') {
       const messageDescriptor = descriptorForObject(value, fieldDescriptor?.message?.());
@@ -187,6 +274,8 @@ function rmFromObjectRecursive(
           for (const [, v] of entries) {
             rmFromValueRecursive(innerMask, v, recursion, mapValueDescriptor);
           }
+        } else if (fieldDescriptor?.map) {
+          // Non-empty scalar/enum maps do not reset individual synthetic key fields.
         } else if (messageDescriptor) {
           rmFromObjectRecursive(fieldMask, value, recursion, messageDescriptor);
           if (!fieldMask.isEmpty()) {
@@ -218,11 +307,6 @@ function rmFromObjectRecursive(
         }
       }
       continue;
-    }
-
-    // Scalars: include if equal to default value
-    if (isDefaultScalar(value)) {
-      resetMask.fieldParts.set(maskKey, fieldMask);
     }
   }
 }
