@@ -284,27 +284,106 @@ describe('resetMaskFromMessage', () => {
         },
       },
     };
+    const containerDescriptor: MessageDescriptor = {
+      fields: {
+        choice: {
+          pbName: 'choice',
+          oneof: true,
+          message: () => choiceDescriptor,
+        },
+      },
+    };
+    const choiceValueField = {
+      pbName: 'choice_value',
+      message: () => wkt['.google.protobuf.Value'].$descriptor,
+    };
+    const choiceListField = {
+      pbName: 'choice_list',
+      message: () => wkt['.google.protobuf.ListValue'].$descriptor,
+    };
     const textChoice = attachMessageDescriptor(
-      { $case: 'textChoice', textChoice: '' },
-      choiceDescriptor,
+      { choice: { $case: 'textChoice', textChoice: '' } },
+      containerDescriptor,
     );
     const payloadChoice = attachMessageDescriptor(
-      { $case: 'payloadChoice', payloadChoice: { resetValue: '' } },
-      choiceDescriptor,
+      { choice: { $case: 'payloadChoice', payloadChoice: { resetValue: '' } } },
+      containerDescriptor,
+    );
+    const nullPayloadChoice = attachMessageDescriptor(
+      { choice: { $case: 'payloadChoice', payloadChoice: null } },
+      containerDescriptor,
+    );
+    const emptyPayloadChoice = attachMessageDescriptor(
+      { choice: { $case: 'payloadChoice', payloadChoice: {} } },
+      containerDescriptor,
     );
     const value = attachMessageDescriptor(
       {
-        numberValue: textChoice,
-        listValue: [payloadChoice],
+        choiceValue: textChoice,
+        choiceList: [payloadChoice],
       },
-      descriptorWithFields('numberValue', 'listValue'),
+      {
+        fields: {
+          choiceValue: choiceValueField,
+          choiceList: choiceListField,
+        },
+      },
     );
 
     expect(resetMaskFromMessage(value)!.marshal()).toBe(
       [
-        'list_value.values.*.(payload_choice.reset_value,text_choice)',
-        'number_value.(payload_choice,text_choice)',
+        'choice_list.values.*.(payload_choice.reset_value,text_choice)',
+        'choice_value.(payload_choice,text_choice)',
       ].join(','),
+    );
+
+    const nullableValues = attachMessageDescriptor(
+      {
+        nullChoiceValue: nullPayloadChoice,
+        emptyChoiceValue: emptyPayloadChoice,
+      },
+      {
+        fields: {
+          nullChoiceValue: {
+            ...choiceValueField,
+            pbName: 'null_choice_value',
+          },
+          emptyChoiceValue: {
+            ...choiceValueField,
+            pbName: 'empty_choice_value',
+          },
+        },
+      },
+    );
+    expect(resetMaskFromMessage(nullableValues)!.marshal()).toBe(
+      [
+        'empty_choice_value.(payload_choice.reset_value,text_choice)',
+        'null_choice_value.(payload_choice,text_choice)',
+      ].join(','),
+    );
+
+    const listValueWithNull = attachMessageDescriptor(
+      { choiceList: [nullPayloadChoice] },
+      {
+        fields: {
+          choiceList: choiceListField,
+        },
+      },
+    );
+    expect(resetMaskFromMessage(listValueWithNull)!.marshal()).toBe(
+      'choice_list.values.*.(payload_choice,text_choice)',
+    );
+
+    const listValueWithEmpty = attachMessageDescriptor(
+      { choiceList: [emptyPayloadChoice] },
+      {
+        fields: {
+          choiceList: choiceListField,
+        },
+      },
+    );
+    expect(resetMaskFromMessage(listValueWithEmpty)!.marshal()).toBe(
+      'choice_list.values.*.(payload_choice.reset_value,text_choice)',
     );
   });
 
