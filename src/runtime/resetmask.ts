@@ -4,6 +4,7 @@ import { Mask } from './fieldmask.js';
 import {
   Long,
   type MessageDescriptor,
+  type MessageFieldDescriptor,
   messageDescriptorSymbol,
   type MessageFieldScalarType,
 } from './protos/core.js';
@@ -117,14 +118,43 @@ function rmFromValueRecursive(
   recursion: number,
   descriptor?: MessageDescriptor,
 ): boolean {
+  const ownDescriptor = descriptorForObject(updObj);
+  if (ownDescriptor && ownDescriptor !== descriptor) {
+    rmFromObjectRecursive(resetMask, updObj, recursion, ownDescriptor);
+    return true;
+  }
   const reflected = descriptor?.reflect?.(updObj);
   if (reflected !== undefined) {
-    rmFromObjectRecursive(resetMask, reflected, recursion, descriptor);
+    rmFromObjectRecursive(resetMask, reflected, recursion, descriptor, false);
     return true;
   }
   if (!updObj || typeof updObj !== 'object') return false;
   rmFromObjectRecursive(resetMask, updObj, recursion, descriptor);
   return true;
+}
+
+function entriesForMask(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  updObj: any,
+  descriptor: MessageDescriptor | undefined,
+  includeDescriptorDefaults: boolean,
+): [string, unknown, MessageFieldDescriptor | undefined][] {
+  if (!descriptor) {
+    return Object.entries(updObj).map(([key, value]) => [key, value, undefined]);
+  }
+
+  if (includeDescriptorDefaults) {
+    return Object.entries(descriptor.fields).map(([key, fieldDescriptor]) => [
+      key,
+      updObj[key],
+      fieldDescriptor,
+    ]);
+  }
+
+  return Object.entries(updObj).flatMap(([key, value]) => {
+    const fieldDescriptor = descriptor.fields[key];
+    return fieldDescriptor ? [[key, value, fieldDescriptor] as const] : [];
+  });
 }
 
 function rmFromOneofRecursive(
@@ -159,14 +189,18 @@ function rmFromObjectRecursive(
   updObj: any,
   recursion: number,
   descriptor?: MessageDescriptor,
+  includeDescriptorDefaults = true,
 ): void {
   if (recursion >= RECURSION_TOO_DEEP) throw ErrRecursionTooDeep;
   recursion++;
   if (!updObj || typeof updObj !== 'object') return;
   descriptor = descriptorForObject(updObj, descriptor);
 
-  for (const [key, value] of Object.entries(updObj)) {
-    const fieldDescriptor = descriptor?.fields[key];
+  for (const [key, value, fieldDescriptor] of entriesForMask(
+    updObj,
+    descriptor,
+    includeDescriptorDefaults,
+  )) {
     const maskKey = fieldDescriptor?.pbName ?? key;
     const fieldMask = resetMask.fieldParts.get(maskKey) || new Mask();
     const messageDescriptor = fieldDescriptor?.message?.();

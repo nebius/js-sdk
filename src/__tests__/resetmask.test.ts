@@ -83,6 +83,12 @@ const descriptor: MessageDescriptor = {
   },
 };
 
+function descriptorWithFields(...keys: (keyof typeof descriptor.fields)[]): MessageDescriptor {
+  return {
+    fields: Object.fromEntries(keys.map((key) => [key, descriptor.fields[key]])),
+  };
+}
+
 describe('resetMaskFromMessage', () => {
   test('null message', () => {
     expect(resetMaskFromMessage(null)).toBeNull();
@@ -115,7 +121,7 @@ describe('resetMaskFromMessage', () => {
         itemMap: { a: { resetValue: '' }, b: { resetValue: 'x' } },
         size: { sizeGibibytes: 0 },
       },
-      descriptor,
+      descriptorWithFields('anyValue', 'createdAt', 'itemMap', 'size'),
     );
     const mask = resetMaskFromMessage(m)!;
     expect(mask.marshal()).toBe(
@@ -174,14 +180,24 @@ describe('resetMaskFromMessage', () => {
         },
       },
     };
-    const zero = attachMessageDescriptor({ resourceVersion: Long.ZERO }, longDescriptor);
+    const scalarDescriptor: MessageDescriptor = {
+      fields: {
+        resourceVersion: longDescriptor.fields.resourceVersion,
+      },
+    };
+    const durationDescriptor: MessageDescriptor = {
+      fields: {
+        duration: longDescriptor.fields.duration,
+      },
+    };
+    const zero = attachMessageDescriptor({ resourceVersion: Long.ZERO }, scalarDescriptor);
     const nonZero = attachMessageDescriptor(
       { resourceVersion: Long.fromNumber(1) },
-      longDescriptor,
+      scalarDescriptor,
     );
     const duration = attachMessageDescriptor(
       { duration: { seconds: Long.ZERO, nanos: 0 } },
-      longDescriptor,
+      durationDescriptor,
     );
 
     expect(resetMaskFromMessage(zero)!.marshal()).toBe('resource_version');
@@ -238,12 +254,58 @@ describe('resetMaskFromMessage', () => {
     });
   });
 
-  test('WKT Value reflects selected JS branch only', () => {
-    const value = attachMessageDescriptor({ nullValue: null }, descriptor);
-    expect(resetMaskFromMessage(value)!.marshal()).toBe('null_value.null_value');
+  test('WKT Value reflects selected JS branch and oneof resets', () => {
+    const value = attachMessageDescriptor({ nullValue: null }, descriptorWithFields('nullValue'));
+    expect(resetMaskFromMessage(value)!.marshal()).toBe(
+      'null_value.(bool_value,list_value,null_value,number_value,string_value,struct_value)',
+    );
 
-    const nestedValue = attachMessageDescriptor({ structValue: { a: null } }, descriptor);
-    expect(resetMaskFromMessage(nestedValue)!.marshal()).toBe('struct_value.fields.*.null_value');
+    const nestedValue = attachMessageDescriptor(
+      { structValue: { a: null } },
+      descriptorWithFields('structValue'),
+    );
+    expect(resetMaskFromMessage(nestedValue)!.marshal()).toBe(
+      'struct_value.fields.*.(bool_value,list_value,null_value,number_value,string_value,struct_value)',
+    );
+  });
+
+  test('WKT Value and ListValue preserve nested message oneof resets', () => {
+    const payloadDescriptor: MessageDescriptor = {
+      fields: {
+        resetValue: { pbName: 'reset_value', scalarType: 9 },
+      },
+    };
+    const choiceDescriptor: MessageDescriptor = {
+      fields: {
+        textChoice: { pbName: 'text_choice', scalarType: 9 },
+        payloadChoice: {
+          pbName: 'payload_choice',
+          message: () => payloadDescriptor,
+        },
+      },
+    };
+    const textChoice = attachMessageDescriptor(
+      { $case: 'textChoice', textChoice: '' },
+      choiceDescriptor,
+    );
+    const payloadChoice = attachMessageDescriptor(
+      { $case: 'payloadChoice', payloadChoice: { resetValue: '' } },
+      choiceDescriptor,
+    );
+    const value = attachMessageDescriptor(
+      {
+        numberValue: textChoice,
+        listValue: [payloadChoice],
+      },
+      descriptorWithFields('numberValue', 'listValue'),
+    );
+
+    expect(resetMaskFromMessage(value)!.marshal()).toBe(
+      [
+        'list_value.values.*.(payload_choice.reset_value,text_choice)',
+        'number_value.(payload_choice,text_choice)',
+      ].join(','),
+    );
   });
 
   test('WKT fields include child masks needed by patching present messages', () => {
@@ -259,21 +321,31 @@ describe('resetMaskFromMessage', () => {
         listValue: [],
         values: [0, 'x', false, { a: '' }, []],
       },
-      descriptor,
+      descriptorWithFields(
+        'mask',
+        'masks',
+        'nullValue',
+        'numberValue',
+        'stringValue',
+        'boolValue',
+        'structValue',
+        'listValue',
+        'values',
+      ),
     );
 
     const mask = resetMaskFromMessage(m)!;
     expect(mask.marshal()).toBe(
       [
-        'bool_value.bool_value',
+        'bool_value.(bool_value,list_value,null_value,number_value,string_value,struct_value)',
         'list_value.values',
         'mask.paths',
         'masks.*.paths',
-        'null_value.null_value',
-        'number_value.number_value',
-        'string_value.string_value',
+        'null_value.(bool_value,list_value,null_value,number_value,string_value,struct_value)',
+        'number_value.(bool_value,list_value,null_value,number_value,string_value,struct_value)',
+        'string_value.(bool_value,list_value,null_value,number_value,string_value,struct_value)',
         'struct_value.fields',
-        'values.*.(bool_value,list_value.values,number_value,struct_value.fields.*.string_value)',
+        'values.*.(bool_value,list_value.values,null_value,number_value,string_value,struct_value.fields.*.(bool_value,list_value,null_value,number_value,string_value,struct_value))',
       ].join(','),
     );
   });
@@ -284,7 +356,7 @@ describe('resetMaskFromMessage', () => {
         timestamp: dayjs('1970-01-01T00:00:01.000Z'),
         duration: dayjs.duration(0, 'milliseconds'),
       },
-      descriptor,
+      descriptorWithFields('timestamp', 'duration'),
     );
 
     const mask = resetMaskFromMessage(m)!;

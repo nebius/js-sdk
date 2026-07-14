@@ -13,7 +13,9 @@ import {
   UpdateDiskRequest,
   UpdateInstanceRequest,
 } from '../api/nebius/compute/v1/index.js';
+import { attachMessageDescriptor } from '../runtime/protos/index.js';
 import { parseFieldMask } from '../runtime/fieldmask.js';
+import { resetMaskFromMessage } from '../runtime/resetmask.js';
 import { Basic } from '../runtime/resolver.js';
 import { SDK } from '../sdk.js';
 
@@ -39,6 +41,19 @@ function mdGetString(md: Metadata, key: string): string {
 
 // Port of test_update_instance_v2 (adapted for Node.js)
 describe('updates and masks — DiskService.Update', () => {
+  test('descriptor-backed raw requests use descriptor shape and skip unknown fields', () => {
+    const generatedEmpty = UpdateDiskRequest.create({});
+    const rawEmpty = attachMessageDescriptor({}, UpdateDiskRequest.$descriptor);
+    const rawWithUnknown = attachMessageDescriptor(
+      { someJsOnly: 0 },
+      UpdateDiskRequest.$descriptor,
+    );
+
+    expect(resetMaskFromMessage(generatedEmpty)!.marshal()).toBe('metadata,spec');
+    expect(resetMaskFromMessage(rawEmpty)!.marshal()).toBe('metadata,spec');
+    expect(resetMaskFromMessage(rawWithUnknown)!.marshal()).toBe('metadata,spec');
+  });
+
   test('idempotency, resetmask and user-agent composition', async () => {
     const { server, address, port } = await startServerWithPort((server) => {
       const impl: DiskServiceServer = {

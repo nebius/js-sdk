@@ -44,7 +44,7 @@ export interface RequestSpec<TReq> {
   path: string;
   requestSerialize: (value: TReq) => Buffer;
   sendResetMask?: boolean;
-  requestDescriptor?: MessageDescriptor;
+  requestDescriptor?: () => MessageDescriptor | undefined;
 }
 
 export type CallCreator<TReq, TRes> = (
@@ -168,10 +168,11 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     this.serviceName = names.serviceName;
     this.methodName = names.methodName;
     this.serializer = spec.requestSerialize;
-    if (spec.requestDescriptor && this.request && typeof this.request === 'object') {
+    const requestDescriptor = spec.requestDescriptor?.();
+    if (requestDescriptor && this.request && typeof this.request === 'object') {
       this.request = attachMessageDescriptor(
         this.request as object,
-        spec.requestDescriptor,
+        requestDescriptor,
       ) as TReq;
     }
 

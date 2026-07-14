@@ -173,21 +173,40 @@ function durationReflect(value: unknown): Record<string, unknown> | undefined {
 }
 
 function valueReflect(value: unknown): Record<string, unknown> | undefined {
-  if (value === null) return { nullValue: 0 };
+  if (value === null) return { kind: { $case: 'nullValue', nullValue: 0 } };
   switch (typeof value) {
     case 'number':
-      return { numberValue: value };
+      return { kind: { $case: 'numberValue', numberValue: value } };
     case 'string':
-      return { stringValue: value };
+      return { kind: { $case: 'stringValue', stringValue: value } };
     case 'boolean':
-      return { boolValue: value };
+      return { kind: { $case: 'boolValue', boolValue: value } };
     default:
       break;
   }
-  if (Array.isArray(value)) return { listValue: value };
-  if (value && typeof value === 'object') return { structValue: value };
+  if (Array.isArray(value)) return { kind: { $case: 'listValue', listValue: value } };
+  if (value && typeof value === 'object') {
+    return { kind: { $case: 'structValue', structValue: value } };
+  }
   return undefined;
 }
+
+const VALUE_KIND_DESCRIPTOR: MessageDescriptor = {
+  fields: {
+    nullValue: { pbName: 'null_value', scalarType: 14 },
+    numberValue: { pbName: 'number_value', scalarType: 1 },
+    stringValue: { pbName: 'string_value', scalarType: 9 },
+    boolValue: { pbName: 'bool_value', scalarType: 8 },
+    structValue: {
+      pbName: 'struct_value',
+      message: () => wktDescriptor('.google.protobuf.Struct'),
+    },
+    listValue: {
+      pbName: 'list_value',
+      message: () => wktDescriptor('.google.protobuf.ListValue'),
+    },
+  },
+};
 
 export const wkt = {
   ['.google.protobuf.Timestamp']: {
@@ -384,18 +403,7 @@ export const wkt = {
     $descriptor: {
       reflect: valueReflect,
       fields: {
-        nullValue: { pbName: 'null_value', scalarType: 14 },
-        numberValue: { pbName: 'number_value', scalarType: 1 },
-        stringValue: { pbName: 'string_value', scalarType: 9 },
-        boolValue: { pbName: 'bool_value', scalarType: 8 },
-        structValue: {
-          pbName: 'struct_value',
-          message: () => wktDescriptor('.google.protobuf.Struct'),
-        },
-        listValue: {
-          pbName: 'list_value',
-          message: () => wktDescriptor('.google.protobuf.ListValue'),
-        },
+        kind: { pbName: 'kind', oneof: true, message: () => VALUE_KIND_DESCRIPTOR },
       },
     },
     fromJSON: (o: any, _use?: 'json' | 'pb') => valueFromJSON(o),
