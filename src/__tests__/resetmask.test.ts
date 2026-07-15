@@ -1,5 +1,6 @@
 import {
   attachMessageDescriptor,
+  BinaryWriter,
   dayjs,
   Long,
   type MessageDescriptor,
@@ -269,30 +270,7 @@ describe('resetMaskFromMessage', () => {
     );
   });
 
-  test('WKT Value and ListValue preserve nested message oneof resets', () => {
-    const payloadDescriptor: MessageDescriptor = {
-      fields: {
-        resetValue: { pbName: 'reset_value', scalarType: 9 },
-      },
-    };
-    const choiceDescriptor: MessageDescriptor = {
-      fields: {
-        textChoice: { pbName: 'text_choice', scalarType: 9 },
-        payloadChoice: {
-          pbName: 'payload_choice',
-          message: () => payloadDescriptor,
-        },
-      },
-    };
-    const containerDescriptor: MessageDescriptor = {
-      fields: {
-        choice: {
-          pbName: 'choice',
-          oneof: true,
-          message: () => choiceDescriptor,
-        },
-      },
-    };
+  test('WKT Value and ListValue preserve Value kind oneof resets', () => {
     const choiceValueField = {
       pbName: 'choice_value',
       message: () => wkt['.google.protobuf.Value'].$descriptor,
@@ -301,53 +279,14 @@ describe('resetMaskFromMessage', () => {
       pbName: 'choice_list',
       message: () => wkt['.google.protobuf.ListValue'].$descriptor,
     };
-    const textChoice = attachMessageDescriptor(
-      { choice: { $case: 'textChoice', textChoice: '' } },
-      containerDescriptor,
-    );
-    const payloadChoice = attachMessageDescriptor(
-      { choice: { $case: 'payloadChoice', payloadChoice: { resetValue: '' } } },
-      containerDescriptor,
-    );
-    const nullPayloadChoice = attachMessageDescriptor(
-      { choice: { $case: 'payloadChoice', payloadChoice: null } },
-      containerDescriptor,
-    );
-    const emptyPayloadChoice = attachMessageDescriptor(
-      { choice: { $case: 'payloadChoice', payloadChoice: {} } },
-      containerDescriptor,
-    );
     const value = attachMessageDescriptor(
       {
-        choiceValue: textChoice,
-        choiceList: [payloadChoice],
+        choiceValue: null,
+        emptyChoiceValue: {},
       },
       {
         fields: {
           choiceValue: choiceValueField,
-          choiceList: choiceListField,
-        },
-      },
-    );
-
-    expect(resetMaskFromMessage(value)!.marshal()).toBe(
-      [
-        'choice_list.values.*.(payload_choice.reset_value,text_choice)',
-        'choice_value.(payload_choice,text_choice)',
-      ].join(','),
-    );
-
-    const nullableValues = attachMessageDescriptor(
-      {
-        nullChoiceValue: nullPayloadChoice,
-        emptyChoiceValue: emptyPayloadChoice,
-      },
-      {
-        fields: {
-          nullChoiceValue: {
-            ...choiceValueField,
-            pbName: 'null_choice_value',
-          },
           emptyChoiceValue: {
             ...choiceValueField,
             pbName: 'empty_choice_value',
@@ -355,15 +294,16 @@ describe('resetMaskFromMessage', () => {
         },
       },
     );
-    expect(resetMaskFromMessage(nullableValues)!.marshal()).toBe(
+
+    expect(resetMaskFromMessage(value)!.marshal()).toBe(
       [
-        'empty_choice_value.(payload_choice.reset_value,text_choice)',
-        'null_choice_value.(payload_choice,text_choice)',
+        'choice_value.(bool_value,list_value,null_value,number_value,string_value,struct_value)',
+        'empty_choice_value.(bool_value,list_value,null_value,number_value,string_value,struct_value.fields)',
       ].join(','),
     );
 
     const listValueWithNull = attachMessageDescriptor(
-      { choiceList: [nullPayloadChoice] },
+      { choiceList: [null] },
       {
         fields: {
           choiceList: choiceListField,
@@ -371,11 +311,11 @@ describe('resetMaskFromMessage', () => {
       },
     );
     expect(resetMaskFromMessage(listValueWithNull)!.marshal()).toBe(
-      'choice_list.values.*.(payload_choice,text_choice)',
+      'choice_list.values.*.(bool_value,list_value,null_value,number_value,string_value,struct_value)',
     );
 
     const listValueWithEmpty = attachMessageDescriptor(
-      { choiceList: [emptyPayloadChoice] },
+      { choiceList: [{}] },
       {
         fields: {
           choiceList: choiceListField,
@@ -383,7 +323,7 @@ describe('resetMaskFromMessage', () => {
       },
     );
     expect(resetMaskFromMessage(listValueWithEmpty)!.marshal()).toBe(
-      'choice_list.values.*.(payload_choice.reset_value,text_choice)',
+      'choice_list.values.*.(bool_value,list_value,null_value,number_value,string_value,struct_value.fields)',
     );
   });
 
@@ -441,4 +381,143 @@ describe('resetMaskFromMessage', () => {
     const mask = resetMaskFromMessage(m)!;
     expect(mask.marshal()).toBe('duration.(nanos,seconds),timestamp.nanos');
   });
+});
+
+const VALUE_KIND_FIELDS =
+  'bool_value,list_value,null_value,number_value,string_value,struct_value';
+
+describe('unset google.protobuf.Value kind', () => {
+  test('direct undefined Value clears the containing field', () => {
+    const message = attachMessageDescriptor(
+      { value: undefined },
+      {
+        fields: {
+          value: {
+            pbName: 'value',
+            message: () => wkt['.google.protobuf.Value'].$descriptor,
+          },
+        },
+      },
+    );
+
+    // The whole Value field is absent, so clearing the parent is sufficient.
+    expect(resetMaskFromMessage(message)!.marshal()).toBe('value');
+  });
+
+  test('unset element in repeated Value resets every kind alternative', () => {
+    const message = attachMessageDescriptor(
+      { values: [undefined] },
+      {
+        fields: {
+          values: {
+            pbName: 'values',
+            repeated: true,
+            message: () => wkt['.google.protobuf.Value'].$descriptor,
+          },
+        },
+      },
+    );
+
+    expect(resetMaskFromMessage(message)!.marshal()).toBe(
+      `values.*.(${VALUE_KIND_FIELDS})`,
+    );
+  });
+
+  test('unset element in ListValue resets every kind alternative', () => {
+    const message = attachMessageDescriptor(
+      { listValue: [undefined] },
+      {
+        fields: {
+          listValue: {
+            pbName: 'list_value',
+            message: () => wkt['.google.protobuf.ListValue'].$descriptor,
+          },
+        },
+      },
+    );
+
+    expect(resetMaskFromMessage(message)!.marshal()).toBe(
+      `list_value.values.*.(${VALUE_KIND_FIELDS})`,
+    );
+  });
+
+  test('unset Struct map value resets every kind alternative', () => {
+    const message = attachMessageDescriptor(
+      { structValue: { a: undefined } },
+      {
+        fields: {
+          structValue: {
+            pbName: 'struct_value',
+            message: () => wkt['.google.protobuf.Struct'].$descriptor,
+          },
+        },
+      },
+    );
+
+    expect(resetMaskFromMessage(message)!.marshal()).toBe(
+      `struct_value.fields.*.(${VALUE_KIND_FIELDS})`,
+    );
+  });
+
+  test('collection writers encode undefined as an empty Value message', () => {
+    const listWriter = new BinaryWriter();
+    wkt['.google.protobuf.ListValue'].writeMessage(listWriter, [undefined]);
+
+    // ListValue.values field containing a zero-length Value.
+    expect(Array.from(listWriter.finish())).toEqual([0x0a, 0x00]);
+
+    const structWriter = new BinaryWriter();
+    wkt['.google.protobuf.Struct'].writeMessage(structWriter, { a: undefined });
+
+    // Struct.fields entry: key "a", zero-length Value.
+    expect(Array.from(structWriter.finish())).toEqual([
+      0x0a, 0x05,
+      0x0a, 0x01, 0x61,
+      0x12, 0x00,
+    ]);
+  });
+});
+
+test('WKT Value reflection ignores descriptors attached to its JS object', () => {
+  const parentDescriptor: MessageDescriptor = {
+    fields: {
+      value: {
+        pbName: 'value',
+        message: () => wkt['.google.protobuf.Value'].$descriptor,
+      },
+    },
+  };
+
+  const plainValue = { foo: '' };
+  const descriptorBackedValue = attachMessageDescriptor(
+    { foo: '' },
+    {
+      fields: {
+        // Deliberately different from the Struct map key on the wire.
+        foo: { pbName: 'not_the_wire_name', scalarType: 9 },
+      },
+    },
+  );
+
+  const encodeValue = (value: unknown): Uint8Array => {
+    const writer = new BinaryWriter();
+    wkt['.google.protobuf.Value'].writeMessage(writer, value);
+    return writer.finish();
+  };
+
+  // The attached descriptor is non-wire metadata; both values serialize identically.
+  expect(Array.from(encodeValue(descriptorBackedValue))).toEqual(
+    Array.from(encodeValue(plainValue)),
+  );
+
+  const expected =
+    `value.(` +
+    `bool_value,list_value,null_value,number_value,string_value,` +
+    `struct_value.fields.*.(${VALUE_KIND_FIELDS})` +
+    `)`;
+
+  for (const value of [plainValue, descriptorBackedValue]) {
+    const message = attachMessageDescriptor({ value }, parentDescriptor);
+    expect(resetMaskFromMessage(message)!.marshal()).toBe(expected);
+  }
 });

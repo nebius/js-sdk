@@ -13,8 +13,8 @@ import {
   UpdateDiskRequest,
   UpdateInstanceRequest,
 } from '../api/nebius/compute/v1/index.js';
-import { attachMessageDescriptor } from '../runtime/protos/index.js';
 import { parseFieldMask } from '../runtime/fieldmask.js';
+import { attachMessageDescriptor } from '../runtime/protos/index.js';
 import { resetMaskFromMessage } from '../runtime/resetmask.js';
 import { Basic } from '../runtime/resolver.js';
 import { SDK } from '../sdk.js';

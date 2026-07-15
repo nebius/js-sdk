@@ -173,6 +173,7 @@ function durationReflect(value: unknown): Record<string, unknown> | undefined {
 }
 
 function valueReflect(value: unknown): Record<string, unknown> | undefined {
+  if (value === undefined) return { kind: {} };
   if (value === null) return { kind: { $case: 'nullValue', nullValue: 0 } };
   switch (typeof value) {
     case 'number':

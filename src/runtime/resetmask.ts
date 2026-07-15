@@ -4,8 +4,8 @@ import { Mask } from './fieldmask.js';
 import {
   Long,
   type MessageDescriptor,
-  type MessageFieldDescriptor,
   messageDescriptorSymbol,
+  type MessageFieldDescriptor,
   type MessageFieldScalarType,
 } from './protos/core.js';
 
@@ -118,18 +118,26 @@ function rmFromValueRecursive(
   recursion: number,
   descriptor?: MessageDescriptor,
 ): boolean {
+  if (descriptor) {
+    const reflected = descriptor.reflect?.(updObj);
+    if (reflected !== undefined) {
+      rmFromObjectRecursive(resetMask, reflected, recursion, descriptor, false);
+      return true;
+    }
+
+    if (!updObj || typeof updObj !== 'object') return false;
+    rmFromObjectRecursive(resetMask, updObj, recursion, descriptor);
+    return true;
+  }
+
   const ownDescriptor = descriptorForObject(updObj);
-  if (ownDescriptor && ownDescriptor !== descriptor) {
+  if (ownDescriptor) {
     rmFromObjectRecursive(resetMask, updObj, recursion, ownDescriptor);
     return true;
   }
-  const reflected = descriptor?.reflect?.(updObj);
-  if (reflected !== undefined) {
-    rmFromObjectRecursive(resetMask, reflected, recursion, descriptor, false);
-    return true;
-  }
+
   if (!updObj || typeof updObj !== 'object') return false;
-  rmFromObjectRecursive(resetMask, updObj, recursion, descriptor);
+  rmFromObjectRecursive(resetMask, updObj, recursion);
   return true;
 }
 
@@ -194,7 +202,7 @@ function rmFromObjectRecursive(
   if (recursion >= RECURSION_TOO_DEEP) throw ErrRecursionTooDeep;
   recursion++;
   if (!updObj || typeof updObj !== 'object') return;
-  descriptor = descriptorForObject(updObj, descriptor);
+  descriptor = descriptor ?? descriptorForObject(updObj);
 
   for (const [key, value, fieldDescriptor] of entriesForMask(
     updObj,
@@ -288,7 +296,7 @@ function rmFromObjectRecursive(
     }
 
     if (typeof value === 'object') {
-      const messageDescriptor = descriptorForObject(value, fieldDescriptor?.message?.());
+      const messageDescriptor = fieldDescriptor?.message?.() ?? descriptorForObject(value);
       const mapValueDescriptor = fieldDescriptor?.mapValue?.();
 
       // Prefer descriptor metadata for maps/messages. Without descriptors,
@@ -334,13 +342,7 @@ function rmFromObjectRecursive(
             resetMask.fieldParts.set(maskKey, fieldMask);
           }
         }
-      } else {
-        // Non-plain objects: if default-like, mark; else leave unmarked
-        if (isDefaultScalar(value)) {
-          resetMask.fieldParts.set(maskKey, fieldMask);
-        }
       }
-      continue;
     }
   }
 }
