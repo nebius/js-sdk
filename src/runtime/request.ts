@@ -14,6 +14,7 @@ import {
 } from '../api/nebius/common/v1/index.js';
 import { SDKInterface } from '../sdk.js';
 import { NebiusGrpcError } from './error.js';
+import { attachMessageDescriptor, type MessageDescriptor } from './protos/core.js';
 import { resetMaskFromMessage } from './resetmask.js';
 import { withTimeout } from './util/cancelable.js';
 import { custom, customJson, inspectJson, Logger } from './util/logging.js';
@@ -43,6 +44,7 @@ export interface RequestSpec<TReq> {
   path: string;
   requestSerialize: (value: TReq) => Buffer;
   sendResetMask?: boolean;
+  requestDescriptor?: () => MessageDescriptor | undefined;
 }
 
 export type CallCreator<TReq, TRes> = (
@@ -166,6 +168,13 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     this.serviceName = names.serviceName;
     this.methodName = names.methodName;
     this.serializer = spec.requestSerialize;
+    const requestDescriptor = spec.requestDescriptor?.();
+    if (requestDescriptor && this.request && typeof this.request === 'object') {
+      this.request = attachMessageDescriptor(
+        this.request as object,
+        requestDescriptor,
+      ) as TReq;
+    }
 
     const path = this.path;
     const methodName = this.methodName;

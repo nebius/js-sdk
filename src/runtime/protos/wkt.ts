@@ -8,10 +8,15 @@ import {
   DeepPartial,
   Duration,
   Long,
+  type MessageDescriptor,
   MessageFns,
 } from './core.js';
 import { fmFromJSON, fmToJSON, readFieldMask, writeFieldMask } from './fieldmask.js';
 import { readValue, valueFromJSON, valueToJSON, writeValue } from './values.js';
+
+function wktDescriptor(type: string): MessageDescriptor | undefined {
+  return (wkt as Record<string, { $descriptor?: MessageDescriptor }>)[type]?.$descriptor;
+}
 
 // Timestamp helpers
 function tsToWire(d: Dayjs): { seconds: Long; nanos: number } {
@@ -82,8 +87,138 @@ function durToJSON(d: Duration): string {
   return `${sign}${s}.${frac}s`;
 }
 
+function fieldMaskPaths(value: unknown): string[] {
+  if (Array.isArray(value)) return value.map(String);
+  if (typeof value === 'string') {
+    return value
+      .split(',')
+      .map((s) => s.trim())
+      .filter((s) => s.length > 0);
+  }
+  if (value && typeof value === 'object') {
+    const paths = (value as { paths?: unknown }).paths;
+    if (Array.isArray(paths)) return paths.map(String);
+  }
+  return [];
+}
+
+function hasWireTimeParts(value: any): value is { seconds?: unknown; nanos?: unknown } {
+  if (!value || typeof value !== 'object') return false;
+  const seconds = value.seconds;
+  const nanos = value.nanos;
+  return (
+    (seconds !== undefined && typeof seconds !== 'function') ||
+    (nanos !== undefined && typeof nanos !== 'function')
+  );
+}
+
+function normalizeTimePart(value: unknown): unknown {
+  if (value === undefined || value === null) return 0;
+  if (typeof value === 'string') return Number(value) === 0 ? 0 : value;
+  if (value && typeof value === 'object') {
+    const maybeLong = value as { isZero?: unknown; toNumber?: unknown };
+    if (typeof maybeLong.isZero === 'function') {
+      return (maybeLong.isZero as () => boolean)() ? 0 : 1;
+    }
+    if (typeof maybeLong.toNumber === 'function') {
+      const numberValue = (maybeLong.toNumber as () => number)();
+      return numberValue === 0 ? 0 : numberValue;
+    }
+  }
+  return value;
+}
+
+function timestampReflect(value: unknown): Record<string, unknown> | undefined {
+  if (hasWireTimeParts(value)) {
+    return { seconds: normalizeTimePart(value.seconds), nanos: normalizeTimePart(value.nanos) };
+  }
+  if (
+    value &&
+    typeof value === 'object' &&
+    typeof (value as { valueOf?: unknown }).valueOf === 'function'
+  ) {
+    const ms = Number((value as { valueOf: () => unknown }).valueOf());
+    if (Number.isFinite(ms)) {
+      return {
+        seconds: Math.floor(ms / 1000),
+        nanos: (ms % 1000) * 1_000_000,
+      };
+    }
+  }
+  if (typeof value === 'string') {
+    return timestampReflect(tsFromJSON(value));
+  }
+  return undefined;
+}
+
+function durationReflect(value: unknown): Record<string, unknown> | undefined {
+  if (hasWireTimeParts(value)) {
+    return { seconds: normalizeTimePart(value.seconds), nanos: normalizeTimePart(value.nanos) };
+  }
+  if (
+    value &&
+    typeof value === 'object' &&
+    typeof (value as { asMilliseconds?: unknown }).asMilliseconds === 'function'
+  ) {
+    const wire = durToWire(value as Duration);
+    return {
+      seconds: normalizeTimePart(wire.seconds),
+      nanos: normalizeTimePart(wire.nanos),
+    };
+  }
+  if (typeof value === 'string') {
+    return durationReflect(durFromJSON(value));
+  }
+  return undefined;
+}
+
+function valueReflect(value: unknown): Record<string, unknown> | undefined {
+  if (value === undefined) return { kind: {} };
+  if (value === null) return { kind: { $case: 'nullValue', nullValue: 0 } };
+  switch (typeof value) {
+    case 'number':
+      return { kind: { $case: 'numberValue', numberValue: value } };
+    case 'string':
+      return { kind: { $case: 'stringValue', stringValue: value } };
+    case 'boolean':
+      return { kind: { $case: 'boolValue', boolValue: value } };
+    default:
+      break;
+  }
+  if (Array.isArray(value)) return { kind: { $case: 'listValue', listValue: value } };
+  if (value && typeof value === 'object') {
+    return { kind: { $case: 'structValue', structValue: value } };
+  }
+  return undefined;
+}
+
+const VALUE_KIND_DESCRIPTOR: MessageDescriptor = {
+  fields: {
+    nullValue: { pbName: 'null_value', scalarType: 14 },
+    numberValue: { pbName: 'number_value', scalarType: 1 },
+    stringValue: { pbName: 'string_value', scalarType: 9 },
+    boolValue: { pbName: 'bool_value', scalarType: 8 },
+    structValue: {
+      pbName: 'struct_value',
+      message: () => wktDescriptor('.google.protobuf.Struct'),
+    },
+    listValue: {
+      pbName: 'list_value',
+      message: () => wktDescriptor('.google.protobuf.ListValue'),
+    },
+  },
+};
+
 export const wkt = {
   ['.google.protobuf.Timestamp']: {
+    $type: 'google.protobuf.Timestamp',
+    $descriptor: {
+      reflect: timestampReflect,
+      fields: {
+        seconds: { pbName: 'seconds', scalarType: 3 },
+        nanos: { pbName: 'nanos', scalarType: 5 },
+      },
+    },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => tsFromJSON(o),
     toJSON: (d: Dayjs, use?: 'json' | 'pb') => {
       if (use === 'pb') {
@@ -126,6 +261,14 @@ export const wkt = {
     },
   },
   ['.google.protobuf.Duration']: {
+    $type: 'google.protobuf.Duration',
+    $descriptor: {
+      reflect: durationReflect,
+      fields: {
+        seconds: { pbName: 'seconds', scalarType: 3 },
+        nanos: { pbName: 'nanos', scalarType: 5 },
+      },
+    },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => durFromJSON(o),
     toJSON: (d: Duration, use?: 'json' | 'pb') => {
       if (use === 'pb') {
@@ -168,6 +311,13 @@ export const wkt = {
     },
   },
   ['.google.protobuf.FieldMask']: {
+    $type: 'google.protobuf.FieldMask',
+    $descriptor: {
+      reflect: (value: unknown) => ({ paths: fieldMaskPaths(value) }),
+      fields: {
+        paths: { pbName: 'paths', repeated: true, scalarType: 9 },
+      },
+    },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => fmFromJSON(o),
     toJSON: (paths: string[], _use?: 'json' | 'pb') => fmToJSON(paths),
     fromPartial: (object: DeepPartial<string[]>) =>
@@ -176,6 +326,13 @@ export const wkt = {
     readMessage: (reader: BinaryReader, length: number): string[] => readFieldMask(reader, length),
   },
   ['.google.protobuf.Any']: {
+    $type: 'google.protobuf.Any',
+    $descriptor: {
+      fields: {
+        typeUrl: { pbName: 'type_url', scalarType: 9 },
+        value: { pbName: 'value', scalarType: 12 },
+      },
+    },
     fromJSON: (o: unknown, _use?: 'json' | 'pb') => anyFromJSON(o),
     toJSON: (a: AnyShape, _use?: 'json' | 'pb') => anyToJSON(a),
     fromPartial: (object: DeepPartial<AnyShape>) => ({
@@ -186,6 +343,17 @@ export const wkt = {
     readMessage: (reader: BinaryReader, length: number): AnyShape => readAny(reader, length),
   },
   ['.google.protobuf.Struct']: {
+    $type: 'google.protobuf.Struct',
+    $descriptor: {
+      reflect: (value: unknown) => ({ fields: value ?? {} }),
+      fields: {
+        fields: {
+          pbName: 'fields',
+          map: true,
+          mapValue: () => wktDescriptor('.google.protobuf.Value'),
+        },
+      },
+    },
     fromJSON: (o: any, _use?: 'json' | 'pb') => valueFromJSON(o ?? {}),
     toJSON: (o: any, _use?: 'json' | 'pb') => valueToJSON(o ?? {}),
     fromPartial: (object: any) => object ?? {},
@@ -232,6 +400,13 @@ export const wkt = {
     },
   },
   ['.google.protobuf.Value']: {
+    $type: 'google.protobuf.Value',
+    $descriptor: {
+      reflect: valueReflect,
+      fields: {
+        kind: { pbName: 'kind', oneof: true, message: () => VALUE_KIND_DESCRIPTOR },
+      },
+    },
     fromJSON: (o: any, _use?: 'json' | 'pb') => valueFromJSON(o),
     toJSON: (o: any, _use?: 'json' | 'pb') => valueToJSON(o),
     fromPartial: (object: any) => object,
@@ -239,6 +414,17 @@ export const wkt = {
     readMessage: (reader: BinaryReader, length: number): any => readValue(reader, length),
   },
   ['.google.protobuf.ListValue']: {
+    $type: 'google.protobuf.ListValue',
+    $descriptor: {
+      reflect: (value: unknown) => ({ values: Array.isArray(value) ? value : [] }),
+      fields: {
+        values: {
+          pbName: 'values',
+          repeated: true,
+          message: () => wktDescriptor('.google.protobuf.Value'),
+        },
+      },
+    },
     fromJSON: (o: any, _use?: 'json' | 'pb') => (Array.isArray(o) ? o.map(valueFromJSON) : []),
     toJSON: (o: any[], _use?: 'json' | 'pb') => (Array.isArray(o) ? o.map(valueToJSON) : []),
     fromPartial: (object: any[]) => (Array.isArray(object) ? object.map((e) => e) : []),
@@ -265,6 +451,11 @@ export const wkt = {
     },
   },
   ['.google.protobuf.Empty']: {
+    $type: 'google.protobuf.Empty',
+    $descriptor: {
+      reflect: () => ({}),
+      fields: {},
+    },
     fromJSON: (_o: any, _use?: 'json' | 'pb') => ({}) as any,
     toJSON: (_e: any, _use?: 'json' | 'pb') => ({}) as any,
     fromPartial: (_o: any) => ({}) as any,

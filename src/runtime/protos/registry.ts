@@ -1,4 +1,4 @@
-import { BinaryReader, BinaryWriter } from './core.js';
+import { BinaryReader, BinaryWriter, type MessageDescriptor } from './core.js';
 import { ENUM_VALUE_META, EnumValueMeta } from './enum.js';
 
 export interface MessageInstanceInterface {
@@ -7,6 +7,7 @@ export interface MessageInstanceInterface {
 
 export interface MessageClassInterface {
   $type: string;
+  $descriptor?: MessageDescriptor;
   encode(message: MessageInstanceInterface, writer?: BinaryWriter): BinaryWriter;
   decode(input: BinaryReader | Uint8Array, length?: number): MessageInstanceInterface;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

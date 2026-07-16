@@ -6,6 +6,7 @@ import {
   DiskService as DiskServiceClient,
   type DiskServiceServer,
   DiskServiceServiceDescription as DiskServiceService,
+  DiskSpec,
   InstanceService as InstanceServiceClient,
   type InstanceServiceServer,
   InstanceServiceServiceDescription as InstanceServiceService,
@@ -13,6 +14,8 @@ import {
   UpdateInstanceRequest,
 } from '../api/nebius/compute/v1/index.js';
 import { parseFieldMask } from '../runtime/fieldmask.js';
+import { attachMessageDescriptor } from '../runtime/protos/index.js';
+import { resetMaskFromMessage } from '../runtime/resetmask.js';
 import { Basic } from '../runtime/resolver.js';
 import { SDK } from '../sdk.js';
 
@@ -38,6 +41,19 @@ function mdGetString(md: Metadata, key: string): string {
 
 // Port of test_update_instance_v2 (adapted for Node.js)
 describe('updates and masks — DiskService.Update', () => {
+  test('descriptor-backed raw requests use descriptor shape and skip unknown fields', () => {
+    const generatedEmpty = UpdateDiskRequest.create({});
+    const rawEmpty = attachMessageDescriptor({}, UpdateDiskRequest.$descriptor);
+    const rawWithUnknown = attachMessageDescriptor(
+      { someJsOnly: 0 },
+      UpdateDiskRequest.$descriptor,
+    );
+
+    expect(resetMaskFromMessage(generatedEmpty)!.marshal()).toBe('metadata,spec');
+    expect(resetMaskFromMessage(rawEmpty)!.marshal()).toBe('metadata,spec');
+    expect(resetMaskFromMessage(rawWithUnknown)!.marshal()).toBe('metadata,spec');
+  });
+
   test('idempotency, resetmask and user-agent composition', async () => {
     const { server, address, port } = await startServerWithPort((server) => {
       const impl: DiskServiceServer = {
@@ -57,14 +73,21 @@ describe('updates and masks — DiskService.Update', () => {
           const m = parseFieldMask(maskStr);
           const meta = m.getSubMask('metadata');
           expect(meta).not.toBeNull();
-          expect(meta?.fieldParts.has('labels')).toBe(true);
+          for (const key of ['created_at', 'labels']) {
+            expect(meta?.fieldParts.get(key)?.isEmpty()).toBe(true);
+          }
           expect(meta?.fieldParts.has('name')).toBe(true);
-          expect(meta?.fieldParts.has('parentId')).toBe(true);
-          const rv = meta?.fieldParts.get('resourceVersion') || null;
-          expect(rv).not.toBeNull();
-          expect(rv?.fieldParts.has('high')).toBe(true);
-          expect(rv?.fieldParts.has('low')).toBe(true);
-          expect(rv?.fieldParts.has('unsigned')).toBe(true);
+          expect(meta?.fieldParts.has('parent_id')).toBe(true);
+          expect(meta?.fieldParts.get('resource_version')?.isEmpty()).toBe(true);
+
+          const spec = m.getSubMask('spec');
+          expect(spec).not.toBeNull();
+          for (const key of ['size_bytes', 'size_gibibytes', 'type']) {
+            expect(spec?.fieldParts.get(key)?.isEmpty()).toBe(true);
+          }
+          expect(spec?.fieldParts.has('size')).toBe(false);
+          expect(maskStr).not.toContain('high');
+          expect(maskStr).not.toContain('unsigned');
 
           const ua = mdGetString(md, 'user-agent');
           // JS reality: ensure primary UA parts are present
@@ -115,6 +138,7 @@ describe('updates and masks — DiskService.Update', () => {
         resourceVersion: Long.ZERO,
         labels: {},
       }),
+      spec: DiskSpec.create({}),
     });
     const req = client.update(upd, new Metadata(), { deadline: Date.now() + 5000 });
     const ret = await req.result;
@@ -147,12 +171,8 @@ describe('updates and masks — InstanceService.Update with list field', () => {
           expect(meta).not.toBeNull();
           expect(meta?.fieldParts.has('labels')).toBe(true);
           expect(meta?.fieldParts.has('name')).toBe(true);
-          expect(meta?.fieldParts.has('parentId')).toBe(true);
-          const rv = meta?.fieldParts.get('resourceVersion') || null;
-          expect(rv).not.toBeNull();
-          expect(rv?.fieldParts.has('high')).toBe(true);
-          expect(rv?.fieldParts.has('low')).toBe(true);
-          expect(rv?.fieldParts.has('unsigned')).toBe(true);
+          expect(meta?.fieldParts.has('parent_id')).toBe(true);
+          expect(meta?.fieldParts.get('resource_version')?.isEmpty()).toBe(true);
 
           const spec = m.getSubMask('spec');
           expect(spec).not.toBeNull();
@@ -178,7 +198,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
     });
 
     const client = new InstanceServiceClient(sdk);
-    const upd: UpdateInstanceRequest = {
+    const upd = Object.freeze({
       metadata: { id: 'foo-bar', parentId: '', name: '', resourceVersion: Long.ZERO, labels: {} },
       spec: {
         filesystems: [],
@@ -190,7 +210,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
         hostname: '',
         serviceAccountId: '',
       } as any,
-    } as any;
+    }) as any as UpdateInstanceRequest;
 
     const req = client.update(upd, new Metadata(), { deadline: Date.now() + 5000 });
     const ret = await req.result;

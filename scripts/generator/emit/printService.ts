@@ -44,8 +44,7 @@ function normalizeMethodBehavior(value: unknown): ExtractedMethodBehavior {
 
 function extractMethodBehaviors(method: Method): ExtractedMethodBehavior[] {
   const opts = method.descriptor?.options as
-    | { methodBehavior?: unknown; method_behavior?: unknown }
-    | undefined;
+    { methodBehavior?: unknown; method_behavior?: unknown } | undefined;
   const methodBehavior = opts?.methodBehavior ?? opts?.method_behavior;
   if (methodBehavior === undefined || methodBehavior === null) return [];
 
@@ -137,6 +136,9 @@ export function printService(
     lines.push(
       `    requestSerialize: (value: ${Req}) => Buffer.from(${Req}.encode(value).finish()),`,
     );
+    if (Req !== 'any') {
+      lines.push(`    requestDescriptor: () => ${Req}.$descriptor,`);
+    }
     lines.push(`    sendResetMask: ${sendResetMask ? 'true' : 'false'},`);
     lines.push(`    requestDeserialize: (value: Buffer) => ${Req}.decode(value),`);
     lines.push(

@@ -12,12 +12,67 @@ export type { Dayjs };
 export type Duration = ReturnType<typeof dayjs.duration>;
 
 export { default as Long } from 'long';
-// eslint-disable-next-line n/no-extraneous-import
 export { BinaryReader, BinaryWriter } from '@bufbuild/protobuf/wire';
 
 // Message typing for generated messages
+export type MessageFieldScalarType =
+  | 1 // double
+  | 2 // float
+  | 3 // int64
+  | 4 // uint64
+  | 5 // int32
+  | 6 // fixed64
+  | 7 // fixed32
+  | 8 // bool
+  | 9 // string
+  | 12 // bytes
+  | 13 // uint32
+  | 14 // enum
+  | 15 // sfixed32
+  | 16 // sfixed64
+  | 17 // sint32
+  | 18; // sint64
+
+export interface MessageFieldDescriptor {
+  pbName: string;
+  repeated?: boolean;
+  oneof?: boolean;
+  map?: boolean;
+  scalarType?: MessageFieldScalarType;
+  message?: () => MessageDescriptor | undefined;
+  mapValue?: () => MessageDescriptor | undefined;
+}
+
+export interface MessageDescriptor {
+  reflect?: (value: unknown) => Record<string, unknown> | undefined;
+  fields: Record<string, MessageFieldDescriptor>;
+}
+
+export const messageDescriptorSymbol: unique symbol = Symbol('nebius.messageDescriptor');
+
+export function attachMessageDescriptor<T extends object>(
+  message: T,
+  descriptor: MessageDescriptor | undefined,
+): T {
+  if (!descriptor) return message;
+  const defineDescriptor = (target: T): T => {
+    Object.defineProperty(target, messageDescriptorSymbol, {
+      configurable: true,
+      enumerable: false,
+      value: descriptor,
+    });
+    return target;
+  };
+  try {
+    return defineDescriptor(message);
+  } catch {
+    return defineDescriptor((Array.isArray(message) ? [...message] : { ...message }) as T);
+  }
+}
+
 export interface MessageFns<T, TType extends string> {
   $type: TType;
+  $descriptor?: MessageDescriptor;
   encode(
     message: T,
     writer?: import('@bufbuild/protobuf/wire').BinaryWriter,

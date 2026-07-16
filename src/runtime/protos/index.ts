@@ -1,6 +1,24 @@
 // Runtime protos public API (barrel)
-export { BinaryReader, BinaryWriter, dayjs, isSet, Long, unknownFieldsSymbol } from './core.js';
-export type { Builtin, Dayjs, DeepPartial, Duration, MessageFns } from './core.js';
+export {
+  attachMessageDescriptor,
+  BinaryReader,
+  BinaryWriter,
+  dayjs,
+  isSet,
+  Long,
+  messageDescriptorSymbol,
+  unknownFieldsSymbol,
+} from './core.js';
+export type {
+  Builtin,
+  Dayjs,
+  DeepPartial,
+  Duration,
+  MessageDescriptor,
+  MessageFieldDescriptor,
+  MessageFieldScalarType,
+  MessageFns,
+} from './core.js';
 
 export { base64FromBytes, bytesFromBase64 } from './base64.js';
 
