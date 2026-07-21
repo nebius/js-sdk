@@ -48,13 +48,6 @@ describe('build integration (CJS bundle)', () => {
           const res: any = ListDisksResponse.create({ items: [], nextPageToken: '' });
           callback(null, res);
         },
-        get: (_c: any, cb: any) => cb(new Error('unimplemented') as any, undefined as any),
-        getByName: (_c: any, cb: any) => cb(new Error('unimplemented') as any, undefined as any),
-        create: (_c: any, cb: any) => cb(new Error('unimplemented') as any, undefined as any),
-        update: (_c: any, cb: any) => cb(new Error('unimplemented') as any, undefined as any),
-        delete: (_c: any, cb: any) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_c: any, cb: any) =>
-          cb(new Error('unimplemented') as any, undefined as any),
       };
       server.addService(DiskServiceService as any, impl);
     });

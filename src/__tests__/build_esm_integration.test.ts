@@ -41,13 +41,6 @@ describe('build integration (ESM bundle)', () => {
           const res = ListDisksResponse.create({ items: [], nextPageToken: '' });
           callback(null, res);
         },
-        get: (_c: unknown, cb: Function) => cb(new Error('unimplemented'), undefined),
-        getByName: (_c: unknown, cb: Function) => cb(new Error('unimplemented'), undefined),
-        create: (_c: unknown, cb: Function) => cb(new Error('unimplemented'), undefined),
-        update: (_c: unknown, cb: Function) => cb(new Error('unimplemented'), undefined),
-        delete: (_c: unknown, cb: Function) => cb(new Error('unimplemented'), undefined),
-        listOperationsByParent: (_c: unknown, cb: Function) =>
-          cb(new Error('unimplemented'), undefined),
       };
       srv.addService(DiskServiceServiceDescription, impl);
     });
