@@ -18,6 +18,7 @@ import { attachMessageDescriptor } from '../runtime/protos/index.js';
 import { resetMaskFromMessage } from '../runtime/resetmask.js';
 import { Basic } from '../runtime/resolver.js';
 import { SDK } from '../sdk.js';
+import { partialServiceImplementation } from '../test/grpc.js';
 
 function startServerWithPort(
   addImpl: (server: Server) => void,
@@ -56,11 +57,7 @@ describe('updates and masks — DiskService.Update', () => {
 
   test('idempotency, resetmask and user-agent composition', async () => {
     const { server, address, port } = await startServerWithPort((server) => {
-      const impl: DiskServiceServer = {
-        get: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        getByName: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        list: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        create: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
+      const impl = partialServiceImplementation<DiskServiceServer>({
         update: (call, callback) => {
           const req = call.request as UpdateDiskRequest;
           expect(req.metadata?.id).toBe('foo-bar');
@@ -104,9 +101,7 @@ describe('updates and masks — DiskService.Update', () => {
 
           callback(null, Operation.create({ id: 'op-1' }));
         },
-        delete: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-      };
+      });
       server.addService(DiskServiceService, impl);
     });
 
@@ -153,12 +148,7 @@ describe('updates and masks — DiskService.Update', () => {
 describe('updates and masks — InstanceService.Update with list field', () => {
   test('idempotency and resetmask for empty list', async () => {
     const { server, address } = await startServerWithPort((server) => {
-      const impl: InstanceServiceServer = {
-        get: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        getByName: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        batchGet: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        list: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        create: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
+      const impl = partialServiceImplementation<InstanceServiceServer>({
         update: (call, callback) => {
           const req = call.request as UpdateInstanceRequest;
           expect(req.metadata?.id).toBe('foo-bar');
@@ -184,11 +174,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
           call.sendMetadata(outMd);
           callback(null, Operation.create({ id: 'op-2' }));
         },
-        delete: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        start: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        stop: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-      };
+      });
       server.addService(InstanceServiceService, impl);
     });
 

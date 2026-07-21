@@ -23,6 +23,7 @@ import { Operation as OperationWrapper } from '../runtime/operation.js';
 import { dayjs } from '../runtime/protos/core.js';
 import { Basic } from '../runtime/resolver.js';
 import { SDK } from '../sdk.js';
+import { partialServiceImplementation } from '../test/grpc.js';
 
 function startServerWithPort(
   addImpl: (server: Server) => void,
@@ -153,7 +154,7 @@ describe('Operation progress tracker', () => {
     let index = 0;
 
     const { server, address } = await startServerWithPort((server) => {
-      const impl: OperationServiceServer = {
+      const impl = partialServiceImplementation<OperationServiceServer>({
         get: (call, callback) => {
           const req = call.request as GetOperationRequest;
           expect(req.id).toBe('op-1');
@@ -162,8 +163,7 @@ describe('Operation progress tracker', () => {
           index += 1;
           callback(null, response);
         },
-        list: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-      };
+      });
       server.addService(OperationServiceService, impl);
     });
 
@@ -262,15 +262,11 @@ describe('Operation progress tracker', () => {
 describe('mlflow v1alpha1 operations', () => {
   test('cluster create returns operation without tracker', async () => {
     const { server, address } = await startServerWithPort((server) => {
-      const impl: MlflowClusterServiceServer = {
-        get: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        getByName: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        list: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
+      const impl = partialServiceImplementation<MlflowClusterServiceServer>({
         create: (_c, cb) => {
           cb(null, OperationAlpha.create({ id: 'mlflow-op-1' }));
         },
-        delete: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-      };
+      });
       server.addService(MlflowClusterServiceService, impl);
     });
 

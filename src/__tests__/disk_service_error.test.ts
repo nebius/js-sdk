@@ -19,6 +19,7 @@ import {
   GetDiskRequest,
 } from '../api/nebius/compute/v1/index.js';
 import { NebiusGrpcError } from '../runtime/error.js';
+import { partialServiceImplementation } from '../test/grpc.js';
 
 function startServerWithPort(
   addImpl: (server: Server) => void,
@@ -36,7 +37,7 @@ function startServerWithPort(
 describe('DiskService error propagation', () => {
   test('get returns INVALID_ARGUMENT', async () => {
     const { server, address } = await startServerWithPort((server) => {
-      const impl: DiskServiceServer = {
+      const impl = partialServiceImplementation<DiskServiceServer>({
         get: (_call, callback) => {
           const err: ServiceError = Object.assign(new Error('bad request'), {
             code: status.INVALID_ARGUMENT,
@@ -45,14 +46,7 @@ describe('DiskService error propagation', () => {
           });
           callback(err);
         },
-        list: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        getByName: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        create: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        update: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        delete: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_call, cb) =>
-          cb(new Error('unimplemented') as any, undefined as any),
-      };
+      });
       server.addService(DiskServiceService, impl);
     });
 

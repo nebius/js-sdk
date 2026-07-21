@@ -10,6 +10,7 @@ import {
   ListDisksRequest,
   ListDisksResponse,
 } from '../api/nebius/compute/v1/index.js';
+import { partialServiceImplementation } from '../test/grpc.js';
 
 // Start a gRPC server on an ephemeral port and return its address
 function startServerWithPort(
@@ -28,8 +29,7 @@ function startServerWithPort(
 describe('DiskService gRPC mock', () => {
   test('list returns mocked items', async () => {
     const { server, address } = await startServerWithPort((server) => {
-      const impl: DiskServiceServer = {
-        // Minimal implementation: only list is required for this test
+      const impl = partialServiceImplementation<DiskServiceServer>({
         list: (call, callback) => {
           const req: ListDisksRequest = call.request;
           const items: Disk[] = [
@@ -59,15 +59,7 @@ describe('DiskService gRPC mock', () => {
           const res = ListDisksResponse.create({ items, nextPageToken: '' });
           callback(null, res);
         },
-        // Stub other methods (not used in this test)
-        get: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        getByName: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        create: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        update: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        delete: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_call, cb) =>
-          cb(new Error('unimplemented') as any, undefined as any),
-      };
+      });
 
       server.addService(DiskServiceService, impl);
     });

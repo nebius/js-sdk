@@ -6,6 +6,7 @@ import {
   DiskServiceServiceDescription as DiskServiceService,
   GetDiskRequest,
 } from '../api/nebius/compute/v1/index.js';
+import { partialServiceImplementation } from '../test/grpc.js';
 
 function startServerWithPort(
   addImpl: (server: Server) => void,
@@ -23,21 +24,14 @@ function startServerWithPort(
 describe('DiskService timeout', () => {
   test('deadline exceeded', async () => {
     const { server, address } = await startServerWithPort((server) => {
-      const impl: DiskServiceServer = {
+      const impl = partialServiceImplementation<DiskServiceServer>({
         get: (call, callback) => {
           // Delay longer than client deadline
           setTimeout(() => {
             callback(null as any, undefined as any);
           }, 200);
         },
-        list: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        getByName: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        create: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        update: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        delete: (_call, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_call, cb) =>
-          cb(new Error('unimplemented') as any, undefined as any),
-      };
+      });
       server.addService(DiskServiceService, impl);
     });
 

@@ -23,6 +23,7 @@ import {
 import { Config } from '../runtime/cli_config.js';
 import { Basic, Chain } from '../runtime/resolver.js';
 import { SDK } from '../sdk.js';
+import { partialServiceImplementation } from '../test/grpc.js';
 
 // Start a gRPC server on an ephemeral port and return its address
 function startServer(
@@ -168,7 +169,7 @@ describe('authorization integration (mock gRPC)', () => {
       iam = null;
     } else {
       iam = await startServer((server) => {
-        const impl: TokenExchangeServiceServer = {
+        const impl = partialServiceImplementation<TokenExchangeServiceServer>({
           exchange: (call, callback) => {
             const _req: ExchangeTokenRequest = call.request;
             if (iamFailureBudget > 0) {
@@ -190,7 +191,7 @@ describe('authorization integration (mock gRPC)', () => {
             });
             callback(null, res);
           },
-        };
+        });
         server.addService(TokenExchangeService, impl);
       });
     }
@@ -199,7 +200,7 @@ describe('authorization integration (mock gRPC)', () => {
 
     // Start Compute DiskService mock that captures Authorization header
     const compute = await startServer((server) => {
-      const impl: DiskServiceServer = {
+      const impl = partialServiceImplementation<DiskServiceServer>({
         list: (call, callback) => {
           const md: Metadata = call.metadata;
           const vals = md.get('authorization');
@@ -213,14 +214,7 @@ describe('authorization integration (mock gRPC)', () => {
           // Echo back some metadata if needed
           callback(null, res);
         },
-        // Unused methods
-        get: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        getByName: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        create: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        update: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        delete: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-      };
+      });
       server.addService(DiskServiceService, impl);
     });
 
@@ -594,7 +588,7 @@ default: p1
     const capture: { lastAuth?: string } = {};
     // Start compute mock
     const compute = await startServer((server) => {
-      const impl: DiskServiceServer = {
+      const impl = partialServiceImplementation<DiskServiceServer>({
         list: (call, callback) => {
           const md: Metadata = call.metadata;
           const vals = md.get('authorization');
@@ -605,13 +599,7 @@ default: p1
           const res = ListDisksResponse.create({ items: [], nextPageToken: '' });
           callback(null, res);
         },
-        get: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        getByName: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        create: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        update: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        delete: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-        listOperationsByParent: (_c, cb) => cb(new Error('unimplemented') as any, undefined as any),
-      };
+      });
       server.addService(DiskServiceService, impl);
     });
 
