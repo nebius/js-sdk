@@ -5,34 +5,55 @@ import { Status, Code as StatusCode } from '../api/google/rpc/index.js';
 import { Request, RetryOptions } from './request.js';
 import { custom, customJson, inspectJson, Logger } from './util/logging.js';
 
-type TickCount = number | { toNumber?: () => number; toString?: () => string };
+/**
+ * Defines a protobuf-compatible progress count.
+ *
+ * Generated code can represent an integer as a JavaScript number or as an
+ * object that converts to a number or string.
+ */
+export type TickCount = number | { toNumber?: () => number; toString?: () => string };
 
-interface ProgressTrackerWorkDone {
+/** Defines completed and total work counts reported by a service. */
+export interface ProgressTrackerWorkDone {
+  /** Contains the total amount of work. */
   totalTickCount?: TickCount | undefined;
+  /** Contains the completed amount of work. */
   doneTickCount?: TickCount | undefined;
 }
 
-interface ProgressTrackerStep {
+/** Defines one progress step from an operation response. */
+export interface ProgressTrackerStep {
+  /** Contains the description. */
   description?: string | undefined;
+  /** Contains the start time. */
   startedAt?: Dayjs | undefined;
+  /** Contains the finish time. */
   finishedAt?: Dayjs | undefined;
+  /** Contains the work done. */
   workDone?: ProgressTrackerWorkDone | undefined;
 }
 
-interface ProgressTrackerProto {
+/** Defines progress data from an operation response. */
+export interface ProgressTrackerProto {
+  /** Contains the description. */
   description?: string | undefined;
+  /** Contains the start time. */
   startedAt?: Dayjs | undefined;
+  /** Contains the finish time. */
   finishedAt?: Dayjs | undefined;
+  /** Contains the estimated finish time. */
   estimatedFinishedAt?: Dayjs | undefined;
+  /** Contains the work done. */
   workDone?: ProgressTrackerWorkDone | undefined;
+  /** Contains the steps. */
   steps?: ProgressTrackerStep[] | undefined;
 }
 
 /**
- * A single step within an operation progress tracker.
+ * Describes one step in an operation.
  *
- * Steps are optional and may include only currently running steps or a subset
- * of completed steps, depending on the service.
+ * A service can omit steps. It can also return only active steps or some
+ * completed steps.
  *
  * @example
  * ```ts
@@ -50,33 +71,33 @@ interface ProgressTrackerProto {
  * ```
  */
 export interface CurrentStep {
-  /** Human-readable description of the step. */
+  /** Returns a human-readable step description. */
   description(): string;
-  /** Step start timestamp if provided. */
+  /** Returns the step start time when the service provides it. */
   startedAt(): Dayjs | undefined;
-  /** Step finish timestamp if provided. */
+  /** Returns the step finish time when the service provides it. */
   finishedAt(): Dayjs | undefined;
-  /** Work progress details if provided. */
+  /** Returns work counts when the service provides them. */
   workDone(): ProgressTrackerWorkDone | undefined;
   /**
-   * Fraction of work completed for the step.
-   * Returns `undefined` when work details are missing or invalid.
+   * Returns the completed work as a value from 0 to 1.
+   *
+   * Returns `undefined` when the work counts are missing or invalid.
    */
   workFraction(): number | undefined;
-  /** String representation for logs/debugging. */
+  /** Returns a text form for logs. */
   toString(): string;
-  /** Custom inspect hook used by runtime logging. */
+  /** Formats the step for Node.js inspection. */
   [custom](): string;
-  /** Custom JSON hook used by runtime logging. */
+  /** Returns a safe value for JSON logs. */
   [customJson](): unknown;
 }
 
 /**
- * Progress tracking interface for long-running operations.
- * Mirrors the server-side ProgressTracker and adds convenience helpers.
+ * Reports progress for a long-running operation.
  *
- * For operations that do not provide progress details (or v1alpha1 operations),
- * {@link Operation.progressTracker} returns `undefined`.
+ * {@link Operation.progressTracker} returns `undefined` when the service does
+ * not provide progress.
  *
  * @example
  * ```ts
@@ -92,39 +113,67 @@ export interface CurrentStep {
  */
 export interface OperationProgressTracker extends CurrentStep {
   /**
-   * Estimated completion time when available.
-   * If the tracker reports a finished time, it is returned.
+   * Returns the estimated finish time.
+   *
+   * Returns the actual finish time when the operation has finished.
    */
   estimatedFinishedAt(): Dayjs | undefined;
   /**
-   * Fraction of time elapsed based on start and estimated finish.
-   * Returns `undefined` when timestamps are missing or invalid.
+   * Returns the elapsed time as a value from 0 to 1.
+   *
+   * Returns `undefined` when the required times are missing or invalid.
    */
   timeFraction(): number | undefined;
-  /** Steps reported by the tracker (may be empty). */
+  /** Returns the reported steps. */
   steps(): CurrentStep[];
 }
 
-interface Operation_RequestHeader {
+/** Defines all values for one saved request header in an operation response. */
+export interface Operation_RequestHeader {
+  /** Contains the values. */
   values: string[];
 }
 
-interface GenericOperation {
+/**
+ * Defines the generated operation fields that the runtime wrapper reads.
+ *
+ * Generated operation messages satisfy this interface. Use {@link Operation}
+ * in application code because it provides polling and progress helpers.
+ */
+export interface GenericOperation {
+  /** Contains the fully qualified runtime type name. */
   $type: string;
+  /** Contains the ID. */
   id: string;
+  /** Contains the description. */
   description: string;
+  /** Contains the creation time. */
   createdAt?: Dayjs | undefined;
+  /** Contains the ID of the creator. */
   createdBy: string;
+  /** Contains the finish time. */
   finishedAt?: Dayjs | undefined;
+  /** Contains the request. */
   request?: { typeUrl: string; value: Uint8Array } | undefined;
+  /** Contains the request headers. */
   requestHeaders: { [key: string]: Operation_RequestHeader };
+  /** Contains the resource ID. */
   resourceId: string;
+  /** Contains the progress tracker. */
   progressTracker?: ProgressTrackerProto | undefined;
+  /** Contains the progress data. */
   progressData?: { typeUrl: string; value: Uint8Array } | undefined;
+  /** Contains the status. */
   status?: Status | undefined;
 }
 
-interface OperationService<TReq> {
+/**
+ * Defines the operation service method that {@link Operation} uses for polling.
+ *
+ * Generated operation service clients satisfy this interface.
+ */
+export interface OperationService<TReq> {
+  /** Gets the latest state of an operation. */
   get(
     req: { id: string },
     metadata?: Metadata | undefined,
@@ -133,22 +182,36 @@ interface OperationService<TReq> {
 }
 
 /**
- * A convenience wrapper around operation protobufs.
- * Provides helpers to poll, wait, and inspect operation metadata.
+ * Polls a long-running operation and exposes its current state.
+ *
+ * Mutating service methods often return an operation instead of the final
+ * resource. {@link Operation.wait} completes for both successful and failed
+ * operations. After it completes, inspect {@link Operation.status} or
+ * {@link Operation.successful}. It rejects only when polling cannot continue.
  *
  * @example
  * ```ts
  * const op = await service.create(req).result;
  * await op.wait();
- * console.log('resource id', op.resourceId());
+ * if (!op.successful()) {
+ *   throw new Error(`operation failed: ${op.status()?.message}`);
+ * }
+ * console.log('resource ID', op.resourceId());
  * ```
  */
 export class Operation<TReq> {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type: 'nebius.sdk.Operation' = 'nebius.sdk.Operation';
+  /** Contains the protobuf type name of the wrapped operation. */
   public readonly innerType: string;
+  /**
+   * Creates an operation wrapper.
+   *
+   * Generated clients create this object with the correct operation service.
+   * Application code normally receives it from a service request.
+   */
   constructor(
     private _op: GenericOperation,
-    // getOpFn now may accept optional Metadata and CallOptions to propagate through
     private readonly service: OperationService<TReq>,
     private logger: Logger,
   ) {
@@ -160,13 +223,16 @@ export class Operation<TReq> {
     this.logger.trace('Operation instance created', { operation: this });
   }
 
+  /** Converts the value to string. */
   toString() {
     return `Operation(${this.id()}, resourceId=${this.resourceId()}, status=${this.status()})`;
   }
 
+  /** Formats the current operation state for Node.js inspection. */
   [custom](): string {
     return this.toString();
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       operationId: this.id(),
@@ -179,59 +245,73 @@ export class Operation<TReq> {
     };
   }
 
+  /** Returns the operation ID. */
   id(): string {
     return this._op.id ?? '';
   }
 
-  /** Human-readable operation description. */
+  /** Returns the human-readable operation description. */
   description(): string {
     return this._op.description ?? '';
   }
 
-  /** Operation creation timestamp if provided. */
+  /** Returns the operation creation time. */
   createdAt(): Dayjs | undefined {
     return this._op.createdAt;
   }
 
-  /** ID of the user or service account that created the operation. */
+  /** Returns the ID of the user or service account that created the operation. */
   createdBy(): string {
     return this._op.createdBy ?? '';
   }
 
-  /** Operation completion timestamp if provided. */
+  /** Returns the operation finish time. */
   finishedAt(): Dayjs | undefined {
     return this._op.finishedAt;
   }
 
-  /** Returns true if operation status is OK. */
+  /**
+   * Checks whether the operation finished successfully.
+   *
+   * Returns `false` while the operation is still running.
+   */
   successful(): boolean {
     return this._op.status?.code === StatusCode.OK.code;
   }
 
-  /** Raw underlying protobuf object. */
+  /**
+   * Returns the latest source protobuf object.
+   *
+   * Treat this object as read-only. {@link update} replaces it with the next
+   * response from the service.
+   */
   raw(): GenericOperation {
     return this._op;
   }
 
-  /** Operation status if completed. */
+  /** Returns the final status, or `undefined` while the operation is running. */
   status(): Status | undefined {
     return this._op.status;
   }
 
-  /** Returns true if the operation is completed. */
+  /** Checks whether the service has returned a final status. */
   done(): boolean {
     return this._op.status !== undefined;
   }
 
-  /** Resource ID associated with the operation. */
+  /**
+   * Returns the affected resource ID.
+   *
+   * A service can return an empty string before it assigns the resource ID.
+   */
   resourceId(): string {
     return this._op.resourceId;
   }
 
   /**
-   * Returns a progress tracker wrapper when available.
-   * For operations that do not provide progress details (or v1alpha1),
-   * this returns `undefined`.
+   * Returns the progress tracker.
+   *
+   * Returns `undefined` when the service does not provide progress.
    *
    * @example
    * ```ts
@@ -248,8 +328,17 @@ export class Operation<TReq> {
   }
 
   /**
-   * Polls the operation until it completes.
-   * @param intervalSec polling interval in seconds (default: 1)
+   * Polls the operation until the service returns a final status.
+   *
+   * The method updates this object in place. It continues after a polling call
+   * reaches its deadline, because the remote operation can still be running.
+   * It rethrows other polling errors. A resolved promise does not mean that the
+   * operation succeeded; call {@link successful} or inspect {@link status}.
+   * The method returns immediately when the operation ID is empty.
+   *
+   * @param intervalSec Sets the poll interval in seconds. The default is 1.
+   * @param metadata Sends metadata with every polling request.
+   * @param options Sets gRPC deadlines and retry options for every polling request.
    * @example
    * ```ts
    * await op.wait(1); // poll once per second
@@ -269,10 +358,6 @@ export class Operation<TReq> {
         this.logger.trace('Wait iteration completed');
       } catch (err: unknown) {
         this.logger.trace('Wait iteration failed', { err });
-        // If update failed because the client deadline was exceeded, ignore
-        // and continue waiting. This can happen when the server takes longer
-        // to respond than the per-request deadline; the operation may still
-        // be progressing and will be visible on subsequent polls.
         if (err && typeof err === 'object' && 'code' in err) {
           const e = err as { code?: number };
           if (e.code === status.DEADLINE_EXCEEDED) {
@@ -293,7 +378,10 @@ export class Operation<TReq> {
   }
 
   /**
-   * Fetch the latest operation state from the operation service.
+   * Gets the latest operation state from the operation service.
+   *
+   * The method replaces the wrapped state in place. It does nothing when the
+   * operation has no ID. Request errors reject the returned promise.
    *
    * @example
    * ```ts
@@ -533,8 +621,11 @@ class ProgressTrackerWrapper implements OperationProgressTracker {
 }
 
 /**
- * Return a progress tracker wrapper for an operation if available.
- * Performs presence checks to avoid accessing missing fields.
+ * Returns a read-only progress view for an operation.
+ *
+ * The view reads the current operation state, so it reflects later
+ * {@link Operation.update} calls. Returns `undefined` when the operation or
+ * tracker is missing.
  *
  * @example
  * ```ts

@@ -1,3 +1,14 @@
+/**
+ * Loads PEM certificate bundles for custom gRPC trust configuration.
+ *
+ * Use {@link getSystemRootCAs} for environment-selected and common system PEM
+ * files. Use {@link normalizeRootCAs} for application-provided PEM data or file
+ * paths. These helpers do not access platform certificate stores or Node.js
+ * built-in roots.
+ *
+ * @packageDocumentation
+ */
+
 import { existsSync, readFileSync, statSync } from 'fs';
 import { resolve } from 'path';
 
@@ -16,9 +27,22 @@ function readIfExists(filePath: string): Buffer | undefined {
 }
 
 /**
- * Best-effort loading of system root CAs from common locations.
- * Also respects NODE_EXTRA_CA_CERTS and SSL_CERT_FILE if set.
- * Returns a PEM bundle Buffer or undefined if none found.
+ * Loads system root certificates from common paths.
+ *
+ * The function first reads every valid path in `NODE_EXTRA_CA_CERTS` and
+ * `SSL_CERT_FILE`. It then reads the first common operating-system bundle that
+ * exists. It joins all loaded PEM data in that order.
+ *
+ * This is a PEM-file scan. It does not read the Windows certificate store,
+ * the macOS Keychain, or Node.js built-in root certificates.
+ *
+ * File errors do not stop SDK initialization. The function writes lookup
+ * details to the supplied {@link Logger} and returns `undefined` when it cannot
+ * read a non-empty bundle.
+ *
+ * @param logger Receives trace and debug details. The function does not log
+ * certificate contents.
+ * @returns Concatenated PEM data, or `undefined` when no bundle is available.
  */
 export function getSystemRootCAs(logger: Logger): Buffer | undefined {
   const chunks: Buffer[] = [];
@@ -74,10 +98,24 @@ export function getSystemRootCAs(logger: Logger): Buffer | undefined {
 }
 
 /**
- * Normalize user-provided roots:
- * - Buffer: returned as-is
- * - string: treated as path to PEM bundle
- * - string[]: each treated as path; concatenated in order
+ * Loads user-supplied root certificates.
+ *
+ * A `Buffer` contains the certificate data. A string contains a PEM file path.
+ * An array contains PEM file paths in concatenation order. The function
+ * returns the same `Buffer` instance when the input is a buffer.
+ *
+ * Missing, empty, and unreadable files are ignored. If no path produces data,
+ * the function returns `undefined`; it does not throw.
+ *
+ * @example
+ * ```ts
+ * import { Buffer } from 'node:buffer';
+ * import { normalizeRootCAs } from '@nebius/js-sdk/runtime/tls/system_certs';
+ *
+ * const pem = Buffer.from('application-provided PEM data');
+ * const roots = normalizeRootCAs(pem);
+ * roots === pem; // true
+ * ```
  */
 export function normalizeRootCAs(input?: Buffer | string | string[]): Buffer | undefined {
   if (!input) return undefined;

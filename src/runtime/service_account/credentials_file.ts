@@ -3,9 +3,7 @@ import { inspect } from 'util';
 
 import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 import { resolveHomeDir } from '../util/path.js';
-
-import type { Reader } from './service_account.js';
-import { ServiceAccount } from './service_account.js';
+import { type Reader, ServiceAccount } from './service_account.js';
 
 interface SubjectCredentials {
   type?: string; // should be 'JWT' or empty
@@ -35,12 +33,36 @@ function validateSubjectCredentials(sc: SubjectCredentials) {
   }
 }
 
+/**
+ * Loads a Nebius service-account credentials JSON file.
+ *
+ * The constructor reads the file immediately. It validates the algorithm,
+ * credential type, and equality of issuer and subject. Missing or malformed
+ * key identifiers and private-key values can fail later when the SDK signs or
+ * exchanges a token. Keep the file private because it contains the private key.
+ *
+ * @example
+ * ```ts
+ * import { SDK } from '@nebius/js-sdk';
+ * import { CredentialsFileReader } from '@nebius/js-sdk/runtime/service_account/credentials_file';
+ *
+ * const sdk = new SDK({
+ *   // Passing the reader lets SDK create and connect the token-exchange flow.
+ *   credentials: new CredentialsFileReader(
+ *     '~/.config/nebius/service-account.json',
+ *   ),
+ *   userAgentPrefix: 'example-application/1.0',
+ * });
+ * ```
+ */
 export class CredentialsFileReader implements Reader {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.CredentialsFileReader';
   private readonly sc: SubjectCredentials;
   private readonly pem: string;
   private readonly path: string;
 
+  /** Reads `filename`; a leading `~` resolves to the home directory. */
   constructor(
     filename: string,
     private logger?: Logger,
@@ -57,6 +79,7 @@ export class CredentialsFileReader implements Reader {
   [custom](): string {
     return `${this.$type}(path=${this.path}, sa=${inspect(this.read())})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): object {
     return {
       type: this.$type,
@@ -65,10 +88,12 @@ export class CredentialsFileReader implements Reader {
     };
   }
 
+  /** Creates a service-account value from the credentials held in memory. */
   read(): ServiceAccount {
     return new ServiceAccount(this.pem, this.sc.kid, this.sc.sub, this.logger);
   }
 
+  /** Returns the exchange token request. */
   getExchangeTokenRequest() {
     return this.read().getExchangeTokenRequest();
   }

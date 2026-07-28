@@ -1,12 +1,13 @@
-/*
- * Basic descriptor wrappers inspired by Python generator.
- * Now "eats its own dog food": descriptor proto types are imported
- * from our generated module under src/generated_test/2.
- * - typescript_name mirrors pb name (no renaming yet)
- * - Minimal structure to build upon in later iterations
+/**
+ * Wraps protobuf compiler descriptors for the TypeScript generator.
+ *
+ * Descriptor types come from the vendored generator protos, which the
+ * `sync:descriptors` script keeps up to date. TypeScript names currently mirror
+ * protobuf names.
+ *
+ * @packageDocumentation
  */
 
-// Use vendored google.protobuf descriptor types (kept in sync via sync:descriptors script)
 import type * as GPB from './protos/protobuf/index.js';
 
 // Narrow helper to safely read enum-like values from generated types without runtime imports
@@ -30,20 +31,27 @@ function enumName(v: unknown): string | undefined {
 const globalMessageIndex: Map<string, Message> = new Map();
 const globalEnumIndex: Map<string, Enum> = new Map();
 
-// Type aliases to generated google.protobuf.* types
+/** Represents a protobuf message descriptor used by the generator. */
 export type DescriptorProto = GPB.DescriptorProto;
+/** Represents a protobuf field descriptor used by the generator. */
 export type FieldDescriptorProto = GPB.FieldDescriptorProto;
+/** Represents a protobuf file descriptor used by the generator. */
 export type FileDescriptorProto = GPB.FileDescriptorProto;
+/** Represents a protobuf enum descriptor used by the generator. */
 export type EnumDescriptorProto = GPB.EnumDescriptorProto;
+/** Represents a protobuf enum-value descriptor used by the generator. */
 export type EnumValueDescriptorProto = GPB.EnumValueDescriptorProto;
+/** Represents a protobuf oneof descriptor used by the generator. */
 export type OneofDescriptorProto = GPB.OneofDescriptorProto;
+/** Represents a protobuf method descriptor used by the generator. */
 export type MethodDescriptorProto = GPB.MethodDescriptorProto;
+/** Represents a protobuf service descriptor used by the generator. */
 export type ServiceDescriptorProto = GPB.ServiceDescriptorProto;
 
-export class SourceInfo {
-  // Placeholder for future source code info handling
-}
+/** Reserves source-information support in the generator descriptor API. */
+export class SourceInfo {}
 
+/** Provides shared naming operations for a raw protobuf descriptor. */
 export class DescriptorBase<T> {
   constructor(public readonly descriptor: T) {}
 
@@ -61,6 +69,7 @@ export class DescriptorBase<T> {
   }
 }
 
+/** Wraps one protobuf enum value and its source-comment location. */
 export class EnumValue extends DescriptorBase<EnumValueDescriptorProto> {
   readonly containingEnum: Enum;
   readonly path: number[]; // location path for comments
@@ -77,6 +86,9 @@ export class EnumValue extends DescriptorBase<EnumValueDescriptorProto> {
   }
 }
 
+/**
+ * Wraps one protobuf file and indexes its declarations and source comments.
+ */
 export class File extends DescriptorBase<FileDescriptorProto> {
   readonly package: string;
   readonly messages: Message[];
@@ -232,6 +244,7 @@ export class File extends DescriptorBase<FileDescriptorProto> {
   }
 }
 
+/** Wraps one declared protobuf oneof and its member fields. */
 export class OneOf extends DescriptorBase<OneofDescriptorProto> {
   readonly index: number;
   readonly containingMessage: Message;
@@ -264,6 +277,7 @@ export class OneOf extends DescriptorBase<OneofDescriptorProto> {
   }
 }
 
+/** Wraps one protobuf field and provides type and presence queries. */
 export class Field extends DescriptorBase<FieldDescriptorProto> {
   // Undefined for file-level extension field declarations.
   readonly containingMessage?: Message;
@@ -437,6 +451,7 @@ export class Field extends DescriptorBase<FieldDescriptorProto> {
   }
 }
 
+/** Wraps one protobuf enum and its values. */
 export class Enum extends DescriptorBase<EnumDescriptorProto> {
   readonly values: EnumValue[];
   readonly tsNameOriginal: string;
@@ -487,6 +502,7 @@ export class Enum extends DescriptorBase<EnumDescriptorProto> {
   }
 }
 
+/** Wraps one protobuf message and its nested declarations. */
 export class Message extends DescriptorBase<DescriptorProto> {
   readonly fields: Field[] = [];
   readonly enums: Enum[] = [];
@@ -601,6 +617,7 @@ export class Message extends DescriptorBase<DescriptorProto> {
   }
 }
 
+/** Wraps one protobuf service method and its source-comment location. */
 export class Method extends DescriptorBase<MethodDescriptorProto> {
   // Method names in TS are lowerCamel
   readonly containingService: Service;
@@ -629,6 +646,7 @@ export class Method extends DescriptorBase<MethodDescriptorProto> {
   }
 }
 
+/** Wraps one protobuf service and its methods. */
 export class Service extends DescriptorBase<ServiceDescriptorProto> {
   readonly methods: Method[];
   readonly containingFile: File;
@@ -656,6 +674,9 @@ export class Service extends DescriptorBase<ServiceDescriptorProto> {
   }
 }
 
+/**
+ * Wraps one generator request and builds cross-file message and enum indexes.
+ */
 export class FileSet {
   readonly files: File[];
 
@@ -682,6 +703,11 @@ export class FileSet {
   // Custom options decoding via uninterpretedOption no longer required; extensions are decoded directly.
 }
 
+/**
+ * Returns a protobuf name with a leading dot.
+ *
+ * A name that already contains `pkg` stays unchanged.
+ */
 export function normalizeFullName(name: string, pkg?: string): string {
   let n = name || '';
   if (!n.startsWith('.')) n = '.' + n;

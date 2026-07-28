@@ -2,19 +2,17 @@ import fs from 'fs';
 import path from 'path';
 
 /*
- * Copies the generated google.protobuf descriptor types into the generator folder so that
- * the generator can bootstrap from a cold start (before src/api is produced).
+ * Copies generated google.protobuf descriptor types into the generator so it
+ * can bootstrap before src/api is available.
  *
  * Source: src/api/google/protobuf/index.ts
  * Dest:   scripts/generator/google/protobuf/index.ts
  *
- * We also rewrite any relative imports inside the copied file that point to the runtime layer
- * so that they resolve correctly from the generator location (../../src/runtime -> ../runtime etc.).
+ * The copy rewrites runtime imports for its new location.
  */
 
-const projectRoot = path.resolve(__dirname, '..'); // scripts/
-// projectRoot points to <repo>/scripts, we want <repo>/src/... so go one level up only once.
-const repoRoot = path.resolve(projectRoot, '.'); // scripts -> scripts (placeholder)
+const projectRoot = path.resolve(__dirname, '..');
+const repoRoot = path.resolve(projectRoot, '.');
 const SRC_FILE = path.join(repoRoot, 'src', 'api', 'google', 'protobuf', 'index.ts');
 const DEST_FILE = path.join(projectRoot, 'scripts', 'generator', 'google', 'protobuf', 'index.ts');
 

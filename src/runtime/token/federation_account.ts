@@ -10,31 +10,97 @@ import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 import { FederationBearer as FederationAuthBearer } from './federation_bearer/index.js';
 import { AsyncRenewableBearer } from './file_cache/async_renewable_bearer.js';
 
+/**
+ * Provides cached, renewable credentials for an interactive federation
+ * account.
+ *
+ * On the first login, the bearer opens a browser unless `noBrowserOpen` is
+ * true. It writes the authorization URL with `writer`, waits for the local
+ * callback, and stores the access token in the shared credentials file.
+ * Later processes can reuse the cached token for the same profile.
+ *
+ * This flow is intended for people at a workstation. Use a service account or
+ * workload federation for unattended applications.
+ *
+ * @example
+ * ```ts
+ * import { SDK } from '@nebius/js-sdk';
+ * import { FederationAccountBearer } from '@nebius/js-sdk/runtime/token/federation_account';
+ *
+ * const credentials = new FederationAccountBearer(
+ *   'developer',
+ *   'client-id',
+ *   'https://auth.example',
+ *   'federation-id',
+ * );
+ * const sdk = new SDK({
+ *   credentials,
+ *   userAgentPrefix: 'example-application/1.0',
+ * });
+ * ```
+ */
 export class FederationAccountBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.FederationAccountBearer';
   private _source: AsyncRenewableBearer;
   private readonly metrics: AuthMetricsRecorder;
 
+  /**
+   * Creates an interactive federation flow for `profileName`.
+   *
+   * `timeoutMs` limits the wait for the browser callback. It does not limit the
+   * following token HTTP request. `cacheFilePath` selects the shared token
+   * cache. Close the SDK to stop renewal timers.
+   */
   constructor(
     profileName: string,
     clientId: string,
     federationEndpoint: string,
     federationId: string,
     opts?: {
+      /** Receives the authorization URL. The default writer uses `console.log`. */
       writer?: (s: string) => void;
+      /** Optional destination for diagnostic events. */
       logger?: Logger;
+      /** Prevents automatic browser launch when `true`. */
       noBrowserOpen?: boolean;
-      timeoutMs?: number; // refresh request timeout
+      /**
+       * Timeout for the browser callback, in milliseconds.
+       *
+       * This value does not limit the following token HTTP request.
+       */
+      timeoutMs?: number;
+      /** Maximum total authentication attempts for one receiver. Defaults to 2. */
       maxRetries?: number;
-      initialSafetyMarginMs?: number | null; // default 2h
-      retrySafetyMarginMs?: number; // kept for parity; not used directly
-      lifetimeSafeFraction?: number; // default 0.9
-      initialRetryTimeoutMs?: number; // default 1s
-      maxRetryTimeoutMs?: number; // default 60s
-      retryTimeoutExponent?: number; // default 1.5
-      fileCacheThrottleMs?: number; // default 5m
-      cacheFilePath?: string; // custom credentials file path
-      ca?: Buffer | string | string[]; // optional extra CA bundle
+      /**
+       * Extra lifetime required for the first cached token.
+       *
+       * Defaults to two hours. `null` also selects this default. Valid cache
+       * hits keep the margin for later fetches. A fetch clears it only after it
+       * proceeds into the renewal path.
+       */
+      initialSafetyMarginMs?: number | null;
+      /** Reserved for compatibility. The JavaScript implementation does not use this value. */
+      retrySafetyMarginMs?: number;
+      /**
+       * Fraction of remaining lifetime to wait before renewal.
+       *
+       * The default `0.9` renews with about 10% of the lifetime left.
+       */
+      lifetimeSafeFraction?: number;
+      /** Initial renewal backoff. Defaults to one second. */
+      initialRetryTimeoutMs?: number;
+      /** Maximum renewal backoff. Defaults to 60 seconds. */
+      maxRetryTimeoutMs?: number;
+      /** Multiplier for exponential renewal backoff. Defaults to `1.5`. */
+      retryTimeoutExponent?: number;
+      /** Minimum interval between cache-file reads. Defaults to five minutes. */
+      fileCacheThrottleMs?: number;
+      /** Custom shared credentials-file path. */
+      cacheFilePath?: string;
+      /** Extra trusted CA certificates. This bearer currently forwards only a `Buffer` value. */
+      ca?: Buffer | string | string[];
+      /** Optional authentication metrics destination. */
       metrics?: AuthMetricsInput;
     },
   ) {
@@ -74,6 +140,7 @@ export class FederationAccountBearer extends Bearer {
   [custom](): string {
     return `FederationAccountBearer(source=${inspect(this._source)})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: 'FederationAccountBearer',
@@ -81,15 +148,18 @@ export class FederationAccountBearer extends Bearer {
     };
   }
 
+  /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this._source;
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
     this._source.setMetrics(this.metrics);
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     return this._source.receiver();
   }

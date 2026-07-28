@@ -5,34 +5,74 @@ import { customJson } from '../util/logging.js';
 
 import type { BinaryWriter } from './core.js';
 
-// Symbol used to attach metadata (e.g., original proto comments) to enum value instances without
-// polluting their enumerable keys. Publicly exported via barrel.
+/**
+ * Identifies symbol-keyed metadata attached to a generated enum value.
+ *
+ * The symbol property can be enumerable, but `Object.keys` and normal JSON
+ * output ignore symbol-keyed properties. Generated documentation can read the
+ * metadata without adding a string-keyed field to JSON output.
+ */
 export const ENUM_VALUE_META: unique symbol = Symbol('nebius.enum.value.meta');
 
+/** Contains documentation metadata for one generated enum value. */
 export interface EnumValueMeta {
+  /** Contains the original protobuf comment, when one exists. */
   comment?: string;
 }
 
-// --- Enum base + factory ---
+/**
+ * Represents one generated enum value.
+ *
+ * Enum values are objects, not TypeScript numeric-enum members. Use
+ * {@link EnumInstance.toNumber | toNumber()} for a wire-compatible numeric code
+ * and {@link EnumInstance.toString | toString()} for the name.
+ */
 export type EnumInstance<TName extends string = string> = {
+  /** Contains the numeric protobuf value. */
   readonly code: number;
+  /** Contains the protobuf value name. */
   readonly name: TName;
+  /** Converts the value to number. */
   toNumber(): number;
+  /** Converts the value to string. */
   toString(): string;
+  /** Contains the enum value meta. */
   readonly [ENUM_VALUE_META]?: EnumValueMeta;
+  /** Formats the enum value for Node.js inspection. */
   [util.inspect.custom]?: () => string;
+  /** Returns a JSON-safe value for SDK logging. */
   [customJson]?: () => unknown;
 };
 
+/**
+ * Defines the static operations and named values of a generated enum.
+ *
+ * {@link EnumClass.fromNumber | fromNumber()} preserves unknown numeric input
+ * as a new `UNRECOGNIZED` instance with that numeric code. Unknown non-numeric
+ * JSON input becomes the shared {@link EnumClass.UNRECOGNIZED | UNRECOGNIZED}
+ * value with code `-1`.
+ */
 export type EnumClass<TNames extends string = string> = {
+  /** Contains the fully qualified protobuf enum name. */
   readonly $type: string;
+  /** Contains the shared fallback value with code `-1`. */
   readonly UNRECOGNIZED: EnumInstance<TNames | 'UNRECOGNIZED'>;
+  /** Lists known values in generator definition order. */
   readonly values: ReadonlyArray<EnumInstance<TNames | 'UNRECOGNIZED'>>;
+  /** Maps known numeric codes to values. */
   readonly _byCode: Map<number, EnumInstance<TNames | 'UNRECOGNIZED'>>;
+  /** Maps known names to values. */
   readonly _byName: Map<TNames, EnumInstance<TNames>>;
+  /**
+   * Returns a known value or an {@link EnumClass.UNRECOGNIZED | UNRECOGNIZED}
+   * value that keeps `n`.
+   */
   fromNumber(n: number): EnumInstance<TNames | 'UNRECOGNIZED'>;
+  /** Reads a name, numeric value, or numeric string from protobuf JSON input. */
   fromJSON(o: any): EnumInstance<TNames | 'UNRECOGNIZED'>;
+  /** Returns a known name, or the numeric code for an unknown value. */
   toJSON(v: EnumInstance<TNames | 'UNRECOGNIZED'>): string | number;
+  /** Writes a present enum value as one protobuf varint field. */
   encodeField(
     writer: BinaryWriter,
     fieldNo: number,
@@ -40,6 +80,30 @@ export type EnumClass<TNames extends string = string> = {
   ): void;
 } & { readonly [K in TNames]: EnumInstance<TNames> };
 
+/**
+ * Creates the runtime class used by a generated protobuf enum.
+ *
+ * SDK generator output calls this function. Applications normally use the
+ * generated enum export instead of calling the factory.
+ *
+ * @example
+ * ```ts
+ * import { createEnum } from '@nebius/js-sdk/runtime/protos/enum';
+ *
+ * const State = createEnum('example.State', {
+ *   STATE_UNSPECIFIED: 0,
+ *   READY: 1,
+ * });
+ *
+ * State.READY.toNumber(); // 1
+ * State.fromJSON('READY') === State.READY; // true
+ * State.fromNumber(99).name; // "UNRECOGNIZED"
+ * ```
+ *
+ * @param type Fully qualified protobuf enum name.
+ * @param def Maps value names to numeric codes.
+ * @param comments Optional original protobuf comments by value name.
+ */
 export function createEnum<TDef extends Record<string, number>>(
   type: string,
   def: TDef,

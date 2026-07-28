@@ -9,18 +9,47 @@ import { Token } from '../../token.js';
 import { custom, customJson, Logger } from '../../util/logging.js';
 import { resolveHomeDir } from '../../util/path.js';
 
+/** Configures the process-safe YAML access-token cache. */
 export interface TokenCacheOptions {
+  /** Path to the YAML cache file. A leading `~` resolves to the home directory. */
   cacheFile?: string;
+  /** POSIX mode for a newly created cache file. Defaults to `0o600`. */
   fileCreateMode?: number;
+  /**
+   * Optional destination for diagnostic events.
+   *
+   * Token diagnostic values are partly masked, but a short `v0` payload can
+   * remain visible.
+   */
   logger?: Logger;
 }
 
+/**
+ * Stores named access tokens in a process-safe YAML file.
+ *
+ * Operations use POSIX file locks, so cooperating SDK processes can share the
+ * file without overwriting each other. Expired tokens are not returned and are
+ * removed on the next write. The file contains unmasked credentials and must
+ * be protected.
+ *
+ * @example
+ * ```ts
+ * import { TokenCache } from '@nebius/js-sdk/runtime/token/file_cache/token_cache';
+ *
+ * const cache = new TokenCache({
+ *   cacheFile: '~/.config/my-app/credentials.yaml',
+ * });
+ * const token = await cache.get('developer-profile');
+ * ```
+ */
 export class TokenCache {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.TokenCache';
   private cacheFile: string;
   private fileCreateMode: number;
   private logger?: Logger;
 
+  /** Creates a cache. A new file uses owner-only mode (`0o600`) by default. */
   constructor(options?: TokenCacheOptions) {
     const cachePath = options?.cacheFile ?? `${defaultConfigDir}/${defaultCredentialsFile}`;
     this.cacheFile = resolveHomeDir(cachePath);
@@ -30,6 +59,7 @@ export class TokenCache {
   [custom](): string {
     return `${this.$type}(cacheFile=${this.cacheFile})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: this.$type,
@@ -87,6 +117,7 @@ export class TokenCache {
     return YAML.stringify({ tokens: toks });
   }
 
+  /** Returns a named, unexpired token, or `undefined` when it is absent or expired. */
   async get(name: string): Promise<Token | undefined> {
     const logger = this.logger?.withFields({ name }) ?? undefined;
     logger?.trace('Getting token from cache');
@@ -131,6 +162,7 @@ export class TokenCache {
     }
   }
 
+  /** Stores or replaces a named token while preserving other entries. */
   async set(name: string, token: Token): Promise<void> {
     const logger = this.logger?.withFields({ name, token }) ?? undefined;
     logger?.trace('Setting token in cache');
@@ -174,6 +206,7 @@ export class TokenCache {
     }
   }
 
+  /** Removes a named token. Missing files and entries are accepted. */
   async remove(name: string): Promise<void> {
     const logger = this.logger?.withFields({ name }) ?? undefined;
     logger?.trace('Removing token from cache');
@@ -226,6 +259,12 @@ export class TokenCache {
     }
   }
 
+  /**
+   * Removes a named token only when both its value and expiration match.
+   *
+   * This compare-and-remove operation avoids deleting a newer token written by
+   * another process.
+   */
   async removeIfEqual(name: string, token: Token): Promise<boolean> {
     const logger = this.logger?.withFields({ name, token }) ?? undefined;
     logger?.trace('Removing token from cache if equal to provided token');

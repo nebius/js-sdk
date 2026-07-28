@@ -19,7 +19,12 @@ function mdGetString(md: Metadata | undefined, key: string): string | undefined 
   return undefined;
 }
 
-// Decode google.rpc.Status from grpc error metadata
+/**
+ * Decodes a Google RPC status from gRPC error metadata.
+ *
+ * Returns `undefined` when the error has no `grpc-status-details-bin` value or
+ * when that value cannot be decoded.
+ */
 function decodeStatusFromError(err: GrpcServiceError): GrpcStatus | undefined {
   try {
     const bin = err.metadata?.get('grpc-status-details-bin');
@@ -164,15 +169,68 @@ function toStrServiceError(err: NebiusServiceError): string {
   return parts.join('');
 }
 
+/**
+ * Reports a failed Nebius gRPC request with structured diagnostics.
+ *
+ * SDK unary requests wrap gRPC service errors with this class. Use
+ * {@link code} for general control flow. Use {@link serviceErrors} to inspect
+ * Nebius-specific causes such as field violations, quota failures, and
+ * resource conflicts. Include {@link requestId} and {@link traceId} when you
+ * contact support.
+ *
+ * @example
+ * ```ts
+ * import { SDK } from '@nebius/js-sdk';
+ * import {
+ *   BucketService,
+ *   GetBucketRequest,
+ * } from '@nebius/js-sdk/api/nebius/storage/v1/index';
+ * import { NebiusGrpcError } from '@nebius/js-sdk/runtime/error';
+ * import { EnvBearer } from '@nebius/js-sdk/runtime/token/static';
+ *
+ * const sdk = new SDK({
+ *   credentials: new EnvBearer('NEBIUS_IAM_TOKEN'),
+ *   userAgentPrefix: 'example-application/1.0',
+ * });
+ * try {
+ *   const buckets = new BucketService(sdk);
+ *   const request = GetBucketRequest.create({ id: 'bucket-id' });
+ *   await buckets.get(request).result;
+ * } catch (error) {
+ *   if (error instanceof NebiusGrpcError) {
+ *     console.error('gRPC code', error.code);
+ *     console.error('request ID', error.requestId);
+ *     for (const serviceError of error.serviceErrors) {
+ *       console.error(serviceError.code, serviceError.details);
+ *     }
+ *   }
+ *   throw error;
+ * } finally {
+ *   await sdk.close();
+ * }
+ * ```
+ */
 export class NebiusGrpcError extends Error implements GrpcServiceError {
+  /** Contains the numeric gRPC status code. */
   code: number;
+  /** Contains the plain gRPC detail text. */
   details: string;
+  /** Contains response metadata from the failed call. */
   metadata: Metadata;
+  /** Contains the server request ID, or an empty string when unavailable. */
   requestId: string;
+  /** Contains the server trace ID, or an empty string when unavailable. */
   traceId: string;
+  /** Contains decoded Nebius service-error details. */
   serviceErrors: NebiusServiceError[];
+  /** Contains the decoded Google RPC status when available. */
   status?: GrpcStatus;
 
+  /**
+   * Creates a Nebius error from a gRPC error and optional decoded values.
+   *
+   * SDK request handling normally calls this constructor.
+   */
   constructor(
     base: GrpcServiceError,
     status?: GrpcStatus,
@@ -192,6 +250,13 @@ export class NebiusGrpcError extends Error implements GrpcServiceError {
     this.status = status;
   }
 
+  /**
+   * Builds the human-readable error message used by the constructor.
+   *
+   * The message includes status text, correlation IDs, and summaries of known
+   * Nebius service errors. Use structured properties when program logic needs
+   * these values.
+   */
   static buildMessage(
     base: GrpcServiceError,
     status?: GrpcStatus,
@@ -227,13 +292,16 @@ export class NebiusGrpcError extends Error implements GrpcServiceError {
     return parts.join('');
   }
 
+  /** Converts the value to string. */
   toString(): string {
     return this.message;
   }
 }
 
-// TODO: change the interceptor to a proper one, set by sdk/request
-// Install global unary interceptor once
+/*
+ * TODO: Replace this global prototype patch with an SDK or request interceptor.
+ * The current patch installs once and wraps unary gRPC errors for all clients.
+ */
 (function installUnaryInterceptor() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const proto: any = (Client as any).prototype;

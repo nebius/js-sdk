@@ -19,8 +19,6 @@ import { ThrottledTokenCache } from './throttled_token_cache.js';
 
 import type { AuthorizationOptions } from '../../authorization/provider.js';
 
-// A lightweight async renewable bearer using setTimeout for background scheduling
-
 type Waiter = { resolve: (t: Token) => void; reject: (e: unknown) => void };
 
 class AsyncRenewableReceiver extends Receiver {
@@ -71,7 +69,18 @@ class AsyncRenewableReceiver extends Receiver {
   }
 }
 
+/**
+ * Shares renewable access tokens through a file cache and refreshes them in
+ * the background.
+ *
+ * This class combines in-memory caching, a process-shared file cache, and one
+ * renewal loop. Concurrent callers share an in-flight renewal. The wrapped
+ * bearer must have a stable name because that name selects the cache entry.
+ *
+ * Call {@link AsyncRenewableBearer.close} at shutdown.
+ */
 export class AsyncRenewableBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.AsyncRenewableBearer';
   private readonly fileCache: ThrottledTokenCache;
   private refreshTimer: ReturnType<typeof setTimeout> | null = null;
@@ -105,25 +114,73 @@ export class AsyncRenewableBearer extends Bearer {
   private readonly metrics: AuthMetricsRecorder;
   private source: Bearer;
 
-  public safetyMargin: number | null; // initial extra safety for first use; null disables it thereafter
+  /**
+   * Extra lifetime required for the first cached token, in milliseconds.
+   *
+   * The constructor assigns the two-hour default when the option is `null` or
+   * `undefined`. A valid cache hit keeps this margin for later fetches. The
+   * value becomes `null` only when a fetch proceeds into the renewal path.
+   */
+  public safetyMargin: number | null;
 
+  /**
+   * Creates a shared file-backed renewal layer.
+   *
+   * `cacheFilePath` selects the credentials file. `fileCacheThrottleMs` limits
+   * disk checks. Renewal failures use jittered exponential backoff. `source`
+   * must have a stable name for its cache entry.
+   */
   constructor(
     source: Bearer,
     opts?: {
+      /** Maximum total authentication attempts for one receiver. Defaults to 2. */
       maxRetries?: number;
-      initialSafetyMarginMs?: number | null; // null keeps always renew on first use
-      retrySafetyMarginMs?: number; // not used directly in JS variant
-      lifetimeSafeFraction?: number; // e.g. 0.9 → renew while keeping 90% lifetime remaining (very safe)
-      safetyMinRemainingMs?: number; // minimum ms of life we want to keep before we treat as "near expiry"
-      initialRetryTimeoutMs?: number; // first backoff step
-      maxRetryTimeoutMs?: number; // cap for backoff
-      retryTimeoutExponent?: number; // exponential factor
-      refreshRequestTimeoutMs?: number; // timeout for background renewal
-      jitterFraction?: number; // 0..1 of backoff added/subtracted as jitter
+      /**
+       * Required remaining lifetime for an initially cached token, in milliseconds.
+       *
+       * Defaults to two hours. `null` also selects this default. Valid cache
+       * hits keep the margin until a fetch enters the renewal path.
+       */
+      initialSafetyMarginMs?: number | null;
+      /** Accepted for compatibility but not used by this implementation. */
+      retrySafetyMarginMs?: number;
+      /**
+       * Fraction of remaining lifetime to wait before renewal.
+       *
+       * Defaults to `0.9`, which renews with about 10% left.
+       */
+      lifetimeSafeFraction?: number;
+      /** Minimum lifetime kept before renewal, in milliseconds. Defaults to 15 seconds. */
+      safetyMinRemainingMs?: number;
+      /** Initial retry delay, in milliseconds. Defaults to one second. */
+      initialRetryTimeoutMs?: number;
+      /** Maximum retry delay, in milliseconds. Defaults to 60 seconds. */
+      maxRetryTimeoutMs?: number;
+      /** Multiplier for exponential retry delays. Defaults to `1.5`. */
+      retryTimeoutExponent?: number;
+      /**
+       * Default budget passed to the source for a renewal, in milliseconds.
+       *
+       * Defaults to five seconds. It applies to foreground and background
+       * renewal when the caller does not supply a synchronous override. The
+       * source decides how it enforces the budget.
+       */
+      refreshRequestTimeoutMs?: number;
+      /**
+       * Random retry-delay variation from `0` to `1`.
+       *
+       * Defaults to `0.2`. Values outside the range are clamped.
+       */
+      jitterFraction?: number;
+      /** Minimum interval between cache-file reads, in milliseconds. Defaults to five minutes. */
       fileCacheThrottleMs?: number;
+      /** Shared YAML cache path. Defaults to `~/.nebius/credentials.yaml`. */
       cacheFilePath?: string;
+      /** Optional destination for diagnostic events. */
       logger?: Logger;
+      /** Optional authentication metrics destination. */
       metrics?: AuthMetricsInput;
+      /** Metrics provider label. Defaults to the wrapped source provider. */
       provider?: string;
     },
   ) {
@@ -155,6 +212,7 @@ export class AsyncRenewableBearer extends Bearer {
   [custom](): string {
     return `${this.$type}(source=${inspect(this.source)}, fileCache=${inspect(this.fileCache)})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: this.$type,
@@ -163,20 +221,23 @@ export class AsyncRenewableBearer extends Bearer {
     };
   }
 
+  /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this.source;
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     return new AsyncRenewableReceiver(this, this.maxRetries, this.logger);
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
     this.source = bindAuthMetrics(this.source, this.metrics);
   }
 
-  /** Schedules next background renewal. Always de-dupes existing timer. */
+  /** Schedules the next background renewal and replaces the current timer. */
   private scheduleNext(ms: number) {
     if (this.stopped) {
       this.logger?.trace('scheduleNext skipped (stopped)');
@@ -191,7 +252,7 @@ export class AsyncRenewableBearer extends Bearer {
     this.refreshTimer.unref?.();
   }
 
-  /** Compute when to renew next, based on token expiration. */
+  /** Computes the next renewal time from the token expiration time. */
   private computeNextTimeoutMs(tok: Token | null | undefined): number {
     if (!tok) {
       this.logger?.trace('computeNextTimeoutMs: no token -> 0');
@@ -336,6 +397,12 @@ export class AsyncRenewableBearer extends Bearer {
     return p;
   }
 
+  /**
+   * Returns a valid token from memory, disk, or the renewal source.
+   *
+   * Synchronous renewal options wait and report failure. Otherwise a valid
+   * cached token can be returned while one shared renewal continues.
+   */
   async fetch(timeoutMs?: number, options?: AuthorizationOptions | undefined): Promise<Token> {
     const renewRequired = Boolean(options?.renewRequired);
     const renewSynchronous = Boolean(options?.renewSynchronous);
@@ -392,7 +459,7 @@ export class AsyncRenewableBearer extends Bearer {
       this.logger?.trace('fetch: no cached token, needs renewal');
     }
 
-    // After first fetch, drop extra safety margin behavior
+    // This fetch could not accept the initial cached token, so later checks use no extra margin.
     this.safetyMargin = null;
 
     const mustRenew = renewRequired || this.needRenew(now);
@@ -512,12 +579,14 @@ export class AsyncRenewableBearer extends Bearer {
     return current;
   }
 
+  /** Returns whether the token must be renewed. */
   isRenewalRequired(): boolean {
     const v = this.needRenew();
     this.logger?.trace('isRenewalRequired', { result: v });
     return v;
   }
 
+  /** Schedules renewal without waiting; `invalidate` marks the cached value as rejected. */
   requestRenewal(invalidate = false): void {
     if (this.stopped) {
       this.logger?.trace('requestRenewal ignored (stopped)');
@@ -532,7 +601,7 @@ export class AsyncRenewableBearer extends Bearer {
     this.scheduleNext(0);
   }
 
-  /** Background runner: serialize renewals, backoff with jitter, reschedule next. */
+  /** Runs one renewal at a time, applies jittered backoff, and schedules the next renewal. */
   private async run(): Promise<void> {
     if (this.stopped) {
       this.logger?.debug('run: stopped');
@@ -577,6 +646,7 @@ export class AsyncRenewableBearer extends Bearer {
     this.logger?.trace('run: done');
   }
 
+  /** Stops background renewal, rejects pending waiters, and closes the source. */
   async close(graceMs?: number | undefined): Promise<void> {
     this.stopped = true;
     if (this.refreshTimer) {

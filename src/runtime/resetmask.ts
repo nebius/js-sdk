@@ -1,3 +1,17 @@
+/**
+ * Discovers protobuf default values that an update request must reset.
+ *
+ * The SDK normally calls {@link ensureResetMaskInMetadata} before it sends an
+ * update request. Use {@link resetMaskFromMessage} directly when custom
+ * transport code needs to inspect or create the `x-resetmask` value.
+ *
+ * Generated message descriptors provide the most accurate result. Plain
+ * JavaScript objects use fallback rules and cannot express every protobuf
+ * field kind.
+ *
+ * @packageDocumentation
+ */
+
 import { Metadata } from '@grpc/grpc-js';
 
 import { Mask } from './fieldmask.js';
@@ -9,12 +23,45 @@ import {
   type MessageFieldScalarType,
 } from './protos/core.js';
 
+/**
+ * Reports that reset-mask discovery reached its 1,000-level safety limit.
+ *
+ * This normally means that the input contains an unexpectedly deep object.
+ */
 export const ErrRecursionTooDeep = new Error('recursion too deep');
 const RECURSION_TOO_DEEP = 1000;
 
-// grpc-js requires lowercase header keys
+/** Contains the lowercase reset-mask metadata key required by gRPC. */
 export const RESET_MASK_HEADER = 'x-resetmask';
 
+/**
+ * Adds a reset-mask header for an update message when one is not already set.
+ *
+ * The function uses the supplied `Metadata` object, or creates one when
+ * `metadata` is absent. It does not replace an existing `x-resetmask` value.
+ * It omits the header when `msg` is `null` or `undefined`.
+ *
+ * The SDK normally calls this function for update requests. Call it directly
+ * only when you build gRPC metadata outside the standard request API.
+ *
+ * @example
+ * ```ts
+ * import { Metadata } from '@grpc/grpc-js';
+ * import {
+ *   ensureResetMaskInMetadata,
+ *   RESET_MASK_HEADER,
+ * } from '@nebius/js-sdk/runtime/resetmask';
+ *
+ * const metadata = ensureResetMaskInMetadata(
+ *   { displayName: '', enabled: false },
+ *   new Metadata(),
+ * );
+ * metadata.get(RESET_MASK_HEADER); // ["displayName,enabled"]
+ * ```
+ *
+ * @returns The supplied metadata object, or a new metadata object.
+ * @throws {@link ErrRecursionTooDeep} if the message is too deeply nested.
+ */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function ensureResetMaskInMetadata(msg: any, metadata?: Metadata): Metadata {
   const md = metadata ?? new Metadata();
@@ -347,6 +394,38 @@ function rmFromObjectRecursive(
   }
 }
 
+/**
+ * Finds fields whose values ask the API to reset stored data.
+ *
+ * A reset value is the protobuf default for its field type. Examples include
+ * an empty string, `false`, numeric zero, empty bytes, an empty repeated field,
+ * and an absent message field. The result uses protobuf field names, such as
+ * `display_name`, when generated descriptor data is available.
+ *
+ * The function walks generated message descriptors when they exist. This
+ * keeps oneof, map, repeated-message, and well-known type handling consistent
+ * with protobuf semantics. For a plain object without descriptors, it uses
+ * conservative JavaScript object rules.
+ *
+ * This function does not change the input. It returns an empty mask when the
+ * message has no reset values. It returns `null` only when `update` is `null`
+ * or `undefined`.
+ *
+ * @example
+ * ```ts
+ * import { resetMaskFromMessage } from '@nebius/js-sdk/runtime/resetmask';
+ *
+ * const mask = resetMaskFromMessage({
+ *   displayName: '',
+ *   enabled: false,
+ *   description: 'keep this value',
+ * });
+ * mask?.marshal(); // "displayName,enabled"
+ * ```
+ *
+ * @throws {@link ErrRecursionTooDeep} if the message is more than 1,000
+ * object levels deep.
+ */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function resetMaskFromMessage(update: any): Mask | null {
   if (update == null) return null;

@@ -51,12 +51,21 @@ class PureFileCacheReceiver extends Receiver {
   }
 }
 
+/**
+ * Reads one named token only from the shared token-cache file.
+ *
+ * This bearer cannot obtain or renew a missing token. It returns an empty token
+ * when the entry is absent or expired. It is mainly a building block for
+ * composed credential flows.
+ */
 export class PureFileCacheBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.PureFileCacheBearer';
   private readonly _name: string;
   private readonly cache: ThrottledTokenCache;
   private readonly metrics: AuthMetricsRecorder;
 
+  /** Creates a new pure file cache bearer. */
   constructor(
     name: string,
     cacheFile: string = `${defaultConfigDir}/${defaultCredentialsFile}`,
@@ -78,6 +87,7 @@ export class PureFileCacheBearer extends Bearer {
   [custom](): string {
     return `${this.$type}(name=${this._name}, cache=${inspect(this.cache)})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: this.$type,
@@ -86,14 +96,17 @@ export class PureFileCacheBearer extends Bearer {
     };
   }
 
+  /** Returns the credential name. */
   get name(): string | undefined {
     return this._name;
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     return new PureFileCacheReceiver(this.cache, this.metrics);
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
   }

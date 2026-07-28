@@ -12,7 +12,7 @@ import {
 
 export function registerSelfCompatTests() {
   describe('self-compat serialization', () => {
-    test('generated comments presence (leading/trailing/detached/oneof)', () => {
+    test('generated comments include proto text and static fallbacks', () => {
       const fs = require('node:fs');
       const path = require('node:path');
 
@@ -37,6 +37,31 @@ export function registerSelfCompatTests() {
       // Optional field trailing comment (presence in interface JSDoc + property line)
       expect(txt).toContain('optional string trailing');
       expect(txt).toContain('optString?');
+      // Static fallbacks cover generated elements without proto comments.
+      expect(txt).toContain('Contains the `plain` protobuf field.');
+      expect(txt).toContain(
+        'Encodes, decodes, converts, and creates {@link SanitizeDemo} messages.',
+      );
+      expect(txt).toContain('Calls the `nebius.example.test.BehaviorService` service.');
+      const authoredMethodDoc = 'Updates a payload with authored method documentation.';
+      const sdkInterfaceStart = txt.indexOf('export interface BehaviorService {');
+      const sdkClassStart = txt.indexOf(
+        'export class BehaviorService implements BehaviorService {',
+      );
+      expect(sdkInterfaceStart).toBeGreaterThanOrEqual(0);
+      expect(sdkClassStart).toBeGreaterThan(sdkInterfaceStart);
+      const sdkInterfaceText = txt.slice(sdkInterfaceStart, sdkClassStart);
+      const sdkClassText = txt.slice(sdkClassStart);
+      expect(sdkInterfaceText.split(authoredMethodDoc)).toHaveLength(4);
+      expect(sdkClassText.split(authoredMethodDoc)).toHaveLength(5);
+      expect(txt).not.toContain('Calls the `Update` RPC.');
+      expect(txt).toContain('export interface PlainColorValueMembers');
+
+      const operationFile = path.join(ROOT, 'src/api/nebius/common/v1/index.ts');
+      const operationText = fs.readFileSync(operationFile, 'utf8');
+      expect(operationText).toContain('/** Contains one page of operations. */');
+      expect(operationText).toContain('/** Creates a client for the specified service address. */');
+      expect(operationText).toContain('/** Creates a low-level client for the service address. */');
     });
     test('service sendResetMask follows method_behavior options', () => {
       const our: any = requireOur();

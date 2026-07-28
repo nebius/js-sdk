@@ -197,6 +197,7 @@ message SanitizeDemo {
 }
 
 service BehaviorService {
+  // Updates a payload with authored method documentation.
   rpc Update(Payload) returns (Payload);
   rpc UpdateWithUpdater(Payload) returns (Payload) {
     option (nebius.method_behavior) = METHOD_UPDATER;

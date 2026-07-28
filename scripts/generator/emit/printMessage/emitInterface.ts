@@ -1,10 +1,15 @@
 import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 import { deprecationLine, scalarOrRef, tsFieldType } from '../helpers.js';
 
+/**
+ * Emits a generated message interface and its field documentation.
+ *
+ * Protobuf source comments take priority. Missing message and field comments
+ * receive static fallback text so generated API references stay complete.
+ */
 export function emitInterface(m: TSDescriptorMessage, typeName: string): string[] {
   const lines: string[] = [];
   const nonOneofFields = m.fields.filter((f) => !f.is_in_oneof);
-  // Emit doc comment for message if available (leading + trailing + detached)
   const msgComment =
     m.containingFile.getDocComment?.(m.path) ||
     m.containingFile.getLeadingComment?.(m.path) ||
@@ -16,12 +21,18 @@ export function emitInterface(m: TSDescriptorMessage, typeName: string): string[
     if (safe) for (const l of safe.split(/\r?\n/)) lines.push(` * ${l}`.replace(/\s+$/, ''));
     if (msgDep) lines.push(` * @deprecated ${msgDep}`);
     lines.push(' */');
+  } else {
+    lines.push(`/** Represents the \`${typeName}\` protobuf message. */`);
   }
   lines.push(`export interface ${m.tsName} {`);
+  lines.push(`  /** Contains the fully qualified protobuf type name. */`);
   lines.push(`  $type: "${typeName}";`);
+  lines.push(`  /** Preserves protobuf fields that this SDK version does not recognize. */`);
   lines.push(`  [unknownFieldsSymbol]?: Uint8Array | undefined;`);
   // logging/inspect support
+  lines.push(`  /** Formats the message for Node.js inspection. */`);
   lines.push(`  [custom]?: () => string;`);
+  lines.push(`  /** Returns a safe value for JSON logs. */`);
   lines.push(`  [customJson]?: () => unknown;`);
   for (const f of nonOneofFields) {
     if (f.containingMessage && f.containingMessage.isMapEntry()) continue;
@@ -50,6 +61,8 @@ export function emitInterface(m: TSDescriptorMessage, typeName: string): string[
       }
     } else if (fDep) {
       lines.push(`  /** @deprecated ${fDep} */`);
+    } else {
+      lines.push(`  /** Contains the \`${f.pb_name}\` protobuf field. */`);
     }
     lines.push(`  ${name}${opt}: ${tsType};`);
   }
@@ -66,6 +79,8 @@ export function emitInterface(m: TSDescriptorMessage, typeName: string): string[
         for (const cl of cLines) lines.push(`   * ${cl}`.replace(/\s+$/, ''));
         lines.push('   */');
       }
+    } else {
+      lines.push(`  /** Contains the selected value for the \`${o.pb_name}\` protobuf oneof. */`);
     }
     lines.push(`  ${prop}?:`);
     for (const f of o.fields) {

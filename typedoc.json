@@ -1,24 +1,66 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "entryPoints": ["src/sdk.ts", "src/api/nebius/**/*.ts", "src/runtime/**/*.ts"],
+  "plugin": ["./scripts/typedoc-fallback-docs.mjs"],
+  "entryPoints": [
+    "src/sdk.ts",
+    "src/api/buf/**/*.ts",
+    "src/api/google/**/*.ts",
+    "src/api/nebius/**/*.ts",
+    "src/runtime/**/*.ts"
+  ],
   "entryPointStrategy": "expand",
   "exclude": ["src/runtime/test/**", "src/generated_test/**"],
   "tsconfig": "tsconfig.json",
   "out": "docs",
   "readme": "README.md",
-  "excludeExternals": false,
+  "excludeExternals": true,
   "excludePrivate": true,
   "excludeProtected": true,
   "excludeInternal": true,
   "categorizeByGroup": true,
   "hideGenerator": true,
   "navigationLinks": {
-    "Services Index": "../documents/SERVICES.html",
+    "Services Index": "https://nebius.github.io/js-sdk/documents/SERVICES.html",
     "GitHub": "https://github.com/nebius/js-sdk"
   },
   "sidebarLinks": {
-    "Services Index": "../documents/SERVICES.html"
+    "Services Index": "https://nebius.github.io/js-sdk/documents/SERVICES.html"
   },
   "includeVersion": true,
+  "highlightLanguages": [
+    "bash",
+    "console",
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "jsonc",
+    "json5",
+    "protobuf",
+    "yaml",
+    "tsx",
+    "typescript"
+  ],
+  "ignoredHighlightLanguages": ["textproto"],
+  "validation": {
+    "notDocumented": true,
+    "rewrittenLink": false
+  },
+  "treatValidationWarningsAsErrors": true,
+  "requiredToBeDocumented": [
+    "Module",
+    "Namespace",
+    "Enum",
+    "EnumMember",
+    "Variable",
+    "Function",
+    "Class",
+    "Interface",
+    "Constructor",
+    "Property",
+    "Method",
+    "Accessor",
+    "TypeAlias"
+  ],
   "projectDocuments": [".typedoc/*.md"]
 }

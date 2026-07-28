@@ -1,4 +1,16 @@
-// Runtime protos public API (barrel)
+/**
+ * Re-exports the main protobuf runtime API used by generated Nebius SDK code.
+ *
+ * Application code normally imports generated message and enum exports. Use
+ * this module when code needs wire readers or writers, runtime descriptors,
+ * well-known-type codecs, enum factories, or preserved unknown fields.
+ *
+ * More specialized low-level helpers remain available from their direct
+ * `runtime/protos/*` modules.
+ *
+ * @packageDocumentation
+ */
+
 export {
   attachMessageDescriptor,
   BinaryReader,

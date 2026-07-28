@@ -1,17 +1,55 @@
+/**
+ * Configures SDK logging and creates named loggers with structured fields.
+ *
+ * Start with {@link resolveLogger} for a logger from a level, handler, or
+ * existing logger. Use {@link defaultHandler} when an application must control
+ * output format, filters, or environment integration. Implement
+ * {@link Handler} only for custom logging backends.
+ *
+ * This module does not automatically redact ordinary objects. Use
+ * {@link customJson} or sanitize sensitive fields before logging them.
+ *
+ * @packageDocumentation
+ */
+
 import * as fs from 'node:fs';
 import { inspect } from 'util';
 
 import { resolveHomeDir } from './path.js';
 
-// Symbol used to allow objects to provide a JSON-safe representation for
-// logging. Works similar to util.inspect.custom but is used for JSON
-// serialization of log argument values. If `argJson` is absent but
-// `util.inspect.custom` is present on an object, we fall back to using it
-// for safety reasons.
+/**
+ * Identifies an optional method that returns a JSON-safe logging value.
+ *
+ * Add this symbol method to a class when its normal properties contain
+ * secrets, circular references, or internal state that must not enter JSON
+ * logs. JSON handlers use this method before {@link custom}. If this method is
+ * absent, they use {@link custom} as a fallback.
+ *
+ * @example
+ * ```ts
+ * import { customJson } from '@nebius/js-sdk/runtime/util/logging';
+ *
+ * class Session {
+ *   constructor(private token: string) {}
+ *
+ *   [customJson]() {
+ *     return { type: 'Session', token: '[redacted]' };
+ *   }
+ * }
+ * ```
+ */
 export const customJson = Symbol('customJson');
+
+/**
+ * Re-exports Node.js
+ * {@link https://nodejs.org/api/util.html#utilinspectcustom | util.inspect.custom}
+ * for readable text logging.
+ */
 export const custom = inspect.custom;
 
-interface ConsoleLike {
+/** Defines the minimum console method that built-in log handlers need. */
+export interface ConsoleLike {
+  /** Writes one formatted record and any optional values. */
   error(message?: unknown, ...optionalParams: unknown[]): void;
 }
 
@@ -20,18 +58,33 @@ const dbg: (msg: string, ...args: unknown[]) => void = selfDebug
   ? (msg, ...args) => console.debug(msg, ...args)
   : () => {};
 
+/** Contains structured fields attached to a log record. */
 export type Argument = { [key: string]: unknown };
+
+/**
+ * Lists log severities from most detailed to disabled.
+ *
+ * A handler emits a record when its numeric level is at least the handler's
+ * configured level.
+ */
 export enum Level {
+  /** Represents the trace log level. */
   TRACE = 10,
+  /** Represents the debug log level. */
   DEBUG = 20,
+  /** Represents the info log level. */
   INFO = 30,
+  /** Represents the warn log level. */
   WARN = 40,
+  /** Represents the error log level. */
   ERROR = 50,
+  /** Represents the none log level. */
   NONE = 100,
 }
 
 function cleanTrace(trace: string, skip: number): string {
-  const lines = trace.split('\n').slice(1 + skip); // first line is "Error name: message"
+  // The first stack line contains the error name and message.
+  const lines = trace.split('\n').slice(1 + skip);
   if (lines.length <= skip) {
     return '';
   }
@@ -54,25 +107,30 @@ function getTrace(skip: number = 2): string {
   return cleanTrace(err.stack, skip);
 }
 
-// Exported helper to produce a JSON-safe representation of a value. This
-// mirrors the logic previously embedded inside JsonHandler.serializeValue so
-// callers (for example implementations of [customJson]) can call it
-// recursively.
+/**
+ * Converts a value to a JSON-safe form for structured logging.
+ *
+ * The function uses {@link customJson} first and {@link custom} second.
+ * It handles dates, errors, functions, symbols, and circular references. When
+ * conversion fails, it returns an inspected string instead of throwing.
+ * A {@link customJson} implementation can call this function to convert nested
+ * values.
+ *
+ * This function does not redact ordinary object properties. Objects that can
+ * contain credentials must provide a safe {@link customJson} method or be
+ * sanitized before logging.
+ */
 export function inspectJson(val: unknown): unknown {
-  // Primitives pass-through
   if (val === null) return null;
   const t = typeof val;
   if (t === 'string' || t === 'number' || t === 'boolean') return val;
   if (t === 'undefined') return undefined;
 
-  // If object has customJson or util.inspect.custom, prefer customJson then
-  // fallback to inspect.custom
   try {
     const anyVal = val as Record<PropertyKey, unknown> | undefined;
     const customFn = anyVal?.[customJson] ?? anyVal?.[custom];
     if (customFn !== undefined) {
       if (typeof customFn === 'function') {
-        // allow custom serializer to return anything JSON-serializable
         return customFn.call(anyVal);
       }
       return customFn;
@@ -81,14 +139,11 @@ export function inspectJson(val: unknown): unknown {
     dbg('inspectJson: custom serializer threw error', e);
   }
 
-  // Safe JSON serialization with circular refs handled
   try {
     const seen = new WeakSet<object>();
     const cloned = (function clone(v: unknown): unknown {
       if (v === null) return null;
       const vt = typeof v;
-      // Allow nested values to provide custom JSON representation via
-      // customJson or util.inspect.custom
       try {
         const maybeAny = v as Record<PropertyKey, unknown> | undefined;
         const nestedCustom = maybeAny?.[customJson] ?? maybeAny?.[custom];
@@ -130,7 +185,6 @@ export function inspectJson(val: unknown): unknown {
     })(val);
     return cloned;
   } catch (e) {
-    // As a last resort use inspect output
     try {
       return inspect(val, { depth: 2 });
     } catch {
@@ -139,14 +193,38 @@ export function inspectJson(val: unknown): unknown {
   }
 }
 
+/**
+ * Receives records from a {@link Logger}.
+ *
+ * Custom handlers should avoid throwing. {@link Logger} catches handler errors
+ * so a logging failure does not stop an SDK request.
+ */
 export interface Handler {
+  /**
+   * Writes one record.
+   *
+   * A negative `traceLevel` disables the call-site trace. A non-negative value
+   * controls how many logging frames the handler skips. A built-in handler
+   * with `alwaysAddTrace` enabled can override a negative value.
+   */
   log(level: Level, message: string, args: Argument, name: string, traceLevel: number): void;
 }
 
-type Filter = string | RegExp | ((name: string, level: Level) => boolean);
-type Filters = Filter[] | Filter;
+/**
+ * Selects log records by logger name and level.
+ *
+ * A string matches when the name contains it. A regular expression tests the
+ * name. A function can inspect both values. Do not use a stateful regular
+ * expression with the `g` or `y` flag. The handler retains its `lastIndex`
+ * value between records.
+ */
+export type Filter = string | RegExp | ((name: string, level: Level) => boolean);
 
-type FormatFunction = (opts: {
+/** Defines one filter or a list in which any matching filter accepts a record. */
+export type Filters = Filter[] | Filter;
+
+/** Formats the complete data for one text log record. */
+export type FormatFunction = (opts: {
   name: string;
   level: Level;
   time: Date;
@@ -154,9 +232,11 @@ type FormatFunction = (opts: {
   args?: string;
   trace?: string;
 }) => string;
-type ArgFormatFunction = (key: string, value: string) => string;
+/** Formats one structured field after the handler converts its value to text. */
+export type ArgFormatFunction = (key: string, value: string) => string;
 
-type Writer = (s: string) => void;
+/** Receives one or more formatted text chunks from a handler. */
+export type Writer = (s: string) => void;
 class ConsoleLikeWrapper implements ConsoleLike {
   constructor(private readonly output: (s: string) => void) {}
 
@@ -169,14 +249,22 @@ class ConsoleLikeWrapper implements ConsoleLike {
   }
 }
 
+/**
+ * Appends text log records to a file.
+ *
+ * A leading `~/` is expanded. The stream stays open for the lifetime of the
+ * wrapper, and this class does not provide a close operation.
+ */
 export class FileWrapper implements ConsoleLike {
   private fs: typeof fs;
   private stream: import('stream').Writable;
+  /** Creates a new file wrapper. */
   constructor(filePath: string) {
     const resolved = resolveHomeDir(filePath);
     this.fs = fs;
     this.stream = this.fs.createWriteStream(resolved, { flags: 'a' });
   }
+  /** Appends one formatted record and its optional values. */
   error(message?: unknown, ...optionalParams: unknown[]): void {
     this.stream.write(`${message}`);
     for (const p of optionalParams) {
@@ -186,7 +274,13 @@ export class FileWrapper implements ConsoleLike {
   }
 }
 
-type Output = ConsoleLike | Writer | string;
+/**
+ * Selects log output.
+ *
+ * A string is a file path. A function receives formatted text. A
+ * {@link ConsoleLike} receives records through {@link ConsoleLike.error}.
+ */
+export type Output = ConsoleLike | Writer | string;
 
 function outputToConsoleLike(output: Output | undefined): ConsoleLike {
   if (typeof output === 'function') {
@@ -199,6 +293,29 @@ function outputToConsoleLike(output: Output | undefined): ConsoleLike {
   return output;
 }
 
+/**
+ * Writes configurable plain-text log records.
+ *
+ * This handler is suitable for non-interactive output. It supports a custom
+ * formatter or a template with `name`, `level`, `time`, `message`, `args`, and
+ * `trace` placeholders.
+ *
+ * @example
+ * ```ts
+ * import {
+ *   ConsoleHandler,
+ *   Level,
+ *   Logger,
+ * } from '@nebius/js-sdk/runtime/util/logging';
+ *
+ * const handler = new ConsoleHandler({
+ *   level: Level.DEBUG,
+ *   format: '{time} [{level}] {name}: {message}{ args}',
+ * });
+ * const logger = new Logger(handler, 'example.worker');
+ * logger.debug('Started', { jobId: 'job-1' });
+ * ```
+ */
 export class ConsoleHandler implements Handler {
   private consoleLike: ConsoleLike;
   private level: Level;
@@ -208,6 +325,12 @@ export class ConsoleHandler implements Handler {
   private argDelimiter: string = ', ';
   private alwaysAddTrace: boolean = false;
 
+  /**
+   * Creates a plain-text handler.
+   *
+   * The default level is {@link Level.INFO}, the default filter matches every
+   * name, and the default output is the process console.
+   */
   constructor(opts?: {
     output?: Output;
     level?: Level;
@@ -262,9 +385,11 @@ export class ConsoleHandler implements Handler {
     }
   }
 
+  /** Returns a concise representation for text inspection. */
   [custom](): string {
     return `ConsoleHandler(level=${Level[this.level]})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): object {
     return {
       $type: 'ConsoleHandler',
@@ -290,6 +415,7 @@ export class ConsoleHandler implements Handler {
     return false;
   }
 
+  /** Converts structured fields to one delimiter-separated text string. */
   argString(args: Argument): string {
     const ret = [];
     for (const key in args) {
@@ -302,6 +428,7 @@ export class ConsoleHandler implements Handler {
     return ret.join(this.argDelimiter);
   }
 
+  /** Writes a log entry. */
   log(level: Level, message: string, args: Argument, name: string, traceLevel: number = 3): void {
     if (level < this.level) return;
     if (!this.matchFilters(name, level)) return;
@@ -333,6 +460,12 @@ export class ConsoleHandler implements Handler {
   }
 }
 
+/**
+ * Writes human-readable log records with optional ANSI colors.
+ *
+ * Error values include their message and stack. Use `colors: false` when the
+ * output is a file or another destination that does not process ANSI codes.
+ */
 export class PrettyHandler implements Handler {
   private consoleLike: ConsoleLike;
   private level: Level;
@@ -342,6 +475,12 @@ export class PrettyHandler implements Handler {
   private useColors: boolean;
   private alwaysAddTrace: boolean = false;
 
+  /**
+   * Creates a pretty handler.
+   *
+   * The default level is {@link Level.INFO}, all logger names match, colors are
+   * enabled, and output goes to the process console.
+   */
   constructor(opts?: {
     output?: Output;
     level?: Level;
@@ -360,9 +499,11 @@ export class PrettyHandler implements Handler {
     this.argDelimiter = opts?.argDelimiter ?? ', ';
     this.useColors = opts?.colors ?? true;
   }
+  /** Returns a concise representation for text inspection. */
   [custom](): string {
     return `PrettyHandler(level=${Level[this.level]})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): object {
     return {
       $type: 'PrettyHandler',
@@ -395,7 +536,6 @@ export class PrettyHandler implements Handler {
   }
 
   private levelColor(level: Level) {
-    // TRACE grey, DEBUG cyan, INFO green, WARN yellow, ERROR red
     switch (level) {
       case Level.TRACE:
         return '\x1b[90m';
@@ -417,13 +557,12 @@ export class PrettyHandler implements Handler {
     for (const key in args) {
       if (Object.prototype.hasOwnProperty.call(args, key)) {
         const val = args[key];
-        // Special-case Errors to show their message in red
         let valStr: string;
-        let valueColor = '\x1b[37m'; // default white
+        let valueColor = '\x1b[37m';
         try {
           if (val instanceof Error) {
             valStr = `${val.name}: ${val.message}`;
-            valueColor = '\x1b[31m'; // red for errors
+            valueColor = '\x1b[31m';
             if (val.stack) {
               valStr += `\n${this.colorize(
                 cleanTrace(val.stack, val.message.split('\n').length - 1),
@@ -432,7 +571,6 @@ export class PrettyHandler implements Handler {
             }
           } else {
             valStr = inspect(val, { depth: 5 });
-            // primitives & Date -> teal (use cyan ANSI as teal approximation)
             const vt = typeof val;
             const isPrimitiveOrDate =
               val === null ||
@@ -440,12 +578,12 @@ export class PrettyHandler implements Handler {
               vt === 'boolean' ||
               vt === 'undefined' ||
               val instanceof Date;
+            // ANSI does not define teal, so use cyan.
             valueColor = isPrimitiveOrDate ? '\x1b[36m' : '\x1b[37m';
           }
         } catch (e) {
           valStr = String(val);
         }
-        // keys grey, values colored based on type
         const k = this.colorize(key, '\x1b[90m');
         const v = this.colorize(valStr, valueColor);
         parts.push(this.argFormat(k, v));
@@ -454,6 +592,7 @@ export class PrettyHandler implements Handler {
     return parts.join(this.argDelimiter);
   }
 
+  /** Writes a log entry. */
   log(level: Level, message: string, args: Argument, name: string, traceLevel: number): void {
     if (level < this.level) return;
     if (!this.matchFilters(name, level)) return;
@@ -464,14 +603,13 @@ export class PrettyHandler implements Handler {
     const timeStr = new Date().toISOString();
     const levelStr = Level[level] ?? String(level);
 
-    const timeColored = this.colorize(timeStr, '\x1b[34m'); // blue
+    const timeColored = this.colorize(timeStr, '\x1b[34m');
     const levelColored = this.colorize(levelStr, this.levelColor(level));
     const nameStr = name;
-    // Errors: message red, otherwise keep message yellow
     const messageColored = this.colorize(
       message,
       level >= Level.ERROR ? '\x1b[31m' : level >= Level.WARN ? '\x1b[33m' : '\x1b[37m',
-    ); // red for ERROR, yellow for WARN, white otherwise
+    );
 
     const argStr = Object.keys(args).length ? ` ${this.formatArgs(args)}` : '';
 
@@ -494,12 +632,25 @@ export class PrettyHandler implements Handler {
   }
 }
 
+/**
+ * Writes one JSON object per log record.
+ *
+ * Structured fields appear at the top level. Reserved record fields (`time`,
+ * `level`, `name`, `message`, and `trace` when generated) replace fields with
+ * the same names from `args`. Values pass through {@link inspectJson}.
+ */
 export class JsonHandler implements Handler {
   private consoleLike: ConsoleLike;
   private level: Level;
   private filters: Filters;
   private alwaysAddTrace: boolean = false;
 
+  /**
+   * Creates a JSON handler.
+   *
+   * The default level is {@link Level.INFO}, all logger names match, and output
+   * goes to the process console.
+   */
   constructor(opts?: {
     output?: Output;
     level?: Level;
@@ -511,9 +662,11 @@ export class JsonHandler implements Handler {
     this.level = opts?.level ?? Level.INFO;
     this.filters = opts?.filters ?? /.*/;
   }
+  /** Returns a concise representation for text inspection. */
   [custom](): string {
     return `JsonHandler(level=${Level[this.level]})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): object {
     return {
       $type: 'JsonHandler',
@@ -543,6 +696,7 @@ export class JsonHandler implements Handler {
     return inspectJson(val);
   }
 
+  /** Writes a log entry. */
   log(level: Level, message: string, args: Argument, name: string, traceLevel: number = 3): void {
     if (level < this.level) return;
     if (!this.matchFilters(name, level)) return;
@@ -582,6 +736,12 @@ export class JsonHandler implements Handler {
   }
 }
 
+/**
+ * Parses a logging level name or exact numeric value.
+ *
+ * Names are case-insensitive. `WARNING` maps to {@link Level.WARN}, and `OFF`
+ * maps to {@link Level.NONE}. Returns `undefined` for unsupported values.
+ */
 export function parseLevel(v?: string | number): Level | undefined {
   if (v === undefined || v === null) return undefined;
   if (typeof v === 'number') {
@@ -600,7 +760,6 @@ export function parseLevel(v?: string | number): Level | undefined {
 
   const s = String(v).trim().toUpperCase();
   if (s === '') return undefined;
-  // numeric string
   if (/^\d+$/.test(s)) {
     const n = parseInt(s, 10);
     return parseLevel(n);
@@ -627,6 +786,12 @@ export function parseLevel(v?: string | number): Level | undefined {
 }
 
 let deprecatedWarningLogger: Logger | null = null;
+/**
+ * Writes a best-effort warning for deprecated generated API elements.
+ *
+ * Before {@link setDeprecatedWarningLogger} runs, output goes to
+ * `console.warn`. Logging errors are ignored.
+ */
 export function deprecatedWarn(
   message: string,
   type?: string,
@@ -657,23 +822,69 @@ export function deprecatedWarn(
     });
   }
 }
+/**
+ * Sets the base logger for future deprecation warnings.
+ *
+ * Warnings use a detached logger named `nebius.deprecated`.
+ */
 export function setDeprecatedWarningLogger(logger: Logger): void {
   dbg('setDeprecatedWarningLogger: called');
   deprecatedWarningLogger = logger.detached('nebius.deprecated');
 }
 
-type HandlerOpts = {
+/** Configures {@link defaultHandler} and fallback handling in {@link resolveLogger}. */
+export type HandlerOpts = {
+  /** Selects a console-like object, writer function, or append-only file path. */
   output?: Output;
+  /** Sets the minimum emitted level. The default is {@link Level.INFO}. */
   level?: Level;
+  /** Selects logger names. Any matching filter accepts the record. */
   filters?: Filters;
+  /** Selects the pretty colored handler when JSON output is disabled. */
   colored?: boolean;
+  /** Adds a call-site trace even when the logger does not request one. */
   alwaysAddTrace?: boolean;
+  /** Selects newline-delimited JSON output. */
   useJson?: boolean;
 };
 
+/**
+ * Creates a log handler from options and Nebius logging environment variables.
+ *
+ * Explicit scalar options override their matching environment settings.
+ * Important settings include `NEBIUS_LOG`, `NEBIUS_LOG_JSON`,
+ * `NEBIUS_LOG_ALWAYS_ADD_TRACE`, and `NEBIUS_LOG_OUTPUT`.
+ *
+ * Per-name variables add environment filters. The suffix is matched with a
+ * case-sensitive `loggerName.includes(suffix)` check. For example,
+ * `NEBIUS_LOG_auth=DEBUG` matches `nebius.auth`. If `opts.filters` is present,
+ * the environment filters are added to it; they are not replaced.
+ * A per-name filter cannot lower the handler's global minimum level. To emit
+ * debug records, also set `NEBIUS_LOG=DEBUG` or pass
+ * `level: Level.DEBUG`.
+ *
+ * Without explicit output, `NEBIUS_LOG_OUTPUT` accepts `stderr`, `stdout`,
+ * `console`, `none`, or a file path. Color selection also follows `NO_COLOR`,
+ * `FORCE_COLOR`, and whether stderr is a terminal.
+ *
+ * @example
+ * ```ts
+ * import {
+ *   defaultHandler,
+ *   Level,
+ *   Logger,
+ * } from '@nebius/js-sdk/runtime/util/logging';
+ *
+ * const handler = defaultHandler({
+ *   level: Level.DEBUG,
+ *   useJson: true,
+ *   filters: ['nebius.auth', 'nebius.request'],
+ * });
+ * const logger = new Logger(handler, 'nebius.request');
+ * ```
+ */
 export function defaultHandler(opts?: HandlerOpts): Handler {
   dbg('defaultHandler: called', { opts });
-  // Detect if stderr is a TTY and supports colors. Respect NO_COLOR and FORCE_COLOR env vars.
   const env = typeof process !== 'undefined' && process.env ? process.env : {};
   const forceColor = env.FORCE_COLOR;
   const noColor = env.NO_COLOR;
@@ -714,7 +925,6 @@ export function defaultHandler(opts?: HandlerOpts): Handler {
   const colored = opts?.colored !== undefined ? opts.colored : detectedColored;
   dbg('defaultHandler: color detection', { forceColor, noColor, isTTY, detectedColored, colored });
 
-  // Resolve levels from env variables. NEBIUS_LOG sets global level. NEBIUS_LOG_<NAME> sets per-name filter levels.
   const globalFromEnv = parseLevel(env.NEBIUS_LOG);
   const baseLevel = opts?.level ?? globalFromEnv ?? Level.INFO;
   dbg('defaultHandler: base level resolved', { baseLevel, globalFromEnv, optsLevel: opts?.level });
@@ -733,26 +943,21 @@ export function defaultHandler(opts?: HandlerOpts): Handler {
     const val = env[k];
     const lvl = parseLevel(val);
     if (lvl === undefined) continue;
-    // add filter: include logs for names that contain this name and meet level threshold
     envFilters.push((n: string, l: Level) => n.includes(name) && l >= lvl);
     envFiltersMap.set(name, lvl);
   }
 
-  // combine provided filters with env filters
   let combinedFilters: Filter[];
   if (opts?.filters !== undefined) {
     dbg('defaultHandler: using filters from options and env filters', { envFiltersMap });
-    // if caller supplied filters, combine with env filters
     const baseFilters = opts.filters;
     combinedFilters = Array.isArray(baseFilters) ? [...baseFilters] : [baseFilters];
     combinedFilters.push(...envFilters);
   } else if (envFilters.length > 0) {
     dbg('defaultHandler: using only env filters', envFiltersMap);
-    // if caller didn't supply filters but env defines some, use only env filters
     combinedFilters = [...envFilters];
   } else {
     dbg('defaultHandler: no filters defined, using match-all');
-    // neither caller nor env supplied filters -> default to match all
     combinedFilters = [/./];
   }
 
@@ -795,6 +1000,21 @@ function loggerChain(handler: Handler, names: string[]): Logger {
   return ret;
 }
 
+/**
+ * Converts a logger specification to a {@link Logger}.
+ *
+ * A {@link Handler} is wrapped in a new logger chain. An existing
+ * {@link Logger} is returned unchanged, so `defaultName` and `opts` do not
+ * affect it.
+ *
+ * A supported level name or exact {@link Level} value creates a default
+ * handler at that level. An unsupported value falls back to `opts`, the
+ * environment, or {@link Level.INFO}. An absent value creates a default
+ * handler from `opts` and the environment.
+ *
+ * A dotted `defaultName` creates the same hierarchy as repeated
+ * {@link Logger.child} calls.
+ */
 export function resolveLogger(
   spec?: Logger | Handler | string | number,
   defaultName: string[] | string = ['nebius.default'],
@@ -804,19 +1024,16 @@ export function resolveLogger(
   if (typeof defaultName === 'string') {
     defaultName = defaultName.split('.').filter((x) => x.length > 0);
   }
-  // If already a Logger, return it
   if (spec && typeof (spec as Logger).getHandler === 'function') {
     dbg('resolveLogger: spec is already a Logger');
     return spec as Logger;
   }
 
-  // If it's a Handler, wrap in a Logger
   if (spec && typeof (spec as Handler).log === 'function') {
     dbg('resolveLogger: spec is a Handler');
     return loggerChain(spec as Handler, defaultName);
   }
 
-  // If string/number treat as level
   if (typeof spec === 'string' || typeof spec === 'number') {
     dbg('resolveLogger: spec is a level string/number');
     const lvl = parseLevel(spec as string | number);
@@ -832,7 +1049,6 @@ export function resolveLogger(
   }
   dbg('resolveLogger: spec is empty or unrecognized');
 
-  // Fallback to default handler
   const handler = defaultHandler({
     output: opts?.output,
     level: opts?.level,
@@ -845,24 +1061,59 @@ export function resolveLogger(
 }
 
 class NoopHandler implements Handler {
-  log(_level: Level, _message: string, _args: Argument, _name: string, _traceLevel: number): void {
-    // no-op
-  }
+  log(_level: Level, _message: string, _args: Argument, _name: string, _traceLevel: number): void {}
 }
-export const noopHandler = new NoopHandler();
+/** Discards all log records without side effects. */
+export const noopHandler: Handler = new NoopHandler();
 
+/**
+ * Writes structured records through a shared {@link Handler}.
+ *
+ * Logger instances are lightweight. Use {@link child} for a component below
+ * the current name, {@link withFields} for fields shared by later records, and
+ * {@link detached} for an independent full name.
+ *
+ * Do not add bearer tokens, private keys, or other secrets as fields. Text
+ * handlers inspect ordinary objects, and JSON handlers only redact values that
+ * define a safe {@link customJson} method.
+ *
+ * @example
+ * ```ts
+ * import { resolveLogger } from '@nebius/js-sdk/runtime/util/logging';
+ *
+ * const logger = resolveLogger('INFO', 'example.application');
+ * const requestLogger = logger.child('request', { requestId: 'req-1' });
+ * const error = new Error('connection closed');
+ * requestLogger.info('Sending request', { attempt: 1 });
+ * requestLogger.error('Request failed', { error }, true);
+ * ```
+ */
 export class Logger {
+  /**
+   * Creates a logger.
+   *
+   * Most applications should use {@link resolveLogger}. A logger without a
+   * handler uses {@link noopHandler}.
+   */
   constructor(
     private handler: Handler = noopHandler,
     private name: string = 'default',
     private withFieldsArg: Argument = {},
     private parent?: Logger,
-    public traceByDefault: boolean = false, // not propagated to children
+    /**
+     * Adds a call-site trace to this logger's named-level methods by default.
+     *
+     * {@link child}, {@link sibling}, and {@link detached} do not inherit this
+     * value.
+     */
+    public traceByDefault: boolean = false,
   ) {}
 
+  /** Returns a concise representation for text inspection. */
   [custom](): string {
     return `Logger(name=${this.name}, handler=${inspect(this.handler)})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): object {
     return {
       $type: 'Logger',
@@ -871,26 +1122,32 @@ export class Logger {
     };
   }
 
+  /** Returns the full logger name. */
   get getName(): string {
     return this.name;
   }
 
+  /** Writes an informational record. Set `withTrace` to add a call-site trace. */
   info(message: string, args?: Argument, withTrace?: boolean) {
     this._log(Level.INFO, message, args ?? {}, withTrace);
   }
 
+  /** Writes a warning record. Set `withTrace` to add a call-site trace. */
   warn(message: string, args?: Argument, withTrace?: boolean) {
     this._log(Level.WARN, message, args ?? {}, withTrace);
   }
 
+  /** Writes an error record. Set `withTrace` to add a call-site trace. */
   error(message: string, args?: Argument, withTrace?: boolean) {
     this._log(Level.ERROR, message, args ?? {}, withTrace);
   }
 
+  /** Writes a debug record. Set `withTrace` to add a call-site trace. */
   debug(message: string, args?: Argument, withTrace?: boolean) {
     this._log(Level.DEBUG, message, args ?? {}, withTrace);
   }
 
+  /** Writes a trace-level record. Set `withTrace` to add a call-site trace. */
   trace(message: string, args?: Argument, withTrace?: boolean) {
     this._log(Level.TRACE, message, args ?? {}, withTrace);
   }
@@ -911,12 +1168,27 @@ export class Logger {
     }
   }
 
+  /**
+   * Writes a record at an explicit level.
+   *
+   * If `withTrace` is absent, this method does not add a call-site trace. It
+   * does not use {@link traceByDefault}. The named-level methods use that
+   * default when `withTrace` is absent.
+   */
   log(level: Level, message: string, args?: Argument, withTrace?: boolean) {
     this._log(level, message, args ?? {}, !!withTrace);
   }
 
+  /**
+   * Returns a logger with additional fields and the same name.
+   *
+   * New fields replace existing fields with the same keys. The method copies
+   * only top-level fields. Later top-level changes to the input object do not
+   * change the returned logger, but nested objects and arrays stay shared. The
+   * returned logger inherits this logger's `traceByDefault` value unless the
+   * `traceByDefault` argument supplies another value.
+   */
   withFields(fields: Argument, traceByDefault?: boolean): Logger {
-    // withFields is sort of the same logger, so keep the same traceByDefault
     return new Logger(
       this.handler,
       this.name,
@@ -926,6 +1198,13 @@ export class Logger {
     );
   }
 
+  /**
+   * Returns a logger with an independent full name.
+   *
+   * The new logger uses the same handler but does not inherit this logger's
+   * fields. It keeps `additionalArguments` by reference. Later changes to that
+   * object change fields written by the detached logger.
+   */
   detached(
     name: string,
     additionalArguments: Argument = {},
@@ -934,6 +1213,12 @@ export class Logger {
     return new Logger(this.handler, name, additionalArguments, this, traceByDefault);
   }
 
+  /**
+   * Returns a logger whose name is this name plus `.` and the suffix.
+   *
+   * The child inherits this logger's fields. Its `traceByDefault` value is
+   * independent and defaults to `false`.
+   */
   child(
     suffix: string,
     additionalArguments: Argument = {},
@@ -948,6 +1233,12 @@ export class Logger {
     );
   }
 
+  /**
+   * Returns a logger beside this logger in the name hierarchy.
+   *
+   * The sibling keeps this logger's fields. If this logger has no parent, the
+   * supplied name becomes the complete logger name.
+   */
   sibling(
     siblingName: string,
     additionalArguments: Argument = {},
@@ -978,6 +1269,7 @@ export class Logger {
     );
   }
 
+  /** Returns the log handler. */
   get getHandler(): Handler {
     return this.handler;
   }
