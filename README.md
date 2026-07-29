@@ -30,7 +30,7 @@ npm install
 npm run build
 ```
 
-The package supports Node.js versions 22 through 25. The release build uses
+The package supports Node.js versions 22 through 26. The release build uses
 Node.js 24.
 
 ## Import the SDK
