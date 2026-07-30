@@ -1,3 +1,12 @@
+/**
+ * Loads SDK defaults and credentials from Nebius CLI configuration.
+ *
+ * Create {@link Config} and pass it as the SDK `configReader` option. Explicit
+ * SDK options can override the endpoint and parent ID that this module reads.
+ *
+ * @packageDocumentation
+ */
+
 import { existsSync, readFileSync } from 'fs';
 
 import { parse as parseYAML } from 'yaml';
@@ -44,7 +53,15 @@ import type {
   GetCredentialsOptions,
 } from './cli_config_interfaces.js';
 
+/** Reports an invalid or incomplete Nebius CLI configuration. */
 export class ConfigError extends Error {}
+/**
+ * Reports that the selected profile cannot supply a parent ID.
+ *
+ * The SDK handles this error and leaves automatic
+ * `parentId` insertion disabled. Callers that use {@link Config.parentId}
+ * directly can catch it.
+ */
 export class NoParentIdError extends ConfigError {}
 
 interface ConfigMetricInput {
@@ -72,26 +89,93 @@ function tagCredentialSource(source: string, err: unknown): never {
   throw new CredentialSourceError(source, err);
 }
 
+/**
+ * Controls how {@link Config} selects and reads a Nebius CLI profile.
+ *
+ * Explicit values have priority over environment values. Environment values
+ * have priority over values in the selected profile.
+ */
 export interface ConfigOptions {
+  /** Sets the OAuth client ID required by a federation profile. */
   clientId?: string;
+  /** Sets the YAML config file path. `~` is expanded. */
   configFile?: string;
+  /**
+   * Selects a profile.
+   *
+   * If omitted, the reader uses the profile environment variable, the file
+   * default, or the only profile in the file, in that order.
+   */
   profile?: string | null;
+  /** Sets the profile environment-variable name. */
   profileEnv?: string;
+  /** Sets the access-token environment-variable name. */
   tokenEnv?: string;
+  /** Ignores token, profile, and endpoint environment variables when `true`. */
   noEnv?: boolean;
+  /** Disables use of the profile parent ID when `true`. */
   noParentId?: boolean;
+  /** Sets retries for credential exchange and impersonation. The default is 2. */
   maxRetries?: number;
+  /** Sets the service endpoint and overrides environment and profile values. */
   endpoint?: string;
+  /** Sets the endpoint environment-variable name. */
   endpointEnv?: string;
+  /** Receives configuration and authorization metrics. */
   metrics?: MetricsLike;
+  /** Receives authorization metrics when {@link ConfigOptions.metrics} is not set. */
   authMetrics?: AuthMetricsLike;
+  /**
+   * Exchanges the selected credentials for this service account.
+   *
+   * This value overrides `impersonate-service-account-id` in the profile.
+   */
   impersonateServiceAccountId?: string;
-  // optional logger configuration for config reader
+  /** Sets the logger used while loading configuration and credentials. */
   logger?: SDKLogger | SDKHandler | string | number;
 }
 
+/**
+ * Reads credentials and SDK defaults from a Nebius CLI configuration file.
+ *
+ * Construction reads and validates the YAML file synchronously. The file must
+ * exist even when an environment token supplies the credentials. The selected
+ * profile can provide `parent-id`, `endpoint`, federation credentials, a token
+ * file, or service account credentials.
+ *
+ * Pass this object as
+ * {@link https://nebius.github.io/js-sdk/interfaces/sdk.SDKOptions.html#configreader | SDKOptions.configReader}.
+ * The SDK then uses its endpoint, parent ID, and credentials. An environment
+ * access token has priority over profile credentials.
+ *
+ * @example
+ * ```ts
+ * import { SDK } from '@nebius/js-sdk';
+ * import { Config } from '@nebius/js-sdk/runtime/cli_config';
+ *
+ * const config = new Config({
+ *   clientId: 'example-application',
+ *   profile: 'default',
+ * });
+ * const sdk = new SDK({
+ *   configReader: config,
+ *   userAgentPrefix: 'example-application/1.0',
+ * });
+ * try {
+ *   console.log(await sdk.whoami());
+ * } finally {
+ *   await sdk.close();
+ * }
+ * ```
+ *
+ * @throws {Error} The file is missing or unreadable, the YAML cannot be
+ * parsed, or the selected profile is invalid. Semantic profile errors are
+ * instances of {@link ConfigError}.
+ */
 export class Config implements ConfigReaderLike {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.Config';
+  /** Tells the SDK that this reader reports its own credential-resolution metrics. */
   public readonly emitsCredentialsResolveMetrics = true;
   private readonly _clientId: string | undefined;
   private _priorityBearer: EnvBearer | null = null;
@@ -107,6 +191,7 @@ export class Config implements ConfigReaderLike {
   private readonly _impersonateServiceAccountId: string | undefined;
   private _profile!: Record<string, unknown>;
 
+  /** Reads the configuration file and selects one profile. */
   constructor(options: ConfigOptions = {}) {
     const {
       clientId,
@@ -165,9 +250,11 @@ export class Config implements ConfigReaderLike {
     }
   }
 
+  /** Formats the selected configuration for Node.js inspection. */
   [custom](): string {
     return `Config(profile=${this._profileName}, file=${this._configFile})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: this.$type,
@@ -176,10 +263,17 @@ export class Config implements ConfigReaderLike {
     };
   }
 
+  /** Returns the configured logger. */
   logger(): SDKLogger {
     return this._logger;
   }
 
+  /**
+   * Replaces all metric callbacks.
+   *
+   * When construction already recorded a config-load result, a newly attached
+   * collector receives that result once.
+   */
   setMetrics(metrics: MetricsLike): void {
     const configLoadMetric = this._lastConfigLoadMetric;
     const previous = this._metrics;
@@ -196,6 +290,7 @@ export class Config implements ConfigReaderLike {
     }
   }
 
+  /** Replaces only the authorization metric callbacks. */
   setAuthMetrics(metrics: AuthMetricsLike): void {
     this._authMetrics = metrics;
   }
@@ -209,6 +304,12 @@ export class Config implements ConfigReaderLike {
     recordConfigMetric(this._metrics, 'configLoad', 'file', result, durationMs);
   }
 
+  /**
+   * Returns the configured parent resource ID.
+   *
+   * @throws {@link NoParentIdError} Parent ID use is disabled, missing, or empty.
+   * @throws {@link ConfigError} The profile value is not a string.
+   */
   parentId(): string | undefined {
     if (this._noParentId) {
       throw new NoParentIdError('Config is set to not use parent id from the profile.');
@@ -226,10 +327,17 @@ export class Config implements ConfigReaderLike {
     return pid;
   }
 
+  /** Returns the selected CLI profile name. */
   profileName(): string | undefined {
     return this._profileName ?? undefined;
   }
 
+  /**
+   * Returns the configured service endpoint.
+   *
+   * An explicit option has priority over the endpoint environment variable.
+   * The environment value has priority over the profile value.
+   */
   endpoint(): string | undefined {
     if (typeof this._endpoint !== 'string' || this._endpoint.trim() === '') {
       return undefined;
@@ -237,6 +345,20 @@ export class Config implements ConfigReaderLike {
     return this._endpoint;
   }
 
+  /**
+   * Creates credentials for the selected source.
+   *
+   * The order is: environment token, profile token file, then the profile
+   * `auth-type`. Supported auth types are federation and service account.
+   * When impersonation is set, the returned bearer exchanges these credentials
+   * for the target service account.
+   *
+   * Credential objects normally perform network work when the first SDK
+   * request asks for a token. Federation credentials can open a browser at
+   * that time.
+   *
+   * @throws {@link ConfigError} Credential fields are missing or invalid.
+   */
   getCredentials(opts: GetCredentialsOptions = {}): Credentials {
     const start = metricStart();
     let source = 'unknown';

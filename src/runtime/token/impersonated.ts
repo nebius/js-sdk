@@ -159,12 +159,27 @@ class ImpersonatedReceiver extends Receiver {
   }
 }
 
+/**
+ * Exchanges an actor credential for an access token that acts as a service
+ * account.
+ *
+ * The source bearer supplies the actor token. The actor must have permission to
+ * impersonate `serviceAccountId`. This low-level bearer does not cache the
+ * impersonated token.
+ */
 export class ImpersonatedBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.ImpersonatedBearer';
   private svc: ExchangeSvc | Promise<ExchangeSvc> | null = null;
   private source: Bearer;
   private readonly metrics: AuthMetricsRecorder;
 
+  /**
+   * Creates an impersonation exchange.
+   *
+   * `sdk` can be a ready SDK, an SDK promise, or `null`. Calling
+   * {@link ImpersonatedBearer.receiver} while no SDK is set throws.
+   */
   constructor(
     private readonly serviceAccountId: string,
     source: Bearer,
@@ -188,6 +203,7 @@ export class ImpersonatedBearer extends Bearer {
     )})`;
   }
 
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       maxRetries: this.maxRetries,
@@ -197,18 +213,22 @@ export class ImpersonatedBearer extends Bearer {
     };
   }
 
+  /** Returns the credential name. */
   get name(): string | undefined {
     return `impersonated/${this.serviceAccountId}/${this.source.name ?? 'anonymous'}`;
   }
 
+  /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this.source;
   }
 
+  /** Returns the provider name for authorization metrics. */
   get metricProvider(): string {
     return this.metrics.provider;
   }
 
+  /** Sets the SDK. */
   setSDK(sdk: SDKInterface | Promise<SDKInterface> | null): void {
     if (!sdk) {
       this.svc = null;
@@ -219,11 +239,13 @@ export class ImpersonatedBearer extends Bearer {
       : new ExchangeSvc(sdk);
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
     this.source = bindAuthMetrics(this.source, this.metrics);
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     if (!this.svc) throw new Error('SDK is not set for the bearer.');
     return new ImpersonatedReceiver(
@@ -237,18 +259,57 @@ export class ImpersonatedBearer extends Bearer {
   }
 }
 
+/**
+ * Adds in-memory renewal to {@link ImpersonatedBearer}.
+ *
+ * Use this variant for normal SDK requests so repeated calls reuse the
+ * impersonated access token until renewal is required.
+ *
+ * @example
+ * ```ts
+ * import { SDK } from '@nebius/js-sdk';
+ * import { CachedImpersonatedBearer } from '@nebius/js-sdk/runtime/token/impersonated';
+ * import { EnvBearer } from '@nebius/js-sdk/runtime/token/static';
+ *
+ * // This SDK makes the unauthenticated token-exchange RPC.
+ * const exchangeSdk = new SDK({
+ *   userAgentPrefix: 'example-application/1.0',
+ * });
+ * const credentials = new CachedImpersonatedBearer(
+ *   'serviceaccount-e00example',
+ *   new EnvBearer(),
+ *   exchangeSdk,
+ * );
+ * const sdk = new SDK({
+ *   credentials,
+ *   userAgentPrefix: 'example-application/1.0',
+ * });
+ *
+ * try {
+ *   // Use sdk clients here.
+ * } finally {
+ *   await sdk.close();
+ *   await exchangeSdk.close();
+ * }
+ * ```
+ */
 export class CachedImpersonatedBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.CachedImpersonatedBearer';
   private readonly impersonated: ImpersonatedBearer;
   private readonly source: NamedBearer;
 
+  /** Creates a new cached impersonated bearer. */
   constructor(
     serviceAccountId: string,
     source: Bearer,
     sdk: SDKInterface | Promise<SDKInterface> | null,
     opts?: {
+      /** Maximum total authentication attempts for one receiver. Defaults to 2. */
       maxRetries?: number;
+      /** Optional authentication metrics destination. */
       metrics?: AuthMetricsInput;
+      /** Optional destination for diagnostic events. */
       logger?: Logger;
     },
   ) {
@@ -273,18 +334,22 @@ export class CachedImpersonatedBearer extends Bearer {
     );
   }
 
+  /** Returns the credential name. */
   get name(): string | undefined {
     return this.source.name;
   }
 
+  /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this.source;
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     return this.source.receiver();
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.impersonated.setMetrics(metrics);
     const setter = (this.source.wrapped as { setMetrics?: (m: AuthMetricsInput) => void })
@@ -293,6 +358,7 @@ export class CachedImpersonatedBearer extends Bearer {
   }
 }
 
+/** @internal */
 export const __private = {
   ImpersonatedReceiver,
   tokenExchangeAccessTokenType,

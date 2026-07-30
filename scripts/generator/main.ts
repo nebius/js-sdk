@@ -4,16 +4,13 @@ import Long from 'long';
 
 import { Field, File, FileSet } from './descriptors.js';
 import { createResponse, generateIndexContent, pushFile, toIndexFilePath } from './emit.js';
-// Import Nebius option extensions so Service/Method/etc options are properly augmented when decoding.
 import { decodeRequest, encodeResponse, readAllStdin } from './io.js';
-// Import Nebius option extensions (moved original index to extensions during bootstrap prior to regeneration)
+// Registers Nebius option extensions before the generator decodes descriptors.
 import './extensions/index.js';
 import {
   CodeGeneratorResponse,
   CodeGeneratorResponse_Feature,
 } from './protos/protobuf/compiler/index.js';
-// (SourceCodeInfo import no longer needed after in-FileSet normalization)
-// raw_service_options pre-scan no longer needed; extensions are decoded directly via augmentation.
 
 // Local mirror of the type index consumed by printService
 type TypeIndex = Map<

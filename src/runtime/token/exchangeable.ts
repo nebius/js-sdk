@@ -22,14 +22,18 @@ import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 import type { SDKInterface } from '../../sdk.js';
 import type { AuthorizationOptions } from '../authorization/provider.js';
 
+/** Reports an unsupported token-exchange response. */
 export class UnsupportedResponseError extends Error {
+  /** Creates a new unsupported response error. */
   constructor(expected: string, got: unknown) {
     super(`Unsupported response received: expected ${expected}, received ${typeof got}`);
     this.name = 'UnsupportedResponseError';
   }
 }
 
+/** Reports an unsupported token type. */
 export class UnsupportedTokenTypeError extends Error {
+  /** Creates a new unsupported token type error. */
   constructor(tokenType: string) {
     super(`Unsupported token received: expected Bearer, received ${tokenType}`);
     this.name = 'UnsupportedTokenTypeError';
@@ -140,11 +144,28 @@ class ExchangeableReceiver extends Receiver {
   }
 }
 
+/**
+ * Exchanges an assertion or external credential for a Nebius access token.
+ *
+ * The requester builds the exchange request. The SDK supplies the generated
+ * token-exchange client. This low-level bearer does not cache or renew access
+ * tokens; high-level bearers such as
+ * {@link https://nebius.github.io/js-sdk/classes/runtime_token_service_account.ServiceAccountBearer.html | ServiceAccountBearer}
+ * wrap it in a
+ * {@link https://nebius.github.io/js-sdk/classes/runtime_token_renewable.RenewableBearer.html | RenewableBearer}.
+ */
 export class ExchangeableBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.ExchangeableBearer';
   private svc: ExchangeSvc | Promise<ExchangeSvc> | null = null;
   private readonly metrics: AuthMetricsRecorder;
 
+  /**
+   * Creates an exchange bearer.
+   *
+   * `sdk` can be set later with {@link ExchangeableBearer.setSDK}. Calling
+   * {@link ExchangeableBearer.receiver} before an SDK is set throws.
+   */
   constructor(
     private readonly requester: TokenRequester,
     sdk: SDKInterface | Promise<SDKInterface> | null,
@@ -157,6 +178,7 @@ export class ExchangeableBearer extends Bearer {
     this.setSDK(sdk);
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
   }
@@ -164,6 +186,7 @@ export class ExchangeableBearer extends Bearer {
   [custom](): string {
     return `${this.$type}(requester=${inspect(this.requester)})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: this.$type,
@@ -172,6 +195,12 @@ export class ExchangeableBearer extends Bearer {
     };
   }
 
+  /**
+   * Sets or clears the SDK used for token exchange.
+   *
+   * A promise delays client creation until the SDK is ready. Passing `null`
+   * disables receiver creation.
+   */
   setSDK(sdk: SDKInterface | Promise<SDKInterface> | null): void {
     if (!sdk) {
       this.svc = null;
@@ -191,6 +220,7 @@ export class ExchangeableBearer extends Bearer {
     }
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     if (!this.svc) throw new Error('SDK is not set for the bearer.');
     return new ExchangeableReceiver(
@@ -203,6 +233,13 @@ export class ExchangeableBearer extends Bearer {
   }
 }
 
+/**
+ * Builds a fresh token-exchange request.
+ *
+ * Implementations can sign an assertion or read a rotating external
+ * credential. The returned request can contain secrets and must not be logged.
+ */
 export interface TokenRequester {
+  /** Returns the exchange token request. */
   getExchangeTokenRequest(): ExchangeTokenRequest;
 }

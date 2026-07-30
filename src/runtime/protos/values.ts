@@ -1,7 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { BinaryReader, BinaryWriter } from './core.js';
 
-// Struct/Value/ListValue
+/**
+ * Copies protobuf `Value` JSON data to the runtime JavaScript representation.
+ *
+ * Objects and arrays are copied recursively. Primitive values are returned
+ * unchanged.
+ */
 export function valueFromJSON(o: any): any {
   if (o === null) return null;
   if (Array.isArray(o)) return o.map(valueFromJSON);
@@ -12,6 +17,7 @@ export function valueFromJSON(o: any): any {
   }
   return o;
 }
+/** Copies a runtime protobuf `Value` to JSON-safe objects, arrays, or primitives. */
 export function valueToJSON(v: any): any {
   if (v === null) return null;
   if (Array.isArray(v)) return v.map(valueToJSON);
@@ -23,7 +29,12 @@ export function valueToJSON(v: any): any {
   return v;
 }
 
-// Binary encode/decode helpers for Struct/Value/ListValue
+/**
+ * Writes a JavaScript value as a protobuf `Value` message.
+ *
+ * Supported values are `null`, numbers, strings, booleans, arrays, and plain
+ * object-like values.
+ */
 export function writeValue(writer: BinaryWriter, v: any): void {
   if (v === null) {
     writer.uint32((1 << 3) | 0).int32(0); // NullValue.NULL_VALUE = 0
@@ -56,6 +67,12 @@ export function writeValue(writer: BinaryWriter, v: any): void {
     (w as any).join();
   }
 }
+/**
+ * Reads one length-delimited protobuf `Value` message body.
+ *
+ * When the input contains several oneof alternatives, the last decoded value
+ * wins. Unknown fields are skipped.
+ */
 export function readValue(reader: BinaryReader, length: number): any {
   const end = reader.pos + length;
   let out: any = null;

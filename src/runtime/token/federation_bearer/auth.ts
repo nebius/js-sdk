@@ -1,21 +1,29 @@
 import { spawn, spawnSync } from 'child_process';
-import type { IncomingMessage } from 'http';
-import { request as httpRequest } from 'http';
+import { request as httpRequest, type IncomingMessage } from 'http';
 import { request as httpsRequest } from 'https';
 import { URL } from 'url';
 
 import { Logger } from '../../util/logging.js';
-
 import { AUTH_ENDPOINT, TOKEN_ENDPOINT } from './constants.js';
 import { isWsl } from './is_wsl.js';
 import { PKCE } from './pkce.js';
 import { CallbackHandler } from './server.js';
 
+/**
+ * Contains the OAuth token endpoint result.
+ *
+ * `access_token` and `refresh_token` are secrets. Do not log this object.
+ */
 export interface GetTokenResult {
+  /** Access token returned by the federation endpoint. */
   access_token: string;
+  /** OAuth token type, normally `Bearer`. */
   token_type: string;
+  /** Number of seconds until the access token expires. */
   expires_in: number;
+  /** Contains the scope. */
   scope?: string;
+  /** Contains the refresh token. */
   refresh_token?: string;
 }
 
@@ -112,6 +120,14 @@ function doHttpRequest(
   });
 }
 
+/**
+ * Starts a loopback callback server and obtains an OAuth authorization code.
+ *
+ * The function writes the authorization URL, optionally opens it in a browser,
+ * and waits until the browser redirects to the local server. `timeoutMs`
+ * limits that wait. The returned verifier is secret and is required by
+ * {@link getToken}.
+ */
 export async function getCode(params: {
   clientId: string;
   authEndpoint: string;
@@ -159,6 +175,12 @@ export async function getCode(params: {
   return { code, state: cb.state, redirectUri, verifier: pkce.verifier };
 }
 
+/**
+ * Exchanges an authorization code and PKCE verifier for OAuth tokens.
+ *
+ * The function rejects non-success HTTP responses. Treat the returned access
+ * token and optional refresh token as secrets.
+ */
 export async function getToken(params: {
   clientId: string;
   tokenEndpoint: string;
@@ -209,6 +231,13 @@ export async function getToken(params: {
   return data;
 }
 
+/**
+ * Completes the interactive OAuth authorization-code flow with PKCE.
+ *
+ * This combines {@link getCode} and {@link getToken}. `timeoutMs` applies to
+ * the wait for the browser callback. Set `noBrowserOpen` to print the URL
+ * without launching a browser.
+ */
 export async function authorize(params: {
   clientId: string;
   federationEndpoint: string;

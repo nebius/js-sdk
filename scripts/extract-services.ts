@@ -127,15 +127,10 @@ function generateMarkdown(services: ServiceInfo[]): string {
         markdown += `${service.description}\n\n`;
       }
 
-      // Create TypeDoc link - remove 'src/' and '/index.ts', then replace slashes with underscores
-      const docLink = service.relativePath
-        .replace('src/', '')
-        .replace('/index.ts', '.ts')
-        .replace('.ts', '')
-        .replace(/\//g, '_');
+      const docModule = service.relativePath.replace('src/', '').replace('/index.ts', '');
 
       markdown += `**Package:** \`nebius.${service.namespace}.${service.version}\`\n\n`;
-      markdown += `**API Documentation:** [${service.className} API Reference](../classes/${docLink}.${service.className}.html)\n\n`;
+      markdown += `**API Documentation:** {@link ${docModule}.${service.className} | ${service.className} API Reference}\n\n`;
       markdown += `---\n\n`;
     }
   }

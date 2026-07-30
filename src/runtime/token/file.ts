@@ -42,11 +42,31 @@ class FileReceiver extends Receiver {
   }
 }
 
+/**
+ * Reads a fixed access token from a text file for every authentication fetch.
+ *
+ * The file must contain one non-empty line. Leading and trailing whitespace is
+ * removed. This bearer does not renew the token, but it sees file changes on
+ * later requests.
+ *
+ * @example
+ * ```ts
+ * import { SDK } from '@nebius/js-sdk';
+ * import { FileBearer } from '@nebius/js-sdk/runtime/token/file';
+ *
+ * const sdk = new SDK({
+ *   credentials: new FileBearer('~/.config/my-app/token'),
+ *   userAgentPrefix: 'example-application/1.0',
+ * });
+ * ```
+ */
 export class FileBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.FileBearer';
   private readonly filePath: string;
   private readonly metrics: AuthMetricsRecorder;
 
+  /** Creates a bearer for `filePath`. A leading `~` resolves to the home directory. */
   constructor(filePath: string, metrics?: AuthMetricsInput) {
     super();
     this.filePath = resolveHomeDir(filePath);
@@ -55,6 +75,7 @@ export class FileBearer extends Bearer {
   [custom](): string {
     return `FileBearer(filePath=${this.filePath})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: 'FileBearer',
@@ -62,10 +83,17 @@ export class FileBearer extends Bearer {
     };
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     return new FileReceiver(this);
   }
 
+  /**
+   * Reads and validates the current file contents.
+   *
+   * Rejects when the file is empty, contains an embedded newline, or cannot be
+   * read. The returned token has no known expiration.
+   */
   async fetchToken(): Promise<Token> {
     const start = metricStart();
     try {
@@ -84,6 +112,7 @@ export class FileBearer extends Bearer {
     }
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
   }

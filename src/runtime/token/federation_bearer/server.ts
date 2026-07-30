@@ -7,6 +7,13 @@ import { Logger } from '../../util/logging.js';
 
 import { PKCE } from './pkce.js';
 
+/**
+ * Receives one OAuth authorization code on a loopback HTTP server.
+ *
+ * The server binds to `127.0.0.1` on an available port. It accepts the code
+ * only when the returned state matches the generated state. This class is a
+ * low-level part of interactive federation login.
+ */
 export class CallbackHandler {
   private _code: string | null = null;
   private _state: string = new PKCE().verifier;
@@ -16,6 +23,7 @@ export class CallbackHandler {
   private _codePromiseResolve: ((code: string | null) => void) | null = null;
   private _codePromiseReject: ((err: Error) => void) | null = null;
   private readonly logger?: Logger;
+  /** Creates a new callback handler. */
   constructor(logger?: Logger) {
     this.logger = logger?.withFields({ state: this._state }) ?? undefined;
     this._codePromise = new Promise<string | null>((resolve, reject) => {
@@ -24,17 +32,21 @@ export class CallbackHandler {
     });
   }
 
+  /** Returns the OAuth state value. */
   get state(): string {
     return this._state;
   }
+  /** Returns the received authorization code. */
   get code(): string | null {
     return this._code;
   }
+  /** Returns the redirect URI after the server starts; throws before then. */
   get addr(): string {
     if (!this._addr) throw new Error('not started');
     return this._addr;
   }
 
+  /** Starts the local callback server. Call {@link waitForCode} to await the request. */
   async listenAndServe(): Promise<void> {
     if (this._server) {
       this.logger?.debug('listenAndServe: already started');
@@ -108,6 +120,7 @@ export class CallbackHandler {
     }
   }
 
+  /** Stops the local callback server. */
   async shutdown(): Promise<void> {
     if (!this._server) return;
     this.logger?.trace('shutdown: shutting down server');
@@ -117,6 +130,7 @@ export class CallbackHandler {
     this._server = null;
   }
 
+  /** Waits for a valid code and rejects when the optional timeout expires. */
   async waitForCode(timeoutMs: number | undefined): Promise<string | null> {
     if (this._code) return this._code;
     if (!this._codePromise) return null;

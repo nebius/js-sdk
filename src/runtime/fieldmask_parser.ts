@@ -1,16 +1,29 @@
-/*
-  Parser for field mask strings with grouping parentheses compatible with Go implementation.
-  Grammar (subset):
-    mask      := union
-    union     := path ("," path)*
-    path      := factor ("." factor)*
-    factor    := segment | group
-    segment   := "*" | plainKey | quotedKey
-    group     := "(" union? ")"   // empty group allowed
-    plainKey  := [a-zA-Z0-9_]+
-    quotedKey := '"' <json string characters> '"'
-  Whitespace around commas/dots and inside groups is ignored.
-*/
+/**
+ * Parses the extended field-mask syntax used by the SDK.
+ *
+ * The parser accepts wildcards, JSON-quoted keys, and groups after a common
+ * path prefix. It ignores whitespace around commas and dots and inside groups.
+ * Empty groups are valid.
+ *
+ * The grammar is:
+ *
+ * ```text
+ * mask      := union
+ * union     := path ("," path)*
+ * path      := factor ("." factor)*
+ * factor    := segment | group
+ * segment   := "*" | plainKey | quotedKey
+ * group     := "(" union? ")"
+ * plainKey  := [a-zA-Z0-9_]+
+ * quotedKey := '"' <JSON string characters> '"'
+ * ```
+ *
+ * Application code normally uses {@link Mask.parse} or
+ * {@link https://nebius.github.io/js-sdk/functions/runtime_fieldmask.parseFieldMask.html | parseFieldMask()}
+ * from `@nebius/js-sdk/runtime/fieldmask`.
+ *
+ * @packageDocumentation
+ */
 
 import { FieldKey, Mask } from './fieldmask.js';
 
@@ -53,7 +66,6 @@ function parsePlainKey(s: string, i: number): { key: string; next: number } {
   return { key: s.slice(i, j), next: j };
 }
 
-// Path set helpers
 type Path = (string | '*')[];
 
 function concatPathSets(a: Path[], b: Path[]): Path[] {
@@ -76,16 +88,13 @@ function unionPathSets(a: Path[], b: Path[]): Path[] {
   return out;
 }
 
-// Recursive descent parsing
 function parseFactor(s: string, idxRef: { i: number }): Path[] {
   let i = skipWs(s, idxRef.i);
   if (i >= s.length) throw new ParseError('Unexpected end of input');
   const ch = s[i]!;
   if (ch === '(') {
-    // group
     i = skipWs(s, i + 1);
     const innerRef = { i };
-    // handle empty group
     if (innerRef.i < s.length && s[innerRef.i] === ')') {
       idxRef.i = innerRef.i + 1;
       return [[]];
@@ -150,6 +159,21 @@ function parseUnion(s: string, idxRef: { i: number }): { paths: Path[]; next: nu
   return { paths, next: idxRef.i };
 }
 
+/**
+ * Parses field-mask text into a {@link Mask}.
+ *
+ * The syntax supports comma-separated paths, `*` segments, JSON-quoted keys,
+ * and groups after a shared prefix. For example,
+ * `spec.(resources,cloud_init),metadata` contains three paths. Spaces around
+ * separators are ignored.
+ *
+ * Most applications can use {@link Mask.parse} or
+ * {@link https://nebius.github.io/js-sdk/functions/runtime_fieldmask.parseFieldMask.html | parseFieldMask()}
+ * from `@nebius/js-sdk/runtime/fieldmask`.
+ *
+ * @throws `Error` when the input contains an invalid key, an incomplete path,
+ * an unclosed group, or other trailing text.
+ */
 export function parseMask(source: string): Mask {
   if (typeof source !== 'string') throw new ParseError('source must be a string');
   const s = source;

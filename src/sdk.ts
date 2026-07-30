@@ -1,10 +1,13 @@
 import {
+  type CallOptions,
+  type ChannelCredentials,
   Client,
+  type ClientOptions,
   connectivityState,
   credentials,
+  type Interceptor,
   Metadata,
 } from '@grpc/grpc-js';
-import type { CallOptions, ChannelCredentials, ClientOptions, Interceptor } from '@grpc/grpc-js';
 
 import {
   GetProfileRequest,
@@ -51,31 +54,75 @@ import type { ConfigReaderLike } from './runtime/cli_config_interfaces.js';
 import type { Request, RetryOptions } from './runtime/request.js';
 import type { Token as AccessToken, Bearer as TokenBearer } from './runtime/token.js';
 
+/**
+ * Defines the SDK functions that generated service clients use.
+ *
+ * Implement this interface only when you need to provide a custom runtime to
+ * generated clients. Most applications should create an {@link SDK} instead.
+ * A generated client uses this interface to resolve its endpoint, reuse a gRPC
+ * channel, add authorization, and write logs.
+ */
 export interface SDKInterface {
+  /** Returns one shared gRPC client for the exact address string. */
   getClientByAddress(address: string): Client;
+  /**
+   * Resolves a protobuf service name to a gRPC address.
+   *
+   * `apiServiceName` is the API-specific endpoint name when it differs from
+   * the protobuf service name.
+   */
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string;
+  /** Returns the parent ID that generated requests can insert when it is absent. */
   parentId(): string | undefined;
+  /** Returns the provider that authenticates new requests, or `undefined`. */
   getAuthorizationProvider(): AuthorizationProvider | undefined;
+  /** Logs SDK and request events. */
   logger: SDKLogger;
 }
 
-// Rich credentials union similar to Python Channel
+/**
+ * Defines direct federation credentials.
+ *
+ * Use these options when you do not use a CLI {@link ConfigReaderLike}. The
+ * first token request can open a browser and wait for the user to sign in.
+ */
 export type FederationCredentialsOptions = {
+  /** Selects federation credentials. */
   type: 'federation';
+  /** Identifies the local profile. */
   profileName: string;
+  /** Identifies the OAuth client. */
   clientId: string;
+  /** Sets the federation API endpoint. */
   federationEndpoint: string;
+  /** Identifies the federation. */
   federationId: string;
+  /** Receives browser authorization instructions. */
   writer?: (s: string) => void;
+  /** Prevents the SDK from opening a browser. */
   noBrowserOpen?: boolean;
+  /** Limits browser authorization in milliseconds. */
   timeoutMs?: number;
 };
 
+/**
+ * Defines the service account values accepted by {@link SDKOptions.credentials}.
+ *
+ * Keep private keys outside source control. A reader can load the key only
+ * when the SDK needs it.
+ */
 export type ServiceAccountInit =
   | SA
   | SAReader
   | { serviceAccountId: string; publicKeyId: string; privateKeyPem: string };
 
+/**
+ * Defines the credential values that the SDK accepts.
+ *
+ * A string is treated as an access token. `{ tokenFile }` reads a token from a
+ * file. Bearers and authorization providers can renew credentials. `null` and
+ * `undefined` create an SDK without authorization.
+ */
 export type CredentialsInit =
   | AuthorizationProvider
   | TokenBearer
@@ -89,37 +136,94 @@ export type CredentialsInit =
   | null
   | undefined;
 
+/**
+ * Configures an {@link SDK} instance.
+ *
+ * {@link SDKOptions.credentials} has priority over
+ * {@link SDKOptions.authorizationProvider}. Explicit {@link SDKOptions.domain}
+ * and {@link SDKOptions.parentId} values have priority over values from
+ * {@link SDKOptions.configReader}. Per-address connection values have priority
+ * over global connection values.
+ */
 export interface SDKOptions {
+  /** Resolves service names before the conventional resolver is used. */
   resolver?: Resolver;
+  /** Replaces placeholders such as `{domain}` in resolved addresses. */
   substitutions?: Record<string, string>;
+  /** Sets the default Nebius API domain. The default is the public Nebius domain. */
   domain?: string;
+  /**
+   * Reads credentials, an endpoint, and a parent ID from a configuration source.
+   *
+   * Use
+   * {@link https://nebius.github.io/js-sdk/classes/runtime_cli_config.Config.html | Config}
+   * from `runtime/cli_config` to read the Nebius CLI file.
+   */
   configReader?: ConfigReaderLike;
-  parentId?: string; // optional parent id override
-  authorizationProvider?: AuthorizationProvider; // deprecated when credentials is provided
-  insecure?: boolean; // when true use plaintext connection
-  clientOptions?: Partial<ClientOptions>; // custom grpc-js client options (channel args, etc.)
-  interceptors?: Interceptor[]; // extra interceptors (e.g., idempotency, cleaners)
-  // Python-like credentials acceptance and extra knobs
+  /**
+   * Sets the default parent ID.
+   *
+   * Generated create and list requests can use this value when their
+   * `parentId` field is empty.
+   */
+  parentId?: string;
+  /** Sets an authorization provider when {@link SDKOptions.credentials} is not set. */
+  authorizationProvider?: AuthorizationProvider;
+  /**
+   * Uses plaintext gRPC connections instead of TLS.
+   *
+   * Use this only for a trusted local test endpoint.
+   */
+  insecure?: boolean;
+  /** Sets gRPC channel options for all addresses. */
+  clientOptions?: Partial<ClientOptions>;
+  /** Adds gRPC interceptors to all clients. */
+  interceptors?: Interceptor[];
+  /**
+   * Sets credentials for authenticated requests.
+   *
+   * Prefer a bearer or provider for a long-running process because it can
+   * renew tokens. Do not log a token string.
+   */
   credentials?: CredentialsInit;
-  // TLS roots: if provided, overrides system roots; if omitted, system roots are used
+  /** Replaces the system TLS root certificates for gRPC and federation HTTP calls. */
   tlsRootCAs?: Buffer | string | string[];
-  // If credentials are not provided, try to pull from configReader.getCredentials using these hints
+  /** Receives federation authorization instructions from the configuration reader. */
   federationInvitationWriter?: (s: string) => void;
+  /** Prevents browser launch during federation authorization. */
   federationInvitationNoBrowserOpen?: boolean;
+  /** Limits federation authorization in milliseconds. */
   federationInvitationTimeoutMs?: number;
-  userAgentPrefix?: string; // Optional user agent prefix for requests
-  keepalive?: KeepaliveOptions | false; // false disables SDK default keepalive
-  metrics?: MetricsLike; // public config-reader and auth metrics callbacks
-  authMetrics?: AuthMetricsLike; // auth-only metrics callbacks
-  // Logger options: can be a Logger instance, a Handler, or a level (string/number)
+  /**
+   * Adds the application name and version before the SDK user-agent.
+   *
+   * Use a stable value such as `example-application/1.0`.
+   */
+  userAgentPrefix?: string;
+  /** Configures gRPC keepalive, or disables it when set to `false`. */
+  keepalive?: KeepaliveOptions | false;
+  /** Receives configuration and authorization metrics. Callback errors are ignored. */
+  metrics?: MetricsLike;
+  /** Receives authorization metrics when {@link SDKOptions.metrics} is not set. */
+  authMetrics?: AuthMetricsLike;
+  /** Sets a logger, log handler, or log level. */
   logger?: SDKLogger | SDKHandler | string | number;
-  // Per-address overrides (by fully resolved address like "compute.localhost:1234")
+  /**
+   * Overrides connection settings for each exact resolved address.
+   *
+   * Overrides affect a client only when the SDK creates it. Configure them
+   * before the first request to that address.
+   */
   perAddress?: Record<
     string,
     {
+      /** Replaces TLS or plaintext channel credentials for this address. */
       credentials?: ChannelCredentials;
+      /** Selects plaintext (`true`) or TLS (`false`) for this address. */
       insecure?: boolean;
+      /** Overrides global gRPC client options for this address. */
       clientOptions?: Partial<ClientOptions>;
+      /** Runs after global interceptors for this address. */
       interceptors?: Interceptor[];
     }
   >;
@@ -131,6 +235,33 @@ function isObject(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null;
 }
 
+/**
+ * Creates service clients and owns shared SDK resources.
+ *
+ * Pass the SDK to a generated service client. A generated client creates a
+ * {@link Request} when you call a service method. The SDK reuses one gRPC
+ * channel for each resolved address and applies credentials to each request.
+ *
+ * Set {@link SDKOptions.userAgentPrefix} to your application name and version.
+ * Create one SDK for the lifetime of an application, and call
+ * {@link SDK.close} during shutdown.
+ *
+ * @example
+ * ```ts
+ * import { SDK } from '@nebius/js-sdk';
+ * import { EnvBearer } from '@nebius/js-sdk/runtime/token/static';
+ *
+ * const sdk = new SDK({
+ *   credentials: new EnvBearer('NEBIUS_IAM_TOKEN'),
+ *   userAgentPrefix: 'example-application/1.0',
+ * });
+ * try {
+ *   console.log(await sdk.whoami());
+ * } finally {
+ *   await sdk.close();
+ * }
+ * ```
+ */
 export class SDK implements SDKInterface {
   private _resolver: Resolver;
   private _parentId: string | undefined;
@@ -155,6 +286,16 @@ export class SDK implements SDKInterface {
   private _metrics: MetricsLike;
   private _authMetrics: AuthMetricsLike;
 
+  /**
+   * Creates an SDK with the selected credentials and connection settings.
+   *
+   * Construction reads a supplied configuration reader and prepares TLS
+   * settings. It does not send an API request. Some credential types defer
+   * network access until the first authenticated request.
+   *
+   * @throws {Error} A supplied configuration reader can throw when its
+   * configuration is invalid.
+   */
   constructor(options?: SDKOptions) {
     this._logger = resolveLogger(options?.logger, 'nebius.sdk');
     this._logger.debug('Initializing Nebius SDK');
@@ -290,6 +431,7 @@ export class SDK implements SDKInterface {
     this._initAuthorization(options);
   }
 
+  /** Returns the SDK logger. */
   get logger(): SDKLogger {
     return this._logger;
   }
@@ -406,9 +548,7 @@ export class SDK implements SDKInterface {
       this._logger.trace('Using static token for authorization.', {
         token: init,
       });
-      return new TokenAuthProvider(
-        instrumentBearer(new StaticBearer(init), this._authMetrics),
-      );
+      return new TokenAuthProvider(instrumentBearer(new StaticBearer(init), this._authMetrics));
     }
 
     // token string
@@ -526,11 +666,7 @@ export class SDK implements SDKInterface {
   }
 
   private _isAccessToken(x: unknown): x is AccessToken {
-    return (
-      isObject(x) &&
-      typeof x.token === 'string' &&
-      x.$type === 'nebius.iam.AccessToken'
-    );
+    return isObject(x) && typeof x.token === 'string' && x.$type === 'nebius.iam.AccessToken';
   }
 
   private _isTokenFile(x: unknown): x is { tokenFile: string } {
@@ -549,9 +685,7 @@ export class SDK implements SDKInterface {
 
   private _isSAReader(x: unknown): x is SAReader {
     return (
-      isObject(x) &&
-      typeof x.read === 'function' &&
-      typeof x.getExchangeTokenRequest === 'function'
+      isObject(x) && typeof x.read === 'function' && typeof x.getExchangeTokenRequest === 'function'
     );
   }
 
@@ -570,6 +704,13 @@ export class SDK implements SDKInterface {
     );
   }
 
+  /**
+   * Returns a shared gRPC client for an address.
+   *
+   * The first call creates the client. Later calls with the same address return
+   * the same object. Changes from {@link addInterceptors} or
+   * {@link setClientOptions} do not affect an existing client.
+   */
   getClientByAddress(address: string): Client {
     this._logger.trace('Getting gRPC client by address.', { address });
     if (!this._clients.has(address)) {
@@ -582,6 +723,7 @@ export class SDK implements SDKInterface {
     return this._clients.get(address)!;
   }
 
+  /** Resolves a service name to a gRPC address. */
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string {
     const address = this._resolver.resolve(serviceName, apiServiceName);
     this._logger.debug('Resolved address from service name.', {
@@ -592,12 +734,18 @@ export class SDK implements SDKInterface {
     return address;
   }
 
-  // Expose TLS roots for non-gRPC HTTP calls (e.g., federation flows)
+  /**
+   * Returns the TLS root certificates for HTTP and gRPC calls.
+   *
+   * Credential helpers use this value so that their HTTP calls trust the same
+   * roots as SDK gRPC calls. Do not modify a returned buffer.
+   */
   getTlsRootCAs(): Buffer | string | string[] | undefined {
     this._logger.trace('Getting TLS root CAs.');
     return this._tlsRootCAs;
   }
 
+  /** Returns per-address channel credentials when set, or the SDK default. */
   getAddressCredentials(address: string): ChannelCredentials {
     const logger = this._logger.withFields({ address });
     const addrCfg = this._perAddress.get(address);
@@ -621,11 +769,19 @@ export class SDK implements SDKInterface {
     return this._creds;
   }
 
+  /** Returns the current authorization provider. */
   getAuthorizationProvider(): AuthorizationProvider | undefined {
     this._logger.trace('Getting authorization provider.');
     return this._authorizationProvider;
   }
 
+  /**
+   * Returns the combined gRPC options for an address.
+   *
+   * The result contains keepalive settings and the SDK user-agent. Per-address
+   * options override global options. Global interceptors run before
+   * per-address interceptors.
+   */
   getAddressOptions(address: string): Partial<ClientOptions> {
     const logger = this._logger.withFields({ address });
     logger.trace('Getting gRPC client options by address.');
@@ -668,34 +824,69 @@ export class SDK implements SDKInterface {
     return ret as Partial<ClientOptions>;
   }
 
+  /** Returns the default parent ID. */
   parentId(): string | undefined {
     return this._parentId;
   }
 
-  // Allow changing the authorization provider at runtime
+  /**
+   * Replaces the authorization provider for new requests.
+   *
+   * The change does not restart a request that is already running. Pass
+   * `undefined` to disable authorization for later requests.
+   */
   setAuthorizationProvider(provider: AuthorizationProvider | undefined): void {
     this._logger.trace('Setting authorization provider.', { provider });
     this._authorizationProvider = provider;
   }
 
+  /**
+   * Uses a token bearer as the authorization provider for new requests.
+   *
+   * The SDK also connects the bearer to the configured authorization metrics.
+   */
   setTokenBearerAsAuthorization(bearer: import('./runtime/token.js').Bearer): void {
     this._logger.trace('Setting token bearer as authorization.', { bearer });
-    this._authorizationProvider = new TokenAuthProvider(instrumentBearer(bearer, this._authMetrics));
+    this._authorizationProvider = new TokenAuthProvider(
+      instrumentBearer(bearer, this._authMetrics),
+    );
   }
 
-  // Allow adding extra interceptors (idempotency/cleaner analogs)
+  /**
+   * Adds interceptors to clients that the SDK creates later.
+   *
+   * This method does not modify clients that are already in the shared client
+   * cache.
+   */
   addInterceptors(...ints: Interceptor[]): void {
     this._logger.trace('Adding extra interceptors.', { count: ints.length });
     this._extraInterceptors.push(...ints);
   }
 
-  // Replace client options (channel args, defaults)
+  /**
+   * Replaces the default gRPC client options for clients created later.
+   *
+   * This method does not modify clients that already exist.
+   */
   setClientOptions(opts: Partial<ClientOptions> | undefined): void {
     this._logger.trace('Setting client options.', { opts });
     this._clientOptions = opts;
   }
 
-  // Convenience method similar to Python SDK.whoami()
+  /**
+   * Returns the Nebius IAM profile for the current credentials.
+   *
+   * Await {@link Request.result}, or await the request directly. Use this call
+   * to verify credentials before starting other work.
+   *
+   * @example
+   * ```ts
+   * const request = sdk.whoami();
+   * const profile = await request.result;
+   * console.log(profile);
+   * console.log('request ID', await request.requestId);
+   * ```
+   */
   whoami(
     metadata?: Metadata,
     options?: Partial<CallOptions> & RetryOptions,
@@ -709,7 +900,22 @@ export class SDK implements SDKInterface {
     return client.get(req, metadata, options);
   }
 
-  // Gracefully close any attached authorization providers and channels
+  /**
+   * Closes the authorization provider and all shared gRPC channels.
+   *
+   * The default grace period is 20 seconds. After that period, this method
+   * returns even if a close watcher has not completed. Do not start new
+   * requests after calling this method.
+   *
+   * @example
+   * ```ts
+   * try {
+   *   await sdk.whoami();
+   * } finally {
+   *   await sdk.close();
+   * }
+   * ```
+   */
   async close(graceMs?: number): Promise<void> {
     this._logger.debug('Closing SDK.', { graceMs });
     const channelWatchers: Promise<void>[] = [];

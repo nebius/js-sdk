@@ -146,7 +146,6 @@ function buildWrapperContent(
   typeIndex: Map<string, TypeInfo>,
   outFileName: string,
 ): string {
-  // const pkg = fd.package || '';
   const serviceBaseName = sd.name!;
   const clientName = `${serviceBaseName}Client`;
   const moduleBase = toModuleBase(fd.name!); // nebius/.../<file base>

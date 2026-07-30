@@ -88,10 +88,27 @@ class FederationReceiver extends Receiver {
   }
 }
 
+/**
+ * Runs one interactive OAuth federation login.
+ *
+ * This low-level bearer starts a loopback HTTP callback server and opens the
+ * authorization URL in a browser. Set `noBrowserOpen` when the user must open
+ * the URL manually. It does not cache or renew the returned token; normal SDK
+ * configuration uses
+ * {@link https://nebius.github.io/js-sdk/classes/runtime_token_federation_account.FederationAccountBearer.html | FederationAccountBearer}
+ * for those features.
+ */
 export class FederationBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.FederationBearer';
   private readonly logger?: Logger;
   private readonly metrics: AuthMetricsRecorder;
+  /**
+   * Creates an interactive login source.
+   *
+   * `writer` receives the authorization URL. The default writer uses
+   * `console.log`. `ca` adds a trusted CA certificate for the token request.
+   */
   constructor(
     private readonly profileName: string,
     private readonly clientId: string,
@@ -114,12 +131,14 @@ export class FederationBearer extends Bearer {
     this.logger?.trace('bearer: created');
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
   }
   [custom](): string {
     return `${this.$type}(profileName=${this.profileName}, clientId=${this.clientId}, federationEndpoint=${this.federationEndpoint}, federationId=${this.federationId}, noBrowserOpen=${this.noBrowserOpen})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: this.$type,
@@ -131,10 +150,12 @@ export class FederationBearer extends Bearer {
     };
   }
 
+  /** Returns the credential name. */
   get name(): string | undefined {
     return `federation/${this.federationEndpoint}/${this.federationId}/${this.profileName}`;
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     this.logger?.trace('bearer.receiver');
     return new FederationReceiver(

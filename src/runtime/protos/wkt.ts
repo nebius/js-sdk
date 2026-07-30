@@ -209,6 +209,17 @@ const VALUE_KIND_DESCRIPTOR: MessageDescriptor = {
   },
 };
 
+/**
+ * Provides codecs and reflection descriptors for protobuf well-known types.
+ *
+ * Generated code uses these entries for timestamps, durations, field masks,
+ * `Any`, `Struct`, `Value`, `ListValue`, and {@link Empty}. Timestamps use
+ * Day.js values, durations use Day.js durations, field masks use `string[]`,
+ * and structured values use normal JavaScript values.
+ *
+ * Application code normally calls the generated message functions that refer
+ * to this registry instead of calling registry entries directly.
+ */
 export const wkt = {
   ['.google.protobuf.Timestamp']: {
     $type: 'google.protobuf.Timestamp',
@@ -473,10 +484,18 @@ export const wkt = {
   },
 } as const;
 
+/** Represents the complete built-in well-known-type registry. */
 export type WktRegistry = typeof wkt;
 
+/** Represents `google.protobuf.Empty` as an object with no fields. */
 export interface Empty {}
 
+/**
+ * Provides the generated-message operations for `google.protobuf.Empty`.
+ *
+ * Decoding skips unknown fields, and construction always returns a new empty
+ * object.
+ */
 export const Empty: MessageFns<Empty, 'google.protobuf.Empty'> = {
   $type: 'google.protobuf.Empty',
   encode(_message: Empty, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {

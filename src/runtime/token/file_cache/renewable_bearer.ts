@@ -16,8 +16,6 @@ import { ThrottledTokenCache } from './throttled_token_cache.js';
 
 import type { AuthorizationOptions } from '../../authorization/provider.js';
 
-// RenewableFileCacheBearer: fetches from cache first; if stale or near expiry, pulls from wrapped bearer
-// and stores back.
 class RenewableFileCacheReceiver extends Receiver {
   public readonly $type = 'nebius.sdk.RenewableFileCacheReceiver';
   private receiver?: Receiver;
@@ -143,13 +141,30 @@ class RenewableFileCacheReceiver extends Receiver {
   }
 }
 
+/**
+ * Reads a named token from a shared file cache and refreshes it through another
+ * bearer when required.
+ *
+ * The first fetch prefers a valid cache entry. After an authentication error,
+ * the receiver checks the file again, then asks the wrapped bearer for a fresh
+ * token and writes it back. The wrapped bearer must have a stable name.
+ */
 export class RenewableFileCacheBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.RenewableFileCacheBearer';
   private readonly _cache: ThrottledTokenCache;
   private _wrapped: Bearer;
+  /** Contains the metrics. */
   public readonly metrics: AuthMetricsRecorder;
-  public safetyMargin: number | null; // in ms
+  /** Minimum remaining lifetime required to accept the first cached token, in milliseconds. */
+  public safetyMargin: number | null;
 
+  /**
+   * Creates a file-backed cache layer.
+   *
+   * `throttleMs` limits how often this process checks the shared file.
+   * `safetyMarginMs` rejects a token that is too close to expiration.
+   */
   constructor(
     _wrapped: Bearer,
     safetyMarginMs: number = 2 * 60 * 60 * 1000,
@@ -177,6 +192,7 @@ export class RenewableFileCacheBearer extends Bearer {
   [custom](): string {
     return `${this.$type}(source=${inspect(this._wrapped)}, cache=${inspect(this._cache)})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: this.$type,
@@ -186,14 +202,17 @@ export class RenewableFileCacheBearer extends Bearer {
     };
   }
 
+  /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this._wrapped;
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     return new RenewableFileCacheReceiver(this, this._cache, this.logger);
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
     this._wrapped = bindAuthMetrics(this._wrapped, this.metrics);

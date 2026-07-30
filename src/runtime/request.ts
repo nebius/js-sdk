@@ -1,3 +1,12 @@
+/**
+ * Runs generated unary SDK requests.
+ *
+ * Use {@link Request} to await a response, inspect call diagnostics, or cancel
+ * a call. Use {@link RetryOptions} to control its timeout and retry policy.
+ *
+ * @packageDocumentation
+ */
+
 import * as crypto from 'node:crypto';
 
 import {
@@ -21,12 +30,64 @@ import { custom, customJson, inspectJson, Logger } from './util/logging.js';
 
 import type { AuthorizationOptions } from './authorization/provider.js';
 
+/**
+ * Controls the timeout and retry policy for one logical request.
+ *
+ * All values are milliseconds except {@link RetryOptions.RetryCount}. A gRPC
+ * `deadline` in the same call-options object limits the complete request. The
+ * SDK uses a 15-minute deadline when you omit it.
+ *
+ * @example
+ * ```ts
+ * import { Metadata } from '@grpc/grpc-js';
+ * import {
+ *   BucketService,
+ *   GetBucketRequest,
+ * } from '@nebius/js-sdk/api/nebius/storage/v1/index';
+ *
+ * async function getBucket(client: BucketService) {
+ *   const call = client.get(
+ *     GetBucketRequest.create({ id: 'bucket-id' }),
+ *     new Metadata(),
+ *     {
+ *       deadline: new Date(Date.now() + 30_000),
+ *       RequestTimeout: 20_000,
+ *       PerRetryTimeout: 5_000,
+ *       RetryCount: 2,
+ *     },
+ *   );
+ *   return call.result;
+ * }
+ * ```
+ */
 export interface RetryOptions {
-  RequestTimeout?: number; // ms
-  PerRetryTimeout?: number; // ms
+  /**
+   * Limits one authenticated request window.
+   *
+   * The default is 60,000 milliseconds.
+   */
+  RequestTimeout?: number;
+  /**
+   * Limits each gRPC attempt.
+   *
+   * The default is 20,000 milliseconds. The overall deadline and
+   * {@link RetryOptions.RequestTimeout} can shorten an attempt.
+   */
+  PerRetryTimeout?: number;
+  /**
+   * Sets the number of retries after the first attempt.
+   *
+   * The default is 3. Set this value to `0` to make only one attempt.
+   */
   RetryCount?: number;
 }
 
+/**
+ * Contains the gRPC status codes that cause an automatic retry by default.
+ *
+ * The runtime can also retry selected transport failures, HTTP 52x failures,
+ * and service errors that explicitly request a call retry.
+ */
 export const DefaultRetriableCodes: StatusCode[] = [
   StatusCode.RESOURCE_EXHAUSTED,
   StatusCode.UNAVAILABLE,
@@ -40,13 +101,29 @@ const HTTP_52X_STATUS_PATTERNS = [
   /\bhttp(?:\/2|2)?\s+status(?:\s+code)?\s*[:=]?\s*(?<code>\d{3})/gi,
 ];
 
+/**
+ * Describes a generated unary method to the request runtime.
+ *
+ * Generated service clients normally create this value. Application code does
+ * not need to construct it.
+ */
 export interface RequestSpec<TReq> {
+  /** Contains the gRPC method path, such as `/package.Service/Get`. */
   path: string;
+  /** Serializes the request message for gRPC. */
   requestSerialize: (value: TReq) => Buffer;
+  /**
+   * Controls the `x-resetmask` header.
+   *
+   * Update methods send the header by default. Set this value to `false` to
+   * disable that behavior for an update method.
+   */
   sendResetMask?: boolean;
+  /** Returns schema data used to build a reset mask. */
   requestDescriptor?: () => MessageDescriptor | undefined;
 }
 
+/** Defines the shape of a generated unary gRPC call function. */
 export type CallCreator<TReq, TRes> = (
   request: TReq,
   metadata: Metadata | undefined,
@@ -125,14 +202,64 @@ class CancelledError extends NebiusGrpcError {
   }
 }
 
+/**
+ * Runs one unary SDK request and exposes its result and diagnostics.
+ *
+ * Generated service methods return this object. You can await the object
+ * directly because it implements `PromiseLike`, or you can await
+ * {@link Request.result}. Keep the object when you also need metadata, status,
+ * request IDs, or cancellation.
+ *
+ * The runtime adds authorization metadata when a provider exists. It adds one
+ * idempotency key to mutating methods and reuses that key for every retry. For
+ * update methods, it can also create an `x-resetmask` header from the request.
+ *
+ * @example
+ * ```ts
+ * import {
+ *   BucketService,
+ *   GetBucketRequest,
+ * } from '@nebius/js-sdk/api/nebius/storage/v1/index';
+ *
+ * async function inspectRequest(client: BucketService) {
+ *   const call = client.get(GetBucketRequest.create({ id: 'bucket-id' }));
+ *   try {
+ *     const resource = await call;
+ *     const status = await call.status;
+ *     console.log(resource, status.code);
+ *   } catch (error) {
+ *     console.error('request failed', error);
+ *   }
+ * }
+ * ```
+ *
+ * @typeParam TReq The generated request message type.
+ * @typeParam TRes The generated response type.
+ */
 export class Request<TReq, TRes> implements PromiseLike<TRes> {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type: 'nebius.sdk.Request' = 'nebius.sdk.Request';
-  // Promises
+  /** Resolves with the response, or rejects with the final request error. */
   readonly result: Promise<TRes>;
+  /** Resolves with the response headers when gRPC reports them. */
   readonly initialMetadata: Promise<Metadata>;
+  /** Resolves with the response trailers when gRPC reports them. */
   readonly trailingMetadata: Promise<Metadata>;
+  /** Resolves with the final Google RPC status for success or failure. */
   readonly status: Promise<GrpcStatus>;
+  /**
+   * Resolves with `x-request-id` when the server returns that header.
+   *
+   * Do not await this promise as a completion signal. It stays pending when
+   * the server does not return the header.
+   */
   readonly requestId: Promise<string>;
+  /**
+   * Resolves with `x-trace-id` when the server returns that header.
+   *
+   * Do not await this promise as a completion signal. It stays pending when
+   * the server does not return the header.
+   */
   readonly traceId: Promise<string>;
 
   private _resolveInitialMd!: (md: Metadata) => void;
@@ -145,7 +272,6 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
   private _maybeReqId: string | undefined;
   private _maybeTraceId: string | undefined;
   private _maybeStatus: GrpcStatus | undefined;
-  // Cancellation and cleanup helpers
   private _canceled = false;
   private _calls = new Set<ClientUnaryCall>();
   private readonly serviceName: string;
@@ -154,6 +280,12 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
   private readonly serializer: (value: TReq) => Buffer;
   private readonly sendResetMask: boolean;
 
+  /**
+   * Creates and starts a request.
+   *
+   * Generated service clients call this constructor. Construction starts
+   * authorization and the gRPC call without waiting for the result.
+   */
   constructor(
     private sdk: SDKInterface,
     spec: RequestSpec<TReq>,
@@ -170,10 +302,7 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     this.serializer = spec.requestSerialize;
     const requestDescriptor = spec.requestDescriptor?.();
     if (requestDescriptor && this.request && typeof this.request === 'object') {
-      this.request = attachMessageDescriptor(
-        this.request as object,
-        requestDescriptor,
-      ) as TReq;
+      this.request = attachMessageDescriptor(this.request as object, requestDescriptor) as TReq;
     }
 
     const path = this.path;
@@ -513,7 +642,7 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
               reject(new NebiusGrpcError(baseErr, st));
               return;
             }
-            // else retry auth loop
+            // Retry authorization when another attempt is allowed.
           }
         }
       };
@@ -531,6 +660,12 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     });
   }
 
+  /**
+   * Registers handlers for the request result.
+   *
+   * This method makes awaiting the request equivalent to awaiting
+   * {@link Request.result}.
+   */
   then<TResult1 = TRes, TResult2 = never>(
     onfulfilled?: ((value: TRes) => TResult1 | PromiseLike<TResult1>) | undefined | null,
     onrejected?: ((reason: unknown) => TResult2 | PromiseLike<TResult2>) | undefined | null,
@@ -538,6 +673,7 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     return this.result.then(onfulfilled, onrejected);
   }
 
+  /** Formats the current request state for Node.js inspection. */
   [custom](): string {
     let ret = `Request(${this.serviceName}/${this.methodName}@${this.addr}`;
     if (this._maybeReqId) ret += ` requestId=${this._maybeReqId}`;
@@ -545,6 +681,7 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     if (this._maybeStatus) ret += ` status=${this._maybeStatus.code}`;
     return ret + ')';
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): Record<string, unknown> {
     const base: Record<string, unknown> = {
       service: this.serviceName,
@@ -624,7 +761,30 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     }
     return false;
   }
-  // Allow callers to cancel the in-flight request and prevent further retries
+  /**
+   * Cancels active gRPC calls and prevents later retries.
+   *
+   * Cancellation is safe to call more than once. The result rejects with a
+   * cancellation error after the active call reports cancellation.
+   *
+   * @example
+   * ```ts
+   * import {
+   *   BucketService,
+   *   GetBucketRequest,
+   * } from '@nebius/js-sdk/api/nebius/storage/v1/index';
+   *
+   * async function getWithLocalTimeout(client: BucketService) {
+   *   const call = client.get(GetBucketRequest.create({ id: 'bucket-id' }));
+   *   const timer = setTimeout(() => call.cancel('local timeout'), 5_000);
+   *   try {
+   *     return await call.result;
+   *   } finally {
+   *     clearTimeout(timer);
+   *   }
+   * }
+   * ```
+   */
   public cancel(reason?: string): void {
     if (this._canceled) {
       this.logger.trace('Request already canceled', { reason });
@@ -648,12 +808,9 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
 }
 
 function hasUnexpectedHttp52xStatus(err: NebiusGrpcError): boolean {
-  return [
-    err.status?.message,
-    err.details,
-    err.message,
-    String(err),
-  ].some((message) => messageHasHttp52xStatus(message));
+  return [err.status?.message, err.details, err.message, String(err)].some((message) =>
+    messageHasHttp52xStatus(message),
+  );
 }
 
 function messageHasHttp52xStatus(message: string | undefined): boolean {

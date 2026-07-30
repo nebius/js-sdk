@@ -2,6 +2,7 @@ import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 import { defaultValueFor, is64Bit, scalarOrRef, wktFqnOf } from '../helpers.js';
 import { resolveEnumName, resolveMessageName } from '../typeNames.js';
 
+/** Emits the generated `create` method for a message runtime object. */
 export function emitCreate(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];
   lines.push(`  create<I extends DeepPartial<${m.tsName}>>(base?: I): ${m.tsName} {`);
@@ -10,6 +11,7 @@ export function emitCreate(m: TSDescriptorMessage): string[] {
   return lines;
 }
 
+/** Emits the generated `fromPartial` method and its field conversions. */
 export function emitFromPartial(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];
   const nonOneofFields = m.fields.filter((f) => !f.is_in_oneof);
@@ -22,7 +24,6 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
     emitted.add(name);
     if (f.isMap()) {
       const entry = f.message();
-      // const kf = entry?.fields.find((x) => x.descriptor.number === 1)!;
       const vf = entry?.fields.find((x) => x.descriptor.number === 2)!;
       const valueTs = scalarOrRef(vf);
       let valueEncoder = 'value';

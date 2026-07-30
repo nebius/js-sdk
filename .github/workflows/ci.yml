@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [22.x, 24.x, 25.x]
+        node-version: [22.x, 24.x, 25.x, 26.x]
 
     steps:
       - name: Checkout code
@@ -51,6 +51,7 @@ jobs:
 
       - name: Run basic tests
         env:
+          BUF_TOKEN: ${{ secrets.BUF_TOKEN }}
           NEBIUS_LOG: DEBUG
           NEBIUS_LOG_OUTPUT: stderr
           FORCE_COLOR: 1

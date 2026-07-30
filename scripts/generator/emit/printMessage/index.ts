@@ -98,6 +98,12 @@ function emitMessageDescriptor(m: TSDescriptorMessage): string[] {
   return lines;
 }
 
+/**
+ * Emits the complete TypeScript runtime representation of a protobuf message.
+ *
+ * The result includes the documented interface, runtime descriptor, codec and
+ * JSON helpers, partial-value factory, inspection hooks, and registry entry.
+ */
 export function printMessage(m: TSDescriptorMessage): string {
   const lines: string[] = [];
   const typeName = fqTypeName(m);
@@ -110,6 +116,7 @@ export function printMessage(m: TSDescriptorMessage): string {
   lines.push(...emitMessageDescriptor(m));
 
   // static block with type, and registration
+  lines.push(`/** Encodes, decodes, converts, and creates {@link ${m.tsName}} messages. */`);
   lines.push(`export const ${m.tsName}: MessageFns<${m.tsName}, "${typeName}"> = {`);
   lines.push(`  $type: "${typeName}" as const,`);
   lines.push(`  $descriptor: ${descriptorName},`);

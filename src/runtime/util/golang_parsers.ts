@@ -11,7 +11,22 @@ const durationUnitsMs = {
 
 type DurationUnit = keyof typeof durationUnitsMs;
 
+/**
+ * Parses duration strings that use Go's `time.Duration` syntax.
+ *
+ * The SDK uses this parser for CLI-compatible configuration values.
+ */
 export class GolangDurationParser {
+  /**
+   * Converts a duration to a non-negative integer number of milliseconds.
+   *
+   * A value can join several units, for example `1h30m` or `250ms`. Supported
+   * units are `h`, `m`, `s`, `ms`, `us`, `µs`, `μs`, and `ns`. A positive
+   * sub-millisecond duration rounds up to 1 ms.
+   *
+   * @param name Identifies the setting in error messages.
+   * @throws `Error` if the value is empty, negative, or invalid.
+   */
   static parseMs(name: string, value: string): number {
     const trimmed = value.trim();
     if (trimmed === '') {
@@ -58,7 +73,17 @@ export class GolangDurationParser {
   }
 }
 
+/** Parses Boolean strings accepted by Go's `strconv.ParseBool`. */
 export class GolangBoolParser {
+  /**
+   * Parses a Go-compatible Boolean value.
+   *
+   * Accepted true values are `1`, `t`, `T`, `TRUE`, `true`, and `True`.
+   * Accepted false values use the same forms for `0` or `f`.
+   *
+   * @param name Identifies the setting in error messages.
+   * @throws `Error` if the trimmed value is not an accepted form.
+   */
   static parse(name: string, value: string): boolean {
     switch (value.trim()) {
       case '1':

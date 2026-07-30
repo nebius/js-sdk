@@ -61,6 +61,7 @@ jobs:
 
       - name: Run basic tests
         env:
+          BUF_TOKEN: ${{ secrets.BUF_TOKEN }}
           NEBIUS_LOG: DEBUG
           NEBIUS_LOG_OUTPUT: stderr
           FORCE_COLOR: 1

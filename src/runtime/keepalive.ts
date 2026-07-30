@@ -2,34 +2,87 @@ import { GolangBoolParser, GolangDurationParser } from './util/golang_parsers.js
 
 import type { ClientOptions } from '@grpc/grpc-js';
 
+/** Contains the default keepalive interval in milliseconds. */
 export const DEFAULT_KEEPALIVE_TIME_MS = 20_000;
+/** Contains the default keepalive timeout in milliseconds. */
 export const DEFAULT_KEEPALIVE_TIMEOUT_MS = 10_000;
+/** Specifies whether the default permits keepalive without an active call. */
 export const DEFAULT_KEEPALIVE_PERMIT_WITHOUT_STREAM = true;
 
+/** Contains the keepalive interval environment-variable name. */
 export const ENV_GRPC_KEEPALIVE_TIME = 'NEBIUS_GRPC_KEEPALIVE_TIME';
+/** Contains the keepalive timeout environment-variable name. */
 export const ENV_GRPC_KEEPALIVE_TIMEOUT = 'NEBIUS_GRPC_KEEPALIVE_TIMEOUT';
+/** Contains the permit-without-stream environment-variable name. */
 export const ENV_GRPC_KEEPALIVE_PERMIT_WITHOUT_STREAM =
   'NEBIUS_GRPC_KEEPALIVE_PERMIT_WITHOUT_STREAM';
 
 /**
- * Explicit keepalive options ignore NEBIUS_GRPC_KEEPALIVE_* environment variables.
- * Omitted fields use SDK defaults; set timeMs to 0 or pass keepalive: false to disable keepalive.
+ * Configures gRPC keepalive.
+ *
+ * Explicit options override the `NEBIUS_GRPC_KEEPALIVE_*` environment
+ * variables. When you supply an options object, omitted fields use SDK
+ * defaults instead of environment values. Set {@link KeepaliveOptions.timeMs}
+ * to `0`, or set
+ * {@link https://nebius.github.io/js-sdk/interfaces/sdk.SDKOptions.html#keepalive | SDKOptions.keepalive}
+ * to `false`, to disable keepalive.
+ *
+ * Keepalive pings help detect a broken connection during a long-lived
+ * process. A server or network can reject pings that are too frequent.
+ *
+ * @example
+ * ```ts
+ * import { SDK } from '@nebius/js-sdk';
+ *
+ * const sdk = new SDK({
+ *   keepalive: {
+ *     timeMs: 30_000,
+ *     timeoutMs: 10_000,
+ *     permitWithoutStream: true,
+ *   },
+ *   userAgentPrefix: 'example-application/1.0',
+ * });
+ * ```
  */
 export interface KeepaliveOptions {
+  /** Sets the keepalive interval in milliseconds. */
   timeMs?: number;
+  /** Sets the keepalive timeout in milliseconds. */
   timeoutMs?: number;
+  /** Specifies whether to send keepalive pings without an active call. */
   permitWithoutStream?: boolean;
 }
 
+/**
+ * Defines the validated keepalive settings used for each new gRPC client.
+ *
+ * Use {@link keepaliveConfigFromOptions} or {@link keepaliveConfigFromEnv} to
+ * create this value.
+ */
 export interface KeepaliveConfig {
+  /** Specifies whether keepalive is enabled. */
   enabled: boolean;
+  /** Contains the keepalive interval in milliseconds. */
   timeMs: number;
+  /** Contains the keepalive timeout in milliseconds. */
   timeoutMs: number;
+  /** Specifies whether to send keepalive pings without an active call. */
   permitWithoutStream: boolean;
 }
 
-type Environment = Record<string, string | undefined>;
+/**
+ * Defines an environment-like object that configures keepalive.
+ *
+ * Tests and embedded runtimes can pass a plain object instead of using
+ * `process.env`.
+ */
+export type Environment = Record<string, string | undefined>;
 
+/**
+ * Returns a new copy of the default gRPC keepalive configuration.
+ *
+ * You can modify the returned object without changing later calls.
+ */
 export function defaultKeepaliveConfig(): KeepaliveConfig {
   return {
     enabled: true,
@@ -39,6 +92,23 @@ export function defaultKeepaliveConfig(): KeepaliveConfig {
   };
 }
 
+/**
+ * Reads and validates gRPC keepalive environment variables.
+ *
+ * Duration values use Go duration syntax, such as `20s`, `500ms`, or `1m`.
+ * Set {@link ENV_GRPC_KEEPALIVE_TIME} to `0` to disable keepalive.
+ *
+ * @example
+ * ```ts
+ * const config = keepaliveConfigFromEnv({
+ *   NEBIUS_GRPC_KEEPALIVE_TIME: '30s',
+ *   NEBIUS_GRPC_KEEPALIVE_TIMEOUT: '10s',
+ *   NEBIUS_GRPC_KEEPALIVE_PERMIT_WITHOUT_STREAM: 'true',
+ * });
+ * ```
+ *
+ * @throws {Error} A value has invalid duration or Boolean syntax.
+ */
 export function keepaliveConfigFromEnv(env: Environment = process.env): KeepaliveConfig {
   const cfg = defaultKeepaliveConfig();
 
@@ -66,6 +136,14 @@ export function keepaliveConfigFromEnv(env: Environment = process.env): Keepaliv
   return cfg;
 }
 
+/**
+ * Creates and validates a gRPC keepalive configuration from SDK options.
+ *
+ * `undefined` reads environment variables. `false` disables keepalive. An
+ * options object uses SDK defaults for fields that it omits.
+ *
+ * @throws {Error} A millisecond value is negative, non-finite, or not an integer.
+ */
 export function keepaliveConfigFromOptions(
   options: KeepaliveOptions | false | undefined,
 ): KeepaliveConfig {
@@ -101,6 +179,12 @@ export function keepaliveConfigFromOptions(
   return cfg;
 }
 
+/**
+ * Converts a validated keepalive configuration to gRPC client options.
+ *
+ * A disabled configuration returns an empty object. The SDK applies the
+ * returned options when it creates a channel.
+ */
 export function keepaliveClientOptions(cfg: KeepaliveConfig): Partial<ClientOptions> {
   if (!cfg.enabled) return {};
   return {

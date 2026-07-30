@@ -17,7 +17,9 @@ import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 
 import type { AuthorizationOptions } from '../authorization/provider.js';
 
+/** Reports that a renewable bearer could not provide a valid access token. */
 export class RenewalError extends Error {
+  /** Creates a new renewal error. */
   constructor(message: string) {
     super(message);
     this.name = 'RenewalError';
@@ -73,7 +75,19 @@ class RenewableReceiver extends Receiver {
   }
 }
 
+/**
+ * Keeps an access token in memory and renews it through another bearer.
+ *
+ * Concurrent callers share one in-flight renewal. A successful fetch schedules
+ * background renewal before expiration. A failed background renewal uses
+ * jittered exponential backoff, while a still-valid cached token can continue
+ * to serve requests.
+ *
+ * The timer does not keep Node.js running. Call {@link RenewableBearer.close}
+ * during orderly shutdown to reject waiters and close the wrapped source.
+ */
 export class RenewableBearer extends Bearer {
+  /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.RenewableBearer';
   private refreshTimer: ReturnType<typeof setTimeout> | null = null;
   private stopped = false;
@@ -105,19 +119,50 @@ export class RenewableBearer extends Bearer {
   private readonly metrics: AuthMetricsRecorder;
   private source: Bearer;
 
+  /**
+   * Creates an in-memory renewal layer around `source`.
+   *
+   * `lifetimeSafeFraction` selects the fraction of remaining lifetime to wait
+   * before renewal. Retry delays use exponential backoff and bounded jitter.
+   */
   constructor(
     source: Bearer,
     opts?: {
+      /** Maximum total authentication attempts for one receiver. Defaults to 2. */
       maxRetries?: number;
-      lifetimeSafeFraction?: number; // e.g. 0.9 → renew at 10% before expiry
-      initialRetryTimeoutMs?: number; // first backoff step
-      maxRetryTimeoutMs?: number; // cap for backoff
-      retryTimeoutExponent?: number; // exponential factor
-      refreshRequestTimeoutMs?: number; // timeout for background renewal
-      safetyMinRemainingMs?: number; // minimum ms of life we want to keep before we treat as "near expiry"
-      jitterFraction?: number; // 0..1 of backoff added/subtracted as jitter
+      /**
+       * Fraction of remaining token lifetime to wait before renewal.
+       *
+       * Defaults to `0.9`, which renews with about 10% left.
+       */
+      lifetimeSafeFraction?: number;
+      /** Initial renewal retry delay, in milliseconds. Defaults to one second. */
+      initialRetryTimeoutMs?: number;
+      /** Maximum renewal retry delay, in milliseconds. Defaults to 60 seconds. */
+      maxRetryTimeoutMs?: number;
+      /** Multiplier for exponential retry delays. Defaults to `1.5`. */
+      retryTimeoutExponent?: number;
+      /**
+       * Default budget for a renewal request, in milliseconds.
+       *
+       * Defaults to five seconds. It applies to foreground and background
+       * renewal when the caller does not supply a synchronous override. The
+       * source decides how it enforces the budget.
+       */
+      refreshRequestTimeoutMs?: number;
+      /** Accepted for compatibility but not used by this implementation. */
+      safetyMinRemainingMs?: number;
+      /**
+       * Random retry-delay variation from `0` to `1`.
+       *
+       * Defaults to `0.2`. Values outside the range are clamped.
+       */
+      jitterFraction?: number;
+      /** Optional destination for diagnostic events. */
       logger?: Logger;
+      /** Optional authentication metrics destination. */
       metrics?: AuthMetricsInput;
+      /** Provider label for metrics. Defaults to the wrapped bearer name. */
       provider?: string;
     },
   ) {
@@ -137,6 +182,7 @@ export class RenewableBearer extends Bearer {
   [custom](): string {
     return `${this.$type}(source=${inspect(this.source)}, token=${inspect(this.cacheToken)})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): unknown {
     return {
       type: this.$type,
@@ -148,20 +194,23 @@ export class RenewableBearer extends Bearer {
     };
   }
 
+  /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this.source;
   }
 
+  /** Creates a token receiver. */
   receiver(): Receiver {
     return new RenewableReceiver(this, this.maxRetries, this.logger);
   }
 
+  /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
     this.source = bindAuthMetrics(this.source, this.metrics);
   }
 
-  /** Schedules next background renewal. Always de-dupes existing timer. */
+  /** Schedules the next background renewal and replaces the current timer. */
   private scheduleNext(ms: number) {
     if (this.stopped) {
       this.logger?.debug('scheduleNext skipped (stopped)');
@@ -177,7 +226,7 @@ export class RenewableBearer extends Bearer {
     this.refreshTimer.unref?.();
   }
 
-  /** Compute when to renew next, based on token expiration. */
+  /** Computes the next renewal time from the token expiration time. */
   private computeNextTimeoutMs(tok: Token | null): number {
     if (!tok) {
       this.logger?.trace('computeNextTimeoutMs: no token -> 0 (asap)');
@@ -307,6 +356,14 @@ export class RenewableBearer extends Bearer {
     return p;
   }
 
+  /**
+   * Returns a valid token and starts renewal when required.
+   *
+   * With {@link AuthorizationOptions.renewSynchronous} or
+   * {@link AuthorizationOptions.reportError}, this method waits for renewal
+   * and reports its error. Otherwise it can return a valid cached token while
+   * renewal continues. If no cached token exists, it waits for the first one.
+   */
   async fetch(timeoutMs?: number, options?: AuthorizationOptions): Promise<Token> {
     const renewRequired = Boolean(options?.renewRequired);
     const renewSynchronous = Boolean(options?.renewSynchronous);
@@ -438,12 +495,19 @@ export class RenewableBearer extends Bearer {
     return this.cacheToken;
   }
 
+  /** Reports whether the cached token is absent, invalidated, expired, or due for renewal. */
   isRenewalRequired(): boolean {
     const v = this.needRenew();
     this.logger?.trace('isRenewalRequired', { result: v });
     return v;
   }
 
+  /**
+   * Schedules renewal as soon as possible.
+   *
+   * Set `invalidate` after an authentication rejection. This method does not
+   * wait for renewal.
+   */
   requestRenewal(invalidate = false): void {
     if (this.stopped) {
       this.logger?.debug('requestRenewal ignored (stopped)');
@@ -458,7 +522,7 @@ export class RenewableBearer extends Bearer {
     this.scheduleNext(0);
   }
 
-  /** Background runner: serialize renewals, backoff with jitter, reschedule next. */
+  /** Runs one renewal at a time, applies jittered backoff, and schedules the next renewal. */
   private async run(): Promise<void> {
     if (this.stopped) {
       this.logger?.debug('run: stopped');
@@ -493,6 +557,7 @@ export class RenewableBearer extends Bearer {
     this.scheduleNext(nextDelayMs);
   }
 
+  /** Stops renewal, rejects pending waiters, and closes the wrapped bearer. */
   async close(graceMs?: number): Promise<void> {
     this.stopped = true;
     if (this.refreshTimer) {
