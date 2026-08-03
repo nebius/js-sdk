@@ -170,8 +170,13 @@ places your application name and version before the SDK user-agent. For
 example, the SDK sends a value in this form:
 
 ```text
-example-application/1.0 nebius-js-sdk/<version>
+example-application/1.0 nebius-js-sdk/<version> (node/<major>; <platform>/<architecture>; <esm-or-cjs>)
 ```
+
+The SDK adds the Node.js major version, operating system, CPU architecture, and
+module format to the user-agent. Set `userAgentPrefix` to identify your
+application or framework integration. The SDK does not identify frameworks
+automatically.
 
 You can also set `grpc.primary_user_agent` or `grpc.secondary_user_agent` in
 [`SDKOptions.clientOptions`](https://nebius.github.io/js-sdk/interfaces/sdk.SDKOptions.html#clientoptions)

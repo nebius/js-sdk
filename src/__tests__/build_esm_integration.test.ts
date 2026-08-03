@@ -64,13 +64,16 @@ default: p1
     const esmCfgUrl = pathToFileURL(join(distEsm, 'runtime/cli_config.js')).href;
     const esmApiUrl = pathToFileURL(join(distEsm, 'api/nebius/compute/v1/index.js')).href;
     const script = `
-      const { SDK } = await import(${JSON.stringify(esmIndexUrl)});
+      const { SDK, VERSION } = await import(${JSON.stringify(esmIndexUrl)});
       const { Config } = await import(${JSON.stringify(esmCfgUrl)});
       const { DiskService, ListDisksRequest } = await import(${JSON.stringify(esmApiUrl)});
       const cfg = new Config({ configFile: ${JSON.stringify(cfgPath)}, profile: 'p1', noEnv: true, noParentId: true });
       // Minimal resolver that always returns the provided address
       const resolver = { resolve: () => ${JSON.stringify(address)} };
       const sdk = new SDK({ configReader: cfg, insecure: true, resolver });
+      const userAgent = sdk.getAddressOptions(${JSON.stringify(address)})['grpc.primary_user_agent'];
+      const expected = \`nebius-js-sdk/\${VERSION} (node/\${process.versions.node.split('.')[0]}; \${process.platform}/\${process.arch}; esm)\`;
+      if (!userAgent.includes(expected)) throw new Error(\`Unexpected user agent: \${userAgent}\`);
       const client = new DiskService(sdk);
       const req = ListDisksRequest.create({ parentId: 'folders/1', pageSize: 1, pageToken: '', filter: '' });
       await client.list(req, undefined, { deadline: Date.now() + 4000 }).result;
