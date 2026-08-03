@@ -420,7 +420,9 @@ export class SDK implements SDKInterface {
       }
     }
 
-    let userAgent = 'nebius-js-sdk/' + VERSION;
+    const nodeMajor = process.versions.node.split('.')[0];
+    const moduleFormat = typeof require === 'function' ? 'cjs' : 'esm';
+    let userAgent = `nebius-js-sdk/${VERSION} (node/${nodeMajor}; ${process.platform}/${process.arch}; ${moduleFormat})`;
     if (options?.userAgentPrefix) {
       userAgent = `${options.userAgentPrefix} ${userAgent}`;
     }

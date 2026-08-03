@@ -19,6 +19,7 @@ import { resetMaskFromMessage } from '../runtime/resetmask.js';
 import { Basic } from '../runtime/resolver.js';
 import { SDK } from '../sdk.js';
 import { partialServiceImplementation } from '../test/grpc.js';
+import { VERSION } from '../version.js';
 
 function startServerWithPort(
   addImpl: (server: Server) => void,
@@ -88,7 +89,9 @@ describe('updates and masks — DiskService.Update', () => {
 
           const ua = mdGetString(md, 'user-agent');
           // JS reality: ensure primary UA parts are present
-          expect(ua).toContain('nebius-js-sdk/');
+          expect(ua).toContain(
+            `nebius-js-sdk/${VERSION} (node/${process.versions.node.split('.')[0]}; ${process.platform}/${process.arch}; cjs)`,
+          );
           expect(ua).toContain('a');
           expect(ua).toContain('b');
           expect(ua).toContain('c');

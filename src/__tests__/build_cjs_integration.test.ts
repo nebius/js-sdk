@@ -77,6 +77,9 @@ default: p1
       insecure: true,
       resolver: new Basic('nebius.compute.v1.*', address),
     });
+    expect(sdk.getAddressOptions(address)['grpc.primary_user_agent']).toContain(
+      `nebius-js-sdk/${cjs.VERSION} (node/${process.versions.node.split('.')[0]}; ${process.platform}/${process.arch}; cjs)`,
+    );
 
     const client = new DiskService(sdk);
     const req = ListDisksRequest.create({
