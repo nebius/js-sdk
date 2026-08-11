@@ -2,8 +2,46 @@ import { type CallOptions, Metadata, status } from '@grpc/grpc-js';
 import { Dayjs } from 'dayjs';
 
 import { Status, Code as StatusCode } from '../api/google/rpc/index.js';
-import { Request, RetryOptions } from './request.js';
+import { isRetriableError, Request, RetryOptions } from './request.js';
 import { custom, customJson, inspectJson, Logger } from './util/logging.js';
+
+/** Contains the default interval between successful operation polls. */
+export const DEFAULT_POLL_INTERVAL_SEC = 1;
+
+/** Contains the maximum default delay after a retriable polling error. */
+export const DEFAULT_POLL_ERROR_BACKOFF_MAX_MS = 30_000;
+
+const DEFAULT_POLL_ERROR_JITTER = 0.2;
+
+/** Calculates the delay in milliseconds after a retriable polling error. */
+export type PollErrorBackoff = (attempt: number) => number;
+
+/** Controls operation polling requests and retries. */
+export interface OperationWaitOptions extends RetryOptions {
+  /**
+   * Calculates the delay after each consecutive retriable polling error.
+   *
+   * The attempt starts at 1 and resets after a successful poll. By default,
+   * the delay starts at one second, uses exponential backoff with 20% jitter,
+   * and is capped at 30 seconds. Set this value to `null` to disable retries
+   * after polling errors.
+   */
+  pollErrorBackoff?: PollErrorBackoff | null;
+}
+
+function defaultPollErrorBackoff(attempt: number): number {
+  const exponent = Math.max(0, Math.min(62, attempt - 1));
+  const delayMs = DEFAULT_POLL_INTERVAL_SEC * 1000 * 2 ** exponent;
+  const jitter = 1 + DEFAULT_POLL_ERROR_JITTER * (Math.random() * 2 - 1);
+  return Math.min(delayMs * jitter, DEFAULT_POLL_ERROR_BACKOFF_MAX_MS);
+}
+
+function isRetriablePollError(err: unknown): boolean {
+  if (err && typeof err === 'object' && 'code' in err) {
+    if ((err as { code?: unknown }).code === status.DEADLINE_EXCEEDED) return true;
+  }
+  return isRetriableError(err);
+}
 
 /**
  * Defines a protobuf-compatible progress count.
@@ -332,42 +370,49 @@ export class Operation<TReq> {
    *
    * The method updates this object in place. It continues after a polling call
    * reaches its deadline, because the remote operation can still be running.
-   * It rethrows other polling errors. A resolved promise does not mean that the
-   * operation succeeded; call {@link successful} or inspect {@link status}.
-   * The method returns immediately when the operation ID is empty.
+   * Consecutive retriable polling errors use exponential backoff with jitter.
+   * It rethrows non-retriable polling errors. A resolved promise does not mean
+   * that the operation succeeded; call {@link successful} or inspect
+   * {@link status}. The method returns immediately when the operation ID is
+   * empty.
    *
    * @param intervalSec Sets the poll interval in seconds. The default is 1.
    * @param metadata Sends metadata with every polling request.
-   * @param options Sets gRPC deadlines and retry options for every polling request.
+   * @param options Sets gRPC deadlines, request retries, and poll-error backoff.
    * @example
    * ```ts
    * await op.wait(1); // poll once per second
    * ```
    */
   async wait(
-    intervalSec: number = 1,
+    intervalSec: number = DEFAULT_POLL_INTERVAL_SEC,
     metadata?: Metadata | undefined,
-    options?: (Partial<CallOptions> & RetryOptions) | undefined,
+    options?: (OperationWaitOptions & Partial<CallOptions>) | undefined,
   ): Promise<void> {
     this.logger.trace('Wait started', { intervalSec });
     const id = this.id();
     if (!id) return;
+    const { pollErrorBackoff = defaultPollErrorBackoff, ...requestOptions } = options ?? {};
+    let retryAttempt = 0;
     while (!this.done()) {
       try {
-        await this.update(metadata, options);
+        await this.update(metadata, requestOptions);
         this.logger.trace('Wait iteration completed');
+        retryAttempt = 0;
       } catch (err: unknown) {
         this.logger.trace('Wait iteration failed', { err });
-        if (err && typeof err === 'object' && 'code' in err) {
-          const e = err as { code?: number };
-          if (e.code === status.DEADLINE_EXCEEDED) {
-            this.logger.warn('Update timed out, continuing to wait', { err });
-          } else {
-            throw err;
-          }
-        } else {
-          throw err;
+        if (pollErrorBackoff !== null && isRetriablePollError(err)) {
+          retryAttempt++;
+          const delayMs = Math.max(0, pollErrorBackoff(retryAttempt));
+          this.logger.warn('Update failed with retriable error, continuing to wait', {
+            attempt: retryAttempt,
+            delayMs,
+            err,
+          });
+          await new Promise<void>((resolve) => setTimeout(resolve, delayMs));
+          continue;
         }
+        throw err;
       }
       if (!this.done()) {
         const ms = Math.max(0.01, intervalSec) * 1000;

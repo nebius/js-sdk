@@ -17,10 +17,7 @@ import {
 } from '@grpc/grpc-js';
 
 import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/index.js';
-import {
-  ServiceError as NebiusServiceError,
-  ServiceError_RetryType,
-} from '../api/nebius/common/v1/index.js';
+import { ServiceError_RetryType } from '../api/nebius/common/v1/index.js';
 import { SDKInterface } from '../sdk.js';
 import { NebiusGrpcError } from './error.js';
 import { attachMessageDescriptor, type MessageDescriptor } from './protos/core.js';
@@ -92,6 +89,48 @@ export const DefaultRetriableCodes: StatusCode[] = [
   StatusCode.RESOURCE_EXHAUSTED,
   StatusCode.UNAVAILABLE,
 ];
+
+/**
+ * Checks whether an SDK request error is safe to retry.
+ *
+ * This is shared by the request retry loop and long-running operation polling.
+ */
+export function isRetriableError(err: unknown): boolean {
+  if (!err || typeof err !== 'object') return false;
+  const grpcError = err as NebiusGrpcError;
+
+  // Network/system-level errors
+  const sysCode = grpcError.code as string | number | undefined;
+  if (typeof sysCode === 'string') {
+    const transientErrnos = new Set([
+      'ECONNRESET',
+      'ECONNREFUSED',
+      'EAI_AGAIN',
+      'ETIMEDOUT',
+      'ENOTFOUND',
+      'EHOSTUNREACH',
+      'EPIPE',
+    ]);
+    if (transientErrnos.has(sysCode)) return true;
+  }
+
+  // gRPC codes
+  const grpcCode = typeof sysCode === 'number' ? sysCode : undefined;
+  if (grpcCode !== undefined && DefaultRetriableCodes.includes(StatusCode.fromNumber(grpcCode))) {
+    return true;
+  }
+
+  if (grpcCode === UNKNOWN_GRPC_CODE && hasUnexpectedHttp52xStatus(grpcError)) return true;
+
+  // Nebius service errors can explicitly request a retry of the call.
+  const serviceErrors = grpcError.serviceErrors;
+  if (Array.isArray(serviceErrors)) {
+    return serviceErrors.some(
+      (serviceError) => serviceError.retryType === ServiceError_RetryType.CALL,
+    );
+  }
+  return false;
+}
 
 const UNKNOWN_GRPC_CODE = StatusCode.UNKNOWN.code;
 
@@ -715,51 +754,9 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
   }
 
   private _isRetriableError(err: NebiusGrpcError): boolean {
-    // Network/system-level errors
-    const sysCode = (err && err.code) as string | number | undefined;
-    if (typeof sysCode === 'string') {
-      const transientErrnos = new Set([
-        'ECONNRESET',
-        'ECONNREFUSED',
-        'EAI_AGAIN',
-        'ETIMEDOUT',
-        'ENOTFOUND',
-        'EHOSTUNREACH',
-        'EPIPE',
-      ]);
-      if (transientErrnos.has(sysCode)) {
-        this.logger.trace('Error is a transient system error', { sys_code: sysCode });
-        return true;
-      }
-    }
-
-    // gRPC codes
-    const grpcCode: number | undefined =
-      typeof sysCode === 'number' ? (sysCode as number) : (err?.code as number | undefined);
-    if (grpcCode !== undefined && DefaultRetriableCodes.includes(StatusCode.fromNumber(grpcCode))) {
-      this.logger.trace('Error has retriable gRPC status code', { grpc_code: grpcCode });
-      return true;
-    }
-
-    if (grpcCode === UNKNOWN_GRPC_CODE && hasUnexpectedHttp52xStatus(err)) {
-      this.logger.trace('Error has retriable HTTP 52x status wrapped as UNKNOWN', {
-        grpc_code: grpcCode,
-      });
-      return true;
-    }
-
-    // Our wrapped NebiusGrpcError may carry serviceErrors with retryType
-    const seList: NebiusServiceError[] | undefined =
-      (err?.serviceErrors as NebiusServiceError[]) || undefined;
-    if (Array.isArray(seList)) {
-      for (const se of seList) {
-        if (se.retryType === ServiceError_RetryType.CALL) {
-          this.logger.trace('Error has retriable service error', { service_error: se });
-          return true;
-        }
-      }
-    }
-    return false;
+    const retriable = isRetriableError(err);
+    this.logger.trace('Request error classified', { err, is_retriable: retriable });
+    return retriable;
   }
   /**
    * Cancels active gRPC calls and prevents later retries.
