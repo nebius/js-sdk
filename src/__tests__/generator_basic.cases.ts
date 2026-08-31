@@ -97,6 +97,9 @@ export function registerSelfCompatTests() {
       expect(pickDescriptor.fields.payloadOneof.message()).toBe(our.Payload.$descriptor);
       expect(pickDescriptor.fields.idOneof.pbName).toBe('id_oneof');
       expect(pickDescriptor.fields.idOneof.scalarType).toBe(3);
+      expect(our.ImmutableDemo.$descriptor.fields.immutable.immutable).toBe(true);
+      expect(our.ImmutableDemo.$descriptor.fields.mutable.immutable).toBeUndefined();
+      expect(our.ImmutableDemo.$descriptor.fields.immutableChoice.immutableOneof).toBe(true);
       expect(our.BehaviorServiceServiceDescription.update.requestDescriptor()).toBe(
         our.Payload.$descriptor,
       );

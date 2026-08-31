@@ -61,10 +61,14 @@ export type MessageFieldScalarType =
 export interface MessageFieldDescriptor {
   /** Contains the original `snake_case` protobuf field name. */
   pbName: string;
+  /** Specifies whether the field has `field_behavior = IMMUTABLE`. */
+  immutable?: boolean;
   /** Specifies whether the field is repeated. */
   repeated?: boolean;
   /** Specifies whether the field belongs to a oneof. */
   oneof?: boolean;
+  /** Specifies whether the field represents an immutable oneof. */
+  immutableOneof?: boolean;
   /** Specifies whether the field is a map. */
   map?: boolean;
   /** Contains the protobuf descriptor code when this is a scalar or enum. */

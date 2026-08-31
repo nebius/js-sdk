@@ -10,6 +10,7 @@ import {
   InstanceService as InstanceServiceClient,
   type InstanceServiceServer,
   InstanceServiceServiceDescription as InstanceServiceService,
+  InstanceSpec,
   UpdateDiskRequest,
   UpdateInstanceRequest,
 } from '../api/nebius/compute/v1/index.js';
@@ -56,6 +57,17 @@ describe('updates and masks — DiskService.Update', () => {
     expect(resetMaskFromMessage(rawWithUnknown)!.marshal()).toBe('metadata,spec');
   });
 
+  test('generated descriptors exclude immutable fields from reset masks', () => {
+    const mask = resetMaskFromMessage(InstanceSpec.create({}))!;
+
+    expect(InstanceSpec.$descriptor?.fields.serviceAccountId.immutable).toBe(true);
+    expect(mask.fieldParts.has('service_account_id')).toBe(false);
+    expect(mask.fieldParts.has('gpu_cluster')).toBe(false);
+    expect(mask.fieldParts.has('recovery_policy')).toBe(false);
+    expect(mask.fieldParts.has('preemptible')).toBe(false);
+    expect(mask.fieldParts.has('resources')).toBe(true);
+  });
+
   test('idempotency, resetmask and user-agent composition', async () => {
     const { server, address, port } = await startServerWithPort((server) => {
       const impl = partialServiceImplementation<DiskServiceServer>({
@@ -80,10 +92,11 @@ describe('updates and masks — DiskService.Update', () => {
 
           const spec = m.getSubMask('spec');
           expect(spec).not.toBeNull();
-          for (const key of ['size_bytes', 'size_gibibytes', 'type']) {
+          for (const key of ['size_bytes', 'size_gibibytes']) {
             expect(spec?.fieldParts.get(key)?.isEmpty()).toBe(true);
           }
           expect(spec?.fieldParts.has('size')).toBe(false);
+          expect(spec?.fieldParts.has('type')).toBe(false);
           expect(maskStr).not.toContain('high');
           expect(maskStr).not.toContain('unsigned');
 
