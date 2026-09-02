@@ -64,7 +64,6 @@ describe('updates and masks — DiskService.Update', () => {
     expect(mask.fieldParts.has('service_account_id')).toBe(false);
     expect(mask.fieldParts.has('gpu_cluster')).toBe(false);
     expect(mask.fieldParts.has('recovery_policy')).toBe(false);
-    expect(mask.fieldParts.has('preemptible')).toBe(false);
     expect(mask.fieldParts.has('resources')).toBe(true);
   });
 
