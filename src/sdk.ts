@@ -425,6 +425,8 @@ export class SDK implements SDKInterface {
     let userAgent = `nebius-js-sdk/${VERSION} (node/${nodeMajor}; ${process.platform}/${process.arch}; ${moduleFormat})`;
     if (options?.userAgentPrefix) {
       userAgent = `${options.userAgentPrefix} ${userAgent}`;
+    } else {
+      this._logger.warn('SDKOptions.userAgentPrefix will become mandatory in a future release');
     }
     this._userAgent = userAgent;
     this._logger.debug('Using user agent', { userAgent: this._userAgent });
