@@ -1,4 +1,5 @@
 import type { Message as TSDescriptorMessage } from '../../descriptors.js';
+import { FieldBehavior as FieldBehaviorEnum } from '../../extensions/index.js';
 import type * as GPB from '../../protos/protobuf/index.js';
 import { wktFqnOf } from '../helpers.js';
 import { resolveMessageName } from '../typeNames.js';
@@ -30,8 +31,38 @@ function scalarTypeForField(f: TSDescriptorMessage['fields'][number]): number | 
   return f.typeCode() || undefined;
 }
 
+function hasImmutableBehavior(value: unknown): boolean {
+  const behaviors = Array.isArray(value) ? value : value == null ? [] : [value];
+  return behaviors.some((behavior) => {
+    if (typeof behavior === 'number') return behavior === FieldBehaviorEnum.IMMUTABLE.code;
+    if (behavior && typeof behavior === 'object') {
+      const enumValue = behavior as { code?: unknown; name?: unknown };
+      return (
+        enumValue.code === FieldBehaviorEnum.IMMUTABLE.code ||
+        enumValue.name === FieldBehaviorEnum.IMMUTABLE.name
+      );
+    }
+    return behavior === FieldBehaviorEnum.IMMUTABLE.name;
+  });
+}
+
+function isImmutableField(f: TSDescriptorMessage['fields'][number]): boolean {
+  const options = f.descriptor.options as
+    { fieldBehavior?: unknown; field_behavior?: unknown } | undefined;
+  return hasImmutableBehavior(options?.fieldBehavior ?? options?.field_behavior);
+}
+
+function isImmutableOneof(o: TSDescriptorMessage['oneofs'][number]): boolean {
+  const options = o.descriptor.options as
+    { oneofBehavior?: unknown; oneof_behavior?: unknown } | undefined;
+  return hasImmutableBehavior(options?.oneofBehavior ?? options?.oneof_behavior);
+}
+
 function descriptorPartsForField(f: TSDescriptorMessage['fields'][number]): string[] {
   const parts = [`pbName: ${JSON.stringify(f.pb_name)}`];
+  if (isImmutableField(f)) {
+    parts.push('immutable: true');
+  }
   const scalarType = scalarTypeForField(f);
   if (scalarType !== undefined) {
     parts.push(`scalarType: ${scalarType}`);
@@ -88,8 +119,9 @@ function emitMessageDescriptor(m: TSDescriptorMessage): string[] {
   }
   for (const o of m.oneofs) {
     const oneofDescriptorName = oneofDescriptorConstName(m, o.tsName);
+    const immutableOneof = isImmutableOneof(o) ? ', immutableOneof: true' : '';
     lines.push(
-      `    ${JSON.stringify(o.tsName)}: { pbName: ${JSON.stringify(o.pb_name)}, oneof: true, message: () => ${oneofDescriptorName} },`,
+      `    ${JSON.stringify(o.tsName)}: { pbName: ${JSON.stringify(o.pb_name)}, oneof: true${immutableOneof}, message: () => ${oneofDescriptorName} },`,
     );
   }
   lines.push(`  },`);

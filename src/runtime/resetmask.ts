@@ -218,6 +218,7 @@ function rmFromOneofRecursive(
   updObj: any,
   recursion: number,
   descriptor: MessageDescriptor,
+  immutableOneof: boolean,
 ): void {
   const selected =
     updObj && typeof updObj === 'object' && typeof updObj.$case === 'string'
@@ -225,7 +226,7 @@ function rmFromOneofRecursive(
       : undefined;
 
   for (const [key, fieldDescriptor] of Object.entries(descriptor.fields)) {
-    if (key !== selected) {
+    if (!fieldDescriptor.immutable && key !== selected && !immutableOneof) {
       resetMask.fieldParts.set(
         fieldDescriptor.pbName,
         resetMask.fieldParts.get(fieldDescriptor.pbName) || new Mask(),
@@ -234,7 +235,13 @@ function rmFromOneofRecursive(
   }
 
   if (selected && descriptor.fields[selected] && updObj && typeof updObj === 'object') {
-    rmFromObjectRecursive(resetMask, { [selected]: updObj[selected] }, recursion, descriptor);
+    rmFromObjectRecursive(
+      resetMask,
+      { [selected]: updObj[selected] },
+      recursion,
+      descriptor,
+      false,
+    );
   }
 }
 
@@ -261,8 +268,18 @@ function rmFromObjectRecursive(
     const messageDescriptor = fieldDescriptor?.message?.();
     const scalarType = fieldDescriptor?.scalarType;
 
+    if (fieldDescriptor?.immutable) {
+      continue;
+    }
+
     if (fieldDescriptor?.oneof && messageDescriptor) {
-      rmFromOneofRecursive(resetMask, value, recursion, messageDescriptor);
+      rmFromOneofRecursive(
+        resetMask,
+        value,
+        recursion,
+        messageDescriptor,
+        fieldDescriptor.immutableOneof === true,
+      );
       continue;
     }
 
@@ -290,9 +307,7 @@ function rmFromObjectRecursive(
       (!Array.isArray(value) || messageDescriptor.reflect) &&
       rmFromValueRecursive(fieldMask, value, recursion, messageDescriptor)
     ) {
-      if (!fieldMask.isEmpty()) {
-        resetMask.fieldParts.set(maskKey, fieldMask);
-      }
+      resetMask.fieldParts.set(maskKey, fieldMask);
       continue;
     }
 
@@ -404,8 +419,10 @@ function rmFromObjectRecursive(
  *
  * The function walks generated message descriptors when they exist. This
  * keeps oneof, map, repeated-message, and well-known type handling consistent
- * with protobuf semantics. For a plain object without descriptors, it uses
- * conservative JavaScript object rules.
+ * with protobuf semantics. Fields marked `IMMUTABLE` are excluded. For an
+ * immutable oneof, only its selected field can be included. A plain object
+ * without descriptors uses conservative JavaScript object rules and cannot
+ * identify immutable fields.
  *
  * This function does not change the input. It returns an empty mask when the
  * message has no reset values. It returns `null` only when `update` is `null`

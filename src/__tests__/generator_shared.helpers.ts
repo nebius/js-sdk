@@ -196,6 +196,16 @@ message SanitizeDemo {
   map<string, string> creds_map = 5 [(nebius.credentials) = true];
 }
 
+message ImmutableDemo {
+  int32 immutable = 1 [(nebius.field_behavior) = IMMUTABLE];
+  int32 mutable = 2;
+  oneof immutable_choice {
+    option (nebius.oneof_behavior) = IMMUTABLE;
+    int32 first = 3;
+    int32 second = 4;
+  }
+}
+
 service BehaviorService {
   // Updates a payload with authored method documentation.
   rpc Update(Payload) returns (Payload);

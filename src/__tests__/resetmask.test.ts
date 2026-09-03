@@ -255,6 +255,120 @@ describe('resetMaskFromMessage', () => {
     });
   });
 
+  describe('immutable descriptors', () => {
+    const immutableChildDescriptor: MessageDescriptor = {
+      fields: {
+        immutable: { pbName: 'immutable', scalarType: 5, immutable: true },
+      },
+    };
+    const partiallyImmutableDescriptor: MessageDescriptor = {
+      fields: {
+        immutable: { pbName: 'immutable', scalarType: 5, immutable: true },
+        mutable: { pbName: 'mutable', scalarType: 5 },
+      },
+    };
+
+    test('skips immutable fields but keeps mutable nested fields', () => {
+      const message = attachMessageDescriptor(
+        {
+          immutableScalar: 0,
+          immutableMessage: { immutable: 0 },
+          mutableMessage: { immutable: 0, mutable: 0 },
+        },
+        {
+          fields: {
+            immutableScalar: {
+              pbName: 'immutable_scalar',
+              scalarType: 5,
+              immutable: true,
+            },
+            immutableMessage: {
+              pbName: 'immutable_message',
+              immutable: true,
+              message: () => immutableChildDescriptor,
+            },
+            mutableMessage: {
+              pbName: 'mutable_message',
+              message: () => partiallyImmutableDescriptor,
+            },
+          },
+        },
+      );
+
+      expect(resetMaskFromMessage(message)!.marshal()).toBe('mutable_message.mutable');
+    });
+
+    test('keeps mutable containers whose children are all immutable', () => {
+      const message = attachMessageDescriptor(
+        {
+          child: { immutable: 0 },
+          children: [{ immutable: 0 }],
+          childrenByKey: { key: { immutable: 0 } },
+        },
+        {
+          fields: {
+            child: { pbName: 'child', message: () => immutableChildDescriptor },
+            children: {
+              pbName: 'children',
+              repeated: true,
+              message: () => immutableChildDescriptor,
+            },
+            childrenByKey: {
+              pbName: 'children_by_key',
+              map: true,
+              mapValue: () => immutableChildDescriptor,
+            },
+          },
+        },
+      );
+
+      expect(resetMaskFromMessage(message)!.marshal()).toBe('child,children.*,children_by_key.*');
+    });
+
+    test('immutable oneof keeps only its selected default field', () => {
+      const choiceDescriptor: MessageDescriptor = {
+        fields: {
+          immutableField: {
+            pbName: 'immutable_field',
+            scalarType: 5,
+            immutable: true,
+          },
+          selected: { pbName: 'selected', scalarType: 5 },
+          other: { pbName: 'other', scalarType: 5 },
+        },
+      };
+      const oneofDescriptor: MessageDescriptor = {
+        fields: {
+          choice: {
+            pbName: 'choice',
+            oneof: true,
+            immutableOneof: true,
+            message: () => choiceDescriptor,
+          },
+        },
+      };
+
+      const unset = attachMessageDescriptor({ choice: undefined }, oneofDescriptor);
+      const selected = attachMessageDescriptor(
+        { choice: { $case: 'selected', selected: 0 } },
+        oneofDescriptor,
+      );
+      const selectedNonDefault = attachMessageDescriptor(
+        { choice: { $case: 'selected', selected: 1 } },
+        oneofDescriptor,
+      );
+      const directlyImmutable = attachMessageDescriptor(
+        { choice: { $case: 'immutableField', immutableField: 0 } },
+        oneofDescriptor,
+      );
+
+      expect(resetMaskFromMessage(unset)!.marshal()).toBe('');
+      expect(resetMaskFromMessage(selected)!.marshal()).toBe('selected');
+      expect(resetMaskFromMessage(selectedNonDefault)!.marshal()).toBe('');
+      expect(resetMaskFromMessage(directlyImmutable)!.marshal()).toBe('');
+    });
+  });
+
   test('WKT Value reflects selected JS branch and oneof resets', () => {
     const value = attachMessageDescriptor({ nullValue: null }, descriptorWithFields('nullValue'));
     expect(resetMaskFromMessage(value)!.marshal()).toBe(
