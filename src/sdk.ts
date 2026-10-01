@@ -874,7 +874,11 @@ export class SDK implements SDKInterface {
     };
   }
 
-  /** Gets an access token from the configured token provider. */
+  /**
+   * Gets an access token from the configured token provider.
+   *
+   * Rejects when the SDK uses a provider that does not expose tokens, including OneOfProvider.
+   */
   async getToken(
     timeoutMs?: number,
     options?: import('./runtime/authorization/provider.js').AuthorizationOptions,

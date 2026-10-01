@@ -32,9 +32,10 @@ import type { AuthorizationOptions } from './authorization/provider.js';
 /**
  * Controls the timeout and retry policy for one logical request.
  *
- * All values are milliseconds except {@link RetryOptions.RetryCount}. A gRPC
- * `deadline` in the same call-options object limits the complete request. The
- * SDK uses a 15-minute deadline when you omit it.
+ * All values are milliseconds except {@link RetryOptions.RetryCount}.
+ * {@link RetryOptions.AuthTimeout} limits the complete request. The default is
+ * 15 minutes. A gRPC `deadline` in the same call-options object can end the
+ * request earlier.
  *
  * @example
  * ```ts

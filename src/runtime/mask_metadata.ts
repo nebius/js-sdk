@@ -1,3 +1,9 @@
+/**
+ * Adds explicit select and reset masks to gRPC metadata.
+ *
+ * @packageDocumentation
+ */
+
 import { Metadata } from '@grpc/grpc-js';
 
 import { Mask } from './fieldmask.js';

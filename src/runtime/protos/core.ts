@@ -86,8 +86,9 @@ export interface MessageFieldDescriptor {
   immutableOneof?: boolean;
   /** Specifies whether the field is a map. */
   map?: boolean;
-  /** Contains the scalar types of map keys and values. */
+  /** Contains the protobuf scalar type of map keys. */
   mapKeyType?: MessageFieldScalarType;
+  /** Contains the protobuf type of map values; 11 identifies message values. */
   mapValueType?: MessageFieldScalarType | 11;
   /** Contains the protobuf descriptor code when this is a scalar or enum. */
   scalarType?: MessageFieldScalarType;

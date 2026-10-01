@@ -32,6 +32,7 @@ export const ErrRecursionTooDeep = new Error('recursion too deep');
 const RECURSION_TOO_DEEP = 1000;
 /** Controls immutable fields in descriptor-based mask conversion. */
 export interface MaskConversionOptions {
+  /** Includes immutable fields. Defaults to false for reset masks and true for known-field masks. */
   includeImmutables?: boolean;
 }
 

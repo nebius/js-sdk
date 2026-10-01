@@ -47,10 +47,16 @@ function defaultPollErrorBackoff(attempt: number): number {
 
 /** Reports the final error of an unsuccessful operation. */
 export class OperationError extends Error {
+  /** Contains the terminal gRPC status code. */
   readonly code: number;
+  /** Contains the terminal status and its raw details. */
   readonly status: Status;
+  /** Contains decoded Nebius service-error details. */
   readonly serviceErrors: ReturnType<typeof extractNebiusServiceErrors>;
-  constructor(public readonly operation: { id(): string; status(): Status | undefined }) {
+  constructor(
+    /** Retains the failed operation for inspection. */
+    public readonly operation: { id(): string; status(): Status | undefined },
+  ) {
     const value = operation.status() ?? Status.create();
     super(`Operation ${operation.id()} failed: ${value.message}`);
     this.name = 'OperationError';
@@ -63,6 +69,7 @@ export class OperationError extends Error {
 /** Reports a malformed operation envelope and retains its raw value. */
 export class OperationValidationError extends TypeError {
   constructor(
+    /** Retains the rejected operation envelope. */
     public readonly operation: GenericOperation,
     issues: string[],
   ) {
@@ -456,10 +463,11 @@ export class Operation<TReq> {
    * Polls the operation until the service returns a final status.
    *
    * The method updates this object in place. It continues after a polling call
-   * reaches its deadline, because the remote operation can still be running.
+   * reaches its per-attempt deadline, because the remote operation can still be running.
    * Consecutive retriable polling errors use exponential backoff with jitter.
    * It rethrows non-retriable polling errors and rejects failed operations.
-   * A resolved promise means that the operation succeeded.
+   * A resolved promise means that the operation succeeded. The caller deadline,
+   * timeoutMs, or AbortSignal stops local waiting without canceling the remote operation.
    *
    * @param intervalSec Sets the poll interval in seconds. Non-positive values use the default of 1.
    * @param metadata Sends metadata with every polling request.
@@ -582,8 +590,7 @@ export class Operation<TReq> {
   /**
    * Gets the latest operation state from the operation service.
    *
-   * The method replaces the wrapped state in place. It does nothing when the
-   * operation has no ID. Request errors reject the returned promise.
+   * The method refreshes the wrapped state in place. Request errors reject the returned promise.
    *
    * @example
    * ```ts

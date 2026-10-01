@@ -1,3 +1,9 @@
+/**
+ * Acquires tokens from a Nebius-compatible HTTP metadata endpoint.
+ *
+ * @packageDocumentation
+ */
+
 import { status } from '@grpc/grpc-js';
 
 import {
@@ -67,6 +73,10 @@ export class IMDSBearer extends Bearer {
   private readonly fetcher: typeof globalThis.fetch;
   private readonly maxAttempts: number;
   private readonly backoffMs: number;
+  /**
+   * Creates an HTTP metadata token source.
+   * Throws if the endpoint is not a valid HTTP(S) URL or the retry options are invalid.
+   */
   constructor(
     private readonly endpoint: string,
     options: IMDSOptions = {},
@@ -93,9 +103,11 @@ export class IMDSBearer extends Bearer {
   [custom](): string {
     return `IMDSBearer(endpoint=${this.endpoint})`;
   }
+  /** Returns a JSON-safe value for logs. */
   [customJson](): object {
     return { type: this.$type, endpoint: this.endpoint };
   }
+  /** Sets the authorization metrics sink. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);
   }

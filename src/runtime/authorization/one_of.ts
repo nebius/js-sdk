@@ -1,3 +1,9 @@
+/**
+ * Selects a named authorization provider for each request.
+ *
+ * @packageDocumentation
+ */
+
 import type { Authenticator, AuthorizationOptions, Provider } from './provider.js';
 
 /** Selects exactly one named authorization provider for each RPC. */
@@ -14,6 +20,7 @@ export class OneOfProvider implements Provider {
     this.providers = new Map(entries);
   }
 
+  /** Selects the provider named by options.selector; a null entry skips authorization. */
   authenticator(options?: AuthorizationOptions): Authenticator {
     const selector = options?.selector;
     if (selector === undefined) throw new Error('Missing authorization selector.');
@@ -23,6 +30,7 @@ export class OneOfProvider implements Provider {
     return this.providers.get(selector)?.authenticator(options) ?? { authenticate: async () => {} };
   }
 
+  /** Closes each distinct provider and rejects with AggregateError if any close fails. */
   async close(graceMs?: number): Promise<void> {
     const providers = new Set(this.providers.values());
     const results = await Promise.allSettled(

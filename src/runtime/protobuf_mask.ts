@@ -1,3 +1,9 @@
+/**
+ * Descriptor-based protobuf mask operations. Helpers return copies of messages.
+ *
+ * @packageDocumentation
+ */
+
 import { Mask } from './fieldmask.js';
 import {
   dayjs,
@@ -8,7 +14,6 @@ import {
   type MessageFns,
 } from './protos/core.js';
 
-/** Descriptor-based protobuf mask operations. Helpers return copies of messages. */
 import type { MaskConversionOptions } from './resetmask.js';
 
 // Native JS values and oneof unions stay in their generated representation.
@@ -614,9 +619,13 @@ export function replaceAtFieldPath<T>(
 
 /** Defines one selected value visited by protobuf traversal. */
 export interface ProtobufVisit {
+  /** Contains the visited value in its native JS representation. */
   value: unknown;
+  /** Describes the visited protobuf field or collection element. */
   descriptor: MessageFieldDescriptor;
+  /** Contains field names and collection keys leading to this value. */
   path: readonly string[];
+  /** Contains the selection applied beneath this path. */
   innerMask: Mask | null;
 }
 /** Visits populated selected fields. Return false to stop. Leaf masks stop descent. */

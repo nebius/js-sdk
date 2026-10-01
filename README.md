@@ -9,7 +9,8 @@ authenticate, manage resources, and call Nebius APIs from Node.js.
 - [API reference and service index](https://nebius.github.io/js-sdk/documents/SERVICES.html)
 - [Nebius API definitions](https://github.com/nebius/api)
 
-The build generates TypeScript API sources from protobuf files in `src/api/`.
+The build generates TypeScript API sources in `src/api/` from the protobuf files
+in `nebius-api/`.
 Do not edit these generated files.
 
 ## Install
@@ -23,7 +24,7 @@ npm install @nebius/js-sdk
 To build this repository, use Node.js 24:
 
 ```bash
-git clone git@github.com:nebius/js-sdk.git
+git clone --recurse-submodules git@github.com:nebius/js-sdk.git
 cd js-sdk
 nvm use
 npm install
@@ -186,6 +187,8 @@ If you used `EnvBearer()` with `NEBIUS_TOKEN`, rename that variable to `NEBIUS_I
 or pass `new EnvBearer('NEBIUS_TOKEN')` explicitly. Catch SDK construction errors where
 your application loads CLI configuration or service-account credentials. Failed operation
 waits now reject with `OperationError`; its `operation` property retains the failed state.
+The default retry count is now 2 retries after the first attempt, for 3 total attempts.
+`FederationAccountBearer` uses `timeoutMs` for the browser callback and token HTTP request together.
 
 ### Service account object
 
@@ -334,6 +337,7 @@ while (!operation.done()) {
 }
 
 process.stdout.write('\n');
+await operation.wait(); // Reject if the completed operation failed.
 ```
 
 ### Get the operation service
@@ -396,7 +400,7 @@ const status = await request.status;
 
 console.log({ bucket, status });
 
-// These callbacks run only when the server supplies the matching header.
+// Missing headers resolve to an empty string after the final attempt.
 void request.requestId.then((requestId) => console.log({ requestId }));
 void request.traceId.then((traceId) => console.log({ traceId }));
 ```
@@ -455,15 +459,28 @@ await operation.wait();
 Read the service documentation before you reset list or map fields.
 Set `resetMask` or `selectMask` in call options to provide an explicit mask.
 `runtime/mask_metadata` also provides `withResetMask()` and `withSelectMask()`.
+Explicit masks compose with existing mask header values. Supplying `resetMask` skips automatic discovery.
 
 `runtime/protobuf_mask` provides descriptor-based known-field masks, modified reset masks, selection, patching, and path traversal.
 These helpers use protobuf field names and return message copies for transformations.
 Use `{ includeImmutables: true }` to include immutable fields in reset-mask conversion.
 
+## Canonical protobuf JSON
+
 `runtime/protos/proto_json` provides additive canonical protobuf JSON through `toProtoJSON()` and `fromProtoJSON()`.
 Supply the generated `protoRegistry` to expand registered `Any` payloads. Standard protobuf wrapper payloads are also supported. Registered extensions use bracketed full names, such as `[nebius.nid]`, and retain explicitly set default values.
 Canonical parsing validates field names, oneofs, scalar types, and numeric ranges. Use `{ ignoreUnknownFields: true }` as the fourth `fromProtoJSON()` argument to skip unknown fields and enum names.
 Existing generated `toJSON()` output remains unchanged.
+
+```ts
+import { GetBucketRequest } from '@nebius/js-sdk/api/nebius/storage/v1/index';
+import { protoRegistry } from '@nebius/js-sdk/api/protobuf';
+import { fromProtoJSON, toProtoJSON } from '@nebius/js-sdk/runtime/protos/proto_json';
+
+const request = GetBucketRequest.create({ id: 'bucket-id' });
+const json = toProtoJSON(GetBucketRequest, request, protoRegistry);
+const restored = fromProtoJSON(GetBucketRequest, json, protoRegistry);
+```
 
 ## Timeouts and retries
 
@@ -476,7 +493,10 @@ Successful credential recovery starts a fresh request timeout window. The overal
 A unary call has these limits:
 
 - `deadline` limits authorization, the request, and all retries. Use a `Date`
-  or an absolute epoch time in milliseconds. The default is 15 minutes.
+  or an absolute epoch time in milliseconds. The earlier caller deadline or
+  `AuthTimeout` ends the logical call.
+- `AuthTimeout` limits the logical call, including all authorization and
+  request cycles. The default is 15 minutes.
 - [`RetryOptions.RequestTimeout`](https://nebius.github.io/js-sdk/interfaces/runtime_request.RetryOptions.html#requesttimeout)
   limits the request and its retries after authorization. The default is 60
   seconds.

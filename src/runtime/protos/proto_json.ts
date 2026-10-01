@@ -1,4 +1,8 @@
-/** Registry-aware canonical protobuf JSON, alongside the existing generated JSON API. */
+/**
+ * Registry-aware canonical protobuf JSON, alongside the existing generated JSON API.
+ *
+ * @packageDocumentation
+ */
 import { anyFromJSON, type AnyShape, anyToJSON } from './any.js';
 import { base64FromBytes, bytesFromBase64 } from './base64.js';
 import {
@@ -18,6 +22,7 @@ import type { ExtensionDescriptor, Registry } from './registry.js';
 type JSONValue = Record<string, unknown>;
 /** Controls canonical protobuf JSON parsing. Unknown fields are rejected by default. */
 export interface ProtoJSONOptions {
+  /** Skips unknown fields and enum names instead of rejecting them. Defaults to false. */
   ignoreUnknownFields?: boolean;
 }
 const valueTypes = new Set(
