@@ -12,7 +12,14 @@ export function valueFromJSON(o: any): any {
   if (Array.isArray(o)) return o.map(valueFromJSON);
   if (typeof o === 'object') {
     const out: any = {};
-    for (const [k, v] of Object.entries(o)) out[k] = valueFromJSON(v);
+    for (const [k, v] of Object.entries(o)) {
+      Object.defineProperty(out, k, {
+        value: valueFromJSON(v),
+        writable: true,
+        enumerable: true,
+        configurable: true,
+      });
+    }
     return out;
   }
   return o;
@@ -23,7 +30,14 @@ export function valueToJSON(v: any): any {
   if (Array.isArray(v)) return v.map(valueToJSON);
   if (typeof v === 'object') {
     const out: any = {};
-    for (const [k, vv] of Object.entries(v)) out[k] = valueToJSON(vv);
+    for (const [k, vv] of Object.entries(v)) {
+      Object.defineProperty(out, k, {
+        value: valueToJSON(vv),
+        writable: true,
+        enumerable: true,
+        configurable: true,
+      });
+    }
     return out;
   }
   return v;
@@ -73,65 +87,62 @@ export function writeValue(writer: BinaryWriter, v: any): void {
  * When the input contains several oneof alternatives, the last decoded value
  * wins. Unknown fields are skipped.
  */
-export function readValue(reader: BinaryReader, length: number): any {
+export function readValue(reader: BinaryReader, length: number, base?: any): any {
   const end = reader.pos + length;
-  let out: any = null;
+  let out: any = base ?? null;
   while (reader.pos < end) {
     const tag = reader.uint32();
-    switch (tag >>> 3) {
-      case 1: {
+    switch (tag) {
+      case 8: {
         reader.int32(); // null enum, ignore actual value
         out = null;
         break;
       }
-      case 2: {
+      case 17: {
         out = reader.double();
         break;
       }
-      case 3: {
+      case 26: {
         out = reader.string();
         break;
       }
-      case 4: {
+      case 32: {
         out = reader.bool();
         break;
       }
-      case 5: {
+      case 42: {
         // struct
         const end2 = reader.uint32() + reader.pos;
-        const obj: any = {};
+        const obj: any = out && typeof out === 'object' && !Array.isArray(out) ? { ...out } : {};
         while (reader.pos < end2) {
           const t2 = reader.uint32();
-          switch (t2 >>> 3) {
-            case 1:
+          switch (t2) {
+            case 10:
               const end3 = reader.uint32() + reader.pos;
               let key = '';
               let val: any = null;
               while (reader.pos < end3) {
                 const t3 = reader.uint32();
-                switch (t3 >>> 3) {
-                  case 1:
+                switch (t3) {
+                  case 10:
                     key = reader.string();
                     break;
-                  case 2: {
+                  case 18: {
                     const len = reader.uint32();
-                    val = readValue(reader, len);
+                    val = readValue(reader, len, val);
                     break;
                   }
                   default:
                     reader.skip(t3 & 7);
                 }
               }
-              obj[key] = val;
+              Object.defineProperty(obj, key, {
+                value: val,
+                writable: true,
+                enumerable: true,
+                configurable: true,
+              });
               break;
-            case 2: {
-              const len = reader.uint32();
-              // Read and discard unexpected value for Struct fields path 2
-              readValue(reader, len);
-              // This path is not expected for Struct fields; maintained for completeness
-              // but we'll ignore it to keep behavior consistent.
-              break;
-            }
             default:
               reader.skip(t2 & 7);
           }
@@ -139,13 +150,13 @@ export function readValue(reader: BinaryReader, length: number): any {
         out = obj;
         break;
       }
-      case 6: {
+      case 50: {
         // list
         const end2 = reader.uint32() + reader.pos;
-        const arr: any[] = [];
+        const arr: any[] = Array.isArray(out) ? [...out] : [];
         while (reader.pos < end2) {
           const t2 = reader.uint32();
-          if (t2 >>> 3 === 1) {
+          if (t2 === 10) {
             const len = reader.uint32();
             arr.push(readValue(reader, len));
           } else {

@@ -3,6 +3,7 @@ import { request as httpRequest, type IncomingMessage } from 'http';
 import { request as httpsRequest } from 'https';
 import { URL } from 'url';
 
+import { TimeoutError } from '../../util/cancelable.js';
 import { Logger } from '../../util/logging.js';
 import { AUTH_ENDPOINT, TOKEN_ENDPOINT } from './constants.js';
 import { isWsl } from './is_wsl.js';
@@ -32,16 +33,24 @@ function httpsUrl(raw: string): string {
   return `https://${raw.replace(/^\/+/, '')}`;
 }
 
-async function openBrowser(url: string, logger?: Logger): Promise<void> {
+// Successful launch leaves login waiting for its callback; only failures settle this promise.
+function launchBrowser(command: string, args: string[]): Promise<never> {
+  return new Promise<never>((_resolve, reject) => {
+    const child = spawn(command, args, { detached: true, stdio: 'ignore' });
+    child.on('error', reject);
+    child.once('exit', (code, signal) => {
+      if (code !== 0) reject(new Error(`Browser launcher exited with ${signal ?? code}.`));
+    });
+    child.unref();
+  });
+}
+
+async function openBrowser(url: string, logger?: Logger): Promise<never> {
   const platform = process.platform;
   if (platform === 'linux') {
     if (isWsl()) {
       logger?.trace('detected WSL, using powershell.exe to open browser');
-      spawn('powershell.exe', ['-NoProfile', '-NonInteractive', 'Start', url], {
-        detached: true,
-        stdio: 'ignore',
-      }).unref();
-      return;
+      return launchBrowser('powershell.exe', ['-NoProfile', '-NonInteractive', 'Start', url]);
     }
 
     // Probe common browser open providers and pick the first available one.
@@ -53,29 +62,26 @@ async function openBrowser(url: string, logger?: Logger): Promise<void> {
         logger?.trace('which returned', { provider, status: res.status });
         if (res.status === 0) {
           logger?.trace('using linux browser provider', { provider });
-          spawn(provider, [url], { detached: true, stdio: 'ignore' }).unref();
-          return;
+          return launchBrowser(provider, [url]);
         }
       } catch (err) {
         logger?.debug('failed to probe linux browser provider, will try next', { err, provider });
       }
     }
 
-    // If none found, log and try xdg-open to produce a predictable failure mode.
-    logger?.debug('browser provider not found, choosing xdg-open to fail');
-    spawn('xdg-open', [url], { detached: true, stdio: 'ignore' }).unref();
-    return;
+    logger?.debug('browser provider not found, continuing manual login');
+    return new Promise<never>(() => {});
   }
 
   if (platform === 'darwin') {
     logger?.trace('detected darwin, using open to open browser');
-    spawn('open', [url], { detached: true, stdio: 'ignore' }).unref();
+    return launchBrowser('open', [url]);
   } else if (platform === 'win32') {
     logger?.trace('detected win32, using start to open browser');
-    spawn('cmd', ['/c', 'start', '', url], { detached: true, stdio: 'ignore' }).unref();
+    return launchBrowser('cmd', ['/c', 'start', '', url]);
   } else {
     logger?.trace('unknown platform, using xdg-open to open browser', { platform });
-    spawn('xdg-open', [url], { detached: true, stdio: 'ignore' }).unref();
+    return launchBrowser('xdg-open', [url]);
   }
 }
 
@@ -85,9 +91,12 @@ function doHttpRequest(
   headers: Record<string, string>,
   body?: string,
   tls?: { ca?: Buffer | string | string[] },
+  timeoutMs?: number,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
 ): Promise<{ status: number; data: any }> {
-  return new Promise((resolve, reject) => {
+  if (timeoutMs !== undefined && timeoutMs <= 0) return Promise.reject(new TimeoutError());
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  return new Promise<{ status: number; data: unknown }>((resolve, reject) => {
     const u = new URL(urlStr);
     const isHttps = u.protocol === 'https:';
     const opts = {
@@ -102,6 +111,7 @@ function doHttpRequest(
     };
     const req = (isHttps ? httpsRequest : httpRequest)(opts, (res: IncomingMessage) => {
       const chunks: Buffer[] = [];
+      res.on('error', reject);
       res.on('data', (c: Buffer) => chunks.push(c));
       res.on('end', () => {
         const text = Buffer.concat(chunks).toString('utf8');
@@ -115,8 +125,14 @@ function doHttpRequest(
       });
     });
     req.on('error', reject);
+    if (timeoutMs !== undefined && Number.isFinite(timeoutMs)) {
+      timer = setTimeout(() => req.destroy(new TimeoutError()), timeoutMs);
+      timer.unref?.();
+    }
     if (body) req.write(body);
     req.end();
+  }).finally(() => {
+    if (timer) clearTimeout(timer);
   });
 }
 
@@ -140,39 +156,43 @@ export async function getCode(params: {
   const { clientId, authEndpoint, federationId, writer, noBrowserOpen, timeoutMs, logger } = params;
   const pkce = new PKCE();
   const cb = new CallbackHandler(logger?.child('callback'));
-  await cb.listenAndServe();
-  const redirectUri = cb.addr; // e.g. http://127.0.0.1:port
+  try {
+    await cb.listenAndServe();
+    const redirectUri = cb.addr; // e.g. http://127.0.0.1:port
 
-  logger?.debug(`Callback handler listening`, {
-    redirectUri,
-  });
+    logger?.debug(`Callback handler listening`, {
+      redirectUri,
+    });
 
-  const base = new URL(AUTH_ENDPOINT, httpsUrl(authEndpoint));
-  base.searchParams.set('response_type', 'code');
-  base.searchParams.set('client_id', clientId);
-  base.searchParams.set('scope', 'openid');
-  base.searchParams.set('redirect_uri', redirectUri);
-  base.searchParams.set('code_challenge', pkce.challenge);
-  base.searchParams.set('code_challenge_method', pkce.method);
-  base.searchParams.set('state', cb.state);
-  if (federationId && federationId.length > 0) {
-    base.searchParams.set('federation-id', federationId);
+    const base = new URL(AUTH_ENDPOINT, httpsUrl(authEndpoint));
+    base.searchParams.set('response_type', 'code');
+    base.searchParams.set('client_id', clientId);
+    base.searchParams.set('scope', 'openid');
+    base.searchParams.set('redirect_uri', redirectUri);
+    base.searchParams.set('code_challenge', pkce.challenge);
+    base.searchParams.set('code_challenge_method', pkce.method);
+    base.searchParams.set('state', cb.state);
+    if (federationId && federationId.length > 0) {
+      base.searchParams.set('federation-id', federationId);
+    }
+
+    const url = base.toString();
+    const write = writer ?? ((s: string) => console.log(s));
+    write(`Open this URL to continue authentication: ${url}\n`);
+    logger?.info('open browser', { url, noBrowserOpen });
+    logger?.trace('waiting for authorization code');
+    const callback = cb.waitForCode(timeoutMs);
+    const code = await (noBrowserOpen
+      ? callback
+      : Promise.race([callback, openBrowser(url, logger)]));
+    logger?.trace('authorization code received, shutting down callback server', {
+      code: code ? code.slice(0, 3) + '...' : null,
+    });
+    if (!code) throw new Error('Timeout waiting for authorization code');
+    return { code, state: cb.state, redirectUri, verifier: pkce.verifier };
+  } finally {
+    await cb.shutdown();
   }
-
-  const url = base.toString();
-  const write = writer ?? ((s: string) => console.log(s));
-  write(`Open this URL to continue authentication: ${url}\n`);
-  logger?.info('open browser', { url, noBrowserOpen });
-  if (!noBrowserOpen) await openBrowser(url, logger);
-
-  logger?.trace('waiting for authorization code');
-  const code = await cb.waitForCode(timeoutMs);
-  logger?.trace('authorization code received, shutting down callback server', {
-    code: code ? code.slice(0, 3) + '...' : null,
-  });
-  await cb.shutdown();
-  if (!code) throw new Error('Timeout waiting for authorization code');
-  return { code, state: cb.state, redirectUri, verifier: pkce.verifier };
 }
 
 /**
@@ -189,6 +209,7 @@ export async function getToken(params: {
   verifier: string;
   ca?: Buffer | string | string[];
   logger?: Logger;
+  timeoutMs?: number;
 }): Promise<GetTokenResult> {
   const { clientId, tokenEndpoint, code, redirectUri, verifier, ca, logger } = params;
   const url = new URL(TOKEN_ENDPOINT, httpsUrl(tokenEndpoint)).toString();
@@ -214,6 +235,7 @@ export async function getToken(params: {
     },
     body,
     { ca },
+    params.timeoutMs,
   );
   if (res.status < 200 || res.status >= 300) {
     throw new Error(
@@ -234,8 +256,8 @@ export async function getToken(params: {
 /**
  * Completes the interactive OAuth authorization-code flow with PKCE.
  *
- * This combines {@link getCode} and {@link getToken}. `timeoutMs` applies to
- * the wait for the browser callback. Set `noBrowserOpen` to print the URL
+ * This combines {@link getCode} and {@link getToken}. `timeoutMs` bounds
+ * the callback and token request together. Set `noBrowserOpen` to print the URL
  * without launching a browser.
  */
 export async function authorize(params: {
@@ -258,6 +280,16 @@ export async function authorize(params: {
     ca,
     logger,
   } = params;
+  const deadline =
+    timeoutMs !== undefined && Number.isFinite(timeoutMs)
+      ? Date.now() + Math.max(0, timeoutMs)
+      : undefined;
+  const remaining = () => {
+    if (deadline === undefined) return undefined;
+    const ms = deadline - Date.now();
+    if (ms <= 0) throw new TimeoutError();
+    return ms;
+  };
   logger?.trace('authorize: start');
   const { code, redirectUri, verifier } = await getCode({
     clientId,
@@ -265,7 +297,7 @@ export async function authorize(params: {
     federationId,
     writer,
     noBrowserOpen,
-    timeoutMs,
+    timeoutMs: remaining(),
     logger,
   });
   logger?.debug('auth code received', {
@@ -281,6 +313,7 @@ export async function authorize(params: {
     verifier,
     ca,
     logger,
+    timeoutMs: remaining(),
   });
   return res;
 }

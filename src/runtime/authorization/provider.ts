@@ -15,6 +15,8 @@
  * request that must force a fresh token or report a renewal error immediately.
  */
 export interface AuthorizationOptions {
+  /** Selects a named credential source when using OneOfProvider. */
+  selector?: string;
   /**
    * Requests renewal.
    *
@@ -31,9 +33,10 @@ export interface AuthorizationOptions {
   /** Sets the timeout for the underlying renewal request, in milliseconds. */
   renewRequestTimeoutMs?: number;
   /**
-   * Sets the maximum interceptor authentication attempts for this RPC.
+   * Sets the maximum credential-acquisition attempts and server-rejection attempts for this RPC.
    *
-   * A credential source can perform separate inner or background attempts.
+   * Initial acquisition retries do not consume server-rejection recovery. A credential source
+   * can perform separate inner or background attempts.
    */
   maxRetries?: number;
 }
@@ -53,6 +56,8 @@ export interface Authenticator {
     timeoutMs?: number | undefined,
     options?: AuthorizationOptions | undefined,
   ): Promise<void>;
+  /** Refreshes a rejected credential and reports whether the RPC can retry. */
+  handleError?(err: unknown, options?: AuthorizationOptions, timeoutMs?: number): Promise<boolean>;
   /** Returns whether the retry is allowed. */
   canRetry?(err: unknown, options?: AuthorizationOptions | undefined): boolean;
 }
@@ -65,7 +70,7 @@ export interface Authenticator {
  */
 export interface Provider {
   /** Returns the configured authenticator. */
-  authenticator(): Authenticator;
+  authenticator(options?: AuthorizationOptions): Authenticator;
   /** Closes resources that the provider owns. */
   close?(graceMs?: number | undefined): Promise<void>;
 }

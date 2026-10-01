@@ -51,6 +51,7 @@ function opWithTracker(
 ): OperationPb {
   return OperationPb.create({
     id: 'op-1',
+    createdAt: dayjs(0),
     progressTracker: tracker,
     status: options?.status,
     finishedAt: options?.finishedAt,
@@ -68,7 +69,7 @@ describe('Operation progress tracker', () => {
     const estimateUpdated = dayjs(baseNow + 30_000);
     const finishedTime = dayjs(baseNow + 1_000);
 
-    const op0 = OperationPb.create({ id: 'op-1' });
+    const op0 = OperationPb.create({ id: 'op-1', createdAt: dayjs(0) });
 
     const op1 = opWithTracker(ProgressTracker.create({}));
 
@@ -264,7 +265,7 @@ describe('mlflow v1alpha1 operations', () => {
     const { server, address } = await startServerWithPort((server) => {
       const impl = partialServiceImplementation<MlflowClusterServiceServer>({
         create: (_c, cb) => {
-          cb(null, OperationAlpha.create({ id: 'mlflow-op-1' }));
+          cb(null, OperationAlpha.create({ id: 'mlflow-op-1', createdAt: dayjs(0) }));
         },
       });
       server.addService(MlflowClusterServiceService, impl);

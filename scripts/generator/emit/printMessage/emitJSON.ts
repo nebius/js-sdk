@@ -1,15 +1,17 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 import {
   defaultValueFor,
   enumFromJSONConv,
   enumToJSONConv,
   is64Bit,
+  isUnsigned64,
   jsonScalarConverter,
   msgFromJSONConv,
   msgToJSONConv,
   wktFqnOf,
 } from '../helpers.js';
 import { resolveMessageName } from '../typeNames.js';
+
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 
 export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[] {
   const lines: string[] = [];
@@ -44,7 +46,7 @@ export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[]
       } else if (vf.isEnum()) {
         vFrom = enumFromJSONConv(vf);
       } else if (is64Bit(vf)) {
-        vFrom = 'Long.fromValue';
+        vFrom = `((value: any) => Long.fromValue(value, ${isUnsigned64(vf)}))`;
       } else {
         vFrom = jsonScalarConverter(vf);
       }
@@ -53,7 +55,7 @@ export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[]
         `      ${name}: (isSet(object.${jsonName}) && typeof object.${jsonName} === "object" ? object.${jsonName}
         : (isSet(object.${pbName}) && typeof object.${pbName} === "object" ? object.${pbName} : undefined))
         ? Object.entries((object.${jsonName} ?? object.${pbName}) as any).reduce<{ [key: string]: any }>((acc, [key, value]) => {
-          acc[key] = ${vFrom}(value as any);
+          Object.defineProperty(acc, key, { value: ${vFrom}(value as any), writable: true, enumerable: true, configurable: true });
           return acc;
         }, {})
         : {},`,
@@ -78,7 +80,7 @@ export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[]
       } else if (is64Bit(f)) {
         lines.push(
           `      ${name}: globalThis.Array.isArray(object?.${jsonName} ?? object?.${pbName})
-        ? (object.${jsonName} ?? object.${pbName}).map((e: any) => Long.fromValue(e))
+        ? (object.${jsonName} ?? object.${pbName}).map((e: any) => Long.fromValue(e, ${isUnsigned64(f)}))
         : [],`,
         );
       } else {
@@ -112,11 +114,11 @@ export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[]
     } else if (is64Bit(f)) {
       if (f.tracksPresence()) {
         lines.push(`      ${name}: isSet(object.${jsonName} ?? object.${pbName})
-        ? Long.fromValue(object.${jsonName} ?? object.${pbName})
+        ? Long.fromValue(object.${jsonName} ?? object.${pbName}, ${isUnsigned64(f)})
         : undefined,`);
       } else {
         lines.push(`      ${name}: isSet(object.${jsonName} ?? object.${pbName})
-        ? Long.fromValue(object.${jsonName} ?? object.${pbName})
+        ? Long.fromValue(object.${jsonName} ?? object.${pbName}, ${isUnsigned64(f)})
         : Long.ZERO,`);
       }
     } else {
@@ -149,6 +151,7 @@ export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[]
               ? 'Long.fromValue'
               : jsonScalarConverter(f),
       isLong: is64Bit(f),
+      unsigned: isUnsigned64(f),
     }));
     if (cases.length > 0) {
       lines.push(`      ${prop}: (() => {`);
@@ -156,7 +159,7 @@ export function emitFromJSON(m: TSDescriptorMessage, typeName: string): string[]
         const rhs = c.isLong
           ? `{
             $case: "${c.caseName}",
-            ${c.caseName}: Long.fromValue(object.${c.jsonName} ?? object.${c.pbName})
+            ${c.caseName}: Long.fromValue(object.${c.jsonName} ?? object.${c.pbName}, ${c.unsigned})
           }`
           : `{
             $case: "${c.caseName}",
@@ -218,7 +221,7 @@ export function emitToJSON(m: TSDescriptorMessage): string[] {
       if (entries.length > 0) {
         obj[pick(${JSON.stringify(jsonName)}, ${JSON.stringify(pbName)})] = {};
         entries.forEach(([k, v]) => {
-          obj[pick(${JSON.stringify(jsonName)}, ${JSON.stringify(pbName)})][k] = ${kConv};
+          Object.defineProperty(obj[pick(${JSON.stringify(jsonName)}, ${JSON.stringify(pbName)})], k, { value: ${kConv}, writable: true, enumerable: true, configurable: true });
         });
       }
     }`);

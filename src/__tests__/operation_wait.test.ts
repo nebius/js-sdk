@@ -7,6 +7,7 @@ import {
   Operation,
   OperationService,
 } from '../runtime/operation.js';
+import { dayjs } from '../runtime/protos/core.js';
 import { Request } from '../runtime/request.js';
 import { Logger } from '../runtime/util/logging.js';
 
@@ -16,6 +17,7 @@ function operationProto(done = false): GenericOperation {
   return {
     $type: 'nebius.common.v1.Operation',
     id: 'operation-1',
+    createdAt: dayjs(0),
     description: '',
     createdBy: '',
     requestHeaders: {},
@@ -89,11 +91,70 @@ describe('Operation.wait poll error backoff', () => {
     expect(get).toHaveBeenCalledTimes(1);
   });
 
+  test.each(['wait', 'update'] as const)(
+    '%s preserves terminal state when an older pending response arrives later',
+    async (method) => {
+      const { operation, get } = operationWithResults([operationProto(true)]);
+      let resolve!: (value: Operation<TestRequest>) => void;
+      const pending = new Promise<Operation<TestRequest>>((done) => {
+        resolve = done;
+      });
+      get.mockImplementationOnce(() => ({ result: pending }));
+      const older = operation[method]();
+      await operation.update();
+      expect(operation.done()).toBe(true);
+      resolve(new Operation(operationProto(), { get }, new Logger()));
+      await expect(older).resolves.toBeUndefined();
+      expect(operation.done()).toBe(true);
+      expect(operation.successful()).toBe(true);
+      await operation.update();
+      expect(get).toHaveBeenCalledTimes(2);
+    },
+  );
+
+  test('clamps negative polling backoff to an immediate retry', async () => {
+    const { operation, get } = operationWithResults([
+      pollingError(status.UNAVAILABLE, 'temporarily unavailable'),
+      operationProto(true),
+    ]);
+    const wait = operation.wait(1, undefined, { pollErrorBackoff: () => -1 });
+    await jest.runAllTimersAsync();
+    await expect(wait).resolves.toBeUndefined();
+    expect(get).toHaveBeenCalledTimes(2);
+    expect(operation.successful()).toBe(true);
+  });
+
   test('can disable poll error retries', async () => {
     const error = pollingError(status.UNAVAILABLE, 'temporarily unavailable');
     const { operation, get } = operationWithResults([error]);
 
     await expect(operation.wait(0, undefined, { pollErrorBackoff: null })).rejects.toBe(error);
+    expect(get).toHaveBeenCalledTimes(1);
+  });
+
+  test('cancels an active poll when the overall wait timeout expires', async () => {
+    const { operation, get } = operationWithResults([]);
+    const cancel = jest.fn();
+    get.mockImplementationOnce(() => ({ result: new Promise(() => {}), cancel }));
+    const assertion = expect(operation.wait(1, undefined, { timeoutMs: 50 })).rejects.toMatchObject(
+      {
+        code: status.DEADLINE_EXCEEDED,
+      },
+    );
+    await jest.advanceTimersByTimeAsync(50);
+    await assertion;
+    expect(cancel).toHaveBeenCalledTimes(1);
+    expect(jest.getTimerCount()).toBe(0);
+  });
+
+  test('preserves a non-retriable poll error returned at the wait deadline', async () => {
+    const error = pollingError(status.PERMISSION_DENIED, 'permission denied');
+    const { operation, get } = operationWithResults([error]);
+    get.mockImplementationOnce(() => {
+      jest.setSystemTime(Date.now() + 50);
+      return { result: Promise.reject(error) };
+    });
+    await expect(operation.wait(0, undefined, { timeoutMs: 50 })).rejects.toBe(error);
     expect(get).toHaveBeenCalledTimes(1);
   });
 

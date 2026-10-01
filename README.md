@@ -9,7 +9,8 @@ authenticate, manage resources, and call Nebius APIs from Node.js.
 - [API reference and service index](https://nebius.github.io/js-sdk/documents/SERVICES.html)
 - [Nebius API definitions](https://github.com/nebius/api)
 
-The build generates TypeScript API sources from protobuf files in `src/api/`.
+The build generates TypeScript API sources in `src/api/` from the protobuf files
+in `nebius-api/`.
 Do not edit these generated files.
 
 ## Install
@@ -23,7 +24,7 @@ npm install @nebius/js-sdk
 To build this repository, use Node.js 24:
 
 ```bash
-git clone git@github.com:nebius/js-sdk.git
+git clone --recurse-submodules git@github.com:nebius/js-sdk.git
 cd js-sdk
 nvm use
 npm install
@@ -126,6 +127,69 @@ const sdk = new SDK({
 See the [`Config` reference](https://nebius.github.io/js-sdk/classes/runtime_cli_config.Config.html)
 for profile and environment settings.
 
+To opt in to VM discovery when the CLI file is missing, use the async factory:
+
+```ts
+const config = await Config.load({ clientId: 'example-application' });
+const sdk = new SDK({ configReader: config, userAgentPrefix: 'example-application/1.0' });
+```
+
+It probes the VM metadata endpoint, then checks `/mnt/cloud-metadata/token`.
+An existing invalid CLI file still raises an error. `new Config()` remains synchronous
+and requires the CLI file.
+
+### HTTP metadata token endpoint
+
+Set an HTTP metadata endpoint explicitly, or use `token-endpoint` in the selected CLI profile:
+
+```ts
+const sdk = new SDK({
+  credentials: { tokenEndpoint: 'http://metadata.example/token' },
+  userAgentPrefix: 'example-application/1.0',
+});
+const token = await sdk.getToken();
+```
+
+The endpoint returns `access_token` and `expires_at`. Acquisition starts when a token is needed.
+`EnvBearer` defaults to `NEBIUS_IAM_TOKEN`. Environment credentials and CLI configuration remain opt-in.
+
+Explicit invalid credentials now fail during SDK construction. Unsupported credential shapes,
+service-account reader failures, and CLI profile or credential initialization failures throw
+instead of disabling authorization. Token acquisition from lazy sources still starts on demand.
+
+### Per-request credentials
+
+Use named providers to choose an identity for each request:
+
+```ts
+import { OneOfProvider } from '@nebius/js-sdk/runtime/authorization/one_of';
+import { TokenProvider } from '@nebius/js-sdk/runtime/authorization/token';
+import { StaticBearer } from '@nebius/js-sdk/runtime/token/static';
+
+const sdk = new SDK({
+  credentials: new OneOfProvider({
+    primary: new TokenProvider(new StaticBearer(primaryToken)),
+    secondary: new TokenProvider(new StaticBearer(secondaryToken)),
+    anonymous: null,
+  }),
+  userAgentPrefix: 'example-application/1.0',
+});
+await sdk.whoami(undefined, { authorizationOptions: { selector: 'secondary' } });
+await sdk.close();
+```
+
+Each request requires a known selector. Each selected provider retains its own
+renewal and recovery behavior. SDK shutdown closes all providers.
+
+### Migration from previous JS releases
+
+If you used `EnvBearer()` with `NEBIUS_TOKEN`, rename that variable to `NEBIUS_IAM_TOKEN`
+or pass `new EnvBearer('NEBIUS_TOKEN')` explicitly. Catch SDK construction errors where
+your application loads CLI configuration or service-account credentials. Failed operation
+waits now reject with `OperationError`; its `operation` property retains the failed state.
+The default retry count is now 2 retries after the first attempt, for 3 total attempts.
+`FederationAccountBearer` uses `timeoutMs` for the browser callback and token HTTP request together.
+
 ### Service account object
 
 Pass the service account ID, public key ID, and PEM private key:
@@ -226,9 +290,7 @@ const sdk = new SDK({
 
 try {
   const buckets = new BucketService(sdk);
-  const request = CreateBucketRequest.create({
-    /* Set the request fields. */
-  });
+  const request = CreateBucketRequest.create({/* Set the request fields. */});
   const operation = await buckets.create(request).result;
   await operation.wait();
   console.log('Created resource:', operation.resourceId());
@@ -243,7 +305,9 @@ Use
 [`Request.result`](https://nebius.github.io/js-sdk/classes/runtime_request.Request.html#result)
 to get the operation. Use
 [`Operation.wait()`](https://nebius.github.io/js-sdk/classes/runtime_operation.Operation.html#wait)
-to wait for completion.
+to wait for completion. Failed operations reject with `OperationError`.
+Inspect `error.operation` or the original operation for its status and details.
+Malformed operation envelopes reject with `OperationValidationError`, which retains the raw operation.
 
 ### Track operation progress
 
@@ -273,6 +337,7 @@ while (!operation.done()) {
 }
 
 process.stdout.write('\n');
+await operation.wait(); // Reject if the completed operation failed.
 ```
 
 ### Get the operation service
@@ -290,6 +355,21 @@ const request = ListOperationsRequest.create({ resourceId: '...' });
 const response = await operationService.list(request);
 ```
 
+### Iterate list pages
+
+Services with paginated `list` calls provide `filter()`:
+
+```ts
+import { ListBucketsRequest } from '@nebius/js-sdk/api/nebius/storage/v1/index';
+
+for await (const bucket of buckets.filter(ListBucketsRequest.create({ parentId: 'project-id' }))) {
+  console.log(bucket.metadata?.id);
+}
+```
+
+Iteration stops when the page token is empty, or when the caller exits the loop.
+Services that return operations also provide `listOperations()` for their operation service address.
+
 ## Parent IDs
 
 The SDK can fill an empty parent ID from
@@ -298,10 +378,11 @@ or the CLI configuration.
 
 It fills these request fields:
 
-- `parentId` for `list` and `getByName`.
+- `parentId` for `list`, `listAggregated`, and `getByName`.
 - `metadata.parentId` for other methods except `update`.
 
-An explicit request value always takes priority.
+An explicit request value always takes priority. Defaults must match the annotated NID type.
+Set `tenantId` for tenant parents. Set `noParentId: true` to disable both defaults.
 
 ## Request metadata
 
@@ -319,7 +400,7 @@ const status = await request.status;
 
 console.log({ bucket, status });
 
-// These callbacks run only when the server supplies the matching header.
+// Missing headers resolve to an empty string after the final attempt.
 void request.requestId.then((requestId) => console.log({ requestId }));
 void request.traceId.then((traceId) => console.log({ traceId }));
 ```
@@ -327,8 +408,8 @@ void request.traceId.then((traceId) => console.log({ traceId }));
 [`Request.requestId`](https://nebius.github.io/js-sdk/classes/runtime_request.Request.html#requestid)
 and
 [`Request.traceId`](https://nebius.github.io/js-sdk/classes/runtime_request.Request.html#traceid)
-stay pending when the server does not supply their headers. Do not await them
-as request-completion signals.
+resolve with an empty string when the final attempt has no corresponding header.
+Use `Request.result` to wait for request completion.
 
 ### Authorization options
 
@@ -347,9 +428,7 @@ const callOptions = {
 };
 
 await sdk.whoami(undefined, callOptions);
-const updateRequest = UpdateBucketRequest.create({
-  /* Set the fields to update. */
-});
+const updateRequest = UpdateBucketRequest.create({/* Set the fields to update. */});
 const operation = await buckets.update(updateRequest, new Metadata(), callOptions);
 await operation.wait();
 ```
@@ -370,9 +449,7 @@ import { ensureResetMaskInMetadata } from '@nebius/js-sdk/runtime/resetmask';
 
 const request = UpdateBucketRequest.create({
   metadata: bucket.metadata,
-  spec: {
-    /* Set the fields to update or reset. */
-  },
+  spec: {/* Set the fields to update or reset. */},
 });
 const metadata = ensureResetMaskInMetadata(request);
 const operation = await buckets.update(request, metadata).result;
@@ -380,23 +457,58 @@ await operation.wait();
 ```
 
 Read the service documentation before you reset list or map fields.
+Set `resetMask` or `selectMask` in call options to provide an explicit mask.
+`runtime/mask_metadata` also provides `withResetMask()` and `withSelectMask()`.
+Explicit masks compose with existing mask header values. Supplying `resetMask` skips automatic discovery.
+
+`runtime/protobuf_mask` provides descriptor-based known-field masks, modified reset masks, selection, patching, and path traversal.
+These helpers use protobuf field names and return message copies for transformations.
+Use `{ includeImmutables: true }` to include immutable fields in reset-mask conversion.
+
+## Canonical protobuf JSON
+
+`runtime/protos/proto_json` provides additive canonical protobuf JSON through `toProtoJSON()` and `fromProtoJSON()`.
+Supply the generated `protoRegistry` to expand registered `Any` payloads. Standard protobuf wrapper payloads are also supported. Registered extensions use bracketed full names, such as `[nebius.nid]`, and retain explicitly set default values.
+Canonical parsing validates field names, oneofs, scalar types, and numeric ranges. Use `{ ignoreUnknownFields: true }` as the fourth `fromProtoJSON()` argument to skip unknown fields and enum names.
+Existing generated `toJSON()` output remains unchanged.
+
+```ts
+import { GetBucketRequest } from '@nebius/js-sdk/api/nebius/storage/v1/index';
+import { protoRegistry } from '@nebius/js-sdk/api/protobuf';
+import { fromProtoJSON, toProtoJSON } from '@nebius/js-sdk/runtime/protos/proto_json';
+
+const request = GetBucketRequest.create({ id: 'bucket-id' });
+const json = toProtoJSON(GetBucketRequest, request, protoRegistry);
+const restored = fromProtoJSON(GetBucketRequest, json, protoRegistry);
+```
 
 ## Timeouts and retries
+
+Set SDK-wide defaults with `SDKOptions.requestOptions`. Per-call options override these defaults.
+Call construction can throw synchronously for invalid options, serialization failures, or
+an unavailable client. Use `try`/`catch` around both the call and `await request.result`.
+A failed credential refresh rejects with an `AggregateError` containing both the refresh error and the original authorization error.
+Successful credential recovery starts a fresh request timeout window. The overall deadline still caps all authentication and request cycles.
 
 A unary call has these limits:
 
 - `deadline` limits authorization, the request, and all retries. Use a `Date`
-  or an absolute epoch time in milliseconds. The default is 15 minutes.
+  or an absolute epoch time in milliseconds. The earlier caller deadline or
+  `AuthTimeout` ends the logical call.
+- `AuthTimeout` limits the logical call, including all authorization and
+  request cycles. The default is 15 minutes.
 - [`RetryOptions.RequestTimeout`](https://nebius.github.io/js-sdk/interfaces/runtime_request.RetryOptions.html#requesttimeout)
   limits the request and its retries after authorization. The default is 60
   seconds.
 - [`RetryOptions.PerRetryTimeout`](https://nebius.github.io/js-sdk/interfaces/runtime_request.RetryOptions.html#perretrytimeout)
   limits one attempt. The default is 20 seconds.
 - [`RetryOptions.RetryCount`](https://nebius.github.io/js-sdk/interfaces/runtime_request.RetryOptions.html#retrycount)
-  sets the maximum number of retries. The default is 3.
+  sets the maximum number of retries after the first attempt. The default is 2, for 3 total attempts.
 
-The SDK retries common network errors, gRPC `UNAVAILABLE`, gRPC
-`RESOURCE_EXHAUSTED`, and retryable Nebius service errors.
+The SDK retries transient transport errors within the request deadline.
+Explicit service retry hints take priority. Each unary request has one stable idempotency key.
+Rejected renewable credentials can trigger one retry with a changed token.
+An explicit authorization header prevents automatic authorization.
 
 ```ts
 import { Metadata } from '@grpc/grpc-js';

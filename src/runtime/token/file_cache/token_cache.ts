@@ -117,6 +117,16 @@ export class TokenCache {
     return YAML.stringify({ tokens: toks });
   }
 
+  private async rewrite(fh: FileHandle, yaml: string): Promise<void> {
+    await fh.truncate(0);
+    const data = Buffer.from(yaml, 'utf8');
+    let offset = 0;
+    while (offset < data.length) {
+      const { bytesWritten } = await fh.write(data, offset, data.length - offset, offset);
+      offset += bytesWritten;
+    }
+  }
+
   /** Returns a named, unexpired token, or `undefined` when it is absent or expired. */
   async get(name: string): Promise<Token | undefined> {
     const logger = this.logger?.withFields({ name }) ?? undefined;
@@ -191,8 +201,7 @@ export class TokenCache {
       const yaml = this.dumpYaml(map);
 
       logger?.trace('Truncating and writing to cache file');
-      await fh.truncate(0);
-      await fh.writeFile(yaml, 'utf8');
+      await this.rewrite(fh, yaml);
     } finally {
       try {
         logger?.trace('Releasing lock on cache file');
@@ -245,8 +254,7 @@ export class TokenCache {
       logger?.trace('Truncating and writing updated tokens to cache file', {
         total: Object.keys(map).length,
       });
-      await fh.truncate(0);
-      await fh.writeFile(yaml, 'utf8');
+      await this.rewrite(fh, yaml);
     } finally {
       try {
         await this.flock(fh.fd, fsExt.constants.LOCK_UN);
@@ -302,8 +310,7 @@ export class TokenCache {
         logger?.trace('Token matches, removing from cache');
         delete map[name];
         const yaml = this.dumpYaml(map);
-        await fh.truncate(0);
-        await fh.writeFile(yaml, 'utf8');
+        await this.rewrite(fh, yaml);
         return true;
       } else {
         logger?.trace('Token does not match, not removing from cache', { existing });

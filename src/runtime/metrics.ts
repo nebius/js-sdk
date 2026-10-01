@@ -445,6 +445,10 @@ class InstrumentedReceiver extends Receiver {
     }
   }
 
+  handleError(err: unknown, options?: AuthorizationOptions, timeoutMs?: number): Promise<boolean> {
+    return this.receiver.handleError(err, options, timeoutMs);
+  }
+
   canRetry(err: unknown, options?: AuthorizationOptions | undefined): boolean {
     return this.receiver.canRetry(err, options);
   }
@@ -500,7 +504,7 @@ function isAuthMetricsSetter(bearer: Bearer): bearer is AuthMetricsSetter & Bear
 
 function applyMetricsSetter(bearer: Bearer, metrics: AuthMetricsInput): boolean {
   const seen = new Set<Bearer>();
-  for (let current: Bearer | undefined = bearer; current && !seen.has(current); ) {
+  for (let current: Bearer | undefined = bearer; current && !seen.has(current);) {
     seen.add(current);
     if (isAuthMetricsSetter(current)) {
       current.setMetrics(metrics);

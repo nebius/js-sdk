@@ -17,6 +17,7 @@ import {
 } from '../metrics.js';
 import { Bearer, Receiver, Token } from '../token.js';
 import { TokenSanitizer } from '../token_sanitizer.js';
+import { TimeoutError, withTimeout } from '../util/cancelable.js';
 import { custom, customJson, inspectJson, Logger } from '../util/logging.js';
 
 import type { SDKInterface } from '../../sdk.js';
@@ -96,15 +97,29 @@ class ExchangeableReceiver extends Receiver {
       }
 
       this.logger?.trace('fetching service client');
-      const svc = await this.getSvc();
+      const deadline = Number.isFinite(timeoutMs) ? now + Math.max(0, timeoutMs!) : undefined;
+      const remaining = () => {
+        if (deadline === undefined) return undefined;
+        const left = deadline - Date.now();
+        if (left <= 0) throw new TimeoutError();
+        return left;
+      };
+      const serviceBudget = remaining();
+      const svc =
+        serviceBudget === undefined
+          ? await this.getSvc()
+          : await withTimeout(this.getSvc(), serviceBudget);
+      const exchangeBudget = remaining();
       this.logger?.trace('making exchange call');
-      const res = await svc.exchange(req, md, options).result;
+      const pending = svc.exchange(req, md, options).result;
+      const res =
+        exchangeBudget === undefined ? await pending : await withTimeout(pending, exchangeBudget);
 
       if (!res || typeof res !== 'object') {
         throw new UnsupportedResponseError('CreateTokenResponse', res);
       }
 
-      if (res.tokenType !== 'Bearer') {
+      if (res.tokenType.toLowerCase() !== 'bearer') {
         throw new UnsupportedTokenTypeError(res.tokenType ?? String(res.tokenType));
       }
 
@@ -121,7 +136,7 @@ class ExchangeableReceiver extends Receiver {
         access_token: TokenSanitizer.accessTokenSanitizer().sanitize(res.accessToken),
       });
 
-      const expiration = isFinite(expSec) && expSec > 0 ? new Date(now + expSec * 1000) : undefined;
+      const expiration = Number.isFinite(expSec) ? new Date(now + expSec * 1000) : undefined;
       const token = new Token(res.accessToken, expiration);
       this.metrics.tokenAcquire(METRIC_RESULT_SUCCESS, metricDurationMs(start), this.trial);
       this.metrics.tokenLifetime(token);

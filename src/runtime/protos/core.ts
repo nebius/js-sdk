@@ -59,10 +59,25 @@ export type MessageFieldScalarType =
  * contains only the data needed by runtime features such as reset masks.
  */
 export interface MessageFieldDescriptor {
+  /** Tracks explicit presence for optional fields. */
+  presence?: boolean;
+  /** Contains field-level annotation overrides. */
+  subfieldSettings?: {
+    fieldPath: string;
+    nid?: { resource?: string[]; parentResource?: string[] };
+  }[];
   /** Contains the original `snake_case` protobuf field name. */
   pbName: string;
+  /** Contains the protobuf JSON field name. */
+  jsonName?: string;
+  /** Creates the default collection element. */
+  elementDefault?: () => unknown;
   /** Specifies whether the field has `field_behavior = IMMUTABLE`. */
   immutable?: boolean;
+  /** Specifies that the server owns this field. */
+  outputOnly?: boolean;
+  /** Contains allowed Nebius ID and metadata parent types. */
+  nid?: { resource?: string[]; parentResource?: string[] };
   /** Specifies whether the field is repeated. */
   repeated?: boolean;
   /** Specifies whether the field belongs to a oneof. */
@@ -71,8 +86,14 @@ export interface MessageFieldDescriptor {
   immutableOneof?: boolean;
   /** Specifies whether the field is a map. */
   map?: boolean;
+  /** Contains the protobuf scalar type of map keys. */
+  mapKeyType?: MessageFieldScalarType;
+  /** Contains the protobuf type of map values; 11 identifies message values. */
+  mapValueType?: MessageFieldScalarType | 11;
   /** Contains the protobuf descriptor code when this is a scalar or enum. */
   scalarType?: MessageFieldScalarType;
+  /** Contains declared enum names for canonical JSON parsing, including map values. */
+  enumNames?: readonly string[];
   /** Returns the nested descriptor when this field contains a message. */
   message?: () => MessageDescriptor | undefined;
   /** Returns the nested descriptor when this is a map with message values. */
@@ -81,6 +102,12 @@ export interface MessageFieldDescriptor {
 
 /** Describes the fields and optional value adapter for one generated message. */
 export interface MessageDescriptor {
+  /** Contains the protobuf type name. */
+  type?: string;
+  /** Creates a descriptor-shaped value with protobuf defaults. */
+  create?: () => Record<string, unknown>;
+  /** Restores a native runtime value after reflection. */
+  unreflect?: (value: Record<string, unknown>) => unknown;
   /**
    * Converts a runtime value to its descriptor-shaped object.
    *
@@ -148,8 +175,12 @@ export interface MessageFns<T, TType extends string> {
     message: T,
     writer?: import('@bufbuild/protobuf/wire').BinaryWriter,
   ): import('@bufbuild/protobuf/wire').BinaryWriter;
-  /** Decodes one message from wire bytes or a reader. */
-  decode(input: import('@bufbuild/protobuf/wire').BinaryReader | Uint8Array, length?: number): T;
+  /** Decodes wire bytes. If supplied, base is merged in place, including explicit wire defaults. */
+  decode(
+    input: import('@bufbuild/protobuf/wire').BinaryReader | Uint8Array,
+    length?: number,
+    base?: T,
+  ): T;
   /** Converts protobuf JSON input to the generated TypeScript representation. */
   fromJSON(object: any): T;
   /**

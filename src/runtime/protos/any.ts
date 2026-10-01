@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { base64FromBytes, bytesFromBase64 } from './base64.js';
+
 import type { BinaryReader, BinaryWriter } from './core.js';
 
 /**
@@ -44,17 +45,17 @@ export function writeAny(writer: BinaryWriter, a: AnyShape): void {
  * `length` is the number of bytes in the message body, not the outer tag.
  * Unknown fields are skipped.
  */
-export function readAny(reader: BinaryReader, length: number): AnyShape {
+export function readAny(reader: BinaryReader, length: number, base?: AnyShape): AnyShape {
   const end = reader.pos + length;
-  let typeUrl = '';
-  let value = new Uint8Array(0);
+  let typeUrl = base?.typeUrl ?? '';
+  let value = base?.value ?? new Uint8Array(0);
   while (reader.pos < end) {
     const tag = reader.uint32();
-    switch (tag >>> 3) {
-      case 1:
+    switch (tag) {
+      case 10:
         typeUrl = reader.string();
         break;
-      case 2:
+      case 18:
         value = new Uint8Array(reader.bytes());
         break;
       default:

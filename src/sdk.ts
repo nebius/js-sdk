@@ -40,6 +40,7 @@ import {
 import { getSystemRootCAs, normalizeRootCAs } from './runtime/tls/system_certs.js';
 import { FederationAccountBearer } from './runtime/token/federation_account.js';
 import { FileBearer } from './runtime/token/file.js';
+import { IMDSBearer } from './runtime/token/imds.js';
 import { ServiceAccountBearer } from './runtime/token/service_account.js';
 import { StaticBearer } from './runtime/token/static.js';
 import {
@@ -74,6 +75,10 @@ export interface SDKInterface {
   getAddressFromServiceName(serviceName: string, apiServiceName?: string): string;
   /** Returns the parent ID that generated requests can insert when it is absent. */
   parentId(): string | undefined;
+  /** Returns the tenant default when available. */
+  tenantId?(): string | undefined;
+  /** Returns SDK-wide request settings. */
+  requestOptions?(): RetryOptions;
   /** Returns the provider that authenticates new requests, or `undefined`. */
   getAuthorizationProvider(): AuthorizationProvider | undefined;
   /** Logs SDK and request events. */
@@ -112,9 +117,7 @@ export type FederationCredentialsOptions = {
  * when the SDK needs it.
  */
 export type ServiceAccountInit =
-  | SA
-  | SAReader
-  | { serviceAccountId: string; publicKeyId: string; privateKeyPem: string };
+  SA | SAReader | { serviceAccountId: string; publicKeyId: string; privateKeyPem: string };
 
 /**
  * Defines the credential values that the SDK accepts.
@@ -131,6 +134,7 @@ export type CredentialsInit =
   | ServiceAccountInit
   | AccessToken
   | { tokenFile: string }
+  | { tokenEndpoint: string }
   | string
   | FederationCredentialsOptions
   | null
@@ -167,6 +171,12 @@ export interface SDKOptions {
    * `parentId` field is empty.
    */
   parentId?: string;
+  /** Sets a tenant default for requests that require a tenant parent. */
+  tenantId?: string;
+  /** Disables both parent and tenant insertion. */
+  noParentId?: boolean;
+  /** Sets default timeouts, retries, and authorization options for requests. */
+  requestOptions?: RetryOptions;
   /** Sets an authorization provider when {@link SDKOptions.credentials} is not set. */
   authorizationProvider?: AuthorizationProvider;
   /**
@@ -265,6 +275,9 @@ function isObject(value: unknown): value is Record<string, unknown> {
 export class SDK implements SDKInterface {
   private _resolver: Resolver;
   private _parentId: string | undefined;
+  private _tenantId?: string;
+  private readonly _requestOptions: RetryOptions;
+  private _closed = false;
   private _authorizationProvider?: AuthorizationProvider;
   private _creds: ChannelCredentials;
   private _logger: SDKLogger;
@@ -297,6 +310,12 @@ export class SDK implements SDKInterface {
    * configuration is invalid.
    */
   constructor(options?: SDKOptions) {
+    this._requestOptions = {
+      ...options?.requestOptions,
+      authorizationOptions: options?.requestOptions?.authorizationOptions
+        ? { ...options.requestOptions.authorizationOptions }
+        : undefined,
+    };
     this._logger = resolveLogger(options?.logger, 'nebius.sdk');
     this._logger.debug('Initializing Nebius SDK');
     this._metrics = options?.metrics;
@@ -378,7 +397,10 @@ export class SDK implements SDKInterface {
         resolvedParentId = undefined;
       }
     }
-    this._parentId = resolvedParentId;
+    this._parentId = options?.noParentId ? undefined : resolvedParentId;
+    this._tenantId = options?.noParentId
+      ? undefined
+      : options?.tenantId?.trim() || options?.configReader?.tenantId?.()?.trim() || undefined;
     if (!this._parentId) {
       this._logger.info('No parentId resolved; parentId fill-in will be disabled.');
     }
@@ -441,6 +463,7 @@ export class SDK implements SDKInterface {
   }
 
   private _initAuthorization(options?: SDKOptions) {
+    if (options?.credentials === null) return;
     if (!options) {
       this._logger.debug('No SDK options provided; authorization disabled.');
       return;
@@ -506,7 +529,7 @@ export class SDK implements SDKInterface {
             metricDurationMs(start),
           );
         }
-        this._logger.warn('Error using config reader for authorization.', { err });
+        throw err;
       }
     }
   }
@@ -530,7 +553,7 @@ export class SDK implements SDKInterface {
   }
 
   private _normalizeCredentials(init: CredentialsInit): AuthorizationProvider | undefined {
-    if (!init) {
+    if (init == null) {
       this._logger.trace('No credentials provided; authorization disabled.');
       return undefined;
     }
@@ -571,6 +594,12 @@ export class SDK implements SDKInterface {
       );
     }
 
+    if (isObject(init) && 'tokenEndpoint' in init && typeof init.tokenEndpoint === 'string') {
+      return new TokenAuthProvider(
+        instrumentBearer(new IMDSBearer(init.tokenEndpoint), this._authMetrics),
+      );
+    }
+
     // Federation direct config
     if (this._isFederationInit(init)) {
       this._logger.trace('Using federation credentials for authorization.', {
@@ -605,8 +634,7 @@ export class SDK implements SDKInterface {
         : undefined;
     }
 
-    this._logger.warn('Unrecognized credentials format; authorization disabled.', { init });
-    return undefined;
+    throw new TypeError('Unsupported credentials.');
   }
 
   private _mkSABearer(
@@ -622,7 +650,7 @@ export class SDK implements SDKInterface {
     try {
       if (this._isSAReader(sa)) {
         this._logger.trace('Using service account reader for authorization.', {
-          sa: sa.read(),
+          readerType: sa.constructor.name,
         });
         return new ServiceAccountBearer(sa, {
           sdk: this,
@@ -654,10 +682,7 @@ export class SDK implements SDKInterface {
       this.logger.debug('Unrecognized service account format; authorization disabled.');
       return undefined;
     } catch (err) {
-      this.logger.error('Error initializing service account; authorization disabled.', {
-        err,
-      });
-      return undefined;
+      throw err;
     }
   }
 
@@ -716,6 +741,7 @@ export class SDK implements SDKInterface {
    * {@link setClientOptions} do not affect an existing client.
    */
   getClientByAddress(address: string): Client {
+    if (this._closed) throw new Error('SDK is closed.');
     this._logger.trace('Getting gRPC client by address.', { address });
     if (!this._clients.has(address)) {
       this._logger.debug('Creating new gRPC client for address.', { address });
@@ -833,6 +859,38 @@ export class SDK implements SDKInterface {
     return this._parentId;
   }
 
+  /** Returns the configured tenant ID. */
+  tenantId(): string | undefined {
+    return this._tenantId;
+  }
+
+  /** Returns a copy of SDK-wide request settings. */
+  requestOptions(): RetryOptions {
+    return {
+      ...this._requestOptions,
+      authorizationOptions: this._requestOptions.authorizationOptions
+        ? { ...this._requestOptions.authorizationOptions }
+        : undefined,
+    };
+  }
+
+  /**
+   * Gets an access token from the configured token provider.
+   *
+   * Rejects when the SDK uses a provider that does not expose tokens, including OneOfProvider.
+   */
+  async getToken(
+    timeoutMs?: number,
+    options?: import('./runtime/authorization/provider.js').AuthorizationOptions,
+  ): Promise<AccessToken> {
+    if (this._closed) throw new Error('SDK is closed.');
+    const provider = this._authorizationProvider;
+    if (!(provider instanceof TokenAuthProvider)) {
+      throw new Error('Authorization provider does not expose access tokens.');
+    }
+    return provider.getToken(timeoutMs, options);
+  }
+
   /**
    * Replaces the authorization provider for new requests.
    *
@@ -921,6 +979,7 @@ export class SDK implements SDKInterface {
    * ```
    */
   async close(graceMs?: number): Promise<void> {
+    this._closed = true;
     this._logger.debug('Closing SDK.', { graceMs });
     const channelWatchers: Promise<void>[] = [];
     const timeout = typeof graceMs === 'number' ? graceMs : DEFAULT_CLOSE_TIMEOUT;

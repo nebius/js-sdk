@@ -1,6 +1,7 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors.js';
-import { is64Bit, readerMethodFor, wireTypeFor, wktFqnOf } from '../helpers.js';
+import { is64Bit, isUnsigned64, readerMethodFor, wireTypeFor, wktFqnOf } from '../helpers.js';
 import { resolveEnumName, resolveMessageName } from '../typeNames.js';
+
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 
 export function emitDecodeOneofs(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];
@@ -19,7 +20,7 @@ export function emitDecodeOneofs(m: TSDescriptorMessage): string[] {
           const len = reader.uint32();
           message.${prop} = {
             $case: "${caseName}",
-            ${caseName}: wkt["${wktName}"].readMessage(reader, len)
+            ${caseName}: wkt["${wktName}"].readMessage(reader, len, message.${prop}?.$case === "${caseName}" ? message.${prop}.${caseName} : undefined)
           };
           continue;
         }`,
@@ -33,7 +34,7 @@ export function emitDecodeOneofs(m: TSDescriptorMessage): string[] {
           if (tag !== ${expectedTag}) break;
           message.${prop} = {
             $case: "${caseName}",
-            ${caseName}: ${ref}.decode(reader, reader.uint32())
+            ${caseName}: ${ref}.decode(reader, reader.uint32(), message.${prop}?.$case === "${caseName}" ? message.${prop}.${caseName} : undefined)
           };
           continue;
         }`,
@@ -41,7 +42,7 @@ export function emitDecodeOneofs(m: TSDescriptorMessage): string[] {
         } else {
           let reader = `reader.${readM}()`;
           if (is64Bit(f)) {
-            reader = `Long.fromValue(${reader})`;
+            reader = `Long.fromValue(${reader}, ${isUnsigned64(f)})`;
           }
           const expectedTag = (fieldNo << 3) | wireTypeFor(f);
           lines.push(
@@ -70,7 +71,7 @@ export function emitDecodeOneofs(m: TSDescriptorMessage): string[] {
       } else {
         let reader = `reader.${readM}()`;
         if (is64Bit(f)) {
-          reader = `Long.fromValue(${reader})`;
+          reader = `Long.fromValue(${reader}, ${isUnsigned64(f)})`;
         }
         const expectedTag = (fieldNo << 3) | wireTypeFor(f);
         lines.push(

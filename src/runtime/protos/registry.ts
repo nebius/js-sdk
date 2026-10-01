@@ -12,6 +12,8 @@
 import { BinaryReader, BinaryWriter, type MessageDescriptor } from './core.js';
 import { ENUM_VALUE_META, EnumValueMeta } from './enum.js';
 
+import type { AnyShape } from './any.js';
+
 /** Defines the minimum shape of a message stored in a {@link Registry}. */
 export interface MessageInstanceInterface {
   /** Contains the fully qualified runtime type name. */
@@ -110,6 +112,24 @@ export class Registry {
   private readonly extensions = new Map<string, ExtensionDescriptor>();
   private readonly extByExtendee = new Map<string, ExtensionDescriptor[]>();
 
+  /** Packs a registered generated message into an Any envelope. */
+  pack(message: MessageInstanceInterface, prefix = 'type.googleapis.com'): AnyShape {
+    const type = this.getMessage(message.$type);
+    if (!type) throw new TypeError(`Unregistered protobuf type: ${message.$type}`);
+    return {
+      typeUrl: `${prefix.replace(/\/$/, '')}/${type.$type}`,
+      value: type.encode(message).finish(),
+    };
+  }
+
+  /** Decodes an Any envelope. Unknown types throw and the original envelope stays available. */
+  unpack(value: AnyShape): MessageInstanceInterface {
+    const name = value.typeUrl.slice(value.typeUrl.lastIndexOf('/') + 1);
+    const type = this.getMessage(name);
+    if (!type) throw new TypeError(`Unregistered protobuf type: ${name}`);
+    return type.decode(value.value);
+  }
+
   /** Registers or replaces a message class by its {@link MessageClassInterface.$type | $type}. */
   registerMessage(message: MessageClassInterface): void {
     this.messageTypes.set(message.$type as string, message);
@@ -187,6 +207,10 @@ export interface ExtensionDescriptor {
   fieldNo: number;
   /** Contains the simple protobuf or JSON field name. */
   name: string;
+  /** Contains the generated JSON field name, including an explicit json_name. */
+  jsonName?: string;
+  /** Contains the generated TypeScript property name. */
+  typescriptName?: string;
   /** Identifies the value category and whether the field is repeated. */
   kind: 'scalar' | 'enum' | 'message' | 'repeated_scalar' | 'repeated_enum' | 'repeated_message';
   /** Contains the numeric `FieldDescriptorProto.Type` code for a scalar value. */
@@ -222,6 +246,8 @@ export interface ExtensionDescriptor {
    * invalid.
    */
   fromJSON?: (message: any, object: any) => void; // eslint-disable-line @typescript-eslint/no-explicit-any
+  /** Copies this extension from a typed partial value through its generated constructor. */
+  fromPartial?: (message: any, object: any) => void; // eslint-disable-line @typescript-eslint/no-explicit-any
   /**
    * Writes this extension to JSON.
    *

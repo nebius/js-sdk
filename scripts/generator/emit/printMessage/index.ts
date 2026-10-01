@@ -1,15 +1,15 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 import { FieldBehavior as FieldBehaviorEnum } from '../../extensions/index.js';
-import type * as GPB from '../../protos/protobuf/index.js';
-import { wktFqnOf } from '../helpers.js';
+import { defaultValueFor, wktFqnOf } from '../helpers.js';
 import { resolveMessageName } from '../typeNames.js';
-
 import { emitBaseFactory } from './emitBase.js';
 import { emitDecode } from './emitDecode.js';
 import { emitEncode } from './emitEncode.js';
 import { emitInterface } from './emitInterface.js';
 import { emitFromJSON, emitToJSON } from './emitJSON.js';
 import { emitCreate, emitFromPartial } from './emitPartial.js';
+
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
+import type * as GPB from '../../protos/protobuf/index.js';
 
 function fqTypeName(m: TSDescriptorMessage): string {
   const pkg = m.containingFile.package || '';
@@ -59,13 +59,52 @@ function isImmutableOneof(o: TSDescriptorMessage['oneofs'][number]): boolean {
 }
 
 function descriptorPartsForField(f: TSDescriptorMessage['fields'][number]): string[] {
-  const parts = [`pbName: ${JSON.stringify(f.pb_name)}`];
+  const parts = [`pbName: ${JSON.stringify(f.pb_name)}`, `jsonName: ${JSON.stringify(f.jsonName)}`];
+  if (f.isRepeated() && !f.isMap() && !f.isMessage()) {
+    // The element default uses the same enum and integer representation as the codec.
+    const scalar = Object.create(f);
+    scalar.isRepeated = () => false;
+    parts.push(`elementDefault: () => ${defaultValueFor(scalar)}`);
+  }
   if (isImmutableField(f)) {
     parts.push('immutable: true');
+  }
+  const nid = (
+    f.descriptor.options as { nid?: { resource?: string[]; parentResource?: string[] } } | undefined
+  )?.nid;
+  if (nid) {
+    parts.push(
+      `nid: ${JSON.stringify({ resource: nid.resource, parentResource: nid.parentResource })}`,
+    );
+  }
+  const behaviors = (f.descriptor.options as { fieldBehavior?: { name: string }[] } | undefined)
+    ?.fieldBehavior;
+  if (behaviors?.some((value) => value.name === 'OUTPUT_ONLY')) parts.push('outputOnly: true');
+  if (f.tracksPresence()) parts.push('presence: true');
+  const settings = (
+    f.descriptor.options as
+      | {
+          subfieldSettings?: {
+            fieldPath: string;
+            nid?: { resource?: string[]; parentResource?: string[] };
+          }[];
+        }
+      | undefined
+  )?.subfieldSettings;
+  if (settings?.length) {
+    parts.push(
+      `subfieldSettings: ${JSON.stringify(settings.map((x) => ({ fieldPath: x.fieldPath, nid: x.nid ? { resource: x.nid.resource, parentResource: x.nid.parentResource } : undefined })))}`,
+    );
   }
   const scalarType = scalarTypeForField(f);
   if (scalarType !== undefined) {
     parts.push(`scalarType: ${scalarType}`);
+  }
+  const enumField = f.isMap() ? f.message()?.fields.find((x) => x.descriptor.number === 2) : f;
+  if (enumField?.isEnum()) {
+    parts.push(
+      `enumNames: ${JSON.stringify(enumField.enum()?.valueList.map((value) => value.name) ?? [])}`,
+    );
   }
   if (f.isRepeated() && !f.isMap()) {
     parts.push('repeated: true');
@@ -73,7 +112,10 @@ function descriptorPartsForField(f: TSDescriptorMessage['fields'][number]): stri
   if (f.isMap()) {
     parts.push('map: true');
     const entry = f.message();
+    const keyField = entry?.fields.find((x) => x.descriptor.number === 1);
+    if (keyField) parts.push(`mapKeyType: ${keyField.typeCode()}`);
     const valueField = entry?.fields.find((x) => x.descriptor.number === 2);
+    if (valueField) parts.push(`mapValueType: ${valueField.typeCode()}`);
     if (valueField?.isMessage()) {
       const wktName = wktFqnOf(valueField);
       if (wktName) {
@@ -113,6 +155,10 @@ function emitMessageDescriptor(m: TSDescriptorMessage): string[] {
   }
 
   lines.push(`const ${descriptorName}: MessageDescriptor = {`);
+  lines.push(`  type: ${JSON.stringify(fqTypeName(m))},`);
+  lines.push(
+    `  create: () => createBase${m.tsName}() as unknown as globalThis.Record<string, unknown>,`,
+  );
   lines.push(`  fields: {`);
   for (const f of nonOneofFields) {
     lines.push(`    ${JSON.stringify(f.tsName)}: { ${descriptorPartsForField(f).join(', ')} },`);
