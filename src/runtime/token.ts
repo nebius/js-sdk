@@ -163,6 +163,14 @@ export abstract class Receiver {
     return tok;
   }
 
+  /** Handles a credential rejection. Sources can compare a fresh token with the rejected token. */
+  async handleError(
+    err: unknown,
+    options?: AuthorizationOptions,
+    _timeoutMs?: number,
+  ): Promise<boolean> {
+    return this.canRetry(err, options);
+  }
   /**
    * Reports whether authentication can retry after an error.
    *

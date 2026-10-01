@@ -1,6 +1,7 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors.js';
-import { defaultValueFor, is64Bit, scalarOrRef, wktFqnOf } from '../helpers.js';
+import { defaultValueFor, is64Bit, isUnsigned64, scalarOrRef, wktFqnOf } from '../helpers.js';
 import { resolveEnumName, resolveMessageName } from '../typeNames.js';
+
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 
 /** Emits the generated `create` method for a message runtime object. */
 export function emitCreate(m: TSDescriptorMessage): string[] {
@@ -32,9 +33,9 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
           valueEncoder = `${resolveMessageName(vf.message())}.fromPartial(value)`;
         }
       } else if (vf.isEnum()) {
-        valueEncoder = `${resolveEnumName(vf.enum())}.fromJSON(value.name)`;
+        valueEncoder = `${resolveEnumName(vf.enum())}.fromJSON(value.code ?? value.name)`;
       } else if (is64Bit(vf)) {
-        valueEncoder = `Long.fromValue(value)`;
+        valueEncoder = `Long.fromValue(value, ${isUnsigned64(vf)})`;
       }
       lines.push(
         `    message.${name} = Object.entries(
@@ -42,7 +43,7 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
     ).reduce<{ [key: string]: ${valueTs} }>(
       (acc, [key, value]) => {
         if (value !== undefined) {
-          acc[key] = ${valueEncoder};
+          Object.defineProperty(acc, key, { value: ${valueEncoder}, writable: true, enumerable: true, configurable: true });
         }
         return acc;
       },
@@ -68,10 +69,12 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
         }
       } else if (f.isEnum()) {
         lines.push(
-          `    message.${name} = object.${name}?.map((e) => ${resolveEnumName(f.enum())}.fromJSON(e.name)) || [];`,
+          `    message.${name} = object.${name}?.map((e) => ${resolveEnumName(f.enum())}.fromJSON(e.code ?? e.name)) || [];`,
         );
       } else if (is64Bit(f)) {
-        lines.push(`    message.${name} = object.${name}?.map((e) => Long.fromValue(e)) || [];`);
+        lines.push(
+          `    message.${name} = object.${name}?.map((e) => Long.fromValue(e, ${isUnsigned64(f)})) || [];`,
+        );
       } else {
         lines.push(`    message.${name} = object.${name}?.map((e) => e) || [];`);
       }
@@ -100,13 +103,13 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
     } else if (f.isEnum()) {
       lines.push(
         `    message.${name} = (object.${name} !== undefined && object.${name} !== null)
-      ? ${resolveEnumName(f.enum())}.fromJSON(object.${name}.name)
+      ? ${resolveEnumName(f.enum())}.fromJSON(object.${name}.code ?? object.${name}.name)
       : ${defaultValueFor(f)};`,
       );
     } else if (is64Bit(f)) {
       lines.push(
         `    message.${name} = (object.${name} !== undefined && object.${name} !== null)
-      ? Long.fromValue(object.${name})
+      ? Long.fromValue(object.${name}, ${isUnsigned64(f)})
       : ${defaultValueFor(f)};`,
       );
     } else {
@@ -169,7 +172,7 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
         if (object.${prop}?.${caseName} !== undefined && object.${prop}?.${caseName} !== null) {
           message.${prop} = {
             $case: "${caseName}",
-            ${caseName}: ${resolveEnumName(f.enum())}.fromJSON(object.${prop}.${caseName}.name)
+            ${caseName}: ${resolveEnumName(f.enum())}.fromJSON(object.${prop}.${caseName}.code ?? object.${prop}.${caseName}.name)
           };
         }
         break;
@@ -181,7 +184,7 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
         if (object.${prop}?.${caseName} !== undefined && object.${prop}?.${caseName} !== null) {
           message.${prop} = {
             $case: "${caseName}",
-            ${caseName}: Long.fromValue(object.${prop}.${caseName})
+            ${caseName}: Long.fromValue(object.${prop}.${caseName}, ${isUnsigned64(f)})
           };
         }
         break;
@@ -204,6 +207,9 @@ export function emitFromPartial(m: TSDescriptorMessage): string[] {
     lines.push('      default: break;');
     lines.push('    }');
   }
+  lines.push(
+    `    for (const ext of protoRegistry.listExtensions("${m.fullQualifiedName().replace(/^\./, '')}")) ext.fromPartial?.(message, object);`,
+  );
   lines.push('    return message;');
   lines.push('  },');
   return lines;

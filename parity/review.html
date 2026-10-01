@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JS SDK parity review</title>
+    <style>
+      body {
+        font:
+          15px/1.55 system-ui,
+          sans-serif;
+        color: #24292f;
+        background: white;
+        max-width: 1100px;
+        margin: 32px auto;
+        padding: 0 20px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      h2 {
+        font-size: 19px;
+        margin-top: 28px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #d0d7de;
+        text-align: left;
+        vertical-align: top;
+        padding: 9px;
+      }
+      th {
+        background: #f6f8fa;
+      }
+      code {
+        overflow-wrap: anywhere;
+      }
+      a {
+        color: #0969da;
+      }
+      footer {
+        margin-top: 32px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SDK parity review</h1>
+    <p>
+      <strong
+        >Final primary: no actionable findings. Independent cross-review: merge-ready, no
+        substantive current-schema defect.</strong
+      >
+      Review completed 1 October 2026.
+    </p>
+    <p>
+      Candidate based on JS main <code>644aa844</code>, API <code>43cab7c</code>, public GoSDK
+      <code>83393ae1</code>, and public PySDK <code>94511726</code>. These upstream SDK revisions
+      were rechecked before publication.
+    </p>
+    <p>
+      <a href="compatibility.html">59-row compatibility matrix</a> ·
+      <a href="validation.json">Validation record</a> ·
+      <a href="api-verification.json">Schema audit</a>
+    </p>
+    <h2>Review coverage</h2>
+    <p>
+      34 fresh primary passes, two separate SDK parity audits, and nine independent Opus
+      cross-reviews across the task. Incomplete review attempts are excluded. Final reviewers
+      received the original request, complete current diff, and explicit read access to the JS
+      workspace and pinned public SDK sources. They confirmed full diff consumption and source
+      access. The final independent model was <code>claude-opus-5-5</code>, resolved from the live
+      model list.
+    </p>
+    <p>
+      Latest-main audits covered credentials, configuration, authorization, requests, resolution,
+      operations/progress, generated services/pagination, wire format, canonical JSON, reflection,
+      masks, lifecycle and diagnostics. Generated API inventory is verified mechanically; reviewer
+      source comparisons do not certify every generated field or third-party runtime implementation
+      individually. The final primary inspected all public layers against both references. The final
+      Opus source comparison sampled those layers; Python token implementations and Go mask
+      filter/traverse were not separately compared in that cross-review.
+    </p>
+    <h2>Corrections verified</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Credentials and configuration</td>
+          <td>
+            Use and trim NEBIUS_IAM_TOKEN; align CLI source priority; reject explicit empty or
+            invalid credentials; add opt-in Config.load VM discovery with bounded IMDS probing and
+            mounted-token fallback; support named providers per request.
+          </td>
+        </tr>
+        <tr>
+          <td>Credential recovery and lifetime</td>
+          <td>
+            Reacquire rejected cached actor credentials; preserve zero and negative token lifetimes;
+            observe shared renewal failures without unhandled rejections; retain acquisition and
+            recovery error causes; retain recovered shared-cache credentials for RPC retry in both
+            wrappers; delegate synchronous file-cache recovery and forced renewal; bound deferred
+            SDK resolution and the full impersonation chain; clean up renewal timers and cache
+            writes.
+          </td>
+        </tr>
+        <tr>
+          <td>Federation</td>
+          <td>
+            Keep manual login available without a browser opener; reject launcher, callback-server
+            and interrupted-response errors through promises; close callback servers on startup,
+            login timeout, and writer failures; share one deadline across callback and token POST,
+            destroy stalled requests, and preserve OAuth expiry from the acquisition start,
+            including zero and negative lifetimes.
+          </td>
+        </tr>
+        <tr>
+          <td>Requests</td>
+          <td>
+            Align retries, idempotency, execution and authorization budgets, deadlines, final
+            diagnostics, and request snapshots. Preserve completed native errors when cancellation
+            arrives after completion or declined authorization recovery; prevent dispatch after
+            accepted recovery and cancellation.
+          </td>
+        </tr>
+        <tr>
+          <td>Operations</td>
+          <td>
+            Reject failed waits with inspectable operations; validate malformed envelopes and native
+            timestamps; handle poll errors, backoff, deadlines and cancellation; keep terminal state
+            when older concurrent polls settle later; expose server-supplied progress payloads after
+            completion; preserve progress ratios; expose decoded alpha resource snapshots.
+          </td>
+        </tr>
+        <tr>
+          <td>Protobuf and generator</td>
+          <td>
+            Validate complete wire tags for native, map-entry and repeated scalar readers; merge
+            repeated message and extension occurrences; preserve unknown fields and explicit
+            defaults; support unsigned 64-bit values and extension construction; generate
+            annotation-driven pagination and metadata.
+          </td>
+        </tr>
+        <tr>
+          <td>Canonical JSON</td>
+          <td>
+            Add canonical Any, FieldMask, WKT, wrappers, enums and extensions; validate aliases,
+            oneofs, scalar ranges, Unicode and temporal values; retain existing toJSON output.
+          </td>
+        </tr>
+        <tr>
+          <td>Masks and traversal</td>
+          <td>
+            Compose explicit select/reset headers with existing values; use descriptors for
+            reset/select masks and field paths; retain native values and collection presence; guard
+            map keys and replacement types; handle large collections without argument spreading.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Decisions and exclusions</h2>
+    <p>
+      The four user-approved choices are recorded in the matrix: failed waits reject, credential
+      discovery stays opt-in, typed parent/tenant defaults follow Go with explicit-value precedence,
+      and canonical protobuf JSON is additive. VM discovery uses an explicitly invoked async
+      factory; synchronous Config construction is retained.
+    </p>
+    <p>
+      Source-disproved claims, style preferences, speculative performance redesigns, and behavior
+      requiring annotations or helper-name collisions absent from the public schema were excluded.
+      The final Opus review reported one latent helper-name collision risk and three style nits; the
+      schema has no colliding RPC names. These were excluded from the parity scope. Go/Python
+      disagreements are documented in the matrix. Events, promises, native values, locking, timers
+      and client ownership remain JS mechanisms.
+    </p>
+    <h2>Validation and limits</h2>
+    <ul>
+      <li>
+        430 tests pass across 34 suites, including 50 generator tests and two rebuilt-package
+        integration tests.
+      </li>
+      <li>
+        CJS and ESM builds pass. Runtime and scoped generator lint, changed-file formatting, and
+        whitespace checks pass.
+      </li>
+      <li>All 481 public RPCs and 1,219 messages are generated; none are missing.</li>
+      <li>
+        Generator reference tests use local ts-proto 2.6.1; the repository Buf test configuration is
+        restored.
+      </li>
+      <li>
+        No production resource calls or live identity-provider login were run locally. Dayjs keeps
+        its existing millisecond precision.
+      </li>
+    </ul>
+    <p>
+      The PR is prepared in an isolated checkout. The user's original staging is preserved. No
+      unresolved actionable finding remains.
+    </p>
+    <p>Written by Codex (gpt-6/Codex)<br />on behalf of Daniel Drizhuk</p>
+  </body>
+</html>

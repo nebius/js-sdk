@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import { existsSync, readFileSync } from 'fs';
+import { existsSync, readFileSync, statSync } from 'fs';
 
 import { parse as parseYAML } from 'yaml';
 
@@ -35,6 +35,7 @@ import { Bearer } from './token.js';
 import { FederatedCredentialsBearer } from './token/federated_credentials.js';
 import { FederationAccountBearer } from './token/federation_account.js';
 import { FileBearer } from './token/file.js';
+import { IMDSBearer } from './token/imds.js';
 import { CachedImpersonatedBearer } from './token/impersonated.js';
 import { ServiceAccountBearer } from './token/service_account.js';
 import { EnvBearer, NoTokenInEnvError } from './token/static.js';
@@ -52,6 +53,19 @@ import type {
   Credentials,
   GetCredentialsOptions,
 } from './cli_config_interfaces.js';
+
+const virtualProfile = Symbol('VM profile');
+type InternalConfigOptions = ConfigOptions & { [virtualProfile]?: Record<string, unknown> };
+
+/** Configures the VM fallback used by Config.load when its config file is missing. */
+export interface VMDiscoveryOptions {
+  /** Overrides the metadata token endpoint. */
+  tokenEndpoint?: string;
+  /** Overrides the mounted metadata token path. */
+  tokenFile?: string;
+  /** Supplies the HTTP implementation used for the metadata availability probe. */
+  fetch?: typeof globalThis.fetch;
+}
 
 /** Reports an invalid or incomplete Nebius CLI configuration. */
 export class ConfigError extends Error {}
@@ -191,6 +205,59 @@ export class Config implements ConfigReaderLike {
   private readonly _impersonateServiceAccountId: string | undefined;
   private _profile!: Record<string, unknown>;
 
+  /**
+   * Loads CLI configuration, falling back to VM credentials only when the file is missing.
+   * Probes IMDS first, then the mounted token file. Calling this async factory opts in to discovery.
+   */
+  static async load(
+    options: ConfigOptions = {},
+    discovery: VMDiscoveryOptions = {},
+  ): Promise<Config> {
+    const configFile = resolveHomeDir(
+      options.configFile ?? `${defaultConfigDir}/${defaultConfigFile}`,
+    );
+    try {
+      statSync(configFile);
+      return new Config(options);
+    } catch (error) {
+      const code = (error as NodeJS.ErrnoException).code;
+      if (code !== 'ENOENT' && code !== 'ENOTDIR') throw error;
+    }
+    const endpoint = discovery.tokenEndpoint ?? 'http://metadata.nebius.internal/v1/iam/sa/token';
+    const tokenFile = resolveHomeDir(discovery.tokenFile ?? '/mnt/cloud-metadata/token');
+    let profile: Record<string, unknown> | undefined;
+    const fetcher = discovery.fetch ?? globalThis.fetch;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const response = await fetcher(endpoint, {
+          headers: { Metadata: 'true' },
+          signal: AbortSignal.timeout(500),
+        });
+        await response.body?.cancel().catch(() => undefined);
+        if (response.status === 200) {
+          profile = { 'token-endpoint': endpoint };
+          break;
+        }
+        if (response.status !== 429 && response.status < 500) break;
+      } catch {
+        break;
+      }
+      if (attempt < 2) {
+        await new Promise<void>((resolve) => setTimeout(resolve, 200 * (attempt + 1)));
+      }
+    }
+    if (!profile) {
+      try {
+        if (!statSync(tokenFile).isDirectory()) profile = { 'token-file': tokenFile };
+      } catch {
+        // Missing or unreadable mounted credentials leave normal missing-config handling in place.
+      }
+    }
+    if (!profile) return new Config(options);
+    const internal: InternalConfigOptions = { ...options, [virtualProfile]: profile };
+    return new Config(internal);
+  }
+
   /** Reads the configuration file and selects one profile. */
   constructor(options: ConfigOptions = {}) {
     const {
@@ -242,7 +309,13 @@ export class Config implements ConfigReaderLike {
 
     const start = metricStart();
     try {
-      this._getProfile();
+      const profile = (options as InternalConfigOptions)[virtualProfile];
+      if (profile) {
+        this._profile = profile;
+        this._profileName = 'virtual';
+      } else {
+        this._getProfile();
+      }
       this._recordConfigLoad(METRIC_RESULT_SUCCESS, metricDurationMs(start));
     } catch (err) {
       this._recordConfigLoad(METRIC_RESULT_ERROR, metricDurationMs(start));
@@ -327,6 +400,15 @@ export class Config implements ConfigReaderLike {
     return pid;
   }
 
+  /** Returns the tenant default, unless parent defaults are disabled. */
+  tenantId(): string | undefined {
+    if (this._noParentId) return undefined;
+    const value = this._profile['tenant-id'];
+    if (value === undefined) return undefined;
+    if (typeof value !== 'string') throw new ConfigError('Tenant ID must be a string.');
+    return value.trim() || undefined;
+  }
+
   /** Returns the selected CLI profile name. */
   profileName(): string | undefined {
     return this._profileName ?? undefined;
@@ -348,7 +430,7 @@ export class Config implements ConfigReaderLike {
   /**
    * Creates credentials for the selected source.
    *
-   * The order is: environment token, profile token file, then the profile
+   * The order is: environment token, profile token file, token endpoint, then the profile
    * `auth-type`. Supported auth types are federation and service account.
    * When impersonation is set, the returned bearer exchanges these credentials
    * for the target service account.
@@ -399,7 +481,12 @@ export class Config implements ConfigReaderLike {
       };
     }
 
-    if ('token-file' in this._profile) {
+    if (
+      'token-file' in this._profile &&
+      this._profile['token-file'] !== '' &&
+      this._profile['token-file'] !== null &&
+      this._profile['token-file'] !== undefined
+    ) {
       const source = 'token-file';
       try {
         logger.debug('Using token-file auth from the profile.', {
@@ -412,6 +499,19 @@ export class Config implements ConfigReaderLike {
         return { credentials: new FileBearer(tf, this._authMetrics), source };
       } catch (err) {
         tagCredentialSource(source, err);
+      }
+    }
+
+    if ('token-endpoint' in this._profile) {
+      const endpoint = this._profile['token-endpoint'];
+      if (endpoint !== '' && endpoint !== null && endpoint !== undefined) {
+        if (typeof endpoint !== 'string' || !endpoint.trim()) {
+          throw new ConfigError('Token endpoint must be a non-empty string.');
+        }
+        return {
+          credentials: new IMDSBearer(endpoint, { metrics: this._authMetrics }),
+          source: 'imds',
+        };
       }
     }
 
@@ -482,7 +582,7 @@ export class Config implements ConfigReaderLike {
       const source = 'service-account';
       try {
         // Possible sources (priority):
-        // 1) federated-subject-credentials-file-path + service-account-id
+        // 1) federated-subject-credentials-file-path + service-account-id without key sources
         // 2) service-account-credentials-file-path
         // 3) inline private-key with service-account-id + public-key-id
         // 4) private-key-file-path with service-account-id + public-key-id
@@ -498,7 +598,16 @@ export class Config implements ConfigReaderLike {
         }
 
         // 1) federated subject credentials file
-        if (saId && 'federated-subject-credentials-file-path' in this._profile) {
+        if (
+          saId &&
+          this._profile['federated-subject-credentials-file-path'] &&
+          ![
+            'public-key-id',
+            'private-key',
+            'private-key-file-path',
+            'service-account-credentials-file-path',
+          ].some((key) => this._profile[key])
+        ) {
           const fpath = this._profile['federated-subject-credentials-file-path'];
           if (typeof fpath !== 'string') {
             throw new ConfigError('federated-subject-credentials-file-path should be a string');
@@ -520,7 +629,12 @@ export class Config implements ConfigReaderLike {
         }
 
         // 2) service account credentials file
-        if ('service-account-credentials-file-path' in this._profile) {
+        if (this._profile['service-account-credentials-file-path']) {
+          if (saId || this._profile['public-key-id']) {
+            throw new ConfigError(
+              'Use either a service account credentials file or service-account-id and public-key-id.',
+            );
+          }
           const cpath = this._profile['service-account-credentials-file-path'];
           if (typeof cpath !== 'string') {
             throw new ConfigError('service-account-credentials-file-path should be a string');
@@ -552,7 +666,7 @@ export class Config implements ConfigReaderLike {
         }
 
         // 3) inline private key
-        if ('private-key' in this._profile) {
+        if (this._profile['private-key']) {
           const privateKeyPem = this._profile['private-key'];
           if (typeof privateKeyPem !== 'string') {
             throw new ConfigError(`Private key should be a string, got ${typeof privateKeyPem}.`);
@@ -575,7 +689,7 @@ export class Config implements ConfigReaderLike {
         }
 
         // 4) private key file path
-        if ('private-key-file-path' in this._profile) {
+        if (this._profile['private-key-file-path']) {
           const ppath = this._profile['private-key-file-path'];
           if (typeof ppath !== 'string') {
             throw new ConfigError('private-key-file-path should be a string');

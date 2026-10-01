@@ -48,8 +48,8 @@ export class FederationAccountBearer extends Bearer {
   /**
    * Creates an interactive federation flow for `profileName`.
    *
-   * `timeoutMs` limits the wait for the browser callback. It does not limit the
-   * following token HTTP request. `cacheFilePath` selects the shared token
+   * `timeoutMs` bounds the callback and token HTTP request together.
+   * `cacheFilePath` selects the shared token
    * cache. Close the SDK to stop renewal timers.
    */
   constructor(
@@ -65,9 +65,7 @@ export class FederationAccountBearer extends Bearer {
       /** Prevents automatic browser launch when `true`. */
       noBrowserOpen?: boolean;
       /**
-       * Timeout for the browser callback, in milliseconds.
-       *
-       * This value does not limit the following token HTTP request.
+       * Total callback and token HTTP request budget, in milliseconds.
        */
       timeoutMs?: number;
       /** Maximum total authentication attempts for one receiver. Defaults to 2. */

@@ -15,7 +15,7 @@ import {
   UpdateInstanceRequest,
 } from '../api/nebius/compute/v1/index.js';
 import { parseFieldMask } from '../runtime/fieldmask.js';
-import { attachMessageDescriptor } from '../runtime/protos/index.js';
+import { attachMessageDescriptor, dayjs } from '../runtime/protos/index.js';
 import { resetMaskFromMessage } from '../runtime/resetmask.js';
 import { Basic } from '../runtime/resolver.js';
 import { SDK } from '../sdk.js';
@@ -114,7 +114,7 @@ describe('updates and masks — DiskService.Update', () => {
           outMd.set('x-trace-id', 'some-trace-id');
           call.sendMetadata(outMd);
 
-          callback(null, Operation.create({ id: 'op-1' }));
+          callback(null, Operation.create({ id: 'op-1', createdAt: dayjs(0) }));
         },
       });
       server.addService(DiskServiceService, impl);
@@ -187,7 +187,7 @@ describe('updates and masks — InstanceService.Update with list field', () => {
           outMd.set('x-request-id', 'some-req-id');
           outMd.set('x-trace-id', 'some-trace-id');
           call.sendMetadata(outMd);
-          callback(null, Operation.create({ id: 'op-2' }));
+          callback(null, Operation.create({ id: 'op-2', createdAt: dayjs(0) }));
         },
       });
       server.addService(InstanceServiceService, impl);

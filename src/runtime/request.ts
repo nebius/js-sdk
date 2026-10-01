@@ -20,9 +20,11 @@ import { Status as GrpcStatus, Code as StatusCode } from '../api/google/rpc/inde
 import { ServiceError_RetryType } from '../api/nebius/common/v1/index.js';
 import { SDKInterface } from '../sdk.js';
 import { NebiusGrpcError } from './error.js';
+import { Mask } from './fieldmask.js';
+import { OperationValidationError } from './operation.js';
 import { attachMessageDescriptor, type MessageDescriptor } from './protos/core.js';
 import { resetMaskFromMessage } from './resetmask.js';
-import { withTimeout } from './util/cancelable.js';
+import { Cancelable, TimeoutError, withTimeout } from './util/cancelable.js';
 import { custom, customJson, inspectJson, Logger } from './util/logging.js';
 
 import type { AuthorizationOptions } from './authorization/provider.js';
@@ -74,9 +76,21 @@ export interface RetryOptions {
   /**
    * Sets the number of retries after the first attempt.
    *
-   * The default is 3. Set this value to `0` to make only one attempt.
+   * The default is 2, for three total attempts. Set this value to `0` to make only one attempt.
    */
   RetryCount?: number;
+  /** Limits authorization and request execution. The default is 15 minutes. */
+  AuthTimeout?: number;
+  /** Disables SDK authorization for this call. */
+  authorizationDisable?: boolean;
+  /** Controls credential renewal for this call. */
+  authorizationOptions?: AuthorizationOptions;
+  /** Delays each retry in milliseconds. The attempt number starts at one. */
+  retryBackoff?: (attempt: number) => number;
+  /** Adds an explicit select mask to this call. */
+  selectMask?: string;
+  /** Replaces automatic reset-mask discovery for this call. */
+  resetMask?: string;
 }
 
 /**
@@ -98,6 +112,18 @@ export const DefaultRetriableCodes: StatusCode[] = [
 export function isRetriableError(err: unknown): boolean {
   if (!err || typeof err !== 'object') return false;
   const grpcError = err as NebiusGrpcError;
+
+  // Service decisions take precedence over transport retry defaults.
+  if (grpcError.code === StatusCode.CANCELLED.code) return false;
+  for (const detail of grpcError.serviceErrors ?? []) {
+    if (detail.retryType === ServiceError_RetryType.CALL) return true;
+    if (
+      detail.retryType === ServiceError_RetryType.NOTHING ||
+      detail.retryType === ServiceError_RetryType.UNIT_OF_WORK
+    ) {
+      return false;
+    }
+  }
 
   // Network/system-level errors
   const sysCode = grpcError.code as string | number | undefined;
@@ -122,13 +148,6 @@ export function isRetriableError(err: unknown): boolean {
 
   if (grpcCode === UNKNOWN_GRPC_CODE && hasUnexpectedHttp52xStatus(grpcError)) return true;
 
-  // Nebius service errors can explicitly request a retry of the call.
-  const serviceErrors = grpcError.serviceErrors;
-  if (Array.isArray(serviceErrors)) {
-    return serviceErrors.some(
-      (serviceError) => serviceError.retryType === ServiceError_RetryType.CALL,
-    );
-  }
   return false;
 }
 
@@ -147,10 +166,16 @@ const HTTP_52X_STATUS_PATTERNS = [
  * not need to construct it.
  */
 export interface RequestSpec<TReq> {
+  /** Marks anonymous API methods. */
+  authorizationDisable?: boolean;
+  /** Returns allowed parent types from the resource metadata annotation. */
+  metadataParentTypes?: () => readonly string[] | undefined;
   /** Contains the gRPC method path, such as `/package.Service/Get`. */
   path: string;
   /** Serializes the request message for gRPC. */
   requestSerialize: (value: TReq) => Buffer;
+  /** Copies a generated request through its protobuf codec. */
+  requestDeserialize?: (value: Buffer) => TReq;
   /**
    * Controls the `x-resetmask` header.
    *
@@ -160,6 +185,11 @@ export interface RequestSpec<TReq> {
   sendResetMask?: boolean;
   /** Returns schema data used to build a reset mask. */
   requestDescriptor?: () => MessageDescriptor | undefined;
+  /** Contains method-specific ID annotation overrides. */
+  requestFields?: readonly {
+    fieldPath: string;
+    nid?: { resource?: readonly string[]; parentResource?: readonly string[] };
+  }[];
 }
 
 /** Defines the shape of a generated unary gRPC call function. */
@@ -186,12 +216,8 @@ function getRelativeTimeoutMs(deadline: CallOptions['deadline']): number {
 function shouldUseIdempotencyKey(methodName?: string): boolean {
   if (!methodName) return false;
   const m = methodName.toLowerCase();
-  // Non-mutating methods that should NOT add idempotency keys
-  if (m === 'get' || m === 'getbyname' || m === 'list' || m === 'listoperationsbyparent') {
-    return false;
-  }
-  // For all other unary methods, add it (Create/Update/Delete/Start/Stop/etc.)
-  return true;
+  // All unary requests carry one logical key, as in GoSDK and PySDK.
+  return m.length > 0;
 }
 
 function generateIdempotencyKey(): string {
@@ -219,26 +245,19 @@ function generateIdempotencyKey(): string {
 
 const DEFAULT_OVERALL_TIMEOUT = 15 * 60000; // 15 minutes
 const DEFAULT_REQUEST_TIMEOUT = 60000; // 1 minute
-const DEFAULT_RETRY_COUNT = 3;
-const DEFAULT_PER_RETRY_TIMEOUT = DEFAULT_REQUEST_TIMEOUT / DEFAULT_RETRY_COUNT;
+const DEFAULT_RETRY_COUNT = 2;
+const DEFAULT_PER_RETRY_TIMEOUT = DEFAULT_REQUEST_TIMEOUT / 3;
 
-class CancelledError extends NebiusGrpcError {
-  constructor(reason?: string) {
-    const message = reason
-      ? `Request cancelled on client: ${reason}`
-      : 'Request cancelled on client';
-    const st = GrpcStatus.create({
-      code: StatusCode.CANCELLED.code,
-      message,
-      details: [],
-    });
-    const err = Object.assign(new Error(message), {
+function cancelledError(reason?: string): NebiusGrpcError {
+  const message = reason ? `Request cancelled on client: ${reason}` : 'Request cancelled on client';
+  return new NebiusGrpcError(
+    Object.assign(new Error(message), {
       code: StatusCode.CANCELLED.code,
       details: message,
       metadata: new Metadata(),
-    });
-    super(err, st);
-  }
+    }),
+    GrpcStatus.create({ code: StatusCode.CANCELLED.code, message, details: [] }),
+  );
 }
 
 /**
@@ -250,7 +269,7 @@ class CancelledError extends NebiusGrpcError {
  * request IDs, or cancellation.
  *
  * The runtime adds authorization metadata when a provider exists. It adds one
- * idempotency key to mutating methods and reuses that key for every retry. For
+ * idempotency key to unary methods and reuses that key for every retry. For
  * update methods, it can also create an `x-resetmask` header from the request.
  *
  * @example
@@ -289,15 +308,13 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
   /**
    * Resolves with `x-request-id` when the server returns that header.
    *
-   * Do not await this promise as a completion signal. It stays pending when
-   * the server does not return the header.
+   * Resolves with an empty string when the server omits the header.
    */
   readonly requestId: Promise<string>;
   /**
    * Resolves with `x-trace-id` when the server returns that header.
    *
-   * Do not await this promise as a completion signal. It stays pending when
-   * the server does not return the header.
+   * Resolves with an empty string when the server omits the header.
    */
   readonly traceId: Promise<string>;
 
@@ -312,6 +329,9 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
   private _maybeTraceId: string | undefined;
   private _maybeStatus: GrpcStatus | undefined;
   private _canceled = false;
+  private _done = false;
+  private _authRecoveryDecisionPending = false;
+  private readonly cancellation = new Cancelable();
   private _calls = new Set<ClientUnaryCall>();
   private readonly serviceName: string;
   private readonly methodName: string;
@@ -324,6 +344,8 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
    *
    * Generated service clients call this constructor. Construction starts
    * authorization and the gRPC call without waiting for the result.
+   *
+   * @throws Error if option validation, serialization, or client acquisition fails.
    */
   constructor(
     private sdk: SDKInterface,
@@ -334,6 +356,11 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     private requestMetadata: Metadata | undefined,
     private requestOptions?: (Partial<CallOptions> & RetryOptions) | undefined,
   ) {
+    this.request = spec.requestDeserialize
+      ? spec.requestDeserialize(spec.requestSerialize(this.request))
+      : this.request && typeof this.request === 'object'
+        ? { ...this.request }
+        : this.request;
     this.path = normalizeRequestPath(spec.path);
     const names = extractNamesFromPath(this.path);
     this.serviceName = names.serviceName;
@@ -350,7 +377,7 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
       spec.sendResetMask === true ||
       ((methodName || '').toLowerCase() === 'update' && spec.sendResetMask !== false);
     const client = this.sdk.getClientByAddress(this.addr);
-    const metadata = this.requestMetadata ?? new Metadata();
+    const metadata = this.requestMetadata?.clone() ?? new Metadata();
     this.logger = this.sdk.logger.child('request', {
       service: this.serviceName,
       method: this.methodName,
@@ -366,9 +393,29 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
         authorizationDisable?: boolean;
         authorizationOptions?: AuthorizationOptions;
       };
-    const baseOptions: ExtendedCallOptions | undefined = this.requestOptions
-      ? { ...(this.requestOptions as ExtendedCallOptions) }
-      : undefined;
+    const defaults = sdk.requestOptions?.();
+    const baseOptions: ExtendedCallOptions = {
+      ...defaults,
+      ...this.requestOptions,
+      ...(spec.authorizationDisable ? { authorizationDisable: true } : {}),
+      authorizationOptions: this.requestOptions?.authorizationOptions
+        ? { ...this.requestOptions.authorizationOptions }
+        : defaults?.authorizationOptions
+          ? { ...defaults.authorizationOptions }
+          : undefined,
+    };
+    for (const key of ['RequestTimeout', 'PerRetryTimeout', 'AuthTimeout'] as const) {
+      const value = baseOptions[key];
+      if (value !== undefined && !Number.isFinite(value)) {
+        throw new RangeError(`${key} must be finite.`);
+      }
+    }
+    if (
+      baseOptions.RetryCount !== undefined &&
+      (!Number.isInteger(baseOptions.RetryCount) || baseOptions.RetryCount < 0)
+    ) {
+      throw new RangeError('RetryCount must be a non-negative integer.');
+    }
     if (baseOptions?.deadline !== undefined && typeof baseOptions.deadline === 'number') {
       baseOptions.deadline = new Date(
         baseOptions.deadline as number,
@@ -402,9 +449,9 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
       this.logger.trace('Using idempotency key for this request');
     }
 
-    let overallMs = DEFAULT_OVERALL_TIMEOUT;
+    let overallMs = baseOptions.AuthTimeout ?? DEFAULT_OVERALL_TIMEOUT;
     if (baseOptions?.deadline !== undefined) {
-      overallMs = getRelativeTimeoutMs(baseOptions.deadline);
+      overallMs = Math.min(overallMs, getRelativeTimeoutMs(baseOptions.deadline));
       this.logger.trace('Using caller-provided overall deadline', { overall_ms: overallMs });
     } else {
       this.logger.trace('Using default overall deadline', { overall_ms: overallMs });
@@ -425,6 +472,7 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     } else {
       this.logger.trace('Using default per-retry timeout', { per_retry_ms: perRetry });
     }
+    if (!Number.isFinite(overallMs)) throw new RangeError('Request deadline must be finite.');
     const overallDeadline = new Date(Date.now() + overallMs);
     this.logger = this.logger.withFields({
       overall_timeout_ms: overallMs,
@@ -433,7 +481,17 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     });
 
     // Possibly inject parentId into request
-    injectParentIdIfNeeded(methodName, sdk?.parentId(), this.request, this.logger);
+    injectParentDefaults(
+      methodName,
+      sdk.parentId(),
+      sdk.tenantId?.(),
+      this.request,
+      requestDescriptor,
+      spec,
+    );
+
+    if (baseOptions.selectMask !== undefined) metadata.add('x-selectmask', baseOptions.selectMask);
+    if (baseOptions.resetMask !== undefined) metadata.add(RESET_MASK_HEADER, baseOptions.resetMask);
 
     // Ensure reset mask header for update methods if absent
     if (this.sendResetMask) {
@@ -460,243 +518,254 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
       }
     }
 
-    // Start the request flow with authorization outer-loop and internal retry attempts
-    this.result = new Promise<TRes>((resolve, reject) => {
-      // Helper: compute ms left until a deadline
-      const timeLeftMs = (deadline?: CallOptions['deadline']): number | undefined => {
-        if (!deadline) return undefined;
-        const now = Date.now();
-        if (deadline instanceof Date) return Math.max(0, deadline.getTime() - now);
-        if (typeof deadline === 'number') return Math.max(0, deadline - now);
-        return undefined;
-      };
-
-      // Inner: run one authorized request window that includes several retries using the same authorized metadata
-      const runAttempt = (attempt: number, callMd: Metadata, attemptDeadline: Date) => {
-        if (this._canceled) {
-          this.logger.debug('Request canceled by client before attempt start', { attempt });
-          const err = new CancelledError();
-          this._resolveStatus(err.status!);
-          reject(err);
-          return;
-        }
-
-        let logger = this.logger.withFields({ attempt });
-        logger.trace('Starting request attempt');
-
-        // Compute a per-retry deadline relative to now, but clip it to the
-        // authorized request attempt deadline if it is earlier.
-        let perDeadline = new Date(Date.now() + perRetry);
-        if (perDeadline.getTime() > attemptDeadline.getTime()) {
-          perDeadline = attemptDeadline;
-        }
-        const deadlineOpt = {
-          ...(baseOptions ?? {}),
-          deadline: perDeadline,
-        } as Partial<CallOptions>;
-
-        logger = logger.withFields({
-          per_retry_deadline: perDeadline,
-          maxRetries,
-          perRetryMs: perRetry,
-        });
-
-        logger.debug('Request attempt starting');
-
-        const call = client.makeUnaryRequest(
-          path,
-          this.serializer,
-          this.deserializer,
-          this.request,
-          callMd,
-          deadlineOpt,
-          (err, resp) => {
-            try {
-              this._calls.delete(call);
-              call.removeAllListeners();
-            } catch (err) {
-              logger.warn('Error during call cleanup', { err });
-            }
-            logger.trace('Request attempt removed from active set', {
-              active_calls: this._calls.size,
-            });
-            if (err) {
-              logger.trace('Request attempt returned error', { err });
-              call.cancel(); // ensure call is fully closed
-
-              const wrapped = err as NebiusGrpcError;
-              // Metadata-derived requestId/traceId if any
-              if (wrapped?.metadata) {
-                const md = wrapped.metadata as Metadata;
-                this._safeResolveIdsFromMd(md);
-              }
-              // Determine retriable
-              const retriable = this._isRetriableError(wrapped);
-
-              const errLogger = logger.withFields({ err: wrapped, is_retriable: retriable });
-              errLogger.error('Request attempt failed');
-
-              if (retriable && attempt < maxRetries && !this._canceled) {
-                errLogger.trace('Retrying request attempt after retriable error');
-                runAttempt(attempt + 1, callMd, attemptDeadline);
-                return;
-              }
-
-              if (retriable) {
-                errLogger.error('Request retries exhausted, final failure');
-              } else if (this._canceled) {
-                errLogger.warn('Request was canceled, rejecting');
-              } else {
-                errLogger.error('Request failed (non-retriable)');
-              }
-              errLogger.trace('Final request error, rejecting');
-              // Resolve status even on error
-              const st =
-                decodeStatusFromError(err) ??
-                GrpcStatus.create({
-                  code: err.code,
-                  message: err.message,
-                  details: [],
-                });
-              this._resolveStatus(st);
-              reject(wrapped);
-              return;
-            } else if (!resp) {
-              logger.trace('Request attempt returned neither error nor response, failing');
-              // Handle missing response
-              const st = GrpcStatus.create({
-                code: StatusCode.UNKNOWN.code,
-                message: 'Neither response, nor error received from server',
-                details: [],
-              });
-              this._resolveStatus(st);
-              reject(Error('Neither response, nor error received from server'));
-              return;
-            }
-            logger.debug('Request attempt succeeded');
-            resolve(resp);
-          },
-        );
-
-        logger.trace('Request attempt sent, attaching listeners');
-        // Attach event listeners for metadata and status
-        call.on('metadata', (md2: Metadata) => {
-          logger.trace('Received initial metadata');
-          this._resolveInitialMd(md2);
-          this._safeResolveIdsFromMd(md2);
-        });
-        call.on('status', (s) => {
-          logger.trace('Received status event', { status: s });
-          const st = decodeStatusFromStatusEvent(s);
-          this._resolveStatus(st);
-          const md: Metadata | undefined = s?.metadata;
-          if (md) this._safeResolveIdsFromMd(md);
-          if (s?.metadata) this._resolveTrailingMd(s.metadata);
-        });
-
-        // track active call for possible cancellation/cleanup
-        this._calls.add(call);
-        this.logger.trace('Tracking call for potential cancellation', { calls: this._calls.size });
-      };
-
-      // Outer: authorization loop
-      const startAuthorizedFlow = async () => {
-        // Compute overall deadline (already prepared above)
-        // Prepare baseline metadata (already has reset-mask and idempotency if needed)
-        const baseMd = metadata;
-        const disableAuth = baseOptions?.authorizationDisable === true;
-        const authOptions: AuthorizationOptions | undefined = baseOptions?.authorizationOptions;
-        const provider = this.sdk.getAuthorizationProvider();
-
-        if (disableAuth || !provider) {
-          this.logger.trace(
-            disableAuth
-              ? 'Authorization disabled by call options; starting request attempts without auth.'
-              : 'No authorization provider; starting request attempts without auth.',
-          );
-          // Single authorized window: requestTimeout, clipped by overall deadline
-          const attemptDeadline = new Date(
-            Math.min(Date.now() + requestTimeout, overallDeadline.getTime()),
-          );
-          runAttempt(0, baseMd, attemptDeadline);
-          return;
-        }
-
-        const auth = provider.authenticator();
-        let authAttempt = 0;
-        while (true) {
-          if (this._canceled) {
-            const cerr = new CancelledError('cancelled before authentication');
-            this._resolveStatus(cerr.status!);
-            reject(cerr);
-            return;
-          }
-          authAttempt += 1;
-          const left = timeLeftMs(overallDeadline);
-          const timeoutMs = left === undefined ? undefined : Math.max(0, left);
-          const aLog = this.logger.withFields({ auth_attempt: authAttempt, left, timeoutMs });
-          aLog.debug('Starting authentication attempt');
-          // Always start from the baseline metadata to avoid stacking headers between attempts
-          const mdAttempt = baseMd.clone();
+    // Keep diagnostics from the final attempt, including failures before dispatch.
+    let initialMd = new Metadata();
+    let trailingMd = new Metadata();
+    let finalStatus: GrpcStatus | undefined;
+    const finish = (err?: unknown) => {
+      this._done = true;
+      this._resolveInitialMd(initialMd);
+      this._resolveTrailingMd(trailingMd);
+      this._safeResolveIdsFromMd(initialMd);
+      this._safeResolveIdsFromMd(trailingMd);
+      this._resolveReqId(this._maybeReqId ?? '');
+      this._resolveTraceId(this._maybeTraceId ?? '');
+      this._resolveStatus(
+        finalStatus ??
+          GrpcStatus.create({
+            code: err
+              ? ((err as GrpcServiceError).code ?? StatusCode.UNKNOWN.code)
+              : StatusCode.OK.code,
+            message: err instanceof Error ? err.message : '',
+            details: [],
+          }),
+      );
+    };
+    const deadlineError = () =>
+      new NebiusGrpcError(
+        Object.assign(new Error('Request deadline exceeded.'), {
+          code: StatusCode.DEADLINE_EXCEEDED.code,
+          details: 'Request deadline exceeded.',
+          metadata: trailingMd,
+        }),
+      );
+    const run = async (): Promise<TRes> => {
+      const provider = this.sdk.getAuthorizationProvider();
+      const auth =
+        !baseOptions.authorizationDisable && metadata.get('authorization').length === 0
+          ? provider?.authenticator(baseOptions.authorizationOptions)
+          : undefined;
+      let authRetry = 0;
+      let recoveryRetry = 0;
+      let rejectedCredential = false;
+      let rejectedAuthorization: string | Buffer | undefined;
+      let rejectedError: unknown;
+      while (true) {
+        if (this._canceled) throw cancelledError();
+        if (Date.now() >= overallDeadline.getTime()) throw deadlineError();
+        const md = metadata.clone();
+        if (auth) {
           try {
-            const promise = auth.authenticate(mdAttempt, timeoutMs, authOptions);
-            if (timeoutMs !== undefined) {
-              await withTimeout(promise, timeoutMs);
-            } else {
-              await promise;
-            }
-            aLog.debug('Authentication successful');
-            // Within this authenticated window, run the request with internal retries for requestTimeout
-            const attemptDeadline = new Date(
-              Math.min(Date.now() + requestTimeout, overallDeadline.getTime()),
+            await this.cancellation.withTimeout(
+              auth.authenticate(
+                md,
+                Math.max(0, overallDeadline.getTime() - Date.now()),
+                rejectedCredential
+                  ? {
+                      ...baseOptions.authorizationOptions,
+                      renewRequired: true,
+                      renewSynchronous: true,
+                    }
+                  : baseOptions.authorizationOptions,
+              ),
+              Math.max(0, overallDeadline.getTime() - Date.now()),
             );
-            runAttempt(0, mdAttempt, attemptDeadline);
-            return;
-          } catch (e) {
-            const canRetry =
-              typeof auth.canRetry === 'function' ? auth.canRetry(e, authOptions) : false;
-            const stillLeft = timeLeftMs(overallDeadline);
-            aLog.error('Authentication error', { err: e, canRetry, stillLeft });
-            if (!canRetry || (stillLeft !== undefined && stillLeft <= 0)) {
-              // Synthesize UNAUTHENTICATED error
-              const message = ((): string => {
-                if (typeof e === 'string') return e;
-                if (e && typeof e === 'object') {
-                  const m = (e as { message?: unknown }).message;
-                  if (typeof m === 'string') return m;
-                }
-                return 'authentication failed';
-              })();
-              const baseErr = Object.assign(new Error(message), {
-                code: StatusCode.UNAUTHENTICATED.code,
-                details: message,
-                metadata: new Metadata(),
-              }) as unknown as GrpcServiceError;
-              const st = GrpcStatus.create({
-                code: StatusCode.UNAUTHENTICATED.code,
-                message,
-                details: [],
-              });
-              this._resolveStatus(st);
-              reject(new NebiusGrpcError(baseErr, st));
-              return;
+            if (rejectedCredential && md.get('authorization')[0] === rejectedAuthorization) {
+              throw rejectedError;
             }
-            // Retry authorization when another attempt is allowed.
+          } catch (err) {
+            if (this._canceled) throw cancelledError();
+            if (err instanceof TimeoutError || Date.now() >= overallDeadline.getTime()) {
+              throw deadlineError();
+            }
+            if (rejectedCredential && err === rejectedError) throw err;
+            if (
+              ++authRetry < (baseOptions.authorizationOptions?.maxRetries ?? 2) &&
+              auth.canRetry?.(err, baseOptions.authorizationOptions)
+            ) {
+              continue;
+            }
+            if (rejectedCredential) {
+              if (err instanceof AggregateError && err.errors.includes(rejectedError)) throw err;
+              throw new AggregateError([err, rejectedError], 'Credential recovery failed.');
+            }
+            throw new NebiusGrpcError(
+              Object.assign(
+                new Error(err instanceof Error ? err.message : 'Authentication failed.'),
+                {
+                  code: StatusCode.UNAUTHENTICATED.code,
+                  details: err instanceof Error ? err.message : 'Authentication failed.',
+                  metadata: new Metadata(),
+                },
+              ),
+            );
           }
         }
-      };
-
-      // Kick off
-      startAuthorizedFlow().catch((err) => {
-        // Safety net: if something throws synchronously above
-        try {
-          if (err instanceof NebiusGrpcError && err.status) this._resolveStatus(err.status);
-        } catch {
-          /* ignore */
+        const requestDeadline = Date.now() + requestTimeout;
+        let renew = false;
+        for (let attempt = 0; ; attempt++) {
+          if (this._canceled) throw cancelledError();
+          const deadline = Math.min(requestDeadline, overallDeadline.getTime());
+          if (Date.now() >= deadline) throw deadlineError();
+          const canRetryTransport = (err: unknown): boolean => {
+            const retriable =
+              isRetriableError(err) ||
+              ((err as GrpcServiceError).code === StatusCode.DEADLINE_EXCEEDED.code &&
+                !(err as NebiusGrpcError).serviceErrors?.some(
+                  (detail) =>
+                    detail.retryType === ServiceError_RetryType.NOTHING ||
+                    detail.retryType === ServiceError_RetryType.UNIT_OF_WORK,
+                ));
+            return retriable && attempt < maxRetries && Date.now() < deadline;
+          };
+          initialMd = new Metadata();
+          trailingMd = new Metadata();
+          finalStatus = undefined;
+          try {
+            const response = await new Promise<TRes>((resolve, reject) => {
+              let validationError: OperationValidationError | undefined;
+              const call = client.makeUnaryRequest(
+                path,
+                this.serializer,
+                (buffer) => {
+                  try {
+                    return this.deserializer(buffer);
+                  } catch (error) {
+                    // grpc-js converts deserializer exceptions into generic INTERNAL errors.
+                    if (error instanceof OperationValidationError) validationError = error;
+                    throw error;
+                  }
+                },
+                this.request,
+                md,
+                {
+                  ...baseOptions,
+                  deadline: new Date(Math.min(Date.now() + perRetry, deadline)),
+                },
+                (err, resp) => {
+                  this._calls.delete(call);
+                  if (err) {
+                    trailingMd = err.metadata ?? trailingMd;
+                    finalStatus =
+                      decodeStatusFromError(err) ??
+                      GrpcStatus.create({ code: err.code, message: err.details, details: [] });
+                    const failure = validationError ?? err;
+                    const canRecover =
+                      err.code === StatusCode.UNAUTHENTICATED.code &&
+                      auth &&
+                      recoveryRetry + 1 < (baseOptions.authorizationOptions?.maxRetries ?? 2);
+                    this._authRecoveryDecisionPending = Boolean(canRecover);
+                    if (!this._canceled && !canRecover && !canRetryTransport(failure)) {
+                      this._done = true;
+                    }
+                    reject(failure);
+                  } else if (resp === undefined || resp === null) {
+                    reject(new Error('Neither response nor error received from server.'));
+                  } else {
+                    // A completed native response remains authoritative during cancellation.
+                    this._done = true;
+                    resolve(resp);
+                  }
+                },
+              );
+              call.on('metadata', (value: Metadata) => {
+                initialMd = value;
+              });
+              call.on('status', (value) => {
+                finalStatus = decodeStatusFromStatusEvent(value);
+                trailingMd = value.metadata ?? trailingMd;
+              });
+              this._calls.add(call);
+            });
+            return response;
+          } catch (err) {
+            if (this._canceled && !this._done && !this._authRecoveryDecisionPending) {
+              throw cancelledError();
+            }
+            let recovered = false;
+            if (
+              (err as GrpcServiceError).code === StatusCode.UNAUTHENTICATED.code &&
+              auth &&
+              ++recoveryRetry < (baseOptions.authorizationOptions?.maxRetries ?? 2)
+            ) {
+              try {
+                recovered = auth.handleError
+                  ? await withTimeout(
+                      auth.handleError(
+                        err,
+                        baseOptions.authorizationOptions,
+                        Math.max(0, overallDeadline.getTime() - Date.now()),
+                      ),
+                      Math.max(0, overallDeadline.getTime() - Date.now()),
+                    )
+                  : (auth.canRetry?.(err, baseOptions.authorizationOptions) ?? false);
+              } catch (recoveryError) {
+                this._done = true;
+                if (Date.now() >= overallDeadline.getTime()) throw deadlineError();
+                if (
+                  recoveryError instanceof TimeoutError ||
+                  recoveryError === err ||
+                  (recoveryError instanceof AggregateError && recoveryError.errors.includes(err))
+                ) {
+                  throw recoveryError;
+                }
+                throw new AggregateError([recoveryError, err], 'Credential recovery failed.');
+              } finally {
+                this._authRecoveryDecisionPending = false;
+              }
+            }
+            if (!recovered && !canRetryTransport(err)) {
+              this._done = true;
+              throw err;
+            }
+            if (this._canceled) throw cancelledError();
+            if (recovered) {
+              rejectedAuthorization = md.get('authorization')[0];
+              rejectedError = err;
+              rejectedCredential = true;
+              renew = true;
+              break;
+            }
+            // An individual attempt can time out while the logical request still has time.
+            if (!canRetryTransport(err)) throw err;
+            const delay = baseOptions.retryBackoff?.(attempt + 1) ?? 0;
+            if (!Number.isFinite(delay) || delay < 0) {
+              throw new RangeError('Retry backoff must be finite and non-negative.');
+            }
+            if (delay > 0) {
+              await this.cancellation.sleep(Math.min(delay, Math.max(0, deadline - Date.now())));
+            }
+          }
         }
-        reject(err);
-      });
-    });
+        if (!renew) throw new Error('Request retry state is invalid.');
+      }
+    };
+    this.result = run().then(
+      (response) => {
+        finish();
+        return response;
+      },
+      (err: unknown) => {
+        if (err instanceof TimeoutError) err = deadlineError();
+        if (this._canceled && !this._done) err = cancelledError();
+        if (err instanceof NebiusGrpcError) {
+          finalStatus =
+            err.status ?? GrpcStatus.create({ code: err.code, message: err.details, details: [] });
+        }
+        finish(err);
+        throw err;
+      },
+    );
   }
 
   /**
@@ -753,11 +822,6 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
     }
   }
 
-  private _isRetriableError(err: NebiusGrpcError): boolean {
-    const retriable = isRetriableError(err);
-    this.logger.trace('Request error classified', { err, is_retriable: retriable });
-    return retriable;
-  }
   /**
    * Cancels active gRPC calls and prevents later retries.
    *
@@ -783,18 +847,20 @@ export class Request<TReq, TRes> implements PromiseLike<TRes> {
    * ```
    */
   public cancel(reason?: string): void {
-    if (this._canceled) {
+    if (this._canceled || this._done) {
       this.logger.trace('Request already canceled', { reason });
       return;
     }
     this._canceled = true;
+    // Keep the completed native error until recovery decides whether another attempt is possible.
+    if (this._authRecoveryDecisionPending) return;
+    this.cancellation.cancel();
     this.logger.debug('Cancelling request', { reason });
     // Cancel any tracked calls and detach listeners to help GC
     for (const c of this._calls) {
       try {
         this.logger.trace('Cancelling call', { call: c });
         c.cancel();
-        c.removeAllListeners();
       } catch (err) {
         this.logger.warn('Error cancelling call', { err });
       }
@@ -889,43 +955,83 @@ function decodeStatusFromStatusEvent(
   });
 }
 
-// Inject parentId based on method name and sdk-provided profileParentId
-// any is necessary because here we patch all requests duck-style
-function injectParentIdIfNeeded(
-  methodName: string | undefined,
-  profileParentId: string | undefined,
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  req: any,
-  logger: Logger,
-) {
-  if (!profileParentId) {
-    logger.trace('No profile parentId available, skipping injection');
+const NID_PATTERN =
+  /^(?<type>[a-z][a-z0-9]{2,49})-[a-z][a-z0-9]{2}[a-z0-9-]{1,71}[a-z0-9](?:--[a-z-][a-z0-9-]{0,9})?$/;
+
+function allowedParent(value: string | undefined, allowed: readonly string[] | undefined): boolean {
+  if (!value) return false;
+  // Keep legacy unannotated requests compatible. Annotated defaults must be valid NIDs.
+  if (allowed === undefined) return true;
+  const match = NID_PATTERN.exec(value);
+  const reserved = value.indexOf('--');
+  return (
+    !!match &&
+    (reserved < 0 || /^--[a-z-][a-z0-9-]{0,9}$/.test(value.slice(reserved))) &&
+    (allowed.length === 0 ||
+      (allowed.length === 1 && allowed[0] === '*') ||
+      allowed.includes(match.groups!.type))
+  );
+}
+
+function settingMatches(value: string, path: string[]): boolean {
+  let mask: Mask | null = Mask.parse(value);
+  for (const key of path) {
+    if (mask?.isEmpty()) return true;
+    mask = mask?.getSubMask(key) ?? null;
+  }
+  return mask?.isEmpty() ?? false;
+}
+
+function injectParentDefaults<T>(
+  method: string,
+  parent: string | undefined,
+  tenant: string | undefined,
+  request: T,
+  descriptor: MessageDescriptor | undefined,
+  spec: RequestSpec<T>,
+): void {
+  if (
+    spec.sendResetMask === true ||
+    (method.toLowerCase() === 'update' && spec.sendResetMask !== false)
+  ) {
     return;
   }
-  if (!req || typeof req !== 'object') {
-    logger.trace('Request is not an object, skipping parentId injection');
-    return;
-  }
-  const m = (methodName || '').toLowerCase();
-  if (m === 'list' || m === 'getbyname') {
-    if (Object.prototype.hasOwnProperty.call(req, 'parentId')) {
-      if (req.parentId === '' || req.parentId === undefined || req.parentId === null) {
-        logger.trace('List/GetByName request missing parentId, injecting from profile');
-        req.parentId = profileParentId;
+  if (!request || typeof request !== 'object') return;
+  const req = request as Record<string, unknown>;
+  const field = descriptor?.fields.parentId;
+  const override = spec.requestFields?.find((value) =>
+    settingMatches(value.fieldPath, ['parent_id']),
+  )?.nid;
+  if (
+    ['list', 'listaggregated', 'getbyname'].includes(method.toLowerCase()) &&
+    ('parentId' in req || field)
+  ) {
+    if (req.parentId) return;
+    const allowed = override?.resource ?? field?.nid?.resource;
+    for (const candidate of [parent, tenant]) {
+      if (allowedParent(candidate, allowed ?? (descriptor ? [] : undefined))) {
+        req.parentId = candidate;
+        break;
       }
     }
-    return;
-  }
-  if (m !== 'update') {
-    const md = req.metadata;
-    if (md && typeof md === 'object' && Object.prototype.hasOwnProperty.call(md, 'parentId')) {
-      if (md.parentId === '' || md.parentId === undefined || md.parentId === null) {
-        logger.trace('Request with metadata missing parentId, injecting from profile');
-        md.parentId = profileParentId;
+  } else if ('metadata' in req || descriptor?.fields.metadata) {
+    const md = (req.metadata ??
+      descriptor?.fields.metadata?.message?.()?.create?.() ??
+      {}) as Record<string, unknown>;
+    if (md.parentId) return;
+    const allowed =
+      spec.requestFields?.find((value) =>
+        settingMatches(value.fieldPath, ['metadata', 'parent_id']),
+      )?.nid?.resource ??
+      spec.requestFields?.find((value) => settingMatches(value.fieldPath, ['metadata']))?.nid
+        ?.parentResource ??
+      descriptor?.fields.metadata?.nid?.parentResource ??
+      spec.metadataParentTypes?.();
+    for (const candidate of [tenant, parent]) {
+      if (allowedParent(candidate, allowed ?? (descriptor ? [] : undefined))) {
+        req.metadata = { ...md, parentId: candidate };
       }
     }
-  } else {
-    logger.trace('Update method, skipping parentId injection');
   }
 }
 

@@ -5,9 +5,7 @@
  * {@link withTimeout} when only a deadline is needed. These helpers reject
  * their returned promises, but they cannot stop arbitrary source promises.
  *
- * {@link CancelableSleep} and {@link sleep} are currently unusable on supported
- * Node.js runtimes because of a Promise-subclass compatibility problem. Do not
- * use them.
+ * {@link CancelableSleep} and {@link sleep} provide individually cancellable delays.
  *
  * @packageDocumentation
  */
@@ -87,6 +85,7 @@ export class Cancelable {
    * The timer does not keep a Node.js process alive.
    */
   sleep(ms: number): Promise<void> {
+    if (this._isCanceled) return Promise.reject(new CancelError());
     return new Promise((resolve, reject) => {
       const handle = setTimeout(() => {
         if (this._isCanceled) {
@@ -110,6 +109,7 @@ export class Cancelable {
    * have a general cancellation operation.
    */
   guard<T>(promise: PromiseLike<T>): Promise<T> {
+    if (this._isCanceled) return Promise.reject(new CancelError());
     let resolver: (value: void | PromiseLike<void>) => void;
     let rejector: (reason?: unknown) => void;
     const guarder = new Promise<void>((resolve, reject) => {
@@ -193,22 +193,23 @@ export function withTimeout<T>(promise: PromiseLike<T>, ms: number): Promise<T> 
  * Awaiting a canceled delay rejects with {@link CancelError}. Canceling a delay
  * after it has completed has no effect.
  *
- * @remarks
- * Direct construction currently fails on supported Node.js runtimes because
- * this Promise subclass accesses instance state while the base Promise
- * constructor runs. Do not construct this class. Use a normal Promise timer
- * with {@link Cancelable.guard} until the implementation is corrected.
+
  */
 export class CancelableSleep extends Promise<void> {
+  static get [Symbol.species](): PromiseConstructor {
+    return Promise;
+  }
   private handle: NodeJS.Timeout | null = null;
   private rejector: (reason?: CancelError) => void = () => {};
   /** Creates a delay in milliseconds. Its timer does not keep Node.js alive. */
   constructor(ms: number) {
-    let resolver: (value: void | PromiseLike<void>) => void;
+    let resolver!: (value: void | PromiseLike<void>) => void;
+    let rejector!: (reason?: CancelError) => void;
     super((resolve, reject) => {
       resolver = resolve;
-      this.rejector = reject;
+      rejector = reject;
     });
+    this.rejector = rejector;
     this.handle = setTimeout(() => {
       this.handle = null;
       resolver();
@@ -231,10 +232,7 @@ export class CancelableSleep extends Promise<void> {
  * `setCancel` receives the cancellation function immediately. This is useful
  * when an API must expose cancellation separately from its returned promise.
  *
- * @remarks
- * This function constructs {@link CancelableSleep} and therefore fails on
- * supported Node.js runtimes. Do not call it until the Promise-subclass
- * implementation is corrected.
+
  */
 export function sleep(ms: number, setCancel?: (cancel: () => void) => void): CancelableSleep {
   const sleeper = new CancelableSleep(ms);

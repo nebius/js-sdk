@@ -351,4 +351,4 @@ export class NebiusGrpcError extends Error implements GrpcServiceError {
   proto.__nebiusUnaryPatched = true;
 })();
 
-export { decodeStatusFromError, NebiusServiceError };
+export { decodeStatusFromError, extractNebiusServiceErrors, NebiusServiceError };

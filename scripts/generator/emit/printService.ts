@@ -1,8 +1,8 @@
-import type { Method, Service as TSService } from '../descriptors.js';
 import { MethodBehavior as MethodBehaviorEnum } from '../extensions/index.js';
-
 import { deprecationLine, deprecationOptions } from './helpers.js';
 import { resolveImportSymbol, resolveTypeNameByFqn } from './typeNames.js';
+
+import type { Method, Service as TSService } from '../descriptors.js';
 
 function normalizeFqn(name: string, pkg?: string): string {
   let n = name || '';
@@ -44,8 +44,7 @@ function normalizeMethodBehavior(value: unknown): ExtractedMethodBehavior {
 
 function extractMethodBehaviors(method: Method): ExtractedMethodBehavior[] {
   const opts = method.descriptor?.options as
-    | { methodBehavior?: unknown; method_behavior?: unknown }
-    | undefined;
+    { methodBehavior?: unknown; method_behavior?: unknown } | undefined;
   const methodBehavior = opts?.methodBehavior ?? opts?.method_behavior;
   if (methodBehavior === undefined || methodBehavior === null) return [];
 
@@ -169,6 +168,38 @@ export function printService(
     );
     if (Req !== 'any') {
       lines.push(`    requestDescriptor: () => ${Req}.$descriptor,`);
+    }
+    const requestFields = (m.descriptor.options as { requestFields?: unknown[] } | undefined)
+      ?.requestFields;
+    if (requestFields?.length) {
+      lines.push(
+        `    requestFields: ${JSON.stringify(
+          requestFields.map((value) => {
+            const field = value as {
+              fieldPath: string;
+              nid?: { resource?: string[]; parentResource?: string[] };
+            };
+            return {
+              fieldPath: field.fieldPath,
+              ...(field.nid
+                ? {
+                    nid: { resource: field.nid.resource, parentResource: field.nid.parentResource },
+                  }
+                : {}),
+            };
+          }),
+        )},`,
+      );
+    }
+    const get = svc.methods.find((method) => method.pb_name === 'Get');
+    if (get && !isOpSvc) {
+      const key = normalizeFqn(get.descriptor.outputType || '', pkg),
+        info = typeIndex.get(key);
+      if (info) {
+        lines.push(
+          `    metadataParentTypes: () => ${typeNameFor(key, info)}.$descriptor?.fields.metadata?.nid?.parentResource,`,
+        );
+      }
     }
     lines.push(`    sendResetMask: ${sendResetMask ? 'true' : 'false'},`);
     lines.push(`    requestDeserialize: (value: Buffer) => ${Req}.decode(value),`);
@@ -300,6 +331,43 @@ export function printService(
 
   // SDK class (uses BaseClient)
   // Static helper to obtain OperationService for services that return Operation(s)
+  const messages = svc.containingFile.fileSet.files.flatMap((file) => file.collectAllMessages());
+  const listMethod = svc.methods.find((m) => {
+    if (m.pb_name !== 'List') return false;
+    const input = messages.find(
+      (message) => message.fullQualifiedName() === normalizeFqn(m.descriptor.inputType || '', pkg),
+    );
+    const output = messages.find(
+      (message) => message.fullQualifiedName() === normalizeFqn(m.descriptor.outputType || '', pkg),
+    );
+    return (
+      input?.fields.some((field) => field.pb_name === 'page_token') &&
+      output?.fields.some((field) => field.pb_name === 'next_page_token') &&
+      output.fields.filter(
+        (field) => field.isRepeated() && !field.isMap() && !field.descriptor.options?.deprecated,
+      ).length === 1
+    );
+  });
+  if (listMethod) {
+    const reqKey = normalizeFqn(listMethod.descriptor.inputType || '', pkg);
+    const resKey = normalizeFqn(listMethod.descriptor.outputType || '', pkg);
+    const Req = typeNameFor(reqKey, typeIndex.get(reqKey));
+    const Res = isOpSvc
+      ? 'OperationServiceListResponse'
+      : typeNameFor(resKey, typeIndex.get(resKey));
+    const output = messages.find((message) => message.fullQualifiedName() === resKey)!;
+    const itemField = output.fields.find(
+      (field) => field.isRepeated() && !field.isMap() && !field.descriptor.options?.deprecated,
+    )!;
+    // Use the selected collection's item type, including wrapped operations.
+    lines.push('');
+    lines.push('/** Iterates list pages with JavaScript async iteration. */');
+    lines.push(`export interface ${svcName} {`);
+    lines.push(
+      `  filter(request: ${Req}, metadata?: Metadata, options?: Partial<CallOptions> & RetryOptions): AsyncGenerator<${Res}[${JSON.stringify(itemField.tsName)}][number]>;`,
+    );
+    lines.push('}');
+  }
   const compiledApiName = apiServiceName ? JSON.stringify(apiServiceName) : 'undefined';
   lines.push('/**');
   lines.push(` * Calls the \`${pbFullSvcName}\` service through the Nebius SDK.`);
@@ -345,6 +413,12 @@ export function printService(
     lines.push(`  /** Returns the operation service for this service address. */`);
     lines.push(`  getOperationService(): ${opServiceName} {`);
     lines.push(`    return new ${opServiceName}(this.sdk, this.addr);`);
+    lines.push('  }');
+    lines.push('  /** Lists operations for this service address. */');
+    lines.push(
+      `  listOperations(request: Parameters<${opServiceName}["list"]>[0], metadata: Metadata = new Metadata(), options: Partial<CallOptions> & RetryOptions = {}): ReturnType<${opServiceName}["list"]> {`,
+    );
+    lines.push('    return this.getOperationService().list(request, metadata, options);');
     lines.push('  }');
   }
   lines.push('');
@@ -426,6 +500,37 @@ export function printService(
     lines.push('');
   }
 
+  if (listMethod) {
+    const reqKey = normalizeFqn(listMethod.descriptor.inputType || '', pkg),
+      resKey = normalizeFqn(listMethod.descriptor.outputType || '', pkg);
+    const Req = typeNameFor(reqKey, typeIndex.get(reqKey)),
+      Res = isOpSvc ? 'OperationServiceListResponse' : typeNameFor(resKey, typeIndex.get(resKey));
+    const output = messages.find((message) => message.fullQualifiedName() === resKey)!;
+    const itemField = output.fields.find(
+      (field) => field.isRepeated() && !field.isMap() && !field.descriptor.options?.deprecated,
+    )!;
+    lines.push(`  /** Yields list items across pages, without changing the supplied request. */`);
+    lines.push(
+      `  async *filter(request: ${Req}, metadata?: Metadata, options?: Partial<CallOptions> & RetryOptions): AsyncGenerator<${Res}[${JSON.stringify(itemField.tsName)}][number]> {`,
+    );
+    lines.push(`    const req = ${Req}.decode(${Req}.encode(request).finish());`);
+    lines.push(
+      `    if (!('pageToken' in req)) throw new TypeError('List request does not support pagination.');`,
+    );
+    lines.push(`    const key = ${JSON.stringify(itemField.tsName)} as keyof ${Res};`);
+    lines.push(`    for (;;) {`);
+    lines.push(
+      `      const page = await this.list(req, metadata ?? new Metadata(), options ?? {}).result;`,
+    );
+    lines.push(
+      `      for (const item of page[key] as ${Res}[${JSON.stringify(itemField.tsName)}][number][]) yield item;`,
+    );
+    lines.push(`      const token = (page as unknown as {nextPageToken?: string}).nextPageToken;`);
+    lines.push(`      if (!token) return;`);
+    lines.push(`      (req as unknown as {pageToken: string}).pageToken = token;`);
+    lines.push(`    }`);
+    lines.push(`  }`);
+  }
   lines.push(`}`);
   lines.push('');
 

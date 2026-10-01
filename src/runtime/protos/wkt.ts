@@ -19,14 +19,29 @@ function wktDescriptor(type: string): MessageDescriptor | undefined {
 }
 
 // Timestamp helpers
+const invalidTimestampParts = new WeakMap<Dayjs, { seconds: Long; nanos: number }>();
 function tsToWire(d: Dayjs): { seconds: Long; nanos: number } {
+  const invalid = invalidTimestampParts.get(d);
+  if (invalid) return invalid;
   const ms = d.valueOf();
   const seconds = Long.fromNumber(Math.floor(ms / 1000));
-  const nanos = (ms % 1000) * 1_000_000;
+  const nanos = (((ms % 1000) + 1000) % 1000) * 1_000_000;
   return { seconds, nanos };
 }
 function tsFromWire(t: { seconds: Long | number | string; nanos: number }): Dayjs {
   const sec = Long.isLong(t.seconds) ? (t.seconds as Long).toNumber() : Number(t.seconds);
+  if (
+    !Number.isInteger(sec) ||
+    sec < -62135596800 ||
+    sec > 253402300799 ||
+    !Number.isInteger(t.nanos) ||
+    t.nanos < 0 ||
+    t.nanos > 999999999
+  ) {
+    const invalid = dayjs(NaN);
+    invalidTimestampParts.set(invalid, { seconds: Long.fromValue(t.seconds), nanos: t.nanos });
+    return invalid;
+  }
   const ms = sec * 1000 + Math.floor((t.nanos ?? 0) / 1_000_000);
   return dayjs(ms);
 }
@@ -39,11 +54,21 @@ function tsFromJSON(o: unknown): Dayjs {
   return dayjs(0);
 }
 function tsToJSON(d: Dayjs): string {
+  const raw = invalidTimestampParts.get(d);
+  if (raw) {
+    return dayjs(raw.seconds.toNumber() * 1000 + Math.floor(raw.nanos / 1_000_000))
+      .toDate()
+      .toISOString();
+  }
+  if (!d.isValid()) throw new RangeError('Invalid protobuf Timestamp.');
   return d.toDate().toISOString();
 }
 
 // Duration helpers (protobuf JSON uses "Xs" with fractional seconds)
+const invalidDurationParts = new WeakMap<Duration, { seconds: Long; nanos: number }>();
 function durToWire(d: Duration): { seconds: Long; nanos: number } {
+  const invalid = invalidDurationParts.get(d);
+  if (invalid) return invalid;
   const ms = Math.trunc(d.asMilliseconds());
   const seconds = Long.fromNumber(Math.trunc(ms / 1000));
   const nanos = (ms % 1000) * 1_000_000;
@@ -52,7 +77,18 @@ function durToWire(d: Duration): { seconds: Long; nanos: number } {
 function durFromWire(t: { seconds: Long | number | string; nanos: number }): Duration {
   const sec = Long.isLong(t.seconds) ? (t.seconds as Long).toNumber() : Number(t.seconds);
   const ms = sec * 1000 + Math.floor((t.nanos ?? 0) / 1_000_000);
-  return dayjs.duration(ms, 'milliseconds');
+  const duration = dayjs.duration(ms, 'milliseconds');
+  if (
+    !Number.isInteger(sec) ||
+    Math.abs(sec) > 315576000000 ||
+    !Number.isInteger(t.nanos) ||
+    Math.abs(t.nanos) > 999999999 ||
+    (sec < 0 && t.nanos > 0) ||
+    (sec > 0 && t.nanos < 0)
+  ) {
+    invalidDurationParts.set(duration, { seconds: Long.fromValue(t.seconds), nanos: t.nanos });
+  }
+  return duration;
 }
 const DUR_RE = /^(-)?(?:(\d+)(?:\.(\d{1,9}))?)s$/i;
 function durFromJSON(o: unknown): Duration {
@@ -118,7 +154,7 @@ function normalizeTimePart(value: unknown): unknown {
   if (value && typeof value === 'object') {
     const maybeLong = value as { isZero?: unknown; toNumber?: unknown };
     if (typeof maybeLong.isZero === 'function') {
-      return (maybeLong.isZero as () => boolean)() ? 0 : 1;
+      return Long.fromValue(value as Long).toNumber();
     }
     if (typeof maybeLong.toNumber === 'function') {
       const numberValue = (maybeLong.toNumber as () => number)();
@@ -141,7 +177,7 @@ function timestampReflect(value: unknown): Record<string, unknown> | undefined {
     if (Number.isFinite(ms)) {
       return {
         seconds: Math.floor(ms / 1000),
-        nanos: (ms % 1000) * 1_000_000,
+        nanos: (((ms % 1000) + 1000) % 1000) * 1_000_000,
       };
     }
   }
@@ -224,7 +260,10 @@ export const wkt = {
   ['.google.protobuf.Timestamp']: {
     $type: 'google.protobuf.Timestamp',
     $descriptor: {
+      type: 'google.protobuf.Timestamp',
       reflect: timestampReflect,
+      create: () => ({ seconds: Long.ZERO, nanos: 0 }),
+      unreflect: (v: Record<string, unknown>) => tsFromJSON(v),
       fields: {
         seconds: { pbName: 'seconds', scalarType: 3 },
         nanos: { pbName: 'nanos', scalarType: 5 },
@@ -243,24 +282,27 @@ export const wkt = {
     },
     toWire: tsToWire,
     fromWire: tsFromWire,
-    fromPartial: (object: DeepPartial<Dayjs>) =>
-      object.clone ? object.clone() : dayjs(object as any),
+    fromPartial: (object: DeepPartial<Dayjs>) => {
+      const value = object.clone ? object.clone() : dayjs(object as any);
+      const invalid = invalidTimestampParts.get(object as Dayjs);
+      if (invalid) invalidTimestampParts.set(value, invalid);
+      return value;
+    },
     writeMessage: (writer: BinaryWriter, d: Dayjs) => {
       const t = tsToWire(d);
       writer.uint32((1 << 3) | 0).int64(t.seconds as any);
       writer.uint32((2 << 3) | 0).int32(t.nanos);
     },
-    readMessage: (reader: BinaryReader, length: number): Dayjs => {
+    readMessage: (reader: BinaryReader, length: number, base?: Dayjs): Dayjs => {
       const end = reader.pos + length;
-      let seconds: any = Long.ZERO;
-      let nanos = 0;
+      let { seconds, nanos } = base ? tsToWire(base) : { seconds: Long.ZERO, nanos: 0 };
       while (reader.pos < end) {
         const t2 = reader.uint32();
-        switch (t2 >>> 3) {
-          case 1:
+        switch (t2) {
+          case 8:
             seconds = reader.int64() as any;
             break;
-          case 2:
+          case 16:
             nanos = reader.int32();
             break;
           default:
@@ -274,7 +316,10 @@ export const wkt = {
   ['.google.protobuf.Duration']: {
     $type: 'google.protobuf.Duration',
     $descriptor: {
+      type: 'google.protobuf.Duration',
       reflect: durationReflect,
+      create: () => ({ seconds: Long.ZERO, nanos: 0 }),
+      unreflect: (v: Record<string, unknown>) => durFromJSON(v),
       fields: {
         seconds: { pbName: 'seconds', scalarType: 3 },
         nanos: { pbName: 'nanos', scalarType: 5 },
@@ -293,24 +338,27 @@ export const wkt = {
     },
     toWire: durToWire,
     fromWire: durFromWire,
-    fromPartial: (object: DeepPartial<Duration>) =>
-      object.clone ? object.clone() : dayjs.duration(object as any),
+    fromPartial: (object: DeepPartial<Duration>) => {
+      const value = object.clone ? object.clone() : dayjs.duration(object as any);
+      const invalid = invalidDurationParts.get(object as Duration);
+      if (invalid) invalidDurationParts.set(value, invalid);
+      return value;
+    },
     writeMessage: (writer: BinaryWriter, d: Duration) => {
       const t = durToWire(d);
       writer.uint32((1 << 3) | 0).int64(t.seconds as any);
       writer.uint32((2 << 3) | 0).int32(t.nanos);
     },
-    readMessage: (reader: BinaryReader, length: number): Duration => {
+    readMessage: (reader: BinaryReader, length: number, base?: Duration): Duration => {
       const end = reader.pos + length;
-      let seconds: any = Long.ZERO;
-      let nanos = 0;
+      let { seconds, nanos } = base ? durToWire(base) : { seconds: Long.ZERO, nanos: 0 };
       while (reader.pos < end) {
         const t2 = reader.uint32();
-        switch (t2 >>> 3) {
-          case 1:
+        switch (t2) {
+          case 8:
             seconds = reader.int64() as any;
             break;
-          case 2:
+          case 16:
             nanos = reader.int32();
             break;
           default:
@@ -324,6 +372,8 @@ export const wkt = {
   ['.google.protobuf.FieldMask']: {
     $type: 'google.protobuf.FieldMask',
     $descriptor: {
+      type: 'google.protobuf.FieldMask',
+      unreflect: (v: Record<string, unknown>) => v.paths ?? [],
       reflect: (value: unknown) => ({ paths: fieldMaskPaths(value) }),
       fields: {
         paths: { pbName: 'paths', repeated: true, scalarType: 9 },
@@ -334,11 +384,14 @@ export const wkt = {
     fromPartial: (object: DeepPartial<string[]>) =>
       Array.isArray(object) ? object.map((e) => e) : [],
     writeMessage: (writer: BinaryWriter, paths: string[]) => writeFieldMask(writer, paths),
-    readMessage: (reader: BinaryReader, length: number): string[] => readFieldMask(reader, length),
+    readMessage: (reader: BinaryReader, length: number, base?: string[]): string[] =>
+      readFieldMask(reader, length, base),
   },
   ['.google.protobuf.Any']: {
     $type: 'google.protobuf.Any',
     $descriptor: {
+      type: 'google.protobuf.Any',
+      create: () => ({ typeUrl: '', value: new Uint8Array() }),
       fields: {
         typeUrl: { pbName: 'type_url', scalarType: 9 },
         value: { pbName: 'value', scalarType: 12 },
@@ -351,11 +404,14 @@ export const wkt = {
       value: object.value instanceof Uint8Array ? object.value : new Uint8Array(0),
     }),
     writeMessage: (writer: BinaryWriter, a: AnyShape) => writeAny(writer, a),
-    readMessage: (reader: BinaryReader, length: number): AnyShape => readAny(reader, length),
+    readMessage: (reader: BinaryReader, length: number, base?: AnyShape): AnyShape =>
+      readAny(reader, length, base),
   },
   ['.google.protobuf.Struct']: {
     $type: 'google.protobuf.Struct',
     $descriptor: {
+      type: 'google.protobuf.Struct',
+      unreflect: (v: Record<string, unknown>) => v.fields ?? {},
       reflect: (value: unknown) => ({ fields: value ?? {} }),
       fields: {
         fields: {
@@ -378,31 +434,36 @@ export const wkt = {
         (ew as any).join();
       }
     },
-    readMessage: (reader: BinaryReader, length: number): any => {
+    readMessage: (reader: BinaryReader, length: number, base?: any): any => {
       const end = reader.pos + length;
-      const obj: any = {};
+      const obj: any = { ...base };
       while (reader.pos < end) {
         const tag = reader.uint32();
-        if (tag >>> 3 === 1) {
+        if (tag === 10) {
           const end2 = reader.uint32() + reader.pos;
           let key = '';
           let val: any = null;
           while (reader.pos < end2) {
             const t2 = reader.uint32();
-            switch (t2 >>> 3) {
-              case 1:
+            switch (t2) {
+              case 10:
                 key = reader.string();
                 break;
-              case 2: {
+              case 18: {
                 const len = reader.uint32();
-                val = readValue(reader, len);
+                val = readValue(reader, len, val);
                 break;
               }
               default:
                 reader.skip(t2 & 7);
             }
           }
-          obj[key] = val;
+          Object.defineProperty(obj, key, {
+            value: val,
+            writable: true,
+            enumerable: true,
+            configurable: true,
+          });
         } else {
           reader.skip(tag & 7);
         }
@@ -413,7 +474,13 @@ export const wkt = {
   ['.google.protobuf.Value']: {
     $type: 'google.protobuf.Value',
     $descriptor: {
+      type: 'google.protobuf.Value',
       reflect: valueReflect,
+      create: () => ({ kind: undefined }),
+      unreflect: (v: Record<string, unknown>) => {
+        const k = v.kind as (Record<string, unknown> & { $case: string }) | undefined;
+        return k && k.$case !== 'nullValue' ? k[k.$case] : null;
+      },
       fields: {
         kind: { pbName: 'kind', oneof: true, message: () => VALUE_KIND_DESCRIPTOR },
       },
@@ -422,11 +489,14 @@ export const wkt = {
     toJSON: (o: any, _use?: 'json' | 'pb') => valueToJSON(o),
     fromPartial: (object: any) => object,
     writeMessage: (writer: BinaryWriter, v: any) => writeValue(writer, v),
-    readMessage: (reader: BinaryReader, length: number): any => readValue(reader, length),
+    readMessage: (reader: BinaryReader, length: number, base?: any): any =>
+      readValue(reader, length, base),
   },
   ['.google.protobuf.ListValue']: {
     $type: 'google.protobuf.ListValue',
     $descriptor: {
+      type: 'google.protobuf.ListValue',
+      unreflect: (v: Record<string, unknown>) => v.values ?? [],
       reflect: (value: unknown) => ({ values: Array.isArray(value) ? value : [] }),
       fields: {
         values: {
@@ -446,12 +516,12 @@ export const wkt = {
         (w as any).join();
       }
     },
-    readMessage: (reader: BinaryReader, length: number): any[] => {
+    readMessage: (reader: BinaryReader, length: number, base?: any[]): any[] => {
       const end = reader.pos + length;
-      const arr: any[] = [];
+      const arr: any[] = [...(base ?? [])];
       while (reader.pos < end) {
         const tag = reader.uint32();
-        if (tag >>> 3 === 1) {
+        if (tag === 10) {
           const len = reader.uint32();
           arr.push(readValue(reader, len));
         } else {
@@ -464,6 +534,7 @@ export const wkt = {
   ['.google.protobuf.Empty']: {
     $type: 'google.protobuf.Empty',
     $descriptor: {
+      type: 'google.protobuf.Empty',
       reflect: () => ({}),
       fields: {},
     },
@@ -473,7 +544,7 @@ export const wkt = {
     writeMessage: (_writer: BinaryWriter, _e: any) => {
       // Empty has no fields
     },
-    readMessage: (reader: BinaryReader, length: number): any => {
+    readMessage: (reader: BinaryReader, length: number, _base?: any): any => {
       const end = reader.pos + length;
       while (reader.pos < end) {
         const tag = reader.uint32();

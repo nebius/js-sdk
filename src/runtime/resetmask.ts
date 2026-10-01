@@ -30,6 +30,10 @@ import {
  */
 export const ErrRecursionTooDeep = new Error('recursion too deep');
 const RECURSION_TOO_DEEP = 1000;
+/** Controls immutable fields in descriptor-based mask conversion. */
+export interface MaskConversionOptions {
+  includeImmutables?: boolean;
+}
 
 /** Contains the lowercase reset-mask metadata key required by gRPC. */
 export const RESET_MASK_HEADER = 'x-resetmask';
@@ -164,27 +168,28 @@ function rmFromValueRecursive(
   updObj: any,
   recursion: number,
   descriptor?: MessageDescriptor,
+  includeImmutables = false,
 ): boolean {
   if (descriptor) {
     const reflected = descriptor.reflect?.(updObj);
     if (reflected !== undefined) {
-      rmFromObjectRecursive(resetMask, reflected, recursion, descriptor, false);
+      rmFromObjectRecursive(resetMask, reflected, recursion, descriptor, false, includeImmutables);
       return true;
     }
 
     if (!updObj || typeof updObj !== 'object') return false;
-    rmFromObjectRecursive(resetMask, updObj, recursion, descriptor);
+    rmFromObjectRecursive(resetMask, updObj, recursion, descriptor, true, includeImmutables);
     return true;
   }
 
   const ownDescriptor = descriptorForObject(updObj);
   if (ownDescriptor) {
-    rmFromObjectRecursive(resetMask, updObj, recursion, ownDescriptor);
+    rmFromObjectRecursive(resetMask, updObj, recursion, ownDescriptor, true, includeImmutables);
     return true;
   }
 
   if (!updObj || typeof updObj !== 'object') return false;
-  rmFromObjectRecursive(resetMask, updObj, recursion);
+  rmFromObjectRecursive(resetMask, updObj, recursion, undefined, true, includeImmutables);
   return true;
 }
 
@@ -219,6 +224,7 @@ function rmFromOneofRecursive(
   recursion: number,
   descriptor: MessageDescriptor,
   immutableOneof: boolean,
+  includeImmutables = false,
 ): void {
   const selected =
     updObj && typeof updObj === 'object' && typeof updObj.$case === 'string'
@@ -226,7 +232,11 @@ function rmFromOneofRecursive(
       : undefined;
 
   for (const [key, fieldDescriptor] of Object.entries(descriptor.fields)) {
-    if (!fieldDescriptor.immutable && key !== selected && !immutableOneof) {
+    if (
+      (!fieldDescriptor.immutable || includeImmutables) &&
+      key !== selected &&
+      (!immutableOneof || includeImmutables)
+    ) {
       resetMask.fieldParts.set(
         fieldDescriptor.pbName,
         resetMask.fieldParts.get(fieldDescriptor.pbName) || new Mask(),
@@ -241,6 +251,7 @@ function rmFromOneofRecursive(
       recursion,
       descriptor,
       false,
+      includeImmutables,
     );
   }
 }
@@ -252,6 +263,7 @@ function rmFromObjectRecursive(
   recursion: number,
   descriptor?: MessageDescriptor,
   includeDescriptorDefaults = true,
+  includeImmutables = false,
 ): void {
   if (recursion >= RECURSION_TOO_DEEP) throw ErrRecursionTooDeep;
   recursion++;
@@ -268,7 +280,7 @@ function rmFromObjectRecursive(
     const messageDescriptor = fieldDescriptor?.message?.();
     const scalarType = fieldDescriptor?.scalarType;
 
-    if (fieldDescriptor?.immutable) {
+    if (fieldDescriptor?.immutable && !includeImmutables) {
       continue;
     }
 
@@ -279,6 +291,7 @@ function rmFromObjectRecursive(
         recursion,
         messageDescriptor,
         fieldDescriptor.immutableOneof === true,
+        includeImmutables,
       );
       continue;
     }
@@ -290,7 +303,7 @@ function rmFromObjectRecursive(
         value === null &&
         messageDescriptor &&
         fieldDescriptor?.repeated !== true &&
-        rmFromValueRecursive(fieldMask, value, recursion, messageDescriptor)
+        rmFromValueRecursive(fieldMask, value, recursion, messageDescriptor, includeImmutables)
       ) {
         if (!fieldMask.isEmpty()) {
           resetMask.fieldParts.set(maskKey, fieldMask);
@@ -305,7 +318,7 @@ function rmFromObjectRecursive(
       messageDescriptor &&
       fieldDescriptor?.repeated !== true &&
       (!Array.isArray(value) || messageDescriptor.reflect) &&
-      rmFromValueRecursive(fieldMask, value, recursion, messageDescriptor)
+      rmFromValueRecursive(fieldMask, value, recursion, messageDescriptor, includeImmutables)
     ) {
       resetMask.fieldParts.set(maskKey, fieldMask);
       continue;
@@ -334,9 +347,15 @@ function rmFromObjectRecursive(
           for (let i = 0; i < value.length; i++) {
             const el = value[i];
             if (repeatedMessageDescriptor) {
-              rmFromValueRecursive(innerMask, el, recursion, repeatedMessageDescriptor);
+              rmFromValueRecursive(
+                innerMask,
+                el,
+                recursion,
+                repeatedMessageDescriptor,
+                includeImmutables,
+              );
             } else if (el && typeof el === 'object' && !Array.isArray(el)) {
-              rmFromObjectRecursive(innerMask, el, recursion);
+              rmFromObjectRecursive(innerMask, el, recursion, undefined, true, includeImmutables);
             }
           }
         }
@@ -376,12 +395,19 @@ function rmFromObjectRecursive(
           fieldMask.any = innerMask;
           resetMask.fieldParts.set(maskKey, fieldMask);
           for (const [, v] of entries) {
-            rmFromValueRecursive(innerMask, v, recursion, mapValueDescriptor);
+            rmFromValueRecursive(innerMask, v, recursion, mapValueDescriptor, includeImmutables);
           }
         } else if (fieldDescriptor?.map) {
           // Non-empty scalar/enum maps do not reset individual synthetic key fields.
         } else if (messageDescriptor) {
-          rmFromObjectRecursive(fieldMask, value, recursion, messageDescriptor);
+          rmFromObjectRecursive(
+            fieldMask,
+            value,
+            recursion,
+            messageDescriptor,
+            true,
+            includeImmutables,
+          );
           if (!fieldMask.isEmpty()) {
             resetMask.fieldParts.set(maskKey, fieldMask);
           }
@@ -394,11 +420,11 @@ function rmFromObjectRecursive(
           fieldMask.any = innerMask;
           resetMask.fieldParts.set(maskKey, fieldMask);
           for (const [, v] of entries) {
-            rmFromObjectRecursive(innerMask, v, recursion);
+            rmFromObjectRecursive(innerMask, v, recursion, undefined, true, includeImmutables);
           }
         } else {
           // Not a map of messages; recurse as a nested plain object.
-          rmFromObjectRecursive(fieldMask, value, recursion);
+          rmFromObjectRecursive(fieldMask, value, recursion, undefined, true, includeImmutables);
           // Only set if something was added under fieldMask
           if (!fieldMask.isEmpty()) {
             resetMask.fieldParts.set(maskKey, fieldMask);
@@ -443,10 +469,12 @@ function rmFromObjectRecursive(
  * @throws {@link ErrRecursionTooDeep} if the message is more than 1,000
  * object levels deep.
  */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function resetMaskFromMessage(update: any): Mask | null {
+export function resetMaskFromMessage(
+  update: unknown,
+  options: MaskConversionOptions = {},
+): Mask | null {
   if (update == null) return null;
   const ret = new Mask();
-  rmFromObjectRecursive(ret, update, 0);
+  rmFromObjectRecursive(ret, update, 0, undefined, true, options.includeImmutables);
   return ret;
 }

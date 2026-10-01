@@ -1,6 +1,6 @@
-import type { Field as TSDescriptorField } from '../descriptors.js';
-
 import { resolveEnumName, resolveMessageName } from './typeNames.js';
+
+import type { Field as TSDescriptorField } from '../descriptors.js';
 
 // Basic string helpers
 export function lowerFirst(s: string): string {
@@ -265,6 +265,10 @@ export function scalarOrRef(f: TSDescriptorField): string {
     default:
       return 'any';
   }
+}
+
+export function isUnsigned64(f: TSDescriptorField): boolean {
+  return f.typeCode() === 4 || f.typeCode() === 6;
 }
 
 export function is64Bit(f: TSDescriptorField): boolean {

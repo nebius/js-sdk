@@ -31,6 +31,7 @@ type Waiter = { resolve: (t: Token) => void; reject: (e: unknown) => void };
 class RenewableReceiver extends Receiver {
   public readonly $type = 'nebius.sdk.RenewableReceiver';
   private trial = 0;
+  private recoveryTrial = 0;
   constructor(
     private readonly parent: RenewableBearer,
     private readonly defaultMaxRetries: number = 2,
@@ -72,6 +73,12 @@ class RenewableReceiver extends Receiver {
     if (!synchronous) this.parent.requestRenewal(true);
     this.logger?.trace('canRetry -> true', { trial: this.trial, maxRetries, synchronous });
     return true;
+  }
+
+  async handleError(err: unknown, options?: AuthorizationOptions): Promise<boolean> {
+    if (++this.recoveryTrial >= (options?.maxRetries ?? this.defaultMaxRetries)) return false;
+    this.trial = 0;
+    return this.canRetry(err, options);
   }
 }
 
@@ -427,6 +434,9 @@ export class RenewableBearer extends Bearer {
           throw err;
         }
       }
+
+      // The freshness waiter reports failures; observe the separate renewal promise too.
+      void renewalPromise.catch(() => undefined);
 
       // Asynchronous callers: optionally wait up to timeout for freshness
       try {

@@ -17,6 +17,7 @@ import type { AuthorizationOptions } from '../authorization/provider.js';
 
 class FileReceiver extends Receiver {
   public readonly $type = 'nebius.sdk.FileReceiver';
+  private recovered?: Token;
   constructor(private readonly bearer: FileBearer) {
     super();
   }
@@ -34,9 +35,22 @@ class FileReceiver extends Receiver {
     _timeoutMs?: number,
     _options?: AuthorizationOptions | undefined,
   ): Promise<Token> {
+    if (this.recovered) {
+      const token = this.recovered;
+      this.recovered = undefined;
+      return token;
+    }
     return this.bearer.fetchToken();
   }
 
+  async handleError(err: unknown): Promise<boolean> {
+    const previous = this.latest;
+    const current = await this.bearer.fetchToken().catch((recoveryError: unknown) => {
+      throw new AggregateError([recoveryError, err], 'Credential recovery failed.');
+    });
+    this.recovered = current;
+    return previous !== undefined && previous.token !== current.token;
+  }
   canRetry(): boolean {
     return false;
   }

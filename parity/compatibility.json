@@ -1,0 +1,642 @@
+{
+  "date": "2026-10-01",
+  "references": {
+    "js": "644aa844",
+    "api": "43cab7c",
+    "gosdk": "83393ae1",
+    "pysdk": "94511726"
+  },
+  "rows": [
+    {
+      "layer": "Generated API",
+      "feature": "Public API revision",
+      "go": "Pinned public API 43cab7c",
+      "python": "Pinned public API 43cab7c",
+      "js_before": "Latest main: API 43cab7c",
+      "target": "Generate all current public services and messages",
+      "state": "Reviewed; local tests pass",
+      "evidence": "nebius-api; scripts/generator; api/generators/protoc-gen-gosdk; api/generators/protoc-gen-pysdk"
+    },
+    {
+      "layer": "Generated API",
+      "feature": "Unary RPC method paths and schemas",
+      "go": "Descriptor-generated",
+      "python": "Descriptor-generated",
+      "js_before": "Descriptor-generated",
+      "target": "Keep all method paths and wire schemas equivalent",
+      "state": "Reviewed; local tests pass",
+      "evidence": "scripts/generator/emit/printService.ts"
+    },
+    {
+      "layer": "Generated API",
+      "feature": "Streaming RPCs",
+      "go": "Public generator rejects streaming RPCs",
+      "python": "Public SDK rejects native streams",
+      "js_before": "Unary generator; current public schema has no streaming RPCs",
+      "target": "No missing public streaming RPC; native transport surfaces differ by language",
+      "state": "Language-specific",
+      "evidence": "api/generators/protoc-gen-gosdk/main.go; public descriptor audit"
+    },
+    {
+      "layer": "Generated API",
+      "feature": "Service-name annotations",
+      "go": "Reads api_service_name",
+      "python": "Registry reads annotation",
+      "js_before": "Generated API name",
+      "target": "Retain annotated endpoint resolution",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/runtime/resolver.ts; generator_extensions.cases.ts; resolver source review"
+    },
+    {
+      "layer": "Generated API",
+      "feature": "Updater annotations",
+      "go": "METHOD_UPDATER overrides method name",
+      "python": "METHOD_UPDATER overrides method name",
+      "js_before": "Supported",
+      "target": "Retain annotation-driven reset masks",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/__tests__/generator_extensions.cases.ts"
+    },
+    {
+      "layer": "Generated API",
+      "feature": "Deprecation annotations",
+      "go": "Generated documentation",
+      "python": "Generated warnings and documentation",
+      "js_before": "Generated warnings and documentation",
+      "target": "Keep JS warning mechanism and annotation values",
+      "state": "Reviewed; local tests pass",
+      "evidence": "scripts/generator/emit/helpers.ts; generator_extensions.cases.ts"
+    },
+    {
+      "layer": "Generated API",
+      "feature": "NID annotations",
+      "go": "Typed default insertion; ID warnings moved to gateway",
+      "python": "Public uses legacy parent-only behavior",
+      "js_before": "No NID annotation support",
+      "target": "Generated NID annotations drive default insertion; explicit request values stay unchanged",
+      "state": "Implemented; local tests pass",
+      "evidence": "scripts/generator/emit/printMessage/index.ts; printService.ts; src/runtime/request.ts; sdk_parity.test.ts"
+    },
+    {
+      "layer": "Generated API",
+      "feature": "Generated client construction",
+      "go": "Services() hierarchy",
+      "python": "Service(sdk)",
+      "js_before": "new Service(sdk)",
+      "target": "Keep idiomatic JS construction",
+      "state": "Language-specific",
+      "evidence": "src/sdk.ts; public GoSDK /sdk.go"
+    },
+    {
+      "layer": "Protobuf",
+      "feature": "Binary codecs; maps; oneofs; unknown fields",
+      "go": "Native protobuf",
+      "python": "Direct generated codecs",
+      "js_before": "Replaced singular message occurrences; omitted map values disappeared",
+      "target": "Merge singular and same-oneof message occurrences, preserve unknown bytes, and insert map-entry defaults; copy registered extensions in typed constructors",
+      "state": "Implemented; local tests pass",
+      "evidence": "scripts/generator/emit/printMessage/emitDecode.ts; decodeOneofs.ts; src/__tests__/review_parity.test.ts"
+    },
+    {
+      "layer": "Protobuf",
+      "feature": "Enum values and int64",
+      "go": "Native enum and int64",
+      "python": "Python enum and int",
+      "js_before": "Signed Long conversion also applied to uint64/fixed64",
+      "target": "Preserve enum behavior and full unsigned 64-bit values across constructors, JSON and wire decoding",
+      "state": "Implemented; local tests pass",
+      "evidence": "scripts/generator/emit/helpers.ts; emitDecode.ts; emitJSON.ts; emitPartial.ts; src/__tests__/review_parity.test.ts"
+    },
+    {
+      "layer": "Protobuf",
+      "feature": "Timestamp and duration wire values",
+      "go": "Nanosecond precision",
+      "python": "Timestamp/duration representations",
+      "js_before": "Pre-epoch and native duration reflection had value/validity gaps",
+      "target": "Preserve signed duration seconds and reject invalid raw timestamp components; retain native millisecond values",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/protos/wkt.ts; src/__tests__/review_parity.test.ts"
+    },
+    {
+      "layer": "Protobuf",
+      "feature": "Canonical protobuf JSON",
+      "go": "protojson uses canonical Any and FieldMask",
+      "python": "Canonical registry-aware JSON",
+      "js_before": "Raw Any JSON; unchanged mask paths; permissive legacy parser",
+      "target": "Add canonical Any/FieldMask and builtin wrapper conversion; validate fields, oneofs, scalar types/ranges and WKT input; accept null collections; support ignoreUnknownFields; convert registered extensions to bracketed full names and retain nested/default presence; canonical temporal fractional precision",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/protos/proto_json.ts; fieldmask.ts; src/__tests__/review_parity.test.ts"
+    },
+    {
+      "layer": "Protobuf",
+      "feature": "Any pack/unpack and operation payloads",
+      "go": "Native Any and decoded operation payloads",
+      "python": "Registry Any unpacking",
+      "js_before": "Registry lookup only; operation raw payloads only",
+      "target": "Registry pack/unpack; decode request, alpha resource snapshot and progress payloads; retain progress after completion and copy headers; unknown/Empty payloads remain raw",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/protos/registry.ts; operation.ts; sdk_parity.test.ts (known and unknown payloads)"
+    },
+    {
+      "layer": "Masks",
+      "feature": "Mask parser, wildcard algebra, path keys",
+      "go": "Full mask library",
+      "python": "Full mask library",
+      "js_before": "Parser and algebra implemented",
+      "target": "Named and wildcard submasks merge; existing Go vectors pass",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/fieldmask.ts; go_mask_compat.test.ts; go_fieldpath_compat.test.ts; go_fieldkey_compat.test.ts"
+    },
+    {
+      "layer": "Masks",
+      "feature": "Full-update reset masks and immutable fields",
+      "go": "Descriptor-aware",
+      "python": "Descriptor-aware",
+      "js_before": "Descriptor-aware",
+      "target": "Default excludes immutable fields; explicit includeImmutables option now supported",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/resetmask.ts; resetmask.test.ts; sdk_parity.test.ts; public Go protobuf/options.go"
+    },
+    {
+      "layer": "Masks",
+      "feature": "Explicit reset/select metadata",
+      "go": "Header helpers",
+      "python": "Metadata supports headers",
+      "js_before": "Automatic reset only; manual metadata possible",
+      "target": "Add typed call options and composable metadata helpers; preserve existing explicit select/reset mask values",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/request.ts; public Go proto/fieldmask/grpcheader"
+    },
+    {
+      "layer": "Masks",
+      "feature": "Known-field masks, modified reset masks, filter and patch",
+      "go": "Public protobuf mask utilities",
+      "python": "Only automatic reset-mask helper",
+      "js_before": "Missing descriptor filter/patch/diff helpers",
+      "target": "Add descriptor helpers with protobuf collection presence, native Value null preservation, and signed duration values",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/protobuf_mask.ts; src/runtime/protos/wkt.ts; src/__tests__/review_parity.test.ts"
+    },
+    {
+      "layer": "Configuration",
+      "feature": "CLI location and environment precedence",
+      "go": "CLI config; environment token has priority; blank token-file falls through",
+      "python": "CLI config; environment token has priority; token-file presence is checked even when blank",
+      "js_before": "Implemented",
+      "target": "Verify profile selection and override order; follow Go for blank token-file/token-endpoint fallback",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/runtime/cli_config.ts; src/__tests__/cli_config_*.test.ts"
+    },
+    {
+      "layer": "Configuration",
+      "feature": "Automatic credential discovery",
+      "go": "Default CLI config reader",
+      "python": "Environment fallback",
+      "js_before": "Explicit credentials/config only",
+      "target": "A2 accepted: environment and CLI configuration remain opt-in",
+      "state": "Accepted JS policy; tested",
+      "evidence": "src/sdk.ts; sdk_parity.test.ts (IAM environment and explicit SDK credentials)"
+    },
+    {
+      "layer": "Configuration",
+      "feature": "Token-file lazy resolution",
+      "go": "Lazy file read",
+      "python": "Lazy file read",
+      "js_before": "Lazy file read",
+      "target": "Keep lazy credential reads and rotation",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/runtime/token/file.ts"
+    },
+    {
+      "layer": "Configuration",
+      "feature": "Token endpoint profiles",
+      "go": "token-endpoint supported",
+      "python": "Not available in the public SDK",
+      "js_before": "Missing",
+      "target": "Add lazy public Go-compatible IMDS source",
+      "state": "Implemented; local tests pass",
+      "evidence": "public GoSDK /config/reader/reader.go:309; src/runtime/cli_config.ts"
+    },
+    {
+      "layer": "Configuration",
+      "feature": "Tenant and parent defaults",
+      "go": "Tenant-aware, validates default NID type",
+      "python": "Public uses legacy parent-only behavior",
+      "js_before": "Parent-only and name-based",
+      "target": "A3 accepted: NID-aware parent/tenant defaults; preserve explicit values; trim explicit defaults and use profile defaults for blank tenant options",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/request.ts; src/sdk.ts; sdk_parity.test.ts (parent precedence, typed tenant, noParentId)"
+    },
+    {
+      "layer": "Configuration",
+      "feature": "Disable parent insertion",
+      "go": "WithNoParentID disables parent and tenant",
+      "python": "Public config reader option",
+      "js_before": "Config option only",
+      "target": "Add SDK noParentId option",
+      "state": "Implemented; local tests pass",
+      "evidence": "public GoSDK /options.go; src/sdk.ts"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Static and environment access tokens",
+      "go": "Supported; trim environment tokens and skip whitespace-only values",
+      "python": "Supported; trim environment tokens and skip whitespace-only values",
+      "js_before": "EnvBearer defaulted to NEBIUS_TOKEN",
+      "target": "EnvBearer defaults to NEBIUS_IAM_TOKEN and trims whitespace; retain opt-in and explicit variable names; whitespace-only values fall through to profile credentials",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/token/static.ts; sdk_parity.test.ts; cli_config_env_token.test.ts"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Service account key/file/credentials JSON",
+      "go": "JWT token exchange",
+      "python": "JWT token exchange",
+      "js_before": "Key sources supported; CLI federation priority/conflicts differed",
+      "target": "Use public key-source precedence and reject credentials-file/ID conflicts",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/cli_config.ts; src/__tests__/review_parity.test.ts"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Federated subject credentials",
+      "go": "JWT actor token exchange",
+      "python": "JWT actor token exchange",
+      "js_before": "JWT actor token exchange",
+      "target": "Verify rotating file source and request fields",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/runtime/service_account/federated_credentials.ts"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Browser federation and PKCE",
+      "go": "Federation HTTP OAuth",
+      "python": "Federation HTTP OAuth",
+      "js_before": "Federation HTTP OAuth",
+      "target": "OAuth access-token source and PKCE fields reviewed; JS callback server and invitation mechanisms retained; close loopback callback servers on success and failed login; allow manual login without a browser opener; return launcher, callback-server and interrupted-response failures through promises; preserve zero and negative OAuth lifetimes from acquisition start; bound callback and token POST by one deadline and destroy stalled requests",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/token/federation_bearer; federation_cleanup.test.ts (14 callback, browser, HTTP, lifetime and renewal cases); no live identity-provider login"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Impersonation",
+      "go": "TokenExchange actor and subject",
+      "python": "TokenExchange actor and subject",
+      "js_before": "Implemented",
+      "target": "Retain actor/subject token exchange and use source error recovery before reacquiring rejected actor tokens; force fresh actor acquisition after rejection even with cached renewable credentials; preserve non-positive lifetimes and bound actor acquisition, recovery, service resolution and exchange within one deadline",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/token/impersonated.ts; src/__tests__/sdk_parity.test.ts"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "IMDS acquisition",
+      "go": "Metadata:true GET; 3 HTTP attempts; 200ms linear backoff",
+      "python": "Not available in the public SDK",
+      "js_before": "Missing",
+      "target": "Add HTTP IMDS bearer and direct SDK tokenEndpoint credentials",
+      "state": "Implemented; local tests pass",
+      "evidence": "public GoSDK /auth/imds_tokener.go"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Access-token retrieval",
+      "go": "SDK.BearerToken",
+      "python": "SDK.get_token",
+      "js_before": "Missing SDK method",
+      "target": "Add SDK.getToken without constructing an API request",
+      "state": "Implemented; local tests pass",
+      "evidence": "public GoSDK /sdk.go; src/sdk.ts; src/runtime/authorization/token.ts; sdk_parity.test.ts"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "In-memory renewal and shared file caches",
+      "go": "Go synchronization and timers",
+      "python": "Python async synchronization",
+      "js_before": "Shared file cache removal wrote at the previous read offset",
+      "target": "Write cache updates under existing locks at explicit offset zero, preserving other profiles; delegate rotated-token recovery and forced renewal through synchronous cache wrappers; retain successful shared-cache recovery tokens for the next RPC authentication in both cache wrappers",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/token/file_cache/token_cache.ts; src/__tests__/review_parity.test.ts; src/runtime/token/file_cache/renewable_bearer.ts; sdk_parity.test.ts"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Failed token renewal and stale tokens",
+      "go": "Valid cache can survive transient renewal errors",
+      "python": "Valid cache can survive transient renewal errors",
+      "js_before": "Supported",
+      "target": "Verify explicit synchronous renewal and invalidation",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/runtime/token/renewable.ts"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Credential logging",
+      "go": "Sanitized structured wrappers; lazy readers are not forced by logs",
+      "python": "Sanitized credential representations",
+      "js_before": "Mostly implemented; SDK logs force reader.read",
+      "target": "Credential diagnostics no longer force lazy reader.read; existing secret sanitizers retained",
+      "state": "Implemented; reviewed serializers",
+      "evidence": "src/sdk.ts; src/runtime/token_sanitizer.ts; auth_integration.test.ts; service-account and file-cache diagnostics reviewed"
+    },
+    {
+      "layer": "Transport",
+      "feature": "Resolver overrides and templates",
+      "go": "Ordered resolvers",
+      "python": "Ordered resolvers",
+      "js_before": "Ordered resolvers",
+      "target": "Retain resolver composition and API endpoint templates",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/runtime/resolver.ts"
+    },
+    {
+      "layer": "Transport",
+      "feature": "TLS roots and per-address overrides",
+      "go": "System TLS; dial overrides",
+      "python": "System TLS; address overrides",
+      "js_before": "System TLS; address overrides",
+      "target": "Verify TLS root propagation to HTTP credential calls",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/runtime/tls/system_certs.ts; src/sdk.ts"
+    },
+    {
+      "layer": "Transport",
+      "feature": "User-agent and keepalive",
+      "go": "Prefix warning; configured keepalive",
+      "python": "Prefix warning; configured keepalive",
+      "js_before": "Prefix warning; configured keepalive",
+      "target": "Keep same product defaults with language-specific user-agent",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/__tests__/sdk_user_agent.test.ts; src/__tests__/keepalive_metrics.test.ts"
+    },
+    {
+      "layer": "Transport",
+      "feature": "Channel lifetime and shutdown",
+      "go": "SDK context and Go channels",
+      "python": "Owned event loop and channel pool",
+      "js_before": "Shared clients and promises",
+      "target": "Retain JS ownership; reject use after SDK close",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/sdk.ts"
+    },
+    {
+      "layer": "Requests",
+      "feature": "Default retries and timeouts",
+      "go": "3 attempts; 60s request; 20s attempt; 15min auth",
+      "python": "3 total attempts; same timeout defaults",
+      "js_before": "4 total attempts; same timeout defaults",
+      "target": "Use 3 default total attempts; add SDK-wide requestOptions",
+      "state": "Implemented; local tests pass",
+      "evidence": "public GoSDK /options.go; public PySDK src/nebius/aio/request.py; src/runtime/request.ts"
+    },
+    {
+      "layer": "Requests",
+      "feature": "Explicit service retry hints",
+      "go": "CALL yes; NOTHING/UNIT_OF_WORK no",
+      "python": "Explicit hints precede default codes",
+      "js_before": "Default codes override service hints",
+      "target": "Honor explicit hints before transport defaults",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/request.ts:isRetriableError"
+    },
+    {
+      "layer": "Requests",
+      "feature": "Individual attempt deadline vs total deadline",
+      "go": "Internal attempt timeout can retry; caller deadline stops",
+      "python": "Attempt timeout retries; logical deadline stops",
+      "js_before": "Attempt deadlines never retry",
+      "target": "Use a fresh request execution window after successful authentication; cap all cycles by the earlier AuthTimeout or caller deadline",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/request.ts; src/__tests__/sdk_parity.test.ts"
+    },
+    {
+      "layer": "Requests",
+      "feature": "Idempotency",
+      "go": "All unary calls; stable per logical call",
+      "python": "All unary calls; stable per logical call",
+      "js_before": "Excludes read method names",
+      "target": "Add one stable key to every unary call; preserve supplied key",
+      "state": "Implemented; local tests pass",
+      "evidence": "public GoSDK /conn/idempotency.go; public PySDK src/nebius/aio/idempotency.py"
+    },
+    {
+      "layer": "Requests",
+      "feature": "Authorization override and RPC rejection",
+      "go": "Preserves caller authorization; renews on UNAUTHENTICATED",
+      "python": "Preserves caller authorization; retries rejected credentials",
+      "js_before": "Always adds token; no RPC auth renewal",
+      "target": "Caller headers suppress auth; bounded synchronous renewal retries only changed credentials",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/request.ts; authorization/token.ts; token/file.ts; token/imds.ts; metrics.ts; sdk_parity.test.ts"
+    },
+    {
+      "layer": "Requests",
+      "feature": "Final diagnostics and absent IDs",
+      "go": "Final headers/status available",
+      "python": "Final attempt status; absent IDs empty",
+      "js_before": "First attempt can settle status; absent IDs remain pending",
+      "target": "Expose final attempt diagnostics; settle absent IDs as empty",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/request.ts"
+    },
+    {
+      "layer": "Requests",
+      "feature": "Request submission and cancellation",
+      "go": "Native terminal response authoritative",
+      "python": "Snapshots input; preserves terminal result",
+      "js_before": "Mutable input; cancellation removes status listeners",
+      "target": "Snapshot generated input; preserve completed result; cancel auth waits",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/request.ts"
+    },
+    {
+      "layer": "Errors",
+      "feature": "Structured service errors and unknown details",
+      "go": "Typed details and retained raw details",
+      "python": "Typed details and retained raw details",
+      "js_before": "Generated serviceErrors and Status details",
+      "target": "Verify known and unknown error detail retention and IDs",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/runtime/error.ts; src/__tests__/disk_service_error.test.ts"
+    },
+    {
+      "layer": "Operations",
+      "feature": "Failed terminal operation",
+      "go": "Wait returns operation error",
+      "python": "Public wait leaves terminal failure checking to callers",
+      "js_before": "Wait resolves even on failure",
+      "target": "A1 accepted: wait rejects with OperationError retaining the operation",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/operation.ts; sdk_parity.test.ts (terminal failure, no further polling)"
+    },
+    {
+      "layer": "Operations",
+      "feature": "Transient poll errors and overall limits",
+      "go": "Backoff until context ends; nonretriable errors stop; non-positive poll intervals use the 1-second default",
+      "python": "Public catches transient errors; total timeout bounds wait; non-positive poll intervals raise ValueError; concurrent updates preserve terminal state",
+      "js_before": "Backoff; caller deadline can loop indefinitely",
+      "target": "Bound polling/backoff by overall deadline; retain nonretriable failures; follow Go for non-positive intervals (1-second default); preserve terminal state on overlapping wait/update responses",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/operation.ts; public Go operations/options.go @83393ae1; public Python aio/operation.py @94511726; local wait tests"
+    },
+    {
+      "layer": "Operations",
+      "feature": "Progress tracker, timestamps, alpha operation",
+      "go": "Progress helpers; v1 and alpha",
+      "python": "Progress helpers; v1 and alpha",
+      "js_before": "Work ratios capped at 1; time estimates exceeded completion bounds",
+      "target": "Retain actual work ratios, force terminal overall progress to 1, and align time estimates",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/operation.ts; src/__tests__/progress_tracker.test.ts; src/__tests__/review_parity.test.ts"
+    },
+    {
+      "layer": "Observability",
+      "feature": "Logging and config/auth metrics",
+      "go": "slog and callbacks",
+      "python": "logging and callbacks",
+      "js_before": "JS handlers and callbacks",
+      "target": "Keep JS APIs; verify callback failures do not affect requests",
+      "state": "Reviewed; local tests pass",
+      "evidence": "src/runtime/metrics.ts; src/runtime/util/logging.ts"
+    },
+    {
+      "layer": "Generated API",
+      "feature": "Paginated list iteration",
+      "go": "Generated Filter iterator for paginated List",
+      "python": "Caller-managed pages",
+      "js_before": "No generated iterator",
+      "target": "Added filter() as an async generator; clones input and stops on early return",
+      "state": "Implemented; local tests pass",
+      "evidence": "scripts/generator/emit/printService.ts; sdk_parity.test.ts"
+    },
+    {
+      "layer": "Generated API",
+      "feature": "Service-bound operation listing",
+      "go": "ListOperations on operation-producing services",
+      "python": "Operation service lookup",
+      "js_before": "getOperationService only",
+      "target": "Added listOperations() on the same service address; operation pages also support filter()",
+      "state": "Implemented; local tests pass",
+      "evidence": "scripts/generator/emit/printService.ts; sdk_parity.test.ts"
+    },
+    {
+      "layer": "Masks",
+      "feature": "Field-path manipulation and traversal",
+      "go": "Get/ReplaceAtFieldPath; depth/breadth traversal",
+      "python": "Mask path helpers",
+      "js_before": "No protobuf path operations",
+      "target": "Add path lookup/replacement and depth/breadth traversal; support terminal oneof-group lookup; reject incompatible replacement values",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/protobuf_mask.ts; src/__tests__/review_parity.test.ts"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Named credential wrappers",
+      "go": "Public NamedTokener",
+      "python": "Named credential cache keys",
+      "js_before": "Public NamedBearer",
+      "target": "Retained public named wrappers and native cache mechanisms",
+      "state": "Reviewed; native JS mechanism",
+      "evidence": "src/runtime/token.ts; public Go auth/named_tokener.go"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Token-exchange bearer token type",
+      "go": "Case-insensitive Bearer token type",
+      "python": "Accepts Bearer",
+      "js_before": "Case-sensitive check",
+      "target": "Accepted case-insensitive bearer token types for exchange and impersonation",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/token/exchangeable.ts; impersonated.ts; src/__tests__/auth_integration.test.ts; token type checks reviewed"
+    },
+    {
+      "layer": "Configuration",
+      "feature": "Invalid explicit credential initialization",
+      "go": "Returns construction/config errors",
+      "python": "Raises initialization errors",
+      "js_before": "Can log an error and disable auth",
+      "target": "Invalid explicit credential inputs now throw; lazy sources remain lazy",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/sdk.ts; config and service-account tests"
+    },
+    {
+      "layer": "Operations",
+      "feature": "Malformed operation envelopes",
+      "go": "Rejects empty ID and invalid timestamps",
+      "python": "Accepts partial direct-message wrappers",
+      "js_before": "Malformed raw timestamps normalized before operation validation",
+      "target": "Validate operation envelopes and retain invalid raw timestamp status through native conversion",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/operation.ts; src/runtime/protos/wkt.ts; src/__tests__/review_parity.test.ts"
+    },
+    {
+      "layer": "Requests",
+      "feature": "Cancellable delay helpers",
+      "go": "Context cancellation",
+      "python": "Async cancellation",
+      "js_before": "CancelableSleep constructor accesses this before super completes",
+      "target": "Fixed native Promise-subclass construction and canceled waits",
+      "state": "Implemented; local tests pass",
+      "evidence": "src/runtime/util/cancelable.ts; operation/request cancellation tests"
+    },
+    {
+      "layer": "Credentials",
+      "feature": "Opt-in VM credential discovery",
+      "go": "Missing CLI config probes IMDS, then mounted token file",
+      "python": "Missing CLI config raises an error",
+      "js_before": "Missing CLI config raises an error",
+      "target": "Config.load opts in to bounded VM fallback; synchronous constructor retained",
+      "state": "Implemented; local tests pass",
+      "evidence": "config/reader/metadata.go; src/runtime/cli_config.ts; vm_discovery.test.ts"
+    },
+    {
+      "layer": "Authorization",
+      "feature": "Per-request named credentials",
+      "go": "OneOfCredentials requires an explicit selector; closes all sources",
+      "python": "One credential source per SDK",
+      "js_before": "One credential source per SDK",
+      "target": "OneOfProvider selects an identity via authorizationOptions.selector, validates selection, and closes every source",
+      "state": "Implemented; local tests pass",
+      "evidence": "auth/interceptors.go; src/runtime/authorization/one_of.ts; sdk_parity.test.ts"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "A1",
+      "decision": "Failed operation waits reject with OperationError and retain the operation.",
+      "resolution": "User accepted recommended choice."
+    },
+    {
+      "id": "A2",
+      "decision": "Automatic environment and CLI credentials remain opt-in in JS.",
+      "resolution": "User accepted recommended choice."
+    },
+    {
+      "id": "A3",
+      "decision": "Use typed parent/tenant defaults, noParentId, and explicit-value precedence.",
+      "resolution": "User accepted recommended choice."
+    },
+    {
+      "id": "A4",
+      "decision": "Provide additive canonical protobuf JSON; preserve generated toJSON.",
+      "resolution": "User accepted recommended choice."
+    }
+  ],
+  "validation": {
+    "schema": {
+      "methods": 481,
+      "messages": 1219,
+      "missingMethods": 0,
+      "missingMessages": 0
+    },
+    "build": "CJS and ESM builds pass",
+    "tests": "430 tests passed across 34 suites, including 50 generator tests and 2 built-package integration tests; production e2e excluded",
+    "generatorReference": "Pinned local ts-proto 2.6.1; repository Buf test configuration restored after execution",
+    "limits": [
+      "No production resource calls or live identity-provider login were run.",
+      "Dayjs retains existing millisecond precision. Go protobuf supports nanoseconds.",
+      "JavaScript representations, events, promises, timers, cache locks, and client ownership remain native.",
+      "Compatibility is assessed against the pinned public sources and current public schema, not private-only features."
+    ],
+    "lint": "Changed runtime and generator sources pass ESLint with zero warnings; changed files pass Prettier and git diff --check",
+    "review": "34 fresh primary passes, 2 separate SDK parity audits, and 9 independent Opus cross-reviews across the task. Final primary: no actionable findings. Independent claude-opus-5-5 cross-review: merge-ready, no substantive current-schema defect. Incomplete review attempts are excluded."
+  }
+}

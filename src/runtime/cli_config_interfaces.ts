@@ -69,6 +69,8 @@ export interface ConfigReaderLike {
   parentId(): string | undefined;
   /** Returns the selected CLI profile name. */
   profileName(): string | undefined;
+  /** Returns the tenant resource ID when configured. */
+  tenantId?(): string | undefined;
   /**
    * Returns credentials for SDK authorization.
    *

@@ -123,7 +123,7 @@ describe('Go Mask compatibility', () => {
   test('getSubMask and getSubMaskByPath', () => {
     const m = parseFieldMask('a.(b,c),*.x');
     const a = m.getSubMask('a');
-    expect(a?.marshal()).toBe('b,c');
+    expect(a?.marshal()).toBe('b,c,x');
     const any = m.getSubMask('*');
     expect(any?.marshal()).toBe('x');
     const p = FieldPath.from('a', 'b');

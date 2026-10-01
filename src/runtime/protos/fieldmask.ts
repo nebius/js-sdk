@@ -40,13 +40,32 @@ export function writeFieldMask(writer: BinaryWriter, paths: string[]): void {
  *
  * Unknown fields are skipped. The returned paths keep their wire order.
  */
-export function readFieldMask(reader: BinaryReader, length: number): string[] {
+export function readFieldMask(reader: BinaryReader, length: number, base: string[] = []): string[] {
   const end = reader.pos + length;
-  const out: string[] = [];
+  const out: string[] = [...base];
   while (reader.pos < end) {
     const tag = reader.uint32();
-    if (tag >>> 3 === 1) out.push(reader.string());
+    if (tag === 10) out.push(reader.string());
     else reader.skip(tag & 7);
   }
   return out;
+}
+
+/** Writes canonical protobuf JSON, converting snake_case path segments to lowerCamelCase. */
+export function fmToProtoJSON(paths: string[]): string {
+  if (paths.some((path) => /[A-Z]|_(?![a-z])/.test(path))) {
+    throw new TypeError('FieldMask wire paths must use snake_case.');
+  }
+  return paths
+    .map((path) => path.replace(/_([a-z])/g, (_, char: string) => char.toUpperCase()))
+    .join(',');
+}
+/** Reads canonical protobuf JSON into snake_case wire paths. */
+export function fmFromProtoJSON(value: string): string[] {
+  if (typeof value !== 'string' || value.includes('_')) {
+    throw new TypeError('FieldMask JSON must be a camelCase string.');
+  }
+  return (value === '' ? [] : value.split(',')).map((path) =>
+    path.replace(/[A-Z]/g, (char) => `_${char.toLowerCase()}`),
+  );
 }
