@@ -484,6 +484,11 @@ class InstrumentedBearer extends Bearer {
     return this.bearer;
   }
 
+  /** Returns the acquisition budget of the wrapped bearer. */
+  get acquisitionBudgetMs(): number | undefined {
+    return this.bearer.acquisitionBudgetMs;
+  }
+
   receiver(): Receiver {
     return new InstrumentedReceiver(this.bearer.receiver(), this.metrics);
   }

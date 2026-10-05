@@ -195,6 +195,11 @@ export class ServiceAccountBearer extends Bearer {
     return this._source;
   }
 
+  /** Returns the acquisition budget of the wrapped bearer. */
+  get acquisitionBudgetMs(): number | undefined {
+    return this._source.acquisitionBudgetMs;
+  }
+
   /**
    * Creates a receiver that shares this bearer’s renewal state.
    *

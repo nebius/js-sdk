@@ -207,6 +207,11 @@ export class FederatedCredentialsBearer extends Bearer {
     return this._source;
   }
 
+  /** Returns the acquisition budget of the wrapped bearer. */
+  get acquisitionBudgetMs(): number | undefined {
+    return this._source.acquisitionBudgetMs;
+  }
+
   /** Creates a token receiver. */
   receiver(): Receiver {
     return this._source.receiver();

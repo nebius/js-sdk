@@ -137,7 +137,10 @@ class ImpersonatedReceiver extends Receiver {
       authorizationDisable: true,
     };
     if (typeof timeoutMs === 'number' && Number.isFinite(timeoutMs)) {
-      callOptions.deadline = new Date(now + Math.max(0, timeoutMs));
+      // A valid transport deadline must stay within the JavaScript Date range.
+      callOptions.deadline = new Date(
+        Math.min(now + Math.max(0, timeoutMs), 8_640_000_000_000_000),
+      );
     }
 
     this.logger?.trace('exchanging impersonated token', {
@@ -245,6 +248,17 @@ export class ImpersonatedBearer extends Bearer {
     return this.source;
   }
 
+  /**
+   * Returns the positive actor budget plus five seconds for token exchange.
+   * Returns `undefined` when the actor has no positive finite budget.
+   * Addition saturates at the largest safe integer number of milliseconds.
+   */
+  get acquisitionBudgetMs(): number | undefined {
+    const actor = this.source.acquisitionBudgetMs;
+    if (actor === undefined || !Number.isFinite(actor) || actor <= 0) return undefined;
+    return Math.min(actor + 5_000, Number.MAX_SAFE_INTEGER);
+  }
+
   /** Returns the provider name for authorization metrics. */
   get metricProvider(): string {
     return this.metrics.provider;
@@ -333,6 +347,12 @@ export class CachedImpersonatedBearer extends Bearer {
       metrics?: AuthMetricsInput;
       /** Optional destination for diagnostic events. */
       logger?: Logger;
+      /**
+       * Total actor and exchange budget, in milliseconds.
+       * The default `null` uses the composed source budget, or five seconds.
+       * Explicit zero and negative values stay unchanged.
+       */
+      refreshRequestTimeoutMs?: number | null;
     },
   ) {
     super();
@@ -347,6 +367,7 @@ export class CachedImpersonatedBearer extends Bearer {
     );
     this.source = new NamedBearer(
       new RenewableBearer(this.impersonated, {
+        refreshRequestTimeoutMs: opts?.refreshRequestTimeoutMs ?? null,
         maxRetries,
         metrics: opts?.metrics,
         provider: 'impersonated',
@@ -364,6 +385,11 @@ export class CachedImpersonatedBearer extends Bearer {
   /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this.source;
+  }
+
+  /** Returns the acquisition budget of the cached bearer chain. */
+  get acquisitionBudgetMs(): number | undefined {
+    return this.source.acquisitionBudgetMs;
   }
 
   /** Creates a token receiver. */

@@ -151,6 +151,11 @@ export class FederationAccountBearer extends Bearer {
     return this._source;
   }
 
+  /** Returns the acquisition budget of the wrapped bearer. */
+  get acquisitionBudgetMs(): number | undefined {
+    return this._source.acquisitionBudgetMs;
+  }
+
   /** Sets the metrics. */
   setMetrics(metrics: AuthMetricsInput): void {
     this.metrics.setMetrics(metrics);

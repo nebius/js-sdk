@@ -170,10 +170,22 @@ export class Cancelable {
 export function withTimeout<T>(promise: PromiseLike<T>, ms: number): Promise<T> {
   let handle: NodeJS.Timeout;
   return new Promise<T>((resolve, reject) => {
-    handle = setTimeout(() => {
-      reject(new TimeoutError());
-    }, ms);
-    handle.unref?.();
+    const maxTimerMs = 2_147_483_647;
+    const longDelay = Number.isFinite(ms) && ms > maxTimerMs;
+    const deadline = performance.now() + ms;
+    // Node converts larger delays to one millisecond. Keep the budget with bounded chunks.
+    const schedule = (remaining: number) => {
+      handle = setTimeout(
+        () => {
+          const left = deadline - performance.now();
+          if (longDelay && left > 0) schedule(left);
+          else reject(new TimeoutError());
+        },
+        longDelay ? Math.min(remaining, maxTimerMs) : remaining,
+      );
+      handle.unref?.();
+    };
+    schedule(ms);
     return Promise.resolve(promise).then(
       (result) => {
         clearTimeout(handle);

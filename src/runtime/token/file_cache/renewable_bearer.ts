@@ -261,6 +261,11 @@ export class RenewableFileCacheBearer extends Bearer {
     return this._wrapped;
   }
 
+  /** Returns the acquisition budget of the wrapped bearer. */
+  get acquisitionBudgetMs(): number | undefined {
+    return this._wrapped.acquisitionBudgetMs;
+  }
+
   /** Creates a token receiver. */
   receiver(): Receiver {
     return new RenewableFileCacheReceiver(this, this._cache, this.logger);

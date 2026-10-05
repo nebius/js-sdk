@@ -241,6 +241,11 @@ export class AsyncRenewableBearer extends Bearer {
     return this.source;
   }
 
+  /** Returns this cache's refresh request budget, in milliseconds. */
+  get acquisitionBudgetMs(): number {
+    return this.refreshRequestTimeoutMs;
+  }
+
   /** Creates a token receiver. */
   receiver(): Receiver {
     return new AsyncRenewableReceiver(this, this.maxRetries, this.logger);

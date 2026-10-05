@@ -159,6 +159,14 @@ export class FederationBearer extends Bearer {
     return `federation/${this.federationEndpoint}/${this.federationId}/${this.profileName}`;
   }
 
+  /**
+   * Returns the default login budget of five minutes.
+   * Receivers still use the timeout supplied to each fetch.
+   */
+  get acquisitionBudgetMs(): number {
+    return 5 * 60 * 1000;
+  }
+
   /** Creates a token receiver. */
   receiver(): Receiver {
     this.logger?.trace('bearer.receiver');

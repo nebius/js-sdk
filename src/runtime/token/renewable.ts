@@ -119,7 +119,7 @@ export class RenewableBearer extends Bearer {
   private readonly initialRetryTimeoutMs: number;
   private readonly maxRetryTimeoutMs: number;
   private readonly retryTimeoutExponent: number;
-  private readonly refreshRequestTimeoutMs: number;
+  private readonly refreshRequestTimeoutMs: number | null;
   private readonly maxRetries: number;
   private readonly jitterFraction: number;
   private readonly logger?: Logger;
@@ -150,13 +150,13 @@ export class RenewableBearer extends Bearer {
       /** Multiplier for exponential retry delays. Defaults to `1.5`. */
       retryTimeoutExponent?: number;
       /**
-       * Default budget for a renewal request, in milliseconds.
-       *
-       * Defaults to five seconds. It applies to foreground and background
-       * renewal when the caller does not supply a synchronous override. The
-       * source decides how it enforces the budget.
+       * Budget for one renewal request, in milliseconds. Defaults to five seconds.
+       * `null` selects the source's positive acquisition budget on each renewal,
+       * or five seconds when the source has no positive budget.
+       * Explicit zero and negative values stay unchanged. A synchronous override
+       * can replace this budget. The source enforces it.
        */
-      refreshRequestTimeoutMs?: number;
+      refreshRequestTimeoutMs?: number | null;
       /** Accepted for compatibility but not used by this implementation. */
       safetyMinRemainingMs?: number;
       /**
@@ -178,7 +178,8 @@ export class RenewableBearer extends Bearer {
     this.initialRetryTimeoutMs = opts?.initialRetryTimeoutMs ?? 1_000;
     this.maxRetryTimeoutMs = opts?.maxRetryTimeoutMs ?? 60_000;
     this.retryTimeoutExponent = opts?.retryTimeoutExponent ?? 1.5;
-    this.refreshRequestTimeoutMs = opts?.refreshRequestTimeoutMs ?? 5_000;
+    this.refreshRequestTimeoutMs =
+      opts?.refreshRequestTimeoutMs === undefined ? 5_000 : opts.refreshRequestTimeoutMs;
     this.maxRetries = opts?.maxRetries ?? 2;
     this.jitterFraction = Math.min(Math.max(opts?.jitterFraction ?? 0.2, 0), 1);
     this.logger = opts?.logger;
@@ -204,6 +205,13 @@ export class RenewableBearer extends Bearer {
   /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this.source;
+  }
+
+  /** Returns the effective refresh budget. Automatic mode reads the source on each acquisition. */
+  get acquisitionBudgetMs(): number {
+    if (this.refreshRequestTimeoutMs !== null) return this.refreshRequestTimeoutMs;
+    const budget = this.source.acquisitionBudgetMs;
+    return budget !== undefined && Number.isFinite(budget) && budget > 0 ? budget : 5_000;
   }
 
   /** Creates a token receiver. */
@@ -319,7 +327,7 @@ export class RenewableBearer extends Bearer {
     const useSyncOpts = this.nextSyncOptions;
     this.nextSyncOptions = null;
 
-    const timeoutMs = useSyncOpts?.timeoutMs ?? this.refreshRequestTimeoutMs;
+    const timeoutMs = useSyncOpts?.timeoutMs ?? this.acquisitionBudgetMs;
     const options = useSyncOpts?.options ?? undefined;
 
     this.logger?.debug('startRenewal: begin', {

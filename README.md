@@ -183,6 +183,15 @@ renewal and recovery behavior. SDK shutdown closes all providers.
 
 ### Migration from previous JS releases
 
+Cached impersonation uses the actor's positive acquisition budget plus five
+seconds for token exchange. Interactive federation login no longer has the
+fixed five-second impersonation limit. Set `refreshRequestTimeoutMs` on
+`CachedImpersonatedBearer` for an explicit total cap. On `RenewableBearer`,
+`null` uses the source's positive budget, or five seconds. The default remains
+an explicit five-second budget.
+Custom bearers can expose `acquisitionBudgetMs`. Transparent wrappers must
+forward it. Caller deadlines still limit how long each request waits.
+
 If you used `EnvBearer()` with `NEBIUS_TOKEN`, rename that variable to `NEBIUS_IAM_TOKEN`
 or pass `new EnvBearer('NEBIUS_TOKEN')` explicitly. Catch SDK construction errors where
 your application loads CLI configuration or service-account credentials. Failed operation
