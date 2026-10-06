@@ -163,6 +163,14 @@ export abstract class Receiver {
     return tok;
   }
 
+  /** Handles a credential rejection. Sources can compare a fresh token with the rejected token. */
+  async handleError(
+    err: unknown,
+    options?: AuthorizationOptions,
+    _timeoutMs?: number,
+  ): Promise<boolean> {
+    return this.canRetry(err, options);
+  }
   /**
    * Reports whether authentication can retry after an error.
    *
@@ -204,6 +212,17 @@ export abstract class Bearer {
 
   /** Returns the next bearer in a wrapper chain, when this bearer wraps another source. */
   get wrapped(): Bearer | undefined {
+    return undefined;
+  }
+
+  /**
+   * Returns the budget for one token acquisition, in milliseconds.
+   *
+   * `undefined` means no declared budget. A non-positive value means an immediate
+   * failure. A cache asks only its immediate source. Transparent wrappers must
+   * forward this value; wrappers that add work must compose it.
+   */
+  get acquisitionBudgetMs(): number | undefined {
     return undefined;
   }
 
@@ -251,6 +270,11 @@ export class NamedBearer extends Bearer {
   /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this._wrapped;
+  }
+
+  /** Returns the acquisition budget of the wrapped bearer. */
+  get acquisitionBudgetMs(): number | undefined {
+    return this._wrapped.acquisitionBudgetMs;
   }
 
   /** Returns the credential name. */

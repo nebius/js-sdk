@@ -4,7 +4,6 @@ import { URL } from 'url';
 
 import { withTimeout } from '../../util/cancelable.js';
 import { Logger } from '../../util/logging.js';
-
 import { PKCE } from './pkce.js';
 
 /**
@@ -30,6 +29,8 @@ export class CallbackHandler {
       this._codePromiseResolve = resolve;
       this._codePromiseReject = reject;
     });
+    // Shutdown can reject the code promise before a caller starts waiting.
+    void this._codePromise.catch(() => undefined);
   }
 
   /** Returns the OAuth state value. */
@@ -101,7 +102,13 @@ export class CallbackHandler {
       }
     });
     this.logger?.trace('listenAndServe: starting server');
-    await new Promise<void>((resolve) => this._server!.listen(0, '127.0.0.1', () => resolve()));
+    await new Promise<void>((resolve, reject) => {
+      this._server!.on('error', (err: Error) => {
+        this._codePromiseReject?.(err);
+        reject(err);
+      });
+      this._server!.listen(0, '127.0.0.1', () => resolve());
+    });
     const addr = this._server.address() as AddressInfo;
     this._addr = `http://127.0.0.1:${addr.port}`;
     this.logger?.trace('listenAndServe: server started', { addr });

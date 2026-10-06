@@ -298,12 +298,13 @@ export class Mask {
   /**
    * Returns the mask below one key.
    *
-   * A named branch has priority over the wildcard branch. The returned value
-   * is part of this mask, so changing it also changes this mask.
+   * Named and wildcard branches are combined when both match. A combined
+   * branch is a copy; a single matching branch belongs to this mask.
    */
   getSubMask(key: FieldKey | string): Mask | null {
     const k = key instanceof FieldKey ? key.value : String(key);
     const named = this.fieldParts.get(k) || null;
+    if (named && this.any) return named.copy().merge(this.any);
     if (named) return named;
     return this.any ?? null;
   }

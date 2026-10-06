@@ -383,6 +383,43 @@ export function registerSelfCompatTests() {
       expect((round.fUint64 as any).toString()).toBe(obj.fUint64.toString());
       expect(Array.from(round.fBytes as Uint8Array)).toEqual(Array.from(bytes));
     });
+    test('repeated scalar codecs skip mismatching wire types and retain valid values', () => {
+      const our = requireOur();
+      const { BinaryWriter } = require('../runtime/protos/core');
+      const bytes = new BinaryWriter()
+        .uint32(8)
+        .uint32(0)
+        .uint32(29)
+        .fixed32(0)
+        .uint32(24)
+        .int32(7)
+        .uint32(9)
+        .double(1.5)
+        .finish();
+      const decoded = our.RepeatedScalars.decode(bytes);
+      expect(decoded.rInt32).toEqual([7]);
+      expect(decoded.rDouble).toEqual([1.5]);
+    });
+
+    test('map entry codecs skip mismatching key and value wire types', () => {
+      const our = requireOur();
+      const { BinaryWriter } = require('../runtime/protos/core');
+      const bytes = new BinaryWriter()
+        .uint32(10)
+        .fork()
+        .uint32(10)
+        .string('item')
+        .uint32(8)
+        .uint32(0)
+        .uint32(18)
+        .string('keep')
+        .uint32(16)
+        .uint32(0)
+        .join()
+        .finish();
+      expect(our.MapExamples.decode(bytes).sS).toEqual({ item: 'keep' });
+    });
+
     test('Repeated + Map roundtrip', () => {
       const our: any = requireOur();
       const rep: any = {

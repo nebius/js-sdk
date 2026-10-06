@@ -64,6 +64,11 @@ export function registerExtensionTests(): void {
       const decoded = FieldOptions.decode(bin);
       expect(decoded.extI32).toBe(42);
       expect(String(decoded.extI64)).toBe('9007199254740993');
+      expect(String(decoded.extU64)).toBe('18446744073709551615');
+      expect(String(FieldOptions.fromJSON(FieldOptions.toJSON(decoded)).extU64)).toBe(
+        '18446744073709551615',
+      );
+      expect(String(FieldOptions.create(decoded).extU64)).toBe('18446744073709551615');
       expect(decoded.extBool).toBe(true);
       expect(decoded.extString).toBe('hello');
       expect(Array.from(decoded.extBytes ?? [])).toEqual([1, 2, 3]);
@@ -124,6 +129,26 @@ export function registerExtensionTests(): void {
         ? uf.findIndex((_, i, arr) => tagBytes.every((b, j) => arr[i + j] === b))
         : -1;
       expect(found).toBe(-1);
+    });
+
+    test('singular native duration extensions merge wire components', () => {
+      const GP = require(path.join(ROOT, 'src/generated_test/2/google/protobuf/index')) as any;
+      loadExtPkg();
+      const { protoRegistry } = require(
+        path.join(ROOT, 'src/generated_test/2/someotherfolder/protoregistry'),
+      ) as { protoRegistry: any };
+      const { BinaryWriter } = require(path.join(ROOT, 'src/runtime/protos/core'));
+      const ext = protoRegistry
+        .listExtensions('google.protobuf.FieldOptions')
+        .find((entry: any) => entry.name === 'ext_duration');
+      expect(ext).toBeDefined();
+      const writer = new BinaryWriter();
+      writer.uint32((ext.fieldNo << 3) | 2).bytes(new BinaryWriter().uint32(8).int64(3).finish());
+      writer
+        .uint32((ext.fieldNo << 3) | 2)
+        .bytes(new BinaryWriter().uint32(16).int32(500000000).finish());
+      const decoded = GP.FieldOptions.decode(writer.finish());
+      expect(decoded.extDuration.asMilliseconds()).toBe(3500);
     });
 
     test('round trip absence vs presence', () => {

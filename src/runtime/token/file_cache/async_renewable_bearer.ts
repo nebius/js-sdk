@@ -24,6 +24,8 @@ type Waiter = { resolve: (t: Token) => void; reject: (e: unknown) => void };
 class AsyncRenewableReceiver extends Receiver {
   public readonly $type = 'nebius.sdk.AsyncRenewableReceiver';
   private trial = 0;
+  private recoveryTrial = 0;
+  private recovered?: Token;
   constructor(
     private readonly parent: AsyncRenewableBearer,
     private readonly defaultMaxRetries: number = 2,
@@ -49,6 +51,11 @@ class AsyncRenewableReceiver extends Receiver {
   ): Promise<Token> {
     this.trial += 1;
     this.logger?.debug('Receiver._fetch', { trial: this.trial, timeoutMs, options });
+    if (this.recovered) {
+      const token = this.recovered;
+      this.recovered = undefined;
+      return token;
+    }
     return this.parent.fetch(timeoutMs, options);
   }
 
@@ -66,6 +73,14 @@ class AsyncRenewableReceiver extends Receiver {
     if (!synchronous) this.parent.requestRenewal(true);
     this.logger?.debug('Receiver.canRetry -> true', { trial: this.trial, maxRetries, synchronous });
     return true;
+  }
+
+  async handleError(err: unknown, options?: AuthorizationOptions): Promise<boolean> {
+    if (++this.recoveryTrial >= (options?.maxRetries ?? this.defaultMaxRetries)) return false;
+    this.recovered = await this.parent.recoverFromCache(this.latest, err);
+    if (this.recovered) return true;
+    this.trial = 0;
+    return this.canRetry(err, options);
   }
 }
 
@@ -226,9 +241,37 @@ export class AsyncRenewableBearer extends Bearer {
     return this.source;
   }
 
+  /** Returns this cache's refresh request budget, in milliseconds. */
+  get acquisitionBudgetMs(): number {
+    return this.refreshRequestTimeoutMs;
+  }
+
   /** Creates a token receiver. */
   receiver(): Receiver {
     return new AsyncRenewableReceiver(this, this.maxRetries, this.logger);
+  }
+
+  /** @internal Checks shared credentials after a receiver's token is rejected. */
+  async recoverFromCache(rejected: Token | undefined, err: unknown): Promise<Token | undefined> {
+    try {
+      const cached = await this.fileCache.refresh();
+      if (cached && !cached.isEmpty() && !cached.equals(rejected ?? Token.empty())) {
+        this.cacheToken = cached;
+        this.fresh = true;
+        this.renewalRequested = false;
+        this.metrics.cacheRefresh(METRIC_RESULT_SUCCESS);
+        this.scheduleNext(this.computeNextTimeoutMs(cached));
+        return cached;
+      }
+      if (rejected) await this.fileCache.removeIfEqual(rejected);
+      if (this.cacheToken?.equals(rejected ?? Token.empty())) this.cacheToken = null;
+      this.fresh = false;
+      this.metrics.cacheInvalidate();
+      return undefined;
+    } catch (recoveryError) {
+      this.metrics.cacheRefresh(METRIC_RESULT_ERROR);
+      throw new AggregateError([recoveryError, err], 'Credential recovery failed.');
+    }
   }
 
   /** Sets the metrics. */
@@ -488,13 +531,17 @@ export class AsyncRenewableBearer extends Bearer {
           nextSyncOptions: this.nextSyncOptions,
           timeoutMs,
         });
+        let renewalTimeout: ReturnType<typeof setTimeout> | undefined;
         const resultP = !timeoutMs
           ? renewalP
           : Promise.race<Token>([
               renewalP,
-              new Promise<Token>((_, reject) =>
-                setTimeout(() => reject(new RenewalError('Renewal timeout')), timeoutMs),
-              ),
+              new Promise<Token>((_, reject) => {
+                renewalTimeout = setTimeout(
+                  () => reject(new RenewalError('Renewal timeout')),
+                  timeoutMs,
+                );
+              }),
             ]);
         try {
           const newTok = await resultP;
@@ -507,8 +554,13 @@ export class AsyncRenewableBearer extends Bearer {
         } catch (err) {
           this.metrics.cacheMiss(METRIC_RESULT_ERROR);
           throw err;
+        } finally {
+          if (renewalTimeout) clearTimeout(renewalTimeout);
         }
       }
+
+      // The freshness waiter reports failures; observe the separate renewal promise too.
+      void renewalP.catch(() => undefined);
 
       // Asynchronous callers: optionally wait up to timeout for freshness
       try {

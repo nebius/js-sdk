@@ -1,9 +1,8 @@
-import type { Field as TSDescriptorField } from '../descriptors.js';
-
 import {
   defaultValueFor,
   is64Bit,
   isPackableScalar,
+  isUnsigned64,
   jsonScalarConverter,
   readerMethodFor,
   tagFor,
@@ -13,6 +12,8 @@ import {
   writerMethodFor,
 } from './helpers.js';
 import { resolveEnumName, resolveMessageName } from './typeNames.js';
+
+import type { Field as TSDescriptorField } from '../descriptors.js';
 
 /**
  * Emit extension registrations (and any needed module augmentations) for a set of extension fields.
@@ -120,7 +121,9 @@ export function printExtensions(
       } else {
         const method = readerMethodFor(ext);
         let readExpr = `reader.${method}()`;
-        if (is64Bit(ext)) readExpr = `Long.fromValue(${readExpr})`;
+        if (is64Bit(ext)) {
+          readExpr = `Long.fromValue(${readExpr}${isUnsigned64(ext) ? ', true' : ''})`;
+        }
         const singleWt = wireTypeFor(ext);
         decodeLines.push('if (wt === 2) {');
         decodeLines.push('  const len = reader.uint32();');
@@ -162,7 +165,9 @@ export function printExtensions(
       } else {
         const method = readerMethodFor(ext);
         let readExpr = `reader.${method}()`;
-        if (is64Bit(ext)) readExpr = `Long.fromValue(${readExpr})`;
+        if (is64Bit(ext)) {
+          readExpr = `Long.fromValue(${readExpr}${isUnsigned64(ext) ? ', true' : ''})`;
+        }
         decodeLines.push(`(message.${prop} ??= []).push(${readExpr});`);
       }
       decodeLines.push('return true;');
@@ -173,9 +178,13 @@ export function printExtensions(
         if (ext.isMessage()) {
           if (wktName) {
             decodeLines.push('const len = reader.uint32();');
-            decodeLines.push(`message.${prop} = wkt["${wktName}"].readMessage(reader, len);`);
+            decodeLines.push(
+              `message.${prop} = wkt["${wktName}"].readMessage(reader, len, message.${prop});`,
+            );
           } else if (msgTsName) {
-            decodeLines.push(`message.${prop} = ${msgTsName}.decode(reader, reader.uint32());`);
+            decodeLines.push(
+              `message.${prop} = ${msgTsName}.decode(reader, reader.uint32(), message.${prop});`,
+            );
           } else {
             decodeLines.push(
               'message.${prop} = reader.bytes(reader.uint32());'.replace('${prop}', prop),
@@ -198,7 +207,9 @@ export function printExtensions(
         decodeLines.push(`if (wt !== ${expectedWire}) return false;`);
         const method = readerMethodFor(ext);
         let readExpr = `reader.${method}()`;
-        if (is64Bit(ext)) readExpr = `Long.fromValue(${readExpr})`;
+        if (is64Bit(ext)) {
+          readExpr = `Long.fromValue(${readExpr}${isUnsigned64(ext) ? ', true' : ''})`;
+        }
         decodeLines.push(`message.${prop} = ${readExpr};`);
         decodeLines.push('return true;');
       }
@@ -216,7 +227,7 @@ export function printExtensions(
       } else if (ext.isEnum()) {
         if (enumTsName) conv = `${enumTsName}.fromJSON(e)`;
         else conv = 'Number(e)';
-      } else if (is64Bit(ext)) conv = 'Long.fromValue(e)';
+      } else if (is64Bit(ext)) conv = `Long.fromValue(e${isUnsigned64(ext) ? ', true' : ''})`;
       else if (ext.typeCode() === 12) conv = 'bytesFromBase64(e)';
       else conv = `${jsonScalarConverter(ext)}(e)`;
       fromJsonLines.push('if (globalThis.Array.isArray(_v)) {');
@@ -230,7 +241,9 @@ export function printExtensions(
       if (enumTsName) fromJsonLines.push(`message.${prop} = ${enumTsName}.fromJSON(_v);`);
       else fromJsonLines.push(`message.${prop} = { code: Number(_v) || 0, name: String(_v) };`);
     } else if (is64Bit(ext)) {
-      fromJsonLines.push(`message.${prop} = Long.fromValue(_v);`);
+      fromJsonLines.push(
+        `message.${prop} = Long.fromValue(_v${isUnsigned64(ext) ? ', true' : ''});`,
+      );
     } else if (ext.typeCode() === 12) {
       fromJsonLines.push(`message.${prop} = bytesFromBase64(_v);`);
     } else {
@@ -302,10 +315,12 @@ export function printExtensions(
     lines.push(`  fullName: "${fullName}",`);
     lines.push(`  fieldNo: ${fieldNo},`);
     lines.push(`  name: "${ext.pb_name}",`);
+    lines.push(`  jsonName: "${jsonName}",`);
+    lines.push(`  typescriptName: "${prop}",`);
     lines.push(`  kind: "${kind}",`);
     if (scalarCode !== undefined) lines.push(`  scalarType: ${scalarCode},`);
     if (enumProtoType) lines.push(`  enumType: "${enumProtoType}",`);
-    if (msgProtoType && !wktName) lines.push(`  messageType: "${msgProtoType}",`);
+    if (msgProtoType) lines.push(`  messageType: "${msgProtoType}",`);
     lines.push('  encode(message, writer) {');
     for (const l of encodeLines) lines.push('    ' + l);
     lines.push('  },');
@@ -314,6 +329,28 @@ export function printExtensions(
     lines.push('  },');
     lines.push('  fromJSON(message, object) {');
     for (const l of fromJsonLines) lines.push('    ' + l);
+    lines.push('  },');
+    const partialConvert = (value: string): string => {
+      if (ext.isMessage()) {
+        if (wktName) return `wkt["${wktName}"].fromPartial(${value})`;
+        if (msgTsName) return `${msgTsName}.fromPartial(${value})`;
+      }
+      if (ext.isEnum() && enumTsName) {
+        return `${enumTsName}.fromJSON(${value}.code ?? ${value}.name)`;
+      }
+      if (is64Bit(ext)) return `Long.fromValue(${value}${isUnsigned64(ext) ? ', true' : ''})`;
+      return value;
+    };
+    lines.push('  fromPartial(message, object) {');
+    lines.push(`    const _v = object?.${prop};`);
+    lines.push(
+      `    if (_v === undefined${wktName === '.google.protobuf.Value' ? '' : ' || _v === null'}) return;`,
+    );
+    lines.push(
+      ext.isRepeated()
+        ? `    message.${prop} = _v.map((e: any) => ${partialConvert('e')});`
+        : `    message.${prop} = ${partialConvert('_v')};`,
+    );
     lines.push('  },');
     lines.push('  toJSON(message, obj, use) {');
     for (const l of toJsonLines) lines.push('    ' + l);

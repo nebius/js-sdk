@@ -66,11 +66,15 @@ class FederationReceiver extends Receiver {
         expires_in: res?.expires_in,
         access_token: TokenSanitizer.accessTokenSanitizer().sanitize(res?.access_token),
       });
-      if (!res || typeof res.access_token !== 'string' || typeof res.expires_in !== 'number') {
+      if (
+        !res ||
+        typeof res.access_token !== 'string' ||
+        typeof res.expires_in !== 'number' ||
+        !Number.isFinite(res.expires_in)
+      ) {
         throw new Error('invalid token response');
       }
-      const expiration =
-        res.expires_in > 0 ? new Date(Date.now() + res.expires_in * 1000) : undefined;
+      const expiration = new Date(startWallMs + res.expires_in * 1000);
       const tok = new Token(res.access_token, expiration);
       this.metrics.tokenAcquire(METRIC_RESULT_SUCCESS, metricDurationMs(start), 1);
       this.metrics.tokenLifetime(tok);
@@ -153,6 +157,14 @@ export class FederationBearer extends Bearer {
   /** Returns the credential name. */
   get name(): string | undefined {
     return `federation/${this.federationEndpoint}/${this.federationId}/${this.profileName}`;
+  }
+
+  /**
+   * Returns the default login budget of five minutes.
+   * Receivers still use the timeout supplied to each fetch.
+   */
+  get acquisitionBudgetMs(): number {
+    return 5 * 60 * 1000;
   }
 
   /** Creates a token receiver. */

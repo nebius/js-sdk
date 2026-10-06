@@ -38,7 +38,6 @@ export function createAuthorizationInterceptor(provider: Provider, logger: Logge
   return (options, nextCall) => {
     const aLog = logger.child('authorization_interceptor', { options });
     aLog.trace('Authorization interceptor invoked');
-    const auth = provider.authenticator();
 
     const requester = {
       start(
@@ -54,6 +53,8 @@ export function createAuthorizationInterceptor(provider: Provider, logger: Logge
           aLog.trace('Authorization disabled for this call');
           return next(metadata, listener);
         }
+
+        const auth = provider.authenticator(authOptions);
 
         const wrapped: Listener = {
           onReceiveMetadata: (md, nextMd) => nextMd(md),

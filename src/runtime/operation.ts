@@ -2,8 +2,13 @@ import { type CallOptions, Metadata, status } from '@grpc/grpc-js';
 import { Dayjs } from 'dayjs';
 
 import { Status, Code as StatusCode } from '../api/google/rpc/index.js';
+import { protoRegistry } from '../api/protobuf.js';
+import { extractNebiusServiceErrors, NebiusGrpcError } from './error.js';
 import { isRetriableError, Request, RetryOptions } from './request.js';
+import { TimeoutError, withTimeout } from './util/cancelable.js';
 import { custom, customJson, inspectJson, Logger } from './util/logging.js';
+
+import type { MessageInstanceInterface, Registry } from './protos/registry.js';
 
 /** Contains the default interval between successful operation polls. */
 export const DEFAULT_POLL_INTERVAL_SEC = 1;
@@ -27,6 +32,10 @@ export interface OperationWaitOptions extends RetryOptions {
    * after polling errors.
    */
   pollErrorBackoff?: PollErrorBackoff | null;
+  /** Limits the complete operation wait in milliseconds. */
+  timeoutMs?: number;
+  /** Cancels polling and pending delays. */
+  signal?: AbortSignal;
 }
 
 function defaultPollErrorBackoff(attempt: number): number {
@@ -36,7 +45,44 @@ function defaultPollErrorBackoff(attempt: number): number {
   return Math.min(delayMs * jitter, DEFAULT_POLL_ERROR_BACKOFF_MAX_MS);
 }
 
+/** Reports the final error of an unsuccessful operation. */
+export class OperationError extends Error {
+  /** Contains the terminal gRPC status code. */
+  readonly code: number;
+  /** Contains the terminal status and its raw details. */
+  readonly status: Status;
+  /** Contains decoded Nebius service-error details. */
+  readonly serviceErrors: ReturnType<typeof extractNebiusServiceErrors>;
+  constructor(
+    /** Retains the failed operation for inspection. */
+    public readonly operation: { id(): string; status(): Status | undefined },
+  ) {
+    const value = operation.status() ?? Status.create();
+    super(`Operation ${operation.id()} failed: ${value.message}`);
+    this.name = 'OperationError';
+    this.code = value.code;
+    this.status = value;
+    this.serviceErrors = extractNebiusServiceErrors(value);
+  }
+}
+
+/** Reports a malformed operation envelope and retains its raw value. */
+export class OperationValidationError extends TypeError {
+  constructor(
+    /** Retains the rejected operation envelope. */
+    public readonly operation: GenericOperation,
+    issues: string[],
+  ) {
+    super(`Invalid operation: ${issues.join('; ')}`);
+    this.name = 'OperationValidationError';
+  }
+}
+
 function isRetriablePollError(err: unknown): boolean {
+  const hints = (err as NebiusGrpcError)?.serviceErrors;
+  if (hints?.some((value) => [1, 2, 3].includes(value.retryType.code))) {
+    return isRetriableError(err);
+  }
   if (err && typeof err === 'object' && 'code' in err) {
     if ((err as { code?: unknown }).code === status.DEADLINE_EXCEEDED) return true;
   }
@@ -195,6 +241,8 @@ export interface GenericOperation {
   request?: { typeUrl: string; value: Uint8Array } | undefined;
   /** Contains the request headers. */
   requestHeaders: { [key: string]: Operation_RequestHeader };
+  /** Contains the alpha operation resource snapshot. */
+  resource?: { typeUrl: string; value: Uint8Array } | undefined;
   /** Contains the resource ID. */
   resourceId: string;
   /** Contains the progress tracker. */
@@ -223,17 +271,13 @@ export interface OperationService<TReq> {
  * Polls a long-running operation and exposes its current state.
  *
  * Mutating service methods often return an operation instead of the final
- * resource. {@link Operation.wait} completes for both successful and failed
- * operations. After it completes, inspect {@link Operation.status} or
- * {@link Operation.successful}. It rejects only when polling cannot continue.
+ * resource. {@link Operation.wait} resolves on success and rejects failed
+ * operations with {@link OperationError}. The operation retains its final status.
  *
  * @example
  * ```ts
  * const op = await service.create(req).result;
  * await op.wait();
- * if (!op.successful()) {
- *   throw new Error(`operation failed: ${op.status()?.message}`);
- * }
  * console.log('resource ID', op.resourceId());
  * ```
  */
@@ -247,12 +291,26 @@ export class Operation<TReq> {
    *
    * Generated clients create this object with the correct operation service.
    * Application code normally receives it from a service request.
+   * Invalid IDs and timestamps throw OperationValidationError.
    */
   constructor(
     private _op: GenericOperation,
     private readonly service: OperationService<TReq>,
     private logger: Logger,
   ) {
+    const issues: string[] = [];
+    if (!_op.id) issues.push('id is empty');
+    const validTimestamp = (value: Dayjs | undefined) => {
+      const ms = value?.valueOf();
+      return (
+        ms !== undefined && Number.isFinite(ms) && ms >= -62135596800000 && ms <= 253402300799999
+      );
+    };
+    if (!validTimestamp(_op.createdAt)) issues.push('createdAt is not a valid protobuf timestamp');
+    if (_op.finishedAt !== undefined && !validTimestamp(_op.finishedAt)) {
+      issues.push('finishedAt is not a valid protobuf timestamp');
+    }
+    if (issues.length) throw new OperationValidationError(_op, issues);
     this.innerType = _op.$type;
     this.logger = logger.withFields({
       operationId: this.id(),
@@ -327,6 +385,42 @@ export class Operation<TReq> {
     return this._op;
   }
 
+  private unpackPayload(
+    payload: GenericOperation['request'],
+    registry: Registry,
+  ): MessageInstanceInterface | undefined {
+    if (!payload?.typeUrl || payload.typeUrl.split('/').pop() === 'google.protobuf.Empty') {
+      return undefined;
+    }
+    try {
+      return registry.unpack(payload);
+    } catch {
+      return undefined;
+    }
+  }
+
+  /** Decodes the original operation request using registered message codecs. */
+  request(registry: Registry = protoRegistry): MessageInstanceInterface | undefined {
+    return this.unpackPayload(this._op.request, registry);
+  }
+
+  /** Decodes the alpha resource snapshot captured when the operation started. */
+  resource(registry: Registry = protoRegistry): MessageInstanceInterface | undefined {
+    return this.unpackPayload(this._op.resource, registry);
+  }
+
+  /** Copies the saved request headers. */
+  requestHeaders(): Record<string, string[]> {
+    return Object.fromEntries(
+      Object.entries(this._op.requestHeaders).map(([name, header]) => [name, [...header.values]]),
+    );
+  }
+
+  /** Decodes service-specific progress data using registered message codecs. */
+  progressData(registry: Registry = protoRegistry): MessageInstanceInterface | undefined {
+    return this.unpackPayload(this._op.progressData, registry);
+  }
+
   /** Returns the final status, or `undefined` while the operation is running. */
   status(): Status | undefined {
     return this._op.status;
@@ -369,14 +463,13 @@ export class Operation<TReq> {
    * Polls the operation until the service returns a final status.
    *
    * The method updates this object in place. It continues after a polling call
-   * reaches its deadline, because the remote operation can still be running.
+   * reaches its per-attempt deadline, because the remote operation can still be running.
    * Consecutive retriable polling errors use exponential backoff with jitter.
-   * It rethrows non-retriable polling errors. A resolved promise does not mean
-   * that the operation succeeded; call {@link successful} or inspect
-   * {@link status}. The method returns immediately when the operation ID is
-   * empty.
+   * It rethrows non-retriable polling errors and rejects failed operations.
+   * A resolved promise means that the operation succeeded. The caller deadline,
+   * timeoutMs, or AbortSignal stops local waiting without canceling the remote operation.
    *
-   * @param intervalSec Sets the poll interval in seconds. The default is 1.
+   * @param intervalSec Sets the poll interval in seconds. Non-positive values use the default of 1.
    * @param metadata Sends metadata with every polling request.
    * @param options Sets gRPC deadlines, request retries, and poll-error backoff.
    * @example
@@ -390,43 +483,114 @@ export class Operation<TReq> {
     options?: (OperationWaitOptions & Partial<CallOptions>) | undefined,
   ): Promise<void> {
     this.logger.trace('Wait started', { intervalSec });
+    if (!Number.isFinite(intervalSec)) throw new RangeError('Poll interval must be finite.');
     const id = this.id();
     if (!id) return;
-    const { pollErrorBackoff = defaultPollErrorBackoff, ...requestOptions } = options ?? {};
+    const {
+      pollErrorBackoff = defaultPollErrorBackoff,
+      timeoutMs,
+      signal,
+      ...requestOptions
+    } = options ?? {};
+    if (timeoutMs !== undefined && (!Number.isFinite(timeoutMs) || timeoutMs < 0)) {
+      throw new RangeError('Operation timeout must be finite and non-negative.');
+    }
+    const callerDeadline =
+      requestOptions.deadline instanceof Date
+        ? requestOptions.deadline.getTime()
+        : requestOptions.deadline;
+    if (callerDeadline !== undefined && !Number.isFinite(callerDeadline)) {
+      throw new RangeError('Operation deadline must be finite.');
+    }
+    const deadline = Math.min(
+      callerDeadline ?? Infinity,
+      timeoutMs === undefined ? Infinity : Date.now() + timeoutMs,
+    );
+    const check = () => {
+      signal?.throwIfAborted();
+      if (Date.now() >= deadline) {
+        throw Object.assign(new Error('Operation wait deadline exceeded.'), {
+          code: status.DEADLINE_EXCEEDED,
+        });
+      }
+    };
+    const delay = async (ms: number) => {
+      if (!Number.isFinite(ms)) {
+        throw new RangeError('Polling backoff must be finite.');
+      }
+      check();
+      await new Promise<void>((resolve, reject) => {
+        const abort = () => {
+          clearTimeout(timer);
+          reject(signal?.reason);
+        };
+        const timer = setTimeout(
+          () => {
+            signal?.removeEventListener('abort', abort);
+            resolve();
+          },
+          Math.min(Math.max(0, ms), Math.max(0, deadline - Date.now())),
+        );
+        signal?.addEventListener('abort', abort, { once: true });
+      });
+      check();
+    };
     let retryAttempt = 0;
     while (!this.done()) {
+      check();
       try {
-        await this.update(metadata, requestOptions);
+        const pollOptions = {
+          ...requestOptions,
+          ...(Number.isFinite(deadline) ? { deadline: new Date(deadline) } : {}),
+        };
+        const request = this.service.get({ id }, metadata, pollOptions);
+        const abort = () => request.cancel();
+        signal?.addEventListener('abort', abort, { once: true });
+        try {
+          const response = Number.isFinite(deadline)
+            ? await withTimeout(request.result, Math.max(0, deadline - Date.now()))
+            : await request.result;
+          if (!this.done()) this._op = response._op;
+        } catch (err) {
+          if (err instanceof TimeoutError) request.cancel();
+          throw err;
+        } finally {
+          signal?.removeEventListener('abort', abort);
+        }
+
         this.logger.trace('Wait iteration completed');
         retryAttempt = 0;
       } catch (err: unknown) {
+        signal?.throwIfAborted();
+        if (err instanceof TimeoutError) check();
         this.logger.trace('Wait iteration failed', { err });
         if (pollErrorBackoff !== null && isRetriablePollError(err)) {
+          check();
           retryAttempt++;
-          const delayMs = Math.max(0, pollErrorBackoff(retryAttempt));
+          const delayMs = pollErrorBackoff(retryAttempt);
           this.logger.warn('Update failed with retriable error, continuing to wait', {
             attempt: retryAttempt,
             delayMs,
             err,
           });
-          await new Promise<void>((resolve) => setTimeout(resolve, delayMs));
+          await delay(delayMs);
           continue;
         }
         throw err;
       }
       if (!this.done()) {
-        const ms = Math.max(0.01, intervalSec) * 1000;
-        await new Promise<void>((resolve) => setTimeout(resolve, ms));
+        const ms = (intervalSec > 0 ? intervalSec : DEFAULT_POLL_INTERVAL_SEC) * 1000;
+        await delay(ms);
       }
     }
+    if (!this.successful()) throw new OperationError(this);
     this.logger.trace('Wait completed', { finalStatus: this.status() });
   }
 
   /**
    * Gets the latest operation state from the operation service.
    *
-   * The method replaces the wrapped state in place. It does nothing when the
-   * operation has no ID. Request errors reject the returned promise.
+   * The method refreshes the wrapped state in place. Request errors reject the returned promise.
    *
    * @example
    * ```ts
@@ -438,14 +602,15 @@ export class Operation<TReq> {
     metadata?: Metadata | undefined,
     options?: (Partial<CallOptions> & RetryOptions) | undefined,
   ): Promise<void> {
-    this.logger.trace('`Update started');
+    if (this.done()) return;
+    this.logger.trace('Update started');
     const id = this.id();
     if (!id) {
       this.logger.warn('Update skipped: no operation ID');
       return;
     }
     const next = await this.service.get({ id }, metadata, options).result;
-    this._op = next._op;
+    if (!this.done()) this._op = next._op;
     this.logger.trace('Update completed');
   }
 }
@@ -538,7 +703,7 @@ class CurrentStepWrapper implements CurrentStep {
     const total = toNumber(workDone?.totalTickCount);
     if (total === undefined || total <= 0) return undefined;
     const done = toNumber(workDone?.doneTickCount) ?? 0;
-    return Math.min(1.0, done / total);
+    return done / total;
   }
 }
 
@@ -632,7 +797,7 @@ class ProgressTrackerWrapper implements OperationProgressTracker {
     const total = toNumber(workDone?.totalTickCount);
     if (total === undefined || total <= 0) return undefined;
     const done = toNumber(workDone?.doneTickCount) ?? 0;
-    return Math.min(1.0, done / total);
+    return done / total;
   }
 
   estimatedFinishedAt(): Dayjs | undefined {

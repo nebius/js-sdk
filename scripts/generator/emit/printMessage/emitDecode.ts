@@ -1,25 +1,32 @@
-import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 import {
+  defaultValueFor,
   deprecationOptions,
   is64Bit,
   isPackableScalar,
+  isUnsigned64,
   readerMethodFor,
   scalarOrRef,
   wireTypeFor,
   wktFqnOf,
 } from '../helpers.js';
 import { resolveEnumName, resolveMessageName } from '../typeNames.js';
-
 import { emitDecodeOneofs } from './decodeOneofs.js';
+
+import type { Message as TSDescriptorMessage } from '../../descriptors.js';
 
 export function emitDecode(m: TSDescriptorMessage): string[] {
   const lines: string[] = [];
   const nonOneofFields = m.fields.filter((f) => !f.is_in_oneof);
-  lines.push(`  decode(input: BinaryReader | Uint8Array, length?: number): ${m.tsName} {`);
+  lines.push(
+    `  decode(input: BinaryReader | Uint8Array, length?: number, base?: ${m.tsName}): ${m.tsName} {`,
+  );
   lines.push('    const reader = input instanceof BinaryReader ? input : new BinaryReader(input);');
   lines.push('    const end = length === undefined ? reader.len : reader.pos + length;');
-  lines.push(`    const message = createBase${m.tsName}();`);
+  lines.push(`    const message = base ?? createBase${m.tsName}();`);
   lines.push('    let writer: BinaryWriter | undefined = undefined;');
+  lines.push(
+    '    if (message[unknownFieldsSymbol]) writer = new BinaryWriter().raw(message[unknownFieldsSymbol]);',
+  );
   // Message-level deprecation warning (decoders warn for deprecated message types)
   const msgDepOpts = deprecationOptions(m.descriptor);
   if (msgDepOpts) {
@@ -74,22 +81,29 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
       let valueDecoder = `reader.${readerMethodFor(vf)}()`;
       if (vf.isMessage()) {
         if (vIsWkt) {
-          valueDecoder = `wkt["${vIsWkt}"].readMessage(reader, reader.uint32())`;
+          valueDecoder = `wkt["${vIsWkt}"].readMessage(reader, reader.uint32(), value)`;
         } else {
-          valueDecoder = `${resolveMessageName(vf.message())}.decode(reader, reader.uint32())`;
+          valueDecoder = `${resolveMessageName(vf.message())}.decode(reader, reader.uint32(), value)`;
         }
       } else if (vf.isEnum()) {
         valueDecoder = `${resolveEnumName(vf.enum())}.fromNumber(reader.${readerMethodFor(vf)}())`;
       } else if (is64Bit(vf)) {
-        valueDecoder = `Long.fromValue(reader.${readerMethodFor(vf)}())`;
+        valueDecoder = `Long.fromValue(reader.${readerMethodFor(vf)}(), ${isUnsigned64(vf)})`;
       }
+      const scalar = Object.create(vf);
+      scalar.tracksPresence = () => false;
+      const valueDefault = vf.isMessage()
+        ? vIsWkt
+          ? `wkt["${vIsWkt}"].readMessage(new BinaryReader(new Uint8Array()), 0)`
+          : `${resolveMessageName(vf.message())}.create()`
+        : defaultValueFor(scalar);
       let stringKey = 'String(Number(key))';
       if (kf.typeCode() === 8) stringKey = 'String(Boolean(key))';
       if (is64Bit(kf)) stringKey = 'String(key)';
       if (kf.typeCode() === 9) stringKey = 'String(key)';
       let keyDecoder = `reader.${kRead}()`;
       if (is64Bit(kf)) {
-        keyDecoder = `Long.fromValue(reader.${kRead}())`;
+        keyDecoder = `Long.fromValue(reader.${kRead}(), ${isUnsigned64(kf)})`;
       }
 
       const expectedTag = (fieldNo << 3) | 2; // maps are length-delimited
@@ -98,15 +112,17 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
           if (tag !== ${expectedTag}) break; // wire type guard
           const end2 = reader.uint32() + reader.pos;
           let key: ${keyTs} = ${keyDefault};
-          let value: ${valueTs} | undefined = undefined;
+          let value: ${valueTs} = ${valueDefault};
           while (reader.pos < end2) {
             const tag2 = reader.uint32();
             switch (tag2 >>> 3) {
               case 1: {
+                if (tag2 !== ${(1 << 3) | wireTypeFor(kf)}) break;
                 key = ${keyDecoder};
                 continue;
               }
               case 2: {
+                if (tag2 !== ${(2 << 3) | wireTypeFor(vf)}) break;
                 value = ${valueDecoder};
                 continue;
               }
@@ -114,10 +130,8 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
             if ((tag2 & 7) === 4 || tag2 === 0) break;
             reader.skip(tag2 & 7);
           }
-          if (value !== undefined) {
-            const stringKey = ${stringKey};
-            message.${name}[stringKey] = value;
-          }
+          const stringKey = ${stringKey};
+          Object.defineProperty(message.${name}, stringKey, { value, writable: true, enumerable: true, configurable: true });
           continue;
         }`,
       );
@@ -143,7 +157,7 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
         } else {
           let reader = `reader.${readM}()`;
           if (is64Bit(f)) {
-            reader = `Long.fromValue(${reader})`;
+            reader = `Long.fromValue(${reader}, ${isUnsigned64(f)})`;
           }
           lines.push(`        case ${fieldNo}: {
           // packed or unpacked repeated scalar
@@ -153,7 +167,7 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
               message.${name}.push(${reader});
             }
             continue;
-          } else if ((tag & 7) === 0 || (tag & 7) === 5 || (tag & 7) === 1) { // allow valid scalar wire types
+          } else if ((tag & 7) === ${wireTypeFor(f)}) {
             message.${name}.push(${reader});
             continue;
           }
@@ -207,7 +221,7 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
       lines.push(`        case ${fieldNo}: {
           if (tag !== ${expectedTag}) break;
           const len = reader.uint32();
-          message.${name} = wkt["${wktName}"].readMessage(reader, len);
+          message.${name} = wkt["${wktName}"].readMessage(reader, len, message.${name});
           continue;
         }`);
       continue;
@@ -218,7 +232,7 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
         const expectedTag = (fieldNo << 3) | 2;
         lines.push(`        case ${fieldNo}: {
           if (tag !== ${expectedTag}) break;
-          message.${name} = ${ref}.decode(reader, reader.uint32());
+          message.${name} = ${ref}.decode(reader, reader.uint32(), message.${name});
           continue;
         }`);
       }
@@ -234,7 +248,7 @@ export function emitDecode(m: TSDescriptorMessage): string[] {
     } else {
       let reader = `reader.${readM}()`;
       if (is64Bit(f)) {
-        reader = `Long.fromValue(${reader})`;
+        reader = `Long.fromValue(${reader}, ${isUnsigned64(f)})`;
       }
       const expectedTag = (fieldNo << 3) | wireTypeFor(f);
       lines.push(`        case ${fieldNo}: {

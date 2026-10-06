@@ -18,6 +18,7 @@ import {
 } from '../metrics.js';
 import { Bearer, NamedBearer, Receiver, Token } from '../token.js';
 import { TokenSanitizer } from '../token_sanitizer.js';
+import { TimeoutError, withTimeout } from '../util/cancelable.js';
 import { custom, customJson, inspectJson, type Logger } from '../util/logging.js';
 import { UnsupportedResponseError, UnsupportedTokenTypeError } from './exchangeable.js';
 import { RenewableBearer } from './renewable.js';
@@ -82,20 +83,36 @@ class ImpersonatedReceiver extends Receiver {
   protected async _fetch(timeoutMs?: number, options?: AuthorizationOptions): Promise<Token> {
     this.trial += 1;
     const start = metricStart();
+    const deadline = Number.isFinite(timeoutMs) ? Date.now() + Math.max(0, timeoutMs!) : undefined;
+    const stage = <T>(work: (budget?: number) => Promise<T>): Promise<T> => {
+      const budget = deadline === undefined ? undefined : deadline - Date.now();
+      if (budget !== undefined && budget <= 0) throw new TimeoutError();
+      const pending = work(budget);
+      return budget === undefined ? pending : withTimeout(pending, budget);
+    };
     try {
-      let actor = await this.source.fetch(timeoutMs, options);
+      let actor = await stage((budget) => this.source.fetch(budget, options));
       const now = Date.now();
       try {
-        const token = await this.exchange(actor.token, now, timeoutMs);
+        const token = await stage((budget) => this.exchange(actor.token, now, budget));
         this.metrics.tokenAcquire(METRIC_RESULT_SUCCESS, metricDurationMs(start), this.trial);
         this.metrics.tokenLifetime(token);
         return token;
       } catch (err) {
-        if (grpcCode(err) !== status.UNAUTHENTICATED || !this.source.canRetry(err, options)) {
+        if (
+          grpcCode(err) !== status.UNAUTHENTICATED ||
+          !(await stage((budget) => this.source.handleError(err, options, budget)))
+        ) {
           throw err;
         }
-        actor = await this.source.fetch(timeoutMs, options);
-        const token = await this.exchange(actor.token, Date.now(), timeoutMs);
+        actor = await stage((budget) =>
+          this.source.fetch(budget, {
+            ...options,
+            renewRequired: true,
+            renewSynchronous: true,
+          }),
+        );
+        const token = await stage((budget) => this.exchange(actor.token, Date.now(), budget));
         this.metrics.tokenAcquire(METRIC_RESULT_SUCCESS, metricDurationMs(start), this.trial);
         this.metrics.tokenLifetime(token);
         return token;
@@ -120,19 +137,27 @@ class ImpersonatedReceiver extends Receiver {
       authorizationDisable: true,
     };
     if (typeof timeoutMs === 'number' && Number.isFinite(timeoutMs)) {
-      callOptions.deadline = new Date(now + Math.max(0, timeoutMs));
+      // A valid transport deadline must stay within the JavaScript Date range.
+      callOptions.deadline = new Date(
+        Math.min(now + Math.max(0, timeoutMs), 8_640_000_000_000_000),
+      );
     }
 
     this.logger?.trace('exchanging impersonated token', {
       serviceAccountId: this.serviceAccountId,
       timeoutMs,
     });
-    const svc = await this.getSvc();
+    const deadline = Number.isFinite(timeoutMs) ? now + Math.max(0, timeoutMs!) : undefined;
+    const svc =
+      deadline === undefined
+        ? await this.getSvc()
+        : await withTimeout(this.getSvc(), Math.max(0, deadline - Date.now()));
+    if (deadline !== undefined && Date.now() >= deadline) throw new TimeoutError();
     const response = await svc.exchange(request, md, callOptions).result;
     if (!response || typeof response !== 'object') {
       throw new UnsupportedResponseError('CreateTokenResponse', response);
     }
-    if (response.tokenType !== 'Bearer') {
+    if (response.tokenType.toLowerCase() !== 'bearer') {
       throw new UnsupportedTokenTypeError(response.tokenType ?? String(response.tokenType));
     }
 
@@ -149,7 +174,7 @@ class ImpersonatedReceiver extends Receiver {
     });
     return new Token(
       response.accessToken,
-      Number.isFinite(expSec) && expSec > 0 ? new Date(now + expSec * 1000) : undefined,
+      Number.isFinite(expSec) ? new Date(now + expSec * 1000) : undefined,
     );
   }
 
@@ -221,6 +246,17 @@ export class ImpersonatedBearer extends Bearer {
   /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this.source;
+  }
+
+  /**
+   * Returns the positive actor budget plus five seconds for token exchange.
+   * Returns `undefined` when the actor has no positive finite budget.
+   * Addition saturates at the largest safe integer number of milliseconds.
+   */
+  get acquisitionBudgetMs(): number | undefined {
+    const actor = this.source.acquisitionBudgetMs;
+    if (actor === undefined || !Number.isFinite(actor) || actor <= 0) return undefined;
+    return Math.min(actor + 5_000, Number.MAX_SAFE_INTEGER);
   }
 
   /** Returns the provider name for authorization metrics. */
@@ -311,6 +347,12 @@ export class CachedImpersonatedBearer extends Bearer {
       metrics?: AuthMetricsInput;
       /** Optional destination for diagnostic events. */
       logger?: Logger;
+      /**
+       * Total actor and exchange budget, in milliseconds.
+       * The default `null` uses the composed source budget, or five seconds.
+       * Explicit zero and negative values stay unchanged.
+       */
+      refreshRequestTimeoutMs?: number | null;
     },
   ) {
     super();
@@ -325,6 +367,7 @@ export class CachedImpersonatedBearer extends Bearer {
     );
     this.source = new NamedBearer(
       new RenewableBearer(this.impersonated, {
+        refreshRequestTimeoutMs: opts?.refreshRequestTimeoutMs ?? null,
         maxRetries,
         metrics: opts?.metrics,
         provider: 'impersonated',
@@ -342,6 +385,11 @@ export class CachedImpersonatedBearer extends Bearer {
   /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this.source;
+  }
+
+  /** Returns the acquisition budget of the cached bearer chain. */
+  get acquisitionBudgetMs(): number | undefined {
+    return this.source.acquisitionBudgetMs;
   }
 
   /** Creates a token receiver. */

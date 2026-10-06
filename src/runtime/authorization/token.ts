@@ -1,11 +1,11 @@
 import { inspect } from 'util';
 
-import type { Metadata } from '@grpc/grpc-js';
-
 import { Bearer, Receiver, Token } from '../token.js';
+import { withTimeout } from '../util/cancelable.js';
 import { custom, customJson, inspectJson } from '../util/logging.js';
 
 import type { Authenticator, AuthorizationOptions, Provider } from './provider.js';
+import type { Metadata } from '@grpc/grpc-js';
 
 const HEADER = 'authorization';
 
@@ -37,10 +37,15 @@ export class TokenAuthenticator implements Authenticator {
     timeoutMs?: number,
     options?: AuthorizationOptions | undefined,
   ): Promise<void> {
+    if (metadata.get(HEADER).length > 0) return;
     const tok: Token = await this.receiver.fetch(timeoutMs, options);
     metadata.add(HEADER, `Bearer ${tok.token}`);
   }
 
+  /** Refreshes a rejected credential when the source supports recovery. */
+  handleError(err: unknown, options?: AuthorizationOptions, timeoutMs?: number): Promise<boolean> {
+    return this.receiver.handleError(err, options, timeoutMs);
+  }
   /** Returns whether the retry is allowed. */
   canRetry(err: unknown, options?: AuthorizationOptions | undefined): boolean {
     return this.receiver.canRetry(err, options);
@@ -77,6 +82,11 @@ export class TokenProvider implements Provider {
   }
   /** Creates a provider for the supplied credential source. */
   constructor(private readonly tokenProvider: Bearer) {}
+  /** Gets an access token without sending an API request. */
+  getToken(timeoutMs?: number, options?: AuthorizationOptions): Promise<Token> {
+    const token = this.tokenProvider.receiver().fetch(timeoutMs, options);
+    return timeoutMs === undefined ? token : withTimeout(token, timeoutMs);
+  }
   /** Returns the configured authenticator. */
   authenticator(): Authenticator {
     return new TokenAuthenticator(this.tokenProvider.receiver());

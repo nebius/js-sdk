@@ -34,16 +34,17 @@ Small, focused PRs are easier to review. Describe the motivation and include lin
 
 Prerequisites:
 
-- Node.js 18 or later (LTS recommended)
+- Node.js 24 for development (`nvm use`); the package supports Node.js 22 through 26
 - npm (or pnpm/yarn) available on PATH
-- `buf` CLI if you need to regenerate protobuf artifacts (optional for most contribution workflows)
+- The npm install provides the `buf` CLI used by the build for protobuf generation
 
 Quick start:
 
 ```bash
 # clone and install
-git clone git@github.com:nebius/js-sdk.git
+git clone --recurse-submodules git@github.com:nebius/js-sdk.git
 cd js-sdk
+nvm use
 npm ci
 
 # build generated artifacts and TypeScript
@@ -57,7 +58,7 @@ If you prefer `pnpm` or `yarn` use the equivalent install command (`pnpm install
 
 Regenerating generated code:
 
-If you need to regenerate `src/generated/` from protos, examine the `scripts/` and `dist-scripts/scripts/` helpers. The repository includes generators; follow their README or run the generator scripts as necessary.
+Run `npm run generate` to regenerate `src/api/` from the protobuf definitions in `nebius-api/`. The build runs this command automatically. Change the generators in `scripts/` rather than editing generated files.
 
 ## 🧪 Testing
 
@@ -99,8 +100,8 @@ Run the same linting/format/test commands locally that CI runs. This reduces PR 
 ## Troubleshooting & notes
 
 - Generated code in `src/api/` is authored by generator scripts. Avoid editing generated files by hand.
-- If types or generated clients are missing, run the generator scripts described under `scripts/`.
-- For API docs, run `npm run docs` and open `docs/api/index.html`.
+- If types or generated clients are missing, run `npm run generate`.
+- For API docs, run `npm run docs` and open `docs/index.html`.
 
 [issues]: https://github.com/nebius/js-sdk/issues
 [new-issue]: https://github.com/nebius/js-sdk/issues/new/choose

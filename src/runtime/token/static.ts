@@ -1,8 +1,10 @@
 import { inspect } from 'util';
 
-import type { AuthorizationOptions } from '../authorization/provider.js';
+import { tokenEnv } from '../constants.js';
 import { Bearer, Receiver, Token } from '../token.js';
 import { custom, customJson, inspectJson } from '../util/logging.js';
+
+import type { AuthorizationOptions } from '../authorization/provider.js';
 
 /** Reports that a token environment variable is empty. */
 export class NoTokenInEnvError extends Error {}
@@ -85,14 +87,14 @@ export class StaticBearer extends Bearer {
  * Reads one fixed access token from an environment variable.
  *
  * The constructor reads the variable immediately. It throws
- * {@link NoTokenInEnvError} when the variable is missing or empty.
+ * {@link NoTokenInEnvError} when the variable is missing or empty after trimming.
  */
 export class EnvBearer extends StaticBearer {
   /** Contains the fully qualified runtime type name. */
   public readonly $type = 'nebius.sdk.EnvBearer';
-  /** Reads the token from `envVarName`, which defaults to `NEBIUS_TOKEN`. */
-  constructor(envVarName: string = 'NEBIUS_TOKEN') {
-    const val = process.env[envVarName] ?? '';
+  /** Reads the token from `envVarName`, which defaults to `NEBIUS_IAM_TOKEN`. */
+  constructor(envVarName: string = tokenEnv) {
+    const val = (process.env[envVarName] ?? '').trim();
     if (val === '') throw new NoTokenInEnvError(`no token in env ${envVarName}`);
     super(val);
   }

@@ -21,6 +21,8 @@ class RenewableFileCacheReceiver extends Receiver {
   private receiver?: Receiver;
   private lastSaved?: Token;
   private fromCache = true;
+  private forceSource = false;
+  private recovered?: Token;
 
   constructor(
     private readonly bearer: RenewableFileCacheBearer,
@@ -44,10 +46,17 @@ class RenewableFileCacheReceiver extends Receiver {
 
   protected async _fetch(
     timeoutMs?: number,
-    _options?: AuthorizationOptions | undefined,
+    options?: AuthorizationOptions | undefined,
   ): Promise<Token> {
+    if (this.recovered) {
+      const token = this.recovered;
+      this.recovered = undefined;
+      this.lastSaved = token;
+      return token;
+    }
     let token: Token | undefined;
-    if (this.fromCache) {
+    const forceSource = this.forceSource;
+    if (!options?.renewRequired && !forceSource && this.fromCache) {
       this.logger?.trace('Fetching token from cache');
       try {
         token = await this.cache.get();
@@ -55,7 +64,7 @@ class RenewableFileCacheReceiver extends Receiver {
         this.bearer.metrics.cacheMiss(METRIC_RESULT_ERROR);
         throw err;
       }
-    } else {
+    } else if (!options?.renewRequired && !forceSource) {
       this.logger?.trace('Refreshing token from file cache as refresh requested');
       try {
         token = await this.cache.refresh();
@@ -97,7 +106,10 @@ class RenewableFileCacheReceiver extends Receiver {
     this.logger?.trace('Fetching fresh token from wrapped bearer', { wrapped });
     let fresh: Token;
     try {
-      fresh = await this.receiver.fetch(timeoutMs);
+      fresh = await this.receiver.fetch(
+        timeoutMs,
+        forceSource ? { ...options, renewRequired: true, renewSynchronous: true } : options,
+      );
     } catch (err) {
       this.bearer.metrics.cacheMiss(METRIC_RESULT_ERROR);
       throw err;
@@ -117,11 +129,53 @@ class RenewableFileCacheReceiver extends Receiver {
       throw err;
     }
     this.lastSaved = fresh;
+    this.forceSource = false;
     this.logger?.debug('Fetched fresh token', { token: fresh });
     return fresh;
   }
 
-  canRetry(err: unknown): boolean {
+  async handleError(
+    err: unknown,
+    options?: AuthorizationOptions,
+    timeoutMs?: number,
+  ): Promise<boolean> {
+    try {
+      const cached = await this.cache.refresh();
+      if (cached && !cached.isExpired() && !cached.equals(this.latest ?? Token.empty())) {
+        this.fromCache = true;
+        this.recovered = cached;
+        this.bearer.metrics.cacheRefresh(METRIC_RESULT_SUCCESS);
+        return true;
+      }
+      if (this.latest) await this.cache.removeIfEqual(this.latest);
+      this.bearer.metrics.cacheInvalidate();
+      this.fromCache = false;
+      const wrapped = this.bearer.wrapped;
+      if (!wrapped) return false;
+      if (!this.receiver?.latest) {
+        this.receiver ??= wrapped.receiver();
+        const token = await this.receiver.fetch(timeoutMs, {
+          ...options,
+          renewRequired: true,
+          renewSynchronous: true,
+        });
+        if (token.isEmpty() || token.isExpired() || token.equals(this.latest ?? Token.empty())) {
+          return false;
+        }
+        await this.cache.set(token);
+        this.fromCache = true;
+        this.recovered = token;
+        return true;
+      }
+      const recovered = await this.receiver.handleError(err, options, timeoutMs);
+      this.forceSource = recovered;
+      return recovered;
+    } catch (recoveryError) {
+      throw new AggregateError([recoveryError, err], 'Credential recovery failed.');
+    }
+  }
+
+  canRetry(err: unknown, options?: AuthorizationOptions): boolean {
     this.logger?.trace('Checking if can retry', { err });
     if (this.fromCache) {
       this.logger?.debug('Error occurred while using cached token, will try refreshing', { err });
@@ -137,7 +191,7 @@ class RenewableFileCacheReceiver extends Receiver {
       return true;
     }
     this.logger?.debug('Delegating canRetry check to wrapped bearer receiver', { err });
-    return this.receiver.canRetry(err);
+    return this.receiver.canRetry(err, options);
   }
 }
 
@@ -205,6 +259,11 @@ export class RenewableFileCacheBearer extends Bearer {
   /** Returns the wrapped bearer. */
   get wrapped(): Bearer | undefined {
     return this._wrapped;
+  }
+
+  /** Returns the acquisition budget of the wrapped bearer. */
+  get acquisitionBudgetMs(): number | undefined {
+    return this._wrapped.acquisitionBudgetMs;
   }
 
   /** Creates a token receiver. */
