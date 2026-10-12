@@ -2,10 +2,13 @@ name: Release the new version
 
 on:
   push:
+    branches:
+      - main
     tags:
       - 'v*.*.*'
-  # workflow_call: # probably not necessary as the release will be triggered by the tag
-  workflow_dispatch: # if necessary to rerun the release job
+    paths:
+      - 'package.json'
+  workflow_dispatch: # Retry an existing version tag
 
 permissions:
   contents: read
@@ -14,11 +17,63 @@ permissions:
 
 concurrency:
   group: 'pages'
+  queue: max
   cancel-in-progress: false
 
 jobs:
+  prepare_release:
+    name: Prepare release tag
+    if: >-
+      startsWith(github.ref, 'refs/tags/v') ||
+      (github.ref == 'refs/heads/main' &&
+      github.event.head_commit.author.name == 'github-actions[bot]' &&
+      github.event.head_commit.author.email == 'github-actions[bot]@users.noreply.github.com')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      release: ${{ steps.tag.outputs.release }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      # GITHUB_TOKEN tag pushes do not trigger a second release run.
+      - name: Check version and tag bot commit
+        id: tag
+        env:
+          REF: ${{ github.ref }}
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          TAG="v$VERSION"
+          if [[ "$REF" == refs/tags/* ]]; then
+            if [[ "$REF" != "refs/tags/$TAG" ]]; then
+              echo "Release tag must match package.json version: $TAG" >&2
+              exit 1
+            fi
+          else
+            PREVIOUS_VERSION=$(git show HEAD^:package.json | node -p "JSON.parse(require('fs').readFileSync(0, 'utf8')).version")
+            if [[ "$VERSION" == "$PREVIOUS_VERSION" ]]; then
+              echo "release=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            if git show-ref --verify --quiet "refs/tags/$TAG"; then
+              if [[ "$(git rev-parse "$TAG^{commit}")" != "$(git rev-parse HEAD)" ]]; then
+                echo "Release tag already points to another commit: $TAG" >&2
+                exit 1
+              fi
+            else
+              git tag "$TAG"
+              git push origin "refs/tags/$TAG"
+            fi
+          fi
+          echo "release=true" >> "$GITHUB_OUTPUT"
+
   pages:
     name: Deploy docs to Github Pages
+    needs: prepare_release
+    if: needs.prepare_release.outputs.release == 'true'
     environment:
       name: github-pages
       url: ${{ steps.pages_deploy.outputs.page_url }}
@@ -61,11 +116,14 @@ jobs:
 
   npmjs_publish:
     name: Upload release to NPM
+    needs: prepare_release
+    if: needs.prepare_release.outputs.release == 'true'
     runs-on: ubuntu-latest
     environment:
       name: npmjs-publish
       url: https://www.npmjs.com/package/@nebius/js-sdk
     permissions:
+      contents: read
       id-token: write # IMPORTANT: this permission is mandatory for trusted publishing
     steps:
       - name: Checkout
@@ -86,7 +144,7 @@ jobs:
         env:
           # Ensure devDependencies are installed for codegen, lint and tests
           NPM_CONFIG_PRODUCTION: false
-      
+
       - name: Build dist packages
         run: |
           npm run build
@@ -96,7 +154,7 @@ jobs:
   notify-slack-on-failure:
     name: Notify Slack on failure
     if: failure()
-    needs: [npmjs_publish, pages]
+    needs: [prepare_release, npmjs_publish, pages]
     runs-on: ubuntu-latest
     steps:
       - name: Post text to a Slack channel

@@ -97,19 +97,6 @@ jobs:
           git status
           git branch -r --contains HEAD
 
-      - name: Tag commit
-        run: |
-          git status --porcelain || exit 1
-          TAG="v$(node -p "require('./package.json').version")"
-          git tag $TAG
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          tags: true
-          ssh: true
-          force_with_lease: true
-
   notify-slack-on-failure:
     name: Notify Slack on failure
     if: failure()

@@ -37,6 +37,9 @@ Build & publish:
 
 Notes:
 
+- A commit on `main` authored by `github-actions[bot]` with email `github-actions[bot]@users.noreply.github.com` starts a release when it changes the package version. The release workflow creates a Git tag named `v<version>`, then publishes the package and documentation.
+- Other commits require a manually pushed `v<version>` tag. The tag must match the version in `package.json`.
+- To retry an existing release, rerun its workflow or dispatch the release workflow with its version tag as the ref. A manual dispatch on a branch does not publish.
 - Release automation runs on Node.js 24.x. Use `nvm use` in this repository to match the CI/release baseline.
 - `prepublishOnly` runs `npm run build` automatically during `npm publish`.
 - The build writes `package.json` markers into `dist/esm` and `dist/cjs` to make Node resolution robust.
