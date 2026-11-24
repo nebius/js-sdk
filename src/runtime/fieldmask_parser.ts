@@ -25,9 +25,18 @@
  * @packageDocumentation
  */
 
-import { FieldKey, Mask } from './fieldmask.js';
+import { Mask } from './fieldmask.js';
 
 class ParseError extends Error {}
+
+/**
+ * The exclusive depth limit for field-mask trees.
+ *
+ * @internal
+ */
+export const MAX_MASK_DEPTH = 1000;
+
+const STEPS_PER_CODE_UNIT = 8;
 
 function skipWs(s: string, i: number): number {
   while (i < s.length && /\s/.test(s[i]!)) i++;
@@ -66,97 +75,99 @@ function parsePlainKey(s: string, i: number): { key: string; next: number } {
   return { key: s.slice(i, j), next: j };
 }
 
-type Path = (string | '*')[];
+type Token = ({ kind: '(' | ')' | ',' | '.' | '*' } | { kind: 'key'; value: string }) & {
+  pos: number;
+};
 
-function concatPathSets(a: Path[], b: Path[]): Path[] {
-  if (a.length === 0) return b.map((p) => p.slice());
-  if (b.length === 0) return a.map((p) => p.slice());
-  const out: Path[] = [];
-  for (const pa of a) {
-    for (const pb of b) {
-      out.push(pa.concat(pb));
+function tokenize(source: string): Token[] {
+  const tokens: Token[] = [];
+  for (let pos = skipWs(source, 0); pos < source.length; pos = skipWs(source, pos)) {
+    const kind = source[pos];
+    switch (kind) {
+      case '(':
+      case ')':
+      case ',':
+      case '.':
+      case '*':
+        tokens.push({ kind, pos });
+        pos++;
+        break;
+      case '"': {
+        const { value, next } = parseQuoted(source, pos);
+        tokens.push({ kind: 'key', value, pos });
+        pos = next;
+        break;
+      }
+      default: {
+        const { key, next } = parsePlainKey(source, pos);
+        tokens.push({ kind: 'key', value: key, pos });
+        pos = next;
+      }
     }
   }
-  return out;
+  return tokens;
 }
 
-function unionPathSets(a: Path[], b: Path[]): Path[] {
-  if (a.length === 0) return b.map((p) => p.slice());
-  if (b.length === 0) return a.map((p) => p.slice());
-  const out: Path[] = a.map((p) => p.slice());
-  for (const p of b) out.push(p.slice());
-  return out;
+function groupsBeforeDot(tokens: Token[]): Set<number> {
+  const groups = new Set<number>();
+  const openings: number[] = [];
+  for (const [index, token] of tokens.entries()) {
+    if (token.kind === '(') {
+      openings.push(index);
+    } else if (token.kind === ')') {
+      const opening = openings.pop();
+      if (opening === undefined) break;
+      if (tokens[index + 1]?.kind === '.') groups.add(opening);
+    }
+  }
+  return groups;
 }
 
-function parseFactor(s: string, idxRef: { i: number }): Path[] {
-  let i = skipWs(s, idxRef.i);
-  if (i >= s.length) throw new ParseError('Unexpected end of input');
-  const ch = s[i]!;
-  if (ch === '(') {
-    i = skipWs(s, i + 1);
-    const innerRef = { i };
-    if (innerRef.i < s.length && s[innerRef.i] === ')') {
-      idxRef.i = innerRef.i + 1;
-      return [[]];
-    }
-    const { paths, next } = parseUnion(s, innerRef);
-    i = skipWs(s, next);
-    if (i >= s.length || s[i] !== ')') {
-      throw new ParseError(`Unclosed left brace at position ${idxRef.i}`);
-    }
-    idxRef.i = i + 1;
-    return paths.length === 0 ? [[]] : paths;
-  }
-  if (ch === '*') {
-    idxRef.i = i + 1;
-    return [['*']];
-  }
-  if (ch === '"') {
-    const { value, next } = parseQuoted(s, i);
-    idxRef.i = next;
-    return [[new FieldKey(value).value]];
-  }
-  const { key, next } = parsePlainKey(s, i);
-  idxRef.i = next;
-  return [[new FieldKey(key).value]];
-}
+class Level {
+  // Each active mask has its own child for a key or wildcard.
+  active: Mask[];
+  activeDepth: number;
+  readonly ends: Set<Mask> | null;
+  endDepth = 0;
 
-function parsePath(s: string, idxRef: { i: number }): Path[] {
-  let paths = parseFactor(s, idxRef);
-  while (true) {
-    let i = skipWs(s, idxRef.i);
-    if (i >= s.length || s[i] !== '.') break;
-    i = skipWs(s, i + 1);
-    if (i >= s.length || s[i] === ')' || s[i] === ',') {
-      throw new ParseError(`Unexpected end of path at position ${i}`);
-    }
-    idxRef.i = i;
-    const rhs = parseFactor(s, idxRef);
-    paths = concatPathSets(paths, rhs);
+  constructor(
+    readonly pos: number,
+    private readonly starts: Mask[],
+    private readonly startDepth: number,
+    collectEnds: boolean,
+  ) {
+    this.active = starts;
+    this.activeDepth = startDepth;
+    this.ends = collectEnds ? new Set() : null;
   }
-  return paths;
-}
 
-function parseUnion(s: string, idxRef: { i: number }): { paths: Path[]; next: number } {
-  let i = skipWs(s, idxRef.i);
-  // allow empty union (e.g., directly before ')')
-  if (i >= s.length || s[i] === ')') {
-    return { paths: [], next: i };
-  }
-  idxRef.i = i;
-  let paths = parsePath(s, idxRef);
-  i = skipWs(s, idxRef.i);
-  while (i < s.length && s[i] === ',') {
-    i = skipWs(s, i + 1);
-    if (i >= s.length || s[i] === ')' || s[i] === ',') {
-      throw new ParseError('Unexpected end of mask');
+  addKey(key: string, pos: number): void {
+    if (this.activeDepth + 1 >= MAX_MASK_DEPTH) {
+      throw new ParseError(`Mask is too deep at position ${pos}`);
     }
-    idxRef.i = i;
-    const rhs = parsePath(s, idxRef);
-    paths = unionPathSets(paths, rhs);
-    i = skipWs(s, idxRef.i);
+    this.activeDepth++;
+    this.active = this.active.map((mask) => {
+      if (key === '*') return (mask.any ??= new Mask());
+      let child = mask.fieldParts.get(key);
+      if (child === undefined) {
+        child = new Mask();
+        mask.fieldParts.set(key, child);
+      }
+      return child;
+    });
   }
-  return { paths, next: idxRef.i };
+
+  finishBranch(): void {
+    if (this.ends === null) return;
+    for (const mask of this.active) this.ends.add(mask);
+    this.endDepth = Math.max(this.endDepth, this.activeDepth);
+  }
+
+  nextBranch(): void {
+    this.finishBranch();
+    this.active = this.starts;
+    this.activeDepth = this.startDepth;
+  }
 }
 
 /**
@@ -172,19 +183,72 @@ function parseUnion(s: string, idxRef: { i: number }): { paths: Path[]; next: nu
  * from `@nebius/js-sdk/runtime/fieldmask`.
  *
  * @throws `Error` when the input contains an invalid key, an incomplete path,
- * an unclosed group, or other trailing text.
+ * an unclosed group, or other trailing text. It also throws if a path reaches
+ * 1,000 segments or the parser exceeds eight branch visits per UTF-16 code unit.
  */
 export function parseMask(source: string): Mask {
   if (typeof source !== 'string') throw new ParseError('source must be a string');
-  const s = source;
-  const { paths, next } = parseUnion(s, { i: 0 });
-  const end = skipWs(s, next);
-  if (end !== s.length) {
-    throw new ParseError(`Unexpected character '${s[end]}' at position ${end}`);
+  const root = new Mask();
+  const tokens = tokenize(source);
+  if (tokens.length === 0) return root;
+
+  const beforeDot = groupsBeforeDot(tokens);
+  const levels = [new Level(0, [root], 0, false)];
+  let state: 'factor' | 'separator' | 'groupStart' = 'factor';
+  let steps = 0;
+  const maxSteps = STEPS_PER_CODE_UNIT * source.length;
+
+  for (const [index, token] of tokens.entries()) {
+    const level = levels[levels.length - 1]!;
+    const { kind, pos } = token;
+    if (state === 'groupStart') state = kind === ')' ? 'separator' : 'factor';
+    if (kind !== '(' && kind !== '.') {
+      // Count branch visits before they create or collect masks.
+      steps += level.active.length;
+      if (steps > maxSteps) throw new ParseError(`Mask is too complex at position ${pos}`);
+    }
+
+    if (state === 'factor') {
+      if (kind === '(') {
+        // A parent can pass the ends of this group to its own suffix.
+        const collectEnds = beforeDot.has(index) || level.ends !== null;
+        levels.push(new Level(pos, level.active, level.activeDepth, collectEnds));
+        state = 'groupStart';
+      } else if (kind === 'key' || kind === '*') {
+        level.addKey(kind === 'key' ? token.value : '*', pos);
+        state = 'separator';
+      } else {
+        throw new ParseError(`Expected a field or group at position ${pos}`);
+      }
+    } else {
+      switch (kind) {
+        case '.':
+          state = 'factor';
+          break;
+        case ',':
+          level.nextBranch();
+          state = 'factor';
+          break;
+        case ')': {
+          const parent = levels[levels.length - 2];
+          if (parent === undefined) {
+            throw new ParseError(`Unmatched right brace at position ${pos}`);
+          }
+          level.finishBranch();
+          parent.active = level.ends === null ? [] : [...level.ends];
+          parent.activeDepth = level.endDepth;
+          levels.pop();
+          break;
+        }
+        default:
+          throw new ParseError(`Expected a separator or closing brace at position ${pos}`);
+      }
+    }
   }
-  const mask = new Mask();
-  for (const p of paths) {
-    mask.addPath(p);
+
+  if (levels.length > 1) {
+    throw new ParseError(`Unclosed left brace at position ${levels[levels.length - 1]!.pos}`);
   }
-  return mask;
+  if (state !== 'separator') throw new ParseError('Unexpected end of mask');
+  return root;
 }

@@ -13,11 +13,10 @@
  * @packageDocumentation
  */
 
-import { parseMask } from './fieldmask_parser.js';
+import { MAX_MASK_DEPTH, parseMask } from './fieldmask_parser.js';
 import { custom, customJson } from './util/logging.js';
 
 const SIMPLE_STRING_RE = /^[a-zA-Z0-9_]+$/;
-const RECURSION_TOO_DEEP = 1000;
 
 /** Reports that a field-mask key cannot be read from its text form. */
 export class MarshalError extends Error {}
@@ -374,7 +373,8 @@ export class Mask {
   /**
    * Parses field-mask text, including grouped paths and wildcards.
    *
-   * @throws `Error` if the text does not follow field-mask syntax.
+   * @throws `Error` if the syntax is invalid, a path reaches 1,000 segments,
+   * or the parser exceeds eight branch visits per UTF-16 code unit.
    */
   static parse(source: string): Mask {
     return parseMask(source);
@@ -384,7 +384,7 @@ export class Mask {
     return Mask.parse(source);
   }
   private marshalRec(recursion: number): { count: number; text: string } {
-    if (recursion >= RECURSION_TOO_DEEP) {
+    if (recursion >= MAX_MASK_DEPTH) {
       throw new Error('recursion too deep');
     }
     if (!this.any && this.fieldParts.size === 0) {
@@ -443,7 +443,7 @@ export class Mask {
   }
   // Intersection and subtraction APIs to match Go implementation
   private intersectRMRecursive(other: Mask | null, recursion: number): Mask | null {
-    if (recursion >= RECURSION_TOO_DEEP) throw new Error('recursion too deep');
+    if (recursion >= MAX_MASK_DEPTH) throw new Error('recursion too deep');
     recursion++;
     if (!this || !other) return null;
     const ret = new Mask();
@@ -495,7 +495,7 @@ export class Mask {
   }
 
   private intersectDumbRecursive(other: Mask | null, recursion: number): Mask | null {
-    if (recursion >= RECURSION_TOO_DEEP) throw new Error('recursion too deep');
+    if (recursion >= MAX_MASK_DEPTH) throw new Error('recursion too deep');
     recursion++;
     if (!this || !other) return null;
     const ret = new Mask();
@@ -519,7 +519,7 @@ export class Mask {
   }
 
   private subtractDumbRecursive(other: Mask | null, recursion: number): void {
-    if (recursion >= RECURSION_TOO_DEEP) throw new Error('recursion too deep');
+    if (recursion >= MAX_MASK_DEPTH) throw new Error('recursion too deep');
     recursion++;
     if (!other) return;
     if (this.any && other.any) {
@@ -546,7 +546,7 @@ export class Mask {
   }
 
   private subtractResetRecursive(other: Mask | null, recursion: number): void {
-    if (recursion >= RECURSION_TOO_DEEP) throw new Error('recursion too deep');
+    if (recursion >= MAX_MASK_DEPTH) throw new Error('recursion too deep');
     recursion++;
     if (!other) return;
     if (this.any && other.any) {
