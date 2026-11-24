@@ -98,6 +98,33 @@ describe('Mask marshal/parse', () => {
     expect(weirdChild).not.toBeNull();
   });
 
+  test('extends grouped alternatives independently', () => {
+    const mask = parseFieldMask('(a,(b,())).(*,name).value,a.*.other');
+    expect(mask.marshal()).toBe(
+      '*.value,a.(*.(other,value),name.value),b.(*.value,name.value),name.value',
+    );
+  });
+
+  test('reuses the ends of repeated alternatives', () => {
+    const source = '(a,a,a).(b,b,b).(c,c,c).(d,d,d).(e,e,e).f';
+    expect(parseFieldMask(source).marshal()).toBe('a.b.c.d.e.f');
+  });
+
+  test('rejects grouped masks that exceed the expansion limit', () => {
+    const source = Array<string>(5).fill('(a,b,c,d)').join('.');
+    expect(() => parseFieldMask(source)).toThrow('Mask is too complex');
+  });
+
+  test('bounds the depth of the resulting mask', () => {
+    const source = Array<string>(999).fill('a').join('.');
+    expect(parseFieldMask(source).marshal()).toBe(source);
+    expect(() => parseFieldMask(`${source}.*`)).toThrow('Mask is too deep');
+  });
+
+  test.each(['(a,)', 'a.', 'a)', '(a', 'a b'])('rejects malformed mask %s', (source) => {
+    expect(() => parseFieldMask(source)).toThrow();
+  });
+
   test('marshal leaves', () => {
     const m = new Mask();
     m.addPath(['a', 'b'])

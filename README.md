@@ -470,6 +470,10 @@ Set `resetMask` or `selectMask` in call options to provide an explicit mask.
 `runtime/mask_metadata` also provides `withResetMask()` and `withSelectMask()`.
 Explicit masks compose with existing mask header values. Supplying `resetMask` skips automatic discovery.
 
+When you parse extended mask text, write each group after its common prefix.
+For example, use `a.(x,y),b.(x,y)` for the same paths as `(a,b).(x,y)`.
+The parser limits group expansion and rejects paths with 1,000 or more segments.
+
 `runtime/protobuf_mask` provides descriptor-based known-field masks, modified reset masks, selection, patching, and path traversal.
 These helpers use protobuf field names and return message copies for transformations.
 Use `{ includeImmutables: true }` to include immutable fields in reset-mask conversion.
