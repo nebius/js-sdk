@@ -70,14 +70,18 @@ jobs:
           fi
           echo "release=true" >> "$GITHUB_OUTPUT"
 
-  pages:
-    name: Deploy docs to Github Pages
+  pages_build:
+    name: Build docs for GitHub Pages
     needs: prepare_release
     if: needs.prepare_release.outputs.release == 'true'
-    environment:
-      name: github-pages
-      url: ${{ steps.pages_deploy.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: read
     runs-on: ubuntu-latest
+    env:
+      PAGES_ARTIFACT_NAME: github-pages-${{ github.run_attempt }}
+    outputs:
+      artifact_name: ${{ env.PAGES_ARTIFACT_NAME }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -108,11 +112,22 @@ jobs:
       - name: Upload pages
         uses: actions/upload-pages-artifact@v4
         with:
+          name: ${{ env.PAGES_ARTIFACT_NAME }}
           path: 'docs'
 
+  pages_deploy:
+    name: Deploy docs to GitHub Pages
+    needs: pages_build
+    environment:
+      name: github-pages
+      url: ${{ steps.pages_deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: pages_deploy
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: ${{ needs.pages_build.outputs.artifact_name }}
 
   npmjs_publish:
     name: Upload release to NPM
@@ -154,7 +169,7 @@ jobs:
   notify-slack-on-failure:
     name: Notify Slack on failure
     if: failure()
-    needs: [prepare_release, npmjs_publish, pages]
+    needs: [prepare_release, npmjs_publish, pages_build, pages_deploy]
     runs-on: ubuntu-latest
     steps:
       - name: Post text to a Slack channel
